@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <identifier id="OMTKLogic" version="0.0.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+   </usings>
+   <codeSystems>
+      <def name="RxNorm" id="http://www.nlm.nih.gov/research/umls/rxnorm" accessLevel="Public">
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </resultTypeSpecifier>
+      </def>
+   </codeSystems>
+   <statements>
+      <def resultTypeName="t:String" name="ToUCUM" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:String" xsi:type="Case">
+            <comparand resultTypeName="t:String" name="unit" xsi:type="OperandRef"/>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="MG" xsi:type="Literal"/>
+               <then resultTypeName="t:String" valueType="t:String" value="mg" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="MG/ACTUAT" xsi:type="Literal"/>
+               <then resultTypeName="t:String" valueType="t:String" value="mg/{actuat}" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="MG/HR" xsi:type="Literal"/>
+               <then resultTypeName="t:String" valueType="t:String" value="mg/h" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="MG/ML" xsi:type="Literal"/>
+               <then resultTypeName="t:String" valueType="t:String" value="mg/mL" xsi:type="Literal"/>
+            </caseItem>
+            <else resultTypeName="t:String" xsi:type="Concatenate">
+               <operand resultTypeName="t:String" xsi:type="Concatenate">
+                  <operand resultTypeName="t:String" valueType="t:String" value="unknown{" xsi:type="Literal"/>
+                  <operand resultTypeName="t:String" name="unit" xsi:type="OperandRef"/>
+               </operand>
+               <operand resultTypeName="t:String" valueType="t:String" value="}" xsi:type="Literal"/>
+            </else>
+         </expression>
+         <operand name="unit">
+            <operandTypeSpecifier resultTypeName="t:String" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def resultTypeName="t:Decimal" name="ToDaily" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:Decimal" xsi:type="Case">
+            <comparand resultTypeName="t:String" path="unit" xsi:type="Property">
+               <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+            </comparand>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="h" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Multiply">
+                  <operand xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" name="frequency" xsi:type="OperandRef"/>
+                  </operand>
+                  <operand resultTypeName="t:Decimal" xsi:type="Divide">
+                     <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="24.0" xsi:type="Literal"/>
+                     <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                        <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+                     </operand>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="min" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Multiply">
+                  <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand xsi:type="ToDecimal">
+                        <operand resultTypeName="t:Integer" name="frequency" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand resultTypeName="t:Decimal" xsi:type="Divide">
+                        <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="24.0" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" valueType="t:Integer" value="60" xsi:type="Literal"/>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="s" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Multiply">
+                  <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                        <operand xsi:type="ToDecimal">
+                           <operand resultTypeName="t:Integer" name="frequency" xsi:type="OperandRef"/>
+                        </operand>
+                        <operand resultTypeName="t:Decimal" xsi:type="Divide">
+                           <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="24.0" xsi:type="Literal"/>
+                           <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                              <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                     </operand>
+                     <operand xsi:type="ToDecimal">
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="60" xsi:type="Literal"/>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" valueType="t:Integer" value="60" xsi:type="Literal"/>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="d" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Divide">
+                  <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand xsi:type="ToDecimal">
+                        <operand resultTypeName="t:Integer" name="frequency" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand resultTypeName="t:Decimal" xsi:type="Divide">
+                        <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="24.0" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" valueType="t:Integer" value="24" xsi:type="Literal"/>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="wk" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Divide">
+                  <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand xsi:type="ToDecimal">
+                        <operand resultTypeName="t:Integer" name="frequency" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand resultTypeName="t:Decimal" xsi:type="Divide">
+                        <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="24.0" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" xsi:type="Multiply">
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="24" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="7" xsi:type="Literal"/>
+                     </operand>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="mo" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Divide">
+                  <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand xsi:type="ToDecimal">
+                        <operand resultTypeName="t:Integer" name="frequency" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand resultTypeName="t:Decimal" xsi:type="Divide">
+                        <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="24.0" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" xsi:type="Multiply">
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="24" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="30" xsi:type="Literal"/>
+                     </operand>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:String" valueType="t:String" value="a" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Divide">
+                  <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand xsi:type="ToDecimal">
+                        <operand resultTypeName="t:Integer" name="frequency" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand resultTypeName="t:Decimal" xsi:type="Divide">
+                        <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="24.0" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="period" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" xsi:type="Multiply">
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="24" xsi:type="Literal"/>
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="365" xsi:type="Literal"/>
+                     </operand>
+                  </operand>
+               </then>
+            </caseItem>
+            <else asType="t:Decimal" xsi:type="As">
+               <operand resultTypeName="t:Any" xsi:type="Null"/>
+            </else>
+         </expression>
+         <operand name="frequency">
+            <operandTypeSpecifier resultTypeName="t:Integer" name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="period">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def resultTypeName="t:Boolean" name="IsPatch" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:Boolean" xsi:type="Equal">
+            <operand resultTypeName="t:Integer" xsi:type="ToInteger">
+               <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                  <source resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+               </operand>
+            </operand>
+            <operand resultTypeName="t:Integer" valueType="t:Integer" value="316987" xsi:type="Literal"/>
+         </expression>
+         <operand name="doseFormCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def resultTypeName="t:Decimal" name="GetConversionFactor" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:Decimal" xsi:type="Case">
+            <comparand resultTypeName="t:Integer" xsi:type="ToInteger">
+               <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                  <source resultTypeName="t:Code" name="ingredientCode" xsi:type="OperandRef"/>
+               </operand>
+            </comparand>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="161" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="1191" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="1223" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="1767" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="1819" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Case">
+                  <caseItem>
+                     <when resultTypeName="t:Boolean" xsi:type="Equal">
+                        <operand resultTypeName="t:Integer" xsi:type="ToInteger">
+                           <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                              <source resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="316987" xsi:type="Literal"/>
+                     </when>
+                     <then resultTypeName="t:Decimal" valueType="t:Decimal" value="12.6" xsi:type="Literal"/>
+                  </caseItem>
+                  <else xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" valueType="t:Integer" value="30" xsi:type="Literal"/>
+                  </else>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="1841" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="7" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="1886" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="2101" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="2354" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="2400" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="2670" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.15" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="3423" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="4" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="3498" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="4337" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" xsi:type="Case">
+                  <caseItem>
+                     <when resultTypeName="t:Boolean" xsi:type="In">
+                        <operand resultTypeName="t:Integer" xsi:type="ToInteger">
+                           <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                              <source resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand xsi:type="List">
+                           <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                              <elementType name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="970789" xsi:type="Literal"/>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="317007" xsi:type="Literal"/>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="316992" xsi:type="Literal"/>
+                        </operand>
+                     </when>
+                     <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.13" xsi:type="Literal"/>
+                  </caseItem>
+                  <caseItem>
+                     <when resultTypeName="t:Boolean" xsi:type="Equal">
+                        <operand resultTypeName="t:Integer" xsi:type="ToInteger">
+                           <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                              <source resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="346163" xsi:type="Literal"/>
+                     </when>
+                     <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.18" xsi:type="Literal"/>
+                  </caseItem>
+                  <caseItem>
+                     <when resultTypeName="t:Boolean" xsi:type="In">
+                        <operand resultTypeName="t:Integer" xsi:type="ToInteger">
+                           <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                              <source resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand xsi:type="List">
+                           <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                              <elementType name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="126542" xsi:type="Literal"/>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="346163" xsi:type="Literal"/>
+                        </operand>
+                     </when>
+                     <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.16" xsi:type="Literal"/>
+                  </caseItem>
+                  <caseItem>
+                     <when resultTypeName="t:Boolean" name="IsPatch" xsi:type="FunctionRef">
+                        <operand resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+                     </when>
+                     <then resultTypeName="t:Decimal" valueType="t:Decimal" value="7.2" xsi:type="Literal"/>
+                  </caseItem>
+                  <else xsi:type="ToDecimal">
+                     <operand resultTypeName="t:Integer" valueType="t:Integer" value="1000" xsi:type="Literal"/>
+                  </else>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="5032" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="5489" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="1" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="5640" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="6102" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="6378" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="11" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="6754" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.1" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="6813" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" xsi:type="Case">
+                     <caseItem>
+                        <when resultTypeName="t:Boolean" xsi:type="And">
+                           <operand xsi:type="GreaterOrEqual">
+                              <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                 <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                              </operand>
+                              <operand xsi:type="ToDecimal">
+                                 <operand resultTypeName="t:Integer" valueType="t:Integer" value="1" xsi:type="Literal"/>
+                              </operand>
+                           </operand>
+                           <operand xsi:type="LessOrEqual">
+                              <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                 <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                              </operand>
+                              <operand xsi:type="ToDecimal">
+                                 <operand resultTypeName="t:Integer" valueType="t:Integer" value="20" xsi:type="Literal"/>
+                              </operand>
+                           </operand>
+                        </when>
+                        <then resultTypeName="t:Integer" valueType="t:Integer" value="4" xsi:type="Literal"/>
+                     </caseItem>
+                     <caseItem>
+                        <when resultTypeName="t:Boolean" xsi:type="And">
+                           <operand xsi:type="GreaterOrEqual">
+                              <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                 <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                              </operand>
+                              <operand xsi:type="ToDecimal">
+                                 <operand resultTypeName="t:Integer" valueType="t:Integer" value="21" xsi:type="Literal"/>
+                              </operand>
+                           </operand>
+                           <operand xsi:type="LessOrEqual">
+                              <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                 <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                              </operand>
+                              <operand xsi:type="ToDecimal">
+                                 <operand resultTypeName="t:Integer" valueType="t:Integer" value="40" xsi:type="Literal"/>
+                              </operand>
+                           </operand>
+                        </when>
+                        <then resultTypeName="t:Integer" valueType="t:Integer" value="8" xsi:type="Literal"/>
+                     </caseItem>
+                     <caseItem>
+                        <when resultTypeName="t:Boolean" xsi:type="And">
+                           <operand xsi:type="GreaterOrEqual">
+                              <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                 <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                              </operand>
+                              <operand xsi:type="ToDecimal">
+                                 <operand resultTypeName="t:Integer" valueType="t:Integer" value="41" xsi:type="Literal"/>
+                              </operand>
+                           </operand>
+                           <operand xsi:type="LessOrEqual">
+                              <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                 <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                              </operand>
+                              <operand xsi:type="ToDecimal">
+                                 <operand resultTypeName="t:Integer" valueType="t:Integer" value="60" xsi:type="Literal"/>
+                              </operand>
+                           </operand>
+                        </when>
+                        <then resultTypeName="t:Integer" valueType="t:Integer" value="10" xsi:type="Literal"/>
+                     </caseItem>
+                     <caseItem>
+                        <when resultTypeName="t:Boolean" xsi:type="GreaterOrEqual">
+                           <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                              <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                           </operand>
+                           <operand xsi:type="ToDecimal">
+                              <operand resultTypeName="t:Integer" valueType="t:Integer" value="61" xsi:type="Literal"/>
+                           </operand>
+                        </when>
+                        <then resultTypeName="t:Integer" valueType="t:Integer" value="12" xsi:type="Literal"/>
+                     </caseItem>
+                     <else resultTypeName="t:Integer" valueType="t:Integer" value="1000" xsi:type="Literal"/>
+                  </operand>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="7052" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="1" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="7242" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="7243" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="7804" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" valueType="t:Decimal" value="1.5" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="7814" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="3" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="8001" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.37" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="8163" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="8175" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="8745" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="8896" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="9009" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="10689" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.1" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="10849" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="19759" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="19860" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="22696" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="22697" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="23088" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.25" xsi:type="Literal"/>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="27084" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="35780" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="237005" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="8" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="636827" xsi:type="Literal"/>
+               <then xsi:type="ToDecimal">
+                  <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Integer" valueType="t:Integer" value="787390" xsi:type="Literal"/>
+               <then resultTypeName="t:Decimal" valueType="t:Decimal" value="0.4" xsi:type="Literal"/>
+            </caseItem>
+            <else xsi:type="ToDecimal">
+               <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+            </else>
+         </expression>
+         <operand name="ingredientCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="dailyDose">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="doseFormCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def resultTypeName="t:Quantity" name="EnsureMicrogramQuantity" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:Quantity" xsi:type="If">
+            <condition asType="t:Boolean" xsi:type="As">
+               <operand resultTypeName="t:Boolean" xsi:type="And">
+                  <operand resultTypeName="t:Boolean" xsi:type="Less">
+                     <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                        <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand resultTypeName="t:Decimal" valueType="t:Decimal" value="0.1" xsi:type="Literal"/>
+                  </operand>
+                  <operand resultTypeName="t:Boolean" xsi:type="Equal">
+                     <operand resultTypeName="t:Integer" xsi:type="PositionOf">
+                        <pattern resultTypeName="t:String" valueType="t:String" value="mg" xsi:type="Literal"/>
+                        <string resultTypeName="t:String" path="unit" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                        </string>
+                     </operand>
+                     <operand resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+                  </operand>
+               </operand>
+            </condition>
+            <then resultTypeName="t:Quantity" classType="t:Quantity" xsi:type="Instance">
+               <element name="value">
+                  <value resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                        <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand xsi:type="ToDecimal">
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="1000" xsi:type="Literal"/>
+                     </operand>
+                  </value>
+               </element>
+               <element name="unit">
+                  <value resultTypeName="t:String" xsi:type="Concatenate">
+                     <operand resultTypeName="t:String" valueType="t:String" value="mcg" xsi:type="Literal"/>
+                     <operand resultTypeName="t:String" xsi:type="Substring">
+                        <stringToSub resultTypeName="t:String" path="unit" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                        </stringToSub>
+                        <startIndex resultTypeName="t:Integer" valueType="t:Integer" value="2" xsi:type="Literal"/>
+                     </operand>
+                  </value>
+               </element>
+            </then>
+            <else resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+         </expression>
+         <operand name="strength">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def name="GetIngredients" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType xsi:type="TupleTypeSpecifier">
+               <element name="rxNormCode">
+                  <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="doseFormCode">
+                  <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="doseFormName">
+                  <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="ingredientCode">
+                  <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="ingredientName">
+                  <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="strength">
+                  <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+               </element>
+            </elementType>
+         </resultTypeSpecifier>
+         <expression xsi:type="List">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType xsi:type="TupleTypeSpecifier">
+                  <element name="rxNormCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="doseFormCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="doseFormName">
+                     <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="ingredientCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="ingredientName">
+                     <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="strength">
+                     <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+               </elementType>
+            </resultTypeSpecifier>
+            <element xsi:type="Tuple">
+               <resultTypeSpecifier xsi:type="TupleTypeSpecifier">
+                  <element name="rxNormCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="doseFormCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="doseFormName">
+                     <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="ingredientCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="ingredientName">
+                     <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="strength">
+                     <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+               </resultTypeSpecifier>
+               <element name="rxNormCode">
+                  <value resultTypeName="t:Code" name="rxNormCode" xsi:type="OperandRef"/>
+               </element>
+               <element name="doseFormCode">
+                  <value resultTypeName="t:Code" strict="false" xsi:type="As">
+                     <operand resultTypeName="t:Any" xsi:type="Null"/>
+                     <asTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </value>
+               </element>
+               <element name="doseFormName">
+                  <value resultTypeName="t:String" strict="false" xsi:type="As">
+                     <operand resultTypeName="t:Any" xsi:type="Null"/>
+                     <asTypeSpecifier resultTypeName="t:String" name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </value>
+               </element>
+               <element name="ingredientCode">
+                  <value resultTypeName="t:Code" strict="false" xsi:type="As">
+                     <operand resultTypeName="t:Any" xsi:type="Null"/>
+                     <asTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </value>
+               </element>
+               <element name="ingredientName">
+                  <value resultTypeName="t:String" strict="false" xsi:type="As">
+                     <operand resultTypeName="t:Any" xsi:type="Null"/>
+                     <asTypeSpecifier resultTypeName="t:String" name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </value>
+               </element>
+               <element name="strength">
+                  <value resultTypeName="t:Quantity" strict="false" xsi:type="As">
+                     <operand resultTypeName="t:Any" xsi:type="Null"/>
+                     <asTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </value>
+               </element>
+            </element>
+         </expression>
+         <operand name="rxNormCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def resultTypeName="t:Quantity" name="GetDailyDose" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:Quantity" xsi:type="Case">
+            <caseItem>
+               <when resultTypeName="t:Boolean" name="IsPatch" xsi:type="FunctionRef">
+                  <operand resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+               </when>
+               <then resultTypeName="t:Quantity" xsi:type="If">
+                  <condition asType="t:Boolean" xsi:type="As">
+                     <operand resultTypeName="t:Boolean" xsi:type="In">
+                        <operand resultTypeName="t:Integer" xsi:type="ToInteger">
+                           <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                              <source resultTypeName="t:Code" name="ingredientCode" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand xsi:type="List">
+                           <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                              <elementType name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="1819" xsi:type="Literal"/>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="4337" xsi:type="Literal"/>
+                        </operand>
+                     </operand>
+                  </condition>
+                  <then resultTypeName="t:Quantity" classType="t:Quantity" xsi:type="Instance">
+                     <element name="value">
+                        <value resultTypeName="t:Decimal" xsi:type="Multiply">
+                           <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                              <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                           </operand>
+                           <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                              <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                           </operand>
+                        </value>
+                     </element>
+                     <element name="unit">
+                        <value resultTypeName="t:String" path="unit" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                        </value>
+                     </element>
+                  </then>
+                  <else asType="t:Quantity" xsi:type="As">
+                     <operand resultTypeName="t:Any" xsi:type="Null"/>
+                  </else>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Boolean" xsi:type="In">
+                  <operand resultTypeName="t:String" path="unit" xsi:type="Property">
+                     <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                  </operand>
+                  <operand xsi:type="List">
+                     <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                        <elementType name="t:String" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                     <element resultTypeName="t:String" valueType="t:String" value="mg" xsi:type="Literal"/>
+                     <element resultTypeName="t:String" valueType="t:String" value="mcg" xsi:type="Literal"/>
+                  </operand>
+               </when>
+               <then resultTypeName="t:Quantity" classType="t:Quantity" xsi:type="Instance">
+                  <element name="value">
+                     <value resultTypeName="t:Decimal" xsi:type="Multiply">
+                        <operand resultTypeName="t:Decimal" name="dosesPerDay" xsi:type="OperandRef"/>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                        </operand>
+                     </value>
+                  </element>
+                  <element name="unit">
+                     <value resultTypeName="t:String" path="unit" xsi:type="Property">
+                        <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                     </value>
+                  </element>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Boolean" xsi:type="And">
+                  <operand resultTypeName="t:Boolean" xsi:type="Equal">
+                     <operand resultTypeName="t:String" path="unit" xsi:type="Property">
+                        <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                     </operand>
+                     <operand resultTypeName="t:String" valueType="t:String" value="mL" xsi:type="Literal"/>
+                  </operand>
+                  <operand resultTypeName="t:Boolean" xsi:type="Equal">
+                     <operand resultTypeName="t:Integer" xsi:type="PositionOf">
+                        <pattern resultTypeName="t:String" valueType="t:String" value="/mL" xsi:type="Literal"/>
+                        <string resultTypeName="t:String" path="unit" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                        </string>
+                     </operand>
+                     <operand resultTypeName="t:Integer" xsi:type="Subtract">
+                        <operand resultTypeName="t:Integer" xsi:type="Length">
+                           <operand resultTypeName="t:String" path="unit" xsi:type="Property">
+                              <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand resultTypeName="t:Integer" valueType="t:Integer" value="3" xsi:type="Literal"/>
+                     </operand>
+                  </operand>
+               </when>
+               <then resultTypeName="t:Quantity" classType="t:Quantity" xsi:type="Instance">
+                  <element name="value">
+                     <value resultTypeName="t:Decimal" xsi:type="Multiply">
+                        <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                           <operand resultTypeName="t:Decimal" name="dosesPerDay" xsi:type="OperandRef"/>
+                           <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                              <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                        </operand>
+                     </value>
+                  </element>
+                  <element name="unit">
+                     <value resultTypeName="t:String" xsi:type="Substring">
+                        <stringToSub resultTypeName="t:String" path="unit" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                        </stringToSub>
+                        <startIndex resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+                        <length resultTypeName="t:Integer" xsi:type="PositionOf">
+                           <pattern resultTypeName="t:String" valueType="t:String" value="/" xsi:type="Literal"/>
+                           <string resultTypeName="t:String" path="unit" xsi:type="Property">
+                              <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                           </string>
+                        </length>
+                     </value>
+                  </element>
+               </then>
+            </caseItem>
+            <else resultTypeName="t:Quantity" classType="t:Quantity" xsi:type="Instance">
+               <element name="value">
+                  <value resultTypeName="t:Decimal" xsi:type="Multiply">
+                     <operand resultTypeName="t:Decimal" xsi:type="Multiply">
+                        <operand resultTypeName="t:Decimal" name="dosesPerDay" xsi:type="OperandRef"/>
+                        <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                     <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                        <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                     </operand>
+                  </value>
+               </element>
+               <element name="unit">
+                  <value resultTypeName="t:String" xsi:type="Substring">
+                     <stringToSub resultTypeName="t:String" path="unit" xsi:type="Property">
+                        <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                     </stringToSub>
+                     <startIndex resultTypeName="t:Integer" valueType="t:Integer" value="0" xsi:type="Literal"/>
+                     <length resultTypeName="t:Integer" xsi:type="PositionOf">
+                        <pattern resultTypeName="t:String" valueType="t:String" value="/" xsi:type="Literal"/>
+                        <string resultTypeName="t:String" path="unit" xsi:type="Property">
+                           <source resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                        </string>
+                     </length>
+                  </value>
+               </element>
+            </else>
+         </expression>
+         <operand name="ingredientCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="strength">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="doseFormCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="doseQuantity">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="dosesPerDay">
+            <operandTypeSpecifier resultTypeName="t:Decimal" name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def resultTypeName="t:String" name="GetMedicationName" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:String" path="display" xsi:type="Property">
+            <source resultTypeName="t:Code" name="rxNormCode" xsi:type="OperandRef"/>
+         </expression>
+         <operand name="rxNormCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def resultTypeName="t:String" name="GetDailyDoseDescription" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression resultTypeName="t:String" xsi:type="Case">
+            <caseItem>
+               <when resultTypeName="t:Boolean" name="IsPatch" xsi:type="FunctionRef">
+                  <operand resultTypeName="t:Code" name="doseFormCode" xsi:type="OperandRef"/>
+               </when>
+               <then resultTypeName="t:String" xsi:type="If">
+                  <condition asType="t:Boolean" xsi:type="As">
+                     <operand resultTypeName="t:Boolean" xsi:type="In">
+                        <operand resultTypeName="t:Integer" xsi:type="ToInteger">
+                           <operand resultTypeName="t:String" path="code" xsi:type="Property">
+                              <source resultTypeName="t:Code" name="ingredientCode" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand xsi:type="List">
+                           <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                              <elementType name="t:Integer" xsi:type="NamedTypeSpecifier"/>
+                           </resultTypeSpecifier>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="1819" xsi:type="Literal"/>
+                           <element resultTypeName="t:Integer" valueType="t:Integer" value="4337" xsi:type="Literal"/>
+                        </operand>
+                     </operand>
+                  </condition>
+                  <then resultTypeName="t:String" xsi:type="Concatenate">
+                     <operand resultTypeName="t:String" xsi:type="Concatenate">
+                        <operand resultTypeName="t:String" xsi:type="Concatenate">
+                           <operand resultTypeName="t:String" xsi:type="Concatenate">
+                              <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                 <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                    <operand resultTypeName="t:String" name="ingredientName" xsi:type="OperandRef"/>
+                                    <operand resultTypeName="t:String" valueType="t:String" value=" patch: " xsi:type="Literal"/>
+                                 </operand>
+                                 <operand resultTypeName="t:String" xsi:type="ToString">
+                                    <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                       <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                                    </operand>
+                                 </operand>
+                              </operand>
+                              <operand resultTypeName="t:String" valueType="t:String" value=" * " xsi:type="Literal"/>
+                           </operand>
+                           <operand resultTypeName="t:String" xsi:type="ToString">
+                              <operand resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand resultTypeName="t:String" valueType="t:String" value=" = " xsi:type="Literal"/>
+                     </operand>
+                     <operand resultTypeName="t:String" xsi:type="ToString">
+                        <operand resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                     </operand>
+                  </then>
+                  <else asType="t:String" xsi:type="As">
+                     <operand resultTypeName="t:Any" xsi:type="Null"/>
+                  </else>
+               </then>
+            </caseItem>
+            <caseItem>
+               <when resultTypeName="t:Boolean" xsi:type="In">
+                  <operand resultTypeName="t:String" path="unit" xsi:type="Property">
+                     <source resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                  </operand>
+                  <operand xsi:type="List">
+                     <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                        <elementType name="t:String" xsi:type="NamedTypeSpecifier"/>
+                     </resultTypeSpecifier>
+                     <element resultTypeName="t:String" valueType="t:String" value="mg" xsi:type="Literal"/>
+                     <element resultTypeName="t:String" valueType="t:String" value="mcg" xsi:type="Literal"/>
+                  </operand>
+               </when>
+               <then resultTypeName="t:String" xsi:type="Concatenate">
+                  <operand resultTypeName="t:String" xsi:type="Concatenate">
+                     <operand resultTypeName="t:String" xsi:type="Concatenate">
+                        <operand resultTypeName="t:String" xsi:type="Concatenate">
+                           <operand resultTypeName="t:String" xsi:type="Concatenate">
+                              <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                 <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                    <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                       <operand resultTypeName="t:String" name="ingredientName" xsi:type="OperandRef"/>
+                                       <operand resultTypeName="t:String" valueType="t:String" value=" " xsi:type="Literal"/>
+                                    </operand>
+                                    <operand resultTypeName="t:String" name="doseFormName" xsi:type="OperandRef"/>
+                                 </operand>
+                                 <operand resultTypeName="t:String" valueType="t:String" value=": " xsi:type="Literal"/>
+                              </operand>
+                              <operand resultTypeName="t:String" xsi:type="ToString">
+                                 <operand resultTypeName="t:Decimal" name="dosesPerDay" xsi:type="OperandRef"/>
+                              </operand>
+                           </operand>
+                           <operand resultTypeName="t:String" valueType="t:String" value="/d * " xsi:type="Literal"/>
+                        </operand>
+                        <operand resultTypeName="t:String" xsi:type="ToString">
+                           <operand resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                        </operand>
+                     </operand>
+                     <operand resultTypeName="t:String" valueType="t:String" value=" = " xsi:type="Literal"/>
+                  </operand>
+                  <operand resultTypeName="t:String" xsi:type="ToString">
+                     <operand resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+                  </operand>
+               </then>
+            </caseItem>
+            <else resultTypeName="t:String" xsi:type="Concatenate">
+               <operand resultTypeName="t:String" xsi:type="Concatenate">
+                  <operand resultTypeName="t:String" xsi:type="Concatenate">
+                     <operand resultTypeName="t:String" xsi:type="Concatenate">
+                        <operand resultTypeName="t:String" xsi:type="Concatenate">
+                           <operand resultTypeName="t:String" xsi:type="Concatenate">
+                              <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                 <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                    <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                       <operand resultTypeName="t:String" xsi:type="Concatenate">
+                                          <operand resultTypeName="t:String" name="ingredientName" xsi:type="OperandRef"/>
+                                          <operand resultTypeName="t:String" valueType="t:String" value=" " xsi:type="Literal"/>
+                                       </operand>
+                                       <operand resultTypeName="t:String" name="doseFormName" xsi:type="OperandRef"/>
+                                    </operand>
+                                    <operand resultTypeName="t:String" valueType="t:String" value=": " xsi:type="Literal"/>
+                                 </operand>
+                                 <operand resultTypeName="t:String" xsi:type="ToString">
+                                    <operand resultTypeName="t:Decimal" name="dosesPerDay" xsi:type="OperandRef"/>
+                                 </operand>
+                              </operand>
+                              <operand resultTypeName="t:String" valueType="t:String" value="/d * " xsi:type="Literal"/>
+                           </operand>
+                           <operand resultTypeName="t:String" xsi:type="ToString">
+                              <operand resultTypeName="t:Quantity" name="doseQuantity" xsi:type="OperandRef"/>
+                           </operand>
+                        </operand>
+                        <operand resultTypeName="t:String" valueType="t:String" value=" * " xsi:type="Literal"/>
+                     </operand>
+                     <operand resultTypeName="t:String" xsi:type="ToString">
+                        <operand resultTypeName="t:Quantity" name="strength" xsi:type="OperandRef"/>
+                     </operand>
+                  </operand>
+                  <operand resultTypeName="t:String" valueType="t:String" value=" = " xsi:type="Literal"/>
+               </operand>
+               <operand resultTypeName="t:String" xsi:type="ToString">
+                  <operand resultTypeName="t:Quantity" name="dailyDose" xsi:type="OperandRef"/>
+               </operand>
+            </else>
+         </expression>
+         <operand name="ingredientCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="ingredientName">
+            <operandTypeSpecifier resultTypeName="t:String" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="strength">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="doseFormCode">
+            <operandTypeSpecifier resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="doseFormName">
+            <operandTypeSpecifier resultTypeName="t:String" name="t:String" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="doseQuantity">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="dosesPerDay">
+            <operandTypeSpecifier resultTypeName="t:Decimal" name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+         <operand name="dailyDose">
+            <operandTypeSpecifier resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def name="CalculateMMEs" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType xsi:type="TupleTypeSpecifier">
+               <element name="rxNormCode">
+                  <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="doseFormCode">
+                  <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="doseQuantity">
+                  <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="dosesPerDay">
+                  <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="ingredientCode">
+                  <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="ingredientName">
+                  <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="strength">
+                  <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="dailyDose">
+                  <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="dailyDoseDescription">
+                  <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="conversionFactor">
+                  <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+               </element>
+               <element name="mme">
+                  <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+               </element>
+            </elementType>
+         </resultTypeSpecifier>
+         <expression xsi:type="Flatten">
+            <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+               <elementType xsi:type="TupleTypeSpecifier">
+                  <element name="rxNormCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="doseFormCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="doseQuantity">
+                     <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="dosesPerDay">
+                     <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="ingredientCode">
+                     <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="ingredientName">
+                     <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="strength">
+                     <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="dailyDose">
+                     <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="dailyDoseDescription">
+                     <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="conversionFactor">
+                     <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="mme">
+                     <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+               </elementType>
+            </resultTypeSpecifier>
+            <operand xsi:type="Query">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType xsi:type="ListTypeSpecifier">
+                     <elementType xsi:type="TupleTypeSpecifier">
+                        <element name="rxNormCode">
+                           <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="doseFormCode">
+                           <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="doseQuantity">
+                           <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="dosesPerDay">
+                           <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="ingredientCode">
+                           <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="ingredientName">
+                           <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="strength">
+                           <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="dailyDose">
+                           <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="dailyDoseDescription">
+                           <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="conversionFactor">
+                           <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="mme">
+                           <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                     </elementType>
+                  </elementType>
+               </resultTypeSpecifier>
+               <source alias="M">
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType xsi:type="TupleTypeSpecifier">
+                        <element name="rxNormCode">
+                           <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="doseQuantity">
+                           <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="dosesPerDay">
+                           <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                     </elementType>
+                  </resultTypeSpecifier>
+                  <expression name="medications" xsi:type="OperandRef">
+                     <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                        <elementType xsi:type="TupleTypeSpecifier">
+                           <element name="rxNormCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="doseQuantity">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="dosesPerDay">
+                              <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                        </elementType>
+                     </resultTypeSpecifier>
+                  </expression>
+               </source>
+               <let identifier="Ingredients">
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType xsi:type="TupleTypeSpecifier">
+                        <element name="rxNormCode">
+                           <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="doseFormCode">
+                           <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="doseFormName">
+                           <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="ingredientCode">
+                           <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="ingredientName">
+                           <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                        <element name="strength">
+                           <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                        </element>
+                     </elementType>
+                  </resultTypeSpecifier>
+                  <expression name="GetIngredients" xsi:type="FunctionRef">
+                     <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                        <elementType xsi:type="TupleTypeSpecifier">
+                           <element name="rxNormCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="doseFormCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="doseFormName">
+                              <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="ingredientCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="ingredientName">
+                              <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="strength">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                        </elementType>
+                     </resultTypeSpecifier>
+                     <operand resultTypeName="t:Code" path="rxNormCode" scope="M" xsi:type="Property"/>
+                  </expression>
+               </let>
+               <return>
+                  <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                     <elementType xsi:type="ListTypeSpecifier">
+                        <elementType xsi:type="TupleTypeSpecifier">
+                           <element name="rxNormCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="doseFormCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="doseQuantity">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="dosesPerDay">
+                              <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="ingredientCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="ingredientName">
+                              <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="strength">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="dailyDose">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="dailyDoseDescription">
+                              <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="conversionFactor">
+                              <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="mme">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                        </elementType>
+                     </elementType>
+                  </resultTypeSpecifier>
+                  <expression xsi:type="Query">
+                     <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                        <elementType xsi:type="TupleTypeSpecifier">
+                           <element name="rxNormCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="doseFormCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="doseQuantity">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="dosesPerDay">
+                              <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="ingredientCode">
+                              <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="ingredientName">
+                              <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="strength">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="dailyDose">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="dailyDoseDescription">
+                              <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="conversionFactor">
+                              <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                           <element name="mme">
+                              <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                           </element>
+                        </elementType>
+                     </resultTypeSpecifier>
+                     <source alias="I">
+                        <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                           <elementType xsi:type="TupleTypeSpecifier">
+                              <element name="rxNormCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="doseFormCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="doseFormName">
+                                 <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="ingredientCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="ingredientName">
+                                 <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="strength">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                           </elementType>
+                        </resultTypeSpecifier>
+                        <expression name="Ingredients" xsi:type="QueryLetRef">
+                           <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                              <elementType xsi:type="TupleTypeSpecifier">
+                                 <element name="rxNormCode">
+                                    <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                                 </element>
+                                 <element name="doseFormCode">
+                                    <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                                 </element>
+                                 <element name="doseFormName">
+                                    <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                                 </element>
+                                 <element name="ingredientCode">
+                                    <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                                 </element>
+                                 <element name="ingredientName">
+                                    <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                                 </element>
+                                 <element name="strength">
+                                    <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                                 </element>
+                              </elementType>
+                           </resultTypeSpecifier>
+                        </expression>
+                     </source>
+                     <let resultTypeName="t:Quantity" identifier="adjustedDoseQuantity">
+                        <expression resultTypeName="t:Quantity" name="EnsureMicrogramQuantity" xsi:type="FunctionRef">
+                           <operand resultTypeName="t:Quantity" path="doseQuantity" scope="M" xsi:type="Property"/>
+                        </expression>
+                     </let>
+                     <let resultTypeName="t:Quantity" identifier="dailyDose">
+                        <expression resultTypeName="t:Quantity" name="GetDailyDose" xsi:type="FunctionRef">
+                           <operand resultTypeName="t:Code" path="ingredientCode" scope="I" xsi:type="Property"/>
+                           <operand resultTypeName="t:Quantity" path="strength" scope="I" xsi:type="Property"/>
+                           <operand resultTypeName="t:Code" path="doseFormCode" scope="I" xsi:type="Property"/>
+                           <operand resultTypeName="t:Quantity" name="adjustedDoseQuantity" xsi:type="QueryLetRef"/>
+                           <operand resultTypeName="t:Decimal" path="dosesPerDay" scope="M" xsi:type="Property"/>
+                        </expression>
+                     </let>
+                     <let resultTypeName="t:Decimal" identifier="factor">
+                        <expression resultTypeName="t:Decimal" name="GetConversionFactor" xsi:type="FunctionRef">
+                           <operand resultTypeName="t:Code" path="ingredientCode" scope="I" xsi:type="Property"/>
+                           <operand resultTypeName="t:Quantity" name="dailyDose" xsi:type="QueryLetRef"/>
+                           <operand resultTypeName="t:Code" path="doseFormCode" scope="I" xsi:type="Property"/>
+                        </expression>
+                     </let>
+                     <return>
+                        <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                           <elementType xsi:type="TupleTypeSpecifier">
+                              <element name="rxNormCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="doseFormCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="doseQuantity">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="dosesPerDay">
+                                 <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="ingredientCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="ingredientName">
+                                 <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="strength">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="dailyDose">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="dailyDoseDescription">
+                                 <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="conversionFactor">
+                                 <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="mme">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                           </elementType>
+                        </resultTypeSpecifier>
+                        <expression xsi:type="Tuple">
+                           <resultTypeSpecifier xsi:type="TupleTypeSpecifier">
+                              <element name="rxNormCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="doseFormCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="doseQuantity">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="dosesPerDay">
+                                 <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="ingredientCode">
+                                 <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="ingredientName">
+                                 <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="strength">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="dailyDose">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="dailyDoseDescription">
+                                 <type name="t:String" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="conversionFactor">
+                                 <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                              <element name="mme">
+                                 <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                              </element>
+                           </resultTypeSpecifier>
+                           <element name="rxNormCode">
+                              <value resultTypeName="t:Code" path="rxNormCode" scope="M" xsi:type="Property"/>
+                           </element>
+                           <element name="doseFormCode">
+                              <value resultTypeName="t:Code" path="doseFormCode" scope="I" xsi:type="Property"/>
+                           </element>
+                           <element name="doseQuantity">
+                              <value resultTypeName="t:Quantity" name="adjustedDoseQuantity" xsi:type="QueryLetRef"/>
+                           </element>
+                           <element name="dosesPerDay">
+                              <value resultTypeName="t:Decimal" path="dosesPerDay" scope="M" xsi:type="Property"/>
+                           </element>
+                           <element name="ingredientCode">
+                              <value resultTypeName="t:Code" path="ingredientCode" scope="I" xsi:type="Property"/>
+                           </element>
+                           <element name="ingredientName">
+                              <value resultTypeName="t:String" path="ingredientName" scope="I" xsi:type="Property"/>
+                           </element>
+                           <element name="strength">
+                              <value resultTypeName="t:Quantity" path="strength" scope="I" xsi:type="Property"/>
+                           </element>
+                           <element name="dailyDose">
+                              <value resultTypeName="t:Quantity" name="dailyDose" xsi:type="QueryLetRef"/>
+                           </element>
+                           <element name="dailyDoseDescription">
+                              <value resultTypeName="t:String" name="GetDailyDoseDescription" xsi:type="FunctionRef">
+                                 <operand resultTypeName="t:Code" path="ingredientCode" scope="I" xsi:type="Property"/>
+                                 <operand resultTypeName="t:String" path="ingredientName" scope="I" xsi:type="Property"/>
+                                 <operand resultTypeName="t:Quantity" path="strength" scope="I" xsi:type="Property"/>
+                                 <operand resultTypeName="t:Code" path="doseFormCode" scope="I" xsi:type="Property"/>
+                                 <operand resultTypeName="t:String" path="doseFormName" scope="I" xsi:type="Property"/>
+                                 <operand resultTypeName="t:Quantity" name="adjustedDoseQuantity" xsi:type="QueryLetRef"/>
+                                 <operand resultTypeName="t:Decimal" path="dosesPerDay" scope="M" xsi:type="Property"/>
+                                 <operand resultTypeName="t:Quantity" name="dailyDose" xsi:type="QueryLetRef"/>
+                              </value>
+                           </element>
+                           <element name="conversionFactor">
+                              <value resultTypeName="t:Decimal" name="factor" xsi:type="QueryLetRef"/>
+                           </element>
+                           <element name="mme">
+                              <value resultTypeName="t:Quantity" classType="t:Quantity" xsi:type="Instance">
+                                 <element name="value">
+                                    <value resultTypeName="t:Decimal" xsi:type="Multiply">
+                                       <operand resultTypeName="t:Decimal" path="value" xsi:type="Property">
+                                          <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="QueryLetRef"/>
+                                       </operand>
+                                       <operand resultTypeName="t:Decimal" name="factor" xsi:type="QueryLetRef"/>
+                                    </value>
+                                 </element>
+                                 <element name="unit">
+                                    <value resultTypeName="t:String" xsi:type="Concatenate">
+                                       <operand resultTypeName="t:String" path="unit" xsi:type="Property">
+                                          <source resultTypeName="t:Quantity" name="dailyDose" xsi:type="QueryLetRef"/>
+                                       </operand>
+                                       <operand resultTypeName="t:String" valueType="t:String" value="/d" xsi:type="Literal"/>
+                                    </value>
+                                 </element>
+                              </value>
+                           </element>
+                        </expression>
+                     </return>
+                  </expression>
+               </return>
+            </operand>
+         </expression>
+         <operand name="medications">
+            <operandTypeSpecifier xsi:type="ListTypeSpecifier">
+               <resultTypeSpecifier xsi:type="ListTypeSpecifier">
+                  <elementType xsi:type="TupleTypeSpecifier">
+                     <element name="rxNormCode">
+                        <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                     </element>
+                     <element name="doseQuantity">
+                        <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                     </element>
+                     <element name="dosesPerDay">
+                        <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                     </element>
+                  </elementType>
+               </resultTypeSpecifier>
+               <elementType xsi:type="TupleTypeSpecifier">
+                  <resultTypeSpecifier xsi:type="TupleTypeSpecifier">
+                     <element name="rxNormCode">
+                        <type name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                     </element>
+                     <element name="doseQuantity">
+                        <type name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                     </element>
+                     <element name="dosesPerDay">
+                        <type name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                     </element>
+                  </resultTypeSpecifier>
+                  <element name="rxNormCode">
+                     <type resultTypeName="t:Code" name="t:Code" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="doseQuantity">
+                     <type resultTypeName="t:Quantity" name="t:Quantity" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+                  <element name="dosesPerDay">
+                     <type resultTypeName="t:Decimal" name="t:Decimal" xsi:type="NamedTypeSpecifier"/>
+                  </element>
+               </elementType>
+            </operandTypeSpecifier>
+         </operand>
+      </def>
+   </statements>
+</library>
+
+

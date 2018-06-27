@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <identifier id="OpioidCDS_DSTU2_REC_11" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localIdentifier="FHIR" uri="http://hl7.org/fhir" version="1.0.2"/>
+   </usings>
+   <includes>
+      <def localIdentifier="Common" path="OpioidCDSCommonDSTU2" version="0.1.0"/>
+   </includes>
+   <parameters>
+      <def name="ContextPrescriptions" accessLevel="Public">
+         <parameterTypeSpecifier xsi:type="ListTypeSpecifier">
+            <elementType name="fhir:MedicationOrder" xsi:type="NamedTypeSpecifier"/>
+         </parameterTypeSpecifier>
+      </def>
+   </parameters>
+   <statements>
+      <def name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand dataType="fhir:Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def name="Validate Trigger Event For Benzodiazepine" context="Patient" accessLevel="Public">
+         <expression xsi:type="Exists">
+            <operand xsi:type="Query">
+               <source alias="triggerScript">
+                  <expression name="ContextPrescriptions" xsi:type="ParameterRef"/>
+               </source>
+               <where xsi:type="InValueSet">
+                  <code name="ToCode" libraryName="Common" xsi:type="FunctionRef">
+                     <operand xsi:type="Indexer">
+                        <operand path="coding" xsi:type="Property">
+                           <source path="medicationCodeableConcept" scope="triggerScript" xsi:type="Property"/>
+                        </operand>
+                        <operand valueType="t:Integer" value="0" xsi:type="Literal"/>
+                     </operand>
+                  </code>
+                  <valueset name="Benzodiazepines" libraryName="Common"/>
+               </where>
+            </operand>
+         </expression>
+      </def>
+      <def name="Validate Trigger Event For Ambulatory Care Abuse Potential" context="Patient" accessLevel="Public">
+         <expression xsi:type="Exists">
+            <operand xsi:type="Query">
+               <source alias="triggerScript">
+                  <expression name="ContextPrescriptions" xsi:type="ParameterRef"/>
+               </source>
+               <where xsi:type="InValueSet">
+                  <code name="ToCode" libraryName="Common" xsi:type="FunctionRef">
+                     <operand xsi:type="Indexer">
+                        <operand path="coding" xsi:type="Property">
+                           <source path="medicationCodeableConcept" scope="triggerScript" xsi:type="Property"/>
+                        </operand>
+                        <operand valueType="t:Integer" value="0" xsi:type="Literal"/>
+                     </operand>
+                  </code>
+                  <valueset name="Ambulatory Abuse Potential Opioids" libraryName="Common"/>
+               </where>
+            </operand>
+         </expression>
+      </def>
+      <def name="Exclusion Criteria" context="Patient" accessLevel="Public">
+         <expression xsi:type="Or">
+            <operand name="End of Life Assessment" libraryName="Common" xsi:type="ExpressionRef"/>
+            <operand name="Is Context Prescription End of Life Opioid?" libraryName="Common" xsi:type="FunctionRef">
+               <operand name="ContextPrescriptions" xsi:type="ParameterRef"/>
+            </operand>
+         </expression>
+      </def>
+      <def name="On Benzodiazepine" context="Patient" accessLevel="Public">
+         <expression xsi:type="Or">
+            <operand name="Validate Trigger Event For Benzodiazepine" xsi:type="ExpressionRef"/>
+            <operand xsi:type="Exists">
+               <operand name="Active Ambulatory Benzodiazepine Rx" libraryName="Common" xsi:type="ExpressionRef"/>
+            </operand>
+         </expression>
+      </def>
+      <def name="Opioid with Ambulatory Care Abuse Potential" context="Patient" accessLevel="Public">
+         <expression xsi:type="Or">
+            <operand name="Validate Trigger Event For Ambulatory Care Abuse Potential" xsi:type="ExpressionRef"/>
+            <operand xsi:type="Exists">
+               <operand name="Active Ambulatory Opioid Rx" libraryName="Common" xsi:type="ExpressionRef"/>
+            </operand>
+         </expression>
+      </def>
+      <def name="Inclusion Criteria" context="Patient" accessLevel="Public">
+         <expression xsi:type="And">
+            <operand xsi:type="And">
+               <operand xsi:type="And">
+                  <operand xsi:type="Or">
+                     <operand name="Validate Trigger Event For Benzodiazepine" xsi:type="ExpressionRef"/>
+                     <operand name="Validate Trigger Event For Ambulatory Care Abuse Potential" xsi:type="ExpressionRef"/>
+                  </operand>
+                  <operand xsi:type="Not">
+                     <operand name="Exclusion Criteria" xsi:type="ExpressionRef"/>
+                  </operand>
+               </operand>
+               <operand name="On Benzodiazepine" xsi:type="ExpressionRef"/>
+            </operand>
+            <operand name="Opioid with Ambulatory Care Abuse Potential" xsi:type="ExpressionRef"/>
+         </expression>
+      </def>
+      <def name="Get Indicator" context="Patient" accessLevel="Public">
+         <expression valueType="t:String" value="warning" xsi:type="Literal"/>
+      </def>
+      <def name="Get Summary" context="Patient" accessLevel="Public">
+         <expression valueType="t:String" value="Avoid prescribing opioid pain medication and benzodiazepine concurrently whenever possible." xsi:type="Literal"/>
+      </def>
+      <def name="Get Detail" context="Patient" accessLevel="Public">
+         <expression xsi:type="If">
+            <condition asType="t:Boolean" xsi:type="As">
+               <operand name="Validate Trigger Event For Benzodiazepine" xsi:type="ExpressionRef"/>
+            </condition>
+            <then valueType="t:String" value="The benzodiazepine prescription request is concurrent with an active opioid prescription" xsi:type="Literal"/>
+            <else valueType="t:String" value="The opioid prescription request is concurrent with an active benzodiazepine prescription" xsi:type="Literal"/>
+         </expression>
+      </def>
+   </statements>
+</library>
+

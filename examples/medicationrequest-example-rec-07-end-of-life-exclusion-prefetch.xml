@@ -1,0 +1,54 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+   <id value="example-rec-07-end-of-life-exclusion-prefetch"/>
+   <status value="active"/>
+   <intent value="order"/>
+   <category>
+      <coding>
+         <code value="outpatient"/>
+      </coding>
+   </category>
+   <medicationCodeableConcept>
+      <coding>
+         <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+         <code value="1012727"/>
+         <display value="Carbinoxamine maleate 0.4 MG/ML / Hydrocodone Bitartrate 1 MG/ML / Pseudoephedrine Hydrochloride 6 MG/ML Oral Solution"/>
+      </coding>
+   </medicationCodeableConcept>
+   <subject>
+      <reference value="Patient/example-rec-07-end-of-life-exclusion"/>
+   </subject>
+   <context>
+      <reference value="Encounter/example-rec-07-end-of-life-exclusion-prefetch"/>
+   </context>
+   <authoredOn>
+      <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
+         <valueString value="Today() - 6 weeks"/>
+      </extension>
+   </authoredOn>
+   <dosageInstruction>
+      <timing>
+         <repeat>
+            <frequency value="3"/>
+            <period value="1.0"/>
+            <periodUnit value="d"/>
+         </repeat>
+      </timing>
+      <asNeededBoolean value="false"/>
+      <doseQuantity>
+         <value value="1.0"/>
+         <unit value="tablet"/>
+      </doseQuantity>
+   </dosageInstruction>
+   <dispenseRequest>
+      <validityPeriod>
+         <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
+            <valueString value="FHIR.Period { start: FHIR.dateTime { value: Today() - 6 weeks }, end: FHIR.dateTime { value: Today() + 6 weeks } }"/>
+         </extension>
+      </validityPeriod>
+      <numberOfRepeatsAllowed value="3"/>
+      <expectedSupplyDuration>
+         <value value="30.0"/>
+         <unit value="d"/>
+      </expectedSupplyDuration>
+   </dispenseRequest>
+</MedicationRequest>

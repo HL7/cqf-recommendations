@@ -1,0 +1,39 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="example-rec-10-end-of-life-med-exclusion"/>
+   <type value="transaction"/>
+   <entry>
+      <fullUrl value="http://measure.eval.kanvix.com/cqf-ruler/baseDstu3/Patient/example-rec-10-end-of-life-med-exclusion"/>
+      <resource>
+         <Patient xmlns="http://hl7.org/fhir">
+            <id value="example-rec-10-end-of-life-med-exclusion"/>
+            <gender value="female"/>
+            <birthDate value="1982-01-07"/>
+         </Patient>
+      </resource>
+      <request>
+         <method value="PUT"/>
+         <url value="http://measure.eval.kanvix.com/cqf-ruler/baseDstu3/Patient/example-rec-10-end-of-life-med-exclusion"/>
+      </request>
+   </entry>
+   <entry>
+      <fullUrl value="http://measure.eval.kanvix.com/cqf-ruler/baseDstu3/Encounter/example-rec-10-end-of-life-med-exclusion-context"/>
+      <resource>
+         <Encounter xmlns="http://hl7.org/fhir">
+            <id value="example-rec-10-end-of-life-med-exclusion-context"/>
+            <status value="finished"/>
+            <subject>
+               <reference value="Patient/example-rec-10-end-of-life-med-exclusion"/>
+            </subject>
+            <period>
+               <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
+                  <valueString value="FHIR.Period { start: FHIR.dateTime { value: Today() }, end: FHIR.dateTime { value: Today() } }"/>
+               </extension>
+            </period>
+         </Encounter>
+      </resource>
+      <request>
+         <method value="PUT"/>
+         <url value="http://measure.eval.kanvix.com/cqf-ruler/baseDstu3/Encounter/example-rec-10-end-of-life-med-exclusion-context"/>
+      </request>
+   </entry>
+</Bundle>

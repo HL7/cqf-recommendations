@@ -1,0 +1,23 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="cdc-acg-indicator"/>
+    <url value="http://hl7.org/fhir/ig/cdc-acg/ValueSet/cdc-acg-indicator"/>
+    <name value="RequestGroupActionIndicator"/>
+    <status value="active"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/ig/cdc-acg/CodeSystem/cdc-acg-indicator"/>
+            <concept>
+                <code value="info"/>
+                <display value="Information"/>
+            </concept>
+            <concept>
+                <code value="warning"/>
+                <display value="Warning"/>
+            </concept>
+            <concept>
+                <code value="hard-stop"/>
+                <display value="Hard Stop"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

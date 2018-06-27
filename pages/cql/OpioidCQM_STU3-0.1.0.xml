@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <identifier id="OpioidCQM_STU3" version="0.1.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localIdentifier="FHIR" uri="http://hl7.org/fhir" version="3.0.0"/>
+   </usings>
+   <includes>
+      <def localIdentifier="OMTKData" path="OMTKData" version="0.0.0"/>
+      <def localIdentifier="OMTKLogic" path="OMTKLogic" version="0.0.1"/>
+   </includes>
+   <parameters>
+      <def name="Measurement Period" accessLevel="Public">
+         <parameterTypeSpecifier xsi:type="IntervalTypeSpecifier">
+            <pointType name="t:DateTime" xsi:type="NamedTypeSpecifier"/>
+         </parameterTypeSpecifier>
+      </def>
+   </parameters>
+   <statements>
+      <def name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand dataType="fhir:Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def name="ToCode" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression classType="t:Code" xsi:type="Instance">
+            <element name="code">
+               <value path="value" xsi:type="Property">
+                  <source path="code" xsi:type="Property">
+                     <source name="coding" xsi:type="OperandRef"/>
+                  </source>
+               </value>
+            </element>
+            <element name="system">
+               <value path="value" xsi:type="Property">
+                  <source path="system" xsi:type="Property">
+                     <source name="coding" xsi:type="OperandRef"/>
+                  </source>
+               </value>
+            </element>
+            <element name="version">
+               <value path="value" xsi:type="Property">
+                  <source path="version" xsi:type="Property">
+                     <source name="coding" xsi:type="OperandRef"/>
+                  </source>
+               </value>
+            </element>
+            <element name="display">
+               <value path="value" xsi:type="Property">
+                  <source path="display" xsi:type="Property">
+                     <source name="coding" xsi:type="OperandRef"/>
+                  </source>
+               </value>
+            </element>
+         </expression>
+         <operand name="coding">
+            <operandTypeSpecifier name="fhir:Coding" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def name="ToQuantity" context="Patient" accessLevel="Public" xsi:type="FunctionDef">
+         <expression classType="t:Quantity" xsi:type="Instance">
+            <element name="value">
+               <value path="value" xsi:type="Property">
+                  <source path="value" xsi:type="Property">
+                     <source name="quantity" xsi:type="OperandRef"/>
+                  </source>
+               </value>
+            </element>
+            <element name="unit">
+               <value path="value" xsi:type="Property">
+                  <source path="unit" xsi:type="Property">
+                     <source name="quantity" xsi:type="OperandRef"/>
+                  </source>
+               </value>
+            </element>
+         </expression>
+         <operand name="quantity">
+            <operandTypeSpecifier name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </operand>
+      </def>
+      <def name="Prescriptions" context="Patient" accessLevel="Public">
+         <expression xsi:type="Query">
+            <source alias="O">
+               <expression dataType="fhir:MedicationDispense" xsi:type="Retrieve"/>
+            </source>
+            <let identifier="rxNormCode">
+               <expression name="ToCode" xsi:type="FunctionRef">
+                  <operand xsi:type="Indexer">
+                     <operand path="coding" xsi:type="Property">
+                        <source path="medication" scope="O" xsi:type="Property"/>
+                     </operand>
+                     <operand valueType="t:Integer" value="0" xsi:type="Literal"/>
+                  </operand>
+               </expression>
+            </let>
+            <let identifier="medicationName">
+               <expression name="GetMedicationName" libraryName="OMTKLogic" xsi:type="FunctionRef">
+                  <operand name="rxNormCode" xsi:type="QueryLetRef"/>
+               </expression>
+            </let>
+            <let identifier="dosageInstruction">
+               <expression xsi:type="Indexer">
+                  <operand path="dosageInstruction" scope="O" xsi:type="Property"/>
+                  <operand valueType="t:Integer" value="0" xsi:type="Literal"/>
+               </expression>
+            </let>
+            <let identifier="repeat">
+               <expression path="repeat" xsi:type="Property">
+                  <source path="timing" xsi:type="Property">
+                     <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                  </source>
+               </expression>
+            </let>
+            <let identifier="frequency">
+               <expression xsi:type="Coalesce">
+                  <operand path="value" xsi:type="Property">
+                     <source path="frequencyMax" xsi:type="Property">
+                        <source name="repeat" xsi:type="QueryLetRef"/>
+                     </source>
+                  </operand>
+                  <operand path="value" xsi:type="Property">
+                     <source path="frequency" xsi:type="Property">
+                        <source name="repeat" xsi:type="QueryLetRef"/>
+                     </source>
+                  </operand>
+               </expression>
+            </let>
+            <let identifier="period">
+               <expression classType="t:Quantity" xsi:type="Instance">
+                  <element name="value">
+                     <value path="value" xsi:type="Property">
+                        <source path="period" xsi:type="Property">
+                           <source name="repeat" xsi:type="QueryLetRef"/>
+                        </source>
+                     </value>
+                  </element>
+                  <element name="unit">
+                     <value path="value" xsi:type="Property">
+                        <source path="periodUnit" xsi:type="Property">
+                           <source name="repeat" xsi:type="QueryLetRef"/>
+                        </source>
+                     </value>
+                  </element>
+               </expression>
+            </let>
+            <let identifier="periodDescription">
+               <expression xsi:type="Concatenate">
+                  <operand xsi:type="Concatenate">
+                     <operand xsi:type="ToString">
+                        <operand path="value" xsi:type="Property">
+                           <source path="period" xsi:type="Property">
+                              <source name="repeat" xsi:type="QueryLetRef"/>
+                           </source>
+                        </operand>
+                     </operand>
+                     <operand xsi:type="Coalesce">
+                        <operand xsi:type="Concatenate">
+                           <operand valueType="t:String" value="-" xsi:type="Literal"/>
+                           <operand xsi:type="ToString">
+                              <operand path="value" xsi:type="Property">
+                                 <source path="periodMax" xsi:type="Property">
+                                    <source name="repeat" xsi:type="QueryLetRef"/>
+                                 </source>
+                              </operand>
+                           </operand>
+                        </operand>
+                        <operand valueType="t:String" value="" xsi:type="Literal"/>
+                     </operand>
+                  </operand>
+                  <operand path="value" xsi:type="Property">
+                     <source path="periodUnit" xsi:type="Property">
+                        <source name="repeat" xsi:type="QueryLetRef"/>
+                     </source>
+                  </operand>
+               </expression>
+            </let>
+            <let identifier="doseDescription">
+               <expression xsi:type="Coalesce">
+                  <operand xsi:type="ToString">
+                     <operand name="ToQuantity" xsi:type="FunctionRef">
+                        <operand asType="fhir:Quantity" xsi:type="As">
+                           <operand path="dose" xsi:type="Property">
+                              <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                           </operand>
+                        </operand>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="Concatenate">
+                     <operand xsi:type="Concatenate">
+                        <operand xsi:type="Concatenate">
+                           <operand xsi:type="ToString">
+                              <operand name="ToQuantity" xsi:type="FunctionRef">
+                                 <operand path="low" xsi:type="Property">
+                                    <source path="dose" xsi:type="Property">
+                                       <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                                    </source>
+                                 </operand>
+                              </operand>
+                           </operand>
+                           <operand valueType="t:String" value="-" xsi:type="Literal"/>
+                        </operand>
+                        <operand xsi:type="ToString">
+                           <operand name="ToQuantity" xsi:type="FunctionRef">
+                              <operand path="high" xsi:type="Property">
+                                 <source path="dose" xsi:type="Property">
+                                    <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                                 </source>
+                              </operand>
+                           </operand>
+                        </operand>
+                     </operand>
+                     <operand path="value" xsi:type="Property">
+                        <source path="unit" xsi:type="Property">
+                           <source path="high" xsi:type="Property">
+                              <source path="dose" xsi:type="Property">
+                                 <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                              </source>
+                           </source>
+                        </source>
+                     </operand>
+                  </operand>
+               </expression>
+            </let>
+            <let identifier="frequencyDescription">
+               <expression xsi:type="Concatenate">
+                  <operand xsi:type="ToString">
+                     <operand path="value" xsi:type="Property">
+                        <source path="frequency" xsi:type="Property">
+                           <source path="repeat" xsi:type="Property">
+                              <source path="timing" xsi:type="Property">
+                                 <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                              </source>
+                           </source>
+                        </source>
+                     </operand>
+                  </operand>
+                  <operand xsi:type="Coalesce">
+                     <operand xsi:type="Concatenate">
+                        <operand valueType="t:String" value="-" xsi:type="Literal"/>
+                        <operand xsi:type="ToString">
+                           <operand path="value" xsi:type="Property">
+                              <source path="frequencyMax" xsi:type="Property">
+                                 <source path="repeat" xsi:type="Property">
+                                    <source path="timing" xsi:type="Property">
+                                       <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                                    </source>
+                                 </source>
+                              </source>
+                           </operand>
+                        </operand>
+                     </operand>
+                     <operand valueType="t:String" value="" xsi:type="Literal"/>
+                  </operand>
+               </expression>
+            </let>
+            <let identifier="effectivePeriod">
+               <expression lowClosed="true" highClosed="true" xsi:type="Interval">
+                  <low path="value" xsi:type="Property">
+                     <source path="whenHandedOver" scope="O" xsi:type="Property"/>
+                  </low>
+                  <high xsi:type="Add">
+                     <operand path="value" xsi:type="Property">
+                        <source path="whenHandedOver" scope="O" xsi:type="Property"/>
+                     </operand>
+                     <operand classType="t:Quantity" xsi:type="Instance">
+                        <element name="value">
+                           <value path="value" xsi:type="Property">
+                              <source path="value" xsi:type="Property">
+                                 <source path="daysSupply" scope="O" xsi:type="Property"/>
+                              </source>
+                           </value>
+                        </element>
+                        <element name="unit">
+                           <value valueType="t:String" value="d" xsi:type="Literal"/>
+                        </element>
+                     </operand>
+                  </high>
+               </expression>
+            </let>
+            <where xsi:type="And">
+               <operand xsi:type="Equal">
+                  <operand path="value" xsi:type="Property">
+                     <source path="status" scope="O" xsi:type="Property"/>
+                  </operand>
+                  <operand valueType="t:String" value="completed" xsi:type="Literal"/>
+               </operand>
+               <operand xsi:type="Overlaps">
+                  <operand name="effectivePeriod" xsi:type="QueryLetRef"/>
+                  <operand name="Measurement Period" xsi:type="ParameterRef"/>
+               </operand>
+            </where>
+            <return>
+               <expression xsi:type="Tuple">
+                  <element name="rxNormCode">
+                     <value name="rxNormCode" xsi:type="QueryLetRef"/>
+                  </element>
+                  <element name="effectivePeriod">
+                     <value lowClosed="true" highClosed="true" xsi:type="Interval">
+                        <low xsi:type="Max">
+                           <source xsi:type="List">
+                              <element xsi:type="Start">
+                                 <operand name="effectivePeriod" xsi:type="QueryLetRef"/>
+                              </element>
+                              <element xsi:type="Start">
+                                 <operand name="Measurement Period" xsi:type="ParameterRef"/>
+                              </element>
+                           </source>
+                        </low>
+                        <high xsi:type="Min">
+                           <source xsi:type="List">
+                              <element xsi:type="End">
+                                 <operand name="effectivePeriod" xsi:type="QueryLetRef"/>
+                              </element>
+                              <element xsi:type="End">
+                                 <operand name="Measurement Period" xsi:type="ParameterRef"/>
+                              </element>
+                           </source>
+                        </high>
+                     </value>
+                  </element>
+                  <element name="whenHandedOver">
+                     <value path="value" xsi:type="Property">
+                        <source path="whenHandedOver" scope="O" xsi:type="Property"/>
+                     </value>
+                  </element>
+                  <element name="daysSupply">
+                     <value path="value" xsi:type="Property">
+                        <source path="daysSupply" scope="O" xsi:type="Property"/>
+                     </value>
+                  </element>
+                  <element name="isPRN">
+                     <value path="value" xsi:type="Property">
+                        <source path="asNeeded" xsi:type="Property">
+                           <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                        </source>
+                     </value>
+                  </element>
+                  <element name="prescription">
+                     <value xsi:type="If">
+                        <condition asType="t:Boolean" xsi:type="As">
+                           <operand xsi:type="Not">
+                              <operand xsi:type="IsNull">
+                                 <operand path="text" xsi:type="Property">
+                                    <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                                 </operand>
+                              </operand>
+                           </operand>
+                        </condition>
+                        <then xsi:type="Concatenate">
+                           <operand xsi:type="Concatenate">
+                              <operand name="medicationName" xsi:type="QueryLetRef"/>
+                              <operand valueType="t:String" value=" " xsi:type="Literal"/>
+                           </operand>
+                           <operand path="value" xsi:type="Property">
+                              <source path="text" xsi:type="Property">
+                                 <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                              </source>
+                           </operand>
+                        </then>
+                        <else xsi:type="Concatenate">
+                           <operand xsi:type="Concatenate">
+                              <operand xsi:type="Concatenate">
+                                 <operand xsi:type="Concatenate">
+                                    <operand xsi:type="Concatenate">
+                                       <operand name="medicationName" xsi:type="QueryLetRef"/>
+                                       <operand valueType="t:String" value=" " xsi:type="Literal"/>
+                                    </operand>
+                                    <operand name="doseDescription" xsi:type="QueryLetRef"/>
+                                 </operand>
+                                 <operand valueType="t:String" value=" q" xsi:type="Literal"/>
+                              </operand>
+                              <operand name="frequencyDescription" xsi:type="QueryLetRef"/>
+                           </operand>
+                           <operand xsi:type="If">
+                              <condition asType="t:Boolean" xsi:type="As">
+                                 <operand path="value" xsi:type="Property">
+                                    <source path="asNeeded" xsi:type="Property">
+                                       <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                                    </source>
+                                 </operand>
+                              </condition>
+                              <then valueType="t:String" value=" PRN" xsi:type="Literal"/>
+                              <else valueType="t:String" value="" xsi:type="Literal"/>
+                           </operand>
+                        </else>
+                     </value>
+                  </element>
+                  <element name="dose">
+                     <value name="ToQuantity" xsi:type="FunctionRef">
+                        <operand xsi:type="Coalesce">
+                           <operand asType="fhir:Quantity" xsi:type="As">
+                              <operand path="dose" xsi:type="Property">
+                                 <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                              </operand>
+                           </operand>
+                           <operand path="high" xsi:type="Property">
+                              <source path="dose" xsi:type="Property">
+                                 <source name="dosageInstruction" xsi:type="QueryLetRef"/>
+                              </source>
+                           </operand>
+                        </operand>
+                     </value>
+                  </element>
+                  <element name="dosesPerDay">
+                     <value xsi:type="Coalesce">
+                        <operand name="ToDaily" libraryName="OMTKLogic" xsi:type="FunctionRef">
+                           <operand name="frequency" xsi:type="QueryLetRef"/>
+                           <operand name="period" xsi:type="QueryLetRef"/>
+                        </operand>
+                        <operand valueType="t:Decimal" value="1.0" xsi:type="Literal"/>
+                     </value>
+                  </element>
+               </expression>
+            </return>
+         </expression>
+      </def>
+      <def name="PrescriptionsWithMME" context="Patient" accessLevel="Public">
+         <expression xsi:type="Query">
+            <source alias="P">
+               <expression name="Prescriptions" xsi:type="ExpressionRef"/>
+            </source>
+            <let identifier="mme">
+               <expression xsi:type="SingletonFrom">
+                  <operand name="CalculateMMEs" libraryName="OMTKLogic" xsi:type="FunctionRef">
+                     <operand xsi:type="List">
+                        <element xsi:type="Tuple">
+                           <element name="rxNormCode">
+                              <value path="rxNormCode" scope="P" xsi:type="Property"/>
+                           </element>
+                           <element name="doseQuantity">
+                              <value path="dose" scope="P" xsi:type="Property"/>
+                           </element>
+                           <element name="dosesPerDay">
+                              <value path="dosesPerDay" scope="P" xsi:type="Property"/>
+                           </element>
+                        </element>
+                     </operand>
+                  </operand>
+               </expression>
+            </let>
+            <return>
+               <expression xsi:type="Tuple">
+                  <element name="rxNormCode">
+                     <value path="rxNormCode" scope="P" xsi:type="Property"/>
+                  </element>
+                  <element name="whenHandedOver">
+                     <value path="whenHandedOver" scope="P" xsi:type="Property"/>
+                  </element>
+                  <element name="daysSupply">
+                     <value path="daysSupply" scope="P" xsi:type="Property"/>
+                  </element>
+                  <element name="effectivePeriod">
+                     <value path="effectivePeriod" scope="P" xsi:type="Property"/>
+                  </element>
+                  <element name="isPRN">
+                     <value path="isPRN" scope="P" xsi:type="Property"/>
+                  </element>
+                  <element name="prescription">
+                     <value path="prescription" scope="P" xsi:type="Property"/>
+                  </element>
+                  <element name="dailyDose">
+                     <value path="dailyDoseDescription" xsi:type="Property">
+                        <source name="mme" xsi:type="QueryLetRef"/>
+                     </value>
+                  </element>
+                  <element name="conversionFactor">
+                     <value path="conversionFactor" xsi:type="Property">
+                        <source name="mme" xsi:type="QueryLetRef"/>
+                     </value>
+                  </element>
+                  <element name="mme">
+                     <value path="mme" xsi:type="Property">
+                        <source name="mme" xsi:type="QueryLetRef"/>
+                     </value>
+                  </element>
+               </expression>
+            </return>
+         </expression>
+      </def>
+      <def name="PrescriptionPeriods" context="Patient" accessLevel="Public">
+         <expression xsi:type="Query">
+            <source alias="P">
+               <expression name="PrescriptionsWithMME" xsi:type="ExpressionRef"/>
+            </source>
+            <return>
+               <expression xsi:type="Tuple">
+                  <element name="rxNormCode">
+                     <value path="rxNormCode" scope="P" xsi:type="Property"/>
+                  </element>
+                  <element name="periods">
+                     <value xsi:type="Collapse">
+                        <operand xsi:type="Query">
+                           <source alias="R">
+                              <expression name="PrescriptionsWithMME" xsi:type="ExpressionRef"/>
+                           </source>
+                           <where xsi:type="Equal">
+                              <operand path="rxNormCode" scope="R" xsi:type="Property"/>
+                              <operand path="rxNormCode" scope="P" xsi:type="Property"/>
+                           </where>
+                           <return>
+                              <expression path="effectivePeriod" scope="R" xsi:type="Property"/>
+                           </return>
+                        </operand>
+                     </value>
+                  </element>
+                  <element name="mme">
+                     <value path="mme" scope="P" xsi:type="Property"/>
+                  </element>
+               </expression>
+            </return>
+         </expression>
+      </def>
+      <def name="PrescriptionDays" context="Patient" accessLevel="Public">
+         <expression xsi:type="Query">
+            <source alias="R">
+               <expression name="PrescriptionPeriods" xsi:type="ExpressionRef"/>
+            </source>
+            <return>
+               <expression xsi:type="Tuple">
+                  <element name="rxNormCode">
+                     <value path="rxNormCode" scope="R" xsi:type="Property"/>
+                  </element>
+                  <element name="ds">
+                     <value xsi:type="Flatten">
+                        <operand xsi:type="Query">
+                           <source alias="I">
+                              <expression path="periods" scope="R" xsi:type="Property"/>
+                           </source>
+                           <return>
+                              <expression name="DaysInPeriod" libraryName="OMTKData" xsi:type="FunctionRef">
+                                 <operand name="I" xsi:type="AliasRef"/>
+                              </expression>
+                           </return>
+                        </operand>
+                     </value>
+                  </element>
+                  <element name="mme">
+                     <value path="mme" scope="R" xsi:type="Property"/>
+                  </element>
+               </expression>
+            </return>
+         </expression>
+      </def>
+      <def name="MMEDays" context="Patient" accessLevel="Public">
+         <expression xsi:type="Flatten">
+            <operand xsi:type="Query">
+               <source alias="R">
+                  <expression name="PrescriptionDays" xsi:type="ExpressionRef"/>
+               </source>
+               <return distinct="false">
+                  <expression xsi:type="Query">
+                     <source alias="D">
+                        <expression path="ds" scope="R" xsi:type="Property"/>
+                     </source>
+                     <return>
+                        <expression xsi:type="Tuple">
+                           <element name="rxNormCode">
+                              <value path="rxNormCode" scope="R" xsi:type="Property"/>
+                           </element>
+                           <element name="d">
+                              <value name="D" xsi:type="AliasRef"/>
+                           </element>
+                           <element name="mme">
+                              <value path="mme" scope="R" xsi:type="Property"/>
+                           </element>
+                        </expression>
+                     </return>
+                  </expression>
+               </return>
+            </operand>
+         </expression>
+      </def>
+      <def name="MMESum" context="Patient" accessLevel="Public">
+         <expression xsi:type="Query">
+            <source alias="D">
+               <expression name="MMEDays" xsi:type="ExpressionRef"/>
+            </source>
+            <return>
+               <expression xsi:type="Tuple">
+                  <element name="d">
+                     <value path="d" scope="D" xsi:type="Property"/>
+                  </element>
+                  <element name="totalMME">
+                     <value xsi:type="Sum">
+                        <source xsi:type="Query">
+                           <source alias="X">
+                              <expression name="MMEDays" xsi:type="ExpressionRef"/>
+                           </source>
+                           <where xsi:type="Equal">
+                              <operand path="d" scope="X" xsi:type="Property"/>
+                              <operand path="d" scope="D" xsi:type="Property"/>
+                           </where>
+                           <return distinct="false">
+                              <expression path="mme" scope="X" xsi:type="Property"/>
+                           </return>
+                        </source>
+                     </value>
+                  </element>
+               </expression>
+            </return>
+         </expression>
+      </def>
+      <def name="MMEPeriods" context="Patient" accessLevel="Public">
+         <expression xsi:type="Query">
+            <source alias="S">
+               <expression name="MMESum" xsi:type="ExpressionRef"/>
+            </source>
+            <return>
+               <expression xsi:type="Tuple">
+                  <element name="periods">
+                     <value xsi:type="Collapse">
+                        <operand xsi:type="Query">
+                           <source alias="X">
+                              <expression name="MMESum" xsi:type="ExpressionRef"/>
+                           </source>
+                           <where xsi:type="Equal">
+                              <operand path="totalMME" scope="X" xsi:type="Property"/>
+                              <operand path="totalMME" scope="S" xsi:type="Property"/>
+                           </where>
+                           <return>
+                              <expression lowClosed="true" highClosed="true" xsi:type="Interval">
+                                 <low path="d" scope="X" xsi:type="Property"/>
+                                 <high path="d" scope="X" xsi:type="Property"/>
+                              </expression>
+                           </return>
+                        </operand>
+                     </value>
+                  </element>
+                  <element name="mme">
+                     <value path="totalMME" scope="S" xsi:type="Property"/>
+                  </element>
+               </expression>
+            </return>
+         </expression>
+      </def>
+      <def name="MMEIntervals" context="Patient" accessLevel="Public">
+         <expression xsi:type="Flatten">
+            <operand xsi:type="Query">
+               <source alias="S">
+                  <expression name="MMEPeriods" xsi:type="ExpressionRef"/>
+               </source>
+               <return distinct="false">
+                  <expression xsi:type="Query">
+                     <source alias="P">
+                        <expression path="periods" scope="S" xsi:type="Property"/>
+                     </source>
+                     <return>
+                        <expression xsi:type="Tuple">
+                           <element name="period">
+                              <value name="P" xsi:type="AliasRef"/>
+                           </element>
+                           <element name="mme">
+                              <value path="mme" scope="S" xsi:type="Property"/>
+                           </element>
+                        </expression>
+                     </return>
+                  </expression>
+               </return>
+            </operand>
+         </expression>
+      </def>
+   </statements>
+</library>
+
+

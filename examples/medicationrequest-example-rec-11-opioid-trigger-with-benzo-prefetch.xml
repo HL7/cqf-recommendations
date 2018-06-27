@@ -1,0 +1,54 @@
+<MedicationRequest xmlns="http://hl7.org/fhir">
+   <id value="example-rec-11-opioid-trigger-with-benzo-prefetch"/>
+   <status value="active"/>
+   <intent value="order"/>
+   <category>
+      <coding>
+         <code value="outpatient"/>
+      </coding>
+   </category>
+   <medicationCodeableConcept>
+      <coding>
+         <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+         <code value="1298088"/>
+         <display value="Flurazepam Hydrochloride 15 MG Oral Capsule"/>
+      </coding>
+   </medicationCodeableConcept>
+   <subject>
+      <reference value="Patient/example-rec-11-opioid-trigger-with-benzo"/>
+   </subject>
+   <context>
+      <reference value="Encounter/example-rec-11-opioid-trigger-with-benzo-prefetch"/>
+   </context>
+   <authoredOn>
+      <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
+         <valueString value="Today() - 4 weeks"/>
+      </extension>
+   </authoredOn>
+   <dosageInstruction>
+      <timing>
+         <repeat>
+            <frequency value="1"/>
+            <period value="1.0"/>
+            <periodUnit value="d"/>
+         </repeat>
+      </timing>
+      <asNeededBoolean value="false"/>
+      <doseQuantity>
+         <value value="1.0"/>
+         <unit value="capsule"/>
+      </doseQuantity>
+   </dosageInstruction>
+   <dispenseRequest>
+      <validityPeriod>
+         <extension url="http://hl7.org/fhir/StructureDefinition/cqif-cqlExpression">
+            <valueString value="FHIR.Period { start: FHIR.dateTime { value: Today() - 4 weeks }, end: FHIR.dateTime { value: Today() + 3 months } }"/>
+         </extension>
+      </validityPeriod>
+      <numberOfRepeatsAllowed value="3"/>
+      <expectedSupplyDuration>
+         <value value="30.0"/>
+         <unit value="d"/>
+      </expectedSupplyDuration>
+   </dispenseRequest>
+</MedicationRequest>

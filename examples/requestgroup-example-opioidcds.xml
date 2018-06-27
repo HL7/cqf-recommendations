@@ -1,0 +1,25 @@
+<RequestGroup xmlns="http://hl7.org/fhir">
+    <id value="example-opioidcds"/>
+    <status value="active"/>
+    <intent value="proposal"/>
+    <action>
+        <selectionBehavior value="exactly-one"/>
+        <action>
+            <extension url="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-requestgroup-action-indicator">
+                <valueCode value="warning"/>
+            </extension>
+            <title value="High risk for opioid overdose - taper now"/>
+            <description value="Total morphine milligram equivalent (MME) is 179.99999820mg/d. Taper to less than 50."/>
+            <documentation>
+                <type value="documentation"/>
+                <display value="CDC guideline for prescribing opioids for chronic pain"/>
+                <url value="https://guidelines.gov/summaries/summary/50153/cdc-guideline-for-prescribing-opioids-for-chronic-pain---united-states-2016#420"/>
+            </documentation>
+            <documentation>
+                <type value="documentation"/>
+                <display value="MME Conversion Tables"/>
+                <url value="https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf"/>
+            </documentation>
+        </action>
+    </action>
+</RequestGroup>
