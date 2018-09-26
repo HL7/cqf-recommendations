@@ -30,6 +30,9 @@
     "mappings"
   ],
   "spreadsheets": [
+    "activitydefinition-profile-spreadsheet.xml",
+    "codesystem-profile-spreadsheet.xml",
+    "library-profile-spreadsheet.xml",
     "plandefinition-profile-spreadsheet.xml",
     "valueset-profile-spreadsheet.xml"
   ],
