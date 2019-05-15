@@ -1,19 +1,19 @@
-# cdc-acg
-Adapting Clinical Guidelines for the Digital Age Implementation Guide (FHIR STU3 (3.0.1))
+# cqf-recommendations
+Representation of Clinical Practice Guideline Recommendations in FHIR (FHIR STU3 (3.0.1))
 
-This project provides the source for the CDC Adapting Clinical Guidelines for the Digital Age Implementation Guide
+This project provides the source for the HL7 Representation of Clinical Practice Guideline Recommendations in FHIR Implementation Guide
 
 Commits to this repository will automatically trigger a new build of the IG, which will then be published to the following location:
 
-[http://build.fhir.org/ig/cqframework/cdc-acg/](http://build.fhir.org/ig/cqframework/cdc-acg/)
+[http://build.fhir.org/ig/HL7/cqf-recommendations/](http://build.fhir.org/ig/HL7/cqf-recommendations/)
 
 Build log is available here:
 
-[http://build.fhir.org.s3-website-us-east-1.amazonaws.com/logs/cqframework/cdc-acg](http://build.fhir.org.s3-website-us-east-1.amazonaws.com/logs/cqframework/cdc-acg)
+[http://build.fhir.org.s3-website-us-east-1.amazonaws.com/logs/HL7/cqf-recommendations](http://build.fhir.org.s3-website-us-east-1.amazonaws.com/logs/HL7/cqf-recommendations)
 
 Debugging information is available here:
 
-[http://build.fhir.org/ig/cqframework/cdc-acg/debug.tgz](http://build.fhir.org/ig/cqframework/cdc-acg/debug.tgz)
+[http://build.fhir.org/ig/HL7/cqf-recommendations/debug.tgz](http://build.fhir.org/ig/HL7/cqf-recommendations/debug.tgz)
 
 ## Local Build
 
