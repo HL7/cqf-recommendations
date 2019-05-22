@@ -1,4 +1,4 @@
-library ANC_Recommendation_A2 version '0.0.0'
+library ANCRecommendationA2 version '0.0.0'
 
 using FHIR version '3.0.0'
 
@@ -10,14 +10,17 @@ code LMP: '1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Dat
 code UltrasoundGA: '165220AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Gestational age in weeks from ultrasound'
 code FundalHeight: '1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'FUNDAL HEIGHT'
 code "Weeks of gestational age": '1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Weeks of gestational age'
-code "Hb": 'TBD' from OpenMRSEntity display 'Hb' 
+code "Hb": '165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Haemoglobin measured from haemoglobinometer (g/dl)' 
 code "Iron Intake Compliance": '165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Iron intake compliance'
 code "Iron Side Effects": '165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Iron side effects' // NOTE: OpenMRS concept is just side effects from medication
 
 // TODO: How do parameters like this get configured for local/site usage
-parameter "Anaemia Prevalence" Quantity default 40 '%'
+//parameter "Anaemia Prevalence" Quantity default 40 '%'
 
 context Patient
+
+// TODO: Configuring in-line directly for now
+define "Anaemia Prevalence": 40 '%'
 
 /*
 IAF - Iron and Folic Acid Supplements
@@ -77,8 +80,7 @@ define "Hb Concentration":
 // Next Step: PlanDefinition and use $apply, then refine ANC
   
 define "Has Iron Side-Effects":
-  First(
-    ["Observation": "Iron Side-Effects"] O
-      sort by (effective as FHIR.dateTime) descending
-  ).value as Quantity
+  exists (
+    ["Condition": "Iron Side Effects"]
+  )
 

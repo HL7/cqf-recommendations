@@ -1,0 +1,23 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patient-anc-ra2"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-05-15T10:37:22.568+00:00"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Grace Taylor</div>
+    </text>
+    <identifier>
+        <system value="http://clinfhir.com/fhir/NamingSystem/identifier"/>
+        <value value="patient-anc-ra2"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <text value="Grace Taylor"/>
+        <family value="Taylor"/>
+        <given value="Grace"/>
+    </name>
+    <gender value="female"/>
+    <birthDate value="1997-05-15"/>
+</Patient>

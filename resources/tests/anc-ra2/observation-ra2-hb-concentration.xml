@@ -1,0 +1,25 @@
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="observation-anc-ra2-hb-concentration"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2019-05-15T10:56:36.425+00:00"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://openmrs.org/concepts"/>
+            <code value="165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+        </coding>
+        <text value="Haemoglobin measured from haemoglobinometer (g/dl)"/>
+    </code>
+    <subject>
+        <reference value="Patient/patient-anc-ra2"/>
+    </subject>
+    <effectiveDateTime value="2019-05-01T12:37:23+02:00"/>
+    <valueQuantity>
+        <value value="10.2"/>
+        <unit value="g/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g/dL"/>
+    </valueQuantity>
+</Observation>
