@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Examples
+layout: example-default
+title: Opioid Prescribing Guideline Example
 ---
 
 [CDC Opioid Prescribing Guideline](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)

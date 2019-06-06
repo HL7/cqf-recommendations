@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Examples
+layout: example-default
+title: Antenatal Care Guideline Example
 ---
 
 [WHO ANC Guideline](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)

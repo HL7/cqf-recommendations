@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="urn:hl7-org:elm:r1" xmlns:t="urn:hl7-org:elm-types:r1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:qdm43="urn:healthit-gov:qdm:v4_3" xmlns:qdm53="urn:healthit-gov:qdm:v5_3" xmlns:a="urn:hl7-org:cql-annotations:r1">
+   <annotation startLine="70" startChar="5" endLine="70" endChar="47" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <annotation startLine="76" startChar="5" endLine="76" endChar="25" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <annotation startLine="84" startChar="5" endLine="84" endChar="38" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
+   <identifier id="ANCRecommendationA2" version="0.0.0"/>
+   <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
+   <usings>
+      <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
+      <def localIdentifier="FHIR" uri="http://hl7.org/fhir" version="3.0.0"/>
+   </usings>
+   <includes>
+      <def localIdentifier="FHIRHelpers" path="FHIRHelpers" version="3.0.0"/>
+   </includes>
+   <codeSystems>
+      <def name="OpenMRSEntity" id="http://openmrs.org/concepts" accessLevel="Public"/>
+   </codeSystems>
+   <codes>
+      <def name="LMP" id="1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Date of last menstrual period" accessLevel="Public">
+         <codeSystem name="OpenMRSEntity"/>
+      </def>
+      <def name="UltrasoundGA" id="165220AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Gestational age in weeks from ultrasound" accessLevel="Public">
+         <codeSystem name="OpenMRSEntity"/>
+      </def>
+      <def name="FundalHeight" id="1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="FUNDAL HEIGHT" accessLevel="Public">
+         <codeSystem name="OpenMRSEntity"/>
+      </def>
+      <def name="Weeks of gestational age" id="1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Weeks of gestational age" accessLevel="Public">
+         <codeSystem name="OpenMRSEntity"/>
+      </def>
+      <def name="Hb" id="165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Haemoglobin measured from haemoglobinometer (g/dl)" accessLevel="Public">
+         <codeSystem name="OpenMRSEntity"/>
+      </def>
+      <def name="Iron Intake Compliance" id="165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Iron intake compliance" accessLevel="Public">
+         <codeSystem name="OpenMRSEntity"/>
+      </def>
+      <def name="Iron Side Effects" id="165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" display="Iron side effects" accessLevel="Public">
+         <codeSystem name="OpenMRSEntity"/>
+      </def>
+   </codes>
+   <statements>
+      <def name="Patient" context="Patient">
+         <expression xsi:type="SingletonFrom">
+            <operand dataType="fhir:Patient" xsi:type="Retrieve"/>
+         </expression>
+      </def>
+      <def name="Anaemia Prevalence" context="Patient" accessLevel="Public">
+         <expression value="40" unit="%" xsi:type="Quantity"/>
+      </def>
+      <def name="Gestational Age in Weeks" context="Patient" accessLevel="Public">
+         <expression strict="false" xsi:type="As">
+            <operand path="value" xsi:type="Property">
+               <source xsi:type="First">
+                  <source xsi:type="Query">
+                     <source alias="O">
+                        <expression dataType="fhir:Observation" codeProperty="code" xsi:type="Retrieve">
+                           <codes xsi:type="ToList">
+                              <operand name="Weeks of gestational age" xsi:type="CodeRef"/>
+                           </codes>
+                        </expression>
+                     </source>
+                     <sort>
+                        <by direction="asc" xsi:type="ByExpression">
+                           <expression strict="false" xsi:type="As">
+                              <operand name="effective" xsi:type="IdentifierRef"/>
+                              <asTypeSpecifier name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                           </expression>
+                        </by>
+                     </sort>
+                  </source>
+               </source>
+            </operand>
+            <asTypeSpecifier name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </expression>
+      </def>
+      <def name="Hb Concentration" context="Patient" accessLevel="Public">
+         <expression strict="false" xsi:type="As">
+            <operand path="value" xsi:type="Property">
+               <source xsi:type="First">
+                  <source xsi:type="Query">
+                     <source alias="O">
+                        <expression dataType="fhir:Observation" codeProperty="code" xsi:type="Retrieve">
+                           <codes xsi:type="ToList">
+                              <operand name="Hb" xsi:type="CodeRef"/>
+                           </codes>
+                        </expression>
+                     </source>
+                     <sort>
+                        <by direction="asc" xsi:type="ByExpression">
+                           <expression strict="false" xsi:type="As">
+                              <operand name="effective" xsi:type="IdentifierRef"/>
+                              <asTypeSpecifier name="fhir:dateTime" xsi:type="NamedTypeSpecifier"/>
+                           </expression>
+                        </by>
+                     </sort>
+                  </source>
+               </source>
+            </operand>
+            <asTypeSpecifier name="fhir:Quantity" xsi:type="NamedTypeSpecifier"/>
+         </expression>
+      </def>
+      <def name="Has Anaemia" context="Patient" accessLevel="Public">
+         <expression xsi:type="If">
+            <condition asType="t:Boolean" xsi:type="As">
+               <operand xsi:type="And">
+                  <operand xsi:type="GreaterOrEqual">
+                     <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+                     </operand>
+                     <operand value="13" unit="weeks" xsi:type="Quantity"/>
+                  </operand>
+                  <operand xsi:type="LessOrEqual">
+                     <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                        <operand name="Gestational Age in Weeks" xsi:type="ExpressionRef"/>
+                     </operand>
+                     <operand value="27" unit="weeks" xsi:type="Quantity"/>
+                  </operand>
+               </operand>
+            </condition>
+            <then xsi:type="Less">
+               <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand name="Hb Concentration" xsi:type="ExpressionRef"/>
+               </operand>
+               <operand value="10.5" unit="g/dL" xsi:type="Quantity"/>
+            </then>
+            <else xsi:type="Less">
+               <operand name="ToQuantity" libraryName="FHIRHelpers" xsi:type="FunctionRef">
+                  <operand name="Hb Concentration" xsi:type="ExpressionRef"/>
+               </operand>
+               <operand value="11" unit="g/dL" xsi:type="Quantity"/>
+            </else>
+         </expression>
+      </def>
+      <def name="Has Iron Side-Effects" context="Patient" accessLevel="Public">
+         <expression xsi:type="Exists">
+            <operand dataType="fhir:Condition" codeProperty="code" xsi:type="Retrieve">
+               <codes xsi:type="ToList">
+                  <operand name="Iron Side Effects" xsi:type="CodeRef"/>
+               </codes>
+            </operand>
+         </expression>
+      </def>
+   </statements>
+</library>
+
+
