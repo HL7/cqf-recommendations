@@ -1,9 +1,11 @@
 {
-  "canonicalBase": "http://hl7.org/fhir/ig/cdc-acg",
+  "canonicalBase": "http://hl7.org/fhir/uv/cqfrecommendations",
   "version" : "3.0.1",
+  "fixed-business-version": "0.1.0",
   "sct-edition" : "http://snomed.info/sct/731000124108",
-  "source": "cdc-acg.xml",
-  "npm-name": "hl7.fhir.us.cdcacg",
+  "source": "cqfrecommendations.xml",
+  "jurisdiction": "UV",
+  "npm-name": "hl7.fhir.uv.cqfrecommendations",
   "license": "CC0-1.0",
   "tool" : "jekyll",
   "paths": {
@@ -30,47 +32,47 @@
     "mappings"
   ],
   "spreadsheets": [
-    "activitydefinition-profile-spreadsheet.xml",
-    "codesystem-profile-spreadsheet.xml",
-    "library-profile-spreadsheet.xml",
-    "plandefinition-profile-spreadsheet.xml",
-    "valueset-profile-spreadsheet.xml"
+    "profile-activitydefinition-cqfr-spreadsheet.xml",
+    "profile-codesystem-cqfr-spreadsheet.xml",
+    "profile-library-cqfr-spreadsheet.xml",
+    "profile-plandefinition-cqfr-spreadsheet.xml",
+    "profile-valueset-cqfr-spreadsheet.xml"
   ],
   "resources": {
-    "StructureDefinition/cdc-activitydefinition": {
-      "defns": "cdc-activitydefinition-definitions.html",
-      "base": "cdc-activitydefinition.html"
+    "StructureDefinition/cqfr-activitydefinition": {
+      "defns": "cqfr-activitydefinition-definitions.html",
+      "base": "cqfr-activitydefinition.html"
     },
-    "StructureDefinition/cdc-codesystem": {
-      "defns": "cdc-codesystem-definitions.html",
-      "base": "cdc-codesystem.html"
+    "StructureDefinition/cqfr-codesystem": {
+      "defns": "cqfr-codesystem-definitions.html",
+      "base": "cqfr-codesystem.html"
     },
-    "StructureDefinition/cdc-library": {
-      "defns": "cdc-library-definitions.html",
-      "base": "cdc-library.html"
+    "StructureDefinition/cqfr-library": {
+      "defns": "cqfr-library-definitions.html",
+      "base": "cqfr-library.html"
     },
-    "StructureDefinition/cdc-plandefinition": {
-      "defns": "cdc-plandefinition-definitions.html",
-      "base": "cdc-plandefinition.html"
+    "StructureDefinition/cqfr-plandefinition": {
+      "defns": "cqfr-plandefinition-definitions.html",
+      "base": "cqfr-plandefinition.html"
     },
-    "StructureDefinition/cdc-valueset": {
-      "defns": "cdc-valueset-definitions.html",
-      "base": "cdc-valueset.html"
+    "StructureDefinition/cqfr-valueset": {
+      "defns": "cqfr-valueset-definitions.html",
+      "base": "cqfr-valueset.html"
     },
-    "StructureDefinition/cdc-valueset-query": {
-      "defns": "cdc-valueset-query-definitions.html",
-      "base": "cdc-valueset-query.html",
-      "source": "structuredefinition-cdc-valueset-query.xml"
+    "StructureDefinition/cqfr-valueset-query": {
+      "defns": "cqfr-valueset-query-definitions.html",
+      "base": "cqfr-valueset-query.html",
+      "source": "structuredefinition-cqfr-valueset-query.xml"
     },
-    "StructureDefinition/cdc-valueset-inclusion": {
-      "defns": "cdc-valueset-inclusion-definitions.html",
-      "base": "cdc-valueset-inclusion.html",
-      "source": "structuredefinition-cdc-valueset-inclusion.xml"
+    "StructureDefinition/cqfr-valueset-inclusion": {
+      "defns": "cqfr-valueset-inclusion-definitions.html",
+      "base": "cqfr-valueset-inclusion.html",
+      "source": "structuredefinition-cqfr-valueset-inclusion.xml"
     },
-    "StructureDefinition/cdc-valueset-exclusion": {
-      "defns": "cdc-valueset-exclusion-definitions.html",
-      "base": "cdc-valueset-exclusion.html",
-      "source": "structuredefinition-cdc-valueset-exclusion.xml"
+    "StructureDefinition/cqfr-valueset-exclusion": {
+      "defns": "cqfr-valueset-exclusion-definitions.html",
+      "base": "cqfr-valueset-exclusion.html",
+      "source": "structuredefinition-cqfr-valueset-exclusion.xml"
     }
   }
 }

@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="cdc-acg"/>
-    <url value="http://hl7.org/fhir/ig/cdc-acg/ImplementationGuide/cdc-acg"/>
+    <id value="uv-cqfrecommendations-0.1.0"/>
+    <url value="http://hl7.org/fhir/uv/cqfrecommendations/ImplementationGuide/uv-cqfrecommendations-0.1.0"/>
     <version value="0.1.0"/>
-    <name value="Adapting Clinical Guidelines for the Digital Age"/>
+    <name value="CQFRecommendations"/>
     <status value="draft"/>
     <experimental value="false"/>
-    <publisher value="Centers for Disease Control and Prevention (CDC)"/>
-    <date value="2017-02-06"/>
+    <date value="2019-05-08"/>
+    <publisher value="Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
     <description value="Implementation guidance for creating Clinical Practice Guidelines with formal artifacts to facilitate sharing and implementation of the guideline"/>
     <fhirVersion value="3.0.1"/>
     <package>
-        <name value="Adapting Clinical Guidelines for the Digital Age Implementation Guide Package"/>
+        <name value="Main"/>
         <resource>
             <example value="true"/>
             <sourceReference>
-                <reference value="StructureDefinition/cdc-valueset-query"/>
+                <reference value="StructureDefinition/cqfr-valueset-query"/>
             </sourceReference>
         </resource>
         <resource>
             <example value="true"/>
             <sourceReference>
-                <reference value="StructureDefinition/cdc-valueset-inclusion"/>
+                <reference value="StructureDefinition/cqfr-valueset-inclusion"/>
             </sourceReference>
         </resource>
         <resource>
             <example value="true"/>
             <sourceReference>
-                <reference value="StructureDefinition/cdc-valueset-exclusion"/>
+                <reference value="StructureDefinition/cqfr-valueset-exclusion"/>
             </sourceReference>
         </resource>
     </package>
     <page>
         <source value="index.html"/>
-        <title value="Adapting Clinical Guidelines for the Digital Age Implementation Guide"/>
+        <title value="Representation of Clinical Practice Guideline Recommendations in FHIR Implementation Guide"/>
         <kind value="page"/>
         <format value="html"/>
     </page>

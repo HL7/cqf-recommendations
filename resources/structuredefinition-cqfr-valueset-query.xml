@@ -1,19 +1,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="cdc-valueset-query"/>
-    <url value="http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-valueset-query"/>
+    <id value="cqfr-valueset-query"/>
+    <url value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-valueset-query"/>
     <version value="1.0.0"/>
-    <name value="CDC Opioid Guidance ValueSet Query Extension"/>
-    <title value="CDC Opioid Guidance Query Extension"/>
+    <name value="CQFR_ValueSet_Query"/>
+    <title value="ValueSet Query Extension"/>
     <status value="draft"/>
     <date value="2018-04-22"/>
     <description value="Captures the narrative, language, and expression query elements necessary to build valueset from CodeSystem"/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-    </jurisdiction>
     <fhirVersion value="3.0.1"/>
     <mapping>
         <identity value="rim"/>
@@ -30,7 +23,7 @@
     <snapshot>
         <element id="Extension:query">
             <path value="Extension"/>
-            <short value="CDC Opioid Guidance Query Extension"/>
+            <short value="ValueSet Query Extension"/>
             <definition value="Captures the narrative, language, and expression query elements necessary to build valueset from CodeSystem"/>
             <min value="0"/>
             <max value="1"/>
@@ -677,7 +670,7 @@
             <path value="Extension.url"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-query"/>
+            <fixedUri value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-valueset-query"/>
         </element>
     </differential>
 </StructureDefinition>

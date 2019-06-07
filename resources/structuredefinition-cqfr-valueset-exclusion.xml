@@ -1,19 +1,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="cdc-valueset-exclusion"/>
-    <url value="http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-valueset-exclusion"/>
+    <id value="cqfr-valueset-exclusion"/>
+    <url value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-valueset-exclusion"/>
     <version value="1.0.0"/>
-    <name value="CDC Opioid Guidance ValueSet Exclusion Extension"/>
-    <title value="CDC Opioid Guidance Exclusion Extension"/>
+    <name value="CQFR_ValueSet_Exclusion"/>
+    <title value="CQF Recommendations ValueSet Exclusion Extension"/>
     <status value="draft"/>
     <date value="2018-04-22"/>
     <description value="Describes the exclusion criteria for the ValueSet."/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-    </jurisdiction>
     <fhirVersion value="3.0.1"/>
     <mapping>
         <identity value="rim"/>
@@ -30,7 +23,7 @@
     <snapshot>
         <element id="Extension:exclusion">
             <path value="Extension"/>
-            <short value="CDC Opioid Guidance Exclusion Extension"/>
+            <short value="ValueSet Exclusion Extension"/>
             <definition value="Describes the exclusion criteria for the ValueSet."/>
             <min value="0"/>
             <max value="1"/>
@@ -116,7 +109,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-exclusion"/>
+            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cqfr-valueset-exclusion"/>
             <mapping>
                 <identity value="rim"/>
                 <map value="N/A"/>
@@ -145,7 +138,7 @@
     <differential>
         <element id="Extension:exclusion">
             <path value="Extension"/>
-            <short value="CDC Opioid Guidance Exclusion Extension"/>
+            <short value="ValueSet Exclusion Extension"/>
             <definition value="Describes the exclusion criteria for the ValueSet."/>
             <min value="0"/>
             <max value="1"/>
@@ -153,7 +146,7 @@
         </element>
         <element id="Extension:exclusion.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-exclusion"/>
+            <fixedUri value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-valueset-exclusion"/>
         </element>
         <element id="Extension:exclusion.valueString">
             <path value="Extension.valueString"/>

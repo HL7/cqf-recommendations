@@ -1,19 +1,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="cdc-valueset-inclusion"/>
-    <url value="http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-valueset-inclusion"/>
+    <id value="cqfr-valueset-inclusion"/>
+    <url value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-valueset-inclusion"/>
     <version value="1.0.0"/>
-    <name value="CDC Opioid Guidance ValueSet Inclusion Extension"/>
-    <title value="CDC Opioid Guidance Inclusion Extension"/>
+    <name value="CQFR_ValueSet_Inclusion"/>
+    <title value="ValueSet Inclusion Extension"/>
     <status value="draft"/>
     <date value="2018-04-22"/>
     <description value="Describes the inclusion criteria for the ValueSet."/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-    </jurisdiction>
     <fhirVersion value="3.0.1"/>
     <mapping>
         <identity value="rim"/>
@@ -30,7 +23,7 @@
     <snapshot>
         <element id="Extension:inclusion">
             <path value="Extension"/>
-            <short value="CDC Opioid Guidance Inclusion Extension"/>
+            <short value="ValueSet Inclusion Extension"/>
             <definition value="Describes the inclusion criteria for the ValueSet."/>
             <min value="0"/>
             <max value="1"/>
@@ -116,7 +109,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-inclusiont"/>
+            <fixedUri value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-valueset-inclusiont"/>
             <mapping>
                 <identity value="rim"/>
                 <map value="N/A"/>
@@ -145,7 +138,7 @@
     <differential>
         <element id="Extension:inclusion">
             <path value="Extension"/>
-            <short value="CDC Opioid Guidance Inclusion Extension"/>
+            <short value="ValueSet Inclusion Extension"/>
             <definition value="Describes the inclusion criteria for the ValueSet."/>
             <min value="0"/>
             <max value="1"/>
@@ -153,7 +146,7 @@
         </element>
         <element id="Extension:inclusion.url">
             <path value="Extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/ig/opioid-cds/StructureDefinition/cdc-valueset-inclusion"/>
+            <fixedUri value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-valueset-inclusion"/>
         </element>
         <element id="Extension:inclusion.valueString">
             <path value="Extension.valueString"/>
