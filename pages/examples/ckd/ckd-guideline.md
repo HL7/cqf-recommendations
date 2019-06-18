@@ -38,11 +38,24 @@ The Kidney Disease: Improving Global Outcomes (KDIGO) 2012 Clinical Practice Gui
 
 ### VA/DoD Clinical Practice Guideline for CKD
 [Management of Chronic Kidney Disease (CKD) in Primary Care (2014)](https://www.healthquality.va.gov/guidelines/cd/ckd/index.asp)
+ 
+| CKD Guideline Algorithm |
+| --- |
+| ![CKD guideline algorithm](images/ckd-cpg-algorithm.png) |
 
-This guideline includes an algorithm which is designed to maximally facilitate clinical decision making for the
-management of CKD. 
-![CKD guideline algorithm](images/ckd-cpg-algorithm.png)
 
+## Guideline Recommendations
+The following CKD guideline recommendations are included in this example:
 
-## Functional Description
-This use case include sample FHIR resources for a fictitious patient named Betsy Johnson that illustrate evidence-based case for CKD with co-morbid conditions (Hyperteneion and Diabetes).
+| Recommendation | Strength |
+| We suggest that periodic evaluation for CKD be considered in patients with the following:
+* Diabetes, hypertension, other end organ disease (e.g., chronic heart failure [CHF]), or a personal or family history of kidney disease
+* Systemic illness (e.g., human immunodeficiency virus [HIV], systemic lupus erythematosus, multiple myeloma)
+* History of acute kidney injury (AKI) (e.g., acute tubular necrosis, urinary tract obstruction, interstitial nephritis)
+* Elderly patients
+* Races and ethnicities associated with increased risk (e.g., African Americans, Hispanics, Native Americans) | Weak For |
+| In adult patients with stages 1-4 CKD, we recommend that blood pressure targets should be less than 140/90 mmHg | Strong For |
+| In patients with diabetes, hypertension, and albuminuria, we recommend the use of an ACEI or ARB to slow the progression of CKD, unless there is documentation of intolerance. | Strong For |
+| We recommend that all patients with CKD who are not on dialysis and have no known history of coronary artery disease be assessed for 10-year CVD risk using a validated risk calculator for primary prevention. If at risk (as defined in the VA/DoD Management of Dyslipidemia guideline), we recommend use of at least a low dose statin. | Strong For |
+| We suggest offering supplemental vitamin D to correct vitamin D deficiency in patients with CKD stages 3 or 4. | Weak For |
+| We suggest not offering phosphate binders to patients with stage 3 and 4 CKD with normal serum phosphorous. | Weak Against |
