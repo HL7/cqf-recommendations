@@ -3,6 +3,12 @@ layout: example-default
 title: Chronic Kidney Disease (CKD) Guideline Example
 ---
 
+* [Overview](#Overview)
+* [Chronic Kidney Disease (CKD) Guidelines](#Chronic-Kidney-Disease-CKD-Guidelines)
+  * [KDIGO](#kdigo)
+  * [VA/DoD](#va-dod)
+* [Guideline Recommendations](#Guideline-Recommendations)
+
 ## Overview
 The system-wide goal of evidence-based guidelines is to improve the patient’s health and well-being by guiding health providers who are taking care of patients
 with CKD along the management pathways that are supported by evidence and are thus considered the highest standard of care.
@@ -47,15 +53,17 @@ The Kidney Disease: Improving Global Outcomes (KDIGO) 2012 Clinical Practice Gui
 ## Guideline Recommendations
 The following CKD guideline recommendations are included in this example:
 
-| Recommendation | Strength |
-| We suggest that periodic evaluation for CKD be considered in patients with the following:
+| Strength | Recommendation |
+| :---: | --- |
+| Weak For | We suggest that periodic evaluation for CKD be considered in patients with the following:
 * Diabetes, hypertension, other end organ disease (e.g., chronic heart failure [CHF]), or a personal or family history of kidney disease
 * Systemic illness (e.g., human immunodeficiency virus [HIV], systemic lupus erythematosus, multiple myeloma)
 * History of acute kidney injury (AKI) (e.g., acute tubular necrosis, urinary tract obstruction, interstitial nephritis)
 * Elderly patients
-* Races and ethnicities associated with increased risk (e.g., African Americans, Hispanics, Native Americans) | Weak For |
-| In adult patients with stages 1-4 CKD, we recommend that blood pressure targets should be less than 140/90 mmHg | Strong For |
-| In patients with diabetes, hypertension, and albuminuria, we recommend the use of an ACEI or ARB to slow the progression of CKD, unless there is documentation of intolerance. | Strong For |
-| We recommend that all patients with CKD who are not on dialysis and have no known history of coronary artery disease be assessed for 10-year CVD risk using a validated risk calculator for primary prevention. If at risk (as defined in the VA/DoD Management of Dyslipidemia guideline), we recommend use of at least a low dose statin. | Strong For |
-| We suggest offering supplemental vitamin D to correct vitamin D deficiency in patients with CKD stages 3 or 4. | Weak For |
-| We suggest not offering phosphate binders to patients with stage 3 and 4 CKD with normal serum phosphorous. | Weak Against |
+* Races and ethnicities associated with increased risk (e.g., African Americans, Hispanics, Native Americans) |
+| Weak For | In patients with stage 3 and 4 CKD, we suggest a protein diet of 0.6 to 0.8 g/kg/day as it may slow the decline in glomerular filtration rate (GFR) and progression to end-stage renal disease (ESRD). |
+| Strong For | In adult patients with stages 1-4 CKD, we recommend that blood pressure targets should be less than 140/90 mmHg |
+| Strong For | In patients with diabetes, hypertension, and albuminuria, we recommend the use of an ACEI or ARB to slow the progression of CKD, unless there is documentation of intolerance. |
+| Strong For | We recommend that all patients with CKD who are not on dialysis and have no known history of coronary artery disease be assessed for 10-year CVD risk using a validated risk calculator for primary prevention. If at risk (as defined in the VA/DoD Management of Dyslipidemia guideline), we recommend use of at least a low dose statin. |
+| Weak For | We suggest offering supplemental vitamin D to correct vitamin D deficiency in patients with CKD stages 3 or 4. |
+| Weak Against | We suggest not offering phosphate binders to patients with stage 3 and 4 CKD with normal serum phosphorous. |
