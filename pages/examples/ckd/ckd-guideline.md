@@ -8,11 +8,14 @@ title: Chronic Kidney Disease (CKD) Guideline Example
 * [Chronic Kidney Disease (CKD) Guidelines](#chronic-kidney-disease-ckd-guidelines)
   * [KDIGO](#kdigo-international-guideline)
   * [VA/DoD](#vadod-clinical-practice-guideline-for-ckd)
+* [Guideline Order Sets](#guideline-order-sets)
 * [Guideline Recommendations](#guideline-recommendations)
+* [Example FHIR Resources](#example-fhir-resources)
 
 ## Overview
 The system-wide goal of evidence-based guidelines is to improve the patient’s health and well-being by guiding health providers who are taking care of patients
-with chronic health conditions along the management pathways that are supported by evidence and are thus considered the highest standard of care.
+with chronic health conditions along the management pathways that are supported by evidence and are thus considered the highest standard of care. 
+This example focuses on Chronic Kidney Disease, however we expect that this implementation guide will be applicable to management of many other chronic health conditions, e.g. diabetes, hypertension, congestive heart failure, etc.
 
 The expected outcome of successful implementation of this guideline is to:
 * Formulate an efficient and effective assessment of the patient's condition
@@ -36,7 +39,7 @@ other sources to specify an overall pattern recommended for all clinical practic
 3. Criteria for Confirmed Diagnosis
 4. Determine Stage of Disease
 5. Strategies to Slow Progression
-6. Recommendations for Specialist Consultation
+6. Criteria for Specialist Consultation
 
 ### KDIGO International Guideline
 The Kidney Disease: Improving Global Outcomes (KDIGO) 2012 Clinical Practice Guideline for the 
@@ -51,11 +54,27 @@ The Kidney Disease: Improving Global Outcomes (KDIGO) 2012 Clinical Practice Gui
 | ![CKD guideline algorithm](images/ckd-cpg-algorithm.png) |
 
 
+## Guideline Order Sets
+
+Differentiate "orderables" from "performables" as they pertain to  patient-centered care planning and care management.
+
+Describe categories of order sets from CKD practice guidelines, to include:
+* Laboratory orders
+  * Blood chemistry
+  * Urine analysis
+* Medications
+* Procedures to be performed 
+  * e.g. renal ultrasound
+* Patient self-care, to be performed by patient at home
+  * e.g. weight, blood pressure, exercise, food diary
+
+Describe order set representation using FHIR ActivityDefinition and PlanDefinition. Link to specific examples for CKD.
+
 ## Guideline Recommendations
 The following CKD guideline recommendations are included in this example:
 
-<table>
-<tr><th>Strength</th>
+<table border="1" cellpadding="2">
+<tr align="center"><th>Strength</th>
 <th>Recommendation</th></tr>
 
 <tr><td>Weak For</td>
@@ -93,3 +112,13 @@ We suggest that periodic evaluation for CKD be considered in patients with the f
 <td>We suggest not offering phosphate binders to patients with stage 3 and 4 CKD with normal serum phosphorous.</td>
 </tr>
 </table>
+
+## Example FHIR Resources
+
+### Example for ordering/performing screening evaluation
+
+### Example for medication recommendations
+
+### Example for laboratory recommendations
+
+### Example for patient self-care recommendations
