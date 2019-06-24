@@ -28,7 +28,7 @@ include ExampleOpioidCDS_STU3_Common version '0.1.0' called Common
     Have availability to snooze if benefits outweigh risks
 
   Plan Definition:
-	http://build.fhir.org/ig/cqframework/opioid-cds/PlanDefinition-opioidcds-11.html
+	http://build.fhir.org/ig/cqframework/opioid-cds/PlanDefinition-opioidcds-11-patient-view.html
 */
 
 context Patient

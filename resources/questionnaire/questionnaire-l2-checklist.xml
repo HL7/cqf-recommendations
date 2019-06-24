@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire>
+	<id value="l2-checklist"/>
+  <item>
+    <prefix value="1"/>
+    <text value="Guideline Content (L1) - Complete L1 content and documentation for the guideline"/>
+    <item>
+      <prefix value="1.a"/>
+      <text value="Permalink - Permanent URL for the guideline content, if available"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="1.b"/>
+      <text value="Citation - Appropriately formatted citation for the guideline"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="1.c"/>
+      <text value="Status - Current status of the guideline, including last reviewed, endorsing parties, and timeline of pending changes"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="1.d"/>
+      <text value="Contact - Contact information for the guideline developer and steward"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="1.d.i"/>
+      <text value="Guideline Developer - Direct contact for guideline developer"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="1.d.ii"/>
+      <text value="Content/Guideline Steward Contact - Public contact information for the guideline steward"/>
+      <type value="string"/>
+    </item> 
+    <item>
+      <prefix value="2"/>
+      <text value="Legal &gt;Licensing - All legal and licensing issues are addressed"/>
+    </item>
+    <item>
+      <prefix value="2.a"/>
+      <text value="Guideline licensing terms - What are the licensing terms for the use of the guideline?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="2.b"/>
+      <text value="Content licensing terms - What will the licensing terms for the L2 and L3 artifacts be?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="2.c"/>
+      <text value="Additional licensing terms - What additional content licensing is required, if any"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3"/>
+      <text value="Scope - Clearly determine the overall scope of the project"/>
+    </item>
+    <item>
+      <prefix value="3.a"/>
+      <text value="Goal(s) - What goal(s) is the recommendation trying to achieve?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.b"/>
+      <text value="Target Recommendations - What recommendations are targeted for the project"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c"/>
+      <text value="Per Recommendation - For each recommendation, ensure the following"/>
+    </item>
+    <item>
+      <prefix value="3.c.i"/>
+      <text value="GuideLine Implementability Appraisal (GLIA) checklist - A GLIA checklist is provided"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.ii"/>
+      <text value="Triggering - How will the recommendation be triggered?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.ii.1"/>
+      <text value="Terminologies - What terminologies are involved?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.ii.2"/>
+      <text value="Clinical State - What clinical states are involved?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.ii.3"/>
+      <text value="Setting - What settings or environments are relevant?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.ii.4"/>
+      <text value="Periodic - How often should the recommendation be triggered/reviewed?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.iii"/>
+      <text value="Condition - How will the condition be expressed?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.iii.1"/>
+      <text value="Terminologies - What terminologies are involved?"/>
+      <type value="string"/>
+    </item> 
+    <item>
+      <prefix value="3.c.iii.2"/>
+      <text value="Clinical State - What clinical states are involved?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.iv"/>
+      <text value="Action - How will the action be expressed?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.iv.1"/>
+      <text value="Request/Order - What orderables are involved?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.iv.2"/>
+      <text value="Assessment - What instruments are involved?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.iv.3"/>
+      <text value="Questionnaire - What questionnaires are involved?"/>
+      <type value="string"/>
+    </item> 
+    <item>
+      <prefix value="3.c.v"/>
+      <text value="Monitoring - How will the recommendation be assessed/monitored?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.v.1"/>
+      <text value="Measures - What measures are available/appropriate?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.v.2"/>
+      <text value="Performance Measures - What measures are looking at the aspects related to the clinical condition?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.v.3"/>
+      <text value="Process Measures - What measures are looking at the aspects related to CDS workflow and feasibility"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.v.4"/>
+      <text value="Outcome Measures - What measures are looking at the aspects related to the health of the patient"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.v.5"/>
+      <text value="Guideline Evaluation Metrics - What measures are looking at how well the recommendation is meeting its goal(s)?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.vi"/>
+      <text value="Use Case - A clear description of a use case for the recommendation"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.vii"/>
+      <text value="Diagram/ workflow diagram - A visual depiction of the workflow for the recommendation"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="3.c.viii"/>
+      <text value="Test Plan - A description of the testing plan"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4"/>
+      <text value="Existing Artifacts - What existing artifacts are available, either wholesale, or for derivation and reuse?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.a"/>
+      <text value="Terminologies - What value sets are available?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.a.i"/>
+      <text value="Existing - What value sets exist? Can they be reused or do they need modification/augmentation?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.a.ii"/>
+      <text value="Need to be created - What value sets need to be created?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.b"/>
+      <text value="Assessments - What formal instruments are available? Can they be reused?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.c"/>
+      <text value="Questionnaires - What questionnaires are available?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.d"/>
+      <text value="Profiles - What profiles are available?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.e"/>
+      <text value="PlanDefinition/ActivityDefinition - What definitions are already available?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.f"/>
+      <text value="Libraries - What libraries are available?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.g"/>
+      <text value="Test Data - What test data is available? What test data generation facilities are available?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="4.h"/>
+      <text value="Decision Aids - What aids are available that help patients make decisions or can be used for shared decicion-making?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="5"/>
+      <text value="Publication Strategy - What publication strategy will be used for the L2/L3 content?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="5.a"/>
+      <text value="Target Repository - What publication channel will be used? (e.g. FHIR Registry, CDS Connect)"/>
+    </item>
+    <item>
+      <prefix value="5.b"/>
+      <text value="Project Repository - Set up a project repository and collaboration wiki"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="5.c"/>
+      <text value="Publishing URL - Establish a base URL for the content"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="5.d"/>
+      <text value="Terminology Publication Strategy - Where will the terminologies be published? (e.g. FHIR Registry, Simplifier, VSAC, PHINVADS)"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="6"/>
+      <text value="Stewarding and Maintenance - How will the content be maintained over time?"/>
+    </item>
+    <item>
+      <prefix value="6.a"/>
+      <text value="Change Management - What external dependencies will impact the content? Document change sources and timelines"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="6.b"/>
+      <text value="L2 Steward - Who will maintain the content long term?"/>
+      <type value="string"/> 
+    </item>
+    <item>
+      <prefix value="6.c"/>
+      <text value="Strategy - What is the strategy for reacting to changes?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="7"/>
+      <text value="Piloting - Who will pilot the content as part of the development process?"/>
+    </item>
+    <item>
+      <prefix value="7.a"/>
+      <text value="Pilot Site(s) - Identify at least one primary pilot site (alpha) and potentially second phase (beta) sites."/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="7.b"/>
+      <text value="Pilot Team Members - Engage pilot site members as part of the development team"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="8"/>
+      <text value="System Feedback"/>
+    </item>
+    <item>
+      <prefix value="8.a"/>
+      <text value="SDO Feedback - Are there gaps in the specifications being used that would trigger feedback to an appropriate SDO?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="8.b"/>
+      <text value="Policy - Are there problems in a policies that would trigger feedback to the policy owner?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="9"/>
+      <text value="Case Reporting - Is there a potential need for monitoring disease trends or outbreak management?"/>
+      <type value="string"/>
+    </item>
+    <item>
+      <prefix value="9.a"/>
+      <text value="Existing Artifacts"/>
+      <type value="string"/>
+    </item>
+ </item>
+</Questionnaire>

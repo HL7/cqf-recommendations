@@ -19,23 +19,55 @@
     <package>
         <name value="Main"/>
         <resource>
-            <example value="true"/>
             <sourceReference>
                 <reference value="StructureDefinition/cqfr-valueset-query"/>
             </sourceReference>
         </resource>
         <resource>
-            <example value="true"/>
             <sourceReference>
                 <reference value="StructureDefinition/cqfr-valueset-inclusion"/>
             </sourceReference>
         </resource>
         <resource>
-            <example value="true"/>
             <sourceReference>
                 <reference value="StructureDefinition/cqfr-valueset-exclusion"/>
             </sourceReference>
         </resource>
+				<resource>
+					<sourceReference>
+						<reference value="CodeSystem/cqfr-indicator"/>
+					</sourceReference>
+				</resource>
+				<resource>
+					<sourceReference>
+						<reference value="CodeSystem/cqfr-common-process"/>
+					</sourceReference>
+				</resource>
+				<resource>
+					<sourceReference>
+						<reference value="PlanDefinition/common-pathway"/>
+					</sourceReference>
+				</resource>
+				<!--resource>
+					<sourceReference>
+						<reference value="Questionnaire/l2-checklist"/>
+					</sourceReference>
+				</resource>
+				<resource>
+					<sourceReference>
+						<reference value="Questionnaire/l3-checklist"/>
+					</sourceReference>
+				</resource-->
+				<resource>
+					<sourceReference>
+						<reference value="ValueSet/cqfr-indicator"/>
+					</sourceReference>
+				</resource>
+				<resource>
+					<sourceReference>
+						<reference value="ValueSet/cqfr-common-process"/>
+					</sourceReference>
+				</resource>
     </package>
     <page>
         <source value="index.html"/>

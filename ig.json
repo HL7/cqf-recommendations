@@ -39,6 +39,26 @@
     "profile-valueset-cqfr-spreadsheet.xml"
   ],
   "resources": {
+		"CodeSystem/cqfr-indicator": {
+			"source": "codesystem-cqfr-indicator.xml",
+			"base": "CodeSystem-cqfr-indicator.html"
+		},
+		"CodeSystem/cqfr-common-process": {
+			"source": "codesystem-cqfr-common-process.xml",
+			"base": "CodeSystem-cqfr-common-process.html"
+		},
+		"PlanDefinition/common-pathway": {
+			"source": "plandefinition/plandefinition-common-pathway.xml",
+			"base": "PlanDefinition-common-pathway.html"
+		},
+		"ValueSet/cqfr-indicator": {
+			"source": "valueset-cqfr-indicator.xml",
+			"base": "ValueSet-cqfr-indicator.html"
+		},
+		"ValueSet/cqfr-common-process": {
+			"source": "valueset-cqfr-common-process.xml",
+			"base": "ValueSet-cqfr-common-process.html"
+		},
     "StructureDefinition/cqfr-activitydefinition": {
       "defns": "cqfr-activitydefinition-definitions.html",
       "base": "cqfr-activitydefinition.html"
