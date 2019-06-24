@@ -23,8 +23,8 @@
     },
     "StructureDefinition" : {
       "template-base": "instance-template-sd.html",
-      "template-mappings": "instance-template-mappings.html",
-      "template-defns": "instance-template-definitions.html"
+      "template-mappings": "instance-template-sd-mappings.html",
+      "template-defns": "instance-template-sd-definitions.html"
     }
   },
   "logging": [ "init", "progress", "context", "html", "tx" ],
