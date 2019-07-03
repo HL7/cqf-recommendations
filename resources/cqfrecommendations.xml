@@ -4,6 +4,7 @@
     <url value="http://hl7.org/fhir/uv/cqfrecommendations/ImplementationGuide/uv-cqfrecommendations-0.1.0"/>
     <version value="0.1.0"/>
     <name value="CQFRecommendations"/>
+		<title value="CQF Recommendations"/>
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2019-05-08"/>
@@ -15,64 +16,62 @@
       </telecom>
     </contact>
     <description value="Implementation guidance for creating Clinical Practice Guidelines with formal artifacts to facilitate sharing and implementation of the guideline"/>
-    <fhirVersion value="3.0.1"/>
-    <package>
+		<packageId value="hl7.fhir.uv.cqfrecommendations"/>
+		<license value="CC0-1.0"/>
+    <fhirVersion value="4.0.0"/>
+    <definition>
+			<grouping>
         <name value="Main"/>
-        <resource>
-            <sourceReference>
-                <reference value="StructureDefinition/cqfr-valueset-query"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <sourceReference>
-                <reference value="StructureDefinition/cqfr-valueset-inclusion"/>
-            </sourceReference>
-        </resource>
-        <resource>
-            <sourceReference>
-                <reference value="StructureDefinition/cqfr-valueset-exclusion"/>
-            </sourceReference>
-        </resource>
-				<resource>
-					<sourceReference>
-						<reference value="CodeSystem/cqfr-indicator"/>
-					</sourceReference>
-				</resource>
-				<resource>
-					<sourceReference>
-						<reference value="CodeSystem/cqfr-common-process"/>
-					</sourceReference>
-				</resource>
-				<resource>
-					<sourceReference>
-						<reference value="PlanDefinition/common-pathway"/>
-					</sourceReference>
-				</resource>
-				<!--resource>
-					<sourceReference>
-						<reference value="Questionnaire/l2-checklist"/>
-					</sourceReference>
-				</resource>
-				<resource>
-					<sourceReference>
-						<reference value="Questionnaire/l3-checklist"/>
-					</sourceReference>
-				</resource-->
-				<resource>
-					<sourceReference>
-						<reference value="ValueSet/cqfr-indicator"/>
-					</sourceReference>
-				</resource>
-				<resource>
-					<sourceReference>
-						<reference value="ValueSet/cqfr-common-process"/>
-					</sourceReference>
-				</resource>
-    </package>
-    <page>
-        <source value="index.html"/>
-        <title value="Representation of Clinical Practice Guideline Recommendations in FHIR Implementation Guide"/>
-        <kind value="page"/>
-        <format value="html"/>
-    </page>
+			</grouping>
+      <resource>
+          <reference>
+              <reference value="StructureDefinition/cqfr-valueset-query"/>
+          </reference>
+      </resource>
+      <resource>
+          <reference>
+              <reference value="StructureDefinition/cqfr-valueset-inclusion"/>
+          </reference>
+      </resource>
+      <resource>
+          <reference>
+              <reference value="StructureDefinition/cqfr-valueset-exclusion"/>
+          </reference>
+      </resource>
+			<resource>
+				<reference>
+					<reference value="CodeSystem/cqfr-indicator"/>
+				</reference>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="CodeSystem/cqfr-common-process"/>
+				</reference>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/common-pathway"/>
+				</reference>
+			</resource>
+			<!--resource>
+				<reference>
+					<reference value="Questionnaire/l2-checklist"/>
+				</reference>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Questionnaire/l3-checklist"/>
+				</reference>
+			</resource-->
+			<resource>
+				<reference>
+					<reference value="ValueSet/cqfr-indicator"/>
+				</reference>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/cqfr-common-process"/>
+				</reference>
+			</resource>
+    </definition>
 </ImplementationGuide>

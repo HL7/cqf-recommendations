@@ -1,6 +1,6 @@
 {
   "canonicalBase": "http://hl7.org/fhir/uv/cqfrecommendations",
-  "version" : "3.0.1",
+  "version" : "4.0.0",
   "fixed-business-version": "0.1.0",
   "sct-edition" : "http://snomed.info/sct/731000124108",
   "source": "cqfrecommendations.xml",

@@ -15,8 +15,10 @@
     </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
-    <contextType value="resource"/>
-    <context value="ValueSet"/>
+		<context>
+			<type value="element"/>
+			<expression value="ValueSet"/>
+		</context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
