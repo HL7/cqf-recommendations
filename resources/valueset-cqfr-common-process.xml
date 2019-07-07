@@ -11,24 +11,28 @@
         <include>
             <system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
 				    <concept>
-				        <code value="record-id-information"/>
-				        <display value="Record ID Information"/>
+				        <code value="registration"/>
+				        <display value="Registration"/>
 				    </concept>
 				    <concept>
-				        <code value="quick-check-for-emergency-signs"/>
-				        <display value="Quick Check for Emergency Signs"/>
+				        <code value="triage"/>
+				        <display value="Triage"/>
 				    </concept>
 				    <concept>
 				        <code value="local-urgent-care"/>
 				        <display value="Local Urgent Care"/>
 				    </concept>
 				    <concept>
+				        <code value="history-and-physical"/>
+				        <display value="History and Physical"/>
+				    </concept>
+				    <concept>
 				        <code value="provide-counseling"/>
 				        <display value="Provide Counseling"/>
 				    </concept>
 				    <concept>
-				        <code value="conduct-lab-tests"/>
-				        <display value="Conduct Lab Tests"/>
+				        <code value="diagnostic-testing"/>
+				        <display value="Diagnostic Testing"/>
 				    </concept>
 				    <concept>
 				        <code value="determine-diagnosis"/>

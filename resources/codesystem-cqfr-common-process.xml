@@ -1,5 +1,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="cqfr-common-process"/>
+		<meta>
+			<profile value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-codesystem"/>
+		</meta>
+		<extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
+			<valueUri value="http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx"/>
+		</extension>
+		<extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
+			<valueUri value="https://doi.org/10.1016/j.jbi.2008.05.012"/>
+		</extension>
     <url value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
 		<name value="CQFR_Common_Process"/>
     <title value="CQF Recommendations Common Process"/>
@@ -9,13 +18,13 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="record-id-information"/>
-        <display value="Record ID Information"/>
+        <code value="registration"/>
+        <display value="Registration"/>
         <definition value="Identifying and recording the subject of care."/>
     </concept>
     <concept>
-        <code value="quick-check-for-emergency-signs"/>
-        <display value="Quick Check for Emergency Signs"/>
+        <code value="triage"/>
+        <display value="Triage"/>
         <definition value="Performing basic triage to identify any signs that emergency care is required."/>
     </concept>
     <concept>
@@ -24,24 +33,29 @@
         <definition value="Providing local urgent care based on the outcome of a triage process."/>
     </concept>
     <concept>
+        <code value="history-and-physical"/>
+        <display value="History and Physical"/>
+        <definition value="Gathering clinical history and performing and recording observations regarding the patient's health (e.g. blood pressure, temperature, etc.)"/>
+    </concept>
+    <concept>
         <code value="provide-counseling"/>
         <display value="Provide Counseling"/>
         <definition value="Informing the subject of care about their treatment options and about how their ongoing care should be managed between visits. This is also where treatment constents are obtained and where health education is provided."/>
     </concept>
     <concept>
-        <code value="conduct-lab-tests"/>
-        <display value="Conduct Lab Tests"/>
-        <definition value="Conducting lab tests, including collection of samples. Lab testing may be done locally (e.g. HIV quick test) or the samples may require lab order fulfillment workflow."/>
+        <code value="diagnostic-testing"/>
+        <display value="Conduct Diagnostic Tests"/>
+        <definition value="Conducting diagnostic tests, including lab tests, collection of samples, and other diagnostic tests. Lab testing may be done locally (e.g. HIV quick test) or the samples may require lab order fulfillment workflow."/>
     </concept>
     <concept>
         <code value="determine-diagnosis"/>
         <display value="Determine Diagnosis"/>
-        <definition value="Performing and recording observations regarding the patient's health (e.g. blood pressure, termperature, etc.) and using these, along with other information from the patient's record such as lab results to assist in developing a diagnosis."/>
+        <definition value="Using available information from the patient's history, current examinations, tests, and assessments to assist in developing a diagnosis."/>
     </concept>
     <concept>
-        <code value="guildeine-based-care"/>
+        <code value="guideline-based-care"/>
         <display value="Guideline-based Care"/>
-				<definition value="Performing and recording observations, interventions, and treatments plans recommended by specific guidelines."/>
+				<definition value="Performing and recording observations, interventions, and treatment plans recommended by specific guidelines."/>
     </concept>
     <concept>
         <code value="dispense-medications"/>

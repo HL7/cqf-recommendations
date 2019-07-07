@@ -19,25 +19,25 @@
 	<date value="2019-06-23"/>
 	
 	<action id="001">
-		<title value="Record ID Information"/>
+		<title value="Registration"/>
 		<description value="Identifying and recording the subject of care."/>
 		<code>
 			<coding>
-				<code value="record-id-information"/>
+				<code value="registration"/>
 				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<display value="Record ID Information"/>
+				<display value="Registration"/>
 			</coding>
 		</code>
 	</action>
 
 	<action id="002">
-		<title value="Quick Check for Emergency Signs"/>
+		<title value="Triage"/>
 		<description value="Performing basic triage to identify any signs that emergency care is required."/>
 		<code>
 			<coding>
-        <code value="quick-check-for-emergency-signs"/>
+        <code value="triage"/>
 				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-        <display value="Quick Check for Emergency Signs"/>
+        <display value="Triage"/>
 			</coding>
 		</code>
 	</action>
@@ -55,6 +55,18 @@
 	</action>
 
 	<action id="004">
+		<title value="History and Phyiscal"/>
+		<description value="Gathering clinical history and performing and recording observations regarding the patient's health (e.g. blood pressure, temperature, etc.)"/>
+    <code>
+			<coding>
+        <code value="history-and-physical"/>
+				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
+        <display value="History and Physical"/>
+			</coding>
+    </code>
+	</action>
+	
+	<action id="005">
 		<title value="Provide Counseling"/>
 		<description value="Informing the subject of care about their treatment options and about how their ongoing care should be managed between visits. This is also where treatment constents are obtained and where health education is provided."/>
     <code>
@@ -66,21 +78,21 @@
     </code>
 	</action>
 	
-	<action id="005">
-		<title value="Conduct Lab Tests"/>
-		<description value="Conducting lab tests, including collection of samples. Lab testing may be done locally (e.g. HIV quick test) or the samples may require lab order fulfillment workflow."/>
+	<action id="006">
+		<title value="Diagnostic Testing"/>
+		<description value="Conducting diagnostic tests, including lab tests, collection of samples, and other diagnostic tests. Lab testing may be done locally (e.g. HIV quick test) or the samples may require lab order fulfillment workflow."/>
     <code>
 			<coding>
-        <code value="conduct-lab-tests"/>
+        <code value="diagnostic-testing"/>
 				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-        <display value="Conduct Lab Tests"/>
+        <display value="Diagnostic Testing"/>
 			</coding>
     </code>
 	</action>
 	
-	<action id="006">
+	<action id="007">
 		<title value="Determine Diagnosis"/>
-    <description value="Performing and recording observations regarding the patient's health (e.g. blood pressure, termperature, etc.) and using these, along with other information from the patient's record such as lab results to assist in developing a diagnosis."/>
+    <description value="Using available information from the patient's history, current examinations, tests, and assessments to assist in developing a diagnosis."/>
     <code>
 			<coding>
         <code value="determine-diagnosis"/>
@@ -90,9 +102,9 @@
 		</code>
 	</action>
 
-	<action id="007">
+	<action id="008">
 		<title value="Guideline-based Care"/>
-		<description value="Performing and recording observations, interventions, and treatments plans recommended by specific guidelines."/>
+		<description value="Performing and recording observations, interventions, and treatment plans recommended by specific guidelines."/>
     <code>
 			<coding>
         <code value="guildeine-based-care"/>
@@ -102,7 +114,7 @@
 		</code>
 	</action>
 	
-	<action id="008">
+	<action id="009">
 		<title value="Dispense Medications"/>
 		<description value="Administering medications, ordered by clinicians and dispensed by a pharmacy. Pharmacies may be local to the care facility or community-based, and involves supply chain transactions to support medication management."/>
     <code>
@@ -114,7 +126,7 @@
     </code>
 	</action>
 	
-	<action id="009">
+	<action id="010">
 		<title value="Emergency Care"/>
 		<description value="Providing emergency care in trauma cases or as part of guildeline-based care escalation."/>
     <code>
@@ -126,7 +138,7 @@
     </code>
 	</action>
 	
-	<action id="010">
+	<action id="011">
 		<title value="Acute/Tertiary Care"/>
 		<description value="Providing acute or tertiary care, either as an escalation from emergency care, or from primary care due to guideline-based referral patterns."/>
     <code>
@@ -138,7 +150,7 @@
     </code>
 	</action>
 	
-	<action id="011">
+	<action id="012">
 		<title value="Charge for Service"/>
 		<description value="Charging for services rendered, regardless of the mechanism of coverage."/>
     <code>
@@ -150,7 +162,7 @@
     </code>
 	</action>
 	
-	<action id="012">
+	<action id="013">
 		<title value="Discharge/Referral of Patient"/>
 		<description value="Discharging or referring a patient, including the movement of patients through levels of care delivery (e.g. acute to primary, primary to community, etc.) or the enrollment of patients in guideline-based care programs (e.g. HIV, maternal, diabetes, injury rehabilitiation, etc.)."/>
     <code>
@@ -162,7 +174,7 @@
     </code>
 	</action>
 	
-	<action id="013">
+	<action id="014">
 		<title value="Record and Report"/>
 		<description value="Recording and reporting patient-specific care management information which may be aggregated to develop reportable system management indicators at the priovider, facility, district, national, and international levels."/>
     <code>
@@ -174,7 +186,7 @@
     </code>
 	</action>
 	
-	<action id="014">
+	<action id="015">
 		<title value="Monitor and Follow-up of Patient"/>
 		<description value="Monitoring and tracking progress for each patient based on guideline recommendations."/>
     <code>
@@ -186,7 +198,7 @@
 		</code>
 	</action>
 
-	<action id="015">
+	<action id="016">
 		<title value="Alerts Reminders Education"/>
 		<description value="Providing alerts, reminders, and education to patients, providers, and health system managers."/>
     <code>

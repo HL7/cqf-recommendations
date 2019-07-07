@@ -6,23 +6,9 @@ title: Documentation
 
 This implementation guide is a multi-stakeholder effort to use FHIR resources to build computable representations of the content of clinical care guidelines.
 
-The process of guideline implementation is a signficant challenge that is currently complicated by the lack of computable guideline content. Health systems and vendors implement evidence-based guidance, but almost always independently, leading to signficant duplicate effort, as well as inconsistent implementation. This implementation guide will build on experience from multiple guideline representation projects to establish the patterns and practices that support development and implementation of shareable computable guideline recommendations.
+The process of guideline implementation is a significant challenge that is currently complicated by the lack of computable guideline content. Health systems and vendors implement evidence-based guidance, but almost always independently, leading to signficant duplicate effort, as well as inconsistent implementation. This implementation guide will build on experience from multiple guideline representation projects to establish the patterns and practices that support development and implementation of shareable computable guideline recommendations.
 
 The initial ballot combines experience gained from multiple guideline representation projects, including Opioid Prescribing Support, Chronic Kidney Disease Management, Antenatal Care, HIV/HBV Screening, Prevention, and Treatment, and Immunization Decision Support.
-
-# Scope
-
-The implementation guide focuses on the "leaves" of a clinical guideline, i.e. the guide establishes patterns, profiles, conformance requirements, and guidance for the patient-independent representation, and analogous patterns for the patient-specific representation of guideline recommendations.
-
-# Goals
-
-* Reduce duplicate development effort involved in the implementation of clinical practice guideline recommendations in clinical systems
-* Reduce unnecessary and/or unintentional variability in clinical practice guideline implementation
-
-# Audience
-
-Assumes clinical informaticists, health system integrators and clinical systems developers.
-Assumes familiarity with relevant standards, including FHIR and CQL
 
 # Approach
 
@@ -152,6 +138,28 @@ Automatic implementation involves programmatic translation of the L3 content int
 Native implementation involves direct execution of L3 content. For example, a CQL query may be run directly on a native CQL engine. As with the automatic approach, this approach may involve significant initial tooling effort, but can dramatically reduce implementation time thereafter.
 
 # Structuring Recommendations
+
+To support computable representation of a recommendation, this implementation guide describes the following components of a recommendation:
+
+* **Personas**: Who are the participants in the recommendation and what roles do they play?
+* **Settings**: Where do the activities in the recommendation occur?
+* **Processes**: What are the common processes involved in delivering guideline-based care?
+
+By establishing common patterns for these aspects of recommendations, specific guidelines can better share common aspects such as workflow insertion points.
+
+## Personas
+
+The personas identified in this implementation guide are defined based on the WHO recommendation for [Classifying health workers](https://www.who.int/hrh/statistics/Health_workers_classification.pdf). This recommendation uses codes from the [International Standard Classification for Occupations](http://www.ilo.org/public/english/bureau/stat/isco/index.htm) but defines several additional categories of workers. In addition, the codes in that recommendation are focused on health workers, so codes for patient and care partner personas need to be considered as well.
+
+Where a code from the ISCO exists, it is used. Where a WHO recommended health worker category is used, a code is constructed beginning with a W. Where a code is introduced by this implementation guide, it is constructed beginning with a C.
+
+## Settings
+
+For settings, this implementation guide uses the [HL7 V3 ServiceDeliveryLocationRoleType](http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html) value set, as it contains generally applicable, broadly standardized settings for use in the computable representation of guideline recommendations.
+
+## Processes
+
+The common processes identified in this implementation guide are based on surveys of guideline content, both in the examples used in this guide, as well as other guideline content from various clinical domains and guideline authors. The result is the definition of a _common pathway_ that is intended to be applicable in any guideline-based care content. 
 
 # Using Terminology
 

@@ -14,8 +14,6 @@
       </a>
   </h2>
 
-  <img src="assets/images/Guidelines-iterative-and-incremental-model.png"/>
-
   <a name="intro"> </a>
   <h3>
       <span class="sectioncount">1.1.0</span> Introduction
@@ -23,6 +21,10 @@
           <img src="target.png" width="20" class="self-link" height="20"/>
       </a>
   </h3>
+	
+	<p>This implementation guide supports the development of standards-based computable representations of the content of clinical care guidelines. Its content pertains to technical aspects of digital guidelines implementation and is intended to be usable across multiple use cases across clinical domains as well as in the International Realm.</p>
+	
+	<p>This implementation guide has been developed through a multi-stakeholder effort, holistically involving a range of stakeholders, including those who work at the beginning of the process (e.g., guideline developers) to the end users (e.g., clinical implementation team representatives, health IT developers, patients/patient advocates), and others in between (e.g., informaticists, communicators, evaluators, public health organizations, clinical quality measure and clinical decision support developers).</p>
 
   <a name="scope"> </a>
   <h3>
@@ -32,10 +34,70 @@
       </a>
   </h3>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>The implementation guide focuses on the “leaves” of a clinical guideline, i.e., the guide establishes patterns, profiles, conformance requirements, and guidance for the patient-independent representation, and analogous patterns for the patient-specific representation of guideline recommendations.</p>
+	
+  <a name="goals"> </a>
+  <h3>
+      <span class="sectioncount">1.3.0</span> Goals
+      <a href="index.html#goals" title="link to here" class="self-link">
+          <img src="target.png" width="20" class="self-link" height="20"/>
+      </a>
+  </h3>
+	
+	<p><em>Direct:</em></p>
+	
+	<ul>
+		<li>Reduce duplicate development effort involved in the implementation of clinical practice guideline recommendations in clinical systems</li>
+		<li>Reduce unnecessary and/or unintentional variability in clinical practice guideline implementation</li>
+	</ul>
+	
+	<p><em>Indirect:</em></p>
+	
+	<ul>
+		<li>Minimize the time needed to implement clinical practice guideline recommendations in clinical systems</li>
+	</ul>
 
-  <!--<a name="references"> </a>-->
-  <!--<h3><span class="sectioncount">1.5.0</span> References <a href="index.html#references" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>-->
+  <a name="audience"> </a>
+  <h3>
+      <span class="sectioncount">1.4.0</span> Audience
+      <a href="index.html#audience" title="link to here" class="self-link">
+          <img src="target.png" width="20" class="self-link" height="20"/>
+      </a>
+  </h3>
+	
+	<p>Clinical informaticists, health system integrators and clinical systems developers. Assumes familiarity with relevant standards, including FHIR and Clinical Quality Language (CQL).</p>
+
+  <a name="background"> </a>
+  <h3>
+      <span class="sectioncount">1.5.0</span> Background
+      <a href="index.html#background" title="link to here" class="self-link">
+          <img src="target.png" width="20" class="self-link" height="20"/>
+      </a>
+  </h3>
+	
+	<p>The need for computable care guidelines can be considered in the context of the data lifecycle, where the representation of the guideline recommendations in FHIR helps deliver actionable knowledge (Figure 1.1).</p>
+
+  <img src="assets/images/delivering-actionable-knowledge.png"/>
+	<p><em>Figure 1.1</em></p>
+
+	<p>By translating the recommendations in clinical practice guidelines at the source, and disseminating a computable version along with the narrative version of the guidelines, the effort of translation would not be repeated across every organization that intends to apply the recommendations. Likewise, unnecessary or unintentional variations as a result of duplicative translation efforts could be prevented with a standard, computable version that is ready to be implemented. In removing the need for translating recommendations at each local clinical system, and removing as much variation as possible through a standard translation, the time needed to apply the recommendations in practice should also be reduced, helping scientific evidence reach patient care more easily, quickly, accurately, and consistently.</p>
+	
+	<p>In considering common patterns across multiple guidelines, this implementation guide can apply to a variety of use cases across multiple clinical domains, as is evidenced by the <a href="examples.html">examples</a> provided. These common patterns not only create a way to organize the content for the translation into computable recommendations but also help implementers operationalize the recommendations within clinical workflows.</p>
+
+  <a name="references"> </a>
+  <h3>
+		<span class="sectioncount">1.6.0</span> References 
+		<a href="index.html#references" title="link to here" class="self-link">
+			<img src="target.png" width="20" class="self-link" height="20"/>
+		</a>
+	</h3>
+	
+	<ul>
+		<li>International Standard Classification of Occupations (ISCO). <a href="http://www.ilo.org/public/english/bureau/stat/isco/index.htm">http://www.ilo.org/public/english/bureau/stat/isco/index.htm</a></li>
+		<li>Classifying health workers: Mapping occupations to the international standard classification. World Health Organization. <a href="https://www.who.int/hrh/statistics/Health_workers_classification.pdf">https://www.who.int/hrh/statistics/Health_workers_classification.pdf</a></li>
+		<li>Operationalizing Guideline-based Care. Presentation at the 2013 AeHIN General Meeting. Derek Ritz. <a href="http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx">http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx</a></li>
+		<li>An Ontological Framweork for Adaptive Medical Workflow. Journal of Biomedical Informatics Volume 41, Issue 5, October 2008, Pages 829-836. <a href="https://doi.org/10.1016/j.jbi.2008.05.012">https://doi.org/10.1016/j.jbi.2008.05.012</a></li>
+	</ul>
 
   {% include container-end.html %}
 
