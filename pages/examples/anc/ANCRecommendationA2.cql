@@ -68,6 +68,7 @@ define "Has Anaemia":
 define "Gestational Age in Weeks":
   First(
     ["Observation": "Weeks of gestational age"] O
+		  where O.status in { 'final' }
       sort by (effective as FHIR.dateTime) descending
   ).value as Quantity
   
