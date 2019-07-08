@@ -43,6 +43,10 @@
 			"source": "codesystem-cqfr-indicator.xml",
 			"base": "CodeSystem-cqfr-indicator.html"
 		},
+		"CodeSystem/cqfr-common-persona": {
+			"source": "codesystem-cqfr-common-persona.xml",
+			"base": "CodeSystem-cqfr-common-persona.html"
+		},
 		"CodeSystem/cqfr-common-process": {
 			"source": "codesystem-cqfr-common-process.xml",
 			"base": "CodeSystem-cqfr-common-process.html"
@@ -54,6 +58,10 @@
 		"ValueSet/cqfr-indicator": {
 			"source": "valueset-cqfr-indicator.xml",
 			"base": "ValueSet-cqfr-indicator.html"
+		},
+		"ValueSet/cqfr-common-persona": {
+			"source": "valueset-cqfr-common-persona.xml",
+			"base": "ValueSet-cqfr-common-persona.html"
 		},
 		"ValueSet/cqfr-common-process": {
 			"source": "valueset-cqfr-common-process.xml",

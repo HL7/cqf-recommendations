@@ -6,10 +6,12 @@ title: Documentation
 
 ![Common Care Pathway](assets/images/common-care-pathway.png)
 
-// Diagram evokes more encounter-based care, doesn't communicate that it potentially applies to more distributed care
+<!-- 
+Diagram evokes more encounter-based care, doesn't communicate that it potentially applies to more distributed care
 
-// Potentially simplify even more:
-// Diagnosis/Therapy/Procedure/Identity
+Potentially simplify even more:
+  Diagnosis/Therapy/Procedure/Identity
+-->
 
 ## Registration
 

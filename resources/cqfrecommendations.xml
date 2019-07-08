@@ -45,6 +45,11 @@
 			</resource>
 			<resource>
 				<reference>
+					<reference value="CodeSystem/cqfr-common-persona"/>
+				</reference>
+			</resource>
+			<resource>
+				<reference>
 					<reference value="CodeSystem/cqfr-common-process"/>
 				</reference>
 			</resource>
@@ -66,6 +71,11 @@
 			<resource>
 				<reference>
 					<reference value="ValueSet/cqfr-indicator"/>
+				</reference>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/cqfr-common-persona"/>
 				</reference>
 			</resource>
 			<resource>

@@ -22,12 +22,18 @@ The approach taken by this implementation guide is to consider three broad aspec
 
 This implementation guide utilizes an established clinical decision support (CDS) implementation model to move from a clinical guideline to computable content[^1]. This model defines four (4) levels of knowledge representation:
 
+![Knowledge Levels](assets/images/knowledge-levels.png)
+
+_Figure 2.1_
+
+<!--
 | Level | Name | Description |
 | --- | --- | --- |
 | L1 | Narrative | Published guideline for a specific disease that is written in the format of a peer-reviewed journal article |
 | L2 | Semi-structured | Flow diagrams, decision trees, or other similar formats that describe recommendations for implementation |
 | L3 | Structured | Standards-compliant specification encoding logic with data model(s), terminology/code sets, and value sets that is ready to be implemented |
 | L4 | Executable | CDS that is implemented and used in a local execution environment (e.g. CDS that is live in an electronic health record (EHR) production system) |
+-->
 
 ### Narrative
 Level 1 (L1) is the clinical guideline, generally a narrative, often in Portable Document Format (PDF), and includes:
@@ -72,11 +78,18 @@ Level 4 (L4) is executable software running in a clinical system. This is the lo
 
 This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering:
 
+<br/>
+![Tiers of Functionality](assets/images/functionality-tiers.png)
+<br/>
+_Figure 2.2_
+
+<!--
 | Tier | Name | Description |
 | ---- | ---- | ---- |
-| T1 | Data Elements | Formal description of the data involved the recommendations |
+| T1 | Data Elements | Formal description of the data involved in the recommendations |
 | T2 | Clinical Logic | Computable representation of the logic used in the recommendations |
 | T3 | Forms Description | Conceptual description of the collection instruments involved |
+-->
 
 To illustrate these tiers of functionality, consider the following excerpt from a recommendation statement in the CDC Opioid Prescribing Guideline:
 
@@ -120,11 +133,18 @@ Expressing the forms description for a guideline provides a more complete descri
 
 This implementation guide defines three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
+<br/>
+![Methods of Implementation](assets/images/methods-of-implementation.png)
+<br/>
+_Figure 2.3_
+
+<!--
 | Method | Name | Description |
 | ---- | ---- | ---- |
-| M1 | Manual | |
-| M2 | Automatic | |
-| M3 | Native | |
+| M1 | Manual | The content is used as a requirements specification, and development is done manually |
+| M2 | Automatic | A translation layer is used to convert the content to a format suitable for the target environment |
+| M3 | Native | The implementation can natively ingest and execute the L3 content |
+-->
 
 Note that there are numerous factors that must be considered as part of the local implementation of guideline content. The intent of the L3 artifacts that are the focus of this implementation guide is to ensure that these factors can be appropriately considered and addressed as part of implementation, while still providing useful content that can accelerate the process.
 
