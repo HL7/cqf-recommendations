@@ -32,11 +32,14 @@
     "mappings"
   ],
   "spreadsheets": [
-    "profile-activitydefinition-cqfr-spreadsheet.xml",
-    "profile-codesystem-cqfr-spreadsheet.xml",
-    "profile-library-cqfr-spreadsheet.xml",
-    "profile-plandefinition-cqfr-spreadsheet.xml",
-    "profile-valueset-cqfr-spreadsheet.xml"
+    "activitydefinition-cqfr-profile-spreadsheet.xml",
+    "codesystem-cqfr-profile-spreadsheet.xml",
+    "library-cqfr-profile-spreadsheet.xml",
+		"patient-cqfr-profile-spreadsheet.xml",
+		"practitioner-cqfr-profile-spreadsheet.xml",
+		"practitionerrole-cqfr-profile-spreadsheet.xml",
+    "plandefinition-cqfr-profile-spreadsheet.xml",
+    "valueset-cqfr-profile-spreadsheet.xml"
   ],
   "resources": {
 		"CodeSystem/cqfr-indicator": {

@@ -10,7 +10,7 @@
   <Author>Grahame</Author>
   <LastAuthor>Bryn</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2019-06-06T22:32:17Z</LastSaved>
+  <LastSaved>2019-07-08T17:38:07Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
@@ -20,12 +20,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13365</WindowHeight>
-  <WindowWidth>28800</WindowWidth>
+  <WindowHeight>7110</WindowHeight>
+  <WindowWidth>21450</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>2</ActiveSheet>
-  <FirstVisibleSheet>1</FirstVisibleSheet>
+  <ActiveSheet>1</ActiveSheet>
   <Calculation>SemiAutomaticCalculation</Calculation>
   <DoNotCalculateBeforeSave/>
   <RefModeR1C1/>
@@ -1056,7 +1055,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s72"><Data ss:Type="String">id</Data></Cell>
-    <Cell ss:StyleID="s73"><Data ss:Type="String">activitydefinition-cqfr</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">cqfr-activitydefinition</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">name</Data></Cell>
@@ -1064,7 +1063,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">display</Data></Cell>
-    <Cell ss:StyleID="s75"><Data ss:Type="String">CQFRecommendations Library Profile</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">CQFRecommendations ActivityDefinition Profile</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">author.name</Data></Cell>
@@ -1093,7 +1092,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">published.structure</Data></Cell>
-    <Cell ss:StyleID="s75"><Data ss:Type="String">activitydefinition-cqfr</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">cqfr-activitydefinition</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">version</Data></Cell>
@@ -1101,16 +1100,16 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s80" ss:HRef="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cds-activitydefinition"><Data
-      ss:Type="String">http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cds-activitydefinition</Data></Cell>
+    <Cell ss:StyleID="s80" ss:HRef="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-"><Data
+      ss:Type="String">http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s81"><Data ss:Type="String">introduction</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">cqfrecommendations-profile-introduction.xml</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">cqfr-profile-introduction.xml</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s83"><Data ss:Type="String">notes</Data></Cell>
-    <Cell ss:StyleID="s84"><Data ss:Type="String">cqfrecommendations-profile-notes.xml</Data></Cell>
+    <Cell ss:StyleID="s84"><Data ss:Type="String">cqfr-profile-notes.xml</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0"/>
   </Table>
@@ -1127,10 +1126,11 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>150</Zoom>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>11</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
    <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -1143,11 +1143,10 @@
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>15</ActiveRow>
+     <ActiveRow>4</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -1155,10 +1154,10 @@
    <x:PageLayoutZoom>0</x:PageLayoutZoom>
   </WorksheetOptions>
  </Worksheet>
- <Worksheet ss:Name="activitydefinition-cqfr">
+ <Worksheet ss:Name="cqfr-activitydefinition">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='activitydefinition-cqfr'!R1C1:R81C25" ss:Hidden="1"/>
+    ss:RefersTo="='cqfr-activitydefinition'!R1C1:R81C25" ss:Hidden="1"/>
   </Names>
   <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="68" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
@@ -3170,7 +3169,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
