@@ -1,0 +1,239 @@
+<PlanDefinition xmlns="http://hl7.org/fhir">
+	<id value="cqfr-common-registration"/>
+	<url value="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-common-registration"/>
+	<version value="0.1.0"/>
+	<name value="PlanDefinition_CQFR_Common_Registration"/>
+	<title value="PlanDefinition - CQFR Common Registration"/>
+	<type>
+		<coding>
+			<system value="http://hl7.org/fhir/plan-definition-type"/>
+			<code value="workflow-definition"/>
+			<display value="Workflow Definition"/>
+		</coding>
+	</type>
+	<status value="draft"/>
+	<date value="2019-05-15"/>
+	<copyright value="© WHO 2019+."/>
+	
+	<action>
+		<title value="Registration"/>
+		<code>
+			<coding>
+				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
+				<code value="registration"/>
+			</coding>
+		</code>
+		<participant>
+			<type value="patient"/>
+			<role>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-persona"/>
+					<code value="C000"/>
+				</coding>
+			</role>
+		</participant>
+		<participant>
+			<type value="practitioner"/>
+			<role>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-persona"/>
+					<code value="W000"/>
+					<display value="Clerical support worker"/>
+				</coding>
+			</role>
+		</participant>
+		
+		<!-- Gather identifying information -->
+		<action>
+			<title value="Gather identifying information"/>
+			<output>
+				<type value="QuestionnaireResponse"/>
+			</output>
+			<participant>
+				<type value="patient"/>
+				<role>
+					<coding>
+						<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-persona"/>
+						<code value="C000"/>
+					</coding>
+				</role>
+			</participant>
+			<definitionCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-identity"/>
+		</action>
+		
+		<!-- Patient match -->
+		<action>
+			<title value="Patient match"/>
+			<input>
+				<type value="QuestionnaireResponse"/>
+				<codeFilter>
+					<path value="questionnaire"/>
+					<code><code value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-identity"/></code>
+				</codeFilter>
+			</input>
+			<output>
+				<type value="Bundle"/>
+			</output>
+			<participant>
+				<extension url="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-participantCapabilityStatement"/>
+					<valueCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/CapabilityStatement/cqfr-patient-register"/>
+				</extension>
+				<type value="device"/>
+			</participant>
+			<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-match"/>
+		</action>
+		
+		<!-- Resolve patient match results -->
+		<action>
+			<title value="Resolve patient match results"/>
+			<input>
+				<type value="Bundle"/>
+			</input>
+			<output>
+				<type value="Patient"/>
+			</output>
+			<participant>
+				<type value="practitioner"/>
+				<role>
+					<coding>
+						<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-persona"/>
+						<code value="W000"/>
+						<display value="Clerical support worker"/>
+					</coding>
+				</role>
+			</participant>
+			<!-- TODO: Use SDC post processing to establish the output as the specific patient selected -->
+			<definitionCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-resolve-patient-match"/>
+		</action>
+
+		<!-- New patient -->
+		<action>
+			<title value="New patient"/>
+			<condition>
+				<kind value="applicability"/>
+				<expression>
+					<language value="text/cql"/>
+					<expression value="not exists %input i where i is Patient"/>
+				</expression>
+			</condition>
+			<input>
+				<type value="Patient"/>
+			</input>
+
+			<action>
+				<title value="Gather patient information"/>
+				<input>
+					<type value="QuestionnaireResponse"/>
+					<codeFilter>
+						<path value="questionnaire"/>
+						<code><code value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-identity"/></code>
+					</codeFilter>
+				</input>
+				<output>
+					<type value="QuestionnaireResponse"/>
+				</output>
+				<!-- TODO: Use SDC pre processing to auto-populate questionnaire content with the previously entered identity data -->
+				<definitionCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-patient-profile"/>
+			</action>
+			
+			<!-- Record patient data -->
+			<action>
+				<title value="Record patient data"/>
+				<participant>
+					<extension url="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-participantCapabilityStatement"/>
+						<valueCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/CapabilityStatement/cqfr-patient-register"/>
+					</extension>
+					<type value="device"/>
+				</participant>
+				<input>
+					<type value="QuestionnaireResponse"/>
+					<codeFilter>
+						<path value="questionnaire"/>
+						<code><code value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-patient-profile"/></code>
+					</codeFilter>
+				</input>
+				<output>
+					<type value="Patient"/>
+				</output>
+				<!-- TODO: There is some wizardry here about transforming the questionnaire response into a Patient resource -->
+				<!-- We can use SDC post processing to do this -->
+				<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-create"/>
+			</action>
+		</action>
+		
+		<!-- Existing patient -->
+		<action>
+			<title value="Existing patient"/>
+			<condition>
+				<kind value="applicability"/>
+				<expression>
+					<language value="text/cql"/>
+					<expression value="exists %input i where i is Patient"/>
+				</expression>
+			</condition>
+			<input>
+				<type value="Patient"/>
+			</input>
+
+			<!-- Patient data update -->
+			<action>
+				<title value="Ensure patient information is up to date"/>
+				<input>
+					<type value="QuestionnaireResponse"/>
+					<codeFilter>
+						<path value="questionnaire"/>
+						<code><code value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-identity"/></code>
+					</codeFilter>
+				</input>
+				<output>
+					<type value="QuestionnaireResponse"/>
+				</output>
+				<!-- TODO: Use SDC pre processing to auto-populate questionnaire content with the previously entered identity data -->
+				<definitionCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-patient-profile"/>
+			</action>
+			
+			<!-- Record patient data -->
+			<action>
+				<title value="Record patient data"/>
+				<input>
+					<type value="QuestionnaireResponse"/>
+					<codeFilter>
+						<path value="questionnaire"/>
+						<code><code value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/cqfr-common-patient-profile"/></code>
+					</codeFilter>
+				</input>
+				<output>
+					<type value="Patient"/>
+				</output>
+				<participant>
+					<extension url="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-participantCapabilityStatement"/>
+						<valueCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/CapabilityStatement/cqfr-patient-register"/>
+					</extension>
+					<type value="device"/>
+				</participant>
+				<!-- TODO: There is some wizardry here about transforming the questionnaire response into a Patient resource -->
+				<!-- We can use SDC post processing to do this -->
+				<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-update"/>
+			</action>
+		</action>
+		
+		<!-- Patient summary lookup -->
+		<action>
+			<title value="Patient summary lookup"/>
+			<input>
+				<type value="Patient"/>
+			</input>
+			<output>
+				<type value="Bundle"/>
+			</output>
+			<participant>
+				<extension url="http://hl7.org/fhir/uv/cqfrecommendations/StructureDefinition/cqfr-participantCapabilityStatement"/>
+					<valueCanonical value="http://hl7.org/fhir/uv/cqfrecommendations/CapabilityStatement/cqfr-patient-register"/>
+				</extension>
+				<type value="device"/>
+			</participant>
+			<!-- TODO: Define this operation -->
+			<definitionUri value="http://hl7.org/fhir/uv/cqfrecommendations/OperationDefinition/cqfr-patient-summary"/>
+		</action>
+	</action>
+</PlanDefinition>
