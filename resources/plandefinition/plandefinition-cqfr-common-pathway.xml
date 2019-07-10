@@ -1,13 +1,13 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
-	<id value="common-pathway"/>
-	<url value="http://hl7.org/fhir/uv/cqfrecommendations/PlanDefinition/common-pathway"/>
+	<id value="cqfr-common-pathway"/>
+	<url value="http://hl7.org/fhir/uv/cqfrecommendations/PlanDefinition/cqfr-common-pathway"/>
 	<identifier>
 		<use value="official"/>
-		<value value="Common_Pathway"/>
+		<value value="CQFR_Common_Pathway"/>
 	</identifier>
 	<version value="0.1.0"/>
-	<name value="Common_Pathway"/>
-	<title value="Common Pathway"/>
+	<name value="CQFR_Common_Pathway"/>
+	<title value="CQFR Common Pathway"/>
 	<type>
 		<coding>
 			<system value="http://hl7.org/fhir/plan-definition-type"/>

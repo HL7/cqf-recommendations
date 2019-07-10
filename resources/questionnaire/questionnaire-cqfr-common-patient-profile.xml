@@ -1,8 +1,8 @@
 <Questionnaire>
 	<id value="cqfr-common-patient-profile"/>
-	<meta>
+	<!--meta>
 		<profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
-	</meta>
+	</meta-->
 	<url value="http://hl7.org/fhir/uv/cqfrecommendations/cqfr-common-patient-profile"/>
 	<version value="0.1.0"/>
 	<name value="CQFR_Common_Questionnaire_Patient_Profile"/>
@@ -10,11 +10,13 @@
 	<status value="draft"/>
 	<subjectType value="Patient"/>
 	<item>
+		<linkId value="name"/>
 		<text value="Name"/>
 		<type value="string"/>
 		<required value="true"/>
 	</item>
 	<item>
+		<linkId value="birthdate"/>
 		<text value="Birthdate"/>
 		<type value="date"/>
 		<required value="true"/>

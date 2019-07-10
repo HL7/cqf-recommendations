@@ -55,9 +55,20 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="PlanDefinition/common-pathway"/>
+					<reference value="PlanDefinition/cqfr-common-pathway"/>
 				</reference>
 			</resource>
+			<!-- Getting a null pointer exception whenever I try to include questionnaire resources as examples, not sure why, they are valid, so far as I can tell. -->
+			<!--resource>
+				<reference>
+					<reference value="Questionnaire/cqfr-common-identity"/>
+				</reference>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Questionnaire/cqfr-common-patient-profile"/>
+				</reference>
+			</resource-->
 			<!--resource>
 				<reference>
 					<reference value="Questionnaire/l2-checklist"/>

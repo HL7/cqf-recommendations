@@ -1,6 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Questionnaire>
 	<id value="l3-checklist"/>
+	<url value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/l3-checklist"/>
+	<version value="0.1.0"/>
+	<name value="L3Checklist"/>
+	<title value="L3 Checklist"/>
+	<status value="draft"/>
+	<date value="2019-07-09"/>
+	<description value="Used to ensure that L3 content meets the requirements to ensure that implementers have what they need in order to successfully implement computable content in a specific setting"/>
   <item>
     <prefix value="1"/>
     <text value="Publishing Information"/>

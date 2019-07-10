@@ -54,9 +54,13 @@
 			"source": "codesystem-cqfr-common-process.xml",
 			"base": "CodeSystem-cqfr-common-process.html"
 		},
-		"PlanDefinition/common-pathway": {
-			"source": "plandefinition/plandefinition-common-pathway.xml",
-			"base": "PlanDefinition-common-pathway.html"
+		"PlanDefinition/cqfr-common-pathway": {
+			"source": "plandefinition/plandefinition-cqfr-common-pathway.xml",
+			"base": "PlanDefinition-cqfr-common-pathway.html"
+		},
+		"PlanDefinition/cqfr-common-registration": {
+			"source": "plandefinition/plandefinition-cqfr-common-registration.xml",
+			"base": "PlanDefinition-cqfr-common-registration.html"
 		},
 		"ValueSet/cqfr-indicator": {
 			"source": "valueset-cqfr-indicator.xml",
