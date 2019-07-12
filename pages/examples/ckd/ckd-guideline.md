@@ -13,14 +13,12 @@ title: Chronic Kidney Disease (CKD) Guideline Example
 * [Example FHIR Resources](#example-fhir-resources)
 
 ## Overview
-The system-wide goal of evidence-based guidelines is to improve the patient’s health and well-being by guiding health providers who are taking care of patients
-with chronic health conditions along the management pathways that are supported by evidence and are thus considered the highest standard of care. 
+The system-wide goal of evidence-based guidelines is to improve the patient’s health and well-being by guiding health providers who are taking care of patients with chronic health conditions along the management pathways that are supported by evidence and are thus considered the highest standard of care.
 This example focuses on Chronic Kidney Disease, however we expect that this implementation guide will be applicable to management of many other chronic health conditions, e.g. diabetes, hypertension, congestive heart failure, etc.
 
 The expected outcome of successful implementation of this guideline is to:
 * Formulate an efficient and effective assessment of the patient's condition
-* Optimize the use of therapy to reduce disease progression, reduce symptoms of CKD, and
-enhance patient functionality
+* Optimize the use of therapy to reduce disease progression, reduce symptoms of CKD, and enhance patient functionality
 * Minimize preventable complications and morbidity
 * Emphasize the use of personalized, proactive, patient-driven care
 
@@ -32,46 +30,28 @@ This clinical use case example is based on the [NIH Chronic Kidney Disease (CKD)
   * [CKD Data Elements](https://www.niddk.nih.gov/health-information/communication-programs/nkdep/working-groups/health-information-technology/development-electronic-ckd-care-plan#draftSet)
 
 ## Chronic Kidney Disease (CKD) Guidelines
-The guidelines described in this example follow a recommended clinical workflow for diagnosis and care management. The steps in this workflow will be harmonized with
-other sources to specify an overall pattern recommended for all clinical practice guidelines that follow this implementation guide. The pattern includes these general steps:
+The guidelines described in this example follow a recommended clinical workflow for diagnosis and care management. The steps in this workflow will be harmonized with other sources to specify a common pattern recommended for all clinical practice guidelines that follow this implementation guide. The pattern includes these general steps:
 1. Screen At-Risk Populations
-2. Evalute Urgent/Emergent Conditions
+2. Evaluate Urgent/Emergent Conditions
 3. Criteria for Confirmed Diagnosis
 4. Determine Stage of Disease
 5. Strategies to Slow Progression
 6. Criteria for Specialist Consultation
 
 ### KDIGO International Guideline
-The Kidney Disease: Improving Global Outcomes (KDIGO) 2012 Clinical Practice Guideline for the 
+The Kidney Disease: Improving Global Outcomes (KDIGO) 2012 Clinical Practice Guideline for the
 [Evaluation and Management of Chronic Kidney Disease (CKD)](https://kdigo.org/guidelines/ckd-evaluation-and-management/)
 
 
 ### VA/DoD Clinical Practice Guideline for CKD
 [Management of Chronic Kidney Disease (CKD) in Primary Care (2014)](https://www.healthquality.va.gov/guidelines/cd/ckd/index.asp)
- 
+
 | CKD Guideline Algorithm |
 | --- |
 | ![CKD guideline algorithm](images/ckd-cpg-algorithm.png) |
 
-
-## Guideline Order Sets
-
-Differentiate "orderables" from "performables" as they pertain to  patient-centered care planning and care management.
-
-Describe categories of order sets from CKD practice guidelines, to include:
-* Laboratory orders
-  * Blood chemistry
-  * Urine analysis
-* Medications
-* Procedures to be performed 
-  * e.g. renal ultrasound
-* Patient self-care, to be performed by patient at home
-  * e.g. weight, blood pressure, exercise, food diary
-
-Describe order set representation using FHIR ActivityDefinition and PlanDefinition. Link to specific examples for CKD.
-
 ## Guideline Recommendations
-The following CKD guideline recommendations are included in this example:
+The following CKD guideline recommendations are copied verbatim from the VA/DoD guideline and will be used to create an example implementation using FHIR and CQL. The provided examples do not yet cover these recommendations.
 
 <table border="1" cellpadding="2">
 <tr align="center"><th>Strength</th>
@@ -113,12 +93,36 @@ We suggest that periodic evaluation for CKD be considered in patients with the f
 </tr>
 </table>
 
-## Example FHIR Resources
+## Guidance at the Point of Care
 
-### Example for ordering/performing screening evaluation
+The provision of care for chronic health conditions typically includes guidance delivered in two ways:
+* Alerts presented to a clinician at the point of care, e.g. when the calculated kidney failure risk exceeds a threshold.
+ * Delivered using CDS Hooks embedded within the EHR system workflow.
+* A new patient-specific care plan is created with interventions (order sets) determined by guideline recommendations.
+ * Delivered as a FHIR CarePlan resource with associated activities, including MedicationRequest, ServiceRequest, and Appointment resources. May include a new or revised FHIR CareTeam resource specifying participants and their roles.
 
-### Example for medication recommendations
+The included FHIR and CQL examples illustrate both of these use cases.
 
-### Example for laboratory recommendations
+### Care Plan Order Sets
+Order sets from CKD practice guidelines are categorized for presentation to clinicians and/or when creating and executing order sets that require different order management processes. The provided examples include the following order set categories:
+* Laboratory orders
+  * Blood chemistry
+  * Urine analysis
+* Medications
+* Procedures to be performed
+  * e.g. renal ultrasound
+* Patient self-care, to be performed by patient at home
+  * e.g. weight, blood pressure, exercise, food diary
 
-### Example for patient self-care recommendations
+Example FHIR resources
+* PlanDefinition - cc-cpg-plan-ckd
+* ActivityDefinition - cc-cpg-activity-edu-hypertension, cc-cpg-activity-lab-metabolic, cc-cpg-activity-ultrasound-renal, cc-cpg-activity-referral-dietition
+
+### Decision Support Alerts: CKD Risk Assessment
+This example is configured for deployment into the cqf-ruler server for deployment using CDS-Hooks.
+
+Example FHIR resources
+* CQL - ckd-risk-logic.cql
+* Library - library-ckd-recommendations
+* PlanDefinition - plandefinition-ckd-risk-screening
+* ActivityDefinition - activitydefinition-ckd-referral-nephrology (conditional, based on risk)

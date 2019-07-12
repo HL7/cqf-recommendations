@@ -1,0 +1,211 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "ckd-risk-screening",
+  "url": "http://example.org/fhir/PlanDefinition/ckd-risk-screening",
+  "status": "draft",
+  "library": {
+    "reference": "Library/ckd-recommendations"
+  },
+  "title": "Chronic Kidney Disease (CKD) risk screening",
+  "description": "Chronic Kidney Disease (CKD) risk screening",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "709044004",
+            "display": "Chronic kidney disease (disorder)"
+          }
+        ]
+      }
+    }
+  ],
+  "action": [
+    {
+      "triggerDefinition": [
+        {
+          "type": "named-event",
+          "eventName": "patient-view"
+        }
+      ],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Has CKD or Diabetes"
+          }
+        }
+      ],
+      "action": [
+        {
+          "label": "Order Lab Panel",
+          "title": "Order Renal Lab Panel",
+          "description": "Order full renal lab panel, eGFR or UCAR indicates risk.",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "NIDDK Quick Reference on UACR & GFR",
+              "url": "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-education-outreach/quick-reference-uacr-gfr"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "language": "text/cql",
+                "expression": "Needs eGFR Lab"
+              }
+            }
+          ],
+          "type": {
+            "system": "http://hl7.org/fhir/action-type",
+            "code": "create"
+          },
+          "definitionCanonical": "http://example.org/fhir/ActivityDefinition/ckd-renal-lab-order",
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": {
+                "language": "text/cql",
+                "expression": "NeedsGFRDetail"
+              }
+            },
+            {
+              "path": "activity.extension",
+              "expression": {
+                "language": "text/cql",
+                "expression": "NeedsGFRSeverity"
+              }
+            }
+          ]
+        },
+        {
+          "title": "2-year Kidney Failure Risk",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "Kidney Failure Risk Equation",
+              "url": "http://kidneyfailurerisk.com/#about-the-equation"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "language": "text/cql",
+                "expression": "Has Abnormal eGFR"
+              }
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": {
+                "language": "text/cql",
+                "expression": "2-YearRiskDetail"
+              }
+            },
+            {
+              "path": "activity.extension",
+              "expression": {
+                "language": "text/cql",
+                "expression": "2-YearRiskSeverity"
+              }
+            }
+          ]
+        },
+        {
+          "title": "5-year Kidney Failure Risk",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "Kidney Failure Risk Equation",
+              "url": "http://kidneyfailurerisk.com/#about-the-equation"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "language": "text/cql",
+                "expression": "Has Abnormal eGFR"
+              }
+            }
+          ],
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": {
+                "language": "text/cql",
+                "expression": "5-YearRiskDetail"
+              }
+            },
+            {
+              "path": "activity.extension",
+              "expression": {
+                "language": "text/cql",
+                "expression": "5-YearRiskSeverity"
+              }
+            }
+          ]
+        },
+        {
+          "title": "Recommend Nephrology Referral",
+          "documentation": [
+            {
+              "type": "documentation",
+              "display": "National Kidney Disease Education Program",
+              "url": "https://www.niddk.nih.gov/health-information/communication-programs/nkdep"
+            }
+          ],
+          "condition": [
+            {
+              "kind": "applicability",
+              "expression": {
+                "language": "text/cql",
+                "expression": "Recommend Nephrology Referral"
+              }
+            }
+          ],
+          "type": {
+            "system": "http://hl7.org/fhir/action-type",
+            "code": "create"
+          },
+          "definitionCanonical": "http://example.org/fhir/ActivityDefinition/ckd-referral-nephrology",
+          "dynamicValue": [
+            {
+              "path": "action.description",
+              "expression": {
+                "language": "text/cql",
+                "expression": "NephrologyReferralDetail"
+              }
+            },
+            {
+              "path": "activity.extension",
+              "expression": {
+                "language": "text/cql",
+                "expression": "NephrologyReferralSeverity"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

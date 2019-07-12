@@ -1,0 +1,34 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "ckd-renal-lab-order",
+  "url": "http://example.org/fhir/ActivityDefinition/ckd-renal-lab-order",
+  "status": "draft",
+  "description": "Create ServiceRequest to order Renal lab panel",
+  "library": {
+    "reference": "Library/ckd-recommendations"
+  },
+  "kind": "ServiceRequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "24362-6",
+        "display": "Renal function 2000 panel"
+      }
+    ]
+  },
+  "participant": [
+    {
+      "type": "practitioner"
+    }
+  ],
+  "dynamicValue": [
+    {
+      "path": "reasonReference",
+      "expression": {
+        "language": "text/cql",
+        "expression": "CKD or Diabetes Dx"
+      }
+    }
+  ]
+}

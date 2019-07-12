@@ -1,0 +1,34 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "ckd-referral-nephrology",
+  "url": "http://example.org/fhir/ActivityDefinition/ckd-referral-nephrology",
+  "status": "draft",
+  "description": "Create ServiceRequest to order Referral for nephrology.",
+  "library": {
+    "reference": "Library/ckd-recommendations"
+  },
+  "kind": "ServiceRequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "306125004",
+        "display": "Referral to nephrology service"
+      }
+    ]
+  },
+  "participant": [
+    {
+      "type": "practitioner"
+    }
+  ],
+  "dynamicValue": [
+    {
+      "path": "reasonReference",
+      "expression": {
+        "language": "text/cql",
+        "expression": "Chronic Kidney Disease Dx"
+      }
+    }
+  ]
+}
