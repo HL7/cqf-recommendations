@@ -33,12 +33,19 @@
   ],
   "spreadsheets": [
     "activitydefinition-cqfr-profile-spreadsheet.xml",
+		"appointment-cqfr-profile-spreadsheet.xml",
     "codesystem-cqfr-profile-spreadsheet.xml",
+		"communicationrequest-cqfr-profile-spreadsheet.xml",
+		"devicerequest-cqfr-profile-spreadsheet.xml",
+		"immunizationrecommendation-cqfr-profile-spreadsheet.xml",
     "library-cqfr-profile-spreadsheet.xml",
+		"medicationrequest-cqfr-profile-spreadsheet.xml",
+		"nutritionorder-cqfr-profile-spreadsheet.xml",
 		"patient-cqfr-profile-spreadsheet.xml",
 		"practitioner-cqfr-profile-spreadsheet.xml",
 		"practitionerrole-cqfr-profile-spreadsheet.xml",
     "plandefinition-cqfr-profile-spreadsheet.xml",
+		"servicerequest-cqfr-profile-spreadsheet.xml",
     "valueset-cqfr-profile-spreadsheet.xml"
   ],
   "resources": {
@@ -78,17 +85,45 @@
       "defns": "cqfr-activitydefinition-definitions.html",
       "base": "cqfr-activitydefinition.html"
     },
+    "StructureDefinition/cqfr-appointment": {
+      "defns": "cqfr-appointment-definitions.html",
+      "base": "cqfr-appointment.html"
+    },
     "StructureDefinition/cqfr-codesystem": {
       "defns": "cqfr-codesystem-definitions.html",
       "base": "cqfr-codesystem.html"
+    },
+    "StructureDefinition/cqfr-communicationrequest": {
+      "defns": "cqfr-communicationrequest-definitions.html",
+      "base": "cqfr-communicationrequest.html"
+    },
+    "StructureDefinition/cqfr-devicerequest": {
+      "defns": "cqfr-devicerequest-definitions.html",
+      "base": "cqfr-devicerequest.html"
+    },
+    "StructureDefinition/cqfr-immunizationrecommendation": {
+      "defns": "cqfr-immunizationrecommendation-definitions.html",
+      "base": "cqfr-immunizationrecommendation.html"
     },
     "StructureDefinition/cqfr-library": {
       "defns": "cqfr-library-definitions.html",
       "base": "cqfr-library.html"
     },
+    "StructureDefinition/cqfr-medicationrequest": {
+      "defns": "cqfr-medicationrequest-definitions.html",
+      "base": "cqfr-medicationrequest.html"
+    },
+    "StructureDefinition/cqfr-nutritionorder": {
+      "defns": "cqfr-nutritionorder-definitions.html",
+      "base": "cqfr-nutritionorder.html"
+    },
     "StructureDefinition/cqfr-plandefinition": {
       "defns": "cqfr-plandefinition-definitions.html",
       "base": "cqfr-plandefinition.html"
+    },
+    "StructureDefinition/cqfr-servicerequest": {
+      "defns": "cqfr-servicerequest-definitions.html",
+      "base": "cqfr-servicerequest.html"
     },
     "StructureDefinition/cqfr-valueset": {
       "defns": "cqfr-valueset-definitions.html",
