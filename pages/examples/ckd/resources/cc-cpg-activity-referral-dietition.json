@@ -1,0 +1,54 @@
+{
+    "resourceType": "ActivityDefinition",
+    "id": "cc-cpg-activity-referral-dietition",
+    "url": "http://example.org/fhir/ActivityDefinition/cc-cpg-activity-referral-dietition",
+    "version": "1.0.0",
+    "name": "ReferralDietitian",
+    "title": "Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]",
+    "status": "active",
+    "experimental": true,
+    "publisher": "Elsevier Inc",
+    "description": "Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "urn:iso:std:iso:3166",
+                    "code": "US",
+                    "display": "United States of America"
+                }
+            ]
+        }
+    ],
+    "kind": "ServiceRequest",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "103699006",
+                "display": "Patient referral to dietitian (procedure)"
+            }
+        ],
+        "text": "Referral to dietitian"
+    },
+    "participant": [
+      {
+        "type": "practitioner"
+      }
+    ],
+    "timingTiming": {
+      "_event": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "Now()"
+              }
+            }
+          ]
+        }
+      ]
+    }
+}

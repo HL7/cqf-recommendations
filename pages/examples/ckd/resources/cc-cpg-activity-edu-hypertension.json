@@ -1,0 +1,42 @@
+{
+    "resourceType": "ActivityDefinition",
+    "id": "cc-cpg-activity-edu-hypertension",
+    "url": "http://example.org/fhir/ActivityDefinition/cc-cpg-activity-edu-hypertension",
+    "version": "1.0.0",
+    "name": "EducationHighBloodPressure",
+    "title": "Patient education: Managing Your High Blood Pressure (Hypertension)",
+    "status": "active",
+    "experimental": true,
+    "publisher": "Elsevier Inc",
+    "description": "Patient education: Managing Your High Blood Pressure (Hypertension)",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "urn:iso:std:iso:3166",
+                    "code": "US",
+                    "display": "United States of America"
+                }
+            ]
+        }
+    ],
+    "relatedArtifact": [
+        {
+            "type": "justification",
+            "display": "<p>To improve long-term outcomes, lifestyle modifications to&nbsp;lower&nbsp;blood pressure to less than 140/90 mmHg should be made for those who are NOT at high risk for cardiovascular disease.</p>\n\n<p>&nbsp;</p>\n\n<p>The modifications include:</p>\n\n<ul>\n\t<li>Weight reduction, if indicated, and maintaining a healthy weight with body mass index (BMI) of 20 to 25</li>\n</ul>\n\n<ul>\n\t<li>Reducing salt intake to 2 g per day of sodium, unless contraindicated</li>\n</ul>\n\n<ul>\n\t<li>Following a regular exercise program aiming for at least 30 minutes, 5 times a week, depending on cardiovascular tolerance</li>\n</ul>\n\n<ul>\n\t<li>Alcohol intake not more than 2 standard drinks per day for men and one standard drink per day for women</li>\n</ul>",
+            "citation": "Kidney Disease: Improving Global Outcomes (KDIGO) Blood Pressure Work Group. KDIGO clinical practice guideline for the management of blood pressure in chronic kidney disease. Kidney Int. 2012;2 (Suppl), 337-414. <a href='http://www.kdigo.org/clinical_practice_guidelines/pdf/KDIGO_BP_GL.pdf' target='_blank'>Source</a>",
+            "url": "http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75F10232E05352E3610A5325"
+        }
+    ],
+    "kind": "ServiceRequest",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "39155009",
+                "display": "Hypertension education (procedure)"
+            }
+        ],
+        "text": "Hypertension education"
+    }
+}

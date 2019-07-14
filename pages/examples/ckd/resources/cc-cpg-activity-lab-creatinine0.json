@@ -1,0 +1,53 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "cc-cpg-activity-lab-creatinine",
+  "url": "http://example.org/fhir/ActivityDefinition/cc-cpg-activity-lab-creatinine",
+  "version": "1.0.0",
+  "name": "LabCreatinineUrineRandom",
+  "title": "Lab: Creatinine, Urine Random, Once",
+  "status": "active",
+  "experimental": true,
+  "publisher": "Elsevier Inc",
+  "description": "Lab: Creatinine, Urine Random, Once",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "kind": "ServiceRequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2161-8",
+        "display": "Creatinine [Mass/​volume] in Urine"
+      }
+    ]
+  },
+  "participant": [
+    {
+      "type": "practitioner"
+    }
+  ],
+  "timingTiming": {
+    "_event": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+            "valueExpression": {
+              "language": "text/cql",
+              "expression": "Now()"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
