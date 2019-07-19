@@ -1,4 +1,4 @@
-# Immunization Forecasting for Hepatitis B for Adults >= 18 Years of Age
+# Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age
 
 ## Overview
 
@@ -8,10 +8,10 @@ By the age of 18, most patients will have already received their entire Hep B se
 
 The logic described here assumes the following parameters:
 
-1. The patient is >= 18 years.
-2. The patient has not yet received any other Hep B vaccines.
-3. The patient is indicated to receive a Hep B vaccine and there are no contraindicating factors (_e.g._ - contraindications based on the patient's medical history) 
-4. Only the Hep B, adjuvanted product (CVX 189) is administered to the patient. This vaccine is represented by the CodeableConcept `{ "coding" : [ { "system" : "http://hl7.org/fhir/sid/cvx", "code" : "189" } ] }` in the http://hl7.org/fhir/ValueSet/vaccine-code Value Set. If a different Hep B vaccine other than the Hep B adjuvanted product is administered or preferred, other logic not represented in this example applies.
+* The patient is >= 18 years.
+* The patient has not yet received any other Hep B vaccines.
+* The patient is indicated to receive a Hep B vaccine and there are no contraindicating factors (_e.g._ - contraindications based on the patient's medical history) 
+* Only the Hep B, adjuvanted product (CVX 189) is administered to the patient. This vaccine is represented by the CodeableConcept `{ "coding" : [ { "system" : "http://hl7.org/fhir/sid/cvx", "code" : "189" } ] }` in the http://hl7.org/fhir/ValueSet/vaccine-code Value Set. If a different Hep B vaccine other than the Hep B adjuvanted product is administered or preferred, other logic not represented in this example applies.
 
 ## Hep B 2-Dose Adult Series Example Logic
 
