@@ -32,7 +32,7 @@ For settings, this implementation guide uses the [HL7 V3 ServiceDeliveryLocation
 
 ### Processes
 
-The common processes identified in this implementation guide are based on surveys of guideline content, both in the examples used in this guide, as well as other guideline content from various clinical domains and guideline authors. The result is the definition of a _common pathway_ that is intended to be applicable in any guideline-based care content. 
+The common processes identified in this implementation guide are based on surveys of guideline content, both in the examples used in this guide, as well as other guideline content from various clinical domains and guideline authors. The result is the definition of a _common pathway_ that is intended to be applicable in any guideline-based care content.
 
 ## Recommendation Instances
 

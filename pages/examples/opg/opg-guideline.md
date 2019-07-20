@@ -5,22 +5,18 @@ title: Opioid Prescribing Guideline Example
 
 [CDC Opioid Prescribing Guideline](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
 
-#Recommendation 5: Lowest Effective Dose
-When opioids are started, providers should prescribe the lowest effective dosage.
-Providers should use caution when prescribing opioids at any dosage, should carefully
-reassess evidence of individual benefits and risks when considering increasing dosage
-to ≥50 morphine milligram equivalents (MME)/day, and should avoid increasing dosage
-to ≥90 MME/day or carefully justify a decision to titrate dosage to >90 MME/day
+# Recommendation 5: Lowest Effective Dose
+When opioids are started, providers should prescribe the lowest effective dosage. Providers should use caution when prescribing opioids at any dosage, should carefully reassess evidence of individual benefits and risks when considering increasing dosage to ≥50 morphine milligram equivalents (MME)/day, and should avoid increasing dosage to ≥90 MME/day or carefully justify a decision to titrate dosage to >90 MME/day
+
 **(recommendation category: A, evidence type: 3)**.
 
 ## Functional Description
 
-** Patient has been prescribed opioids for chronic pain **
-** Patient has been prescribed opioids with ambulatory abuse potential that cover 80 days or more in the previous 90 days **
+**Patient has been prescribed opioids for chronic pain**
 
-To be generalizable to areas where dispense information is not available, base the calculation
-on prescriptions, and assume all prescribed medications were taken, including for PRN (as needed)
-medications. Assume PRN medications are taken at the maximum frequency.
+**Patient has been prescribed opioids with ambulatory abuse potential that cover 80 days or more in the previous 90 days**
+
+To be generalizable to areas where dispense information is not available, base the calculation on prescriptions, and assume all prescribed medications were taken, including for PRN (as needed) medications. Assume PRN medications are taken at the maximum frequency.
 
 **Patient does not appear to be at end of life.**
 
@@ -38,8 +34,7 @@ Total morphine milligram equivalent (MME) is 60 mg/day. Consider tapering to < 5
 
 Total morphine milligram equivalent (MME) is 100 mg/day. Taper now to < 50.
 
-For both recommendations, provide the information used to calculate the MME as a table of results to provide
-the clinician with sufficient information to understand how the equivalence was calculated, as well as the source of the data used in the calculation.
+For both recommendations, provide the information used to calculate the MME as a table of results to provide the clinician with sufficient information to understand how the equivalence was calculated, as well as the source of the data used in the calculation.
 
 In addition, provide links to the CDC Guidance, as well as the MME conversion table.
 

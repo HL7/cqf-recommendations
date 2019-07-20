@@ -1,12 +1,21 @@
  <div id="segment-header" class="segment">  <!-- segment-header -->
-  <div class="container">  <!-- container -->
-   <a id="logo" no-external="true" href="http://hl7.org"><img alt="Visit the HL7 Website" src="../../assets/images/fhir-logo-www.png"/> </a>
+  <div class="container flex">  <!-- container -->
+   <a id="logo" no-external="true" href="http://hl7.org/fhir"><img alt="fhir logo" src="../../assets/images/fhir-logo-www.png"/> </a>
+   <div id="hl7-status">
+    <strong>Representation of Clinical Practice Guideline Recommendations in FHIR</strong>
+   </div>
+
+   <div id="hl7-nav">
+     <a id="hl7-logo" no-external="true" href="http://www.hl7.org">
+     <img height="50" alt="visit the hl7 website" width="42" src="../../assets/images/hl7-logo.png"/>
+    </a>
+   </div>
+   <!--<div id="hl7-nav"><a id="hl7-logo" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a></div> -->
   </div>
   <div class="container">  <!-- container -->
  </div></div>  <!-- /segment-header -->
 
- <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
-  <div id="stripe"> </div>
+ <div class="segment">  <!-- segment-navbar -->
   <div class="container">  <!-- container -->
    <!-- HEADER CONTENT -->
 
@@ -16,8 +25,9 @@
       <span class="icon-bar"> </span>
       <span class="icon-bar"> </span>
       <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
      </button>
-     <a class="navbar-brand hidden" href="{{site.data.fhir.path}}/index.html">FHIR</a>
+     <a class="navbar-brand hidden" href="{{site.data.fhir.path}}index.html">FHIR</a>
      <div class="nav-collapse collapse navbar-inverse-collapse">
       <ul class="nav navbar-nav">
           <li><a href="../../index.html">Home</a></li>
@@ -29,9 +39,9 @@
           <li><a href="../../test.html">Test Data</a></li>
           <li><a href="../../documentation.html">Documentation</a></li>
           <li><a href="../../downloads.html">Downloads</a></li>
-          <li><a href="../../L2Checklist.html">L2 Checklist</a></li>
-          <li><a href="../../L3Checklist.html">L3 Checklist</a></li>
-          <!--<li><a href="../../future-state-tables-index.html">Integrated Process</a></li>-->
+					<li><a href="../../checklists.html">Checklists</a></li>
+          <!--<li><a href="future-state-tables-index.html">Integrated Process</a></li>-->
+          <li><a href="../../history.html">Version History</a></li>
       </ul>
 
      </div>  <!-- /.nav-collapse -->

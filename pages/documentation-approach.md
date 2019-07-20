@@ -122,12 +122,13 @@ Expressing the clinical logic for a guideline enables application functionality;
 The Forms Description in a computable guideline describes user interactions and uses both the Data Elements and Clinical Logic. The artifacts at this level are represented in FHIR using the following resources:
 
 * Questionnaire
+* PlanDefinition
 
-Expressing the forms description for a guideline provides a more complete description of the recommendations in a guideline; roughly, the presentation tier in a traditional 3-tier architecture.
+Expressing the forms description for a guideline provides a more complete description of the recommendations in a guideline; roughly, the presentation tier in a traditional 3-tier architecture. This level involves specifying a conceptual description of the processes involved, as well as the user-interfaces that capture the user's interactions with the system.
 
 ## Methods of Implementation
 
-This implementation guide defines three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
+With these computable artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
 <div>
   <img src="assets/images/methods-of-implementation.png" alt="Methods of Implementation"/>
@@ -146,13 +147,17 @@ _Figure 2.3_
 Note that there are numerous factors that must be considered as part of the local implementation of guideline content. The intent of the L3 artifacts that are the focus of this implementation guide is to ensure that these factors can be appropriately considered and addressed as part of implementation, while still providing useful content that can accelerate the process.
 
 ### Manual
-Manual implementation involves ground-up development of clinical guideline functionality. In the absence of computable (L3) content, this is the only method. But note that even with L3 content, manual implementation can still be used, and the L3 content serves as well-specified requirements.
+Manual implementation involves development of clinical guideline functionality using the computable (L3) content as a set of rigorously specified requirements for the implementation. In the absence of computable (L3) content, this is the only method.
 
 ### Automatic
 Automatic implementation involves programmatic translation of the L3 content into an appropriate L4 format. For example, a CQL query may be translated into an equivalent SQL query for execution, or a PlanDefinition may be transformed into a production rule. This approach involves potentially significant effort to build the appropriate tooling, but can pay dividends at scale once the tooling is in place.
 
 ### Native
-Native implementation involves direct execution of L3 content. For example, a CQL query may be run directly on a native CQL engine. As with the automatic approach, this approach may involve significant initial tooling effort, but can dramatically reduce implementation time thereafter.
+Native implementation involves direct execution of L3 content. For example, a CQL query may be run directly on a native CQL engine. As with the automatic approach, this approach may involve significant initial tooling effort, but can dramatically reduce implementation time thereafter. In addition, there are open source reference implementations that support the use of the FHIR Clinical Reasoning module resources. In particular:
+
+* CQL Engine - A java-based native engine for Clinical Quality Language
+* HAPI FHIR - A java-based reference implementation of a FHIR Server and Client
+* CQF Ruler - A java-based plug-in for the HAPI FHIR server that enables Clinical Reasoning use cases
 
 ## References
 
