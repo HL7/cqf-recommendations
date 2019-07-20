@@ -1,0 +1,79 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="cpg-common-process"/>
+		<meta>
+			<profile url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+		</meta>
+    <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process"/>
+    <name value="CPG_Common_Process"/>
+		<title value="CPG Common Process"/>
+    <status value="active"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				    <concept>
+				        <code value="registration"/>
+				        <display value="Registration"/>
+				    </concept>
+				    <concept>
+				        <code value="triage"/>
+				        <display value="Triage"/>
+				    </concept>
+				    <concept>
+				        <code value="local-urgent-care"/>
+				        <display value="Local Urgent Care"/>
+				    </concept>
+				    <concept>
+				        <code value="history-and-physical"/>
+				        <display value="History and Physical"/>
+				    </concept>
+				    <concept>
+				        <code value="provide-counseling"/>
+				        <display value="Provide Counseling"/>
+				    </concept>
+				    <concept>
+				        <code value="diagnostic-testing"/>
+				        <display value="Diagnostic Testing"/>
+				    </concept>
+				    <concept>
+				        <code value="determine-diagnosis"/>
+				        <display value="Determine Diagnosis"/>
+				    </concept>
+				    <concept>
+				        <code value="guildeine-based-care"/>
+				        <display value="Guideline-based Care"/>
+				    </concept>
+				    <concept>
+				        <code value="dispense-medications"/>
+				        <display value="Dispense Medications"/>
+				    </concept>
+				    <concept>
+				        <code value="emergency-care"/>
+				        <display value="Emergency Care"/>
+				    </concept>
+				    <concept>
+				        <code value="actue-tertiary-care"/>
+				        <display value="Acute/Tertiary Care"/>
+				    </concept>
+				    <concept>
+				        <code value="charge-for-service"/>
+				        <display value="Charge for Service"/>
+				    </concept>
+				    <concept>
+				        <code value="discharge-referral-of-patient"/>
+				        <display value="Discharge/Referral of Patient"/>
+				    </concept>
+				    <concept>
+				        <code value="record-and-report"/>
+				        <display value="Record and Report"/>
+				    </concept>
+				    <concept>
+				        <code value="monitor-and-follow-up-of-patient"/>
+				        <display value="Monitor and Follow-up of Patient"/>
+				    </concept>
+				    <concept>
+				        <code value="alerts-reminders-education"/>
+				        <display value="Alerts Reminders Education"/>
+				    </concept>
+        </include>
+    </compose>
+</ValueSet>

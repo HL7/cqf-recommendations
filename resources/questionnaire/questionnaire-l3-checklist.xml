@@ -1,6 +1,6 @@
 <Questionnaire>
 	<id value="l3-checklist"/>
-	<url value="http://hl7.org/fhir/uv/cqfrecommendations/Questionnaire/l3-checklist"/>
+	<url value="http://hl7.org/fhir/uv/cpg/Questionnaire/l3-checklist"/>
 	<version value="0.1.0"/>
 	<name value="L3Checklist"/>
 	<title value="L3 Checklist"/>

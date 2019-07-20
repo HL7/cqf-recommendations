@@ -1,11 +1,11 @@
 {
-  "canonicalBase": "http://hl7.org/fhir/uv/cqfrecommendations",
+  "canonicalBase": "http://hl7.org/fhir/uv/cpg",
   "version" : "4.0.0",
   "fixed-business-version": "0.1.0",
   "sct-edition" : "http://snomed.info/sct/731000124108",
-  "source": "cqfrecommendations.xml",
+  "source": "cpg.xml",
   "jurisdiction": "UV",
-  "npm-name": "hl7.fhir.uv.cqfrecommendations",
+  "npm-name": "hl7.fhir.uv.cpg",
   "license": "CC0-1.0",
   "tool" : "jekyll",
   "paths": {
@@ -14,7 +14,7 @@
     "temp": "temp",
     "output": "output",
     "qa": "qa",
-    "specification": "http://hl7.org/fhir/STU3/"
+    "specification": "http://hl7.org/fhir/R4/"
   },
   "defaults": {
     "Any": {
@@ -32,117 +32,117 @@
     "mappings"
   ],
   "spreadsheets": [
-    "activitydefinition-cqfr-profile-spreadsheet.xml",
-		"appointment-cqfr-profile-spreadsheet.xml",
-    "codesystem-cqfr-profile-spreadsheet.xml",
-		"communicationrequest-cqfr-profile-spreadsheet.xml",
-		"devicerequest-cqfr-profile-spreadsheet.xml",
-		"immunizationrecommendation-cqfr-profile-spreadsheet.xml",
-    "library-cqfr-profile-spreadsheet.xml",
-		"medicationrequest-cqfr-profile-spreadsheet.xml",
-		"nutritionorder-cqfr-profile-spreadsheet.xml",
-		"patient-cqfr-profile-spreadsheet.xml",
-		"practitioner-cqfr-profile-spreadsheet.xml",
-		"practitionerrole-cqfr-profile-spreadsheet.xml",
-    "plandefinition-cqfr-profile-spreadsheet.xml",
-		"servicerequest-cqfr-profile-spreadsheet.xml",
-    "valueset-cqfr-profile-spreadsheet.xml"
+    "activitydefinition-cpg-profile-spreadsheet.xml",
+		"appointment-cpg-profile-spreadsheet.xml",
+    "codesystem-cpg-profile-spreadsheet.xml",
+		"communicationrequest-cpg-profile-spreadsheet.xml",
+		"devicerequest-cpg-profile-spreadsheet.xml",
+		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
+    "library-cpg-profile-spreadsheet.xml",
+		"medicationrequest-cpg-profile-spreadsheet.xml",
+		"nutritionorder-cpg-profile-spreadsheet.xml",
+		"patient-cpg-profile-spreadsheet.xml",
+		"practitioner-cpg-profile-spreadsheet.xml",
+		"practitionerrole-cpg-profile-spreadsheet.xml",
+    "plandefinition-cpg-profile-spreadsheet.xml",
+		"servicerequest-cpg-profile-spreadsheet.xml",
+    "valueset-cpg-profile-spreadsheet.xml"
   ],
   "resources": {
-		"CodeSystem/cqfr-indicator": {
-			"source": "codesystem-cqfr-indicator.xml",
-			"base": "CodeSystem-cqfr-indicator.html"
+		"CodeSystem/cpg-indicator": {
+			"source": "codesystem-cpg-indicator.xml",
+			"base": "CodeSystem-cpg-indicator.html"
 		},
-		"CodeSystem/cqfr-common-persona": {
-			"source": "codesystem-cqfr-common-persona.xml",
-			"base": "CodeSystem-cqfr-common-persona.html"
+		"CodeSystem/cpg-common-persona": {
+			"source": "codesystem-cpg-common-persona.xml",
+			"base": "CodeSystem-cpg-common-persona.html"
 		},
-		"CodeSystem/cqfr-common-process": {
-			"source": "codesystem-cqfr-common-process.xml",
-			"base": "CodeSystem-cqfr-common-process.html"
+		"CodeSystem/cpg-common-process": {
+			"source": "codesystem-cpg-common-process.xml",
+			"base": "CodeSystem-cpg-common-process.html"
 		},
-		"PlanDefinition/cqfr-common-pathway": {
-			"source": "plandefinition/plandefinition-cqfr-common-pathway.xml",
-			"base": "PlanDefinition-cqfr-common-pathway.html"
+		"PlanDefinition/cpg-common-pathway": {
+			"source": "plandefinition/plandefinition-cpg-common-pathway.xml",
+			"base": "PlanDefinition-cpg-common-pathway.html"
 		},
-		"PlanDefinition/cqfr-common-registration": {
-			"source": "plandefinition/plandefinition-cqfr-common-registration.xml",
-			"base": "PlanDefinition-cqfr-common-registration.html"
+		"PlanDefinition/cpg-common-registration": {
+			"source": "plandefinition/plandefinition-cpg-common-registration.xml",
+			"base": "PlanDefinition-cpg-common-registration.html"
 		},
-		"ValueSet/cqfr-indicator": {
-			"source": "valueset-cqfr-indicator.xml",
-			"base": "ValueSet-cqfr-indicator.html"
+		"ValueSet/cpg-indicator": {
+			"source": "valueset-cpg-indicator.xml",
+			"base": "ValueSet-cpg-indicator.html"
 		},
-		"ValueSet/cqfr-common-persona": {
-			"source": "valueset-cqfr-common-persona.xml",
-			"base": "ValueSet-cqfr-common-persona.html"
+		"ValueSet/cpg-common-persona": {
+			"source": "valueset-cpg-common-persona.xml",
+			"base": "ValueSet-cpg-common-persona.html"
 		},
-		"ValueSet/cqfr-common-process": {
-			"source": "valueset-cqfr-common-process.xml",
-			"base": "ValueSet-cqfr-common-process.html"
+		"ValueSet/cpg-common-process": {
+			"source": "valueset-cpg-common-process.xml",
+			"base": "ValueSet-cpg-common-process.html"
 		},
-    "StructureDefinition/cqfr-activitydefinition": {
-      "defns": "StructureDefinition-cqfr-activitydefinition-definitions.html",
-      "base": "StructureDefinition-cqfr-activitydefinition.html"
+    "StructureDefinition/cpg-activitydefinition": {
+      "defns": "StructureDefinition-cpg-activitydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-activitydefinition.html"
     },
-    "StructureDefinition/cqfr-appointment": {
-      "defns": "StructureDefinition-cqfr-appointment-definitions.html",
-      "base": "StructureDefinition-cqfr-appointment.html"
+    "StructureDefinition/cpg-appointment": {
+      "defns": "StructureDefinition-cpg-appointment-definitions.html",
+      "base": "StructureDefinition-cpg-appointment.html"
     },
-    "StructureDefinition/cqfr-codesystem": {
-      "defns": "StructureDefinition-cqfr-codesystem-definitions.html",
-      "base": "StructureDefinition-cqfr-codesystem.html"
+    "StructureDefinition/cpg-codesystem": {
+      "defns": "StructureDefinition-cpg-codesystem-definitions.html",
+      "base": "StructureDefinition-cpg-codesystem.html"
     },
-    "StructureDefinition/cqfr-communicationrequest": {
-      "defns": "StructureDefinition-cqfr-communicationrequest-definitions.html",
-      "base": "StructureDefinition-cqfr-communicationrequest.html"
+    "StructureDefinition/cpg-communicationrequest": {
+      "defns": "StructureDefinition-cpg-communicationrequest-definitions.html",
+      "base": "StructureDefinition-cpg-communicationrequest.html"
     },
-    "StructureDefinition/cqfr-devicerequest": {
-      "defns": "StructureDefinition-cqfr-devicerequest-definitions.html",
-      "base": "StructureDefinition-cqfr-devicerequest.html"
+    "StructureDefinition/cpg-devicerequest": {
+      "defns": "StructureDefinition-cpg-devicerequest-definitions.html",
+      "base": "StructureDefinition-cpg-devicerequest.html"
     },
-    "StructureDefinition/cqfr-immunizationrecommendation": {
-      "defns": "StructureDefinition-cqfr-immunizationrecommendation-definitions.html",
-      "base": "StructureDefinition-cqfr-immunizationrecommendation.html"
+    "StructureDefinition/cpg-immunizationrecommendation": {
+      "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",
+      "base": "StructureDefinition-cpg-immunizationrecommendation.html"
     },
-    "StructureDefinition/cqfr-library": {
-      "defns": "StructureDefinition-cqfr-library-definitions.html",
-      "base": "StructureDefinition-cqfr-library.html"
+    "StructureDefinition/cpg-library": {
+      "defns": "StructureDefinition-cpg-library-definitions.html",
+      "base": "StructureDefinition-cpg-library.html"
     },
-    "StructureDefinition/cqfr-medicationrequest": {
-      "defns": "StructureDefinition-cqfr-medicationrequest-definitions.html",
-      "base": "StructureDefinition-cqfr-medicationrequest.html"
+    "StructureDefinition/cpg-medicationrequest": {
+      "defns": "StructureDefinition-cpg-medicationrequest-definitions.html",
+      "base": "StructureDefinition-cpg-medicationrequest.html"
     },
-    "StructureDefinition/cqfr-nutritionorder": {
-      "defns": "StructureDefinition-cqfr-nutritionorder-definitions.html",
-      "base": "StructureDefinition-cqfr-nutritionorder.html"
+    "StructureDefinition/cpg-nutritionorder": {
+      "defns": "StructureDefinition-cpg-nutritionorder-definitions.html",
+      "base": "StructureDefinition-cpg-nutritionorder.html"
     },
-    "StructureDefinition/cqfr-plandefinition": {
-      "defns": "StructureDefinition-cqfr-plandefinition-definitions.html",
-      "base": "StructureDefinition-cqfr-plandefinition.html"
+    "StructureDefinition/cpg-plandefinition": {
+      "defns": "StructureDefinition-cpg-plandefinition-definitions.html",
+      "base": "StructureDefinition-cpg-plandefinition.html"
     },
-    "StructureDefinition/cqfr-servicerequest": {
-      "defns": "StructureDefinition-cqfr-servicerequest-definitions.html",
-      "base": "StructureDefinition-cqfr-servicerequest.html"
+    "StructureDefinition/cpg-servicerequest": {
+      "defns": "StructureDefinition-cpg-servicerequest-definitions.html",
+      "base": "StructureDefinition-cpg-servicerequest.html"
     },
-    "StructureDefinition/cqfr-valueset": {
-      "defns": "StructureDefinition-cqfr-valueset-definitions.html",
-      "base": "StructureDefinition-cqfr-valueset.html"
+    "StructureDefinition/cpg-valueset": {
+      "defns": "StructureDefinition-cpg-valueset-definitions.html",
+      "base": "StructureDefinition-cpg-valueset.html"
     },
-    "StructureDefinition/cqfr-valueset-query": {
-      "defns": "StructureDefinition-cqfr-valueset-query-definitions.html",
-      "base": "StructureDefinition-cqfr-valueset-query.html",
-      "source": "structuredefinition-cqfr-valueset-query.xml"
+    "StructureDefinition/cpg-valueset-query": {
+      "defns": "StructureDefinition-cpg-valueset-query-definitions.html",
+      "base": "StructureDefinition-cpg-valueset-query.html",
+      "source": "structuredefinition-cpg-valueset-query.xml"
     },
-    "StructureDefinition/cqfr-valueset-inclusion": {
-      "defns": "StructureDefinition-cqfr-valueset-inclusion-definitions.html",
-      "base": "StructureDefinition-cqfr-valueset-inclusion.html",
-      "source": "structuredefinition-cqfr-valueset-inclusion.xml"
+    "StructureDefinition/cpg-valueset-inclusion": {
+      "defns": "StructureDefinition-cpg-valueset-inclusion-definitions.html",
+      "base": "StructureDefinition-cpg-valueset-inclusion.html",
+      "source": "structuredefinition-cpg-valueset-inclusion.xml"
     },
-    "StructureDefinition/cqfr-valueset-exclusion": {
-      "defns": "StructureDefinition-cqfr-valueset-exclusion-definitions.html",
-      "base": "StructureDefinition-cqfr-valueset-exclusion.html",
-      "source": "structuredefinition-cqfr-valueset-exclusion.xml"
+    "StructureDefinition/cpg-valueset-exclusion": {
+      "defns": "StructureDefinition-cpg-valueset-exclusion-definitions.html",
+      "base": "StructureDefinition-cpg-valueset-exclusion.html",
+      "source": "structuredefinition-cpg-valueset-exclusion.xml"
     }
   }
 }
