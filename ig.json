@@ -9,7 +9,7 @@
   "license": "CC0-1.0",
   "tool" : "jekyll",
   "paths": {
-    "resources": [ "resources" ],
+    "resources": [ "resources", "pages/examples/opg" ],
     "pages": "pages",
     "temp": "temp",
     "output": "output",

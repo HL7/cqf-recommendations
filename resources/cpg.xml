@@ -79,5 +79,17 @@
 					<reference value="ValueSet/cpg-common-process"/>
 				</reference>
 			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential-cached"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-cachedvalueset"/>
+			</resource>
     </definition>
 </ImplementationGuide>
