@@ -2,6 +2,7 @@
 layout: default
 title: Documentation
 ---
+
 # Overview
 
 This implementation guide is a multi-stakeholder effort to use FHIR resources to build computable representations of the content of clinical care guidelines.
@@ -13,6 +14,7 @@ The initial ballot combines experience gained from multiple guideline representa
 * [Approach](documentation-approach.html)
 * [Terminology](documentation-terminology.html)
 * [Profiles](documentation-profiles.html)
+* [Libraries](documentation-libraries.html)
 * [Recommendations](documentation-recommendations.html)
 * [Care Planning](documentation-careplanning.html)
 
