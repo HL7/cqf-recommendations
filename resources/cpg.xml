@@ -23,21 +23,6 @@
 			<grouping>
         <name value="Main"/>
 			</grouping>
-      <resource>
-          <reference>
-              <reference value="StructureDefinition/cpg-valueset-query"/>
-          </reference>
-      </resource>
-      <resource>
-          <reference>
-              <reference value="StructureDefinition/cpg-valueset-inclusion"/>
-          </reference>
-      </resource>
-      <resource>
-          <reference>
-              <reference value="StructureDefinition/cpg-valueset-exclusion"/>
-          </reference>
-      </resource>
 			<resource>
 				<reference>
 					<reference value="CodeSystem/cpg-indicator"/>

@@ -61,6 +61,8 @@ Level 3 (L3) is a computable representation of the content in the guideline and 
 * Data element definitions describing the information involved
 * Computable logic describing at least the inclusion/exclusion criteria
 * Structured recommendations in the form of _event-condition-action_ rules
+* Structured process definitions describing how the recommendations fit into a clinical workflow
+* Structured form definitions providing a conceptual description of the user-interfaces involved
 
 ### Executable
 Level 4 (L4) is executable software running in a clinical system. This is the local implementation and generally involves:

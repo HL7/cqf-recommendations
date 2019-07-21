@@ -46,7 +46,9 @@
 		"practitionerrole-cpg-profile-spreadsheet.xml",
     "plandefinition-cpg-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
-    "valueset-cpg-profile-spreadsheet.xml"
+    "valueset-cpg-profile-spreadsheet.xml",
+		"valueset-cpg-cached-profile-spreadsheet.xml",
+		"valueset-cpg-computable-profile-spreadsheet.xml"
   ],
   "resources": {
 		"CodeSystem/cpg-indicator": {
@@ -129,20 +131,13 @@
       "defns": "StructureDefinition-cpg-valueset-definitions.html",
       "base": "StructureDefinition-cpg-valueset.html"
     },
-    "StructureDefinition/cpg-valueset-query": {
-      "defns": "StructureDefinition-cpg-valueset-query-definitions.html",
-      "base": "StructureDefinition-cpg-valueset-query.html",
-      "source": "structuredefinition-cpg-valueset-query.xml"
+    "StructureDefinition/cpg-computablevalueset": {
+      "defns": "StructureDefinition-cpg-computablevalueset-definitions.html",
+      "base": "StructureDefinition-cpg-computablevalueset.html"
     },
-    "StructureDefinition/cpg-valueset-inclusion": {
-      "defns": "StructureDefinition-cpg-valueset-inclusion-definitions.html",
-      "base": "StructureDefinition-cpg-valueset-inclusion.html",
-      "source": "structuredefinition-cpg-valueset-inclusion.xml"
-    },
-    "StructureDefinition/cpg-valueset-exclusion": {
-      "defns": "StructureDefinition-cpg-valueset-exclusion-definitions.html",
-      "base": "StructureDefinition-cpg-valueset-exclusion.html",
-      "source": "structuredefinition-cpg-valueset-exclusion.xml"
+    "StructureDefinition/cpg-cachedvalueset": {
+      "defns": "StructureDefinition-cpg-cachedvalueset-definitions.html",
+      "base": "StructureDefinition-cpg-cachedvalueset.html"
     }
   }
 }

@@ -1,0 +1,85 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="opioids-with-ambulatory-abuse-potential"/>
+    <meta>
+      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+    </meta>
+		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-author">
+			<valueContactDetail>
+				<name value="Robert McClure, MD, MPH"/>
+			</valueContactDetail>
+		</extension>
+		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-rules-text">
+			<valueMarkdown value="Opioid medication formulations (ingredient, OR ingredient+strength+form : RXNORM TTY=IN or SCD OR SBD) that are abuseable in ambulatory setting."/>
+		</extension>
+		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-expression">
+			<valueExpression>
+				<language value="http://www.apelondts.org/tql"/>
+				<expression value="from [^RxNorm R^] with (INV ^Parent Of[MED-RT]^ equals &quot;Opioid Agonist [EPC][MED-RT]&quot; OR INV ^Parent Of[MED-RT]^ equals &quot;Opioid Agonist/Antagonist [EPC][MED-RT]&quot;) AND (^TTY[RxNorm R]^=&quot;IN&quot; OR ^TTY[RxNorm R]^=&quot;PIN&quot;) AND_NOT (^Code^= 480 OR ^Code^=73032 OR ^Code^=56795 OR ^Code^=477468) EXPORT ^RXCUI[RxNorm R]^, Concept_Name, ^TTY[RxNorm R]^;"/>
+			</valueExpression>
+		</extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
+      <valueMarkdown value="This value set is defined using an intensional definition and can only be processed by a system which understands the computable definition. This implementation guide also includes an extensional definition of the value set for use by systems that cannot process the computable content."/>
+    </extension>
+    <url value="http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids-with-ambulatory-abuse-potential"/>
+    <version value="0.1.0"/>
+    <name value="OpioidsWithAmbulatoryAbusePotential"/>
+    <title value="Opioids with Ambulatory Abuse Potential"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-07-21"/>
+    <publisher value="Centers for Disease Control and Prevention (CDC)"/>
+    <description value="ValueSet containing all opioid medication formulations used in ambulatory settings that have the potential for misuse or abuse. Includes opioid drugs not restricted to surgical use that can be used in ambulatory setting. Excludes formulations with dose form Topical Cream(RXCUI 316982) or Topical Solution(RXCUI 316986) and ingredients available in surgery."/>
+    <useContext>
+        <code>
+            <system value="http://hl7.org/fhir/usage-context-type"/>
+            <code value="focus"/>
+            <display value="Clinical Focus"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="182888003"/>
+                <display value="Medication requested (situation)"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <useContext>
+        <code>
+            <system value="http://hl7.org/fhir/usage-context-type"/>
+            <code value="focus"/>
+            <display value="Clinical Focus"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="82423001"/>
+                <display value="Chronic pain (finding)"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <useContext>
+      <code>
+        <system value="http://hl7.org/fhir/usage-context-type"/>
+        <code value="focus"/>
+        <display value="Clinical Focus"/>
+      </code>
+      <valueCodeableConcept>
+				<code>
+					<system value="http://snomed.info/sct"/>
+					<code value="16076005"/>
+					<display value="Prescription (procedure)"/>
+				</code>
+      </valueCodeableConcept>
+    </useContext>
+    <jurisdiction>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="US"/>
+        <display value="United States of America"/>
+      </coding>
+    </jurisdiction>
+    <purpose value="Used to determine if prescription is for opioid medication with ambulatory abuse potential for all recommendations."/>
+    <copyright value="© CDC 2016+."/>
+</ValueSet>
+
