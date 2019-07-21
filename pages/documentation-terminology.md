@@ -22,3 +22,6 @@ This implementation guide defines three value set profiles, a base cpg-valueset 
 1. **Computable**: Value sets SHOULD be defined using computable (or _intensional_) definitions if supported by the code systems involved. Value sets defined in this way SHALL conform to the [cpg-computablevalueset](StructureDefinition-cpg-computablevalueset.html) profile.
 2. **Cached**: For value sets that are defined computably, content conforming to this IG SHALL include a _cached_ (or _extensional_) version of the value set that lists the codes in the `compose` element of the value set, to ensure the content of the value set can be processed by systems that cannot process the computable version. Value sets defined in this way SHALL conform to the [cpg-cachedvalueset](StructureDefinition-cpg-cachedvalueset.html) profile.
 
+## Implementation Considerations
+
+Note carefully that for _cached_ value sets, content is effectively distributed as a snapshot of the value set definition as of the time of publication. As the code systems used by the value set are updated, the value set will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, cached value set definitions SHOULD be updated.
