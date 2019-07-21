@@ -12,6 +12,7 @@ The initial ballot combines experience gained from multiple guideline representa
 
 * [Approach](documentation-approach.html)
 * [Terminology](documentation-terminology.html)
+* [Profiles](documentation-profiles.html)
 * [Recommendations](documentation-recommendations.html)
 * [Care Planning](documentation-careplanning.html)
 
