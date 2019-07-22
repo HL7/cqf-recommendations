@@ -14,7 +14,7 @@ This guide considers two aspects of structuring a clinical practice guideline re
 
 ## Recommendation Definitions
 
-To support computable representation of a recommendation definition, this implementation guide describes the following components of a recommendation:
+In addition to the components identified for knowledge artifacts, to support computable representation of a recommendation definition, this implementation guide describes the following components of a recommendation:
 
 * **Personas**: Who are the participants in the recommendation and what roles do they play?
 * **Activities**: What needs to happen?
@@ -59,6 +59,35 @@ Content conforming to this implementation guide SHALL provide references to supp
 Content conforming to this implementation guide SHALL provide the strength of a recommendation using the [strengthOfRecommendation](http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html) extension.
 
 Content conforming to this implementation guide SHALL provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.
+
+### Representing Recommendations
+
+This implementation guide defines 3 broad categories of artifacts related to defining recommendations:
+
+1. **Clinical Protocols**: Sequences of steps to be taken over time
+2. **Workflow Definitions**: Specific series of actions taken at a specific time
+3. **Recommendations**: An event-condition-action rule that captures a specific recommendation
+
+In the simplest case, the recommendations in a guideline can all be represented as event-condition-action rules associated with well-known triggering points in an existing clinical workflow (e.g. when prescribing a medication).
+
+However, guideline-based care often involves tracking changes over time, as well as modeling specific processes that should occur. The PlanDefinition supports each of these use cases, and this implementation guide defines the [cpg-plandefinition](StructureDefinition-cpg-plandefinition.html) profile to define additional constraints and requirements for building computable guideline content, as well as three specific profiles derived from cpg-palndefinition, one for each of these three cases.
+
+#### Clinical Protocols
+
+Content conforming to this implementation guide SHALL use the [cpg-protocoldefinition](StructureDefinition-cpg-protocoldefinition.html) profile to represent clinical protocol definitions.
+
+#### Workflow Definitions
+
+Readers of this implementation guide should refer to the [Workflow](http://hl7.org/fhir/R4/workflow.html) topic in the base FHIR specification. This implementation builds on the guidance there, providing some specific patterns for describing common activities as part of workflows. Specifically:
+
+* **Form Filling**: A specific user interacting with a specific form, as specified by a Questionnaire
+* **Service Calls**: The system calling a specific service, as specified by a CapabilityStatement and an operation URI
+
+Content conforming to this implementation guide SHALL use the [cpg-workflowdefinition](StructureDefinition-cpg-workflowdefinition.html) profile to represent workflow definitions.
+
+#### Recommendations
+
+Content conforming to this implementation guide SHALL use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.
 
 ## Recommendation Instances
 

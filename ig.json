@@ -49,6 +49,9 @@
 		"practitioner-cpg-profile-spreadsheet.xml",
 		"practitionerrole-cpg-profile-spreadsheet.xml",
     "plandefinition-cpg-profile-spreadsheet.xml",
+		"plandefinition-cpg-protocol-profile-spreadsheet.xml",
+		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
+		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
     "valueset-cpg-profile-spreadsheet.xml",
 		"valueset-cpg-cached-profile-spreadsheet.xml",
@@ -126,6 +129,18 @@
     "StructureDefinition/cpg-plandefinition": {
       "defns": "StructureDefinition-cpg-plandefinition-definitions.html",
       "base": "StructureDefinition-cpg-plandefinition.html"
+    },
+    "StructureDefinition/cpg-protocoldefinition": {
+      "defns": "StructureDefinition-cpg-protocoldefinition-definitions.html",
+      "base": "StructureDefinition-cpg-protocoldefinition.html"
+    },
+    "StructureDefinition/cpg-recommendationdefinition": {
+      "defns": "StructureDefinition-cpg-recommendationdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-recommendationdefinition.html"
+    },
+    "StructureDefinition/cpg-workflowdefinition": {
+      "defns": "StructureDefinition-cpg-workflowdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-workflowdefinition.html"
     },
     "StructureDefinition/cpg-servicerequest": {
       "defns": "StructureDefinition-cpg-servicerequest-definitions.html",
