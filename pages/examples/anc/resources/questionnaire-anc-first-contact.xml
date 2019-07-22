@@ -11,11 +11,13 @@
 	<subjectType value="Patient"/>
 	<!-- TODO: Items from ANC First Contact -->
 	<item>
+		<linkId value="name"/>
 		<text value="Name"/>
 		<type value="string"/>
 		<required value="true"/>
 	</item>
 	<item>
+		<linkId value="birthdate"/>
 		<text value="Birthdate"/>
 		<type value="date"/>
 		<required value="true"/>

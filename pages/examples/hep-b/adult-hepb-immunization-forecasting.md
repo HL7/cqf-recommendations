@@ -1,3 +1,8 @@
+---
+layout: example-default
+title: Hepatitis B Immunization Forecasting Example
+---
+
 # Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age
 
 ## Overview

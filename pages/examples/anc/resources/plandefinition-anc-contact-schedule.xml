@@ -35,11 +35,10 @@
 	<action>
 		<title value="Contact 1"/>
 		<description value="ANC Contact 1: up to 12 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -53,8 +52,9 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
@@ -63,8 +63,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="ANM"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -72,8 +73,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="MW"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -83,11 +85,10 @@
 	<action>
 		<title value="Contact 2"/>
 		<description value="ANC Contact 2: 20 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -101,8 +102,9 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
@@ -111,8 +113,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="ANM"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -120,8 +123,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="MW"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -131,11 +135,10 @@
 	<action>
 		<title value="Contact 3"/>
 		<description value="ANC Contact 3: 26 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -149,8 +152,9 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
@@ -159,8 +163,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="ANM"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -168,8 +173,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="MW"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -179,11 +185,10 @@
 	<action>
 		<title value="Contact 4"/>
 		<description value="ANC Contact 4: 30 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -197,8 +202,9 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
@@ -207,8 +213,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="ANM"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -216,8 +223,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="MW"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -227,11 +235,10 @@
 	<action>
 		<title value="Contact 5"/>
 		<description value="ANC Contact 5: 34 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -245,21 +252,43 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
+		<!-- TODO: How to indicate that either of these roles may participate at this point? -->
+		<participant>
+			<type value="practitioner"/>
+			<role>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
+				</coding>
+			</role>
+		</participant>
+		<participant>
+			<type value="practitioner"/>
+			<role>
+				<coding>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
+				</coding>
+			</role>
+		</participant>
+		<definitionCanonical value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
 	</action>
 
 	<action>
 		<title value="Contact 6"/>
 		<description value="ANC Contact 6: 36 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -273,8 +302,9 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
@@ -283,8 +313,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="ANM"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -292,8 +323,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="MW"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -303,11 +335,10 @@
 	<action>
 		<title value="Contact 7"/>
 		<description value="ANC Contact 7: 38 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -321,8 +352,9 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
@@ -331,8 +363,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="ANM"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -340,8 +373,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="MW"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -351,11 +385,10 @@
 	<action>
 		<title value="Contact 8"/>
 		<description value="ANC Contact 8: 40 weeks"/>
-		<!-- TODO: identify common process? -->
 		<code>
 			<coding>
-				<system value="http://hl7.org/fhir/uv/cqfrecommendations/CodeSystem/cqfr-common-process"/>
-				<code value="encounter"/>
+				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+				<code value="guideline-based-care"/>
 			</coding>
 		</code>
 		<condition>
@@ -369,8 +402,9 @@
 			<type value="patient"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="PAT"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="C000"/>
+					<display value="Patient"/>
 				</coding>
 			</role>
 		</participant>
@@ -379,8 +413,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="ANM"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="3222"/>
+					<display value="Midwifery associate professional"/>
 				</coding>
 			</role>
 		</participant>
@@ -388,8 +423,9 @@
 			<type value="practitioner"/>
 			<role>
 				<coding>
-					<system value="http://fhir.org/guides/who/anc-cds/CodeSystem/anc-persona"/>
-					<code value="MW"/>
+					<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
+					<code value="2222"/>
+					<display value="Midwifery professional"/>
 				</coding>
 			</role>
 		</participant>

@@ -1,6 +1,6 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
 	<id value="cpg-common-registration"/>
-	<url value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-common-registration"/>
+	<url value="http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration"/>
 	<version value="0.1.0"/>
 	<name value="PlanDefinition_CPG_Common_Registration"/>
 	<title value="PlanDefinition - CPG Common Registration"/>

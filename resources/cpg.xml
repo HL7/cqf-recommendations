@@ -20,76 +20,247 @@
 		<license value="CC0-1.0"/>
     <fhirVersion value="4.0.0"/>
     <definition>
-			<grouping>
+			<grouping id="main">
         <name value="Main"/>
+			</grouping>
+			<grouping id="anc-example">
+				<name value="ANC Example"/>
+			</grouping>
+			<grouping id="ckd-example">
+				<name value="CKD Example"/>
+			</grouping>
+			<grouping id="hbv-hiv-example">
+				<name value="HBV/HIV Example"/>
+			</grouping>
+			<grouping id="hep-b-example">
+				<name value="HEP-B Example"/>
+			</grouping>
+			<grouping id="opg-example">
+				<name value="OPG Example"/>
 			</grouping>
 			<resource>
 				<reference>
 					<reference value="CodeSystem/cpg-indicator"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="CodeSystem/cpg-common-persona"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="CodeSystem/cpg-common-process"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/cpg-common-pathway"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<!-- Getting a null pointer exception whenever I try to include questionnaire resources as examples, not sure why, they are valid, so far as I can tell. -->
 			<!--resource>
 				<reference>
 					<reference value="Questionnaire/cpg-common-identity"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Questionnaire/cpg-common-patient-profile"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource-->
 			<!--resource>
 				<reference>
 					<reference value="Questionnaire/l2-checklist"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Questionnaire/l3-checklist"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource-->
 			<resource>
 				<reference>
 					<reference value="ValueSet/cpg-indicator"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/cpg-common-persona"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/cpg-common-process"/>
 				</reference>
+				<groupingId value="main"/>
 			</resource>
+			
+			<!-- ANC Example Resources -->
+			<!-- Getting a null pointer exception from the builder; verified resource is XML valid...
+			<resource>
+				<reference>
+					<reference value="Library/anc-recommendation-a2"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupingId value="anc-example"/>
+			</resource>
+		  <resource>
+				<reference>
+					<reference value="PlanDefinition/anc-contact-schedule"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<groupingId value="anc-example"/>
+			</resource>
+		  <resource>
+				<reference>
+					<reference value="PlanDefinition/anc-contact"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<groupingId value="anc-example"/>
+			</resource>
+		  <resource>
+				<reference>
+					<reference value="PlanDefinition/anc-recommendation-a2"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<groupingId value="anc-example"/>
+			</resource>
+			-->
+			<!-- TODO: These generate a null pointer exception in the publisher, not clear why, they appear to be valid
+		  <resource>
+				<reference>
+					<reference value="Questionnaire/anc-every-contact"/>
+				</reference>
+				<exampleBoolean value="true"/>
+				<groupingId value="anc-example"/>
+			</resource>
+		  <resource>
+				<reference>
+					<reference value="Questionnaire/anc-first-contact"/>
+				</reference>
+				<exampleBoolean value="true"/>
+				<groupingId value="anc-example"/>
+			</resource>
+			-->
+			
+			<!-- OPG Example Resources -->
+			<!-- Updating to R4... 
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/opioidcds-risk-assessment-request"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/fhir-helpers-4-0-0"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/omtkdata-0-0-2"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/omtklogic-0-0-1"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/opioidcds-recommendation-05"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/opioidcds-recommendation-11"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/opioidcds-r4-common-0-1-0"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/opioidcds-r4-rec-10-patient-view-0-1-0"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/opioidcds-r4-rec-11-patient-view-0-1-0"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/opioidcds-05"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/opioidcds-10-patient-view"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/opioidcds-11-patient-view"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/opioidcds-11"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<groupindId value="opg-example"/>
+			</resource>
+			-->
 			<resource>
 				<reference>
 					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential-cached"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-cachedvalueset"/>
+				<groupingId value="opg-example"/>
 			</resource>
     </definition>
 </ImplementationGuide>
