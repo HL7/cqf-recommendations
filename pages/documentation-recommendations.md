@@ -70,22 +70,39 @@ This implementation guide defines 3 broad categories of artifacts related to def
 
 In the simplest case, the recommendations in a guideline can all be represented as event-condition-action rules associated with well-known triggering points in an existing clinical workflow (e.g. when prescribing a medication).
 
-However, guideline-based care often involves tracking changes over time, as well as modeling specific processes that should occur. The PlanDefinition supports each of these use cases, and this implementation guide defines the [cpg-plandefinition](StructureDefinition-cpg-plandefinition.html) profile to define additional constraints and requirements for building computable guideline content, as well as three specific profiles derived from cpg-palndefinition, one for each of these three cases.
+However, guideline-based care often involves tracking changes over time, as well as modeling specific processes that should occur. The PlanDefinition supports each of these use cases, and this implementation guide defines the [cpg-plandefinition](StructureDefinition-cpg-plandefinition.html) profile to define additional constraints and requirements for building computable guideline content, as well as three specific profiles derived from cpg-plandefinition, one for each of these three cases.
 
 #### Clinical Protocols
+
+This implementation guide uses the PlanDefinition resource to represent the activities involved in a guideline as a clinical protocol. For the purposes of this implementation guide, a clinical protocol differs from a workflow definition in that a protocol describes a general set of activities to be applied over time, typically with multiple time-based or event-based entry points across the protocol.
+
+For example, the WHO antenatal care guideline recommends an overall contact schedule consisting of eight contacts at specific points during the pregnancy. This is represented using a clinical protocol with actions for each of the contacts, where each action defines an applicability criteria that identifies the recommended timing of the encounter.
+
+The activities in a clinical protocol used in this way are references to other protocols or workflows, rather than particular activities to be performed.
 
 Content conforming to this implementation guide SHALL use the [cpg-protocoldefinition](StructureDefinition-cpg-protocoldefinition.html) profile to represent clinical protocol definitions.
 
 #### Workflow Definitions
 
-Readers of this implementation guide should refer to the [Workflow](http://hl7.org/fhir/R4/workflow.html) topic in the base FHIR specification. This implementation builds on the guidance there, providing some specific patterns for describing common activities as part of workflows. Specifically:
+This implementation guide uses the PlanDefinition resource to represent specific sequences of activities executed at a point-in-time as a workflow definition. Readers of this implementation guide should refer to the [Workflow](http://hl7.org/fhir/R4/workflow.html) topic in the base FHIR specification. This implementation builds on the guidance there, providing some specific patterns for describing common activities as part of workflows. Specifically:
 
 * **Form Filling**: A specific user interacting with a specific form, as specified by a Questionnaire
 * **Service Calls**: The system calling a specific service, as specified by a CapabilityStatement and an operation URI
+* **Subprocess**: Initiating a sub-process by referencing another workflow definition
+
+Within these workflows, recommendations for guideline-based care are attached via triggers at the appropriate point in the workflow. In other words, rather than having a workflow directly refer to a particular recommendation, the recommendation logic is attached to the event and triggered at the appropriate point. This event-driven approach allows implementations to separate workflow processing from guidance evaluation.
 
 Content conforming to this implementation guide SHALL use the [cpg-workflowdefinition](StructureDefinition-cpg-workflowdefinition.html) profile to represent workflow definitions.
 
 #### Recommendations
+
+This implementation guide uses the PlanDefinition resource to represent the recommendations of a guideline as an event-condition-action rule. The recommendation used in this way specifies:
+
+* **Event**: When the recommendation guidance should be applied, typically identified as a named event within the workflow
+* **Condition**: Applicability of the guidance at that point, based on current patient-state as described by the inclusion logic for the recommendation
+* **Action**: The activity to be performed, typically represented as a simple message, or a more sophisticated ActivityDefinition to produce a _recommendation instance_
+
+Readers of this implementation guide should refer to the [Applying a PlanDefinition](http://hl7.org/fhir/R4/plandefinition.html#12.18.3.3) topic for details on how an event-condition-action rule can be applied to a particular patient to produce guidance appropriate to that patient.
 
 Content conforming to this implementation guide SHALL use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.
 
@@ -101,13 +118,15 @@ Within FHIR, a recommendation is typically represented using a [Request](http://
 
 This implementation guide defines profiles for each of the request resources to be used as recommendation instances:
 
-* [Appointment](StructureDefinition-cpg-appointment.html)
-* [CommunicationRequest](StructureDefinition-cpg-communicationrequest.html)
-* [DeviceRequest](StructureDefinition-cpg-devicerequest.html)
-* [ImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html)
-* [MedicationRequest](StructureDefinition-cpg-medicationrequest.html)
-* [NutritionOrder](StructureDefinition-cpg-nutritionorder.html)
-* [ServiceRequest](StructureDefinition-cpg-servicerequest.html)
+* [Appointment](StructureDefinition-cpg-appointment.html): The recommendation for an appointment
+* [CommunicationRequest](StructureDefinition-cpg-communicationrequest.html): Recommendation for a specific communication
+* [DeviceRequest](StructureDefinition-cpg-devicerequest.html): Recommendation for a specific device to be used
+* [ImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html): Recommendation for a particular immunization
+* [MedicationRequest](StructureDefinition-cpg-medicationrequest.html): Recommendation for a specific medication
+* [NutritionOrder](StructureDefinition-cpg-nutritionorder.html): Recommendation for a specific diet or substance
+* [ServiceRequest](StructureDefinition-cpg-servicerequest.html): Recommendation for a particular procedure or referral to a specialist
 
 Specific guideline content will typically define derived profiles for recommendation instances establishing additional constraints.
+
+Content conforming to this implementation guide SHALL use one of the recommendation instance profiles described above to ensure supporting information related to the recommendation is preserved through the recommendation instance.
 
