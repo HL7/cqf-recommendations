@@ -48,7 +48,7 @@ Level 2 (L2) is semi-structured, and generally consists of process and workflow 
 
 * Personas - Who are the actors involved
 * Concepts - What are the concepts involved
-* User Stories - Functioanl descriptions of what happens from the perspective of each persona
+* User Stories - Functional descriptions of what happens from the perspective of each persona
 * Processes - Diagrams depicting the processes involved
 * Triggers - When do the processes happen (what are the _entry points_ for the processes)
 
