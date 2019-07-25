@@ -20,11 +20,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>11565</WindowHeight>
-  <WindowWidth>28800</WindowWidth>
+  <WindowHeight>8670</WindowHeight>
+  <WindowWidth>21570</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>7</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -1001,6 +1001,29 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
    <Interior/>
   </Style>
+  <Style ss:ID="s177">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s178">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+  </Style>
+  <Style ss:ID="s179">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+  </Style>
+  <Style ss:ID="s180">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
+   </Borders>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -1158,9 +1181,9 @@
  <Worksheet ss:Name="cpg-plandefinition">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='cpg-plandefinition'!R1C1:R89C25" ss:Hidden="1"/>
+    ss:RefersTo="='cpg-plandefinition'!R1C1:R91C25" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="76" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="78" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="305.25"/>
@@ -2282,6 +2305,44 @@
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s177"><Data ss:Type="String">strengthOfRecommendation</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">PlanDefinition.action.documentation.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s177"><Data ss:Type="String">qualityOfEvidence</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">PlanDefinition.action.documentation.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3402,12 +3463,13 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>22</TopRowBottomPane>
+   <TopRowBottomPane>25</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>10</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -3423,8 +3485,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>40</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>37</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -6363,7 +6425,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>

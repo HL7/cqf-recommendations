@@ -34,6 +34,8 @@ Content conforming to this implementation guide SHALL identify personas using th
 
 ### Activities
 
+This implementation guide uses the ActivityDefinition resource to provide a computable representation of the activities that can be performed as part of guideline-based care. Readers of this implementation guide should refer to the [Definitional Artifacts](http://hl7.org/fhir/R4/clinicalreasoning-topics-definitional-resources.html) topic in the FHIR specification for general information on how ActivityDefinition resources are used to describe activities that can be performed.
+
 Content conforming to this implementation guide SHALL use the [CPG Activity Definition](StructureDefinition-cpg-activitydefinition.html) profile when specifying activity definitions.
 
 ### Processes
@@ -67,6 +69,7 @@ This implementation guide defines 3 broad categories of artifacts related to def
 1. **Clinical Protocols**: Sequences of steps to be taken over time
 2. **Workflow Definitions**: Specific series of actions taken at a specific time
 3. **Recommendations**: An event-condition-action rule that captures a specific recommendation
+4. **Order Sets**: A pre-defined group of order definitions related to a particular condition or stage of care
 
 In the simplest case, the recommendations in a guideline can all be represented as event-condition-action rules associated with well-known triggering points in an existing clinical workflow (e.g. when prescribing a medication).
 
@@ -105,6 +108,12 @@ This implementation guide uses the PlanDefinition resource to represent the reco
 Readers of this implementation guide should refer to the [Applying a PlanDefinition](http://hl7.org/fhir/R4/plandefinition.html#12.18.3.3) topic for details on how an event-condition-action rule can be applied to a particular patient to produce guidance appropriate to that patient.
 
 Content conforming to this implementation guide SHALL use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.
+
+#### Order Sets
+
+This implementation guide uses the PlanDefinition resource to represent order sets as part of protocols, workflows, and recommendations. The guidance here builds on the [Order Set](http://hl7.org/fhir/R4/clinicalreasoning-knowledge-artifact-representation.html#order-set) topic in the FHIR specification to supply additional guidance related to the use of an order set as a component of a computable guideline.
+
+Content conforming to this implementation guide SHALL use the [cpg-ordersetdefinition](StructureDefinition-cpg-ordersetdefinition.html) profile to represent order sets. 
 
 ## Recommendation Instances
 

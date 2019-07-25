@@ -126,6 +126,10 @@
       "defns": "StructureDefinition-cpg-nutritionorder-definitions.html",
       "base": "StructureDefinition-cpg-nutritionorder.html"
     },
+		"StructureDefinition/cpg-ordersetdefinition": {
+			"defns": "StructureDefinition-cpg-ordersetdefinition-definitions.html",
+			"base": "StructureDefinition-cpg-ordersetdefinition.html"
+		},
     "StructureDefinition/cpg-plandefinition": {
       "defns": "StructureDefinition-cpg-plandefinition-definitions.html",
       "base": "StructureDefinition-cpg-plandefinition.html"
