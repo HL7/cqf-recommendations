@@ -252,14 +252,7 @@
 				<reference>
 					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential-cached"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-cachedvalueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"/>
 				<groupingId value="opg-example"/>
 			</resource>
     </definition>

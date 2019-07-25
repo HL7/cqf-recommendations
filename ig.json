@@ -55,8 +55,7 @@
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
     "valueset-cpg-profile-spreadsheet.xml",
-		"valueset-cpg-cached-profile-spreadsheet.xml",
-		"valueset-cpg-computable-profile-spreadsheet.xml"
+		"valueset-cpg-expressionbased-profile-spreadsheet.xml"
   ],
   "resources": {
 		"CodeSystem/cpg-indicator": {
@@ -155,13 +154,9 @@
       "defns": "StructureDefinition-cpg-valueset-definitions.html",
       "base": "StructureDefinition-cpg-valueset.html"
     },
-    "StructureDefinition/cpg-computablevalueset": {
-      "defns": "StructureDefinition-cpg-computablevalueset-definitions.html",
-      "base": "StructureDefinition-cpg-computablevalueset.html"
-    },
-    "StructureDefinition/cpg-cachedvalueset": {
-      "defns": "StructureDefinition-cpg-cachedvalueset-definitions.html",
-      "base": "StructureDefinition-cpg-cachedvalueset.html"
+    "StructureDefinition/cpg-expressionbasedvalueset": {
+      "defns": "StructureDefinition-cpg-expressionbasedvalueset-definitions.html",
+      "base": "StructureDefinition-cpg-expressionbasedvalueset.html"
     }
   }
 }
