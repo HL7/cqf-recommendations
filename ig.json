@@ -48,6 +48,7 @@
 		"patient-cpg-profile-spreadsheet.xml",
 		"practitioner-cpg-profile-spreadsheet.xml",
 		"practitionerrole-cpg-profile-spreadsheet.xml",
+		"plandefinition-cpg-orderset-profile-spreadsheet.xml",
     "plandefinition-cpg-profile-spreadsheet.xml",
 		"plandefinition-cpg-protocol-profile-spreadsheet.xml",
 		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
