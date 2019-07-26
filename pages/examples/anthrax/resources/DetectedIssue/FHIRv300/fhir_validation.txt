@@ -1,0 +1,15 @@
+PS C:\FHIR> java -jar .\org.hl7.fhir.validator.jar C:\FHIR\AnthraxPEP\DetectedIssue\FHIRv300 -version 3.0.1
+FHIR Validation tool Version 3.8.0-SNAPSHOT - Built 2019-02-11T12:49:16.829-05:00 - Git 7a8671008476
+Arguments: C:\FHIR\AnthraxPEP\DetectedIssue\FHIRv300 -version 3.0.1
+  .. connect to tx server @ http://tx.fhir.org
+  .. definitions from hl7.fhir.core#3.0.1
+    (v3.0.1)
+  .. validate [C:\FHIR\AnthraxPEP\DetectedIssue\FHIRv300]
+Validate C:\FHIR\AnthraxPEP\DetectedIssue\FHIRv300\DetectedIssue_ExistingAntimicrobial_FHIRv300.json
+Terminology server: Check for supported code systems for http://snomed.info/sct
+Validate C:\FHIR\AnthraxPEP\DetectedIssue\FHIRv300\DetectedIssue_VaccineHistoryInconsistencies_FHIRv300.json
+Success...validating C:\FHIR\AnthraxPEP\DetectedIssue\FHIRv300\DetectedIssue_ExistingAntimicrobial_FHIRv300.json:  error:0 warn:0 info:1
+  Information @ DetectedIssue.mitigation.action : None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/detectedissue-mitigation-action (http://hl7.org/fhir/ValueSet/detectedissue-mitigation-action, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#314529007)
+
+Success...validating C:\FHIR\AnthraxPEP\DetectedIssue\FHIRv300\DetectedIssue_VaccineHistoryInconsistencies_FHIRv300.json:  error:0 warn:0 info:1
+  Information @ DetectedIssue.mitigation.action : None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/detectedissue-mitigation-action (http://hl7.org/fhir/ValueSet/detectedissue-mitigation-action, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#314529007)

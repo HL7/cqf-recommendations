@@ -1,0 +1,184 @@
+{
+  "resourceType": "Bundle",
+  "id": "Alert that a patient has an multiple existing medication orders for antimicrobials",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4a4c2b7b-33cd-42ef-a052-f8d7887d1afa",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e304a3e7-002c-4712-81f2-39097800c000",
+        "subject": {
+          "reference": "Patient/4a4c2b7b-33cd-42ef-a052-f8d7887d1afa"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z20.810",
+              "display": "Exposure to Anthrax (disorder)"
+            }
+          ],
+          "text": "Exposure to Anthrax (disorder)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e916f978-a23c-4519-bd72-ccc6ae9d97db",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170475009",
+              "display": "Exposure to Bacillus anthracis (event)"
+            }
+          ],
+          "text": "Exposure to Bacillus anthracis (event)"
+        },
+        "subject": {
+          "reference": "Patient/4a4c2b7b-33cd-42ef-a052-f8d7887d1afa"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e442cb65-d5ce-431d-bcf9-db9b0a971523",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84387000",
+              "display": "Asymptomatic (finding)"
+            }
+          ],
+          "text": "Asymptomatic (finding)"
+        },
+        "subject": {
+          "reference": "Patient/4a4c2b7b-33cd-42ef-a052-f8d7887d1afa"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "3",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/4a4c2b7b-33cd-42ef-a052-f8d7887d1afa"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "309309",
+              "display": "Ciprofloxacin 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Ciprofloxacin 500 MG Oral Tablet"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "4",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/4a4c2b7b-33cd-42ef-a052-f8d7887d1afa"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1650143",
+              "display": "doxycycline hyclate 100 MG Oral Tablet"
+            }
+          ],
+          "text": "doxycycline hyclate 100 MG Oral Tablet"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "5",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/4a4c2b7b-33cd-42ef-a052-f8d7887d1afa"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "311296",
+              "display": "Levofloxacin 750 MG Oral Tablet"
+            }
+          ],
+          "text": "Levofloxacin 750 MG Oral Tablet"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "6",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/4a4c2b7b-33cd-42ef-a052-f8d7887d1afa"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "311787",
+              "display": "moxifloxacin HCl 400 MG Oral Tablet"
+            }
+          ],
+          "text": "moxifloxacin HCl 400 MG Oral Tablet"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+1c1
+< // CDS Connect Commons for FHIRv102
+---
+> // CDS Connect Commons for FHIRv300
+8c8
+< library CDS_Connect_Commons_for_FHIRv102 version '1.3.2'
+---
+> library CDS_Connect_Commons_for_FHIRv300 version '1.3.2'
+10c10
+< using FHIR version '1.0.2'
+---
+> using FHIR version '3.0.0'
+13c13
+< include FHIRHelpers version '1.0.2' called FHIRHelpers
+---
+> include FHIRHelpers version '3.0.0' called FHIRHelpers
+80c80
+<  * Observations that are complete and verified. In FHIR DSTU2, there are two statuses that indicate this state: 'final'
+---
+>  * Observations that are complete and verified. In FHIR STU3, there are two statuses that indicate this state: 'final'
+82c82
+<  * @see http://hl7.org/fhir/DSTU2/valueset-observation-status.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-observation-status.html
+96c96
+<   ObsList O where O.valueQuantity.unit.value = Unit or O.valueQuantity.code.value = Unit
+---
+>   ObsList O where O.value.unit.value = Unit or O.value.code.value = Unit
+109,111c109,111
+<     where O.effectiveDateTime.value in LookBackInterval
+<       or NullSafeToInterval(O.effectivePeriod) overlaps LookBackInterval
+<       or O.issued in LookBackInterval
+---
+>     where O.effective.value in LookBackInterval
+>       or NullSafeToInterval(O.effective) overlaps LookBackInterval
+>       or O.issued.value in LookBackInterval
+122c122
+<   Last(ObsList O sort by Coalesce(effectiveDateTime.value, effectivePeriod."end".value, effectivePeriod."start".value, issued.value))
+---
+>   Last(ObsList O sort by Coalesce(effective.value, effective."end".value, effective."start".value, issued.value))
+130c130
+<   NullSafeToQuantity(Obs.valueQuantity)
+---
+>   NullSafeToQuantity(Obs.value)
+138c138
+<   NullSafeToConcept(Obs.valueCodeableConcept)
+---
+>   NullSafeToConcept(Obs.value)
+147c147
+<   Coalesce(Obs.effectiveDateTime.value, Obs.effectivePeriod."end".value, Obs.effectivePeriod."start".value, Obs.issued.value)
+---
+>   Coalesce(Obs.effective.value, Obs.effective."end".value, Obs.effective."start".value, Obs.issued.value)
+157c157
+<   Max(ObsList O return NullSafeToQuantity(O.valueQuantity))
+---
+>   Max(ObsList O return NullSafeToQuantity(O.value))
+172,173c172,173
+<  * Conditions that are confirmed. In FHIR DSTU2, this is reflected by verificationStatus: 'confirmed'.
+<  * @see http://hl7.org/fhir/DSTU2/valueset-condition-ver-status.html
+---
+>  * Conditions that are confirmed. In FHIR STU3, this is reflected by verificationStatus: 'confirmed'.
+>  * @see https://www.hl7.org/fhir/STU3/valueset-condition-ver-status.html
+181c181
+<  * Conditions that are active. In FHIR DSTU2, this is reflected by clinicalStatus: 'active' and the absence of any
+---
+>  * Conditions that are active. In FHIR STU3, this is reflected by clinicalStatus: 'active' and the absence of any
+184c184
+<  * @see http://hl7.org/fhir/DSTU2/valueset-condition-clinical.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-condition-clinical.html
+191,196c191
+<       and C.abatementDateTime is null
+<       and C.abatementQuantity is null
+<       and C.abatementBoolean.value is not true
+<       and C.abatementPeriod is null
+<       and C.abatementRange is null
+<       and C.abatementString is null
+---
+>       and C.abatement is null
+199c194
+<  * Conditions that are active or recurring. In FHIR DSTU2, this is reflected by clinicalStatus: 'active' or 'relapse'.
+---
+>  * Conditions that are active or recurring. In FHIR STU3, this is reflected by clinicalStatus: 'active' or 'recurrence'.
+202c197
+<  * @see http://hl7.org/fhir/DSTU2/valueset-condition-clinical.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-condition-clinical.html
+207c202
+<   CondList C where C.clinicalStatus.value in {'active', 'relapse'}
+---
+>   CondList C where C.clinicalStatus.value in {'active', 'recurrence'}
+220,222c215,217
+<     where C.onsetDateTime.value in LookBackInterval
+<       or NullSafeToInterval(C.onsetPeriod) overlaps LookBackInterval
+<       or C.dateRecorded.value in LookBackInterval
+---
+>     where C.onset.value in LookBackInterval
+>       or NullSafeToInterval(C.onset) overlaps LookBackInterval
+>       or C.assertedDate.value in LookBackInterval
+237,239c232,234
+<  * Procedures that are completed. In FHIR DSTU2, this is reflected by status: 'completed'.  In addition, the
+<  * notPerformed flag must be checked to ensure it is not 'true'.
+<  * @see http://hl7.org/fhir/DSTU2/valueset-procedure-status.html
+---
+>  * Procedures that are completed. In FHIR STU3, this is reflected by status: 'completed'.  In addition, the
+>  * notDone flag must be checked to ensure it is not 'true'.
+>  * @see https://www.hl7.org/fhir/STU3/valueset-event-status.html
+246c241
+<       and P.notPerformed.value is not true
+---
+>       and P.notDone.value is not true
+249,251c244,246
+<  * Procedures that are in progress. In FHIR DSTU2, this is reflected by status: 'in-progress'.  In addition, the
+<  * notPerformed flag must be checked to ensure it is not 'true'.
+<  * @see http://hl7.org/fhir/DSTU2/valueset-procedure-status.html
+---
+>  * Procedures that are in progress. In FHIR STU3, this is reflected by status: 'in-progress'.  In addition, the
+>  * notDone flag must be checked to ensure it is not 'true'.
+>  * @see https://www.hl7.org/fhir/STU3/valueset-event-status.html
+258c253
+<       and P.notPerformed.value is not true
+---
+>       and P.notDone.value is not true
+261,263c256,258
+<  * Procedures that actually happened or are happening. In FHIR DSTU2, there are a few properties that negate the
+<  * procedure, most notably when status is 'entered-in-error' or notPerformed is true.
+<  * @see http://hl7.org/fhir/DSTU2/valueset-procedure-status.html
+---
+>  * Procedures that actually happened or are happening. In FHIR STU3, there are a few properties that negate the
+>  * procedure, most notably when status is 'entered-in-error' or notDone is true.
+>  * @see https://www.hl7.org/fhir/STU3/valueset-event-status.html
+270c265
+<       and P.notPerformed.value is not true
+---
+>       and P.notDone.value is not true
+284,285c279,280
+<     where P.performedDateTime.value in LookBackInterval
+<       or NullSafeToInterval(P.performedPeriod) overlaps LookBackInterval
+---
+>     where P.performed.value in LookBackInterval
+>       or NullSafeToInterval(P.performed) overlaps LookBackInterval
+299c294
+<  * ProcedureRequests that are accepted, in progress, or completed. In FHIR DSTU2, this is reflected by the corresponding
+---
+>  * ProcedureRequests that are accepted, in progress, or completed. In FHIR STU3, this is reflected by the corresponding
+301c296
+<  * @see http://hl7.org/fhir/DSTU2/valueset-procedure-request-status.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-request-status.html
+321c316
+<     where P.orderedOn.value in Interval[Now() - LookBack, Now()]
+---
+>     where P.authoredOn.value in Interval[Now() - LookBack, Now()]
+336c331
+<  * ReferralRequests that are accepted, active, or completed. In FHIR DSTU2, this is reflected by the corresponding
+---
+>  * ReferralRequests that are accepted, active, or completed. In FHIR STU3, this is reflected by the corresponding
+338c333
+<  * @see http://hl7.org/fhir/DSTU2/valueset-referralstatus.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-request-status.html
+358c353
+<     where R.dateSent.value in Interval[Now() - LookBack, Now()]
+---
+>     where R.authoredOn.value in Interval[Now() - LookBack, Now()]
+369c364
+<   [MedicationStatement] M where NullSafeToConcept(M.medicationCodeableConcept) ~ Koncept
+---
+>   [MedicationStatement] M where NullSafeToConcept(M.medication) ~ Koncept
+372c367
+<  * Filters MedicationOrders by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+---
+>  * Filters MedicationRequests by a concept rather than by a ValueSet.  In CQL 1.3, this will be built into the retrieve,
+375c370
+<  * @returns {List<MedicationOrder>} a list of MedicationOrders matching the concept, or null if null was passed in
+---
+>  * @returns {List<MedicationRequest>} a list of MedicationRequests matching the concept, or null if null was passed in
+377,378c372,373
+< define function MedicationOrdersByConcept(Koncept System.Concept):
+<   [MedicationOrder] M where NullSafeToConcept(M.medicationCodeableConcept) ~ Koncept
+---
+> define function MedicationRequestsByConcept(Koncept System.Concept):
+>   [MedicationRequest] M where NullSafeToConcept(M.medication) ~ Koncept
+382c377
+<  * medications that a patient has self-reported to be taking.  In FHIR DSTU2, this is reflected by MedicationStatement
+---
+>  * medications that a patient has self-reported to be taking.  In FHIR STU3, this is reflected by MedicationStatement
+385c380
+<  * @see http://hl7.org/fhir/DSTU2/valueset-medication-statement-status.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-medication-statement-status.html
+391c386
+<     let EffectivePeriod: NullSafeToInterval(M.effectivePeriod)
+---
+>     let EffectivePeriod: NullSafeToInterval(M.effective)
+393c388
+<       and M.wasNotTaken.value is not true
+---
+>       and M.taken.value != 'n'
+398c393
+<  * For example, medications that a patient has self-reported to be taking.  In FHIR DSTU2, this is reflected by
+---
+>  * For example, medications that a patient has self-reported to be taking.  In FHIR STU3, this is reflected by
+401c396
+<  * @see http://hl7.org/fhir/DSTU2/valueset-medication-statement-status.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-medication-statement-status.html
+410c405
+<       and M.wasNotTaken.value is not true
+---
+>       and M.taken.value != 'n'
+413c408
+< * Medications that are active, according to a prescription.  In FHIR DSTU2, this is reflected by MedicationOrder
+---
+> * Medications that are active, according to a prescription.  In FHIR STU3, this is reflected by MedicationRequest
+416,421c411,413
+< * TODO: Revisit based on outcome of FHIR chat.
+< * TODO: Rename to Active once the execution engine supports overloaded functions.
+< * @see https://chat.fhir.org/#narrow/stream/implementers/topic/Meaning.20of.20.22active.22.20and.20.22completed.22.20in.20MedicationRequest
+< * @see http://hl7.org/fhir/DSTU2/valueset-medication-order-status.html
+< * @param MedList - a list of MedicationOrders
+< * @returns {List<MedicationOrder>} a list of active medication orders, or null if null was passed in
+---
+> * @see https://www.hl7.org/fhir/STU3/valueset-medication-request-status.html
+> * @param MedList - a list of MedicationRequests
+> * @returns {List<MedicationRequest>} a list of active medication orders, or null if null was passed in
+423c415
+< define function ActiveMedicationOrder(MedList List<MedicationOrder>):
+---
+> define function ActiveMedicationRequest(MedList List<MedicationRequest>):
+426d417
+<       and M.dateEnded.value is null
+429c420
+< * Medications that are active or completed, according to a prescription.  In FHIR DSTU2, this is reflected by MedicationOrder
+---
+> * Medications that are active or completed, according to a prescription.  In FHIR STU3, this is reflected by MedicationRequest
+431,433c422,424
+< * @see http://hl7.org/fhir/DSTU2/valueset-medication-order-status.html
+< * @param MedList - a list of MedicationOrders
+< * @returns {List<MedicationOrder>} a list of active medication orders, or null if null was passed in
+---
+> * @see https://www.hl7.org/fhir/STU3/valueset-medication-request-status.html
+> * @param MedList - a list of MedicationRequests
+> * @returns {List<MedicationRequest>} a list of active medication orders, or null if null was passed in
+435c426
+< define function ActiveOrCompletedMedicationOrder(MedList List<MedicationOrder>):
+---
+> define function ActiveOrCompletedMedicationRequest(MedList List<MedicationRequest>):
+441,445c432,436
+< * Medications that are active, completed, or stopped, according to a prescription.  In FHIR DSTU2, this is reflected by
+< * MedicationOrder with status 'active', 'completed', or 'stopped'
+< * @see http://hl7.org/fhir/DSTU2/valueset-medication-order-status.html
+< * @param MedList - a list of MedicationOrders
+< * @returns {List<MedicationOrder>} a list of active medication orders, or null if null was passed in
+---
+> * Medications that are active, completed, or stopped, according to a prescription.  In FHIR STU3, this is reflected by
+> * MedicationRequest with status 'active', 'completed', or 'stopped'
+> * @see https://www.hl7.org/fhir/STU3/valueset-medication-request-status.html
+> * @param MedList - a list of MedicationRequests
+> * @returns {List<MedicationRequest>} a list of active medication orders, or null if null was passed in
+447c438
+< define function ActiveCompletedOrStoppedMedicationOrder(MedList List<MedicationOrder>):
+---
+> define function ActiveCompletedOrStoppedMedicationRequest(MedList List<MedicationRequest>):
+465,466c456,457
+<     where M.effectiveDateTime.value in LookBackInterval
+<       or NullSafeToInterval(M.effectivePeriod) overlaps LookBackInterval
+---
+>     where M.effective.value in LookBackInterval
+>       or NullSafeToInterval(M.effective) overlaps LookBackInterval
+469c460
+<  * MedicationOrders with a written date in the specified "look back" period.  For example, opioid orders in the last
+---
+>  * MedicationRequests with a written date in the specified "look back" period.  For example, opioid orders in the last
+472,474c463,465
+<  * @param OrderList - a list of MedicationOrders
+<  * @param LookBack - a duration Quantity indicating how far back to look for MedicationOrders
+<  * @returns {List<MedicationOrder>} a list of MedicationOrders with written date in the specified lookback period,
+---
+>  * @param OrderList - a list of MedicationRequests
+>  * @param LookBack - a duration Quantity indicating how far back to look for MedicationRequests
+>  * @returns {List<MedicationRequest>} a list of MedicationRequests with written date in the specified lookback period,
+477,478c468,469
+< define function MedicationOrderLookBack(MedList List<MedicationOrder>, LookBack System.Quantity):
+<   MedList M where M.dateWritten.value in Interval[Now() - LookBack, Now()]
+---
+> define function MedicationRequestLookBack(MedList List<MedicationRequest>, LookBack System.Quantity):
+>   MedList M where M.authoredOn.value in Interval[Now() - LookBack, Now()]
+492,493c483,484
+<  * Encounters that are in progress. In FHIR DSTU2, this is reflected by status: 'in-progress'.
+<  * @see http://hl7.org/fhir/DSTU2/valueset-encounter-state.html
+---
+>  * Encounters that are in progress. In FHIR STU3, this is reflected by status: 'in-progress'.
+>  * @see https://www.hl7.org/fhir/STU3/valueset-encounter-status.html
+502c493
+<  * Encounters that have not been cancelled. In FHIR DSTU2, this is reflected by  andy status other
+---
+>  * Encounters that have not been cancelled. In FHIR STU3, this is reflected by  andy status other
+504c495
+<  * @see http://hl7.org/fhir/DSTU2/valueset-encounter-state.html
+---
+>  * @see https://www.hl7.org/fhir/STU3/valueset-encounter-status.html
+534c525
+<   [AllergyIntolerance] A where NullSafeToConcept(A.substance) ~ Koncept
+---
+>   [AllergyIntolerance] A where NullSafeToConcept(A.code) ~ Koncept
+537c528
+< * AllergyIntolerances that are active or confirmed.  In FHIR DSTU2, this is reflected by AllergyIntolerance
+---
+> * AllergyIntolerances that are active or confirmed.  In FHIR STU3, this is reflected by AllergyIntolerance
+539c530
+< * @see http://hl7.org/fhir/DSTU2/valueset-allergy-intolerance-status.html
+---
+> * @see https://www.hl7.org/fhir/STU3/valueset-allergy-verification-status.html
+543c534
+< define function ActiveOrConfirmedAllergyIntolerance(AllergyIntolList List<AllergyIntolerance>):
+---
+> define function ConfirmedAllergyIntolerance(AllergyIntolList List<AllergyIntolerance>):
+545,546c536
+<     where A.status.value = 'active'
+<       or A.status.value = 'confirmed'
+---
+>     where A.verificationStatus.value = 'confirmed'
+561,563c551,553
+<     where G.startDate.value in LookBackInterval
+<       or G.targetDate.value in LookBackInterval
+<       or (G.startDate.value + NullSafeToQuantity(G.targetQuantity)) in LookBackInterval
+---
+>     where G.start.value in LookBackInterval
+>       or G.target.dueD.value in LookBackInterval
+>       or G.start.value in LookBackInterval

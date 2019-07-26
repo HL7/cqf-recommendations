@@ -1,0 +1,24 @@
+{
+  "resourceType": "Bundle",
+  "id": "Aged 18 years or older",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "be11feb9-cb49-4ae1-ab29-029c06317e67",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "resourceType": "Bundle",
+  "id": "Has a medication statement indicating Ciprofloxacin",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4aedc8ad-8770-48fe-ab2e-bc991e0c9dc2",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "356ac02c-8690-40d8-baa0-97c2d9942eea",
+        "subject": {
+          "reference": "Patient/4aedc8ad-8770-48fe-ab2e-bc991e0c9dc2"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z20.810",
+              "display": "Exposure to Anthrax (disorder)"
+            }
+          ],
+          "text": "Exposure to Anthrax (disorder)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6e2f90e5-68c5-4213-ae69-e0d4c65035a4",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170475009",
+              "display": "Exposure to Bacillus anthracis (event)"
+            }
+          ],
+          "text": "Exposure to Bacillus anthracis (event)"
+        },
+        "subject": {
+          "reference": "Patient/4aedc8ad-8770-48fe-ab2e-bc991e0c9dc2"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ebfc59e3-0be1-496b-a8d9-428b58c9bebe",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84387000",
+              "display": "Asymptomatic (finding)"
+            }
+          ],
+          "text": "Asymptomatic (finding)"
+        },
+        "subject": {
+          "reference": "Patient/4aedc8ad-8770-48fe-ab2e-bc991e0c9dc2"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "4c5d6033-c921-48a9-8676-ced7d73021c9",
+        "subject": {
+          "reference": "Patient/4aedc8ad-8770-48fe-ab2e-bc991e0c9dc2"
+        },
+        "status": "active",
+        "null": null,
+        "effectiveDateTime": "2019-05-03T15:00:00.000Z",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "309309",
+              "display": "Ciprofloxacin 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Ciprofloxacin 500 MG Oral Tablet"
+        }
+      }
+    }
+  ]
+}

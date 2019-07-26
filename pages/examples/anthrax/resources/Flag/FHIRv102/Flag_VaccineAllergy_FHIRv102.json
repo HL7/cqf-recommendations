@@ -1,0 +1,32 @@
+{
+  "resourceType": "Flag",
+  "id": "5",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Potential patient allergy to BioThrax. Confirm allergy status.<div xmlns=\"http://www.w3.org/1999/xhtml\">"
+  },
+  "subject": {
+    "reference": "Patient/4e3ff72e-3227-470b-9cc9-059ce96b00ce"
+  },
+  "author": {
+    "reference": "Device/1"
+  },
+  "status": "active",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "370860007",
+        "display": "Verification of allergy status (procedure)"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/flag-detail",
+      "valueReference": {
+        "reference": "AllergyIntolerance/9"
+      }
+    }
+  ]
+}

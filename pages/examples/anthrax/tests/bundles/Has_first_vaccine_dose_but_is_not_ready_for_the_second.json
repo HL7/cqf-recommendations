@@ -1,0 +1,146 @@
+{
+  "resourceType": "Bundle",
+  "id": "Has first vaccine dose but is not ready for the second",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1a2dac11-3dcf-4d10-9d46-a34f52fd3d4c",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "41c8bf24-cbe8-46b6-a20f-dbc0b9372bca",
+        "subject": {
+          "reference": "Patient/1a2dac11-3dcf-4d10-9d46-a34f52fd3d4c"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z20.810",
+              "display": "Exposure to Anthrax (disorder)"
+            }
+          ],
+          "text": "Exposure to Anthrax (disorder)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "70730c03-0240-49c3-959f-a1a5cc6eb66c",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170475009",
+              "display": "Exposure to Bacillus anthracis (event)"
+            }
+          ],
+          "text": "Exposure to Bacillus anthracis (event)"
+        },
+        "subject": {
+          "reference": "Patient/1a2dac11-3dcf-4d10-9d46-a34f52fd3d4c"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2018-07-18T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9c40a4d1-8377-4993-a289-4a714131beac",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84387000",
+              "display": "Asymptomatic (finding)"
+            }
+          ],
+          "text": "Asymptomatic (finding)"
+        },
+        "subject": {
+          "reference": "Patient/1a2dac11-3dcf-4d10-9d46-a34f52fd3d4c"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2018-07-19T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "da5e5940-0944-41d6-9cff-29a2ee4cd5f6",
+        "subject": {
+          "reference": "Patient/1a2dac11-3dcf-4d10-9d46-a34f52fd3d4c"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170338000",
+              "display": "First anthrax vaccination (procedure)"
+            }
+          ],
+          "text": "First anthrax vaccination (procedure)"
+        },
+        "null": null,
+        "performedDateTime": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cba6f41b-ad3d-4f86-8a38-31aea5c47cd5",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/1a2dac11-3dcf-4d10-9d46-a34f52fd3d4c"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "309309",
+              "display": "Ciprofloxacin 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Ciprofloxacin 500 MG Oral Tablet"
+        }
+      }
+    }
+  ]
+}

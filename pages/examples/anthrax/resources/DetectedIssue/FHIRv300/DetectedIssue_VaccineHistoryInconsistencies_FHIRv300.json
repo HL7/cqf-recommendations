@@ -1,0 +1,36 @@
+{
+  "resourceType": "DetectedIssue",
+  "id": "7",
+  "detail": "Potential BioThrax vaccine series problem(s) identified. A vaccine in the recommended series might be missing or a vaccination date might be missing. Review BioThrax vaccine series history.",
+  "author": {
+    "reference": "Device/1"
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/ActCode",
+        "code": "TIME",
+        "display": "Timing detected issue"
+      }
+    ]
+  },
+  "implicated": [
+    {
+      "reference": "Procedure/11"
+    }
+  ],
+  "mitigation": [
+    {
+      "action": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "314529007",
+            "display": "Medication review due (situation)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "preliminary"
+}
