@@ -12,7 +12,8 @@
     "resources": [ 
 			"resources", 
 			"pages/examples/anc/resources", 
-			"pages/examples/opg/resources" 
+			"pages/examples/opg/resources",
+			"pages/examples/hep-b/resources"
 		],
     "pages": "pages",
     "temp": "temp",

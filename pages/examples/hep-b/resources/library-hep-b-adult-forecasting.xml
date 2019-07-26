@@ -1,12 +1,13 @@
 <Library xmlns="http://hl7.org/fhir">
-    <id value="example-library-hep-b-adult-forecasting"/>
+    <id value="library-hep-b-adult-forecasting"/>
+		<url value="http://example.org/fhir/uv/cpg/Library/library-hep-b-adult-forecasting"/>
     <identifier>
-        <use value="test"/>
+        <use value="official"/>
         <value value="library-hep-b-adult-forecasting"/>
     </identifier>
     <version value="0.1.0"/>
-    <name value="Library - Logic for Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
-    <title value="Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
+    <name value="HepBAdultForecasting"/>
+    <title value="Library - Logic for Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
     <status value="active"/>
     <experimental value="true"/>
     <type>
@@ -19,7 +20,6 @@
     <date value="2019-07-26T14:15:00-04:00"/>
     <publisher value="HL7 FHIR Clinical Guidelines Example Artifact"/>
     <description value="If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast."/>
-    <purpose value="Example artifact implementation of CDC ACIP Hep B vaccination guidelines for adults, 18 years and older, who have not yet been immunized."/>
     <useContext>
         <code>
             <system value="http://hl7.org/fhir/usage-context-type"/>
@@ -29,8 +29,8 @@
         <valueCodeableConcept>
             <coding>
                 <system value="http://snomed.info/sct"/>
-                <code value="182888003"/>
-                <display value="Medication requested (situation)"/>
+                <code value="384810002"/>
+                <display value="Immunization/vaccination management (procedure)"/>
             </coding>
         </valueCodeableConcept>
     </useContext>
@@ -41,17 +41,16 @@
             <display value="United States of America"/>
         </coding>
     </jurisdiction>
+    <purpose value="Example artifact implementation of CDC ACIP Hep B vaccination guidelines for adults, 18 years and older, who have not yet been immunized."/>
     <topic>
         <text value="Hepatitus B Adult Immunization Forecasting"/>
     </topic>
-    <contributor>
-        <type value="author"/>
+    <author>
         <name value="Daryl Chertcoff"/>
-    </contributor>
-    <contributor>
-        <type value="author"/>
+    </author>
+    <author>
         <name value="Bryn Rhodes"/>
-    </contributor>
+    </author>
     <relatedArtifact>
   		<type value="documentation"/>
   		<display value="Immunization Calculation Engine - Hep B Vaccine Group - Hep B 2-dose Adult Series"/>
@@ -71,13 +70,15 @@
         <type value="Immunization"/>
         <codeFilter>
             <path value="status"/>
-            <valueCode value="completed"/>
+            <code>
+				<code value="completed"/>
+            </code>
         </codeFilter>
     </dataRequirement>
     <content>
         <contentType value="application/elm+xml"/>
         <!-- TODO - base64 encoded ELM -->
-        <data value=""/>
+        <!--data value=""/-->
         <title value="R4 logic"/>
     </content>
 </Library>

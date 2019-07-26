@@ -1,11 +1,12 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
-	<id value="example-hep-b-adult-forecasting"/>
+	<id value="plandefinition-hep-b-adult-forecasting"/>
+	<url value="http://example.org/fhir/uv/cpg/PlanDefinition/plandefinition-hep-b-adult-forecasting"/>
 	<identifier>
-		<use value="temp"/>
+		<use value="official"/>
 		<value value="hep-b-adult-forecasting"/>
 	</identifier>
 	<version value="0.1.0"/>
-	<name value="PlanDefinition_Recommendation_HepB"/>
+	<name value="Hep_B_Adult_Forecasting"/>
 	<title value="Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
 	<type>
 		<coding>
@@ -15,10 +16,10 @@
 		</coding>
 	</type>
 	<status value="draft"/>
+	<experimental value="true"/>
 	<date value="2019-07-26"/>
 	<publisher value="HL7 FHIR Clinical Guidelines Example Artifact"/>
 	<description value="If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast."/>
-	<purpose value="Example artifact implementation of CDC ACIP Hep B vaccination guidelines for adults, 18 years and older, who have not yet been immunized."/>
 	<useContext>
 		<code>
 			<system value="http://hl7.org/fhir/usage-context-type"/>
@@ -28,8 +29,8 @@
 		<valueCodeableConcept>
 			<coding>
 				<system value="http://snomed.info/sct"/>
-				<code value="182888003"/>
-				<display value="Medication requested (situation)"/>
+				<code value="384810002"/>
+				<display value="Immunization/vaccination management (procedure)"/>
 			</coding>
 		</valueCodeableConcept>
 	</useContext>
@@ -40,18 +41,17 @@
 			<display value="United States of America"/>
 		</coding>
 	</jurisdiction>
+	<purpose value="Example artifact implementation of CDC ACIP Hep B vaccination guidelines for adults, 18 years and older, who have not yet been immunized."/>
 	<topic>
 		<text value="Immunization Forecasting"/>
 	</topic>
-	<contributor>
-		<type value="author" />
+	<author>
 		<name value="Daryl Chertcoff"/>
-	</contributor>
-	<contributor>
-		<type value="author" />
+	</author>
+	<author>
 		<name value="Bryn Rhodes"/>
-	</contributor>
-  <relatedArtifact>
+	</author>
+	<relatedArtifact>
 		<type value="documentation"/>
 		<display value="Immunization Calculation Engine - Hep B Vaccine Group - Hep B 2-dose Adult Series"/>
 		<url value="https://cdsframework.atlassian.net/wiki/spaces/ICE/pages/14352491/Hep+B+Vaccine+Group#HepBVaccineGroup-ImmunizationSeries:HepB2-doseAdultSeries"/>
@@ -61,14 +61,12 @@
 		<display value="CDC MMWR Vol.67 / No.1 : Prevention of Hepatitis B Virus Infection in the United States: Recommendations of the Advisory Committee on Immunization Practices"/>
 		<url value="http://www.cdc.gov/mmwr/volumes/67/rr/pdfs/rr6701-H.PDF"/>
 	</relatedArtifact>
-  <relatedArtifact>
+	<relatedArtifact>
 		<type value="documentation"/>
 		<display value="April 2018 Recommendations for the use of adjuvanted hepatitis B vaccine (Heplisav-B, Dynavax)"/>
 		<url value="https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6715a5-H.pdf"/>
 	</relatedArtifact>
-	<library>
-		<reference value="Library/hep-b-immunization-adult"/>
-	</library>
+	<library value="Library/hep-b-immunization-adult"/>
 	<action>
 		<title value="Hep B Immunization Forecast"/>
 		<description value="Vaccinate Adult with specified Hep B forecast, if noted"/>
@@ -80,12 +78,11 @@
 		<documentation>
 			<type value="documentation"/>
 			<document>
-				<!-- We can use the example code systems from the FHIR CLinical Reasoning Module, or we can define GRADE specific code systems and use those here -->
-				<extension url="http://hl7.org/fhir/StructureDefinition/cqif-strengthOfRecommendation">
+				<!-- It's not clear what the strength of recommendation or quality of evidence is for the recommendation from the current documentation -->
+				<!--extension url="http://hl7.org/fhir/StructureDefinition/cqif-strengthOfRecommendation">
 					<valueCodeableConcept>
 						<coding>
-              <!-- AI: Correct? -->
-							<system value="http://hl7.org/fhir/recommendation-strength"/>
+        			<system value="http://hl7.org/fhir/recommendation-strength"/>
 							<code value="strong"/>
 							<display value="Strong"/>
 						</coding>
@@ -95,33 +92,40 @@
 					<valueCodeableConcept>
 						<coding>
 							<system value="http://hl7.org/fhir/evidence-quality"/>
-              <!-- AI: Correct? -->
-							<code value="low"/>
+        			<code value="low"/>
 							<display value="Low quality"/>
 						</coding>
 					</valueCodeableConcept>
-				</extension>
+				</extension-->
 			</document>
 		</documentation>
-		<triggerDefinition>
+		<trigger>
 			<type value="named-event"/>
-			<eventName value="order-sign"/>
-		</triggerDefinition>
+			<name value="patient-view"/>
+		</trigger>
 		<condition>
 			<kind value="applicability"/>
-			<description value="Is there a Hep B Adult Recommendation?"/>
-			<language value="text/cql"/>
-			<expression value="Patient Immunization History should be Evaluated in Adult Series"/>
+			<expression>
+				<description value="Is there a Hep B Adult Recommendation?"/>
+				<language value="text/cql"/>
+				<expression value="Patient Immunization History should be Evaluated in Adult Series"/>
+			</expression>
 		</condition>
 		<groupingBehavior value="visual-group"/>
 		<selectionBehavior value="exactly-one"/>
 		<dynamicValue>
 			<path value="action.title"/>
-			<expression value="Get Recommendation Overview"/>
+			<expression>
+				<language value="text/cql"/>
+				<expression value="Get Recommendation Overview"/>
+			</expression>
 		</dynamicValue>
 		<dynamicValue>
 			<path value="action.description"/>
-			<expression value="Get Recommendation Detail"/>
+			<expression>
+				<language value="text/cql"/>
+				<expression value="Get Recommendation Detail"/>
+			</expression>
 		</dynamicValue>
 		<action>
 			<description value="Will Immunize"/>

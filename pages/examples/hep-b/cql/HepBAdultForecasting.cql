@@ -8,7 +8,7 @@ codesystem CVX: 'http://hl7.org/fhir/sid/cvx'
 codesystem "Immunization Evaluation Dose Status codes": 'http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status'
 
 // Valuesets
-valueset "All Hep B Vaccines": 'http://fhir.org/guides/cdc/cqlf-recommendations/ValueSet/all-hepb-vaccines'
+valueset "All Hep B Vaccines": 'http://example.org/fhir/uv/cpg/ValueSet/all-hepb-vaccines'
 
 
 // Hep B Vaccine Codes

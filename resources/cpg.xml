@@ -154,6 +154,20 @@
 			</resource>
 			-->
 			
+			<!-- Hepatitis-B Immunization Forecasting Resources -->
+			<resource>
+				<reference>
+					<reference value="Library/library-hep-b-adult-forecasting"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/plandefinition-hep-b-adult-forecasting"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
+			</resource>
+			
 			<!-- OPG Example Resources -->
 			<resource>
 				<reference>
