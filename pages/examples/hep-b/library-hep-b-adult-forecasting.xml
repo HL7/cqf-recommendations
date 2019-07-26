@@ -1,0 +1,83 @@
+<Library xmlns="http://hl7.org/fhir">
+    <id value="example-library-hep-b-adult-forecasting"/>
+    <identifier>
+        <use value="test"/>
+        <value value="library-hep-b-adult-forecasting"/>
+    </identifier>
+    <version value="0.1.0"/>
+    <name value="Library - Logic for Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
+    <title value="Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
+    <status value="active"/>
+    <experimental value="true"/>
+    <type>
+        <coding>
+            <system value="http://hl7.org/fhir/library-type"/>
+            <code value="logic-library"/>
+            <display value="Logic Library"/>
+        </coding>
+    </type>
+    <date value="2019-07-26T14:15:00-04:00"/>
+    <publisher value="HL7 FHIR Clinical Guidelines Example Artifact"/>
+    <description value="If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast."/>
+    <purpose value="Example artifact implementation of CDC ACIP Hep B vaccination guidelines for adults, 18 years and older, who have not yet been immunized."/>
+    <useContext>
+        <code>
+            <system value="http://hl7.org/fhir/usage-context-type"/>
+            <code value="focus"/>
+            <display value="Clinical Focus"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="182888003"/>
+                <display value="Medication requested (situation)"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <topic>
+        <text value="Hepatitus B Adult Immunization Forecasting"/>
+    </topic>
+    <contributor>
+        <type value="author"/>
+        <name value="Daryl Chertcoff"/>
+    </contributor>
+    <contributor>
+        <type value="author"/>
+        <name value="Bryn Rhodes"/>
+    </contributor>
+    <relatedArtifact>
+  		<type value="documentation"/>
+  		<display value="Immunization Calculation Engine - Hep B Vaccine Group - Hep B 2-dose Adult Series"/>
+  		<url value="https://cdsframework.atlassian.net/wiki/spaces/ICE/pages/14352491/Hep+B+Vaccine+Group#HepBVaccineGroup-ImmunizationSeries:HepB2-doseAdultSeries"/>
+  	</relatedArtifact>
+  	<relatedArtifact>
+  		<type value="documentation"/>
+  		<display value="CDC MMWR Vol.67 / No.1 : Prevention of Hepatitis B Virus Infection in the United States: Recommendations of the Advisory Committee on Immunization Practices"/>
+  		<url value="http://www.cdc.gov/mmwr/volumes/67/rr/pdfs/rr6701-H.PDF"/>
+  	</relatedArtifact>
+    <relatedArtifact>
+  		<type value="documentation"/>
+  		<display value="April 2018 Recommendations for the use of adjuvanted hepatitis B vaccine (Heplisav-B, Dynavax)"/>
+  		<url value="https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6715a5-H.pdf"/>
+  	</relatedArtifact>
+    <dataRequirement id="immunuzations">
+        <type value="Immunization"/>
+        <codeFilter>
+            <path value="status"/>
+            <valueCode value="completed"/>
+        </codeFilter>
+    </dataRequirement>
+    <content>
+        <contentType value="application/elm+xml"/>
+        <!-- TODO - base64 encoded ELM -->
+        <data value=""/>
+        <title value="R4 logic"/>
+    </content>
+</Library>
