@@ -1,0 +1,41 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="cpg-active-condition"/>
+    <meta>
+      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+    </meta>
+		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-author">
+			<valueContactDetail>
+				<name value="Bryn Rhodes"/>
+			</valueContactDetail>
+		</extension>
+    <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-active-condition"/>
+    <version value="0.1.0"/>
+    <name value="CPGActiveCondition"/>
+    <title value="CPG Active Condition"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-07-21"/>
+    <publisher value="Clinical Decision Support WG"/>
+    <description value="Active condition clinical status codes"/>
+    <purpose value="Used to specify the set of clinical status codes that are considered active"/>
+    <copyright value="© CDC 2016+."/>
+    <compose>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <concept>
+                <code value="active"/>
+                <display value="Active"/>
+            </concept>
+            <concept>
+                <code value="recurrence"/>
+                <display value="Recurrence"/>
+            </concept>
+            <concept>
+                <code value="relapse"/>
+                <display value="Relapse"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
+

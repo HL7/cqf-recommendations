@@ -1,5 +1,5 @@
 # cqf-recommendations
-Representation of Clinical Practice Guideline Recommendations in FHIR (FHIR STU3 (3.0.1))
+Representation of Clinical Practice Guideline Recommendations in FHIR (FHIR R4 (4.0.0))
 
 This project provides the source for the HL7 Representation of Clinical Practice Guideline Recommendations in FHIR Implementation Guide
 

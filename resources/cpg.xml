@@ -155,97 +155,97 @@
 			-->
 			
 			<!-- OPG Example Resources -->
-			<!-- Updating to R4... 
 			<resource>
 				<reference>
-					<reference value="ActivityDefinition/opioidcds-risk-assessment-request"/>
+					<reference value="ActivityDefinition/opioidcds-riskassessment-request"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
+			<!-- Updating to R4... 
 			<resource>
 				<reference>
 					<reference value="Library/fhir-helpers-4-0-0"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/omtkdata-0-0-2"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/omtklogic-0-0-1"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/opioidcds-recommendation-05"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/opioidcds-recommendation-11"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/opioidcds-r4-common-0-1-0"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/opioidcds-r4-rec-10-patient-view-0-1-0"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/opioidcds-r4-rec-11-patient-view-0-1-0"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/opioidcds-05"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/opioidcds-10-patient-view"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/opioidcds-11-patient-view"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/opioidcds-11"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
-				<groupindId value="opg-example"/>
+				<groupingId value="opg-example"/>
 			</resource>
 			-->
 			<resource>
