@@ -7,6 +7,10 @@ include FHIRHelpers version '4.0.0' called FHIRHelpers
 codesystem CVX: 'http://hl7.org/fhir/sid/cvx'
 codesystem "Immunization Evaluation Dose Status codes": 'http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status'
 
+// Valuesets
+valueset "All Hep B Vaccines": 'http://fhir.org/guides/cdc/cqlf-recommendations/ValueSet/all-hepb-vaccines'
+
+
 // Hep B Vaccine Codes
 code "DTaP-IPV-Hib-Hep B, historical": '132' from "CVX"
 code "DTaP, IPV, Hib, Hep B": '146' from "CVX"
@@ -24,8 +28,8 @@ code "Hib-Hep B": '51' from "CVX"
 code "Valid Evaluation Status": 'valid' from "Immunization Evaluation Dose Status codes"
 
 // Concepts
-concept "All Hep B Vaccines": { "Hep B Vaccine Code, Adjuvanted", "Hep B, adolescent/high risk infant", "Hep B, adult", "Hep B, dialysis", "Hep B, unspecified formulation",
-  "Hib-Hep B", "DTaP-Hep B-IPV", "Hep A-Hep B", "DTP-Hib-Hep B", "DTaP-IPV-Hib-Hep B, historical", "DTaP, IPV, Hib, Hep B"  } display 'Hep B Vaccine'
+//concept "All Hep B Vaccines": { "Hep B Vaccine Code, Adjuvanted", "Hep B, adolescent/high risk infant", "Hep B, adult", "Hep B, dialysis", "Hep B, unspecified formulation",
+//  "Hib-Hep B", "DTaP-Hep B-IPV", "Hep A-Hep B", "DTP-Hib-Hep B", "DTaP-IPV-Hib-Hep B, historical", "DTaP, IPV, Hib, Hep B"  } display 'Hep B Vaccine'
 concept "Hep B Vaccine, Adjuvanted": { "Hep B Vaccine Code, Adjuvanted" }
 
 
@@ -50,6 +54,9 @@ define "No Hep B Shots were Administered before 18 Years minus 4 Days of Age":
 //////////////
 // Recommendation/Forecast
 //////////////
+define "Recommendation Tuple":
+  Tuple { Status: 'Recommended', Vaccine: 'Hep B, Adjuvanted', Date: ConvertsToString(@2019-01-01) }
+
 define "Is there a Hep B Adult Recommendation?":
   "A Forecast for Hep B Adult Dose 1 Should be Made" or "A Forecast for Hep B Adult Dose 2 Should be Made"
 
