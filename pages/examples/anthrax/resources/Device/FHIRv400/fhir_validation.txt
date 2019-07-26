@@ -1,0 +1,10 @@
+PS C:\FHIR> java -jar .\org.hl7.fhir.validator.jar C:\FHIR\AnthraxPEP\Device\FHIRv400 -version 4.0.0
+FHIR Validation tool Version 3.8.0-SNAPSHOT - Built 2019-02-11T12:49:16.829-05:00 - Git 7a8671008476
+Arguments: C:\FHIR\AnthraxPEP\Device\FHIRv400 -version 4.0.0
+  .. connect to tx server @ http://tx.fhir.org
+  .. definitions from hl7.fhir.core#4.0.0
+    (v4.0.0)
+  .. validate [C:\FHIR\AnthraxPEP\Device\FHIRv400]
+Terminology server: Check for supported code systems for http://snomed.info/sct
+Success...validating C:\FHIR\AnthraxPEP\Device\FHIRv400\Device_FHIRv400.json:  error:0 warn:1 info:0
+  Warning @ Device (line 1, col1) : A resource should have narrative for robust management [text.div.exists()]

@@ -1,0 +1,15 @@
+The Anthrax_Post_Exposure_Prophylaxis_Adults artifact has been produced for the Centers for
+Disease Control and Prevention by the CMS Alliance to Modernize Healthcare, operated by The
+MITRE Corporation. It carries an Apache 2.0 license.
+
+The CDC_Common_Logic library has been produced for the Centers for Disease Control and Prevention
+by the CMS Alliance to Modernize Healthcare, operated by THE MITRE Corporation. It carries an Apache 2.0 license.
+
+The CDS_Connect_Commons_for_FHIRv300 library is a modified copy of the open-source library produced
+for the Agency for Healthcare Research and Quality (AHRQ) under the CDS Connect project. The library
+has been modified to accommodate a FHIR STU3 data model. For more information, please see:
+https://cds.ahrq.gov/ as well as CDS_Connect_Commons_for_FHIRv300_Modifications.txt.
+
+The FHIRHelpers library is from the clinical_quality_language 
+[repository on github](https://github.com/cqframework/clinical_quality_language).
+It carries an Apache 2.0 license.

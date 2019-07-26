@@ -1,0 +1,45 @@
+PS C:\FHIR> java -jar .\org.hl7.fhir.validator.jar C:\FHIR\AnthraxPEP\Library\FHIRv102\Anthrax_Post_Exposure_Prophylaxis_FHIRv102_Library.json -version
+ 3.0.1 -ig validator.pack -profile http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-library
+FHIR Validation tool Version 3.8.0-SNAPSHOT - Built 2019-02-11T12:49:16.829-05:00 - Git 7a8671008476
+Arguments: C:\FHIR\AnthraxPEP\Library\FHIRv102\Anthrax_Post_Exposure_Prophylaxis_FHIRv102_Library.json -version 3.0.1 -ig validator.pack -profile http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-library
+  .. connect to tx server @ http://tx.fhir.org
+  .. definitions from hl7.fhir.core#3.0.1
+    (v3.0.1)
++  .. load IG from validator.pack
+  .. validate [C:\FHIR\AnthraxPEP\Library\FHIRv102\Anthrax_Post_Exposure_Prophylaxis_FHIRv102_Library.json] against [http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-library]
+Terminology server: Check for supported code systems for http://snomed.info/sct
+Success...validating C:\FHIR\AnthraxPEP\Library\FHIRv102\Anthrax_Post_Exposure_Prophylaxis_FHIRv102_Library.json:  error:0 warn:2 info:0
+  Warning @ Library.content[1].contentType (line 199, col33) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+  Warning @ Library.content[2].contentType (line 205, col45) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+
+PS C:\FHIR> java -jar .\org.hl7.fhir.validator.jar C:\FHIR\AnthraxPEP\Library\FHIRv102\ -version 3.0.1
+FHIR Validation tool Version 3.8.0-SNAPSHOT - Built 2019-02-11T12:49:16.829-05:00 - Git 7a8671008476
+Arguments: C:\FHIR\AnthraxPEP\Library\FHIRv102\ -version 3.0.1
+  .. connect to tx server @ http://tx.fhir.org
+  .. definitions from hl7.fhir.core#3.0.1
+    (v3.0.1)
+  .. validate [C:\FHIR\AnthraxPEP\Library\FHIRv102\]
+Validate C:\FHIR\AnthraxPEP\Library\FHIRv102\Anthrax_Post_Exposure_Prophylaxis_FHIRv102_Library.json
+Terminology server: Check for supported code systems for http://snomed.info/sct
+Validate C:\FHIR\AnthraxPEP\Library\FHIRv102\CDC_Common_Logic_FHIRv102_Library.json
+Validate C:\FHIR\AnthraxPEP\Library\FHIRv102\CDS_Connect_Commons_for_FHIRv102_Library.json
+Validate C:\FHIR\AnthraxPEP\Library\FHIRv102\FHIRHelpers_v102_Library.json
+Validate C:\FHIR\AnthraxPEP\Library\FHIRv102\FHIRv102_Model_Definition.json
+Success...validating C:\FHIR\AnthraxPEP\Library\FHIRv102\Anthrax_Post_Exposure_Prophylaxis_FHIRv102_Library.json:  error:0 warn:2 info:0
+  Warning @ Library.content[1].contentType (line 199, col33) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+  Warning @ Library.content[2].contentType (line 205, col45) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+
+Success...validating C:\FHIR\AnthraxPEP\Library\FHIRv102\CDC_Common_Logic_FHIRv102_Library.json:  error:0 warn:2 info:0
+  Warning @ Library.content[1].contentType (line 42, col33) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+  Warning @ Library.content[2].contentType (line 48, col45) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+
+Success...validating C:\FHIR\AnthraxPEP\Library\FHIRv102\CDS_Connect_Commons_for_FHIRv102_Library.json:  error:0 warn:2 info:0
+  Warning @ Library.content[1].contentType (line 41, col33) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+  Warning @ Library.content[2].contentType (line 47, col45) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+
+Success...validating C:\FHIR\AnthraxPEP\Library\FHIRv102\FHIRHelpers_v102_Library.json:  error:0 warn:2 info:0
+  Warning @ Library.content[1].contentType (line 36, col33) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+  Warning @ Library.content[2].contentType (line 42, col45) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
+
+Success...validating C:\FHIR\AnthraxPEP\Library\FHIRv102\FHIRv102_Model_Definition.json:  error:0 warn:1 info:0
+  Warning @ Library.content.contentType (line 28, col40) : ValueSet http://hl7.org/fhir/ValueSet/mimetypes not found
