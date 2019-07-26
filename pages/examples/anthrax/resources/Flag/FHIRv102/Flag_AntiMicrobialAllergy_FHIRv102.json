@@ -1,0 +1,32 @@
+{
+  "resourceType": "Flag",
+  "id": "4",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Potential patient allergy to [Ciprofloxacin]. Confirm allergy status.</div>"
+  },
+  "subject": {
+    "reference": "Patient/a3230944-0242-478f-af27-559a9815e2c4"
+  },
+  "author": {
+    "reference": "Device/1"
+  },
+  "status": "active",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "370860007",
+        "display": "Verification of allergy status (procedure)"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/flag-detail",
+      "valueReference": {
+        "reference": "AllergyIntolerance/5"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+PS C:\FHIR> java -jar .\org.hl7.fhir.validator.jar C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300 -version 3.0.1 -ig validator.pack -profile http://hl7.org
+/fhir/ig/cdc-acg/StructureDefinition/cdc-plandefinition
+FHIR Validation tool Version 3.8.0-SNAPSHOT - Built 2019-02-11T12:49:16.829-05:00 - Git 7a8671008476
+Arguments: C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300 -version 3.0.1 -ig validator.pack -profile http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-plandefinition
+  .. connect to tx server @ http://tx.fhir.org
+  .. definitions from hl7.fhir.core#3.0.1
+    (v3.0.1)
++  .. load IG from validator.pack
+  .. validate [C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300] against [http://hl7.org/fhir/ig/cdc-acg/StructureDefinition/cdc-plandefinition]
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_AntimicrobialNotPregant_FHIRv300.json
+Terminology server: Check for supported code systems for http://snomed.info/sct
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_AntimicrobialPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDoseAndAntimicrobialNotPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDoseAndAntimicrobialPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDoseNotPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDosePregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDoseAndAntimicrobialNotPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDoseAndAntimicrobialPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDoseNotPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDosePregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDoseAndAntimicrobialNotPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDoseAndAntimicrobialPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDoseNotPregnant_FHIRv300.json
+Validate C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDosePregnant_FHIRv300.json
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_AntimicrobialNotPregant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_AntimicrobialPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDoseAndAntimicrobialNotPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDoseAndAntimicrobialPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDoseNotPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_FirstVaccineDosePregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDoseAndAntimicrobialNotPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDoseAndAntimicrobialPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDoseNotPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_SecondVaccineDosePregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDoseAndAntimicrobialNotPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDoseAndAntimicrobialPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDoseNotPregnant_FHIRv300.json:  error:0 warn:0 info:0
+
+Success...validating C:\FHIR\AnthraxPEP\PlanDefinition\FHIRv300\PlanDefinition_ThirdVaccineDosePregnant_FHIRv300.json:  error:0 warn:0 info:0

@@ -1,0 +1,148 @@
+{
+  "resourceType": "Bundle",
+  "id": "Order set for both third vaccine dose and an antimicrobial, not pregnant",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "b7985e86-d983-43d1-8327-886bac97ee15",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e914de20-8f2e-4572-aabd-89b9d93a8b59",
+        "subject": {
+          "reference": "Patient/b7985e86-d983-43d1-8327-886bac97ee15"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z20.810",
+              "display": "Exposure to Anthrax (disorder)"
+            }
+          ],
+          "text": "Exposure to Anthrax (disorder)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2019-05-06T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cdfc0d58-3eae-44b1-bd0b-805e40d4342e",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170475009",
+              "display": "Exposure to Bacillus anthracis (event)"
+            }
+          ],
+          "text": "Exposure to Bacillus anthracis (event)"
+        },
+        "subject": {
+          "reference": "Patient/b7985e86-d983-43d1-8327-886bac97ee15"
+        },
+        "effectiveDateTime": "2019-05-06T15:00:00.000Z",
+        "issued": "2018-07-18T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fae26bc8-0ba8-413a-bebe-6ed0ee015d22",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84387000",
+              "display": "Asymptomatic (finding)"
+            }
+          ],
+          "text": "Asymptomatic (finding)"
+        },
+        "subject": {
+          "reference": "Patient/b7985e86-d983-43d1-8327-886bac97ee15"
+        },
+        "effectiveDateTime": "2019-05-06T15:00:00.000Z",
+        "issued": "2018-07-19T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "bcc250bc-4c2c-4c2b-adc1-453e18f824dc",
+        "subject": {
+          "reference": "Patient/b7985e86-d983-43d1-8327-886bac97ee15"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170338000",
+              "display": "First anthrax vaccination (procedure)"
+            }
+          ],
+          "text": "First anthrax vaccination (procedure)"
+        },
+        "null": null,
+        "performedDateTime": "2019-05-06T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "77b108fd-040b-4cb5-b03e-fdb947398d59",
+        "subject": {
+          "reference": "Patient/b7985e86-d983-43d1-8327-886bac97ee15"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170339008",
+              "display": "Second anthrax vaccination (procedure)"
+            }
+          ],
+          "text": "Second anthrax vaccination (procedure)"
+        },
+        "null": null,
+        "performedDateTime": "2019-05-20T15:00:00.000Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "resourceType": "Bundle",
+  "id": "Last vaccine dose missing date",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "087efb40-0fa2-4168-b264-d7a8baf562bc",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "12ba5558-a67e-4722-8a1f-bb87b7edbc21",
+        "subject": {
+          "reference": "Patient/087efb40-0fa2-4168-b264-d7a8baf562bc"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z20.810",
+              "display": "Exposure to Anthrax (disorder)"
+            }
+          ],
+          "text": "Exposure to Anthrax (disorder)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2019-05-06T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc4e273d-44f3-446d-88f3-d364964de891",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170475009",
+              "display": "Exposure to Bacillus anthracis (event)"
+            }
+          ],
+          "text": "Exposure to Bacillus anthracis (event)"
+        },
+        "subject": {
+          "reference": "Patient/087efb40-0fa2-4168-b264-d7a8baf562bc"
+        },
+        "effectiveDateTime": "2019-05-06T15:00:00.000Z",
+        "issued": "2018-07-18T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8ec5fccf-6a00-413b-8725-2a37a165a2f9",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84387000",
+              "display": "Asymptomatic (finding)"
+            }
+          ],
+          "text": "Asymptomatic (finding)"
+        },
+        "subject": {
+          "reference": "Patient/087efb40-0fa2-4168-b264-d7a8baf562bc"
+        },
+        "effectiveDateTime": "2019-05-06T15:00:00.000Z",
+        "issued": "2018-07-19T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "e89f6ef1-fb2a-42a9-8208-9bbc96de0119",
+        "subject": {
+          "reference": "Patient/087efb40-0fa2-4168-b264-d7a8baf562bc"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170338000",
+              "display": "First anthrax vaccination (procedure)"
+            }
+          ],
+          "text": "First anthrax vaccination (procedure)"
+        },
+        "null": null,
+        "performedDateTime": "2019-05-06T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": 11,
+        "subject": {
+          "reference": "Patient/087efb40-0fa2-4168-b264-d7a8baf562bc"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170339008",
+              "display": "Second anthrax vaccination (procedure)"
+            }
+          ],
+          "text": "Second anthrax vaccination (procedure)"
+        },
+        "null": null
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "56035c1d-70b2-4983-9725-46de8c6bcede",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/087efb40-0fa2-4168-b264-d7a8baf562bc"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "309309",
+              "display": "Ciprofloxacin 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Ciprofloxacin 500 MG Oral Tablet"
+        }
+      }
+    }
+  ]
+}

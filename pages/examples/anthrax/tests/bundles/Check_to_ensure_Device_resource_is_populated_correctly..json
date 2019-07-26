@@ -1,0 +1,24 @@
+{
+  "resourceType": "Bundle",
+  "id": "Check to ensure Device resource is populated correctly.",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "0a90c3d3-82b4-4638-a327-2d765526600c",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    }
+  ]
+}

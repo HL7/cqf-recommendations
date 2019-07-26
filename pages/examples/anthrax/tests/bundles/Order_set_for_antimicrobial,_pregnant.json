@@ -1,0 +1,158 @@
+{
+  "resourceType": "Bundle",
+  "id": "Order set for antimicrobial, pregnant",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "630ce802-e3d9-4c52-acb0-24efd72de912",
+        "name": [
+          {
+            "given": [
+              "Jane"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4450f5d3-f5e7-436e-b3cb-624fe2e57a83",
+        "subject": {
+          "reference": "Patient/630ce802-e3d9-4c52-acb0-24efd72de912"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "Z20.810",
+              "display": "Exposure to Anthrax (disorder)"
+            }
+          ],
+          "text": "Exposure to Anthrax (disorder)"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2019-06-02T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e1d3fb4f-a23d-4196-85de-9487eea4be06",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170475009",
+              "display": "Exposure to Bacillus anthracis (event)"
+            }
+          ],
+          "text": "Exposure to Bacillus anthracis (event)"
+        },
+        "subject": {
+          "reference": "Patient/630ce802-e3d9-4c52-acb0-24efd72de912"
+        },
+        "effectiveDateTime": "2019-06-02T15:00:00.000Z",
+        "issued": "2018-07-18T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a91ab9ed-60c7-4dfd-bf59-f4df33e21a88",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84387000",
+              "display": "Asymptomatic (finding)"
+            }
+          ],
+          "text": "Asymptomatic (finding)"
+        },
+        "subject": {
+          "reference": "Patient/630ce802-e3d9-4c52-acb0-24efd72de912"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2018-07-19T00:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "d73210b3-5c0e-490c-aea7-583b974de034",
+        "subject": {
+          "reference": "Patient/630ce802-e3d9-4c52-acb0-24efd72de912"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "170338000",
+              "display": "First anthrax vaccination (procedure)"
+            }
+          ],
+          "text": "First anthrax vaccination (procedure)"
+        },
+        "null": null,
+        "performedDateTime": "2019-06-03T15:00:00.000Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e89add17-6529-4785-baed-fc1d2a82fe58",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "82810-3",
+              "display": "Pregnancy status"
+            }
+          ],
+          "text": "Pregnancy status"
+        },
+        "subject": {
+          "reference": "Patient/630ce802-e3d9-4c52-acb0-24efd72de912"
+        },
+        "effectiveDateTime": "2019-04-03T15:00:00.000Z",
+        "issued": "2019-04-03T15:00:00.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "77386006",
+              "display": "Patient currently pregnant (finding)"
+            }
+          ],
+          "text": "Patient currently pregnant (finding)"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Bundle",
+  "id": "Has a recent asymptomatic observation",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "cbf6958b-9bbd-4174-8903-71907aeb8109",
+        "name": [
+          {
+            "given": [
+              "John"
+            ],
+            "family": "Smith"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-01-01",
+        "extension": []
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e0da187c-7810-4146-b410-fa95598cf4a3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "84387000",
+              "display": "Asymptomatic (finding)"
+            }
+          ],
+          "text": "Asymptomatic (finding)"
+        },
+        "subject": {
+          "reference": "Patient/cbf6958b-9bbd-4174-8903-71907aeb8109"
+        },
+        "effectiveDateTime": "2019-06-03T15:00:00.000Z",
+        "issued": "2019-06-03T15:00:00.000Z"
+      }
+    }
+  ]
+}
