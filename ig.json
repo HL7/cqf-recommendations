@@ -58,6 +58,10 @@
 		"valueset-cpg-expressionbased-profile-spreadsheet.xml"
   ],
   "resources": {
+		"ActivityDefinition/opioidcds-riskassessment-request": {
+			"source": "activitydefinition-opioidcds-riskassessment-request.xml",
+			"base": "ActivityDefinition-opioidcds-riskassessment-request.html"
+		},
 		"CodeSystem/cpg-indicator": {
 			"source": "codesystem-cpg-indicator.xml",
 			"base": "CodeSystem-cpg-indicator.html"
