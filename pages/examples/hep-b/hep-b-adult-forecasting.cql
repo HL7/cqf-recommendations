@@ -33,6 +33,10 @@ context Patient
 
 define "Patient Immunization History should be Evaluated in Adult Series":
   "Patient is 18 Years Minus 4 Days or Older" and "No Hep B Shots were Administered before 18 Years minus 4 Days of Age"
+  or
+  "There Exists a Valid First Hep B Adjuvanted Dose"
+  or
+  "There Exists a Valid Second Hep B Adjuvanted Dose"
 
 define "Patient is 18 Years Minus 4 Days or Older":
   exists([Patient] p
@@ -46,6 +50,9 @@ define "No Hep B Shots were Administered before 18 Years minus 4 Days of Age":
 //////////////
 // Recommendation/Forecast
 //////////////
+define "Is there a Hep B Adult Recommendation?":
+  "A Forecast for Hep B Adult Dose 1 Should be Made" or "A Forecast for Hep B Adult Dose 2 Should be Made"
+
 define "A Forecast for Hep B Adult Dose 1 Should be Made":
   if
     "Patient Immunization History should be Evaluated in Adult Series" and "There Exists a Valid First Hep B Adjuvanted Dose" = false

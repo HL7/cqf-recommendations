@@ -1,0 +1,141 @@
+<PlanDefinition xmlns="http://hl7.org/fhir">
+	<id value="example-hep-b-adult-forecasting"/>
+	<identifier>
+		<use value="temp"/>
+		<value value="hep-b-adult-forecasting"/>
+	</identifier>
+	<version value="0.1.0"/>
+	<name value="PlanDefinition_Recommendation_HepB"/>
+	<title value="Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
+	<type>
+		<coding>
+			<system value="http://hl7.org/fhir/plan-definition-type"/>
+			<code value="eca-rule"/>
+			<display value="ECA Rule"/>
+		</coding>
+	</type>
+	<status value="draft"/>
+	<date value="2019-07-26"/>
+	<publisher value="HL7 FHIR Clinical Guidelines Example Artifact"/>
+	<description value="If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast."/>
+	<purpose value="Example artifact implementation of CDC ACIP Hep B vaccination guidelines for adults, 18 years and older, who have not yet been immunized."/>
+	<useContext>
+		<code>
+			<system value="http://hl7.org/fhir/usage-context-type"/>
+			<code value="focus"/>
+			<display value="Clinical Focus"/>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="182888003"/>
+				<display value="Medication requested (situation)"/>
+			</coding>
+		</valueCodeableConcept>
+	</useContext>
+	<jurisdiction>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="US"/>
+			<display value="United States of America"/>
+		</coding>
+	</jurisdiction>
+	<topic>
+		<text value="Immunization Forecasting"/>
+	</topic>
+	<contributor>
+		<type value="author" />
+		<name value="Daryl Chertcoff"/>
+	</contributor>
+	<contributor>
+		<type value="author" />
+		<name value="Bryn Rhodes"/>
+	</contributor>
+  <relatedArtifact>
+		<type value="documentation"/>
+		<display value="Immunization Calculation Engine - Hep B Vaccine Group - Hep B 2-dose Adult Series"/>
+		<url value="https://cdsframework.atlassian.net/wiki/spaces/ICE/pages/14352491/Hep+B+Vaccine+Group#HepBVaccineGroup-ImmunizationSeries:HepB2-doseAdultSeries"/>
+	</relatedArtifact>
+	<relatedArtifact>
+		<type value="documentation"/>
+		<display value="CDC MMWR Vol.67 / No.1 : Prevention of Hepatitis B Virus Infection in the United States: Recommendations of the Advisory Committee on Immunization Practices"/>
+		<url value="http://www.cdc.gov/mmwr/volumes/67/rr/pdfs/rr6701-H.PDF"/>
+	</relatedArtifact>
+  <relatedArtifact>
+		<type value="documentation"/>
+		<display value="April 2018 Recommendations for the use of adjuvanted hepatitis B vaccine (Heplisav-B, Dynavax)"/>
+		<url value="https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6715a5-H.pdf"/>
+	</relatedArtifact>
+	<library>
+		<reference value="Library/hep-b-immunization-adult"/>
+	</library>
+	<action>
+		<title value="Hep B Immunization Forecast"/>
+		<description value="Vaccinate Adult with specified Hep B forecast, if noted"/>
+		<documentation>
+			<type value="documentation"/>
+			<display value="Immunization Calculation Engine - Hep B 2-dose Adult Series"/>
+			<url value="https://cdsframework.atlassian.net/wiki/spaces/ICE/pages/14352491/Hep+B+Vaccine+Group#HepBVaccineGroup-ImmunizationSeries:HepB2-doseAdultSeries"/>
+		</documentation>
+		<documentation>
+			<type value="documentation"/>
+			<document>
+				<!-- We can use the example code systems from the FHIR CLinical Reasoning Module, or we can define GRADE specific code systems and use those here -->
+				<extension url="http://hl7.org/fhir/StructureDefinition/cqif-strengthOfRecommendation">
+					<valueCodeableConcept>
+						<coding>
+              <!-- AI: Correct? -->
+							<system value="http://hl7.org/fhir/recommendation-strength"/>
+							<code value="strong"/>
+							<display value="Strong"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+				<extension url="http://hl7.org/fhir/StructureDefinition/cqif-qualityOfEvidence">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://hl7.org/fhir/evidence-quality"/>
+              <!-- AI: Correct? -->
+							<code value="low"/>
+							<display value="Low quality"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+			</document>
+		</documentation>
+		<triggerDefinition>
+			<type value="named-event"/>
+			<eventName value="order-sign"/>
+		</triggerDefinition>
+		<condition>
+			<kind value="applicability"/>
+			<description value="Is there a Hep B Adult Recommendation?"/>
+			<language value="text/cql"/>
+			<expression value="Patient Immunization History should be Evaluated in Adult Series"/>
+		</condition>
+		<groupingBehavior value="visual-group"/>
+		<selectionBehavior value="exactly-one"/>
+		<dynamicValue>
+			<path value="action.title"/>
+			<expression value="Get Recommendation Overview"/>
+		</dynamicValue>
+		<dynamicValue>
+			<path value="action.description"/>
+			<expression value="Get Recommendation Detail"/>
+		</dynamicValue>
+		<action>
+			<description value="Will Immunize"/>
+		</action>
+		<action>
+			<description value="Will not immunize due to contraindication(s) or other medical risk factors"/>
+		</action>
+		<action>
+			<description value="Will not immunize due to patient preferences"/>
+		</action>
+		<action>
+			<!-- TODO: How do we indicate through the response that a comment must be captured? -->
+			<!-- TODO: How do we communicate the response back to the CDS service for persistence? -->
+			<description value="N/A - see comment (will be reviewed by medical director)"/>
+		</action>
+	</action>
+</PlanDefinition>
