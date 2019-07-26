@@ -13,17 +13,17 @@ Readers of this implementation guide should be familiar with the [Using Codes](h
 
 Standard and established code systems should be used whenever possible. Only in the case that existing code systems do not provide the necessary concepts should new code systems be defined. If required, code systems defined by content conforming to this IG SHALL use the [cpg-codesystem](StructureDefinition-cpg-codesystem.html) profile.
 
-Note that this does not mean that _any_ code system referenced by computable content must use the cpg-codesystem profile. The conformance requirement only applies to code systems _introduced_ by computable content. For example, the SNOMED-CT code system would not be expected to conform to the cpg-codesystem profile.
+Note that this does not mean that _any_ code system referenced by computable content must use the cpg-codesystem profile. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED-CT code system would not be expected to conform to the cpg-codesystem profile.
 
 Refer to the base FHIR specification for a list of established [code systems](http://hl7.org/fhir/R4/terminologies-systems.html) and the corresponding canonical URL.
 
 ## Value Sets
 
-This implementation guide defines three value set profiles, a base cpg-valueset profile that establishes key elements that must be supported for any value set content, and two derived profiles, cpg-computablevalueset and cpg-cachedvalueset, that define key elements that should be used to support computable value set content. Value sets defined by content conforming to this IG SHALL use at least the [cpg-valueset](StructureDefinition-cpg-valueset.html) profile.
+This implementation guide defines two value set profiles, a base cpg-valueset profile that establishes key elements that must be supported for any value set content, and a derived profile, cpg-expressionbasedvalueset, that defines key elements that must be supported for expression-based value set content. Value sets defined by content conforming to this IG SHALL use at least the [cpg-valueset](StructureDefinition-cpg-valueset.html) profile.
 
-In addition, value sets SHOULD be defined used expression-based (or _intensional_) definitions if supported by the code systems involved. Value sets defined in this way SHALL conform to the [cpg-expressionbasedvalueset](StructureDefinition-cpg-expressionbasedvalueset.html) profile.
+In addition, value sets SHOULD be defined using expression-based (or _intensional_) definitions if the value set definition (the content logical definition) cannot be represented using the standard FHIR value set compose syntax. Value sets defined in this way SHALL conform to the [cpg-expressionbasedvalueset](StructureDefinition-cpg-expressionbasedvalueset.html) profile.
 
-Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use the cpg-valueset or related profiles. The conformance requirements only apply to value sets _introduced_ by computable content.
+Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use the cpg-valueset or related profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
 
 ## Implementation Considerations
 
