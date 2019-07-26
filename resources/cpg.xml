@@ -62,19 +62,19 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
-			<!-- Getting a null pointer exception whenever I try to include these resources as examples, not sure why, they are valid, so far as I can tell. -->
-			<!--resource>
+			<resource>
 				<reference>
 					<reference value="Questionnaire/cpg-common-identity"/>
 				</reference>
 				<groupingId value="main"/>
-			</resource-->
-			<!--resource>
+			</resource>
+			<resource>
 				<reference>
 					<reference value="Questionnaire/cpg-common-patient-profile"/>
 				</reference>
 				<groupingId value="main"/>
-			</resource-->
+			</resource>
+			<!-- Need to finish adding linkIds for everything -->
 			<!--resource>
 				<reference>
 					<reference value="Questionnaire/l2-checklist"/>
@@ -107,7 +107,6 @@
 			</resource>
 			
 			<!-- ANC Example Resources -->
-			<!-- Getting a null pointer exception from the builder; verified resource is XML valid...
 			<resource>
 				<reference>
 					<reference value="Library/anc-recommendation-a2"/>
@@ -136,8 +135,6 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
 				<groupingId value="anc-example"/>
 			</resource>
-			-->
-			<!-- TODO: These generate a null pointer exception in the publisher, not clear why, they appear to be valid
 		  <resource>
 				<reference>
 					<reference value="Questionnaire/anc-every-contact"/>
@@ -152,7 +149,6 @@
 				<exampleBoolean value="true"/>
 				<groupingId value="anc-example"/>
 			</resource>
-			-->
 			
 			<!-- Hepatitis-B Immunization Forecasting Resources -->
 			<resource>

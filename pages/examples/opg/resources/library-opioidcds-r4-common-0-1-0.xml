@@ -1,4 +1,4 @@
-<Library>
+<Library xmlns="http://hl7.org/fhir">
    <id value="opioidcds-r4-common-0-1-0"/>
    <url value="http://fhir.org/guides/cdc/opioid-cds/Library/opioidcds-r4-common-0-1-0"/>
    <version value="0.1.0"/>

@@ -1,4 +1,4 @@
-<Library>
+<Library xmlns="http://hl7.org/fhir">
     <id value="library-omtklogic-0-0-1"/>
     <meta>
         <versionId value="47"/>

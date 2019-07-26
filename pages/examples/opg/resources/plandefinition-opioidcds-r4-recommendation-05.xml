@@ -1,4 +1,4 @@
-<PlanDefinition>
+<PlanDefinition xmlns="http://hl7.org/fhir">
 	<id value="plandefinition-opioidcds-r4-recommendation-05"/>
 	<url value="http://fhir.org/guides/cdc/opioid-cds/PlanDefinition/plandefinition-opioidcds-r4-recommendation-05"/>
 	<version value="0.1.0"/>

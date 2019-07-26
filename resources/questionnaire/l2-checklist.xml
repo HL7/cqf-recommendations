@@ -1,4 +1,4 @@
-<Questionnaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../HL7/FHIR-Spec/4.0.0/fhir-all-xsd/fhir-single.xsd" xmlns="http://hl7.org/fhir">
+<Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="l2-checklist"/>
 	<url value="http://hl7.org/fhir/uv/cpg/Questionnaire/l2-checklist"/>
 	<version value="0.1.0"/>

@@ -1,4 +1,4 @@
-<Questionnaire>
+<Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="l3-checklist"/>
 	<url value="http://hl7.org/fhir/uv/cpg/Questionnaire/l3-checklist"/>
 	<version value="0.1.0"/>

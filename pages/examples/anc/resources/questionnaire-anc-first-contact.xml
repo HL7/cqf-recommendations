@@ -1,4 +1,4 @@
-<Questionnaire>
+<Questionnaire xmlns="http://hl7.org/fhir">
 	<id value="anc-first-contact"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
