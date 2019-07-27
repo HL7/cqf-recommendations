@@ -1,5 +1,5 @@
 <Library xmlns="http://hl7.org/fhir">
-    <id value="library-omtklogic-0-0-1"/>
+    <id value="omtklogic-0-0-1"/>
     <meta>
         <versionId value="47"/>
         <lastUpdated value="2019-05-10T04:25:30.527-06:00"/>
@@ -12,7 +12,7 @@
                     <th scope="row">
                         <b>Id: </b>
                     </th>
-                    <td style="padding-left: 25px; padding-right: 25px;">Library/library-omtklogic-0-0-1/_history/46</td>
+                    <td style="padding-left: 25px; padding-right: 25px;">Library/omtklogic-0-0-1</td>
                 </tr>
                 <tr>
                     <th scope="row">
@@ -57,7 +57,7 @@
                             <span>
                                 <span style="padding-left: 25px;">
                                     <b>reference: </b>
-                                    <span>Library/library-omtkdata-0-0-2/_history/4</span>
+                                    <span>Library/library-omtkdata-0-0-2</span>
                                 </span>
                             </span>
                         </p>
@@ -400,7 +400,7 @@ define TestCalculateMMEs:
             </table>
         </div>
     </text>
-    <url value="http://fhir.org/guides/cdc/opioid-cds/Library/library-omtklogic-0-0-1"/>
+    <url value="http://fhir.org/guides/cdc/opioid-cds/Library/omtklogic-0-0-1"/>
     <version value="0.0.1"/>
     <name value="OMTKLogic"/>
     <title value="OMTK Logic"/>

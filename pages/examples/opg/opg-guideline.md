@@ -3,6 +3,8 @@ layout: example-default
 title: Opioid Prescribing Guideline Example
 ---
 
+This example illustrates the use of FHIR resources to represent computable content for Recommendation 5 of the CDC Opioid Prescribing Guideline:
+
 [CDC Opioid Prescribing Guideline](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
 
 # Recommendation 5: Lowest Effective Dose
@@ -28,7 +30,7 @@ To be generalizable to areas where dispense information is not available, base t
 
 Total morphine milligram equivalent (MME) is 60 mg/day. Consider tapering to < 50.
 
-**if MME >= 90, provide a recommendation to taper now:
+**if MME >= 90, provide a recommendation to taper now:**
 
 **High risk for opioid overdose - taper now.**
 
@@ -45,5 +47,22 @@ For both recommendations, one of the following responses should be required:
 * Acute pain; snooze 1 month.
 * N/A-see comment (will be reviewed by medical director); snooze 3 months.
 
-<img src="../../assets/images/Recommendation05-Flow.png"/>
+<div>
+  <img src="../../assets/images/Recommendation05-Flow.png"/>
+</div>
+
+## Resources
+
+### CQL Libraries
+* [OMTKLogic](cql/OMTKLogic-0.0.0.cql)
+* [OpioidCDS_R4_Common](cql/OpioidCDS_R4_Common-0.1.0.cql)
+* [OpioidCDS_R4_Recommendation_05](cql/OpioidCDS_R4_Recommendation_05-0.1.0.cql)
+
+### Library Resources
+* [omtklogic](../../Library-omtklogic-0-0-1.html)
+* [opioidcds-r4-common](../../Library-opioidcds-r4-common-0-1-0.html)
+* [opioidcds-r4-recommendation-05](../../Library-opioidcds-r4-recommendation-05.html)
+
+### PlanDefinition Resources
+* [opioidcds-r4-recommendation-05](../../PlanDefinition-opioidcds-r4-recommendation-05.html)
 

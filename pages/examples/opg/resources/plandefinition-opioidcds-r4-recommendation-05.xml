@@ -1,9 +1,9 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
-	<id value="plandefinition-opioidcds-r4-recommendation-05"/>
-	<url value="http://fhir.org/guides/cdc/opioid-cds/PlanDefinition/plandefinition-opioidcds-r4-recommendation-05"/>
+	<id value="opioidcds-r4-recommendation-05"/>
+	<url value="http://fhir.org/guides/cdc/opioid-cds/PlanDefinition/opioidcds-r4-recommendation-05"/>
 	<version value="0.1.0"/>
-	<name value="PlanDefinition_OpioidCDS_R4_Recommendation_05"/>
-	<title value="PlanDefinition - CDC Opioid Prescribing Guideline Recommendation #5"/>
+	<name value="OpioidCDS_R4_Recommendation_05"/>
+	<title value="CDC Opioid Prescribing Guideline Recommendation #5"/>
 	<type>
 		<coding>
 			<system value="http://hl7.org/fhir/plan-definition-type"/>

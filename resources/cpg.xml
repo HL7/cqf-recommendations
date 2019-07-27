@@ -23,14 +23,17 @@
 			<grouping id="main">
         <name value="Main"/>
 			</grouping>
+			<grouping id="anthrax-example">
+				<name value="Anthrax PEP Example"/>
+			</grouping>
 			<grouping id="anc-example">
 				<name value="ANC Example"/>
 			</grouping>
 			<grouping id="ckd-example">
 				<name value="CKD Example"/>
 			</grouping>
-			<grouping id="hbv-hiv-example">
-				<name value="HBV/HIV Example"/>
+			<grouping id="hiv-example">
+				<name value="HIV Example"/>
 			</grouping>
 			<grouping id="hep-b-example">
 				<name value="HEP-B Example"/>
@@ -172,10 +175,9 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
 				<groupingId value="opg-example"/>
 			</resource>
-			<!-- Updating to R4... 
 			<resource>
 				<reference>
-					<reference value="Library/fhir-helpers-4-0-0"/>
+					<reference value="Library/library-fhir-helpers"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
 				<groupingId value="opg-example"/>
@@ -196,20 +198,6 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/opioidcds-recommendation-05"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="Library/opioidcds-recommendation-11"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
 					<reference value="Library/opioidcds-r4-common-0-1-0"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
@@ -217,47 +205,18 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/opioidcds-r4-rec-10-patient-view-0-1-0"/>
+					<reference value="Library/opioidcds-r4-recommendation-05"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/opioidcds-r4-rec-11-patient-view-0-1-0"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="PlanDefinition/opioidcds-05"/>
+					<reference value="PlanDefinition/opioidcds-r4-recommendation-05"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
 				<groupingId value="opg-example"/>
 			</resource>
-			<resource>
-				<reference>
-					<reference value="PlanDefinition/opioidcds-10-patient-view"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="PlanDefinition/opioidcds-11-patient-view"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="PlanDefinition/opioidcds-11"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			-->
 			<resource>
 				<reference>
 					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential"/>
