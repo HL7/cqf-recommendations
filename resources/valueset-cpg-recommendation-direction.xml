@@ -1,0 +1,23 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="cpg-recommendation-direction"/>
+		<meta>
+			<profile url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+		</meta>
+    <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-recommendation-direction"/>
+    <name value="CPG_Recommendation_Direction"/>
+		<title value="CPG Recommendation Direction"/>
+    <status value="active"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction"/>
+						<concept>
+							<code value="for"/>
+							<display value="For"/>
+						</concept>
+						<concept>
+							<code value="against"/>
+							<display value="Against"/>
+						</concept>
+        </include>
+    </compose>
+</ValueSet>

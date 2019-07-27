@@ -61,6 +61,12 @@
 			</resource>
 			<resource>
 				<reference>
+					<reference value="CodeSystem/cpg-recommendation-direction"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
 					<reference value="PlanDefinition/cpg-common-pathway"/>
 				</reference>
 				<groupingId value="main"/>
@@ -90,6 +96,19 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource-->
+			<!-- TODO: Consider whether this is too content-specific for inclusion here...
+			<resource>
+				<reference>
+					<reference value="ValueSet/cpg-active-condition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			-->
+			<resource>
+				<reference>
+					<reference value="ValueSet/cpg-recommendation-direction"/>
+				</reference>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/cpg-indicator"/>

@@ -59,10 +59,6 @@
 		"valueset-cpg-expressionbased-profile-spreadsheet.xml"
   ],
   "resources": {
-		"ActivityDefinition/opioidcds-riskassessment-request": {
-			"source": "activitydefinition-opioidcds-riskassessment-request.xml",
-			"base": "ActivityDefinition-opioidcds-riskassessment-request.html"
-		},
 		"CodeSystem/cpg-indicator": {
 			"source": "codesystem-cpg-indicator.xml",
 			"base": "CodeSystem-cpg-indicator.html"
@@ -74,6 +70,10 @@
 		"CodeSystem/cpg-common-process": {
 			"source": "codesystem-cpg-common-process.xml",
 			"base": "CodeSystem-cpg-common-process.html"
+		},
+		"CodeSystem/cpg-recommendation-direction": {
+			"source": "codesystem-cpg-recommendation-direction.xml",
+			"base": "CodeSystem-cpg-recommendation-direction.html"
 		},
 		"PlanDefinition/cpg-common-pathway": {
 			"source": "plandefinition/plandefinition-cpg-common-pathway.xml",
@@ -94,6 +94,10 @@
 		"ValueSet/cpg-common-process": {
 			"source": "valueset-cpg-common-process.xml",
 			"base": "ValueSet-cpg-common-process.html"
+		},
+		"ValueSet/cpg-recommendation-direction": {
+			"source": "valueset-cpg-recommendation-direction.xml",
+			"base": "ValueSet-cpg-recommendation-direction.html"
 		},
     "StructureDefinition/cpg-activitydefinition": {
       "defns": "StructureDefinition-cpg-activitydefinition-definitions.html",
