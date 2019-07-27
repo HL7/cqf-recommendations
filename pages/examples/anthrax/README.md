@@ -91,7 +91,7 @@ Each subdirectory should contain the FHIR resources in JSON format, as well as a
 file that captures the results from validating said resources using the
 [FHIR Validator](http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator). Where
 appropriate, the resources are also validated against the profile available at:
-- [cpg-library](../../StructureDefinition-cpg-library.html).html
+- [cpg-library](../../StructureDefinition-cpg-library.html)
 
 ### PlanDefinition
 The artifact CQL has the ability to generate an order set using the FHIR PlanDefinition
@@ -106,5 +106,5 @@ Each subdirectory should contain the FHIR resources in JSON format, as well as a
 file that captures the results from validating said resources using the
 [FHIR Validator](http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator). Where
 appropriate, the resources are also validated against the profiles available at:
-- [cpg-plandefinition](StructureDefinition-cpg-plandefinition.html)
-- [cpg-activitydefinition](StructureDefinition-cpg-activitydefinition.html)
+- [cpg-plandefinition](../../StructureDefinition-cpg-plandefinition.html)
+- [cpg-activitydefinition](../../StructureDefinition-cpg-activitydefinition.html)
