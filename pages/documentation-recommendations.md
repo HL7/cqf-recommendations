@@ -54,6 +54,10 @@ Content conforming to this implementation guide SHALL identify settings using th
 
 ### Support
 
+Two aspects of supporting information are considered for recommendations. First, supporting documentation related to the guideline content itself, and second, pertinent positive or negative information related to determining the applicability of a recommendation to a particular patient.
+
+#### Guideline Supporting Information
+
 Supporting documentation for a recommendation is critical to ensuring the definition can be traced back to reliable and credible sources. The [Supporting Documentation](http://hl7.org/fhir/R4/clinicalreasoning-topics-supporting-documentation.html) topic in the base FHIR specification describes the basic mechanism for achieving this with the Clinical Reasoning resources.
 
 Content conforming to this implementation guide SHALL provide references to supporting documentation for a recommendation in the form of a `relatedArtifact` element specifying a citation to the guideline.
@@ -61,6 +65,10 @@ Content conforming to this implementation guide SHALL provide references to supp
 Content conforming to this implementation guide SHALL provide the strength of a recommendation using the [strengthOfRecommendation](http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html) extension.
 
 Content conforming to this implementation guide SHALL provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.
+
+#### Pertinent Information
+
+Documenting pertinent information related to a recommendation is critical to helping the intended recipient determine why the recommendation applies in each particular case. For definitional content, pertinent information can typically be inferred from the content referenced by the logic involved. To support cases where pertinent information cannot be inferred from the content, as well as to allow content developers to highlight particular aspects, the `input` and `output` elements of the PlanDefinition can be used to identify pertinent information for the recommendation.
 
 ### Representing Recommendations
 
@@ -89,6 +97,7 @@ Content conforming to this implementation guide SHALL use the [cpg-protocoldefin
 
 This implementation guide uses the PlanDefinition resource to represent specific sequences of activities executed at a point-in-time as a workflow definition. Readers of this implementation guide should refer to the [Workflow](http://hl7.org/fhir/R4/workflow.html) topic in the base FHIR specification. This implementation builds on the guidance there, providing some specific patterns for describing common activities as part of workflows. Specifically:
 
+* **Activities**: Initiating activities by referencing activity definitions or order sets
 * **Form Filling**: A specific user interacting with a specific form, as specified by a Questionnaire
 * **Service Calls**: The system calling a specific service, as specified by a CapabilityStatement and an operation URI
 * **Subprocess**: Initiating a sub-process by referencing another workflow definition
@@ -121,7 +130,9 @@ Across guideline-based care, there are many different types of recommendations t
 
 * **Support**: A link back to the guideline, and ultimately the evidence, that supports the recommendation
 * **Strength**: The _strength_ of the recommendation
+* **Direction**: When appropriate, the _direction_ of the recommendation
 * **Evidence Quality**: The _quality_ of the evidence supporting the recommendation
+* **Pertinents**: The pertinent positive or negative information relevant to the recommendation
 
 Within FHIR, a recommendation is typically represented using a [Request](http://hl7.org/fhir/request.html) patterned resource (such as ServiceRequest or MedicationRequest) with an [intent](http://hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal) status. Note that some implementations may go further and use the `plan` or even `order` statuses of a request, depending on the capabilities of the systems involved.
 
