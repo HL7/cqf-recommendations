@@ -86,14 +86,6 @@ define "A Forecast for Hep B Adult Dose 2 Should be Made":
 define "Patient has Completed the Hep B Adult Series":
   "There Exists a Valid First Hep B Adjuvanted Dose" = true and "There Exists a Valid Second Hep B Adjuvanted Dose" = true
 
-define "Forecast Date for Hep B Adult Dose 2":
-  if
-    "A Forecast for Hep B Adult Dose 2 Should be Made"
-  then
-    "Most Recent Hep B Adjuvanted Administration Date" + 28 days
-  else
-    null
-
 
 ////////////////////////////////////////////////////////
 // Evaluation
