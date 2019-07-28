@@ -106,9 +106,9 @@
 		<condition>
 			<kind value="applicability"/>
 			<expression>
-				<description value="Is there a Hep B Adult Recommendation?"/>
+				<description value="Is a Hep B Adult Recommendation Available?"/>
 				<language value="text/cql"/>
-				<expression value="Patient Immunization History should be Evaluated in Adult Series"/>
+				<expression value="Patient Hep B Immunization History should be Evaluated in Adult Series"/>
 			</expression>
 		</condition>
 		<groupingBehavior value="visual-group"/>
@@ -128,7 +128,7 @@
 			</expression>
 		</dynamicValue>
 		<action>
-			<description value="Will Immunize"/>
+			<description value="Will Follow Recommendations Provided by This Forecast"/>
 		</action>
 		<action>
 			<description value="Will not immunize due to contraindication(s) or other medical risk factors"/>
