@@ -73,6 +73,12 @@
 			</resource>
 			<resource>
 				<reference>
+					<reference value="PlanDefinition/cpg-common-registration"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
 					<reference value="Questionnaire/cpg-common-identity"/>
 				</reference>
 				<groupingId value="main"/>

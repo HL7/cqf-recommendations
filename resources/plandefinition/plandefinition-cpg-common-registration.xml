@@ -75,7 +75,7 @@
 				<type value="Bundle"/>
 			</output>
 			<participant>
-				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement"/>
+				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
 					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
 				</extension>
 				<type value="device"/>
@@ -140,7 +140,7 @@
 			<action>
 				<title value="Record patient data"/>
 				<participant>
-					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement"/>
+					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
 						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
 					</extension>
 					<type value="device"/>
@@ -206,7 +206,7 @@
 					<type value="Patient"/>
 				</output>
 				<participant>
-					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement"/>
+					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
 						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
 					</extension>
 					<type value="device"/>
@@ -227,7 +227,7 @@
 				<type value="Bundle"/>
 			</output>
 			<participant>
-				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement"/>
+				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
 					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
 				</extension>
 				<type value="device"/>
