@@ -1,3 +1,8 @@
+/*
+  This example describes the logic of the Hepatitis B (Hep B) immunization schedule for adults who are 18 years or older and have not yet been vaccinated for Hep B.
+  It is provided for demonstration purposes and not intended to be a complete representation of all of the Hep B immunization schedule logic.
+  See accompanying documentation for additional details and references.
+*/
 library HepBAdultForecasting version '0.1.0'
 
 using FHIR version '4.0.0'
@@ -27,15 +32,13 @@ code "Hib-Hep B": '51' from "CVX"
 // Evaluation Status Code
 code "Valid Evaluation Status": 'valid' from "Immunization Evaluation Dose Status codes"
 
-// Concepts
-//concept "All Hep B Vaccines": { "Hep B Vaccine Code, Adjuvanted", "Hep B, adolescent/high risk infant", "Hep B, adult", "Hep B, dialysis", "Hep B, unspecified formulation",
-//  "Hib-Hep B", "DTaP-Hep B-IPV", "Hep A-Hep B", "DTP-Hib-Hep B", "DTaP-IPV-Hib-Hep B, historical", "DTaP, IPV, Hib, Hep B"  } display 'Hep B Vaccine'
+// Concept
 concept "Hep B Vaccine, Adjuvanted": { "Hep B Vaccine Code, Adjuvanted" }
 
 
 context Patient
 
-define "Patient Immunization History should be Evaluated in Adult Series":
+define "Patient Hep B Immunization History should be Evaluated in Adult Series":
   "Patient is 18 Years Minus 4 Days or Older" and "No Hep B Shots were Administered before 18 Years minus 4 Days of Age"
   or
   "There Exists a Valid First Hep B Adjuvanted Dose"
@@ -51,18 +54,27 @@ define "No Hep B Shots were Administered before 18 Years minus 4 Days of Age":
     where NI.occurrence is date and AgeInDaysAt(NI.occurrence.value) < "Age in Days when Patient is 18 Years minus 4 Days"
   )
 
-//////////////
+////////////////////////////////////////////////////////
 // Recommendation/Forecast
-//////////////
-define "Recommendation Tuple":
-  Tuple { Status: 'Recommended', Vaccine: 'Hep B, Adjuvanted', Date: ConvertsToString(@2019-01-01) }
+////////////////////////////////////////////////////////
+define "Get Recommendation Overview":
+  'Immunization Forecast of Hepatitis B, Adjuvanted Vaccine for Adults 18 Years of Age or Older'
 
-define "Is there a Hep B Adult Recommendation?":
-  "A Forecast for Hep B Adult Dose 1 Should be Made" or "A Forecast for Hep B Adult Dose 2 Should be Made"
+define "Get Recommendation Detail":
+  case
+    when "A Forecast for Hep B Adult Dose 1 Should be Made"
+      then 'Dose 1 of the Hepatitus B, adjuvanted vaccine (CVX 189) is recommended to be administered on ' + ToString(PatientBirthDate + 18 years) + '.'
+    when "A Forecast for Hep B Adult Dose 2 Should be Made"
+      then 'Dose 2 of the Hepatitis B, adjuvanted vaccine (CVX 189) is recommended to be administered on ' + ToString("Most Recent Hep B Adjuvanted Administration Date" + 28 days) + '.'
+    when "Patient has Completed the Hep B Adult Series"
+      then 'The patient has already received 2 doses of the Hepatitis B, adjuvanted vaccine (CVX 189), and has completed the series. No additional doses are recommeneded at this time.'
+    else
+      'A forecast could not be determined at this time.'
+  end
 
 define "A Forecast for Hep B Adult Dose 1 Should be Made":
   if
-    "Patient Immunization History should be Evaluated in Adult Series" and "There Exists a Valid First Hep B Adjuvanted Dose" = false
+    "Patient Hep B Immunization History should be Evaluated in Adult Series" and "There Exists a Valid First Hep B Adjuvanted Dose" = false
   then
     true
   else
@@ -74,9 +86,19 @@ define "A Forecast for Hep B Adult Dose 2 Should be Made":
 define "Patient has Completed the Hep B Adult Series":
   "There Exists a Valid First Hep B Adjuvanted Dose" = true and "There Exists a Valid Second Hep B Adjuvanted Dose" = true
 
-//////////////
+
+////////////////////////////////////////////////////////
 // Evaluation
-//////////////
+////////////////////////////////////////////////////////
+define "Most Recent Hep B Adjuvanted Administration Date":
+  First(
+    [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] I
+      without [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] NI
+        such that I.occurrence.value is DateTime and NI.occurrence.value is DateTime and NI.occurrence.value after I.occurrence.value
+      where I.occurrence.value is DateTime
+      return I.occurrence.value
+  )
+
 define "There Exists a Valid First Hep B Adjuvanted Dose":
   if "First Valid Hep B Adjuvanted Adult Dose" != null
     then
@@ -88,8 +110,9 @@ define "First Valid Hep B Adjuvanted Adult Dose":
   First(
     [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] I
       without [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] NI
-        such that I.occurrence is date and AgeInDaysAt(I.occurrence.value) >= "Age in Days when Patient is 18 Years minus 4 Days"
-          and NI.occurrence is date and NI.occurrence.value before I.occurrence.value
+        such that I.occurrence.value is DateTime and AgeInDaysAt(I.occurrence.value) >= "Age in Days when Patient is 18 Years minus 4 Days"
+          and NI.occurrence.value is DateTime and NI.occurrence.value before I.occurrence.value
+      where I.occurrence.value is DateTime
   )
 
 define "There Exists a Valid Second Hep B Adjuvanted Dose":
@@ -107,14 +130,17 @@ define "Second Valid Hep B Adjuvanted Adult Dose":
           let firstDoseDate: "First Valid Hep B Adjuvanted Adult Dose".occurrence
           without [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] NI
             // where the date is at least 24 days after the most recent shot of Hep B Adjuvant
-            such that NI.occurrence is date and NI.occurrence.value after firstDoseDate.value and NI.occurrence.value before I.occurrence.value
-          where I.occurrence is date and I.occurrence.value 24 days or more after firstDoseDate.value
+            such that NI.occurrence.value is DateTime and NI.occurrence.value after firstDoseDate.value and NI.occurrence.value before I.occurrence.value
+          where I.occurrence.value is DateTime and I.occurrence.value 24 days or more after firstDoseDate.value
         )
     else
       null
 
+define PatientBirthDate:
+  First(
+    [Patient] p
+      return p.birthDate.value
+    )
+
 define "Age in Days when Patient is 18 Years minus 4 Days":
-  First([Patient] p
-    return
-      CalculateAgeInDaysAt(p.birthDate.value, p.birthDate.value + 18 years - 4 days)
-  )
+  CalculateAgeInDaysAt(PatientBirthDate, PatientBirthDate + 18 years - 4 days)
