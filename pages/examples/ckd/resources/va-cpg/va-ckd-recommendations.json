@@ -1,0 +1,111 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "va-ckd-recommendations",
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/va-ckd-recommendations",
+  "meta": [
+    {
+      "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "value": "VA_CKD_Recommendations"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "VA_CKD_Recommendations",
+  "title": "VA CKD Recommendations",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/plan-definition-type",
+        "code": "eca-rule",
+        "display": "ECA Rule"
+      }
+    ]
+  },
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "709044004",
+            "display": "Chronic kidney disease (disorder)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "draft",
+  "date": "2019-07-28T00:00:00+00:00",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "library": {
+    "reference": "Library/va-ckd-guideline"
+  },
+  "action": [
+    {
+      "id": "001",
+      "title": "CKD Protein Diet",
+      "description": "In patients with stage 3 and 4 CKD, we suggest a protein diet of 0.6 to 0.8 g/kg/day as it may slow the decline in glomerular filtration rate (GFR) and progression to end-stage renal disease (ESRD).",
+      "documentation": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/recommendation-strength",
+                    "code": "weak",
+                    "display": "Weak"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-directionOfRecommendation",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction",
+                    "code": "for",
+                    "display": "For"
+                  }
+                ]
+              }
+            }
+          ],
+          "type": "documentation",
+          "display": "VA/DoD Clinical Practice Guideline for The management of Chronic Kidney Disease in Primary care",
+          "url": "http://www.healthquality.va.gov"
+        }
+      ],
+      "condition": [
+        {
+          "kind": "applicability",
+          "expression": {
+            "language": "text/cql",
+            "expression": "Has CKD stage 3 or 4"
+          }
+        }
+      ]
+    }
+  ]
+}

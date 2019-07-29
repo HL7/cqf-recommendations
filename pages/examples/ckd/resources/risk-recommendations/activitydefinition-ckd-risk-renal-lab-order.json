@@ -1,11 +1,11 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "ckd-renal-lab-order",
-  "url": "http://example.org/fhir/ActivityDefinition/ckd-renal-lab-order",
+  "id": "ckd-risk-renal-lab-order",
+  "url": "http://example.org/fhir/ActivityDefinition/ckd-risk-renal-lab-order",
   "status": "draft",
   "description": "Create ServiceRequest to order Renal lab panel",
   "library": {
-    "reference": "Library/ckd-recommendations"
+    "reference": "Library/ckd-risk-recommendations"
   },
   "kind": "ServiceRequest",
   "code": {

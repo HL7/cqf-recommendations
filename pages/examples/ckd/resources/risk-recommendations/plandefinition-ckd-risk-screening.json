@@ -2,9 +2,14 @@
   "resourceType": "PlanDefinition",
   "id": "ckd-risk-screening",
   "url": "http://example.org/fhir/PlanDefinition/ckd-risk-screening",
+  "meta": [
+    {
+      "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
+    }
+  ],
   "status": "draft",
   "library": {
-    "reference": "Library/ckd-recommendations"
+    "reference": "Library/ckd-risk-recommendations"
   },
   "title": "Chronic Kidney Disease (CKD) risk screening",
   "description": "Chronic Kidney Disease (CKD) risk screening",
@@ -77,7 +82,7 @@
             "system": "http://hl7.org/fhir/action-type",
             "code": "create"
           },
-          "definitionCanonical": "http://example.org/fhir/ActivityDefinition/ckd-renal-lab-order",
+          "definitionCanonical": "http://example.org/fhir/ActivityDefinition/ckd-risk-renal-lab-order",
           "dynamicValue": [
             {
               "path": "action.description",
@@ -187,7 +192,7 @@
             "system": "http://hl7.org/fhir/action-type",
             "code": "create"
           },
-          "definitionCanonical": "http://example.org/fhir/ActivityDefinition/ckd-referral-nephrology",
+          "definitionCanonical": "http://example.org/fhir/ActivityDefinition/ckd-risk-referral-nephrology",
           "dynamicValue": [
             {
               "path": "action.description",

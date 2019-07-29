@@ -27,6 +27,9 @@ define "Has CKD or Diabetes":
 define "Has CKD":
   exists( "Chronic Kidney Disease Dx" )
 
+define "No CKD Dx":
+  not exists( "Chronic Kidney Disease Dx" )
+
 define "Has Diabetes":
   exists( "Diabetes Dx" )
 

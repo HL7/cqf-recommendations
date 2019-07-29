@@ -10,6 +10,14 @@
       "resource": {
         "resourceType": "ValueSet",
         "id": "ckd-valueset-ckd",
+        "meta": [
+          {
+            "profile": "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+          },
+          {
+            "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"
+          }
+        ],
         "status": "active",
         "compose": {
           "include": [
@@ -43,6 +51,14 @@
       "resource": {
         "resourceType": "ValueSet",
         "id": "ckd-valueset-diabetes",
+        "meta": [
+          {
+            "profile": "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+          },
+          {
+            "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"
+          }
+        ],
         "status": "active",
         "compose": {
           "include": [
@@ -126,7 +142,6 @@
                 {
                   "code": "9318-7"
                 },
-
                 {
                   "code": "30001-2"
                 }
