@@ -28,4 +28,27 @@ define "Gestational Age in Weeks":
       sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) descending
   ).value as Quantity
   
+define "Up to 12 Weeks":
+  "Gestational Age in Weeks" <= 12
 	
+define "20 weeks gestation":
+  "Gestational Age in Weeks" = 20
+		
+define "26 weeks gestation":
+	"Gestational Age in Weeks" = 26
+	
+define "30 weeks gestation":
+	"Gestational Age in Weeks" = 30
+
+define "34 weeks gestation":
+	"Gestational Age in Weeks" = 34
+
+define "36 weeks gestation":
+	"Gestational Age in Weeks" = 36
+
+define "38 weeks gestation":
+	"Gestational Age in Weeks" = 38
+
+define "40 weeks gestation":
+	"Gestational Age in Weeks" = 40
+
