@@ -1,21 +1,16 @@
 library ANCRecommendationA2 version '0.0.0'
 
-using FHIR version '3.0.0'
+using FHIR version '4.0.0'
 
-include FHIRHelpers version '3.0.0'
+include FHIRHelpers version '4.0.0'
+include ANCCommon version '0.0.0' called Common
 
-codesystem OpenMRSEntity: 'http://openmrs.org/concepts'
-
-code LMP: '1427AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Date of last menstrual period'
-code UltrasoundGA: '165220AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Gestational age in weeks from ultrasound'
-code FundalHeight: '1439AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'FUNDAL HEIGHT'
-code "Weeks of gestational age": '1438AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Weeks of gestational age'
-code "Hb": '165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Haemoglobin measured from haemoglobinometer (g/dl)' 
-code "Iron Intake Compliance": '165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Iron intake compliance'
-code "Iron Side Effects": '165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from OpenMRSEntity display 'Iron side effects' // NOTE: OpenMRS concept is just side effects from medication
+code "Hb": '165395AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Haemoglobin measured from haemoglobinometer (g/dl)' 
+code "Iron Intake Compliance": '165272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron intake compliance'
+code "Iron Side Effects": '165273AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' from Common.OpenMRSEntity display 'Iron side effects' // NOTE: OpenMRS concept is just side effects from medication
 
 // TODO: How do parameters like this get configured for local/site usage
-//parameter "Anaemia Prevalence" Quantity default 40 '%'
+//parameter "Anaemia Prevalence" System.Quantity default 40 '%'
 
 context Patient
 
@@ -54,34 +49,23 @@ Has Anaemia
 */
 
 define "Has Anaemia":
-  if "Gestational Age in Weeks" between 13 weeks and 27 weeks then
+  if Common."Gestational Age in Weeks" between 13 weeks and 27 weeks then
     "Hb Concentration" < 10.5 'g/dL'
   else
     "Hb Concentration" < 11 'g/dL'
     
-//define GestationalAgeFromLMP:
-  // Calculate from LMP if known
-  // Observation from Ultrasound
-  // Observation from SFH or abdominal palpitation
-  // If Gestational Age and Estimated Due Date are calculated from different values, health worker should select gestational age
-  
-define "Gestational Age in Weeks":
-  First(
-    ["Observation": "Weeks of gestational age"] O
-		  where O.status in { 'final' }
-      sort by (effective as FHIR.dateTime) descending
-  ).value as Quantity
-  
 define "Hb Concentration":
   First(
     ["Observation": "Hb"] O
-      sort by (effective as FHIR.dateTime) descending
+		  where O.status = 'final'
+			  and O.effective after Common."Start of Current Pregnancy"
+      sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) descending
   ).value as Quantity
-  
-// Next Step: PlanDefinition and use $apply, then refine ANC
   
 define "Has Iron Side-Effects":
   exists (
-    ["Condition": "Iron Side Effects"]
+    ["Condition": "Iron Side Effects"] C
+		  where C.onset on or after Common."Start of Current Pregnancy"
+			  and C.clinicalStatus in Common."Active Condition"
   )
 
