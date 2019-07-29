@@ -1,7 +1,7 @@
 {
   "resourceType": "Library",
-  "id": "ckd-recommendations",
-  "url": "http://example.org/fhir/Library/ckd-recommendations",
+  "id": "ckd-risk-recommendations",
+  "url": "http://example.org/fhir/Library/ckd-risk-recommendations",
   "version": "1.0",
   "name": "CKDRiskLogic",
   "title": "Chronic Kidney Disease (CKD) risk screening logic",

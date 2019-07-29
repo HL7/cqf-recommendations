@@ -10,7 +10,7 @@ title: Chronic Kidney Disease (CKD) Guideline Example
   * [VA/DoD](#vadod-clinical-practice-guideline-for-ckd)
 * [Guideline Order Sets](#guideline-order-sets)
 * [Guideline Recommendations](#guideline-recommendations)
-* [Guidance at the Point of Care](#guidance-at-the-point-of-care)
+* [FHIR and CQL Examples](#fhir-and-cql-examples)
 
 ## Overview
 The system-wide goal of evidence-based guidelines is to improve the patient’s health and well-being by guiding health providers who are taking care of patients with chronic health conditions along the management pathways that are supported by evidence and are thus considered the highest standard of care.
@@ -93,27 +93,21 @@ We suggest that periodic evaluation for CKD be considered in patients with the f
 </tr>
 </table>
 
-## Guidance at the Point of Care
+## FHIR and CQL Examples
+Three examples are included for chronic disease management, all focused on chronic kidney disease (CKD).
 
-The provision of care for chronic health conditions typically includes guidance delivered in two ways:
-* Alerts presented to a clinician at the point of care, e.g. when the calculated kidney failure risk exceeds a threshold.
-  * Delivered using CDS Hooks embedded within the EHR system workflow.
+### Clinical Practice Guideline protocol and recommendations
+Included in example folder: 'va-cpg'.
+
+This example includes a small subset of the VA/DoD guideline and recommendations described above.
+
+
+### Care Plan Order Sets
+Included in example folder: 'careplan-orderset'.
+
 * Create a patient-specific care plan with interventions (order sets) determined by guideline recommendations.
   * Delivered as a FHIR CarePlan resource with associated activities, including MedicationRequest, ServiceRequest, and Appointment resources. May include a new or revised FHIR CareTeam resource specifying participants and their roles.
 
-The included FHIR and CQL examples illustrate both of these use cases.
-
-### Decision Support Alerts: CKD Risk Assessment
-This example is configured for deployment into the cqf-ruler server for deployment using CDS-Hooks.
-
-Example FHIR resources
-* PlanDefinition - plandefinition-ckd-risk-screening
-* ActivityDefinition - activitydefinition-ckd-referral-nephrology (conditional, based on risk)
-* CQL - ckd-risk-logic.cql
-* Library - library-ckd-recommendations
-* ValueSets - ckd-valuesets
-
-### Care Plan Order Sets
 Order sets from CKD practice guidelines are categorized for presentation to clinicians and/or when creating and executing order sets that require different order management processes. The provided examples include the following order set categories:
 * Laboratory orders
   * Blood chemistry
@@ -124,6 +118,8 @@ Order sets from CKD practice guidelines are categorized for presentation to clin
 * Patient self-care, to be performed by patient at home
   * e.g. weight, blood pressure, exercise, food diary
 
-Example FHIR resources
-* PlanDefinition - cc-cpg-plan-ckd
-* ActivityDefinition - cc-cpg-activity-edu-hypertension, cc-cpg-activity-lab-metabolic, cc-cpg-activity-ultrasound-renal, cc-cpg-activity-referral-dietition
+### Decision Support Alerts: CKD Risk Assessment
+Example FHIR resources in folder: 'risk-recommendations'.
+
+* Alerts presented to a clinician at the point of care, e.g. when the calculated kidney failure risk exceeds a threshold.
+  * Delivered using CDS Hooks embedded within the EHR system workflow.
