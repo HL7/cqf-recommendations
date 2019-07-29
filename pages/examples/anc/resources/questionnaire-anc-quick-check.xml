@@ -1,8 +1,8 @@
 <Questionnaire xmlns="http://hl7.org/fhir">
-	<id value="anc-first-contact"/>
-	<meta>
+	<id value="anc-quick-check"/>
+	<!--meta>
 		<profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
-	</meta>
+	</meta-->
 	<url value="http://fhir.org/guides/who/anc-cds/Questionnaire/anc-quick-check"/>
 	<version value="0.1.0"/>
 	<name value="ANC_Quick_Check"/>

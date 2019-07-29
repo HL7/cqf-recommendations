@@ -1,4 +1,4 @@
-<PlanDefinition xmlns="http://hl7.org/fhir">
+<PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../../HL7/FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
 	<id value="anc-contact"/>
 	<url value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact"/>
 	<identifier>
@@ -10,12 +10,13 @@
 	<title value="PlanDefinition - WHO ANC Guideline Contact"/>
 	<type>
 		<coding>
-			<system value="http://hl7.org/fhir/plan-definition-type"/>
+			<system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
 			<code value="workflow-definition"/>
 			<display value="Workflow Definition"/>
 		</coding>
 	</type>
 	<status value="draft"/>
+	<experimental value="true"/>
 	<date value="2019-05-15"/>
 	<useContext>
 		<code>
@@ -26,7 +27,7 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="77386006"/>
-				<display value="Patient currently pregnant (finding)"/>
+				<display value="Pregnant (finding)"/>
 			</coding>
 		</valueCodeableConcept>
 	</useContext>

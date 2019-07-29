@@ -10,7 +10,7 @@
 	<title value="Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
 	<type>
 		<coding>
-			<system value="http://hl7.org/fhir/plan-definition-type"/>
+			<system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
 			<code value="eca-rule"/>
 			<display value="ECA Rule"/>
 		</coding>
@@ -22,7 +22,7 @@
 	<description value="If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast."/>
 	<useContext>
 		<code>
-			<system value="http://hl7.org/fhir/usage-context-type"/>
+			<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
 			<code value="focus"/>
 			<display value="Clinical Focus"/>
 		</code>
@@ -74,30 +74,6 @@
 			<type value="documentation"/>
 			<display value="Immunization Calculation Engine - Hep B 2-dose Adult Series"/>
 			<url value="https://cdsframework.atlassian.net/wiki/spaces/ICE/pages/14352491/Hep+B+Vaccine+Group#HepBVaccineGroup-ImmunizationSeries:HepB2-doseAdultSeries"/>
-		</documentation>
-		<documentation>
-			<type value="documentation"/>
-			<document>
-				<!-- It's not clear what the strength of recommendation or quality of evidence is for the recommendation from the current documentation -->
-				<!--extension url="http://hl7.org/fhir/StructureDefinition/cqif-strengthOfRecommendation">
-					<valueCodeableConcept>
-						<coding>
-        			<system value="http://hl7.org/fhir/recommendation-strength"/>
-							<code value="strong"/>
-							<display value="Strong"/>
-						</coding>
-					</valueCodeableConcept>
-				</extension>
-				<extension url="http://hl7.org/fhir/StructureDefinition/cqif-qualityOfEvidence">
-					<valueCodeableConcept>
-						<coding>
-							<system value="http://hl7.org/fhir/evidence-quality"/>
-        			<code value="low"/>
-							<display value="Low quality"/>
-						</coding>
-					</valueCodeableConcept>
-				</extension-->
-			</document>
 		</documentation>
 		<trigger>
 			<type value="named-event"/>

@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="cpg-common-process"/>
 		<meta>
-			<profile url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
 		</meta>
     <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process"/>
     <name value="CPG_Common_Process"/>

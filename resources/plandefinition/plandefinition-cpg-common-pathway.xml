@@ -10,9 +10,9 @@
 	<title value="CPG Common Pathway"/>
 	<type>
 		<coding>
-			<system value="http://hl7.org/fhir/plan-definition-type"/>
-			<code value="protocol"/>
-			<display value="Protocol"/>
+			<system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+			<code value="clinical-protocol"/>
+			<display value="Clinical Protocol"/>
 		</coding>
 	</type>
 	<status value="draft"/>
@@ -85,7 +85,7 @@
 			<coding>
         <code value="diagnostic-testing"/>
 				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
-        <display value="Diagnostic Testing"/>
+        <display value="Conduct Diagnostic Tests"/>
 			</coding>
     </code>
 	</action>
@@ -107,7 +107,7 @@
 		<description value="Performing and recording observations, interventions, and treatment plans recommended by specific guidelines."/>
     <code>
 			<coding>
-        <code value="guildeine-based-care"/>
+        <code value="guideline-based-care"/>
 				<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
         <display value="Guideline-based Care"/>
 			</coding>

@@ -131,6 +131,12 @@
 			<!-- ANC Example Resources -->
 			<resource>
 				<reference>
+					<reference value="Library/anc-common"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+			</resource>
+			<resource>
+				<reference>
 					<reference value="Library/anc-recommendation-a2"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
@@ -192,13 +198,6 @@
 					<reference value="ActivityDefinition/opioidcds-riskassessment-request"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="Library/library-fhir-helpers"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
