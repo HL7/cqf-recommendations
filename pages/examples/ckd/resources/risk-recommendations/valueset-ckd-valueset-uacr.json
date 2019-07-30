@@ -1,0 +1,29 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ckd-valueset-uacr",
+	"status": "active",
+	"compose": {
+		"include": [
+			{
+				"system": "http://loinc.org",
+				"concept": [
+					{
+						"code": "44292-1"
+					},
+					{
+						"code": "13705-9"
+					},
+					{
+						"code": "14958-3"
+					},
+					{
+						"code": "9318-7"
+					},
+					{
+						"code": "30001-2"
+					}
+				]
+			}
+		]
+	}
+}

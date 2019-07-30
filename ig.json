@@ -13,7 +13,10 @@
 			"resources", 
 			"pages/examples/anc/resources", 
 			"pages/examples/opg/resources",
-			"pages/examples/hep-b/resources"
+			"pages/examples/hep-b/resources",
+			"pages/examples/ckd/resources/careplan-orderset",
+			"pages/examples/ckd/resources/risk-recommendations",
+			"pages/examples/ckd/resources/va-cpg"
 		],
     "pages": "pages",
     "temp": "temp",
@@ -59,6 +62,10 @@
 		"valueset-cpg-expressionbased-profile-spreadsheet.xml"
   ],
   "resources": {
+		"CapabilityStatement/cpg-patient-registry": {
+			"source": "capabilitystatement/cpg-patient-registry.xml",
+			"base": "CapabilityStatement-cpg-patient-registry.html"
+		},
 		"CodeSystem/cpg-indicator": {
 			"source": "codesystem-cpg-indicator.xml",
 			"base": "CodeSystem-cpg-indicator.html"

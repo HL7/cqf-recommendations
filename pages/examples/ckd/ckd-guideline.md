@@ -8,7 +8,7 @@ title: Chronic Kidney Disease (CKD) Guideline Example
 * [Chronic Kidney Disease (CKD) Guidelines](#chronic-kidney-disease-ckd-guidelines)
   * [KDIGO](#kdigo-international-guideline)
   * [VA/DoD](#vadod-clinical-practice-guideline-for-ckd)
-* [Guideline Order Sets](#guideline-order-sets)
+* [Guideline Order Sets](#care-plan-order-sets)
 * [Guideline Recommendations](#guideline-recommendations)
 * [FHIR and CQL Examples](#fhir-and-cql-examples)
 

@@ -60,7 +60,7 @@ For both recommendations, one of the following responses should be required:
 
 ### Library Resources
 * [omtklogic](../../Library-omtklogic-0-0-1.html)
-* [opioidcds-r4-common](../../Library-opioidcds-r4-common-0-1-0.html)
+* [opioidcds-r4-common](../../Library-opioidcds-r4-common.html)
 * [opioidcds-r4-recommendation-05](../../Library-opioidcds-r4-recommendation-05.html)
 
 ### PlanDefinition Resources

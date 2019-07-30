@@ -1,0 +1,53 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+	<id value="cpg-patient-registry"/>
+	<url value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
+	<version value="0.1.0"/>
+	<name value="CPGPatientRegistry"/>
+	<title value="CPG Patient Registry"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2019-06-15"/>
+	<description value="Describes the minimum set of functionality required for a patient registry service that supports the common registration process defined in this implementation guide."/>
+	<kind value="requirements"/>
+	<fhirVersion value="4.0.0"/>
+	<format value="xml"/>
+	<format value="json"/>
+	<rest>
+		<mode value="server"/>
+		<resource>
+			<type value="Patient"/>
+			<interaction>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<code value="search-type"/>
+			</interaction>
+			<searchParam>
+				<name value="active"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<name value="birthdate"/>
+				<type value="date"/>
+			</searchParam>
+			<searchParam>
+				<name value="name"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<name value="identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<operation>
+				<name value="$match"/>
+				<definition value="http://hl7.org/fhir/OperationDefinition/Patient-match"/>
+			</operation>
+		</resource>
+	</rest>
+</CapabilityStatement>

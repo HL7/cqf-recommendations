@@ -1,0 +1,23 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ckd-valueset-creatinine",
+	"status": "active",
+	"compose": {
+		"include": [
+			{
+				"system": "http://loinc.org",
+				"concept": [
+					{
+						"code": "77140-2"
+					},
+					{
+						"code": "14682-9"
+					},
+					{
+						"code": "2160-0"
+					}
+				]
+			}
+		]
+	}
+}

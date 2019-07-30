@@ -6,7 +6,7 @@
 	<title value="PlanDefinition - CPG Common Registration"/>
 	<type>
 		<coding>
-			<system value="http://hl7.org/fhir/plan-definition-type"/>
+			<system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
 			<code value="workflow-definition"/>
 			<display value="Workflow Definition"/>
 		</coding>
@@ -76,7 +76,7 @@
 			</output>
 			<participant>
 				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
+					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
 				</extension>
 				<type value="device"/>
 			</participant>
@@ -141,7 +141,7 @@
 				<title value="Record patient data"/>
 				<participant>
 					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
+						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
 					</extension>
 					<type value="device"/>
 				</participant>
@@ -207,7 +207,7 @@
 				</output>
 				<participant>
 					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
+						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
 					</extension>
 					<type value="device"/>
 				</participant>
@@ -228,7 +228,7 @@
 			</output>
 			<participant>
 				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-register"/>
+					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
 				</extension>
 				<type value="device"/>
 			</participant>

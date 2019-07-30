@@ -43,6 +43,12 @@
 			</grouping>
 			<resource>
 				<reference>
+					<reference value="CapabilityStatement/cpg-patient-registry"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
 					<reference value="CodeSystem/cpg-indicator"/>
 				</reference>
 				<groupingId value="main"/>
@@ -184,18 +190,172 @@
 				<groupingId value="anc-example"/>
 			</resource>
 			
+			<!-- Chronic Care Management -->
+			<!-- Errors and warnings in these examples... -->
+			<!--
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/cc-cpg-activity-edu-hypertension"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/cc-cpg-activity-edu-renal-diet"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/cc-cpg-activity-lab-creatinine"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/cc-cpg-activity-lab-metabolic"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/cc-cpg-activity-referral-dietition"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/cc-cpg-activity-referral-nephrology"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/cc-cpg-activity-ultrasound-renal"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			-->
+			<!-- Getting a JSON Parser error trying to deserialize this 
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/cc-cpg-plan-ckd"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-ordersetdefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			-->
+			<!-- Errors and warnings in these examples... -->
+			<!--
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/ckd-risk-referral-nephrology"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ActivityDefinition/ckd-risk-renal-lab-order"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="Library/ckd-risk-recommendations"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			-->
+			<!-- Getting a JSON Parser error trying to deserialize this 
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/ckd-risk-screening"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			-->
+			<!-- Errors and warnings in these examples... -->
+			<!--
+			<resource>
+				<reference>
+					<reference value="ValueSet/ckd-valueset-ckd"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/ckd-valueset-creatinine"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/ckd-valueset-diabetes"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/ckd-valueset-egfr"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="ValueSet/ckd-valueset-uacr"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			-->
+			<!-- Getting a JSON Parser error trying to deserialize this 
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/va-ckd-protocol"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-protocoldefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			-->
+			<!-- Getting a JSON Parser error trying to deserialize this 
+			<resource>
+				<reference>
+					<reference value="PlanDefinition/va-ckd-recommendations"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
+				<groupingId value="ckd-example"/>
+			</resource>
+			-->
+			
 			<!-- Hepatitis-B Immunization Forecasting Resources -->
 			<resource>
 				<reference>
 					<reference value="Library/library-hep-b-adult-forecasting"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<groupingId value="hep-b-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/plandefinition-hep-b-adult-forecasting"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
+				<groupingId value="hep-b-example"/>
 			</resource>
 			
 			<!-- OPG Example Resources -->
@@ -222,7 +382,7 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/opioidcds-r4-common-0-1-0"/>
+					<reference value="Library/opioidcds-r4-common"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
 				<groupingId value="opg-example"/>

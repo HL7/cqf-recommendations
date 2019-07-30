@@ -1,0 +1,26 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ckd-valueset-egfr",
+	"status": "active",
+	"compose": {
+		"include": [
+			{
+				"system": "http://loinc.org",
+				"concept": [
+					{
+						"code": "76633-7"
+					},
+					{
+						"code": "33914-3"
+					},
+					{
+						"code": "77147-7"
+					},
+					{
+						"code": "69405-9"
+					}
+				]
+			}
+		]
+	}
+}

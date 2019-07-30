@@ -18,7 +18,7 @@ Potentially simplify even more:
 ## Registration
 
 <div>
-  <img src="assets/images/001-registration.png" alt="Registration"/>
+  <img src="assets/images/001-record-id-information.png" alt="Registration"/>
 </div>
 
 Identifying and recording the subject of care.
@@ -26,7 +26,7 @@ Identifying and recording the subject of care.
 ## Triage
 
 <div>
-  <img src="assets/images/002-triage.png" alt="Triage"/>
+  <img src="assets/images/002-quick-check-for-emergency-signs.png" alt="Triage"/>
 </div>
 
 Performing basic triage to identify any signs that emergency care is required

@@ -1,0 +1,33 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ckd-valueset-diabetes",
+	"meta": {
+		"profile": [
+				"http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+				"http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"
+		]
+	},
+	"status": "active",
+	"compose": {
+		"include": [
+			{
+				"system": "http://snomed.info/sct",
+				"concept": [
+					{
+						"code": "73211009"
+					}
+				]
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"filter": [
+					{
+						"property": "concept",
+						"op": "is-a",
+						"value": "73211009"
+					}
+				]
+			}
+		]
+	}
+}

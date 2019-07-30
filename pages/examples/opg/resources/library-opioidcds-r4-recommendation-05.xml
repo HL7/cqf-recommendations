@@ -76,7 +76,7 @@
     </relatedArtifact>
     <relatedArtifact>
         <type value="depends-on"/>
-        <resource value="Library/opioidcds-common"/>
+        <resource value="Library/opioidcds-r4-common"/>
     </relatedArtifact>
     <relatedArtifact>
         <type value="documentation"/>

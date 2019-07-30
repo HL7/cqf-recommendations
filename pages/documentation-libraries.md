@@ -203,7 +203,9 @@ Evidence that "Antithrombotic Therapy" medication administration did not occur f
       
 In this example for negation rationale, the logic looks for a member of the value set "Medical Reason" as the rationale for not administering the medication. However, underlying systems might not represent the negated action with a code from the "Antithrombotic Therapy" value set. When justifying the reason for not administering a particular medication, clinicians do not generally select a specific medication, they most often indicate avoidance of a set of medications, typically defined by a value set used in a quality improvement artifact (such as a quality measure or a decision support rule). In these cases, the value set may be used as a placeholder to indicate that no medications from the given value set were administered. Implementations processing data reported in this way should take into account that the reported data may not be returned with a single code, but rather a value set identifier, and should consider data with the appropriate value set identifier as satisfying the criteria for value set membership.
 
-Similarly, "Procedure, Not Performed": "Cardiac Surgery" should not require specification of which cardiac surgery in a value set was not performed, but only reference any member of the class of procedures defined by the value set. The same process works for any application of negation rationale.
+Similarly, representing that a procedure for Cardiac Surgery was not performed should not require specification of which cardiac surgery in a value set was not performed, but only a reference to the value set defining the set of possible procedures that are expected to have been performed. The same process works for any application of negation rationale.
+
+Within FHIR, the [valueset-reference](http://hl7.org/fhir/R4/extension-valueset-reference.html) extension can be used to indicate the defining value set for a negation.
 
 ### Attribute Names
 
