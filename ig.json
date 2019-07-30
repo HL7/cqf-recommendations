@@ -62,6 +62,9 @@
 		"valueset-cpg-expressionbased-profile-spreadsheet.xml"
   ],
   "resources": {
+		"ActivityDefinition/opioidcds-riskassessment-request": {
+			"base": "ActivityDefinition-opioidcds-riskassessment-request.html"
+		},
 		"CapabilityStatement/cpg-patient-registry": {
 			"source": "capabilitystatement/cpg-patient-registry.xml",
 			"base": "CapabilityStatement-cpg-patient-registry.html"
@@ -82,6 +85,33 @@
 			"source": "codesystem-cpg-recommendation-direction.xml",
 			"base": "CodeSystem-cpg-recommendation-direction.html"
 		},
+		"Library/anc-common": {
+			"base": "Library-anc-common.html"
+		},
+		"Library/anc-recommendation-a2": {
+			"base": "Library-anc-recommendation-a2.html"
+		},
+		"Library/library-hep-b-adult-forecasting": {
+			"base": "Library-library-hep-b-adult-forecasting.html"
+		},
+		"Library/omtklogic-0-0-1": {
+			"base": "Library-omtklogic-0-0-1.html"
+		},
+		"Library/opioidcds-r4-common": {
+			"base": "Library-opioidcds-r4-common.html"
+		},
+		"Library/opioidcds-r4-recommendation-05": {
+			"base": "Library-opioidcds-r4-recommendation-05.html"
+		},
+		"PlanDefinition/anc-contact": {
+			"base": "PlanDefinition-anc-contact.html"
+		},
+		"PlanDefinition/anc-contact-schedule": {
+			"base": "PlanDefinition-anc-contact-schedule.html"
+		},
+		"PlanDefinition/anc-recommendation-a2": {
+			"base": "PlanDefinition-anc-recommendation-a2.html"
+		},
 		"PlanDefinition/cpg-common-pathway": {
 			"source": "plandefinition/plandefinition-cpg-common-pathway.xml",
 			"base": "PlanDefinition-cpg-common-pathway.html"
@@ -89,6 +119,24 @@
 		"PlanDefinition/cpg-common-registration": {
 			"source": "plandefinition/plandefinition-cpg-common-registration.xml",
 			"base": "PlanDefinition-cpg-common-registration.html"
+		},
+		"PlanDefinition/opioidcds-r4-recommendation-05": {
+			"base": "PlanDefinition-opioidcds-r4-recommendation-05.html"
+		},
+		"PlanDefinition/plandefinition-hep-b-adult-forecastsing": {
+			"base": "PlanDefinition-plandefinition-hep-b-adule-forecasting.html"
+		},
+		"Questionnaire/anc-every-contact": {
+			"base": "Questionnaire-anc-every-contact.html"
+		},
+		"Questionnaire/anc-first-contact": {
+			"base": "Questionnaire-anc-first-contact.html"
+		},
+		"Questionnaire/cpg-common-identity": {
+			"base": "Questionnaire-cpg-common-identity.html"
+		},
+		"Questionnaire/cpg-patient-profile": {
+			"base": "Questionnaire-cpg-patient-profile.html"
 		},
 		"ValueSet/cpg-indicator": {
 			"source": "valueset-cpg-indicator.xml",
@@ -105,6 +153,9 @@
 		"ValueSet/cpg-recommendation-direction": {
 			"source": "valueset-cpg-recommendation-direction.xml",
 			"base": "ValueSet-cpg-recommendation-direction.html"
+		},
+		"ValueSet/opioids-with-ambulatory-abuse-potential": {
+			"base": "ValueSet-opioids-with-ambulatory-abuse-potential.html"
 		},
     "StructureDefinition/cpg-activitydefinition": {
       "defns": "StructureDefinition-cpg-activitydefinition-definitions.html",
@@ -126,6 +177,14 @@
       "defns": "StructureDefinition-cpg-devicerequest-definitions.html",
       "base": "StructureDefinition-cpg-devicerequest.html"
     },
+    "StructureDefinition/cpg-directionOfRecommendation": {
+      "defns": "StructureDefinition-cpg-directionOfRecommendation-definitions.html",
+      "base": "StructureDefinition-cpg-directionOfRecommendation.html"
+    },
+    "StructureDefinition/cpg-expressionbasedvalueset": {
+      "defns": "StructureDefinition-cpg-expressionbasedvalueset-definitions.html",
+      "base": "StructureDefinition-cpg-expressionbasedvalueset.html"
+    },
     "StructureDefinition/cpg-immunizationrecommendation": {
       "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",
       "base": "StructureDefinition-cpg-immunizationrecommendation.html"
@@ -146,9 +205,25 @@
 			"defns": "StructureDefinition-cpg-ordersetdefinition-definitions.html",
 			"base": "StructureDefinition-cpg-ordersetdefinition.html"
 		},
+    "StructureDefinition/cpg-participantCapabilityStatement": {
+      "defns": "StructureDefinition-cpg-participantCapabilityStatement-definitions.html",
+      "base": "StructureDefinition-cpg-participantCapabilityStatement.html"
+    },
+    "StructureDefinition/cpg-patient": {
+      "defns": "StructureDefinition-cpg-patient-definitions.html",
+      "base": "StructureDefinition-cpg-patient.html"
+    },
     "StructureDefinition/cpg-plandefinition": {
       "defns": "StructureDefinition-cpg-plandefinition-definitions.html",
       "base": "StructureDefinition-cpg-plandefinition.html"
+    },
+    "StructureDefinition/cpg-practitioner": {
+      "defns": "StructureDefinition-cpg-practitioner-definitions.html",
+      "base": "StructureDefinition-cpg-practitioner.html"
+    },
+    "StructureDefinition/cpg-practitionerrole": {
+      "defns": "StructureDefinition-cpg-practitionerrole-definitions.html",
+      "base": "StructureDefinition-cpg-practitionerrole.html"
     },
     "StructureDefinition/cpg-protocoldefinition": {
       "defns": "StructureDefinition-cpg-protocoldefinition-definitions.html",
@@ -158,10 +233,6 @@
       "defns": "StructureDefinition-cpg-recommendationdefinition-definitions.html",
       "base": "StructureDefinition-cpg-recommendationdefinition.html"
     },
-    "StructureDefinition/cpg-workflowdefinition": {
-      "defns": "StructureDefinition-cpg-workflowdefinition-definitions.html",
-      "base": "StructureDefinition-cpg-workflowdefinition.html"
-    },
     "StructureDefinition/cpg-servicerequest": {
       "defns": "StructureDefinition-cpg-servicerequest-definitions.html",
       "base": "StructureDefinition-cpg-servicerequest.html"
@@ -170,9 +241,9 @@
       "defns": "StructureDefinition-cpg-valueset-definitions.html",
       "base": "StructureDefinition-cpg-valueset.html"
     },
-    "StructureDefinition/cpg-expressionbasedvalueset": {
-      "defns": "StructureDefinition-cpg-expressionbasedvalueset-definitions.html",
-      "base": "StructureDefinition-cpg-expressionbasedvalueset.html"
+    "StructureDefinition/cpg-workflowdefinition": {
+      "defns": "StructureDefinition-cpg-workflowdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-workflowdefinition.html"
     }
   }
 }
