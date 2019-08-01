@@ -1,7 +1,7 @@
 {
   "resourceType": "ActivityDefinition",
   "id": "cc-cpg-activity-lab-metabolic",
-  "url": "http://example.org/fhir/ActivityDefinition/cc-cpg-activity-lab-metabolic",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cc-cpg-activity-lab-metabolic",
   "version": "1.0.0",
   "name": "LabComprehensiveMetabolicPanel",
   "title": "Lab: Comprehensive Metabolic Panel, Once",

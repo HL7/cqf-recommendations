@@ -1,7 +1,7 @@
 {
   "resourceType": "Library",
   "id": "ckd-risk-recommendations",
-  "url": "http://example.org/fhir/Library/ckd-risk-recommendations",
+  "url": "http://hl7.org/fhir/uv/cpg/Library/ckd-risk-recommendations",
   "version": "1.0",
   "name": "CKDRiskLogic",
   "title": "Chronic Kidney Disease (CKD) risk screening logic",
@@ -10,7 +10,7 @@
   "type": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/library-type",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
         "code": "logic-library"
       }
     ]

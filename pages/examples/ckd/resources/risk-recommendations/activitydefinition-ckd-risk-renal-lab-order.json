@@ -1,19 +1,21 @@
 {
   "resourceType": "ActivityDefinition",
   "id": "ckd-risk-renal-lab-order",
-  "url": "http://example.org/fhir/ActivityDefinition/ckd-risk-renal-lab-order",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/ckd-risk-renal-lab-order",
   "status": "draft",
-  "description": "Create ServiceRequest to order Renal lab panel",
-  "library": {
-    "reference": "Library/ckd-risk-recommendations"
-  },
+  "name": "OrderRenalLabPanel",
+  "title": "Order Renal Lab Panel",
+  "description": "Create ServiceRequest to order Renal lab panel.",
+  "library": [
+    "Library/ckd-risk-recommendations"
+  ],
   "kind": "ServiceRequest",
   "code": {
     "coding": [
       {
         "system": "http://loinc.org",
         "code": "24362-6",
-        "display": "Renal function 2000 panel"
+        "display": "Renal function 2000 panel - Serum or Plasma"
       }
     ]
   },
