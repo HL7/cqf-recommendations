@@ -1,12 +1,14 @@
 {
   "resourceType": "ActivityDefinition",
   "id": "ckd-risk-referral-nephrology",
-  "url": "http://example.org/fhir/ActivityDefinition/ckd-risk-referral-nephrology",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/ckd-risk-referral-nephrology",
   "status": "draft",
+  "name": "ReferralToNephrologist",
+  "title": "Referral to Nephrologist",
   "description": "Create ServiceRequest to order Referral for nephrology.",
-  "library": {
-    "reference": "Library/ckd-risk-recommendations"
-  },
+  "library": [
+    "Library/ckd-risk-recommendations"
+  ],
   "kind": "ServiceRequest",
   "code": {
     "coding": [

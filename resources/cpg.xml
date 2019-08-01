@@ -273,7 +273,7 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
-			
+
 			<!-- ANC Example Resources -->
 			<resource>
 				<reference>
@@ -323,10 +323,8 @@
 				<exampleBoolean value="true"/>
 				<groupingId value="anc-example"/>
 			</resource>
-			
+
 			<!-- Chronic Care Management -->
-			<!-- Errors and warnings in these examples... -->
-			<!--
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-edu-hypertension"/>
@@ -376,8 +374,6 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-			-->
-			<!-- Getting a JSON Parser error trying to deserialize this 
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/cc-cpg-plan-ckd"/>
@@ -385,9 +381,7 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-ordersetdefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-			-->
-			<!-- Errors and warnings in these examples... -->
-			<!--
+
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/ckd-risk-referral-nephrology"/>
@@ -409,8 +403,6 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-			-->
-			<!-- Getting a JSON Parser error trying to deserialize this 
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/ckd-risk-screening"/>
@@ -418,14 +410,11 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-			-->
-			<!-- Errors and warnings in these examples... -->
-			<!--
 			<resource>
 				<reference>
 					<reference value="ValueSet/ckd-valueset-ckd"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
@@ -439,7 +428,7 @@
 				<reference>
 					<reference value="ValueSet/ckd-valueset-diabetes"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
@@ -456,8 +445,7 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-			-->
-			<!-- Getting a JSON Parser error trying to deserialize this 
+      
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/va-ckd-protocol"/>
@@ -465,8 +453,6 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-protocoldefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-			-->
-			<!-- Getting a JSON Parser error trying to deserialize this 
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/va-ckd-recommendations"/>
@@ -474,8 +460,7 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-			-->
-			
+
 			<!-- Hepatitis-B Immunization Forecasting Resources -->
 			<resource>
 				<reference>
@@ -491,7 +476,7 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
 				<groupingId value="hep-b-example"/>
 			</resource>
-			
+
 			<!-- OPG Example Resources -->
 			<resource>
 				<reference>

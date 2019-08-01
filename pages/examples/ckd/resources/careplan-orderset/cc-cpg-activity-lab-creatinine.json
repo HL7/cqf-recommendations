@@ -1,7 +1,7 @@
 {
   "resourceType": "ActivityDefinition",
   "id": "cc-cpg-activity-lab-creatinine",
-  "url": "http://example.org/fhir/ActivityDefinition/cc-cpg-activity-lab-creatinine",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cc-cpg-activity-lab-creatinine",
   "version": "1.0.0",
   "name": "LabCreatinineUrineRandom",
   "title": "Lab: Creatinine, Urine Random, Once",
@@ -26,7 +26,7 @@
       {
         "system": "http://loinc.org",
         "code": "2161-8",
-        "display": "Creatinine [Mass/​volume] in Urine"
+        "display": "Creatinine [Mass/volume] in Urine"
       }
     ]
   },

@@ -1,6 +1,8 @@
 {
 	"resourceType": "ValueSet",
 	"id": "ckd-valueset-egfr",
+	"name": "EGFRLabResults",
+	"title": "eGFR Lab Results",
 	"status": "active",
 	"compose": {
 		"include": [

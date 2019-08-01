@@ -1,6 +1,8 @@
 {
 	"resourceType": "ValueSet",
 	"id": "ckd-valueset-uacr",
+	"name": "UacrLabResults",
+	"title": "UACR Lab Results",
 	"status": "active",
 	"compose": {
 		"include": [
