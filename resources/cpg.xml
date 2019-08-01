@@ -108,6 +108,140 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource-->
+			
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-activitydefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-appointment"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-codesystem"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-communicationrequest"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-devicerequest"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-directionOfRecommendation"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-expressionbasedvalueset"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-immunizationrecommendation"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-library"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-medicationrequest"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-nutritionorder"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-ordersetdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-participantCapabilityStatement"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-patient"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-plandefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-practitioner"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-practitionerrole"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-protocoldefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-recommendationdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-servicerequest"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-valueset"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			<resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-workflowdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+			
 			<!-- TODO: Consider whether this is too content-specific for inclusion here...
 			<resource>
 				<reference>
