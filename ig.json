@@ -4,7 +4,6 @@
   "fixed-business-version": "0.1.0",
   "sct-edition" : "http://snomed.info/sct/731000124108",
   "source": "cpg.xml",
-  "jurisdiction": "UV",
   "npm-name": "hl7.fhir.uv.cpg",
   "license": "CC0-1.0",
   "tool" : "jekyll",

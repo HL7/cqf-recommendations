@@ -139,12 +139,6 @@
 			<!-- Record patient data -->
 			<action>
 				<title value="Record patient data"/>
-				<participant>
-					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
-					</extension>
-					<type value="device"/>
-				</participant>
 				<input>
 					<type value="QuestionnaireResponse"/>
 					<codeFilter>
@@ -155,6 +149,12 @@
 				<output>
 					<type value="Patient"/>
 				</output>
+				<participant>
+					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
+						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
+					</extension>
+					<type value="device"/>
+				</participant>
 				<!-- TODO: There is some wizardry here about transforming the questionnaire response into a Patient resource -->
 				<!-- We can use SDC post processing to do this -->
 				<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-create"/>

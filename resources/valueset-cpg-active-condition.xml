@@ -16,7 +16,13 @@
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-07-21"/>
-    <publisher value="Clinical Decision Support WG"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
     <description value="Active condition clinical status codes"/>
     <purpose value="Used to specify the set of clinical status codes that are considered active"/>
     <copyright value="© CDC 2016+."/>

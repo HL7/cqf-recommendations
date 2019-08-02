@@ -7,57 +7,19 @@
     <name value="CPG_Common_Persona"/>
 		<title value="CPG Common Persona"/>
     <status value="active"/>
+		<experimental value="false"/>
+		<date value="2019-02-08"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
+		<description value="Common personas used to describe roles and participants in computable content"/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona"/>
-						<concept>
-							<code value="C000"/>
-							<display value="Patient"/>
-						</concept>
-						<concept>
-							<code value="C001"/>
-							<display value="Care partner"/>
-						</concept>
-						<concept>
-							<code value="2211"/>
-							<display value="General medical practitioner"/>
-						</concept>
-						<concept>
-							<code value="2212"/>
-							<display value="Specialist medical practitioner"/>
-						</concept>
-						<concept>
-							<code value="2221"/>
-							<display value="Nursing professional"/>
-						</concept>
-						<concept>
-							<code value="2222"/>
-							<display value="Midwifery professional"/>
-						</concept>
-						<concept>
-							<code value="3221"/>
-							<display value="Nursing associate professional"/>
-						</concept>
-						<concept>
-							<code value="3222"/>
-							<display value="Midwifery associate professional"/>
-						</concept>
-						<concept>
-							<code value="3256"/>
-							<display value="Medical assistant"/>
-						</concept>
-						<concept>
-							<code value="5321"/>
-							<display value="Health care assistant"/>
-						</concept>
-						<concept>
-							<code value="5322"/>
-							<display value="Home-based personal care worker"/>
-						</concept>
-						<concept>
-							<code value="W000"/>
-							<display value="Clerical support worker"/>
-						</concept>
         </include>
     </compose>
 </ValueSet>

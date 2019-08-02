@@ -14,8 +14,17 @@
     <title value="CPG Common Process"/>
     <status value="draft"/>
     <experimental value="false"/>
+    <date value="2019-05-08"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
     <description value="Common processes performed in providing guideline-based care, regardless of the specific guideline."/>
     <caseSensitive value="true"/>
+		<valueSet value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process"/>
     <content value="complete"/>
     <concept>
         <code value="registration"/>

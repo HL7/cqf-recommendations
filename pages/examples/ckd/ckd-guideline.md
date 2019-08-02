@@ -97,24 +97,26 @@ We suggest that periodic evaluation for CKD be considered in patients with the f
 Three examples are included for chronic disease management, all focused on chronic kidney disease (CKD).
 
 ### Clinical Practice Guideline protocol and recommendations
-Included in example folder: 'va-cpg'.
 
 This example includes a small subset of the VA/DoD guideline and recommendations described above.
 
+* [CKD Protocol](../../PlanDefinition-va-ckd-protocol.html)
+* [CKD Recommendation](../../PlanDefinition-va-ckd-recommendations.html)
 
 ### Care Plan Order Sets
-Included in example folder: 'careplan-orderset'.
 
 * Create a patient-specific care plan with interventions (order sets) determined by guideline recommendations.
   * Delivered as a FHIR CarePlan resource with associated activities, including MedicationRequest, ServiceRequest, and Appointment resources. May include a new or revised FHIR CareTeam resource specifying participants and their roles.
+	
+* [CKD Plan](../../PlanDefinition-cc-cpg-plan-ckd.html)
 
 Order sets from CKD practice guidelines are categorized for presentation to clinicians and/or when creating and executing order sets that require different order management processes. The provided examples include the following order set categories:
 * Laboratory orders
-  * Blood chemistry
-  * Urine analysis
+  * [Blood chemistry](../../ActivityDefinition-cc-cpg-activity-lab-metabolic.html)
+  * [Urine analysis](../../ActivityDefinition-cc-cpg-activity-lab-creatinine.html)
 * Medications
 * Procedures to be performed
-  * e.g. renal ultrasound
+  * e.g. [renal ultrasound](../../ActivityDefinition-cc-cpg-activity-ultrasound-renal.html)
 * Patient self-care, to be performed by patient at home
   * e.g. weight, blood pressure, exercise, food diary
 
@@ -123,3 +125,14 @@ Example FHIR resources in folder: 'risk-recommendations'.
 
 * Alerts presented to a clinician at the point of care, e.g. when the calculated kidney failure risk exceeds a threshold.
   * Delivered using CDS Hooks embedded within the EHR system workflow.
+
+* [CKD Risk Logic CQL](CKDRiskLogic-1.0.html)
+* [CKD Risk Referral Nephrology ActivityDefinition](../../ActivityDefinition-ckd-risk-referral-nephrology.html)
+* [CKD Risk Renal Lab Order](../../ActivityDefinition-ckd-risk-renal-lab-order.html)
+* [CKD Risk Recommendations Library](../../Library-ckd-risk-recommendations.html)
+* [CKD Risk Screening PlanDefinition](../../PlanDefinition-ckd-risk-screening.html)
+* [CKD Valueset](../../ValueSet-ckd-valueset-ckd.html)
+* [CKD Creatinine ValueSet](../../ValueSet-ckd-valueset-creatinine.html)
+* [CKD Diabetes ValueSet](../../ValueSet-ckd-valueset-diabetes.html)
+* [CKD EGFR ValueSet](../../ValueSet-ckd-valueset-egfr.html)
+* [CKD UACR ValueSet](../../ValueSet-ckd-valueset-uacr.html)

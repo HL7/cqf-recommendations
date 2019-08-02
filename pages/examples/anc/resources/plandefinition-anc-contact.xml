@@ -41,7 +41,7 @@
 			</coding>
 		</code>
 		<!-- TODO: Can use the common registration process, or override with an ANC-specific registration process -->
-		<definitionCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-common-registration"/>
+		<definitionCanonical value="http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration"/>
 	</action>
 	<action>
 		<title value="Record health history"/>

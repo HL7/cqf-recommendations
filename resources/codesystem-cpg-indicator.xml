@@ -1,12 +1,24 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="cpg-indicator"/>
+		<meta>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-codesystem"/>
+		</meta>
     <url value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-indicator"/>
     <name value="CPG_Indicator"/>
 		<title value="CPG Indicator"/>
     <status value="draft"/>
     <experimental value="false"/>
+    <date value="2019-05-08"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
     <description value="Indicates the urgency/importance of what this recommendation conveys"/>
     <caseSensitive value="true"/>
+		<valueSet value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-indicator"/>
     <content value="complete"/>
     <concept>
         <code value="info"/>

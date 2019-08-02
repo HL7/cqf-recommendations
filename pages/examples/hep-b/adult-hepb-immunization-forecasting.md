@@ -32,3 +32,9 @@ For the first dose:
 For the second dose:
 * The second dose must be administered at least 24 days after the most recent Hep B adjuvanted shot.
 * The second dose is recommended to be administered 28 days after the most recent Hep B adjuvanted (CVX 189) shot.
+
+## Artifacts
+
+* [CQL Source](HepBAdultForecasting-0.1.0.html)
+* [Library](../../Library-library-hep-b-adult-forecasting.html)
+* [PlanDefinition](../../PlanDefinition-plandefinition-hep-b-adult-forecasting.html)

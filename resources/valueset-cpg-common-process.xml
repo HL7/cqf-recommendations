@@ -7,73 +7,19 @@
     <name value="CPG_Common_Process"/>
 		<title value="CPG Common Process"/>
     <status value="active"/>
+		<experimental value="false"/>
+		<date value="2019-02-08"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
+		<description value="Common processes used to describe the high-level, conceptual activities that occur as part of the delivery of guideline-based care"/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
-				    <concept>
-				        <code value="registration"/>
-				        <display value="Registration"/>
-				    </concept>
-				    <concept>
-				        <code value="triage"/>
-				        <display value="Triage"/>
-				    </concept>
-				    <concept>
-				        <code value="local-urgent-care"/>
-				        <display value="Local Urgent Care"/>
-				    </concept>
-				    <concept>
-				        <code value="history-and-physical"/>
-				        <display value="History and Physical"/>
-				    </concept>
-				    <concept>
-				        <code value="provide-counseling"/>
-				        <display value="Provide Counseling"/>
-				    </concept>
-				    <concept>
-				        <code value="diagnostic-testing"/>
-				        <display value="Diagnostic Testing"/>
-				    </concept>
-				    <concept>
-				        <code value="determine-diagnosis"/>
-				        <display value="Determine Diagnosis"/>
-				    </concept>
-				    <concept>
-				        <code value="guideline-based-care"/>
-				        <display value="Guideline-based Care"/>
-				    </concept>
-				    <concept>
-				        <code value="dispense-medications"/>
-				        <display value="Dispense Medications"/>
-				    </concept>
-				    <concept>
-				        <code value="emergency-care"/>
-				        <display value="Emergency Care"/>
-				    </concept>
-				    <concept>
-				        <code value="actue-tertiary-care"/>
-				        <display value="Acute/Tertiary Care"/>
-				    </concept>
-				    <concept>
-				        <code value="charge-for-service"/>
-				        <display value="Charge for Service"/>
-				    </concept>
-				    <concept>
-				        <code value="discharge-referral-of-patient"/>
-				        <display value="Discharge/Referral of Patient"/>
-				    </concept>
-				    <concept>
-				        <code value="record-and-report"/>
-				        <display value="Record and Report"/>
-				    </concept>
-				    <concept>
-				        <code value="monitor-and-follow-up-of-patient"/>
-				        <display value="Monitor and Follow-up of Patient"/>
-				    </concept>
-				    <concept>
-				        <code value="alerts-reminders-education"/>
-				        <display value="Alerts Reminders Education"/>
-				    </concept>
         </include>
     </compose>
 </ValueSet>

@@ -7,17 +7,19 @@
     <name value="CPG_Recommendation_Direction"/>
 		<title value="CPG Recommendation Direction"/>
     <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-07-21"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
+    <description value="The direction of a recommendation, either for or against a particular action, taking into account the balance between desirable and undersirable outcomes; the confidence in the magnitude of estimates of effect; the confidence in values and preferences and their variability; and resource use."/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction"/>
-						<concept>
-							<code value="for"/>
-							<display value="For"/>
-						</concept>
-						<concept>
-							<code value="against"/>
-							<display value="Against"/>
-						</concept>
         </include>
     </compose>
 </ValueSet>
