@@ -574,9 +574,9 @@ define Device: {
     }
   },
   manufacturer: 'Centers for Disease Control and Prevention',
-  version: {{
+  version: { {
     value: CqlVersion
-  }}
+  } }
 }
 
 /* Alert 1: Patient is exposed to anthrax but does not have an asymptomatic Observation.
@@ -689,11 +689,11 @@ define DetectedIssueExistingAntimicrobialRx:
       coding: { CCL.FormatCode("Not equivalent alert code") }
     },
     implicated: ImplicatedExistingMedicationResources,
-    mitigation: {{
+    mitigation: { {
       action: {
         coding: { CCL.FormatCode("Medication review code") }
       }
-    }},
+    } },
     status: 'preliminary'
   }
   else null
@@ -868,11 +868,11 @@ define DetectedIssueBioThraxHistoryInconsistencies:
       coding: { CCL.FormatCode("Timing detected issue code") }
     },
     implicated: { ImplicatedVaccineProcedure },
-    mitigation: {{
+    mitigation: { {
       action: {
         coding: { CCL.FormatCode("Medication review code") }
       }
-    }},
+    } },
     status: 'preliminary'
   }
   else null
@@ -1055,14 +1055,14 @@ define VaccineRequest:
       {
         text: '0.5mL',
         additionalInstruction: VaccineAdditionalInstructions,
-        doseAndRate: {{
+        doseAndRate: { {
           doseQuantity: {
             value: 0.5,
             unit: 'mL',
             system: 'http://unitsofmeasure.org',
             code: 'mL'
           }
-        }},
+        } },
         route: {
           coding: { CCL.FormatCode("Subcutaneous route code") }
         }
@@ -1629,7 +1629,7 @@ define OrderSet:
     "library": {
       'Library/Anthrax_Post_Exposure_Prophylaxis_FHIRv400_Library'
     },
-    action: {{
+    action: { {
       title: 'Anthrax Post Exposure Prophylaxis',
       groupingBehavior: 'logical-group',
       selectionBehavior: 'any',
@@ -1680,7 +1680,7 @@ define OrderSet:
         }
       },
       action: ActionList
-    }},
+    } },
     contained: ContainedResourcesList
   }
   else null
