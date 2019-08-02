@@ -54,9 +54,9 @@ For both recommendations, one of the following responses should be required:
 ## Resources
 
 ### CQL Libraries
-* [OMTKLogic](cql/OMTKLogic-0.0.0.cql)
-* [OpioidCDS_R4_Common](cql/OpioidCDS_R4_Common-0.1.0.cql)
-* [OpioidCDS_R4_Recommendation_05](cql/OpioidCDS_R4_Recommendation_05-0.1.0.cql)
+* [OMTKLogic](OMTKLogic-0.0.0.html)
+* [OpioidCDS_R4_Common](OpioidCDS_R4_Common-0.1.0.html)
+* [OpioidCDS_R4_Recommendation_05](OpioidCDS_R4_Recommendation_05-0.1.0.html)
 
 ### Library Resources
 * [omtklogic](../../Library-omtklogic-0-0-1.html)
