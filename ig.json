@@ -94,8 +94,8 @@
 		"Library/library-hep-b-adult-forecasting": {
 			"base": "Library-library-hep-b-adult-forecasting.html"
 		},
-		"Library/omtklogic-0-0-1": {
-			"base": "Library-omtklogic-0-0-1.html"
+		"Library/omtklogic": {
+			"base": "Library-omtklogic.html"
 		},
 		"Library/opioidcds-r4-common": {
 			"base": "Library-opioidcds-r4-common.html"

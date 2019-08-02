@@ -687,11 +687,11 @@ define DetectedIssueExistingAntimicrobialRx:
       coding: { CCL.FormatCode("Not equivalent alert code") }
     },
     implicated: ImplicatedExistingMedicationResources,
-    mitigation: {{
+    mitigation: { {
       action: {
         coding: { CCL.FormatCode("Medication review code") }
       }
-    }},
+    } },
     status: 'preliminary'
   }
   else null
@@ -866,11 +866,11 @@ define DetectedIssueBioThraxHistoryInconsistencies:
       coding: { CCL.FormatCode("Timing detected issue code") }
     },
     implicated: { ImplicatedVaccineProcedure },
-    mitigation: {{
+    mitigation: { {
       action: {
         coding: { CCL.FormatCode("Medication review code") }
       }
-    }},
+    } },
     status: 'preliminary'
   }
   else null
@@ -1635,7 +1635,7 @@ define OrderSet:
         reference: 'Library/Anthrax_Post_Exposure_Prophylaxis_FHIRv300_Library'
       }
     },
-    action: {{
+    action: { {
       title: 'Anthrax Post Exposure Prophylaxis',
       groupingBehavior: 'logical-group',
       selectionBehavior: 'any',
@@ -1680,7 +1680,7 @@ define OrderSet:
         }
       },
       action: ActionList
-    }},
+    } },
     contained: ContainedResourcesList
   }
   else null

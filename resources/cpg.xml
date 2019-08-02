@@ -487,14 +487,7 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/omtkdata-0-0-2"/>
-				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
-				<groupingId value="opg-example"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="Library/omtklogic-0-0-1"/>
+					<reference value="Library/omtklogic"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
 				<groupingId value="opg-example"/>
