@@ -1,0 +1,27 @@
+{
+    "package-id": "hl7.fhir.uv.cpg",
+    "title": "FHIR Clinical Guidelines",
+    "canonical": "http://hl7.org/fhir/uv/cpg",
+    "introduction": "This implementation guide supports the development of standards-based computable representations of the content of clinical care guidelines. Its content pertains to technical aspects of digital guidelines implementation and is intended to be usable across multiple use cases across clinical domains as well as in the International Realm.",
+    "list": [
+        {
+            "version": "current",
+            "date": "Latest Build",
+            "desc": "Continuous Integration Build (latest in version control)",
+            "path": "http://build.fhir.org/ig/HL7/cqf-recommendations",
+            "status": "ci-build",
+						"fhirversion": "4.0.0",
+            "current": true
+        },
+        {
+            "version": "0.1.0",
+            "date": "TBD",
+            "descmd": "STU1 (v0.1.0)\r\n* The initial ballot combines experience gained from multiple guideline representation projects, including Opioid Prescribing Support, Chronic Kidney Disease Management, Antenatal Care, HIV/HBV Screening, Prevention, and Treatment, and Immunization Decision Support.",
+            "desc": "STU1 (v0.1.0)",
+            "path": "http://hl7.org/fhir/uv/cpg/2019Sep",
+            "status": "ballot",
+						"fhirversion": "4.0.0",
+            "sequence": "STU 1"
+        }
+    ]
+}

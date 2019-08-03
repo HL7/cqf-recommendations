@@ -36,6 +36,7 @@
     }
   },
   "logging": [ "init", "progress", "context", "html", "tx" ],
+  "suppressedWarningFile": "suppressed-messages.txt",
   "extraTemplates": [
     "mappings"
   ],
