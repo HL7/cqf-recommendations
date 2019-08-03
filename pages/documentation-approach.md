@@ -16,7 +16,7 @@ The approach taken by this implementation guide is to consider three broad aspec
 This implementation guide utilizes an established clinical decision support (CDS) implementation model to move from a clinical guideline to computable content[^1]. This model defines four (4) levels of knowledge representation:
 
 <div>
-  <img src="assets/images/knowledge-levels.png" alt="Knowledge Levels"/>
+  <img src="assets/images/knowledge-levels.png" alt="Knowledge Levels" width="750" height="325"/>
 </div>
 
 _Figure 2.1_
@@ -76,7 +76,7 @@ Level 4 (L4) is executable software running in a clinical system. This is the lo
 This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering:
 
 <div>
-  <img src="assets/images/functionality-tiers.png" alt="Tiers of Functionality"/>
+  <img src="assets/images/functionality-tiers.png" alt="Tiers of Functionality" width="687" height="213"/>
 </div>
 
 _Figure 2.2_
