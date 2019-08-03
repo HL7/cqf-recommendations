@@ -20,3 +20,8 @@ Debugging information is available here:
 The HL7 IG Publisher is committed to this repository to make building as easy as possible. To build locally, clone the repository and issue the following command in the root:
 
     java -jar "org.hl7.fhir.publisher.jar" -ig ig.json
+
+The latest version of the IG publisher is available here:
+
+[https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publisher.jar](https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publisher.jar)
+
