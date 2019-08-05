@@ -27,6 +27,8 @@ This software delivery includes the following directories, which are each descri
 - Library: Library FHIR resources that act as containers for the updated artifact.
 - PlanDefinition: Provides example PlanDefinition FHIR resources produced by the artifact.
 
+* [R4 Example Index](index-fhirv400.html)
+
 ### cql
 The cql directory contains the following subdirectories.
 - cql/FHIRv102: CQL code for version of artifact that uses a FHIR DSTU2 (v1.0.2) data model.
