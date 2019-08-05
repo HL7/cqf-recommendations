@@ -23,7 +23,7 @@
     "output": "output",
     "qa": "qa",
     "specification": "http://hl7.org/fhir/R4/",
-		"history": "http://hl7.org/fhir/uv/cpg/history.html"
+		"history": "http://hl7.org/fhir/uv/cpg/history.cfml"
   },
   "defaults": {
     "Any": {
