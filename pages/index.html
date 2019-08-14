@@ -8,14 +8,14 @@
 
   <a name="home"> </a>
   <h2>
-      <span class="sectioncount">1.0.0</span>FHIR Clinical Guidelines
+      <span class="sectioncount">1.0.0</span> FHIR Clinical Guidelines
       <a href="index.html#home" title="link to here" class="self-link">
           <img src="target.png" width="20" class="self-link" height="20"/>
       </a>
   </h2>
-	
+
 	<p>This implementation is organized with the following sections, accessible via the menu bar at the top of every page:</p>
-	
+
 	<ul>
 		<li><a href="index.html">Home</a>: The home page provides summary and background information</li>
 		<li><a href="profiles.html">Profiles</a>: Index of all profiles</li>
@@ -23,7 +23,7 @@
 		<li><a href="terminology.html">Terminology</a>: Index of all terminology (e.g. code systems and value sets)</li>
 		<li><a href="examples.html">Examples</a>: Index of examples</li>
 		<li><a href="extensions.html">Extensions</a>: Index of extensions</li>
-		<li><a href="documentation.html">Documentation</a>: Index of specification documentation<li>
+		<li><a href="documentation.html">Documentation</a>: Index of specification documentation</li>
 			<ul>
 				<li><a href="documentation-approach.html">Approach</a>: Describes the overall approach taken to representing computable guideline content</li>
 				<li><a href="documentation-terminology.html">Terminology</a>: Describes expectations for terminology defined as part of computable guideline content</li>
@@ -32,12 +32,11 @@
 				<li><a href="documentation-recommendations.html">Recommendations</a>: Describes how recommendations are structured and distributed</li>
 				<li><a href="documentation-careplanning.html">Care Planning</a>: Describes expectations for the use dynamic care planning with computable guideline content</li>
 			</ul>
-		</li>
 		<li><a href="downloads.html">Downloads</a>: Downloads for the specification</li>
 		<li><a href="checklists.html">Checklists</a>: Checklists provided for moving guideline content from L1-L4</li>
 		<li><a href="hl7.org/fhir/uv/cpg/history.cfml">Version History</a>: Index of all versions of this implementation guide</li>
 	</ul>
-	
+
   <a name="intro"> </a>
   <h3>
       <span class="sectioncount">1.1.0</span> Introduction
@@ -45,13 +44,13 @@
           <img src="target.png" width="20" class="self-link" height="20"/>
       </a>
   </h3>
-	
+
 	<p>This implementation guide supports the development of standards-based computable representations of the content of clinical care guidelines. Its content pertains to technical aspects of digital guidelines implementation and is intended to be usable across multiple use cases across clinical domains as well as in the International Realm.</p>
-	
+
 	<p>This implementation guide has been developed through a multi-stakeholder effort, holistically involving a range of stakeholders, including those who work at the beginning of the process (e.g., guideline developers) to the end users (e.g., clinical implementation team representatives, health IT developers, patients/patient advocates), and others in between (e.g., informaticists, communicators, evaluators, public health organizations, clinical quality measure and clinical decision support developers).</p>
-	
+
 	<p>The premise involves determining the representation of clinical practice guideline recommendations in FHIR as part of an iterative guideline development and implementation process (Figure 1.1). By including all the relevant perspectives (e.g., guideline authors, informaticists, implementers, communicators, evaluators) as part of the iterative process, the resulting computable representation of the recommendations should be well-vetted and more readily implemented.</p>
-	
+
 	<img src="assets/images/Guidelines-iterative-and-incremental-model.png" alt="Guideline development cycle" height="344" width="700"/>
 	<p><em>Figure 1.1</em></p>
 
@@ -64,7 +63,7 @@
   </h3>
 
   <p>The implementation guide focuses on establishing patterns, profiles, conformance requirements, and guidance for the patient-independent representation, and analogous patterns for the patient-specific representation of guideline recommendations.</p>
-	
+
   <a name="goals"> </a>
   <h3>
       <span class="sectioncount">1.3.0</span> Goals
@@ -72,16 +71,16 @@
           <img src="target.png" width="20" class="self-link" height="20"/>
       </a>
   </h3>
-	
+
 	<p><em>Direct:</em></p>
-	
+
 	<ul>
 		<li>Reduce duplicate development effort involved in the implementation of clinical practice guideline recommendations in clinical systems</li>
 		<li>Reduce unnecessary and/or unintentional variability in clinical practice guideline implementation</li>
 	</ul>
-	
+
 	<p><em>Indirect:</em></p>
-	
+
 	<ul>
 		<li>Minimize the time needed to implement clinical practice guideline recommendations in clinical systems</li>
 	</ul>
@@ -93,7 +92,7 @@
           <img src="target.png" width="20" class="self-link" height="20"/>
       </a>
   </h3>
-	
+
 	<p>Clinical informaticists, health system integrators and clinical systems developers. Assumes familiarity with relevant standards, including FHIR and Clinical Quality Language (CQL).</p>
 
   <a name="background"> </a>
@@ -103,24 +102,24 @@
           <img src="target.png" width="20" class="self-link" height="20"/>
       </a>
   </h3>
-	
+
 	<p>The need for computable care guidelines can be considered in the context of the data lifecycle, where the representation of the guideline recommendations in FHIR helps deliver actionable knowledge (Figure 1.2).</p>
 
   <img src="assets/images/delivering-actionable-knowledge.png" alt="Delivering actionable knowledge" height="350" width="712"/>
 	<p><em>Figure 1.2</em></p>
 
 	<p>By translating the recommendations in clinical practice guidelines at the source, and disseminating a computable version along with the narrative version of the guidelines, the effort of translation would not be repeated across every organization that intends to apply the recommendations. Likewise, unnecessary or unintentional variations as a result of duplicative translation efforts could be prevented with a standard, computable version that is ready to be implemented. In removing the need for translating recommendations at each local clinical system, and removing as much variation as possible through a standard translation, the time needed to apply the recommendations in practice should also be reduced, helping scientific evidence reach patient care more easily, quickly, accurately, and consistently.</p>
-	
+
 	<p>In considering common patterns across multiple guidelines, this implementation guide can apply to a variety of use cases across multiple clinical domains, as is evidenced by the <a href="examples.html">examples</a> provided. These common patterns not only create a way to organize the content for the translation into computable recommendations but also help implementers operationalize the recommendations within clinical workflows.</p>
 
   <a name="references"> </a>
   <h3>
-		<span class="sectioncount">1.6.0</span> References 
+		<span class="sectioncount">1.6.0</span> References
 		<a href="index.html#references" title="link to here" class="self-link">
 			<img src="target.png" width="20" class="self-link" height="20"/>
 		</a>
 	</h3>
-	
+
 	<ul>
 		<li>International Standard Classification of Occupations (ISCO). <a href="http://www.ilo.org/public/english/bureau/stat/isco/index.htm">http://www.ilo.org/public/english/bureau/stat/isco/index.htm</a></li>
 		<li>Classifying health workers: Mapping occupations to the international standard classification. World Health Organization. <a href="https://www.who.int/hrh/statistics/Health_workers_classification.pdf">https://www.who.int/hrh/statistics/Health_workers_classification.pdf</a></li>
@@ -131,12 +130,12 @@
 
   <a name="acknowledgements"> </a>
   <h3>
-		<span class="sectioncount">1.7.0</span> Acknowledgements 
+		<span class="sectioncount">1.7.0</span> Acknowledgements
 		<a href="index.html#acknowledgements" title="link to here" class="self-link">
 			<img src="target.png" width="20" class="self-link" height="20"/>
 		</a>
 	</h3>
-	
+
 <table class="grid">
 	<thead>
 		<tr>
@@ -293,7 +292,7 @@
 		</tr>
 	</tbody>
 </table>
-	
+
   {% include container-end.html %}
 
   {% include footer.html %}
