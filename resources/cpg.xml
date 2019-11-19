@@ -18,7 +18,7 @@
     <description value="Implementation guidance for creating Clinical Practice Guidelines with formal artifacts to facilitate sharing and implementation of the guideline"/>
 		<packageId value="hl7.fhir.uv.cpg"/>
 		<license value="CC0-1.0"/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <definition>
 			<grouping id="main">
         <name value="Main"/>
@@ -108,7 +108,7 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource-->
-			
+
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-activitydefinition"/>
@@ -241,7 +241,7 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
-			
+
 			<!-- TODO: Consider whether this is too content-specific for inclusion here...
 			<resource>
 				<reference>
@@ -445,7 +445,7 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
-      
+
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/va-ckd-protocol"/>

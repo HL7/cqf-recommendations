@@ -5,7 +5,7 @@ title: Terminology
 
 # Using Terminology
 
-Terminologies are a critical aspect of supporting interoperable computable content. This implementation guide defines profiles for the CodeSystem and ValueSet resources to identify key elements that must be supported. 
+Terminologies are a critical aspect of supporting interoperable computable content. This implementation guide defines profiles for the CodeSystem and ValueSet resources to identify key elements that must be supported.
 
 Readers of this implementation guide should be familiar with the [Using Codes](http://hl7.org/fhir/R4/terminologies.html) topic in the base FHIR specification.
 
@@ -13,19 +13,26 @@ Readers of this implementation guide should be familiar with the [Using Codes](h
 
 Standard and established code systems should be used whenever possible. Only in the case that existing code systems do not provide the necessary concepts should new code systems be defined. If required, code systems defined by content conforming to this IG SHALL use the [cpg-codesystem](StructureDefinition-cpg-codesystem.html) profile.
 
-Note that this does not mean that _any_ code system referenced by computable content must use the cpg-codesystem profile. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED-CT code system would not be expected to conform to the cpg-codesystem profile.
+Note that this does not mean that _any_ code system referenced by computable content must use the cpg-codesystem profile. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to the cpg-codesystem profile.
+
+If no version is specified then the default behavior for a FHIR terminology server is to use the most recent code system version available on the server.
 
 Refer to the base FHIR specification for a list of established [code systems](http://hl7.org/fhir/R4/terminologies-systems.html) and the corresponding canonical URL.
 
 ## Value Sets
 
-This implementation guide defines two value set profiles, a base cpg-valueset profile that establishes key elements that must be supported for any value set content, and a derived profile, cpg-expressionbasedvalueset, that defines key elements that must be supported for expression-based value set content. Value sets defined by content conforming to this IG SHALL use at least the [cpg-valueset](StructureDefinition-cpg-valueset.html) profile.
+This implementation guide defines three value set profiles, a base cpg-valueset profile that establishes key elements that must be supported for any value set content, and two derived profiles, cpg-expressionbasedvalueset and cpg-cachedvalueset.
 
-In addition, value sets SHOULD be defined using expression-based (or _intensional_) definitions if the value set definition (the content logical definition) cannot be represented using the standard FHIR value set compose syntax. Value sets defined in this way SHALL conform to the [cpg-expressionbasedvalueset](StructureDefinition-cpg-expressionbasedvalueset.html) profile.
+Whenever possible, value sets SHOULD be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships. In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
 
-Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use the cpg-valueset or related profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
+Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. For these cases, the description of the construction of the value set is represented with non-FHIR expressions using either the Rules Text or Expression extensions.
 
-## Implementation Considerations
+Value sets defined by content conforming to this IG SHALL use the [cpg-expressionbasedvalueset](StructureDefinition-cpg-expressionbasedvalueset.html) profile to define value sets in one of three ways:
 
-Note carefully that for _expression-based_ value sets, content is effectively distributed with the `valueset.compose` containing the enumerated set of individual concepts obtained as the result of the computed expansion of the expression or rulesText as of the time of publication. As new versions of the `cpg-expressionbasedvalueset` instance are created, and/or as new versions of the code systems used by the value set are created, the value set compose content will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, expression-based value set definitions SHOULD be updated.
+1. **Rules Text** - This extension supports entering a text block that describes a script or some other textual description of how to determine value set members.
+2. **Expression** - This supports including a specific alternative expression where the syntax is explicitly defined (such as SQL)
+3. **Compose** - This supports using standard FHIR compose structure to define value set membership.
 
+In addition to the cpg-expressionbasedvalueset profile, this implementation guide defines a [cpg-cachedvalueset](StructureDefinition-cpg-cachedvalueset.html) profile that supports providing an enumerated point-in-time definition of the value set members using only the include element to enumerate single concept codes, along with a warning element that communicates that the compose content **is not** the official value set definition, instead this is a convenience copy of the member list obtained as a result of the computed expansion of the value set at the time of publication. This can be used to support environments where the actual definition cannot be evaluated. Value sets expressed in this way SHALL reference the cpg-expressionbasedvalueset that represents the actual definition of the value set. This means that as new versions of the source expression-based value set, and/or as new versions of the code systems used by the source expression-based value set are released, the cached value set compose content will need to be updated to incorporate newly defined codes that meet the value set intent. Before and periodically during production use, cached value sets SHOULD be updated.
+
+Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use the cpg-valueset and related profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
