@@ -71,6 +71,12 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-medicationrequest-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/cpg-common-pathway"/>

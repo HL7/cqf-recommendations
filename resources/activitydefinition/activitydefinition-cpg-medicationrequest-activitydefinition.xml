@@ -1,0 +1,96 @@
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+	<id value="cpg-medicationrequest-activitydefinition"/>
+	<url value="http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-medicationrequest-activitydefinition"/>
+	<identifier>
+		<use value="official"/>
+		<value value="CPG_MedicationRequest_ActivityDefinition"/>
+	</identifier>
+	<version value="0.1.0"/>
+	<name value="CPG_MedicationRequest_ActivityDefinition"/>
+	<title value="CPG MedicationRequest ActivityDefinition"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<date value="2019-06-23"/>
+	<kind value="MedicationRequest"/>
+	<!-- Set status to the string value 'draft' -->
+	<dynamicValue>
+		<path value="status"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="'draft'"/>
+		</expression>
+	</dynamicValue>
+	<!-- Set order to the string value 'order' -->
+	<dynamicValue>
+		<path value="intent"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="'order'"/>
+		</expression>
+	</dynamicValue>
+	<!-- Set priority to the string value 'routine' -->
+	<dynamicValue>
+		<path value="priority"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="'routine'"/>
+		</expression>
+	</dynamicValue>
+	<!-- Set medication to the MedicationCodeableConcept parameter -->
+	<dynamicValue>
+		<path value="medication"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="MedicationCodeableConcept"/>
+		</expression>
+	</dynamicValue>
+	<!-- Set subject to the Patient context, note that this will result in a Patient,
+	but is being assigned to a Reference, implementation will need to sort this, or
+	CQL will need to construct a reference -->
+	<dynamicValue>
+		<path value="subject"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="Patient"/>
+			<!--expression value="Reference { reference: 'Patient/' + Patient.id }" /-->
+		</expression>
+	</dynamicValue>
+	<!-- Set encounter to the Encounter parameter, note that this will result in an Encounter,
+	but is being assigned to a Reference, implementation will need to sort this,
+	or CQL will need to construct a reference -->
+	<dynamicValue>
+		<path value="encounter"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="Encounter"/>
+			<!--expression value="Reference { reference: 'Encounter/' + Encounter.id }" /-->
+		</expression>
+	</dynamicValue>
+	<!-- Set authored on to Now() -->
+	<dynamicValue>
+		<path value="authoredOn"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="Now()"/>
+		</expression>
+	</dynamicValue>
+	<!-- Reference to a Practitioner parameter, note that this will result in a Practitioner,
+	but is being assigned to a Reference, implementation will need to sort this,
+	or CQL will need to construct a reference -->
+	<dynamicValue>
+		<path value="performer"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="Practitioner"/>
+			<!--expression value="Reference { reference: 'Practitioner/' + Practitioner.id}" /-->
+		</expression>
+	</dynamicValue>
+	<!-- Not sure this is right, FHIR site is down right now, can't verify the path here -->
+	<dynamicValue>
+		<path value="dosageInstruction.dose"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="Dose"/>
+		</expression>
+	</dynamicValue>
+</ActivityDefinition>

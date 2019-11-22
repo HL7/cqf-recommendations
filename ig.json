@@ -68,6 +68,10 @@
 		"ActivityDefinition/opioidcds-riskassessment-request": {
 			"base": "ActivityDefinition-opioidcds-riskassessment-request.html"
 		},
+    "ActivityDefinition/cpg-medicationrequest-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-medicationrequest-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-medicationrequest-activitydefinition.html"
+    },
 		"CapabilityStatement/cpg-patient-registry": {
 			"source": "capabilitystatement/cpg-patient-registry.xml",
 			"base": "CapabilityStatement-cpg-patient-registry.html"
