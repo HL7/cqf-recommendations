@@ -85,12 +85,21 @@
 			<!--expression value="Reference { reference: 'Practitioner/' + Practitioner.id}" /-->
 		</expression>
 	</dynamicValue>
-	<!-- Not sure this is right, FHIR site is down right now, can't verify the path here -->
+	<!-- Set dose to the DoseQuantity parameter -->
 	<dynamicValue>
-		<path value="dosageInstruction.dose"/>
+		<path value="dosageInstruction.doseAndRate.dose"/>
 		<expression>
 			<language value="text/cql"/>
-			<expression value="Dose"/>
+			<expression value="DoseQuantity"/>
+		</expression>
+	</dynamicValue>
+	<!-- Set timing? Consider approaches (code-based (e.g. BID, TID, QID) or frequency/timing-based) -->
+	<!-- Approach here uses "DosesPerDay" parameter for simplicity -->
+	<dynamicValue>
+		<path value="dosageInstruction.timing"/>
+		<expression>
+			<language value="text/cql"/>
+			<expression value="Timing { frequency: 1, period: DosesPerDay, periodUnit: 'd' }"/>
 		</expression>
 	</dynamicValue>
 </ActivityDefinition>
