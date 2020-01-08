@@ -15,7 +15,7 @@ Standard and established code systems should be used whenever possible. Only in 
 
 Note that this does not mean that _any_ code system referenced by computable content must use the cpg-codesystem profile. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to the cpg-codesystem profile.
 
-If no version is specified then the default behavior for a FHIR terminology server is to use the most recent code system version available on the server.
+If no version is specified then the default behavior for a FHIR terminology server is described in the server's Terminology Capabilities statement. If no Terminology Capabilities statement exists, no assumptions can be made.
 
 Refer to the base FHIR specification for a list of established [code systems](http://hl7.org/fhir/R4/terminologies-systems.html) and the corresponding canonical URL.
 

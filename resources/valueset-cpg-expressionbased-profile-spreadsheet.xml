@@ -20,8 +20,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7028</WindowHeight>
-  <WindowWidth>21570</WindowWidth>
+  <WindowHeight>11715</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
@@ -1425,7 +1425,7 @@
     <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="15"><Data ss:Type="String">Human instructions for constructing the valueset</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">&amp; This SHALL be a script that a human would follow to generate the content of the value set. </Data><NamedCell
+    <Cell><Data ss:Type="String">An expression that provides a definition of the content of the value set in some form that is not computable - e.g. instructions that could only be followed by a human.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="18"><Data ss:Type="String">Note that to provide a human-readable description of the expression, use the description element of the expression datatype</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -2703,7 +2703,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>7</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -2719,6 +2719,7 @@
     <Pane>
      <Number>0</Number>
      <ActiveRow>5</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -2779,9 +2780,9 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s99"><Data ss:Type="String">ValueSet</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String">One of rulesText, expression, or a compose definition SHALL be provided</Data><NamedCell
+    <Cell ss:StyleID="s99"><Data ss:Type="String">Only one of rulesText, expression, or a compose definition SHALL be provided</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s99"><Data ss:Type="String">(extension('http://hl7.org/fhir/StructureDefinition/valueset-rules-text') | extension('http://hl7.org/fhir/StructureDefinition/valueset-expression')).exists() or compose.exists()</Data><NamedCell
+    <Cell ss:StyleID="s99"><Data ss:Type="String">extension('http://hl7.org/fhir/StructureDefinition/valueset-rules-text').exists() xor extension('http://hl7.org/fhir/StructureDefinition/valueset-expression').exists() xor compose.exists()</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s121"><Data ss:Type="String">exists(f:extension)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3242,7 +3243,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>5</ActiveCol>
+     <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
