@@ -1,0 +1,41 @@
+<PlanDefinition xmlns='http://hl7.org/fhir'>
+    <action>
+      ...
+      <!-- Version 1: start a specific date time -->
+         <triggerDefinition>
+          <type value="periodic"/>
+          <eventName value="sampleTriggerDef"/>
+          <eventTimingTiming>
+              <event value="2017-07-28T02:05:56.742Z"/>
+          </eventTimingTiming>
+         </triggerDefinition>
+
+      <!-- Version 2: start after a specified duration (in 10 seconds) -->
+         <triggerDefinition>
+          <type value="periodic"/>
+          <eventName value="sampleTriggerDef"/>
+          <eventTimingTiming>
+              <repeat>
+                <duration value="10"/>
+                <durationUnit value="s"/>
+              </repeat>
+          </eventTimingTiming>
+         </triggerDefinition>
+
+     <!-- Version 3: repeat execution in interval (once every 10 seconds) -->
+        <triggerDefinition>
+          <type value="periodic"/>
+          <eventName value="sampleTriggerDef"/>
+          <eventTimingTiming>
+              <repeat>
+                <!-- once every ten seconds -->
+                <frequency value="1"/>
+                <period value="10"/>
+                <periodUnit value="s"/>
+              </repeat>
+          </eventTimingTiming>
+         </triggerDefinition>
+      ...
+    </action>
+...
+</PlanDefinition>

@@ -1,0 +1,9 @@
+<bpmn:process id="Process_1" isExecutable="false">
+  <bpmn:startEvent id="se_1">
+    <bpmn:outgoing>sf_1</bpmn:outgoing>
+  </bpmn:startEvent>
+  <bpmn:task id="t_1" name="Sample Task">
+    <bpmn:incoming>sf_1</bpmn:incoming>
+    <bpmn:outgoing>sf_2</bpmn:outgoing>
+  </bpmn:task> sourceRef="t_1" targetRef="ee_1" />
+</bpmn:process>

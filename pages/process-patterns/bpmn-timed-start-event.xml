@@ -1,0 +1,26 @@
+<!-- Version 1: start a specific date time -->
+<bpmn:startEvent id="start">
+  <bpmn:timerEventDefinition id="sampleTriggerDef">
+    <bpmn:timeDate id="sampleTriggerDef_timeDate">
+      2017-07-28T04:05:56+02:00
+    </bpmn:timeDate>
+  </bpmn:timerEventDefinition>
+</bpmn:startEvent>
+
+<!-- Version 2: start after a specified duration (in 10 seconds) -->
+<bpmn:startEvent id="start">
+  <bpmn:timerEventDefinition id="sampleTriggerDef">
+    <bpmn:timeDuration id="sampleTriggerDef_timeDate">
+      P10S
+    </bpmn:timeDuration>
+  </bpmn:timerEventDefinition>
+</bpmn:startEvent>
+
+<!-- Version 3: repeat execution in interval (once every 10 seconds) -->
+<bpmn:startEvent id="start">
+  <bpmn:timerEventDefinition id="sampleTriggerDef">
+    <bpmn:timeCycle id="sampleTriggerDef_timeDate">
+      R1/10S
+    </bpmn:timeCycle>
+  </bpmn:timerEventDefinition>
+</bpmn:startEvent>

@@ -1,0 +1,51 @@
+<PlanDefinition xmlns="http://hl7.org/fhir">
+
+   <action>
+        <id value="xor_group"/>
+        <label value="Xor_group"/>
+        <title value="Xor_group"/>
+        <groupingBehavior value="logical-group"/>
+        <selectionBehavior value="exactly-one"/>
+        <action>
+            <id value="ad_2"/>
+            <label value="Task 2"/>
+            <title value="Task 2"/>
+            <condition>
+                <kind value="applicability"/>
+                <description value="the expression"/>
+                <language value="EL"/>
+                <expression value="$name==2" />
+            </condition>
+            <relatedAction>
+                <actionId value="xor_group"/>
+                <relationship value="before"/>
+            </relatedAction>
+        </action>
+        <action>
+            <id value="ad_3"/>
+            <label value="Task 3"/>
+            <title value="Task 3"/>
+            <condition>
+                <kind value="applicability"/>
+                <description value="the expression"/>
+                <language value="EL"/>
+                <expression value="$name==1" />
+            </condition>
+            <relatedAction>
+                <actionId value="xor_group"/>
+                <relationship value="before"/>
+            </relatedAction>
+        </action>
+        <relatedAction>
+            <actionId value="ad_4"/>
+            <relationship value="before"/>
+        </relatedAction>
+    </action>
+
+    <action>
+        <id value="ad_4"/>
+        <label value="Task 4"/>
+        <title value="Task 4"/>
+    </action>
+
+</PlanDefinition>
