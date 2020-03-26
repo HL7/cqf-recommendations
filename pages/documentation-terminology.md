@@ -11,9 +11,9 @@ Readers of this implementation guide should be familiar with the [Using Codes](h
 
 ## Code Systems
 
-Standard and established code systems should be used whenever possible. Only in the case that existing code systems do not provide the necessary concepts should new code systems be defined. If required, code systems defined by content conforming to this IG SHALL use the [cpg-codesystem](StructureDefinition-cpg-codesystem.html) profile.
+Standard and established code systems should be used whenever possible. Only in the case that existing code systems do not provide the necessary concepts should new code systems be defined. If required, code systems defined by content conforming to this IG SHALL use the [cpg-publishablecodesystem](StructureDefinition-cpg-publishablecodesystem.html) profile.
 
-Note that this does not mean that _any_ code system referenced by computable content must use the cpg-codesystem profile. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to the cpg-codesystem profile.
+Note that this does not mean that _any_ code system referenced by computable content must use the cpg-publishablecodesystem profile. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to the cpg-publishablecodesystem profile.
 
 If no version is specified then the default behavior for a FHIR terminology server is described in the server's Terminology Capabilities statement. If no Terminology Capabilities statement exists, no assumptions can be made.
 
@@ -21,18 +21,22 @@ Refer to the base FHIR specification for a list of established [code systems](ht
 
 ## Value Sets
 
-This implementation guide defines three value set profiles, a base cpg-valueset profile that establishes key elements that must be supported for any value set content, and two derived profiles, cpg-expressionbasedvalueset and cpg-cachedvalueset.
+This implementation guide defines two value set profiles, a [cpg-distributablevalueset](StructureDefinition-cpg-distributablevalueset.html) profile that describes the key elements and expectations for a value set to be usable for implementation of computable content, and a [cpg-publishablevalueset](StructureDefinition-cpg-publishablevalueset.html) that establishes expectations relating to publishing value sets used in computable content.
 
 Whenever possible, value sets SHOULD be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships. In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
 
 Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. For these cases, the description of the construction of the value set is represented with non-FHIR expressions using either the Rules Text or Expression extensions.
 
-Value sets defined by content conforming to this IG SHALL use the [cpg-expressionbasedvalueset](StructureDefinition-cpg-expressionbasedvalueset.html) profile to define value set member content in one of three ways. This profile requires that only one of the following three approaches can be used for an instance of the value set:
+Value sets defined by content conforming to this IG SHALL use the [cpg-distributablevalueset](StructureDefinition-cpg-distributablevalueset.html) profile to define value set member content in one of three ways. This profile requires that one and only one of the following three approaches can be used for an instance of the value set:
 
 1. **Rules Text** - This extension supports entering a text block that describes a script or some other textual description of how to determine value set members.
 2. **Expression** - This extension supports including a specific alternative expression where the syntax is explicitly defined outside of FHIR (such as SQL)
 3. **Compose** - This supports using standard FHIR compose structure to define value set membership.
 
-In addition to the cpg-expressionbasedvalueset profile, this implementation guide defines a [cpg-cachedvalueset](StructureDefinition-cpg-cachedvalueset.html) profile that supports providing a point-in-time "definition" of the value set members using only the `ValueSet.compose.include` element containing specific individual concept codes, along with a `usageWarning` extension element that communicates that the compose content **is not** the official value set definition. The `compose` is only a convenience copy of the member list obtained as a result of the computed expansion of the value set at the time of publication. This profile can be used to support environments where the actual definition (as expressed elsewhere) cannot be evaluated. Value sets expressed in this way SHALL use the `sourceValueSet` extension element to reference the cpg-expressionbasedvalueset that provides the actual definition of the value set. This means that as new versions of the source expression-based value set, and/or as new versions of the code systems used by the source expression-based value set are released, the cached value set compose content will need to be updated to incorporate newly defined codes that meet the value set intent. Before and periodically during production use, cached value sets SHOULD be updated.
+In addition, the cpg-distributablevalueset profile supports providing a point-in-time expansion of the value set members using the `ValueSet.expansion` element containing specific individual concept codes obtained as a result of the computed expansion of the value set at the time of publication. The expansion element can be used to support environments where the actual definition cannot be evaluated. As new versions of the value set, and/or as new versions of the code systems used by the value set are released, the expansion content will need to be updated to incorporate newly defined codes that meet the value set intent. Before and periodically during production use, value set expansions SHOULD be updated.
 
-Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use the cpg-valueset and related profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
+Value sets defined by content conforming to this IG SHOULD include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated.
+
+In addition, value sets defined by content conforming to this IG SHALL use the [cpg-publishablevalueset](StructureDefinition-cpg-publishablevalueset.html) profile.
+
+Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use the cpg-distributablevalueset and cpg-publishablevalueset profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.

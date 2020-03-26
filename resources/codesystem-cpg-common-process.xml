@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="cpg-common-process"/>
 		<meta>
-			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-codesystem"/>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
 		</meta>
 		<extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
 			<valueUri value="http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx"/>

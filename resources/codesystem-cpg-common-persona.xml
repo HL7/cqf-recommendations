@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="cpg-common-persona"/>
 		<meta>
-			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-codesystem"/>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
 		</meta>
 		<extension url="http://hl7.org/fhir/StructureDefinition/resource-approvalDate">
 			<valueDate value="2019-05-08"/>

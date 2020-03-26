@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="cpg-indicator"/>
 		<meta>
-			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-codesystem"/>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
 		</meta>
     <url value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-indicator"/>
     <name value="CPG_Indicator"/>

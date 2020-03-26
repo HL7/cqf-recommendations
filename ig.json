@@ -1,7 +1,7 @@
 {
   "canonicalBase": "http://hl7.org/fhir/uv/cpg",
   "version" : "4.0.1",
-  "fixed-business-version": "0.1.0",
+  "fixed-business-version": "0.2.0",
   "sct-edition" : "http://snomed.info/sct/731000124108",
   "source": "cpg.xml",
   "jurisdiction": "001",
@@ -44,7 +44,7 @@
   "spreadsheets": [
     "activitydefinition-cpg-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
-    "codesystem-cpg-profile-spreadsheet.xml",
+    "codesystem-cpg-publishable-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
@@ -60,9 +60,8 @@
 		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
-    "valueset-cpg-profile-spreadsheet.xml",
-		"valueset-cpg-expressionbased-profile-spreadsheet.xml",
-    "valueset-cpg-cached-profile-spreadsheet.xml"
+    "valueset-cpg-publishable-profile-spreadsheet.xml",
+		"valueset-cpg-distributable-profile-spreadsheet.xml"
   ],
   "resources": {
 		"ActivityDefinition/opioidcds-riskassessment-request": {
@@ -172,13 +171,9 @@
       "defns": "StructureDefinition-cpg-appointment-definitions.html",
       "base": "StructureDefinition-cpg-appointment.html"
     },
-    "StructureDefinition/cpg-cachedvalueset": {
-      "defns": "StructureDefinition-cpg-cachedvalueset-definitions.html",
-      "base": "StructureDefinition-cpg-cachedvalueset.html"
-    },
-    "StructureDefinition/cpg-codesystem": {
-      "defns": "StructureDefinition-cpg-codesystem-definitions.html",
-      "base": "StructureDefinition-cpg-codesystem.html"
+    "StructureDefinition/cpg-publishablecodesystem": {
+      "defns": "StructureDefinition-cpg-publishablecodesystem-definitions.html",
+      "base": "StructureDefinition-cpg-publishablecodesystem.html"
     },
     "StructureDefinition/cpg-communicationrequest": {
       "defns": "StructureDefinition-cpg-communicationrequest-definitions.html",
@@ -192,9 +187,9 @@
       "defns": "StructureDefinition-cpg-directionOfRecommendation-definitions.html",
       "base": "StructureDefinition-cpg-directionOfRecommendation.html"
     },
-    "StructureDefinition/cpg-expressionbasedvalueset": {
-      "defns": "StructureDefinition-cpg-expressionbasedvalueset-definitions.html",
-      "base": "StructureDefinition-cpg-expressionbasedvalueset.html"
+    "StructureDefinition/cpg-distributablevalueset": {
+      "defns": "StructureDefinition-cpg-distributablevalueset-definitions.html",
+      "base": "StructureDefinition-cpg-distributablevalueset.html"
     },
     "StructureDefinition/cpg-immunizationrecommendation": {
       "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",
@@ -248,9 +243,9 @@
       "defns": "StructureDefinition-cpg-servicerequest-definitions.html",
       "base": "StructureDefinition-cpg-servicerequest.html"
     },
-    "StructureDefinition/cpg-valueset": {
-      "defns": "StructureDefinition-cpg-valueset-definitions.html",
-      "base": "StructureDefinition-cpg-valueset.html"
+    "StructureDefinition/cpg-publishablevalueset": {
+      "defns": "StructureDefinition-cpg-publishablevalueset-definitions.html",
+      "base": "StructureDefinition-cpg-publishablevalueset.html"
     },
     "StructureDefinition/cpg-workflowdefinition": {
       "defns": "StructureDefinition-cpg-workflowdefinition-definitions.html",

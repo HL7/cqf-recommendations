@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="cpg-common-persona"/>
 		<meta>
-			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablevalueset"/>
+      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
 		</meta>
     <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-persona"/>
     <name value="CPG_Common_Persona"/>

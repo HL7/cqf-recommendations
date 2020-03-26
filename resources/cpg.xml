@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="uv-cpg-0.1.0"/>
-    <url value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/uv-cpg-0.1.0"/>
-    <version value="0.1.0"/>
+    <id value="uv-cpg-0.2.0"/>
+    <url value="http://hl7.org/fhir/uv/cpg/ImplementationGuide/uv-cpg-0.2.0"/>
+    <version value="0.2.0"/>
     <name value="CPG"/>
 		<title value="Clinical Practice Guidelines"/>
     <status value="draft"/>
@@ -129,7 +129,7 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-codesystem"/>
+					<reference value="StructureDefinition/cpg-publishablecodesystem"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -148,12 +148,6 @@
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-directionOfRecommendation"/>
-				</reference>
-				<groupingId value="main"/>
-			</resource>
-			<resource>
-				<reference>
-					<reference value="StructureDefinition/cpg-expressionbasedvalueset"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -235,9 +229,15 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishablevalueset"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-valueset"/>
+					<reference value="StructureDefinition/cpg-distributablevalueset"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
