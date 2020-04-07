@@ -1,12 +1,12 @@
 <PlanDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../../HL7/FHIR-Spec/4.0.0/fhir-all-xsd/fhir-all.xsd">
 	<id value="anc-contact-schedule"/>
-	<url value="http://fhir.org/guides/who/anc-cds/PlanDefinition/anc-contact-schedule"/>
+	<url value="http://fhir.org/guides/who/anc-cds/PlanDefinition/ANC_Contact_Schedule"/>
 	<identifier>
 		<use value="official"/>
-		<value value="PlanDefinition_ANC_Contact_Schedule"/>
+		<value value="ANC_Contact_Schedule"/>
 	</identifier>
 	<version value="0.1.0"/>
-	<name value="PlanDefinition_ANC_Contact_Schedule"/>
+	<name value="ANC_Contact_Schedule"/>
 	<title value="PlanDefinition - WHO ANC Guideline Contact Schedule"/>
 	<type>
 		<coding>

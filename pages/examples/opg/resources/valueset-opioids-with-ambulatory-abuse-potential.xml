@@ -2,7 +2,8 @@
     <id value="opioids-with-ambulatory-abuse-potential"/>
     <meta>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"/>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablevalueset"/>
+      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
     </meta>
 		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-author">
 			<valueContactDetail>
@@ -19,7 +20,7 @@
 		</extension>
 		-->
     <extension url="http://hl7.org/fhir/StructureDefinition/valueset-warning">
-      <valueMarkdown value="This value set is defined using an intensional definition that can only be processed by either a human (if rulesText is present) or a system that understands the expression-based definition (if valuesetExpression is present). The compose element contains the enumerated set of individual concepts obtained as the result of the computed expansion of the expression or rulesText as of the time of publication. As new versions of the value set are created, and/or as new versions of the code systems used by the value set are created, the value set compose content will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set contents SHOULD be updated."/>
+      <valueMarkdown value="This value set is described using a compositional definition that can only be processed by either a human (if rulesText is present) or a system that understands the expression-based definition (if valuesetExpression or compose are present). As new versions of the code systems used by the value set are released, if the value set contains an expansion element, the contents of that expansion will need to be updated to incorporate newly defined codes that meet the value set intent. Before, and periodically during production use, the value set expansion contents SHOULD be updated. If present, the value set expansion specifies the timestamp of when the expansion was produced, SHOULD contain the parameters used for the expansion, and SHALL contain the codes that are obtained by evaluating the compose, rules-text, or expression, whichever is present."/>
     </extension>
     <url value="http://fhir.org/guides/cdc/opioid-cds/ValueSet/opioids-with-ambulatory-abuse-potential"/>
     <version value="0.1.0"/>
@@ -4395,4 +4396,3 @@
         </include>
     </compose>
 </ValueSet>
-

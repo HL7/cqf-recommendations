@@ -159,7 +159,19 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-library"/>
+					<reference value="StructureDefinition/cpg-distributablelibrary"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishablelibrary"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-executablelibrary"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -285,13 +297,13 @@
 				<reference>
 					<reference value="Library/anc-common"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/anc-recommendation-a2"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablelibrary"/>
 				<groupingId value="anc-example"/>
 			</resource>
 		  <resource>
@@ -406,7 +418,7 @@
 				<reference>
 					<reference value="Library/ckd-risk-recommendations"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablelibrary"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
@@ -472,7 +484,7 @@
 				<reference>
 					<reference value="Library/library-hep-b-adult-forecasting"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"/>
 				<groupingId value="hep-b-example"/>
 			</resource>
 			<resource>
@@ -495,21 +507,21 @@
 				<reference>
 					<reference value="Library/omtklogic"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/opioidcds-r4-common"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/opioidcds-r4-recommendation-05"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-library"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>

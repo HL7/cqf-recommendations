@@ -48,7 +48,9 @@
 		"communicationrequest-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
-    "library-cpg-profile-spreadsheet.xml",
+    "library-cpg-distributable-profile-spreadsheet.xml",
+    "library-cpg-publishable-profile-spreadsheet.xml",
+    "library-cpg-executable-profile-spreadsheet.xml",
 		"medicationrequest-cpg-profile-spreadsheet.xml",
 		"nutritionorder-cpg-profile-spreadsheet.xml",
 		"patient-cpg-profile-spreadsheet.xml",
@@ -195,9 +197,17 @@
       "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",
       "base": "StructureDefinition-cpg-immunizationrecommendation.html"
     },
-    "StructureDefinition/cpg-library": {
-      "defns": "StructureDefinition-cpg-library-definitions.html",
-      "base": "StructureDefinition-cpg-library.html"
+    "StructureDefinition/cpg-publishablelibrary": {
+      "defns": "StructureDefinition-cpg-publishablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-publishablelibrary.html"
+    },
+    "StructureDefinition/cpg-distributablelibrary": {
+      "defns": "StructureDefinition-cpg-distributablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-distributablelibrary.html"
+    },
+    "StructureDefinition/cpg-executablelibrary": {
+      "defns": "StructureDefinition-cpg-executablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-executablelibrary.html"
     },
     "StructureDefinition/cpg-medicationrequest": {
       "defns": "StructureDefinition-cpg-medicationrequest-definitions.html",
