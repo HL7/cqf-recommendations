@@ -63,7 +63,8 @@
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
     "valueset-cpg-publishable-profile-spreadsheet.xml",
-		"valueset-cpg-distributable-profile-spreadsheet.xml"
+		"valueset-cpg-distributable-profile-spreadsheet.xml",
+    "valueset-cpg-executable-profile-spreadsheet.xml"
   ],
   "resources": {
 		"ActivityDefinition/opioidcds-riskassessment-request": {
@@ -192,6 +193,10 @@
     "StructureDefinition/cpg-distributablevalueset": {
       "defns": "StructureDefinition-cpg-distributablevalueset-definitions.html",
       "base": "StructureDefinition-cpg-distributablevalueset.html"
+    },
+    "StructureDefinition/cpg-executablevalueset": {
+      "defns": "StructureDefinition-cpg-executablevalueset-definitions.html",
+      "base": "StructureDefinition-cpg-executablevalueset.html"
     },
     "StructureDefinition/cpg-immunizationrecommendation": {
       "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",

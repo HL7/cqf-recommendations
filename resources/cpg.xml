@@ -253,6 +253,12 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-executablevalueset"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-workflowdefinition"/>

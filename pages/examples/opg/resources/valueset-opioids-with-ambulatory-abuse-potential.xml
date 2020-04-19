@@ -4,6 +4,7 @@
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablevalueset"/>
       <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
+      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"/>
     </meta>
 		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-author">
 			<valueContactDetail>
