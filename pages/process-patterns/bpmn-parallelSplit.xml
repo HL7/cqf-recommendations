@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xmi="http://schema.omg.org/spec/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://aist.fh-hagenberg.at/msbpmn">
+    <bpmn:process isExecutable="true" id="Process_7883a5c7-7ab9-40fc-ab09-b55ac064d172" name="Process_7883a5c7-7ab9-40fc-ab09-b55ac064d172">
+        <bpmn:endEvent id="end8" name="end">
+            <bpmn:incoming>sf_ad_4_end8</bpmn:incoming>
+        </bpmn:endEvent>
+        <bpmn:parallelGateway id="join_of_par_group" name="join">
+            <bpmn:incoming>sf_ad_2_join_of_par_group</bpmn:incoming>
+            <bpmn:incoming>sf_ad_3_join_of_par_group</bpmn:incoming>
+            <bpmn:outgoing>sf_join_of_par_group_ad_4</bpmn:outgoing>
+        </bpmn:parallelGateway>
+        <bpmn:parallelGateway id="par_group" name="par_group">
+            <bpmn:incoming>sf_ad_1_par_group</bpmn:incoming>
+            <bpmn:outgoing>sf_par_group_ad_2</bpmn:outgoing>
+            <bpmn:outgoing>sf_par_group_ad_3</bpmn:outgoing>
+        </bpmn:parallelGateway>
+        <bpmn:sequenceFlow id="sf_ad_4_end8" targetRef="end8" sourceRef="ad_4"/>
+        <bpmn:sequenceFlow id="sf_start7_ad_1" targetRef="ad_1" sourceRef="start7"/>
+        <bpmn:sequenceFlow id="sf_ad_1_par_group" targetRef="par_group" sourceRef="ad_1"/>
+        <bpmn:sequenceFlow id="sf_par_group_ad_2" targetRef="ad_2" sourceRef="par_group"/>
+        <bpmn:sequenceFlow id="sf_ad_2_join_of_par_group" targetRef="join_of_par_group" sourceRef="ad_2"/>
+        <bpmn:sequenceFlow id="sf_ad_3_join_of_par_group" targetRef="join_of_par_group" sourceRef="ad_3"/>
+        <bpmn:sequenceFlow id="sf_join_of_par_group_ad_4" targetRef="ad_4" sourceRef="join_of_par_group"/>
+        <bpmn:sequenceFlow id="sf_par_group_ad_3" targetRef="ad_3" sourceRef="par_group"/>
+        <bpmn:startEvent id="start7" name="start">
+            <bpmn:outgoing>sf_start7_ad_1</bpmn:outgoing>
+        </bpmn:startEvent>
+        <bpmn:userTask id="ad_1" name="Task 1">
+            <bpmn:incoming>sf_start7_ad_1</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_1_par_group</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_4" name="Task 4">
+            <bpmn:incoming>sf_join_of_par_group_ad_4</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_4_end8</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_2" name="Task 2">
+            <bpmn:incoming>sf_par_group_ad_2</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_2_join_of_par_group</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_3" name="Task 3">
+            <bpmn:incoming>sf_par_group_ad_3</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_3_join_of_par_group</bpmn:outgoing>
+        </bpmn:userTask>
+    </bpmn:process>
+</bpmn:definitions>

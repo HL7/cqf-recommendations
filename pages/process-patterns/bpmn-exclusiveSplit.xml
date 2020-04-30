@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xmi="http://schema.omg.org/spec/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://aist.fh-hagenberg.at/msbpmn">
+    <bpmn:process isExecutable="true" id="Process_aaa0c995-5dfd-43bc-bb05-3c08bda5f900" name="Process_aaa0c995-5dfd-43bc-bb05-3c08bda5f900">
+        <bpmn:endEvent id="end12" name="end">
+            <bpmn:incoming>sf_ad_4_end12</bpmn:incoming>
+        </bpmn:endEvent>
+        <bpmn:exclusiveGateway id="xor_group" name="Xor_group">
+            <bpmn:incoming>sf_ad_1_xor_group</bpmn:incoming>
+            <bpmn:outgoing>sf_xor_group_ad_2</bpmn:outgoing>
+            <bpmn:outgoing>sf_xor_group_ad_3</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:exclusiveGateway id="join_of_xor_group" name="join">
+            <bpmn:incoming>sf_ad_2_join_of_xor_group</bpmn:incoming>
+            <bpmn:incoming>sf_ad_3_join_of_xor_group</bpmn:incoming>
+            <bpmn:outgoing>sf_join_of_xor_group_ad_4</bpmn:outgoing>
+        </bpmn:exclusiveGateway>
+        <bpmn:sequenceFlow id="sf_xor_group_ad_2" targetRef="ad_2" sourceRef="xor_group">
+            <bpmn:conditionExpression id="sf_xor_group_ad_2_condition"/>
+        </bpmn:sequenceFlow>
+        <bpmn:sequenceFlow id="sf_ad_2_join_of_xor_group" targetRef="join_of_xor_group" sourceRef="ad_2"/>
+        <bpmn:sequenceFlow id="sf_ad_3_join_of_xor_group" targetRef="join_of_xor_group" sourceRef="ad_3"/>
+        <bpmn:sequenceFlow id="sf_join_of_xor_group_ad_4" targetRef="ad_4" sourceRef="join_of_xor_group"/>
+        <bpmn:sequenceFlow id="sf_ad_4_end12" targetRef="end12" sourceRef="ad_4"/>
+        <bpmn:sequenceFlow id="sf_xor_group_ad_3" targetRef="ad_3" sourceRef="xor_group">
+            <bpmn:conditionExpression id="sf_xor_group_ad_3_condition"/>
+        </bpmn:sequenceFlow>
+        <bpmn:sequenceFlow id="sf_ad_1_xor_group" targetRef="xor_group" sourceRef="ad_1"/>
+        <bpmn:sequenceFlow id="sf_start11_ad_1" targetRef="ad_1" sourceRef="start11"/>
+        <bpmn:startEvent id="start11" name="start">
+            <bpmn:outgoing>sf_start11_ad_1</bpmn:outgoing>
+        </bpmn:startEvent>
+        <bpmn:userTask id="ad_4" name="Task 4">
+            <bpmn:incoming>sf_join_of_xor_group_ad_4</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_4_end12</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_2" name="Task 2">
+            <bpmn:incoming>sf_xor_group_ad_2</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_2_join_of_xor_group</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_3" name="Task 3">
+            <bpmn:incoming>sf_xor_group_ad_3</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_3_join_of_xor_group</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_1" name="Task 1">
+            <bpmn:incoming>sf_start11_ad_1</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_1_xor_group</bpmn:outgoing>
+        </bpmn:userTask>
+    </bpmn:process>
+</bpmn:definitions>

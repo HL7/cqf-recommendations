@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanDefinition xmlns="http://hl7.org/fhir">
+    <id value="protocol-example"/>
+
+    <text>
+        <status value="generated"/>
+    </text>
+
+    <!--  The status of the protocol.draft | active | retired  -->
+    <status value="draft"/>
+    <action>
+        <id value="ad_1"/>
+        <title value="Task 1"/>
+        <!-- related action definition -->
+        <relatedAction>
+            <actionId value="xor_group"/>
+            <relationship value="before-start"/>
+        </relatedAction>
+    </action>
+
+    <action>
+        <id value="xor_group"/>
+        <title value="Xor_group"/>
+        <groupingBehavior value="logical-group"/>
+        <selectionBehavior value="exactly-one"/>
+        <action>
+            <id value="ad_2"/>
+            <title value="Task 2"/>
+            <condition>
+                <kind value="applicability"/>
+                <expression>
+                    <description value="Some short description of the expression"/>
+                    <language value="EL"/>
+                    <expression value="$name==2" />
+                </expression>
+            </condition>
+            <relatedAction>
+                <actionId value="xor_group"/>
+                <relationship value="before-end"/>
+            </relatedAction>
+        </action>
+        <action>
+            <id value="ad_3"/>
+            <title value="Task 3"/>
+            <condition>
+                <kind value="applicability"/>
+                <expression>
+                    <description value="Some short description of the expression"/>
+                    <language value="EL"/>
+                    <expression value="$name==1" />
+                </expression>
+            </condition>
+            <relatedAction>
+                <actionId value="xor_group"/>
+                <relationship value="before-end"/>
+            </relatedAction>
+        </action>
+        <relatedAction>
+            <actionId value="ad_4"/>
+            <relationship value="before-start"/>
+        </relatedAction>
+    </action>
+
+    <action>
+        <id value="ad_4"/>
+        <title value="Task 4"/>
+    </action>
+
+</PlanDefinition>
