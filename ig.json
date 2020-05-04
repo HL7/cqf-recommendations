@@ -246,6 +246,10 @@
       "defns": "StructureDefinition-cpg-practitionerrole-definitions.html",
       "base": "StructureDefinition-cpg-practitionerrole.html"
     },
+    "StructureDefinition/cpg-pathwaydefinition": {
+      "defns": "StructureDefinition-cpg-pathwaydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-pathwaydefinition.html"
+    },
     "StructureDefinition/cpg-protocoldefinition": {
       "defns": "StructureDefinition-cpg-protocoldefinition-definitions.html",
       "base": "StructureDefinition-cpg-protocoldefinition.html"
