@@ -37,37 +37,45 @@ In particular, this implementation guide defines 3 layers of process-modeling st
 Of course, this correspondence is a rough equivalence, there are aspects of process- and decision-modeling throughout
 each of the layers, but this provides a starting point for approaching integrated use of these standards.
 
-## Transformation
+## BPMN and FHIR
 
 Focusing on process semantics, this section provides mappings between BPMN and PlanDefinition, informed by the
 [workflow patterns](http://workflowpatterns.com/) work done at the Eindhoven University of Technology and Queensland
 University of Technology, and applied to FHIR by a joint project between the University of Applied Sciences Upper Austria ("FH Hagenberg") and CGM Clincal Austria for a prototype for medical boards (project "KIMBo").
 
 The definition of a Process is specified using either BPMN or a FHIR PlanDefinition, then the Atlas Transformation Language (ATL)
-can be used to transform between the two, using the [Control Flow and Data Flow patterns](http://workflowpatterns.com/evaluations/standard/) as a metamodel. The following sections consider specific patterns and the BPMN and PlanDefinition representations of each.
+can be used to transform between the two, using the [Control Flow and Data Flow patterns](http://workflowpatterns.com/evaluations/standard/) as a metamodel.
+
+## Workflow Pattern Transformations
+
+The following sections consider specific patterns and the BPMN and PlanDefinition representations of each.
+
+<div>
+  <img style="width:100%" src="assets/images/transformation-process.png" alt="Business process is manually created as plan defintion. The patterns explain how an automated transformation towards BPMN and a graphical representation can be solved."/>
+</div>
+
 
 ### Sequence Flow
 
 <div>
-  <img src="assets/images/process-pattern-sequence-flow.png" alt="Sequence Flow"/>
+    <img src="assets/images/process-pattern-sequenceFlow.png" alt="Sequence Flow"/>
 </div>
 
 **Definition**
 A sequence flow is a directed arc from one source node to exactly one target node.
 
 | BPMN | Start-Event, End-Event, Sequence |
-| PlanDefinition | PlanDefinition.relatedAction Before-Start |
+| PlanDefinition | PlanDefinition.relatedAction, Before-Start |
 
 **BPMN Representation**
-{% highlight xml %}{% include_relative process-patterns/bpmn-sequence-flow.xml %}{% endhighlight %}
+{% highlight xml %}{% include_relative process-patterns/bpmn-sequenceFlow.xml %}{% endhighlight %}
 
 **PlanDefinition Representation**
-{% highlight xml %}{% include_relative process-patterns/plandefinition-sequence-flow.xml %}{% endhighlight %}
-
+{% highlight xml %}{% include_relative process-patterns/plandefinition-sequenceFlow.xml %}{% endhighlight %}
 ### Parallel Split
 
 <div>
-  <img src="assets/images/process-pattern-parallel-split.png" alt="Parallel Split"/>
+    <img src="assets/images/process-pattern-parallelSplit.png" alt="Parallel Split"/>
 </div>
 
 **Definition**
@@ -80,51 +88,47 @@ A parallel split is separating the sequence flow in parallel branches that are e
 A merge element is created implicitly
 
 **BPMN Representation**
-{% highlight xml %}{% include_relative process-patterns/bpmn-parallel-split.xml %}{% endhighlight %}
+{% highlight xml %}{% include_relative process-patterns/bpmn-parallelSplit.xml %}{% endhighlight %}
 
 **PlanDefinition Representation**
-{% highlight xml %}{% include_relative process-patterns/plandefinition-parallel-split.xml %}{% endhighlight %}
-
-### Exclusive Choice
+{% highlight xml %}{% include_relative process-patterns/plandefinition-parallelSplit.xml %}{% endhighlight %}
+### Exclusive Split
 
 <div>
-  <img src="assets/images/process-pattern-exclusive-choice.png" alt="Exclusive Choice"/>
+    <img src="assets/images/process-pattern-exclusiveSplit.png" alt="Exclusive Split"/>
 </div>
 
 **Definition**
-An exclusive choice is an element where the sequence flow
-is split into two or more branches, whereas only one of the branches
-can be activated with respect to a specified condition on the exclusive choice element.
-
-| BPMN | EclusiveGateway, ExtensionElement, TaskListener |
-| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior |
+An exclusive choice is an element where the sequence flow is split into two or more branches, whereas only one of the branches can be activated with respect to a specified condition on the exclusive choice element.
 
 **Remarks**
 A synchronization element is created implicitly
 
+| BPMN | EclusiveGateway, ExtensionElement, TaskListener |
+| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior |
+
 **BPMN Representation**
-{% highlight xml %}{% include_relative process-patterns/bpmn-exclusive-choice.xml %}{% endhighlight %}
+{% highlight xml %}{% include_relative process-patterns/bpmn-exclusiveSplit.xml %}{% endhighlight %}
 
 **PlanDefinition Representation**
-{% highlight xml %}{% include_relative process-patterns/plandefinition-exclusive-choice.xml %}{% endhighlight %}
-
-### Timed Start Event
+{% highlight xml %}{% include_relative process-patterns/plandefinition-exclusiveSplit.xml %}{% endhighlight %}
+### Timed Start
 
 <div>
-  <img src="assets/images/process-pattern-timed-start-event.png" alt="Timed Start Event"/>
+    <img src="assets/images/process-pattern-timedStart.png" alt="Timed Start"/>
 </div>
 
 **Definition**
 A TimedStartEvent is a special StartEvent that has a TimerEvent associated with it, which defines when the process has to be executed.
 
 | BPMN | Start-Event, End-Event, Sequence |
-| PlanDefinition | PlanDefinition.relatedAction Before-Start
+| PlanDefinition | PlanDefinition.relatedAction, Before-Start |
 
 **Remarks**
 As PlanDefinition does not offer a specific action for either start or end, these BPMN-Elements are to be created implicitly. Whilst the start Event is based on the Elements in the first action in the list of actions in the PlanDefinition
 
 **BPMN Representation**
-{% highlight xml %}{% include_relative process-patterns/bpmn-timed-start-event.xml %}{% endhighlight %}
+{% highlight xml %}{% include_relative process-patterns/bpmn-timedStart.xml %}{% endhighlight %}
 
 **PlanDefinition Representation**
-{% highlight xml %}{% include_relative process-patterns/plandefinition-timed-start-event.xml %}{% endhighlight %}
+{% highlight xml %}{% include_relative process-patterns/plandefinition-timedStart.xml %}{% endhighlight %}

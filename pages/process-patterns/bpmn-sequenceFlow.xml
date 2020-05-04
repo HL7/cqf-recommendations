@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xmi="http://schema.omg.org/spec/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://aist.fh-hagenberg.at/msbpmn">
+    <bpmn:process isExecutable="true" id="Process_d1fe3661-9a23-44ad-b6c3-0abe614324ee" name="Process_d1fe3661-9a23-44ad-b6c3-0abe614324ee">
+        <bpmn:endEvent id="end4" name="end">
+            <bpmn:incoming>sf_ad_3_end4</bpmn:incoming>
+        </bpmn:endEvent>
+        <bpmn:sequenceFlow id="sf_ad_1_ad_2" targetRef="ad_2" sourceRef="ad_1"/>
+        <bpmn:sequenceFlow id="sf_ad_2_ad_3" targetRef="ad_3" sourceRef="ad_2"/>
+        <bpmn:sequenceFlow id="sf_ad_3_end4" targetRef="end4" sourceRef="ad_3"/>
+        <bpmn:sequenceFlow id="sf_start3_ad_1" targetRef="ad_1" sourceRef="start3"/>
+        <bpmn:startEvent id="start3" name="start">
+            <bpmn:outgoing>sf_start3_ad_1</bpmn:outgoing>
+        </bpmn:startEvent>
+        <bpmn:userTask id="ad_2" name="Task 2">
+            <bpmn:incoming>sf_ad_1_ad_2</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_2_ad_3</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_3" name="Task 3">
+            <bpmn:incoming>sf_ad_2_ad_3</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_3_end4</bpmn:outgoing>
+        </bpmn:userTask>
+        <bpmn:userTask id="ad_1" name="Task 1">
+            <bpmn:incoming>sf_start3_ad_1</bpmn:incoming>
+            <bpmn:outgoing>sf_ad_1_ad_2</bpmn:outgoing>
+        </bpmn:userTask>
+    </bpmn:process>
+</bpmn:definitions>
