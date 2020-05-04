@@ -258,6 +258,10 @@
       "defns": "StructureDefinition-cpg-servicerequest-definitions.html",
       "base": "StructureDefinition-cpg-servicerequest.html"
     },
+    "StructureDefinition/cpg-strategydefinition": {
+      "defns": "StructureDefinition-cpg-strategydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-strategydefinition.html"
+    },
     "StructureDefinition/cpg-publishablevalueset": {
       "defns": "StructureDefinition-cpg-publishablevalueset-definitions.html",
       "base": "StructureDefinition-cpg-publishablevalueset.html"
