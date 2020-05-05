@@ -121,6 +121,12 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishableactivity"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-appointment"/>
@@ -211,6 +217,12 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishableplandefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-practitioner"/>
@@ -247,6 +259,12 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishableguideline"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-recommendationdefinition"/>
@@ -268,6 +286,12 @@
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-casefeaturedefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishablecasefeature"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>

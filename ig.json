@@ -43,6 +43,7 @@
   ],
   "spreadsheets": [
     "activitydefinition-cpg-profile-spreadsheet.xml",
+    "activitydefinition-cpg-publishable-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
@@ -50,6 +51,7 @@
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
     "implementationguide-cpg-shareable-profile-spreadsheet.xml",
     "implementationguide-cpg-guideline-profile-spreadsheet.xml",
+    "implementationguide-cpg-publishableguideline-profile-spreadsheet.xml",
     "library-cpg-distributable-profile-spreadsheet.xml",
     "library-cpg-publishable-profile-spreadsheet.xml",
     "library-cpg-executable-profile-spreadsheet.xml",
@@ -62,12 +64,14 @@
     "plandefinition-cpg-pathway-profile-spreadsheet.xml",
     "plandefinition-cpg-profile-spreadsheet.xml",
 		"plandefinition-cpg-protocol-profile-spreadsheet.xml",
+    "plandefinition-cpg-publishable-profile-spreadsheet.xml",
 		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
     "plandefinition-cpg-strategy-profile-spreadsheet.xml",
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
     "structuredefinition-cpg-shareable-profile-spreadsheet.xml",
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
+    "structuredefinition-cpg-publishablecasefeature-profile-spreadsheet.xml",
     "valueset-cpg-publishable-profile-spreadsheet.xml",
 		"valueset-cpg-distributable-profile-spreadsheet.xml",
     "valueset-cpg-executable-profile-spreadsheet.xml"
@@ -176,6 +180,10 @@
       "defns": "StructureDefinition-cpg-activitydefinition-definitions.html",
       "base": "StructureDefinition-cpg-activitydefinition.html"
     },
+    "StructureDefinition/cpg-publishableactivity": {
+      "defns": "StructureDefinition-cpg-publishableactivity-definitions.html",
+      "base": "StructureDefinition-cpg-publishableactivity.html"
+    },
     "StructureDefinition/cpg-appointment": {
       "defns": "StructureDefinition-cpg-appointment-definitions.html",
       "base": "StructureDefinition-cpg-appointment.html"
@@ -244,6 +252,10 @@
       "defns": "StructureDefinition-cpg-plandefinition-definitions.html",
       "base": "StructureDefinition-cpg-plandefinition.html"
     },
+    "StructureDefinition/cpg-publishableplandefinition": {
+      "defns": "StructureDefinition-cpg-publishableplandefinition-definitions.html",
+      "base": "StructureDefinition-cpg-publishableplandefinition.html"
+    },
     "StructureDefinition/cpg-practitioner": {
       "defns": "StructureDefinition-cpg-practitioner-definitions.html",
       "base": "StructureDefinition-cpg-practitioner.html"
@@ -280,9 +292,17 @@
       "defns": "StructureDefinition-cpg-casefeaturedefinition-definitions.html",
       "base": "StructureDefinition-cpg-casefeaturedefinition.html"
     },
+    "StructureDefinition/cpg-publishablecasefeature": {
+      "defns": "StructureDefinition-cpg-publishablecasefeature-definitions.html",
+      "base": "StructureDefinition-cpg-publishablecasefeature.html"
+    },
     "StructureDefinition/cpg-guideline": {
       "defns": "StructureDefinition-cpg-guideline-definitions.html",
       "base": "StructureDefinition-cpg-guideline.html"
+    },
+    "StructureDefinition/cpg-publishableguideline": {
+      "defns": "StructureDefinition-cpg-publishableguideline-definitions.html",
+      "base": "StructureDefinition-cpg-publishableguideline.html"
     },
     "StructureDefinition/cpg-shareableig": {
       "defns": "StructureDefinition-cpg-shareableig-definitions.html",
