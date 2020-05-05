@@ -48,6 +48,8 @@
 		"communicationrequest-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
+    "implementationguide-cpg-shareable-profile-spreadsheet.xml",
+    "implementationguide-cpg-guideline-profile-spreadsheet.xml",
     "library-cpg-distributable-profile-spreadsheet.xml",
     "library-cpg-publishable-profile-spreadsheet.xml",
     "library-cpg-executable-profile-spreadsheet.xml",
@@ -64,6 +66,8 @@
     "plandefinition-cpg-strategy-profile-spreadsheet.xml",
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
+    "structuredefinition-cpg-shareable-profile-spreadsheet.xml",
+    "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
     "valueset-cpg-publishable-profile-spreadsheet.xml",
 		"valueset-cpg-distributable-profile-spreadsheet.xml",
     "valueset-cpg-executable-profile-spreadsheet.xml"
@@ -267,6 +271,22 @@
     "StructureDefinition/cpg-strategydefinition": {
       "defns": "StructureDefinition-cpg-strategydefinition-definitions.html",
       "base": "StructureDefinition-cpg-strategydefinition.html"
+    },
+    "StructureDefinition/cpg-shareablestructuredef": {
+      "defns": "StructureDefinition-cpg-shareablestructuredef-definitions.html",
+      "base": "StructureDefinition-cpg-shareablestructuredef.html"
+    },
+    "StructureDefinition/cpg-casefeaturedefinition": {
+      "defns": "StructureDefinition-cpg-casefeaturedefinition-definitions.html",
+      "base": "StructureDefinition-cpg-casefeaturedefinition.html"
+    },
+    "StructureDefinition/cpg-guideline": {
+      "defns": "StructureDefinition-cpg-guideline-definitions.html",
+      "base": "StructureDefinition-cpg-guideline.html"
+    },
+    "StructureDefinition/cpg-shareableig": {
+      "defns": "StructureDefinition-cpg-shareableig-definitions.html",
+      "base": "StructureDefinition-cpg-shareableig.html"
     },
     "StructureDefinition/cpg-publishablevalueset": {
       "defns": "StructureDefinition-cpg-publishablevalueset-definitions.html",

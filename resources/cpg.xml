@@ -235,6 +235,18 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-shareableig"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-guideline"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-recommendationdefinition"/>
@@ -244,6 +256,18 @@
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-servicerequest"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-shareablestructuredef"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-casefeaturedefinition"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
