@@ -14,38 +14,53 @@
 <strong>Levels of Conformance:</strong>
 </p>
 <p>
-Conformance Testing
+One major effort on compliance is the WHO and Integrated Health Enterprise (IHE)
+initiative on Computable Care Guidelines (CCG) profile of the HL7 CPG (<a
+href="https://wiki.ihe.net/index.php/Computable_Care_Guidelines">ref1</a>, <a
+href="http://www.ihe.ca/download/ambassador_headache_final_100_pager.pdf">ref2</a>,
+<a
+href="http://www.ihe.ca/download/ambassador_headache_final_100_pager.pdf">ref3</a>).
+ The IHE/WHO CCG includes a minimum data set to be collected during an encounter
+(i.e., required data elements as CPGCaseFeatures), logic to be triggered based
+on data collected (CPGRecommendations), and reportable reportable health system
+management indicators (CPGMetrics).  It can track and monitor care delivery
+activities (e.g., what happened) as well as provide the ability to improve
+guideline adherence.
 </p>
 <p>
-Conformance with Features of the CPG
+<strong>Conformance Testing</strong>
+</p>
+<p>
+Levels of conformance will be based on alternative conformance profiles.
+Conformance with Features of the CPG are still under development.
 </p>
 <p>
 <strong>Levels of Enablement:</strong>
 </p>
 <p>
-There are clearly trade-offs between effort, time-to-develop, capabilities
-enabled, and the value that can be derived from any given CPG development
-effort.
+Trade-offs between effort, time to develop, and capabilities enabled (and value
+that can be derived) when developing a CPG.  From very basic context for
+narrative snippets searchable in a library (or Infobutton from EHR) to full
+clinical workflow enablement, cognitive support, and pathway tracking (likely
+via SMART-on-FHIR App or deep EHR integration) as well as feedback loops with
+real-world evidence of actual guideline usage, measures, etc. and as substrate
+for evidence ecosystem and/or feedforward loop for evidence updates.
+Fortunately, the CPG-IG includes levels of enablement that correlate to work
+effort, time to delivery, as well as capabilities that it can support as well as
+the means to iteratively, and successively develop CPG versions that provide
+incremental value by ascending these levels of enablement.
 </p>
 <p>
-From very basic context for narrative snippets searchable in a library (or
-Infobutton from EHR) to full clinical workflow enablement , cognitive support,
-and pathway tracking (likely via SMART-on-FHIR App or deep EHR integration) as
-well as feedback loops with real-world evidence of actual guideline usage,
-measures, etc. as substrate for evidence ecosystem and/or eedforward loop for
-evidence updates, point-of-need Pt-Like-This queries, and JiT ML inferrencing.
-</p>
-<p>
-Level of Enablement (as well as effort) related to (all described below and/or
-elsewhere in Approach):
+Level of Enablement as well as effort related to (all described elsewhere in
+Approach):
 </p>
 <ul>
-<li>CPG Features/Capabilities Implemented
-<li>Intended Delivery/ Dissemination Mechanisms
-<li>KR Levels formalized across CPG Features (capabilities described in CPG
-K-Architecture)
+<li>CPG features and capabilities implemented
+<li>Intended Delivery and Dissemination Mechanisms
+<li>Knowledge Representation Levels formalized across CPG Features (capabilities
+described in CPG Knowledge Architecture)
 <li>Tiers of Functionality
-<li>Methods of Implemtation
+<li>Methods of Implementation
 <li>Mechanisms of Integration
 </li>
 </ul>
@@ -53,25 +68,35 @@ K-Architecture)
 Roughly:
 </p>
 <ul>
-<li>Contextualized Narative (searchable)
-<li>Contextualized Narative (deliverred in context)
+<li>Contextualized Narrative (searchable)
+<li>Contextualized Narrative (delivered in context)
 <li>Contextualized Narrative with Patient-level Information (basic summary view)
-<li>Actionable Intervention (+/- narrative and summary view; CDSHooks)
+<li>Actionable Intervention (with and without narrative and summary view;
+CDSHooks)
 <li>Actionable Summary View (maybe CDSCards, AdaptiveForms, iFrame depending on
 implementation/ integration)
 <li>EHR Import of CPG (features determined and subsetted by EHR)
 <li>Deep EHR Integrations with CDS Service
 <li>Then add incremental effort for derived capabilities and how they interact
 or are implemented (Metric/Measure, eCaseReport,
-eCasePlanSummaryView/eCasePlanProgressingNote).  Some build on others.
+eCasePlanSummaryView/eCasePlanProgressingNote).  Some capabilities and
+enablements build on others.
 </li>
 </ul>
 <p>
-<summary explanation>
+<img src="images/CPG-03-CPGEnablements.png" width="" alt="alt_text"
+title="image_tooltip">
 </p>
 <p>
-<img src="images/CPG-Approach0.png" width="" alt="alt_text"
-title="image_tooltip">
+FIG XX. A given CPG may provide a distinct set of enablements, at singular or
+multiple Levels of Enablement, or may go through successive versions in its
+development lifecycle with increasing Levels of Enablement, particularly as the
+impact of its recommendations and interventions prove to be correlated (or even
+causal) to key outcomes and thus justify the effort.  Lower Levels of Enablement
+may largely serve to collect guideline-related patient information to inform
+guideline development in certain situations such as where evidence is scarce,
+but needed very urgently such as an emergency response to a pandemic with a
+novel contagion.
 </p>
 
 <!-- ==============END CONTENT END CONTENT=================== -->
