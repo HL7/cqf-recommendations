@@ -1,0 +1,759 @@
+
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h1>Clinical Practice Guidelines - Approach</h1>
+<p>
+<em>***NOTE that the main page needs to be largely rewritten to give an overview
+of the overall approach, yet sufficiently pull the key concepts together and
+give a basic introduction prior to diving in to each section to understand the
+overall approach.  Please refer to the separate documents in the same folder
+that was shared for details of the individual sections.</em>
+</p>
+<h1>EXECUTIVE SUMMARY</h1>
+<p>
+Translating guideline recommendations and other types of guidance into practice
+has historically been a site by site exercise that has been disconnected from
+guideline or guidance development, creating unnecessary redundancies and
+introducing potential errors in translation that can lead to inconsistencies in
+how the guideline or guidance is executed. This clinical practice guidelines
+implementation guide (CPG-IG) consists of standards and a standardized, scalable
+approach to help make the effort of translating and implementing clinical
+practice guidelines and other types of guidance more efficient and effective.
+Two key aspects are:
+</p>
+<ol>
+<li>An integrated guideline/guidance development and implementation process
+(referred to as “the integrated process”)
+<li>Common standards that can work across electronic health record (EHR)
+platforms
+</li>
+</ol>
+<p>
+The integrated process brings downstream implementation considerations into the
+upstream guideline/guidance development process by incorporating parallel and
+iterative development of tools (e.g., clinical decision support (CDS) or
+electronic clinical quality measures (eCQMs)) as the guideline/guidance is being
+developed. This includes gathering input from implementers (e.g., from the
+clinical and informatics perspectives at clinical sites) on feasibility and
+validity as well. In particular, the translation into tools applies common
+health IT standards like Fast Healthcare Interoperability Resources (FHIR) and
+Clinical Quality Language (CQL).
+</p>
+<p>
+How to use these standards to develop shareable, platform-independent tools
+based on guidelines or guidance for a variety of diseases, conditions, or
+preventive care is the primary focus of this CPG-IG. Secondarily, this CPG-IG
+shows how using FHIR can help with other data-focused activities, such as public
+health reporting (i.e., using electronic case reports) or quality reporting
+(i.e., using eCQMs), that provide a feedback loop that feeds the evidence. The
+evidence can be represented using FHIR (i.e., EBM-on-FHIR) and could be applied
+in summarizing evidence and updating guidelines/guidance.
+</p>
+<h1>Overview of Approach</h1>
+<ul>
+<li>Section 01: Introduction and Rationale
+<li>Section 02: Objective(s)
+<li>Section 03: Levels of Conformance and Enablement
+<li>Section 04: Guideline Development
+<li>Section 05: Knowledge Engineering
+<li>Section 06: Knowledge Representation
+<li>Section 07: Tiers of Functionality
+<li>Section 08: Methods of Implementing Knowledge
+<li>Section 09: Mechanisms of Integration
+<li>Section 010: Role and Benefits of Standards
+<li>Section 011: CPG Knowledge Architecture (Conceptual)
+</li>
+</ul>
+<li>Introduction and Rationale
+<p>
+The purpose of the CPG is: to enable computable guideline specification to occur
+concurrently with guideline development; to faithfully express guideline intent
+(including rationale and linkage to evidence-base); to enable efficient and
+effective use and reuse of the guideline specification in downstream
+capabilities; accelerate the development of computable guideline specifications
+and interventions through an integrated, cross functional, rapid-cycle (Agile)
+development process (inclusive of local implementation processes); to more
+closely tie guideline intent, interventions, and measurements; and to provide
+closed-loop (feedback and feedforward loops) across the knowledge, practice, and
+discovery (or evidence) ecosystems.
+</p>
+<p>
+Reference Objectives:
+</p>
+<p>
+<strong>Notes to Target Audiences:</strong>
+</p>
+<p>
+The intent of the CPG Approach section as to convey various highly specialized
+and technical participants in the Knowledge-to-Delivery-to-Discovery broader
+ecosystem (that often interact with each other’s work products, though perhaps
+not directly with each other) how the HL-7 CPG Implementation Guide recognizes
+their distinct and valuable work and provides numerous affordances through
+re-use of domain standards (e.g. FHIR and other HL-7 IG’s) and a
+reconceptualization of work processes that share and reuse essential information
+and content.  Much of this work has been informed by participation and
+collaboration with several efforts including the CDC’s Adapting Clinical
+Guidelines for the Digital Age initiative (link), the WHO’s XXX, the HL-7
+Clinical Decision Support Working Group, and numerous other publicly funded and
+private sector initiatives.
+</p>
+<p>
+To the Guideline Developer:
+</p>
+<p>
+To the Knowledge Engineer:
+</p>
+<p>
+To the Downstream Consumers:
+</p>
+<p>
+To the Local Implementer:
+</p>
+<p>
+To the Evidence Ecosystem:
+</p>
+<p>
+<img src="images/CPG-Approach0.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+<strong>Concurrent, Integrated, Cross-functional Iterative Development:</strong>
+ Guideline Development + CPG Knowledge Engineering + Delivery + Implementation +
+Feedback
+</p>
+<p>
+<strong>Knowledge Architecture:</strong>
+</p>
+<p>
+Model deadline once, repurpose across numerous, related use cases and
+implementations
+</p>
+<ol>
+<li>Objectives
+</li>
+</ol>
+<p>
+The primary objective of the CPG approach to codifying clinical practice is to
+accelerate the translation and delivery of expert body clinical best practice
+recommendations to the point of care. The CPG-IG was developed through
+multi-stakeholder engagement including guideline developers, implementers,
+clinical implementations, standards experts, patient and caregiver advocates,
+public (governmental and nongovernmental agencies), and others development
+approach and means of expressing clinical practice guidelines and computable the
+computer-enabled formats.  The stakeholders identified the need to concurrently
+develop computable formats along with existing and evolving guideline
+development processes. As such, the knowledge engineering process, inclusive of
+elicitation, translation, specification, and formal representation, must be
+integrated with the guideline development process and serve the function of
+translating between the clinical domain and the formal, computable expressions
+thereof.  It is the intent of this section to describe some of the fundamentals
+of these activities as well as the concept, means, and performances to carry out
+this activity.
+</p>
+<p>
+Secondarily, we will attempt to describe how these activities interact with
+adjacent and related activities as well as content and related standards across
+the knowledge ecosystem. This will include upstream activities such as evidenced
+generation and knowledge discovery as well as downstream activities such as
+decision-support (CDS), patient care, advanced cognitive support (e.g.
+SMART-on-FHIR apps), quality measurement and reporting, and electronic case
+reporting (for similarly scoped conditions and procedures).
+</p>
+<ol>
+<li>Levels of Conformance and Enablement
+</li>
+</ol>
+<p>
+<strong>NO</strong> SEPARATE DOCUMENT YET
+</p>
+<p>
+<strong>Levels of Conformance:</strong>
+</p>
+<p>
+xxxxx
+</p>
+<p>
+<strong>Levels of Enablement:</strong>
+</p>
+<p>
+Trade-offs between effort, time-to-develop, and capabilities enabled (and value
+that can be derived).  From very basic context for narrative snippets searchable
+in a library (or Infobutton from EHR) to full clinical workflow enablement ,
+cognitive support, and pathway tracking (likely via SMART-on-FHIR App or deep
+EHR integration) as well as feedback loops with real-world evidence of actual
+guideline usage, measures, etc. as substrate for evidence ecosystem and/or
+feedforward loop for evidence updates, point-of-need Pt-Like-This queries, and
+JiT ML inferencing.
+</p>
+<p>
+Level of Enablement (as well as effort) related to (all described below and/or
+elsewhere in Approach):
+</p>
+<ul>
+<li>CPG Features/Capabilities Implemented
+<li>Intended Delivery/ Dissemination Mechanisms
+<li>KR Levels formalized across CPG Features (capabilities described in CPG
+K-Architecture)
+<li>Tiers of Functionality
+<li>Methods of Implementation
+<li>Mechanisms of Integration
+</li>
+</ul>
+<p>
+Roughly:
+</p>
+<ul>
+<li>Contextualized Narrative (searchable)
+<li>Contextualized Narrative (delivered in context)
+<li>Contextualized Narrative with Patient-level Information (basic summary view)
+<li>Actionable Intervention (+/- narrative and summary view; CDSHooks)
+<li>Actionable Summary View (maybe CDSCards, AdaptiveForms, iFrame depending on
+implementation/ integration)
+<li>EHR Import of CPG (features determined and subsetted by EHR)
+<li>Deep EHR Integrations with CDS Service
+<li>Then add incremental effort for derived capabilities and how they interact
+or are implemented (Metric/Measure, eCaseReport,
+eCasePlanSummaryView/eCasePlanProgressingNote).  Some build on others.
+</li>
+</ul>
+<ol>
+<li>Guideline Development
+</li>
+</ol>
+<p>
+NEEDS OVERVIEW AND SUBSECTIONS LINKS (See Separate Document in Drive)
+</p>
+<p>
+<img src="images/CPG-04-00.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<ul>
+<li><strong>Guideline Development Group</strong>
+<li><strong>Scoping</strong>
+<li><strong>Guideline Development Frameworks </strong>
+</li>
+</ul>
+<p>
+These Frameworks are used in Guideline development and across the evidence
+ecosystem:
+</p>
+<ol>
+<li><strong>PICOTS Typology</strong>- Patient population, Intervention,
+Comparator, Outcomes, Timing, Setting. The PICOTS Typology may be used for
+scoping both the guideline (and individual recommendations) as well as the
+supporting evidence or studies (e.g. meta-analyses and systematic reviews).
+<li><strong>GRADES (G</strong>rades of <strong>R</strong>ecommendation
+<strong>A</strong>ssessment, <strong>D</strong>evelopment and
+<strong>E</strong>valuation<strong>)</strong>- GRADES affords a process and
+structured framework for conveying information develop a common, transparent and
+sensible system for grading the <strong>quality</strong> of evidence and the
+<strong>strength</strong> of recommendations.
+</li>
+</ol>
+<li><strong>Analysis of Evidence</strong>
+<p>
+Analysis of evidence includes systematic approaches for evaluating the evidence
+to inform the guideline and individual recommendations.
+</p>
+<p>
+EBM-on-FHIR
+</p>
+<ul>
+<li><strong>Recommendations</strong>
+</li>
+</ul>
+<p>
+Recommendations are proposals pertaining to the best course of action put forth
+by an authoritative source or body related to a condition, procedure, clinical
+decision or activity.
+</p>
+<p>
+Additionally, the Guideline Development Group, if including appropriate
+expertise, may provide further guidance as to if each recommendation serves as
+sound candidates for performance/ quality measurement.
+</p>
+<p>
+The Guideline Development Group may identify pertinent clinical or situational
+concepts (data elements, terminologies) pertaining to each recommendation or the
+guideline overall.
+</p>
+<p>
+Lastly, the Guideline Development Group may identify gaps in evidence that were
+determined as part of the guideline development process. These gaps in evidence
+may further inform data requirements to be collected as part of a CPG
+eCaseReport.
+</p>
+<ul>
+<li><strong>Reporting and Dissemination</strong>
+</li>
+</ul>
+<p>
+Reporting is often done through an official, formal guideline report intended to
+be communicated externally to the target audience.
+</p>
+<p>
+For the CPG, one might include dissemination to Measure Development
+organizations, CDS vendors, EHR vendors, Registry vendors, and or a(SoF) App
+developers.
+</p>
+<ul>
+<li><strong>Development of computable Clinical Guideline artifacts</strong>
+<ol>
+<li>Evidence
+<li>CPG Content and related Derivatives
+<ol>
+<li><strong>Recommendations: </strong>
+<p>
+</p>
+<ol>
+<li><strong>Metrics and Measures:</strong>  A CPG_Metric is a patient level
+measurement or indicator typically corresponding to recommendation compliance
+and/or guideline adherence (corresponding to a process measure), reaching a
+stated goal or objective (corresponding to an end or intermediate outcome), or
+or current status of a clinical activity.  A CPG_Measure is a population level
+measurement typically corresponding to an aggregate of patient level CPG_Metrics
+and/or other parts of the CPG. .
+<li><strong>eCaseReport:</strong>  A CPG_eCaseReport is intended to convey the
+set of data elements required to provide for more detailed outcomes research on
+the guideline topic itself as well as for a feedback loop for continuous
+improvement of the specified  guideline.  Additional or supplemental data
+elements (data requirements and inferences) for informing identified guideline
+gaps or feedback loops may be further specified for inclusion in the
+CPG_eCaseReport.
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<li>Knowledge Engineering Overview
+</li>
+</ul>
+<p>
+NEEDS OVERVIEW AND SUBSECTIONS LINKS (See Separate Document in Drive)
+</p>
+<p>
+Knowledge Engineering is the discipline and profession of developing explicit
+representations of advanced domain-oriented logic in computer systems
+(knowledge-based systems) in order to try to simulate human decision-making and
+high-level cognitive tasks. A knowledge engineer supplies or develops some or
+all of the "knowledge" (typically in a knowledge base) that is built into or
+used by computational systems.
+</p>
+<p>
+<img src="images/CPG-05-00.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+FIG. X.  Reuse figure description from KE Section
+</p>
+<ul>
+<li>Knowledge Engineering Lifecycle Process
+</li>
+</ul>
+<p>
+The Knowledge Engineering Lifecycle Process describes a progressively
+interdependent series of activities or steps taken in order to transform domain
+knowledge or content into a more formal computable set of assets for
+consumption, execution, and or delivery.
+</p>
+<ol>
+<li><strong>Knowledge Acquisition</strong>
+</li>
+</ol>
+<p>
+Knowledge Acquisition is the process of extracting, understanding, structuring
+and organizing knowledge from one source, often solely or largely from human/
+expert understandable formats, so it can be translated into
+computer-interpretable (or computer-enabled) formalisms.
+</p>
+<ol>
+<li><strong>Knowledge Elicitation</strong>
+</li>
+</ol>
+<p>
+.
+</p>
+<ol>
+<li><strong>Knowledge Authoring</strong>
+</li>
+</ol>
+<ol>
+<li><strong>Knowledge Synthesis</strong>
+</li>
+</ol>
+<ol>
+<li><strong>Knowledge Discovery</strong>
+<li><strong>Hybrid Approaches</strong>
+</li>
+</ol>
+<li><strong>Knowledge Translation</strong>
+<ol>
+<li>The translation between and across various Levels of Knowledge
+Representation- from Narrative to Semi-structured to Structured (computer
+readable/ interpretable) to Executable (described in detail below in Knowledge
+Representation section).
+<li>
+</li>
+</ol>
+<p>
+<img src="images/CPG-05-03.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+Fig. X. Reuse caption from KE Section
+</p>
+<ol>
+<li><strong>Knowledge Representation/ Expression:</strong>
+</li>
+</ol>
+<p>
+Knowledge Representation pertains to the process of progressively structuring
+and formalizing content for computer interpretation and enablement.  Knowledge
+Representation will be discussed in further detail below in its own section.
+</p>
+<ol>
+<li><strong>Knowledge Curation:</strong>
+</li>
+</ol>
+<p>
+Identifying, versioning, indexing, tagging (adding metadata), and archiving the
+various artifacts and assets (representations,/ formalisms, expression
+libraries)
+</p>
+<ol>
+<li><strong>Knowledge Execution:</strong>
+</li>
+</ol>
+<p>
+Knowledge Execution refers to the processes of binding computable knowledge
+formalisms to data for the purpose of generating new information and insights.
+</p>
+<ol>
+<li><strong>Knowledge Validation:</strong>
+</li>
+</ol>
+<p>
+Knowledge Validation refers to verifying or validating that the various
+knowledge formalisms faithfully, specifically, and unambiguously perform as
+intended.
+</p>
+<ol>
+<li><strong>Knowledge Implementation:</strong>
+</li>
+</ol>
+<p>
+Knowledge Implementation refers to the activities of localizing the knowledge
+formalisms including addressing data bindings (e.g. data and terminology
+mappings), workflow insertions and localization factors (e.g. adjustments to
+thresholds), integration to end-user system endpoint interfaces, as well as
+adjustment or issues related to data quality, timing, enrichment, and or
+required data enrichments.
+</p>
+<ul>
+<li>Integration/ Collaboration with Guideline Development Process and CPG
+Development Processes
+</li>
+</ul>
+<ol>
+<li>Knowledge Representation
+</li>
+</ol>
+<p>
+NEEDS OVERVIEW AND SUBSECTIONS LINKS (reuse from Separate Document in Drive)
+</p>
+<p>
+    A surrogate for the real thing, where it can be reasoned over as if the real
+thing
+</p>
+<p>
+“Levels” Framing
+</p>
+<p>
+    Overview
+</p>
+<p>
+<img src="images/CPG-06-00.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+Knowledge Levels Figure x.y
+</p>
+<ul>
+<li>
+</li>
+</ul>
+<p>
+<strong>Knowledge Assets</strong>
+</p>
+<ul>
+<li>Expressions
+<ul>
+<li>Declarations
+<ul>
+<li><strong>Composed Assets</strong>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Derived Assets</strong>
+</li>
+</ul>
+<p>
+<strong>Translation within and between Knowledge Representations</strong>
+</p>
+<p>
+<strong>Knowledge Architecture:</strong>
+</p>
+<p>
+Knowledge Architecture is the discipline of Information System Architecture
+(Industry, Enterprise, Solution) whose focus is on the principles, best
+practices, means and mechanisms by which the Knowledge Assets for the given
+domain to which the architecture belongs are managed including: acquiring,
+representing, stored, and organized.  Knowledge Architecture includes defining
+the types and scopes of the various assets, their metadata, as well as their
+relations.  This implementation guide describes how the knowledge architecture
+for clinical practice guidelines has been manifested within FHIR Resources and
+the FHIR Architectural and Implementation Frameworks.
+</p>
+<p>
+SEE IN KNOWLEDGE REPRESENTATION DOCUMENT IN SAME DRIVE
+</p>
+<p>
+</p>
+<ol>
+<li>Tiers of Functionality
+</li>
+</ol>
+<p>
+This implementation guide defines three (3) tiers of functionality, very roughly
+analogous to the tiers of architecture in software engineering
+</p>
+<ul>
+<li>Data
+<li>Logic
+<li>UI
+<li>Levels of Representation by Tiers of Functionality
+</li>
+</ul>
+<p>
+NEEDS OVERVIEW AND SUBSECTIONS LINKS (See Separate Document in Drive)
+</p>
+<p>
+<img src="images/requirements-to-running-code.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+Across the top are levels of knowledge representation, from narrative text
+(Level 1), through successively more structured representations, ending with
+running, executable software at the right (Level 4). At the bottom of the
+diagram, the <em>data</em> tier (T1) represents the concepts and data elements
+involved in the guideline. Above that, the <em>logic</em> tier (T2) represents
+the business and process rules of the guideline, and at the top, the
+<em>forms</em> or <em>user-interface</em> tier (T3) represents the user
+interactions with the guideline content.
+</p>
+<ol>
+<li>Methods of Implementation
+</li>
+</ol>
+<p>
+(See Separate Document in Drive)
+</p>
+<ul>
+<li>As a “Spec”
+<li>Translation
+<li>Native Execution
+</li>
+</ul>
+<p>
+With these computable artifacts, there are three (3) methods of implementation
+that broadly describe different approaches to moving from the computable
+representation (L3) of guideline content to the executable representation (L4):
+</p>
+<ol>
+<li>Mechanisms of Integration
+</li>
+</ol>
+<p>
+NEEDS OVERVIEW AND SUBSECTIONS LINKS (<strong>NO</strong> Separate Document in
+Drive YET)
+</p>
+<p>
+Within EHR (Content Import)
+</p>
+<p>
+As CDS Service (API)
+</p>
+<p>
+Chaining through Data
+</p>
+<p>
+Hybrid (combine above as needed)
+</p>
+<ol>
+<li>Role and Benefits of Standards in Knowledge-driven Systems and in a
+Knowledge Ecosystem
+</li>
+</ol>
+<p>
+NEEDS OVERVIEW AND SUBSECTIONS LINKS (See Separate Document in Drive)
+</p>
+<ul>
+<li>Shareability
+<li>Reusability
+<li>Distribution of KE Effort
+<li>Optimize Value across use cases
+<li>Success in existing ecosystem
+<li>CPG as situated in the full knowledge lifecycle ecosystem (CQI image
+overlaid with IGs)
+</li>
+</ul>
+<p>
+<img src="images/CPG-Main-06.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+<strong>Enabling and Removing Friction across an Ecosystem</strong>
+</p>
+<p>
+<img src="images/CPG-Approach0.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<ol>
+<li>CPG Knowledge Architecture (Conceptual Perspective)
+</li>
+</ol>
+<p>
+NEEDS WORK- OVERVIEW AND SUBSECTIONS LINKS (See Separate Document in Drive)
+</p>
+<p>
+DEFINITELY READ Separate Document for this one!!!
+</p>
+<p>
+<strong>Feedback that this is the most important Section to Overview on the Main
+Page</strong>
+</p>
+<ul>
+<li>Separation of Concerns
+</li>
+</ul>
+<p>
+Separation of Concerns involves "’focusing one's attention upon some aspect’: it
+does not mean ignoring the other aspects, it is just doing justice to the fact
+that from this aspect's point of view, the other is irrelevant. It is being one-
+and multiple-track minded simultaneously.”  (ref).  This concept was further
+used to address efficient and effective approaches in software engineering,
+particularly as they pertain to developing larger, more complex information
+systems. (ref)
+</p>
+<ol>
+<li>Case
+</li>
+</ol>
+<p>
+From the domain perspective, a Case is conceptualized as the contextually
+relevant information oriented to clinically meaningful descriptions of
+individual Patient’s current and historical state of health, disease, and risks.
+ The Case includes a comprehensive, detailed description of the current and
+relevant historical clinicopathological presentation of the patient.  Key
+information to sufficiently summarize the case for the purpose of making
+appropriate and timely medical decisions in a given situation are often referred
+to as Pertinents (positive and negative pertinents).
+</p>
+<ol>
+<li>Plan
+</li>
+</ol>
+<p>
+WIthin the healthcare domain, the providers formulate an approach, or Plan, for
+how they intend to address the health and well-being, and clinical concerns of
+the patient, taking into account the Patient’s Goals and Preferences.  The Plan
+includes current interventions, takes into account prior and current response to
+those interventions, and formulates an approach to assess and address all
+elements of the patient’s state of health and disease.  A Plan consists of
+requesting (ordering, prescribing, scheduling) medications, procedures,
+diagnostics (laboratory and imaging, and other tests), and appointments
+(referrals and consults).  A Plan takes into consideration existing or potential
+complications, side effects/ adverse events for various intervention, and
+worsening signs and symptoms to watch for, as well as the means to mitigate
+and/or address those potential adverse events.
+</p>
+<ol>
+<li>Workflow
+</li>
+</ol>
+<p>
+<img src="images/CPG-12-01.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<ul>
+<li>Plan
+<ol>
+<li>Recommendations
+<li>Strategies
+<li>Pathways
+</li>
+</ol>
+<li>Case
+</li>
+</ul>
+<p>
+The data that expresses a Case consists of patient descriptors, exposures
+(environmental or behavioral, past and current medications and procedures),
+physiological and pathophysiological assessments and descriptions (labs,
+vitals), clinical presentation and progression (signs, symptoms), diagnostic
+evaluations and physical exam findings, family history and genetic markers, past
+and current diagnoses, risk and severity scores, in response to treatment
+including end and intermediate outcomes.  Relevant data elements may be inferred
+from primitive data elements (e.g. BMI, eGFR) or may require clinical assessment
+and judgment using primitive data elements (MELD Score, NYHA HF Class).
+Medication and other substance administrations can be considered exposures and
+even orders without corresponding events may be considered sufficient
+descriptions of the patient’s past and current state of health and disease.
+</p>
+<ol>
+<li>Case Features
+</li>
+</ol>
+<li>Inferred (or Derived) Case Featured
+<ol>
+<li>Case Feature Groups
+<li>Case Feature Relationships
+<li>Case Summary
+</li>
+</ol>
+<li>Care Plan
+<ol>
+<li>Proposal
+<li>Request
+<li>Event
+</li>
+</ol>
+<li>Derivative & Related Assets
+<ol>
+<li>Metrics
+<li>Measure (eCQMs)
+<li>Case Plan View
+<li>Case Plan Summary
+<li>Case Plan Progressing Note
+<li>eCaseReport
+</li>
+</ol>
+<!-- ==============END CONTENT=================== -->
+
+{% include container-end.html %}
+
+{% include footer.html %}

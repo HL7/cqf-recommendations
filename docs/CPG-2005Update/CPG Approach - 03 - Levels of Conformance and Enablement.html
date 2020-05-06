@@ -1,0 +1,81 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h1>Levels of Conformance and Enablement</h1>
+<p>
+<strong>Levels of Conformance:</strong>
+</p>
+<p>
+Conformance Testing
+</p>
+<p>
+Conformance with Features of the CPG
+</p>
+<p>
+<strong>Levels of Enablement:</strong>
+</p>
+<p>
+There are clearly trade-offs between effort, time-to-develop, capabilities
+enabled, and the value that can be derived from any given CPG development
+effort.
+</p>
+<p>
+From very basic context for narrative snippets searchable in a library (or
+Infobutton from EHR) to full clinical workflow enablement , cognitive support,
+and pathway tracking (likely via SMART-on-FHIR App or deep EHR integration) as
+well as feedback loops with real-world evidence of actual guideline usage,
+measures, etc. as substrate for evidence ecosystem and/or eedforward loop for
+evidence updates, point-of-need Pt-Like-This queries, and JiT ML inferrencing.
+</p>
+<p>
+Level of Enablement (as well as effort) related to (all described below and/or
+elsewhere in Approach):
+</p>
+<ul>
+<li>CPG Features/Capabilities Implemented
+<li>Intended Delivery/ Dissemination Mechanisms
+<li>KR Levels formalized across CPG Features (capabilities described in CPG
+K-Architecture)
+<li>Tiers of Functionality
+<li>Methods of Implemtation
+<li>Mechanisms of Integration
+</li>
+</ul>
+<p>
+Roughly:
+</p>
+<ul>
+<li>Contextualized Narative (searchable)
+<li>Contextualized Narative (deliverred in context)
+<li>Contextualized Narrative with Patient-level Information (basic summary view)
+<li>Actionable Intervention (+/- narrative and summary view; CDSHooks)
+<li>Actionable Summary View (maybe CDSCards, AdaptiveForms, iFrame depending on
+implementation/ integration)
+<li>EHR Import of CPG (features determined and subsetted by EHR)
+<li>Deep EHR Integrations with CDS Service
+<li>Then add incremental effort for derived capabilities and how they interact
+or are implemented (Metric/Measure, eCaseReport,
+eCasePlanSummaryView/eCasePlanProgressingNote).  Some build on others.
+</li>
+</ul>
+<p>
+<summary explanation>
+</p>
+<p>
+<img src="images/CPG-Approach0.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+{% include footer.html %}
