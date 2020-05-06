@@ -1,0 +1,148 @@
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h1>Tiers of Functionality</h1>
+<p>
+This implementation guide defines three (3) tiers of functionality, very roughly
+analogous to the tiers of architecture in software engineering:
+</p>
+<ul>
+<li><strong>Data</strong>  (Data ELements)
+<li><strong>Logic</strong>  (Clinical Logic)
+<li><strong>Forms</strong>  (UI Description and Behavior)
+</li>
+</ul>
+<p>
+<img src="assets/images/CPG-Approach0.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+<em>Tiers of Functionality</em>
+</p>
+<p>
+To illustrate these tiers of functionality, consider the following excerpt from
+a recommendation statement in the CDC Opioid Prescribing Guideline:
+</p>
+<p>
+<strong><em>When prescribing opioids for chronic pain, providers should use
+urine drug testing before starting opioid therapy</em></strong>
+</p>
+<p>
+The data elements in this recommendation statement are the concepts involved,
+such as medication prescriptions, opioids, chronic pain, urine drug testing, and
+opioid therapy.
+</p>
+<p>
+The clinical logic then describes the behaviors in terms of the data elements,
+such as “when prescribing opioids for chronic pain”, and “use urine drug testing
+before starting opioid therapy.”
+</p>
+<p>
+And finally, the forms descriptions are the user interfaces involved in the
+implementation of the recommendation, such as an order entry form.
+</p>
+<p>
+Note that these tiers each have different manifestations at different knowledge
+levels. At L3, these tiers are formal but still conceptual representations of
+the content, whereas at L4, these tiers are concretely implemented in software
+systems. For example, a form at L3 is intentionally silent on the actual
+presentation layer details, whereas a form at L4 necessarily includes them.  See
+section on Levels of Representation by Tiers of Functionality
+</p>
+<ol>
+<li>Data Elements
+</li>
+</ol>
+<p>
+The data elements provide a computable representation of the concepts and
+information within  the clinical guideline. The artifacts at this level are
+represented in FHIR using the following resources:
+</p>
+<ul>
+<li>StructureDefinition - Specifically, profiles and extensions
+<li>CodeSystem
+<li>ValueSet
+</li>
+</ul>
+<p>
+Expressing the data elements in a clinical guideline enables the description and
+exchange of the within the guideline; roughly, the data tier in a traditional
+3-tier architecture.  While much logic at the data level is abstracted away
+behind interfaces (a key benefit of FHIR), one much be careful not to conflate
+data transformation and clinical business logic, particularly in the case of
+inferred and/or enriched data elements (e.g. inferred CPGCaseFeatures).  The
+inference belongs in the Clinical Logic layer.
+</p>
+<ol>
+<li>Clinical Logic
+</li>
+</ol>
+<p>
+The clinical logic in a computable guideline provides a formal representation of
+the behavior involved in the recommendation statements in terms of the data
+elements. This includes inclusion/exclusion criteria, calculations such as risk
+scores, public health indicators, or average daily dosage, as well as rules that
+describe how and when a recommendation applies such as event-condition-action
+rules. The artifacts at this level are represented in FHIR using the following
+resources:
+</p>
+<ul>
+<li>Library
+<li>ActivityDefinition
+<li>PlanDefinition
+<li>Measure
+</li>
+</ul>
+<p>
+Expressing the clinical logic for a guideline enables application functionality;
+roughly, the application tier in a traditional 3-tier architecture.
+</p>
+<p>
+Note to the Knowledge Engineer not to conflate Clinical (business) Logic with
+either Data (transformation) logic or Forms (user interaction) logic.  Business
+logic should only be about describing the things that occur in the domain-
+describing patients (CPGCaseFeatures), formalizing clinician decision logic
+(CPGRecommendations), orchestrating either of the two, etc. (see Table above).
+These are critical separations of concerns to keep in mind as their conflation
+can cause significant challenges, particularly in a knowledge-based approach-
+though all Tiers can take advantage of knowledge-based approaches.
+</p>
+<ol>
+<li>Forms Description
+</li>
+</ol>
+<p>
+The forms description in a computable guideline describes user interactions and
+uses both the data elements and clinical logic. The artifacts at this level are
+represented in FHIR using the following resources:
+</p>
+<ul>
+<li>Questionnaire
+<li>PlanDefinition
+</li>
+</ul>
+<p>
+This level involves specifying a conceptual description of the processes
+involved, as well as the user-interfaces that capture the user’s interactions
+with the system. Expressing the forms description for a guideline provides a
+more complete description of the recommendations in a guideline; roughly, the
+presentation tier in a traditional 3-tier architecture.  Note to the Knowledge
+Engineer not to conflate Forms logic with Business Logic.  Forms logic should
+only be about the behavior of the user interaction, though it can and almost
+always does reuse Business Logic.  This is a critical separation of concerns to
+keep in mind.
+</p>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+{% include footer.html %}
