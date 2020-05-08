@@ -4,10 +4,12 @@ title: Anthrax Post-Exposure Prophylaxis Example
 ---
 
 # README
-This README.txt file describes the contents of this software delivery. Unless otherwise noted, 
+This README.txt file describes the contents of this software delivery. Unless otherwise noted,
 this software carries an Apache 2.0 license.
 
 (c) 2019 The MITRE Corporation. All Rights Reserved. Approved for Public Release: 19-2048. Distribution Unlimited.
+
+The examples in this section were funded by CDC Contract No. HHSM-500-2012-00008I Task Order No. 200-2016-F-89363
 
 ## Overview
 The contents of these directories constitute the updates made to the Anthrax Post-Exposure

@@ -7,6 +7,8 @@ This example illustrates the use of FHIR resources to represent computable conte
 
 [CDC Opioid Prescribing Guideline](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm)
 
+The examples in this section were funded by The Office of the National Coordinator for Health Information Technology (ONC), contract numbers HHSP233201800320G, HHSP233201700044C, and D15PD00739
+
 # Recommendation 5: Lowest Effective Dose
 When opioids are started, providers should prescribe the lowest effective dosage. Providers should use caution when prescribing opioids at any dosage, should carefully reassess evidence of individual benefits and risks when considering increasing dosage to ≥50 morphine milligram equivalents (MME)/day, and should avoid increasing dosage to ≥90 MME/day or carefully justify a decision to titrate dosage to >90 MME/day
 
@@ -65,4 +67,3 @@ For both recommendations, one of the following responses should be required:
 
 ### PlanDefinition Resources
 * [opioidcds-r4-recommendation-05](../../PlanDefinition-opioidcds-r4-recommendation-05.html)
-
