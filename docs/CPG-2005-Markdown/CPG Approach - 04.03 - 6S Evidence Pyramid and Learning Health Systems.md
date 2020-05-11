@@ -13,16 +13,14 @@ The 6S Evidence Pyramid is another framing on the quality or validity of the evi
 
 
 
-1. **Single Studies- **represent unique research conducted to answer specific clinical questions
-2. **Synopses of Single Studies- **summarizing evidence from high-quality studies
-3. **Syntheses- **a comprehensive summary of all the evidence surrounding a specific research question (e.g., systematic review, meta-analysis)
-4. **Synopses of Syntheses- **summarizing the information found in syntheses (e.g., evidence summaries, [rapid reviews](https://doi.org/10.1186/2046-4053-1-10))
-5. **Summaries- **guidelines or texts that integrate and evaluate evidence-based information about specific clinical problems to inform clinical decisions
-6. **Systems- **integrating information from the lower levels of the hierarchy with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
+1. **Single Studies-** represent unique research conducted to answer specific clinical questions
+2. **Synopses of Single Studies** summarizing evidence from high-quality studies
+3. **Syntheses-** a comprehensive summary of all the evidence surrounding a specific research question (e.g., systematic review, meta-analysis)
+4. **Synopses of Syntheses-** summarizing the information found in syntheses (e.g., evidence summaries, [rapid reviews](https://doi.org/10.1186/2046-4053-1-10))
+5. **Summaries-** guidelines or texts that integrate and evaluate evidence-based information about specific clinical problems to inform clinical decisions
+6. **Systems-** integrati-ng information from the lower levels of the hierarchy with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
 
 ![alt_text](images/CPG-04-02.png "image_tooltip")
-
-
 
     The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak.
 
@@ -41,7 +39,6 @@ The 6S Evidence Pyramid is another framing on the quality or validity of the evi
 ![alt_text](images/CPG-04-03.png "image_tooltip")
 
     The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence (ref)
-
 
 **Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic:**
 

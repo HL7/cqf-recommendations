@@ -210,7 +210,7 @@ FIG 7.  Integration/Collaboration with Guideline Development Process and CPG Dev
 
 
 
-4. **Knowledge Representation **
+4. **Knowledge Representation**
 
 Knowledge can be represented in four progressively more structured levels: narrative (L1), semistructured (L2), structured (L3), executable (L4).
 
@@ -283,13 +283,11 @@ Standards facilitate a number of benefits that promote a more efficient and effe
 
 ![alt_text](images/CPG-Main-06.png "image_tooltip")
 
-**FIG 11. **Enabling and Removing Friction across a Knowledge Ecosystem through HL-7 Standards
+FIG 11. **Enabling and Removing Friction across a Knowledge Ecosystem through HL-7 Standards**
 
 ![alt_text](images/CPG-Approach0.png "image_tooltip")
 
 FIG 12. **Concurrent, Integrated, Cross-functional Development and Implementation of the CPG-on-FHIR:**  The CPG can serve a critical role in formalizing guidelines and their recommendations in computer-interpretable representations based on standards that can be consumed by various downstream end-users as well as provide a means for feedback and feedforward loops.
-
-
 
 10. **CPG Knowledge Architecture (Conceptual Perspective)**
 *   **Plan**
@@ -301,7 +299,7 @@ FIG 12. **Concurrent, Integrated, Cross-functional Development and Implementatio
 *   **Care Plan**
     *   **Proposals** (patient-specific recommendations)
     *   **Requests** (the orders or activities resulting or related to the proposal)
-    *   **Events **(resulting or related to the request and/or proposal)
+    *   **Events** (resulting or related to the request and/or proposal)
 *   **Related or Derived Assets**
     *   **Guideline** (container for all CPG assets)
     *   **Metrics** (patient-level indicator of compliance, adherance, and end- and intermediate-outcomes related to guideline-directed care)
