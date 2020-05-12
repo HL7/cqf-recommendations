@@ -237,7 +237,7 @@ With these computable artifacts, there are three (3) methods of implementation t
 
 *   Within EHR (Content Import)
 *   As a CDS Service (API)
-*   Chaining through Data
+*   ChainiCPG-Approach0ng through Data
 *   Hybrid (combine above as needed)
 
 # 11. **Role and Benefits of Standards in Knowledge-driven Systems and in a Knowledge 11** <!-- link to section 11 !-->
@@ -255,7 +255,7 @@ Standards facilitate a number of benefits that promote a more efficient and effe
 
 Figure 11. **Enabling and Removing Friction across a Knowledge Ecosystem through HL-7 Standards**
 
-![alt_text](assets/images/CPG-Approach11.png "image_tooltip")
+![alt_text](assets/images/CPG-Approach0.png "image_tooltip")
 
 
 Figure 12. **Concurrent, Integrated, Cross-functional Development and Implementation of the CPG-on-FHIR:**  The CPG can serve a critical role in formalizing guidelines and their recommendations in computer-interpretable representations based on standards that can be consumed by various downstream end-users as well as provide a means for feedback and feedforward loops.
