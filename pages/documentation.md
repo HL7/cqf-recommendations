@@ -11,7 +11,7 @@ The process of guideline implementation is a significant challenge that is curre
 
 The initial ballot combines experience gained from multiple guideline representation projects, including Opioid Prescribing Support, Chronic Kidney Disease Management, Antenatal Care, HIV/HBV Screening, Prevention, and Treatment, and Immunization Decision Support.
 
-* [Approach](documentation-approach.html): Describes the overall approach taken to representing computable guideline content
+* [Approach](documentation-approach-01-main-page.html): Describes the overall approach taken to representing computable guideline content
 * [Methodology](documentation-methodology.html): Describes the methodology for moving to successively more structured content
 * [Terminology](documentation-terminology.html): Describes expectations for terminology defined as part of computable guideline content
 * [Profiles](documentation-profiles.html): Describes expectations for profiles defined as part of computable guideline content

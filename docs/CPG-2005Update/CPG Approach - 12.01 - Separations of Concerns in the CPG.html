@@ -1,0 +1,117 @@
+
+---
+# jekyll header
+---
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<h2><strong>Separation of Concerns</strong></h2>
+<p>
+Separation of concerns is a design principle that creates a distinct and focused
+attention on each aspect of the domain or topic. This means that, from each
+aspect's point of view, the other aspect(s) are irrelevant; but it does not mean
+that the other aspects are ignored. It is “being one- and multiple-track minded
+simultaneously.”  (ref).  This concept has been used to address efficient and
+effective approaches in software engineering, particularly as they pertain to
+developing larger, more complex information systems. (ref)  The most common
+application of this principle is to a three-tiered architecture (i.e. data,
+logic, UI) and corresponds to the tiers of functionality discussed earlier.
+</p>
+<p>
+<img src="images/CPG-12-01.png" width="" alt="alt_text"
+title="image_tooltip">
+</p>
+<p>
+FIG XX. Illustrating the separation of the Case (patient
+clinicopathophysiological processes and their manifestations and qualifications
+thereof), the Plan (the approach to the patient’s current, historical, and
+potential future state of disease and well-being including medical
+decision-making), and the Workflow (how the Plan is implemented either through
+interactions with clinical information systems or through real-world human tasks
+and activities.
+</p>
+<p>
+In medicine, a very similar principal led Dr. Larry Weed to describe the
+problem-oriented approach to the medical record and reasoning about patients’
+concerns, including the well-known and commonly used approach to the SOAP note
+(Subjective, Objective, Assessment, and Plan). (ref)   Dr. Weed proposed that
+physicians were essentially scientists, except that as many scientist pursue a
+singular (or few) hypotheses throughout there careers, a physician must
+formulate and assess/test hypotheses for a given patient and often throughout
+the day and therefore must break each issue down into a concern or problem.
+Problem-orientedness and the SOAP note have further been shown to be an
+effective cognitive framework for assessing and addressing patient concerns.
+(ref).  Interestingly, Dr. Weed’s problem-oriented approach and SOAP note do
+play into the CPG knowledge architecture, though not exclusively.  In healthcare
+activities, there are at least several related but orthogonal axes on which to
+separate concerns.
+</p>
+<p>
+One major axis of separation is by each disease or condition, intervention
+(e.g., procedure, therapy), and/or diagnostic (e.g., imaging, tests), though
+these concerns often intersect or interact significantly. Similarly, care
+setting (e.g., ambulatory, home, inpatient, ED, ICU) and generalized type of
+care activity (e.g., surveillance, prevention, diagnostic workup, treatment
+planning, disease and therapeutic response surveillance, recovery/convalescence,
+survivorship) can be conceptualized further as  separations of concerns.  Many
+of these separations are addressed through the scoping exercise of the guideline
+development group and a given guideline intentionally focuses on a singular
+topic or area of concern. This separation may be addressed by entirely distinct
+CPG’s or by strategies within individual CPG’s.
+</p>
+<p>
+Another major axis of separation is by kind of process, including: 1) patient
+clinicopathological (i.e., pathophysiological and correlated clinical
+manifestations) processes, inclusive of normal physiology (CPGCase); 2) clinical
+decision-making and corresponding care process abstract from care setting
+(CPGPlan); and 3) care delivery process or clinical workflow by which the care
+processes are carried out in the context of a specific care setting where
+multiple patients and healthcare professionals undergo, situational activities,
+which may be inclusive of clinical information system or EHRs.  The CPG-IG
+knowledge architecture is designed to respect the separation of these concerns
+as discussed below.
+</p>
+<p>
+A third major axis of separation of importance to the CPG-IG is significantly
+related to the clinical workflow separation mentioned above, which itself may be
+separated into the real-world care delivery activities in those activities that
+are carried out in the context of clinical information systems (e.g., EHRs).
+The separation of concerns addresses the type of workflow intervention and/or
+enablement through which guidance is delivered into the care delivery process,
+such as the cardinal types of CDS (ref) (e.g., alerts and reminders, order sets,
+documentation templates, smart forms, data summaries), quality or performance
+measurement or patient-level metrics or indicators, or more advanced forms of
+workflow or cognitive support delivered via apps adjacent or supplemental to
+clinical information systems (e.g., SMART-on-FHIR Apps).  Further consideration
+for these interventions or enablement include the “CDS five rights”: the right
+information; to the right person; in the right intervention format; through the
+right channel;
+</p>
+<p>
+and at the right time in the workflow.
+</p>
+<p>
+In the CPG-IG, these interventions and enablement are recognized to be
+downstream consumers of the knowledge content within the CPG with considerations
+being made for critical content or information requirements thereof. Many of
+these interventions or enablement had their own standard and/or IG’s (CDS-Hooks,
+SMART-on-FHIR, Measure IG, eCaseReport-IG).  While the CPG-IG intentionally does
+not directly address details of localized clinical workflow, it must and does
+provide affordances conveying critical content for downstream consumers.  The
+CPG-IG does this through several mechanisms, including “the common pathway”
+(i.e., an abstraction of high-level clinical workflows), shared information
+(e.g., CPGCaseFeatures), and reuse of the same standards for clinical
+information system activities (e.g., requests and their lifecycle, tasks and
+their workflow status) and interventions (e.g., forms, etc.).
+</p>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+{% include footer.html %}
