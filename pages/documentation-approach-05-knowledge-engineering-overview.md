@@ -11,12 +11,12 @@ This section will provide the following:
 
 *   An Overview of Knowledge Engineering (KE)
 *   Introduce the Key Phases of the Knowledge Lifecycle
-    *   Knowledge Acquisition
-    *   Knowledge Translation
-    *   Knowledge Representation (as relates to KE)
-    *   Knowledge Execution and Validation
-    *   Knowledge Implementation
-*   Introduce the Agile CPG Development Approach
+    *   [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html)
+    *   [Knowledge Translation](documentation-approach-05-02-knowledge-translation.html)
+    *   [Knowledge Representation (as relates to KE)](documentation-approach-05-03-knowledge-representation.html)
+    *   [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html)
+    *   [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html)
+*   [Introduce the Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)
 
 In healthcare, knowledge engineers are further specialized with expertise that may span from those with deep domain understanding including knowledge elicitation tools and techniques with some familiarity with various knowledge representation formalisms to deep understanding of knowledge formalism (i.e., representation/ expression) and knowledge architecture (i.e., knowledge processes and technology requirements for creating, capturing, organizing, accessing and using knowledge assets with varying degrees of familiarity with the domain.)  
 

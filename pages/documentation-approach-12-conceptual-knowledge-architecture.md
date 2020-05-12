@@ -8,13 +8,13 @@ The conceptual knowledge architecture for the CPG describes how the concepts fro
 
 Covered in this section:
 
-*   Separation of Concerns in the CPG
-*   Separating and Defining Case, Plan, and Workflow
-*   Plan
-*   Case
-*   Care Plan
-*   Workflow and Common Pathway
-*   Derivative & Related Assets
+*   [Separation of Concerns in the CPG](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html)
+*   [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)
+*   [Plan](documentation-approach-12-03-cpg-plan.html)
+*   [Case](documentation-approach-12-04-cpg-case.html)
+*   [Care Plan](documentation-approach-12-05-cpg-careplan.html)
+*   [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html)
+*   [Derivative & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html)
 
 ![alt_text](assets/images/CPG-12-00.png "image_tooltip")
 

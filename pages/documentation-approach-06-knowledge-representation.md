@@ -10,12 +10,12 @@ Knowledge representation is a surrogate, a substitute for the thing itself, that
 
 In this section we will cover:
 
-*   “Levels of Representation” Framework (degrees of formalism/ computability)
-*   Knowledge Assets (discrete representations with a purpose)
+*   [Levels of Representation Framework (degrees of formalism/ computability)](documentation-approach-06-01-levels-of-knowledge-representation.html)
+*   [Knowledge Assets (discrete representations with a purpose)](documentation-approach-06-02-knowledge-assets.html)
     *   Asset Metadata (information about the assets and knowledge base)
-*   Knowledge Architecture (designing and defining the types and nature of assets)
+*   [Knowledge Architecture (designing and defining the types and nature of assets)](documentation-approach-06-03-knowledge-architecture.html)
 
-**“Levels” of Knowledge Representation Framing:** <!-- Link to 06.01 !-->
+**Levels of Knowledge Representation Framing:** <!-- Link to 06.01 !-->
 
 ## **Approach**
 
