@@ -448,6 +448,7 @@ Standards facilitate a number of benefits that promote a more efficient and effe
 </ul>
 </li>
 </ul>
+
 <ul>
 
 <li><strong>Related or Derived Assets</strong>
@@ -472,62 +473,35 @@ Standards facilitate a number of benefits that promote a more efficient and effe
 </ul>
 
 <h2>Separation of Concerns</h2>
-<p>
-<img src="assets/images/CPG-12-01.png" width="" alt="alt_text" title="image_tooltip">
-</p>
-<p>
-FIG 12. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
-</p>
-<h2>Plan</h2>
 
+<p><img src="assets/images/CPG-12-01.png" width="400" alt="alt_text" title="image_tooltip"></p>
+<p>FIG. 13. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).</p>
+
+<h2>Plan</h2>
 
 <p>
 The plan, in the CPG context, as described above in “Separation of Concerns,” addresses how the care team intends to address the active clinical concerns of a class of patients.  Uses the FHIR Plan Definition resource.
 </p>
-<p>
 
-<img src="assets/images/CPG-Main-Plan.png" width="" alt="alt_text" title="image_tooltip">
+<p><img src="assets/images/CPG-Main-Plan.png" width="700" alt="alt_text" title="image_tooltip"></p>
+<p>FIG. 13.1. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similarly coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by <a href="http://hl7.org/fhir/definition.html">Levels of Conformance and Enablement FHIR Resources that follow the Definition pattern</a>.  If logic describes what to do for a patient, it likely belongs in the Plan.</p>
 
-</p>
-<p>
-FIG 13.
-</p>
 <h2>Case</h2>
-
-
 <p>
 The data that expresses a Case consists of patient descriptors, exposures (environmental or behavioral, past and current medications and procedures), physiological and pathophysiological assessments and descriptions (labs, vitals), clinical presentation and progression (signs, symptoms), diagnostic evaluations and physical exam findings, family history and genetic markers, past and current diagnoses, risk and severity scores, in response to treatment including end and intermediate outcomes.
 </p>
-<p>
+<p><img src="assets/images/CPG-Main-Case.png" width="700" alt="alt_text" title="image_tooltip"></p>
+<p>FIG. 14. The Case consists of facts or information about the patient called Case Features (CPGCaseFeatures) that may be resolved by <a href="https://www.hl7.org/fhir/event.html"FHIR Resources following the Event pattern</a> and <a href="https://www.hl7.org/fhir/request.html"FHIR Resources following the Request pattern</a> as required data elements or inferred, in part using required data elements.  If an inference (logic) tells you something about the patient, it is almost certainly a Case Feature.</p>
 
-<img src="assets/images/CPG-Main-Case.png" width="" alt="alt_text" title="image_tooltip">
-
-</p>
-<p>
-FIG. 14.
-</p>
 <h2>Care Plan</h2>
-
-
 <p>
 The Care Plan describes the intention of how one or more healthcare professionals intend to provide care for a specific patient, group, or community for a period of time, possibly limited to care for a specific condition or set of conditions.
 </p>
-<p>
+<p><img src="assets/images/CPG-Main-InstantiatedPlan.png" width="" alt="alt_text" title="image_tooltip"></p>
+<p>FIG 15. The Care Plan consists of the patient-specific recommendations as Proposals, <a href="https://www.hl7.org/fhir/request.html"Requests</a> that correspond (or are related) to the Proposals, and the corresponding or related <a href="https://www.hl7.org/fhir/event.html"Events</a>.  NOTE: Requests and Events are also referenced by the Case as CPGCaseFeatures.</p>
 
-<img src="assets/images/CPG-Main-InstantiatedPlan.png" width="" alt="alt_text" title="image_tooltip">
-
-</p>
-<p>
-FIG 15.
-</p>
-<p>
-
-<img src="assets/images/CPG-Approach16.png" width="" alt="alt_text" title="image_tooltip">
-
-</p>
-<p>
-FIG 16 Conceptual Representation of the CPG Knowledge Architecture. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition. The bottom third illustrates the CPGCase consisting of all the patient descriptors, including exposures, physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile as CPGCaseFeatures.  The middle third illustrates the CPGCarePlan with its CPGProposals and resulting or related Requests and Events.
-</p>
+<p><img src="assets/images/CPG-Approach16.png" width="" alt="alt_text" title="image_tooltip"></p>
+<p> FIG 16 Conceptual Representation of the CPG Knowledge Architecture. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition. The bottom third illustrates the CPGCase consisting of all the patient descriptors, including exposures, physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile as CPGCaseFeatures.  The middle third illustrates the CPGCarePlan with its CPGProposals and resulting or related Requests and Events.</p>
 <!-- ==============END CONTENT=================== -->
 
 {% include container-end.html %}
