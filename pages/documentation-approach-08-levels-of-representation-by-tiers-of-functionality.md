@@ -6,7 +6,8 @@ title: Levels of Representation by Tiers of Functionality
 
 A basic approach that may help with addressing appropriate separations of concerns is to consider where certain knowledge engineering artifacts may be situated when considering both tiers of functionality and levels of representation as shown in the table below.
 
-![alt_text](assets/images/CPG-Main-LevelsAndTiers.png "image_tooltip")
+<img src="assets/images/CPG-Main-LevelsAndTiers.png" alt="image_tooltip" width="750" hight="300"/>
+
 
 FIG. 58. Levels of Representation by Tiers of Functionality with Examples (Rhodes,B, Database Consulting Group, 2019).
 
