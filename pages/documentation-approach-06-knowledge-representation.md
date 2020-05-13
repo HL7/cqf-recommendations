@@ -25,13 +25,15 @@ Note that the levels of knowledge representation are a continuum, with discrete 
 
 This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
 
-![alt_text](assets/images/knowledge-levels.png "image_tooltip")
+<img src="assets/images/knowledge-levels.png" alt="image_tooltip" width="750" hight="334"/>
+
 
 FIG. 45. Knowledge Levels
 
 As will be discussed further in the Agile CPG development approach (see section on Knowledge Engineering),<!-- Link to ... !--> these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
-![alt_text](assets/images/CPG-05.06-01.png "image_tooltip")
+<img src="assets/images/CPG-05.06-01.png" alt="image_tooltip" width="750" hight="287"/>
+
 
 FIG. 46. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
 
