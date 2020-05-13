@@ -217,7 +217,7 @@ FIG. 65. The CPGCarePlan With its CPGProposals and resulting or related Requests
 
 The CPGCarePlan is constrained to the set of proposals (i.e. patient-specific recommendations), clinical interventions (e.g., orders/ requests), or their fulfillments (e.g., events) scoped by a specific CPG.  This includes those related to the guideline recommendations, the strategies for combining guideline recommendations, as well as the decision logic for each recommendation, the strategies for combining recommendations, and how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies in the context of a specific case (i.e., patient).  As described in the Methodology <!-- link to Methodology !--> section, the CPGCarePlan is modeled as a profile on a [FHIR CarePlan Resource](https://www.hl7.org/fhir/careplan.html).
 
-![alt_text](assets/images/CPG-Approach7.png "image_tooltip")
+![alt_text](assets/images/CPG-CPG-Main-InstantiatedPlan.png "image_tooltip")
 
 FIG. 66. The Care Plan consists of the patient-specific recommendations as Proposals, Requests that correspond (or are related) to the Proposals, and the corresponding or related Events.  Note that the Requests and Events are also referenced by the Case as CPGCaseFeatures.
 
