@@ -22,7 +22,7 @@ FIG. 69. Illustrating the separation of the Case (patient clinicopathophysiologi
 
 </summary>
 
-<img src="assets/images/CPG-12-01.png" alt="Separation of Concerns" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-12-01.png" alt="Separation of Concerns" class="img-responsive img-rounded center-block" width=300/>
 
 </details>
 
