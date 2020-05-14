@@ -4,7 +4,6 @@ title: Common Care Pathway
 ---
 # Common Care Pathway
 
-
 <div>
   <img src="assets/images/common-pathway.png" alt="Common Care Pathway" height="494" width="766"/>
 </div>
