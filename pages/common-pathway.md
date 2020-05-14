@@ -4,11 +4,12 @@ title: Common Care Pathway
 ---
 # Common Care Pathway
 
+
 <div>
   <img src="assets/images/common-pathway.png" alt="Common Care Pathway" height="494" width="766"/>
 </div>
 
-<!-- 
+<!--
 Diagram evokes more encounter-based care, doesn't communicate that it potentially applies to more distributed care
 
 Potentially simplify even more:
@@ -82,4 +83,3 @@ Monitoring and tracking progress for each patient based on guideline recommendat
 ## Alerts Reminders Education
 
 Providing alerts, reminders, and education to patients, providers, and health system managers.
-
