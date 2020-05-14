@@ -23,10 +23,13 @@ Topics covered in the Approach (see each section below for its content):
 *   Section 11: Role and Benefits of Standards
 *   Section 12: CPG Knowledge Architecture (Conceptual)
 
-![alt_text](images/CPG-Main-06.png "image_tooltip")
 
-FIG 1. Clinical Quality Lifecycle with situated standards to address each respective phase.  The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback as well as feedforward loop(s).
-
+<details open>
+<summary>
+FIG 01. Clinical Quality Lifecycle with situated standards to address each respective phase.  The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback as well as feedforward loop(s).
+</summary>
+<img src="assets/images/CPG-Main-06.png" alt="Clinical Quality Lifecycle" class="img-responsive img-rounded center-block"/>
+</details>  <!-- ![alt_text](images/CPG-Main-06.png "image_tooltip") !-->
 
 # **Executive Summary for CPG Approach**
 
@@ -38,15 +41,29 @@ Translating guideline recommendations and other types of guidance into practice 
 2. Common standards that can work across the entire data lifecycle (a.k.a. learning health system - see figure 2) and different electronic health record (EHR) platforms
 3. Closed-loop guideline content and information flow inclusive of feedback and feedforward processes
 
-![alt_text](images/CPG-DataLifecycle.png "image_tooltip")
+<details open>
 
-Figure 2. The data lifecycle and impacts to the public’s health (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019).  An updated version of this lifecycle directly related to the processes, approaches, and computable artifacts discussed in this section is shown below.
+<summary>
+
+Figure 02. The data lifecycle and impacts to the public’s health (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019).  An updated version of this lifecycle directly related to the processes, approaches, and computable artifacts discussed in this section is shown below.
+
+</summary>
+
+img src=assets/images/CPG-DataLifecycle.png alt="Data Lifecycle" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 The integrated process (see figure 3) brings downstream implementation considerations and stakeholders into the upstream guideline/guidance development process by incorporating parallel and iterative development of tools (e.g., clinical decision support (CDS) or electronic clinical quality measures (eCQMs)) as the guideline/guidance is being developed. This includes gathering input from implementers (e.g., from the clinical and informatics perspectives at clinical sites) on feasibility and validity. This is done by incorporating implementers, knowledge engineers, and other downstream perspectives into the guideline development process to produce computer-interpretable artifacts that express the narrative guideline, delivering them as a “package”. Many downstream implementers can then consume and implement those standards-based artifacts without significant rework.
 
-![alt_text](images/CPG-Main-RedesigningGuidelineDevelopment.png "image_tooltip")
-
+<details open>
+<summary>
 FIG. 3. Redesigning guideline development and implementation: The Integrated Process (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019). NOTE: The “Implementation” perspective represents local implementers that are part of the concurrent guideline development and translation part of the process, and “Local Implementation” represents the actual implementation at clinical sites once the guidelines and related CDS and/or eCQMs, are published.
+</summary>
+
+<img src="assets/images/CPG-Main-RedesigningGuidelineDevelopment.png" alt="Redesigning Guildeline Development and Implementation class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 In particular, the translation into tools like CDS and eCQMs applies common health IT standards like Fast Healthcare Interoperability Resources (FHIR) and Clinical Quality Language (CQL). How to use these standards to develop shareable, platform-independent tools based on guidelines/guidance for a variety of diseases, conditions, or preventive care is the primary focus of this CPG-IG, including this Approach section. Secondarily, this CPG-IG shows how using FHIR can help with other data-focused activities, such as public health reporting (i.e., using electronic case reports) or quality reporting (i.e., using eCQMs), that provide a feedback loop that feeds the evidence. The evidence can also be represented using FHIR (i.e., EBM-on-FHIR) and could be applied in summarizing evidence and updating guidelines/guidance. This completes the “data lifecycle” that allows for continuous learning and improvement - a “learning health system”.  The CPG-IG approach can be a key component of a learning health system in times requiring rapid response, where knowledge of best practice is not well-known.
 
@@ -77,7 +94,7 @@ The CPG Approach section highlights:
 
 Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative ([ref](https://www.cdc.gov/ddphss/clinical-guidelines/index.html)), the World Health Organization’s (WHO’s) Antenatal Care Guidelines ([ref](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)), the HL7 Clinical Decision Support Working Group, and numerous other publicly funded and private sector initiatives including local health system implementations of guidelines and in-workflow pathways.
 
-**To the Guideline Developer: **Working in parallel with knowledge engineers and other downstream consumers (e.g., local implementers) can identify areas within the guideline that need clarification, helping improve the narrative, provide opportunity to review the translation of the tools for fidelity to the guideline, and get early feedback from end-consumers of the guideline work product -- all _before_ the guidelines or tools are published.
+**To the Guideline Developer:** Working in parallel with knowledge engineers and other downstream consumers (e.g., local implementers) can identify areas within the guideline that need clarification, helping improve the narrative, provide opportunity to review the translation of the tools for fidelity to the guideline, and get early feedback from end-consumers of the guideline work product -- all _before_ the guidelines or tools are published.
 
 **To the Knowledge Engineer:** Working in parallel with guideline developers allows validation of translations directly with the “source of truth,” helping ensure accuracy. Working in parallel with downstream consumers (e.g., local implementers) provides the ability to confirm feasibility and validity for the users of the artifacts as they are produced by knowledge engineers and may even provide a useful means to build and validate once against real-world data and implementations.
 
@@ -89,13 +106,13 @@ Much of this work has been informed by several international efforts, including 
 
 Using approaches, standards, and techniques addressed in further detail in individual sections, the CPG-on-FHIR as described in this implementation guide can serve a critical role in the full data lifecycle of a Learning Health System.
 
+<details open>
+<summary>
+Figure 4. Data Lifecycle Revisited in context of the CPG-IG:  With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively.
+</summary>
 
-![alt_text](images/CPG-Main-DataLifecycle.png "image_tooltip")
-
-
-Figure 4.** Data Lifecycle Revisited in context of the CPG-IG:**  With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively.
-
-
+<img src="assets/images/CPG-Main-DataLifecycle.png" alt="Data Lifecycle Revisited" class="img-responsive img-rounded center-block"/>
+</details>
 
 2. **Objectives**
 *   **Direct:**
@@ -144,18 +161,13 @@ Covered in this section:
 Recommendations are proposals pertaining to the best course of action put forth by an authoritative source or body related to a condition, procedure, clinical decision or activity.
 
 
-## **Computer-enabled Guideline Artifacts in the CPG-IG: **
+## **Computer-enabled Guideline Artifacts in the CPG-IG:**
 
-
-
-
-
-
-*   **Guideline **(CPG container)
+*   **Guideline** (CPG container)
     *   **Recommendations**
     *   **Case Features**
-*   **Metrics and Measures **(scoped to CPG)
-*   **eCaseReport **(scoped to CPG)
+*   **Metrics and Measures** (scoped to CPG)
+*   **eCaseReport** (scoped to CPG)
 3. **Knowledge Engineering Overview**
 
 Knowledge Engineering (KE) is the discipline and profession of developing explicit representations of advanced, domain-oriented logic in computer systems (i.e., knowledge-based systems) in order to simulate human decision-making and high-level cognitive tasks.
@@ -171,10 +183,13 @@ Covered in this section:
 *   Knowledge Implementation
 *   Agile Approach to CPG Development
 
-![alt_text](images/CPG-05-00.png "image_tooltip")
-
+<details open>
+<summary>
 FIG. 5.  The Knowledge Engineering Lifecycle, illustrating the general flow of activities and information.
+</summary>
 
+<img src="assets/images/CPG-05-00.png" alt="Knowledge Engineering Lifecycle" class="img-responsive img-rounded center-block"/>
+</details>
 
 ## **Knowledge Engineering Lifecycle Process**
 
@@ -192,33 +207,49 @@ Steps in the Knowledge engineering Lifecycle include:
 *   Knowledge Validation
 *   Knowledge Implementation
 
-![alt_text](images/CPG-05.02-00.png "image_tooltip")
-
+<details open>
+<summary>
 FIG. 6. Knowledge Translation occurs between and across various levels of knowledge representation,  from narrative to semi-structured to structured to executable
+</summary>
 
-![alt_text](images/CPG-05-05.png "image_tooltip")
+<img src="assets/images/CPG-05.02-00.png" alt="Knowledge Translation" class="img-responsive img-rounded center-block"/>
+</details>
 
+<details open>
+<summary>
 FIG 7.  Integration/Collaboration with Guideline Development Process and CPG Development Processes - Analogs between GDG and PG as well as KE and Local Informatics with opportunities to work hand-in-hand, enabling earlier and less costly adaptations (feedback loops in process) and opportunities to collaborate on real-world data.
+</summary>
 
+<img src="assets/images/CPG-05-05.png" alt="Integration/Collaboration" class="img-responsive img-rounded center-block"/>
+</details>
 
 ### **Agile Approach to CPD Development**
 
-![alt_text](images/CPG-Approach0.png "image_tooltip")
+<details open>
+<summary>
+FIG 8. Concurrent, Integrated, Cross-functional Development and Implementation of the CPG-on-FHIR:  The CPG can serve a critical role in formalizing guidelines and their recommendations in computer-interpretable representations that can be consumed by various downstream end-users as well as provide a means for feedback and feedforward loops.
+</summary>
 
-
-**FIG 8. Concurrent, Integrated, Cross-functional Development and Implementation of the CPG-on-FHIR:**  The CPG can serve a critical role in formalizing guidelines and their recommendations in computer-interpretable representations that can be consumed by various downstream end-users as well as provide a means for feedback and feedforward loops.
-
+<img src="assets/images/CPG-Approach0.png" alt="CPG-on-FHIR" class="img-responsive img-rounded center-block"/>
+</details>
 
 
 4. **Knowledge Representation**
 
 Knowledge can be represented in four progressively more structured levels: narrative (L1), semistructured (L2), structured (L3), executable (L4).
 
-![alt_text](images/knowledge-levels.png "image_tooltip")
+<details open>
+<summary>
 
 Figure 9 Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139).
 
-**Knowledge Assets **(scoped representations of knowledge)
+</summary>
+
+<img src="assets/images/knowledge-levels.png" alt="Knowledge Levels with Examples" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+**Knowledge Assets** (scoped representations of knowledge)
 
 
 
@@ -248,31 +279,34 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 
 The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (T3).
 
-![alt_text](images/CPG-Main-LevelsAndTiers.png "image_tooltip")
+<details open>
+<summary>
 
 Figure 10. Levels of Representation by Tiers of Functionality with Examples (Rhodes, B, Dynamic Content Group, 2019).
 
+</summary>
 
+<img src="assets/images/CPG-Main-LevelsAndTiers.png" alt="Levels and tiers" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 7. **Methods of Implementation**
 
 With these computable artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
-
-
 *   As a “Spec”
 *   Translation
 *   Native Execution
+
 8. **Mechanisms of Integration**
 *   Within EHR (Content Import)
 *   As CDS Service (API)
 *   Chaining through Data
 *   Hybrid (combine above as needed)
+
 9. **Role and Benefits of Standards in Knowledge-driven Systems and in a Knowledge Ecosystem**
 
 Standards facilitate a number of benefits that promote a more efficient and effective knowledge ecosystem:
-
-
 
 *   Shareability
 *   Reusability
@@ -281,13 +315,38 @@ Standards facilitate a number of benefits that promote a more efficient and effe
 *   Success in existing ecosystem
 *   CPG as situated in the knowledge ecosystem (CQI image overlaid with IGs)
 
-![alt_text](images/CPG-Main-06.png "image_tooltip")
+<details open>
+<summary>
 
-FIG 11. **Enabling and Removing Friction across a Knowledge Ecosystem through HL-7 Standards**
+FIG 11. Enabling and Removing Friction across a Knowledge Ecosystem through HL-7 Standards
 
-![alt_text](images/CPG-Approach0.png "image_tooltip")
+</summary>
+
+<img src="assets/images/CPG-Main-06.png" alt="Removing Friction" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+<summary>
+
+FIG 11. Enabling and Removing Friction across a Knowledge Ecosystem through HL-7 Standards
+
+</summary>
+
+<img src="assets/images/CPG-Main-06.png" alt="Removing Friction" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+<summary>
 
 FIG 12. **Concurrent, Integrated, Cross-functional Development and Implementation of the CPG-on-FHIR:**  The CPG can serve a critical role in formalizing guidelines and their recommendations in computer-interpretable representations based on standards that can be consumed by various downstream end-users as well as provide a means for feedback and feedforward loops.
+
+</summary>
+
+<img src="assets/images/CPG-Approach0.png" alt="CPG-on-FHIR" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 10. **CPG Knowledge Architecture (Conceptual Perspective)**
 *   **Plan**
@@ -312,39 +371,70 @@ FIG 12. **Concurrent, Integrated, Cross-functional Development and Implementatio
 
 ## Separation of Concerns
 
-![alt_text](images/CPG-12-01.png "image_tooltip")
+<details open>
+<summary>
 
-FIG 12. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
+FIG. 12.1. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
+
+</summary>
+
+<img src="assets/images/CPG-12-01.png" alt="Separations" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 
 ## Plan
 
 The plan, in the CPG context, as described above in “Separation of Concerns,” addresses how the care team intends to address the active clinical concerns of a class of patients.  Uses the FHIR Plan Definition resource.
 
+<details open>
+<summary>
 
-![alt_text](images/CPG-Main-Plan.png "image_tooltip")
+FIG. 13. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similarly coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by FHIR Resources that follow the Definition pattern.  If logic describes what to do for a patient, it likely belongs in the Plan.
 
+</summary>
 
-FIG 13.
+<img src="assets/images/CPG-Main-Plan.png" alt="Main Plan" class="img-responsive img-rounded center-block"/>
 
+</details>
 
 ## Case
 
 The data that expresses a Case consists of patient descriptors, exposures (environmental or behavioral, past and current medications and procedures), physiological and pathophysiological assessments and descriptions (labs, vitals), clinical presentation and progression (signs, symptoms), diagnostic evaluations and physical exam findings, family history and genetic markers, past and current diagnoses, risk and severity scores, in response to treatment including end and intermediate outcomes.
 
-![alt_text](images/CPG-Main-Case.png "image_tooltip")
+<details open>
+<summary>
 
-FIG. 14.  The Case consists of facts about the patient called Case Features (CPGCaseFeatures)
+Figure 14.  The Case consists of facts or information about the patient called Case Features (CPGCaseFeatures) that may be resolved by FHIR Resources following the Event pattern and FHIR Resources following the Request pattern as required data elements or inferred, in part using required data elements.  If an inference (logic) tells you something about the patient, it is almost certainly a Case Feature.
 
+</summary>
+
+<img src="assets/images/CPG-Main-Case.png" alt="Main Case" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 ## Care Plan
 
 The Care Plan describes the intention of how one or more healthcare professionals intend to provide care for a specific patient, group, or community for a period of time, possibly limited to care for a specific condition or set of conditions.
 
-![alt_text](images/CPG-Main-InstantiatedPlan.png "image_tooltip")
+<details open>
+<summary>
 
 FIG 15. The Care Plan consists of the patient-specific recommendations as Proposals, Requests that correspond (or are related) to the Proposals, and the corresponding or related Events.  Note that the Requests and Events are also referenced by the Case as CPGCaseFeatures.
 
-![alt_text](images/CPG-12-00.png "image_tooltip")
+</summary>
+
+<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="Care Plan" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+<summary>
 
 FIG 16 Conceptual Representation of the CPG Knowledge Architecture. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition. The bottom third illustrates the CPGCase consisting of all the patient descriptors, including exposures, physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile as CPGCaseFeatures.  The middle third illustrates the CPGCarePlan with its CPGProposals and resulting or related Requests and Events.
+
+</summary>
+
+<img src="assets/images/CPG-12-00.png" alt="Knowledge Architecture" class="img-responsive img-rounded center-block"/>
+
+</details>
