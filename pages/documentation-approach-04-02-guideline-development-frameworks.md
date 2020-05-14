@@ -16,9 +16,18 @@ A meta-analysis is a statistical analysis that combines the results of multiple 
 
 A systematic review is a summary of the literature that uses a systematic approach to identify and critically appraise publications or evidence from the literature on a given topic.  Systematic reviews are intended to provide a comprehensive and exhaustive summary of current evidence that is ”methodical, comprehensive, transparent, and replicable.” (ref) systematic reviews may relate to interventions (benefits and harms), use of diagnostic testing to detect a particular disease, prognosis or probable course for future outcomes, risks of developing a given condition, or even a systematic review of systematic reviews to consolidate holistic evidence about a given topic (e.g. disease, procedure).
 
-![alt_text](assets/images/CPG-04-01.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 21. The Evidence Pyramid refers to a means to evaluate the quality or validity of evidence (higher toward the top) as well as provide a visual depiction of the amount of evidence (width) ([ref](http://dx.doi.org/10.1136/ebmed-2016-110401)).  The evaluation of the evidence not only informs the guideline development process and resulting recommendations but is further communicated together with the recommendations themselves using the GRADE framework, described below.
+
+</summary>
+
+<img src="assets/images/CPG-04-01.png" alt="Evidence Pyramid" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **PICOTS Typology** - **P**atient population, **I**ntervention, **C**omparator, **O**utcomes, **T**iming, **S**etting. The **PICOTS** Typology may be used for scoping the guideline and individual recommendations and the analysis of the supporting evidence or studies (e.g., meta-analyses, systematic reviews, and the individual studies that serve as their body of evidence).  There are implications to guideline eligibility, applicability criteria for individual recommendations (the “condition” portion of ECA rules), and various data element and terminology semantics across the CPG. ([https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#PICOtable](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#PICOtable); [https://www.ncbi.nlm.nih.gov/books/NBK98234/table/ch](https://www.ncbi.nlm.nih.gov/books/NBK98234/table/ch)).  For more on using PICOTS within HL7 Standards, see the EBM-on-FHIR IG. <!-- Need ref !-->
 

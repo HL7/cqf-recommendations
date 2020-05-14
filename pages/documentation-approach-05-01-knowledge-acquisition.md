@@ -42,8 +42,19 @@ A key tenant of the CPG development process is for the knowledge engineering tea
 
 A key tenant of the Agile CPG approach described subsequently, is to further integrate the knowledge engineering team and guideline development group into a nearly singular cross-functional team.  Benefits include fewer handoffs and queues, concurrency of work efforts, shorter and more valuable feedback loops, and higher-quality inputs to knowledge acquisition (people and processes versus a paper narrative to be interpreted subsequently to and asynchronously with the guideline development group’s and artifacts).  Lastly, but none of least importance is the ability for the guideline development group in the knowledge engineering team to learn together.  Additional benefits and work processes are described subsequently.
 
-![alt_text](assets/images/CPG-05-01.png "image_tooltip")
+<details open>
+
+<summary>
+
 FIG. 33. Knowledge Engineering in collaboration with the guideline development group (as described in the CDC’s “Integrated Process”) can proceed much earlier and be incremental and iterative, while leveraging direct interactions with the guideline development group to ensure that the translation into more formal, computeable expressions accurately convey the intent of the source knowledge.
+
+</summary>
+
+<img src="assets/images/CPG-05-01.png" alt="Knowledge Engineering" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 7. **In Collaboration with Knowledge Implementers**
 
@@ -51,5 +62,15 @@ Knowledge acquisition approaches may further leverage the benefits of working di
 
 Collaboration with knowledge implementers further affords the potential for access to Real-World Data, including for knowledge acquisition.  GIven a cohort of implementers with sufficient sample size and natural variation of Cases, the above Knowledge Discovery and Hybrid approaches to knowledge acquisition become not only more possible, but afford numerous benefits across the entire guideline lifecycle.  Further information on approaches and benefits to Concurrent CPG Development and Implementation, <!-- Link to 05.05 !-->  doing so in the context of the Agile CPG Development Approach, <!-- Link to 05.05 !--> and its relationship to enabling the 6S Evidence Pyramid and Learning Health Systems <!-- Link to 04.03 !--> can be found in these respective sections.
 
-![alt_text](assets/images/CPG-05-02.png "image_tooltip")
+<details open>
+
+<summary>
+
 FIG. 34. Knowledge Engineering in collaboration Local Informatics and EHR build teams (concurrent development and implementation) enables more data-driven knowledge engineering processes and helps to ensure that the computable expressions accurately and reliably convey the intent of the knowledge source to the target systems.
+
+</summary>
+
+<img src="assets/images/CPG-05-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+
+</details>

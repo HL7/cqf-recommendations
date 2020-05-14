@@ -38,9 +38,18 @@ Roughly:
 *   Deep EHR Integrations with CDS Service
 *   Then add incremental effort for derived capabilities and how they interact or are implemented (Metric/Measure, eCaseReport, eCasePlanSummaryView/eCasePlanProgressingNote).  Some capabilities and enablements build on others.
 
-<img src="assets/images/CPG-03-CPGEnablements.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="757"/>
+<details open>
+
+<summary>
 
 FIG 17. A given CPG may provide a distinct set of enablements, at singular or multiple Levels of Enablement, or may go through successive versions in its development lifecycle with increasing Levels of Enablement, particularly as the impact of its recommendations and interventions prove to be correlated (or even causal) to key outcomes and thus justify the effort.  Lower Levels of Enablement may largely serve to collect guideline-related patient information to inform guideline development in certain situations such as where evidence is scarce, but needed very urgently such as an emergency response to a pandemic with a novel contagion.
+
+</summary>
+
+<img src="assets/images/CPG-03-CPGEnablements.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="757"/>
+
+</details>
+
 
 ---
 

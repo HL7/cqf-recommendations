@@ -39,15 +39,35 @@ Relevant Agile Practices to be adapted to knowledge engineering function:
 *   Test-driven development (e.g. start with few critical test cases, use short iterations to create logic, and use it to aid in generating additional test cases than are simply graded to be re-used for ‘build’ vs wholly generated manually)
 *   Test-integration (e.g. testing of all individual and composite knowledge assets/artifacts)
 
-![alt_text](assets/images/CPG-05-06.png "image_tooltip") <!-- Need Updated Image from Susan that shows more concurrency and early engagement of "local" consumers of guidelines, not just hand-off !-->
+<details open>
+
+<summary>
 
 FIG. 41. Integrated, Cross-functional process flow for guideline development.
 
+</summary>
+
+<img src="assets/images/CPG-05-06.png.png" alt="Cross-functional process flow" class="img-responsive img-rounded center-block"/>
+<!-- Need Updated Image from Susan that shows more concurrency and early engagement of "local" consumers of guidelines, not just hand-off !-->
+</details>
+
+
+
 The levels of knowledge representation (i.e., L1 through L4) represent a framework, not a process or a specific kind of knowledge asset or artifact. The levels describe the general nature of knowledge artifacts and their representation in the typical progression of formalization through translation. Knowledge artifacts may have characteristics of more than one level (e.g., a narrative (L1) guideline could include semi-structure flow diagrams (L2) within them). Progression of formalization or translation may be rapid or instantaneous through the use of tooling (e.g., editors), reuse formalized assets or content from upstream (e.g., value set definitions from evidence or studies), and/or a re-conceptualization of the overall guidelines and CPG development lifecycle process.
 
-![alt_text](assets/images/CPG-05.06-01.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 42. Levels of Representation in historical sense and as may be adapted for Agile approaches.
+
+</summary>
+
+<img src="assets/images/CPG-05.06-01.png" alt="Levels of Representation (historical)" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Agile approach to Knowledge Engineering and CPG Development**
 
@@ -115,10 +135,20 @@ However, use of real and or realistic data sets (e.g. synthetic data sets, deide
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/CPG-Approach2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](assets/images/CPG-05.06-01.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 43. **An Agile Approach to Knowledge Translation** conveys the the concepts, clinical logic, and intent of a source knowledge expression (e.g., early guideline development artifacts) into an equivalent computable or computer interpretable expression.  The Agile approach to knowledge engineering and translation includes early, upfront engagement (with the guideline development group), iteration with incremental parts called “chunking” (data element and terminology definitions), rapid progression through the levels of representation for parts as well as aggregates (often using tooling), and where possible use of Real-World Data for design, specification, development, and one-time validation (vs logic, then data, then logic and data) as is described below.
+
+</summary>
+
+<img src="assets/images/CPG-05.06-01.png" alt="Agile Approach to Knowledge Translation" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
+
 
 **Specification by example**
 
@@ -155,9 +185,19 @@ However, there is an alternative approach with composite assets or even chained 
 
 Lastly, a combination of the bottom-up and top-down approaches above may not only be the most efficient, but may fall out of the natural progression of knowledge engineering work product in a large composite asset such as a CPG.  Base data resources (required data elements), value sets, and their combination can be identified, developed, and validated very early in the CPG development process.  Likewise, the same often holds true for the majority of CPGCaseFeautures.  Some CPGCaseFeatures with numerous and/or chained dependencies on other CPGCaseFeautures (often developed through the aforementioned approach) may be addressed as a composite asset. Individual CPGRecommendations, together with their dependent CPGCaseFeatures, may be similarly approached as a composite asset.  Nearly by necessity, CPGStrategies and CPGPathways are addressed as composite assets.
 
-![alt_text](assets/images/CPG-05.05-Agile.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 44. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
+
+</summary>
+
+<img src="assets/images/CPG-05.05-Agile.png" alt="Knoweldge Implementation with Agile" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Leveraging a Knowledge Base (Knowledge Content Management System)**
 

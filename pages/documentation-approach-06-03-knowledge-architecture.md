@@ -23,10 +23,18 @@ Covered in this section:
 
 The CPG Knowledge Architecture (Conceptual Domain Perspective) <!-- Link to - 12 !--> is described in its own section of this implementation guide.
 
-![alt_text](assets/images/CPG-06.03-Architecture.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 51. The knowledge architecture affords a means to formally describe the clinical domain using computer-interpretable formalisms.  The knowledge architecture defines the type and scope of various knowledge assets as well as the relationships between them and their requisite metadata.  It explicitly defines the nature of classes of knowledge assets through their metamodel. These definitions as well as definitions of the relationships between the knowledge asset types constitutes the knowledge asset ontology.
+
+</summary>
+
+<img src="assets/images/xCPG-06.03-Architecturex.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 Furthermore, as various asset types and/or their derivatives share many common characteristics, the knowledge architects attempt to use common approaches and information modeling concepts to ensure optimal reuse, adaptation, and subtyping across knowledge asset meta-model definitions. In FHIR, this is done through profiling of definitional resources (e.g. plan definition, activity definition) and is enforced largely through a common approach in tooling to creating these asset type profiles.
 
@@ -79,29 +87,66 @@ Knowledge Architecture in the healthcare domain poses a particularly challenging
 
 Here we describe the overall knowledge architecture approach to developing the CPG knowledge architecture, which then results in the Conceptual Perspective on the CPG Knowledge Architecture as well as the concretized Knowledge Architecture in FHIR for the CPG-IG described subsequently.
 
-![alt_text](assets/images/CPG-06.03-CasePlan.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 52.   One of the primary objectives for the knowledge architecture team is to define the clinical domain concepts as well  as identify the useful computer-interpretable formalisms that may be used to express them.
 
-![alt_text](assets/images/CPG-06.03-Concepts-Formalisms.png "image_tooltip")
+</summary>
 
+<img src="assets/images/CPG-06.03-CasePlan.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 53.  The knowledge architecture team must then situate the clinical domain concepts to more accurately and comprehensively describe the domain of interest as well as situate the computer-interpretable formalisms in the information system ecosystem where the knowledge assets are to be executed.
 
-![alt_text](assets/images/CPG-06.03-Concepts-Formalisms.png "image_tooltip")
+</summary>
 
+<img src="assets/images/CPG-06.03-Concepts-Formalisms.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 54.  Next, the knowledge architecture team defines clear relationships between the clinical conceptualizations of the domain as well as how the computer interpretable formalisms may be used collectively to express the nature of behavior to be represented in the knowledge assets that formalize the clinical domain conceptualizations.
 
-![alt_text](assets/images/CPG-06.03-DiseaseProcess.png "image_tooltip")
+</summary>
 
+<img src="assets/images/CPG-06.03-Relationships.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 55.  The knowledge architecture team then defines the classes of clinical conceptualizations with explicit rules and constraints for how to apply the computer interpretable formalisms known as knowledge asset meta-models (Profiles on Definitional Resources in FHIR).
 
-![alt_text](assets/images/CPG-12.07-GdlnDef.png "image_tooltip")
+</summary>
+
+<img src="assets/images/CPG-06.03-DiseaseProcess.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 56.  Lastly, the knowledge architecture team defines the relationships, rules, and constraints within and between the various knowledge assets in the knowledge asset ontology.
+
+</summary>
+
+<img src="assets/images/CPG-12.07-GdlnDef.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Conceptual Perspective on the CPG Knowledge Architecture**
 

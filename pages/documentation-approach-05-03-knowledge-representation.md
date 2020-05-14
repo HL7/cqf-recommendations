@@ -11,9 +11,17 @@ Knowledge representation pertains to the process of progressively structuring an
 
 Knowledge curation is the activity of identifying, versioning, indexing, tagging (i.e., adding metadata), and archiving the various artifacts and assets (e.g., representations, formalisms, expression libraries) relevant to the scoped knowledge engineering activity. The primary purpose for knowledge curation is to facilitate search and retrieval of relevant content.  This is often done within a knowledge content management system or knowledge base.  In supporting large, sophisticated knowledge engineering activities , curation and a content management system or knowledge base becomes an invaluable tool (e.g., as is needed for a specific CPG and for supporting numerous related activities such as multiple CPG’s and/or their derivative assets such as measures, clinical decision support (CDS)).   The knowledge content management system serves the function of managing a large corpus of reusable and related content and asset dependencies and  providing workflow or decision-support for the knowledge engineers themselves across the knowledge engineering lifecycle process and reusable assets.
 
-![alt_text](assets/images/CPG-KCMS.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 39.  A **Knowledge Content Management System** provides the means to identify, store, organize, relate, reuse, and manage a collection of Knowledge Assets for knowledge engineering (and use) activites.  In some ways, it is analogous to a ‘code base’ for software engineering helping to manage dependencies and versioning.
+
+</summary>
+
+<img src="assets/images/CPG-KCMS.CPG-KCMSpng" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+</details>
+
 
 ### **Knowledge Management:**
 

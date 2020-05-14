@@ -19,9 +19,17 @@ The 6S Evidence Pyramid is another framing on the quality or validity of the evi
 5. **Summaries-** guidelines or texts that integrate and evaluate evidence-based information about specific clinical problems to inform clinical decisions
 6. **Systems-** integrating information from the lower levels of the hierarchy with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
 
-![alt_text](assets/images/CPG-04-02.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 22. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak.
+
+</summary>
+
+<img src="assets/images/CPG-04-02.png" alt="6S Evidence Pyramid" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 The CPG has the potential to address the "systems" level (i.e., peak of the pyramid), which is described as: “Integrating information from the lower levels of the hierarchy with individual patient records, systems represent the ideal source of evidence for clinical decision-making.” ([ref](https://hslmcmaster.libguides.com/ebm)).  The CPG affords the ability to directly insert guideline recommendations into electronic health records (EHRs) and clinical information systems based on reasoning over real-world, patient-specific clinical data to be considered directly in the context of clinical and shared decision-making.  
 
@@ -34,9 +42,17 @@ Intermediate and ultimate outcomes at the patient-level, including those reporte
 
 Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (CPGProposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”  ([ref](https://www.ahrq.gov/learning-health-systems/about.html)). <!-- Make Endnote !-->
 
-![alt_text](assets/images/CPG-04-03.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 23. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence (ref) <!-- Flynn, Allen & Friedman, Charles & Boisvert, Peter & Landis‐Lewis, Zachary & Lagoze, Carl. (2018). The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learning Health Systems. 2. 10.1002/lrh2.10054. !-->
+
+</summary>
+
+<img src="assets/images/CPG-04-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 **Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic:**
 
@@ -58,6 +74,14 @@ Alternatively, with a lack of high quality evidence and available evidence-based
 
 In either scenario described above- rapid discovery of best practice, or rapid dissemination of practice guidance, the ascent to the peak of the pyramid through a rapid-cycle Learning Health System can be initiated.  Whether it be data-to-evidence, or practice-to-data, the full closed loop knowledge discovery-to-delivery lifecycle need not be dependent on evidence-to-practice as is the usual case in the guideline development process and the supporting Agile CPG development process.  There are numerous feedback, and feedforward, loops described in this implementation guide that can facilitate continuous learning as well as evidence updates. (see Agile CPG Development Process and eCaseReport).  This cycle may be thought of as either: Data-to-Evidence-to-Knowledge-to-Practice; or Guidance-to-Practice-to-Data-to-Evidence-to-Knowledge-to-Practice
 
-![alt_text](assets/images/CPG-05.05-Agile.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG 24. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
+
+</summary>
+
+<img src="assets/images/CPG-05.05-Agile.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
