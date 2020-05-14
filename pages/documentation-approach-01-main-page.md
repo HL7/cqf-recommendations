@@ -58,7 +58,7 @@ FIG. 02. The data lifecycle and impacts to the public’s health (Michaels, M, U
 
 The integrated process (see FIG. 03) brings downstream implementation considerations and stakeholders into the upstream guideline/guidance development process by incorporating parallel and iterative development of tools (e.g., clinical decision support (CDS) or electronic clinical quality measures (eCQMs)) as the guideline/guidance is being developed. This includes gathering input from implementers (e.g., from the clinical and informatics perspectives at clinical sites) on feasibility and validity. This is done by incorporating implementers, knowledge engineers, and other downstream perspectives into the guideline development process to produce computer-interpretable artifacts that express the narrative guideline, delivering them as a “package”. Many downstream implementers can then consume and implement those standards-based artifacts without significant rework.
 
-<details>
+<details open>
 
 <summary>
 
@@ -106,7 +106,7 @@ Much of this work has been informed by several international efforts, including 
 
 Using approaches, standards, and techniques addressed in further detail in individual sections, the CPG-on-FHIR as described in this implementation guide can serve a critical role in the full data lifecycle of a Learning Health System.
 
-<details>
+<details open>
 
 <summary>
 
