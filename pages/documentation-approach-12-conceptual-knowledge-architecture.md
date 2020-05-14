@@ -238,7 +238,7 @@ For case features requiring clinical judgement or assessment, an adaptive form (
 
 **Separating Patient Descriptive Logic from Clinical Decision Logic**
 
-NOTE: the knowledge engineer MUST pay special attention to the separation of decision logic about what to do for the patient (e.g. in a recommendation) from description or inferencing logic that describes something about or the nature of the patient (e.g. clinical pathological process, risk, severity, in qualifiers thereof).  This greatly simplifies the decision logic as well as makes the inferences about the patient readily available for other logic and/or use cases.  This takes particular attention from the knowledge engineer and is critical for this implementation guide.  See details in the Case section of the approach to this implementation guide.
+**NOTE:** the knowledge engineer MUST pay special attention to the separation of decision logic about what to do for the patient (e.g. in a recommendation) from description or inferencing logic that describes something about or the nature of the patient (e.g. clinical pathological process, risk, severity, in qualifiers thereof).  This greatly simplifies the decision logic as well as makes the inferences about the patient readily available for other logic and/or use cases.  This takes particular attention from the knowledge engineer and is critical for this implementation guide.  See details in the Case section of the approach to this implementation guide.
 
 
 ### **Care Plan** <!-- link to 12.05 !-->
