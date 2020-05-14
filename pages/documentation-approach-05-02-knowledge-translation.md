@@ -44,12 +44,29 @@ There are ongoing efforts, tool development activities, and knowledge resources 
 
 Furthermore, if started concurrently with or slightly lagging the guideline development group as suggested by the “Integrated Approach” from the CDC Adapting Clinical Guidelines for the Digital Age initiative, there are opportunities to begin the process of knowledge translation upfront in the guideline development process.  Identifying terminologies and data definitions (e.g., FHIR resources) as well as modeling and testing cohort definitions and applicability criteria, perhaps against Real-World Data (particularly given a concurrent development and implementation effort) can begin early in the CPD development process and even provide feedback to the guideline development team.
 
-![alt_text](assets/images/CPG-05-02.png "image_tooltip")
+<details open>
 
-FIG 37.  Knowledge Engineering in collaboration Local Informatics and EHR build teams (concurrent development and implementation) enables more data-driven knowledge engineering processes and helps to ensure that the computable expressions accurately and reliably convey the intent of the knowledge source to the target systems.
+<summary>
+
+FIG 37.  Knowledge Engineering in collaboration with Local Informatics and EHR build teams (concurrent development and implementation) enables more data-driven knowledge engineering processes and helps to ensure that the computable expressions accurately and reliably convey the intent of the knowledge source to the target systems.
+
+</summary>
+
+<img src="assets/images/CPG-05-02.png" alt="KE and Local Informatics" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 The approaches above including “chunking” of incremental parts of the guideline, and use of real-world data for design, specification, development, and validation (including one-time validation vs multi-phased, sequential validation), combined with the “Integrated Approach” and concurrent guideline development and implementation (discussed in the section on Knowledge Implementation) <!-- link to - 05.05 !--> are all part of the Agile CPG Development Approach. <!-- link to - 05.06 !-->
 
-![alt_text](assets/images/CPG-KnowledgeEngineering-w-Agile.png "image_tooltip")
+<details open>
 
-FIG 38. **An Agile Approach to Knowledge Translation** conveys the the concepts, clinical logic, and intent of a source knowledge expression (e.g., early guideline development artifacts) into an equivalent computable or computer interpretable expression.  The Agile approach to knowledge engineering and translation includes early, upfront engagement (with the guideline development group), iteration with incremental parts called “chunking” (data element and terminology definitions), rapid progression through the levels of representation for parts as well as aggregates (often using tooling), and where possible use of Real-World Data for design, specification, development, and one-time validation (vs logic, then data, then logic and data) as is described below.
+<summary>
+
+FIG 38. An Agile Approach to Knowledge Translation conveys the the concepts, clinical logic, and intent of a source knowledge expression (e.g., early guideline development artifacts) into an equivalent computable or computer interpretable expression.  The Agile approach to knowledge engineering and translation includes early, upfront engagement (with the guideline development group), iteration with incremental parts called “chunking” (data element and terminology definitions), rapid progression through the levels of representation for parts as well as aggregates (often using tooling), and where possible use of Real-World Data for design, specification, development, and one-time validation (vs logic, then data, then logic and data) as is described below.
+
+</summary>
+
+<img src="assets/images/CPG-KnowledgeEngineering-w-Agile.png" alt="Agile KE" class="img-responsive img-rounded center-block"/>
+
+</details>

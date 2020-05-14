@@ -15,11 +15,12 @@ Knowledge curation is the activity of identifying, versioning, indexing, tagging
 
 <summary>
 
-FIG. 39.  A **Knowledge Content Management System** provides the means to identify, store, organize, relate, reuse, and manage a collection of Knowledge Assets for knowledge engineering (and use) activites.  In some ways, it is analogous to a ‘code base’ for software engineering helping to manage dependencies and versioning.
+FIG. 39.  A Knowledge Content Management System provides the means to identify, store, organize, relate, reuse, and manage a collection of Knowledge Assets for knowledge engineering (and use) activites.  In some ways, it is analogous to a ‘code base’ for software engineering helping to manage dependencies and versioning.
 
 </summary>
 
-<img src="assets/images/CPG-KCMS.CPG-KCMSpng" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-KCMS.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
 </details>
 
 

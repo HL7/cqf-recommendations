@@ -130,11 +130,6 @@ Test cases may come from a number of sources. This includes knowledge engineers 
 
 However, use of real and or realistic data sets (e.g. synthetic data sets, deidentified data sets- as from implementation partners), together with upfront tooling (e.g. query builders, data profiler, data mining and visualization tools, or even machine learning capabilities) can be used to create comprehensive and/or representative test decks (test case sets) to engineer knowledge against.  The same approaches and tooling for grading and validation can likewise be employed against such data sets.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/CPG-Approach2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 <details open>
 
 <summary>
@@ -146,8 +141,6 @@ FIG. 43. **An Agile Approach to Knowledge Translation** conveys the the concepts
 <img src="assets/images/CPG-05.06-01.png" alt="Agile Approach to Knowledge Translation" class="img-responsive img-rounded center-block"/>
 
 </details>
-
-
 
 
 **Specification by example**
