@@ -24,9 +24,7 @@ Furthermore, some knowledge engineers are very specialized in a particular knowl
 
 There are a few, experienced informaticians and knowledge architects that play a broader systems engineering (i.e., designing, integrating, and managing complex systems over their life cycles) role on a knowledge engineering team to bring the information, assets, processes, and individual knowledge engineers together, in part, through shared knowledge architecture and use of standardized representations (e.g., composite assets, terminologies, standards) as well as tooling (e.g., editors, validation tooling).
 
-<img src="assets/images/CPG-05-00.png" alt="image_tooltip" width="750" hight="430"/>
-
-
+<img src="assets/images/CPG-05-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="430"/>
 
 Fig. 25. The Knowledge Engineering Lifecycle, illustrating the general flow of activities and information.
 
@@ -78,8 +76,7 @@ There is extraordinary value, critical efficiencies, and unique perspectives tha
 
 A key tenet of the CPG development process is for the knowledge engineering team to leverage early, often engagement and even integration with guideline development group. This allows the knowledge engineering team to start acquiring knowledge and translating it further upstream in the CPG development process.  It further enables feedback and more rapid iteration between the knowledge engineering team and the domain experts in the guideline development group.
 
-<img src="assets/images/CPG-05-01.png" alt="image_tooltip" width="750" hight="391"/>
-
+<img src="assets/images/CPG-05-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="391"/>
 
 FIG. 26.  Knowledge Engineering in collaboration with the guideline development group (as described in the CDC’s “Integrated Process”) can proceed much earlier and be incremental and iterative, while leveraging direct interactions with the guideline development group to ensure that the translation into more formal, computeable expressions accurately convey the intent of the source knowledge.
 
@@ -89,8 +86,7 @@ FIG. 26.  Knowledge Engineering in collaboration with the guideline development 
 
 Knowledge acquisition approaches may further leverage the benefits of working directly with knowledge implementers, not limited to potential representative data sets (e.g de-identified data) to perform early knowledge specification and validation activities (e.g. data elements and terminologies) or even employ knowledge discovery and hybrid approaches as described above.
 
-<img src="assets/images/CPG-05-02.png" alt="image_tooltip" width="750" hight="477"/>
-
+<img src="assets/images/CPG-05-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="477"/>
 
 FIG. 27. Knowledge Engineering in collaboration Local Informatics and EHR build teams (concurrent development and implementation) enables more data-driven knowledge engineering processes and helps to ensure that the computable expressions accurately and reliably convey the intent of the knowledge source to the target systems.
 
@@ -100,8 +96,7 @@ FIG. 27. Knowledge Engineering in collaboration Local Informatics and EHR build 
 
 Knowledge translation occurs between and across various levels of knowledge representation,  from narrative to semi-structured to structured to executable (described in detail below in “Knowledge Representation” section) as well as between equivalent forms of a given knowledge asset.
 
-<img src="assets/images/CPG-05-03.png" alt="image_tooltip" width="750" hight="466"/>
-
+<img src="assets/images/CPG-05-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="466"/>
 
 FIG. 28.  Knowledge Translation is the dynamic and iterative process of conveying the concepts, clinical logic, and intent of a source knowledge expression (e.g., narrative guideline) into an equivalent expression in another language or formalism- in the case of a narrative guideline into a computable or computer interpretable expression.  This may occur successively or progressively across the Levels of Representation (L1, L2, L3) or may be directly to an L3/L4 expression, typically using an authoring tool or domain-oriented language.
 
@@ -146,8 +141,7 @@ While local implementations of guideline recommendations may warrant their own i
 
 Most large health care delivery organizations have practice governance oversight bodies that may function in some degree like a guideline development group utilizing local organizational experts and key stakeholders, inputs from their own quality functions and research apparatus, and taking into account organizational goals, objectives, and limitations.
 
-<img src="assets/images/CPG-05-04.png" alt="image_tooltip" width="750" hight="515"/>
-
+<img src="assets/images/CPG-05-04.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="515"/>
 
 FIG. 29.  Just as the guideline development group and knowledge engineering team can work collaboratively on the CPG, the local practice governance and informatics (EHR build) functions can work collaboratively using the CPG as a consistent, holistic specification that can then be localized taking various organizational factors including workflow, enablements, methods of implementation, and mechanisms of integration into consideration.
 
@@ -159,8 +153,7 @@ Just as many of the functions and methods of the guideline development group hav
 
 Given the similarities between and related activities of the CPG development process and the local implementation of standardized best practices, there are considerable opportunities for improving the effectiveness, efficiency, implementability, and overall uptake (and enhancement) guideline recommendations related best practices.
 
-<img src="assets/images/CPG-05-05.png" alt="image_tooltip" width="750" hight="709"/>
-
+<img src="assets/images/CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="709"/>
 
 FIG 30. The similarities in roles, functions, and activities as well as complementary needs and goals in guideline development and implementation together with the mutual benefits of working collaboratively not only afford the means to do concurrent development and implementation, it can provide benefits in the speed, cost, and quality of end-user consumables.  This concurrency may be part of more traditional knowledge engineering approaches, but may further benefit from and provide benefit to the Agile CPG Development Approach described below.
 
@@ -227,8 +220,7 @@ Relevant Agile Practices to be adapted to knowledge engineering function:
 *   Test-driven development
 *   Test-integration
 
-<img src="assets/images/CPG-05-06.png" alt="image_tooltip" width="750" hight="563"/>
-
+<img src="assets/images/CPG-05-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="563"/>
 
 FIG. 31. DRAFT of Integrated, Cross-functional process flow for guideline development from the CDC Adapting Clinical Guidelines for the Digital Age ([ref](https://www.cdc.gov/ddphss/clinical-guidelines/index.html)).
 

@@ -12,9 +12,7 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 *   **Logic**  (Clinical Logic)
 *   **Forms**  (UI Description and Behavior)
 
-<img src="assets/images/functionality-tiers.png" alt="image_tooltip" width="750" hight="237"/>
-
-
+<img src="assets/images/functionality-tiers.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="237"/>
 
 FIG. 57. Tiers of Functionality
 

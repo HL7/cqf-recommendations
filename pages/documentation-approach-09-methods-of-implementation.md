@@ -10,9 +10,7 @@ title: Methods of Implementation
 
 With these computable artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
-<img src="assets/images/methods-of-implementation.png" alt="image_tooltip" width="750" hight="385"/>
-
-
+<img src="assets/images/methods-of-implementation.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="385"/>
 
 FIG. 58. Methods of Implementation
 

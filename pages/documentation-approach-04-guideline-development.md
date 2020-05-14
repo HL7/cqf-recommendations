@@ -22,8 +22,7 @@ Covered in this section:
 
 Clinical practice guidelines are systematically developed statements to assist clinical practitioner and patient decisions about appropriate care for specific clinical conditions, procedures, and/or similarly scoped activities. Guidelines consist of recommendations for patient care, which are based on scientific research and data (evidence), vetted through rigorous processes of a review and synthesis by recognized domain and methodological experts and other key stakeholders (e.g. patient and caregiver advocates) to guide healthcare decisions and activities for defined scope. A guideline may consist of one or more recommendations, contextualizing information, the possible means or strategies for bringing together or orchestrating recommendations, and other relevant considerations. A recommendation is a proposal pertaining to the best course of action put forth by an authoritative source or body (e.g. governmental or professional society convened guideline development group).  More detailed descriptions of and best practices for the guideline development process may be found at numerous publicly available resources (e.g.,  [https://www.ncbi.nlm.nih.gov/books/NBK209539/pdf/Bookshelf_NBK209539.pdf](https://www.ncbi.nlm.nih.gov/books/NBK209539/pdf/Bookshelf_NBK209539.pdf); [https://cebgrade.mcmaster.ca/guidelinechecklistonline.html](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html); [https://doi.org/10.7326/0003-4819-153-3-201008030-00010](https://doi.org/10.7326/0003-4819-153-3-201008030-00010); [https://www.nccih.nih.gov/health/providers/clinicalpractice](https://www.nccih.nih.gov/health/providers/clinicalpractice)) <!-- convert refs to links !--> and are beyond the scope of this document, though a few key concepts will be covered.
 
-<img src="assets/images/CPG-04-00.png" alt="image_tooltip" width="750" hight="640"/>
-
+<img src="assets/images/CPG-04-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="640"/>
 
 FIG 18. Overview of the phases of the guideline development process that generally occur sequentially, but may be overlapping and concurrent particularly for different recommendations within a guideline.
 
@@ -46,8 +45,7 @@ The following Frameworks are used in Guideline development and across the eviden
 
 Knowledge synthesis is the process in professional community of practice that applies and develops methodologies for systematically evaluating a corpus of evidence related to a particular condition or intervention.
 
-<img src="assets/images/CPG-04-01.png" alt="image_tooltip" width="750" hight="556"/>
-
+<img src="assets/images/CPG-04-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="556"/>
 
 FIG. 18.  The Evidence Pyramid refers to a means to evaluate the quality or validity of evidence (higher toward the top) as well as provide a visual depiction of the amount of evidence (width) ([ref](http://dx.doi.org/10.1136/ebmed-2016-110401)).  The evaluation of the evidence not only informs the guideline development process and resulting recommendations but is further communicated together with the recommendations themselves using the GRADE framework, described below.
 
@@ -60,13 +58,11 @@ FIG. 18.  The Evidence Pyramid refers to a means to evaluate the quality or vali
 
 The 6S Evidence Pyramid is another framing on the quality or validity of the evidence that may be of particular interest to the CPG-IG (implementation guide)  ([ref](https://doi.org/10.7326/0003-4819-151-6-200909150-02002)).  The highest level is Systems where information from the lower levels of the hierarchy are integrated with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
 
-<img src="assets/images/CPG-04-02.png" alt="image_tooltip" width="750" hight="491"/>
-
+<img src="assets/images/CPG-04-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="491"/>
 
 FIG. 19. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak.
 
-<img src="assets/images/CPG-04-03.png" alt="image_tooltip" width="750" hight="750"/>
-
+<img src="assets/images/CPG-04-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="750"/>
 
 FIG. 20. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence (ref)
 
