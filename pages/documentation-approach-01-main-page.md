@@ -28,7 +28,7 @@ Topics covered in the Approach (see each section below for its content):
 
 <summary>
 
-Figure 01. **Clinical Quality Lifecycle with situated standards to address each respective phase.**  The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback and feedforward loop(s).
+Figure 01. Clinical Quality Lifecycle with situated standards to address each respective phase.  The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback and feedforward loop(s).
 </summary>
 
 <img src="assets/images/CPG-Main-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
@@ -47,7 +47,7 @@ Translating guideline recommendations and other types of guidance into practice 
 
 <summary>
 
-Figure 02. **The data lifecycle and impacts to the public’s health** (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019).  An updated version of this lifecycle directly related to the processes, approaches, and computable artifacts discussed in this section is shown below.
+Figure 02. The data lifecycle and impacts to the public’s health (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019).  An updated version of this lifecycle directly related to the processes, approaches, and computable artifacts discussed in this section is shown below.
 
 </summary>
 
@@ -62,7 +62,7 @@ The integrated process (see figure 3) brings downstream implementation considera
 
 <summary>
 
-Figure 03. **Redesigning guideline development and implementation: The Integrated Process** (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019). NOTE: The “Implementation” perspective represents local implementers that incorporate the local considerations into guideline translations, and “Local Implementations” represent the actual implementation at clinical sites.
+Figure 03. Redesigning guideline development and implementation: The Integrated Process (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019). NOTE: The “Implementation” perspective represents local implementers that incorporate the local considerations into guideline translations, and “Local Implementations” represent the actual implementation at clinical sites.
 
 </summary>
 
@@ -110,7 +110,7 @@ Using approaches, standards, and techniques addressed in further detail in indiv
 
 <summary>
 
-Figure 04.** Data Lifecycle Revisited in context of the CPG-IG:**  With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively. (NOTE: CQM-on-FHIR refers to the FHIR Measure-IG; eCR-on-FHIR refers to the eCaseReport-IG; and Research-on-FHIR does not exist yet).
+Figure 04. Data Lifecycle Revisited in context of the CPG-IG: With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively. (NOTE: CQM-on-FHIR refers to the FHIR Measure-IG; eCR-on-FHIR refers to the eCaseReport-IG; and Research-on-FHIR does not exist yet).
 
 </summary>
 
@@ -185,7 +185,7 @@ Covered in this section:
 
 <summary>
 
-Figure 05.  **The Knowledge Engineering Lifecycle**, illustrating the general flow of activities and information.
+Figure 05.  The Knowledge Engineering Lifecycle, illustrating the general flow of activities and information.
 
 </summary>
 
@@ -212,7 +212,7 @@ Steps in the Knowledge engineering Lifecycle include:
 
 <summary>
 
-Figure 06. **Knowledge Translation** is the dynamic and iterative process of conveying the concepts, clinical logic, and intent of a source knowledge expression (e.g., narrative guideline) into an equivalent expression in another language or formalism- in the case of a narrative guideline into a computeable or computer interpretable expression. This may occur successively or progressively across the Levels of Representation (L1, L2, L3) or may be directly to an L3/L4 expression, typically using an authoring tool or domain-oriented language.
+Figure 06. Knowledge Translation is the dynamic and iterative process of conveying the concepts, clinical logic, and intent of a source knowledge expression (e.g., narrative guideline) into an equivalent expression in another language or formalism- in the case of a narrative guideline into a computeable or computer interpretable expression. This may occur successively or progressively across the Levels of Representation (L1, L2, L3) or may be directly to an L3/L4 expression, typically using an authoring tool or domain-oriented language.
 
 </summary>
 
@@ -224,7 +224,7 @@ Figure 06. **Knowledge Translation** is the dynamic and iterative process of con
 
 <summary>
 
-Figure 07.  **Integration/Collaboration with Guideline Development Process and CPG Development Processes** - Analogs between GDG and PG as well as KE and Local Informatics with opportunities to work hand-in-hand, enabling earlier and less costly adaptations (feedback loops in process) and opportunities to collaborate on real-world data.  This combines the “Integrated Process” described above with Concurrent CPG Development and Implementation described in the Knowledge Implementation section.
+Figure 07.  Integration/Collaboration with Guideline Development Process and CPG Development Processes - Analogs between GDG and PG as well as KE and Local Informatics with opportunities to work hand-in-hand, enabling earlier and less costly adaptations (feedback loops in process) and opportunities to collaborate on real-world data.  This combines the “Integrated Process” described above with Concurrent CPG Development and Implementation described in the Knowledge Implementation section.
 
 </summary>
 
@@ -346,7 +346,7 @@ Figure 12. **Concurrent, Integrated, Cross-functional Development and Implementa
 
 </summary>
 
-<img src="assets/images/CCPG-Approach0.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-Approach0.png" alt="Cross-Functional Development" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -379,15 +379,13 @@ Figure 12. **Concurrent, Integrated, Cross-functional Development and Implementa
 
 <summary>
 
-Figure 13. **Illustrating the separation of the Case** (patient clinicopathophysiological processes and their manifestations and qualifications thereof), **the Plan** (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and **the Workflow** (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
+Figure 13. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
 
 </summary>
 
-<img src="assets/images/CPG-12-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-12-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width=300/>
 
 </details>
-
-
 
 ## **Plan**
 
@@ -397,7 +395,7 @@ The plan, in the CPG context, as described above in “Separation of Concerns,�
 
 <summary>
 
-Figure 14. **The Plan describes Recommendations for best practice care** including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similarly coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it likely belongs in the Plan.
+Figure 14. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similarly coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it likely belongs in the Plan.
 
 </summary>
 
@@ -415,7 +413,7 @@ The data that expresses a Case consists of patient descriptors, exposures (e.g.,
 
 <summary>
 
-Figure 15.  **The Case consists of facts or information about the patient called Case Features (CPGCaseFeatures)** that may be resolved by [FHIR Resources following the Event pattern](https://www.hl7.org/fhir/event.html) and [FHIR Resources following the Request pattern](https://www.hl7.org/fhir/request.html) as required data elements or inferred, in part using required data elements.  If an inference (logic) tells you something about the patient, it is almost certainly a Case Feature.
+Figure 15. The Case consists of facts or information about the patient called Case Features (CPGCaseFeatures) that may be resolved by [FHIR Resources following the Event pattern](https://www.hl7.org/fhir/event.html) and [FHIR Resources following the Request pattern](https://www.hl7.org/fhir/request.html) as required data elements or inferred, in part using required data elements.  If an inference (logic) tells you something about the patient, it is almost certainly a Case Feature.
 
 </summary>
 
@@ -431,7 +429,7 @@ The Care Plan describes the intention of how one or more healthcare professional
 
 <summary>
 
-Figure 16. **The Care Plan consists of the patient-specific recommendations as Proposals, [Requests](https://www.hl7.org/fhir/request.html) that correspond (or are related) to the Proposals, and the corresponding or related [Events](https://www.hl7.org/fhir/event.html).**  NOTE: Requests and Events are also referenced by the Case as CPGCaseFeatures.
+Figure 16. The Care Plan consists of the patient-specific recommendations as Proposals, [Requests](https://www.hl7.org/fhir/request.html) that correspond (or are related) to the Proposals, and the corresponding or related [Events](https://www.hl7.org/fhir/event.html).  NOTE: Requests and Events are also referenced by the Case as CPGCaseFeatures.
 
 </summary>
 
@@ -443,7 +441,7 @@ Figure 16. **The Care Plan consists of the patient-specific recommendations as P
 
 <summary>
 
-Figure 17. **Conceptual overview of the CPG Knowledge Architecture and its separation of concerns**. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition. The bottom third illustrates the CPGCase consisting of all the patient descriptors, including exposures, physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile as CPGCaseFeatures.  The middle third illustrates the CPGCarePlan with its CPGProposals and resulting or related Requests and Events.
+Figure 17. Conceptual overview of the CPG Knowledge Architecture and its separation of concerns. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition. The bottom third illustrates the CPGCase consisting of all the patient descriptors, including exposures, physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile as CPGCaseFeatures.  The middle third illustrates the CPGCarePlan with its CPGProposals and resulting or related Requests and Events.
 
 </summary>
 <img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
