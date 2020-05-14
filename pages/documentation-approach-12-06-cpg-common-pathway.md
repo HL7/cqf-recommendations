@@ -18,10 +18,19 @@ The workflow separation, as discussed in the section on Separations of Concerns 
 
 Workflow itself may be further separated into generalized abstractions of workflow across settings and the real-world care delivery activities in those activities that are carried out in the context of clinical information systems (e.g., EHRs).  The Common Pathway addresses higher level abstractions on care settings, clinical activities, and healthcare professional roles.  Many implications of localized, real-world workflow are reflected in the information carried in FHIR Resources and related modules and patterns that are addressed in the [FHIR Workflow Module](https://www.hl7.org/fhir/workflow-module.html) including the [FHIR Workflow Description](http://hl7.org/fhir/workflow.html#12.5), and its workflow resource patterns for Definitions, Requests, and Events.  The [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-module.html) addresses the type of workflow interventions and/or enablements through which guidance is delivered into the care delivery process, such as the cardinal types of CDS (ref<!-- Osheroff, J. A. (2012). Improving outcomes with clinical decision support: an implementer's guide. HIMSS. !-->), described in part in its [Common Use Cases](https://www.hl7.org/fhir/clinicalreasoning-module.html#uses).
 Osheroff, J. A. (2012). Improving outcomes with clinical decision support: an implementer's guide. HIMSS.
-![alt_text](assets/images/CPG-WorkflowSeparations.png "image_tooltip")
 
+
+<details open>
+
+<summary>
 
 FIG. 77.  The Case, Plan, Workflow separations and further separations within workflow and how each relates to the Case and/or Plan.  The Common Pathway provides generalized abstractions of settings, activities, and healthcare professional roles can be referenced from within the Plan.  Requests and Events, and in their various statuses represent information about the Plan (including the patient-specific Care Plan) and Case, carry information about the clinical information system workflow and into the clinical information system workflow.  The clinical information systems (EHR and Enablements) convey information into the workflow from the Case and Plan (including the patient-specific Care Plan) as well as afford a means for interactions with end-users (e.g., healthcare professionals, patients, caregivers, quality professionals, researchers).
+
+</summary>
+
+<img src="assets/images/CPG-WorkflowSeparations.png" alt="Workflow Separations" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 **Common Pathway** <!-- Needs some work. Conflates Settings and Activities; only addresses Ambulatory !-->
 
@@ -43,19 +52,42 @@ Tracking of workflow as performed in the clinical information system (i.e. EHR) 
 
 The things being done in the clinical information system are called activities and are defined using the [FHIR ActivityDefinition resource](http://www.hl7.org/fhir/activitydefinition.html).  The ActivityDefinition provides the description or definition of an action to be performed and is [applied to a FHIR resource](http://www.hl7.org/fhir/activitydefinition.html#12.17.3.3) following the Request and/or Event patterns.  The workflow relationships of FHIR resource patterns involved in Activities including Definitions, Requests, and Events is described [here](http://hl7.org/fhir/workflow.html#respatterns). The FHIR Request pattern has a [status](https://www.hl7.org/fhir/request-definitions.html#Request.status) that uses a defined [value set](http://hl7.org/fhir/valueset-request-status.html).  Request Status includes: draft, active, on-hold, revoked, completed, entered-in-error, and unknown that can be described as a [state machine](https://www.hl7.org/fhir/request.html#statemachine).  The [FHIR Event pattern](https://www.hl7.org/fhir/event.html) likewise has its own [status](https://www.hl7.org/fhir/event-definitions.html#Event.status) that uses a scoped [value set](https://www.hl7.org/fhir/valueset-event-status.html) that can be described as a specialized [state machine](https://www.hl7.org/fhir/event.html#statemachine).  THe Event status includes: preparation, in-progress, not-done, suspended, aborted, completed, entered-in-error, and unknown.  These patterns are described in the figures below.
 
-![alt_text](assets/images/CPG-ResourcePatternsRelationship.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 78. Description of the Resource patterns and their interrelationships from [Workflow Resource Relationships](https://www.hl7.org/fhir/workflow.html#relationships) in the [FHIR Workflow Description](https://www.hl7.org/fhir/workflow.html).
 
-![alt_text](assets/images/CPG-RequestStatusFSM.png "image_tooltip")
+</summary>
 
+<img src="assets/images/CPG-ResourcePatternsRelationship.png" alt="Resource Patterns" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 79. Depiction of the FHIR Request status as a [state machine](https://www.hl7.org/fhir/request.html#statemachine) from the FHIR Request pattern.
 
-![alt_text](assets/images/CPG-EventStatusFSM.png "image_tooltip")
+</summary>
+
+<img src="assets/images/CPG-RequestStatusFSM.png" alt="Request Status FSM" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 80. Depiction of the FHIR Event status as a [state machine](https://www.hl7.org/fhir/event.html#statemachine) from the FHIR Event pattern.
+
+</summary>
+
+<img src="assets/images/CPG-EventStatusFSM.png" alt="Event Status FSM" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Using FHIR Tasks with Requests and Events**
 
@@ -67,10 +99,17 @@ Tasks are related to Events in that events can be performed in fulfillment of a 
 
 The [FHIR ](https://www.hl7.org/fhir/event.html)Task resource also has its own [status](https://www.hl7.org/fhir/task-definitions.html#Task.status) that uses a scoped [value set](https://www.hl7.org/fhir/valueset-task-status.html) that can be described as a specialized [state machine](https://www.hl7.org/fhir/task.html#statemachine).  Tasks can further carry information about [Intent](https://www.hl7.org/fhir/task-definitions.html#Task.intent) that uses a scoped [value set](http://hl7.org/fhir/valueset-task-intent.html) including: plan, proposal, order, original-order, reflex-order, filler-order, instance-order, optional, and unknown.  Task Status and Intent can be used to address boundary issues related to workflow in a CPG.  Boundaries and relationships related to Taks and their use with Requests and Events are further discussed in the [Task resource section on Boundaries and Relationships](https://www.hl7.org/fhir/task.html#bnr).
 
-![alt_text](assets/images/CPG-TaskStatusFSM.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 81. Depiction of the FHIR Task status as a [state machine](https://www.hl7.org/fhir/task.html#statemachine) from the FHIR Task resource.
+
+</summary>
+
+<img src="assets/images/CPG-TaskStatusFSM.png" alt="Task Status FSM" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 **Workflow Enablements and Interventions (Cognitive and Decision Support)**
 

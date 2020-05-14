@@ -31,7 +31,7 @@ Topics covered in the Approach (see each section below for its content):
 Figure 01. **Clinical Quality Lifecycle with situated standards to address each respective phase.**  The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback and feedforward loop(s).
 </summary>
 
-<img src="assets/images/CPG-Main-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="273"/>
+<img src="assets/images/CPG-Main-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -51,7 +51,7 @@ Figure 02. **The data lifecycle and impacts to the public’s health** (Michaels
 
 </summary>
 
-<img src="assets/images/CPG-DataLifecycle.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="432"/>
+<img src="assets/images/CPG-DataLifecycle.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
 
 </details>
 
@@ -66,7 +66,7 @@ Figure 03. **Redesigning guideline development and implementation: The Integrate
 
 </summary>
 
-<img src="assets/images/CPG-Main-RedesigningGuidelineDevelopment.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="432"/>
+<img src="assets/images/CPG-Main-RedesigningGuidelineDevelopment.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
 
 </details>
 
@@ -114,7 +114,7 @@ Figure 04.** Data Lifecycle Revisited in context of the CPG-IG:**  With the guid
 
 </summary>
 
-<img src="assets/images/CPG-Main-DataLifecycle.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="432"/>
+<img src="assets/images/CPG-Main-DataLifecycle.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -189,7 +189,7 @@ Figure 05.  **The Knowledge Engineering Lifecycle**, illustrating the general fl
 
 </summary>
 
-<img src="assets/images/CPG-05-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="432"/>
+<img src="assets/images/CPG-05-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -216,7 +216,7 @@ Figure 06. **Knowledge Translation** is the dynamic and iterative process of con
 
 </summary>
 
-<img src="assets/images/CPG-05.02-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="470"/>
+<img src="assets/images/CPG-05.02-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -228,7 +228,7 @@ Figure 07.  **Integration/Collaboration with Guideline Development Process and C
 
 </summary>
 
-<img src="assets/images/CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="700" hight="664"/>
+<img src="assets/images/CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -242,7 +242,7 @@ Figure 08. **Concurrent, Integrated, Cross-functional Development and Implementa
 
 </summary>
 
-<img src="assets/images/CPG-Approach0.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="401"/>
+<img src="assets/images/CPG-Approach0.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -259,7 +259,7 @@ Figure 09. **Knowledge Levels with Examples** (Michaels, U.S. Centers for Diseas
 
 </summary>
 
-<img src="assets/images/knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="334"/>
+<img src="assets/images/knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -296,7 +296,7 @@ Figure 10. **Levels of Representation by Tiers of Functionality with Examples** 
 
 </summary>
 
-<img src="assets/images/CPG-Main-LevelsAndTiers.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="308"/>
+<img src="assets/images/CPG-Main-LevelsAndTiers.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -334,7 +334,7 @@ Figure 11. **Enabling and Removing Friction across a Knowledge Ecosystem through
 
 </summary>
 
-<img src="assets/images/CPG-Main-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="445"/>
+<img src="assets/images/CPG-Main-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -346,7 +346,7 @@ Figure 12. **Concurrent, Integrated, Cross-functional Development and Implementa
 
 </summary>
 
-<img src="assets/images/CCPG-Approach0.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="397"/>
+<img src="assets/images/CCPG-Approach0.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -383,7 +383,7 @@ Figure 13. **Illustrating the separation of the Case** (patient clinicopathophys
 
 </summary>
 
-<img src="assets/images/CPG-12-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="600" hight="564"/>
+<img src="assets/images/CPG-12-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -401,7 +401,7 @@ Figure 14. **The Plan describes Recommendations for best practice care** includi
 
 </summary>
 
-<img src="assets/images/CPG-Main-Plan.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="1000" hight="160"/>
+<img src="assets/images/CPG-Main-Plan.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -419,7 +419,7 @@ Figure 15.  **The Case consists of facts or information about the patient called
 
 </summary>
 
-<img src="assets/images/CPG-Main-Case.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="1000" hight="160"/>
+<img src="assets/images/CPG-Main-Case.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -435,7 +435,7 @@ Figure 16. **The Care Plan consists of the patient-specific recommendations as P
 
 </summary>
 
-<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="1000" hight="160"/>
+<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -446,6 +446,6 @@ Figure 16. **The Care Plan consists of the patient-specific recommendations as P
 Figure 17. **Conceptual overview of the CPG Knowledge Architecture and its separation of concerns**. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition. The bottom third illustrates the CPGCase consisting of all the patient descriptors, including exposures, physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile as CPGCaseFeatures.  The middle third illustrates the CPGCarePlan with its CPGProposals and resulting or related Requests and Events.
 
 </summary>
-<img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="392"/>
+<img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>

@@ -14,11 +14,17 @@ This section provides an overview of the specific separations of concerns in the
 *   Workflow
 *   Boundary Issues between Separations (covered below)
 
-![alt_text](assets/images/CPG-12-01.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 69. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
 
+</summary>
+
+<img src="assets/images/CPG-12-01.png" alt="Separation of Concerns" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 ### **Case** <!-- link to 12.04 !-->
 

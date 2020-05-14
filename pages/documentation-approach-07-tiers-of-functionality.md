@@ -12,9 +12,17 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 *   **Logic**  (Clinical Logic)
 *   **Forms**  (UI Description and Behavior)
 
-<img src="assets/images/functionality-tiers.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="237"/>
+<details open>
+
+<summary>
 
 FIG. 57. Tiers of Functionality
+
+</summary>
+
+<img src="assets/images/functionality-tiers.png" alt="Tiers of Functionality" class="img-responsive img-rounded center-block" width="750" height="237"/>
+
+</details>
 
 To illustrate these tiers of functionality, consider the following excerpt from a recommendation statement in the CDC Opioid Prescribing Guideline:
 

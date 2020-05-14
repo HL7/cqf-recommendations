@@ -7,10 +7,18 @@ title: Separation of Concerns
 
 Separation of concerns is a design principle that creates a distinct and focused attention on each aspect of the domain or topic. This means that, from each aspect's point of view, the other aspect(s) are irrelevant; but it does not mean that the other aspects are ignored. It is “being one- and multiple-track minded simultaneously.”  (ref <!-- Dijkstra, Edsger W (1982). "On the role of scientific thought". Selected writings on Computing: A Personal Perspective. New York, NY, USA: Springer-Verlag. pp. 60–66. ISBN 0-387-90652-5.; Gossman, William; Lew, Valerie; Ghassemzadeh, Sassan (2019), "SOAP Notes", StatPearls, StatPearls Publishing, PMID 29489268 !--> ).  This concept has been used to address efficient and effective approaches in software engineering, particularly as they pertain to developing larger, more complex information systems. (ref)  The most common application of this principle is to a three-tiered architecture (i.e. data, logic, UI) and corresponds to the tiers of functionality discussed earlier.
 
-![alt_text](assets/images/CPG-12-01.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 68. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities.
+
+</summary>
+
+<img src="assets/images/CPG-12-01.png.png" alt="Separation of concerns" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 In medicine, a very similar principal led Dr. Larry Weed to describe the problem-oriented approach to the medical record and reasoning about patients’ concerns, including the well-known and commonly used approach to the SOAP note (Subjective, Objective, Assessment, and Plan). (ref <!-- Jaroudi, Sarah; Payne, J. Drew DO Remembering Lawrence Weed: A Pioneer of the SOAP Note, Academic Medicine: January 2019 - Volume 94 - Issue 1 - p 11 doi: 10.1097/ACM.0000000000002483 !-->, ref <!-- J Am Med Inform Assoc. 2014 Nov; 21(6): 964–968.
 Published online 2014 May 28. doi: 10.1136/amiajnl-2014-002776 !-->)   Dr. Weed proposed that physicians were essentially scientists, except that as many scientist pursue a singular (or few) hypotheses throughout there careers, a physician must formulate and assess/test hypotheses for a given patient and often throughout the day and therefore must break each issue down into a concern or problem.  Problem-orientedness and the SOAP note have further been shown to be an effective cognitive framework for assessing and addressing patient concerns. (ref).  Interestingly, Dr. Weed’s problem-oriented approach and SOAP note do play into the CPG knowledge architecture, though not exclusively.  In healthcare activities, there are at least several related but orthogonal axes on which to separate concerns.

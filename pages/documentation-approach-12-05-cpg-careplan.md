@@ -19,16 +19,34 @@ Covered in this Section:
 *   Events
 *   Shared Care Plans
 
-![alt_text](assets/images/CPG-12-04.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 75. The CPGCarePlan With its CPGProposals and resulting or related Requests and Events.
 
+</summary>
+
+<img src="assets/images/CPG-12-04.png" alt="CPGCarePlan With CPGProposals" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 The CPGCarePlan is constrained to the set of proposals (i.e., patient-specific recommendations), clinical interventions (e.g., orders/ requests), or their fulfillments (e.g., events) scoped by a specific CPG.  This includes those related to the guideline recommendations, the strategies for combining guideline recommendations, the decision logic for each recommendation, the strategies for combining recommendations, and  how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies in the context of a specific case (i.e., patient).  As described in the “Methodology” section, the CPGCarePlan is modeled as a profile on a [FHIR CarePlan Resource](https://www.hl7.org/fhir/careplan.html).
 
-![alt_text](assets/images/CPG-Main-InstantiatedPlan.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 76. The Care Plan consists of the patient-specific recommendations as [Proposals](http://hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal), Requests that correspond (or are related) to the Proposals, and the corresponding or related Events.  Note that the Requests and Events are also referenced by the Case as CPGCaseFeatures.
+
+</summary>
+
+<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="Instantiated Plan" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Proposal:**
 
@@ -50,9 +68,19 @@ Patient-specific recommendations or proposals, and clinical decision support in 
 
 In the CPG, this supporting information is closely correlated with the CPGCaseFeatures used in the formalized decision logic for the CPGRecommendation, or some subset thereof, as well as other data elements may have been specified as required in the CPGRecommendation (i.e., as a scoped CPGCaseFeatureGroup or CPGCasePlanSummaryView).  These additional data elements (CPGCaseFeatures) may represent relevant historical or contextualizing information, the status or responses (CPGRequest, CPGEvents) of related CPGProposals, or even other CPGRecommendations not yet proposed, as well as relative or absolute contraindications for the CPGProposal.  In order to specify this information, a CPGRecommendation may include scoped definitions of CPGCaseFeatureGroups or CPGCasePlanSummaryViews.
 
-![alt_text](assets/images/CPG-12-05.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 76. A CPG Recommendation with its scoped CPGCasePlanSummaryView.
+
+</summary>
+
+<img src="assets/images/CPG-12-05.png" alt="CPG recommendation" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Request (as part of the CPGCarePlan)**
 

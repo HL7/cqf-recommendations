@@ -39,14 +39,31 @@ Furthermore, relevant data elements may be inferred from primitive data elements
 
 In the FHIR CPG, these descriptors of the patient, in the context of a Case, are modeled and referred to as CPG_CaseFeatures, whether they are primitive clinical data elements (largely Clinical, Diagnostics, and Medications resources), or inferred data elements from various expressions referenced by CPGCaseFeatures to be resolved at execution-time. If such CPGCaseFeatures cannot be resolved, then a request for end-user assessment must be initiated using an Adaptive form as described in detail below.
 
-![alt_text](assets/images/CPG-12-03.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 72.  The Case consists of all the patient descriptors including exposures physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile.
 
-![alt_text](assets/images/CPG-Main-Case.png "image_tooltip")
+</summary>
 
+<img src="assets/images/CPG-12-03.png" alt="Case" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
+<details open>
+
+<summary>
 
 FIG. 73.  The Case consists of facts or information about the patient called Case Features (CPGCaseFeatures) that may be resolved by [FHIR Events](https://www.hl7.org/fhir/event.html) and FHIR [Requests](https://www.hl7.org/fhir/request.html) as required data elements or inferrered (in part using required data elements).
+
+</summary>
+
+<img src="assets/images/CPG-Main-Case.png" alt="Main Case" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Case Features**
 
@@ -70,10 +87,20 @@ Many case features must be derived <!-- asserted = primitieve !--> or inferred c
 
 Some case features are descriptions of physiological and/or pathophysiological states of the patient that may need to be inferred from primitive case features such as the various events described above and/or may require further clinician assessment depending on which data elements are available on a given patient.  For instance, there may be a number of case features (i.e., events including clinical impressions) that are required to assess a key physiological and/or clinicopathological process and other forms of clinician assessment respective to guideline recommendations. An example of this is volume status, perfusion status, and hemodynamic status for various guideline recommendations for inpatient chronic congestive heart failure shown in the figure below.  
 
-![alt_text](assets/images/CPG-HemodynamicStatus.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 74 This figure illustrates Hemodynamic Status used to assess and plan treatment for Heart Failure.  Hemodynamic Status is determined using Volume Status and Perfusion Status (each a separate, but related to the pump function of the heart) as shown above.  Some basic calculations using vital signs can be used for a simple assessment of Perfusion Status, though invasive heart monitoring is a more exact measurement.  However, while some some signs and symptoms can inform a clinician’s assessment of a patient’s Volume Status, unless invasive heart monitoring values (e.g., PCWP) are available, it can not be inferred reliably using computable expressions and thus requires an assessment (e.g., a Clinical Impression via an Adaptive form) while providing the clinician supporting information as described below.
+
+</summary>
+
+<img src="assets/images/CPG-HemodynamicStatus.png" alt="Hemodynamic Status" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
+
 
 It is not uncommon for inferred case features and events to be used to provide a decision aid to a clinician who then assesses this information and documents their clinical impression (i.e., FHIR Resource ClinicalImpression) recorded as an event and CPGCaseFeature itself.  In fact, this is the case in the example above where the clinician makes the ultimate assessment of these critical clinicopathophysiological processes that inform key decision-making in the clinical care scoped to such a CPG.  This pattern combining primitive clinical information (i.e., events), inferences made upon them (i.e., inferred case features), and requests for clinician documentation manifested as a clinical impression often addressed using an Adaptive Form (see [FHIR Adaptive form](http://hl7.org/fhir/uv/sdc/2019May/adaptive.html),  the FHIR Questionnaire,  and QuestionnaireResponse Resources).  These patterns are commonly used as part of the CPG.
 
