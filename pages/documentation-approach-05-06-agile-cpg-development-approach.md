@@ -47,7 +47,7 @@ FIG. 41. Integrated, Cross-functional process flow for guideline development.
 
 </summary>
 
-<img src="assets/images/CPG-05-06.png.png" alt="Cross-functional process flow" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-05-06.png" alt="Cross-functional process flow" class="img-responsive img-rounded center-block"/>
 <!-- Need Updated Image from Susan that shows more concurrency and early engagement of "local" consumers of guidelines, not just hand-off !-->
 </details>
 
@@ -136,7 +136,7 @@ FIG. 43. **An Agile Approach to Knowledge Translation** conveys the the concepts
 
 </summary>
 
-<img src="assets/images/CPG-05.06-01.png" alt="Agile Approach to Knowledge Translation" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-KnowledgeEngineering-w-Agile.png" alt="Agile Approach to Knowledge Translation" class="img-responsive img-rounded center-block"/>
 
 </details>
 
