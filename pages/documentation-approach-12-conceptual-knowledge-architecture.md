@@ -143,7 +143,7 @@ FIG. 62. The Plan describes Recommendations for best practice care including man
 
 </summary>
 
-<img src="assets/images/CPG-12-02.png" alt="Plan" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-Main-Plan.png" alt="Plan" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -223,7 +223,7 @@ FIG. 64.  The Case consists of facts or information about the patient called Cas
 
 </summary>
 
-<img src="assets/images/CPG-12-03.png" alt="Case Features" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-Main-Case.png" alt="Case Features" class="img-responsive img-rounded center-block"/>
 
 </details>
 
