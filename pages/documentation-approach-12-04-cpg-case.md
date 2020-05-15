@@ -79,7 +79,7 @@ Many case features may require clinical judgment and/or assessment (including im
 
 **Separation of Form Logic from Patient Descriptive Logic and Clinical Decision Logic**
 
-The knowledge engineer must be careful not to conflate descriptive or evaluation logic (expressions for Case Features) or clinical decision logic (expressions in Recommendations) with formal logic for how to interact with the end-user to obtain such information (form logic) as described in the section on Tiers of Functionality <!-- link to - 07 !-->.  All clinical description logic expressions about the patient must be scoped to Case Features, all decision logic expressions must be scoped to Recommendations, and then they may be used by the adaptive questionnaire.  See section below on Separating Patient Descriptive Logic from Clinical Decision Logic.
+The knowledge engineer must be careful not to conflate descriptive or evaluation logic (expressions for Case Features) or clinical decision logic (expressions in Recommendations) with formal logic for how to interact with the end-user to obtain such information (form logic) as described in the section on [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html) <!-- link to - 07 !-->.  All clinical description logic expressions about the patient must be scoped to Case Features, all decision logic expressions must be scoped to Recommendations, and then they may be used by the adaptive questionnaire.  See section below on Separating Patient Descriptive Logic from Clinical Decision Logic.
 
 **Derived or Inferred Case Features**
 

@@ -4,7 +4,7 @@ title: CPG Plan
 ---
 ## **CPGPlan**
 
-The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a Care Plan as discussed in detail in another section on the CPGCarePlan. <!-- link to - 12.05 !-->
+The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a Care Plan as discussed in detail in another section on the [CPGCarePlan](documentation-approach-12-05-cpg-careplan.html). <!-- link to - 12.05 !-->
 
 Covered in this section:
 

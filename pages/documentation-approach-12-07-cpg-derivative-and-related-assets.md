@@ -141,7 +141,7 @@ A CPGCasePlanSummaryView can be further be combined with an [Adaptive Form](http
 
 **CPGeCaseReport**
 
-An eCaseReport, as described in the [eCaseReport IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html), is a document used to exchange patient-level clinical information to a public health, regulatory,  quality, research,or guideline development entity (e.g., medical specialty professional society and/or their respective guideline development group).  An eCaseReport has particular utility to public health entities and was developed through the HL7 Public Health and Emergency Response Workgroup (WG).
+An eCaseReport, as described in the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html), is a document used to exchange patient-level clinical information to a public health, regulatory,  quality, research,or guideline development entity (e.g., medical specialty professional society and/or their respective guideline development group).  An eCaseReport has particular utility to public health entities and was developed through the HL7 Public Health and Emergency Response Workgroup (WG).
 
 A CPGeCaseReport is a special case that utilizes the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) within the CPG-IG.  The CPGeCaseReport may use or map/translate a CPGCaseSummary or appropriately scoped CPGCasePlanSummaryView to include more information around the recommendations and use thereof.
 
@@ -149,7 +149,7 @@ A CPGeCaseReport is a special case that utilizes the [eCaseReport-IG](http://hl7
 
 <summary>
 
-FIG. 88. A CPGeCaseReport uses the e[CaseReport IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) and either an appropriately scoped CPGCaseSummaryView (if only Events are desired) or CPGCasePlanSummaryView (if proposals, evidence, and/or metrics are desired).  This can be reported back to the guideline development group or other designated registry entity.
+FIG. 88. A CPGeCaseReport uses the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) and either an appropriately scoped CPGCaseSummaryView (if only Events are desired) or CPGCasePlanSummaryView (if proposals, evidence, and/or metrics are desired).  This can be reported back to the guideline development group or other designated registry entity.
 
 </summary>
 
@@ -160,8 +160,8 @@ FIG. 88. A CPGeCaseReport uses the e[CaseReport IG](http://hl7.org/fhir/uv/ecr/2
 
 **Infobutton**
 
-Infobuttons facilitate contextually querying resources such as a library containing clinical practice guideline recommendations from within clinical information systems at the point-of-need (e.g., EHRs).  In other words, “Infobuttons” are context-sensitive links embedded in EHR systems. They use information about the patient, user, clinical setting, and EHR task to anticipate clinicians' information needs and provide links to online clinical resources that may meet these information needs.” ([ref](http://www.openinfobutton.org/home))  Infobuttons provide a means for a healthcare professional to leverage a subset of the identified patient-level information to perform a facilitated search from within the patient record.
+Infobuttons facilitate contextually querying resources such as a library containing clinical practice guideline recommendations from within clinical information systems at the point-of-need (e.g., EHRs).  In other words, “Infobuttons” are context-sensitive links embedded in EHR systems. They use information about the patient, user, clinical setting, and EHR task to anticipate clinicians' information needs and provide links to online clinical resources that may meet these information needs.”  [Infobuttons](http://www.openinfobutton.org/home) provide a means for a healthcare professional to leverage a subset of the identified patient-level information to perform a facilitated search from within the patient record.
 
-([ref](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=208)).  The Infobutton could leverage a library of CPGs along with their individual recommendations, largely using content metadata to facilitate search and retrieval.
+The [Infobutton](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=208) could leverage a library of CPGs along with their individual recommendations, largely using content metadata to facilitate search and retrieval.
 
-More on the standard and HL7 Infobutton product and the OpenInfoButton Project ([ref](http://www.openinfobutton.org/home)) is available elsewhere.
+More on the standard and HL7 Infobutton product and the [OpenInfoButton Project](http://www.openinfobutton.org/home) is available elsewhere.

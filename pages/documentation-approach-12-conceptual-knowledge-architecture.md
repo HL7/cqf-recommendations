@@ -86,16 +86,13 @@ Theses specific issues are discussed in more detail in the subsection on Separat
 **Examples of Boundary Issues in the CPG covered in detail:**
 
 
-
 *   Abstract, Local, and EHR (clinical information system) Workflow
 *   Clinical Assessment
 *   Proposals, Requests, and Events- Case or Care Plan?  Some in Both?
 *   Plan or Workflow-see sections on [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html) <!-- link to 05.05 !--> and [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html). <!-- link to 12.02 !-->
 *   Case and Workflow- information remains in appropriate data elements and inferences thereon in their appropriate concern
 
-##
-**CPG Formalizations of Domain Concerns & Concepts**
-
+## **CPG Formalizations of Domain Concerns & Concepts**
 
 
 ## **CPGCase, CPGPlan, and CPGCarePlan**
