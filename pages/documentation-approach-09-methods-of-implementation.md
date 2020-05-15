@@ -3,7 +3,7 @@ layout: default
 title: Methods of Implementation
 ---
 
-1. Methods of Implementation
+# Methods of Implementation
 *   As a “Spec”
 *   Translation
 *   Native Execution
