@@ -31,7 +31,7 @@ FIG. 51. The knowledge architecture affords a means to formally describe the cli
 
 </summary>
 
-<img src="assets/images/xCPG-06.03-Architecturex.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+<img src="assets/images/CPG-06.03-Architecture.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
