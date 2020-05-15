@@ -87,14 +87,14 @@ See section on Concurrent Development and Implementation in Knowledge Implementa
 
 LIST of Benefits with prior references where described in prior sections: <!-- need to finish !-->
 
-*   See Knowledge Acquisition
-*   Real-world Data and Issues addressed as early as feasible
-*   Further reduce hand-offs
-*   Move even closer to the “in-need” consumer
-*   Rapid Feedback across all levels
-*   May actually “share work and work products” bidirectionally
-*   Continuous integration across proof-of-concept, prototype, pilot, and deployment
-*   Optimize Value to where it matters most- point-of-need
+* See Knowledge Acquisition
+* Real-world Data and Issues addressed as early as feasible
+* Further reduce hand-offs
+* Move even closer to the “in-need” consumer
+* Rapid Feedback across all levels
+* May actually “share work and work products” bidirectionally
+* Continuous integration across proof-of-concept, prototype, pilot, and deployment
+* Optimize Value to where it matters most- point-of-need
 
 **“Chunking”**
 
@@ -145,14 +145,14 @@ FIG. 43. An Agile Approach to Knowledge Translation conveys the the concepts, cl
 
 Creation of data inputs, parameters, and expected results at all levels of asset/artifact and expression (distinct and composite assets) for use in the creation of computable formalisms and/or expressions.  This may include:
 
-    *   **“Hand crafted”** using tooling as described above
+* **“Hand crafted”** using tooling as described above
 
-    This may or may not include derivatives such as content metadata from the assets themselves (e.g. codes in a value set)
+This may or may not include derivatives such as content metadata from the assets themselves (e.g. codes in a value set)
 
-    *   **Synthetic Data Sets**
-    *   **Deidentified Data Sets** (e.g. from implementation partners)
-    *   **Real-World Data** (often done if performed by implementation partners)
-    *   **Asset Expression Tooling** feature for code coverage
+* **Synthetic Data Sets**
+* **Deidentified Data Sets** (e.g. from implementation partners)
+* **Real-World Data** (often done if performed by implementation partners)
+* **Asset Expression Tooling** feature for code coverage
 
     This is akin to code coverage in reverse using expression interpreter to produce possible range of inputs and expected results
 
