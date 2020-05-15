@@ -147,7 +147,7 @@ Creation of data inputs, parameters, and expected results at all levels of asset
 
 * **“Hand crafted”** using tooling as described above
 
-This may or may not include derivatives such as content metadata from the assets themselves (e.g. codes in a value set)
+    This may or may not include derivatives such as content metadata from the assets themselves (e.g. codes in a value set)
 
 * **Synthetic Data Sets**
 * **Deidentified Data Sets** (e.g. from implementation partners)
