@@ -54,5 +54,4 @@ FIG 17. A given CPG may provide a distinct set of enablements, at singular or mu
 ---
 
 [^1]: https://wiki.ihe.net/index.php/Computable_Care_Guidelines Computable Care Guidelines (CCG) profile
-
 [^2]: 'http://www.ihe.ca/download/ambassador_headache_final_100_pager.pdf'

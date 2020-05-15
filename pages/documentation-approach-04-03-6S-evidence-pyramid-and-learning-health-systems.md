@@ -10,12 +10,12 @@ Covered in this section:
 *   The Learning Health System
 *   Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
 
-The 6S Evidence Pyramid is another framing on the quality or validity of the evidence that may be of particular interest to the CPG-IG (implementation guide)  ([ref](https://doi.org/10.7326/0003-4819-151-6-200909150-02002)). <!-- DiCenso A, Bayley L, Haynes RB. Accessing preappraised evidence: fine-tuning the 5S model into a 6S model. Ann Intern Med. 2009;151:JC3–2. doi: https://doi.org/10.7326/0003-4819-151-6-200909150-02002 !-->  A detailed explanation of the 6S Pyramid is beyond the scope of this document, however we will explain a few key points as they pertain to the guideline development process, in particular the quality of evidence as well as how the CPG actually enables the ascent to the peak.  
+The 6S Evidence Pyramid is another framing on the quality or validity of the evidence that may be of particular interest to the CPG-IG (implementation guide)[^1]. A detailed explanation of the 6S Pyramid is beyond the scope of this document, however we will explain a few key points as they pertain to the guideline development process, in particular the quality of evidence as well as how the CPG actually enables the ascent to the peak.  
 
 1. **Single Studies-** represent unique research conducted to answer specific clinical questions
 2. **Synopses of Single Studies-** summarizing evidence from high-quality studies
 3. **Syntheses-** a comprehensive summary of all the evidence surrounding a specific research question (e.g., systematic review, meta-analysis)
-4. **Synopses of Syntheses-** summarizing the information found in syntheses (e.g., evidence summaries, [rapid reviews](https://doi.org/10.1186/2046-4053-1-10)) <!-- Khangura, S., Konnyu, K., Cushman, R., Grimshaw, J., & Moher, D. (2012). Evidence summaries: the evolution of a rapid review approach. Systematic reviews, 1, 10. https://doi.org/10.1186/2046-4053-1-10 !-->
+4. **Synopses of Syntheses-** summarizing the information found in syntheses (e.g., evidence summaries, rapid reviews)[^2]
 5. **Summaries-** guidelines or texts that integrate and evaluate evidence-based information about specific clinical problems to inform clinical decisions
 6. **Systems-** integrating information from the lower levels of the hierarchy with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
 
@@ -40,13 +40,13 @@ Furthermore, profiles like the CPGeCaseReport, inclusive of all guideline-scoped
 Intermediate and ultimate outcomes at the patient-level, including those reported by the patient, could be collected by the CPGeCaseReport.  Lastly, CPGCaseFeatures may include ‘snippets’ of narrative from clinical impressions related to the response and/or other contextualization of a patient-specific guideline recommendation or decision.  This kind of narrative explanation for the clinicians' decision-making process or assessment may provide significant insight into the impact and effectiveness of various characteristics of the recommendation and/or CPG-derived decision-support interventions.
 
 
-Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (CPGProposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”  ([ref](https://www.ahrq.gov/learning-health-systems/about.html)). <!-- Make Endnote !-->
+Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (CPGProposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”[^3]
 
 <details open>
 
 <summary>
 
-FIG. 23. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence (ref) <!-- Flynn, Allen & Friedman, Charles & Boisvert, Peter & Landis‐Lewis, Zachary & Lagoze, Carl. (2018). The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learning Health Systems. 2. 10.1002/lrh2.10054. !-->
+FIG. 23. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence[^4]
 
 </summary>
 
@@ -85,3 +85,9 @@ FIG 24. **Knowledge Implementation concurrent with Agile CPG Development** has t
 <img src="assets/images/CPG-05.05-Agile.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+---
+[^1] DiCenso A, Bayley L, Haynes RB. Accessing preappraised evidence: fine-tuning the 5S model into a 6S model. Ann Intern Med. 2009;151:JC3–2. doi: https://doi.org/10.7326/0003-4819-151-6-200909150-02002
+[^2] Khangura, S., Konnyu, K., Cushman, R., Grimshaw, J., & Moher, D. (2012). Evidence summaries: the evolution of a rapid review approach. Systematic reviews, 1, 10. https://doi.org/10.1186/2046-4053-1-10
+[^3] https://www.ahrq.gov/learning-health-systems/about.html <!-- Make Endnote !-->
+[^4] Flynn, Allen & Friedman, Charles & Boisvert, Peter & Landis‐Lewis, Zachary & Lagoze, Carl. (2018). The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learning Health Systems. 2. 10.1002/lrh2.10054.

@@ -87,9 +87,9 @@ Level 4 (L4) is executable software running in a clinical system (e.g., EHR, reg
 
 *   Mapping of terms (value sets) to local terms
 *   Adjustment of workflow for site-specific factors
-*   Interpretation of computable content in the site-specific environment (see Methods of Implementation)
+*   Interpretation of computable content in the site-specific environment (see [Methods of Implementation](documentation-approach-09-methods-of-implementation.html))
 
-As will be discussed further in the Agile CPG development approach (see section on Knowledge Engineering), <!-- add link !--> these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
+As will be discussed further in the Agile CPG development approach (see section on [Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)), <!-- add link !--> these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
 <details open>
 

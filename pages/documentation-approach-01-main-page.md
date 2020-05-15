@@ -134,11 +134,11 @@ The primary objective of the CPG approach to codifying clinical practice guideli
 
 Secondarily, we describe how these activities interact with adjacent and related activities as well as content and related standards in the broader knowledge ecosystem (inclusive of evidence ecosystem, guideline developers, guideline-directed care, quality measure ecosystem, registry community, etc.). This includes upstream activities, such as evidence generation and knowledge discovery, and downstream activities, such decision support (i.e., CDS), patient care, advanced cognitive support (e.g., using SMART-on-FHIR apps), quality measurement and reporting, and electronic case reporting (for similarly scoped conditions). All can serve to inform subsequent iterations of clinical guidelines and guideline-directed care and thus have a key role in the learning health system.
 
-# 3. **Conformance and Levels of Enablement** [Section 03: Levels of Conformance and Enablement](documentation-approach-03-conformance-levels.html) <!-- link to section 03 - !-->
+# 3. [**Conformance and Levels of Enablement**](documentation-approach-03-conformance-levels.html) <!-- link to section 03 - !-->
 
 Trade-offs between effort, time to develop, and capabilities enabled (and value that can be derived) when developing a CPG.  From very basic context for narrative snippets searchable in a library (or Infobutton from EHR) to full clinical workflow enablement, cognitive support, and pathway tracking (likely via SMART-on-FHIR App or deep EHR integration) as well as feedback loops with real-world evidence of actual guideline usage, measures, etc. and as substrate for evidence ecosystem and/or feedforward loop for evidence updates.  Fortunately, the CPG-IG includes levels of enablement that correlate to work effort, time to delivery, as well as capabilities that it can support as well as the means to iteratively, and successively develop CPG versions that provide incremental value by ascending these levels of enablement.
 
-# 4. **Guideline Development Process** [Section 04: Guideline Development](documentation-approach-04-guideline-development.html) <!-- link to section 04 - !-->
+# 4. [**Guideline Development Process**](documentation-approach-04-guideline-development.html) <!-- link to section 04 - !-->
 
 Guideline development involves systematic review of evidence related to specific clinical question(s) and then producing a set of recommendations and supporting information.  This implementation guide provides sufficient context for developing a computer-interpretable representation of the final work product of the guideline development process.
 
@@ -167,7 +167,7 @@ Recommendations are proposals pertaining to the best course of action put forth 
 *   **Metrics and Measures** (scoped to CPG)
 *   **eCaseReport** (scoped to CPG)
 
-# 5. **Knowledge Engineering Overview** [Section 05: Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html) <!-- link to section 05 - !-->
+# 5. [**Knowledge Engineering Overview**](documentation-approach-05-knowledge-engineering-overview.html) <!-- link to section 05 - !-->
 
 Knowledge Engineering (KE) is the discipline and profession of developing explicit representations of advanced, domain-oriented logic in computer systems (i.e., knowledge-based systems) in order to simulate human decision-making and high-level cognitive tasks.
 
@@ -246,7 +246,7 @@ FIG. 08. Concurrent, Integrated, Cross-functional Development and Implementation
 </details>
 
 
-# 6. **Knowledge Representation** [Section 06: Knowledge Representation](documentation-approach-06-knowledge-representation.html) <!-- link to section 06 - !-->
+# 6. [**Knowledge Representation**](documentation-approach-06-knowledge-representation.html) <!-- link to section 06 - !-->
 
 Knowledge can be represented in four progressively more structured levels: narrative (L1), semistructured (L2), structured (L3), executable (L4).
 
@@ -275,7 +275,7 @@ FIG. 09. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Cont
 
 This implementation guide describes how the knowledge architecture for clinical practice guidelines has been manifested within FHIR Resources and the FHIR Architectural and Implementation Frameworks.
 
-# 7. **Tiers of Functionality** [Section 07: Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html) <!-- link to section 07 ... draw from: http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach.html !-->
+# 7. [**Tiers of Functionality**](documentation-approach-07-tiers-of-functionality.html) <!-- link to section 07 ... draw from: http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach.html !-->
 
 This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering
 
@@ -283,7 +283,7 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 *   **Logic**
 *   **User Interface (UI)**
 
-# 8. **Levels of Representation by Tiers of Functionality** [Section 08: Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html) <!-- link to section 08 !-->
+# 8. [**Levels of Representation by Tiers of Functionality**](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html) <!-- link to section 08 !-->
 
 The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (i.e., UI) (T3).
 
@@ -299,7 +299,7 @@ FIG. 10. Levels of Representation by Tiers of Functionality with Examples (Rhode
 
 </details>
 
-# 9. **Methods of Implementation** [Section 09: Methods of Implementing Knowledge](documentation-approach-09-methods-of-implementation.html) <!-- link to section 09 !-->
+# 9. [**Methods of Implementation**](documentation-approach-09-methods-of-implementation.html) <!-- link to section 09 !-->
 
 With these computable artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
@@ -350,7 +350,7 @@ FIG. 12. Concurrent, Integrated, Cross-functional Development and Implementation
 </details>
 
 
-# 12. **CPG Knowledge Architecture (Conceptual Perspective)** [Section 12: CPG Knowledge Architecture (Conceptual)](documentation-approach-12-conceptual-knowledge-architecture.html) <!-- link to section 12 !-->
+# 12. [**CPG Knowledge Architecture (Conceptual Perspective)**](documentation-approach-12-conceptual-knowledge-architecture.html) <!-- link to section 12 !-->
 *   **Plan**
     *   **Recommendations** (the activity the guidelines tell you to do or not to do)
     *   **Strategies** (organize or orchestrate recommendations)
