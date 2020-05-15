@@ -32,7 +32,7 @@ Fig. 25. The Knowledge Engineering Lifecycle, illustrating the general flow of a
 
 </summary>
 
-<img src="assets/images/CPG-05-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="430"/>
+<img src="assets/images/CPG-05-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -91,7 +91,7 @@ FIG. 26.  Knowledge Engineering in collaboration with the guideline development 
 
 </summary>
 
-<img src="assets/images/CPG-05-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="391"/>
+<img src="assets/images/CPG-05-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -108,7 +108,7 @@ FIG. 27. Knowledge Engineering in collaboration Local Informatics and EHR build 
 
 </summary>
 
-<img src="assets/images/CPG-05-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="477"/>
+<img src="assets/images/CPG-05-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -125,7 +125,7 @@ FIG. 28.  Knowledge Translation is the dynamic and iterative process of conveyin
 
 </summary>
 
-<img src="assets/images/CPG-05-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="466"/>
+<img src="assets/images/CPG-05-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -180,7 +180,7 @@ FIG. 29.  Just as the guideline development group and knowledge engineering team
 
 </summary>
 
-<img src="assets/images/CPG-05-04.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="515"/>
+<img src="assets/images/CPG-05-04.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -200,13 +200,13 @@ FIG 30. The similarities in roles, functions, and activities as well as compleme
 
 </summary>
 
-<img src="assets/images/CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="709"/>
+<img src="assets/images/CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 
 **Analogs and Collaboration across CPG Development and Implementation**
 
-As described in more detail in the section on Knowledge Implementation, <!-- Link to - 05.05 !--> there are numerous analogues between the guideline development group and local practice governance as well as between the CPG knowledge engineering function and local informatics and EHR build functions.  Likewise, as the guideline development group and knowledge engineering function collaborate in the CPG development process, so does the local practice governance and informatics/EHR build function in the local knowledge implementation process.
+As described in more detail in the section on [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html), <!-- Link to - 05.05 !--> there are numerous analogues between the guideline development group and local practice governance as well as between the CPG knowledge engineering function and local informatics and EHR build functions.  Likewise, as the guideline development group and knowledge engineering function collaborate in the CPG development process, so does the local practice governance and informatics/EHR build function in the local knowledge implementation process.
 
 **Feedback- early, often, actionable:**
 
@@ -271,11 +271,11 @@ Relevant Agile Practices to be adapted to knowledge engineering function:
 
 <summary>
 
-FIG. 31. DRAFT of Integrated, Cross-functional process flow for guideline development from the CDC Adapting Clinical Guidelines for the Digital Age ([ref](https://www.cdc.gov/ddphss/clinical-guidelines/index.html)).
+FIG. 31. DRAFT of Integrated, Cross-functional process flow for guideline development from the [CDC Adapting Clinical Guidelines for the Digital Age](https://www.cdc.gov/ddphss/clinical-guidelines/index.html).
 
 </summary>
 
-<img src="assets/images/CPG-05-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="563"/>
+<img src="assets/images/CPG-05-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
 

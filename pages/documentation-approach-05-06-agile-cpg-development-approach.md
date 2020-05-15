@@ -15,7 +15,7 @@ This section will provide the following:
     *   Test-driven Knowledge Engineering
     *   Iteration, rapid-cycle feedback
     *   Leverage Knowledge Base (in an ‘intelligent’ Knowledge Content Management System)
-*   Also refer to the prior section on Knowledge Implementation <!-- Link to 05.05 !--> for details on cross-functional integration with Local Implementation teams and the benefits thereof.
+*   Also refer to the prior section on [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html) <!-- Link to 05.05 !--> for details on cross-functional integration with Local Implementation teams and the benefits thereof.
 
 Characteristics of Agile include:
 
@@ -51,8 +51,6 @@ FIG. 41. Integrated, Cross-functional process flow for guideline development.
 <!-- Need Updated Image from Susan that shows more concurrency and early engagement of "local" consumers of guidelines, not just hand-off !-->
 </details>
 
-
-
 The levels of knowledge representation (i.e., L1 through L4) represent a framework, not a process or a specific kind of knowledge asset or artifact. The levels describe the general nature of knowledge artifacts and their representation in the typical progression of formalization through translation. Knowledge artifacts may have characteristics of more than one level (e.g., a narrative (L1) guideline could include semi-structure flow diagrams (L2) within them). Progression of formalization or translation may be rapid or instantaneous through the use of tooling (e.g., editors), reuse formalized assets or content from upstream (e.g., value set definitions from evidence or studies), and/or a re-conceptualization of the overall guidelines and CPG development lifecycle process.
 
 <details open>
@@ -81,7 +79,7 @@ The Agile CPG development teams are comprised of numerous experts, as is the gui
 
 **Integration with Knowledge Engineering with Guideline Development Process**
 
-See section on Collaboration with Guideline Development Group in Knowledge Acquisition. <!-- link to 05.01 !--> This is a key tenant of the Agile CPG process.
+See section on Collaboration with Guideline Development Group in [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html). <!-- link to 05.01 !--> This is a key tenet of the Agile CPG process.
 
 **Integration/ Collaboration of CPG Development and Implementation**
 
@@ -194,7 +192,7 @@ FIG. 44. **Knowledge Implementation concurrent with Agile CPG Development** has 
 
 **Leveraging a Knowledge Base (Knowledge Content Management System)**
 
-For an introduction to knowledge content management systems see sections on knowledge management in Knowledge Representation <!-- Link to doc 05.03 !--> from knowledge engineering lifecycle.   More details on knowledge content management systems and their role(s) in knowledge-driven systems, see the section on Knowledge Architecture and Knowledge Content Management System <!-- Link to doc 06.03 !-->
+For an introduction to knowledge content management systems see sections on knowledge management in [Knowledge Representation (as relates to KE)](documentation-approach-05-03-knowledge-representation.html) <!-- Link to doc 05.03 !--> from knowledge engineering lifecycle.   More details on knowledge content management systems and their role(s) in knowledge-driven systems, see the section on [Knowledge Architecture and Knowledge Content Management System](documentation-approach-06-03-knowledge-architecture.html) <!-- Link to doc 06.03 !-->
 
 The knowledge content management system leverages various features of the knowledge assets in the knowledge base (the corpus of knowledge assets and content) and is what enables the Agile practice of Domain-driven design/ development.  A knowledge content management system is a nearly essential capability for knowledge engineers to manage a large corpus of interrelated knowledge assets as is needed for much of the Agile knowledge engineering methodologies described above to be feasible for any significant effort.
 

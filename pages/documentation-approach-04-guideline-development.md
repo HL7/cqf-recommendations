@@ -34,7 +34,7 @@ FIG 18. Overview of the phases of the guideline development process that general
 
 </details>
 
-## **Guideline Development Group** <!-- GET RID OF SECTION 4.01- ALL is in HERE NOW (???) !-->
+## **Guideline Development Group** <!-- GET RID OF SECTION 4.01- ALL is in HERE NOW (???)  [Description of the Guideline Development Group (GDG) and Scoping](documentation-approach-04-01-guideline-development-group.html) !-->
 
 The guideline development group is the multi-stakeholder, cross-functional team assembled to develop the guideline. It often includes members from the target audience (specialist and primary care clinicians), content experts, patients and caregivers, front-line clinicians, evidence-based practice experts, outcomes and quality experts, usability experts, experts in medical and shared decision-making, methodology experts, and experts in health economics. ([https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#GuidelineGroupMembershiptable](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#GuidelineGroupMembershiptable)).
 
@@ -44,7 +44,7 @@ For the digital CPG, we will need to add a few more experts to the guideline dev
 
 Scoping refers to the process and establishment of criteria to describe and constrain the focus of the guideline. It addresses who is the target user of the guideline,who it applies to, and what is addressed in the guideline. This is typically based on various factors, including high prevalence and burden of disease, avoidable mortality and morbidity, high cost, emerging diseases or emerging care options, variation in clinical practice, and rapidly changing evidence. The PICOTS Typology (i.e., population, intervention, comparison, outcome, timeframe) is often used in scoping and correlates closely to the eligibility criteria for the CPG  ([https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Prioritytable](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Prioritytable)).
 
-## **Guideline Development Frameworks** <!-- link to 04.02 !-->
+## **Guideline Development Frameworks**  <!-- link to 04.02 [Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html) !-->
 
 The following Frameworks are used in Guideline development and across the evidence ecosystem:
 
