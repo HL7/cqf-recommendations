@@ -4,7 +4,7 @@ title: Conceptual Knowledge Architecture
 ---
 # **CPG Knowledge Architecture-Conceptual Perspective**
 
-The conceptual knowledge architecture for the CPG describes how the concepts from a guideline and its recommendations described in the preceding sections are realized as computable knowledge assets.  The CPG knowledge architecture provides the framework through which the knowledge engineering team realizes the guideline, its recommendations, and their various features through explicit formalisms and ultimately as information.  The CPG conceptual knowledge architecture together with the implementation instructions and examples in the [Methodology](documentation-approach-09-methods-of-implementation.html) section <!-- link to Methodology !--> provide the means to develop and concretize a CPG representation that can be consumed through various mechanisms in end-user workflows.
+The conceptual knowledge architecture for the CPG describes how the concepts from a guideline and its recommendations described in the preceding sections are realized as computable knowledge assets.  The CPG knowledge architecture provides the framework through which the knowledge engineering team realizes the guideline, its recommendations, and their various features through explicit formalisms and ultimately as information.  The CPG conceptual knowledge architecture together with the implementation instructions and examples in the [Methodology](documentation-methodology.html) section <!-- link to Methodology !--> provide the means to develop and concretize a CPG representation that can be consumed through various mechanisms in end-user workflows.
 
 Covered in this section:
 
@@ -264,7 +264,7 @@ FIG. 65. The CPGCarePlan With its CPGProposals and resulting or related Requests
 </details>
 
 
-The CPGCarePlan is constrained to the set of proposals (i.e. patient-specific recommendations), clinical interventions (e.g., orders/ requests), or their fulfillments (e.g., events) scoped by a specific CPG.  This includes those related to the guideline recommendations, the strategies for combining guideline recommendations, as well as the decision logic for each recommendation, the strategies for combining recommendations, and how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies in the context of a specific case (i.e., patient).  As described in the  [Methodology](documentation-approach-09-methods-of-implementation.html) <!-- link to Methodology !--> section, the CPGCarePlan is modeled as a profile on a [FHIR CarePlan Resource](https://www.hl7.org/fhir/careplan.html).
+The CPGCarePlan is constrained to the set of proposals (i.e. patient-specific recommendations), clinical interventions (e.g., orders/ requests), or their fulfillments (e.g., events) scoped by a specific CPG.  This includes those related to the guideline recommendations, the strategies for combining guideline recommendations, as well as the decision logic for each recommendation, the strategies for combining recommendations, and how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies in the context of a specific case (i.e., patient).  As described in the  [Methodology](documentation-methodology.html) <!-- link to Methodology !--> section, the CPGCarePlan is modeled as a profile on a [FHIR CarePlan Resource](https://www.hl7.org/fhir/careplan.html).
 
 <details open>
 
