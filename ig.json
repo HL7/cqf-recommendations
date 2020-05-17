@@ -52,6 +52,7 @@
     "implementationguide-cpg-shareable-profile-spreadsheet.xml",
     "implementationguide-cpg-guideline-profile-spreadsheet.xml",
     "implementationguide-cpg-publishableguideline-profile-spreadsheet.xml",
+    "library-cpg-assetcollection-profile-spreadsheet.xml",
     "library-cpg-distributable-profile-spreadsheet.xml",
     "library-cpg-publishable-profile-spreadsheet.xml",
     "library-cpg-executable-profile-spreadsheet.xml",
@@ -219,6 +220,10 @@
     "StructureDefinition/cpg-publishablelibrary": {
       "defns": "StructureDefinition-cpg-publishablelibrary-definitions.html",
       "base": "StructureDefinition-cpg-publishablelibrary.html"
+    },
+    "StructureDefinition/cpg-assetcollection": {
+      "defns": "StructureDefinition-cpg-assetcollection-definitions.html",
+      "base": "StructureDefinition-cpg-assetcollection.html"
     },
     "StructureDefinition/cpg-distributablelibrary": {
       "defns": "StructureDefinition-cpg-distributablelibrary-definitions.html",
