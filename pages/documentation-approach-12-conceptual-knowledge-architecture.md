@@ -4,7 +4,7 @@ title: Conceptual Knowledge Architecture
 ---
 # **CPG Knowledge Architecture-Conceptual Perspective**
 
-The conceptual knowledge architecture for the CPG describes how the concepts from a guideline and its recommendations described in the preceding sections are realized as computable knowledge assets.  The CPG knowledge architecture provides the framework through which the knowledge engineering team realizes the guideline, its recommendations, and their various features through explicit formalisms and ultimately as information.  The CPG conceptual knowledge architecture together with the implementation instructions and examples in the Methodology section <!-- link to Methodology !--> provide the means to develop and concretize a CPG representation that can be consumed through various mechanisms in end-user workflows.
+The conceptual knowledge architecture for the CPG describes how the concepts from a guideline and its recommendations described in the preceding sections are realized as computable knowledge assets.  The CPG knowledge architecture provides the framework through which the knowledge engineering team realizes the guideline, its recommendations, and their various features through explicit formalisms and ultimately as information.  The CPG conceptual knowledge architecture together with the implementation instructions and examples in the [Methodology](documentation-methodology.html) section <!-- link to Methodology !--> provide the means to develop and concretize a CPG representation that can be consumed through various mechanisms in end-user workflows.
 
 Covered in this section:
 
@@ -16,29 +16,46 @@ Covered in this section:
 *   [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html)
 *   [Derivative & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html)
 
-<img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="364"/>
+<details open>
+
+<summary>
 
 FIG. 59. The CPG Pathway Definition that contains all the CPG-specific knowledge content and assets including the CPGRecommendations (and CPGStrategies); The CPGCase that scopes all the required data elements (CPGFeatures) including many of the patient-specific inferences thereon (inferred CPGCaseFeatures); and the CPGCarePlan that includes the patient-specific recommendations (CPGProposals) and any resulting or relevant orders, prescriptions, scheduling (CPGRequests) and the data elements representing the events that fulfill these requests (a subset of the CPGCaseFeatures)
+
+</summary>
+
+<img src="assets/images/CPG-12-00.png" alt="CPG Pathway Definition" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 
 ## **Separation of Concerns**
 
-Separation of concerns is a design principle that creates a distinct and focused attention on each aspect of the domain or topic...”  (ref <!-- Dijkstra, Edsger W (1982). "On the role of scientific thought". Selected writings on Computing: A Personal Perspective. New York, NY, USA: Springer-Verlag. pp. 60–66. ISBN 0-387-90652-5.; Gossman, William; Lew, Valerie; Ghassemzadeh, Sassan (2019), "SOAP Notes", StatPearls, StatPearls Publishing, PMID 29489268 !-->).  This concept has been used to address efficient and effective approaches in software engineering, particularly as they pertain to developing larger, more complex information systems. (ref)  Perhaps the most common application of this principle is to a three-tiered architecture (i.e. data, logic, UI) and corresponds to the Tiers of Functionality <!-- Link to 07 !--> discussed in its own section.  
+Separation of concerns is a design principle that creates a distinct and focused attention on each aspect of the domain or topic...”.[^1]  This concept has been used to address efficient and effective approaches in software engineering, particularly as they pertain to developing larger, more complex information systems. (ref)  Perhaps the most common application of this principle is to a three-tiered architecture (i.e. data, logic, UI) and corresponds to the [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html) <!-- Link to 07 !--> discussed in its own section.  
 
 In healthcare, a notable and critical axis of separation is by kind of process, including: 1) patient clinicopathological (i.e., pathophysiological and correlated clinical manifestations) processes, inclusive of normal physiology (CPGCase); 2) clinical decision-making and corresponding care process abstracted from the specifics of a given care setting (CPGPlan); and 3) care delivery process or clinical workflow by which the care processes are carried out in the context of a specific care setting where multiple patients and healthcare professionals undergo, situational activities, which may be inclusive of the clinical information system or EHRs used, in part, to undertake these activities.  The CPG-IG knowledge architecture is designed to respect the separation of these concerns as discussed below.
 
-<img src="assets/images/CPG-12-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="600" hight="594"/>
+<details open>
+
+<summary>
 
 FIG. 60. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
+
+</summary>
+
+<img src="assets/images/CPG-12-01.png" alt="Separation of Concerns" class="img-responsive img-rounded center-block" width=300/>
+
+</details>
+
 
 Disease or condition, intervention (e.g., procedure, therapy), and/or diagnostic (e.g., imaging, tests) as well as care setting (e.g., ambulatory, home, inpatient, ED, ICU) and generalized type of care activity (e.g., surveillance, prevention, diagnostic workup, treatment planning, therapeutic response, recovery/convalescence, survivorship) can all be conceptualized further as  separations of concerns.  These separations are typically addressed through the scoping exercise of the guideline development group and may further be addressed by entirely distinct CPG’s or by strategies within individual CPG’s.
 
 Lastly, a key separation of importance to this implementation guide is significantly related to the clinical workflow separation mentioned above, which itself may be separated into the real-world care delivery activities in those activities that are carried out in the context of clinical information systems (e.g., EHRs).  This separation is discussed in detail in the corresponding section.
 
-Further details on the CPG Separation of Concerns <!-- Link to 12.01 !--> and issues related to Separating and Defining Case, Plan, and Workflow <!-- Link to 12.02 !--> can be found in their respective subsections in the CPG Knowledge Architecture section. <!-- Link to 12 !-->
+Further details on the [CPG Separation of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html) <!-- Link to 12.01 !--> and issues related to Separating and [Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html) <!-- Link to 12.02 !--> can be found in their respective subsections in the [CPG Knowledge Architecture](documentation-approach-12-conceptual-knowledge-architecture.html) section. <!-- Link to 12 !-->
 
 
-### **Separating and Defining Case, Plan, and Workflow** <!-- Link to 12.02 !-->
+### [**Separating and Defining Case, Plan, and Workflow**](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html) <!-- Link to 12.02 !-->
 
 
 ### **Case**
@@ -50,41 +67,38 @@ An overview of the Case is covered below for context and details are covered in 
 
 ### **Plan**
 
-Within the healthcare domain, the providers formulate an approach, or plan, for how they intend to address the health, well-being, and active clinical concerns of the patient, taking into account the patient’s goals and preferences.  The plan includes current interventions, takes into account prior and current response to those interventions, and formulates an approach to assess and address all elements of the patient’s state of health and disease.  A plan consists of requesting (e.g., ordering, prescribing, scheduling) medications, procedures, diagnostics (e.g., laboratory and imaging, and other tests), and appointments (e.g., referrals and consults).  Plan, Planning, and Care Plan is addressed in further detail in the subsection. <!-- Link to 12.02 !-->
+Within the healthcare domain, the providers formulate an approach, or plan, for how they intend to address the health, well-being, and active clinical concerns of the patient, taking into account the patient’s goals and preferences.  The plan includes current interventions, takes into account prior and current response to those interventions, and formulates an approach to assess and address all elements of the patient’s state of health and disease.  A plan consists of requesting (e.g., ordering, prescribing, scheduling) medications, procedures, diagnostics (e.g., laboratory and imaging, and other tests), and appointments (e.g., referrals and consults).  [Plan, Planning, and Care Plan](documentation-approach-12-02-separating-and-defining-case-plan-[and-workflow.html) is addressed in further detail in the subsection. <!-- Link to 12.02 !-->
 
-An overview of the Plan is covered below for context and details are covered in the section on the CPGPlan. <!-- Link to 12.03 !-->
+An overview of the Plan is covered below for context and details are covered in the section on the [CPGPlan](documentation-approach-12-03-cpg-plan.html). <!-- Link to 12.03 !-->
 
 
 ### **Workflow**
 
 This implementation guide explicitly does not address, local workflows due to their significant variation, complexity, and need for consideration for local factors (e.g., specific resources and resource type, policies, customized or localized tooling), as well as to avoid conflating detailed clinical workflow descriptions/definitions with the flow of abstract clinical activities often necessary to describe as part of the care process in guideline recommendations. The CPG-IG does this through several mechanisms including “the common pathway” (i.e., an abstraction of high-level clinical workflows), shared information (e.g., CPGCaseFeatures), and reuse of the same standards for clinical information system activities (e.g., requests and their lifecycle, task, and workflow status) and interventions (e.g., Adaptive Forms, CDSHooks, etc.).
 
-An overview of Workflow is covered below for context and details are covered in the section on Workflow and the Common Pathway. <!-- Link to 12.06 !-->
+An overview of Workflow is covered below for context and details are covered in the section on Workflow and the [Common Pathway](documentation-approach-12-06-cpg-common-pathway.html). <!-- Link to 12.06 !-->
 
 
-### **Boundary Issues at the Separation of Domain Concerns**<!-- Link to 12.02 !-->
+### [**Boundary Issues at the Separation of Domain Concerns**](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)<!-- Link to 12.02 !-->
 
-Theses specific issues are discussed in more detail in the subsection on Separating and Defining Case, Plan, and Workflow <!-- Link to 12.01 !-->  and the principles for addressing them  are described in the section on Knowledge Architecture <!-- Link to 06.03 !-->
+Theses specific issues are discussed in more detail in the subsection on Separating and [Defining Case, Plan, and Workflow](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html) <!-- Link to 12.01 !-->  and the principles for addressing them  are described in the section on [Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html) <!-- Link to 06.03 !-->
 
 **Examples of Boundary Issues in the CPG covered in detail:**
-
 
 
 *   Abstract, Local, and EHR (clinical information system) Workflow
 *   Clinical Assessment
 *   Proposals, Requests, and Events- Case or Care Plan?  Some in Both?
-*   Plan or Workflow-see sections on Knowledge Implementation <!-- link to 05.05 !--> and Separating and Defining Case, Plan, and Workflow. <!-- link to 12.02 !-->
+*   Plan or Workflow-see sections on [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html) <!-- link to 05.05 !--> and [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html). <!-- link to 12.02 !-->
 *   Case and Workflow- information remains in appropriate data elements and inferences thereon in their appropriate concern
 
-##
-**CPG Formalizations of Domain Concerns & Concepts**
-
+## **CPG Formalizations of Domain Concerns & Concepts**
 
 
 ## **CPGCase, CPGPlan, and CPGCarePlan**
 
 
-### **Plan** <!-- link to 12.03 !-->
+### [**Plan**](documentation-approach-12-03-cpg-plan.html) <!-- link to 12.03 !-->
 
 The plan, in the CPG context, as described above in “Separation of Concerns,” addresses how the care team intends to address the active clinical concerns of a class of patients, given a set of clinical parameters (described further in  the case features and decision logic discussed below).  However, the CPGPlan is constrained to the set of clinical interventions (e.g., orders/requests) scoped by a specific guideline recommendations in the CPG.
 
@@ -105,13 +119,31 @@ Covered in detail in this section:
     *   Enrollment (including as a Profiled ECA Rule)
     *   As a “Composite” Asset
 
-<img src="assets/images/CPG-12-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="382"/>
+
+<details open>
+
+<summary>
 
 FIG. 61. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition.
 
-<img src="assets/images/CPG-12-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="382"/>
+</summary>
+
+<img src="assets/images/CPG-12-02.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 62. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similary coordinates across Strategies and Recommendations to be aplied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it very likely belongs in the Plan.
+
+</summary>
+
+<img src="assets/images/CPG-Main-Plan.png" alt="Plan" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Recommendations**
 
@@ -121,9 +153,7 @@ CPGRecommendations are the formalization of a singular narrative guideline recom
 
 An important note to the knowledge engineer to pay special attention to the separation of decision logic about what to do for the patient from description or inferencing logic that describes something about or the nature of the patient (e.g. clinical pathological process, risk, severity, in qualifiers thereof).  This greatly simplifies the decision logic as well as makes the inferences about the patient readily available for other logic and/or other use cases.
 
-**Other Topics on Recommendations covered in the CPG Plan section:** <!-- link to 05.05 !-->
-
-
+[**Other Topics on Recommendations covered in the CPG Plan section:**](documentation-approach-05-05-knowledge-implementation.html) <!-- link to 05.05 !-->
 
 *   CPGRecommendation as a profiled FHIR ECA Rule
 *   Directionality and Strength of a Recommendation
@@ -138,8 +168,7 @@ Strategies are approaches for combining, orchestrating, or associating related g
 
 Pathways convey the full scope of guideline recommendations in a manner that can be implemented for the purpose of guiding patient care within a singular CPG.  In part, pathways serve a similar yet higher order function as strategies, and serve the function of addressing interdependencies such as decision and orchestration logic across multiple concerns.  
 
-**Other Topics on Pathways covered in the CPG Plan section:** <!-- link to 12.03 !-->
-
+[**Other Topics on Pathways covered in the CPG Plan section:**](documentation-approach-12-03-cpg-plan.html) <!-- link to 12.03 !-->
 
 
 *   CPGPathway as a profiled FHIR PlanDefinition
@@ -150,7 +179,7 @@ Pathways convey the full scope of guideline recommendations in a manner that can
 *   Multi-stage “Filtering” for Appropriateness of Guideline-Directed Care
 
 
-### **Case** <!-- link to 12.04 !-->
+### [**Case**](documentation-approach-12-04-cpg-case.html) <!-- link to 12.04 !-->
 
 The data that expresses a case consists of patient descriptors, exposures (e.g., environmental or behavioral, past and current medications and procedures), physiological and pathophysiological assessments and descriptions (e.g., labs, vitals), clinical presentation and progression (e.g., signs, symptoms), diagnostic evaluations and physical exam findings, family history and genetic markers, past and current diagnoses, risk and severity scores, ultimate and intermediate outcomes in response to treatment. In the FHIR CPG, these descriptors of the patient are referred to as CPGCaseFeatures.
 
@@ -168,13 +197,30 @@ Covered in detail in the Case section:
 *   Case Feature Relationships
 *   Case Summary
 
-<img src="assets/images/CPG-12-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="380"/>
+<details open>
+
+<summary>
 
 FIG. 63.  The Case consists of all the patient descriptors including exposures physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile.
 
-<img src="assets/images/CPG-12-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="380"/>
+</summary>
+
+<img src="assets/images/CPG-12-03.png" alt="Case" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 64.  The Case consists of facts or information about the patient called Case Features (CPGCaseFeatures) that may be resolved by [FHIR Events](https://www.hl7.org/fhir/event.html) and FHIR [Requests](https://www.hl7.org/fhir/request.html) as required data elements or inferrered (in part using required data elements).
+
+</summary>
+
+<img src="assets/images/CPG-Main-Case.png" alt="Case Features" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Case Features**
 
@@ -186,10 +232,10 @@ For case features requiring clinical judgement or assessment, an adaptive form (
 
 **Separating Patient Descriptive Logic from Clinical Decision Logic**
 
-NOTE: the knowledge engineer MUST pay special attention to the separation of decision logic about what to do for the patient (e.g. in a recommendation) from description or inferencing logic that describes something about or the nature of the patient (e.g. clinical pathological process, risk, severity, in qualifiers thereof).  This greatly simplifies the decision logic as well as makes the inferences about the patient readily available for other logic and/or use cases.  This takes particular attention from the knowledge engineer and is critical for this implementation guide.  See details in the Case section of the approach to this implementation guide.
+**NOTE:** the knowledge engineer MUST pay special attention to the separation of decision logic about what to do for the patient (e.g. in a recommendation) from description or inferencing logic that describes something about or the nature of the patient (e.g. clinical pathological process, risk, severity, in qualifiers thereof).  This greatly simplifies the decision logic as well as makes the inferences about the patient readily available for other logic and/or use cases.  This takes particular attention from the knowledge engineer and is critical for this implementation guide.  See details in the Case section of the approach to this implementation guide.
 
 
-### **Care Plan** <!-- link to 12.05 !-->
+### [**Care Plan**](documentation-approach-12-05-cpg-careplan.html) <!-- link to 12.05 !-->
 
 A Care Plan can be conceptualized as the patient-specific or instantiated “Plan” concretized against an individual Case.  The Care Plan describes the intention of how one or more healthcare professionals intend to provide care for a specific patient, group, or community for a period of time, possibly limited to care for a specific condition or set of conditions.  In the CPG, the care plan is scoped to the condition(s), intervention(s), recommendation(s), and other relevant “plan” content in this limited context (e.g., contraindications, correlated orders and results such as drug levels, or other orders or fulfillments that must be considered in triggering, decision, or orchestration logic).
 
@@ -205,15 +251,32 @@ Covered in detail in the Care Plan section:
 *   Events
 *   Shared Care Plans
 
-<img src="assets/images/CPG-12-04.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="375"/>
+<details open>
+
+<summary>
 
 FIG. 65. The CPGCarePlan With its CPGProposals and resulting or related Requests and Events.
 
-The CPGCarePlan is constrained to the set of proposals (i.e. patient-specific recommendations), clinical interventions (e.g., orders/ requests), or their fulfillments (e.g., events) scoped by a specific CPG.  This includes those related to the guideline recommendations, the strategies for combining guideline recommendations, as well as the decision logic for each recommendation, the strategies for combining recommendations, and how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies in the context of a specific case (i.e., patient).  As described in the Methodology <!-- link to Methodology !--> section, the CPGCarePlan is modeled as a profile on a [FHIR CarePlan Resource](https://www.hl7.org/fhir/careplan.html).
+</summary>
 
-<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="114"/>
+<img src="assets/images/CPG-12-04.png" alt="CPG CarePlan" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
+The CPGCarePlan is constrained to the set of proposals (i.e. patient-specific recommendations), clinical interventions (e.g., orders/ requests), or their fulfillments (e.g., events) scoped by a specific CPG.  This includes those related to the guideline recommendations, the strategies for combining guideline recommendations, as well as the decision logic for each recommendation, the strategies for combining recommendations, and how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies in the context of a specific case (i.e., patient).  As described in the  [Methodology](documentation-methodology.html) <!-- link to Methodology !--> section, the CPGCarePlan is modeled as a profile on a [FHIR CarePlan Resource](https://www.hl7.org/fhir/careplan.html).
+
+<details open>
+
+<summary>
 
 FIG. 66. The Care Plan consists of the patient-specific recommendations as Proposals, Requests that correspond (or are related) to the Proposals, and the corresponding or related Events.  Note that the Requests and Events are also referenced by the Case as CPGCaseFeatures.
+
+</summary>
+
+<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="Instantiated Plan" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 **Proposal:**
 
@@ -223,9 +286,18 @@ A patient-specific recommendation, that has taken into account all the criteria 
 
 A CPGProposal is a patient-specific instantiation of a CPGRecommendation and carries forward much of the information content of the CPGRecommendation including its evidence and provenance.  Furthermore, patient-specific recommendations or proposals (and cliical decision support in general) have been shown to be more effective and beneficial when supported by recommendations-specific patient information.
 
-<img src="assets/images/CPG-12-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="399"/>
+<details open>
+
+<summary>
 
 FIG. 67. A CPG Recommendation with its scoped CPGCasePlanSummaryView.
+
+</summary>
+
+<img src="assets/images/CPG-12-05.png" alt="Recommendation" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Request (as part of the CPGCarePlan)**
 
@@ -233,10 +305,10 @@ The notion of "request" encompasses all types of orders (e.g., original orders, 
 
 **Event (as part of the CPGCarePlan)**
 
-Events are descriptions of activities that have taken place or that are currently taking place. It includes resources that primarily describe the result of a request (e.g., activity) or is otherwise related to the request or proposal (e.g., a condition or observation).  These Events also serve as CPGCaseFeatures in the CPGCase. Boundary issues for dealing with events that belong to both the CPGCarePlan and CPGCase are discussed in the section on Separating and Defining Case, Plan, and Workflow. <!-- link to 12.02 !-->  Examples of Events include medication dispense or administrations, procedures, encounters, questionnaire responses, observations, diagnostic report, clinical document (i.e. [FHIR Composition](https://www.hl7.org/fhir/composition.html)), and many other found in the [FHIR Event pattern](https://www.hl7.org/fhir/event.html#mappings).
+Events are descriptions of activities that have taken place or that are currently taking place. It includes resources that primarily describe the result of a request (e.g., activity) or is otherwise related to the request or proposal (e.g., a condition or observation).  These Events also serve as CPGCaseFeatures in the CPGCase. Boundary issues for dealing with events that belong to both the CPGCarePlan and CPGCase are discussed in the section on [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html). <!-- link to 12.02 !-->  Examples of Events include medication dispense or administrations, procedures, encounters, questionnaire responses, observations, diagnostic report, clinical document (i.e. [FHIR Composition](https://www.hl7.org/fhir/composition.html)), and many other found in the [FHIR Event pattern](https://www.hl7.org/fhir/event.html#mappings).
 
 
-## **Workflow and Common Pathway** <!-- link to 12.06 !-->
+## [**Workflow and Common Pathway**](documentation-approach-12-06-cpg-common-pathway.html) <!-- link to 12.06 !-->
 
 Covered in this section:
 
@@ -249,9 +321,9 @@ Covered in this section:
 
 The Common Pathway provides an abstract or generalized description of the overall process of care delivery that relates to care settings, high-level care activities, and their respective flows and performers (healthcare professional roles). The Common Pathway is intended to be applicable in any guideline-based care content, but not a specific localization or implementation thereof.  Using this common pathway, content can indicate where in the overall process of care delivery a given recommendation or intervention should occur without stating explicitly how.
 
-Tracking of workflow as performed in the clinical information system (i.e. EHR) is described in the [FHIR Workflow Description](https://www.hl7.org/fhir/workflow.html).  The FHIR Requests and Events as well as Tasks are key carriers of this nature of workflow information. This topic is covered in depth in the Workflow and Common Pathway section. <!-- link to 12.06 !-->
+Tracking of workflow as performed in the clinical information system (i.e. EHR) is described in the [FHIR Workflow Description](https://www.hl7.org/fhir/workflow.html).  The FHIR Requests and Events as well as Tasks are key carriers of this nature of workflow information. This topic is covered in depth in the [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html) section. <!-- link to 12.06 !-->
 
-Further discussed in this section are the Workflow Enablements and Interventions that are largely addressed in the  [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-module.html) which covers the mechanisms through which guidance is delivered into the care delivery process.  Interoperability on enriched data elements (e.g., Case Features or surrogate thereof based on system compatibility) are another key Mechanism of Integration <!-- link to 10 !--> for delivery into workflow.
+Further discussed in this section are the Workflow Enablements and Interventions that are largely addressed in the  [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-module.html) which covers the mechanisms through which guidance is delivered into the care delivery process.  Interoperability on enriched data elements (e.g., Case Features or surrogate thereof based on system compatibility) are another key Mechanism of Integration <!-- link to 10 (as of 5/14, not authored) !--> for delivery into workflow.
 
 
 ## **CPGGuideline**
@@ -262,7 +334,7 @@ All the knowledge assets that are the work product of the CPG development proces
 
 **Derivative & Related Assets**
 
-Another key feature of the FHIR CPG is that since it explicitly and formally expresses the intent of the guideline, numerous additional features that have been historically developed manually using the guideline narrative, can be derived directly from the CPG and/or reuse significant portions of the CPG, or at least express relations to the CPG and/or its component assets (e.g. CPGRecommendation).  More on derivative and related assets may be found in the subsection on Derivative & Related Assets. <!-- link to 12.07 !-->
+Another key feature of the FHIR CPG is that since it explicitly and formally expresses the intent of the guideline, numerous additional features that have been historically developed manually using the guideline narrative, can be derived directly from the CPG and/or reuse significant portions of the CPG, or at least express relations to the CPG and/or its component assets (e.g. CPGRecommendation).  More on derivative and related assets may be found in the subsection on [Derivative & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html). <!-- link to 12.07 !-->
 
 Covered in this section:
 
@@ -276,3 +348,6 @@ Covered in this section:
 *   CPGCasePlanProgressingNote
 *   CPGeCaseReport using the [FHIR eCaseReport IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html)
 *   Infobutton for CPG’s
+
+---
+[^1] Dijkstra, Edsger W (1982). "On the role of scientific thought". Selected writings on Computing: A Personal Perspective. New York, NY, USA: Springer-Verlag. pp. 60–66. ISBN 0-387-90652-5.; Gossman, William; Lew, Valerie; Ghassemzadeh, Sassan (2019), "SOAP Notes", StatPearls, StatPearls Publishing, PMID 29489268

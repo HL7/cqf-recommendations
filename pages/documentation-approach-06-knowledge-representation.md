@@ -15,7 +15,7 @@ In this section we will cover:
     *   Asset Metadata (information about the assets and knowledge base)
 *   [Knowledge Architecture (designing and defining the types and nature of assets)](documentation-approach-06-03-knowledge-architecture.html)
 
-**Levels of Knowledge Representation Framing:** <!-- Link to 06.01 !-->
+[**Levels of Knowledge Representation Framing:**](documentation-approach-06-01-levels-of-knowledge-representation.html) <!-- Link to 06.01 !-->
 
 ## **Approach**
 
@@ -25,17 +25,33 @@ Note that the levels of knowledge representation are a continuum, with discrete 
 
 This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
 
-<img src="assets/images/knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="334"/>
+<details open>
+
+<summary>
 
 FIG. 45. Knowledge Levels
 
-As will be discussed further in the Agile CPG development approach (see section on Knowledge Engineering),<!-- Link to ... !--> these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
+</summary>
 
-<img src="assets/images/CPG-05.06-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="287"/>
+<img src="assets/images/knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="334"/>
+
+</details>
+
+As will be discussed further in the Agile CPG development approach (see section on [Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)),<!-- Link to ... !--> these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
+
+<details open>
+
+<summary>
 
 FIG. 46. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
 
-**Knowledge Assets** <!-- Link to 06.01 !-->
+</summary>
+
+<img src="assets/images/CPG-05.06-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="287"/>
+
+</details>
+
+[**Knowledge Assets**](documentation-approach-06-02-knowledge-assets.html) <!-- Link to 06.01 !-->
 
 Knowledge assets or artifacts as they are often referred to in FHIR, where an artifact is an instance of an asset.  Assets provide the ability to keep domain logic separated and distinct from other system logic in complex systems.  In this implementation guide we often refer to knowledge assets and knowledge artifacts interchangeably, though the distinction is very relevant the knowledge engineer.
 
@@ -78,9 +94,9 @@ Some knowledge assets may be represented using multiple alternative formalisms (
 
 **Curating and Managing Knowledge Assets in a Large Corpus (Knowledge Base)**
 
-For more on Curating and Managing Knowledge Assets (and their respective knowledge architecture), see sections on Knowledge Representation in Knowledge Engineering, <!-- Link to 05.03 !--> and Leveraging a Knowledge Base (Knowledge Content Management System) in the Agile CPG Development Approach. <!-- Link to -05.06- Leveraging a Knowledge Base (Knowledge Content Management System) !-->
+For more on Curating and Managing Knowledge Assets (and their respective knowledge architecture), see sections on Knowledge Representation in [Knowledge Engineering](documentation-approach-05-03-knowledge-representation.html), <!-- Link to 05.03 !--> and Leveraging a Knowledge Base (Knowledge Content Management System) in the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html). <!-- Link to -05.06- Leveraging a Knowledge Base (Knowledge Content Management System) !-->
 
-**Knowledge Architecture:** <!-- Link to 06.03 !-->
+[**Knowledge Architecture:**](documentation-approach-06-03-knowledge-architecture.html) <!-- Link to 06.03 !-->
 
 This section addresses the principles and best practices of knowledge architecture as well as the approach through which the CPG Knowledge Architecture was and continues to be developed including an overview of the Conceptual Perspective on the CPG Knowledge Architecture and the means through which it is realized and concretized in FHIR Profiles elsewhere in this implementation guide.  This implementation guide includes this approach to knowledge architecture as its through it, direct interactions with various stakeholders, and through real-world use cases that it will continue to evolve.
 

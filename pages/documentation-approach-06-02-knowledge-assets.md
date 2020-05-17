@@ -60,15 +60,30 @@ No single representation or expression can sufficiently and/or appropriately des
 
 Furthermore, many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived.  For example, a CPGMetric may derive much of its content from a CPGRecommendation.  Derived knowledge assets may be wholly or partially derived from other assets.  
 
-![alt_text](assets/images/CPG-06.02-00.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 49.  Derived Assets from a CPGPathway
 
+</summary>
+
+<img src="assets/images/CPG-06.02-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 **Translation Within and Between Knowledge Representations**
 
-Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements).  This equivalence in computational intent and behavior is known as isopragmatism.  This affords the ability to transform (and/or translate) between different formalisms of the same knowledge content.  Isopragmatic transformations between such knowledge representations is the knowledge equivalent of iso-semantic transformations between different combinations of information model + terminologies.  Reasons to use alternative, isopragmatic representations of knowledge assets include ease-of-use of tooling (e.g. one representation has more capable authoring and/or validation tools) as well as the capabilities that exist within alternative delivery mechanisms and/or implementation environments.  For more on isopragmatic knowledge representations see the BPM+ section in Methodology. <!-- add link !-->
+Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements).  This equivalence in computational intent and behavior is known as isopragmatism.  This affords the ability to transform (and/or translate) between different formalisms of the same knowledge content.  Isopragmatic transformations between such knowledge representations is the knowledge equivalent of iso-semantic transformations between different combinations of information model + terminologies.  Reasons to use alternative, isopragmatic representations of knowledge assets include ease-of-use of tooling (e.g. one representation has more capable authoring and/or validation tools) as well as the capabilities that exist within alternative delivery mechanisms and/or implementation environments.  For more on isopragmatic knowledge representations see the BPM+ section in [Methodology](documentation-approach-09-methods-of-implementation.html). <!-- add link !-->
 
-![alt_text](assets/images/CPG-06.02-01.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 50. Isopragmatic Representations of the Same Asset
+
+</summary>
+
+<img src="assets/images/CPG-06.02-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>

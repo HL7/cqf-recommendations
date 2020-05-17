@@ -3,16 +3,24 @@ layout: default
 title: Methods of Implementation
 ---
 
-<1. Methods of Implementation
+# Methods of Implementation
 *   As a “Spec”
 *   Translation
 *   Native Execution
 
 With these computable artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
-<img src="assets/images/methods-of-implementation.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="385"/>
+<details open>
+
+<summary>
 
 FIG. 58. Methods of Implementation
+
+</summary>
+
+<img src="assets/images/methods-of-implementation.png" alt="Methods of Implementation" class="img-responsive img-rounded center-block" width="750" height="385"/>
+
+</details>
 
 Note that there are numerous factors that must be considered as part of the local implementation of guideline content. The intent of the L3 artifacts described in this implementation guide is to ensure that these factors can be appropriately considered and addressed as part of implementation while still providing useful content that can accelerate the process.
 

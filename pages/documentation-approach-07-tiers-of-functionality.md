@@ -12,9 +12,17 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 *   **Logic**  (Clinical Logic)
 *   **Forms**  (UI Description and Behavior)
 
-<img src="assets/images/functionality-tiers.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="237"/>
+<details open>
+
+<summary>
 
 FIG. 57. Tiers of Functionality
+
+</summary>
+
+<img src="assets/images/functionality-tiers.png" alt="Tiers of Functionality" class="img-responsive img-rounded center-block" width="750" height="237"/>
+
+</details>
 
 To illustrate these tiers of functionality, consider the following excerpt from a recommendation statement in the CDC Opioid Prescribing Guideline:
 
@@ -30,7 +38,7 @@ Note that these tiers each have different manifestations at different knowledge 
 
 
 
-1. Data Elements
+## Data Elements
 
 The data elements provide a computable representation of the concepts and information within  the clinical guideline. The artifacts at this level are represented in FHIR using the following resources:
 
@@ -44,7 +52,7 @@ Expressing the data elements in a clinical guideline enables the description and
 
 
 
-2. Clinical Logic
+## Clinical Logic
 
 The clinical logic in a computable guideline provides a formal representation of the behavior involved in the recommendation statements in terms of the data elements. This includes inclusion/exclusion criteria, calculations such as risk scores, public health indicators, or average daily dosage, as well as rules that describe how and when a recommendation applies such as event-condition-action rules. The artifacts at this level are represented in FHIR using the following resources:
 
@@ -61,7 +69,7 @@ Note to the Knowledge Engineer not to conflate Clinical (business) Logic with ei
 
 
 
-3. Forms Description
+## Forms Description
 
 The forms description in a computable guideline describes user interactions and uses both the data elements and clinical logic. The artifacts at this level are represented in FHIR using the following resources:
 

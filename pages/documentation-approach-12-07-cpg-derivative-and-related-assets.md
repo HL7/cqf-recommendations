@@ -24,17 +24,33 @@ Another key feature of the FHIR CPG is that since it explicitly and formally exp
 
 All the knowledge assets that are the work product of the CPG development process and either go into or are used by the CPGPathway (that specifies the guideline itself) as well as those that are derived from and/or related to the guideline as part of CPD development work effort our package into a container asset called the CPGGuideline based on the [FHIR ImplementationGuide Resource](https://www.hl7.org/fhir/implementationguide.html).  No single consumer or implementer must use the entire content of the CPGGuideline, though all available knowledge assets are contained within this resource should they choose to.   More likely, most implementers and end-consumers will only use scoped assets, largely composite knowledge assets.
 
-![alt_text](assets/images/CPG-12.07-GdlnDef.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 82.   CPGGuideline based on the FHIR ImplementationGuide Resource the container asset or resource that packages all of the CPG knowledge assets and end-deliverable work products from the CPG development and knowledge engineering process.
 
+</summary>
+
+<img src="assets/images/CPG-12.07-GdlnDef.png" alt="Guideline Definition" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 **CPGMetrics**
 
-![alt_text](assets/images/CPG-12.07-00.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 83. The CPGMetric is a patient-level indicator, often related to a patient-specific recommendation (CPGProposal) and/or intermediate- or end-outcomes.  A given CPG may have many patient-level CPGMetrics.  
+
+</summary>
+
+<img src="assets/images/CPG-12.07-00.png" alt="Metric" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 A metric is a patient-level indicator for measurement.  It is often related to a patient-specific recommendation (i.e., CPGProposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).  A similar pattern for CPGMetrics may correlate or compare the resulting request and/or their fulfilling event(s) to some other anchoring event (i.e., a CPGCaseFeature), which is often part of the triggering, decision, or orchestration logic and the scoped CPGRecommendation, CPGStrategy, and/or CPGPathway.  
 
@@ -48,10 +64,18 @@ A CPGMetric is represented as a [FHIR Measure Resource](https://www.hl7.org/fhir
 
 **CPGMeasure (eCQMs)** <!-- Rename "Item" in eCQM to "Population" and "Feature". Make clear an eCQM points to multiple "cases" (use 1-many |---< ) !-->
 
-![alt_text](assets/images/CPG-12.07-01.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 84.  A CPGMeasure uses the HL-7 [Measure IG](http://hl7.org/fhir/us/cqfmeasures/2019May/index.html)  to express and represent Quality Measures
+
+</summary>
+
+<img src="assets/images/CPG-12.07-01.png" alt="CPG Measure" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 In this implementation guide, we refer to a quality measure when discussing a clinical quality measure, public health indicator, or population analytics measure. A quality measure is a quantitative tool to assess the performance of an individual or organization with respect to a specified process or outcome via the measurement of actions, processes, or outcomes of clinical care. Quality measures are often derived from clinical guidelines and are designed to determine whether the appropriate care has been provided given a set of clinical criteria and an evidence base.  A [FHIR Measure Resource](https://www.hl7.org/fhir/measure.html) represents a structured, computable definition of such a quality measure.
 
@@ -65,9 +89,18 @@ A CPGMeasure may also directly reference a CPGMetric(s) (i.e., as CPGCaseFeature
 
 **CPGCaseSummary**
 
-![alt_text](assets/images/CPG-12-03.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 85. The CPGCaseSummary the composition of all the patient level information (i.e., CPGCaseFeatures) used by the sum total of knowledge assets in the CPG.
+
+</summary>
+
+<img src="assets/images/CPG-12-03.png" alt="Case Summary" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 A case summary or composition of all the patient-level information (i.e., case features and their values) has utility in a number of contexts including patient care (e.g., in providing summary views as CDS, composing a document), local quality and safety activities (e.g., clinical quality registries, mortality and morbidity reviews), professional society and clinical research activities (e.g., various types of registries), and into the guideline development group itself.  Recall that case features not only include events (e.g., observations, medication administrations, procedures, conditions, clinical impressions), but also requests (e.g., orders, prescriptions, schedules) as well as metrics that largely qualify a patient with respect to the care recommended in the guideline (e.g., answering questions such as “where is the patient with respect to the plan?”, “how well did the patient follow the path?”).  
 
@@ -75,16 +108,32 @@ A CPGCaseSummary is the set of case feature groups and/or features that complete
 
 **CPGCasePlanSummaryView**
 
-![alt_text](assets/images/CPG-12-05.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 86.  The CPGCasePlanSummaryView contains patient-level information as well as patient-specific recommendations (CPGProposals) along with their respective evidence from the Plan portion of the CPG.  Such a view may be useful for clinical decision support, but may further provide interesting views for validation or even authoring.
 
+</summary>
+
+<img src="assets/images/CPG-12-05.png" alt="Case/Plan Summary" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 A case/plan summary view is similar to a summary as described above, with a few key distinctions.  The case/plan summary view provides the ability to address information from the plan portion of the CPG, including patient-specific recommendations (i.e., proposals) along with their respective evidence (i.e., Evidence Resources used in the CPGRecommendation) and guideline recommendations that are either not applicable or not yet applicable to a specific patient, together with patient-level information (i.e., CPGCaseFeatures).  Furthermore, the case/plan summary view may be scoped to a given context, such as a given recommendation or set of recommendations, a point in time or anchoring event, or all the information related to a particular case feature, particularly features can represent higher order clinical concepts such as disease or pathophysiological process states.  The CPGCasePlanSummaryView may be of particular clinical value as it can further provide historical perspective on how a patient’s clinical course has performed with respect to guideline recommendations in the past give insight to the team strategies that may have been employed to address key clinical concerns (e.g., prior strategies employed to diurese challenging case on a CHF pathway). The CPGCasePlanSummaryView may be used by a number of delivery mechanisms (e.g., CDSHooks, SMART-on-FHIR Apps) as well as the CPGCasePlanProgressingNote and CPGeCaseReport described below.
 
-![alt_text](assets/images/CPG-CasePlanSummary.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 87.  The CPGCasePlanSummaryView may further be scoped to the entirety of the CPGPathway or a given (set of) CPGStrategies, then possibly constrained by a point in time such as “now” (near real-time) or at or just before a key event (looking historically) to perform retrospectives reviews.
+
+</summary>
+
+<img src="assets/images/CPG-CasePlanSummary.png" alt="Case Plan Summary" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 **CPGCasePlanProgressingNote**
 
@@ -92,19 +141,27 @@ A CPGCasePlanSummaryView can be further be combined with an [Adaptive Form](http
 
 **CPGeCaseReport**
 
-An eCaseReport, as described in the [eCaseReport IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html), is a document used to exchange patient-level clinical information to a public health, regulatory,  quality, research,or guideline development entity (e.g., medical specialty professional society and/or their respective guideline development group).  An eCaseReport has particular utility to public health entities and was developed through the HL7 Public Health and Emergency Response Workgroup (WG).
+An eCaseReport, as described in the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html), is a document used to exchange patient-level clinical information to a public health, regulatory,  quality, research,or guideline development entity (e.g., medical specialty professional society and/or their respective guideline development group).  An eCaseReport has particular utility to public health entities and was developed through the HL7 Public Health and Emergency Response Workgroup (WG).
 
 A CPGeCaseReport is a special case that utilizes the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) within the CPG-IG.  The CPGeCaseReport may use or map/translate a CPGCaseSummary or appropriately scoped CPGCasePlanSummaryView to include more information around the recommendations and use thereof.
 
-![alt_text](assets/images/CPG-12.07-05.png "image_tooltip")
+<details open>
 
+<summary>
 
-FIG. 88. A CPGeCaseReport uses the e[CaseReport IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) and either an appropriately scoped CPGCaseSummaryView (if only Events are desired) or CPGCasePlanSummaryView (if proposals, evidence, and/or metrics are desired).  This can be reported back to the guideline development group or other designated registry entity.
+FIG. 88. A CPGeCaseReport uses the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) and either an appropriately scoped CPGCaseSummaryView (if only Events are desired) or CPGCasePlanSummaryView (if proposals, evidence, and/or metrics are desired).  This can be reported back to the guideline development group or other designated registry entity.
+
+</summary>
+
+<img src="assets/images/CPG-12.07-05.png" alt="Case Report" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Infobutton**
 
-Infobuttons facilitate contextually querying resources such as a library containing clinical practice guideline recommendations from within clinical information systems at the point-of-need (e.g., EHRs).  In other words, “Infobuttons” are context-sensitive links embedded in EHR systems. They use information about the patient, user, clinical setting, and EHR task to anticipate clinicians' information needs and provide links to online clinical resources that may meet these information needs.” ([ref](http://www.openinfobutton.org/home))  Infobuttons provide a means for a healthcare professional to leverage a subset of the identified patient-level information to perform a facilitated search from within the patient record.
+Infobuttons facilitate contextually querying resources such as a library containing clinical practice guideline recommendations from within clinical information systems at the point-of-need (e.g., EHRs).  In other words, “Infobuttons” are context-sensitive links embedded in EHR systems. They use information about the patient, user, clinical setting, and EHR task to anticipate clinicians' information needs and provide links to online clinical resources that may meet these information needs.”  [Infobuttons](http://www.openinfobutton.org/home) provide a means for a healthcare professional to leverage a subset of the identified patient-level information to perform a facilitated search from within the patient record.
 
-([ref](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=208)).  The Infobutton could leverage a library of CPGs along with their individual recommendations, largely using content metadata to facilitate search and retrieval.
+The [Infobutton](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=208) could leverage a library of CPGs along with their individual recommendations, largely using content metadata to facilitate search and retrieval.
 
-More on the standard and HL7 Infobutton product and the OpenInfoButton Project ([ref](http://www.openinfobutton.org/home)) is available elsewhere.
+More on the standard and HL7 Infobutton product and the [OpenInfoButton Project](http://www.openinfobutton.org/home) is available elsewhere.

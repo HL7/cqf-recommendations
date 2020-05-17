@@ -15,7 +15,7 @@ This section will provide the following:
     *   Test-driven Knowledge Engineering
     *   Iteration, rapid-cycle feedback
     *   Leverage Knowledge Base (in an ‘intelligent’ Knowledge Content Management System)
-*   Also refer to the prior section on Knowledge Implementation <!-- Link to 05.05 !--> for details on cross-functional integration with Local Implementation teams and the benefits thereof.
+*   Also refer to the prior section on [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html) <!-- Link to 05.05 !--> for details on cross-functional integration with Local Implementation teams and the benefits thereof.
 
 Characteristics of Agile include:
 
@@ -39,15 +39,33 @@ Relevant Agile Practices to be adapted to knowledge engineering function:
 *   Test-driven development (e.g. start with few critical test cases, use short iterations to create logic, and use it to aid in generating additional test cases than are simply graded to be re-used for ‘build’ vs wholly generated manually)
 *   Test-integration (e.g. testing of all individual and composite knowledge assets/artifacts)
 
-![alt_text](assets/images/CPG-05-06.png "image_tooltip") <!-- Need Updated Image from Susan that shows more concurrency and early engagement of "local" consumers of guidelines, not just hand-off !-->
+<details open>
+
+<summary>
 
 FIG. 41. Integrated, Cross-functional process flow for guideline development.
 
+</summary>
+
+<img src="assets/images/CPG-05-06.png" alt="Cross-functional process flow" class="img-responsive img-rounded center-block"/>
+<!-- Need Updated Image from Susan that shows more concurrency and early engagement of "local" consumers of guidelines, not just hand-off !-->
+</details>
+
 The levels of knowledge representation (i.e., L1 through L4) represent a framework, not a process or a specific kind of knowledge asset or artifact. The levels describe the general nature of knowledge artifacts and their representation in the typical progression of formalization through translation. Knowledge artifacts may have characteristics of more than one level (e.g., a narrative (L1) guideline could include semi-structure flow diagrams (L2) within them). Progression of formalization or translation may be rapid or instantaneous through the use of tooling (e.g., editors), reuse formalized assets or content from upstream (e.g., value set definitions from evidence or studies), and/or a re-conceptualization of the overall guidelines and CPG development lifecycle process.
 
-![alt_text](assets/images/CPG-05.06-01.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 42. Levels of Representation in historical sense and as may be adapted for Agile approaches.
+
+</summary>
+
+<img src="assets/images/CPG-05.06-01.png" alt="Levels of Representation (historical)" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Agile approach to Knowledge Engineering and CPG Development**
 
@@ -61,7 +79,7 @@ The Agile CPG development teams are comprised of numerous experts, as is the gui
 
 **Integration with Knowledge Engineering with Guideline Development Process**
 
-See section on Collaboration with Guideline Development Group in Knowledge Acquisition. <!-- link to 05.01 !--> This is a key tenant of the Agile CPG process.
+See section on Collaboration with Guideline Development Group in [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html). <!-- link to 05.01 !--> This is a key tenet of the Agile CPG process.
 
 **Integration/ Collaboration of CPG Development and Implementation**
 
@@ -69,14 +87,14 @@ See section on Concurrent Development and Implementation in Knowledge Implementa
 
 LIST of Benefits with prior references where described in prior sections: <!-- need to finish !-->
 
-*   See Knowledge Acquisition
-*   Real-world Data and Issues addressed as early as feasible
-*   Further reduce hand-offs
-*   Move even closer to the “in-need” consumer
-*   Rapid Feedback across all levels
-*   May actually “share work and work products” bidirectionally
-*   Continuous integration across proof-of-concept, prototype, pilot, and deployment
-*   Optimize Value to where it matters most- point-of-need
+* See Knowledge Acquisition
+* Real-world Data and Issues addressed as early as feasible
+* Further reduce hand-offs
+* Move even closer to the “in-need” consumer
+* Rapid Feedback across all levels
+* May actually “share work and work products” bidirectionally
+* Continuous integration across proof-of-concept, prototype, pilot, and deployment
+* Optimize Value to where it matters most- point-of-need
 
 **“Chunking”**
 
@@ -110,28 +128,31 @@ Test cases may come from a number of sources. This includes knowledge engineers 
 
 However, use of real and or realistic data sets (e.g. synthetic data sets, deidentified data sets- as from implementation partners), together with upfront tooling (e.g. query builders, data profiler, data mining and visualization tools, or even machine learning capabilities) can be used to create comprehensive and/or representative test decks (test case sets) to engineer knowledge against.  The same approaches and tooling for grading and validation can likewise be employed against such data sets.
 
+<details open>
 
+<summary>
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/CPG-Approach2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+FIG. 43. An Agile Approach to Knowledge Translation conveys the the concepts, clinical logic, and intent of a source knowledge expression (e.g., early guideline development artifacts) into an equivalent computable or computer interpretable expression.  The Agile approach to knowledge engineering and translation includes early, upfront engagement (with the guideline development group), iteration with incremental parts called “chunking” (data element and terminology definitions), rapid progression through the levels of representation for parts as well as aggregates (often using tooling), and where possible use of Real-World Data for design, specification, development, and one-time validation (vs logic, then data, then logic and data) as is described below.
 
+</summary>
 
-![alt_text](assets/images/CPG-05.06-01.png "image_tooltip")
+<img src="assets/images/CPG-KnowledgeEngineering-w-Agile.png" alt="Agile Approach to Knowledge Translation" class="img-responsive img-rounded center-block"/>
 
+</details>
 
-FIG. 43. **An Agile Approach to Knowledge Translation** conveys the the concepts, clinical logic, and intent of a source knowledge expression (e.g., early guideline development artifacts) into an equivalent computable or computer interpretable expression.  The Agile approach to knowledge engineering and translation includes early, upfront engagement (with the guideline development group), iteration with incremental parts called “chunking” (data element and terminology definitions), rapid progression through the levels of representation for parts as well as aggregates (often using tooling), and where possible use of Real-World Data for design, specification, development, and one-time validation (vs logic, then data, then logic and data) as is described below.
 
 **Specification by example**
 
 Creation of data inputs, parameters, and expected results at all levels of asset/artifact and expression (distinct and composite assets) for use in the creation of computable formalisms and/or expressions.  This may include:
 
-    *   **“Hand crafted”** using tooling as described above
+* **“Hand crafted”** using tooling as described above
 
     This may or may not include derivatives such as content metadata from the assets themselves (e.g. codes in a value set)
 
-    *   **Synthetic Data Sets**
-    *   **Deidentified Data Sets** (e.g. from implementation partners)
-    *   **Real-World Data** (often done if performed by implementation partners)
-    *   **Asset Expression Tooling** feature for code coverage
+* **Synthetic Data Sets**
+* **Deidentified Data Sets** (e.g. from implementation partners)
+* **Real-World Data** (often done if performed by implementation partners)
+* **Asset Expression Tooling** feature for code coverage
 
     This is akin to code coverage in reverse using expression interpreter to produce possible range of inputs and expected results
 
@@ -155,13 +176,23 @@ However, there is an alternative approach with composite assets or even chained 
 
 Lastly, a combination of the bottom-up and top-down approaches above may not only be the most efficient, but may fall out of the natural progression of knowledge engineering work product in a large composite asset such as a CPG.  Base data resources (required data elements), value sets, and their combination can be identified, developed, and validated very early in the CPG development process.  Likewise, the same often holds true for the majority of CPGCaseFeautures.  Some CPGCaseFeatures with numerous and/or chained dependencies on other CPGCaseFeautures (often developed through the aforementioned approach) may be addressed as a composite asset. Individual CPGRecommendations, together with their dependent CPGCaseFeatures, may be similarly approached as a composite asset.  Nearly by necessity, CPGStrategies and CPGPathways are addressed as composite assets.
 
-![alt_text](assets/images/CPG-05.05-Agile.png "image_tooltip")
+<details open>
 
-FIG. 44. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
+<summary>
+
+FIG. 44. Knowledge Implementation concurrent with Agile CPG Development has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
+
+</summary>
+
+<img src="assets/images/CPG-05.05-Agile.png" alt="Knoweldge Implementation with Agile" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Leveraging a Knowledge Base (Knowledge Content Management System)**
 
-For an introduction to knowledge content management systems see sections on knowledge management in Knowledge Representation <!-- Link to doc 05.03 !--> from knowledge engineering lifecycle.   More details on knowledge content management systems and their role(s) in knowledge-driven systems, see the section on Knowledge Architecture and Knowledge Content Management System <!-- Link to doc 06.03 !-->
+For an introduction to knowledge content management systems see sections on knowledge management in [Knowledge Representation (as relates to KE)](documentation-approach-05-03-knowledge-representation.html) <!-- Link to doc 05.03 !--> from knowledge engineering lifecycle.   More details on knowledge content management systems and their role(s) in knowledge-driven systems, see the section on [Knowledge Architecture and Knowledge Content Management System](documentation-approach-06-03-knowledge-architecture.html) <!-- Link to doc 06.03 !-->
 
 The knowledge content management system leverages various features of the knowledge assets in the knowledge base (the corpus of knowledge assets and content) and is what enables the Agile practice of Domain-driven design/ development.  A knowledge content management system is a nearly essential capability for knowledge engineers to manage a large corpus of interrelated knowledge assets as is needed for much of the Agile knowledge engineering methodologies described above to be feasible for any significant effort.
 

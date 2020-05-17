@@ -18,10 +18,28 @@ In the case where the knowledge engineering activities, or part thereof, occur o
 
 However, this process of developing against test data, performing logic validation against similarly manufactured (and possible refined) test data, then validating input data for local implementations, and finally validating fairly sophisticated logic in the context of validated input data is often a lengthy, labor-intensive, and complex process- often drought with error and non-value-add iteration.  Moreover, it can also lead to significant rework in the design and development of logic expressions that require a full pass through the entire validation sequence very late in the knowledge engineering lifecycle.  This is one of the key arguments for performing knowledge engineering against Real-World Data as described in the section on Knowledge Implementation,  <!-- link to - 05.05 !--> and performing Test-driven Knowledge Engineering as is discussed in the section in the Agile CPG Development Approach. <!-- link to - 05.06 !-->
 
-![alt_text](assets/images/CPG-KnowledgeValidation.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 36. Example of population- and multi-case (patient) level validation of aggregates of Pathway Case Features including Metrics using Validation Tooling on Real-World Data to compare and profile results to quickly identify and root-cause sources of errors.
 
-![alt_text](assets/images/CPG-PatientLevelValidation.png "image_tooltip")
+</summary>
+
+
+<img src="assets/images/CPG-KnowledgeValidation.png" alt="Population-level Validation" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+<details open>
+
+<summary>
 
 FIG. 37. Example of case (patient) level validation of detailed results of Pathway Case Features including Metrics using Validation Tooling on Real-World Data to compare results with input data to quickly identify and root-cause sources of errors.
+
+</summary>
+
+
+<img src="assets/images/CPG-PatientLevelValidation.png" alt="Population-level Validation" class="img-responsive img-rounded center-block"/>
+
+</details>

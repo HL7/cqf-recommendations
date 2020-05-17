@@ -14,9 +14,17 @@ First of all, many larger health care delivery organizations have practice gover
 
 Local practice governance and quality functions use their own local clinical registries (also called data marts) to analyze their patient population(s) and align their characteristics with guideline recommendations.  These local registries or data marts may be used to test hypotheses formulated by the practice governance group, in part using guideline recommendations and their measures with their own experts’ and frontline staff’s input.  This may result in varying degrees of adaptations to the guideline recommendations including changes to thresholds or parameters, goals for plans or interventions, workflow insertions, and/or adding or removing recommendations.  Many of the various feedback mechanisms in the CPG (e.g., metrics, measures, eCaseReports for registries, etc.) may be used similarly by the practice governance group.
 
-![alt_text](assets/images/CPG-05-04.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 38. Just as the guideline development group and knowledge engineering team can work collaboratively on the CPG, the local practice governance and informatics (EHR build) functions can work collaboratively using the CPG as a consistent, holistic specification that can then be localized taking various organizational factors including workflow, enablements, methods of implementation, and mechanisms of integration into consideration.
+
+</summary>
+
+<img src="assets/images/CPG-05-04.png" alt="Local Governance" class="img-responsive img-rounded center-block"/>
+
+</details>
 
 **Local informatics (knowledge engineering) and implementation:**
 
@@ -38,9 +46,18 @@ Given the similarities between and related activities of the CPG development pro
 
 One of the opportunities with the CPG-IG is to move as much work as possible upstream, tightly integrated with the guideline development process to significantly reduce the amount of rework and potential error introduced when this work must be repeated for each and every implementation at each and every local site.  Furthermore, with the use of standards for representations, expressions, and other formalizations (including delivery mechanisms), the CPG-IG promotes holds the potential for much reuse, either directly as content or through shared services (e.g., CDS, eCQM aaS, SMART-on-FHIR apps, etc.), as an explicit specification for local build environments, or as starting point for localization of CPG content with the similar re-use across layers of knowledge representations, tiers of functionality, implementation methods, and/or delivery and integration mechanisms.
 
-![alt_text](assets/images/CPG-05-05.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 39. The similarities in roles, functions, and activities as well as complementary needs and goals in guideline development and implementation together with the mutual benefits of working collaboratively not only afford the means to do concurrent development and implementation, it can provide benefits in the speed, cost, and quality of end-user consumables.  This concurrency may be part of more traditional knowledge engineering approaches, but may further benefit from and provide benefit to the Agile CPG Development Approach described below.
+
+</summary>
+
+<img src="assets/images/CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Analogs and Collaboration across CPG Development and Implementation**
 
@@ -71,9 +88,19 @@ Obviously, having more than one local implementation affords many benefits inclu
 *   Providing a larger sample size for evidence-level feedback on recommendations
 *   Potentially providing more substantive “wins”
 
-![alt_text](assets/images/CPG-05.05-Agile.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 40. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
+
+</summary>
+
+<img src="assets/images/CPG-05.05-Agile.png" alt="Agile CPG" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 Concurrent development and implementation of CPG’s has significant alignment and synergy with the Agile CPG Development Approach, <!-- Link to 05.06 !--> though it provides further opportunities and capabilities to make the approach even more Agile as described above.
 

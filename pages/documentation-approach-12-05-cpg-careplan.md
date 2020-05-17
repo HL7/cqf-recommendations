@@ -19,16 +19,34 @@ Covered in this Section:
 *   Events
 *   Shared Care Plans
 
-![alt_text](assets/images/CPG-12-04.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 75. The CPGCarePlan With its CPGProposals and resulting or related Requests and Events.
 
+</summary>
+
+<img src="assets/images/CPG-12-04.png" alt="CPGCarePlan With CPGProposals" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 The CPGCarePlan is constrained to the set of proposals (i.e., patient-specific recommendations), clinical interventions (e.g., orders/ requests), or their fulfillments (e.g., events) scoped by a specific CPG.  This includes those related to the guideline recommendations, the strategies for combining guideline recommendations, the decision logic for each recommendation, the strategies for combining recommendations, and  how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies in the context of a specific case (i.e., patient).  As described in the “Methodology” section, the CPGCarePlan is modeled as a profile on a [FHIR CarePlan Resource](https://www.hl7.org/fhir/careplan.html).
 
-![alt_text](assets/images/CPG-Main-InstantiatedPlan.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 76. The Care Plan consists of the patient-specific recommendations as [Proposals](http://hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal), Requests that correspond (or are related) to the Proposals, and the corresponding or related Events.  Note that the Requests and Events are also referenced by the Case as CPGCaseFeatures.
+
+</summary>
+
+<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="Instantiated Plan" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Proposal:**
 
@@ -36,7 +54,7 @@ A patient-specific recommendation, that has taken into account all the criteria 
 
 “Being considered for a plan” means that the potential activity (see [FHIR Request pattern](http://hl7.org/fhir/request.html)) has not yet been fully evaluated.  “Planned” means that the activity or request is intended but has not yet entered the workflow.  “[Proposed](http://hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal)” means that the activity or request has been suggested either by a decision support system or another care team member such as a consulting physician.  “Requested” means that the activity or request has been initiated by an authorized healthcare professional or care team member.  “Performed” means that the activity or request has reached a state of completion resulting in an event (see [FHIR Event pattern](http://hl7.org/fhir/event.html)).  Proposals carry sufficient information to initiate a Request.
 
-Further tracking of the state of completion of an activity may be supported through the [FHIR Task Resource](https://www.hl7.org/fhir/task.html) which may be applied to a request as well as its resulting or related Events.  Tasks can further carry information about [Intent](http://hl7.org/fhir/valueset-task-intent.html) and can be used to address boundary issues related to workflow. See section on Workflow and Common Pathway <!-- link to 12.06 !--> for more details on the “workflow” as it related to Proposals, Requests, Events, and Tasks.
+Further tracking of the state of completion of an activity may be supported through the [FHIR Task Resource](https://www.hl7.org/fhir/task.html) which may be applied to a request as well as its resulting or related Events.  Tasks can further carry information about [Intent](http://hl7.org/fhir/valueset-task-intent.html) and can be used to address boundary issues related to workflow. See section on [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html) <!-- link to 12.06 !--> for more details on the “workflow” as it related to Proposals, Requests, Events, and Tasks.
 
 **CPGProposal as a Patient-specific CPGRecommendation**
 
@@ -50,9 +68,19 @@ Patient-specific recommendations or proposals, and clinical decision support in 
 
 In the CPG, this supporting information is closely correlated with the CPGCaseFeatures used in the formalized decision logic for the CPGRecommendation, or some subset thereof, as well as other data elements may have been specified as required in the CPGRecommendation (i.e., as a scoped CPGCaseFeatureGroup or CPGCasePlanSummaryView).  These additional data elements (CPGCaseFeatures) may represent relevant historical or contextualizing information, the status or responses (CPGRequest, CPGEvents) of related CPGProposals, or even other CPGRecommendations not yet proposed, as well as relative or absolute contraindications for the CPGProposal.  In order to specify this information, a CPGRecommendation may include scoped definitions of CPGCaseFeatureGroups or CPGCasePlanSummaryViews.
 
-![alt_text](assets/images/CPG-12-05.png "image_tooltip")
+<details open>
+
+<summary>
 
 FIG. 76. A CPG Recommendation with its scoped CPGCasePlanSummaryView.
+
+</summary>
+
+<img src="assets/images/CPG-12-05.png" alt="CPG recommendation" class="img-responsive img-rounded center-block"/>
+
+</details>
+
+
 
 **Request (as part of the CPGCarePlan)**
 
@@ -64,7 +92,7 @@ Of note, a request is at the boundary between the care plan and the case (i.e., 
 
 Events are descriptions of activities that have taken place or that are currently taking place. This includes resources that primarily describe the result of a request (e.g., activity) or what was found (e.g., a condition or observation). Examples include medication dispense or administrations, procedures, encounters, questionnaire responses, observations, diagnostic report, clinical document (i.e., FHIR Composition), and many other found in the [FHIR Event pattern](https://www.hl7.org/fhir/event.html#mappings).  
 
-Similar to a request, an event also may be at the boundary between the care plan in the case (i.e., CPGCarePlan, CPGCase).  However, only events that correspond to the fulfillment of a request belong in the care plan.  These Events also serve as CPGCaseFeatures in the CPGCase. Boundary issues for dealing with events that belong to both the CPGCarePlan and CPGCase are discussed in the section on Separating and Defining Case, Plan, and Workflow. <!-- link to 12.06 !-->
+Similar to a request, an event also may be at the boundary between the care plan in the case (i.e., CPGCarePlan, CPGCase).  However, only events that correspond to the fulfillment of a request belong in the care plan.  These Events also serve as CPGCaseFeatures in the CPGCase. Boundary issues for dealing with events that belong to both the CPGCarePlan and CPGCase are discussed in the section on [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html). <!-- link to 12.06 !-->
 
 **Shared Care Plan**
 

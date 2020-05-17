@@ -4,7 +4,7 @@ title: CPG Plan
 ---
 ## **CPGPlan**
 
-The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a Care Plan as discussed in detail in another section on the CPGCarePlan. <!-- link to - 12.05 !-->
+The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a Care Plan as discussed in detail in another section on the [CPGCarePlan](documentation-approach-12-05-cpg-careplan.html). <!-- link to - 12.05 !-->
 
 Covered in this section:
 
@@ -22,15 +22,33 @@ Covered in this section:
         *   CPGPathwayEnrollmentCriteria as a Profiled ECA Rule
     *   As a “Composite” Asset
 
-![alt_text](assets/images/CPG-12-02.png "image_tooltip")
+<details open>
+
+<summary>
+
 FIG. 70. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition.
+
+</summary>
+
+<img src="assets/images/CPG-12-02.png" alt="CPG PLan" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 The plan, in the CPG context, as described above in “Separation of Concerns,” addresses how the care team intends to address the active clinical concerns of a class of patients, given a set of clinical parameters (described further in  the case features and decision logic discussed below).  However, the CPGPlan is constrained to the set of clinical interventions (e.g., orders/requests) scoped by a specific CPG.  This includes the guideline recommendations, the strategies for combining guideline recommendations, and the decision logic for each recommendation, for the strategies for combining recommendations, and for how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies.  As described in the “Methodology” section, one might consider separating the expression logic from the decision logic solely scoped for each CPGRecommendation and CPGStrategy in separate libraries as well as maintaining a separate library for decision and orchestration logic that is employed across various parts of the CPGPathway.
 
-![alt_text](assets/images/CPG-Main-Plan.png "image_tooltip")
+<details open>
 
+<summary>
 
 FIG. 71. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similar coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it very likely belongs in the Plan.
+
+</summary>
+
+<img src="assets/images/CPG-Main-Plan.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+
+</details>
+
 
 **Recommendations**
 
