@@ -39,18 +39,6 @@ Relevant Agile Practices to be adapted to knowledge engineering function:
 *   Test-driven development (e.g. start with few critical test cases, use short iterations to create logic, and use it to aid in generating additional test cases than are simply graded to be re-used for ‘build’ vs wholly generated manually)
 *   Test-integration (e.g. testing of all individual and composite knowledge assets/artifacts)
 
-<details open>
-
-<summary>
-
-FIG. 41. Integrated, Cross-functional process flow for guideline development.
-
-</summary>
-
-<img src="assets/images/CPG-05-06.png" alt="Cross-functional process flow" class="img-responsive img-rounded center-block"/>
-<!-- Need Updated Image from Susan that shows more concurrency and early engagement of "local" consumers of guidelines, not just hand-off !-->
-</details>
-
 The levels of knowledge representation (i.e., L1 through L4) represent a framework, not a process or a specific kind of knowledge asset or artifact. The levels describe the general nature of knowledge artifacts and their representation in the typical progression of formalization through translation. Knowledge artifacts may have characteristics of more than one level (e.g., a narrative (L1) guideline could include semi-structure flow diagrams (L2) within them). Progression of formalization or translation may be rapid or instantaneous through the use of tooling (e.g., editors), reuse formalized assets or content from upstream (e.g., value set definitions from evidence or studies), and/or a re-conceptualization of the overall guidelines and CPG development lifecycle process.
 
 <details open>

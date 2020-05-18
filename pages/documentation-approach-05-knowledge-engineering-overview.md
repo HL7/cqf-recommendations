@@ -261,16 +261,4 @@ Relevant Agile Practices to be adapted to knowledge engineering function:
 *   Test-driven development
 *   Test-integration
 
-<details open>
-
-<summary>
-
-FIG. 31. DRAFT of Integrated, Cross-functional process flow for guideline development from the [CDC Adapting Clinical Guidelines for the Digital Age](https://www.cdc.gov/ddphss/clinical-guidelines/index.html).
-
-</summary>
-
-<img src="assets/images/CPG-05-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
-
-</details>
-
 Much more detail will be provided in the section dedicated to the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)
