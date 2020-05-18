@@ -110,7 +110,7 @@ Using approaches, standards, and techniques addressed in further detail in indiv
 
 <summary>
 
-FIG. 04. Data Lifecycle Revisited in context of the CPG-IG: With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively. (NOTE: CQM-on-FHIR refers to the FHIR Measure-IG; eCR-on-FHIR refers to the eCaseReport-IG; and Research-on-FHIR does not exist yet).
+FIG. 04. Data Lifecycle Revisited in context of the CPG-IG:  With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively. (NOTE: CQM-on-FHIR refers to the FHIR Measure-IG; eCR-on-FHIR refers to the eCaseReport-IG; and Research-on-FHIR does not exist yet).
 
 </summary>
 
