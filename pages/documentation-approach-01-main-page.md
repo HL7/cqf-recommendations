@@ -51,7 +51,7 @@ FIG. 02. The data lifecycle and impacts to the public’s health (Michaels, M, U
 
 </summary>
 
-<img src="assets/images/CPG-DataLifecycle.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+<img src="assets/images/delivering-actionable-knowledge.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
 
 </details>
 
