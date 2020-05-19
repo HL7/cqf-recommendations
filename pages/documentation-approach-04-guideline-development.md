@@ -56,7 +56,7 @@ Knowledge synthesis is the process in professional community of practice that ap
 
 <summary>
 
-FIG. 18.  The Evidence Pyramid refers to a means to evaluate the quality or validity of evidence (higher toward the top) as well as provide a visual depiction of the amount of evidence (width) ([ref](http://dx.doi.org/10.1136/ebmed-2016-110401)).  The evaluation of the evidence not only informs the guideline development process and resulting recommendations but is further communicated together with the recommendations themselves using the GRADE framework, described below.
+FIG. 18.  The Evidence Pyramid refers to a means to evaluate the quality or validity of evidence (higher toward the top) as well as provide a visual depiction of the amount of evidence (width) ([ref](http://dx.doi.org/10.1136/ebmed-2016-110401)).  The evaluation of the evidence not only informs the guideline development process and resulting recommendations but is further communicated together with the recommendations themselves using the GRADE framework, described below. NOTE: An updated version of this Evidence Pyramid (ref) will be included in the next update of the CPG-IG.
 
 </summary>
 
@@ -76,7 +76,7 @@ The 6S Evidence Pyramid is another framing on the quality or validity of the evi
 
 <summary>
 
-FIG. 19. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak.
+FIG. 19. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak. NOTE: An updated version of this Evidence Pyramid ([ref](http://dx.doi.org/10.1136/ebmed-2016-110447)) will be included in the next update of the CPG-IG.
 
 </summary>
 

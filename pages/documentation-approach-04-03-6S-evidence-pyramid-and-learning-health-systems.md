@@ -23,7 +23,7 @@ The 6S Evidence Pyramid is another framing on the quality or validity of the evi
 
 <summary>
 
-FIG. 22. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak.
+FIG. 22. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak. NOTE: An updated version of this Evidence Pyramid [ref](http://dx.doi.org/10.1136/ebmed-2016-110447) will be included in the next update of the CPG-IG.
 
 </summary>
 
