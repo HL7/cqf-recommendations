@@ -1,0 +1,43 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cpg-knowledge-capability"/>
+		<meta>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
+		</meta>
+    <url value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability"/>
+		<name value="CPG_Knowledge_Capability"/>
+    <title value="CPG Knowledge Capability"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2019-05-08"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
+    <description value="A capability afforded by a knowledge artifact."/>
+    <caseSensitive value="true"/>
+		<valueSet value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-knowledge-capability"/>
+    <content value="complete"/>
+		<concept>
+			<code value="shareable"/>
+			<display value="Shareable"/>
+			<definition value="The artifact provides essential information necessary to ensure shareability of the content as a FHIR resource."/>
+		</concept>
+		<concept>
+			<code value="computable"/>
+			<display value="Computable"/>
+			<definition value="The artifact provides design-time capability."/>
+		</concept>
+    <concept>
+      <code value="publishable"/>
+      <display value="Publishable"/>
+      <definition value="The artifact provides information necessary to provide content management capability, including dependency management, artifact lifecycle, and publishing and repository metadata."/>
+    </concept>
+    <concept>
+      <code value="executable"/>
+      <display value="Executable"/>
+      <definition value="The artifact provides run-time capability."/>
+    </concept>
+</CodeSystem>

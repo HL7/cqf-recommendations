@@ -72,6 +72,18 @@
 				<groupingId value="main"/>
 			</resource>
       <resource>
+				<reference>
+					<reference value="CodeSystem/cpg-knowledge-capability"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="CodeSystem/cpg-knowledge-representation-level"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-medicationrequest-activitydefinition"/>
         </reference>
@@ -343,6 +355,16 @@
 			<resource>
 				<reference>
 					<reference value="ValueSet/cpg-recommendation-direction"/>
+				</reference>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="ValueSet/cpg-knowledge-capability"/>
+				</reference>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="ValueSet/cpg-knowledge-representation-level"/>
 				</reference>
 			</resource>
 			<resource>
