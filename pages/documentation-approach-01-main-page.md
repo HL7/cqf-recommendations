@@ -51,7 +51,7 @@ FIG. 02. The data lifecycle and impacts to the public’s health (Michaels, M, U
 
 </summary>
 
-<img src="assets/images/CPG-DataLifecycle.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+<img src="assets/images/delivering-actionable-knowledge.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
 
 </details>
 
@@ -110,7 +110,7 @@ Using approaches, standards, and techniques addressed in further detail in indiv
 
 <summary>
 
-FIG. 04. Data Lifecycle Revisited in context of the CPG-IG: With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively. (NOTE: CQM-on-FHIR refers to the FHIR Measure-IG; eCR-on-FHIR refers to the eCaseReport-IG; and Research-on-FHIR does not exist yet).
+FIG. 04. Data Lifecycle Revisited in context of the CPG-IG:  With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively. (<b>NOTE: the Research-on-FHIR does not exist yet</b>).
 
 </summary>
 
@@ -144,11 +144,12 @@ Guideline development involves systematic review of evidence related to specific
 
 Covered in this section:
 
-*   Overview of the Guideline Development process
-*   Description of the Guideline Development Group (GDG) and Scoping
-*   Guideline Development Frameworks
-*   6S Evidence Pyramid and Learning Health System(s)
-    *   Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
+* Overview of the Guideline Development process
+* Description of the Guideline Development Group (GDG) and Scoping
+* Guideline Development Frameworks
+* 6S Evidence Pyramid and Learning Health System(s)
+    * Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
+    * NOTE: An updated version of this Evidence Pyramid (ref) will be included in the next update of the CPG-IG
 *   Analysis of Evidence
 *   Recommendations
 *   Reporting and Dissemination
