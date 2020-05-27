@@ -42,19 +42,22 @@
     "mappings"
   ],
   "spreadsheets": [
-    "activitydefinition-cpg-profile-spreadsheet.xml",
+    "activitydefinition-cpg-computable-profile-spreadsheet.xml",
     "activitydefinition-cpg-publishable-profile-spreadsheet.xml",
+    "activitydefinition-cpg-shareable-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
+    "codesystem-cpg-shareable-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
     "implementationguide-cpg-shareable-profile-spreadsheet.xml",
-    "implementationguide-cpg-guideline-profile-spreadsheet.xml",
+    "implementationguide-cpg-computableguideline-profile-spreadsheet.xml",
     "implementationguide-cpg-publishableguideline-profile-spreadsheet.xml",
     "library-cpg-assetcollection-profile-spreadsheet.xml",
-    "library-cpg-distributable-profile-spreadsheet.xml",
+    "library-cpg-computable-profile-spreadsheet.xml",
     "library-cpg-publishable-profile-spreadsheet.xml",
+    "library-cpg-shareable-profile-spreadsheet.xml",
     "library-cpg-executable-profile-spreadsheet.xml",
 		"medicationrequest-cpg-profile-spreadsheet.xml",
 		"nutritionorder-cpg-profile-spreadsheet.xml",
@@ -63,7 +66,8 @@
 		"practitionerrole-cpg-profile-spreadsheet.xml",
 		"plandefinition-cpg-orderset-profile-spreadsheet.xml",
     "plandefinition-cpg-pathway-profile-spreadsheet.xml",
-    "plandefinition-cpg-profile-spreadsheet.xml",
+    "plandefinition-cpg-shareable-profile-spreadsheet.xml",
+    "plandefinition-cpg-computable-profile-spreadsheet.xml",
 		"plandefinition-cpg-protocol-profile-spreadsheet.xml",
     "plandefinition-cpg-publishable-profile-spreadsheet.xml",
 		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
@@ -74,7 +78,8 @@
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
     "structuredefinition-cpg-publishablecasefeature-profile-spreadsheet.xml",
     "valueset-cpg-publishable-profile-spreadsheet.xml",
-		"valueset-cpg-distributable-profile-spreadsheet.xml",
+    "valueset-cpg-shareable-profile-spreadsheet.xml",
+		"valueset-cpg-computable-profile-spreadsheet.xml",
     "valueset-cpg-executable-profile-spreadsheet.xml"
   ],
   "resources": {
@@ -177,9 +182,13 @@
 		"ValueSet/opioids-with-ambulatory-abuse-potential": {
 			"base": "ValueSet-opioids-with-ambulatory-abuse-potential.html"
 		},
-    "StructureDefinition/cpg-activitydefinition": {
-      "defns": "StructureDefinition-cpg-activitydefinition-definitions.html",
-      "base": "StructureDefinition-cpg-activitydefinition.html"
+    "StructureDefinition/cpg-computableactivity": {
+      "defns": "StructureDefinition-cpg-computableactivity-definitions.html",
+      "base": "StructureDefinition-cpg-computableactivity.html"
+    },
+    "StructureDefinition/cpg-shareableactivitydefinition": {
+      "defns": "StructureDefinition-cpg-sharebleactivitydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-shareableactivitydefinition.html"
     },
     "StructureDefinition/cpg-publishableactivity": {
       "defns": "StructureDefinition-cpg-publishableactivity-definitions.html",
@@ -188,6 +197,10 @@
     "StructureDefinition/cpg-appointment": {
       "defns": "StructureDefinition-cpg-appointment-definitions.html",
       "base": "StructureDefinition-cpg-appointment.html"
+    },
+    "StructureDefinition/cpg-shareablecodesystem": {
+      "defns": "StructureDefinition-cpg-shareablecodesystem-definitions.html",
+      "base": "StructureDefinition-cpg-shareablecodesystem.html"
     },
     "StructureDefinition/cpg-publishablecodesystem": {
       "defns": "StructureDefinition-cpg-publishablecodesystem-definitions.html",
@@ -205,9 +218,9 @@
       "defns": "StructureDefinition-cpg-directionOfRecommendation-definitions.html",
       "base": "StructureDefinition-cpg-directionOfRecommendation.html"
     },
-    "StructureDefinition/cpg-distributablevalueset": {
-      "defns": "StructureDefinition-cpg-distributablevalueset-definitions.html",
-      "base": "StructureDefinition-cpg-distributablevalueset.html"
+    "StructureDefinition/cpg-computablevalueset": {
+      "defns": "StructureDefinition-cpg-computablevalueset-definitions.html",
+      "base": "StructureDefinition-cpg-computablevalueset.html"
     },
     "StructureDefinition/cpg-executablevalueset": {
       "defns": "StructureDefinition-cpg-executablevalueset-definitions.html",
@@ -225,13 +238,17 @@
       "defns": "StructureDefinition-cpg-assetcollection-definitions.html",
       "base": "StructureDefinition-cpg-assetcollection.html"
     },
-    "StructureDefinition/cpg-distributablelibrary": {
-      "defns": "StructureDefinition-cpg-distributablelibrary-definitions.html",
-      "base": "StructureDefinition-cpg-distributablelibrary.html"
+    "StructureDefinition/cpg-computablelibrary": {
+      "defns": "StructureDefinition-cpg-computablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-computablelibrary.html"
     },
     "StructureDefinition/cpg-executablelibrary": {
       "defns": "StructureDefinition-cpg-executablelibrary-definitions.html",
       "base": "StructureDefinition-cpg-executablelibrary.html"
+    },
+    "StructureDefinition/cpg-shareablelibrary": {
+      "defns": "StructureDefinition-cpg-shareablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-shareablelibrary.html"
     },
     "StructureDefinition/cpg-medicationrequest": {
       "defns": "StructureDefinition-cpg-medicationrequest-definitions.html",
@@ -253,9 +270,13 @@
       "defns": "StructureDefinition-cpg-patient-definitions.html",
       "base": "StructureDefinition-cpg-patient.html"
     },
-    "StructureDefinition/cpg-plandefinition": {
-      "defns": "StructureDefinition-cpg-plandefinition-definitions.html",
-      "base": "StructureDefinition-cpg-plandefinition.html"
+    "StructureDefinition/cpg-shareableplandefinition": {
+      "defns": "StructureDefinition-cpg-shareableplandefinition-definitions.html",
+      "base": "StructureDefinition-cpg-shareableplandefinition.html"
+    },
+    "StructureDefinition/cpg-computableplandefinition": {
+      "defns": "StructureDefinition-cpg-computableplandefinition-definitions.html",
+      "base": "StructureDefinition-cpg-computableplandefinition.html"
     },
     "StructureDefinition/cpg-publishableplandefinition": {
       "defns": "StructureDefinition-cpg-publishableplandefinition-definitions.html",
@@ -301,9 +322,9 @@
       "defns": "StructureDefinition-cpg-publishablecasefeature-definitions.html",
       "base": "StructureDefinition-cpg-publishablecasefeature.html"
     },
-    "StructureDefinition/cpg-guideline": {
-      "defns": "StructureDefinition-cpg-guideline-definitions.html",
-      "base": "StructureDefinition-cpg-guideline.html"
+    "StructureDefinition/cpg-computableguideline": {
+      "defns": "StructureDefinition-cpg-computableguideline-definitions.html",
+      "base": "StructureDefinition-cpg-computableguideline.html"
     },
     "StructureDefinition/cpg-publishableguideline": {
       "defns": "StructureDefinition-cpg-publishableguideline-definitions.html",

@@ -129,7 +129,13 @@
 
 			<resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-activitydefinition"/>
+					<reference value="StructureDefinition/cpg-shareableactivitydefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-computableactivity"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -142,6 +148,12 @@
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-appointment"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-shareablecodesystem"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -183,7 +195,13 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-distributablelibrary"/>
+					<reference value="StructureDefinition/cpg-computablelibrary"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-shareablelibrary"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -229,9 +247,15 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-shareableplandefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-plandefinition"/>
+					<reference value="StructureDefinition/cpg-computableplandefinition"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -273,7 +297,7 @@
 			</resource>
       <resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-guideline"/>
+					<reference value="StructureDefinition/cpg-computableguideline"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -315,13 +339,19 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-shareablevalueset"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-publishablevalueset"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
-					<reference value="StructureDefinition/cpg-distributablevalueset"/>
+					<reference value="StructureDefinition/cpg-computablevalueset"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -397,28 +427,28 @@
 				<reference>
 					<reference value="Library/anc-recommendation-a2"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablelibrary"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary"/>
 				<groupingId value="anc-example"/>
 			</resource>
 		  <resource>
 				<reference>
 					<reference value="PlanDefinition/anc-contact-schedule"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"/>
 				<groupingId value="anc-example"/>
 			</resource>
 		  <resource>
 				<reference>
 					<reference value="PlanDefinition/anc-contact"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"/>
 				<groupingId value="anc-example"/>
 			</resource>
 		  <resource>
 				<reference>
 					<reference value="PlanDefinition/anc-recommendation-a2"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition"/>
 				<groupingId value="anc-example"/>
 			</resource>
 		  <resource>
@@ -512,7 +542,7 @@
 				<reference>
 					<reference value="Library/ckd-risk-recommendations"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablelibrary"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
@@ -526,35 +556,35 @@
 				<reference>
 					<reference value="ValueSet/ckd-valueset-ckd"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/ckd-valueset-creatinine"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/ckd-valueset-diabetes"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/ckd-valueset-egfr"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/ckd-valueset-uacr"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-valueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 
@@ -622,14 +652,14 @@
 				<reference>
 					<reference value="PlanDefinition/opioidcds-r4-recommendation-05"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-plandefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/opioids-with-ambulatory-abuse-potential"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-expressionbasedvalueset"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
 				<groupingId value="opg-example"/>
 			</resource>
     </definition>
