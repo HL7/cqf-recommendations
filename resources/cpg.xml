@@ -375,6 +375,12 @@
 			</resource>
       <resource>
         <reference>
+          <reference value="StructureDefinition/cpg-strategy"/>
+        </reference>
+        <groupdingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
           <reference value="OperationDefinition/cpg-library-evaluate"/>
         </reference>
         <groupingId value="main"/>

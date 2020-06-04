@@ -73,6 +73,7 @@
 		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
     "plandefinition-cpg-strategy-profile-spreadsheet.xml",
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
+    "requestgroup-cpg-strategy-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
     "structuredefinition-cpg-shareable-profile-spreadsheet.xml",
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
@@ -331,6 +332,10 @@
     "StructureDefinition/cpg-strategydefinition": {
       "defns": "StructureDefinition-cpg-strategydefinition-definitions.html",
       "base": "StructureDefinition-cpg-strategydefinition.html"
+    },
+    "StructureDefinition/cpg-strategy": {
+      "defns": "StructureDefinition-cpg-strategy-definitions.html",
+      "base": "StructureDefinition-cpg-strategy.html"
     },
     "StructureDefinition/cpg-shareablestructuredef": {
       "defns": "StructureDefinition-cpg-shareablestructuredef-definitions.html",
