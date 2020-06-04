@@ -373,6 +373,18 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+        <reference>
+          <reference value="OperationDefinition/cpg-library-evaluate"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="OperationDefinition/cpg-cql"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
 
 			<!-- TODO: Consider whether this is too content-specific for inclusion here...
 			<resource>

@@ -1,0 +1,45 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "cpg-library-evaluate",
+  "url": "http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-library-evaluate",
+  "name": "CPGLibraryEvaluate",
+  "title": "CPG Library Evaluate",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": false,
+  "description": "Evaluates the contents of a library and returns the results as a Parameters resource.",
+  "purpose": "This operation is defined to support evaluating the contents of a library directly via an operation",
+  "affectsState": false,
+  "code": "evaluate",
+  "resource": [ "Library" ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [
+    {
+      "documentation": "Subject for which the library will be evaluated. This corresponds to the context in which the library will be evaluated and is represented as a relative FHIR id (e.g. Patient/123), which establishes both the context and context value for the evaluation",
+      "max": "1",
+      "min": 0,
+      "name": "subject",
+      "searchType": "reference",
+      "type": "string",
+      "use": "in"
+    },
+    {
+      "documentation": "Any input parameters defined in the library. If the parameter is a CQL system-defined type, it is represented using the corresponding FHIR-defined type, as defined in the Using CQL section of this implementation guide. If the input parameter type is a list in CQL, the parameter will appear multiple times in the input Parameters resource.",
+      "max": "1",
+      "min": 0,
+      "name": "parameters",
+      "type": "Parameters",
+      "use": "in"
+    },
+    {
+      "documentation": "The results of the library evaluation, returned as a Parameters resource with a parameter for each named expression defined in the library. The value of each expression is returned as a FHIR type, either a resource, or a FHIR-defined type corresponding to the CQL return type, as defined in the Using CQL section of this implementation guide. If the result of an expression is a list of resources, that parameter will be repeated for each element in the result",
+      "max": "1",
+      "min": 1,
+      "name": "return",
+      "type": "Parameters",
+      "use": "out"
+    }
+  ]
+}

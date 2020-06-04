@@ -110,6 +110,14 @@
 			"source": "codesystem-cpg-recommendation-direction.xml",
 			"base": "CodeSystem-cpg-recommendation-direction.html"
 		},
+    "CodeSystem/cpg-knowledge-capability": {
+      "source": "codesystem-cpg-knowledge-capability.xml",
+      "base": "CodeSystem-cpg-knowledge-capability.html"
+    },
+    "CodeSystem/cpg-knowledge-representation-level": {
+      "source": "codesystem-cpg-knowledge-representation-level.xml",
+      "base": "CodeSystem-cpg-knowledge-representation-level.html"
+    },
 		"Library/anc-common": {
 			"base": "Library-anc-common.html"
 		},
@@ -128,6 +136,12 @@
 		"Library/opioidcds-r4-recommendation-05": {
 			"base": "Library-opioidcds-r4-recommendation-05.html"
 		},
+    "OperationDefinition/cpg-library-evaluate": {
+      "base": "OperationDefinition-cpg-library-evaluate.html"
+    },
+    "OperationDefinition/cpg-cql": {
+      "base": "OperationDefinition-cpg-cql.html"
+    },
 		"PlanDefinition/anc-contact": {
 			"base": "PlanDefinition-anc-contact.html"
 		},
@@ -179,6 +193,14 @@
 			"source": "valueset-cpg-recommendation-direction.xml",
 			"base": "ValueSet-cpg-recommendation-direction.html"
 		},
+    "ValueSet/cpg-knowledge-capability": {
+      "source": "valueset-cpg-knowledge-capability.xml",
+      "base": "ValueSet-cpg-knowledge-capability.html"
+    },
+    "ValueSet/cpg-knowledge-representation-level": {
+      "source": "valueset-cpg-knowledge-representation-level.xml",
+      "base": "ValueSet-cpg-knowledge-representation-level.html"
+    },
 		"ValueSet/opioids-with-ambulatory-abuse-potential": {
 			"base": "ValueSet-opioids-with-ambulatory-abuse-potential.html"
 		},
