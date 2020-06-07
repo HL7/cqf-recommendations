@@ -153,6 +153,24 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-relatedperson"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-careplan"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-careteam"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-location"/>
 				</reference>
 				<groupingId value="main"/>

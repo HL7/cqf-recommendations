@@ -46,6 +46,8 @@
     "activitydefinition-cpg-publishable-profile-spreadsheet.xml",
     "activitydefinition-cpg-shareable-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
+    "careplan-cpg-profile-spreadsheet.xml",
+    "careteam-cpg-profile-spreadsheet.xml",
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
     "codesystem-cpg-shareable-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
@@ -78,6 +80,7 @@
 		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
     "plandefinition-cpg-strategy-profile-spreadsheet.xml",
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
+    "relatedperson-cpg-profile-spreadsheet.xml",
     "requestgroup-cpg-strategy-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
     "structuredefinition-cpg-shareable-profile-spreadsheet.xml",
@@ -213,6 +216,18 @@
     "StructureDefinition/cpg-case": {
       "defns": "StructureDefinition-cpg-case-definitions.html",
       "base": "StructureDefinition-cpg-case.html"
+    },
+    "StructureDefinition/cpg-careplan": {
+      "defns": "StructureDefinition-cpg-careplan-definitions.html",
+      "base": "StructureDefinition-cpg-careplan.html"
+    },
+    "StructureDefinition/cpg-careteam": {
+      "defns": "StructureDefinition-cpg-careteam-definitions.html",
+      "base": "StructureDefinition-cpg-careteam.html"
+    },
+    "StructureDefinition/cpg-relatedperson": {
+      "defns": "StructureDefinition-cpg-relatedperson-definitions.html",
+      "base": "StructureDefinition-cpg-relatedperson.html"
     },
     "StructureDefinition/cpg-computableactivity": {
       "defns": "StructureDefinition-cpg-computableactivity-definitions.html",
