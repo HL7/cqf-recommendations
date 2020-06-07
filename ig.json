@@ -49,7 +49,10 @@
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
     "codesystem-cpg-shareable-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
+    "condition-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
+    "episodeofcare-cpg-case-profile-spreadsheet.xml",
+    "encounter-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
     "implementationguide-cpg-shareable-profile-spreadsheet.xml",
     "implementationguide-cpg-computableguideline-profile-spreadsheet.xml",
@@ -59,8 +62,10 @@
     "library-cpg-publishable-profile-spreadsheet.xml",
     "library-cpg-shareable-profile-spreadsheet.xml",
     "library-cpg-executable-profile-spreadsheet.xml",
+    "location-cpg-profile-spreadsheet.xml",
 		"medicationrequest-cpg-profile-spreadsheet.xml",
 		"nutritionorder-cpg-profile-spreadsheet.xml",
+    "organization-cpg-profile-spreadsheet.xml",
 		"patient-cpg-profile-spreadsheet.xml",
 		"practitioner-cpg-profile-spreadsheet.xml",
 		"practitionerrole-cpg-profile-spreadsheet.xml",
@@ -205,9 +210,17 @@
 		"ValueSet/opioids-with-ambulatory-abuse-potential": {
 			"base": "ValueSet-opioids-with-ambulatory-abuse-potential.html"
 		},
+    "StructureDefinition/cpg-case": {
+      "defns": "StructureDefinition-cpg-case-definitions.html",
+      "base": "StructureDefinition-cpg-case.html"
+    },
     "StructureDefinition/cpg-computableactivity": {
       "defns": "StructureDefinition-cpg-computableactivity-definitions.html",
       "base": "StructureDefinition-cpg-computableactivity.html"
+    },
+    "StructureDefinition/cpg-condition": {
+      "defns": "StructureDefinition-cpg-condition-definitions.html",
+      "base": "StructureDefinition-cpg-condition.html"
     },
     "StructureDefinition/cpg-shareableactivitydefinition": {
       "defns": "StructureDefinition-cpg-sharebleactivitydefinition-definitions.html",
@@ -241,6 +254,10 @@
       "defns": "StructureDefinition-cpg-directionOfRecommendation-definitions.html",
       "base": "StructureDefinition-cpg-directionOfRecommendation.html"
     },
+    "StructureDefinition/cpg-encounter": {
+      "defns": "StructureDefinition-cpg-encounter-definitions.html",
+      "base": "StructureDefinition-cpg-encounter.html"
+    },
     "StructureDefinition/cpg-computablevalueset": {
       "defns": "StructureDefinition-cpg-computablevalueset-definitions.html",
       "base": "StructureDefinition-cpg-computablevalueset.html"
@@ -252,6 +269,10 @@
     "StructureDefinition/cpg-immunizationrecommendation": {
       "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",
       "base": "StructureDefinition-cpg-immunizationrecommendation.html"
+    },
+    "StructureDefinition/cpg-location": {
+      "defns": "StructureDefinition-cpg-location-definitions.html",
+      "base": "StructureDefinition-cpg-location.html"
     },
     "StructureDefinition/cpg-publishablelibrary": {
       "defns": "StructureDefinition-cpg-publishablelibrary-definitions.html",
@@ -285,6 +306,10 @@
 			"defns": "StructureDefinition-cpg-ordersetdefinition-definitions.html",
 			"base": "StructureDefinition-cpg-ordersetdefinition.html"
 		},
+    "StructureDefinition/cpg-organization": {
+      "defns": "StructureDefinition-cpg-organization-definitions.html",
+      "base": "StructureDefinition-cpg-organization.html"
+    },
     "StructureDefinition/cpg-participantCapabilityStatement": {
       "defns": "StructureDefinition-cpg-participantCapabilityStatement-definitions.html",
       "base": "StructureDefinition-cpg-participantCapabilityStatement.html"

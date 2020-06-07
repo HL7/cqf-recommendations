@@ -127,6 +127,36 @@
 				<groupingId value="main"/>
 			</resource-->
 
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-case"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-condition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-encounter"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-organization"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-location"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-shareableactivitydefinition"/>
@@ -377,7 +407,7 @@
         <reference>
           <reference value="StructureDefinition/cpg-strategy"/>
         </reference>
-        <groupdingId value="main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
