@@ -24,8 +24,8 @@
   <WindowWidth>20520</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>2</ActiveSheet>
-  <FirstVisibleSheet>2</FirstVisibleSheet>
+  <ActiveSheet>9</ActiveSheet>
+  <FirstVisibleSheet>4</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -1208,9 +1208,9 @@
  <Worksheet ss:Name="cpg-casefeaturedefinition">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='cpg-casefeaturedefinition'!R1C1:R47C25" ss:Hidden="1"/>
+    ss:RefersTo="='cpg-casefeaturedefinition'!R1C1:R49C25" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="34" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="36" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="305.25"/>
@@ -1377,6 +1377,70 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-inferenceExpression}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><Data ss:Type="String">assertionExpression</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">StructureDefinition.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assertionExpression}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><Data ss:Type="String">featureExpression</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">StructureDefinition.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-featureExpression}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -2222,7 +2286,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -2243,7 +2306,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -3066,21 +3130,29 @@
     <Cell ss:StyleID="s137"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s135"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">CPGAssertionExpression</Data></Cell>
+    <Cell ss:StyleID="s135"><Data ss:Type="String">assertionExpression</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">Element</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">StructureDefinition</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">Expression</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">How the feature is asserted</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Defines formal computational semantics for the feature if it is asserted. This is typically only required if the case feature is of a different type than the profile (e.g. a boolean feature)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3091,21 +3163,29 @@
     <Cell ss:StyleID="s137"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s135"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">CPGFeatureExpression</Data></Cell>
+    <Cell ss:StyleID="s135"><Data ss:Type="String">featureExpression</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">Element</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">StructureDefinition</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">Expression</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s136"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">How the feature is expression</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">Defines formal computational semantics for the feature, combining the inference and assertion expressions. This is typically only required if the feature is of a different type than the profile (e.g. a boolean feature)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3909,7 +3989,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>2</SplitVertical>
-   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <LeftColumnRightPane>10</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -3924,7 +4004,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>10</ActiveCol>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>14</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5923,56 +6004,56 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s169"><Data ss:Type="String">weakly-positive</Data></Cell>
+    <Cell ss:StyleID="s169"><Data ss:Type="String">asserted</Data></Cell>
     <Cell ss:StyleID="s170"/>
     <Cell ss:StyleID="s171"/>
     <Cell ss:StyleID="s173"/>
-    <Cell ss:StyleID="s173"><Data ss:Type="String">Weakly Positive</Data></Cell>
-    <Cell ss:StyleID="s173"><Data ss:Type="String">The case feature has weak positive pertinence for the case</Data></Cell>
+    <Cell ss:StyleID="s173"><Data ss:Type="String">Asserted</Data></Cell>
+    <Cell ss:StyleID="s173"><Data ss:Type="String">The case feature is asserted as part of the patient's record</Data></Cell>
     <Cell ss:StyleID="s170"/>
     <Cell ss:StyleID="s170"/>
     <Cell ss:StyleID="s174"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s175"><Data ss:Type="String">weakly-negative</Data></Cell>
+    <Cell ss:StyleID="s175"><Data ss:Type="String">inferred</Data></Cell>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s177"/>
     <Cell ss:StyleID="s178"/>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">Weakly Negative</Data></Cell>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">The case feature has weak negative pertinence to the case</Data></Cell>
+    <Cell ss:StyleID="s178"><Data ss:Type="String">Inferred</Data></Cell>
+    <Cell ss:StyleID="s178"><Data ss:Type="String">The case feature was inferred by expression</Data></Cell>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s179"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s175"><Data ss:Type="String">strongly-positive</Data></Cell>
+    <Cell ss:StyleID="s175"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s177"/>
     <Cell ss:StyleID="s178"/>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">Strongly Positive</Data></Cell>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">The case feature has strong positive pertinence for the case</Data></Cell>
+    <Cell ss:StyleID="s178"/>
+    <Cell ss:StyleID="s178"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s179"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s175"><Data ss:Type="String">strongly-negative</Data></Cell>
+    <Cell ss:StyleID="s175"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s177"/>
     <Cell ss:StyleID="s178"/>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">Strongly Negative</Data></Cell>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">The case feature has strong negative pertinence for the case</Data></Cell>
+    <Cell ss:StyleID="s178"/>
+    <Cell ss:StyleID="s178"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s179"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s175"><Data ss:Type="String">pathognomonic</Data></Cell>
+    <Cell ss:StyleID="s175"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s177"/>
     <Cell ss:StyleID="s178"/>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">Pathognomonic</Data></Cell>
-    <Cell ss:StyleID="s178"><Data ss:Type="String">The case feature is pathognomonic for the case</Data></Cell>
+    <Cell ss:StyleID="s178"/>
+    <Cell ss:StyleID="s178"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s176"/>
     <Cell ss:StyleID="s179"/>
@@ -6459,6 +6540,7 @@
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Unsynced/>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -6478,7 +6560,6 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>5</ActiveRow>
      <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
