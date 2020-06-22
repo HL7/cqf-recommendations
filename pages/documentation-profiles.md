@@ -34,7 +34,7 @@ define "Active Ambulatory Opioid Rx":
 
 In this example, the condition is referencing the `status` and `category` elements of the `MedicationRequest` resource. In order for this logic to be evaluated effectively, the system providing the `MedicationRequest` instance must understand these two elements and provide data for them if it is available. Computability profiles are used to communicate this information through FHIR profiles.
 
-Note that for logic expressed in CQL, this information can be inferred by static analysis of the CQL expressions. The [$data-requirements](http://hl7.org/fhir/R4/library-operation-data-requirements.html) can be used to extract this information form a CQL Library.
+Note that for logic expressed in CQL, this information can be inferred by static analysis of the CQL expressions. The [$data-requirements](http://hl7.org/fhir/R4/library-operation-data-requirements.html) can be used to extract this information from a CQL Library.
 
 ## Implementation Considerations
 

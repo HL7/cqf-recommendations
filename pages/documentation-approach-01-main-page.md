@@ -4,7 +4,7 @@ title: Approach Overview
 ---
 # **Clinical Practice Guidelines - Approach**
 
-The approach section to this implementation guide describes how a guideline developers, informaticians (knowledge engineers and others), and implementers of computable representations of guidelines can collaborate across the lifecycle of guideline-directed care and related activities (clinical decision support, quality measurement, case reporting, continuous improvement), leveraging existing standards-based approaches.
+The approach section to this implementation guide describes how guideline developers, informaticians (knowledge engineers and others), and implementers of computable representations of guidelines can collaborate across the lifecycle of guideline-directed care and related activities (clinical decision support, quality measurement, case reporting, continuous improvement), leveraging existing standards-based approaches.
 
 # Overview of Approach
 
@@ -92,7 +92,7 @@ The CPG Approach section highlights:
 *   How the HL7 CPG-IG recognizes their distinct and valuable work and provides numerous opportunities to reuse domain standards (e.g., FHIR and other HL7 IG’s); and
 *   A reconceptualization of work processes that share and reuse essential information and content.  
 
-Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative ([ref](https://www.cdc.gov/ddphss/clinical-guidelines/index.html)), the World Health Organization’s (WHO’s) Antenatal Care Guidelines ([ref](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)), the HL7 Clinical Decision Support Working Group, and numerous other publicly funded and private sector initiatives, including local health system implementations of guidelines and in-workflow pathways.
+Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative ([ref](https://www.cdc.gov/ddphss/clinical-guidelines/index.html)), the World Health Organization’s (WHO’s) Antenatal Care Guidelines ([ref](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)), the HL7 Clinical Decision Support and Clinical Quality Information Working Groups, and numerous other publicly funded and private sector initiatives, including local health system implementations of guidelines and in-workflow pathways.
 
 **To the Guideline Developer:** Working in parallel with knowledge engineers and other downstream consumers (e.g., local implementers) can identify areas within the guideline that need clarification, helping improve the narrative, provide opportunity to review the translation of the tools for fidelity to the guideline, and get early feedback from end-consumers of the guideline work product -- all _before_ the guidelines or tools are published.
 
@@ -110,7 +110,7 @@ Using approaches, standards, and techniques addressed in further detail in indiv
 
 <summary>
 
-FIG. 04. Data Lifecycle Revisited in context of the CPG-IG:  With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively. (<b>NOTE: the Research-on-FHIR does not exist yet</b>).
+FIG. 04. Data Lifecycle Revisited in context of the CPG-IG:  With the guideline development group, the knowledge engineering team, and local implementation teams (practice governance and informatics/ EHR build) working collaboratively to develop and implement a CPG based on widely adopted standards (e.g., FHIR, CQL), there exists a synergy that can produce all the knowledge products more efficiently and effectively.
 
 </summary>
 
