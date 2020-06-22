@@ -45,11 +45,13 @@
     "activitydefinition-cpg-computable-profile-spreadsheet.xml",
     "activitydefinition-cpg-publishable-profile-spreadsheet.xml",
     "activitydefinition-cpg-shareable-profile-spreadsheet.xml",
+    "activitydefinition-cpg-communication-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
     "careplan-cpg-profile-spreadsheet.xml",
     "careteam-cpg-profile-spreadsheet.xml",
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
     "codesystem-cpg-shareable-profile-spreadsheet.xml",
+    "communication-cpg-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
     "condition-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
@@ -245,6 +247,10 @@
       "defns": "StructureDefinition-cpg-publishableactivity-definitions.html",
       "base": "StructureDefinition-cpg-publishableactivity.html"
     },
+    "StructureDefinition/cpg-communicationactivitydefinition": {
+      "defns": "StructureDefinition-cpg-communicationactivitydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-communicationactivitydefinition.html"
+    },
     "StructureDefinition/cpg-appointment": {
       "defns": "StructureDefinition-cpg-appointment-definitions.html",
       "base": "StructureDefinition-cpg-appointment.html"
@@ -256,6 +262,10 @@
     "StructureDefinition/cpg-publishablecodesystem": {
       "defns": "StructureDefinition-cpg-publishablecodesystem-definitions.html",
       "base": "StructureDefinition-cpg-publishablecodesystem.html"
+    },
+    "StructureDefinition/cpg-communication": {
+      "defns": "StructureDefinition-cpg-communication-definitions.html",
+      "base": "StructureDefinition-cpg-communication.html"
     },
     "StructureDefinition/cpg-communicationrequest": {
       "defns": "StructureDefinition-cpg-communicationrequest-definitions.html",
