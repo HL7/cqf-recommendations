@@ -1353,7 +1353,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="4"><Data ss:Type="String">Library.extension</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+    <Cell ss:Index="6"><Data ss:Type="String">1..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3030,7 +3030,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>7</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -3046,7 +3046,7 @@
     <Pane>
      <Number>0</Number>
      <ActiveRow>4</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
