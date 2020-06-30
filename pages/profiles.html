@@ -15,13 +15,16 @@
 <a name="definitional-profiles"> </a>
 <h3><span class="sectioncount">2.1.0</span> Definitional profiles <a href="profiles.html#definitional-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
+<p>For definitional artifacts, this implementation guide defines profile classes to represent knowledge capabilities for shareable, computable, publishable, and executable knowledge artifacts. All knowledge artifacts must be at least shareable, and where appropriate for the target environment, artifacts should conform to profiles for the capabilities they support.</p>
+
 <table>
-  <tr><th>Category</th><th>Shareable</th><th>Computable</th><th>Publishable</th><th>Executable</th></tr>
+  <tr><th>Capability</th><th>Shareable</th><th>Computable</th><th>Publishable</th><th>Executable</th></tr>
   <tr><td>Activity</td><td><a href="StructureDefinition-cpg-shareableactivitydefinition.html">CPGShareableActivityDefinition</a></td><td><a href="StructureDefinition-cpg-computableactivity.html">CPGComputableActivity</a></td><td><a href="StructureDefinition-cpg-publishableactivity.html">CPGPublishableActivity</a></td><td>-</td></tr>
   <tr><td>CodeSystem</td><td><a href="StructureDefinition-cpg-shareablecodesystem.html">CPGShareableCodeSystem</a></td><td>-</td><td><a href="StructureDefinition-cpg-publishablecodesystem.html">CPGPublishableCodeSystem</a></td><td>-</td></tr>
   <tr><td>ImplementationGuide</td><td><a href="StructureDefinition-cpg-shareableig.html">CPGShareableImplementationGuide</a></td><td><a href="StructureDefinition-cpg-computableguideline.html">CPGComputableGuideline</a></td><td><a href="StructureDefinition-cpg-publishableguideline.html">CPGPublishableGuideline</a></td><td>-</td></tr>
   <tr><td>Library</td><td><a href="StructureDefinition-cpg-shareablelibrary.html">CPGShareableLibrary</a></td><td><a href="StructureDefinition-cpg-computablelibrary.html">CPGComputableLibrary</a></td><td><a href="StructureDefinition-cpg-publishablelibrary.html">CPGPublishableLibrary</a></td><td><a href="StructureDefinition-cpg-executablelibrary.html">CPGExecutableLibrary</a></td></tr>
   <tr><td>PlanDefinition</td><td><a href="StructureDefinition-cpg-shareableplandefinition.html">CPGShareablePlanDefinition</a></td><td><a href="StructureDefinition-cpg-computableplandefinition.html">CPGComputablePlanDefinition</a></td><td><a href="StructureDefinition-cpg-publishableplandefinition.html">CPGPublishablePlanDefinition</a></td><td>-</td></tr>
+  <tr><td>Questionnaire</td><td><a href="StructureDefinition-cpg-shareablequestionnaire.html">CPGShareableQuestionnaire</a></td><td>-</td><td><a href="StructureDefinition-cpg-publishablequestionnaire.html">CPGPublishableQuestionnaire</a></td><td>-</td></tr>
   <tr><td>StructureDefinition</td><td><a href="StructureDefinition-cpg-shareablestructuredef.html">CPGShareableStructureDefinition</a></td><td><a href="StructureDefinition-cpg-casefeaturedefinition.html">CPGCaseFeatureDefinition</a></td><td><a href="StructureDefinition-cpg-publishablecasefeature.html">CPGPublishableCaseFeatureDefinition</a></td><td>-</td></tr>
   <tr><td>ValueSet</td><td><a href="StructureDefinition-cpg-shareablevalueset.html">CPGShareableValueSet</a></td><td><a href="StructureDefinition-cpg-computablevalueset.html">CPGComputableValueSet</a></td><td><a href="StructureDefinition-cpg-publishablevalueset.html">CPGPublishableValueSet</a></td><td><a href="StructureDefinition-cpg-executablevalueset.html">CPGExecutableValueSet</a></td></tr>
 </table>
@@ -39,19 +42,44 @@
 <a name="activity-profiles"> </a>
 <h3><span class="sectioncount">2.3.0</span> Activity Profiles: <a href="profiles.html#activity-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
+<p>To represent the activities in a computable guideline, this implementation guide follows the workflow patterns established by the base FHIR specification, _definition_, _request_, and _event_. For each type of activity, these profiles establish at least:</p>
+
+<ul>
+  <li>Definitional activity profiles
+    <ul>
+      <li>kind - The type of request resource being defined</li>
+      <li>profile - The minimum profile that must be met by request resources produced by the activity definition</li>
+      <li>intent - The target intent, typically proposal, of the request resources</li>
+    </ul>
+  </li>
+  <li>Request activity profiles
+    <ul>
+      <li>source reference - Typically the instantiatesCanonical element to refer back to the guideline content</li>
+      <li>identity - Typically via an identifier element to establish identity of the activity</li>
+    </ul>
+  </li>
+  <li>Event activity profiles
+    <ul>
+      <li>source reference - Typically the instantiatesCanonical element to refer back to the guideline content</li>
+      <li>request reference - Typically the basedOn element to refer back to the request which the event is fulfilling</li>
+      <li>identity - Typically via an identifier element to establish identity of the activity</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Note that the intent of these profiles is not to establish the content of the activity, only to ensure that requests and events related to guideline-based care can be traced back to the recommendation, strategy, pathway, and ultimately guideline they are representing.</p>
+
 <table>
   <tr><th>Activity</th><th>Definition</th><th>Request</th><th>Event</th></tr>
   <tr><td>Send a message</td><td><a href="StructureDefinition-cpg-communicationactivity.html">CPGCommunicationActivity</a></td><td><a href="StructureDefinition-cpg-communicationrequest.html">CPGCommunicationRequest</a></td><td><a href="StructureDefinition-cpg-communication.html">CPGCommunication</a></td></tr>
-  <tr><td>Collect information</td><td><a href="StructureDefinition-cpg-questionnaire.html">CPGQuestionnaire</a></td><td><a href="StructureDefinition-cpg-collectinformationtask.html">CPGCollectInformationTask</a></td><td><a href="StructureDefinition-cpg-questionnaireresponse.html">CPGQuestionnaireResponse</a></td></tr>
-  <tr><td>Administer medication</td><td><a href="StructureDefinition-cpg-administermedicationactivitydefinition.html">CPGAdministerMedicationActivityDefinition</a></td><td><a href="StructureDefinition-cpg-administermedicationrequest.html">CPGAdministerMedicationRequest</a></td><td><a href="StructureDefinition-cpg-medicationadministration.html">CPGMedicationAdministration</a></td></tr>
-  <tr><td>Prescribe medication</td><td><a href="StructureDefinition-cpg-prescribemedicationactivitydefinition.html">CPGPrescribeMedicationActivityDefinition</a></td><td><a href="StructureDefinition-cpg-prescribemedicationrequest.html">CPGPrescribeMedicationRequest</a></td><td><a href="StructureDefinition-cpg-medicationdispense.html">CPGMedicationDispense</a></td></tr>
-  <tr><td>Recommend immunization</td><td><a href="StructureDefinition-cpg-recommendimmunizationactivitydefinition.html">CPGRecommendImmunizationActivityDefinition</a></td><td><a href="StructureDefinition-cpg-immunizationrecommendation.html">CPGImmunizationRecommendation</a></td><td><a href="StructureDefinition-cpg-immunization.html">CPGImmunization</a></td></tr>
-  <tr><td>Order a laboratory test</td><td><a href="StructureDefinition-cpg-laboratorytestorderactivitydefinition.html">CPGLaboratoryTestOrderActivityDefinition</a></td><td><a href="StructureDefinition-cpg-laboratorytestservicerequest.html">CPGLaboratoryTestServiceRequest</a></td><td><a href="StructureDefinition-cpg-laboratorytestresult.html">CPGLaboratoryTestResult</a></td></tr>
-  <tr><td>Order an intervention</td><td><a href="StructureDefinition-cpg-interventionorderactivitydefinition.html">CPGInterventionOrderActivityDefinition</a></td><td><a href="StructureDefinition-cpg-interventionservicerequest.html">CPGInterventionServiceRequest</a></td><td><a href="StructureDefinition-cpg-interventionprocedure.html">CPGInterventionProcedure</a></td></tr>
-  <tr><td>Make a referral</td><td><a href="StructureDefinition-cpg-referralactivitydefinition.html">CPGReferralActivityDefinition</a></td><td><a href="StructureDefinition-cpg-referralservicerequest.html">CPGReferralServiceRequest</a></td><td><a href="StructureDefinition-cpg-referralencounter.html">CPGReferralEncounter</a></td></tr>
-  <tr><td>Propose a diagnosis</td><td><a href="StructureDefinition-cpg-proposediagnosisactivitydefinition.html">CPGProposeDiagnosisActivityDefinition</a></td><td>Task or N/A?</td><td><a href="StructureDefinition-cpg-condition.html">CPGProposedCondition</a></td></tr>
-  <tr><td>Record a detected issue</td><td><a href="StructureDefinition-cpg-recorddetectedissueactivitydefinition.html">CPGRecordDetectedIssueActivityDefinition</a></td><td>Task or N/A?</td><td><a href="StructureDefinition-cpg-detectedissue.html">CPGDetectedIssue</a></td></tr>
-  <tr><td>Record an inference</td><td><a href="StructureDefinition-cpg-recordinferenceactivitydefinition.html">CPGRecordInferenceActivityDefinition</a></td><td><a href="StructureDefinition-cpg-recordinferencetask.html">CPGRecordInferenceTask</a></td><td><a href="StructureDefinition-cpg-inferredobservation.html">CPGInferredObservation</a></td></tr>
+  <tr><td>Collect information</td><td><a href="StructureDefinition-cpg-shareablequestionnaire.html">CPGShareableQuestionnaire</a></td><td><a href="StructureDefinition-cpg-collectinformationtask.html">CPGCollectInformationTask</a></td><td><a href="StructureDefinition-cpg-questionnaireresponse.html">CPGQuestionnaireResponse</a></td></tr>
+  <tr><td>Order a medication</td><td><a href="StructureDefinition-cpg-medicationrequestactivitydefinition.html">CPGMedicationRequestActivityDefinition</a></td><td><a href="StructureDefinition-cpg-medicationrequest.html">CPGMedicationRequest</a></td><td><a href="StructureDefinition-cpg-medicationdispense.html">CPGMedicationDispense</a><br/><a href="StructureDefinition-cpg-medicationadministration.html">CPGMedicationAdministration</a><br/><a href="StructureDefinition-cpg-medicationstatement">CPGMedicationStatement</a></td></tr>
+  <tr><td>Recommend an immunization</td><td><a href="StructureDefinition-cpg-recommendimmunizationactivitydefinition.html">CPGRecommendImmunizationActivityDefinition</a></td><td><a href="StructureDefinition-cpg-immunizationrecommendation.html">CPGImmunizationRecommendation</a></td><td><a href="StructureDefinition-cpg-immunization.html">CPGImmunization</a></td></tr>
+  <tr><td>Order a service</td><td><a href="StructureDefinition-cpg-servicerequestactivitydefinition.html">CPGServiceRequestActivity</a></td><td><a href="StructureDefinition-cpg-servicerequest.html">CPGServiceRequest</a></td><td><a href="StructureDefinition-cpg-procedure.html">CPGProcedure</a><br/><a href="StructureDefinition-cpg-observation.html">CPGObservation</a><br/><a href="StructureDefinition-cpg-diagnosticreport">CPGDiagnosticReport</a></td></tr>
+  <tr><td>Propose a diagnosis</td><td>-</td><td>-</td><td><a href="StructureDefinition-cpg-condition.html">CPGCondition</a></td></tr>
+  <tr><td>Record a detected issue</td><td>-</td><td>-</td><td><a href="StructureDefinition-cpg-detectedissue.html">CPGDetectedIssue</a></td></tr>
+  <tr><td>Record an inference</td><td>-</td><td>-</td><td><a href="StructureDefinition-cpg-observation.html">CPGObservation
+  </a></td></tr>
 </table>
 
 <a name="alphabetical-profile-listing"> </a>

@@ -46,6 +46,9 @@
     "activitydefinition-cpg-publishable-profile-spreadsheet.xml",
     "activitydefinition-cpg-shareable-profile-spreadsheet.xml",
     "activitydefinition-cpg-communication-profile-spreadsheet.xml",
+    "activitydefinition-cpg-immunization-profile-spreadsheet.xml",
+    "activitydefinition-cpg-servicerequest-profile-spreadsheet.xml",
+    "activitydefinition-cpg-medicationrequest-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
     "careplan-cpg-profile-spreadsheet.xml",
     "careteam-cpg-profile-spreadsheet.xml",
@@ -54,9 +57,12 @@
     "communication-cpg-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
     "condition-cpg-profile-spreadsheet.xml",
+    "detectedissue-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
+    "diagnosticreport-cpg-profile-spreadsheet.xml",
     "episodeofcare-cpg-case-profile-spreadsheet.xml",
     "encounter-cpg-profile-spreadsheet.xml",
+    "immunization-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
     "implementationguide-cpg-shareable-profile-spreadsheet.xml",
     "implementationguide-cpg-computableguideline-profile-spreadsheet.xml",
@@ -67,8 +73,12 @@
     "library-cpg-shareable-profile-spreadsheet.xml",
     "library-cpg-executable-profile-spreadsheet.xml",
     "location-cpg-profile-spreadsheet.xml",
+    "medicationadministration-cpg-profile-spreadsheet.xml",
+    "medicationdispense-cpg-profile-spreadsheet.xml",
 		"medicationrequest-cpg-profile-spreadsheet.xml",
+    "medicationstatement-cpg-profile-spreadsheet.xml",
 		"nutritionorder-cpg-profile-spreadsheet.xml",
+    "observation-cpg-profile-spreadsheet.xml",
     "organization-cpg-profile-spreadsheet.xml",
 		"patient-cpg-profile-spreadsheet.xml",
 		"practitioner-cpg-profile-spreadsheet.xml",
@@ -82,6 +92,9 @@
 		"plandefinition-cpg-recommendation-profile-spreadsheet.xml",
     "plandefinition-cpg-strategy-profile-spreadsheet.xml",
 		"plandefinition-cpg-workflow-profile-spreadsheet.xml",
+    "procedure-cpg-profile-spreadsheet.xml",
+    "questionnaire-cpg-publishable-profile-spreadsheet.xml",
+    "questionnaire-cpg-shareable-profile-spreadsheet.xml",
     "relatedperson-cpg-profile-spreadsheet.xml",
     "requestgroup-cpg-strategy-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
@@ -239,6 +252,14 @@
       "defns": "StructureDefinition-cpg-condition-definitions.html",
       "base": "StructureDefinition-cpg-condition.html"
     },
+    "StructureDefinition/cpg-observation": {
+      "defns": "StructureDefinition-cpg-observation-definitions.html",
+      "base": "StructureDefinition-cpg-observation.html"
+    },
+    "StructureDefinition/cpg-detectedissue": {
+      "defns": "StructureDefinition-cpg-detectedissue-definitions.html",
+      "base": "StructureDefinition-cpg-detectedissue.html"
+    },
     "StructureDefinition/cpg-shareableactivitydefinition": {
       "defns": "StructureDefinition-cpg-sharebleactivitydefinition-definitions.html",
       "base": "StructureDefinition-cpg-shareableactivitydefinition.html"
@@ -247,13 +268,33 @@
       "defns": "StructureDefinition-cpg-publishableactivity-definitions.html",
       "base": "StructureDefinition-cpg-publishableactivity.html"
     },
-    "StructureDefinition/cpg-communicationactivitydefinition": {
-      "defns": "StructureDefinition-cpg-communicationactivitydefinition-definitions.html",
-      "base": "StructureDefinition-cpg-communicationactivitydefinition.html"
+    "StructureDefinition/cpg-communicationactivity": {
+      "defns": "StructureDefinition-cpg-communicationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-communicationactivity.html"
+    },
+    "StructureDefinition/cpg-immunizationactivity": {
+      "defns": "StructureDefinition-cpg-immunizationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-immunizationactivity.html"
+    },
+    "StructureDefinition/cpg-medicationrequestactivity": {
+      "defns": "StructureDefinition-cpg-medicationrequestactivity-definitions.html",
+      "base": "StructureDefinition-cpg-medicationrequestactivity.html"
+    },
+    "StructureDefinition/cpg-servicerequestactivity": {
+      "defns": "StructureDefinition-cpg-servicerequestactivity-definitions.html",
+      "base": "StructureDefinition-cpg-servicerequestactivity.html"
     },
     "StructureDefinition/cpg-appointment": {
       "defns": "StructureDefinition-cpg-appointment-definitions.html",
       "base": "StructureDefinition-cpg-appointment.html"
+    },
+    "StructureDefinition/cpg-procedure": {
+      "defns": "StructureDefinition-cpg-procedure-definitions.html",
+      "base": "StructureDefinition-cpg-procedure.html"
+    },
+    "StructureDefinition/cpg-diagnosticreport": {
+      "defns": "StructureDefinition-cpg-diagnosticreport-definitions.html",
+      "base": "StructureDefinition-cpg-diagnosticreport.html"
     },
     "StructureDefinition/cpg-shareablecodesystem": {
       "defns": "StructureDefinition-cpg-shareablecodesystem-definitions.html",
@@ -291,6 +332,10 @@
       "defns": "StructureDefinition-cpg-executablevalueset-definitions.html",
       "base": "StructureDefinition-cpg-executablevalueset.html"
     },
+    "StructureDefinition/cpg-immunization": {
+      "defns": "StructureDefinition-cpg-immunization-definitions.html",
+      "base": "StructureDefinition-cpg-immunization.html"
+    },
     "StructureDefinition/cpg-immunizationrecommendation": {
       "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",
       "base": "StructureDefinition-cpg-immunizationrecommendation.html"
@@ -322,6 +367,14 @@
     "StructureDefinition/cpg-medicationrequest": {
       "defns": "StructureDefinition-cpg-medicationrequest-definitions.html",
       "base": "StructureDefinition-cpg-medicationrequest.html"
+    },
+    "StructureDefinition/cpg-medicationdispense": {
+      "defns": "StructureDefinition-cpg-medicationdispense-definitions.html",
+      "base": "StructureDefinition-cpg-medicationdispense.html"
+    },
+    "StructureDefinition/cpg-medicationstatement": {
+      "defns": "StructureDefinition-cpg-medicationstatement-definitions.html",
+      "base": "StructureDefinition-cpg-medicationstatement.html"
     },
     "StructureDefinition/cpg-nutritionorder": {
       "defns": "StructureDefinition-cpg-nutritionorder-definitions.html",
@@ -410,6 +463,14 @@
     "StructureDefinition/cpg-shareableig": {
       "defns": "StructureDefinition-cpg-shareableig-definitions.html",
       "base": "StructureDefinition-cpg-shareableig.html"
+    },
+    "StructureDefinition/cpg-publishablequestionnaire": {
+      "defns": "StructureDefinition-cpg-publishablequestionnaire-definitions.html",
+      "base": "StructureDefinition-cpg-publishablequestionnaire.html"
+    },
+    "StructureDefinition/cpg-shareablequestionnaire": {
+      "defns": "StructureDefinition-cpg-shareablequestionnaire-definitions.html",
+      "base": "StructureDefinition-cpg-shareablequestionnaire.html"
     },
     "StructureDefinition/cpg-publishablevalueset": {
       "defns": "StructureDefinition-cpg-publishablevalueset-definitions.html",

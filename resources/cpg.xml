@@ -141,6 +141,30 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-observation"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-procedure"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-diagnosticreport"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-detectedissue"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-encounter"/>
 				</reference>
 				<groupingId value="main"/>
@@ -199,6 +223,24 @@
         </reference>
         <groupingId value="main"/>
       </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/cpg-immunizationactivity"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/cpg-medicationrequestactivity"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/cpg-servicerequestactivity"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-appointment"/>
@@ -249,6 +291,12 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-immunization"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-assetcollection"/>
 				</reference>
 				<groupingId value="main"/>
@@ -280,6 +328,24 @@
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-medicationrequest"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-medicationdispense"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-medicationadministration"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-medicationstatement"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
@@ -364,6 +430,18 @@
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-publishableguideline"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-shareablequestionnaire"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishablequestionnaire"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
