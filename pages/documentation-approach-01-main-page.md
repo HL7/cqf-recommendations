@@ -363,6 +363,7 @@ FIG. 12. Concurrent, Integrated, Cross-functional Development and Implementation
     *   **Requests** (the orders or activities resulting or related to the proposal)
     *   **Events** (resulting or related to the request and/or proposal)
 *   **Workflow and Common Pathway**
+*   **Adherence vs Compliance**
 *   **Related or Derived Assets**
     *   **Guideline** (container for all CPG assets)
     *   **Metrics** (patient-level indicator of compliance, adherence, and end- and intermediate-outcomes related to guideline-directed care)
@@ -447,3 +448,9 @@ FIG. 17. Conceptual overview of the CPG Knowledge Architecture and its separatio
 <img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+## **Adherence vs Compliance**
+
+Adherence is where the patient is with respect to the pathway and strategies (happy path, perfect path, on/off path, on path with a history of off)
+
+Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects)
