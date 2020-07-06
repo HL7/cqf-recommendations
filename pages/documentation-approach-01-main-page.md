@@ -168,6 +168,14 @@ Recommendations are proposals pertaining to the best course of action put forth 
 *   **Metrics and Measures** (scoped to CPG)
 *   **eCaseReport** (scoped to CPG)
 
+### **Metrics and Measures**
+
+#### **A Metric vs a Measure**
+
+Metric: Case features, goals, and recommended activities that are relevant for measurement and directly derivable from following the clinical practice guideline. (i.e. these are naturally occurring data that arise from the delivery of guideline-based care, also called "indicators", also called "continuous variable measures" or event "supplemental data" in the measurement space. Note that there will likely be several different patterns of metrics, e.g. process real/time, process retrospective, intermediate outcome real/time and retrospective, time-bounded, etc.
+
+Measure: Self-contained quality measure that is developed independently and has its own development lifecycle, see the Quality Measure IG. May not directly fall out of the CPG. For example, beta-blockers fall out of the admission strategy, but the medasure is looking for beta-blockers on discharge. Measures may relate to the CPG, or even specific parts of the CPG, and can potentially reuse aspects of the CPG such as goals, feuaters, and recommended activities. CPGs could also be used to complement pre-existing measures derived from clinical guidelines (this will be noted using relatedArtifact).
+
 # 5. [**Knowledge Engineering Overview**](documentation-approach-05-knowledge-engineering-overview.html) <!-- link to section 05 - !-->
 
 Knowledge Engineering (KE) is the discipline and profession of developing explicit representations of advanced, domain-oriented logic in computer systems (i.e., knowledge-based systems) in order to simulate human decision-making and high-level cognitive tasks.
