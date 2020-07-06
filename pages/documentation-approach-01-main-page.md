@@ -412,7 +412,13 @@ FIG. 14. The Plan describes Recommendations for best practice care including man
 
 </details>
 
+### **Pathways**
 
+* Pathway - highest level, longitudinal, across the entire care pathway
+
+    * Strategy - focused on a particular aspect (can potentially be longitudinal as well, but is not necessarily)
+    
+    * Recommendation - focused on a particular recommended activity
 
 ## **Case**
 
