@@ -310,11 +310,13 @@ FIG. 10. Levels of Representation by Tiers of Functionality with Examples (Rhode
 
 # 9. [**Methods of Implementation**](documentation-approach-09-methods-of-implementation.html) <!-- link to section 09 !-->
 
-With these computable artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
+With these fully specified artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
 *   As a “Spec”
 *   Translation
 *   Native Execution
+
+Note: The use of CQL is part of the available mechanisms for structuring computable content, and is not required if the computability can be communicated in other ways.
 
 # 10. **Mechanisms of Integration** <!-- Link to Section 10 ... Bryn to Provide, see Ballot Comment in Jira !-->
 
