@@ -44,3 +44,32 @@ Value sets defined by content conforming to this IG SHOULD include an expansion 
 In addition, value sets defined by content conforming to this IG SHALL use the [cpg-publishablevalueset](StructureDefinition-cpg-publishablevalueset.html) profile.
 
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use the cpg-computablevalueset, cpg-publishablevalueset, and cpg-executablevalueset profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
+
+## Using Terminology in CQL Authoring 
+
+FHIR supports various types of terminology-valued elements, including:
+
+* [code](http://hl7.org/fhir/datatypes.html#code)
+* [Coding](http://hl7.org/fhir/datatypes.html#Coding)
+* [CodeableConcept](http://hl7.org/fhir/datatypes.html#CodeableConcept)
+
+These types correspond directly to the CQL primitive types:
+
+* [String](https://cql.hl7.org/09-b-cqlreference.html#string-1)
+* [Code](https://cql.hl7.org/09-b-cqlreference.html#code-1)
+* [Concept](https://cql.hl7.org/09-b-cqlreference.html#concept-1)
+
+In addition to the type of element, FHIR provides the ability to bind these elements to specific codes, in the form of a direct-reference code (constraint to a specific code in a [CodeSystem](http://hl7.org/fhir/codesystem.html)), or a binding to a [ValueSet](http://hl7.org/fhir/valueset.html). These bindings can be different [binding strengths](http://hl7.org/fhir/codesystem-binding-strength.html).
+
+* [required](http://hl7.org/fhir/terminologies.html#required) - To be conformant, the concept in this element SHALL be from the specified value set.
+* [extensible](http://hl7.org/fhir/terminologies.html#extensible) - To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.
+* [preferred](http://hl7.org/fhir/terminologies.html#preferred) - Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.
+* [example](http://hl7.org/fhir/terminologies.html#example) - Instances are not expected or even encouraged to draw from the specified value set. The value set merely provides examples of the types of concepts intended to be included.
+
+Within CQL, references to terminology code systems, value sets, codes, and concepts are directly supported, and all such usages are declared within CQL libraries, as described in the [Terminology](https://cql.hl7.org/02-authorsguide.html#terminology) section of the CQL Author's Guide.
+
+When referencing terminology-valued elements within CQL, the following comparison operations are supported:
+
+* [Equal (`=`)](https://cql.hl7.org/09-b-cqlreference.html#equal-3)
+* [Equivalent (`~`)](https://cql.hl7.org/09-b-cqlreference.html#equivalent-3)
+* [In (`in`)](https://cql.hl7.org/09-b-cqlreference.html#in-valueset)
