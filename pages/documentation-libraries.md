@@ -94,6 +94,12 @@ Version information for code systems is not required to be included in computabl
 
 ## Value Sets
 
+Value sets are used to provide a level of indirection between the concepts you're referencing in the logic and the way those concepts are specifically defined. By using a value set, you can define that concept in terms of different code systems, and it has the added benefit of providing a sort of "configuration point" for local implementation to map local concepts.
+
+When using value sets, authors can either find value sets that are already defined (in the VSAC, or elsewhere), or construct value sets themsevles. When constructing value sets, care should be taken not to create duplicate value sets (i.e. value sets with the same purpose and definition). When using published value sets, care must be taken to ensure that they are both actively stewarded (i.e. kept up to date in the published repository) and actively maintained when used in production settings.
+
+When using value set declarations, authors should use the name of the value set as defined externally to avoid introducing any potential confusion of meaning. One exception to this is when different value sets are defined with the same name in an external repository, then some additional aspect is required to ensure uniqueness of the names within the CQL library.
+
 Within CQL, the identifier of any value set reference SHALL be specified using a URI for the value set.
 
 The URI SHALL be the canonical URL for the value set as defined by either the base FHIR specification or the referenced `ValueSet` resource.
@@ -134,11 +140,19 @@ valueset "Encounter Inpatient SNOMEDCT Value Set":
 
 When direct reference codes are represented within CQL, the logical identifier SHALL NOT be a URI and SHALL be a code from the referenced code system.
 
+Using "direct-reference codes", involves declaring an identifier for a specific code in a code system, and using that directly within the logic. That's appropriate for cases where you know exactly what you want, and there's very little possibility for variation on that (i.e. systems are likely to use those codes directly, rather than have local codes that they are mapping to).
+
+When using direct reference codes, authors should use the name of the code as defined externally to avoid introducing any potential confusion of meaning.
+
 ```cql
 code "Venous foot pump, device (physical object)": '442023007' from "SNOMED-CT"
 ```
 
 Note that for direct reference code usage, the local identifier (in the example above, the local identifier is `"Venous foot pump, device (physical object)"`) should be the same as the description of the code within the terminology in order to avoid conflicting with any usage or license agreements with the referenced terminologies, but can be different to allow for potential naming conflicts, as well as simplification of longer names when appropriate.
+
+Although CQL supports both version-specific and version-independent specification of and comparison to direct reference codes, artifact authors should use version-independent direct reference codes and comparisons unless there is a specific reason not to (such as the code is retired in the current version). Even when using version-specific direct reference codes, authors should use equivalence for the comparison (again, unless there is a specific reason to use version-specific comparison with equality).
+
+Note: Using direct-reference codes can be more difficult for implementations to map to local settings, because modification of the codes for local usage may required modification of the CQL, as opposed to the use of a value set which many systems already use to provide support for mapping to local codes.
 
 ### Library-level Identifiers
 
