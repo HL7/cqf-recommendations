@@ -442,6 +442,14 @@ FIG. 15. The Case consists of facts or information about the patient called Case
 
 The Care Plan describes the intention of how one or more healthcare professionals intend to provide care for a specific patient, group, or community for a period of time, possibly limited to care for a specific condition or set of conditions.
 
+cpg-careplan: Planned and proposed actions with no optionality
+
+cpg-strategy: Planned and proposed actions with optionality or interdependence
+
+Note that there can be only one cpg-careplan for a patient, and that that careplan may consist of different activities for different pathways and strategies within the pathways.
+
+Note that since strategy is a renaming of the RequestGroup resource, the CarePlan can contain optionality by referencing a RequestGroup (Strategy).
+
 <details open>
 
 <summary>
