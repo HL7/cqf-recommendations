@@ -62,6 +62,9 @@
     "diagnosticreport-cpg-profile-spreadsheet.xml",
     "episodeofcare-cpg-case-profile-spreadsheet.xml",
     "encounter-cpg-profile-spreadsheet.xml",
+    "graphdefinition-cpg-shareable-profile-spreadsheet.xml",
+    "graphdefinition-cpg-computable-profile-spreadsheet.xml",
+    "graphdefinition-cpg-publishable-profile-spreadsheet.xml",
     "immunization-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
     "implementationguide-cpg-shareable-profile-spreadsheet.xml",
@@ -141,6 +144,9 @@
     "CodeSystem/cpg-knowledge-representation-level": {
       "source": "codesystem-cpg-knowledge-representation-level.xml",
       "base": "CodeSystem-cpg-knowledge-representation-level.html"
+    },
+    "GraphDefinition/anc-summary": {
+      "base": "GraphDefinition-anc-summary.html"
     },
 		"Library/anc-common": {
 			"base": "Library-anc-common.html"
