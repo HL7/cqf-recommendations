@@ -276,3 +276,16 @@ Content conforming to this implementation guide SHALL use the [cpg-library](Stru
 
 Libraries used in computable guideline content SHALL use the `dataRequirement` element to declare terminologies referenced by the CQL content.
 
+Library.url SHALL be [CQL namepsace url]/Library/[CQL library name]
+
+Library.version SHALL be [CQL library version]
+
+CQL namespace name SHALL be IG.packageId
+
+CQL namespace url SHALL be IG.canonicalBase
+
+For CQL library source files, the convention SHOULD be:
+
+filename = <Library_Name>.cql
+
+To avoid issues with characters between web ids and names, library names SHALL NOT have underscores.
