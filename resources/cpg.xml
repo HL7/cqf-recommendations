@@ -435,6 +435,24 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-shareablegraphdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-computablegraphdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-publishablegraphdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-shareablequestionnaire"/>
 				</reference>
 				<groupingId value="main"/>
@@ -573,6 +591,12 @@
 			</resource>
 
 			<!-- ANC Example Resources -->
+      <resource>
+				<reference>
+					<reference value="GraphDefinition/anc-summary"/>
+				</reference>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablegraphdefinition"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="Library/anc-common"/>

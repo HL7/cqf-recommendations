@@ -31,7 +31,7 @@
 			<definition value="The knowledge is expressed as organized text, often accompanied by diagrams such as flow charts and decision tables, affording broad shareability and moderate computability. The knowledge is typically expressed independent of delivery method (modality), technology platform, and implementation site. Knowledge at this level is typically authored by clinical domain experts for the purpose of communication the description of recommendations for implementation in various modalities."/>
 		</concept>
     <concept>
-      <code value="Structured"/>
+      <code value="structured"/>
       <display value="Structured"/>
       <definition value="The knowledge is expressed in a structured way that is interpretable by computer, including being coded using standard terminologies and specifications for the representation of structured content, affording broad shareability and high computability. The knowledge is typically expressed independent of delivery method (modality), technology platform, and implementation site. Knowledge at this level is typically authored by knowledge engineersto enable precise communication and validation of the recommendations."/>
     </concept>

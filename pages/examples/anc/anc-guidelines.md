@@ -7,7 +7,7 @@ This example defines computable content for two recommendations in the WHO Anten
 
 [WHO ANC Guideline](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)
 
-Overall, the guideline recommends a contact schedule consisting of 8 contacts at specific points in the pregnancy. This is represented with the [ANC Contact Schedule](../../PlanDefinition-anc-contact-schedule.html) (a [clinical protocol](../../StructureDefinition-cpg-protocoldefinition.html)) describing the expected schedule: 
+Overall, the guideline recommends a contact schedule consisting of 8 contacts at specific points in the pregnancy. This is represented with the [ANC Contact Schedule](../../PlanDefinition-anc-contact-schedule.html) (a [clinical protocol](../../StructureDefinition-cpg-protocoldefinition.html)) describing the expected schedule:
 
 <pre><code>
 ANC Contact 1: up to 12 weeks
@@ -25,7 +25,7 @@ The protocol contains actions for each expected contact with an applicability co
 
 <pre><code>
 Registration: PlanDefinition/cpg-common-registration
-Record health history: 
+Record health history:
   if "Is First Contact"
 	  New profile: Questionnaire/anc-first-contact
 	Questionnaire/anc-every-contact
