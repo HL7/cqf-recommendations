@@ -274,6 +274,48 @@ Content conforming to this implementation guide SHALL use the [cpg-library](Stru
 
 ### Data Requirements
 
+Parameters to CQL libraries SHALL be either CQL-defined types that map to FHIR types, or FHIR resource types, optionally with profile designations.
+
+Top level expressions in CQL libraries SHALL return either CQL-defined types that map to FHIR types, or FHIR resources types, optionally with profile designations
+
+DataRequirements in CQL libraries SHALL use FHIR resource types, optionally with profile designations
+
+Mapping:
+
+System.Boolean: FHIR.boolean
+
+System.Integer: FHIR.integer
+
+System.Decimal: FHIR.decimal
+
+System.Date: FHIR.date
+
+System.DateTime: FHIR.dateTime
+
+System.Time: FHIR.time
+
+System.String: FHIR.string
+
+System.Quantity: FHIR.Quantity
+
+System.Ratio: FHIR.Ratio
+
+System.Any: FHIR.Any
+
+System.Code: FHIR.Coding
+
+System.Concept: FHIR.CodeableConcept
+
+Interval<System.Date>: FHIR.Period
+
+Interval<System.DateTime>: FHIR.Period
+
+Interval<System.Quantity>: FHIR.Range
+
+List types SHALL be lists of element types that map to FHIR
+
+Tuple types SHALL consist only of elements of types that map to FHIR
+
 Libraries used in computable guideline content SHALL use the `dataRequirement` element to declare terminologies referenced by the CQL content.
 
 Library.url SHALL be [CQL namepsace url]/Library/[CQL library name]
