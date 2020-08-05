@@ -129,6 +129,18 @@
 
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-artifactbundle"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-testcasebundle"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-case"/>
 				</reference>
 				<groupingId value="main"/>

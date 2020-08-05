@@ -50,6 +50,8 @@
     "activitydefinition-cpg-servicerequest-profile-spreadsheet.xml",
     "activitydefinition-cpg-medicationrequest-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
+    "bundle-cpg-artifact-profile-spreadsheet.xml",
+    "bundle-cpg-testcase-profile-spreadsheet.xml",
     "careplan-cpg-profile-spreadsheet.xml",
     "careteam-cpg-profile-spreadsheet.xml",
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
@@ -237,6 +239,14 @@
 		"ValueSet/opioids-with-ambulatory-abuse-potential": {
 			"base": "ValueSet-opioids-with-ambulatory-abuse-potential.html"
 		},
+    "StructureDefinition/cpg-artifactbundle": {
+      "defns": "StructureDefinition-cpg-artifactbundle-definitions.html",
+      "base": "StructureDefinition-cpg-artifactbundle.html"
+    },
+    "StructureDefinition/cpg-testcasebundle": {
+      "defns": "StructureDefinition-cpg-testcasebundle-definitions.html",
+      "base": "StructureDefinition-cpg-testcasebundle.html"
+    },
     "StructureDefinition/cpg-case": {
       "defns": "StructureDefinition-cpg-case-definitions.html",
       "base": "StructureDefinition-cpg-case.html"
