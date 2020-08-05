@@ -66,6 +66,8 @@
     "graphdefinition-cpg-shareable-profile-spreadsheet.xml",
     "graphdefinition-cpg-computable-profile-spreadsheet.xml",
     "graphdefinition-cpg-publishable-profile-spreadsheet.xml",
+    "group-cpg-definition-profile-spreadsheet.xml",
+    "group-cpg-profile-spreadsheet.xml",
     "immunization-cpg-profile-spreadsheet.xml",
 		"immunizationrecommendation-cpg-profile-spreadsheet.xml",
     "implementationguide-cpg-shareable-profile-spreadsheet.xml",
@@ -270,6 +272,14 @@
     "StructureDefinition/cpg-flag": {
       "defns": "StructureDefinition-cpg-flag-definitions.html",
       "base": "StructureDefinition-cpg-flag.html"
+    },
+    "StructureDefinition/cpg-groupdefinition": {
+      "defns": "StructureDefinition-cpg-groupdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-groupdefinition.html"
+    },
+    "StructureDefinition/cpg-group": {
+      "defns": "StructureDefinition-cpg-group-definitions.html",
+      "base": "StructureDefinition-cpg-group.html"
     },
     "StructureDefinition/cpg-shareableactivitydefinition": {
       "defns": "StructureDefinition-cpg-sharebleactivitydefinition-definitions.html",

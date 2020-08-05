@@ -177,6 +177,18 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-groupdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-group"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-organization"/>
 				</reference>
 				<groupingId value="main"/>
