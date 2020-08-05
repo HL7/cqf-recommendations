@@ -62,6 +62,7 @@
     "diagnosticreport-cpg-profile-spreadsheet.xml",
     "episodeofcare-cpg-case-profile-spreadsheet.xml",
     "encounter-cpg-profile-spreadsheet.xml",
+    "flag-cpg-profile-spreadsheet.xml",
     "graphdefinition-cpg-shareable-profile-spreadsheet.xml",
     "graphdefinition-cpg-computable-profile-spreadsheet.xml",
     "graphdefinition-cpg-publishable-profile-spreadsheet.xml",
@@ -265,6 +266,10 @@
     "StructureDefinition/cpg-detectedissue": {
       "defns": "StructureDefinition-cpg-detectedissue-definitions.html",
       "base": "StructureDefinition-cpg-detectedissue.html"
+    },
+    "StructureDefinition/cpg-flag": {
+      "defns": "StructureDefinition-cpg-flag-definitions.html",
+      "base": "StructureDefinition-cpg-flag.html"
     },
     "StructureDefinition/cpg-shareableactivitydefinition": {
       "defns": "StructureDefinition-cpg-sharebleactivitydefinition-definitions.html",

@@ -171,6 +171,12 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-flag"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-organization"/>
 				</reference>
 				<groupingId value="main"/>
