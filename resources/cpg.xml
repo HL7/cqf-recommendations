@@ -129,6 +129,18 @@
 
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-artifactbundle"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-testcasebundle"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-case"/>
 				</reference>
 				<groupingId value="main"/>
@@ -166,6 +178,24 @@
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-encounter"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-flag"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-groupdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-group"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
