@@ -151,10 +151,10 @@ _Figure 2.3_
 Note that there are numerous factors that must be considered as part of the local implementation of guideline content. The intent of the L3 artifacts that are the focus of this implementation guide is to ensure that these factors can be appropriately considered and addressed as part of implementation, while still providing useful content that can accelerate the process.
 
 ### Manual
-Manual implementation involves development of clinical guideline functionality using the computable (L3) content as a set of rigorously specified requirements for the implementation. In the absence of computable (L3) content, this is the only method.
+Manual implementation involves development of clinical guideline functionality using the computer interpretable (L3) content as a set of rigorously specified requirements for the implementation. In the absence of (L3) content, this is the only method.
 
 ### Automatic
-Automatic implementation involves programmatic translation of the L3 content into an appropriate L4 format. For example, a CQL query may be translated into an equivalent SQL query for execution, or a PlanDefinition may be transformed into a production rule. This approach involves potentially significant effort to build the appropriate tooling, but can pay dividends at scale once the tooling is in place.
+Automatic implementation involves programmatic translation of the L3 content into an appropriate L4 format. For example, a CQL query may be translated into an equivalent SQL query for execution, or a PlanDefinition may be transformed into a production rule, or the CQL may be interpreted directly into an execution environment. This approach involves potentially significant effort to build the appropriate tooling, but can pay dividends at scale once the tooling is in place.
 
 ### Native
 Native implementation involves direct execution of L3 content. For example, a CQL query may be run directly on a native CQL engine. As with the automatic approach, this approach may involve significant initial tooling effort, but can dramatically reduce implementation time thereafter. In addition, there are open source reference implementations that support the use of the FHIR Clinical Reasoning module resources. In particular:
