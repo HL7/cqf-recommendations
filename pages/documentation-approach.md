@@ -13,7 +13,7 @@ The approach taken by this implementation guide is to consider three broad aspec
 
 ## Levels of Knowledge Representation
 
-This implementation guide utilizes an established clinical decision support (CDS) implementation model to move from a clinical guideline to computable content[^1]. This model defines four (4) levels of knowledge representation:
+This implementation guide utilizes an established clinical decision support (CDS) implementation model to represent narrative and semi-structured clinical practice guidelines as fully structured, computable content.
 
 <div>
   <img src="assets/images/knowledge-levels.png" alt="Knowledge Levels" width="750" height="325"/>
