@@ -44,13 +44,15 @@ Level 1 (L1) is the clinical guideline, generally a narrative, often in Portable
 For example, one such guideline is the [Guideline for Prescribing Opioids for Chronic Pain](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm) (2016) published by the Centers for Disease Control (CDC).
 
 ### Semi-structured
-Level 2 (L2) is semi-structured, and generally consists of process and workflow diagrams, user stories, and personas that provide contextual and descriptive information about the steps involved in each recommendation of the guideline. This level generally includes:
+Level 2 (L2) is semi-structured, and generally consists of explicit narrative data definitions (for inputs and inferences) of Clinical Concepts, Decision-flow, process, workflow diagrams, user stories, and personas that provide contextual and descriptive information about the steps involved in each recommendation of the guideline. This level generally includes:
 
 * Personas - Who are the actors involved
-* Concepts - What are the concepts involved
+* Concepts - What are the concepts involved including definitions/ descriptions
 * User Stories - Functional descriptions of what happens from the perspective of each persona
 * Processes - Diagrams depicting the processes involved
 * Triggers - When do the processes happen (what are the _entry points_ for the processes)
+* Interventions and associated actions (targeted to appropriate actor)
+* Measures – key performance measures of Care Process as well as CDS impact (clinical end and intermediate outcomes, process measures [recommendation compliance], CDS performance measures)
 
 The examples included in this implementation guide illustrate some of the types of content and approaches that can be used for this level.
 
