@@ -252,6 +252,8 @@ define function "ED Stay Time"(Encounter "Encounter, Performed"):
 
 ## 3 Translation to ELM
 
+Note: For an introduction to ELM, see [Chapter 4 - Logical Specification](https://cql.hl7.org/04-logicalspecification.html) of the CQL Specification. 
+
 Tooling exists to support translation of CQL to ELM for distribution in XML or JSON formats. These distributions SHOULD be included with computable artifacts to facilitate implementation. The existing translator tooling applies to both measure and decision support development, and has several options available to make use of different data models in different environments. For computable guideline content development with FHIR, the following options are recommended:
 
 | Option | Description | Recommendation |
