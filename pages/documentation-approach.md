@@ -159,9 +159,9 @@ Automatic implementation involves programmatic translation of the L3 content int
 ### Native
 Native implementation involves direct execution of L3 content. For example, a CQL query may be run directly on a native CQL engine. As with the automatic approach, this approach may involve significant initial tooling effort, but can dramatically reduce implementation time thereafter. In addition, there are open source reference implementations that support the use of the FHIR Clinical Reasoning module resources. In particular:
 
-* CQL Engine - A java-based native engine for Clinical Quality Language
-* HAPI FHIR - A java-based reference implementation of a FHIR Server and Client
-* CQF Ruler - A java-based plug-in for the HAPI FHIR server that enables Clinical Reasoning use cases
+* [CQL Engine](https://github.com/DBCG/cql_engine) - A java-based native engine for Clinical Quality Language
+* [HAPI FHIR](https://hapifhir.io) - A java-based reference implementation of a FHIR Server and Client
+* [CQF Ruler](https://github.com/DBCG/cqf-ruler) - A java-based plug-in for the HAPI FHIR server that enables Clinical Reasoning use cases
 
 ## References
 
