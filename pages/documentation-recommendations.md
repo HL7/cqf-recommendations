@@ -79,6 +79,8 @@ This implementation guide defines 3 broad categories of artifacts related to def
 3. **Recommendations**: An event-condition-action rule that captures a specific recommendation
 4. **Order Sets**: A pre-defined group of order definitions related to a particular condition or stage of care
 
+The highest level of description captures the overall pathway; the lowest level captures specific recommendations focused on interventions, assessments, documentation, etc. The intermediate level allows organization of recommendations within the pathway, but focused on particular goals or conditions.
+
 In the simplest case, the recommendations in a guideline can all be represented as event-condition-action rules associated with well-known triggering points in an existing clinical workflow (e.g. when prescribing a medication).
 
 However, guideline-based care often involves tracking changes over time, as well as modeling specific processes that should occur. The PlanDefinition supports each of these use cases, and this implementation guide defines the [cpg-plandefinition](StructureDefinition-cpg-plandefinition.html) profile to define additional constraints and requirements for building computable guideline content, as well as three specific profiles derived from cpg-plandefinition, one for each of these three cases.
