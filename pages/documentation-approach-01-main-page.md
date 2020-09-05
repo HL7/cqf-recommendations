@@ -373,6 +373,8 @@ FIG. 12. Concurrent, Integrated, Cross-functional Development and Implementation
     *   **Requests** (the orders or activities resulting or related to the proposal)
     *   **Events** (resulting or related to the request and/or proposal)
 *   **Workflow and Common Pathway**
+    *   **Pathway vs Workflow**
+        *   **Recommendation vs Intervention**
 *   **Adherence vs Compliance**
 *   **Related or Derived Assets**
     *   **Guideline** (container for all CPG assets)
@@ -472,6 +474,22 @@ FIG. 17. Conceptual overview of the CPG Knowledge Architecture and its separatio
 <img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+## **Workflow and Common Pathway**
+
+### **Pathway vs Workflow**
+
+Patient state is concerned only with the past and current state of the patient; things that actually happened.
+
+Plan is concerned with things that are planned or proposed to happen; what we want to do or are considering.
+
+Workflow is concerned with how the things that we plan to do are actually accomplished.
+
+#### **Recommendation vs Intervention**
+
+Recommendations don't necessarily imply interventions.
+
+Intervention starts to get into the particular implementation strategy and represents a method for the delivery of a recommendation.
 
 ## **Adherence vs Compliance**
 
