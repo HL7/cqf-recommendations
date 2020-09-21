@@ -17,6 +17,13 @@
 
 <p>For definitional artifacts, this implementation guide defines profile classes to represent knowledge capabilities for shareable, computable, publishable, and executable knowledge artifacts. All knowledge artifacts must be at least shareable, and where appropriate for the target environment, artifacts should conform to profiles for the capabilities they support.</p>
 
+<ul>
+  <li><b>Shareable</b>: Shareable profiles the requirements for exchanging an artifact, including the URL, version, name, and publisher.</li>
+  <li><b>Computable</b>: Computable profiles describe the requirements for representing computable content appropriate for the artifact, such as design-time considerations. Not all artifacts have computable profiles.</li>
+  <li><b>Publishable</b>: Publishable profiles describe the expectations for publication and distribution of an artifact, typically as part of an artifact repository.</li>
+  <li><b>Executable</b>: Executable profiles describe requirements for supporting run-time behavior. For example, an executable library contains compiled content that can be directly executed by an engine.</li>
+</ul>
+
 <table>
   <tr><th>Capability</th><th>Shareable</th><th>Computable</th><th>Publishable</th><th>Executable</th></tr>
   <tr><td>Activity</td><td><a href="StructureDefinition-cpg-shareableactivitydefinition.html">CPGShareableActivityDefinition</a></td><td><a href="StructureDefinition-cpg-computableactivity.html">CPGComputableActivity</a></td><td><a href="StructureDefinition-cpg-publishableactivity.html">CPGPublishableActivity</a></td><td>-</td></tr>
