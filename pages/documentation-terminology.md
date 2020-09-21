@@ -16,7 +16,7 @@ Standard and established code systems should be used whenever possible. Only in 
 * [CPGShareableCodeSystem](StructureDefinition-cpg-shareablecodesystem.html)
 * [CPGPublishableCodeSystem](StructureDefinition-cpg-publishablecodesystem.html)
 
-If required, code systems defined by content conforming to this IG SHALL use these profiles.
+Code systems defined by content conforming to this IG SHALL conform to the CPGShareableCodeSystem profile, and SHALL conform to the CPGPublishableCodeSystem profile if the artifact status is active.
 
 Note that this does not mean that _any_ code system referenced by computable content must use these profiles. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to these profiles.
 
@@ -37,9 +37,9 @@ As with other Shareable profiles defined by this implementation guide, CPGSharea
 
 The ComputableValueSet profile describes the requirements for computable representation of value set membership criteria, ensuring that value sets using this profile selectively support only one technique for defining the content of expansions.
 
-The PublishableValueSet profile establishes expectations for use of the artifact in a content management lifecycle including publishing and indexing metadata, usage guidance and licensing information, and provenance and governance for the artifact.
-
 The ExecutableValueSet profile provides support for including a persisted point-in-time expansion that SHALL conform to the chosen compositional style for the value set. The included point-in-time expansion can then be used by FHIR implementations that do not have a FHIR terminology service capable of evaluating the value set in real-time with an $expand operation. It also provides all the concepts needed in the expansion so that a complete code system resource is not required.
+
+The PublishableValueSet profile establishes expectations for use of the artifact in a content management lifecycle including publishing and indexing metadata, usage guidance and licensing information, and provenance and governance for the artifact. In addition, to follow vocabulary best-practices, publishable value sets must also be either Computable, Executable, or both.
 
 Whenever possible, value sets SHOULD be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships. In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
 
@@ -55,9 +55,12 @@ Value sets defined by content conforming to this IG SHALL use the CPGComputableV
 
 The CPGExecutableValueSet profile supports providing a point-in-time expansion of the value set members using the `ValueSet.expansion` element containing specific individual concept codes obtained as a result of the computed expansion of the value set at the time of publication. The expansion element can be used to support environments where the actual definition cannot be evaluated. As new versions of the value set, and/or as new versions of the code systems used by the value set are released, the expansion content will need to be updated to incorporate newly defined codes that meet the value set intent. Before and periodically during production use, value set expansions SHOULD be updated.
 
-Value sets defined by content conforming to this IG SHOULD include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated.
+Value sets defined by content conforming to this IG SHOULD include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated. The parameters element SHOULD be used to convey information about the parameters used to expand the value set.
 
-In addition, value sets defined by content conforming to this IG SHALL use the CPGPublishableValueSet profile.
+Value sets defined by content conforming to this IG SHALL conform to:
+* The CPGShareableValueSet profile
+* Either or both of the CPGComputableValueSet and CPGExecutableValueSet profiles
+* and the CPGPublishableValueSet profile if the artifact status is active
 
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use these profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
 
