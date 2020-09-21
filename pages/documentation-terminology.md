@@ -30,7 +30,7 @@ This implementation guide defines four value set profiles:
 
 * [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html)
 * [CPGComputableValueSet](StructureDefinition-cpg-computablevalueset.html)
-* [CPGPublishableValueSet](StructureDefinition-cpg-shareablevalueset.html)
+* [CPGPublishableValueSet](StructureDefinition-cpg-publishablevalueset.html)
 * [CPGExecutableValueSet](StructureDefinition-cpg-executablevalueset.html)
 
 As with other Shareable profiles defined by this implementation guide, CPGShareableValueSet builds off the ShareableValueSet profile defined in the base FHIR specification and adds extension to support declaring knowledge representation level and knowledge artifact capabilities.
@@ -61,7 +61,7 @@ In addition, value sets defined by content conforming to this IG SHALL use the C
 
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use these profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
 
-## Using Terminology in CQL Authoring 
+## Using Terminology in CQL Authoring
 
 FHIR supports various types of terminology-valued elements, including:
 
