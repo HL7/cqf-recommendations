@@ -36,6 +36,8 @@ Case management or referral:
 Schedule followup visit
 </code></pre>
 
+(Note that the above content is an example and is not necessarily fit for immediate use).
+
 These definitions reference the [ANC Common Library](../../Library-anc-common.html) to provide the logic for the applicability conditions.
 
 Within the context of this overall schedule, the guideline contains specific recommendations related to various aspects of the health of the mother. One of these is recommendation A2, for Iron and Folic Acid Supplementation, detailed in the following sections as part of this example.

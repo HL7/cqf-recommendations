@@ -168,6 +168,14 @@ Recommendations are proposals pertaining to the best course of action put forth 
 *   **Metrics and Measures** (scoped to CPG)
 *   **eCaseReport** (scoped to CPG)
 
+### **Metrics and Measures**
+
+#### **A Metric vs a Measure**
+
+Metric: Case features, goals, and recommended activities that are relevant for measurement and directly derivable from following the clinical practice guideline. (i.e. these are naturally occurring data that arise from the delivery of guideline-based care, also called "indicators", also called "continuous variable measures" or event "supplemental data" in the measurement space. Note that there will likely be several different patterns of metrics, e.g. process real/time, process retrospective, intermediate outcome real/time and retrospective, time-bounded, etc.
+
+Measure: Self-contained quality measure that is developed independently and has its own development lifecycle, see the Quality Measure IG. May not directly fall out of the CPG. For example, beta-blockers fall out of the admission strategy, but the medasure is looking for beta-blockers on discharge. Measures may relate to the CPG, or even specific parts of the CPG, and can potentially reuse aspects of the CPG such as goals, feuaters, and recommended activities. CPGs could also be used to complement pre-existing measures derived from clinical guidelines (this will be noted using relatedArtifact).
+
 # 5. [**Knowledge Engineering Overview**](documentation-approach-05-knowledge-engineering-overview.html) <!-- link to section 05 - !-->
 
 Knowledge Engineering (KE) is the discipline and profession of developing explicit representations of advanced, domain-oriented logic in computer systems (i.e., knowledge-based systems) in order to simulate human decision-making and high-level cognitive tasks.
@@ -302,11 +310,13 @@ FIG. 10. Levels of Representation by Tiers of Functionality with Examples (Rhode
 
 # 9. [**Methods of Implementation**](documentation-approach-09-methods-of-implementation.html) <!-- link to section 09 !-->
 
-With these computable artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
+With these fully specified artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):
 
 *   As a “Spec”
 *   Translation
 *   Native Execution
+
+Note: The use of CQL is part of the available mechanisms for structuring computable content, and is not required if the computability can be communicated in other ways.
 
 # 10. **Mechanisms of Integration** <!-- Link to Section 10 ... Bryn to Provide, see Ballot Comment in Jira !-->
 
@@ -363,6 +373,9 @@ FIG. 12. Concurrent, Integrated, Cross-functional Development and Implementation
     *   **Requests** (the orders or activities resulting or related to the proposal)
     *   **Events** (resulting or related to the request and/or proposal)
 *   **Workflow and Common Pathway**
+    *   **Pathway vs Workflow**
+        *   **Recommendation vs Intervention**
+*   **Adherence vs Compliance**
 *   **Related or Derived Assets**
     *   **Guideline** (container for all CPG assets)
     *   **Metrics** (patient-level indicator of compliance, adherence, and end- and intermediate-outcomes related to guideline-directed care)
@@ -403,7 +416,13 @@ FIG. 14. The Plan describes Recommendations for best practice care including man
 
 </details>
 
+### **Pathways**
 
+* Pathway - highest level, longitudinal, across the entire care pathway
+
+    * Strategy - focused on a particular aspect (can potentially be longitudinal as well, but is not necessarily)
+    
+    * Recommendation - focused on a particular recommended activity
 
 ## **Case**
 
@@ -424,6 +443,14 @@ FIG. 15. The Case consists of facts or information about the patient called Case
 ## **Care Plan**
 
 The Care Plan describes the intention of how one or more healthcare professionals intend to provide care for a specific patient, group, or community for a period of time, possibly limited to care for a specific condition or set of conditions.
+
+cpg-careplan: Planned and proposed actions with no optionality
+
+cpg-strategy: Planned and proposed actions with optionality or interdependence
+
+Note that there can be only one cpg-careplan for a patient, and that that careplan may consist of different activities for different pathways and strategies within the pathways.
+
+Note that since strategy is a renaming of the RequestGroup resource, the CarePlan can contain optionality by referencing a RequestGroup (Strategy).
 
 <details open>
 
@@ -447,3 +474,25 @@ FIG. 17. Conceptual overview of the CPG Knowledge Architecture and its separatio
 <img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+## **Workflow and Common Pathway**
+
+### **Pathway vs Workflow**
+
+Patient state is concerned only with the past and current state of the patient; things that actually happened.
+
+Plan is concerned with things that are planned or proposed to happen; what we want to do or are considering.
+
+Workflow is concerned with how the things that we plan to do are actually accomplished.
+
+#### **Recommendation vs Intervention**
+
+Recommendations don't necessarily imply interventions.
+
+Intervention starts to get into the particular implementation strategy and represents a method for the delivery of a recommendation.
+
+## **Adherence vs Compliance**
+
+Adherence is where the patient is with respect to the pathway and strategies (happy path, perfect path, on/off path, on path with a history of off)
+
+Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects)

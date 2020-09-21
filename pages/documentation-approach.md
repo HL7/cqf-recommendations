@@ -13,7 +13,7 @@ The approach taken by this implementation guide is to consider three broad aspec
 
 ## Levels of Knowledge Representation
 
-This implementation guide utilizes an established clinical decision support (CDS) implementation model to move from a clinical guideline to computable content[^1]. This model defines four (4) levels of knowledge representation:
+This implementation guide utilizes an established clinical decision support (CDS) implementation model to represent narrative and semi-structured clinical practice guidelines as fully structured, computable content.
 
 <div>
   <img src="assets/images/knowledge-levels.png" alt="Knowledge Levels" width="750" height="325"/>
@@ -44,13 +44,15 @@ Level 1 (L1) is the clinical guideline, generally a narrative, often in Portable
 For example, one such guideline is the [Guideline for Prescribing Opioids for Chronic Pain](https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm) (2016) published by the Centers for Disease Control (CDC).
 
 ### Semi-structured
-Level 2 (L2) is semi-structured, and generally consists of process and workflow diagrams, user stories, and personas that provide contextual and descriptive information about the steps involved in each recommendation of the guideline. This level generally includes:
+Level 2 (L2) is semi-structured, and generally consists of explicit narrative data definitions (for inputs and inferences) of Clinical Concepts, Decision-flow, process, workflow diagrams, user stories, and personas that provide contextual and descriptive information about the steps involved in each recommendation of the guideline. This level generally includes:
 
 * Personas - Who are the actors involved
-* Concepts - What are the concepts involved
+* Concepts - What are the concepts involved including definitions/ descriptions
 * User Stories - Functional descriptions of what happens from the perspective of each persona
 * Processes - Diagrams depicting the processes involved
 * Triggers - When do the processes happen (what are the _entry points_ for the processes)
+* Interventions and associated actions (targeted to appropriate actor)
+* Measures – key performance measures of Care Process as well as CDS impact (clinical end and intermediate outcomes, process measures [recommendation compliance], CDS performance measures)
 
 The examples included in this implementation guide illustrate some of the types of content and approaches that can be used for this level.
 
@@ -149,17 +151,17 @@ _Figure 2.3_
 Note that there are numerous factors that must be considered as part of the local implementation of guideline content. The intent of the L3 artifacts that are the focus of this implementation guide is to ensure that these factors can be appropriately considered and addressed as part of implementation, while still providing useful content that can accelerate the process.
 
 ### Manual
-Manual implementation involves development of clinical guideline functionality using the computable (L3) content as a set of rigorously specified requirements for the implementation. In the absence of computable (L3) content, this is the only method.
+Manual implementation involves development of clinical guideline functionality using the computer interpretable (L3) content as a set of rigorously specified requirements for the implementation. In the absence of (L3) content, this is the only method.
 
 ### Automatic
-Automatic implementation involves programmatic translation of the L3 content into an appropriate L4 format. For example, a CQL query may be translated into an equivalent SQL query for execution, or a PlanDefinition may be transformed into a production rule. This approach involves potentially significant effort to build the appropriate tooling, but can pay dividends at scale once the tooling is in place.
+Automatic implementation involves programmatic translation of the L3 content into an appropriate L4 format. For example, a CQL query may be translated into an equivalent SQL query for execution, or a PlanDefinition may be transformed into a production rule, or the CQL may be interpreted directly into an execution environment. This approach involves potentially significant effort to build the appropriate tooling, but can pay dividends at scale once the tooling is in place.
 
 ### Native
 Native implementation involves direct execution of L3 content. For example, a CQL query may be run directly on a native CQL engine. As with the automatic approach, this approach may involve significant initial tooling effort, but can dramatically reduce implementation time thereafter. In addition, there are open source reference implementations that support the use of the FHIR Clinical Reasoning module resources. In particular:
 
-* CQL Engine - A java-based native engine for Clinical Quality Language
-* HAPI FHIR - A java-based reference implementation of a FHIR Server and Client
-* CQF Ruler - A java-based plug-in for the HAPI FHIR server that enables Clinical Reasoning use cases
+* [CQL Engine](https://github.com/DBCG/cql_engine) - A java-based native engine for Clinical Quality Language
+* [HAPI FHIR](https://hapifhir.io) - A java-based reference implementation of a FHIR Server and Client
+* [CQF Ruler](https://github.com/DBCG/cqf-ruler) - A java-based plug-in for the HAPI FHIR server that enables Clinical Reasoning use cases
 
 ## References
 

@@ -31,6 +31,12 @@ FIG. 77.  The Case, Plan, Workflow separations and further separations within wo
 
 </details>
 
+Note that the Case and its associated data as defined by case feature groups and/or case features can be used to generate a case report at the end of the pathway. This approach SHOULD be aligned with the eCaseReporting implementation guide.
+
+Such a case report could potentially include elements from the pathway view, such as things that have been ordered but not necessarily done, and recommendations that have not necessarily been followed. Although most of what a case report would be interested in would be case feature data, the ability to communicate items from the pathway view may have value in terms of understanding why recommendations are not being followed.
+
+Note also that the case report could potentially include contextual elements such as local settings and configurations that were used when following guideline-based care.
+
 **Common Pathway** <!-- Needs some work. Conflates Settings and Activities; only addresses Ambulatory !-->
 
 The common pathway provides an abstract or generalized description of the overall process of care delivery that relates to care settings and high-level care activities.  The common processes identified in this implementation guide are based on surveys of guideline content, both in the examples used in this guide, as well as other guideline content from various clinical domains and guideline authors.
