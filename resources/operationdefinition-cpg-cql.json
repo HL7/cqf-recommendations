@@ -49,6 +49,38 @@
       "use": "in"
     },
     {
+      "documentation": "Data to be made available to the library evaluation. If no data is supplied, the evaluation will use data in present in the server, or as dictated by the dataEndpoint parameter. If data is supplied, the evaluation will use the data first, falling back to the server or specified data endpoint if no data is available within the Bundle provided.",
+      "max": "1",
+      "min": 0,
+      "name": "data",
+      "type": "Bundle",
+      "use": "in"
+    },
+    {
+      "documentation": "An endpoint to use to access data referenced by retrieve operations in the library. If no data endpoint is supplied, the evaluation will attempt to retrieve data from the server on which the operation is being performed.",
+      "max": "1",
+      "min": 0,
+      "name": "dataEndpoint",
+      "type": "Endpoint",
+      "use": "in"
+    },
+    {
+      "documentation": "An endpoint to use to access content (i.e. libraries) referenced by the library. If no content endpoint is supplied, the evaluation will attempt to retrieve content from the server on which the operation is being performed.",
+      "max": "1",
+      "min": 0,
+      "name": "contentEndpoint",
+      "type": "Endpoint",
+      "use": "in"
+    },
+    {
+      "documentation": "An endpoint to use to access terminology (i.e. valuesets, codesystems, and membership testing) referenced by the library. If no terminology endpoint is supplied, the evaluation will attempt to use the server on which the operation is being performed as the terminology server.",
+      "max": "1",
+      "min": 0,
+      "name": "terminologyEndpoint",
+      "type": "Endpoint",
+      "use": "in"
+    },
+    {
       "documentation": "The result of evaluating the given expression, returned as a FHIR type, either a resource, or a FHIR-defined type corresponding to the CQL return type, as defined in the Using CQL section of this implementation guide. If the result is a List of resources, the result will be a Bundle. If the result is a CQL system-defined or FHIR-defined type, the result is returned as a Parameters resource",
       "max": "*",
       "min": 1,
