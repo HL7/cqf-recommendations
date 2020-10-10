@@ -73,7 +73,7 @@
       "part": [
         {
           "documentation": "The key of the prefetch item. This typically corresponds to the name of a parameter in a library, or the name of a prefetch item in a CDS Hooks discovery response",
-          "name": "prefetchKey",
+          "name": "key",
           "max": "1",
           "min": 0,
           "type": "string",
@@ -81,15 +81,15 @@
         },
         {
           "documentation": "A DataRequirement describing the content of the prefetch item.",
-          "name": "prefetchDescriptor",
+          "name": "descriptor",
           "max": "1",
           "min": 0,
           "type": "DataRequirement",
           "use": "in"
         },
         {
-          "documentation": "The prefetch content as a Bundle. If the prefetchData has no prefetchResult part, it indicates there is no data associated with this prefetch item.",
-          "name": "prefetchResult",
+          "documentation": "The prefetch data as a Bundle. If the prefetchData has no prefetchResult part, it indicates there is no data associated with this prefetch item.",
+          "name": "data",
           "max": "1",
           "min": 0,
           "type": "Bundle",
