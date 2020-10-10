@@ -41,12 +41,29 @@
       "use": "in"
     },
     {
-      "documentation": "The name of a library to be included. The library is resolved by name and available within the expression to be evaluated.",
+      "documentation": "A library to be included. The library is resolved by url and made available by name within the expression to be evaluated.",
       "max": "*",
       "min": 0,
       "name": "library",
-      "type": "string",
-      "use": "in"
+      "use": "in",
+      "part": [
+        {
+          "documentation": "The canonical url (with optional version) of the library to be included",
+          "max": "1",
+          "min": 1,
+          "name": "url",
+          "type": "canonical",
+          "use": "in"
+        },
+        {
+          "documentation": "The name of the library to be used to reference the library within the CQL expression. If no name is provided, the name of the library will be used",
+          "max": "1",
+          "min": 0,
+          "name": "name",
+          "type": "string",
+          "use": "in"
+        }
+      ]
     },
     {
       "documentation": "Whether to use data from the server performing the evaluation. If this parameter is true (the default), then the operation will use data first from any bundles provided as parameters (through the data and prefetch parameters), second data from the server performing the operation, and third, data from the dataEndpoint parameter (if provided). If this parameter is false, the operation will use data first from the bundles provided in the data or prefetch parameters, and second from the dataEndpoint parameter (if provided).",

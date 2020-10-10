@@ -13,9 +13,17 @@
   "code": "evaluate",
   "resource": [ "Library" ],
   "system": false,
-  "type": false,
+  "type": true,
   "instance": true,
   "parameter": [
+    {
+      "documentation": "The canonical url (with optional version) of the library to be evaluated. This parameter is only used when the operation is invoked at the type level.",
+      "max": "1",
+      "min": 0,
+      "name": "library",
+      "type": "canonical",
+      "use": "in"
+    },
     {
       "documentation": "Subject for which the library will be evaluated. This corresponds to the context in which the library will be evaluated and is represented as a relative FHIR id (e.g. Patient/123), which establishes both the context and context value for the evaluation",
       "max": "1",
