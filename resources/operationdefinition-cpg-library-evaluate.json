@@ -42,7 +42,15 @@
       "use": "in"
     },
     {
-      "documentation": "Data to be made available to the library evaluation. If no data is supplied, the evaluation will use data in present in the server, or as dictated by the dataEndpoint parameter. If data is supplied, the evaluation will use the data first, falling back to the server or specified data endpoint if no data is available within the Bundle provided.",
+      "documentation": "Whether to use data from the server performing the evaluation. If this parameter is true (the default), then the operation will use data first from any bundles provided as parameters (through the data and prefetch parameters), second data from the server performing the operation, and third, data from the dataEndpoint parameter (if provided). If this parameter is false, the operation will use data first from the bundles provided in the data or prefetch parameters, and second from the dataEndpoint parameter (if provided).",
+      "max": "1",
+      "min": 0,
+      "name": "useServerData",
+      "type": "boolean",
+      "use": "in"
+    },
+    {
+      "documentation": "Data to be made available to the library evaluation. This parameter is exclusive with the prefetchData parameter (i.e. either provide all data as a single bundle, or provide data using multiple bundles with prefetch descriptions).",
       "max": "1",
       "min": 0,
       "name": "data",
@@ -50,7 +58,40 @@
       "use": "in"
     },
     {
-      "documentation": "An endpoint to use to access data referenced by retrieve operations in the library. If no data endpoint is supplied, the evaluation will attempt to retrieve data from the server on which the operation is being performed.",
+      "documentation": "Data to be made available to the library evaluation, organized as prefetch response bundles. Each prefetchData parameter specifies either the name of the prefetchKey it is satisfying, a DataRequirement describing the prefetch, or both.",
+      "max": "*",
+      "min": 0,
+      "name": "prefetchData",
+      "use": "in",
+      "part": [
+        {
+          "documentation": "The key of the prefetch item. This typically corresponds to the name of a parameter in a library, or the name of a prefetch item in a CDS Hooks discovery response",
+          "name": "prefetchKey",
+          "max": "1",
+          "min": 0,
+          "type": "string",
+          "use": "in"
+        },
+        {
+          "documentation": "A DataRequirement describing the content of the prefetch item.",
+          "name": "prefetchDescriptor",
+          "max": "1",
+          "min": 0,
+          "type": "DataRequirement",
+          "use": "in"
+        },
+        {
+          "documentation": "The prefetch content as a Bundle. If the prefetchData has no prefetchResult part, it indicates there is no data associated with this prefetch item.",
+          "name": "prefetchResult",
+          "max": "1",
+          "min": 0,
+          "type": "Bundle",
+          "use": "in"
+        }
+      ]
+    },
+    {
+      "documentation": "An endpoint to use to access data referenced by retrieve operations in the library. If provided, this endpoint is used after the data or prefetchData bundles, and the server, if the useServerData parameter is true.",
       "max": "1",
       "min": 0,
       "name": "dataEndpoint",
