@@ -5,16 +5,16 @@ title: Profiles
 
 # Using Profiles
 
-FHIR profiles are a key aspect of supporting interoperable computable content, providing a formal mechanism for defining the data elements used by computable content. Readers of this implementation guide should be familiar with the [Profiling FHIR](http://hl7.org/fhir/R4/profiling.html) topic in the base specification.
+FHIR profiles are a key aspect of supporting interoperable computable content, providing a formal mechanism for defining the data elements used by computable content, as well as conformance expectations for the computable content itself. Readers of this implementation guide should be familiar with the [Profiling FHIR](http://hl7.org/fhir/R4/profiling.html) topic in the base specification.
 
-Computable content generally deals with two broad categories of profiles:
+In addition to the profiles defined by this implementation guide, computable content generally deals with two broad categories of profiles:
 
 * **Interoperability Profiles** that establish standards of data exchange between systems
 * **Computability Profiles** that define the data expectations for computable content
 
 ## Interoperability Profiles
 
-Interoperability profiles establish standards of data exchange between systems. To be useful, these profiles will generally be established across a broad range of systems, all operating in a particular environment, or in support of a particular set of use cases. Examples of these types of profiles are:
+Interoperability profiles establish standards of data exchange between systems, and are typically defined in and distributed as part of _model_ implementation guides. To be useful, these profiles will generally be established across a broad range of systems, all operating in a particular environment, or in support of a particular set of use cases. Examples of these types of profiles are:
 
 * [**International Patient Summary**](http://hl7.org/fhir/uv/ips/): International, specialty-agnostic, condition-independent patient summary
 * [**AU Base**](http://fhir.hl7.org.au/fhir/base/history.shtml): Base Australian national implementation guide
@@ -23,7 +23,7 @@ Interoperability profiles establish standards of data exchange between systems. 
 
 ## Computability Profiles
 
-Computability profiles describe the data expectations for computable content. For example, given the following condition:
+Computability profiles describe the data expectations for computable content, and are typically defined in and distributed as part of _content_ implementation guides. For example, given the following condition:
 
 ```cql
 define "Active Ambulatory Opioid Rx":

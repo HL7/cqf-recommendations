@@ -28,7 +28,7 @@
 		<concept>
 			<code value="computable"/>
 			<display value="Computable"/>
-			<definition value="The artifact provides design-time capability."/>
+			<definition value="The artifact provides at least machine-readable capability (i.e. it does not _only_ have narrative or unstructured elements). This capability can also be characterized as the artifact provides design-time capability, for example, an artifact is computable if it contains semantically verified CQL logic."/>
 		</concept>
     <concept>
       <code value="publishable"/>
@@ -38,6 +38,6 @@
     <concept>
       <code value="executable"/>
       <display value="Executable"/>
-      <definition value="The artifact provides run-time capability."/>
+      <definition value="The artifact is guaranteed to have the elements required to support execution of at least one run-time operation appropriate for the type of artifact. This capability can also be characterized as the artifact provides run-time capability, for example, an artifact is executable if it contains compiled ELM logic."/>
     </concept>
 </CodeSystem>

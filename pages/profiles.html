@@ -15,27 +15,40 @@
 <a name="definitional-profiles"> </a>
 <h3><span class="sectioncount">2.1.0</span> Definitional profiles <a href="profiles.html#definitional-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
-<p>For definitional artifacts, this implementation guide defines profile classes to represent knowledge capabilities for shareable, computable, publishable, and executable knowledge artifacts. All knowledge artifacts must be at least shareable, and where appropriate for the target environment, artifacts should conform to profiles for the capabilities they support.</p>
+<p>For definitional artifacts, this implementation guide defines profile classes to represent knowledge capabilities for shareable, computable, publishable, and executable knowledge artifacts. All knowledge artifacts must be at least shareable, and where appropriate for the target environment, artifacts should declare the capabilities they support using the [cpg-knowledgeCapability](StructureDefinition-cpg-knowledgeCapability.html) extension, as well as the knowledge representation level of the artifact using the [cpg-knowledgeRepresentationLevel](StructureDefinition-cpg-knowledgeRepresentationLevel) extension, as defined in the shareable profiles.</p>
 
 <ul>
-  <li><b>Shareable</b>: Shareable profiles the requirements for exchanging an artifact, including the URL, version, name, and publisher.</li>
-  <li><b>Computable</b>: Computable profiles describe the requirements for representing computable content appropriate for the artifact, such as design-time considerations. Not all artifacts have computable profiles.</li>
+  <li><b>Shareable</b>: Shareable profiles set the minimum expectations for exchanging an artifact, including the URL, version, name, and publisher.</li>
+  <li><b>Computable</b>: Computable profiles deal with authoring and design-time considerations, describing the minimum expectations for exchanging a machine-readable representation of an artifact. At a minimum, a computable artifact is one that does not have _only_ human-readable content.</li>
   <li><b>Publishable</b>: Publishable profiles describe the expectations for publication and distribution of an artifact, typically as part of an artifact repository.</li>
-  <li><b>Executable</b>: Executable profiles describe requirements for supporting run-time behavior. For example, an executable library contains compiled content that can be directly executed by an engine.</li>
+  <li><b>Executable</b>: Executable profiles deal with run-time behavior and implementation considerations. For example, an executable library may contain compiled content that can be directly executed by an engine. At a minimum, an executable artifact is guaranteed to have all the elements required to support at least one operation appropriate to the type of artifact.</li>
 </ul>
+
+<p>These capabilities are introduced to support separation of concerns along the spectrum from authoring to distribution to consumption, as illustrated by the following diagram:</p>
+
+<img src="assets/images/knowledge-capabilities.png" alt="Knowledge Capabilities" width="500"/>
+
+<p>A given artifact may provide all knowledge capabilities (Shareable plus Computable, Publishable, and Executable), or it may be focused on a particular capability. For example, a ValueSet may be only Shareable and Executable because it is intended for use in environments without access to a terminology service capable of expanding the Computable value set.</p>
+
+<p>Note that explicit profiles for capabilities are only defined when there are specific elements of the artifact involved in supporting that capability. For example, there is no executable ActivityDefinition profile, but that doesn't mean that ActivityDefinition artifacts cannot be executable, only that there are no additional conformance expectations for executable ActivityDefinitions specified by this implementation guide.</p>
 
 <table>
   <tr><th>Capability</th><th>Shareable</th><th>Computable</th><th>Publishable</th><th>Executable</th></tr>
-  <tr><td>Activity</td><td><a href="StructureDefinition-cpg-shareableactivitydefinition.html">CPGShareableActivityDefinition</a></td><td><a href="StructureDefinition-cpg-computableactivity.html">CPGComputableActivity</a></td><td><a href="StructureDefinition-cpg-publishableactivity.html">CPGPublishableActivity</a></td><td>-</td></tr>
-  <tr><td>CodeSystem</td><td><a href="StructureDefinition-cpg-shareablecodesystem.html">CPGShareableCodeSystem</a></td><td>-</td><td><a href="StructureDefinition-cpg-publishablecodesystem.html">CPGPublishableCodeSystem</a></td><td>-</td></tr>
-  <tr><td>GraphDefinition</td><td><a href="StructureDefinition-cpg-shareablegraphdefinition.html">CPGShareableGraphDefinition</a></td><td><a href="StructureDefinition-cpg-computablegraphdefinition.html">CPGComputableGraphDefinition</a></td><td><a href="StructureDefinition-cpg-publishablegraphdefinition.html">CPGPublishableGraphDefinition</a></td><td>-</td></tr>
-  <tr><td>ImplementationGuide</td><td><a href="StructureDefinition-cpg-shareableig.html">CPGShareableImplementationGuide</a></td><td><a href="StructureDefinition-cpg-computableguideline.html">CPGComputableGuideline</a></td><td><a href="StructureDefinition-cpg-publishableguideline.html">CPGPublishableGuideline</a></td><td>-</td></tr>
+  <tr><td>Activity</td><td><a href="StructureDefinition-cpg-shareableactivitydefinition.html">CPGShareableActivityDefinition</a></td><td><a href="StructureDefinition-cpg-computableactivity.html">CPGComputableActivity</a></td><td><a href="StructureDefinition-cpg-publishableactivity.html">CPGPublishableActivity</a></td><td>-<a href="#exec"><sup>*</sup></a></td></tr>
+  <tr><td>CodeSystem</td><td><a href="StructureDefinition-cpg-shareablecodesystem.html">CPGShareableCodeSystem</a></td><td>-<a href="#comp"><sup>**</sup></a></td><td><a href="StructureDefinition-cpg-publishablecodesystem.html">CPGPublishableCodeSystem</a></td><td>-<a href="#exec"><sup>*</sup></a></td></tr>
+  <tr><td>GraphDefinition</td><td><a href="StructureDefinition-cpg-shareablegraphdefinition.html">CPGShareableGraphDefinition</a></td><td><a href="StructureDefinition-cpg-computablegraphdefinition.html">CPGComputableGraphDefinition</a></td><td><a href="StructureDefinition-cpg-publishablegraphdefinition.html">CPGPublishableGraphDefinition</a></td><td>-<a href="#exec"><sup>*</sup></a></td></tr>
+  <tr><td>ImplementationGuide</td><td><a href="StructureDefinition-cpg-shareableig.html">CPGShareableImplementationGuide</a></td><td><a href="StructureDefinition-cpg-computableguideline.html">CPGComputableGuideline</a></td><td><a href="StructureDefinition-cpg-publishableguideline.html">CPGPublishableGuideline</a></td><td>-<a href="#exec"><sup>*</sup></a></td></tr>
   <tr><td>Library</td><td><a href="StructureDefinition-cpg-shareablelibrary.html">CPGShareableLibrary</a></td><td><a href="StructureDefinition-cpg-computablelibrary.html">CPGComputableLibrary</a></td><td><a href="StructureDefinition-cpg-publishablelibrary.html">CPGPublishableLibrary</a></td><td><a href="StructureDefinition-cpg-executablelibrary.html">CPGExecutableLibrary</a></td></tr>
-  <tr><td>PlanDefinition</td><td><a href="StructureDefinition-cpg-shareableplandefinition.html">CPGShareablePlanDefinition</a></td><td><a href="StructureDefinition-cpg-computableplandefinition.html">CPGComputablePlanDefinition</a></td><td><a href="StructureDefinition-cpg-publishableplandefinition.html">CPGPublishablePlanDefinition</a></td><td>-</td></tr>
-  <tr><td>Questionnaire</td><td><a href="StructureDefinition-cpg-shareablequestionnaire.html">CPGShareableQuestionnaire</a></td><td>-</td><td><a href="StructureDefinition-cpg-publishablequestionnaire.html">CPGPublishableQuestionnaire</a></td><td>-</td></tr>
-  <tr><td>StructureDefinition</td><td><a href="StructureDefinition-cpg-shareablestructuredef.html">CPGShareableStructureDefinition</a></td><td><a href="StructureDefinition-cpg-casefeaturedefinition.html">CPGCaseFeatureDefinition</a></td><td><a href="StructureDefinition-cpg-publishablecasefeature.html">CPGPublishableCaseFeatureDefinition</a></td><td>-</td></tr>
+  <tr><td>PlanDefinition</td><td><a href="StructureDefinition-cpg-shareableplandefinition.html">CPGShareablePlanDefinition</a></td><td><a href="StructureDefinition-cpg-computableplandefinition.html">CPGComputablePlanDefinition</a></td><td><a href="StructureDefinition-cpg-publishableplandefinition.html">CPGPublishablePlanDefinition</a></td><td>-<a href="#exec"><sup>*</sup></a></td></tr>
+  <tr><td>Questionnaire</td><td><a href="StructureDefinition-cpg-shareablequestionnaire.html">CPGShareableQuestionnaire</a></td><td>-<a href="#comp"><sup>**</sup></a></td><td><a href="StructureDefinition-cpg-publishablequestionnaire.html">CPGPublishableQuestionnaire</a></td><td>-<a href="#exec"><sup>*</sup></a></td></tr>
+  <tr><td>StructureDefinition</td><td><a href="StructureDefinition-cpg-shareablestructuredef.html">CPGShareableStructureDefinition</a></td><td><a href="StructureDefinition-cpg-casefeaturedefinition.html">CPGCaseFeatureDefinition</a></td><td><a href="StructureDefinition-cpg-publishablecasefeature.html">CPGPublishableCaseFeatureDefinition</a></td><td>-<a href="#exec"><sup>*</sup></a></td></tr>
   <tr><td>ValueSet</td><td><a href="StructureDefinition-cpg-shareablevalueset.html">CPGShareableValueSet</a></td><td><a href="StructureDefinition-cpg-computablevalueset.html">CPGComputableValueSet</a></td><td><a href="StructureDefinition-cpg-publishablevalueset.html">CPGPublishableValueSet</a></td><td><a href="StructureDefinition-cpg-executablevalueset.html">CPGExecutableValueSet</a></td></tr>
 </table>
+
+<p>
+<a name="exec">*</a> - Conformance expectations covered by the Computable profile<br/>
+<a name="comp">**</a> - Conformance expectations covered by the Shareable profile
+</p>
 
 <a name="case-plan-profiles"> </a>
 <h3><span class="sectioncount">2.2.0</span> Case/Plan Profiles: <a href="profiles.html#case-plan-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
