@@ -26,7 +26,7 @@ This implementation guide uses an approach to versioning libraries used within c
 There are three main types of changes that can be made to a library:
 
 1. **Major**: A change that alters the public use of the components of a library
-2. **Minor**: A change that adds new components or functionality but does not change existing components. 
+2. **Minor**: A change that adds new components or functionality but does not change existing components.
 3. **Patch**: A change that does not impact the public use of the library, but only corrects or improves the originally intended functionality.
 
 By exposing version numbers that identify all three types of changes, libraries can be versioned in a way that makes clear when a change will impact usage, versus when a change can potentially be safely incorporated as an update.
@@ -82,7 +82,7 @@ The URI MAY include a version, consistent with the URI specification for FHIR an
 For example:
 
 ```cql
-codesystem "SNOMEDCT:2017-09": 'http://snomed.info/sct/731000124108' 
+codesystem "SNOMEDCT:2017-09": 'http://snomed.info/sct/731000124108'
   version 'http://snomed.info/sct/731000124108/version/201709'
 ```
 
@@ -133,7 +133,7 @@ For example:
 
 ```cql
 valueset "Encounter Inpatient SNOMEDCT Value Set":
-   'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.7.307|20160929' 
+   'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.7.307|20160929'
 ```
 
 ### Codes
@@ -205,7 +205,7 @@ No evidence that "Antithrombotic Therapy" medication was administered:
           where AntithromboticTherapy.status = 'completed'
             and AntithromboticTherapy.category = "Inpatient Setting"
       )
-      
+
 #### Negation Rationale
 
 Evidence that "Antithrombotic Therapy" medication administration did not occur for an acceptable medical reason as defined by a value set referenced by the computable artifact (i.e., negation rationale):
@@ -214,7 +214,7 @@ Evidence that "Antithrombotic Therapy" medication administration did not occur f
       ["MedicationAdministration": "Antithrombotic Therapy"] NotAdministered
         where NotAdministered.notGiven is true
           and NotAdministered.reasonNotGiven in "Medical Reason"
-      
+
 In this example for negation rationale, the logic looks for a member of the value set "Medical Reason" as the rationale for not administering the medication. However, underlying systems might not represent the negated action with a code from the "Antithrombotic Therapy" value set. When justifying the reason for not administering a particular medication, clinicians do not generally select a specific medication, they most often indicate avoidance of a set of medications, typically defined by a value set used in a quality improvement artifact (such as a quality measure or a decision support rule). In these cases, the value set may be used as a placeholder to indicate that no medications from the given value set were administered. Implementations processing data reported in this way should take into account that the reported data may not be returned with a single code, but rather a value set identifier, and should consider data with the appropriate value set identifier as satisfying the criteria for value set membership.
 
 Similarly, representing that a procedure for Cardiac Surgery was not performed should not require specification of which cardiac surgery in a value set was not performed, but only a reference to the value set defining the set of possible procedures that are expected to have been performed. The same process works for any application of negation rationale.
@@ -252,7 +252,7 @@ define function "ED Stay Time"(Encounter "Encounter, Performed"):
 
 ## 3 Translation to ELM
 
-Note: For an introduction to ELM, see [Chapter 4 - Logical Specification](https://cql.hl7.org/04-logicalspecification.html) of the CQL Specification. 
+Note: For an introduction to ELM, see [Chapter 4 - Logical Specification](https://cql.hl7.org/04-logicalspecification.html) of the CQL Specification.
 
 Tooling exists to support translation of CQL to ELM for distribution in XML or JSON formats. These distributions SHOULD be included with computable artifacts to facilitate implementation. The existing translator tooling applies to both measure and decision support development, and has several options available to make use of different data models in different environments. For computable guideline content development with FHIR, the following options are recommended:
 
@@ -322,6 +322,8 @@ Libraries used in computable guideline content SHALL use the `dataRequirement` e
 
 Library.url SHALL be [CQL namepsace url]/Library/[CQL library name]
 
+Library.name SHALL be [CQL library name]
+
 Library.version SHALL be [CQL library version]
 
 CQL namespace name SHALL be IG.packageId
@@ -330,6 +332,35 @@ CQL namespace url SHALL be IG.canonicalBase
 
 For CQL library source files, the convention SHOULD be:
 
-filename = <Library_Name>.cql
+filename = <LibraryName>.cql
 
 To avoid issues with characters between web ids and names, library names SHALL NOT have underscores.
+
+### Using Terminology in CQL Authoring
+
+FHIR supports various types of terminology-valued elements, including:
+
+* [code](http://hl7.org/fhir/datatypes.html#code)
+* [Coding](http://hl7.org/fhir/datatypes.html#Coding)
+* [CodeableConcept](http://hl7.org/fhir/datatypes.html#CodeableConcept)
+
+These types correspond directly to the CQL primitive types:
+
+* [String](https://cql.hl7.org/09-b-cqlreference.html#string-1)
+* [Code](https://cql.hl7.org/09-b-cqlreference.html#code-1)
+* [Concept](https://cql.hl7.org/09-b-cqlreference.html#concept-1)
+
+In addition to the type of element, FHIR provides the ability to bind these elements to specific codes, in the form of a direct-reference code (constraint to a specific code in a [CodeSystem](http://hl7.org/fhir/codesystem.html)), or a binding to a [ValueSet](http://hl7.org/fhir/valueset.html). These bindings can be different [binding strengths](http://hl7.org/fhir/codesystem-binding-strength.html).
+
+* [required](http://hl7.org/fhir/terminologies.html#required) - To be conformant, the concept in this element SHALL be from the specified value set.
+* [extensible](http://hl7.org/fhir/terminologies.html#extensible) - To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.
+* [preferred](http://hl7.org/fhir/terminologies.html#preferred) - Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.
+* [example](http://hl7.org/fhir/terminologies.html#example) - Instances are not expected or even encouraged to draw from the specified value set. The value set merely provides examples of the types of concepts intended to be included.
+
+Within CQL, references to terminology code systems, value sets, codes, and concepts are directly supported, and all such usages are declared within CQL libraries, as described in the [Terminology](https://cql.hl7.org/02-authorsguide.html#terminology) section of the CQL Author's Guide.
+
+When referencing terminology-valued elements within CQL, the following comparison operations are supported:
+
+* [Equal (`=`)](https://cql.hl7.org/09-b-cqlreference.html#equal-3)
+* [Equivalent (`~`)](https://cql.hl7.org/09-b-cqlreference.html#equivalent-3)
+* [In (`in`)](https://cql.hl7.org/09-b-cqlreference.html#in-valueset)

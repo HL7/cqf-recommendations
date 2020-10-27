@@ -13,7 +13,7 @@ The initial ballot combines experience gained from multiple guideline representa
 
 * [Approach](documentation-approach-01-main-page.html): Describes the overall approach taken to representing computable guideline content
 * [Methodology](documentation-methodology.html): Describes the methodology for moving to successively more structured content
-* [Terminology](documentation-terminology.html): Describes expectations for terminology defined as part of computable guideline content
+* [Terminology](terminology.html): Describes expectations for terminology defined as part of computable guideline content
 * [Profiles](profiles.html#content-profiles): Describes expectations for profiles defined as part of computable guideline content
 * [Libraries](documentation-libraries.html): Describes expectations for the use of libraries as part of computable guideline content
 * [Recommendations](documentation-recommendations.html): Describes how recommendations are structured and distributed
