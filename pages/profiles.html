@@ -10,7 +10,7 @@
 <!-- ============CONTENT CONTENT=============== -->
 
 <a name="profiles"> </a>
-<h2><span class="sectioncount">2.0.0</span> Profile Definitions and Documentation <a href="profiles.html#profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h2>
+<h2><span class="sectioncount">4.0.0</span> Profile Definitions and Documentation <a href="profiles.html#profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h2>
 
 <p>FHIR profiles are a key aspect of supporting interoperable computable content, providing a formal mechanism for defining the data elements used by computable content, as well as conformance expectations for the computable content itself. Readers of this implementation guide should be familiar with the <a href="http://hl7.org/fhir/R4/profiling.html">Profiling FHIR</a> topic in the base specification.</p>
 
@@ -22,10 +22,11 @@
   <li><b><a href="#activity-profiles">Activity Profiles</a></b>: Activity profiles such as MedicationRequest</li>
   <li><b><a href="#content-profiles">Content Profiles</a></b>: Documentation on using profiles with CPG content</li>
   <li><b><a href="#profile-index">Profile Index</a></b>: Alphabetical profile listing</li>
+  <li><b><a href="#extension-index">Extension Index</a></b>: Alphabetical extension listing</li>
 </ul>
 
 <a name="artifact-profiles"> </a>
-<h3><span class="sectioncount">2.1.0</span> Artifact profiles <a href="profiles.html#artifact-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
+<h3><span class="sectioncount">4.1.0</span> Artifact profiles <a href="profiles.html#artifact-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
 <p>For definitional artifacts, this implementation guide defines profile classes to represent knowledge capabilities for shareable, computable, publishable, and executable knowledge artifacts. All knowledge artifacts must be at least shareable, and where appropriate for the target environment, artifacts should declare the capabilities they support using the [cpg-knowledgeCapability](StructureDefinition-cpg-knowledgeCapability.html) extension, as well as the knowledge representation level of the artifact using the [cpg-knowledgeRepresentationLevel](StructureDefinition-cpg-knowledgeRepresentationLevel) extension, as defined in the shareable profiles.</p>
 
@@ -63,7 +64,7 @@
 </p>
 
 <a name="domain-profiles"> </a>
-<h3><span class="sectioncount">2.2.0</span> Domain Profiles <a href="profiles.html#domain-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
+<h3><span class="sectioncount">4.2.0</span> Domain Profiles <a href="profiles.html#domain-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
 <table>
   <tr><th>Level</th><th>Definition</th><th>Plan</th></tr>
@@ -74,7 +75,7 @@
 </table>
 
 <a name="activity-profiles"> </a>
-<h3><span class="sectioncount">2.3.0</span> Activity Profiles <a href="profiles.html#activity-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
+<h3><span class="sectioncount">4.3.0</span> Activity Profiles <a href="profiles.html#activity-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
 <p>To represent the activities in a computable guideline, this implementation guide follows the workflow patterns established by the base FHIR specification, <i>definition</i>, <i>request</i>, and <i>event</i>. For each type of activity, these profiles establish at least:</p>
 
@@ -117,7 +118,7 @@
 </table>
 
 <a name="content-profiles"> </a>
-<h3><span class="sectioncount">2.4.0</span> Content Profiles <a href="profiles.html#content-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
+<h3><span class="sectioncount">4.4.0</span> Content Profiles <a href="profiles.html#content-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
 In addition to the profiles defined by this implementation guide, computable content generally deals with two broad categories of profiles:
 
@@ -127,7 +128,7 @@ In addition to the profiles defined by this implementation guide, computable con
 </ul>
 
 <a name="interoperability-profiles"> </a>
-<h4><span class="sectioncount">2.4.1</span> Interoperability Profiles <a href="profiles.html#interoperability-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h4>
+<h4><span class="sectioncount">4.4.1</span> Interoperability Profiles <a href="profiles.html#interoperability-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h4>
 
 <p>Interoperability profiles establish standards of data exchange between systems, and are typically defined in and distributed as part of <i>model</i> implementation guides. To be useful, these profiles will generally be established across a broad range of systems, all operating in a particular environment, or in support of a particular set of use cases. Examples of these types of profiles are:</p>
 
@@ -139,7 +140,7 @@ In addition to the profiles defined by this implementation guide, computable con
 </ul>
 
 <a name="computability-profiles"> </a>
-<h4><span class="sectioncount">2.4.2</span> Computability Profiles <a href="profiles.html#computability-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h4>
+<h4><span class="sectioncount">4.4.2</span> Computability Profiles <a href="profiles.html#computability-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h4>
 
 <p>Computability profiles describe the data expectations for computable content, and are typically defined in and distributed as part of <i>content</i> implementation guides. For example, given the following condition:
 
@@ -155,16 +156,21 @@ define "Active Ambulatory Opioid Rx":
 <p>Note that for logic expressed in CQL, this information can be inferred by static analysis of the CQL expressions and is exposed statically in the <code>dataRequirement</code> element of the <code>Library</code> resource. In addition, the <a href="http://hl7.org/fhir/R4/library-operation-data-requirements.html"><code>$data-requirements</code></a> operation can be used to extract this information from a CQL Library dynamically.</p>
 
 <a name="implementation-considerations"> </a>
-<h4><span class="sectioncount">2.4.3</span> Implementation Considerations <a href="profiles.html#implementation-considerations" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h4>
+<h4><span class="sectioncount">4.4.3</span> Implementation Considerations <a href="profiles.html#implementation-considerations" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h4>
 
 <p>Content conforming to this IG <b>SHOULD</b> select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG <b>SHOULD</b> use International Patient Summary.</p>
 
 <p>In general, implementation of any given computable content is based on the intersection of the interoperability and computability profiles. As such, content authors must take care not to define computability profiles that conflict with interoperability profiles in their intended target scope.</p>
 
 <a name="profile-index"> </a>
-<h3><span class="sectioncount">2.5.0</span> Profile Index <a href="profiles.html#profile-index" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
+<h3><span class="sectioncount">4.5.0</span> Profile Index <a href="profiles.html#profile-index" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
 {%  include list-simple-profiles.xhtml %}
+
+<a name="extension-index"> </a>
+<h2><span class="sectioncount">4.6.0</span> Extension Index <a href="extensions.html#extension-index" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h2>
+
+{%  include list-simple-extensions.xhtml %}
 
 <!-- ==============END CONTENT END CONTENT=================== -->
 

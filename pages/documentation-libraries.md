@@ -9,19 +9,19 @@ This implementation guide uses the Library resource to represent libraries of co
 
 ## Using CQL
 
-Note that the content specified here is largely equivalent to the conformance requirements for the use of CQL within quality measure authoring, defined in the [FHIR Quality Measure Implementation Guide](http://hl7.org/fhir/us/cqfmeasures/2019May/).
-
 ### CQL Libraries
 
 Any CQL library referenced by a computable artifact SHALL contain a library declaration line as the first line of the library.
 
+The library identifier SHALL be a valid un-quoted identifier and SHALL NOT contain underscores
+
 The library declaration line SHALL contain a version number.
 
-The library version number SHALL follow the convention: <major>.<minor>.<patch>
+The library version number SHALL follow the convention: `<major>.<minor>.<patch>`
 
 #### Library Versioning
 
-This implementation guide uses an approach to versioning libraries used within computable guidelines to help track and manage dependencies. The approach used	 here is based on the [Apache APR Versioning Scheme](https://apr.apache.org/versioning.html).
+This implementation guide uses an approach to versioning libraries used within computable guidelines to help track and manage dependencies. The approach used here is based on the [Apache APR Versioning Scheme](https://apr.apache.org/versioning.html).
 
 There are three main types of changes that can be made to a library:
 
@@ -52,12 +52,24 @@ And a major change could be released by incrementing the major version, and rese
 CQL allows libraries to re-use logic already defined in other libraries. This is accomplished by utilizing the `include` declaration:
 
 ```cql
-include Common_FHIR version '2.0.0' called Common
+include CommonFHIR version '2.0.0' called Common
 ```
 
 The set of all CQL libraries used from any given computable artifact SHALL be structured such that all references to CQL components from a given resource are included in a single library.
 
 Because of this conformance statement, resources that reference CQL expression definitions only need to reference a single _primary library_, eliminating the need to qualify expression definitions from references in the resource.
+
+#### Library Namespaces
+
+CQL allows libraries to define a namespace that can be used to organize libraries across different groups of authors. Within a namespace, library names are required to be unique. Across namespaces, the same library name may be reused. For example, OrganizationA and OrganizationB can both define a library named `Common`, so long as they use different namespaces. For example, consider the following library declaration:
+
+```
+library CMS.Common version '2.0.0'
+```
+
+This example declares a library named Common in the CMS namespace. Per the CQL specification, the namespace for a library is included in the ELM, along with a URI that provides a globally unique, stable identifier for the namespace. As an example, the URI for the CMS namespace might be `http://ecqi.healthit.gov/ecqm/measures`.
+
+Although the URI for a CQL namespace SHOULD correspond to a reachable web address (i.e. a URL), this is not required. However, global uniqueness of the namespace URI is required in order to avoid namespace clashes.
 
 ### Data Model
 
@@ -82,7 +94,7 @@ The URI MAY include a version, consistent with the URI specification for FHIR an
 For example:
 
 ```cql
-codesystem "SNOMEDCT:2017-09": 'http://snomed.info/sct/731000124108'
+codesystem "SNOMEDCT:2017-09": 'http://snomed.info/sct'
   version 'http://snomed.info/sct/731000124108/version/201709'
 ```
 
@@ -92,11 +104,11 @@ The local identifier for the codesystem ("SNOMED-CT" in this case) SHOULD includ
 
 Version information for code systems is not required to be included in computable guideline CQL; terminology versioning information may be specified externally. However, if versioning information is included, it must be done in accordance with the terminology usage specified by FHIR.
 
-## Value Sets
+### Value Sets
 
 Value sets are used to provide a level of indirection between the concepts you're referencing in the logic and the way those concepts are specifically defined. By using a value set, you can define that concept in terms of different code systems, and it has the added benefit of providing a sort of "configuration point" for local implementation to map local concepts.
 
-When using value sets, authors can either find value sets that are already defined (in the VSAC, or elsewhere), or construct value sets themsevles. When constructing value sets, care should be taken not to create duplicate value sets (i.e. value sets with the same purpose and definition). When using published value sets, care must be taken to ensure that they are both actively stewarded (i.e. kept up to date in the published repository) and actively maintained when used in production settings.
+When using value sets, authors can either find value sets that are already defined (in the VSAC, or elsewhere), or construct value sets themselves. When constructing value sets, care should be taken not to create duplicate value sets (i.e. value sets with the same purpose and definition). When using published value sets, care must be taken to ensure that they are both actively stewarded (i.e. kept up to date in the published repository) and actively maintained when used in production settings.
 
 When using value set declarations, authors should use the name of the value set as defined externally to avoid introducing any potential confusion of meaning. One exception to this is when different value sets are defined with the same name in an external repository, then some additional aspect is required to ensure uniqueness of the names within the CQL library.
 
@@ -109,31 +121,31 @@ The URI MAY include a version, consistent with versioned canonical URL reference
 For example:
 
 ```cql
-valueset "Acute Pharyngitis": 'valueset "Acute Pharyngitis": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011'
+valueset "Acute Pharyngitis": 'valueset "Acute Pharyngitis": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011'
 ```
 
-The canonical URL for a value set is typically defined by the value set author, though it may be provided by the publisher as well. For example, value sets defined in the Value Set Authority Center and exposed via the VSAC FHIR interface have a base URL of `https://cts.nlm.nih.gov/fhir/`. This base is then used to construct the canonical URL for the value set (in the same way as any FHIR URL) using the resource type (`ValueSet` in this case) and the id (the value set OID in this case).
+The canonical URL for a value set is typically defined by the value set author, though it may be provided by the publisher as well. For example, value sets defined in the Value Set Authority Center and exposed via the VSAC FHIR interface have a base URL of `http://cts.nlm.nih.gov/fhir/`. This base is then used to construct the canonical URL for the value set (in the same way as any FHIR URL) using the resource type (`ValueSet` in this case) and the id (the value set OID in this case).
 
 The local identifier for the value set within CQL should be the same as the name of the published value set. However, because the name of the value set is not guaranteed to be unique, it is possible to reference multiple value sets with the same name, but different identifiers. When this happens in a CQL library, the local identifier should be the name of the value set with a qualifying suffix to preserve the value set name as a human-readable artifact, but still allow unique reference within the CQL library.
 
 For example:
 
 ```cql
-valueset "Acute Pharyngitis (1)": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011.1'
-valueset "Acute Pharyngitis (2)": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011.2'
+valueset "Acute Pharyngitis (1)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011.1'
+valueset "Acute Pharyngitis (2)": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.102.12.1011.2'
 ```
 
 Version information for value sets is not required to be included in computable guideline CQL; terminology versioning information may be specified externally. However, if versioning information is included, it must be done in accordance with the terminology usage specified by FHIR.
 
 #### Value Set Version
 
-When retrieving the expansion of a value set by version, the version indicator SHALL be apended to the canonical URL for the value set, separated by a pipe (`|`)
+When retrieving the expansion of a value set by version, the version indicator SHALL be appended to the canonical URL for the value set, separated by a pipe (`|`)
 
 For example:
 
 ```cql
 valueset "Encounter Inpatient SNOMEDCT Value Set":
-   'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.7.307|20160929'
+   'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.7.307|20160929'
 ```
 
 ### Codes
@@ -142,7 +154,7 @@ When direct reference codes are represented within CQL, the logical identifier S
 
 Using "direct-reference codes", involves declaring an identifier for a specific code in a code system, and using that directly within the logic. That's appropriate for cases where you know exactly what you want, and there's very little possibility for variation on that (i.e. systems are likely to use those codes directly, rather than have local codes that they are mapping to).
 
-When using direct reference codes, authors should use the name of the code as defined externally to avoid introducing any potential confusion of meaning.
+When using direct reference codes, authors should use the name of the code as defined externally to avoid introducing any potential confusion of meaning:
 
 ```cql
 code "Venous foot pump, device (physical object)": '442023007' from "SNOMED-CT"
@@ -150,15 +162,18 @@ code "Venous foot pump, device (physical object)": '442023007' from "SNOMED-CT"
 
 Note that for direct reference code usage, the local identifier (in the example above, the local identifier is `"Venous foot pump, device (physical object)"`) should be the same as the description of the code within the terminology in order to avoid conflicting with any usage or license agreements with the referenced terminologies, but can be different to allow for potential naming conflicts, as well as simplification of longer names when appropriate.
 
-Although CQL supports both version-specific and version-independent specification of and comparison to direct reference codes, artifact authors should use version-independent direct reference codes and comparisons unless there is a specific reason not to (such as the code is retired in the current version). Even when using version-specific direct reference codes, authors should use equivalence for the comparison (again, unless there is a specific reason to use version-specific comparison with equality).
+Although CQL supports both version-specific and version-independent specification of and comparison to direct reference codes, artifact authors should use version-independent direct reference codes and comparisons unless there is a specific reason not to (such as the code is retired in the current code system version). Even when using version-specific direct reference codes, authors should use equivalence (`~`) for the comparison (again, unless there is a specific reason to use version-specific comparison with equality (`=`)).
 
-Note: Using direct-reference codes can be more difficult for implementations to map to local settings, because modification of the codes for local usage may required modification of the CQL, as opposed to the use of a value set which many systems already use to provide support for mapping to local codes.
+Note: Using direct-reference codes can be more difficult for implementations to map to local settings, because modification of the codes for local usage may require modification of the CQL, as opposed to the use of a value set which many systems already use to provide support for mapping to local codes.
 
 ### Library-level Identifiers
 
-A _library-level identifier_ is any named expression, function, parameter, code system, value set, concept, or code defined in the CQL. The library name referenced in the library-line, the data model, and any referenced external library should not be considered library-level identifiers. Library-level identifiers should be given a descriptive and meaningful name (avoid abbreviations) and conform to Conformance Requirement 10.
+A _library-level identifier_ is any named expression, function, parameter, code system, value set, concept, or code defined in the CQL. The library name referenced in the library-line, the data model, and any referenced external library should not be considered library-level identifiers. Library-level identifiers should be given a descriptive and meaningful name (avoid abbreviations) and conform to the following requirements:
 
-Library-level identifiers referenced in the CQL SHOULD use quoted identifiers, SHOULD Use Title Case, and MAY Include spaces.
+Library-level identifiers:
+* SHOULD use quoted identifiers,
+* SHOULD Use Title Case, and
+* MAY Include spaces.
 
 For example:
 
@@ -225,7 +240,7 @@ Within FHIR, the [valueset-reference](http://hl7.org/fhir/R4/extension-valueset-
 
 Data type attributes referenced from CQL SHOULD NOT use quoted identifiers and SHOULD use camelCase.
 
-Examples of attributes conforming to this requirement are given below. For a full list of valid of attributes, refer to an appropriate data model specification such as International Patient Summary.
+Examples of attributes conforming to this requirement are given below. Note however that the full list of valid attributes, is specified by the data model. For example, the following are valid attributes in FHIR:
 
 ```cql
 period
@@ -237,7 +252,10 @@ result
 
 Aliases are used in CQL as local variable names to refer to sections of code. When defining a function, argument names are used to create scoped variables that refer to the function inputs.
 
-Aliases and argument names referenced in the CQL SHOULD NOT use quoted identifiers, SHOULD use PascalCase, and SHOULD use descriptive names (no abbreviations).
+Aliases and argument names referenced in the CQL:
+* SHOULD NOT use quoted identifiers,
+* SHOULD use PascalCase,
+* SHOULD use descriptive names (no abbreviations).
 
 For example:
 
@@ -250,7 +268,118 @@ define function "ED Stay Time"(Encounter "Encounter, Performed"):
     duration in minutes of Encounter.period
 ```
 
-## 3 Translation to ELM
+## Library Resources
+
+Inclusion of CQL content used within computable guideline artifacts is accomplished through the use of a Library resource. These libraries are then referenced from guideline artifacts using the `library` element. The content of the CQL library is included using the `content` element of the Library.
+
+Content conforming to this implementation guide SHALL use at least the [cpg-shareablelibrary](StructureDefinition-cpg-shareablelibrary.html) profile for Library resources.
+
+### Library Name and URL
+
+The identifying elements of a library SHALL conform to the following requirements:
+* Library.url SHALL be `<CQL namepsace url>/Library/<CQL library name>`
+* Library.name SHALL be `<CQL library name>`
+* Library.version SHALL be `<CQL library version>`
+
+For libraries included in FHIR implementation guides, the CQL namespace is defined by the implementation guide as follows:
+* CQL namespace name SHALL be IG.packageId
+* CQL namespace url SHALL be IG.canonicalBase
+
+For CQL library source files, the convention SHOULD be:
+
+```
+filename = <CQL library name>.cql
+```
+
+To avoid issues with characters between web ids and names, library names SHALL NOT have underscores.
+
+### FHIR Type Mapping
+
+CQL defined types map to types in FHIR according to the following mapping:
+
+|CQL System Type |FHIR Type |
+|---|---|
+|`System.Boolean`|`FHIR.boolean`|
+|`System.Integer`|`FHIR.integer`|
+|`System.Decimal`|`FHIR.decimal`|
+|`System.Date`|`FHIR.date`|
+|`System.DateTime`|`FHIR.dateTime`|
+|`System.Time`|`FHIR.time`|
+|`System.String`|`FHIR.string`|
+|`System.Quantity`|`FHIR.Quantity`|
+|`System.Ratio`|`FHIR.Ratio`|
+|`System.Any`|`FHIR.Any`|
+|`System.Code`|`FHIR.Coding`|
+|`System.Concept`|`FHIR.CodeableConcept`|
+|`Interval<System.Date>`|`FHIR.Period`|
+|`Interval<System.DateTime>`|`FHIR.Period`|
+|`Interval<System.Quantity>`|`FHIR.Range`|
+
+In addition:
+* List types SHALL be lists of element types that map to FHIR
+* Tuple types SHALL consist only of elements of types that map to FHIR
+
+### Parameters and Data Requirements
+
+Parameters to CQL libraries SHALL be either CQL-defined types that map to FHIR types, or FHIR resource types, optionally with profile designations.
+
+Top level expressions in CQL libraries SHALL return either CQL-defined types that map to FHIR types, or FHIR resources types, optionally with profile designations
+
+Libraries used in computable guideline content SHALL use the `dataRequirement` element to identify any retrieves present in the CQL:
+
+|Retrieve Element|DataRequirement Element|
+|---|---|
+|dataType|type|
+|templateId|profile|
+|context|subject|
+|codeProperty|codeFilter.path or codeFilter.searchParam|
+|codes (Concept)|codeFilter.code (for each Code present in the Concept)|
+|codes (Code)|codeFilter.code|
+|codes (ValueSetRef)|codeFilter.valueSet (as specified by the `id` of the ValueSetDef referenced by the ValueSetRef)|
+|dateProperty|dateFilter.path|
+|dateLowProperty,dateHighProperty|dateFilter.path (resolved to an interval-valued property)|
+|dateRange|dateFilter.path or dateFilter.searchParam|
+
+### RelatedArtifacts
+
+Libraries used in computable guideline content SHALL use the `relatedArtifact` element to identify includes, code systems, value sets, and data models used by the CQL library:
+
+|Dependency|RelatedArtifact representation|
+|Data Model (using declaration)|`depends-on` with `url` of the ModelInfo Library (e.g. `http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1`)|
+|Library (include declaration)|`depends-on` with `url` of the Library (e.g. `http://hl7.org/fhir/Library/FHIRHelpers|4.0.1`)|
+|Code System|`depends-on` with `url` of the CodeSystem (e.g. `http://loing.org`)|
+|Value Set|`depends-on` with `url` of the ValueSet (e.g. `http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.89`)|
+
+### Using Terminology in CQL Authoring
+
+FHIR supports various types of terminology-valued elements, including:
+
+* [code](http://hl7.org/fhir/datatypes.html#code)
+* [Coding](http://hl7.org/fhir/datatypes.html#Coding)
+* [CodeableConcept](http://hl7.org/fhir/datatypes.html#CodeableConcept)
+
+These types correspond directly to the CQL primitive types:
+
+* [String](https://cql.hl7.org/09-b-cqlreference.html#string-1)
+* [Code](https://cql.hl7.org/09-b-cqlreference.html#code-1)
+* [Concept](https://cql.hl7.org/09-b-cqlreference.html#concept-1)
+
+In addition to the type of element, FHIR provides the ability to bind these elements to specific codes, in the form of a direct-reference code (constraint to a specific code in a [CodeSystem](http://hl7.org/fhir/codesystem.html)), or a binding to a [ValueSet](http://hl7.org/fhir/valueset.html). These bindings can be different [binding strengths](http://hl7.org/fhir/codesystem-binding-strength.html):
+
+* [required](http://hl7.org/fhir/terminologies.html#required) - To be conformant, the concept in this element SHALL be from the specified value set.
+* [extensible](http://hl7.org/fhir/terminologies.html#extensible) - To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.
+* [preferred](http://hl7.org/fhir/terminologies.html#preferred) - Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.
+* [example](http://hl7.org/fhir/terminologies.html#example) - Instances are not expected or even encouraged to draw from the specified value set. The value set merely provides examples of the types of concepts intended to be included.
+
+Within CQL, references to terminology code systems, value sets, codes, and concepts are directly supported, and all such usages are declared within CQL libraries, as described in the [Terminology](https://cql.hl7.org/02-authorsguide.html#terminology) section of the CQL Author's Guide.
+
+When referencing terminology-valued elements within CQL, the following comparison operations are supported:
+
+* [Equal (`=`)](https://cql.hl7.org/09-b-cqlreference.html#equal-3)
+* [Equivalent (`~`)](https://cql.hl7.org/09-b-cqlreference.html#equivalent-3)
+* [In (`in`)](https://cql.hl7.org/09-b-cqlreference.html#in-valueset)
+
+## Translation to ELM
 
 Note: For an introduction to ELM, see [Chapter 4 - Logical Specification](https://cql.hl7.org/04-logicalspecification.html) of the CQL Specification.
 
@@ -267,100 +396,3 @@ Tooling exists to support translation of CQL to ELM for distribution in XML or J
 | EnableResultTypes | This instructs the translator to include inferred result types in the output ELM. | This feature MAY be used with quality improvement artifacts. |
 | EnableDetailedErrors | This instructs the translator to include detailed error information. By default, the translator only reports root-cause errors. | This feature SHOULD NOT be used with quality improvement artifacts. |
 | DisableListTraversal | This instructs the translator to disallow traversal of list-valued expressions. With quality improvement artifacts, disabling this feature would prevent a useful capability. | This feature SHOULD NOT be used with quality improvement artifacts. |
-
-## Library Resources
-
-Inclusion of CQL content used within computable guideline artifacts is accomplished through the use of a Library resource. These libraries are then referenced from guideline artifacts using the `library` element. The content of the CQL library is included using the `content` element of the Library.
-
-Content conforming to this implementation guide SHALL use the [cpg-library](StructureDefinition-cpg-library.html) profile for Library resources.
-
-### Data Requirements
-
-Parameters to CQL libraries SHALL be either CQL-defined types that map to FHIR types, or FHIR resource types, optionally with profile designations.
-
-Top level expressions in CQL libraries SHALL return either CQL-defined types that map to FHIR types, or FHIR resources types, optionally with profile designations
-
-DataRequirements in CQL libraries SHALL use FHIR resource types, optionally with profile designations
-
-Mapping:
-
-System.Boolean: FHIR.boolean
-
-System.Integer: FHIR.integer
-
-System.Decimal: FHIR.decimal
-
-System.Date: FHIR.date
-
-System.DateTime: FHIR.dateTime
-
-System.Time: FHIR.time
-
-System.String: FHIR.string
-
-System.Quantity: FHIR.Quantity
-
-System.Ratio: FHIR.Ratio
-
-System.Any: FHIR.Any
-
-System.Code: FHIR.Coding
-
-System.Concept: FHIR.CodeableConcept
-
-Interval<System.Date>: FHIR.Period
-
-Interval<System.DateTime>: FHIR.Period
-
-Interval<System.Quantity>: FHIR.Range
-
-List types SHALL be lists of element types that map to FHIR
-
-Tuple types SHALL consist only of elements of types that map to FHIR
-
-Libraries used in computable guideline content SHALL use the `dataRequirement` element to declare terminologies referenced by the CQL content.
-
-Library.url SHALL be [CQL namepsace url]/Library/[CQL library name]
-
-Library.name SHALL be [CQL library name]
-
-Library.version SHALL be [CQL library version]
-
-CQL namespace name SHALL be IG.packageId
-
-CQL namespace url SHALL be IG.canonicalBase
-
-For CQL library source files, the convention SHOULD be:
-
-filename = <LibraryName>.cql
-
-To avoid issues with characters between web ids and names, library names SHALL NOT have underscores.
-
-### Using Terminology in CQL Authoring
-
-FHIR supports various types of terminology-valued elements, including:
-
-* [code](http://hl7.org/fhir/datatypes.html#code)
-* [Coding](http://hl7.org/fhir/datatypes.html#Coding)
-* [CodeableConcept](http://hl7.org/fhir/datatypes.html#CodeableConcept)
-
-These types correspond directly to the CQL primitive types:
-
-* [String](https://cql.hl7.org/09-b-cqlreference.html#string-1)
-* [Code](https://cql.hl7.org/09-b-cqlreference.html#code-1)
-* [Concept](https://cql.hl7.org/09-b-cqlreference.html#concept-1)
-
-In addition to the type of element, FHIR provides the ability to bind these elements to specific codes, in the form of a direct-reference code (constraint to a specific code in a [CodeSystem](http://hl7.org/fhir/codesystem.html)), or a binding to a [ValueSet](http://hl7.org/fhir/valueset.html). These bindings can be different [binding strengths](http://hl7.org/fhir/codesystem-binding-strength.html).
-
-* [required](http://hl7.org/fhir/terminologies.html#required) - To be conformant, the concept in this element SHALL be from the specified value set.
-* [extensible](http://hl7.org/fhir/terminologies.html#extensible) - To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.
-* [preferred](http://hl7.org/fhir/terminologies.html#preferred) - Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.
-* [example](http://hl7.org/fhir/terminologies.html#example) - Instances are not expected or even encouraged to draw from the specified value set. The value set merely provides examples of the types of concepts intended to be included.
-
-Within CQL, references to terminology code systems, value sets, codes, and concepts are directly supported, and all such usages are declared within CQL libraries, as described in the [Terminology](https://cql.hl7.org/02-authorsguide.html#terminology) section of the CQL Author's Guide.
-
-When referencing terminology-valued elements within CQL, the following comparison operations are supported:
-
-* [Equal (`=`)](https://cql.hl7.org/09-b-cqlreference.html#equal-3)
-* [Equivalent (`~`)](https://cql.hl7.org/09-b-cqlreference.html#equivalent-3)
-* [In (`in`)](https://cql.hl7.org/09-b-cqlreference.html#in-valueset)

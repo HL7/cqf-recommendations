@@ -1,0 +1,58 @@
+---
+# jekyll header
+---
+
+{% include header.html %}
+
+<!-- ============BreadCrumb=============== -->
+
+{% include container-start.html %}
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<a name="examples"> </a>
+<h2><span class="sectioncount">7.0.0</span> Examples <a href="examples.html#examples" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h2>
+<p>&nbsp;</p>
+
+<p>This page lists examples of various clinical guidelines expressed as computable content conforming to this implementation guide:</p>
+
+<ul>
+  <li><a href="examples/anc/anc-guidelines.html">Antenatal Care Guidelines</a></li>
+  <li><a href="examples/anthrax/README.html">Anthrax Post-Exposure Prophylaxis</a></li>
+  <li><a href="examples/ckd/ckd-guideline.html">Chronic Disease Management - Chronic Kidney Disease</a></li>
+  <li><a href="examples/opg/opg-guideline.html">Opioid Prescribing Guideline</a></li>
+  <li><a href="examples/hiv/hiv-guideline.html">HIV Screening, Immunization, and Follow-up</a></li>
+  <li><a href="examples/hep-b/adult-hepb-immunization-forecasting.html">Hepatitis B Adult Immunization Forecasting</a></li>
+</ul>
+
+<p>The following sections provide listings of resources defined by these examples, indexed by resource type.</p>
+
+<h3>ActivityDefinition Resources</h3>
+{% include list-simple-activitydefinitions.xhtml %}
+<p>&nbsp;</p>
+
+<h3>CapabilityStatement Resources</h3>
+{% include list-simple-capabilitystatements.xhtml %}
+<p>&nbsp;</p>
+
+<h3>Library Resources</h3>
+{% include list-simple-libraries.xhtml %}
+<p>&nbsp;</p>
+
+<h3>OperationDefinition Resources</h3>
+{% include list-simple-operationdefinitions.xhtml %}
+<p>&nbsp;</p>
+
+<h3>PlanDefinition Resources</h3>
+{% include list-simple-plandefinitions.xhtml %}
+<p>&nbsp;</p>
+
+<h3>Questionnaire Resources</h3>
+{% include list-simple-questionnaires.xhtml %}
+<p>&nbsp;</p>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
+
+{% include container-end.html %}
+
+{% include footer.html %}
