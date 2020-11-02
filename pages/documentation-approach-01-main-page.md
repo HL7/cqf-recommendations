@@ -4,9 +4,9 @@ title: Approach Overview
 ---
 # Approach
 
-The approach section to this implementation guide describes how guideline developers, informaticians (knowledge engineers and others), and implementers of computable representations of guidelines can collaborate across the lifecycle of guideline-directed care and related activities (clinical decision support, quality measurement, case reporting, continuous improvement), leveraging existing standards-based approaches.
+The Approach section of this implementation guide describes how guideline developers, informaticians (knowledge engineers and others), and implementers of computable representations of guidelines can collaborate across the lifecycle of guideline-directed care and related activities (clinical decision support, quality measurement, case reporting, continuous improvement), leveraging existing standards-based approaches.
 
-The Approach includes sections intended to describe the work effort and products of each of the key roles in the development lifecycle of a computable Clinical Practice Guideline (CPG). While the approach is not a step-by-step guide using specific tools and techniques, it does attempt to provide enough context to orient all contributors to the collective work to be undertaken, to provide a framework for undertaking such collaborative work, and to provide enough detail to inform the development, translation, and represention of a clinical guideline into the CPG knowledge architecture as characterized in machine-readable form by the CPG Profiles and conformance requirements defined in this implementation guide.
+The Approach documentation includes sections intended to describe the work effort and products of each of the key roles in the development lifecycle of a computable Clinical Practice Guideline (CPG). While the approach is not a step-by-step guide using specific tools and techniques, it does attempt to provide enough context to orient all contributors to the collective work to be undertaken, to provide a framework for undertaking such collaborative work, and to provide enough detail to inform the development, translation, and representation of a clinical guideline into the CPG knowledge architecture as characterized in machine-readable form by the CPG Profiles and conformance requirements defined in this implementation guide.
 
 # Overview of Approach
 

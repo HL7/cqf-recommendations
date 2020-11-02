@@ -11,8 +11,477 @@
 <!-- ============CONTENT CONTENT=============== -->
 
 <a name="approach"> </a>
-<h2><span class="sectioncount">2.0.0</span> Approach <a href="approach.html#approach" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h2>
+<h2><span class="sectioncount">2.0.0</span> Approach <a href="approach.html#approach" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h2>
 <p>&nbsp;</p>
+
+<p>The Approach section of this implementation guide describes how guideline developers, informaticians (knowledge engineers and others), and implementers of computable representations of guidelines can collaborate across the lifecycle of guideline-directed care and related activities (clinical decision support, quality measurement, case reporting, continuous improvement), leveraging existing standards-based approaches.</p>
+
+<p>Broadly, the approach taken by this implementation guide is to establish a conceptual architecture that identifies key domain concepts, artifacts, and patterns used in the description and delivery of clinical guidance, along with a framework for characterizing the nature and usage of artifacts within that conceptual architecture, ultimately advocating for an agile, cross-functional approach to guideline development.</p>
+
+<p>The Approach documentation includes sections intended to describe the work effort and products of each of the key roles in the development lifecycle of a computable Clinical Practice Guideline (CPG). While the approach is not a step-by-step guide using specific tools and techniques, it does attempt to provide enough context to orient all contributors to the collective work to be undertaken, to provide a framework for undertaking such collaborative work, and to provide enough detail to inform the development, translation, and representation of a clinical guideline into the CPG knowledge architecture as characterized in machine-readable form by the CPG Profiles and conformance requirements defined in this implementation guide.</p>
+
+<ul>
+  <li><a href="#conformance-levels">Levels of Conformance and Enablement</a></li>
+  <li><a href="#guideline-development">Guideline Development</a></li>
+  <li><a href="#knowledge-engineering">Knowledge Engineering</a></li>
+  <li><a href="#knowledge-representation">Knowledge Representation</a></li>
+  <li><a href="#tiers-of-functionality">Tiers of Functionality</a></li>
+  <li><a href="#levels-by-tiers">Levels of Representation by Tiers of Functionality</a></li>
+  <li><a href="#implementation-methods">Methods of Implementing Knowledge</a></li>
+  <li><a href="#integration-mechanisms">Mechanisms of Integration</a></li>
+  <li><a href="#benefits-of-standards">Role and Benefits of Standards</a></li>
+  <li><a href="#knowledge-architecture">Conceptual Knowledge Architecture</a></li>
+</ul>
+
+<a name="conformance-levels"> </a>
+<h3><span class="sectioncount">2.3.0</span> Levels of Conformance and Enablement <a href="approach.html#conformance-levels" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-03-conformance-levels.html">Levels of Conformance and Enablement</a>
+
+<p>This section discusses trade-offs between effort, time to develop, and capabilities enabled (and value that can be derived) when developing a CPG. From very basic context for narrative snippets searchable in a library (or Infobutton from EHR) to full clinical workflow enablement, cognitive support, and pathway tracking (likely via SMART-on-FHIR App or deep EHR integration) as well as feedback loops with real-world evidence of actual guideline usage, measures, etc. and as substrate for evidence ecosystem and/or feedforward loop for evidence updates.  Fortunately, the CPG-IG includes levels of enablement that correlate to work effort, time to delivery, as well as capabilities that it can support as well as the means to iteratively, and successively develop CPG versions that provide incremental value by ascending these levels of enablement.</p>
+
+<a name="guideline-development"> </a>
+<h3><span class="sectioncount">2.4.0</span> Guideline Development <a href="approach.html#guideline-development" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-04-guideline-development.html">Guideline Development</a>
+
+<p>Guideline development involves systematic review of evidence related to specific clinical question(s) and then producing a set of recommendations and supporting information.  This implementation guide provides sufficient context for developing a computer-interpretable representation of the final work product of the guideline development process.</p>
+
+<p>Covered in this section:</p>
+
+<ul>
+  <li>Overview of the Guideline Development process</li>
+  <li>Description of the Guideline Development Group (GDG) and Scoping</li>
+  <li>Guideline Development Frameworks</li>
+  <li>6S Evidence Pyramid and Learning Health System(s)
+    <ul>
+      <li>Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic</li>
+      <li>NOTE: An updated version of this Evidence Pyramid (ref) will be included in the next update of the CPG-IG</li>
+    </ul>
+  </li>
+  <li>Analysis of Evidence</li>
+  <li>Recommendations</li>
+  <li>Reporting and Dissemination</li>
+  <li>Development of Computable Clinical Guideline Artifacts</li>
+</ul>
+
+<h4 id="recommendations"><strong>Recommendations</strong></h4>
+
+<p>Recommendations are proposals pertaining to the best course of action put forth by an authoritative source or body related to a condition, procedure, clinical decision, or activity.</p>
+
+<h4 id="computer-enabled-guideline-artifacts-in-the-cpg-ig"><strong>Computer-enabled Guideline Artifacts in the CPG-IG:</strong></h4>
+
+<ul>
+  <li><strong>Guideline</strong> (CPG container)
+    <ul>
+      <li><strong>Recommendations</strong></li>
+      <li><strong>Case Features</strong></li>
+    </ul>
+  </li>
+  <li><strong>Metrics and Measures</strong> (scoped to CPG)</li>
+  <li><strong>eCaseReport</strong> (scoped to CPG)</li>
+</ul>
+
+<h5 id="metrics-and-measures"><strong>Metrics and Measures</strong></h5>
+
+<h6 id="a-metric-vs-a-measure"><strong>A Metric vs a Measure</strong></h6>
+
+<p>Metric: Case features, goals, and recommended activities that are relevant for measurement and directly derivable from following the clinical practice guideline. (i.e. these are naturally occurring data that arise from the delivery of guideline-based care, also called “indicators”, also called “continuous variable measures” or event “supplemental data” in the measurement space. Note that there will likely be several different patterns of metrics, e.g. process real/time, process retrospective, intermediate outcome real/time and retrospective, time-bounded, etc.</p>
+
+<p>Measure: Self-contained quality measure that is developed independently and has its own development lifecycle, see the Quality Measure IG. May not directly fall out of the CPG. For example, beta-blockers fall out of the admission strategy, but the medasure is looking for beta-blockers on discharge. Measures may relate to the CPG, or even specific parts of the CPG, and can potentially reuse aspects of the CPG such as goals, feuaters, and recommended activities. CPGs could also be used to complement pre-existing measures derived from clinical guidelines (this will be noted using relatedArtifact).</p>
+
+<a name="knowledge-engineering"> </a>
+<h3><span class="sectioncount">2.5.0</span> Knowledge Engineering <a href="approach.html#knowledge-engineering" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-05-knowledge-engineering-overivew.html">Knowledge Engineering</a>
+
+<p>Knowledge Engineering (KE) is the discipline and profession of developing explicit representations of advanced, domain-oriented logic in computer systems (i.e., knowledge-based systems) in order to simulate human decision-making and high-level cognitive tasks.</p>
+
+<p>Covered in this section:</p>
+
+<ul>
+  <li>Knowledge Acquisition</li>
+  <li>Knowledge Translation</li>
+  <li>Knowledge Representation/Expression</li>
+  <li>Knowledge Execution and Validation</li>
+  <li>Knowledge Implementation</li>
+  <li>Agile Approach to CPG Development</li>
+</ul>
+
+<details open="">
+
+<summary>
+
+FIG. 05.  The Knowledge Engineering Lifecycle, illustrating the general flow of activities and information.
+
+</summary>
+
+<img src="assets/images/CPG-05-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<h4 id="knowledge-engineering-lifecycle-process"><strong>Knowledge Engineering Lifecycle Process</strong></h4>
+
+<p>The Knowledge Engineering Lifecycle Process describes a progressively interdependent series of activities or steps taken in order to transform domain knowledge/content into a more formal, computable set of assets for consumption, execution, and/or delivery.</p>
+
+<p>Steps in the Knowledge engineering Lifecycle include:</p>
+
+<ul>
+  <li>Knowledge Acquisition</li>
+  <li>Knowledge Translation</li>
+  <li>Knowledge Representation/Expression</li>
+  <li>Knowledge Curation</li>
+  <li>Knowledge Execution</li>
+  <li>Knowledge Validation</li>
+  <li>Knowledge Implementation</li>
+</ul>
+
+<details open="">
+
+<summary>
+
+FIG. 06. Knowledge Translation is the dynamic and iterative process of conveying the concepts, clinical logic, and intent of a source knowledge expression (e.g., narrative guideline) into an equivalent expression in another language or formalism- in the case of a narrative guideline into a computeable or computer interpretable expression. This may occur successively or progressively across the Levels of Representation (L1, L2, L3) or may be directly to an L3/L4 expression, typically using an authoring tool or domain-oriented language.
+
+</summary>
+
+<img src="assets/images/CPG-05.02-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<details open="">
+
+<summary>
+
+FIG. 07.  Integration/Collaboration with Guideline Development Process and CPG Development Processes - Analogs between GDG and PG as well as KE and Local Informatics with opportunities to work hand-in-hand, enabling earlier and less costly adaptations (feedback loops in process) and opportunities to collaborate on real-world data.  This combines the “Integrated Process” described above with Concurrent CPG Development and Implementation described in the Knowledge Implementation section.
+
+</summary>
+
+<img src="assets/images/CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<h5 id="agile-approach-to-cpg-development"><strong>Agile Approach to CPG Development</strong></h5>
+
+<details open="">
+
+<summary>
+
+FIG. 08. Concurrent, Integrated, Cross-functional Development and Implementation of the CPG-on-FHIR:  The CPG can serve a critical role in formalizing guidelines and their recommendations in computer-interpretable representations that can be consumed by various downstream end-users and provide a means for feedback and feedforward loops.
+
+</summary>
+
+<img src="assets/images/CPG-Approach0.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<a name="knowledge-representation"> </a>
+<h3><span class="sectioncount">2.6.0</span> Knowledge Representation <a href="approach.html#knowledge-representation" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-06-knowledge-representation.html">Knowledge Representation</a>
+
+<p>Knowledge can be represented in four progressively more structured levels: narrative (L1), semistructured (L2), structured (L3), executable (L4).</p>
+
+<details open="">
+
+<summary>
+
+FIG. 09. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139).
+
+</summary>
+
+<img src="assets/images/knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<p><strong>Knowledge Assets</strong> (scoped representations of knowledge)</p>
+
+<ul>
+  <li><strong>Expressions</strong></li>
+  <li><strong>Declarations</strong></li>
+  <li><strong>Composed Assets</strong></li>
+  <li><strong>Derived Assets</strong></li>
+</ul>
+
+<p><strong>Translation within and between Knowledge Representations</strong></p>
+
+<p><strong>Knowledge Architecture:</strong></p>
+
+<p>This implementation guide describes how the knowledge architecture for clinical practice guidelines has been manifested within FHIR Resources and the FHIR Architectural and Implementation Frameworks.</p>
+
+<a name="tiers-of-functionality"> </a>
+<h3><span class="sectioncount">2.7.0</span> Tiers of Functionality <a href="approach.html#tiers-of-functionality" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-07-tiers-of-functionality.html">Knowledge Engineering</a>
+
+<p>This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering</p>
+
+<ul>
+  <li><strong>Data</strong></li>
+  <li><strong>Logic</strong></li>
+  <li><strong>User Interface (UI)</strong></li>
+</ul>
+
+<a name="levels-by-tiers"> </a>
+<h3><span class="sectioncount">2.8.0</span> Levels of Representation by Tiers of Functionality <a href="approach.html#levels-by-tiers" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html">Knowledge Engineering</a>
+
+<p>The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (i.e., UI) (T3).</p>
+
+<details open="">
+
+<summary>
+
+FIG. 10. Levels of Representation by Tiers of Functionality with Examples (Rhodes, B, Dynamic Content Group, 2019).
+
+</summary>
+
+<img src="assets/images/CPG-Main-LevelsAndTiers.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<a name="implementation-methods"> </a>
+<h3><span class="sectioncount">2.9.0</span> Methods of Implementation <a href="approach.html#implementation-methods" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-09-methods-of-implementation.html">Knowledge Engineering</a>
+
+<p>With these fully specified artifacts, there are three (3) methods of implementation that broadly describe different approaches to moving from the computable representation (L3) of guideline content to the executable representation (L4):</p>
+
+<ul>
+  <li>As a “Spec”</li>
+  <li>Translation</li>
+  <li>Native Execution</li>
+</ul>
+
+<p>Note: The use of CQL is part of the available mechanisms for structuring computable content, and is not required if the computability can be communicated in other ways.</p>
+
+<a name="integration-mechanisms"> </a>
+<h3><span class="sectioncount">2.10.0</span> Mechanisms of Integration <a href="approach.html#integration-mechanisms" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-10-mechanisms-of-integration.html">Knowledge Engineering</a>
+
+<ul>
+  <li>Within EHR (Content Import)</li>
+  <li>As a CDS Service (API)</li>
+  <li>ChainiCPG-Approach0ng through Data</li>
+  <li>Hybrid (combine above as needed)</li>
+</ul>
+
+<a name="benefits-of-standards"> </a>
+<h3><span class="sectioncount">2.11.0</span> Role and Benefits of Standards <a href="approach.html#benefits-of-standards" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<p>Standards facilitate a number of benefits that promote a more efficient and effective knowledge ecosystem:</p>
+
+<ul>
+  <li>Shareability</li>
+  <li>Reusability</li>
+  <li>Distribution of KE Effort</li>
+  <li>Optimization of value across use cases</li>
+  <li>Success in existing ecosystem</li>
+  <li>CPG as situated in the knowledge ecosystem (CQI image overlaid with IGs)</li>
+</ul>
+
+<details open="">
+
+<summary>
+
+FIG. 11. Enabling and Removing Friction across a Knowledge Ecosystem through HL7 Standards
+
+</summary>
+
+<img src="assets/images/CPG-Main-06.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<details open="">
+
+<summary>
+
+FIG. 12. Concurrent, Integrated, Cross-functional Development and Implementation of the CPG-on-FHIR:  The CPG can serve a critical role in formalizing guidelines and their recommendations in computer-interpretable representations based on standards that can be consumed by various downstream end-users as well as provide a means for feedback and feedforward loops.
+
+</summary>
+
+<img src="assets/images/CPG-Approach0.png" alt="Cross-Functional Development" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<a name="knowledge-architecture"> </a>
+<h3><span class="sectioncount">2.12.0</span> Knowledge Architecture <a href="approach.html#knowledge-architecture" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/> </a></h3>
+<p>&nbsp;</p>
+
+<a href="documentation-approach-12-conceptual-knowledge-architecture.html">Conceptual Knowledge Architecture</a>
+
+<ul>
+  <li><strong>Plan</strong>
+    <ul>
+      <li><strong>Recommendations</strong> (the activity the guidelines tell you to do or not to do)</li>
+      <li><strong>Strategies</strong> (organize or orchestrate recommendations)</li>
+      <li><strong>Pathways</strong> (Eligibility, Enrollment)</li>
+    </ul>
+  </li>
+  <li><strong>Case</strong>
+    <ul>
+      <li><strong>Case Features</strong> (describe some aspect of a patient)</li>
+    </ul>
+  </li>
+  <li><strong>Care Plan</strong>
+    <ul>
+      <li><strong>Proposals</strong> (patient-specific recommendations)</li>
+      <li><strong>Requests</strong> (the orders or activities resulting or related to the proposal)</li>
+      <li><strong>Events</strong> (resulting or related to the request and/or proposal)</li>
+    </ul>
+  </li>
+  <li><strong>Workflow and Common Pathway</strong>
+    <ul>
+      <li><strong>Pathway vs Workflow</strong>
+        <ul>
+          <li><strong>Recommendation vs Intervention</strong></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Adherence vs Compliance</strong></li>
+  <li><strong>Related or Derived Assets</strong>
+    <ul>
+      <li><strong>Guideline</strong> (container for all CPG assets)</li>
+      <li><strong>Metrics</strong> (patient-level indicator of compliance, adherence, and end- and intermediate-outcomes related to guideline-directed care)</li>
+      <li><strong>Measures</strong> (population-level compliance, adherence, and end- and intermediate-outcomes related to guideline-directed care; uses Measure-IG)</li>
+      <li><strong>CaseSummary</strong> (roll-up of all the case features)</li>
+      <li><strong>CasePlanSummaryView</strong> (roll-up of case features and care plan with respect to some scope)</li>
+      <li><strong>CasePlanProgressingNote</strong> (roll-up of case features, care plan, and clinical impressions with respect to a point in time or event)</li>
+      <li><strong>eCaseReport</strong> (any data from the CPG relevant to the reporting body; uses eCaseReport-IG)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="separation-of-concerns"><strong>Separation of Concerns</strong></h4>
+
+<details open="">
+
+<summary>
+
+FIG. 13. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
+
+</summary>
+
+<img src="assets/images/CPG-12-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="300" />
+
+</details>
+
+<h4 id="plan"><strong>Plan</strong></h4>
+
+<p>The plan, in the CPG context, as described above in “Separation of Concerns,” addresses how the care team intends to address the active clinical concerns of a class of patients.  Uses the FHIR Plan Definition resource.</p>
+
+<details open="">
+
+<summary>
+
+FIG. 14. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similarly coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it likely belongs in the Plan.
+
+</summary>
+
+<img src="assets/images/CPG-Main-Plan.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<h5 id="pathways"><strong>Pathways</strong></h5>
+
+<ul>
+  <li>
+    <p>Pathway - highest level, longitudinal, across the entire care pathway</p>
+
+    <ul>
+      <li>
+        <p>Strategy - focused on a particular aspect (can potentially be longitudinal as well, but is not necessarily)</p>
+      </li>
+      <li>
+        <p>Recommendation - focused on a particular recommended activity</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="case"><strong>Case</strong></h4>
+
+<p>The data that expresses a Case consists of patient descriptors, exposures (e.g., environmental or behavioral, past and current medications and procedures), physiological and pathophysiological assessments and descriptions (e.g., labs, vitals), clinical presentation and progression (e.g., signs, symptoms), diagnostic evaluations and physical exam findings, family history and genetic markers, past and current diagnoses, or risk and severity scores in response to treatment, including end- and intermediate-outcomes.</p>
+
+<details open="">
+
+<summary>
+
+FIG. 15. The Case consists of facts or information about the patient called Case Features (CPGCaseFeatures) that may be resolved by [FHIR Resources following the Event pattern](https://www.hl7.org/fhir/event.html) and [FHIR Resources following the Request pattern](https://www.hl7.org/fhir/request.html) as required data elements or inferred, in part using required data elements.  If an inference (logic) tells you something about the patient, it is almost certainly a Case Feature.
+
+</summary>
+
+<img src="assets/images/CPG-Main-Case.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<h4 id="care-plan"><strong>Care Plan</strong></h4>
+
+<p>The Care Plan describes the intention of how one or more healthcare professionals intend to provide care for a specific patient, group, or community for a period of time, possibly limited to care for a specific condition or set of conditions.</p>
+
+<p>cpg-careplan: Planned and proposed actions with no optionality</p>
+
+<p>cpg-strategy: Planned and proposed actions with optionality or interdependence</p>
+
+<p>Note that there can be only one cpg-careplan for a patient, and that that careplan may consist of different activities for different pathways and strategies within the pathways.</p>
+
+<p>Note that since strategy is a renaming of the RequestGroup resource, the CarePlan can contain optionality by referencing a RequestGroup (Strategy).</p>
+
+<details open="">
+
+<summary>
+
+FIG. 16. The Care Plan consists of the patient-specific recommendations as Proposals, [Requests](https://www.hl7.org/fhir/request.html) that correspond (or are related) to the Proposals, and the corresponding or related [Events](https://www.hl7.org/fhir/event.html).  NOTE: Requests and Events are also referenced by the Case as CPGCaseFeatures.
+
+</summary>
+
+<img src="assets/images/CPG-Main-InstantiatedPlan.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<details open="">
+
+<summary>
+
+FIG. 17. Conceptual overview of the CPG Knowledge Architecture and its separation of concerns. The top third illustrates the conceptualization of the CPGPlan consisting of the CPGPathway Definition, CPGStrategyDefinition, and CPGRecommendation Definition. The bottom third illustrates the CPGCase consisting of all the patient descriptors, including exposures, physiological and pathophysiological assessments and descriptions, clinical presentation and progression, diagnostic evaluations and physical findings, past and current diagnoses and procedures, related risk and severity scores, and family history and genetic profile as CPGCaseFeatures.  The middle third illustrates the CPGCarePlan with its CPGProposals and resulting or related Requests and Events.
+
+</summary>
+<img src="assets/images/CPG-12-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+
+</details>
+
+<h4 id="workflow-and-common-pathway"><strong>Workflow and Common Pathway</strong></h4>
+
+<h5 id="pathway-vs-workflow"><strong>Pathway vs Workflow</strong></h5>
+
+<p>Patient state is concerned only with the past and current state of the patient; things that actually happened.</p>
+
+<p>Plan is concerned with things that are planned or proposed to happen; what we want to do or are considering.</p>
+
+<p>Workflow is concerned with how the things that we plan to do are actually accomplished.</p>
+
+<h6 id="recommendation-vs-intervention"><strong>Recommendation vs Intervention</strong></h6>
+
+<p>Recommendations don’t necessarily imply interventions.</p>
+
+<p>Intervention starts to get into the particular implementation strategy and represents a method for the delivery of a recommendation.</p>
+
+<h4 id="adherence-vs-compliance"><strong>Adherence vs Compliance</strong></h4>
+
+<p>Adherence is where the patient is with respect to the pathway and strategies (happy path, perfect path, on/off path, on path with a history of off)</p>
+
+<p>Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects)</p>
 
 <!-- ==============END CONTENT END CONTENT=================== -->
 

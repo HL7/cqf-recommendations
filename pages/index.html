@@ -16,27 +16,17 @@
 
   <p>The FHIR Clinical Guidelines Implementation Guide (CPG IG) provides a means of creating a computable representation of a clinical guideline that is faithful to guideline intent and supports the derivation of downstream capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates that direct clinical documentation in support of determining guideline compliance.</p>
 
-  <p>TODO: Overview index</p>
-
-	<p>This implementation is organized with the following sections, accessible via the menu bar at the top of every page:</p>
+  <p>This implementation is organized into the following sections, accessible via the menu bar at the top of every page:</p>
 
 	<ul>
-		<li><a href="index.html">Home</a>: The home page provides summary and background information</li>
-		<li><a href="profiles.html">Profiles</a>: Index of all profiles</li>
-		<li><a href="artifacts.html">Artifacts</a>: Index of all artifacts (e.g. activity and plan definitions)</li>
-		<li><a href="terminology.html">Terminology</a>: Index of all terminology (e.g. code systems and value sets)</li>
-		<li><a href="examples.html">Examples</a>: Index of examples</li>
-		<li><a href="extensions.html">Extensions</a>: Index of extensions</li>
-		<li><a href="documentation.html">Documentation</a>: Index of specification documentation</li>
-			<ul>
-				<li><a href="documentation-approach-01-main-page.html">Approach</a>: Describes the overall approach taken to representing computable guideline content</li> <!-- was documentation-approach.html !-->
-        <li><a href="documentation-methodology.html">Methodology</a>: Describes methodologies for developing computable guideline content.</li>
-				<li><a href="documentation-libraries.html">Libraries</a>: Describes expectations for the use of libraries as part of computable guideline content</li>
-				<li><a href="documentation-recommendations.html">Recommendations</a>: Describes how recommendations are structured and distributed</li>
-				<li><a href="documentation-careplanning.html">Care Planning</a>: Describes expectations for the use dynamic care planning with computable guideline content</li>
-			</ul>
+		<li><a href="index.html">Home</a>: The home page provides summary, introductory, and background information</li>
+		<li><a href="approach.html">Approach</a>: The approach page documents the overall approach to representing computable guideline content</li>
+		<li><a href="methodology.html">Methodology</a>: Describes methodologies for developing computable guideline content</li>
+		<li><a href="profiles.html">Profiles</a>: Describes expectations for use and an index of the profiles and extensions used in representing computable guideline content</li>
+		<li><a href="terminology.html">Terminology</a>: Describes expectations for the use of terminology as part of computable guideline content</li>
+		<li><a href="libraries.html">Libraries</a>: Describes expectations for the use of libraries as part of computable guideline content</li>
+		<li><a href="examples.html">Examples</a>: Index of examples and example artifacts</li>
 		<li><a href="downloads.html">Downloads</a>: Downloads for the specification</li>
-		<li><a href="checklists.html">Checklists</a>: Checklists provided for moving guideline content from L1-L4</li>
 		<li><a href="hl7.org/fhir/uv/cpg/history.cfml">Version History</a>: Index of all versions of this implementation guide</li>
 	</ul>
 
@@ -65,9 +55,18 @@
       </a>
   </h3>
 
-  <p>The implementation guide focuses on establishing patterns, profiles, conformance requirements, and guidance for the patient-independent representation, and analogous patterns for the patient-specific representation of guideline recommendations.</p>
+  <img src="assets/images/CPG-Main-06.png" alt="Clinical quality lifecycle" class="img-responsive img-rounded center-block" />
+  <p><em>Figure 1.2</em> Clinical Quality Lifecycle with situated standards to address each respective phase.  The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback and feedforward loop(s).</p>
 
-  <a name="goals"> </a>
+  <p>Translating guideline recommendations and other types of guidance into practice has historically been a site by site exercise that has been disconnected from guideline/guidance development, creating unnecessary redundancies and introducing potential errors in translation that can lead to inconsistencies in how the guideline or guidance is executed. This clinical practice guidelines implementation guide (CPG-IG) consists of standards and a standardized, scalable approach to help make the effort of translating and implementing clinical practice guidelines and other types of guidance more efficient and effective. Key aspects include:</p>
+
+  <ol>
+    <li>An integrated guideline/guidance development and implementation process (referred to as “the integrated process”)</li>
+    <li>Common standards that can work across the entire data lifecycle (a.k.a. learning health system - see Figure 1.2) and different electronic health record (EHR) platforms</li>
+    <li>Closed-loop guideline content and information flow inclusive of feedback and feedforward processes</li>
+  </ol>
+
+<a name="goals"> </a>
   <h3>
       <span class="sectioncount">1.3.0</span> Goals
       <a href="index.html#goals" title="link to here" class="self-link">
@@ -75,7 +74,18 @@
       </a>
   </h3>
 
-	<p><em>Direct:</em></p>
+  <p><strong>The purpose of the CPG-IG is to:</strong></p>
+
+  <ul>
+    <li>Enable computable guideline specification to occur concurrently with guideline development;</li>
+    <li>Faithfully express guideline intent, including rationale and linkage to evidence-base;</li>
+    <li>Enable efficient and effective use and reuse of the guideline specification in downstream capabilities;</li>
+    <li>Accelerate the development of computable guideline specifications and interventions through an integrated, cross-functional, rapid-cycle (Agile) development process that is inclusive of local implementation;</li>
+    <li>More closely tie guideline intent, interventions, and measurements; and</li>
+    <li>Provide closed-loop (feedback and feedforward loops) across the knowledge, practice, and discovery or evidence ecosystems.</li>
+  </ul>
+
+	<p><em>Direct goals:</em></p>
 
 	<ul>
 		<li>Reduce duplicate development effort involved in the implementation of clinical practice guideline recommendations in clinical systems</li>
@@ -87,13 +97,17 @@
 		<li>[NOTE: EBM IG focused on up front processes; Public Health and QI on reporting results, and Registries on data collection and input into EBM/research activities. Suggest expolicit collaboration with these groups.]</li>
 	</ul>
 
-	<p><em>Indirect:</em></p>
+	<p><em>Indirect goals:</em></p>
 
 	<ul>
 		<li>Minimize the time needed to implement clinical practice guideline recommendations in clinical systems</li>
 		<li>Improve the ability to share computable biomedical knowledge artifacts (clinical knowledge definitions, value sets, order sets, expression logic, interventions, etc.)</li>
 		<li>Enhance the value of computable guidelines (decrease cost/effort, increase utility/usability)</li>
 	</ul>
+
+  <p>The primary objective of the CPG approach to codifying clinical practice guidelines is to accelerate the translation and delivery of expert body evidence-based and best practice recommendations to the point of care. The CPG-IG was developed through multi-stakeholder engagement (e.g., guideline developers, knowledge engineers, clinical implementers, standards experts, patient and caregiver advocates, governmental and nongovernmental agencies, and others) to evolve the development approach and means of expressing clinical practice guidelines in computable formats.  These stakeholders identified the need to concurrently develop computable formats along with the narrative guidelines/guidance. As such, the knowledge engineering process, inclusive of elicitation, translation, specification, and formal representation, must be integrated with the guideline development process and serve the function of translating between the clinical domain and the formal, computable expressions thereof.  It is the intent of this section to describe some of the fundamentals of these activities as well as the concept, means, and performances to carry out this activity.</p>
+
+  <p>Secondarily, we describe how these activities interact with adjacent and related activities as well as content and related standards in the broader knowledge ecosystem (inclusive of evidence ecosystem, guideline developers, guideline-directed care, quality measure ecosystem, registry community, etc.). This includes upstream activities, such as evidence generation and knowledge discovery, and downstream activities, such decision support (i.e., CDS), patient care, advanced cognitive support (e.g., using SMART-on-FHIR apps), quality measurement and reporting, and electronic case reporting (for similarly scoped conditions). All can serve to inform subsequent iterations of clinical guidelines and guideline-directed care and thus have a key role in the learning health system.</p>
 
   <a name="audience"> </a>
   <h3>
@@ -104,6 +118,30 @@
   </h3>
 
 	<p>Clinical informaticists, health system integrators and clinical systems developers. Assumes familiarity with relevant standards, including FHIR and Clinical Quality Language (CQL).</p>
+
+  <p><strong>Notes to Target Audiences:</strong></p>
+
+  <p>The CPG Approach section highlights:</p>
+
+  <ul>
+    <li>Various highly specialized and technical participants in the “Knowledge-to-Delivery-to-Discovery” ecosystem that often interact with each other’s work products but may not interact directly with each other;</li>
+    <li>How the HL7 CPG-IG recognizes their distinct and valuable work and provides numerous opportunities to reuse domain standards (e.g., FHIR and other HL7 IG’s); and</li>
+    <li>A reconceptualization of work processes that share and reuse essential information and content.</li>
+  </ul>
+
+  <p>Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative (<a href="https://www.cdc.gov/ddphss/clinical-guidelines/index.html">ref</a>), the World Health Organization’s (WHO’s) Antenatal Care Guidelines (<a href="https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/">ref</a>), the HL7 Clinical Decision Support and Clinical Quality Information Working Groups, and numerous other publicly funded and private sector initiatives, including local health system implementations of guidelines and in-workflow pathways.</p>
+
+  <p><strong>To the Guideline Developer:</strong> Working in parallel with knowledge engineers and other downstream consumers (e.g., local implementers) can identify areas within the guideline that need clarification, helping improve the narrative, provide opportunity to review the translation of the tools for fidelity to the guideline, and get early feedback from end-consumers of the guideline work product – all <em>before</em> the guidelines or tools are published.</p>
+
+  <p><strong>To the Knowledge Engineer:</strong> Working in parallel with guideline developers allows validation of translations directly with the “source of truth,” helping ensure accuracy. Working in parallel with downstream consumers (e.g., local implementers) provides the ability to confirm feasibility and validity for the users of the artifacts as they are produced by knowledge engineers and may even provide a useful means to build and validate once (i.e., without unnecessary redundancy) against real-world data and implementations.</p>
+
+  <p><strong>To the Downstream Consumers:</strong> Being involved with the guideline development and knowledge engineering can help identify issues early in the process and optimize incorporation of the knowledge into downstream products that aid in implementation, such as apps, measures, or other point-of-care tools, and significantly reduce the rework of re-engineering parts of the guideline, saving time and effort.</p>
+
+  <p><strong>To the Local Implementer:</strong> The main goal of the knowledge developed is to implement it in practice. Having local implementers (both clinicians and informaticians) involved with guideline development and knowledge engineering allows for the ability to communicate anticipated issues for implementation so that guideline developers or knowledge engineers have the opportunity to adjust their respective products in order to help optimize the ease and positive impact of implementation.  A computable guideline representation can significantly reduce rework, saving time and effort for local implementations.</p>
+
+  <p><strong>To the Evidence Ecosystem:</strong> Taking a holistic approach to guideline development and implementation includes considerations for learning and continuous improvement through feedback and feedforward loops. A number of activities in the knowledge ecosystem that serve specific functions (e.g., case reporting to public health, quality reporting to payers, quality/data reporting to medical society registries, etc.) could also help provide the evidence that can inform updates to the guidelines/guidance. This evidence may be based on patient-level, point-of-care guideline usage, and detailed tracking thereof, affording new means of collecting evidence.</p>
+
+  <p>Using approaches, standards, and techniques addressed in further detail in individual sections, the CPG-on-FHIR as described in this implementation guide can serve a critical role in the full data lifecycle of a Learning Health System.</p>
 
   <a name="background"> </a>
   <h3>
@@ -116,11 +154,16 @@
 	<p>The need for computable care guidelines can be considered in the context of the data lifecycle, where the representation of the guideline recommendations in FHIR helps deliver actionable knowledge (Figure 1.2).</p>
 
   <img src="assets/images/delivering-actionable-knowledge.png" alt="Delivering actionable knowledge" height="350" width="712"/>
-	<p><em>Figure 1.2 </em>The data lifecycle and impacts to the public’s health (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019).</p>
+	<p><em>Figure 1.3</em> The data lifecycle and impacts to the public’s health (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019).</p>
 
 	<p>By translating the recommendations in clinical practice guidelines at the source, and disseminating a computable version along with the narrative version of the guidelines, the effort of translation would not be repeated across every organization that intends to apply the recommendations. Likewise, unnecessary or unintentional variations as a result of duplicative translation efforts could be prevented with a standard, computable version that is ready to be implemented. In removing the need for translating recommendations at each local clinical system, and removing as much variation as possible through a standard translation, the time needed to apply the recommendations in practice should also be reduced, helping scientific evidence reach patient care more easily, quickly, accurately, and consistently.</p>
 
 	<p>In considering common patterns across multiple guidelines, this implementation guide can apply to a variety of use cases across multiple clinical domains, as is evidenced by the <a href="examples.html">examples</a> provided. These common patterns not only create a way to organize the content for the translation into computable recommendations but also help implementers operationalize the recommendations within clinical workflows.</p>
+
+  <img src="assets/images/CPG-Main-RedesigningGuidelineDevelopment.png" alt="image_tooltip" class="img-responsive img-rounded center-block" />
+<p><em>Figure 1.4</em> Redesigning guideline development and implementation: The Integrated Process (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019). NOTE: The “Implementation” perspective represents local implementers that incorporate the local considerations into guideline translations, and “Local Implementations” represent the actual implementation at clinical sites.</p>
+
+<p>In particular, the translation into tools like CDS and eCQMs applies common health IT standards like Fast Healthcare Interoperability Resources (FHIR) and Clinical Quality Language (CQL). How to use these standards to develop shareable, platform-independent tools based on guidelines/guidance for a variety of diseases, conditions, or preventive care is the primary focus of this CPG-IG, including this Approach section. Secondarily, this CPG-IG shows how using FHIR can help with other data-focused activities, such as public health reporting (i.e., using electronic case reports) or quality reporting (i.e., using eCQMs), that provide a feedback loop that feeds the evidence. The evidence can also be represented using FHIR (i.e., EBM-on-FHIR) and could be applied in summarizing evidence and updating guidelines/guidance. This completes the “data lifecycle” that allows for continuous learning and improvement – a “learning health system”.  The CPG-IG approach can be a key component of a learning health system in times requiring rapid response, where knowledge of best practice is not well-known.</p>
 
   <a name="references"> </a>
   <h3>
