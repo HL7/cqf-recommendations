@@ -103,12 +103,14 @@
     "procedure-cpg-profile-spreadsheet.xml",
     "questionnaire-cpg-publishable-profile-spreadsheet.xml",
     "questionnaire-cpg-shareable-profile-spreadsheet.xml",
+    "questionnaireresponse-cpg-profile-spreadsheet.xml",
     "relatedperson-cpg-profile-spreadsheet.xml",
     "requestgroup-cpg-strategy-profile-spreadsheet.xml",
 		"servicerequest-cpg-profile-spreadsheet.xml",
     "structuredefinition-cpg-shareable-profile-spreadsheet.xml",
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
     "structuredefinition-cpg-publishablecasefeature-profile-spreadsheet.xml",
+    "task-cpg-questionnaire-profile-spreadsheet.xml",
     "valueset-cpg-publishable-profile-spreadsheet.xml",
     "valueset-cpg-shareable-profile-spreadsheet.xml",
 		"valueset-cpg-computable-profile-spreadsheet.xml",
@@ -125,6 +127,10 @@
 		"CapabilityStatement/cpg-patient-registry": {
 			"source": "capabilitystatement/cpg-patient-registry.xml",
 			"base": "CapabilityStatement-cpg-patient-registry.html"
+		},
+    "CodeSystem/cpg-activity-type": {
+			"source": "codesystem-cpg-activity-type.xml",
+			"base": "CodeSystem-cpg-activity-type.html"
 		},
 		"CodeSystem/cpg-indicator": {
 			"source": "codesystem-cpg-indicator.xml",
@@ -211,6 +217,10 @@
 		},
 		"Questionnaire/cpg-patient-profile": {
 			"base": "Questionnaire-cpg-patient-profile.html"
+		},
+    "ValueSet/cpg-activity-type": {
+			"source": "valueset-cpg-activity-type.xml",
+			"base": "ValueSet-cpg-activity-type.html"
 		},
 		"ValueSet/cpg-indicator": {
 			"source": "valueset-cpg-indicator.xml",
@@ -502,6 +512,14 @@
     "StructureDefinition/cpg-shareablequestionnaire": {
       "defns": "StructureDefinition-cpg-shareablequestionnaire-definitions.html",
       "base": "StructureDefinition-cpg-shareablequestionnaire.html"
+    },
+    "StructureDefinition/cpg-questionnairetask": {
+      "defns": "StructureDefinition-cpg-questionnairetask-definitions.html",
+      "base": "StructureDefinition-cpg-questionnairetask.html"
+    },
+    "StructureDefinition/cpg-questionnaireresponse": {
+      "defns": "StructureDefinition-cpg-questionnaireresponse-definitions.html",
+      "base": "StructureDefinition-cpg-questionnaireresponse.html"
     },
     "StructureDefinition/cpg-publishablevalueset": {
       "defns": "StructureDefinition-cpg-publishablevalueset-definitions.html",
