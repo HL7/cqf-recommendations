@@ -66,12 +66,20 @@
 <a name="domain-profiles"> </a>
 <h3><span class="sectioncount">4.2.0</span> Domain Profiles <a href="profiles.html#domain-profiles" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
 
+<p></p>
+
 <table>
-  <tr><th>Level</th><th>Definition</th><th>Plan</th></tr>
-  <tr><td>Pathway</td><td><a href="StructureDefinition-cpg-pathwaydefinition.html">CPGPathwayDefinition</a></td><td><a href="StructureDefinition-cpg-pathway">CPGPathway</a></td></tr>
-  <tr><td>Strategy</td><td><a href="StructureDefinition-cpg-strategydefinition.html">CPGStrategyDefinition</a></td><td><a href="StructureDefinition-cpg-strategy">CPGStrategy</a></td></tr>
-  <tr><td>Recommendation</td><td><a href="StructureDefinition-cpg-recommendationdefinition.html">CPGRecommendationDefinition</a></td><td><a href="StructureDefinition-cpg-recommendation">CPGRecommendation</a></td></tr>
+  <tr><th>Level</th><th>Definition</th><th>Plan/Instance</th></tr>
   <tr><td>Group</td><td><a href="StructureDefinition-cpg-groupdefinition.html">CPGGroupDefinition</a></td><td><a href="StructureDefinition-cpg-group.html">CPGGroup</a></td></tr>
+  <tr><td>Location</td><td><a href="StructureDefinition-cpg-locationdefinition.html">CPGLocationDefinition</a></td><td><a href="StructureDefinition-cpg-location.html">CPGLocation</a></td></tr>
+  <tr><td>Organization</td><td>-</td><td><a href="StructureDefinition-cpg-organization.html">CPGOrganization</a></td></tr>
+  <tr><td>Patient</td><td>-</td><td><a href="StructureDefinition-cpg-patient.html">CPGPatient</a></td></tr>
+  <tr><td>Practitioner</td><td>-</td><td><a href="StructureDefinition-cpg-practitioner.html">CPGPractitioner</a></td></tr>
+  <tr><td>PractitionerRole</td><td>-</td><td><a href="StructureDefinition-cpg-practitionerrole.html">CPGPractitionerRole</a></td></tr>
+  <tr><td>CareTeam</td><td>-</td><td><a href="StructureDefinition-cpg-careteam.html">CPGCareTeam</a></td></tr>
+  <tr><td>Pathway</td><td><a href="StructureDefinition-cpg-pathwaydefinition.html">CPGPathwayDefinition</a></td><td><a href="StructureDefinition-cpg-careplan">CPGCarePlan</a></td></tr>
+  <tr><td>Strategy</td><td><a href="StructureDefinition-cpg-strategydefinition.html">CPGStrategyDefinition</a></td><td><a href="StructureDefinition-cpg-strategy">CPGStrategy</a></td></tr>
+  <tr><td>Recommendation</td><td><a href="StructureDefinition-cpg-recommendationdefinition.html">CPGRecommendationDefinition</a></td><td><a href="StructureDefinition-cpg-communicationrequest.html">CPGCommunicationRequest</a><br/><a href="StructureDefinition-cpg-collectinformationtask.html">CPGCollectInformationTask</a><br/><a href="StructureDefinition-cpg-medicationrequest.html">CPGMedicationRequest</a><br/><a href="StructureDefinition-cpg-immunizationrecommendation.html">CPGImmunizationRecommendation</a><br/><a href="StructureDefinition-cpg-servicerequest.html">CPGServiceRequest</a></td></tr>
 </table>
 
 <a name="activity-profiles"> </a>
@@ -108,13 +116,13 @@
   <tr><th>Activity</th><th>Definition</th><th>Request</th><th>Event</th></tr>
   <tr><td>Send a message</td><td><a href="StructureDefinition-cpg-communicationactivity.html">CPGCommunicationActivity</a></td><td><a href="StructureDefinition-cpg-communicationrequest.html">CPGCommunicationRequest</a></td><td><a href="StructureDefinition-cpg-communication.html">CPGCommunication</a></td></tr>
   <tr><td>Collect information</td><td><a href="StructureDefinition-cpg-shareablequestionnaire.html">CPGShareableQuestionnaire</a></td><td><a href="StructureDefinition-cpg-collectinformationtask.html">CPGCollectInformationTask</a></td><td><a href="StructureDefinition-cpg-questionnaireresponse.html">CPGQuestionnaireResponse</a></td></tr>
-  <tr><td>Order a medication</td><td><a href="StructureDefinition-cpg-medicationrequestactivity.html">CPGMedicationRequestActivityDefinition</a></td><td><a href="StructureDefinition-cpg-medicationrequest.html">CPGMedicationRequest</a></td><td><a href="StructureDefinition-cpg-medicationdispense.html">CPGMedicationDispense</a><br/><a href="StructureDefinition-cpg-medicationadministration.html">CPGMedicationAdministration</a><br/><a href="StructureDefinition-cpg-medicationstatement">CPGMedicationStatement</a></td></tr>
-  <tr><td>Recommend an immunization</td><td><a href="StructureDefinition-cpg-immunizationactivity.html">CPGRecommendImmunizationActivityDefinition</a></td><td><a href="StructureDefinition-cpg-immunizationrecommendation.html">CPGImmunizationRecommendation</a></td><td><a href="StructureDefinition-cpg-immunization.html">CPGImmunization</a></td></tr>
+  <tr><td>Order a medication</td><td><a href="StructureDefinition-cpg-medicationrequestactivity.html">CPGMedicationRequestActivity</a></td><td><a href="StructureDefinition-cpg-medicationrequest.html">CPGMedicationRequest</a></td><td><a href="StructureDefinition-cpg-medicationdispense.html">CPGMedicationDispense</a><br/><a href="StructureDefinition-cpg-medicationadministration.html">CPGMedicationAdministration</a><br/><a href="StructureDefinition-cpg-medicationstatement">CPGMedicationStatement</a></td></tr>
+  <tr><td>Recommend an immunization</td><td><a href="StructureDefinition-cpg-immunizationactivity.html">CPGImmunizationActivity</a></td><td><a href="StructureDefinition-cpg-immunizationrecommendation.html">CPGImmunizationRecommendation</a></td><td><a href="StructureDefinition-cpg-immunization.html">CPGImmunization</a></td></tr>
   <tr><td>Order a service</td><td><a href="StructureDefinition-cpg-servicerequestactivity.html">CPGServiceRequestActivity</a></td><td><a href="StructureDefinition-cpg-servicerequest.html">CPGServiceRequest</a></td><td><a href="StructureDefinition-cpg-procedure.html">CPGProcedure</a><br/><a href="StructureDefinition-cpg-observation.html">CPGObservation</a><br/><a href="StructureDefinition-cpg-diagnosticreport">CPGDiagnosticReport</a></td></tr>
-  <tr><td>Propose a diagnosis</td><td>-</td><td>-</td><td><a href="StructureDefinition-cpg-condition.html">CPGCondition</a></td></tr>
-  <tr><td>Record a detected issue</td><td>-</td><td>-</td><td><a href="StructureDefinition-cpg-detectedissue.html">CPGDetectedIssue</a></td></tr>
-  <tr><td>Record an inference</td><td>-</td><td>-</td><td><a href="StructureDefinition-cpg-observation.html">CPGObservation</a></td></tr>
-  <tr><td>Report a flag</td><td>-</td><td>-</td><td><a href="StructureDefinition-cpg-flag.html">CPGFlag</a></td></tr>
+  <tr><td>Propose a diagnosis</td><td><a href="StructureDefinition-cpg-proposediagnosisactivity.html">CPGProposeDiagnosisActivity</a></td><td><a href="StructureDefinition-cpg-proposediagnosistask.html">CPGProposeDiagnosisTask</a></td><td><a href="StructureDefinition-cpg-condition.html">CPGCondition</a></td></tr>
+  <tr><td>Record a detected issue</td><td><a href="StructureDefinition-cpg-recorddetectedissueactivity.html">CPGRecordDetectedIssueActivity</a></td><td><a href="StructureDefinition-cpg-reportdetectedissuetask.html">CPGReportDetectedIssueTask</a></td><td><a href="StructureDefinition-cpg-detectedissue.html">CPGDetectedIssue</a></td></tr>
+  <tr><td>Record an inference</td><td><a href="StructureDefinition-cpg-recordinferenceactivity.html">CPGRecordInferenceActivity</a></td><td><a href="StructureDefinition-cpg-recordinferencetask.html">CPGRecordInferenceTask</a></td><td><a href="StructureDefinition-cpg-observation.html">CPGObservation</a></td></tr>
+  <tr><td>Report a flag</td><td><a href="StructureDefinition-cpg-reportflagactivity.html">CPGReportFlagActivity</a></td><td><a href="StructureDefinition-cpg-reportflagtask.html">CPGReportFlagTask</a></td><td><a href="StructureDefinition-cpg-flag.html">CPGFlag</a></td></tr>
 </table>
 
 <a name="content-profiles"> </a>

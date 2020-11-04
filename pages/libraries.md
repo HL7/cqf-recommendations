@@ -78,7 +78,7 @@ CQL allows libraries to define a namespace that can be used to organize librarie
 library CMS.Common version '2.0.0'
 ```
 
-This example declares a library named Common in the CMS namespace. Per the CQL specification, the namespace for a library is included in the ELM, along with a URI that provides a globally unique, stable identifier for the namespace. As an example, the URI for the CMS namespace might be `http://ecqi.healthit.gov/ecqm/measures`.
+This example declares a library named Common in the CMS namespace. Per the CQL specification, the namespace for a library is included in the [ELM](#translation-to-elm), along with a URI that provides a globally unique, stable identifier for the namespace. As an example, the URI for the CMS namespace might be `http://ecqi.healthit.gov/ecqm/measures`.
 
 Although the URI for a CQL namespace SHOULD correspond to a reachable web address (i.e. a URL), this is not required. However, global uniqueness of the namespace URI is required in order to avoid namespace clashes.
 

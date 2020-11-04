@@ -49,6 +49,10 @@
     "activitydefinition-cpg-immunization-profile-spreadsheet.xml",
     "activitydefinition-cpg-servicerequest-profile-spreadsheet.xml",
     "activitydefinition-cpg-medicationrequest-profile-spreadsheet.xml",
+    "activitydefinition-cpg-proposediagnosis-profile-spreadsheet.xml",
+    "activitydefinition-cpg-recordinference-profile-spreadsheet.xml",
+    "activitydefinition-cpg-recorddetectedissue-profile-spreadsheet.xml",
+    "activitydefinition-cpg-reportflag-profile-spreadsheet.xml",
 		"appointment-cpg-profile-spreadsheet.xml",
     "bundle-cpg-artifact-profile-spreadsheet.xml",
     "bundle-cpg-testcase-profile-spreadsheet.xml",
@@ -111,6 +115,10 @@
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
     "structuredefinition-cpg-publishablecasefeature-profile-spreadsheet.xml",
     "task-cpg-questionnaire-profile-spreadsheet.xml",
+    "task-cpg-proposediagnosis-profile-spreadsheet.xml",
+    "task-cpg-recordinference-profile-spreadsheet.xml",
+    "task-cpg-recorddetectedissue-profile-spreadsheet.xml",
+    "task-cpg-reportflag-profile-spreadsheet.xml",
     "valueset-cpg-publishable-profile-spreadsheet.xml",
     "valueset-cpg-shareable-profile-spreadsheet.xml",
 		"valueset-cpg-computable-profile-spreadsheet.xml",
@@ -512,6 +520,38 @@
     "StructureDefinition/cpg-shareablequestionnaire": {
       "defns": "StructureDefinition-cpg-shareablequestionnaire-definitions.html",
       "base": "StructureDefinition-cpg-shareablequestionnaire.html"
+    },
+    "StructureDefinition/cpg-proposediagnosisactivity": {
+      "defns": "StructureDefinition-cpg-proposediagnosisactivity-definitions.html",
+      "base": "StructureDefinition-cpg-proposediagnosisactivity.html"
+    },
+    "StructureDefinition/cpg-recordinferenceactivity": {
+      "defns": "StructureDefinition-cpg-recordinferenceactivity-definitions.html",
+      "base": "StructureDefinition-cpg-recordinferenceactivity.html"
+    },
+    "StructureDefinition/cpg-recorddetectedissueactivity": {
+      "defns": "StructureDefinition-cpg-recorddetectedissueactivity-definitions.html",
+      "base": "StructureDefinition-cpg-recorddetectedissueactivity.html"
+    },
+    "StructureDefinition/cpg-reportflagactivity": {
+      "defns": "StructureDefinition-cpg-reportflagactivity-definitions.html",
+      "base": "StructureDefinition-cpg-reportflagactivity.html"
+    },
+    "StructureDefinition/cpg-proposediagnosistask": {
+      "defns": "StructureDefinition-cpg-proposediagnosistask-definitions.html",
+      "base": "StructureDefinition-cpg-proposediagnosistask.html"
+    },
+    "StructureDefinition/cpg-recordinferencetask": {
+      "defns": "StructureDefinition-cpg-recordinferencetask-definitions.html",
+      "base": "StructureDefinition-cpg-recordinferencetask.html"
+    },
+    "StructureDefinition/cpg-recorddetectedissuetask": {
+      "defns": "StructureDefinition-cpg-recorddetectedissuetask-definitions.html",
+      "base": "StructureDefinition-cpg-recorddetectedissuetask.html"
+    },
+    "StructureDefinition/cpg-reportflagtask": {
+      "defns": "StructureDefinition-cpg-reportflagtask-definitions.html",
+      "base": "StructureDefinition-cpg-reportflagtask.html"
     },
     "StructureDefinition/cpg-questionnairetask": {
       "defns": "StructureDefinition-cpg-questionnairetask-definitions.html",

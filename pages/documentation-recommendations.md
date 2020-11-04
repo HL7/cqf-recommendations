@@ -124,12 +124,13 @@ Content conforming to this implementation guide SHALL use the [cpg-recommendatio
 
 This implementation guide uses the PlanDefinition resource to represent order sets as part of protocols, workflows, and recommendations. The guidance here builds on the [Order Set](http://hl7.org/fhir/R4/clinicalreasoning-knowledge-artifact-representation.html#order-set) topic in the FHIR specification to supply additional guidance related to the use of an order set as a component of a computable guideline.
 
-Content conforming to this implementation guide SHALL use the [cpg-ordersetdefinition](StructureDefinition-cpg-ordersetdefinition.html) profile to represent order sets. 
+Content conforming to this implementation guide SHALL use the [cpg-ordersetdefinition](StructureDefinition-cpg-ordersetdefinition.html) profile to represent order sets.
 
 ## Recommendation Instances
 
 Across guideline-based care, there are many different types of recommendations that may be given, such as the recommendation to conduct a specific test, to prescribe a specific medication, recommendation for a particular procedure, and many others. In general though, these recommendations should provide at least:
 
+* **Rationale**: A narrative statement providing the rationale, or explanation, for the recommendation
 * **Support**: A link back to the guideline, and ultimately the evidence, that supports the recommendation
 * **Strength**: The _strength_ of the recommendation
 * **Direction**: When appropriate, the _direction_ of the recommendation
@@ -140,15 +141,12 @@ Within FHIR, a recommendation is typically represented using a [Request](http://
 
 This implementation guide defines profiles for each of the request resources to be used as recommendation instances:
 
-* [Appointment](StructureDefinition-cpg-appointment.html): The recommendation for an appointment
 * [CommunicationRequest](StructureDefinition-cpg-communicationrequest.html): Recommendation for a specific communication
-* [DeviceRequest](StructureDefinition-cpg-devicerequest.html): Recommendation for a specific device to be used
+* [CollectInformationTask](StructureDefinition-cpg-collectinformationtask.html): Recommendation to collect specific information
 * [ImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html): Recommendation for a particular immunization
 * [MedicationRequest](StructureDefinition-cpg-medicationrequest.html): Recommendation for a specific medication
-* [NutritionOrder](StructureDefinition-cpg-nutritionorder.html): Recommendation for a specific diet or substance
 * [ServiceRequest](StructureDefinition-cpg-servicerequest.html): Recommendation for a particular procedure or referral to a specialist
 
 Specific guideline content will typically define derived profiles for recommendation instances establishing additional constraints.
 
 Content conforming to this implementation guide SHALL use one of the recommendation instance profiles described above to ensure supporting information related to the recommendation is preserved through the recommendation instance.
-
