@@ -130,8 +130,8 @@ Content conforming to this implementation guide SHALL use the [cpg-ordersetdefin
 
 Across guideline-based care, there are many different types of recommendations that may be given, such as the recommendation to conduct a specific test, to prescribe a specific medication, recommendation for a particular procedure, and many others. In general though, these recommendations should provide at least:
 
-* **Rationale**: A narrative statement providing the rationale, or explanation, for the recommendation
-* **Support**: A link back to the guideline, and ultimately the evidence, that supports the recommendation
+* **Explanation**: A narrative statement providing the rationale, or explanation, for the recommendation
+* **Source**: A link back to the guideline, and ultimately the evidence, that supports the recommendation
 * **Strength**: The _strength_ of the recommendation
 * **Direction**: When appropriate, the _direction_ of the recommendation
 * **Evidence Quality**: The _quality_ of the evidence supporting the recommendation
@@ -142,9 +142,13 @@ Within FHIR, a recommendation is typically represented using a [Request](http://
 This implementation guide defines profiles for each of the request resources to be used as recommendation instances:
 
 * [CommunicationRequest](StructureDefinition-cpg-communicationrequest.html): Recommendation for a specific communication
-* [CollectInformationTask](StructureDefinition-cpg-collectinformationtask.html): Recommendation to collect specific information
 * [ImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html): Recommendation for a particular immunization
 * [MedicationRequest](StructureDefinition-cpg-medicationrequest.html): Recommendation for a specific medication
+* [ProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html): Recommendation to propose a specific diagnosis
+* [QuestionnaireTask](StructureDefinition-cpg-questionnairetask.html): Recommendation to collect specific information using a questionnaire
+* [RecordDetectedIssue](StructureDefinition-cpg-recorddetectedissue.html): Recommendation to record a specific detected issue
+* [RecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html): Recommendation to record a specific inference
+* [ReportFlagTask](StructureDefinition-cpg-reportflagtask.html): Recommendation to report a particular flag
 * [ServiceRequest](StructureDefinition-cpg-servicerequest.html): Recommendation for a particular procedure or referral to a specialist
 
 Specific guideline content will typically define derived profiles for recommendation instances establishing additional constraints.
