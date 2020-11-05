@@ -9,8 +9,39 @@ title: Development of Computable Clinical Guideline Artifacts
 
 ### Evidence
 
-
 Evidence and information from the evidence used and referenced in the guideline recommendations may be formalized as FHIR Evidence Resources with their respective Evidence Variables using the EBM-on-FHIR IG.  Similarly, the published guideline narrative may be formalized through the same approach using this CPG-on-FHIR IG as discussed in the [Analysis of Evidence](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html) <!-- link to - 04.04 !--> section.
+
+### Co-Development of Guidelines and Computable Clinical Guideline Artifacts
+
+The integrated process describes co-development of the narrative and computable guidelines that brings together a number of desirable elements that include:
+*	An approach that includes guideline and artifact development, implementation, consideration for updating and discontinuation, and evaluation
+*	Promotes active collaboration (integration) of key subject matter experts thought the process.  These include:
+    *	Guideline developers
+    * Informaticians
+    * Implementers
+    * Communicators
+    * Evaluators
+* Provides for active iteration of key steps of the guideline development and implementation processes to assure that intermediate and final products are optimized and fit for purpose.
+* Includes robust process, product, and outcomes/impact evaluation frameworks to assure guideline development and implementation is efficient, cost-effective, and impactful (this element in development)
+
+#### The Integrated Process Cycle
+
+<details>
+
+Figure X represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support.2 See explanation below diagram for additional details.
+
+<summary>
+FIG 04.05-01: The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.^1^
+</summary>
+
+<img src="assets/images/CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block"/>
+
+<details>
+
+The outer circle shows 12 phases of formal guidelines development that result in published narrative recommendations. The middle circle represents the integration of informatics and clinical implementation activities into the guideline development 12 phase process. This circle adds iterative steps within and between the phases and that 1) inform written guidelines, and 2) result in a computable version of  guidelines that can be more rapidly implemented in clinical settings. The inner circle represents the evaluation activities that should be conducted throughout guideline development, with constant attention to meeting the needs of users. This integration is designed to facilitate use of guidelines in clinical practice and timely updates to guidelines based on clinical impact. Finally, at the center of the process are the guideline users, who should be engaged through human-centered design processes in all phases (shown by spiral connections). 
+
+[2] Boxwala, Aziz A., et al. "A multi-layered framework for disseminating knowledge for computer-based decision support." Journal of the American Medical Informatics Association 18.Supplement_1 (2011): i132-i139.
+
 
 
 ### CPG Content and Related Derivatives
