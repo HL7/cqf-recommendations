@@ -58,6 +58,7 @@
     "bundle-cpg-testcase-profile-spreadsheet.xml",
     "careplan-cpg-profile-spreadsheet.xml",
     "careteam-cpg-profile-spreadsheet.xml",
+    "careteam-cpg-definition-profile-spreadsheet.xml",
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
     "codesystem-cpg-shareable-profile-spreadsheet.xml",
     "communication-cpg-profile-spreadsheet.xml",
@@ -85,6 +86,7 @@
     "library-cpg-shareable-profile-spreadsheet.xml",
     "library-cpg-executable-profile-spreadsheet.xml",
     "location-cpg-profile-spreadsheet.xml",
+    "location-cpg-definition-profile-spreadsheet.xml",
     "medicationadministration-cpg-profile-spreadsheet.xml",
     "medicationdispense-cpg-profile-spreadsheet.xml",
 		"medicationrequest-cpg-profile-spreadsheet.xml",
@@ -95,6 +97,7 @@
 		"patient-cpg-profile-spreadsheet.xml",
 		"practitioner-cpg-profile-spreadsheet.xml",
 		"practitionerrole-cpg-profile-spreadsheet.xml",
+    "practitionerrole-cpg-definition-profile-spreadsheet.xml",
 		"plandefinition-cpg-orderset-profile-spreadsheet.xml",
     "plandefinition-cpg-pathway-profile-spreadsheet.xml",
     "plandefinition-cpg-shareable-profile-spreadsheet.xml",
@@ -277,6 +280,10 @@
       "defns": "StructureDefinition-cpg-careteam-definitions.html",
       "base": "StructureDefinition-cpg-careteam.html"
     },
+    "StructureDefinition/cpg-careteamdefinition": {
+      "defns": "StructureDefinition-cpg-careteamdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-careteamdefinition.html"
+    },
     "StructureDefinition/cpg-relatedperson": {
       "defns": "StructureDefinition-cpg-relatedperson-definitions.html",
       "base": "StructureDefinition-cpg-relatedperson.html"
@@ -393,6 +400,10 @@
       "defns": "StructureDefinition-cpg-location-definitions.html",
       "base": "StructureDefinition-cpg-location.html"
     },
+    "StructureDefinition/cpg-locationdefinition": {
+      "defns": "StructureDefinition-cpg-locationdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-locationdefinition.html"
+    },
     "StructureDefinition/cpg-publishablelibrary": {
       "defns": "StructureDefinition-cpg-publishablelibrary-definitions.html",
       "base": "StructureDefinition-cpg-publishablelibrary.html"
@@ -464,6 +475,10 @@
     "StructureDefinition/cpg-practitionerrole": {
       "defns": "StructureDefinition-cpg-practitionerrole-definitions.html",
       "base": "StructureDefinition-cpg-practitionerrole.html"
+    },
+    "StructureDefinition/cpg-practitionerroledefinition": {
+      "defns": "StructureDefinition-cpg-practitionerroledefinition-definitions.html",
+      "base": "StructureDefinition-cpg-practitionerroledefinition.html"
     },
     "StructureDefinition/cpg-pathwaydefinition": {
       "defns": "StructureDefinition-cpg-pathwaydefinition-definitions.html",

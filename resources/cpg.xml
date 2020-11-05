@@ -231,6 +231,18 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-careteamdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-locationdefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-location"/>
 				</reference>
 				<groupingId value="main"/>
@@ -436,6 +448,12 @@
 			<resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-practitionerrole"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-practitionerroledefinition"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>

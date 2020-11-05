@@ -3,122 +3,51 @@ layout: default
 title: Conformance
 ---
 
-# **Conformance**
+# Conformance
 
-This page summarizes the overall conformance requirements.
+Conformance from the perspective of this Implementation Guide (IG) refers to statements that prescribe expected characteristics and behaviors of systems involved in the authoring, testing, validation, distribution, integration, and delivery of the knowledge artifacts and associated documentation that make up a computable Clinical Practice Guideline (CPG). As described in the [Content Implementation Guides](methodology.html#content-igs) section of this IG, a FHIR-based CPG is delivered as a FHIR [Implementation Guide](http://hl7.org/fhir/implementationguide.html), and therefore follows the rules for establishing conformance requirements as defined by the FHIR specification.
 
-## **Common Pathway**
+This page provides a summary of and index to the various conformance requirements for a CPG established by this implementation guide.
 
-* Content conforming to this implementation guide SHALL identify processes using the [Common Processes code system](http://build.fhir.org/ig/HL7/cqf-recommendations/CodeSystem-cpg-common-process.html).
+## Conformance Language
 
-## **Libraries** 
+This implementation follows the same [conformance language](http://hl7.org/fhir/conformance-rules.html#conflang) specified by the base FHIR specification:
 
-### **Library Resources**
+This specification uses the conformance verbs SHALL, SHOULD, and MAY as defined in [RFC 2119](https://tools.ietf.org/html/rfc2119). Unlike RFC 2119, however, this specification allows that different applications might not be able to interoperate because of how they use optional features. In particular:
 
-* Content conforming to this implementation guide SHALL use the [cpg-library](StructureDefinition-cpg-library.html) profile for Library resources.
+    1. SHALL: an absolute requirement for all implementations
+    2. SHALL NOT: an absolute prohibition against inclusion for all implementations
+    3. SHOULD/SHOULD NOT: A best practice or recommendation to be considered by implementers within the context of their particular implementation; there may be valid reasons to ignore an item, but the full implications must be understood and carefully weighed before choosing a different course
+    4. MAY: This is truly optional language for an implementation; can be included or omitted as the implementer decides with no implications
 
-#### **Data Requirements** 
+## Must Support
 
-* Libraries used in computable guideline content SHALL use the `dataRequirement` element to declare terminologies referenced by the CQL content.
+Profiles in this implementation guide use the [must support](http://hl7.org/fhir/conformance-rules.html#mustSupport) flag to indicate that the elements play a meaningful role in the description of an artifact (for artifact profiles), or that the element is relevant for effective support of an expected behavior (for domain profiles). Note carefully that _must support_ does not indicate a _required_ element, that aspect is governed by the _cardinality_ of the element; but it does indicate that systems involved in exchanging knowledge artifacts, or implementation systems involved in exchanging data during implementation of knowledge artifacts, must understand the element and be able to provide meaningful data if and when it is available.
 
-* Library.url SHALL be [CQL namepsace url]/Library/[CQL library name]
+In addition, because FHIR-based CPGs are themselves FHIR implementation guides, they SHALL include a statement describing how the _must support_ flag is to be interpreted for effective use of their content, and that statement SHALL be consistent with the general characterization of must support behavior described here. Examples of _must support_ declarations can be found in:
 
-* Library.version SHALL be [CQL library version]
+* [US Core Must Support](http://hl7.org/fhir/us/core/general-guidance.html#must-support)
+* [QI Core Must Support](http://hl7.org/fhir/us/qicore/#111-mustsupport-flag)
 
-* CQL namespace name SHALL be IG.packageId
+## Profiles
 
-* CQL namespace url SHALL be IG.canonicalBase
+The [Profiles](profiles.html) page provides an overview of the various categories of profiles defined by this implementation guide, as well as a discussion of the use of profiles generally in computable content. In summary:
 
-* For CQL library source files, the convention SHOULD be:
+* Knowledge Artifacts SHALL conform to at least the appropriate Shareable profile for the type of knowledge artifact
+* Knowledge Artifacts SHOULD conform to the appropriate Computable, Publishable, and Executable profiles for the type of knowledge artifact, and SHALL provide documentation describing the expected packaging and distribution targets for content.
+* Content implementation guides SHOULD provide _case features_ describing the minimum data set appropriate for their content
+* Content implementation guides SHOULD nominate a candidate set of _interoperability profiles_
 
-    filename = <Library_Name>.cql
+## Terminology
 
-* To avoid issues with characters between web ids and names, library names SHALL NOT have underscores.
+The [Terminology](terminology.html) page provides an overview of the usage of terminology with computable content, as well as an index of the specific conformance terminologies defined by this implementation guide. In summary:
 
-## **Using Profiles**
+* Terminology distributed as part of content implementation guides SHALL conform to at least the appropriate Shareable profile.
+* Terminology distributed as part of content implementation guides SHOULD conform to the appropriate Computable, Publishable, and Executable profiles, and SHALL provide documentation describing the expected packaging and distribution targets for content, as well as an expected maintenance path for any executable value sets.
 
-### **Implementation Considerations**
+## Libraries
 
-* Content conforming to this IG SHOULD select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG SHOULD use International Patient Summary.
+The [Libraries](libraries.html) page provides an overview of the usage of Library resources to represent computable content, as well as general guidance for authoring shareable logic using CQL. In summary:
 
-## **Structuring Recommendations**
-
-### **Recommendation Definitions**
-
-#### **Personas**
-
-* Content conforming to this implementation guide SHALL identify personas using the [Common Personas](CodeSystem-cpg-common-persona.html) code system.
-
-#### **Activities**
-
-* Content conforming to this implementation guide SHALL use the [CPG Activity Definition](StructureDefinition-cpg-activitydefinition.html) profile when specifying activity definitions.
-
-#### **Processes** 
-
-* Content conforming to this implementation guide SHALL identify processes using the [Common Processes](CodeSystem-cpg-common-process.html) code system.
-
-#### **Settings**
-
-* Content conforming to this implementation guide SHALL identify settings using the [HL7 V3 ServiceDeliveryLocationRoleType](http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html) value set.
-
-#### **Support**
-
-##### **Guideline Supporting Information**
-
-* Content conforming to this implementation guide SHALL provide references to supporting documentation for a recommendation in the form of a `relatedArtifact` element specifying a citation to the guideline.
-
-* Content conforming to this implementation guide SHALL provide the strength of a recommendation using the [strengthOfRecommendation](http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html) extension.
-
-* Content conforming to this implementation guide SHALL provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.
-
-#### **Representing Recommendations**
-
-##### **Clinical Protocols** 
-
-* Content conforming to this implementation guide SHALL use the [cpg-protocoldefinition](StructureDefinition-cpg-protocoldefinition.html) profile to represent clinical protocol definitions.
-
-##### **Workflow Definitions** 
-
-* Content conforming to this implementation guide SHALL use the [cpg-workflowdefinition](StructureDefinition-cpg-workflowdefinition.html) profile to represent workflow definitions.
-
-##### **Recommendations** 
-
-* Content conforming to this implementation guide SHALL use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.
-
-##### **Order Sets** 
-
-* Content conforming to this implementation guide SHALL use the [cpg-ordersetdefinition](StructureDefinition-cpg-ordersetdefinition.html) profile to represent order sets. 
-
-### **Recommendation Instances**
-
-* Content conforming to this implementation guide SHALL use one of the recommendation instance profiles described above to ensure supporting information related to the recommendation is preserved through the recommendation instance.
-
-## **Using Terminology**
-
-### **Code Systems**
-
-* Standard and established code systems should be used whenever possible. Only in the case that existing code systems do not provide the necessary concepts should new code systems be defined. If required, code systems defined by content conforming to this IG SHALL use the [cpg-publishablecodesystem](StructureDefinition-cpg-publishablecodesystem.html) profile.
-
-### **Value Sets**
-
-* The publishable profile adds must support to elements, and includes extensions that are important for implementers to use and understand a value set. The computable profile adds extensions, must support requirements, and explanatory text so that a value set using this profile selectively supports only one technique for defining the content of expansions. The executable profile adds support for including a persisted point-in-time expansion that SHALL conform to the chosen compositional style for the value set. The included point-in-time expansion can then be used by FHIR implementations that do not have a FHIR terminology service capable of evaluating the value set to create a real-time $expand. It also provides all the concepts needed in the expansion so that a complete code system resource is not required.
- 
-* Whenever possible, value sets SHOULD be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships. In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
- 
-* Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. For these cases, the description of the construction of the value set SHOULD be represented with non-FHIR expressions using a computable expression in some terminology grammar. For value sets expressed in this way, the language must be sufficiently open and accessible that a user could construct the value set following the semantics without needing to use a proprietary implementation.
- 
-* Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. For these cases, the description of the construction of the value set SHOULD be represented with non-FHIR expressions using a computable expression in some terminology grammar. For value sets expressed in this way, the language must be sufficiently open and accessible that a user could construct the value set following the semantics without needing to use a proprietary implementation.
-
-* The cpg-executablevalueset profile supports providing a point-in-time expansion of the value set members using the `ValueSet.expansion` element containing specific individual concept codes obtained as a result of the computed expansion of the value set at the time of publication. The expansion element can be used to support environments where the actual definition cannot be evaluated. As new versions of the value set, and/or as new versions of the code systems used by the value set are released, the expansion content will need to be updated to incorporate newly defined codes that meet the value set intent. Before and periodically during production use, value set expansions SHOULD be updated.
-
-* Value sets defined by content conforming to this IG SHOULD include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated.
- 
-* Value sets defined by content conforming to this IG SHALL use the [cpg-computablevalueset](StructureDefinition-cpg-computablevalueset.html) profile to define value set member content in one of three ways. This profile requires that one and only one of the following three approaches can be used for an instance of the value set, in order of preference:
-
-* Value sets defined by content conforming to this IG SHALL use the [cpg-publishablevalueset](StructureDefinition-cpg-publishablevalueset.html) profile.
-
-### **Using Terminology in CQL Authoring 
-
-* To be conformant, the concept in the [required](http://hl7.org/fhir/terminologies.html#required) element SHALL be from the specified value set.
-
-* To be conformant, the concept in the [extensible](http://hl7.org/fhir/terminologies.html#extensible) element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated. If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.
+* Logic distributed as part of content implementation guides SHALL conform to at least the ShareableLibrary profile
+* Logic distributed as part of content implementation guides SHOULD conform to the Computable, Publishable, and Executable profiles, and SHALL provide documentation describing the expected packaging and distribution targets for content.
