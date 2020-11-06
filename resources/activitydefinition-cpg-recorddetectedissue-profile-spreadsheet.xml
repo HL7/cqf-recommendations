@@ -1046,7 +1046,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">display</Data></Cell>
-    <Cell ss:StyleID="s75"><Data ss:Type="String">CPG Record DetectedIssue ActivityDefinition Profile</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">CPG Record DetectedIssue Activity</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">author.name</Data></Cell>
@@ -1063,7 +1063,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="69">
     <Cell ss:StyleID="s74"><Data ss:Type="String">description</Data></Cell>
-    <Cell ss:StyleID="s78"><Data ss:Type="String">Defines the minimum expectations and behavior for the definition of an activity to record a detected issue for use with content conforming to the CPG implementation guide</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">Definition of a recommendation to record a specific detected issue as part of a computable clinical practice guideline</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">status</Data></Cell>
@@ -1130,7 +1130,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>8</ActiveRow>
+     <ActiveRow>7</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
