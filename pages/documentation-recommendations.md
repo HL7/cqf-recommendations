@@ -149,7 +149,7 @@ This implementation guide defines profiles for each of the request resources to 
 * [RecordDetectedIssue](StructureDefinition-cpg-recorddetectedissue.html): Recommendation to record a specific detected issue
 * [RecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html): Recommendation to record a specific inference
 * [ReportFlagTask](StructureDefinition-cpg-reportflagtask.html): Recommendation to report a particular flag
-* [ServiceRequest](StructureDefinition-cpg-servicerequest.html): Recommendation for a particular procedure or referral to a specialist
+* [ServiceRequest](StructureDefinition-cpg-servicerequest.html): Recommendation for a particular procedure or referral to a specialist or instructions for self-care such as smoking cessation counseling or exercise
 
 Specific guideline content will typically define derived profiles for recommendation instances establishing additional constraints.
 

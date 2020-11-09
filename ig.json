@@ -131,9 +131,41 @@
 		"ActivityDefinition/opioidcds-riskassessment-request": {
 			"base": "ActivityDefinition-opioidcds-riskassessment-request.html"
 		},
+    "ActivityDefinition/cpg-communicationrequest-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-communicationrequest-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-communicationrequest-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-immunizationrecommendation-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-immunizationrecommendation-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html"
+    },
     "ActivityDefinition/cpg-medicationrequest-activitydefinition": {
       "source": "activitydefinition/activitydefinition-cpg-medicationrequest-activitydefinition.xml",
       "base": "ActivityDefinition-cpg-medicationrequest-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-proposediagnosistask-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-proposediagnosistask-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-questionnairetask-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-questionnairetask-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-questionnairetask-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-recorddetectedissuetask-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-recordinferencetask-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-recordinferencetask-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-recordinferencetask-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-reportflagtask-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-reportflagtask-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-reportflagtask-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-servicerequest-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-servicerequest-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-servicerequest-activitydefinition.html"
     },
 		"CapabilityStatement/cpg-patient-registry": {
 			"source": "capabilitystatement/cpg-patient-registry.xml",

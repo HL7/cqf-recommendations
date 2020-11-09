@@ -29,10 +29,10 @@ Figure 04.05-01 represents how guideline developers, informaticians, implementer
 <details open>
 
 <summary>
-FIG 04.05-01: The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.^1^
+FIG 04.05-01: The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.[^1]
 </summary>
 
-<img src="assets/images/CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block" height="200" width="200"/>
+<img src="assets/images/CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block" height="400" width="400"/>
 
 </details>
 

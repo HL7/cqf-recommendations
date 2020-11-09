@@ -20,11 +20,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7755</WindowHeight>
-  <WindowWidth>22035</WindowWidth>
+  <WindowHeight>15690</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -996,6 +996,29 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
    <Interior/>
   </Style>
+  <Style ss:ID="s178">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s179">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+  </Style>
+  <Style ss:ID="s180">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+  </Style>
+  <Style ss:ID="s181">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
+   </Borders>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -1123,7 +1146,6 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>150</Zoom>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1155,9 +1177,9 @@
  <Worksheet ss:Name="cpg-diagnosticreport">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='cpg-diagnosticreport'!R1C1:R67C25" ss:Hidden="1"/>
+    ss:RefersTo="='cpg-diagnosticreport'!R1C1:R71C25" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="54" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="58" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="305.25"/>
@@ -1311,6 +1333,90 @@
     <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s100"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s178"><Data ss:Type="String">instantiatesCaseFeature</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">DiagnosticReport.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-instantiatesCaseFeature}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s181"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s178"><Data ss:Type="String">caseFeatureType</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">DiagnosticReport.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureType}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s181"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s178"><Data ss:Type="String">caseFeaturePertinence</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">DiagnosticReport.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeaturePertinence}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s181"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s178"><Data ss:Type="String">pertinent</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">DiagnosticReport.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pertinent}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s180"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s181"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2718,6 +2824,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -2738,6 +2845,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

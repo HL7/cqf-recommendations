@@ -91,7 +91,55 @@
 			</resource>
       <resource>
         <reference>
+          <reference value="ActivityDefinition/cpg-communicationrequest-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-questionnairetask-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
           <reference value="ActivityDefinition/cpg-medicationrequest-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-immunizationrecommendation-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-servicerequest-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-proposediagnosistask-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-recordinferencetask-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-reportflagtask-activitydefinition"/>
         </reference>
         <groupingId value="Main"/>
       </resource>

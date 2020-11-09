@@ -1,18 +1,27 @@
 <ActivityDefinition xmlns="http://hl7.org/fhir">
-	<id value="cpg-medicationrequest-activitydefinition"/>
-	<url value="http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-medicationrequest-activitydefinition"/>
+	<id value="cpg-recorddetectedissuetask-activitydefinition"/>
+	<url value="http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition"/>
 	<identifier>
 		<use value="official"/>
-		<value value="CPGMedicationRequestActivityDefinition"/>
+		<value value="CPGRecordDetectedIssueTaskActivityDefinition"/>
 	</identifier>
 	<version value="0.1.0"/>
-	<name value="CPGMedicationRequestActivityDefinition"/>
-	<title value="CPG MedicationRequest ActivityDefinition"/>
+	<name value="CPGRecordDetectedIssueTaskActivityDefinition"/>
+	<title value="CPG Record DetectedIssue ActivityDefinition"/>
 	<status value="draft"/>
 	<experimental value="false"/>
 	<date value="2019-06-23"/>
-	<kind value="MedicationRequest"/>
-	<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest"/>
+	<kind value="Task"/>
+	<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask"/>
+	<intent value="proposal"/>
+	<priority value="urgent"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/CodeSystem/cpg-activity-type"/>
+			<code value="record-detected-issue"/>
+			<display value="Record Detected Issue"/>
+		</coding>
+	</code>
 	<!-- Set status to the string value 'draft' -->
 	<dynamicValue>
 		<path value="status"/>
@@ -21,35 +30,11 @@
 			<expression value="'draft'"/>
 		</expression>
 	</dynamicValue>
-	<!-- Set intent to the string value 'proposal' -->
-	<dynamicValue>
-		<path value="intent"/>
-		<expression>
-			<language value="text/cql-expression"/>
-			<expression value="'proposal'"/>
-		</expression>
-	</dynamicValue>
-	<!-- Set priority to the string value 'routine' -->
-	<dynamicValue>
-		<path value="priority"/>
-		<expression>
-			<language value="text/cql-expression"/>
-			<expression value="'routine'"/>
-		</expression>
-	</dynamicValue>
-	<!-- Set medication to the MedicationCodeableConcept parameter -->
-	<dynamicValue>
-		<path value="medication"/>
-		<expression>
-			<language value="text/cql-expression"/>
-			<expression value="MedicationCodeableConcept"/>
-		</expression>
-	</dynamicValue>
-	<!-- Set subject to the Patient context, note that this will result in a Patient,
+	<!-- Set for to the Patient context, note that this will result in a Patient,
 	but is being assigned to a Reference, implementation will need to sort this, or
 	CQL will need to construct a reference -->
 	<dynamicValue>
-		<path value="subject"/>
+		<path value="for"/>
 		<expression>
 			<language value="text/cql-expression"/>
 			<expression value="Patient"/>
@@ -79,28 +64,19 @@
 	but is being assigned to a Reference, implementation will need to sort this,
 	or CQL will need to construct a reference -->
 	<dynamicValue>
-		<path value="performer"/>
+		<path value="owner"/>
 		<expression>
 			<language value="text/cql-expression"/>
 			<expression value="Practitioner"/>
 			<!--expression value="Reference { reference: 'Practitioner/' + Practitioner.id}" /-->
 		</expression>
 	</dynamicValue>
-	<!-- Set dose to the DoseQuantity parameter -->
+	<!-- Set input to a constructed DetectedIssue with the IssueCodeableConcept parameter -->
 	<dynamicValue>
-		<path value="dosageInstruction.doseAndRate.dose"/>
+		<path value="input"/>
 		<expression>
 			<language value="text/cql-expression"/>
-			<expression value="DoseQuantity"/>
-		</expression>
-	</dynamicValue>
-	<!-- Set timing? Consider approaches (code-based (e.g. BID, TID, QID) or frequency/timing-based) -->
-	<!-- Approach here uses "DosesPerDay" parameter for simplicity -->
-	<dynamicValue>
-		<path value="dosageInstruction.timing"/>
-		<expression>
-			<language value="text/cql-expression"/>
-			<expression value="Timing { frequency: 1, period: DosesPerDay, periodUnit: 'd' }"/>
+			<expression value="TaskInput { type: &quot;Record Detected Issue&quot;, value: DetectedIssue { code: &quot;Drug-Drug Interaction&quot;, detail: IssueCodeableConcept, subject: Patient, encounter: Encounter, identified: Today() } }"/>
 		</expression>
 	</dynamicValue>
 </ActivityDefinition>
