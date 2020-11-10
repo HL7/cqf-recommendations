@@ -220,6 +220,9 @@
 		"Library/opioidcds-r4-recommendation-05": {
 			"base": "Library-opioidcds-r4-recommendation-05.html"
 		},
+    "OperationDefinition/cpg-plandefinition-apply": {
+      "base": "OperationDefinition-cpg-plandefinition-apply.html"
+    },
     "OperationDefinition/cpg-library-evaluate": {
       "base": "OperationDefinition-cpg-library-evaluate.html"
     },

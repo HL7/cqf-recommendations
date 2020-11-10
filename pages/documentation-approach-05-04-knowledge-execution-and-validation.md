@@ -3,12 +3,12 @@ layout: default
 title: Knowledge Execution and Validation
 ---
 
-### **Knowledge Execution:**
+## Knowledge Execution
 
 Knowledge execution refers to the processes of binding computable knowledge formalisms to data for the purpose of generating new information and insights. Details of knowledge execution are beyond the scope of this document, but has implications largely addressed in the section on Methods of Implementation. <!-- link to - 09 !-->
 
 
-### **Knowledge Validation:**
+## Knowledge Validation
 
 Knowledge validation refers to verifying that the various knowledge formalisms faithfully, specifically, and unambiguously perform as intended. Validation may occur across tiers of functionality and levels of representation as well as for varying degrees of composition across levels and tiers (Levels of Representation by Tiers of Functionality). <!-- link to - 08 !--> Validation may occur within and across various activities within the knowledge engineering lifecycle development process.  Information (e.g., “gold standard” results) and tooling (e.g., comparison, profiling, grading) may be reused or repurposed across these activities.
 

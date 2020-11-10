@@ -2,14 +2,11 @@
 layout: default
 title: Knowledge Architecture
 ---
-
-**Knowledge Architecture:**
+# Knowledge Architecture
 
 Knowledge architecture is the discipline of information system architecture (Industry, Enterprise, Solution) with a focus on the principles, best practices, means, and mechanisms by which the knowledge assets for the architecture's given domain are managed including: acquiring, representing, stored, and organized.  Knowledge architecture includes defining the types and scopes of the various assets, their metadata, as well as their relations.  This description of the the types and nature of knowledge assets, including the definition of their metamodels including relationships to and in the context of  each other (derived, composite, and related assets), may be referred to as the knowledge asset ontology.
 
 Covered in this section:
-
-
 
 *   Key Challenges for Knowledge Architecture
 *   Best Practices and Needs to be addressed
@@ -63,8 +60,6 @@ Knowledge Architecture in the healthcare domain poses a particularly challenging
 
 **Key considerations and principles:**
 
-
-
 *   Separations of Concerns- within and across the domain conceptualizations, between knowledge formalizations, and across the translations or transformations thereof
 *   Fidelity to Domain Conceptualizations- oversimplification leads to unwieldy and value diminishing complexity to correct for, while appropriate complexity to align with the domain yields optimal representations and their formalization
 *   Use of appropriate (well-fit) representations, expressions, and other formalisms within individual knowledge assets to address the nature of the domain conceptualizations for which they are intended to express
@@ -73,8 +68,6 @@ Knowledge Architecture in the healthcare domain poses a particularly challenging
 *   Existence and usage of content, information, formalisms, and interfaces that already exist within and/or across the ecosystem where possible and appropriate (e.g. fit-for-purpose)
 
 **Knowledge Architecture Principles as Applied to the CPG**
-
-
 
 *   Separation of Concerns in the CPG, see the subsection in the  CPG Knowledge Architecture (Conceptual Perspective) on [Separation of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html). <!-- link to - 12.01 - Separations of Concerns !-->
 *   Domain Conceptualizations in the CPG, see the section on CPG Knowledge Architecture ([Conceptual Perspective](documentation-approach-12-conceptual-knowledge-architecture)) <!-- link to - 12 !-->
@@ -148,7 +141,7 @@ FIG. 56.  Lastly, the knowledge architecture team defines the relationships, rul
 </details>
 
 
-**Conceptual Perspective on the CPG Knowledge Architecture**
+## Conceptual Perspective on the CPG Knowledge Architecture
 
 This brings us to the conceptual knowledge architecture for the CPG.  It is the product of the concepts from a guideline and its recommendations described in the section on the [Guideline Development](documentation-approach-04-guideline-development.html) Process <!-- link to - 04 !--> together with the principles and best practices discussed previously in this section as well as the approach to developing the knowledge architecture described just above.  
 
@@ -158,13 +151,13 @@ Details of the CPG Knowledge Architecture ([Conceptual Perspective](documentatio
 
 The CPG knowledge architecture provides the framework through which the knowledge engineering team realizes the guideline, its recommendations, and their various features through explicit formalisms and ultimately as information, which brings us to:
 
-**Knowledge Architecture in FHIR for the CPG-IG**
+## Knowledge Architecture in FHIR for the CPG-IG
 
 As discussed in the [Knowledge Asset](documentation-approach-06-02-knowledge-assets.html) <!-- link to - 06.02 !--> section previously, the asset metamodel (definition of structure including metadata, attributes, requirements and constraints) can be defined using an approach to [Knowledge Artifact Representation in FHIR](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html) described in the Clinical Reasoning Module.  In FHIR, the means of defining asset metamodels is the FHIR [StructureDefinition Resource](https://www.hl7.org/fhir/structuredefinition.html) (though it is also used for definitions of resources other than knowledge assets including all request (e.g. orders) and event (e.g. clinical data element) resources).  Furthermore, the [PlanDefinition Resource](https://www.hl7.org/fhir/plandefinition.html) (based on the HL-7 Knowledge Artifact Specification) is a base, or more generic, asset meta-model definition that may be profiled using StructureDefinition to further define additional asset meta-models through profiling.
 
 Given the Conceptual Perspective on the CPG [Knowledge Architecture](documentation-approach-12-conceptual-knowledge-architecture), <!-- link to - 12 !--> the principles, best practices, and development approaches described above together with the approach to [Knowledge Artifact Representation in FHIR](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html) (described in part in the section in this implementation guide on Knowledge Assets), the [CPG FHIR Profiles](http://build.fhir.org/ig/HL7/cqf-recommendations/profiles.html) as described and defined in this guide, are the concentration of the CPG Knowledge Architecture- the formal representations of the metamodels used to express the CPG Concepts described in the conceptual knowledge architecture.  The [Methodology](documentation-methodology.html) section <!-- link to Methodology Section !--> of this guide describes how individual knowledge assets or artifacts are realized using these CPG Profiles.
 
-**Boundary Issues at the Separations of Concerns**
+## Boundary Issues at the Separations of Concerns
 
 As described above, it is critical in knowledge-driven approaches to identify accurate, representative, unambiguous, and useful domain knowledge abstractions and for these abstractions themselves to respect domain-oriented separations of concerns.  These separations of concerns must be respected within and across the domain conceptualizations, as well as between knowledge formalizations and across the translations or transformations thereof.  A related principle is fidelity to domain conceptualizations, where oversimplification leads to unwieldy and value-diminishing complexity to correct for gaps in fidelity, while appropriate complexity to align with the domain yields optimal formalizations.  
 
@@ -178,13 +171,11 @@ In some cases, the boundary issue itself becomes fully abstracted as its own con
 
 Boundary issues specific to the CPG Knowledge Architecture are discussed in the subsection on Separating and Defining [Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html). <!-- link to - 12.02 !-->
 
-**Knowledge Architecture and Knowledge Content Management System**
+## Knowledge Architecture and Knowledge Content Management System
 
 The knowledge architecture is typically developed and manifested in a knowledge content management system since that is where all of the knowledge asset definitions (metamodels), knowledge asset metadata, knowledge asset content, the knowledge asset ontology, and the various features that leverage these capabilities reside.  A knowledge content management system can further afford the ability to evolve and update the knowledge architecture and all its derivatives, while giving feedback to the knowledge architecture team on the impact of such changes.  Likewise, additional knowledge asset definitions (metamodels including metadata model), can be developed in the knowledge content management system.
 
 For more on the manifestation of the knowledge architecture in a content management system and means by which it might be informed and or evolved, see:
-
-
 
 *   See section on [Knowledge Representation](documentation-approach-05-03-knowledge-representation.html) <!-- link to - 05.03 !--> in Knowledge Engineering for more details on Knowledge Content Management Systems
 *   See subsection on Leveraging a Knowledge Base (Knowledge Content Management System) at the bottom of the section Agile CPG [Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html) <!-- link to - 05.06 !-->

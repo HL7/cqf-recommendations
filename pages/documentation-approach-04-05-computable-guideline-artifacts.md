@@ -3,7 +3,7 @@ layout: default
 title: Development of Computable Clinical Guideline Artifacts
 ---
 
-## **Development of Computable Clinical Guideline Artifacts**
+## Development of Computable Clinical Guideline Artifacts
 
 ### Evidence
 
@@ -24,21 +24,21 @@ The integrated process describes co-development of the narrative and computable 
 
 #### The Integrated Process Cycle
 
-Figure 04.05-01 represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support.2 See explanation below diagram for additional details.
+Figure 04.05-01 represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support.[<sup>2</sup>](#2) See explanation below diagram for additional details.
 
 <details open>
 
 <summary>
-FIG 04.05-01: The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.[^1]
+FIG 04.05-01: The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.[<sup>1</sup>](#1)
 </summary>
 
-<img src="assets/images/CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block" height="400" width="400"/>
+<img src="assets/images/CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block" height="500" width="500"/>
 
 </details>
 
 The outer circle shows 12 phases of formal guidelines development that result in published narrative recommendations. The middle circle represents the integration of informatics and clinical implementation activities into the guideline development 12 phase process. This circle adds iterative steps within and between the phases and that 1) inform written guidelines, and 2) result in a computable version of  guidelines that can be more rapidly implemented in clinical settings. The inner circle represents the evaluation activities that should be conducted throughout guideline development, with constant attention to meeting the needs of users. This integration is designed to facilitate use of guidelines in clinical practice and timely updates to guidelines based on clinical impact. Finally, at the center of the process are the guideline users, who should be engaged through human-centered design processes in all phases (shown by spiral connections).
 
-[2] Boxwala, Aziz A., et al. "A multi-layered framework for disseminating knowledge for computer-based decision support." Journal of the American Medical Informatics Association 18.Supplement_1 (2011): i132-i139.
+<a id="2">2</a>: Boxwala, Aziz A., et al. "A multi-layered framework for disseminating knowledge for computer-based decision support." Journal of the American Medical Informatics Association 18.Supplement_1 (2011): i132-i139.
 
 ### CPG Content and Related Derivatives
 
@@ -47,7 +47,7 @@ The outer circle shows 12 phases of formal guidelines development that result in
 3. **Metrics and Measures:**  A CPGMetric is a patient level measurement or indicator of recommendation compliance and/or guideline adherence (corresponding to a process measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity.  A CPGMeasure is a population level measurement typically corresponding to an aggregate of patient level CPGMetrics and/or other parts of the CPG.  For a CPGMeasure, the initial patient population often corresponds to the CPG eligibility criteria, while the denominator is often constrained by individual recommendation applicability criteria (including exclusion or contraindication criteria), and the numerator may correspond to satisfaction criteria (order placed or activity performed)  for guideline recommendation or proposal compliance in the case of process measures, or goal or threshold attainment in the case of outcome measures.  CPGMeasure Initial Patient Populations definitions and CPGPathwayElligibilityCriteria will likely have significant overlap in many cases.  CPGRecommendation logic (applicability criteria) similarly will overlap with denominator, denominator exclusion, risk stratifications, and numerator criteria.  See [CPG Derivative & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) <!-- link to - 12.07 !--> in Conceptual CPG Knowledge Architecture section for more details on CPGMetrics and CPGMeasures.
 4. **eCaseReport:**  A CPGeCaseReport is intended to convey the set of data elements required to provide for more detailed outcomes research on the guideline topic itself as well as for a feedback loop for continuous improvement of the specified  guideline.  The data elements for a CPGeCaseReport come from the data requirements (CPGCaseFeatures), key inferences thereof (inferred CPGCaseFeatures), patient specific recommendations (CPGProposals), and the corresponding orders and resulting clinical activities (requests and resultant events from CPGCaseFeatures).  Additional or supplemental data elements (data requirements and inferences) for informing identified guideline gaps or feedback loops may be further specified for inclusion in the CPGeCaseReport. See [CPG Derivative & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) <!-- link to - 12.07 !--> in Conceptual CPG Knowledge Architecture section for more details on CPGeCaseReports.
 
-**Value of Computable Guideline Artifacts to Stakeholders:**
+### Value of Computable Guideline Artifacts to Stakeholders
 
 **For Guideline Development Group, especially Medical Specialty Societies**- Actionable and meaningful usage of and feedback on guideline recommendations; (automated) data collection of data elements relevant to the scope of the guideline (registries); significant number of process of care level and intermediate- and end-outcome metrics and quality measures scoped to the guideline; active and highly relevant participation in the Learning Health System.
 

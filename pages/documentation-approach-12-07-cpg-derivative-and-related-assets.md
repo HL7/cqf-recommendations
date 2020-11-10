@@ -2,14 +2,12 @@
 layout: default
 title: CPG Derivative and Related Assets
 ---
-## **CPGGuideline and Derivative & Related Assets**
+# CPGGuideline and Derivative & Related Assets
 
 Another key feature of the FHIR CPG is that since it explicitly and formally expresses the intent of the guideline, numerous additional features that have been historically developed manually using the guideline narrative, can be derived directly from the CPG and/or reuse significant portions of the CPG, or at least express relations to the CPG and/or its component assets (e.g. CPGRecommendation).  More on derivative and related assets may be found in the subsection on Derivative & Related Assets.
 
 
-    Covered in this section:
-
-
+Covered in this section:
 
 *   CPGGuideline
 *   CPGMetrics
@@ -20,7 +18,7 @@ Another key feature of the FHIR CPG is that since it explicitly and formally exp
 *   CPGeCaseReport using the [eCaseReport IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html)
 *   Infobutton for CPG’s
 
-**CPGGuideline**
+## CPGGuideline
 
 All the knowledge assets that are the work product of the CPG development process and either go into or are used by the CPGPathway (that specifies the guideline itself) as well as those that are derived from and/or related to the guideline as part of CPD development work effort our package into a container asset called the CPGGuideline based on the [FHIR ImplementationGuide Resource](https://www.hl7.org/fhir/implementationguide.html).  No single consumer or implementer must use the entire content of the CPGGuideline, though all available knowledge assets are contained within this resource should they choose to.   More likely, most implementers and end-consumers will only use scoped assets, largely composite knowledge assets.
 
@@ -37,7 +35,7 @@ FIG. 82.   CPGGuideline based on the FHIR ImplementationGuide Resource the conta
 </details>
 
 
-**CPGMetrics**
+## CPGMetrics
 
 <details open>
 
@@ -62,7 +60,7 @@ Guideline or pathway adherence is a special case of composite metric.  Adherence
 
 A CPGMetric is represented as a [FHIR Measure Resource](https://www.hl7.org/fhir/measure.html)  and its value as an inferred CPGCaseFeature ([FHIR Observation Resource](https://www.hl7.org/fhir/observation.html)) with its value being determined through an expression.  As such, a CPGMetric may be thought of as a special case of a CPGCaseFeature.  These detailed patients-level and guideline-directed metrics can be used directly within the clinical workflow, rolled up across cohorts of patients as a more traditional quality measure (CPGMeasure), and/or included as part of a CPGCaseSummary, CPGCasePlanSummaryView, CPGCasePlanProgressingNote, or CPGeCaseReport.
 
-**CPGMeasure (eCQMs)** <!-- Rename "Item" in eCQM to "Population" and "Feature". Make clear an eCQM points to multiple "cases" (use 1-many |---< ) !-->
+## CPGMeasure (eCQMs) <!-- Rename "Item" in eCQM to "Population" and "Feature". Make clear an eCQM points to multiple "cases" (use 1-many |---< ) !-->
 
 <details open>
 
@@ -87,7 +85,7 @@ A quality measure may not entirely fall out of the CPG. It may reuse some expres
 
 A CPGMeasure may also directly reference a CPGMetric(s) (i.e., as CPGCaseFeature define in the CPG Library or the value for such a CPGMetric once instantiated and persisted as data) to define inclusion and exclusion criteria for its various populations, thus using same patient-level process, intermediate- and ultimate outcome. Composite metrics are used directly within patient care, more closely correlating real-world performance with quality measurement.  As such, a CPGMeasure may follow similar patterns as the CPGMetric described above (i.e., process, intermediate and ultimate outcome, composite, correlative, compliance, adherence).  Population-level measures based on such patient-level metrics may be aggregated to numerous systems levels (e.g., provider, unit, facility, care team) to inform more localized performance improvement.  Likewise, patient-level metrics may be aggregated to various cohorts for population-based quality reporting and various clinical and quality research activities.
 
-**CPGCaseSummary**
+## CPGCaseSummary
 
 <details open>
 
@@ -106,7 +104,7 @@ A case summary or composition of all the patient-level information (i.e., case f
 
 A CPGCaseSummary is the set of case feature groups and/or features that completely represent the case data scoped by CPG. This expresses the patient state at any given point in time.  A CPGCaseSummary is modeled as a profile of a [FHIR Composition Resource](https://www.hl7.org/fhir/composition.html) and its definition is formalized as a [FHIRGraphDefinition](https://www.hl7.org/fhir/graphdefinition.html) and CQL.  The CPGCaseSummary may be used in a CPGeCaseReport as described below.
 
-**CPGCasePlanSummaryView**
+## CPGCasePlanSummaryView
 
 <details open>
 
@@ -135,11 +133,11 @@ FIG. 87.  The CPGCasePlanSummaryView may further be scoped to the entirety of th
 
 </details>
 
-**CPGCasePlanProgressingNote**
+## CPGCasePlanProgressingNote
 
 A CPGCasePlanSummaryView can be further be combined with an [Adaptive Form](http://hl7.org/fhir/uv/sdc/2019May/adaptive.html) and their related [Clinical Impressions](https://www.hl7.org/fhir/clinicalimpression.html) to provide a means to document patient progression with respect to the CPGPathway.  This capability would further provide the means for feedback directly from the care team on both the patient and their condition as well as the usage and utiliy of guideline components.  The knowledgen egineer need be careful to keep the forms logic (UI) separated from the description logic (for case features) and decision logic (for recommendations) as well as any logic used for patient-level uindicators (CPGMetrics) used in the Form.
 
-**CPGeCaseReport**
+## CPGeCaseReport
 
 An eCaseReport, as described in the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html), is a document used to exchange patient-level clinical information to a public health, regulatory,  quality, research,or guideline development entity (e.g., medical specialty professional society and/or their respective guideline development group).  An eCaseReport has particular utility to public health entities and was developed through the HL7 Public Health and Emergency Response Workgroup (WG).
 
@@ -158,7 +156,7 @@ FIG. 88. A CPGeCaseReport uses the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2
 </details>
 
 
-**Infobutton**
+## Infobutton
 
 Infobuttons facilitate contextually querying resources such as a library containing clinical practice guideline recommendations from within clinical information systems at the point-of-need (e.g., EHRs).  In other words, “Infobuttons” are context-sensitive links embedded in EHR systems. They use information about the patient, user, clinical setting, and EHR task to anticipate clinicians' information needs and provide links to online clinical resources that may meet these information needs.”  [Infobuttons](http://www.openinfobutton.org/home) provide a means for a healthcare professional to leverage a subset of the identified patient-level information to perform a facilitated search from within the patient record.
 

@@ -1,18 +1,9 @@
 ---
 layout: default
-title: Methodology
+title: Mapping and Other Formalisms
 ---
 
-# Methodology
-
-Within the overall framework of knowledge engineering described in the [approach](approach.md) page,
-this implementation guide describes a methodology for moving between the knowledge levels. Note that this
-methodology emphasizes that the knowledge levels are a continuum of knowledge representation, they are
-not intended to be rigidly interpreted discrete categories, rather they serve as a framework for
-discussing successively more structured and formal representations of knowledge content to aid in
-the understanding, communication, and implementation of guideline content.
-
-## Knowledge Elicitation
+# Mapping and Other Formalisms
 
 ## Knowledge Representation Formalisms
 

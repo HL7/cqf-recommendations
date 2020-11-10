@@ -699,6 +699,12 @@
       </resource>
       <resource>
         <reference>
+          <reference value="OperationDefinition/cpg-plandefinition-apply"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
           <reference value="OperationDefinition/cpg-library-evaluate"/>
         </reference>
         <groupingId value="main"/>

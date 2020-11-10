@@ -17,7 +17,7 @@ In this section we will cover:
 
 [**Levels of Knowledge Representation Framing:**](documentation-approach-06-01-levels-of-knowledge-representation.html) <!-- Link to 06.01 !-->
 
-## **Approach**
+## Approach
 
 The approach taken by this implementation guide is to consider three broad challenges of clinical guideline implementation:
 
@@ -60,39 +60,39 @@ Knowledge assets or artifacts as they are often referred to in FHIR, where an ar
 *   Metadata- for detailed section on Knowledge Assets
 *   Composite and Derived- see section on Knowledge Assets
 
-**Asset Metamodel**
+## Asset Metamodel
 
 The asset meta-model is a model that essentially describes what is required and/or allowed for a given class of knowledge assets.  In FHIR, the means of defining asset metamodels is the FHIR [StructureDefinition Resource](https://www.hl7.org/fhir/structuredefinition.html) (though it is also used for definitions of resources other than knowledge assets including all request (e.g. orders) and event (e.g. clinical data element) resources).  Furthermore, the [PlanDefinition Resource](https://www.hl7.org/fhir/plandefinition.html) (based on the HL-7 Knowledge Artifact Specification) is a base, or more generic, asset meta-model definition that may be profiled using StructureDefinition to further define additional asset metamodels.  The [Knowledge Artifact Representation in FHIR](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html), from the FHIR Clinical Reasoning Module, describes how the asset metamodels are realized as FHIR Profiles, but details of its applications to the CPG are described in further detail in this section of the implementation guide.
 
-**Content**
+## Content
 
 Knowledge asset content refers to that which is contained within a specific knowledge asset.  This includes the scoped values or expressions for a specific asset’s metadata, attributes, and other formalisms used to express the knowledge contained within the asset.
 
-**Asset Metadata**
+## Asset Metadata
 
 Metadata is data that provides information about the knowledge asset.  This may include disk active metadata, structural metadata, administrative metadata, and situating or relational metadata.  The section on [Metadata](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata) of the Clinical Reasoning Module on Knowledge Artifact Representation provides a description of how metadata is routinely addressed in FHIR Knowledge Artifact Representations, but details of its applications to the CPG are described in further detail in this section of the implementation guide.
 
-**Expressions (and/or Languages)**
+## Expressions (and/or Languages)
 
 An expression is a computable language for creating a computer-interpretable representation of specific knowledge.  In HL-7 and for the scope of this implementation guide, the expression language used (where it’s able to sufficiently express the intended logic behavior) is the Clinical Quality Language (CQL).
 
-**Declarations**
+## Declarations
 
 A declaration is an expression of the structural elements of computable logic (e.g. values for attributes and parameters of a knowledge asset) that does not describe how to compute the logic, rather what the logic is.  These are often expressed as static values on the definitional assets as opposed to be buried deep in the expressions.  Expressions (or languages) can then evaluate and/or set these declarations.
 
-**Composite Assets**
+## Composite Assets
 
 No single representation or expression can sufficiently and/or appropriately describe the nature and behavior of many domain concepts using computable formalism.  A CPGPathway, CPGStrategy, and CPGRecommendation are examples of composite assets in this implementation guide.
 
-**Derived Assets**
+## Derived Assets
 
 Many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived.  For example, a CPGMetric may derive much of its content from a CPGRecommendation.  Derived knowledge assets may be wholly or partially derived from other assets.  
 
-**Translation Within and Between Knowledge Representations**
+## Translation Within and Between Knowledge Representations
 
 Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements).  This equivalence in computational intent and behavior is known as isopragmatism.
 
-**Curating and Managing Knowledge Assets in a Large Corpus (Knowledge Base)**
+## Curating and Managing Knowledge Assets in a Large Corpus (Knowledge Base)
 
 For more on Curating and Managing Knowledge Assets (and their respective knowledge architecture), see sections on Knowledge Representation in [Knowledge Engineering](documentation-approach-05-03-knowledge-representation.html), <!-- Link to 05.03 !--> and Leveraging a Knowledge Base (Knowledge Content Management System) in the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html). <!-- Link to -05.06- Leveraging a Knowledge Base (Knowledge Content Management System) !-->
 

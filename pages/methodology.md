@@ -33,115 +33,133 @@ _Figure 3.1_ Types of implementation guides: Specification, model, and content I
 The following sections describe this diagram and the related specifications in more detail, and the subsequent sections of this topic summarize the conformance requirements and the proposed structuring and packaging methodology.
 
 ### 3.1.1 Foundational Standards
+{: #foundational-standards}
 
 <p>The foundational standards on the bottom row of the diagram include the layers of FHIR, as well as expression language and integration standards including FHIRPath, Clinical Quality Language (CQL), CDS Hooks, and SMART.</p>
 
-<ul>
-  <li>FHIR includes five layers of concepts, each shown as an icon on the bottom row of the diagram.
-    <ul>
-      <li>Foundation layer – defines the core data exchange protocol.</li>
-      <li>Conformance layer – defines how resources, profiles, and terminologies are represented and used.</li>
-      <li>Administration layer – defines individuals, locations, organizations, and encounters.</li>
-      <li>Clinical layer – defines clinical information such as observations, medications, procedures, and orders.</li>
-      <li>Reasoning layer – provides definitional artifacts like plan and activity definitions, libraries, and measures.</li>
-    </ul>
-  </li>
-  <li>FHIRPath is a simple, yet powerful, model-independent expression language that is used extensively throughout FHIR to describe paths to elements on resources, and to define invariants on profiles.</li>
-  <li>Clinical Quality Language (CQL) is a superset of FHIRPath that provides an author-friendly format for the description of clinical logic, as well as a machine-friendly format for processing the logic.</li>
-  <li>CDS Hooks is an HL7 standard specification for integrating decision support services with clinical systems. It is primarily focused on clinician-facing remote decision support within an EHR.</li>
-  <li>SMART-on-FHIR (SMART) is an HL7 standard specification for integrating clinical applications into EMRs using FHIR.</li>
-</ul>
+* [**FHIR**](http://hl7.org/fhir) includes five layers of concepts, each shown as an icon on the bottom row of the diagram.
+    * **Foundation** layer – defines the core data exchange protocol.
+    * **Conformance** layer – defines how resources, profiles, and terminologies are represented and used.
+    * **Administration** layer – defines individuals, locations, organizations, and encounters.
+    * **Clinical** layer – defines clinical information such as observations, medications, procedures, and orders.
+    * **Reasoning** layer – provides definitional artifacts like plan and activity definitions, libraries, and measures.
+* [**FHIRPath**](http://hl7.org/fhirpath) is a simple, yet powerful, model-independent expression language that is used extensively throughout FHIR to describe paths to elements on resources, and to define invariants on profiles.
+* [**Clinical Quality Language (CQL)**](http://cql.hl7.org) is a superset of FHIRPath that provides an author-friendly format for the description of clinical logic, as well as a machine-friendly format for processing the logic.
+* [**CDS Hooks**](http://cds-hooks.hl7.org) is an HL7 standard specification for integrating decision support services with clinical systems. It is primarily focused on clinician-facing remote decision support within an EHR.</li>
+* [**SMART-on-FHIR (SMART)**](http://hl7.org/fhir/smart-app-launch.html) is an HL7 standard specification for integrating clinical applications into EMRs using FHIR.
 
 ### 3.1.2 Model Implementation Guides
+{: #model-implementation-guides}
 
-<p>The middle row on the left of the Figure 4 shows the Model Implementation Guides (IGs), typically derived from FHIR Administration and Clinical resources such as Patient, Encounter, and MedicationRequest. These Model IGs are typically built to address a broad range of use cases, focused on a particular target realm or domain.</p>
+The middle row on the left of the Figure 4 shows the Model Implementation Guides (IGs), typically derived from FHIR Administration and Clinical resources such as Patient, Encounter, and MedicationRequest. These Model IGs are typically built to address a broad range of use cases, focused on a particular target realm or domain.
 
-<ul>
-  <li>International Patient Summary (IPS) is a set of internationally applicable FHIR profiles used to share an extract of essential patient healthcare information across international boundaries. As a result, it forms an excellent foundation for expressing universally applicable content guidelines such as the WHO Antenatal Care (WHO ANC).</li>
-  <li>US Core is a set of profiles focused on enabling exchange of the US Clinical Data for Interoperability (USCDI) and is supported by a broad range of EMR vendors within the US.</li>
-  <li>QI-Core is a set of profiles that derives from US Core to enable quality improvement use cases such as quality measurement and decision support within the US.</li>
-</ul>
+* [**International Patient Summary (IPS)**](http://hl7.org/fhir/uv/ips) is a set of internationally applicable FHIR profiles used to share an extract of essential patient healthcare information across international boundaries. As a result, it forms an excellent foundation for expressing universally applicable content guidelines such as the WHO Antenatal Care (WHO ANC).
+* [**US Core**](http://hl7.org/fhir/us/core) is a set of profiles focused on enabling exchange of the US Clinical Data for Interoperability (USCDI) and is supported by a broad range of EMR vendors within the US.
+* [**QI-Core**](http://hl7.org/fhir/us/qicore) is a set of profiles that derives from US Core to enable quality improvement use cases such as quality measurement and decision support within the US.
 
 ### 3.1.3 Specification Implementation Guides
+{: #specification-implementation-guides}
 
-<p>The middle row on the right of the Figure 4 shows the Specification Implementation Guides, which derive from the FHIR Clinical Reasoning resources to provide implementation guidance and conformance requirements for the creation, distribution, evaluation, and maintenance of shareable clinical knowledge. These include the Quality Measure IG (QM), Data Exchange for Quality Measures (DEQM), the Clinical Practice Guidelines IG (CPG-on-FHIR), and Evidence-based Medicine on FHIR (EBM-on-FHIR).</p>
+The middle row on the right of the Figure 4 shows the Specification Implementation Guides, which derive from the FHIR Clinical Reasoning resources to provide implementation guidance and conformance requirements for the creation, distribution, evaluation, and maintenance of shareable clinical knowledge. These include the Quality Measure IG (QM), Data Exchange for Quality Measures (DEQM), the Clinical Practice Guidelines IG (CPG-on-FHIR), and Evidence-based Medicine on FHIR (EBM-on-FHIR).
 
-<ul>
-  <li>Quality Measure IG (QM) provides guidance on and conformance requirements for the use of the FHIR Reasoning resources, Measure and Library, to create and share clinical quality measures.</li>
-  <li>Data Exchange for Quality Measures (DEQM) provides guidance for reporting quality measures.</li>
-  <li>Structured Data Capture (SDC) provides guidance for building and capturing structured data using questionnaires</li>
-  <li>Clinical Practice Guidelines IG (CPG-on-FHIR) demonstrates how to build shareable computable guideline content.</li>
-  <li>Evidence-Based Medicine on FHIR (EBM-on-FHIR) provides interoperability (standards for data exchange) for those producing, analyzing, synthesizing, disseminating and implementing clinical research (evidence) and recommendations for clinical care (clinical practice guidelines). It specifies resources and patterns for the exchange of data involved in evidence-based medicine including study results, quality of evidence and strength of recommendation and relevant context, environmental surveys, and systematic reviews.</li>
-</ul>
+* [**Quality Measure IG (QM)**](http://hl7.org/fhir/us/cqfmeasures) provides guidance on and conformance requirements for the use of the FHIR Reasoning resources, Measure and Library, to create and share clinical quality measures.
+* [**Data Exchange for Quality Measures (DEQM)**](http://hl7.org/fhir/us/davinci-deqm) provides guidance for reporting quality measures.
+* [**Structured Data Capture (SDC)**](http://hl7.org/fhir/uv/sdc) provides guidance for building and capturing structured data using questionnaires
+* [**Clinical Practice Guidelines IG (CPG-on-FHIR)**](http://hl7.org/fhir/uv/cpg) (this implementation guide) demonstrates how to build shareable computable guideline content.
+* [**Evidence-Based Medicine on FHIR (EBM-on-FHIR)**](http://build.fhir.org/clinicalreasoning-evidence-and-statistics.html) provides interoperability (standards for data exchange) for those producing, analyzing, synthesizing, disseminating and implementing clinical research (evidence) and recommendations for clinical care (clinical practice guidelines). It specifies resources and patterns for the exchange of data involved in evidence-based medicine including study results, quality of evidence and strength of recommendation and relevant context, environmental surveys, and systematic reviews.
 
 ### 3.1.4 Content Implementation Guides
+{: #content-implementation-guides}
 
-<p>In the top row of Figure 4, the Content Implementation Guides are FHIR Implementation Guides. These IGs are not necessarily balloted as HL7 standards; rather, they use the FHIR publication toolchain to support authoring and distribution as depicted in the rest of the diagram. The content is stewarded by separate authorities such as quality agencies and guideline developers; groups that have their own governance and maintenance policies. The content IGs conform to the specification IGs on the right of row 2, and typically make use of the model IGs on the left of row 2 to define content focused on a particular realm.</p>
+In the top row of Figure 4, the Content Implementation Guides are FHIR Implementation Guides. These IGs are not necessarily balloted as HL7 standards; rather, they use the FHIR publication toolchain to support authoring and distribution as depicted in the rest of the diagram. The content is stewarded by separate authorities such as quality agencies, specialty societies, and guideline developers; groups that have their own governance and maintenance policies. The content IGs conform to the specification IGs on the right of row 2, and typically make use of the model IGs on the left of row 2 to define content focused on a particular realm.
 
-<ul>
-  <li>HEDIS IG contains Healthcare and Effectiveness Data and Information Set (HEDIS) quality measures expressed using FHIR Reasoning Measure and Library resources and conforming to the Quality Measure IG (QM) profiles.</li>
-  <li>CDC Opioid Prescribing IG contains decision support content to streamline guideline implementation regarding the use of opioids for chronic pain in clinical settings.</li>
-  <li>World Health Organization Antenatal Care (WHO ANC) IG contains decision support content to streamline guideline implementation regarding antenatal care.</li>
-</ul>
+* [**HEDIS IG**](http://build.fhir.org/ig/cqframework/hedis-ig) contains Healthcare and Effectiveness Data and Information Set (HEDIS) quality measures expressed using FHIR Reasoning Measure and Library resources and conforming to the Quality Measure IG (QM) profiles.
+* [**CDC Opioid Prescribing IG**](http://build.fhir.org/ig/cqframework/opioid-cds-r4) contains decision support content to streamline guideline implementation regarding the use of opioids for chronic pain in clinical settings.
+* [**World Health Organization Antenatal Care (WHO ANC)**](http://build.fhir.org/ig/who-int/anc-cds) IG contains decision support content to streamline guideline implementation of the World Health Organization's recommendations on antenatal care for a positive pregnancy experience.
 
 ## 3.2.0 Overview
-{: #steps}
+{: #overview}
 
 Overall, the methodology used by this implementation guide consists of the following steps:
 
-* **Select:** Select content and recommendations for implementation
-* **Represent:** Apply selected recommendations to the implementation approach
-* **Translate:** Express concepts, flow diagrams, and narrative content formally
-* **Validate:** Build and run test cases to verify expected functionality
+* [**Select:**](#select) Select content and recommendations for implementation
+* [**Represent:**](#represent) Apply selected recommendations to the implementation approach
+* [**Translate:**](#translate) Express concepts, flow diagrams, and narrative content formally
+* [**Validate:**](#validate) Build and run test cases to verify expected functionality
+
+Note that throughout the process of applying this methodology, the various teams will necessarily make decisions, balancing trade-offs between effort, feasibility, and value. The decisions, and especially the rationale for how they were made, are in and of themselves important products of this process, and should at the very least be captured as supplemental documentation within the content implementation guide. Often, these decision points will surface as configuration capabilities in the resulting knowledge artifacts, enabling implementation sites to understand the trade-offs, and make informed decisions about appropriate configuration. Surfacing these capabilities and decisions with appropriate documentation is critical to fully enabling reusable, shareable knowledge artifacts.
 
 ### 3.2.1 Select
+{: #select}
 
 The _select_ step involves selecting content and recommendations for implementation, as well as determining the implementation approach for the recommendation. The [approach](approach.html) section provides detailed information on the many factors to be considered as part of this process. For the purposes of this methodology, we focus on the output of that process as having identified:
 
-* **Personas**: _Who_ are the participants in the recommendation and what roles do they play?
-* **Activities**: _What_ needs to happen?
-* **Processes**: _When_ does it happen?
-* **Settings**: _Where_ do the activities in the recommendation occur?
-* **Support**: _Why_ should it happen?
+* [**Personas**](#select-personas): _Who_ are the participants in the recommendation and what roles do they play?
+* [**Activities**](#select-activities): _What_ needs to happen?
+* [**Processes**](#select-processes): _When_ does it happen?
+* [**Settings**](#select-settings): _Where_ do the activities in the recommendation occur?
+* [**Support**](#select-support): _Why_ should it happen?
 
 The outcome of this step is typically in the form of narrative (L1 content) requirements, sometimes accompanied by explanatory figures and diagrams (approaching L2).
 
+For a more detailed discussion of this step, refer to the [Select Step](#select-step) topic.
+
 ### 3.2.2 Represent
+{: #represent}
 
 The _represent_ step involves further refining and detailing the concepts, activities and processes identified in the _select_ step to create semi-structured (L2) content that is domain-specific (i.e. clinician-oriented), but informed by health informatics concerns to ensure accurate and unambiguous communication of guideline intent. This is accomplished by producing:
 
-* **Concepts**: Data dictionary entries describing the concepts referred to by the recommendation
-* **Criteria**: Functional descriptions (i.e. domain-specific pseudo-code)
-* **Processes**: Flow diagrams connecting the personas, activities, and settings to clinical processes
+* [**Concepts**](#represent-concepts): Data dictionary entries describing the concepts referred to by the recommendation
+* [**Criteria**](#represent-criteria): Functional descriptions (i.e. domain-specific pseudo-code)
+* [**Processes**](#represent-processes): Flow diagrams connecting the personas, activities, and settings to clinical processes
+
+For a more detailed discussion of this step, refer to the [Represent Step](#represent-step) topic.
 
 ### 3.2.3 Translate
+{: #translate}
 
 The _translate_ step involves expressing the semi-structured (L2) data elements, activities, and flow diagrams as structured (L3) content. Specifically, as FHIR profiles (i.e. _case features_), CPG activities, CQL logic, and CPG recommendations, strategies, and pathways.
 
-* **Profiles**: Data elements are represented as FHIR profiles of the appropriate resource
-* **Terminology**: CodeSystem and ValueSet resources as appropriate
-* **Criteria**: CQL libraries of criteria and related expressions, contained in Library resources
-* **Activities**: ActivityDefinition resources
-* **Recommendations**: PlanDefinition resources focused on particular recommendations
-* **Strategies**: PlanDefinition resources focused on particular conditions or states
-* **Pathways**: PlanDefinition resources describing the overall pathway
+* [**Profiles**](#translate-profiles): Data elements are represented as FHIR profiles of the appropriate resource
+* [**Terminology**](#translate-terminology): CodeSystem and ValueSet resources as appropriate
+* [**Criteria**](#translate-criteria): CQL libraries of criteria and related expressions, contained in Library resources
+* [**Activities**](#translate-activities): ActivityDefinition resources
+* [**Recommendations**](#translate-recommendations): PlanDefinition resources focused on particular recommendations
+* [**Strategies**](#translate-strategies): PlanDefinition resources focused on particular conditions or states
+* [**Pathways**](#translate-pathways): PlanDefinition resources describing the overall pathway
+
+For a more detailed discussion of this step, refer to the [Translate Step](#translate-step) topic.
 
 ### 3.2.4 Validate
+{: #validate}
 
 The _validate_ step involves ensuring that the structured content meets the requirements and expectations for conformance and intent, and that it behaves as expected. This typically involves the creation of at least a positive and negative _scenario_, or test case, that can be used to test the behavior of the structured content. In practice, this requires the ability to _execute_ the L3 content in at least simulated environments. For content structured according to the CPG, and delivered via standard mechanisms such as SDC Questionnaires, Clinical Reasoning activities and processes, or CDS Hooks, there are reference implementations and sandbox environments that can provide this level of validation.
 
-* **Conformance**: Conformance checking of the profiles and conformance requirements of this implementation guide
-* **Checklists**: Checklists to help determine readiness and facilitate communication
-* **Expert Review**: Review by relevant subject matter experts
-* **Test Scenarios**: Test scenarios that exercise happy paths as well as edge cases
-* **Unit Testing**: Testing that each piece functions correctly in isolation
-* **Component Testing**: Testing that the components function correctly together
-* **Integration Testing**: Testing that the artifacts behave correctly in simulated target environments
+* [**Conformance**](#validate-conformance): Conformance checking of the profiles and conformance requirements of this implementation guide
+* [**Checklists**](#validate-checklists): Checklists to help determine readiness and facilitate communication
+* [**Expert Review**](#validate-expert-review): Review by relevant subject matter experts
+* [**Test Scenarios**](#validate-test-scenarios): Test scenarios that exercise happy paths as well as edge cases
+* [**Unit Testing**](#validate-unit-testing): Testing that each piece functions correctly in isolation
+* [**Component Testing**](#validate-component-testing): Testing that the components function correctly together
+* [**Integration Testing**](#validate-integration-testing): Testing that the artifacts behave correctly in simulated target environments
 
-## 3.3.0 Select
-{: #select}
+For a more detailed discussion of this step, refer to the [Validate Step](#validate-step) topic.
+
+## 3.3.0 Select Step
+{: #select-step}
+
+The _select_ step involves selection of the specific content for implementation, along with the target enablement strategies, specifically identifying the _who_, _what_, _when_, _where_, and _why_ for the selected content.
+
+This step is typically performed by a cross-functional team consisting of at least:
+
+* A _clinical_ subject matter expert, familiar with the guideline content and the domain
+* A _health informaticist_, familiar with the target standards (i.e. FHIR, CQL, and CPG)
+* A _terminologist_, to ensure appropriate granularity and selection of concepts
+
+In addition, technical and informatics specialists from specific (or at least representative) target implementation sites can provide valuable feedback during this step to ensure implementation feasibility.
 
 ### 3.3.1 Personas
+{: #select-personas}
 
 Personas are narrative descriptions of the actors and roles, or the _who_, referred to by the guideline. For example, nurse midwife, community healthworker, and pregnant mother are all examples of personas.
 
@@ -152,6 +170,7 @@ Where a code from the ISCO exists, it is used. Where a WHO recommended health wo
 Content conforming to this implementation guide MAY identify personas using the [Common Personas](CodeSystem-cpg-common-persona.html) code system.
 
 ### 3.3.2 Activities
+{: #select-activities}
 
 Activities identified as part of the select step are the narrative description of _what_ needs to happen. This implementation guide defines the [Activity Type](CodeSystem-cpg-activitytype) CodeSystem to support computable representation of clinical activities:
 
@@ -166,6 +185,7 @@ Activities identified as part of the select step are the narrative description o
 * **Report flag**: Report a flag on a patient
 
 ### 3.3.3 Processes
+{: #select-processes}
 
 Processes identified as part of the select step are the narrative description of _when_ something needs to happen, particularly as it relates to clinical care delivery.
 
@@ -176,6 +196,7 @@ Using this common pathway, content can indicate where in the overall process of 
 Content conforming to this implementation guide MAY identify processes using the [Common Processes](CodeSystem-cpg-common-process.html) code system.
 
 ### 3.3.4 Settings
+{: #select-settings}
 
 Settings identified as part of the select step are the narrative description of _where_ something needs to happen.
 
@@ -184,10 +205,12 @@ For settings, this implementation guide uses the [HL7 V3 ServiceDeliveryLocation
 Content conforming to this implementation guide MAY identify settings using the [HL7 V3 ServiceDeliveryLocationRoleType](http://hl7.org/fhir/v3/ServiceDeliveryLocationRoleType/vs.html) value set.
 
 ### 3.3.5 Support
+{: #select-support}
 
 Two aspects of supporting information are considered for recommendations. First, supporting documentation related to the guideline content itself, and second, pertinent positive or negative information related to determining the applicability of a recommendation to a particular patient.
 
 #### 3.3.5.1 Guideline Supporting Information
+{: #guideline-supporting-information}
 
 Supporting documentation for a recommendation is critical to ensuring the definition can be traced back to reliable and credible sources. The [Supporting Documentation](http://hl7.org/fhir/R4/clinicalreasoning-topics-supporting-documentation.html) topic in the base FHIR specification describes the basic mechanism for achieving this with the Clinical Reasoning resources.
 
@@ -212,11 +235,12 @@ The [CPGComputablePlanDefinition](StructureDefinition-cpg-computableplandefiniti
 <blockquote>NOTE: The CPG-on-FHIR project is seeking feedback on whether this implementation guide should nominate a specific grading system and require conforming content to provide mappings when they use other grading systems.</blockquote>
 
 #### 3.3.5.2 Pertinent Information
+{: #pertinent-information}
 
 Documenting pertinent information related to a recommendation is critical to helping the intended recipient determine why the recommendation applies in each particular case. For definitional content, pertinent information can typically be inferred from the content referenced by the logic involved. To support cases where pertinent information cannot be inferred from the content, as well as to allow content developers to highlight particular aspects, the `input` and `output` elements of the PlanDefinition can be used to identify pertinent information for the recommendation.
 
-## 3.4.0 Represent
-{: #represent}
+## 3.4.0 Represent Step
+{: #represent-step}
 
 The represent step involves taking the narrative input from the select step, the _who_, _what_, _when_, _where_, and _why_, and further refining it to produce a _data dictionary_ of concepts, _functional descriptions_ of the criteria involved in the recommendations, and _flow diagrams_ illustrating how the recommendations should be applied in a clinical context. This step is typically performed by a cross-functional team consisting of at least:
 
@@ -225,6 +249,7 @@ The represent step involves taking the narrative input from the select step, the
 * A _terminologist_, to ensure appropriate granularity and selection of concepts
 
 ### 3.4.1 Concepts
+{: #represent-concepts}
 
 At this step, concepts referred to by the narrative are identified and represented as data elements within a data dictionary. This content typically takes the form of a spreadsheet, or even a table within a text document, and identifies, for each data element:
 
@@ -240,6 +265,7 @@ For example, the following data dictionary excerpt shows the data elements for r
 </div>
 
 ### 3.4.2 Criteria
+{: #represent-criteria}
 
 For criteria, the _represent_ step involves further refining the narrative from the _select_ step by creating a _functional description_, or a detailed, domain-specific description of the recommendation that is effectively clinical pseudo-code. For example, given the recommendation statement for Recommendation 5 from the CDC Opioid Prescribing Guideline:
 
@@ -267,6 +293,7 @@ The following functional description illustrates, in precise and clinical terms,
 This functional description provides a clear representation of what should happen, when, where, to whom, and by whom, tying together all the aspects of the recommendation, and facilitating communication of those aspects to the knowledge engineers in the _translate_ step.
 
 ### 3.4.3 Processes
+{: #represent-processes}
 
 There are a wide variety of methods and approaches available for representing and communicating the details of a workflow. One of the simplest, and most widely used is the [flowchart](https://en.wikipedia.org/wiki/Flowchart), a versatile diagramming tool with virtually ubiquitous authoring and viewing support, and that is immediately understandable. For these reasons, this methodology focuses on the use of flowcharts to visually represent processes. In particular, the processes that have been most useful are simple flow diagrams that provide a visual representation of the functional description.
 
@@ -276,8 +303,8 @@ For example, the following flow diagram illustrates the functional description f
   <img src="assets/images/opg-recommendation-5-flow-diagram.png" alt="OPG Recommendation 5 Data Elements" class="img-responsive img-rounded center-block"/>
 </div>
 
-## 3.5.0 Translate
-{: #translate}
+## 3.5.0 Translate Step
+{: #translate-step}
 
 The _translate_ step involves using the narrative (L1) and semi-structured (L2) outputs from the _select_ and _represent_ steps to create formal, computable, standards-based representations of guideline content. This step is typically performed by a team consisting of at least:
 
@@ -289,6 +316,7 @@ The _translate_ step involves using the narrative (L1) and semi-structured (L2) 
 A complete walkthrough of this process using freely available open source tools is available at the [Content IG Walkthrough](https://github.com/cqframework/content-ig-walkthrough).
 
 ### 3.5.1 Computable Clinical Practice Guideline
+{: #computable-clinical-practice-guideline}
 
 As discussed in the [content implementation guides](#content-igs) section, a computable Clinical Practice Guideline (CPG) following this methodology is delivered as a FHIR Implementation Guide, and the first step to developing the content is to establish the content IG. This typically takes the form of a Github repository, similar to the [Sample Content IG](https://github.com/cqframework/sample-content-ig).
 
@@ -299,6 +327,7 @@ Many FHIR implementation guides are Health Level 7 (HL7) balloted specifications
 For open-source content with a commitment to maintain it, the [fhir.org](http://fhir.org) site can provide a publication alternative by following the [FHIR Community Process](http://fhir.org/community/process/).
 
 ### 3.5.1 Profiles
+{: #translate-profiles}
 
 The data dictionary and related documentation are used to produce FHIR profiles. Note that not every data element will result in a FHIR profile, the number of profiles actually used depends on a number of factors, such as the variability between data elements, as well as the anticipated need for validation, versus reference.
 
@@ -318,6 +347,7 @@ Content conforming to this implementation guide SHOULD use the [CPG Event Activi
 In addition, content implementation guides will typically select a target realm for deployment, and SHOULD select a set of [Interoperability Profiles](profiles.html#content-profiles) appropriate for that realm.
 
 ### 3.5.2 Terminology
+{: #translate-terminology}
 
 For terminology, the _translate_ step involves identifying and/or constructing appropriate value sets for the concepts referred to in the selected recommendations. This step is typically performed by the terminologist with help from the knowledge engineering role to assist in creating FHIR representations. For terminology servers that already support authoring and distribution of FHIR ValueSet resources, this is less of an issue, but often there are not complete solutions available, and additional tooling is required to support the terminology publishing needs.
 
@@ -326,6 +356,7 @@ Specifically, terminology that is included as part of content implementation gui
 For more discussion on the creation and distribution of value sets, see the [Terminology](terminology.html) page.
 
 ### 3.5.3 Criteria
+{: #translate-criteria}
 
 For criteria, the _translate_ step involves expressing the inclusion and exclusion criteria, as well as any related logic, using Clinical Quality Language (CQL). This step is typically performed by a knowledge author using authoring environments such as [CDS Connect](https://cds.ahrq.gov/cdsconnect/authoring) or the [Atom CQL Language Plugin](https://github.com/cqframework/atom_cql_support).
 
@@ -334,6 +365,7 @@ Once the CQL libraries are authored, they can be included in the content impleme
 For more discussion on the creation and distribution of libraries, see the [Libraries](library.html)
 
 ### 3.5.4 Activities
+{: #translate-activities}
 
 For activities, the _translate_ step involves expressing the activities to be performed as part of the recommendations. Across guideline-based care, there are many different types of recommendations that may be given, such as the recommendation to conduct a specific test, to prescribe a specific medication, recommendation for a particular procedure, and many others. Following the general [workflow](http://hl7.org/fhir/R4/workflow.html) pattern established in FHIR, the activities within these recommendations are represented by the following patterns:
 
@@ -342,6 +374,7 @@ For activities, the _translate_ step involves expressing the activities to be pe
 * [**Event**](http://hl7.org/fhir/event.html): Clinical, administrative, or other events that _are occurring_ or _have occurred_
 
 #### 3.5.4.1 Activity Definitions
+{: #translate-activity-definitions}
 
 Definitional activities are represented using the ActivityDefinition resource, which acts as a _template_ to describe the patient-independent aspects of the activity, and provides a means to build expressions to dynamically determine the values for patient-dependent aspects of the activity as part of _applying_ the definition to a particular patient context.
 
@@ -360,20 +393,21 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 
 |Activity|Parameters|
 |--------|--------|
-|[CommunicationRequest](ActivityDefinition-cpg-communicationrequest-activitydefinition.html)|CategoryCodeableConcept: The category of communication|
-|[ImmunizationRecommendation](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html)|VaccineCodeableConcept: The vaccine being recommended|
-|[MedicationRequest](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|MedicationCodeableConcept: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
-|[ProposeDiagnosisTask](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|DiagnosisCodeableConept: The diagnosis being proposed|
-|[QuestionnaireTask](ActivityDefinition-cpg-questionnairetask-activitydefinition.html)|QuestionnaireCanonical: The canonical URL of the questionnaire to be used to collect the information|
-|[RecordDetectedIssueTask](ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition.html)|IssueCodeableConcept: The issue being recorded|
-|[RecordInferenceTask](ActivityDefinition-cpg-recordinferencetask-activitydefinition.html)|InferenceCodeableConcept: The type of inference being recorded<br/>InferenceValue: The value of the inference being recorded|
-|[ReportFlagTask](ActivityDefinition-cpg-reportflagtask-activitydefinition.html)|IssueCodeableConcept: The issue being flagged|
-|[ServiceRequest](ActivityDefinition-cpg-servicerequest-activitydefinition.html)|ServiceCodeableConcept: The type of service being proposed|
+|[**CommunicationRequest**](ActivityDefinition-cpg-communicationrequest-activitydefinition.html)|**CategoryCodeableConcept**: The category of communication|
+|[**ImmunizationRecommendation**](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
+|[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
+|[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConept**: The diagnosis being proposed|
+|[**QuestionnaireTask**](ActivityDefinition-cpg-questionnairetask-activitydefinition.html)|**QuestionnaireCanonical**: The canonical URL of the questionnaire to be used to collect the information|
+|[**RecordDetectedIssueTask**](ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition.html)|**IssueCodeableConcept**: The issue being recorded|
+|[**RecordInferenceTask**](ActivityDefinition-cpg-recordinferencetask-activitydefinition.html)|**InferenceCodeableConcept**: The type of inference being recorded<br/>InferenceValue: The value of the inference being recorded|
+|[**ReportFlagTask**](ActivityDefinition-cpg-reportflagtask-activitydefinition.html)|**IssueCodeableConcept**: The issue being flagged|
+|[**ServiceRequest**](ActivityDefinition-cpg-servicerequest-activitydefinition.html)|**ServiceCodeableConcept**: The type of service being proposed|
 {:.grid}
 
 Content conforming to this implementation guide SHALL use at least the [CPG Shareable Activity Definition](StructureDefinition-cpg-shareableactivitydefinition.html) profile, and SHOULD use the Computable and Publishable profiles when specifying activity definitions.
 
 #### 3.5.4.2 Activity Requests (Proposals)
+{: #translate-activity-requests}
 
 Proposed activities are represented with request resources, and for each type of activity, this implementation guide defines a proposal profile. These are effectively the _recommended action_ to be taken as part of a guideline recommendation, and in general they each specify:
 
@@ -400,6 +434,7 @@ Content conforming to this implementation guide SHALL use one of the recommendat
 Specific guideline content MAY define derived profiles for recommendation instances establishing additional constraints.
 
 #### 3.5.4.3 Activity Events
+{: #translate-activity-events}
 
 And finally, for each of the activity types, this implementation guide defines an _event_ profile for modeling when the activities have actually occurred. Each event profile typically describes:
 
@@ -411,7 +446,7 @@ Note that because _event_ resources are part of the patient's _case_, it is ofte
 
 * [**case feature**](StructureDefinition-cpg-instantiatesCaseFeature.html): A reference to the case feature this event is an instance of
 * [**case feature type**](StructureDefinition-cpg-caseFeatureType.html): Whether the case feature is _asserted_ or _inferred_
-* [**case feature pertinence**](StructureDefinition-cpg-caseFeaturePertinence.html): The pertinence, positive, negative, or pathognomic, of the case feature
+* [**case feature pertinence**](StructureDefinition-cpg-caseFeaturePertinence.html): The pertinence, positive, negative, or pathognomonic, of the case feature
 
 The following table details the _event_ profiles for each activity type. Note that some activities have multiple event profiles.
 
@@ -426,10 +461,12 @@ The following table details the _event_ profiles for each activity type. Note th
 |Record a detected issue|[CPGDetectedIssue](StructureDefinition-cpg-detectedissue.html)|
 |Record an inference|[CPGObservation](StructureDefinition-cpg-observation.html)|
 |Report a flag|[CPGFlag](StructureDefinition-cpg-flag.html)|
+{:.grid}
 
 Content conforming to this implementation guide SHALL use the event profiles defined above to ensure guideline supporting and tracking information is available for activities delivered in the context of a computable guideline.
 
 ### 3.5.5 Recommendations
+{: #translate-recommendations}
 
 This implementation guide uses the PlanDefinition resource to represent the recommendations of a guideline as an event-condition-action rule. The recommendation used in this way specifies:
 
@@ -442,6 +479,7 @@ Readers of this implementation guide should refer to the [Applying a PlanDefinit
 Content conforming to this implementation guide SHALL use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.
 
 ### 3.5.6 Strategies
+{: #translate-strategies}
 
 This implementation guide uses the PlanDefinition resource to represent specific sequences of activities executed at a point-in-time as a strategy. Readers of this implementation guide should be familiar with the [Workflow](http://hl7.org/fhir/R4/workflow.html) topic in the base FHIR specification. This implementation builds on the guidance there, providing some specific patterns for describing common activities as part of strategies. Specifically:
 
@@ -455,6 +493,7 @@ Within these strategies, recommendations for guideline-based care are attached v
 Content conforming to this implementation guide SHALL use the [cpg-strategydefinition](StructureDefinition-cpg-strategydefinition.html) profile to represent strategy definitions.
 
 ### 3.5.7 Pathways
+{: #translate-pathways}
 
 This implementation guide uses the PlanDefinition resource to represent the overall activities involved in a guideline as a pathway. For the purposes of this implementation guide, a pathway differs from a strategy in that a pathway describes a general set of activities to be applied over time, typically with multiple time-based or event-based entry points across the pathway.
 
@@ -462,17 +501,29 @@ For example, the WHO antenatal care guideline recommends an overall contact sche
 
 The activities in a pathway used in this way are references to other strategies or recommendations, rather than particular activities to be performed.
 
+The choice between representation using recommendations, strategies, and pathways depends on a variety of factors, largely driven by:
+
+1. Level of specificity, (i.e. the degree to which the guideline is explicit about specifying behaviors), ranging from specification of just recommendations and eligibility, up through and including longitudinal orchestration of care
+2. Level of flexibility, (i.e. the degree to which the actions to be taken are explicitly specified (what vs how)
+
+We use the term pathway in this methodology for a more flexible representation of the guidance, as opposed to a protocol which would typically be a more rigid description of a particular process.
+
+Also note that depending on the guideline, there may be aspects of the pathway that are expected to be more rigid (i.e. closer to protocols), depending on the clinical specification.
+
 Content conforming to this implementation guide SHALL use the [cpg-pathwaydefinition](StructureDefinition-cpg-pathwaydefinition.html) profile to represent pathway definitions.
 
-## 3.6.0 Validate
+## 3.6.0 Validate Step
+{: #validate-step}
 
 The _validate_ step involves ensuring that the structured (L3) content produced matches the intent of the (L1) and (L2) content for the guideline. This implementation guide provides several approaches for validation, including conformance requirements, L2, L3, and L4 checklists, as well as supporting several layers of testing.
 
 ### 3.6.1 Conformance
+{: #validate-conformance}
 
 <p>The <a href="documentation-conformance.html">Conformance</a> topic summarizes the conformance requirements established by this implementation guide.</p>
 
 ### 3.6.2 Checklists
+{: #validate-checklists}
 
 To help facilitate the process of communication of requirements between collaborators, and to provide a measure of completeness with respect to artifacts used in and developed as part of this methodology, this implementation guide provides three checklists, associated with the semi-structured, structured, and executable knowledge representation levels. These checklists are intended as a tool to help identify requirements and ensure completeness of artifacts:
 
@@ -484,39 +535,44 @@ To help facilitate the process of communication of requirements between collabor
 {:.grid}
 
 ### 3.6.3 Expert Review
+{: #validate-expert-review}
 
 The agile methodology proposed by the [approach](approach.html) section emphasizes the importance of regular review of content as part of the computable content development process. However, it is often the case that guideline development and derivate asset development are done by separate and fairly isolated teams. When the original guideline developers cannot be used for expert review, it is critical to ensure review by a qualified domain expert familiar with the domain the guideline covers.
 
 In addition, engagement from target implementation sites is key, and the best-case scenario is to have site engagement as part of the development process. Again, this is often not the case, so seeking implementation review from at least one, if not several target implementation sites can provide valuable feedback.
 
 ### 3.6.4 Testing Scenarios
+{: #validate-testing-scenarios}
 
 To support validation, testing scenarios should be devised based on the personas, concepts, activities, and processes defined in the narrative (L1) and semi-structured (L2) content. Ideally, these scenarios would be built out as FHIR resources, using the [ExampleScenario](http://hl7.org/fhir/examplescenario.html) resource as a way to completely and formally describe each scenario.
 
 ### 3.6.5 Unit Testing
+{: #validate-unit-testing}
 
 Ideally, each artifact should have at least one _positive_ and one _negative_ test case. In addition, edge cases and boundary conditions should be considered and where appropriate, additional test cases provided. The goal of unit testing is to ensure that each of the artifacts functions as expected in isolation.
 
 As of the time of this writing, unit testing for Libraries can be accomplished using the Atom CQL plugin by creating test folders for each test case. See the [Adding Test Cases](https://github.com/cqframework/content-ig-walkthrough#adding-test-cases) topic in the Content IG Walkthrough for more information.
 
 ### 3.6.6 Component Testing
+{: #validate-component-testing}
 
 Component testing involves ensuring that the components of a system work as expected. Ideally, components are tested with as few dependencies as possible. For L3 decision support content conforming to this implementation guide, that content can be tested with freely available, open-source reference implementations. In particular, the CQF Ruler reference implementation is capable of evaluating L3 decision support content, and exposing that evaluation capability as a CDS Hooks service.
 
 See the [Quick Start](http://build.fhir.org/ig/cqframework/opioid-cds-r4/quick-start.html) in the Opioid Prescribing Guideline for an example of how this type of testing can be done.
 
 ### 3.6.7 Integration Testing
+{: #validate-integration-testing}
 
 Integration testing involves ensuring that systems work together as expected. For example, once the L3 content for a guideline is loaded in a CQF Ruler, it can be tested with the CDS Hooks Sandbox, an open source sandbox for testing CDS Hooks Services that simulates a clinical system acting as a CDS Hooks client.
 
 See the [Validation with CQF Ruler and CDS Hooks](https://github.com/cqframework/content-ig-walkthrough#validation-with-cqf-ruler-and-cds-hooks) topic of the Content IG walkthrough for an example of how to perform this type of testing.
 
 ## 3.7.0 Packaging
-{: #packaging}
+{: #validate-packaging}
 
 <p>The <a href="packaging.html">Packaging</a> topic describes how content, including test cases, are packaged for distribution.</p>
 
 ## 3.8.0 Mapping and Other Formalisms
-{: #other-formalisms}
+{: #validate-other-formalisms}
 
 <p>The primary methodology discussed in this implementation guide uses FHIR resources to represent both patient information and the computable content of a guideline. There are other approaches, and the <a href="documentation-methodology.html">Mapping to BPM+</a> topic discusses how the FHIR representations can be bi-directionally mapped to and from BPM+ content.</p>

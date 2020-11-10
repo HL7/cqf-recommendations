@@ -2,10 +2,9 @@
 layout: default
 title: Level of Knowledge Representation
 ---
-**“Levels” of Knowledge Representation Framing:**
+# “Levels” of Knowledge Representation Framing
 
-
-## **Approach**
+## Approach
 
 The approach taken by this implementation guide is to consider three broad challenges of clinical guideline implementation:
 
@@ -26,8 +25,7 @@ FIG. 47. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Cont
 </details>
 
 
-
-## **Narrative**
+## Narrative
 
 Level 1 (L1) is the clinical guideline in narrative form often in Portable Document Format (PDF), and includes:
 
@@ -47,7 +45,7 @@ Level 1 (L1) is the clinical guideline in narrative form often in Portable Docum
 *   For example, one such guideline is the Guideline for Prescribing Opioids for Chronic Pain (2016) published by the Centers for Disease Control and Prevention (CDC).
 
 
-## **Semi-structured**
+## Semi-structured
 
 Level 2 (L2) is semi-structured and generally consists of process and workflow diagrams, user stories, and personas that provide contextual and descriptive information about the steps involved in each recommendation of the guideline. This level generally includes:
 
@@ -66,7 +64,7 @@ Level 2 (L2) is semi-structured and generally consists of process and workflow d
 *   The examples included in this implementation guide illustrate some of the types of content and approaches that can be used for L2.
 
 
-## **Structured**
+## Structured
 
 Level 3 (L3) is a computable representation of the content in the guideline and can be shared across health systems and implementation settings. This level is the primary focus of this implementation guide and as such throughout much of this implementation guide when we refer to formalized knowledge assets (or formalisms and expressions) we are almost exclusively referring to this level of representation (computable).  They generally consists of:
 
@@ -81,7 +79,7 @@ Level 3 (L3) is a computable representation of the content in the guideline and 
 *   Structured form definitions providing a conceptual description of the user-interactions involved (e.g. Adaptive Forms)
 *   All the CPG definitional resources (e.g. CPGPathway, CPGStrategies, CPGRecommendations, CPGCaseFeatures, etc.) are Level 3 representations.
 
-## **Executable**
+## Executable
 
 Level 4 (L4) is executable software running in a clinical system (e.g., EHR, registry, exchange, quality measurement module). This is the local implementation and generally involves:
 

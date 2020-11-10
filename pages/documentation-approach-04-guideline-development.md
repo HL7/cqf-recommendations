@@ -30,25 +30,25 @@ FIG 18. Overview of the phases of the guideline development process that general
 
 </summary>
 
-<img src="assets/images/CPG-04-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="640"/>
+<img src="assets/images/CPG-04-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="500" height="500"/>
 
 </details>
 
-## **Guideline Development Group** <!-- GET RID OF SECTION 4.01- ALL is in HERE NOW (???)  [Description of the Guideline Development Group (GDG) and Scoping](documentation-approach-04-01-guideline-development-group.html) !-->
+## Guideline Development Group <!-- GET RID OF SECTION 4.01- ALL is in HERE NOW (???)  [Description of the Guideline Development Group (GDG) and Scoping](documentation-approach-04-01-guideline-development-group.html) !-->
 
 The guideline development group is the multi-stakeholder, cross-functional team assembled to develop the guideline. It often includes members from the target audience (specialist and primary care clinicians), content experts, patients and caregivers, front-line clinicians, evidence-based practice experts, outcomes and quality experts, usability experts, experts in medical and shared decision-making, methodology experts, and experts in health economics. ([https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#GuidelineGroupMembershiptable](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#GuidelineGroupMembershiptable)).
 
 For the digital CPG, we will need to add a few more experts to the guideline development group or have a few key resources serve cross-functional roles with a Knowledge engineering team (see section on “Knowledge Engineering”).  These may include experts in creating computable representations of the guideline such as: knowledge extraction and/or elicitation, terminologists and/or ontologists, clinical research informatics ([ref](https://www.amia.org/applications-informatics/clinical-research-informatics)), clinical informatics, clinical decision support, cognitive informatics, knowledge formalism and expression, measurement science and measure development, user experience (UX), and user-centered design.  These experts often start with a “paper” or narrative guideline but will likely produce much higher fidelity, accurate, and usable expressions of the guideline through a more “agile” approach to concurrent, integrated, and cross-functional approach to guideline development and knowledge engineering.
 
-## **Scoping**
+## Scoping
 
-Scoping refers to the process and establishment of criteria to describe and constrain the focus of the guideline. It addresses who is the target user of the guideline,who it applies to, and what is addressed in the guideline. This is typically based on various factors, including high prevalence and burden of disease, avoidable mortality and morbidity, high cost, emerging diseases or emerging care options, variation in clinical practice, and rapidly changing evidence. The PICOTS Typology (i.e., population, intervention, comparison, outcome, timeframe) is often used in scoping and correlates closely to the eligibility criteria for the CPG  ([https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Prioritytable](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Prioritytable)).
+Scoping refers to the process and establishment of criteria to describe and constrain the focus of the guideline. It addresses who is the target user of the guideline, who it applies to, and what is addressed in the guideline. This is typically based on various factors, including high prevalence and burden of disease, avoidable mortality and morbidity, high cost, emerging diseases or emerging care options, variation in clinical practice, and rapidly changing evidence. The PICOTS Typology (i.e., population, intervention, comparison, outcome, timeframe) is often used in scoping and correlates closely to the eligibility criteria for the CPG  ([https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Prioritytable](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Prioritytable)).
 
-## **Guideline Development Frameworks**  <!-- link to 04.02 [Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html) !-->
+## Guideline Development Frameworks  <!-- link to 04.02 [Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html) !-->
 
 The following Frameworks are used in Guideline development and across the evidence ecosystem:
 
-**Knowledge Synthesis and the Evidence Pyramid**
+## Knowledge Synthesis and the Evidence Pyramid
 
 Knowledge synthesis is the process in professional community of practice that applies and develops methodologies for systematically evaluating a corpus of evidence related to a particular condition or intervention.
 
@@ -60,7 +60,7 @@ FIG. 18.  The Evidence Pyramid refers to a means to evaluate the quality or vali
 
 </summary>
 
-<img src="assets/images/CPG-04-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="556"/>
+<img src="assets/images/CPG-04-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="500" height="400"/>
 
 </details>
 
@@ -68,7 +68,7 @@ FIG. 18.  The Evidence Pyramid refers to a means to evaluate the quality or vali
 
 **GRADE** (**G**rades of **R**ecommendation **A**ssessment, **D**evelopment and **E**valuation) - GRADE describes a process and a structured framework for conveying information to develop a common, transparent, and sensible system for grading the **quality** of evidence and the **strength** of recommendations.
 
-**The CPG enables the System Level of the 6S Pyramid and Learning Health Systems**
+## The CPG enables the System Level of the 6S Pyramid and Learning Health Systems
 
 The 6S Evidence Pyramid is another framing on the quality or validity of the evidence that may be of particular interest to the CPG-IG (implementation guide)  ([ref](https://doi.org/10.7326/0003-4819-151-6-200909150-02002)).  The highest level is Systems where information from the lower levels of the hierarchy are integrated with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
 
@@ -80,7 +80,7 @@ FIG. 19. The 6S Evidence Pyramid with Systems Level (integration of lower levels
 
 </summary>
 
-<img src="assets/images/CPG-04-02.png" alt="6S Evidence Pyramid" class="img-responsive img-rounded center-block" width="750" hight="491"/>
+<img src="assets/images/CPG-04-02.png" alt="6S Evidence Pyramid" class="img-responsive img-rounded center-block" width="500" hight="500"/>
 
 </details>
 
@@ -93,57 +93,47 @@ FIG. 20. The Learning Health System is another perspective on integrating eviden
 
 </summary>
 
-<img src="assets/images/CPG-04-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="750"/>
+<img src="assets/images/CPG-04-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="500" hight="500"/>
 
 </details>
 
-
-
-**Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic:**
+### Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
 
 Clearly there are many benefits to enable such a “peak of the pyramid” approach to tightly integrating guideline-directed care and cycling the “Learning Health System” for any condition and at any point in time.  Many of the approaches, capabilities, best practices, tools, and techniques described in this implementation guide are certainly as, if not even more, relevant to these situations.
 
-*   **Rapid Discovery of Best Practice**
-*   **Rapid dissemination of Practice Guidance**
-*   **Rapid-cyle, closed loop Knowledge-to-Delivery-to-Discovery with feedback loops**
+* **Rapid Discovery of Best Practice**
+* **Rapid dissemination of Practice Guidance**
+* **Rapid-cyle, closed loop Knowledge-to-Delivery-to-Discovery with feedback loops**
 
-## **Analysis of Evidence**
+## Analysis of Evidence
 
 Analysis of evidence includes systematic approaches for evaluating the evidence to inform the guideline and individual recommendations.
 
-**Information from the Evidence:**
-
+### Information from the Evidence
 
 There is a significant amount of information contained within the various evidence sources.  PICOTS as described above is one systematic means of extracting information from the evidence that may be particularly useful in the CPG.
 
-**EBM-on-FHIR for Information from the Evidence:**
-
+### EBM-on-FHIR for Information from the Evidence
 
 The evidence contains valuable information that is not only used in the guideline development process, but often for and in the guideline and recommendations themselves.  
 
-
 The formalization of this information from the evidence provides significant advantage (reuse or at least a reasonable starting point to work from) in the formalization of the guideline and guideline recommendations in the knowledge engineering lifecycle process for the CPG.
 
-
-## **Recommendations**
+## Recommendations
 
 Recommendations are proposals pertaining to the best course of action put forth by an authoritative source or body related to a condition, procedure, clinical decision, or activity. Often, they also call out portions of a recommendation and/or how the recommendations hang together that lack evidence and may have relied on expert consensus.
 
 Additionally, if the guideline development group includes measure development expertise, it may provide guidance on whether each recommendation could be a good candidate for performance/quality measurement.
 
-
-## **Reporting and Dissemination**
+## Reporting and Dissemination
 
 Reporting is often done through an official, formal guideline report intended for a target audience. Dissemination to measure development organizations, CLinical Decision Support (CDS) vendors, EHR vendors, registry vendors, and/or SMART-on-FHIR application developers could be included for computable CPGs.
 
-
-## **Development of Computable Clinical Guideline Artifacts**
-
+## Development of Computable Clinical Guideline Artifacts
 
 ### Evidence
 
 Evidence and information from the evidence used and referenced in the guideline recommendations may be formalized as FHIR Evidence Resources with their respective Evidence Variables using the EBM-on-FHIR IG.  Similarly, the published guideline narrative may be formalized through the same approach using this CPG-on-FHIR IG..
-
 
 ### CPG Content and Related Derivatives
 
@@ -156,7 +146,7 @@ Evidence and information from the evidence used and referenced in the guideline 
 **eCaseReport:**  A CPGeCaseReport is intended to convey the set of data elements required to provide for more detailed outcomes research on the guideline topic itself as well as for a feedback loop for continuous improvement of the specified guideline.  The data elements for a CPGeCaseReport come from the data requirements (CPGCaseFeatures), key inferences thereof (inferred CPGCaseFeatures), patient specific recommendations (CPGProposals), and the corresponding orders and resulting clinical activities (requests and resultant events from CPGCaseFeatures).
 
 
-**Value to Stakeholders:** <!-- Needs Written !-->
+### Value to Stakeholders
 
 *   For guideline development groups, especially Medical Specialty Societies-
 *   For Providers and health care organizations

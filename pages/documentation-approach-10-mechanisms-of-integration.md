@@ -14,15 +14,21 @@ Broadly speaking, there are two main mechanisms for integrating computable guide
 
 The content import mechanism involves ingestion of computable content by a system that is capable of interpreting the content. The most straight-forward example of this is the import of a quality measure specification by a quality reporting system. As another example, a decision support rule could be ingested in the same way, using established triggering points and making the data required for rule processing available to the evaluating environment.
 
+<div>
 <img src="assets/images/integration-content-ingestion.png" alt="Content ingestion/import" class="img-responsive img-rounded center-block" />
+</div>
+
 <p><em>Figure 1</em> Content ingestion/import</p>
 
 ## Service Integration
 
 The service integration mechanism involves establishing APIs for delivery of content. The CDS Hooks specification provides a standard API for the integration of decision support with clinical systems.
 
+<div>
 <img src="assets/images/integration-content-service.png" alt="Content service" class="img-responsive img-rounded center-block" />
-<p><em>Figure 1</em> Content service</p>
+</div>
+
+<p><em>Figure 2</em> Content service</p>
 
 ## Hybrid
 

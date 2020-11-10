@@ -2,13 +2,13 @@
 layout: default
 title: Knowledge Implementation
 ---
-### **Knowledge Implementation:**
+# Knowledge Implementation
 
 Knowledge implementation refers to the activities of localizing the knowledge formalisms, including addressing data bindings (e.g., data and terminology mappings), workflow insertions and localization factors (e.g., adjustments to thresholds), integration to end-user system endpoint interfaces, and adjustment or issues related to data quality, timing, enrichment, and/or required data enrichments.  At minimum, there is a local data, clinical logic, and workflow validation step prior to full implementation.
 
 While local implementations of guideline recommendations may warrant their own implementation guide, this implementation guide addresses several critical factors and considerations related to local implementation.  Native EHR build is out of scope.
 
-**Local Content and Practice Governance:**
+## Local Content and Practice Governance
 
 First of all, many larger health care delivery organizations have practice governance oversight bodies that may function in some degree like a guideline development group utilizing local organizational experts and key stakeholders, inputs from their own quality functions and research apparatus, and taking into account organizational goals, objectives, and limitations.  This practice governance group often takes into account one or more recognized expert body-developed guidelines (as described in the “Guideline Development Process” section), contextualized to a common set of clinical practices and/or common clinical workflows and aligned to organizational goals, issues, and processes.  
 
@@ -26,7 +26,7 @@ FIG. 38. Just as the guideline development group and knowledge engineering team 
 
 </details>
 
-**Local informatics (knowledge engineering) and implementation:**
+## Local informatics (knowledge engineering) and implementation
 
 Just as many of the functions and methods of the guideline development group have their local analogues, so does the knowledge engineering and guideline formalization and implementation.  
 
@@ -40,7 +40,7 @@ Similarly, many of the data definitions and terminologies are the same or very r
 
 Some activities unique to local informatics and implementation includes: capturing, analyzing, and optimizing local clinical workflows; redesigning and integrating new end-user application capabilities together with local clinical workflows and business processes; performing end-user or workflow validation (may be in a simulation environment, limited release- only specified users, or pilot release); issues related to periodic upgrades of vendor software.
 
-**Concurrent Development and Implementation**:
+## Concurrent Development and Implementation
 
 Given the similarities between and related activities of the CPG development process and the local implementation of standardized best practices, there are considerable opportunities for improving the effectiveness, efficiency, implementability, and overall uptake (and enhancement) guideline recommendations related best practices.
 
@@ -59,17 +59,17 @@ FIG. 39. The similarities in roles, functions, and activities as well as complem
 </details>
 
 
-**Analogs and Collaboration across CPG Development and Implementation**
+## Analogs and Collaboration across CPG Development and Implementation
 
 As described in the section on Knowledge Implementation, there are numerous analogues between the guideline development group and local practice governance as well as between the CPG knowledge engineering function and local informatics and EHR build functions.  Likewise, as the guideline development group and knowledge engineering function collaborate in the CPG development process, so does the local practice governance and informatics/EHR build function in the local knowledge implementation process.  The similarities in or complementation of functions and tasks, content and information, expertise and skills, and goals and objectives affords a significant opportunity to collaborate more closely, to share related or derivative assets, and to more effectively, efficiently, and rapidly implement best occurrences and achieve objectives.
 
-**Feedback- early, often, actionable:**
+## Feedback- early, often, actionable
 
 Furthermore, such a collaboration provides an opportunity to engage and address critical implementation concerns further upstream as well as afford earlier, shorter, and actionable feedback loops into the overall best practice to daily practice endeavor.  These feedback loops may be through direct interaction between the various functions, through the use of real-world data early in the CPG development process, and through constrained, limited-scope, and focused full lifecycle iterations.  
 
 For instance, as data elements and terminologies start could be defined relatively early in the collaborative CPG development process, they may be assessed or even obtained (e.g de-identified data sets from data marts or local clinical registries).  In part, this enables a feasibility assessment on required data elements, and may further provide a real-world data substrate for the knowledge engineering lifecycle process for a CPG.  
 
-**Real-world Data to Develop CPGs:**
+## Real-world Data to Develop CPGs
 
 Such real-world data can not improve the quality (effectiveness and implementability) of the CPG, it affords the opportunity to greatly accelerate the knowledge engineering process and overall CPG development lifecycle by:
 

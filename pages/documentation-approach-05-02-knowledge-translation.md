@@ -3,7 +3,7 @@ layout: default
 title: Knowledge Translation
 ---
 
-### **Knowledge Translation**
+## Knowledge Translation
 
 Knowledge translation has specific meaning within the knowledge engineering lifecycle process for knowledge engineers.  However, there are at least three perspectives on knowledge translation that must be considered in the context of co-developing a clinical guideline together with its formal representation as a CPG.  These include:
 

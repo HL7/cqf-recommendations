@@ -426,3 +426,4 @@ Tooling exists to support translation of CQL to ELM for distribution in XML or J
 | EnableResultTypes | This instructs the translator to include inferred result types in the output ELM. | This feature MAY be used with quality improvement artifacts. |
 | EnableDetailedErrors | This instructs the translator to include detailed error information. By default, the translator only reports root-cause errors. | This feature SHOULD NOT be used with quality improvement artifacts. |
 | DisableListTraversal | This instructs the translator to disallow traversal of list-valued expressions. With quality improvement artifacts, disabling this feature would prevent a useful capability. | This feature SHOULD NOT be used with quality improvement artifacts. |
+{:.grid}
