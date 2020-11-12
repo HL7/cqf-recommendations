@@ -1,0 +1,24 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "scenario5",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-sendmessage"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/scenario5"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/scenario5"
+    }
+  ]
+}

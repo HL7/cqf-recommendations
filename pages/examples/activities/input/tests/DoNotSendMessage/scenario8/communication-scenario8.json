@@ -1,0 +1,18 @@
+{
+  "resourceType": "Communication",
+  "id": "scenario8",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/scenario8"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/scenario8"
+    }
+  ]
+}

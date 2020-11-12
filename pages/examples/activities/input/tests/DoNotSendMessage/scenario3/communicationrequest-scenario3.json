@@ -1,0 +1,28 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "scenario3",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-donotsendmessage"
+    }
+  ],
+  "status": "revoked",
+  "statusReason": {
+    "text": "Medical reason"
+  },
+  "doNotPerform": true,
+  "subject": {
+    "reference": "Patient/scenario3"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/scenario3"
+    }
+  ]
+}

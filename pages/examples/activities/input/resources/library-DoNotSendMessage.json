@@ -1,0 +1,22 @@
+{
+  "resourceType": "Library",
+  "id": "DoNotSendMessage",
+  "url": "http://hl7.org/fhir/uv/cpg/Library/DoNotSendMessage",
+  "name": "DoNotSendMessage",
+  "title": "Do Not Send Message",
+  "status": "draft",
+  "experimental": "true",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "content": [
+    {
+      "id": "ig-loader-DoNotSendMessage.cql"
+    }
+  ]
+}

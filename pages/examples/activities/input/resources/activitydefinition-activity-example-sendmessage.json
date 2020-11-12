@@ -1,0 +1,28 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "activity-example-sendmessage",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-sendmessage",
+  "name": "ActivityExampleSendMessage",
+  "title": "Activity Example Send Message",
+  "status": "draft",
+  "experimental": "false",
+  "kind": "CommunicationRequest",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest",
+  "doNotPerform": false,
+  "dynamicValue": [
+    {
+      "path": "status",
+      "expression": {
+        "language": "text/cql-expression",
+        "value": "'draft'"
+      }
+    },
+    {
+      "path": "payload.content",
+      "expression": {
+        "language": "text/cql-expression",
+        "value": "'Hello!'"
+      }
+    }
+  ]
+}

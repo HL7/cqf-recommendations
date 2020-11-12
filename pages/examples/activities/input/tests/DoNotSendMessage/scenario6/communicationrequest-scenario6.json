@@ -1,0 +1,18 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "scenario6",
+  "status": "active",
+  "subject": {
+    "reference": "Patient/scenario6"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/scenario6"
+    }
+  ]
+}

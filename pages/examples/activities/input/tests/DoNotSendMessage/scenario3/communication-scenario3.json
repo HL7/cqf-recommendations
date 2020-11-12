@@ -1,0 +1,18 @@
+{
+  "resourceType": "Communication",
+  "id": "scenario3",
+  "status": "in-progress",
+  "subject": {
+    "reference": "Patient/scenario3"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/scenario3"
+    }
+  ]
+}

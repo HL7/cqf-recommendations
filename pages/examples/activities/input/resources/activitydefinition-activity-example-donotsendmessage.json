@@ -1,0 +1,21 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "activity-example-donotsendmessage",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-donotsendmessage",
+  "name": "ActivityExampleDoNotSendMessage",
+  "title": "Activity Example Do Not Send Message",
+  "status": "draft",
+  "experimental": "false",
+  "kind": "CommunicationRequest",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest",
+  "doNotPerform": true,
+  "dynamicValue": [
+    {
+      "path": "status",
+      "expression": {
+        "language": "text/cql-expression",
+        "value": "'draft'"
+      }
+    }
+  ]
+}

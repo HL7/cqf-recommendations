@@ -1,0 +1,21 @@
+{
+  "resourceType": "Communication",
+  "id": "scenario7",
+  "status": "not-done",
+  "statusReason": {
+    "text": "Medical reason"
+  },
+  "subject": {
+    "reference": "Patient/scenario7"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/scenario7"
+    }
+  ]
+}

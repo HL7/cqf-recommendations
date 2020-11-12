@@ -1,0 +1,23 @@
+{
+  "resourceType": "Communication",
+  "id": "scenario5",
+  "basedOn": [
+    {
+      "reference": "CommunicationRequest/scenario5"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/scenario5"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/scenario5"
+    }
+  ]
+}
