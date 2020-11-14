@@ -150,6 +150,19 @@ For a more detailed discussion of this step, refer to the [Validate Step](#valid
 
 The _select_ step involves selection of the specific content for implementation, along with the target enablement strategies, specifically identifying the _who_, _what_, _when_, _where_, and _why_ for the selected content.
 
+There are numerous factors to consider in selecting which recommendations and activities to develop, including:
+
+* **Value**: What is the potential value of implementation of the recommendation to patients, clinicians, and health systems and institutions?
+* **Effort**: What is the level of effort involved in producing a computable representation of the recommendation? What is the upstream vs downstream effort? What are the maintenance considerations?
+* **Feasibility**: What is the availability of the data required to successfully evaluate a computable representation of the recommendation?
+* **Delivery mechanisms**: What are the technical capabilities required to support computable representation of the recommendation? And what are the expected technical capacities of potential target implementation environments?
+
+These considerations will then inform the selection of recommendations and related activities for implementation along the continuum of [Levels of Enablement](documentation-approach-03-conformance-levels.html). Specifically highlighting the portion of that continuum from delivery of contextualized narrative (i.e. messages only) through actionable intervention (i.e. CDS Hooks requests):
+
+* **Delivery of contextualized narrative**: System displays a guideline recommendation as a notification or alert.
+* **Actionable intervention**: System provides computable representation of the recommended activity as a _request_ resource.
+* **Process integration**: System provides implementation of a fully documented workflow along with its status, using a combination of _request_ and _event_ resources, typically coordinated as described in the FHIR [worfklow](http://hl7.org/fhir/worfklow) topic using _task_ resources.
+
 This step is typically performed by a cross-functional team consisting of at least:
 
 * A _clinical_ subject matter expert, familiar with the guideline content and the domain
@@ -302,6 +315,22 @@ For example, the following flow diagram illustrates the functional description f
 <div>
   <img src="assets/images/opg-recommendation-5-flow-diagram.png" alt="OPG Recommendation 5 Data Elements" class="img-responsive img-rounded center-block"/>
 </div>
+
+Of particular importance at this step is representing the selected level of enablement for the processes and activities involved in the recommendations, as discussed in the following sections.
+
+#### 3.4.3.1 Delivery of contextualized narrative
+
+At this level of enablement, recommendation content is delivered as contextualized narrative, or informational messages. This is typically represented simply by the Send message activity. For example, if the intended delivery for Opioid Guideline recommendation 5 is just an alert statement, like a reminder or notification, then all that is needed is the _Send message_ activity.
+
+#### 3.4.3.2 Actionable intervention
+
+At this level of enablement, recommendation content is delivered as a structured activity that can be understood and acted upon by the consuming system. For example, the Opioid Guideline recommendation 5 at this level of enablement might be an updated order with a reduced dosage, or a recommendation to order an alternative non-opioid therapy. This level of enablement can use any of the available activity types, but only specifies integration at the _request_ level. In other words, the result of the decision support is a proposal for a recommended activity, but _whether_ and _how_ that proposal is accepted and fulfilled is not specified by the computable content, rather implementation sites determine how a _request_ becomes an _event_.
+
+Note that even in the case that the decision support is only concerned with delivering actionable interventions, computable content can still communicate expectations for what a fulfilled request (or _event_) looks like, which still allows outcome and process metrics to be expressed.
+
+#### 3.4.3.3 Process integration
+
+At this level of enablement, recommendation content is delivered not only as structured activities using the _request_ resources, but the content also describes expected _fulfillment_ workflow to get from the _request_ to the actual _event_. For example, the content for recommendation 5 might include the process not only for prescribing the alternative non-opioid therapy, but for fulfilling that request by actually filling the prescription. Specifying recommendations to this level of enablement is significantly more involved because of the variability of fulfillment workflows across sites.
 
 ## 3.5.0 Translate Step
 {: #translate-step}

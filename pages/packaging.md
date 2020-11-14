@@ -45,6 +45,12 @@ dependencies and associated artifacts as subsequent entries as follows:
 
 Artifact content conforming to this implementation guide SHALL use the [CPGArtifactBundle](StructureDefinition-cpg-artifactbundle.html) profile to package artifacts for distribution.
 
+#### 5.2.1 Packaging for Target Environments
+
+Depending on the capabilities of intended target environments, artifacts may be packaged with different profiles to support different expectations. For example, a ValueSet may be packaged as only an ExecutableValueSet when it is intended for use in an environment that does not have the ability to expand a ComputableValueSet, and needs to be careful about overall resource size. In addition, some environments may have specific formatting expectations, such as the use of JSON for serialization of both FHIR resources and CQL ELM. The profiles in this implementation guide support the construction of these types of packages, but are not prescriptive about that, leaving flexibility for content implementation guides to make decisions relevant to their expected target environments.
+
+Artifact content conforming to this implementation guide SHOULD provide artifact packages appropriate for their expected target environment, and SHALL provide guidance about what those expectations are.
+
 ### 5.3 Artifact Collections
 {: #artifact-collections}
 
