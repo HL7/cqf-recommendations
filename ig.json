@@ -59,10 +59,13 @@
     "careplan-cpg-profile-spreadsheet.xml",
     "careteam-cpg-profile-spreadsheet.xml",
     "careteam-cpg-definition-profile-spreadsheet.xml",
+    "clinicalimpression-cpg-profile-spreadsheet.xml",
     "codesystem-cpg-publishable-profile-spreadsheet.xml",
     "codesystem-cpg-shareable-profile-spreadsheet.xml",
     "communication-cpg-profile-spreadsheet.xml",
 		"communicationrequest-cpg-profile-spreadsheet.xml",
+    "composition-cpg-casesummary-profile-spreadsheet.xml",
+    "composition-cpg-caseplansummary-profile-spreadsheet.xml",
     "condition-cpg-profile-spreadsheet.xml",
     "detectedissue-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
@@ -73,6 +76,8 @@
     "graphdefinition-cpg-shareable-profile-spreadsheet.xml",
     "graphdefinition-cpg-computable-profile-spreadsheet.xml",
     "graphdefinition-cpg-publishable-profile-spreadsheet.xml",
+    "graphdefinition-cpg-casesummarydefinition-profile-spreadsheet.xml",
+    "graphdefinition-cpg-caseplansummarydefinition-profile-spreadsheet.xml",
     "group-cpg-definition-profile-spreadsheet.xml",
     "group-cpg-profile-spreadsheet.xml",
     "immunization-cpg-profile-spreadsheet.xml",
@@ -311,9 +316,29 @@
       "defns": "StructureDefinition-cpg-case-definitions.html",
       "base": "StructureDefinition-cpg-case.html"
     },
+    "StructureDefinition/cpg-casesummary": {
+      "defns": "StructureDefinition-cpg-casesummary-definitions.html",
+      "base": "StructureDefinition-cpg-casesummary.html"
+    },
+    "StructureDefinition/cpg-casesummarydefinition": {
+      "defns": "StructureDefinition-cpg-casesummarydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-casesummarydefinition.html"
+    },
+    "StructureDefinition/cpg-caseplansummary": {
+      "defns": "StructureDefinition-cpg-caseplansummary-definitions.html",
+      "base": "StructureDefinition-cpg-caseplansummary.html"
+    },
+    "StructureDefinition/cpg-caseplansummarydefinition": {
+      "defns": "StructureDefinition-cpg-caseplansummarydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-caseplansummarydefinition.html"
+    },
     "StructureDefinition/cpg-careplan": {
       "defns": "StructureDefinition-cpg-careplan-definitions.html",
       "base": "StructureDefinition-cpg-careplan.html"
+    },
+    "StructureDefinition/cpg-clinicalimpression": {
+      "defns": "StructureDefinition-cpg-clinicalimpression-definitions.html",
+      "base": "StructureDefinition-cpg-clinicalimpression.html"
     },
     "StructureDefinition/cpg-careteam": {
       "defns": "StructureDefinition-cpg-careteam-definitions.html",

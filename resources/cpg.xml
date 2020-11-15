@@ -201,6 +201,30 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-casesummary"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-casesummarydefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-caseplansummary"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-caseplansummarydefinition"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-condition"/>
 				</reference>
 				<groupingId value="main"/>
@@ -268,6 +292,12 @@
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-careplan"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-clinicalimpression"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>
