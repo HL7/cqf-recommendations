@@ -66,6 +66,7 @@
 		"communicationrequest-cpg-profile-spreadsheet.xml",
     "composition-cpg-casesummary-profile-spreadsheet.xml",
     "composition-cpg-caseplansummary-profile-spreadsheet.xml",
+    "composition-cpg-caseplanprogressingnote-profile-spreadsheet.xml",
     "condition-cpg-profile-spreadsheet.xml",
     "detectedissue-cpg-profile-spreadsheet.xml",
 		"devicerequest-cpg-profile-spreadsheet.xml",
@@ -331,6 +332,10 @@
     "StructureDefinition/cpg-caseplansummarydefinition": {
       "defns": "StructureDefinition-cpg-caseplansummarydefinition-definitions.html",
       "base": "StructureDefinition-cpg-caseplansummarydefinition.html"
+    },
+    "StructureDefinition/cpg-caseplanprogressingnote": {
+      "defns": "StructureDefinition-cpg-caseplanprogressingnote-definitions.html",
+      "base": "StructureDefinition-cpg-caseplanprogressingnote.html"
     },
     "StructureDefinition/cpg-careplan": {
       "defns": "StructureDefinition-cpg-careplan-definitions.html",

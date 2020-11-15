@@ -225,6 +225,12 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-caseplanprogressingnote"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-condition"/>
 				</reference>
 				<groupingId value="main"/>
