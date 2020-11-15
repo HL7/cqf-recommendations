@@ -87,6 +87,10 @@
     "library-cpg-executable-profile-spreadsheet.xml",
     "location-cpg-profile-spreadsheet.xml",
     "location-cpg-definition-profile-spreadsheet.xml",
+    "measure-cpg-shareablemetric-profile-spreadsheet.xml",
+    "measure-cpg-computablemetric-profile-spreadsheet.xml",
+    "measure-cpg-publishablemetric-profile-spreadsheet.xml",
+    "measurereport-cpg-metricreport-profile-spreadsheet.xml",
     "medicationadministration-cpg-profile-spreadsheet.xml",
     "medicationdispense-cpg-profile-spreadsheet.xml",
 		"medicationrequest-cpg-profile-spreadsheet.xml",
@@ -438,6 +442,22 @@
     "StructureDefinition/cpg-locationdefinition": {
       "defns": "StructureDefinition-cpg-locationdefinition-definitions.html",
       "base": "StructureDefinition-cpg-locationdefinition.html"
+    },
+    "StructureDefinition/cpg-shareablemetric": {
+      "defns": "StructureDefinition-cpg-shareablemetric-definitions.html",
+      "base": "StructureDefinition-cpg-shareablemetric.html"
+    },
+    "StructureDefinition/cpg-computablemetric": {
+      "defns": "StructureDefinition-cpg-computablemetric-definitions.html",
+      "base": "StructureDefinition-cpg-computablemetric.html"
+    },
+    "StructureDefinition/cpg-publishablemetric": {
+      "defns": "StructureDefinition-cpg-publishablemetric-definitions.html",
+      "base": "StructureDefinition-cpg-publishablemetric.html"
+    },
+    "StructureDefinition/cpg-metricreport": {
+      "defns": "StructureDefinition-cpg-metricreport-definitions.html",
+      "base": "StructureDefinition-cpg-metricreport.html"
     },
     "StructureDefinition/cpg-publishablelibrary": {
       "defns": "StructureDefinition-cpg-publishablelibrary-definitions.html",
