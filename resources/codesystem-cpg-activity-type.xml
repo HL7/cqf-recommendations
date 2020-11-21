@@ -36,6 +36,21 @@
       <definition value="The task of ordering or prescribing a particular medication to a patient"/>
     </concept>
     <concept>
+      <code value="dispense-medication"/>
+      <display value="Dispense a medication"/>
+      <definition value="The task of dispensing a particular medication to a patient"/>
+    </concept>
+    <concept>
+      <code value="administer-medication"/>
+      <display value="Administer a medication"/>
+      <definition value="The task of administering a particular medication to a patient"/>
+    </concept>
+    <concept>
+      <code value="document-medication"/>
+      <display value="Document a medication"/>
+      <definition value="The task of documenting use of a particular medication by a patient"/>
+    </concept>
+    <concept>
       <code value="recommend-immunization"/>
       <display value="Recommend an immunization"/>
       <definition value="The task of recommending a particular immunization for a patient"/>

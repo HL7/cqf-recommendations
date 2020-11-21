@@ -97,7 +97,7 @@
       </resource>
       <resource>
         <reference>
-          <reference value="ActivityDefinition/cpg-questionnairetask-activitydefinition"/>
+          <reference value="ActivityDefinition/cpg-collectinformation-activitydefinition"/>
         </reference>
         <groupingId value="Main"/>
       </resource>
@@ -107,6 +107,26 @@
         </reference>
         <groupingId value="Main"/>
       </resource>
+      <!-- Including this resource causes the publisher to spin???
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-dispensemedication-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-administermedication-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/cpg-documentmedication-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      -->
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-immunizationrecommendation-activitydefinition"/>
@@ -375,6 +395,12 @@
 			</resource>
       <resource>
         <reference>
+          <reference value="StructureDefinition/cpg-collectinformationactivity"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
           <reference value="StructureDefinition/cpg-communicationactivity"/>
         </reference>
         <groupingId value="main"/>
@@ -487,6 +513,44 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+<!--
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-dispensemedicationactivity"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-dispensemedicationtask"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-administermedication"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-administermedicationtask"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-documentmedicationactivity"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-documentmedicationtask"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+-->
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-medicationdispense"/>

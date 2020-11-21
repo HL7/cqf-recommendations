@@ -42,6 +42,7 @@
     "mappings"
   ],
   "spreadsheets": [
+    "activitydefinition-cpg-collectinformation-profile-spreadsheet.xml",
     "activitydefinition-cpg-computable-profile-spreadsheet.xml",
     "activitydefinition-cpg-publishable-profile-spreadsheet.xml",
     "activitydefinition-cpg-shareable-profile-spreadsheet.xml",
@@ -157,9 +158,9 @@
       "source": "activitydefinition/activitydefinition-cpg-proposediagnosistask-activitydefinition.xml",
       "base": "ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html"
     },
-    "ActivityDefinition/cpg-questionnairetask-activitydefinition": {
-      "source": "activitydefinition/activitydefinition-cpg-questionnairetask-activitydefinition.xml",
-      "base": "ActivityDefinition-cpg-questionnairetask-activitydefinition.html"
+    "ActivityDefinition/cpg-collectinformation-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-collectinformation-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-collectinformation-activitydefinition.html"
     },
     "ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition": {
       "source": "activitydefinition/activitydefinition-cpg-recorddetectedissuetask-activitydefinition.xml",
@@ -620,6 +621,10 @@
     "StructureDefinition/cpg-shareablequestionnaire": {
       "defns": "StructureDefinition-cpg-shareablequestionnaire-definitions.html",
       "base": "StructureDefinition-cpg-shareablequestionnaire.html"
+    },
+    "StructureDefinition/cpg-collectinformationactivity": {
+      "defns": "StructureDefinition-cpg-collectinformationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-collectinformationactivity.html"
     },
     "StructureDefinition/cpg-proposediagnosisactivity": {
       "defns": "StructureDefinition-cpg-proposediagnosisactivity-definitions.html",

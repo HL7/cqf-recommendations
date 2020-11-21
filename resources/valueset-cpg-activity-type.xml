@@ -1,12 +1,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="cpg-knowledge-capability"/>
+    <id value="cpg-activitytype"/>
 		<meta>
       <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablevalueset"/>
       <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
 		</meta>
-    <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-knowledge-capability"/>
-    <name value="CPG_Knowledge_Capability"/>
-		<title value="CPG Knowledge Capability"/>
+    <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-activity-type"/>
+    <name value="CPGActivityType"/>
+		<title value="CPG Activity Type"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-07-21"/>
@@ -17,10 +17,10 @@
         <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
       </telecom>
     </contact>
-    <description value="A capability afforded by a knowledge artifact, e.g. shareable, computable, publishable, executable"/>
+    <description value="A type of activity that can be performed as part of the delivery of guideline-based care"/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability"/>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"/>
         </include>
     </compose>
 </ValueSet>

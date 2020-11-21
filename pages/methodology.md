@@ -190,6 +190,9 @@ Activities identified as part of the select step are the narrative description o
 * **Send a message**: Communicating a particular message to a patient or other related participant
 * **Collect information**: Collect information from a patient or other relevant participant using a questionnaire
 * **Order medication**: Order a particular medication for a patient
+* **Dispense medication**: Dispense a particular medication to a patient
+* **Administer medication**: Administer a particular medication to a patient
+* **Document medication**: Document a particular medication in use by a patient
 * **Recommendation immunization**: Recommend a specific immunization for a patient
 * **Order service**: Order a procedure or service for a patient
 * **Propose diagnosis**: Propose a diagnosis about a patient
@@ -422,11 +425,14 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 
 |Activity|Parameters|
 |--------|--------|
+|[**AdministerMedication**](ActivityDefinition-cpg-administermedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be administered. This may be an existing order, or it may be produced as part of the administer medication activity|
+|[**CollectInformation**](ActivityDefinition-cpg-collectinformation-activitydefinition.html)|**QuestionnaireCanonical**: The canonical URL of the questionnaire to be used to collect the information|
 |[**CommunicationRequest**](ActivityDefinition-cpg-communicationrequest-activitydefinition.html)|**CategoryCodeableConcept**: The category of communication|
+|[**DispenseMedication**](ActivityDefinition-cpg-dispensemedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be dispensed. This may be an existing order, or it may be produced as part of the dispense medication activity|
+|[**DocumentMedication**](ActivityDefinition-cpg-documentmedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be documented. This may be an existing order, or it may be produced as part of the document medication activity|
 |[**ImmunizationRecommendation**](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
 |[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
 |[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConept**: The diagnosis being proposed|
-|[**QuestionnaireTask**](ActivityDefinition-cpg-questionnairetask-activitydefinition.html)|**QuestionnaireCanonical**: The canonical URL of the questionnaire to be used to collect the information|
 |[**RecordDetectedIssueTask**](ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition.html)|**IssueCodeableConcept**: The issue being recorded|
 |[**RecordInferenceTask**](ActivityDefinition-cpg-recordinferencetask-activitydefinition.html)|**InferenceCodeableConcept**: The type of inference being recorded<br/>InferenceValue: The value of the inference being recorded|
 |[**ReportFlagTask**](ActivityDefinition-cpg-reportflagtask-activitydefinition.html)|**IssueCodeableConcept**: The issue being flagged|
@@ -446,12 +452,15 @@ Proposed activities are represented with request resources, and for each type of
 
 This implementation guide defines profiles for each of the request resources to be used as recommendation instances:
 
+* [AdministerMedicationTask](StructureDefinition-cpg-administermedicationtask.html): Recommendation to administer a specific medication
 * [CommunicationRequest](StructureDefinition-cpg-communicationrequest.html): Recommendation for a specific communication
+* [DispenseMedicationTask](StructureDefinition-cpg-dispensemedicationtask.html): Recommendation to dispense a specific medication
+* [DocumentMedicationTask](StructureDefinition-cpg-documentmedicationtask.html): Recommendation to document use of a specific medication
 * [ImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html): Recommendation for a particular immunization
 * [MedicationRequest](StructureDefinition-cpg-medicationrequest.html): Recommendation for a specific medication
 * [ProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html): Recommendation to propose a specific diagnosis
-* [QuestionnaireTask](StructureDefinition-cpg-questionnairetask.html): Recommendation to collect specific information using a questionnaire
-* [RecordDetectedIssue](StructureDefinition-cpg-recorddetectedissue.html): Recommendation to record a specific detected issue
+* [CollectInformationTask](StructureDefinition-cpg-collectinformationtask.html): Recommendation to collect specific information using a questionnaire
+* [RecordDetectedIssueTask](StructureDefinition-cpg-recorddetectedissuetask.html): Recommendation to record a specific detected issue
 * [RecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html): Recommendation to record a specific inference
 * [ReportFlagTask](StructureDefinition-cpg-reportflagtask.html): Recommendation to report a particular flag
 * [ServiceRequest](StructureDefinition-cpg-servicerequest.html): Recommendation for a particular procedure or referral to a specialist or instructions for self-care such as smoking cessation counseling or exercise
@@ -482,7 +491,10 @@ The following table details the _event_ profiles for each activity type. Note th
 |Activity|Event|
 |----|----|
 |Send a message|[CPGCommunication](StructureDefinition-cpg-communication.html)|
+|Administer medication|[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)|
 |Collect information|[CPGQuestionnaireResponse](StructureDefinition-cpg-questionnaireresponse.html)|
+|Dispense medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)|
+|Document medication|[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Order a medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)<br/>[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)<br/>[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Recommend an immunization|[CPGImmunization](StructureDefinition-cpg-immunization.html)|
 |Order a service|[CPGProcedure](StructureDefinition-cpg-procedure.html)<br/>[CPGObservation](StructureDefinition-cpg-observation.html)<br/>[CPGDiagnosticReport](StructureDefinition-cpg-diagnosticreport.html)|

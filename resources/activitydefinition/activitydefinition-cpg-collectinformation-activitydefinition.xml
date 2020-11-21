@@ -1,13 +1,13 @@
 <ActivityDefinition xmlns="http://hl7.org/fhir">
-	<id value="cpg-questionnairetask-activitydefinition"/>
-	<url value="http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-questionnairetask-activitydefinition"/>
+	<id value="cpg-collectinformation-activitydefinition"/>
+	<url value="http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-collectinformation-activitydefinition"/>
 	<identifier>
 		<use value="official"/>
-		<value value="CPGQuestionnaireTaskActivityDefinition"/>
+		<value value="CPGCollectInformationActivityDefinition"/>
 	</identifier>
 	<version value="0.1.0"/>
-	<name value="CPGQuestionnaireTaskActivityDefinition"/>
-	<title value="CPG QuestionnaireTask ActivityDefinition"/>
+	<name value="CPGCollectInformationActivityDefinition"/>
+	<title value="CPG CollectInformation ActivityDefinition"/>
 	<status value="draft"/>
 	<experimental value="false"/>
 	<date value="2019-06-23"/>
