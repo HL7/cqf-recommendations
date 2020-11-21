@@ -1,0 +1,82 @@
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+	<id value="cpg-documentmedication-activitydefinition"/>
+	<url value="http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-documentmedication-activitydefinition"/>
+	<identifier>
+		<use value="official"/>
+		<value value="CPGDocumentMedicationActivityDefinition"/>
+	</identifier>
+	<version value="0.1.0"/>
+	<name value="CPGDocumentMedicationActivityDefinition"/>
+	<title value="CPG Document Medication ActivityDefinition"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<date value="2019-06-23"/>
+	<kind value="Task"/>
+	<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask"/>
+	<intent value="proposal"/>
+	<priority value="routine"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/CodeSystem/cpg-activity-type"/>
+			<code value="document-medication"/>
+			<display value="Document Medication"/>
+		</coding>
+	</code>
+	<!-- Set status to the string value 'draft' -->
+	<dynamicValue>
+		<path value="status"/>
+		<expression>
+			<language value="text/cql-expression"/>
+			<expression value="'draft'"/>
+		</expression>
+	</dynamicValue>
+	<!-- Set for to the Patient context, note that this will result in a Patient,
+	but is being assigned to a Reference, implementation will need to sort this, or
+	CQL will need to construct a reference -->
+	<dynamicValue>
+		<path value="for"/>
+		<expression>
+			<language value="text/cql-expression"/>
+			<expression value="Patient"/>
+			<!--expression value="Reference { reference: 'Patient/' + Patient.id }" /-->
+		</expression>
+	</dynamicValue>
+	<!-- Set encounter to the Encounter parameter, note that this will result in an Encounter,
+	but is being assigned to a Reference, implementation will need to sort this,
+	or CQL will need to construct a reference -->
+	<dynamicValue>
+		<path value="encounter"/>
+		<expression>
+			<language value="text/cql-expression"/>
+			<expression value="Encounter"/>
+			<!--expression value="Reference { reference: 'Encounter/' + Encounter.id }" /-->
+		</expression>
+	</dynamicValue>
+	<!-- Set authored on to Now() -->
+	<dynamicValue>
+		<path value="authoredOn"/>
+		<expression>
+			<language value="text/cql-expression"/>
+			<expression value="Now()"/>
+		</expression>
+	</dynamicValue>
+	<!-- Reference to a Practitioner parameter, note that this will result in a Practitioner,
+	but is being assigned to a Reference, implementation will need to sort this,
+	or CQL will need to construct a reference -->
+	<dynamicValue>
+		<path value="owner"/>
+		<expression>
+			<language value="text/cql-expression"/>
+			<expression value="Practitioner"/>
+			<!--expression value="Reference { reference: 'Practitioner/' + Practitioner.id}" /-->
+		</expression>
+	</dynamicValue>
+	<!-- Set input to the MedicationRequest parameter -->
+	<dynamicValue>
+		<path value="input"/>
+		<expression>
+			<language value="text/cql-expression"/>
+			<expression value="TaskInput { type: &quot;Document Medication&quot;, value: MedicationRequest }"/>
+		</expression>
+	</dynamicValue>
+</ActivityDefinition>

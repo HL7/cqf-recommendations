@@ -107,7 +107,6 @@
         </reference>
         <groupingId value="Main"/>
       </resource>
-      <!-- Including this resource causes the publisher to spin???
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-dispensemedication-activitydefinition"/>
@@ -126,7 +125,6 @@
         </reference>
         <groupingId value="Main"/>
       </resource>
-      -->
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-immunizationrecommendation-activitydefinition"/>
@@ -513,7 +511,6 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
-<!--
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-dispensemedicationactivity"/>
@@ -550,7 +547,6 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
--->
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-medicationdispense"/>

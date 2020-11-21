@@ -50,6 +50,9 @@
     "activitydefinition-cpg-immunization-profile-spreadsheet.xml",
     "activitydefinition-cpg-servicerequest-profile-spreadsheet.xml",
     "activitydefinition-cpg-medicationrequest-profile-spreadsheet.xml",
+    "activitydefinition-cpg-dispensemedication-profile-spreadsheet.xml",
+    "activitydefinition-cpg-administermedication-profile-spreadsheet.xml",
+    "activitydefinition-cpg-documentmedication-profile-spreadsheet.xml",
     "activitydefinition-cpg-proposediagnosis-profile-spreadsheet.xml",
     "activitydefinition-cpg-recordinference-profile-spreadsheet.xml",
     "activitydefinition-cpg-recorddetectedissue-profile-spreadsheet.xml",
@@ -128,6 +131,9 @@
     "structuredefinition-cpg-shareable-profile-spreadsheet.xml",
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
     "structuredefinition-cpg-publishablecasefeature-profile-spreadsheet.xml",
+    "task-cpg-dispensemedication-profile-spreadsheet.xml",
+    "task-cpg-administermedication-profile-spreadsheet.xml",
+    "task-cpg-documentmedication-profile-spreadsheet.xml",
     "task-cpg-questionnaire-profile-spreadsheet.xml",
     "task-cpg-proposediagnosis-profile-spreadsheet.xml",
     "task-cpg-recordinference-profile-spreadsheet.xml",
@@ -153,6 +159,18 @@
     "ActivityDefinition/cpg-medicationrequest-activitydefinition": {
       "source": "activitydefinition/activitydefinition-cpg-medicationrequest-activitydefinition.xml",
       "base": "ActivityDefinition-cpg-medicationrequest-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-administermedication-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-administermedication-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-administermedication-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-dispensemedication-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-dispensemedication-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-dispensemedication-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-documentmedication-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-documentmedication-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-documentmedication-activitydefinition.html"
     },
     "ActivityDefinition/cpg-proposediagnosistask-activitydefinition": {
       "source": "activitydefinition/activitydefinition-cpg-proposediagnosistask-activitydefinition.xml",
@@ -626,6 +644,14 @@
       "defns": "StructureDefinition-cpg-collectinformationactivity-definitions.html",
       "base": "StructureDefinition-cpg-collectinformationactivity.html"
     },
+    "StructureDefinition/cpg-dispensemedicationactivity": {
+      "defns": "StructureDefinition-cpg-dispensemedicationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-dispensemedicationactivity.html"
+    },
+    "StructureDefinition/cpg-administermedication": {
+      "defns": "StructureDefinition-cpg-administermedication-definitions.html",
+      "base": "StructureDefinition-cpg-administermedication.html"
+    },
     "StructureDefinition/cpg-proposediagnosisactivity": {
       "defns": "StructureDefinition-cpg-proposediagnosisactivity-definitions.html",
       "base": "StructureDefinition-cpg-proposediagnosisactivity.html"
@@ -641,6 +667,18 @@
     "StructureDefinition/cpg-reportflagactivity": {
       "defns": "StructureDefinition-cpg-reportflagactivity-definitions.html",
       "base": "StructureDefinition-cpg-reportflagactivity.html"
+    },
+    "StructureDefinition/cpg-administermedicationtask": {
+      "defns": "StructureDefinition-cpg-administermedicationtask-definitions.html",
+      "base": "StructureDefinition-cpg-administermedicationtask.html"
+    },
+    "StructureDefinition/cpg-dispensemedicationtask": {
+      "defns": "StructureDefinition-cpg-dispensemedicationtask-definitions.html",
+      "base": "StructureDefinition-cpg-dispensemedicationtask.html"
+    },
+    "StructureDefinition/cpg-documentmedicationtask": {
+      "defns": "StructureDefinition-cpg-documentmedicationtask-definitions.html",
+      "base": "StructureDefinition-cpg-documentmedicationtask.html"
     },
     "StructureDefinition/cpg-proposediagnosistask": {
       "defns": "StructureDefinition-cpg-proposediagnosistask-definitions.html",
