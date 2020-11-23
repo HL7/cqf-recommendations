@@ -44,6 +44,7 @@
   "spreadsheets": [
     "activitydefinition-cpg-collectinformation-profile-spreadsheet.xml",
     "activitydefinition-cpg-enrollment-profile-spreadsheet.xml",
+    "activitydefinition-cpg-generatereport-profile-spreadsheet.xml",
     "activitydefinition-cpg-computable-profile-spreadsheet.xml",
     "activitydefinition-cpg-publishable-profile-spreadsheet.xml",
     "activitydefinition-cpg-shareable-profile-spreadsheet.xml",
@@ -133,6 +134,7 @@
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
     "structuredefinition-cpg-publishablecasefeature-profile-spreadsheet.xml",
     "task-cpg-enrollment-profile-spreadsheet.xml",
+    "task-cpg-generatereport-profile-spreadsheet.xml",
     "task-cpg-dispensemedication-profile-spreadsheet.xml",
     "task-cpg-administermedication-profile-spreadsheet.xml",
     "task-cpg-documentmedication-profile-spreadsheet.xml",
@@ -185,6 +187,10 @@
     "ActivityDefinition/cpg-enrollment-activitydefinition": {
       "source": "activitydefinition/activitydefinition-cpg-enrollment-activitydefinition.xml",
       "base": "ActivityDefinition-cpg-enrollment-activitydefinition.html"
+    },
+    "ActivityDefinition/cpg-generatereport-activitydefinition": {
+      "source": "activitydefinition/activitydefinition-cpg-generatereport-activitydefinition.xml",
+      "base": "ActivityDefinition-cpg-generatereport-activitydefinition.html"
     },
     "ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition": {
       "source": "activitydefinition/activitydefinition-cpg-recorddetectedissuetask-activitydefinition.xml",
@@ -654,6 +660,10 @@
       "defns": "StructureDefinition-cpg-enrollmentactivity-definitions.html",
       "base": "StructureDefinition-cpg-enrollmentactivity.html"
     },
+    "StructureDefinition/cpg-generatereportactivity": {
+      "defns": "StructureDefinition-cpg-generatereportactivity-definitions.html",
+      "base": "StructureDefinition-cpg-generatereportactivity.html"
+    },
     "StructureDefinition/cpg-dispensemedicationactivity": {
       "defns": "StructureDefinition-cpg-dispensemedicationactivity-definitions.html",
       "base": "StructureDefinition-cpg-dispensemedicationactivity.html"
@@ -709,6 +719,10 @@
     "StructureDefinition/cpg-enrollmenttask": {
       "defns": "StructureDefinition-cpg-enrollmenttask-definitions.html",
       "base": "StructureDefinition-cpg-enrollmenttask.html"
+    },
+    "StructureDefinition/cpg-generatereporttask": {
+      "defns": "StructureDefinition-cpg-generatereporttask-definitions.html",
+      "base": "StructureDefinition-cpg-generatereporttask.html"
     },
     "StructureDefinition/cpg-questionnairetask": {
       "defns": "StructureDefinition-cpg-questionnairetask-definitions.html",

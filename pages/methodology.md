@@ -432,6 +432,7 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 |[**DispenseMedication**](ActivityDefinition-cpg-dispensemedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be dispensed. This may be an existing order, or it may be produced as part of the dispense medication activity|
 |[**DocumentMedication**](ActivityDefinition-cpg-documentmedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be documented. This may be an existing order, or it may be produced as part of the document medication activity|
 |[**Enrollment**]|**PathwayCanonical**: The canonical URL of the pathway or strategy in which the patient is enrolled/unenrolled|
+|[**GenerateReport**]|**DefinitionCanonical**: The canonical URL of the metric, case report, or profile to use to generate the report|
 |[**ImmunizationRecommendation**](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
 |[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
 |[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConept**: The diagnosis being proposed|
@@ -463,6 +464,7 @@ This implementation guide defines profiles for each of the request resources to 
 * [ProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html): Recommendation to propose a specific diagnosis
 * [CollectInformationTask](StructureDefinition-cpg-collectinformationtask.html): Recommendation to collect specific information using a questionnaire
 * [EnrollmentTask](StructureDefinition-cpg-enrollmenttask.html): Recommendation to enroll (or unenroll) a patient in a pathway or strategy
+* [GenerateReportTask](StructureDefinition-cpg-generatereportask.html): Recommendation to generate a metric, measure, or case report
 * [RecordDetectedIssueTask](StructureDefinition-cpg-recorddetectedissuetask.html): Recommendation to record a specific detected issue
 * [RecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html): Recommendation to record a specific inference
 * [ReportFlagTask](StructureDefinition-cpg-reportflagtask.html): Recommendation to report a particular flag
@@ -499,6 +501,7 @@ The following table details the _event_ profiles for each activity type. Note th
 |Dispense medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)|
 |Document medication|[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Enrollment|[CPGCase](StructureDefinition-cpg-case.html)|
+|Generate report|[CPGMetricReport](StructureDefinition-cpg-metricreport.html)<br/>[CPGCaseSummary](StructureDefinition-cpg-casesummary.html)<br/>[CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary)<br/>[CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html)|
 |Order a medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)<br/>[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)<br/>[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Recommend an immunization|[CPGImmunization](StructureDefinition-cpg-immunization.html)|
 |Order a service|[CPGProcedure](StructureDefinition-cpg-procedure.html)<br/>[CPGObservation](StructureDefinition-cpg-observation.html)<br/>[CPGDiagnosticReport](StructureDefinition-cpg-diagnosticreport.html)|

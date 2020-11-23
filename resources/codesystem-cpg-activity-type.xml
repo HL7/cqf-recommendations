@@ -66,6 +66,11 @@
       <definition value="The activity of enrolling or unenrolling a patient in a particular pathway or strategy"/>
     </concept>
     <concept>
+      <code value="generate-report"/>
+      <display value="Generate a metric or case report"/>
+      <definition value="The activity of generating a metric, measure, or case report"/>
+    </concept>
+    <concept>
       <code value="propose-diagnosis"/>
       <display value="Propose a diagnosis"/>
       <definition value="The activity of proposing a particular diagnosis"/>
