@@ -103,6 +103,12 @@
       </resource>
       <resource>
         <reference>
+          <reference value="ActivityDefinition/cpg-enrollment-activitydefinition"/>
+        </reference>
+        <groupingId value="Main"/>
+      </resource>
+      <resource>
+        <reference>
           <reference value="ActivityDefinition/cpg-medicationrequest-activitydefinition"/>
         </reference>
         <groupingId value="Main"/>
@@ -394,6 +400,12 @@
       <resource>
         <reference>
           <reference value="StructureDefinition/cpg-collectinformationactivity"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/cpg-enrollmentactivity"/>
         </reference>
         <groupingId value="main"/>
       </resource>
@@ -724,6 +736,12 @@
       <resource>
 				<reference>
 					<reference value="StructureDefinition/cpg-questionnairetask"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="StructureDefinition/cpg-enrollmenttask"/>
 				</reference>
 				<groupingId value="main"/>
 			</resource>

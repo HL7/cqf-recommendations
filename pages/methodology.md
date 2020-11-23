@@ -195,6 +195,7 @@ Activities identified as part of the select step are the narrative description o
 * **Document medication**: Document a particular medication in use by a patient
 * **Recommendation immunization**: Recommend a specific immunization for a patient
 * **Order service**: Order a procedure or service for a patient
+* **Enroll a patient**: Enroll a patient in a particular pathway or strategy
 * **Propose diagnosis**: Propose a diagnosis about a patient
 * **Record detected issue**: Record a detected issue about a patient
 * **Record inference**: Record an inference about a patient
@@ -430,6 +431,7 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 |[**CommunicationRequest**](ActivityDefinition-cpg-communicationrequest-activitydefinition.html)|**CategoryCodeableConcept**: The category of communication|
 |[**DispenseMedication**](ActivityDefinition-cpg-dispensemedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be dispensed. This may be an existing order, or it may be produced as part of the dispense medication activity|
 |[**DocumentMedication**](ActivityDefinition-cpg-documentmedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be documented. This may be an existing order, or it may be produced as part of the document medication activity|
+|[**Enrollment**]|**PathwayCanonical**: The canonical URL of the pathway or strategy in which the patient is enrolled/unenrolled|
 |[**ImmunizationRecommendation**](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
 |[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
 |[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConept**: The diagnosis being proposed|
@@ -460,6 +462,7 @@ This implementation guide defines profiles for each of the request resources to 
 * [MedicationRequest](StructureDefinition-cpg-medicationrequest.html): Recommendation for a specific medication
 * [ProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html): Recommendation to propose a specific diagnosis
 * [CollectInformationTask](StructureDefinition-cpg-collectinformationtask.html): Recommendation to collect specific information using a questionnaire
+* [EnrollmentTask](StructureDefinition-cpg-enrollmenttask.html): Recommendation to enroll (or unenroll) a patient in a pathway or strategy
 * [RecordDetectedIssueTask](StructureDefinition-cpg-recorddetectedissuetask.html): Recommendation to record a specific detected issue
 * [RecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html): Recommendation to record a specific inference
 * [ReportFlagTask](StructureDefinition-cpg-reportflagtask.html): Recommendation to report a particular flag
@@ -495,6 +498,7 @@ The following table details the _event_ profiles for each activity type. Note th
 |Collect information|[CPGQuestionnaireResponse](StructureDefinition-cpg-questionnaireresponse.html)|
 |Dispense medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)|
 |Document medication|[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
+|Enrollment|[CPGCase](StructureDefinition-cpg-case.html)|
 |Order a medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)<br/>[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)<br/>[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Recommend an immunization|[CPGImmunization](StructureDefinition-cpg-immunization.html)|
 |Order a service|[CPGProcedure](StructureDefinition-cpg-procedure.html)<br/>[CPGObservation](StructureDefinition-cpg-observation.html)<br/>[CPGDiagnosticReport](StructureDefinition-cpg-diagnosticreport.html)|

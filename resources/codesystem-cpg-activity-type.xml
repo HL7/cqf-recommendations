@@ -61,6 +61,11 @@
       <definition value="The activity of ordering or performing a particular service"/>
     </concept>
     <concept>
+      <code value="enrollment"/>
+      <display value="Enroll in a pathway or strategy"/>
+      <definition value="The activity of enrolling or unenrolling a patient in a particular pathway or strategy"/>
+    </concept>
+    <concept>
       <code value="propose-diagnosis"/>
       <display value="Propose a diagnosis"/>
       <definition value="The activity of proposing a particular diagnosis"/>
