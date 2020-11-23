@@ -120,8 +120,8 @@
         {
       "resource": {
         "resourceType": "CPGServiceRequest",
-        "id": "AdminsterLasixIV",
-        "name": "AdminsterLasixIV",
+        "id": "AdminsterLasix(IV)",
+        "name": "AdminsterLasix(IV)",
         "dosage": [
           {
             "sequence": 1,
@@ -130,7 +130,13 @@
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "779336000"
+                  "code": "779337009",
+                  "text": "SCTID: 779337009 | Product containing only furosemide in parenteral dose form (medicinal product form)"
+                },
+                {
+                  "system": "https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+                  "code": "1162712",
+                  "text": "RxCUI: 1162712 | furosemide Injectable Product "
                 }
               ]
             },
@@ -168,7 +174,13 @@
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "91667005"
+                  "code": "776226009",
+                  "text": "SCTID: 776226009 | Product containing only hydrochlorothiazide (medicinal product)"
+                },
+                {
+                  "system": "https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+                  "code": "5487",
+                  "text": "RxCUI: 5487 | hydroCHLOROthiazide"
                 }
               ]
             },
@@ -186,8 +198,8 @@
     {
       "resource": {
         "resourceType": "CPGServiceRequest",
-        "id": "AdminsterLasixPO",
-        "name": "AdminsterLasixPO",
+        "id": "AdminsterLasix(PO)",
+        "name": "AdminsterLasix(PO)",
         "mood": "proposed",
         "dosage": [
           {
@@ -197,7 +209,13 @@
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "779336000"
+                  "code": "779336000",
+                  "text": "SCTID: 779336000 | Product containing only furosemide in oral dose form (medicinal product form)"
+                },
+                {
+                  "system": "https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+                  "code": "1162714",
+                  "text": "RxCUI: 1162714 | furosemide Oral Product"
                 }
               ]
             },
@@ -218,8 +236,15 @@
         "mood": "",
         "id": "CardsConsult",
         "name": "Cardiology Consultation",
-        "text": "Within 24 hrs"
-      }
+        "text": "Within 24 hrs",
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "183519002",
+            "text": "SCTID: 183519002 | Referral to cardiology service (procedure"
+          }
+        ]
+    }
     },
     {
       "resource": {
