@@ -1,0 +1,402 @@
+{
+  "resourceType": "Bundle",
+  "id": "CHF-CPG-Sample",
+  "type": "collection",
+  "entry": [
+    {
+        "resource": {
+          "resourceType": "CPGObservation", 
+          "__comment": "should there be CPGDerivedObservation?",
+          "id": "CHF-Hypervolemia"
+        }
+      },
+    {
+      "resource": {
+        "resourceType": "CPGObservation",
+        "id": "WeightGoal",
+        "Goal": [
+          {
+            "text": "92kg"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGObservation",
+        "id": "WeightChange",
+        "name": "Weight Change",
+        "Goal": [
+            {
+              "text": "0.5 - 1.5 kg/day"
+            }
+          ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGObservation",
+        "id": "UrineOut",
+        "name": "Urine Out",
+        "Goal": [
+            {
+              "text": "3 - 5 L/day"
+            }
+          ]
+      }
+    },
+    {
+        "resource": {
+          "resourceType": "CPGObservation",
+          "id": "Net IOs",
+          "name": "Net Fluids In/Out",
+          "Goal": [
+              {
+                "text": "-1.5 L/day"
+              }
+            ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "CPGObservation",
+          "id": "JVP",
+          "name": "Jugular Venous Pressure",
+          "Goal": [
+              {
+                "text": "< 8.0 cmH20"
+              }
+            ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "CPGObservation",
+          "id": "O2 Sat",
+          "name": "Oxygen Saturation",
+          "Goal": [
+              {
+                "text": "> 94% Sa02"
+              }
+            ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "CPGObservation",
+          "id": "Potassium",
+          "name": "Serum Potassium",
+          "Goal": [
+              {
+                "text": "3.5 - 5.0 mEq/L"
+              }
+            ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "CPGObservation",
+          "id": "Creatinine",
+          "name": "Serum Creatinine",
+          "Goal": [
+              {
+                "text": "< 1.2 mg/dL"
+              }
+            ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "CPGObservation",
+          "id": "eGFR",
+          "name": "estimated Glomeular Filtration Rate",
+          "Goal": [
+              {
+                "text": "> 60 ml/min/m2"
+              }
+            ]
+        }
+      },
+        {
+      "resource": {
+        "resourceType": "CPGServiceRequest",
+        "id": "AdminsterLasix(IV)",
+        "name": "AdminsterLasix(IV)",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "40 mg",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "779337009",
+                  "text": "SCTID: 779337009 | Product containing only furosemide in parenteral dose form (medicinal product form)"
+                },
+                {
+                  "system": "https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+                  "code": "1162712",
+                  "text": "RxCUI: 1162712 | furosemide Injectable Product "
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 40.0,
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              },
+              {
+                "doseQuantity": {
+                  "value": 2,
+                  "system": "http://unitsofmeasure.org",
+                  "code": "min"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGServiceRequest",
+        "id": "AdministerHCTZ",
+        "name": "AdministerHCTZ",
+        "mood": "",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "20 mg",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "776226009",
+                  "text": "SCTID: 776226009 | Product containing only hydrochlorothiazide (medicinal product)"
+                },
+                {
+                  "system": "https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+                  "code": "5487",
+                  "text": "RxCUI: 5487 | hydroCHLOROthiazide"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGServiceRequest",
+        "id": "AdminsterLasix(PO)",
+        "name": "AdminsterLasix(PO)",
+        "mood": "proposed",
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": "80 mg",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "779336000",
+                  "text": "SCTID: 779336000 | Product containing only furosemide in oral dose form (medicinal product form)"
+                },
+                {
+                  "system": "https://www.nlm.nih.gov/research/umls/rxnorm/index.html",
+                  "code": "1162714",
+                  "text": "RxCUI: 1162714 | furosemide Oral Product"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGServiceRequest",
+        "mood": "",
+        "id": "CardsConsult",
+        "name": "Cardiology Consultation",
+        "text": "Within 24 hrs",
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "183519002",
+            "text": "SCTID: 183519002 | Referral to cardiology service (procedure"
+          }
+        ]
+    }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFAdmisssion-DX",
+        "name": "Diagnosis at Admission",
+        "status": "OnPathway",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFAdmisssion-FXStatus",
+        "name": "Functional Status Assessment at Admission",
+        "status": "OnPathway",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFAdmisssion-Labs",
+        "name": "Required Labs Ordered upon Admission",
+        "status": "OnPathway",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDailyMgmt-JVP",
+        "name": "JVP assessment daily",
+        "status": "OffPathway",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDailyMgmt-UoP",
+        "name": "Urine Output Assessment",
+        "status": "OnPathway",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDailyMgmt-Wt",
+        "name": "Daily Weight",
+        "status": "OnPathway",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDiuresisMgmt",
+        "name": "Diuresis Managment Assessment",
+        "status": "OnPathway",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDiuresisMgmt-Cards",
+        "name": "Cardiology Consult",
+        "status": "",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDiuresisMgmt-PO",
+        "name": "Transition to Oral Diuresis",
+        "status": "",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDischarge-ACE",
+        "name": "ACE Inhibitor Prescribed for Discharge",
+        "status": "",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDischarge-Rehab",
+        "name": "Referral to Outpuatent Cardiac Rehab",
+        "status": "",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "CPGMetric",
+        "id": "CHFDischarge-F/U",
+        "name": "CHF Follow-up Visit Scheduled",
+        "status": "",
+        "kind": ""
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ActivityDefinition",
+        "id": " ",
+        "name": " ",
+        "status": " ",
+        "date": " ",
+        "kind": "MedicationRequest",
+        "productReference": {
+          "reference": " "
+        },
+        "dosage": [
+          {
+            "sequence": 1,
+            "text": " ",
+            "timing": {
+              "repeat": {
+                "frequency": 1,
+                "when": [
+                  " "
+                ]
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": " "
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value":  " ",
+                  "system": "http://unitsofmeasure.org",
+                  "code": " "
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
