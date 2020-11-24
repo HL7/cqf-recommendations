@@ -195,9 +195,9 @@ For example:
 
 ```cql
 define function
-    "Includes Or Starts During"(Diagnosis "Diagnosis", Encounter "Encounter, Performed"):
-        Diagnosis.prevalencePeriod includes Encounter.relevantPeriod
-            or Diagnosis.prevalencePeriod starts during Encounter.relevantPeriod
+    "Includes Or Starts During"(Diagnosis "Diagnosis", Encounter "Encounter"):
+        Interval[Diagnosis.onset, Diagnosis.abatement] includes Encounter.period
+            or Diagnosis.onset during Encounter.period
 ```
 
 ### 6.1.7 Data Type Names
@@ -227,7 +227,7 @@ Evidence that "Antithrombotic Therapy" (defined by a medication-specific value s
     define "Antithrombotic Administered":
       ["MedicationAdministration": "Antithrombotic Therapy"] AntithromboticTherapy
         where AntithromboticTherapy.status = 'completed'
-          and AntithromboticTherapy.category = "Inpatient Setting"
+          and AntithromboticTherapy.category ~ "Inpatient Setting"
 
 #### 6.1.8.2 Absence
 {: #absence}
@@ -238,7 +238,7 @@ No evidence that "Antithrombotic Therapy" medication was administered:
       not exists (
         ["MedicationAdministration": "Antithrombotic Therapy"] AntithromboticTherapy
           where AntithromboticTherapy.status = 'completed'
-            and AntithromboticTherapy.category = "Inpatient Setting"
+            and AntithromboticTherapy.category ~ "Inpatient Setting"
       )
 
 #### 6.1.8.3 Negation Rationale
@@ -287,7 +287,7 @@ define "Encounters During Measurement Period":
     "Valid Encounters" QualifyingEncounter
         where QualifyingEncounter.period during "Measurement Period"
 
-define function "ED Stay Time"(Encounter "Encounter, Performed"):
+define function "ED Stay Time"(Encounter "Encounter"):
     duration in minutes of Encounter.period
 ```
 
