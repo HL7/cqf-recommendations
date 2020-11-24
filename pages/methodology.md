@@ -301,8 +301,8 @@ The following functional description illustrates, in precise and clinical terms,
             * Patient has had at least 2 encounters within the past year with any diagnosis of cancer
     * Patient Morphine Milligram Equivalent (MME) greater than or equal to 50
 * Then
-    * Recommend to consider tapering dosage when MME is greater than or equal to 50 and less than 90 or taper dosage now when MME is greater than or equal to 90, providing the following options:
-        * Will reduce dosage
+    * Recommend prescribing the lowest effective dosage[, and avoid increasing dosage to >= 90 MME]:
+        * Will prescribe a lower dosage
         * Benefits outweigh risks, snooze 3 months
         * Active pain, snooze 1 month
         * N/A - see comment, snooze 3 months

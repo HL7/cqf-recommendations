@@ -33,6 +33,6 @@
     <concept>
         <code value="critical"/>
         <display value="Critical"/>
-        <definition value="Indicates that the recommendation is critical and the workflow should not be allowed to proceed"/>
+        <definition value="Indicates that the recommendation is critical and the workflow should not be allowed to proceed. When implemented, an alternative pathway should be provided, and care should be taken to ensure that the user experience is not disruptive."/>
     </concept>
 </CodeSystem>
