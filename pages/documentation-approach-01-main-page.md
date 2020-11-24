@@ -1,7 +1,7 @@
-## [Approach](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-01-main-page.html) 
+## [Approach](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-01-main-page.html)
 
 
-## Summary 
+## Summary
 
 This Approach section of this implementation guide describes how guideline developers, informaticians (knowledge engineers and others), and implementers of computable representations of guidelines can collaborate across the lifecycle of guideline-directed care and related activities (clinical decision support, quality measurement, case reporting, continuous improvement), leveraging existing standards-based approaches.
 
@@ -29,11 +29,9 @@ The Approach is further detailed in five sections linked from this page and brie
 
 ## [Section 01: CPG Knowledge Architecture](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-12-conceptual-knowledge-architecture.html) (Conceptual Perspective)
 
-_This section provides an overview and approach for how key domain concepts and their separations are expressed as a “domain model” and realized as computable knowledge assets or artifacts.  It explains how expressions of patient disease (clinical and physiological) processes that describe the state of a patient at a given point in time (Case) are to be separated from expressions of clinician decision-making or care processes that describe what to do for a patient given their state (Plan) and how both are to be separated from expressions of how that care is to be delivered in a given setting at a given point in time (Workflow).  _
+_This section provides an overview and approach for how key domain concepts and their separations are expressed as a “domain model” and realized as computable knowledge assets or artifacts.  It explains how expressions of patient disease (clinical and physiological) processes that describe the state of a patient at a given point in time (Case) are to be separated from expressions of clinician decision-making or care processes that describe what to do for a patient given their state (Plan) and how both are to be separated from expressions of how that care is to be delivered in a given setting at a given point in time (Workflow)._
 
 _This section further describes how these separations interact with one another and provide the basis for the requirements of the explicit, computable knowledge assets/artifacts as expressed in the CPG Profiles.  Understanding these separations, their characteristics and attributes, the nature of each type of process, and the relationship between them is essential for the knowledge engineer to comprehend and apply to each Clinical Practice Guideline in making it computable.  Furthermore, these separations ensure appropriately sophisticated logic to fully express the domain and intent of the guideline without conflation of distinct logic and the correlated creation of value-diminishing complexity._
-
-
 
 *   [Separation of Concerns in the CPG](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-12-01-separations-of-concerns-in-the-cpg.html)
 *   [Separating and Defining Case, Plan, and Workflow](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)

@@ -7,9 +7,6 @@ title: Packaging
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
-* Do not remove this line (it will not be displayed)
-{:toc}
-
 ## 5 Artifact Packaging
 {: #artifact-packaging}
 
@@ -17,6 +14,9 @@ To facilitate publishing and distribution of knowledge artifacts, this Implement
 defines several profiles that enable the use of FHIR [Bundle]({{site.data.fhir.path}}bundle.html)
 to package knowledge artifacts, either independently, or as part of a collection of related
 artifacts.
+
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ### 5.1 Artifact Lifecycle
 {: #artifact-lifecycle}

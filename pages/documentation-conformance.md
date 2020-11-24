@@ -3,11 +3,16 @@ layout: default
 title: Conformance
 ---
 
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+
 # Conformance
 
 Conformance from the perspective of this Implementation Guide (IG) refers to statements that prescribe expected characteristics and behaviors of systems involved in the authoring, testing, validation, distribution, integration, and delivery of the knowledge artifacts and associated documentation that make up a computable Clinical Practice Guideline (CPG). As described in the [Content Implementation Guides](methodology.html#content-igs) section of this IG, a FHIR-based CPG is delivered as a FHIR [Implementation Guide](http://hl7.org/fhir/implementationguide.html), and therefore follows the rules for establishing conformance requirements as defined by the FHIR specification.
 
 This page provides a summary of and index to the various conformance requirements for a CPG established by this implementation guide.
+
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ## Conformance Language
 
@@ -51,3 +56,19 @@ The [Libraries](libraries.html) page provides an overview of the usage of Librar
 
 * Logic distributed as part of content implementation guides SHALL conform to at least the ShareableLibrary profile
 * Logic distributed as part of content implementation guides SHOULD conform to the Computable, Publishable, and Executable profiles, and SHALL provide documentation describing the expected packaging and distribution targets for content.
+
+## Levels of Conformance
+
+One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG)[<sup>1</sup>](#1) profile of the HL7 CPG.[<sup>2</sup>](#2) The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as CPGCaseFeatures), logic to be triggered based on data collected (CPGRecommendations), and reportable health system management indicators (CPGMetrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
+
+## Conformance Testing
+
+Levels of conformance will be based on alternative conformance profiles such as the CCG above.  Conformance with Features of the CPG are still under development.
+
+> NOTE: This project is actively seeking feedback on how to characterize levels of enablement as capabilities, and how to support declaration and validation of conformance to these capabilities.
+
+---
+
+<a id="1">1</a>: https://wiki.ihe.net/index.php/Computable_Care_Guidelines Computable Care Guidelines (CCG) profile
+
+<a id="2">2</a>: 'http://www.ihe.ca/download/ambassador_headache_final_100_pager.pdf'
