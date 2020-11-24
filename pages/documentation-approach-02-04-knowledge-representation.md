@@ -1,21 +1,24 @@
-<!-- Copy and paste the converted output. -->
+---
+layout: default
+title: Knowledge Representation
+---
+
+---
+
 ## Knowledge Representation
 
 Knowledge representation is a surrogate, a substitute for the thing itself, that allows for reasoning (human and computational) about the “thing”. A knowledge representation may be thought of on a continuum of successive degrees of readability, of ability to reason over, and formalism (e.g., to compute).
 
 In this section we will cover:
 
-
-
-*   [Levels of Representation Framework (degrees of formalism/ computability)](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-06-01-levels-of-knowledge-representation.html)
-*   [Tiers of Functionality](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-07-tiers-of-functionality.html)
-*   [Levels of Representation by Tiers of Functionality](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)
-*   [Knowledge Assets (discrete representations with a purpose)](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-06-02-knowledge-assets.html)
+*   [Levels of Representation Framework (degrees of formalism/ computability)](documentation-approach-06-01-levels-of-knowledge-representation.html)
+*   [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html)
+*   [Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)
+*   [Knowledge Assets (discrete representations with a purpose)](documentation-approach-06-02-knowledge-assets.html)
     *   [Asset Metadata (information about the assets and knowledge base)](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata)
-*   [Knowledge Architecture (designing and defining the types and nature of assets)](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-06-03-knowledge-architecture.html)
+*   [Knowledge Architecture (designing and defining the types and nature of assets)](documentation-approach-06-03-knowledge-architecture.html)
 
-
-## [Levels of Knowledge Representation Framing:](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-06-01-levels-of-knowledge-representation.html)
+## [Levels of Knowledge Representation Framing:](documentation-approach-06-01-levels-of-knowledge-representation.html)
 
 ### Approach
 
@@ -25,15 +28,20 @@ Note that the levels of knowledge representation are a continuum, with discrete 
 
 This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
 
+<div>
+<img src="assets/images/knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="334"/>
+</div>
+
 FIG. 45. Knowledge Levels
 
-<img src="assets/images/knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="334"/>
 
 As will be discussed further in the Agile CPG development approach (see section on [Knowledge Engineering](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-05-knowledge-engineering-overview.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation. Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels. This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
-FIG. 46. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
-
+<div>
 <img src="assets/images/CPG-05.06-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="287"/>
+</div>
+
+FIG. 46. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
 
 ### [Tiers of Functionality](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-07-tiers-of-functionality.html)
 
@@ -47,18 +55,14 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 
 The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (i.e., UI) (T3).
 
-
 ## [Knowledge Assets](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-06-02-knowledge-assets.html)
 
 Knowledge assets or artifacts as they are often referred to in FHIR, where an artifact is an instance of an asset. Assets provide the ability to keep domain logic separated and distinct from other system logic in complex systems. In this implementation guide we often refer to knowledge assets and knowledge artifacts interchangeably, though the distinction is very relevant the knowledge engineer.
-
-
 
 *   Asset Metamodel- its structure- requirements and constraints
 *   Content- what goes into the asset “container”
 *   Metadata- for detailed section on Knowledge Assets
 *   Composite and Derived- see section on Knowledge Assets
-
 
 ### Asset Metamodel
 
@@ -69,49 +73,39 @@ The asset meta-model is a model that essentially describes what is required and/
 
 Knowledge asset content refers to that which is contained within a specific knowledge asset. This includes the scoped values or expressions for a specific asset’s metadata, attributes, and other formalisms used to express the knowledge contained within the asset.
 
-
 ### Asset Metadata
 
 Metadata is data that provides information about the knowledge asset. This may include disk active metadata, structural metadata, administrative metadata, and situating or relational metadata. The section on [Metadata](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata) of the Clinical Reasoning Module on Knowledge Artifact Representation provides a description of how metadata is routinely addressed in FHIR Knowledge Artifact Representations, but details of its applications to the CPG are described in further detail in this section of the implementation guide.
-
 
 ### Expressions (and/or Languages)
 
 An expression is a computable language for creating a computer-interpretable representation of specific knowledge. In HL-7 and for the scope of this implementation guide, the expression language used (where it’s able to sufficiently express the intended logic behavior) is the Clinical Quality Language (CQL).
 
-
 ### Declarations
 
 A declaration is an expression of the structural elements of computable logic (e.g. values for attributes and parameters of a knowledge asset) that does not describe how to compute the logic, rather what the logic is. These are often expressed as static values on the definitional assets as opposed to be buried deep in the expressions. Expressions (or languages) can then evaluate and/or set these declarations.
-
 
 ### Composite Assets
 
 No single representation or expression can sufficiently and/or appropriately describe the nature and behavior of many domain concepts using computable formalism. A CPGPathway, CPGStrategy, and CPGRecommendation are examples of composite assets in this implementation guide.
 
-
 ### Derived Assets
 
 Many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived. For example, a CPGMetric may derive much of its content from a CPGRecommendation. Derived knowledge assets may be wholly or partially derived from other assets.
-
 
 ### Translation Within and Between Knowledge Representations
 
 Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements). This equivalence in computational intent and behavior is known as isopragmatism.
 
-
 ### Curating and Managing Knowledge Assets in a Large Corpus (Knowledge Base)
 
-For more on Curating and Managing Knowledge Assets (and their respective knowledge architecture), see sections on Knowledge Representation in [Knowledge Engineering](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-05-03-knowledge-representation.html), and Leveraging a Knowledge Base (Knowledge Content Management System) in the [Agile CPG Development Approach](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-05-06-agile-cpg-development-approach.html).
+For more on Curating and Managing Knowledge Assets (and their respective knowledge architecture), see sections on Knowledge Representation in [Knowledge Engineering](documentation-approach-05-03-knowledge-representation.html), and Leveraging a Knowledge Base (Knowledge Content Management System) in the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html).
 
-
-## [Knowledge Architecture](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-06-03-knowledge-architecture.html)
+## [Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html)
 
 This section addresses the principles and best practices of knowledge architecture as well as the approach through which the CPG Knowledge Architecture was and continues to be developed including an overview of the Conceptual Perspective on the CPG Knowledge Architecture and the means through which it is realized and concretized in FHIR Profiles elsewhere in this implementation guide. This implementation guide includes this approach to knowledge architecture as its through it, direct interactions with various stakeholders, and through real-world use cases that it will continue to evolve.
 
 Covered in this section:
-
-
 
 *   Key Challenges for Knowledge Architecture
 *   Best Practices and Needs to be addressed
