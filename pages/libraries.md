@@ -241,7 +241,7 @@ No evidence that "Antithrombotic Therapy" medication was administered:
             and AntithromboticTherapy.category ~ "Inpatient Setting"
       )
 
-#### 6.1.8.3 Negation Rationale
+#### 6.1.8.3 Negation with or without Rationale
 {: #negation-rationale}
 
 Evidence that "Antithrombotic Therapy" medication administration did not occur for an acceptable medical reason as defined by a value set referenced by the computable artifact (i.e., negation rationale):
