@@ -14,6 +14,10 @@ This page provides a summary of and index to the various conformance requirement
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+## Clinical Safety
+
+This specification defines profiles, terminologies, patterns, and guidance for describing guideline-directed care. As such, Clinical Safety is a key concern with regard to any content developed conformant with this implementation guide. As with any healthcare-related endeavor, content authors and implementers are strongly encouraged to keep patient safety, privacy, and security as a central focus. To aid with this focus, content authors and implementers are strongly encouraged to use the [FHIR Implementer's Safety Check List](https://www.hl7.org/fhir/safety.html) to help inform development and implementation of computable guidelines.
+
 ## Conformance Language
 
 This implementation follows the same [conformance language](http://hl7.org/fhir/conformance-rules.html#conflang) specified by the base FHIR specification:

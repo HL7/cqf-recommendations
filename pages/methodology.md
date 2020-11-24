@@ -17,6 +17,8 @@ the understanding, communication, and implementation of guideline content.
 * Do not remove this line (it will not be displayed)
 {:toc}
 
+> NOTE: The methodology documented here is a general framework for applying the approach to produce standards-based, computable guideline content. For a detailed illustration of following the approach and methodology described in this implementation guide, refer to the [COVID-19 CPG Methodology Case Study](methodology-case-study.html).
+
 ## 3.1.0 Content Implementation Guides
 {: #content-igs}
 
