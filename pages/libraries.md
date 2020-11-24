@@ -211,9 +211,9 @@ Data type names referenced in CQL SHALL use quoted identifiers and SHOULD use Pa
 Two commonly used patterns for negation in quality improvement are:
 
 * Absence of evidence for a particular event
-* Documentation of an event not occurring, together with a reason
+* Documentation of an event not occurring, with or without a reason
 
-For the purposes of quality improvement, when looking for documentation that a particular event did not occur, it must be documented with a reason in order to meet the intent. If a reason is not part of the intent, then the absence of evidence pattern should be used, rather than documentation of an event not occurring.
+For the purposes of quality improvement, when looking for documentation that a particular event did not occur, it should be documented with a reason in order to meet the intent. If a reason is not part of the intent, then the absence of evidence pattern may be more appropriate, rather than documentation of an event not occurring.
 
 To address the reason an action did not occur (negation rationale), the computable artifact must define the event it expects to occur using appropriate terminology to identify the kind of event (using a value set or direct reference code), and then use additional criteria to indicate that the event did not occur, as well as identifying a reason.
 
