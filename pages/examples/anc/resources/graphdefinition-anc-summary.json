@@ -3,12 +3,12 @@
   "id": "anc-summary",
   "name": "ANCSummary",
   "status": "draft",
-  "experimental": "false",
+  "experimental": true,
   "start": "Patient",
   "profile": "http://http://fhir.org/guides/who/anc-cds/ancpatient",
   "link": [
     {
-      "min": "0",
+      "min": 0,
       "max": "*",
       "description": "Encounters",
       "target": [
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "min": "0",
+      "min": 0,
       "max": "*",
       "description": "LMP",
       "target": [

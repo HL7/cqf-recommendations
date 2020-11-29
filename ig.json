@@ -16,7 +16,8 @@
 			"pages/examples/hep-b/resources",
 			"pages/examples/ckd/resources/careplan-orderset",
 			"pages/examples/ckd/resources/risk-recommendations",
-			"pages/examples/ckd/resources/va-cpg"
+			"pages/examples/ckd/resources/va-cpg",
+      "pages/examples/activities/input/resources"
 		],
     "pages": "pages",
     "temp": "temp",
@@ -208,6 +209,14 @@
       "source": "activitydefinition/activitydefinition-cpg-servicerequest-activitydefinition.xml",
       "base": "ActivityDefinition-cpg-servicerequest-activitydefinition.html"
     },
+    "ActivityDefinition/activity-example-donotsendmessage": {
+      "source": "activitydefinition-activity-example-donotsendmessage.json",
+      "base": "ActivityDefinition-activity-example-donotsendmessage.html"
+    },
+    "ActivityDefinition/activity-example-sendmessage": {
+      "source": "activitydefinition-activity-example-sendmessage.json",
+      "base": "ActivityDefinition-activity-example-sendmessage.html"
+    },
 		"CapabilityStatement/cpg-patient-registry": {
 			"source": "capabilitystatement/cpg-patient-registry.xml",
 			"base": "CapabilityStatement-cpg-patient-registry.html"
@@ -261,6 +270,14 @@
 		"Library/OpioidCDSR4Recommendation05": {
 			"base": "Library-OpioidCDSR4Recommendation05.html"
 		},
+    "Library/library-DoNotSendMessage": {
+      "source": "library-DoNotSendMessage.json",
+      "base": "Library-DoNotSendMessage.html"
+    },
+    "Library/SendMessage": {
+      "source": "library-SendMessage.json",
+      "base": "Library-SendMessage.html"
+    },
     "OperationDefinition/cpg-plandefinition-apply": {
       "base": "OperationDefinition-cpg-plandefinition-apply.html"
     },
@@ -293,6 +310,14 @@
 		"PlanDefinition/HepBAdultForecasting": {
 			"base": "PlanDefinition-HepBAdultForecasting.html"
 		},
+    "PlanDefinition/activity-example-donotsendmessage": {
+      "source": "plandefinition-activity-example-donotsendmessage.json",
+      "base": "PlanDefinition-activity-example-donotsendmessage.html"
+    },
+    "PlanDefinition/activity-example-sendmessage": {
+      "source": "plandefinition-activity-example-sendmessage.json",
+      "base": "PlanDefinition-activity-example-sendmessage.html"
+    },
 		"Questionnaire/anc-every-contact": {
 			"base": "Questionnaire-anc-every-contact.html"
 		},
@@ -417,7 +442,7 @@
       "base": "StructureDefinition-cpg-group.html"
     },
     "StructureDefinition/cpg-shareableactivitydefinition": {
-      "defns": "StructureDefinition-cpg-sharebleactivitydefinition-definitions.html",
+      "defns": "StructureDefinition-cpg-shareableactivitydefinition-definitions.html",
       "base": "StructureDefinition-cpg-shareableactivitydefinition.html"
     },
     "StructureDefinition/cpg-publishableactivity": {

@@ -23,6 +23,9 @@
 			<grouping id="main">
         <name value="Main"/>
 			</grouping>
+      <grouping id="activity-example">
+        <name value="Activities Example"/>
+      </grouping>
 			<grouping id="anthrax-example">
 				<name value="Anthrax PEP Example"/>
 			</grouping>
@@ -1171,5 +1174,49 @@
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
 				<groupingId value="opg-example"/>
 			</resource>
+
+      <!-- Activity Example Resources -->
+      <resource>
+        <reference>
+          <reference value="Library/SendMessage"/>
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary"/>
+        <groupingId value="activity-example"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Library/DoNotSendMessage"/>
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary"/>
+        <groupingId value="activity-example"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/activity-example-sendmessage"/>
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
+        <groupingId value="activity-example"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ActivityDefinition/activity-example-donotsendmessage"/>
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
+        <groupingId value="activity-example"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/activity-example-sendmessage"/>
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition"/>
+        <groupingId value="activity-example"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/activity-example-donotsendmessage"/>
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition"/>
+        <groupingId value="activity-example"/>
+      </resource>
     </definition>
 </ImplementationGuide>

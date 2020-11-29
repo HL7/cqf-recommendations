@@ -32,7 +32,7 @@
 		</valueCodeableConcept>
 	</useContext>
 	<copyright value="© WHO 2019+."/>
-	<library value="Library/anc-common"/>
+	<library value="http://fhir.org/guides/who/anc/Library/ANCCommon"/>
 	<action>
 		<title value="Contact 1"/>
 		<description value="ANC Contact 1: up to 12 weeks"/>

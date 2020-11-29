@@ -13,18 +13,18 @@
     ]
   },
   "status": "draft",
-  "experimental": "true",
-  "library": "http://hl7.org/fhir/uv/cpg/Library/DoNotSendMessage",
+  "experimental": true,
+  "library": [ "http://hl7.org/fhir/uv/cpg/Library/DoNotSendMessage" ],
   "action": [
     {
       "title": "Do not greet the patient",
-      "condition": {
+      "condition": [{
         "kind": "applicability",
         "expression": {
           "language": "text/cql-identifier",
           "expression": "Is Recommendation Applicable"
         }
-      },
+      }],
       "type": {
         "coding": [
           {
