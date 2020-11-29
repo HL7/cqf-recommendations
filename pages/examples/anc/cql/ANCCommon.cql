@@ -1,8 +1,8 @@
-library ANCCommon version '0.0.0'
+library ANCCommon version '0.1.0'
 
-using FHIR version '4.0.0'
+using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.0'
+include FHIRHelpers version '4.0.1'
 
 codesystem OpenMRSEntity: 'http://openmrs.org/concepts'
 
@@ -20,23 +20,23 @@ context Patient
   // Observation from Ultrasound
   // Observation from SFH or abdominal palpitation
   // If Gestational Age and Estimated Due Date are calculated from different values, health worker should select gestational age
-  
+
 define "Gestational Age in Weeks":
   First(
     ["Observation": "Weeks of gestational age"] O
 		  where O.status in { 'final', 'amended' }
       sort by FHIRHelpers.ToDateTime(effective as FHIR.dateTime) descending
   ).value as Quantity
-  
+
 define "Up to 12 Weeks":
   "Gestational Age in Weeks" <= 12
-	
+
 define "20 weeks gestation":
   "Gestational Age in Weeks" = 20
-		
+
 define "26 weeks gestation":
 	"Gestational Age in Weeks" = 26
-	
+
 define "30 weeks gestation":
 	"Gestational Age in Weeks" = 30
 
@@ -51,4 +51,3 @@ define "38 weeks gestation":
 
 define "40 weeks gestation":
 	"Gestational Age in Weeks" = 40
-

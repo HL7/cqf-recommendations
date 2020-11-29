@@ -1,6 +1,6 @@
 <Library xmlns="http://hl7.org/fhir">
 	<id value="omtklogic"/>
-	<url value="http://fhir.org/guides/cdc/opioid-cds/Library/omtklogic"/>
+	<url value="http://fhir.org/guides/cdc/opioid-cds/Library/OMTKLogic"/>
 	<version value="0.0.0"/>
 	<name value="OMTKLogic"/>
 	<title value="OMTK Logic"/>

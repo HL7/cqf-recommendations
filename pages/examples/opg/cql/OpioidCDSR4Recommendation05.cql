@@ -1,8 +1,8 @@
-library OpioidCDS_R4_Recommendation_05 version '0.1.0'
+library OpioidCDSR4Recommendation05 version '0.1.0'
 
 using FHIR version '4.0.0'
 
-include OpioidCDS_R4_Common version '0.1.0' called Common
+include OpioidCDSR4Common version '0.1.0' called Common
 
 /*
 **

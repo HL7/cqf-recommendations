@@ -35,6 +35,5 @@ For the second dose:
 
 ## Artifacts
 
-* [CQL Source](HepBAdultForecasting-0.1.0.html)
-* [Library](../../Library-library-hep-b-adult-forecasting.html)
-* [PlanDefinition](../../PlanDefinition-plandefinition-hep-b-adult-forecasting.html)
+* [Library](../../Library-HepBAdultForecasting.html)
+* [PlanDefinition](../../PlanDefinition-HepBAdultForecasting.html)

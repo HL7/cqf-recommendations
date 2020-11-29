@@ -1,12 +1,12 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
-	<id value="plandefinition-hep-b-adult-forecasting"/>
-	<url value="http://example.org/fhir/uv/cpg/PlanDefinition/plandefinition-hep-b-adult-forecasting"/>
+	<id value="HepBAdultForecasting"/>
+	<url value="http://example.org/fhir/uv/cpg/PlanDefinition/HepBAdultForecasting"/>
 	<identifier>
 		<use value="official"/>
-		<value value="hep-b-adult-forecasting"/>
+		<value value="HepBAdultForecasting"/>
 	</identifier>
 	<version value="0.1.0"/>
-	<name value="Hep_B_Adult_Forecasting"/>
+	<name value="HepBAdultForecasting"/>
 	<title value="Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age"/>
 	<type>
 		<coding>
@@ -66,7 +66,7 @@
 		<display value="April 2018 Recommendations for the use of adjuvanted hepatitis B vaccine (Heplisav-B, Dynavax)"/>
 		<url value="https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6715a5-H.pdf"/>
 	</relatedArtifact>
-	<library value="Library/hep-b-immunization-adult"/>
+	<library value="http://example.org/fhir/uv/cpg/Library/HepBAdultForecasting"/>
 	<action>
 		<title value="Hep B Immunization Forecast"/>
 		<description value="Vaccinate Adult with specified Hep B forecast, if noted"/>
@@ -83,7 +83,7 @@
 			<kind value="applicability"/>
 			<expression>
 				<description value="Is a Hep B Adult Recommendation Available?"/>
-				<language value="text/cql"/>
+				<language value="text/cql-identifier"/>
 				<expression value="Patient Hep B Immunization History should be Evaluated in Adult Series"/>
 			</expression>
 		</condition>
@@ -92,14 +92,14 @@
 		<dynamicValue>
 			<path value="action.title"/>
 			<expression>
-				<language value="text/cql"/>
+				<language value="text/cql-identifier"/>
 				<expression value="Get Recommendation Overview"/>
 			</expression>
 		</dynamicValue>
 		<dynamicValue>
 			<path value="action.description"/>
 			<expression>
-				<language value="text/cql"/>
+				<language value="text/cql-identifier"/>
 				<expression value="Get Recommendation Detail"/>
 			</expression>
 		</dynamicValue>

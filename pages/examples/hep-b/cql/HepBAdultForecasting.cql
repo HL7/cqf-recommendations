@@ -5,9 +5,9 @@
 */
 library HepBAdultForecasting version '0.1.0'
 
-using FHIR version '4.0.0'
+using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.0' called FHIRHelpers
+include FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem CVX: 'http://hl7.org/fhir/sid/cvx'
 codesystem "Immunization Evaluation Dose Status codes": 'http://terminology.hl7.org/CodeSystem/immunization-evaluation-dose-status'
@@ -46,8 +46,7 @@ define "Patient Hep B Immunization History should be Evaluated in Adult Series":
   "There Exists a Valid Second Hep B Adjuvanted Dose"
 
 define "Patient is 18 Years Minus 4 Days or Older":
-  exists([Patient] p
-    where AgeInDays() >= "Age in Days when Patient is 18 Years minus 4 Days")
+  AgeInDays() >= "Age in Days when Patient is 18 Years minus 4 Days"
 
 define "No Hep B Shots were Administered before 18 Years minus 4 Days of Age":
   not exists([Immunization: vaccineCode in "All Hep B Vaccines"] NI
@@ -90,10 +89,13 @@ define "Patient has Completed the Hep B Adult Series":
 ////////////////////////////////////////////////////////
 // Evaluation
 ////////////////////////////////////////////////////////
+define "Hep B Vaccine, Adjuvanted Immunization":
+  [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"]
+
 define "Most Recent Hep B Adjuvanted Administration Date":
   First(
-    [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] I
-      without [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] NI
+    "Hep B Vaccine, Adjuvanted Immunization" I
+      without "Hep B Vaccine, Adjuvanted Immunization" NI
         such that I.occurrence.value is DateTime and NI.occurrence.value is DateTime and NI.occurrence.value after I.occurrence.value
       where I.occurrence.value is DateTime
       return I.occurrence.value
@@ -108,8 +110,8 @@ define "There Exists a Valid First Hep B Adjuvanted Dose":
 
 define "First Valid Hep B Adjuvanted Adult Dose":
   First(
-    [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] I
-      without [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] NI
+    "Hep B Vaccine, Adjuvanted Immunization" I
+      without "Hep B Vaccine, Adjuvanted Immunization" NI
         such that I.occurrence.value is DateTime and AgeInDaysAt(I.occurrence.value) >= "Age in Days when Patient is 18 Years minus 4 Days"
           and NI.occurrence.value is DateTime and NI.occurrence.value before I.occurrence.value
       where I.occurrence.value is DateTime
@@ -126,9 +128,9 @@ define "Second Valid Hep B Adjuvanted Adult Dose":
   if "There Exists a Valid First Hep B Adjuvanted Dose"
     then
       First(
-        [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] I
+         "Hep B Vaccine, Adjuvanted Immunization" I
           let firstDoseDate: "First Valid Hep B Adjuvanted Adult Dose".occurrence
-          without [Immunization: vaccineCode in "Hep B Vaccine, Adjuvanted"] NI
+          without "Hep B Vaccine, Adjuvanted Immunization" NI
             // where the date is at least 24 days after the most recent shot of Hep B Adjuvant
             such that NI.occurrence.value is DateTime and NI.occurrence.value after firstDoseDate.value and NI.occurrence.value before I.occurrence.value
           where I.occurrence.value is DateTime and I.occurrence.value 24 days or more after firstDoseDate.value
@@ -137,10 +139,7 @@ define "Second Valid Hep B Adjuvanted Adult Dose":
       null
 
 define PatientBirthDate:
-  First(
-    [Patient] p
-      return p.birthDate.value
-    )
+  Patient.birthDate.value
 
 define "Age in Days when Patient is 18 Years minus 4 Days":
   CalculateAgeInDaysAt(PatientBirthDate, PatientBirthDate + 18 years - 4 days)

@@ -16,27 +16,34 @@ When opioids are started, providers should prescribe the lowest effective dosage
 
 ## Functional Description
 
-**Patient has been prescribed opioids for chronic pain**
-
-**Patient has been prescribed opioids with ambulatory abuse potential that cover 80 days or more in the previous 90 days**
-
-To be generalizable to areas where dispense information is not available, base the calculation on prescriptions, and assume all prescribed medications were taken, including for PRN (as needed) medications. Assume PRN medications are taken at the maximum frequency.
-
-**Patient does not appear to be at end of life.**
-
-**Calculate the morphine milligram equivalence (MME) for the opioid being prescribed plus any other active opioid prescriptions.**
-
-**if MME >= 50 and < 90, provide a recommendation to taper:**
-
-**High risk for opioid overdose - consider tapering.**
-
-Total morphine milligram equivalent (MME) is 60 mg/day. Consider tapering to < 50.
-
-**if MME >= 90, provide a recommendation to taper now:**
-
-**High risk for opioid overdose - taper now.**
-
-Total morphine milligram equivalent (MME) is 100 mg/day. Taper now to < 50.
+<ul>
+  <li>When</li>
+    <ul>
+      <li>Provider is prescribing an opioid analgesic with ambulatory misuse potential in the outpatient setting</li>
+      <li>Prescription is for treating <a href="chronic-pain.html">chronic pain</a>.</li>
+      <li>Opioid review is useful for this patient:</li>
+        <ul>
+          <li>Patient is 18 or over</li>
+          <li>Patient does not have findings indicating limited life expectancy</li>
+          <li>Patient does not have orders for therapies indicating end of life care</li>
+          <li>Patient is not undergoing active cancer treatment:</li>
+            <ul>
+              <li>Patient has had at least 2 encounters within the past year with any diagnosis of cancer</li>
+            </ul>
+        </ul>
+      <li>Patient projected Morphine Milligram Equivalent (MME) ≥50</li>
+    </ul>
+  <li>Then</li>
+    <ul>
+      <li>Recommend prescribing the lowest effective dosage[, and avoid increasing dosage to ≥90 MME]:</li>
+      <ul>
+        <li>Will prescribe a lower dosage</li>
+        <li>Benefits outweigh risks, snooze 3 months</li>
+        <li>Active pain, snooze 1 month</li>
+        <li>N/A - see comment, snooze 3 months</li>
+      </ul>
+    </ul>
+</ul>
 
 For both recommendations, provide the information used to calculate the MME as a table of results to provide the clinician with sufficient information to understand how the equivalence was calculated, as well as the source of the data used in the calculation.
 
@@ -56,14 +63,14 @@ For both recommendations, one of the following responses should be required:
 ## Resources
 
 ### CQL Libraries
-* [OMTKLogic](OMTKLogic-0.0.0.html)
-* [OpioidCDS_R4_Common](OpioidCDS_R4_Common-0.1.0.html)
-* [OpioidCDS_R4_Recommendation_05](OpioidCDS_R4_Recommendation_05-0.1.0.html)
+* [OMTKLogic](OMTKLogic.html)
+* [OpioidCDS_R4_Common](OpioidCDSR4Common.html)
+* [OpioidCDS_R4_Recommendation_05](OpioidCDSR4Recommendation05.html)
 
 ### Library Resources
-* [omtklogic](../../Library-omtklogic.html)
-* [opioidcds-r4-common](../../Library-opioidcds-r4-common.html)
-* [opioidcds-r4-recommendation-05](../../Library-opioidcds-r4-recommendation-05.html)
+* [OMTKLogic](../../Library-omtklogic.html)
+* [OpioidCDSR4Common](../../Library-OpioidCDSR4Common.html)
+* [OpioidCDSR4Recommendation05](../../Library-OpioidCDSR4Recommendation05.html)
 
 ### PlanDefinition Resources
 * [opioidcds-r4-recommendation-05](../../PlanDefinition-opioidcds-r4-recommendation-05.html)

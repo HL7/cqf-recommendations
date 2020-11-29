@@ -1,0 +1,107 @@
+<Library xmlns="http://hl7.org/fhir">
+    <id value="OpioidCDSR4Recommendation05"/>
+    <url value="http://fhir.org/guides/cdc/opioid-cds/Library/OpioidCDSR4Recommendation05"/>
+    <version value="0.1.0"/>
+    <name value="OpioidCDSR4Recommendation05"/>
+    <title value="Opioid CDS R4 Logic for recommendation #5"/>
+    <status value="active"/>
+    <experimental value="true"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
+            <code value="logic-library"/>
+            <display value="Logic Library"/>
+        </coding>
+    </type>
+    <date value="2018-04-15T13:49:09-06:00"/>
+    <publisher value="Centers for Disease Control and Prevention (CDC)"/>
+    <description value="Opioid Decision Support Logic for use in implementing CDC Opioid Prescribing Guidelines."/>
+    <useContext>
+        <code>
+            <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="Clinical Focus"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="182888003"/>
+                <display value="Medication requested (situation)"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <useContext>
+        <code>
+					<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+            <code value="focus"/>
+            <display value="Clinical Focus"/>
+        </code>
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="82423001"/>
+                <display value="Chronic pain (finding)"/>
+            </coding>
+        </valueCodeableConcept>
+    </useContext>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="This library works in concert with the OMTK logic library to provide decision support for Morphine Milligram Equivalence calculations and dynamic value resolution."/>
+    <usage value="This library is to notify the prescriber/user whether the current prescription exceeds the recommended MME."/>
+    <copyright value="© CDC 2016+."/>
+    <topic>
+        <text value="Opioid Prescribing"/>
+    </topic>
+    <author>
+        <name value="Kensaku Kawamoto, MD, PhD, MHS"/>
+    </author>
+    <author>
+        <name value="Bryn Rhodes"/>
+    </author>
+    <author>
+        <name value="Floyd Eisenberg, MD, MPH"/>
+    </author>
+    <author>
+        <name value="Robert McClure, MD, MPH"/>
+    </author>
+    <relatedArtifact>
+        <type value="documentation"/>
+        <display value="CDC guideline for prescribing opioids for chronic pain"/>
+        <url value="https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fmmwr%2Fvolumes%2F65%2Frr%2Frr6501e1er.htm"/>
+    </relatedArtifact>
+    <relatedArtifact>
+        <type value="depends-on"/>
+        <resource value="http://fhir.org/guides/cdc/opioid-cds/Library/OpioidCDSR4Common"/>
+    </relatedArtifact>
+    <relatedArtifact>
+        <type value="documentation"/>
+        <display value="MME Conversion Tables"/>
+        <url value="https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf"/>
+    </relatedArtifact>
+    <dataRequirement id="medications">
+        <type value="MedicationRequest"/>
+        <codeFilter>
+            <path value="status"/>
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/medication-request-status"/>
+								<code value="active"/>
+            </code>
+        </codeFilter>
+        <codeFilter>
+            <path value="category"/>
+            <code>
+                <system value="http://terminology.hl7.org/CodeSystem/medication-request-category"/>
+                <code value="outpatient"/>
+            </code>
+        </codeFilter>
+    </dataRequirement>
+    <content>
+       <contentType value="text/cql"/>
+       <data value="bGlicmFyeSBPcGlvaWRDRFNSNFJlY29tbWVuZGF0aW9uMDUgdmVyc2lvbiAnMC4xLjAnCgp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4wJwoKaW5jbHVkZSBPcGlvaWRDRFNSNENvbW1vbiB2ZXJzaW9uICcwLjEuMCcgY2FsbGVkIENvbW1vbgoKLyoKKioKKiogUmVjb21tZW5kYXRpb24gIzUKKioKKi8KCi8qCiAgUGxhbiBEZWZpbml0aW9uOgoJaHR0cDovL2J1aWxkLmZoaXIub3JnL2lnL2NxZnJhbWV3b3JrL29waW9pZC1jZHMvUGxhbkRlZmluaXRpb24tb3Bpb2lkY2RzLXI0LXJlY29tbWVuZGF0aW9uLTA1Lmh0bWwKKi8KCnBhcmFtZXRlciBDb250ZXh0UHJlc2NyaXB0aW9ucyBMaXN0PE1lZGljYXRpb25SZXF1ZXN0PgoKY29udGV4dCBQYXRpZW50CgpkZWZpbmUgIkluY2x1c2lvbiBDcml0ZXJpYSI6CiAgQWdlSW5ZZWFycygpID49IDE4CiAgICBhbmQgbm90ICJFeGNsdXNpb24gQ3JpdGVyaWEiCiAgICBhbmQgIlRvdGFsIE1NRSIgPj0gNTAgJ21nL2QnCgpkZWZpbmUgIkV4Y2x1c2lvbiBDcml0ZXJpYSI6CiAgQ29tbW9uLiJFbmQgb2YgTGlmZSBBc3Nlc3NtZW50IgoKZGVmaW5lICJUb3RhbCBNTUUiOgogIENvbW1vbi5Ub3RhbE1NRShDb250ZXh0UHJlc2NyaXB0aW9ucyB1bmlvbiBDb21tb24uIkFjdGl2ZSBBbWJ1bGF0b3J5IE9waW9pZCBSeCIpCgpkZWZpbmUgIlRhcGVyIE5vdyI6ICJUb3RhbCBNTUUiLnZhbHVlID49IDkwCgpkZWZpbmUgIkNvbnNpZGVyIFRhcGVyaW5nIjogIlRvdGFsIE1NRSIudmFsdWUgPCA5MAoKZGVmaW5lICJHZXQgSW5kaWNhdG9yIjoKICBpZiAiSW5jbHVzaW9uIENyaXRlcmlhIgogICAgdGhlbiAnd2FybmluZycKICBlbHNlIG51bGwKCmRlZmluZSAiR2V0IFN1bW1hcnkiOgogIGlmICJJbmNsdXNpb24gQ3JpdGVyaWEiCiAgICB0aGVuCiAgICAgICdIaWdoIHJpc2sgZm9yIG9waW9pZCBvdmVyZG9zZSAtICcKICAgICAgICArIGNhc2Ugd2hlbiAiVGFwZXIgTm93IgogICAgICAgICAgIHRoZW4gJ3RhcGVyIG5vdycKICAgICAgICAgICBlbHNlICdjb25zaWRlciB0YXBlcmluZycKICAgICAgICAgZW5kCiAgZWxzZSBudWxsCgpkZWZpbmUgIkdldCBEZXRhaWwiOgogIGlmICJJbmNsdXNpb24gQ3JpdGVyaWEiCiAgICB0aGVuJ1RvdGFsIG1vcnBoaW5lIG1pbGxpZ3JhbSBlcXVpdmFsZW50IChNTUUpIGlzICcgKyBUb1N0cmluZygiVG90YWwgTU1FIikgKyAnLiBUYXBlciB0byBsZXNzIHRoYW4gNTAuJwogIGVsc2UgbnVsbAo="/>
+    </content>
+</Library>

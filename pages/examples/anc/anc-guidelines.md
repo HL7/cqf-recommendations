@@ -7,7 +7,7 @@ This example defines computable content for two recommendations in the WHO Anten
 
 [WHO ANC Guideline](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)
 
-Overall, the guideline recommends a contact schedule consisting of 8 contacts at specific points in the pregnancy. This is represented with the [ANC Contact Schedule](../../PlanDefinition-anc-contact-schedule.html) (a [clinical protocol](../../StructureDefinition-cpg-protocoldefinition.html)) describing the expected schedule:
+Overall, the guideline recommends a contact schedule consisting of 8 contacts at specific points in the pregnancy. This is represented with the [ANC Contact Schedule](../../PlanDefinition-anc-contact-schedule.html) (a [pathway](../../StructureDefinition-cpg-pathwaydefinition.html)) describing the expected schedule:
 
 <pre><code>
 ANC Contact 1: up to 12 weeks
@@ -21,7 +21,7 @@ ANC Contact 8: 40 weeks
 ANC Delivery: 41+ weeks
 </code></pre>
 
-The protocol contains actions for each expected contact with an applicability condition to specify the timing, and pointing to the [ANC Contact](../../PlanDefinition-anc-contact.html) (a [workflow definition](../../StructureDefinition-cpg-workflowdefinition.html)) describing each contact:
+The protocol contains actions for each expected contact with an applicability condition to specify the timing, and pointing to the [ANC Contact](../../PlanDefinition-anc-contact.html) (a [strategy](../../StructureDefinition-cpg-strategydefinition.html)) describing each contact:
 
 <pre><code>
 Registration: PlanDefinition/cpg-common-registration
@@ -62,4 +62,4 @@ less than 20%.
 
 # Resources
 
-These recommendations use the [ANCRecommendationA2](../../Library-anc-recommendation-a2.html) library to define the logic involved, and the [ANCRecommendationA2](../../PlanDefinition-anc-recommendation-a2.html) recommendation definition to establish the event-condition-action rule for when they should be used.
+These recommendations use the [ANCRecommendationA2](../../Library-ANCRecommendationA2.html) library to define the logic involved, and the [ANCRecommendationA2](../../PlanDefinition-anc-recommendation-a2.html) recommendation definition to establish the event-condition-action rule for when they should be used.

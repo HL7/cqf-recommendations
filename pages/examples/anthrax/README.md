@@ -20,6 +20,13 @@ by the Health FFRDC (operated by The MITRE Corporation). The updates made to the
 are in response to feedback regarding the desire to include the most recent Fast Healthcare
 Interoperability Resources (FHIR) specification and standards.
 
+## Description
+Provides information for treating patients greater than or equal to 18 years old exposed to anthrax within the past 60 days, who do not have anthrax.
+
+For patients that may be symptomatic, the artifacts flag the need to conduct a full diagnostic evaluation to rule out anthrax before proceeding with post-exposure prophylaxis (PEP)
+
+For patients who are asymptomatic (not displaying signs and symptoms of anthrax), the artifacts provide a recommended PEP regimen
+
 ## Contents
 This software delivery includes the following directories, which are each described below.
 - cql: Contains the Clinical Quality Language (CQL) code that constitutes the updated artifact.
@@ -91,11 +98,11 @@ contains the following subdirectories:
 - resources/Library/FHIRv300: Library resources in FHIR STU3 (v3.0.0) format.
 - resources/Library/FHIRv400: Library resources in FHIR R4 (v4.0.0) format.
 
-Each subdirectory should contain the FHIR resources in JSON format, as well as a text
+Each subdirectory contains the FHIR resources in JSON format, as well as a text
 file that captures the results from validating said resources using the
 [FHIR Validator](http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator). Where
 appropriate, the resources are also validated against the profile available at:
-- [cpg-library](../../StructureDefinition-cpg-library.html)
+- [cpg-computablelibrary](../../StructureDefinition-cpg-computablelibrary.html)
 
 ### PlanDefinition
 The artifact CQL has the ability to generate an order set using the FHIR PlanDefinition
@@ -110,5 +117,5 @@ Each subdirectory should contain the FHIR resources in JSON format, as well as a
 file that captures the results from validating said resources using the
 [FHIR Validator](http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator). Where
 appropriate, the resources are also validated against the profiles available at:
-- [cpg-plandefinition](../../StructureDefinition-cpg-plandefinition.html)
-- [cpg-activitydefinition](../../StructureDefinition-cpg-activitydefinition.html)
+- [cpg-publishableplandefinition](../../StructureDefinition-cpg-publishableplandefinition.html)
+- [cpg-publishableactivity](../../StructureDefinition-cpg-publishableactivity.html)

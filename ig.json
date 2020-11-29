@@ -243,23 +243,23 @@
     "GraphDefinition/anc-summary": {
       "base": "GraphDefinition-anc-summary.html"
     },
-		"Library/anc-common": {
-			"base": "Library-anc-common.html"
+		"Library/ANCCommon": {
+			"base": "Library-ANCCommon.html"
 		},
-		"Library/anc-recommendation-a2": {
-			"base": "Library-anc-recommendation-a2.html"
+		"Library/ANCRecommendationA2": {
+			"base": "Library-ANCRecommendationA2.html"
 		},
-		"Library/library-hep-b-adult-forecasting": {
-			"base": "Library-library-hep-b-adult-forecasting.html"
+		"Library/HepBAdultForecasting": {
+			"base": "Library-HepBAdultForecasting.html"
 		},
 		"Library/omtklogic": {
 			"base": "Library-omtklogic.html"
 		},
-		"Library/opioidcds-r4-common": {
-			"base": "Library-opioidcds-r4-common.html"
+		"Library/OpioidCDSR4Common": {
+			"base": "Library-OpioidCDSR4Common.html"
 		},
-		"Library/opioidcds-r4-recommendation-05": {
-			"base": "Library-opioidcds-r4-recommendation-05.html"
+		"Library/OpioidCDSR4Recommendation05": {
+			"base": "Library-OpioidCDSR4Recommendation05.html"
 		},
     "OperationDefinition/cpg-plandefinition-apply": {
       "base": "OperationDefinition-cpg-plandefinition-apply.html"
@@ -290,8 +290,8 @@
 		"PlanDefinition/opioidcds-r4-recommendation-05": {
 			"base": "PlanDefinition-opioidcds-r4-recommendation-05.html"
 		},
-		"PlanDefinition/plandefinition-hep-b-adult-forecastsing": {
-			"base": "PlanDefinition-plandefinition-hep-b-adule-forecasting.html"
+		"PlanDefinition/HepBAdultForecasting": {
+			"base": "PlanDefinition-HepBAdultForecasting.html"
 		},
 		"Questionnaire/anc-every-contact": {
 			"base": "Questionnaire-anc-every-contact.html"

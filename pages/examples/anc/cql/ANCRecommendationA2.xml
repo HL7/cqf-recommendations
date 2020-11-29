@@ -3,7 +3,7 @@
    <annotation startLine="70" startChar="5" endLine="70" endChar="47" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
    <annotation startLine="76" startChar="5" endLine="76" endChar="25" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
    <annotation startLine="84" startChar="5" endLine="84" endChar="38" message="Could not resolve membership operator for terminology target of the retrieve." errorType="semantic" errorSeverity="warning" xsi:type="a:CqlToElmError"/>
-   <identifier id="ANCRecommendationA2" version="0.0.0"/>
+   <identifier id="ANCRecommendationA2" version="0.1.0"/>
    <schemaIdentifier id="urn:hl7-org:elm" version="r1"/>
    <usings>
       <def localIdentifier="System" uri="urn:hl7-org:elm-types:r1"/>
@@ -142,5 +142,3 @@
       </def>
    </statements>
 </library>
-
-

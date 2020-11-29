@@ -928,13 +928,13 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/anc-common"/>
+					<reference value="Library/ANCCommon"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary"/>
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/anc-recommendation-a2"/>
+					<reference value="Library/ANCRecommendationA2"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary"/>
 				<groupingId value="anc-example"/>
@@ -1115,14 +1115,14 @@
 			<!-- Hepatitis-B Immunization Forecasting Resources -->
 			<resource>
 				<reference>
-					<reference value="Library/library-hep-b-adult-forecasting"/>
+					<reference value="Library/HepBAdultForecasting"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"/>
 				<groupingId value="hep-b-example"/>
 			</resource>
 			<resource>
 				<reference>
-					<reference value="PlanDefinition/plandefinition-hep-b-adult-forecasting"/>
+					<reference value="PlanDefinition/HepBAdultForecasting"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"/>
 				<groupingId value="hep-b-example"/>
@@ -1145,14 +1145,14 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/opioidcds-r4-common"/>
+					<reference value="Library/OpioidCDSR4Common"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/opioidcds-r4-recommendation-05"/>
+					<reference value="Library/OpioidCDSR4Recommendation05"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary"/>
 				<groupingId value="opg-example"/>
