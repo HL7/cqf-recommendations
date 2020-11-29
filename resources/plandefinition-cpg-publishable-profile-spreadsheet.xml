@@ -20,11 +20,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7755</WindowHeight>
+  <WindowHeight>9135</WindowHeight>
   <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>2</ActiveSheet>
+  <ActiveSheet>7</ActiveSheet>
   <FirstVisibleSheet>2</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -40,7 +40,7 @@
    <Protection/>
   </Style>
   <Style ss:ID="s62" ss:Name="Hyperlink">
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#0000FF"
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0000FF"
     ss:Underline="Single"/>
   </Style>
   <Style ss:ID="s63" ss:Name="Normal 2">
@@ -268,7 +268,7 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Bold="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s91">
@@ -1553,7 +1553,8 @@
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">DefinitionTopic</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2542,7 +2543,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -2563,7 +2563,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>15</ActiveRow>
+     <ActiveRow>11</ActiveRow>
+     <ActiveCol>9</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5188,19 +5189,11 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s157"/>
-    <Cell ss:StyleID="s148"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s127"/>
-    <Cell ss:StyleID="s155"/>
+    <Cell><Data ss:Type="String">DefinitionTopic</Data></Cell>
+    <Cell><Data ss:Type="String">Topics for categorization and searching of artifacts</Data></Cell>
+    <Cell><Data ss:Type="String">value set</Data></Cell>
+    <Cell><Data ss:Type="String">preferred</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">http://hl7.org/fhir/ValueSet/definition-topic</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s157"/>
@@ -5486,6 +5479,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>

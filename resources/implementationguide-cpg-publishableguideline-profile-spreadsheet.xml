@@ -20,7 +20,7 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7755</WindowHeight>
+  <WindowHeight>9135</WindowHeight>
   <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
@@ -40,7 +40,7 @@
    <Protection/>
   </Style>
   <Style ss:ID="s62" ss:Name="Hyperlink">
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#0000FF"
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0000FF"
     ss:Underline="Single"/>
   </Style>
   <Style ss:ID="s63" ss:Name="Normal 2">
@@ -268,7 +268,7 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Bold="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s91">
@@ -1158,9 +1158,9 @@
  <Worksheet ss:Name="cpg-publishableguideline">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='cpg-publishableguideline'!R1C1:R48C25" ss:Hidden="1"/>
+    ss:RefersTo="='cpg-publishableguideline'!R1C1:R49C25" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="35" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="36" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="126"/>
@@ -1347,6 +1347,17 @@
     <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s105">
+    <Cell><Data ss:Type="String">topic</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">ImplementationGuide.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-topic}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s102"><Data ss:Type="String">author</Data><NamedCell
@@ -2177,7 +2188,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

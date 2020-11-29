@@ -20,12 +20,12 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7755</WindowHeight>
+  <WindowHeight>9135</WindowHeight>
   <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
-  <FirstVisibleSheet>1</FirstVisibleSheet>
+  <FirstVisibleSheet>2</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -1158,9 +1158,9 @@
  <Worksheet ss:Name="cpg-publishablegraphdefinition">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='cpg-publishablegraphdefinition'!R1C1:R48C25" ss:Hidden="1"/>
+    ss:RefersTo="='cpg-publishablegraphdefinition'!R1C1:R49C25" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="35" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="36" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="126"/>
@@ -1347,6 +1347,15 @@
     <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">topic</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">GraphDefinition.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-topic}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s102"><Data ss:Type="String">author</Data><NamedCell
@@ -2164,7 +2173,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>7</LeftColumnRightPane>
+   <LeftColumnRightPane>6</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -2179,8 +2188,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>0</ActiveRow>
-     <ActiveCol>8</ActiveCol>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -2870,21 +2879,31 @@
     <Cell ss:StyleID="s131"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s129"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">CPGTopic</Data></Cell>
+    <Cell ss:StyleID="s129"><Data ss:Type="String">topic</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">Element</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">Resource</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">topic</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">CodeableConcept</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">DefinitionTopic</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">E.g. Education, Treatment, Assessment, etc.</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3788,7 +3807,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>2</SplitVertical>
-   <LeftColumnRightPane>2</LeftColumnRightPane>
+   <LeftColumnRightPane>3</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -3803,7 +3822,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>2</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -4792,19 +4811,11 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s159"/>
-    <Cell ss:StyleID="s130"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s141"/>
-    <Cell ss:StyleID="s142"/>
+    <Cell><Data ss:Type="String">DefinitionTopic</Data></Cell>
+    <Cell><Data ss:Type="String">Topics for categorization and searching of artifacts</Data></Cell>
+    <Cell><Data ss:Type="String">value set</Data></Cell>
+    <Cell><Data ss:Type="String">preferred</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">http://hl7.org/fhir/ValueSet/definition-topic</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s159"/>

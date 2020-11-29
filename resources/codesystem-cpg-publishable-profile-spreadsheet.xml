@@ -20,7 +20,7 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>7755</WindowHeight>
+  <WindowHeight>9135</WindowHeight>
   <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
@@ -40,7 +40,7 @@
    <Protection/>
   </Style>
   <Style ss:ID="s62" ss:Name="Hyperlink">
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#0000FF"
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0000FF"
     ss:Underline="Single"/>
   </Style>
   <Style ss:ID="s63" ss:Name="Normal 2">
@@ -268,7 +268,7 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Bold="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s91">
@@ -997,6 +997,29 @@
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
    <Interior/>
   </Style>
+  <Style ss:ID="s176">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s177">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+  </Style>
+  <Style ss:ID="s178">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#333399"/>
+  </Style>
+  <Style ss:ID="s179">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"/>
+   </Borders>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -1155,9 +1178,9 @@
  <Worksheet ss:Name="cpg-publishablecodesystem">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='cpg-publishablecodesystem'!R1C1:R71C25" ss:Hidden="1"/>
+    ss:RefersTo="='cpg-publishablecodesystem'!R1C1:R76C25" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="58" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="63" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="305.25"/>
@@ -1356,6 +1379,17 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell><Data ss:Type="String">topic</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">CodeSystem.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-topic}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">author</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="4"><Data ss:Type="String">CodeSystem.extension</Data><NamedCell
@@ -1364,6 +1398,87 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/codesystem-author}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s176"><Data ss:Type="String">editor</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">CodeSystem.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-editor}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s176"><Data ss:Type="String">reviewer</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">CodeSystem.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reviewer}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s176"><Data ss:Type="String">endorser</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">CodeSystem.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-endorser}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s123">
+    <Cell ss:StyleID="s176"><Data ss:Type="String">relatedArtifact</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4" ss:StyleID="s86"><Data ss:Type="String">CodeSystem.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..*</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedArtifact}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s177"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s178"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s133"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s179"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">keyWord</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2731,8 +2846,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>14</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
