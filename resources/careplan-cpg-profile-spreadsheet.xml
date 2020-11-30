@@ -1737,8 +1737,7 @@
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Goal){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal}</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1825,7 +1824,7 @@
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Appointment){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-appointment} | Reference(CommunicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest} | Reference(DeviceRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-DeviceRequest} | Reference(MedicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest} | Reference(NutritionOrder){http://hl7.org/fhir/uv/StructureDefinition/cpg-nutritionorder} | Reference(Task){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task} | Reference(ServiceRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest} | Reference(RequestGroup){http://hl7.org/fhir/uv/cpg/StructureDefition/cpg-requestgroup}</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Appointment){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-appointment} | Reference(CommunicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest} | Reference(MedicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest} | Reference(Task){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task} | Reference(ServiceRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest} | Reference(RequestGroup){http://hl7.org/fhir/uv/cpg/StructureDefition/cpg-strategy}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -2120,7 +2119,7 @@
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Practitioner){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitioner} | Reference(PractitionerRole){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerrole) | Reference(Organization){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization} | Reference(RelatedPerson){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedperson} | Reference(Patient){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient} | Reference(CareTeam){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam}</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Practitioner){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitioner} | Reference(PractitionerRole){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerrole} | Reference(Organization){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization} | Reference(RelatedPerson){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedperson} | Reference(Patient){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient} | Reference(CareTeam){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3053,9 +3052,9 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
+   <TopRowBottomPane>10</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <LeftColumnRightPane>7</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -3067,11 +3066,11 @@
     </Pane>
     <Pane>
      <Number>2</Number>
+     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>8</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>30</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -3737,7 +3736,7 @@
     <Cell ss:StyleID="s125"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s125"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s125"><Data ss:Type="String">Reference(EpisodeOfCare){http://hl7.org/fhir/uv/StructureDefinition/cpg-case}</Data><NamedCell
+    <Cell ss:StyleID="s125"><Data ss:Type="String">Reference(EpisodeOfCare){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s125"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s125"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4717,7 +4716,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>8</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

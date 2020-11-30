@@ -134,6 +134,7 @@
     "structuredefinition-cpg-shareable-profile-spreadsheet.xml",
     "structuredefinition-cpg-casefeature-profile-spreadsheet.xml",
     "structuredefinition-cpg-publishablecasefeature-profile-spreadsheet.xml",
+    "task-cpg-profile-spreadsheet.xml",
     "task-cpg-enrollment-profile-spreadsheet.xml",
     "task-cpg-generatereport-profile-spreadsheet.xml",
     "task-cpg-dispensemedication-profile-spreadsheet.xml",
@@ -712,6 +713,10 @@
     "StructureDefinition/cpg-reportflagactivity": {
       "defns": "StructureDefinition-cpg-reportflagactivity-definitions.html",
       "base": "StructureDefinition-cpg-reportflagactivity.html"
+    },
+    "StructureDefinition/cpg-task": {
+      "defns": "StructureDefinition-cpg-task-definitions.html",
+      "base": "StructureDefinition-cpg-task.html"
     },
     "StructureDefinition/cpg-administermedicationtask": {
       "defns": "StructureDefinition-cpg-administermedicationtask-definitions.html",

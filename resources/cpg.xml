@@ -558,6 +558,12 @@
 			</resource>
       <resource>
 				<reference>
+					<reference value="StructureDefinition/cpg-task"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
 					<reference value="StructureDefinition/cpg-administermedicationtask"/>
 				</reference>
 				<groupingId value="main"/>
