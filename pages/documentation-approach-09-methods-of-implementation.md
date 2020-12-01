@@ -148,7 +148,7 @@ NOTE: The type-level [$apply](OperationDefinition-cpg-plandefinition-apply.html)
 
 ## Evaluation
 
-In addition to the complex behaviors described by Activity and PlanDefinitions, libraries of reusable logic can be distributed and used to support calculations and other types of logic. This implementation guide defines two operations to support this use case:
+In addition to the behaviors described by Activity and PlanDefinitions, libraries of reusable logic can be distributed and used to support calculations and other types of logic. This implementation guide defines two operations to support this use case:
 
 * [$cql](OperationDefinition-cpg-cql.html): A system-level operation that supports evaluation of arbitrary CQL expressions
 * [Library/$evaluate](OperationDefinition-cpg-library-evaluate.html): A type- and instance-level operation that supports evaluation of a specific Library of CQL, including specific expressions within the Library.
@@ -156,3 +156,7 @@ In addition to the complex behaviors described by Activity and PlanDefinitions, 
 ## Care Planning
 
 The [Care Planning](documentation-careplanning.html) topic describes expectations for the use of dynamic care planning with computable guideline content.
+
+In addition, to support the ability to resolve optional logic as part of request groups within a care plan, this implementation defines a CarePlan apply operation:
+
+* [$apply](OperationDefinition-cpg-careplan-apply.html): An instance-level operation that supports resolution of optional logic within any RequestGroups contained in an existing CarePlan.
