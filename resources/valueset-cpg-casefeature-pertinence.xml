@@ -1,8 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="cpg-indicator"/>
-    <meta>
+    <id value="cpg-casefeature-pertinence"/>
+		<meta>
       <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
-    </meta>
+		</meta>
     <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
       <valueCode value="shareable"/>
     </extension>
@@ -15,9 +15,9 @@
     <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
       <valueCode value="structured"/>
     </extension>
-    <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-indicator"/>
-    <name value="CPG_Indicator"/>
-		<title value="CPG Indicator"/>
+    <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-pertinence"/>
+    <name value="CPGCaseFeaturePertinence"/>
+		<title value="CPG Case Feature Pertinence"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-07-21"/>
@@ -28,10 +28,10 @@
         <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
       </telecom>
     </contact>
-		<description value="Indicates the urgency/importance of what this recommendation conveys"/>
+    <description value="A type of activity that can be performed as part of the delivery of guideline-based care"/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-indicator"/>
+            <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-casefeature-pertinence"/>
         </include>
     </compose>
 </ValueSet>

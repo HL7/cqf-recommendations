@@ -1,12 +1,30 @@
 {
   "resourceType": "PlanDefinition",
   "id": "ckd-risk-screening",
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/ckd-risk-screening",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/ckd-risk-screening",
   "name": "CKD_Risk_Screening",
   "title": "Chronic Kidney Disease (CKD) risk screening",
   "description": "Chronic Kidney Disease (CKD) risk screening",
@@ -76,7 +94,7 @@
     }
   ],
   "library": [
-    "Library/ckd-risk-recommendations"
+    "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"
   ],
   "action": [
     {

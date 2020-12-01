@@ -1,12 +1,30 @@
 {
   "resourceType": "PlanDefinition",
   "id": "va-ckd-recommendations",
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/va-ckd-recommendations",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/va-ckd-recommendations",
   "identifier": [
     {
       "use": "official",
@@ -82,7 +100,7 @@
     }
   ],
   "library": [
-    "Library/va-ckd-guideline"
+    "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"
   ],
   "action": [
     {

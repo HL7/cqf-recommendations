@@ -1,0 +1,60 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="cpg-casefeature-pertinence"/>
+		<meta>
+			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
+		</meta>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="shareable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="computable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="publishable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+      <valueCode value="structured"/>
+    </extension>
+    <url value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-casefeature-pertinence"/>
+		<name value="CPGCaseFeaturePertinence"/>
+    <title value="CPG Case Feature Pertinence"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2019-05-08"/>
+    <publisher value="Health Level 7 International - Clinical Decision Support WG"/>
+    <contact>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
+      </telecom>
+    </contact>
+    <description value="The pertinence of a case feature relative to a case, guideline, pathway, strategy, or recommendation."/>
+    <caseSensitive value="true"/>
+		<valueSet value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-pertinence"/>
+    <content value="complete"/>
+    <concept>
+      <code value="weakly-positive"/>
+      <display value="Weakly Positive"/>
+      <definition value="The case feature has weak positive pertinence to the case"/>
+    </concept>
+    <concept>
+      <code value="weakly-negative"/>
+      <display value="Weakly Negative"/>
+      <definition value="The case feature has weak negative pertinence to the case"/>
+    </concept>
+    <concept>
+      <code value="strongly-positive"/>
+      <display value="Strongly Positive"/>
+      <definition value="The case feature has strong positive pertinence to the case"/>
+    </concept>
+    <concept>
+      <code value="strongly-negative"/>
+      <display value="Strongly Negative"/>
+      <definition value="The case feature has strong negative pertinence to the case"/>
+    </concept>
+		<concept>
+			<code value="pathognomonic"/>
+			<display value="Pathognomonic"/>
+			<definition value="The case feature is pathognomonic for the case"/>
+		</concept>
+</CodeSystem>

@@ -11,7 +11,7 @@
          "valueCode":"trial-use"
       }
    ],
-   "url":"http://hl7.org/fhir/OperationDefinition/PlanDefinition-apply",
+   "url":"http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-plandefinition-apply",
    "version":"4.0.1",
    "name":"Apply",
    "status":"draft",

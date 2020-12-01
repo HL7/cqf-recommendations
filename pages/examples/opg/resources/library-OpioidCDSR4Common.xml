@@ -76,7 +76,7 @@
    </relatedArtifact>
    <relatedArtifact>
       <type value="depends-on"/>
-      <resource value="Library/library-omtklogic-0-0-1"/>
+      <resource value="http://fhir.org/guides/cdc/opioid-cds/Library/OMTKLogic"/>
    </relatedArtifact>
    <relatedArtifact>
       <type value="depends-on"/>

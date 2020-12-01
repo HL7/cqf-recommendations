@@ -1,11 +1,34 @@
 {
   "resourceType": "ActivityDefinition",
   "id": "activity-example-donotsendmessage",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivitydefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-donotsendmessage",
   "name": "ActivityExampleDoNotSendMessage",
   "title": "Activity Example Do Not Send Message",
   "status": "draft",
-  "experimental": "false",
+  "experimental": true,
   "kind": "CommunicationRequest",
   "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest",
   "doNotPerform": true,
@@ -13,8 +36,8 @@
     {
       "path": "status",
       "expression": {
-        "language": "text/cql-expression",
-        "value": "'draft'"
+        "language": "text/cql",
+        "expression": "'draft'"
       }
     }
   ]

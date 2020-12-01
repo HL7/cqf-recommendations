@@ -20,11 +20,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>6630</WindowHeight>
-  <WindowWidth>20520</WindowWidth>
+  <WindowHeight>9135</WindowHeight>
+  <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -1046,6 +1046,116 @@
    <x:Print>    </x:Print>
   </WorksheetOptions>
  </Worksheet>
+ <Worksheet ss:Name="Metadata">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="16" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s100" ss:DefaultColumnWidth="65.25"
+   ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s100" ss:Width="98.25"/>
+   <Column ss:StyleID="s100" ss:AutoFitWidth="0" ss:Width="363"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Name</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">Value</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s103"><Data ss:Type="String">id</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">cpg-case</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">name</Data></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">CPGCase</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">display</Data></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">CPG Case</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">author.name</Data></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Health Level Seven, Inc. - CDS WG</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">author.reference</Data></Cell>
+    <Cell ss:StyleID="s107" ss:HRef="http://hl7.org/special/committees/DSS"><Data
+      ss:Type="String">http://hl7.org/special/committees/DSS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">code</Data></Cell>
+    <Cell ss:StyleID="s108"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="69">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">description</Data></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">CPG case represents a specific case of a patient enrolled in a particular pathway. The enrollment may have been automatic, prompted, or manual.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">status</Data></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">draft</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">date</Data></Cell>
+    <Cell ss:StyleID="s110"><Data ss:Type="DateTime">2019-06-06T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">published.structure</Data></Cell>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">cpg-case</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">version</Data></Cell>
+    <Cell ss:StyleID="s108"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s105"><Data ss:Type="String">extension.uri</Data></Cell>
+    <Cell ss:StyleID="s111" ss:HRef="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-"><Data
+      ss:Type="String">http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s112"><Data ss:Type="String">introduction</Data></Cell>
+    <Cell ss:StyleID="s113"><Data ss:Type="String">cpg-profile-introduction.xml</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s114"><Data ss:Type="String">notes</Data></Cell>
+    <Cell ss:StyleID="s115"><Data ss:Type="String">cpg-profile-notes.xml</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>150</Zoom>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>1</SplitHorizontal>
+   <TopRowBottomPane>1</TopRowBottomPane>
+   <SplitVertical>1</SplitVertical>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>11</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <x:PageLayoutZoom>0</x:PageLayoutZoom>
+  </WorksheetOptions>
+ </Worksheet>
  <Worksheet ss:Name="cpg-case">
   <Names>
    <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="='cpg-case'!R1C1:R74C25"
@@ -1386,7 +1496,7 @@
     <Cell ss:StyleID="s86"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s87"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s87"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s88"><Data ss:Type="String">EpsiodeOfCare.period</Data><NamedCell
+    <Cell ss:StyleID="s88"><Data ss:Type="String">EpisodeOfCare.period</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s87"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s87"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2823,117 +2933,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>8</ActiveRow>
-    </Pane>
-   </Panes>
-   <ProtectObjects>False</ProtectObjects>
-   <ProtectScenarios>False</ProtectScenarios>
-   <x:PageLayoutZoom>0</x:PageLayoutZoom>
-  </WorksheetOptions>
- </Worksheet>
- <Worksheet ss:Name="Metadata">
-  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="16" x:FullColumns="1"
-   x:FullRows="1" ss:StyleID="s100" ss:DefaultColumnWidth="65.25"
-   ss:DefaultRowHeight="15">
-   <Column ss:StyleID="s100" ss:Width="98.25"/>
-   <Column ss:StyleID="s100" ss:AutoFitWidth="0" ss:Width="363"/>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s101"><Data ss:Type="String">Name</Data></Cell>
-    <Cell ss:StyleID="s102"><Data ss:Type="String">Value</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s103"><Data ss:Type="String">id</Data></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">cpg-case</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">name</Data></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">CPGCase</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">display</Data></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">CPG Case</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">author.name</Data></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">Health Level Seven, Inc. - CDS WG</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">author.reference</Data></Cell>
-    <Cell ss:StyleID="s107" ss:HRef="http://hl7.org/special/committees/DSS"><Data
-      ss:Type="String">http://hl7.org/special/committees/DSS</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">code</Data></Cell>
-    <Cell ss:StyleID="s108"/>
-   </Row>
-   <Row ss:AutoFitHeight="0" ss:Height="69">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">description</Data></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">CPG case represents a specific case of a patient enrolled in a particular pathway. The enrollment may have been automatic, prompted, or manual.</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">status</Data></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">draft</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">date</Data></Cell>
-    <Cell ss:StyleID="s110"><Data ss:Type="DateTime">2019-06-06T00:00:00.000</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">published.structure</Data></Cell>
-    <Cell ss:StyleID="s106"><Data ss:Type="String">cpg-case</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">version</Data></Cell>
-    <Cell ss:StyleID="s108"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s105"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="s111" ss:HRef="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-"><Data
-      ss:Type="String">http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s112"><Data ss:Type="String">introduction</Data></Cell>
-    <Cell ss:StyleID="s113"><Data ss:Type="String">cpg-profile-introduction.xml</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s114"><Data ss:Type="String">notes</Data></Cell>
-    <Cell ss:StyleID="s115"><Data ss:Type="String">cpg-profile-notes.xml</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0"/>
-  </Table>
-  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
-   <PageSetup>
-    <Header x:Margin="0.3"/>
-    <Footer x:Margin="0.3"/>
-    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
-   </PageSetup>
-   <Unsynced/>
-   <Print>
-    <ValidPrinterInfo/>
-    <HorizontalResolution>600</HorizontalResolution>
-    <VerticalResolution>600</VerticalResolution>
-   </Print>
-   <Zoom>150</Zoom>
-   <FreezePanes/>
-   <FrozenNoSplit/>
-   <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
-   <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>1</LeftColumnRightPane>
-   <ActivePane>0</ActivePane>
-   <Panes>
-    <Pane>
-     <Number>3</Number>
-    </Pane>
-    <Pane>
-     <Number>1</Number>
-    </Pane>
-    <Pane>
-     <Number>2</Number>
-    </Pane>
-    <Pane>
-     <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
+     <ActiveRow>9</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -3493,9 +3494,10 @@
    <Column ss:StyleID="s123" ss:AutoFitWidth="0" ss:Width="66"/>
    <Column ss:StyleID="s123" ss:AutoFitWidth="0" ss:Width="119.25"/>
    <Row ss:AutoFitHeight="0" ss:Height="45" ss:StyleID="s71">
-    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Code</Data><Comment
-      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font
-        html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Format is ResourceName.componentName.componentName</Font>       </ss:Data></Comment><NamedCell
+    <Cell><Data ss:Type="String">Profile.name</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Code</Data><Comment ss:Author=""><ss:Data
+       xmlns="http://www.w3.org/TR/REC-html40">        <Font html:Face="Tahoma"
+        x:Family="Swiss" html:Size="8" html:Color="#000000">Format is ResourceName.componentName.componentName</Font>       </ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="String">Context Type</Data><Comment
       ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font

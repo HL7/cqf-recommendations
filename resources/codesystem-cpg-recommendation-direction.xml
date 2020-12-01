@@ -3,6 +3,18 @@
 		<meta>
 			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
 		</meta>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="shareable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="computable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="publishable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+      <valueCode value="structured"/>
+    </extension>
 		<extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
 			<valueUri value="https://www.ncbi.nlm.nih.gov/pubmed/23570745"/>
 		</extension>

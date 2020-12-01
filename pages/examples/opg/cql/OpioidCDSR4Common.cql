@@ -6,7 +6,7 @@ include FHIRHelpers version '4.0.0' called FHIRHelpers
 include OMTKLogic version '0.0.0' called OMTKLogic
 
 codesystem "SNOMED": 'http://snomed.info/sct'
-codesystem "Medication Request Category Codes": 'http://hl7.org/fhir/medication-request-category'
+codesystem "Medication Request Category Codes": 'http://terminology.hl7.org/CodeSystem/medicationrequest-category'
 
 valueset "Active Condition": 'http://hl7.org/fhir/uv/cpg/ValueSet/cpg-active-condition'
 valueset "Benzodiazepines": 'http://fhir.org/guides/cdc/opioid-cds/ValueSet/benzodiazepines'

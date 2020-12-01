@@ -1,9 +1,33 @@
 {
   "resourceType": "PlanDefinition",
   "id": "activity-example-donotsendmessage",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-donotsendmessage",
   "name": "ActivityExampleDoNotSendMessage",
   "title": "Activity Example Do Not Send Message",
+  "description": "Activity Example Do Not Send Message",
   "type": {
     "coding": [
       {
@@ -14,6 +38,7 @@
   },
   "status": "draft",
   "experimental": true,
+  "publisher": "HL7 FHIR Clinical Guidelines Example Artifact",
   "library": [ "http://hl7.org/fhir/uv/cpg/Library/DoNotSendMessage" ],
   "action": [
     {
@@ -21,7 +46,7 @@
       "condition": [{
         "kind": "applicability",
         "expression": {
-          "language": "text/cql-identifier",
+          "language": "text/cql",
           "expression": "Is Recommendation Applicable"
         }
       }],

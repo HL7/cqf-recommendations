@@ -81,10 +81,6 @@
 	</relatedArtifact>
 	<relatedArtifact>
 		<type value="depends-on"/>
-		<resource value="Library/library-omtkdata-0-0-2"/>
-	</relatedArtifact>
-	<relatedArtifact>
-		<type value="depends-on"/>
 		<url value="urn:hl7-org:elm-types:r1"/>
 	</relatedArtifact>
 	<content>

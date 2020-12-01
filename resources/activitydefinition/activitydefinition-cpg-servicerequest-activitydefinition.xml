@@ -17,7 +17,7 @@
 	<dynamicValue>
 		<path value="status"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="'draft'"/>
 		</expression>
 	</dynamicValue>
@@ -25,7 +25,7 @@
 	<dynamicValue>
 		<path value="intent"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="'proposal'"/>
 		</expression>
 	</dynamicValue>
@@ -33,7 +33,7 @@
 	<dynamicValue>
 		<path value="priority"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="'routine'"/>
 		</expression>
 	</dynamicValue>
@@ -41,7 +41,7 @@
 	<dynamicValue>
 		<path value="code"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="ServiceCodeableConcept"/>
 		</expression>
 	</dynamicValue>
@@ -51,7 +51,7 @@
 	<dynamicValue>
 		<path value="subject"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="Patient"/>
 			<!--expression value="Reference { reference: 'Patient/' + Patient.id }" /-->
 		</expression>
@@ -62,7 +62,7 @@
 	<dynamicValue>
 		<path value="encounter"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="Encounter"/>
 			<!--expression value="Reference { reference: 'Encounter/' + Encounter.id }" /-->
 		</expression>
@@ -71,7 +71,7 @@
 	<dynamicValue>
 		<path value="authoredOn"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="Now()"/>
 		</expression>
 	</dynamicValue>
@@ -81,7 +81,7 @@
 	<dynamicValue>
 		<path value="performer"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="Practitioner"/>
 			<!--expression value="Reference { reference: 'Practitioner/' + Practitioner.id}" /-->
 		</expression>

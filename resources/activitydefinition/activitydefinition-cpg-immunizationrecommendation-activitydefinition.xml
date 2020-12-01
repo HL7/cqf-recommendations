@@ -19,7 +19,7 @@
 	<dynamicValue>
 		<path value="patient"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="Patient"/>
 			<!--expression value="Reference { reference: 'Patient/' + Patient.id }" /-->
 		</expression>
@@ -28,7 +28,7 @@
 	<dynamicValue>
 		<path value="date"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="Now()"/>
 		</expression>
 	</dynamicValue>
@@ -36,7 +36,7 @@
 	<dynamicValue>
 		<path value="recommendation.vaccineCode"/>
 		<expression>
-			<language value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="VaccineCodeableConcept"/>
 		</expression>
 	</dynamicValue>
@@ -44,7 +44,7 @@
 	<dynamicValue>
 		<path value="recommendation.forecastStatus"/>
 		<expression>
-			<langauge value="text/cql-expression"/>
+			<language value="text/cql"/>
 			<expression value="Code { system: 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status', code: 'due' }"/>
 		</expression>
 	</dynamicValue>

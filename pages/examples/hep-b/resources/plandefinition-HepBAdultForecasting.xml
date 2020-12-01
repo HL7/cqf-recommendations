@@ -83,7 +83,7 @@
 			<kind value="applicability"/>
 			<expression>
 				<description value="Is a Hep B Adult Recommendation Available?"/>
-				<language value="text/cql-identifier"/>
+				<language value="text/cql"/>
 				<expression value="Patient Hep B Immunization History should be Evaluated in Adult Series"/>
 			</expression>
 		</condition>
@@ -92,14 +92,14 @@
 		<dynamicValue>
 			<path value="action.title"/>
 			<expression>
-				<language value="text/cql-identifier"/>
+				<language value="text/cql"/>
 				<expression value="Get Recommendation Overview"/>
 			</expression>
 		</dynamicValue>
 		<dynamicValue>
 			<path value="action.description"/>
 			<expression>
-				<language value="text/cql-identifier"/>
+				<language value="text/cql"/>
 				<expression value="Get Recommendation Detail"/>
 			</expression>
 		</dynamicValue>

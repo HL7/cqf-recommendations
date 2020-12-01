@@ -1,6 +1,30 @@
 {
   "resourceType": "Library",
   "id": "SendMessage",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1</code></td></tr><tr><td>depends-on</td><td><code>http://hl7.org/fhir/Library/FHIRHelpers|4.0.1</code></td></tr></table><h2>Parameters</h2><table class=\"grid\"><tr><td>Patient</td><td>out</td><td>0</td><td>1</td><td>Patient</td></tr><tr><td>Inclusion Criteria</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr><tr><td>Active or Completed Communication</td><td>out</td><td>0</td><td>*</td><td>Communication</td></tr><tr><td>Communication Not Done</td><td>out</td><td>0</td><td>*</td><td>Communication</td></tr><tr><td>Communication Proposal</td><td>out</td><td>0</td><td>*</td><td>CommunicationRequest</td></tr><tr><td>Communication Not Proposed</td><td>out</td><td>0</td><td>*</td><td>CommunicationRequest</td></tr><tr><td>Is Recommendation Applicable</td><td>out</td><td>0</td><td>1</td><td>boolean</td></tr></table><h2>Data Requirements</h2><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/communication.html\">Communication</a> (<a href=\"http://hl7.org/fhir/R4/communication.html\">Communication</a>)</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/communication.html\">Communication</a> (<a href=\"http://hl7.org/fhir/R4/communication.html\">Communication</a>)</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/communicationrequest.html\">CommunicationRequest</a> (<a href=\"http://hl7.org/fhir/R4/communicationrequest.html\">CommunicationRequest</a>)</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/communicationrequest.html\">CommunicationRequest</a> (<a href=\"http://hl7.org/fhir/R4/communicationrequest.html\">CommunicationRequest</a>)</td></tr></table><h2>Contents</h2><p><code>text/cql</code></p><pre><code class=\"language-sql\">library SendMessage\r\n\r\nusing FHIR version '4.0.1'\r\n\r\ninclude FHIRHelpers version '4.0.1'\r\n\r\ncontext Patient\r\n\r\n/* Recommendation to greet the patient */\r\n\r\n/*\r\nNOTE: This recommendation is dramatically simplified to illustrate the general\r\npattern for a positive recommendation, with the ability for users to reject\r\nthe recommendation, and flexibility in how the recommendation is achieved.\r\n\r\nSpecifically:\r\n* There is no terminology, any communication request/event on any topic will do\r\n* There is no timing, any communication request/event will do at any time\r\n* There is no reference to participants other than the patient\r\n* There is no relationship to a setting\r\n* There is no relationship to an encounter or episode\r\n* There is no relationship to a care plan\r\n\r\nThese simplifications allow the example to focus exclusively on the pattern for\r\nrecommending and for accepting/rejecting the proposal, as well as documenting\r\nthe completion, or explicit non-performance of the communication.\r\n*/\r\n\r\n/*\r\nPositive recommendation:\r\n\r\nIf the activity has not been performed\r\n  If the activity has not been planned or proposed\r\n    Propose the activity\r\n\r\nGiven a proposal, the user can:\r\n  Accept the proposal\r\n  Ignore the proposal\r\n  Reject the proposal without reason\r\n  Reject the proposal with reason\r\n\r\nScenario 1: No event, no plan or proposal, decision support should propose\r\nScenario 2: No event, incomplete proposal, decision support should not propose\r\nScenario 3: No event, rejected proposal, decision support should not propose\r\nScenario 4: Event, no proposal, decision support should not propose\r\nScenario 5: Event, completed proposal, decision support should not propose\r\nScenario 6: Event not done, no proposal, decision support should not propose\r\nScenario 7: Event not done, proposal, decision support should not propose\r\n\r\n*/\r\n\r\ndefine \"Inclusion Criteria\":\r\n  Patient.active\r\n\r\ndefine \"Active or Completed Communication\":\r\n  [Communication] C\r\n    where C.status in { 'preparation', 'in-progress', 'on-hold', 'completed' }\r\n\r\ndefine \"Communication Not Done\":\r\n  [Communication] C\r\n    where C.status in { 'not-done', 'stopped' }\r\n\r\ndefine \"Communication Proposal\":\r\n  [CommunicationRequest] R\r\n    where R.status in { 'draft', 'active', 'on-hold' }\r\n      and not (Coalesce(R.doNotPerform, false))\r\n\r\ndefine \"Communication Not Proposed\":\r\n  [CommunicationRequest] R\r\n    where R.status in { 'revoked' }\r\n      and not (Coalesce(R.doNotPerform, false))\r\n\r\ndefine \"Is Recommendation Applicable\":\r\n  \"Inclusion Criteria\"\r\n    and not exists (\r\n      \"Active or Completed Communication\"\r\n        union \"Communication Not Done\"\r\n    )\r\n    and not exists (\r\n      \"Communication Proposal\"\r\n        union \"Communication Not Proposed\"\r\n    )\r\n</code></pre><p><code>Content not shown - (</code><code>application/elm+xml</code>, size = 8Kb)</p><p><code>Content not shown - (</code><code>application/elm+json</code>, size = 15Kb)</p></div>"

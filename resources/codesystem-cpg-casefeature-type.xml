@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="cpg-indicator"/>
+    <id value="cpg-casefeature-type"/>
 		<meta>
 			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
 		</meta>
@@ -15,9 +15,9 @@
     <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
       <valueCode value="structured"/>
     </extension>
-    <url value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-indicator"/>
-    <name value="CPG_Indicator"/>
-		<title value="CPG Indicator"/>
+    <url value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-casefeature-type"/>
+		<name value="CPGCaseFeatureType"/>
+    <title value="CPG Case Feature Type"/>
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2019-05-08"/>
@@ -28,23 +28,18 @@
         <value value="http://www.hl7.org/Special/committees/dss/index.cfm"/>
       </telecom>
     </contact>
-    <description value="Indicates the urgency/importance of what this recommendation conveys"/>
+    <description value="The type of a case feature, whether asserted (i.e. documented in the patient's record) or inferred (i.e. calculated from the case feature expression)"/>
     <caseSensitive value="true"/>
-		<valueSet value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-indicator"/>
+		<valueSet value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-type"/>
     <content value="complete"/>
     <concept>
-        <code value="info"/>
-        <display value="Information"/>
-        <definition value="Indicates that the recommendation is informational"/>
+      <code value="asserted"/>
+      <display value="Asserted"/>
+      <definition value="The case feature is asserted as part of the patient's record"/>
     </concept>
-    <concept>
-        <code value="warning"/>
-        <display value="Warning"/>
-        <definition value="Indicates that the recommendation is a warning"/>
-    </concept>
-    <concept>
-        <code value="critical"/>
-        <display value="Critical"/>
-        <definition value="Indicates that the recommendation is critical and the workflow should not be allowed to proceed. When implemented, an alternative pathway should be provided, and care should be taken to ensure that the user experience is not disruptive."/>
-    </concept>
+		<concept>
+			<code value="inferred"/>
+			<display value="Inferred"/>
+			<definition value="The case feature was inferred by calculation of the case feature expression"/>
+		</concept>
 </CodeSystem>

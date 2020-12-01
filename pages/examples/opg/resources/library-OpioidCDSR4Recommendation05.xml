@@ -88,14 +88,14 @@
         <codeFilter>
             <path value="status"/>
             <code>
-                <system value="http://terminology.hl7.org/CodeSystem/medication-request-status"/>
+                <system value="http://hl7.org/fhir/CodeSystem/medicationrequest-status"/>
 								<code value="active"/>
             </code>
         </codeFilter>
         <codeFilter>
             <path value="category"/>
             <code>
-                <system value="http://terminology.hl7.org/CodeSystem/medication-request-category"/>
+                <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
                 <code value="outpatient"/>
             </code>
         </codeFilter>

@@ -76,7 +76,7 @@
     }
   ],
   "library": [
-    "Library/ckd-recommendations"
+    "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"
   ],
   "action": [
     {
@@ -171,16 +171,14 @@
               "title": "Enalapril Oral Tablet; 10 mg 1 time a day (dispense 30 tablet(s); 3 refills)",
               "description": "Formulary",
               "requiredBehavior": "could",
-              "precheckBehavior": "no",
-              "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/34387257"
+              "precheckBehavior": "no"
             },
             {
               "id": "34387258",
               "title": "Lisinopril 20 MG Oral Tablet; 1 tablet(s) 1 time a day (dispense 30 tablet(s); 3 refills)",
               "description": "Formulary",
               "requiredBehavior": "could",
-              "precheckBehavior": "no",
-              "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/34387258"
+              "precheckBehavior": "no"
             }
           ]
         },
@@ -194,8 +192,7 @@
               "title": "Simvastatin Oral Tablet; 5 mg 1 time a day (dispense 30 tablet(s); 3 refills)",
               "description": "Formulary",
               "requiredBehavior": "could",
-              "precheckBehavior": "no",
-              "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/34387264"
+              "precheckBehavior": "no"
             }
           ]
         },
@@ -217,8 +214,7 @@
               "title": "Furosemide Oral Tablet; 20 mg 1 time a day (dispense 30 tablet(s); 3 refills)",
               "description": "Formulary",
               "requiredBehavior": "could",
-              "precheckBehavior": "no",
-              "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/34387266"
+              "precheckBehavior": "no"
             }
           ]
         }

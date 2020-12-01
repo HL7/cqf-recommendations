@@ -1,12 +1,30 @@
 {
   "resourceType": "PlanDefinition",
   "id": "va-ckd-protocol",
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/va-ckd-protocol",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-protocoldefinition"
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/va-ckd-protocol",
   "identifier": [
     {
       "use": "official",

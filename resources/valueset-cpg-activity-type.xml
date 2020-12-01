@@ -1,9 +1,20 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="cpg-activitytype"/>
+    <id value="cpg-activity-type"/>
 		<meta>
-      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-distributablevalueset"/>
       <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
 		</meta>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="shareable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="computable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="publishable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+      <valueCode value="structured"/>
+    </extension>
     <url value="http://hl7.org/fhir/uv/cpg/ValueSet/cpg-activity-type"/>
     <name value="CPGActivityType"/>
 		<title value="CPG Activity Type"/>

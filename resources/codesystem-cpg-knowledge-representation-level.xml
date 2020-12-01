@@ -3,6 +3,18 @@
 		<meta>
 			<profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
 		</meta>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="shareable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="computable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="publishable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+      <valueCode value="structured"/>
+    </extension>
     <url value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-representation-level"/>
 		<name value="CPG_Knowledge_Representation_Level"/>
     <title value="CPG Knowledge Representation Level"/>

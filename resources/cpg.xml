@@ -56,6 +56,18 @@
 				</reference>
 				<groupingId value="main"/>
 			</resource>
+      <resource>
+				<reference>
+					<reference value="CodeSystem/cpg-casefeature-type"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
+      <resource>
+				<reference>
+					<reference value="CodeSystem/cpg-casefeature-pertinence"/>
+				</reference>
+				<groupingId value="main"/>
+			</resource>
 			<resource>
 				<reference>
 					<reference value="CodeSystem/cpg-indicator"/>
@@ -96,85 +108,85 @@
         <reference>
           <reference value="ActivityDefinition/cpg-communicationrequest-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-collectinformation-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-enrollment-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-generatereport-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-medicationrequest-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-dispensemedication-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-administermedication-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-documentmedication-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-immunizationrecommendation-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-servicerequest-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-proposediagnosistask-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-recordinferencetask-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
       <resource>
         <reference>
           <reference value="ActivityDefinition/cpg-reportflagtask-activitydefinition"/>
         </reference>
-        <groupingId value="Main"/>
+        <groupingId value="main"/>
       </resource>
 			<resource>
 				<reference>
@@ -893,21 +905,37 @@
         <reference>
           <reference value="ValueSet/cpg-activity-type"/>
         </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ValueSet/cpg-casefeature-type"/>
+        </reference>
+        <groupingId value="main"/>
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ValueSet/cpg-casefeature-pertinence"/>
+        </reference>
+        <groupingId value="main"/>
       </resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/cpg-recommendation-direction"/>
 				</reference>
+        <groupingId value="main"/>
 			</resource>
       <resource>
 				<reference>
 					<reference value="ValueSet/cpg-knowledge-capability"/>
 				</reference>
+        <groupingId value="main"/>
 			</resource>
       <resource>
 				<reference>
 					<reference value="ValueSet/cpg-knowledge-representation-level"/>
 				</reference>
+        <groupingId value="main"/>
 			</resource>
 			<resource>
 				<reference>
@@ -940,6 +968,7 @@
 					<reference value="Library/ANCCommon"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary"/>
+        <groupingId value="anc-example"/>
 			</resource>
 			<resource>
 				<reference>
@@ -989,49 +1018,49 @@
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-edu-hypertension"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-edu-renal-diet"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-lab-creatinine"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-lab-metabolic"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-referral-dietition"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-referral-nephrology"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/cc-cpg-activity-ultrasound-renal"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
@@ -1046,14 +1075,14 @@
 				<reference>
 					<reference value="ActivityDefinition/ckd-risk-referral-nephrology"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ActivityDefinition/ckd-risk-renal-lab-order"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="ckd-example"/>
 			</resource>
 			<resource>
@@ -1142,7 +1171,7 @@
 				<reference>
 					<reference value="ActivityDefinition/opioidcds-riskassessment-request"/>
 				</reference>
-				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-activitydefinition"/>
+				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"/>
 				<groupingId value="opg-example"/>
 			</resource>
 			<resource>

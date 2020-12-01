@@ -81,12 +81,7 @@
 		<documentation>
 			<type value="documentation"/>
 			<display value="CDC guideline for prescribing opioids for chronic pain"/>
-			<url value="https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fmmwr%2Fvolumes%2F65%2Frr%2Frr6501e1er.htm"/>
-		</documentation>
-		<documentation>
-			<type value="documentation"/>
 			<document>
-				<!-- We can use the example code systems from the FHIR CLinical Reasoning Module, or we can define GRADE specific code systems and use those here -->
 				<extension url="http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation">
 					<valueCodeableConcept>
 						<coding>
@@ -105,7 +100,11 @@
 						</coding>
 					</valueCodeableConcept>
 				</extension>
+				<url value="https://www.cdc.gov/mmwr/volumes/65/rr/rr6501e1.htm?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fmmwr%2Fvolumes%2F65%2Frr%2Frr6501e1er.htm"/>
 			</document>
+		</documentation>
+		<documentation>
+			<type value="documentation"/>
 		</documentation>
 		<trigger>
 			<type value="named-event"/>

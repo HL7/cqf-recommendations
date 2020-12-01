@@ -226,6 +226,14 @@
 			"source": "codesystem-cpg-activity-type.xml",
 			"base": "CodeSystem-cpg-activity-type.html"
 		},
+    "CodeSystem/cpg-casefeature-type": {
+			"source": "codesystem-cpg-casefeature-type.xml",
+			"base": "CodeSystem-cpg-casefeature-type.html"
+		},
+    "CodeSystem/cpg-casefeature-pertinence": {
+			"source": "codesystem-cpg-casefeature-pertinence.xml",
+			"base": "CodeSystem-cpg-casefeature-pertinence.html"
+		},
 		"CodeSystem/cpg-indicator": {
 			"source": "codesystem-cpg-indicator.xml",
 			"base": "CodeSystem-cpg-indicator.html"
@@ -334,6 +342,14 @@
     "ValueSet/cpg-activity-type": {
 			"source": "valueset-cpg-activity-type.xml",
 			"base": "ValueSet-cpg-activity-type.html"
+		},
+    "ValueSet/cpg-casefeature-type": {
+			"source": "valueset-cpg-casefeature-type.xml",
+			"base": "ValueSet-cpg-casefeature-type.html"
+		},
+    "ValueSet/cpg-casefeature-pertinence": {
+			"source": "valueset-cpg-casefeature-pertinence.xml",
+			"base": "ValueSet-cpg-casefeature-pertinence.html"
 		},
 		"ValueSet/cpg-indicator": {
 			"source": "valueset-cpg-indicator.xml",
