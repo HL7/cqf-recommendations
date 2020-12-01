@@ -287,6 +287,9 @@
       "source": "library-SendMessage.json",
       "base": "Library-SendMessage.html"
     },
+    "OperationDefinition/cpg-careplan-apply": {
+      "base": "OperationDefinition-cpg-careplan-apply.html"
+    },
     "OperationDefinition/cpg-plandefinition-apply": {
       "base": "OperationDefinition-cpg-plandefinition-apply.html"
     },

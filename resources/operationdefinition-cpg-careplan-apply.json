@@ -1,0 +1,129 @@
+{
+   "resourceType":"OperationDefinition",
+   "id":"cpg-careplan-apply",
+   "extension":[
+      {
+         "url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+         "valueInteger":2
+      },
+      {
+         "url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+         "valueCode":"trial-use"
+      }
+   ],
+   "url":"http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-careplan-apply",
+   "version":"4.0.1",
+   "name":"Apply",
+   "status":"draft",
+   "kind":"operation",
+   "date":"2019-11-01T09:29:23+11:00",
+   "publisher":"HL7 (FHIR Project)",
+   "contact":[
+      {
+         "telecom":[
+            {
+               "system":"url",
+               "value":"http://hl7.org/fhir"
+            },
+            {
+               "system":"email",
+               "value":"fhir@lists.hl7.org"
+            }
+         ]
+      }
+   ],
+   "description":"The apply operation applies any conditional logic within a CarePlan to a given context",
+   "code":"apply",
+   "comment":"The result of this operation is the updated CarePlan resource that is the result of applying any optional logic in any RequestGroup activities in the input CarePlan. The resulting RequestGroups will have actions for each of the applicable actions in the requestgroup based on evaluating the applicability condition in context. For each applicable action, the definition is applied as described in the $apply operation of the ActivityDefinition resource, and the resulting resource is added as an activity to the CarePlan. If the ActivityDefinition includes library references, those libraries will be available to the evaluated expressions. If those libraries have parameters, those parameters will be bound by name to the parameters given to the operation. In addition, parameters to the $apply operation are available within dynamicValue expressions as context variables, accessible by the name of the parameter, prefixed with a percent (%) symbol. For a more detailed description, refer to the PlanDefinition and ActivityDefinition resource documentation. Note that result of this operation is transient (i.e. none of the resources created by the operation are persisted in the server, they are all returned as contained resources in the result). The result effectively represents a proposed set of activities, and it is up to the caller to determine whether and how those activities are actually carried out.",
+   "resource":[
+      "CarePlan"
+   ],
+   "system":false,
+   "type":false,
+   "instance":true,
+   "parameter":[
+      {
+         "name":"encounter",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"The encounter in context, if any",
+         "type":"string",
+         "searchType":"reference"
+      },
+      {
+         "name":"practitioner",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"The practitioner applying the plan definition",
+         "type":"string",
+         "searchType":"reference"
+      },
+      {
+         "name":"organization",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"The organization applying the plan definition",
+         "type":"string",
+         "searchType":"reference"
+      },
+      {
+         "name":"userType",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"The type of user initiating the request, e.g. patient, healthcare provider, or specific type of healthcare provider (physician, nurse, etc.)",
+         "type":"CodeableConcept"
+      },
+      {
+         "name":"userLanguage",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"Preferred language of the person using the system",
+         "type":"CodeableConcept"
+      },
+      {
+         "name":"userTaskContext",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"The task the system user is performing, e.g. laboratory results review, medication list review, etc. This information can be used to tailor decision support outputs, such as recommended information resources",
+         "type":"CodeableConcept"
+      },
+      {
+         "name":"setting",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"The current setting of the request (inpatient, outpatient, etc.)",
+         "type":"CodeableConcept"
+      },
+      {
+         "name":"settingContext",
+         "use":"in",
+         "min":0,
+         "max":"1",
+         "documentation":"Additional detail about the setting of the request, if any",
+         "type":"CodeableConcept"
+      },
+      {
+        "name":"mergeNestedCarePlans",
+        "use":"in",
+        "min":0,
+        "max":"1",
+        "documentation":"True if the result of any nested PlanDefinitions should be merged into the final care plan, false if they should be preserved as nested CarePlans in the output. If this parameter is not specified, the default behavior is to preserve nested care plans in the output.",
+        "type":"boolean"
+      },
+      {
+         "name":"return",
+         "use":"out",
+         "min":1,
+         "max":"1",
+         "documentation":"The CarePlan that is the result of applying the optional aspects of the input CarePlan",
+         "type":"CarePlan"
+      }
+   ]
+}
