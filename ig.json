@@ -31,11 +31,17 @@
       "template-format": "instance-template-format.html",
       "template-base": "instance-template-base.html"
     },
+    "CodeSystem": {
+        "template-base": "instance-template-codesystem.html"
+    },
     "StructureDefinition" : {
       "template-base": "instance-template-sd.html",
       "template-mappings": "instance-template-sd-mappings.html",
       "template-defns": "instance-template-sd-definitions.html"
-    }
+    },
+    "ValueSet": {
+			"template-base": "instance-template-valueset.html"
+		}
   },
   "logging": [ "init", "progress", "context", "html", "tx" ],
   "suppressedWarningFile": "suppressed-messages.txt",
