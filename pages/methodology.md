@@ -140,7 +140,7 @@ The _validate_ step involves ensuring that the structured content meets the requ
 * [**Conformance**](#validate-conformance): Conformance checking of the profiles and conformance requirements of this implementation guide
 * [**Checklists**](#validate-checklists): Checklists to help determine readiness and facilitate communication
 * [**Expert Review**](#validate-expert-review): Review by relevant subject matter experts
-* [**Test Scenarios**](#validate-test-scenarios): Test scenarios that exercise happy paths as well as edge cases
+* [**Test Scenarios**](#validate-testing-scenarios): Test scenarios that exercise happy paths as well as edge cases
 * [**Unit Testing**](#validate-unit-testing): Testing that each piece functions correctly in isolation
 * [**Component Testing**](#validate-component-testing): Testing that the components function correctly together
 * [**Integration Testing**](#validate-integration-testing): Testing that the artifacts behave correctly in simulated target environments
@@ -187,7 +187,7 @@ Content conforming to this implementation guide MAY identify personas using the 
 ### 3.3.2 Activities
 {: #select-activities}
 
-Activities identified as part of the select step are the narrative description of _what_ needs to happen. This implementation guide defines the [Activity Type](CodeSystem-cpg-activitytype) CodeSystem to support computable representation of clinical activities:
+Activities identified as part of the select step are the narrative description of _what_ needs to happen. This implementation guide defines the [Activity Type](CodeSystem-cpg-activity-type.html) CodeSystem to support computable representation of clinical activities:
 
 * **Send a message**: Communicating a particular message to a patient or other related participant
 * **Collect information**: Collect information from a patient or other relevant participant using a questionnaire
@@ -386,7 +386,7 @@ In addition, content implementation guides will typically select a target realm 
 
 For terminology, the _translate_ step involves identifying and/or constructing appropriate value sets for the concepts referred to in the selected recommendations. This step is typically performed by the terminologist with help from the knowledge engineering role to assist in creating FHIR representations. For terminology servers that already support authoring and distribution of FHIR ValueSet resources, this is less of an issue, but often there are not complete solutions available, and additional tooling is required to support the terminology publishing needs.
 
-Specifically, terminology that is included as part of content implementation guides SHALL be at least [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset), and SHOULD be Computable, Publishable, and/or Executable, depending on the target.
+Specifically, terminology that is included as part of content implementation guides SHALL be at least [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html), and SHOULD be Computable, Publishable, and/or Executable, depending on the target.
 
 For more discussion on the creation and distribution of value sets, see the [Terminology](terminology.html) page.
 
@@ -397,7 +397,7 @@ For criteria, the _translate_ step involves expressing the inclusion and exclusi
 
 Once the CQL libraries are authored, they can be included in the content implementation guide using the [binary adjunct loader](https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-BinaryAdjunctFiles) feature of the FHIR IG publisher.
 
-For more discussion on the creation and distribution of libraries, see the [Libraries](library.html)
+For more discussion on the creation and distribution of libraries, see the [Libraries](libraries.html)
 
 ### 3.5.4 Activities
 {: #translate-activities}
@@ -464,9 +464,9 @@ This implementation guide defines profiles for each of the request resources to 
 * [ImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html): Recommendation for a particular immunization
 * [MedicationRequest](StructureDefinition-cpg-medicationrequest.html): Recommendation for a specific medication
 * [ProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html): Recommendation to propose a specific diagnosis
-* [CollectInformationTask](StructureDefinition-cpg-collectinformationtask.html): Recommendation to collect specific information using a questionnaire
+* [QuestionnaireTask](StructureDefinition-cpg-questionnairetask.html): Recommendation to collect specific information using a questionnaire
 * [EnrollmentTask](StructureDefinition-cpg-enrollmenttask.html): Recommendation to enroll (or unenroll) a patient in a pathway or strategy
-* [GenerateReportTask](StructureDefinition-cpg-generatereportask.html): Recommendation to generate a metric, measure, or case report
+* [GenerateReportTask](StructureDefinition-cpg-generatereporttask.html): Recommendation to generate a metric, measure, or case report
 * [RecordDetectedIssueTask](StructureDefinition-cpg-recorddetectedissuetask.html): Recommendation to record a specific detected issue
 * [RecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html): Recommendation to record a specific inference
 * [ReportFlagTask](StructureDefinition-cpg-reportflagtask.html): Recommendation to report a particular flag
@@ -503,7 +503,7 @@ The following table details the _event_ profiles for each activity type. Note th
 |Dispense medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)|
 |Document medication|[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Enrollment|[CPGCase](StructureDefinition-cpg-case.html)|
-|Generate report|[CPGMetricReport](StructureDefinition-cpg-metricreport.html)<br/>[CPGCaseSummary](StructureDefinition-cpg-casesummary.html)<br/>[CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary)<br/>[CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html)|
+|Generate report|[CPGMetricReport](StructureDefinition-cpg-metricreport.html)<br/>[CPGCaseSummary](StructureDefinition-cpg-casesummary.html)<br/>[CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html)<br/>[CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html)|
 |Order a medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)<br/>[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)<br/>[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Recommend an immunization|[CPGImmunization](StructureDefinition-cpg-immunization.html)|
 |Order a service|[CPGProcedure](StructureDefinition-cpg-procedure.html)<br/>[CPGObservation](StructureDefinition-cpg-observation.html)<br/>[CPGDiagnosticReport](StructureDefinition-cpg-diagnosticreport.html)|

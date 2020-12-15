@@ -20,12 +20,11 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>9135</WindowHeight>
-  <WindowWidth>22035</WindowWidth>
+  <WindowHeight>18450</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>3</ActiveSheet>
-  <RefModeR1C1/>
+  <ActiveSheet>4</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -39,7 +38,7 @@
    <Protection/>
   </Style>
   <Style ss:ID="s62" ss:Name="Hyperlink">
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#0000FF"
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0000FF"
     ss:Underline="Single"/>
   </Style>
   <Style ss:ID="s63" ss:Name="Normal 2">
@@ -375,7 +374,7 @@
     <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
     <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"/>
    </Borders>
-   <Font ss:FontName="Calibri" ss:Size="11" ss:Bold="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
    <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
   </Style>
   <Style ss:ID="s102">
@@ -2076,6 +2075,69 @@
     <Cell ss:StyleID="s116"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s117"><Data ss:Type="String">strengthOfRecommendation</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">PlanDefinition.action.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s121"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s117"><Data ss:Type="String">directionOfRecommendation</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">PlanDefinition.action.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-directionOfRecommendation}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s121"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s117"><Data ss:Type="String">qualityOfEvidence</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">PlanDefinition.action.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:Index="16" ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s121"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s111"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s112"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s112"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2248,69 +2310,6 @@
     <Cell ss:StyleID="s73"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s73"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s116"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s117"><Data ss:Type="String">strengthOfRecommendation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">PlanDefinition.action.documentation.extension</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation}</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16" ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s121"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s117"><Data ss:Type="String">directionOfRecommendation</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">PlanDefinition.action.documentation.extension</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-directionOfRecommendation}</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16" ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s121"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s117"><Data ss:Type="String">qualityOfEvidence</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="4"><Data ss:Type="String">PlanDefinition.action.documentation.extension</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="6"><Data ss:Type="String">0..1</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="8"><Data ss:Type="String">Extension{http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence}</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell><Data ss:Type="String">Y</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:Index="16" ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s118"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s119"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s120"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s121"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s111"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3403,11 +3402,10 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>1</TopRowBottomPane>
+   <TopRowBottomPane>4</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
    <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -3421,10 +3419,11 @@
     </Pane>
     <Pane>
      <Number>2</Number>
+     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>6</ActiveRow>
+     <ActiveRow>16</ActiveRow>
      <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
@@ -3565,7 +3564,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s130"><Data ss:Type="String">Element</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s130"><Data ss:Type="String">ActivityDefinition;PlanDefinition</Data><NamedCell
+    <Cell ss:StyleID="s130"><Data ss:Type="String">PlanDefinition.action</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s130"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -4551,6 +4550,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -4571,8 +4571,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>3</ActiveRow>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

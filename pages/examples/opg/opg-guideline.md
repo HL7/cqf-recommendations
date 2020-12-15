@@ -20,7 +20,7 @@ When opioids are started, providers should prescribe the lowest effective dosage
   <li>When</li>
     <ul>
       <li>Provider is prescribing an opioid analgesic with ambulatory misuse potential in the outpatient setting</li>
-      <li>Prescription is for treating <a href="chronic-pain.html">chronic pain</a>.</li>
+      <li>Prescription is for treating chronic pain.</li>
       <li>Opioid review is useful for this patient:</li>
         <ul>
           <li>Patient is 18 or over</li>

@@ -19,7 +19,7 @@
 		<coding>
 			<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"/>
 			<code value="record-detected-issue"/>
-			<display value="Record Detected Issue"/>
+			<display value="Record a detected issue"/>
 		</coding>
 	</code>
 	<!-- Set status to the string value 'draft' -->

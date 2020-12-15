@@ -107,7 +107,7 @@ This example includes a small subset of the VA/DoD guideline and recommendations
 
 * Create a patient-specific care plan with interventions (order sets) determined by guideline recommendations.
   * Delivered as a FHIR CarePlan resource with associated activities, including MedicationRequest, ServiceRequest, and Appointment resources. May include a new or revised FHIR CareTeam resource specifying participants and their roles.
-	
+
 * [CKD Plan](../../PlanDefinition-cc-cpg-plan-ckd.html)
 
 Order sets from CKD practice guidelines are categorized for presentation to clinicians and/or when creating and executing order sets that require different order management processes. The provided examples include the following order set categories:
@@ -129,7 +129,7 @@ Example FHIR resources in folder: 'risk-recommendations'.
 * [CKD Risk Logic CQL](CKDRiskLogic-1.0.html)
 * [CKD Risk Referral Nephrology ActivityDefinition](../../ActivityDefinition-ckd-risk-referral-nephrology.html)
 * [CKD Risk Renal Lab Order](../../ActivityDefinition-ckd-risk-renal-lab-order.html)
-* [CKD Risk Recommendations Library](../../Library-ckd-risk-recommendations.html)
+* [CKD Risk Recommendations Library](../../Library-CKDRiskLogic.html)
 * [CKD Risk Screening PlanDefinition](../../PlanDefinition-ckd-risk-screening.html)
 * [CKD Valueset](../../ValueSet-ckd-valueset-ckd.html)
 * [CKD Creatinine ValueSet](../../ValueSet-ckd-valueset-creatinine.html)

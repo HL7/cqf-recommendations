@@ -2,6 +2,7 @@
 id: {{[id]}}
 title: {{[title]}}
 tcode: {{[type]}}
+topofpage: true
 ---
 
 {% include header.html %}
@@ -18,19 +19,24 @@ tcode: {{[type]}}
 </ul>
 
 <h3>
-  <span class="sectioncount">D.4.1<a name="D.4.1"> </a></span> StructureDefinition: {{page.id}}
-  <a title="link to here" class="self-link" href="StructureDefinition-{{page.id}}.html#D.4.1"><img src="target.png"/></a>
+  <span class="sectioncount">D.4.1<a name="D.4.1"> </a></span> {{[type]}}-{{[id]}}
+  <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#D.4.1"><img src="target.png"/></a>
 </h3>
 
+<h4 style="margin-top:1em">Introduction:</h4>
+<div>
+{% include {{[id]}}-introduction.html %}
+</div>
+
 <a name="examples"> </a>
-<h4>Examples:</h4>
+<h4 style="margin-top:1em">Examples:</h4>
 <table class="list">
   {% include {{[id]}}-ex.html %}
 </table>
 <a name="profile"> </a>
 <h4><span class="sectioncount">D.4.1.1</span>
 Formal Views of Profile Content
- <a title="link to here" class="self-link" href="StructureDefinition-{{page.id}}.html#profile"><img src="target.png"/></a>
+ <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#profile"><img src="target.png"/></a>
 </h4>
 <!-- uri -->
 {% include StructureDefinition-{{page.id}}-header.xhtml %}
@@ -44,6 +50,10 @@ Formal Views of Profile Content
   <li><a href="#tabs-summ">Text Summary</a></li>
   <li><a href="#tabs-diff">Differential Table</a></li>
   <li><a href="#tabs-snap">Snapshot Table</a></li>
+<!--
+<li><a href="#tabs-xml">XML Template</a></li>
+<li><a href="#tabs-json">JSON Template</a></li>
+-->
   <li><a href="#tabs-all">All</a></li>
  </ul>
 
@@ -52,7 +62,7 @@ Formal Views of Profile Content
    <!--<p>This structure is derived from <a href="{{site.data.structuredefinitions[page.id].base}}">{{site.data.structuredefinitions[page.id].basename}}</a> </p>-->
    <div id="tbl-diff-inner">
      <a name="summary"> </a>
-     {% include StructureDefinition-{{page.id}}-summary.xhtml %}
+     {% include {{[type]}}-{{[id]}}-summary.xhtml %}
    </div>
   </div>
  </div>
@@ -61,7 +71,7 @@ Formal Views of Profile Content
   <div id="tbl-diff">
    <!--<p>This structure is derived from <a href="{{site.data.structuredefinitions[page.id].base}}">{{site.data.structuredefinitions[page.id].basename}}</a> </p>-->
    <div id="tbl-diff-inner">
-    {% include StructureDefinition-{{page.id}}-diff.xhtml %}
+    {% include {{[type]}}-{{[id]}}-diff.xhtml %}
    </div>
   </div>
  </div>
@@ -69,7 +79,7 @@ Formal Views of Profile Content
  <div id="tabs-snap">
   <div id="tbl-snap">
    <div id="tbl-snap-inner">
-    {% include StructureDefinition-{{page.id}}-snapshot.xhtml %}
+    {% include {{[type]}}-{{[id]}}-snapshot.xhtml %}
    </div>
   </div>
  </div>
@@ -79,34 +89,34 @@ Formal Views of Profile Content
    <!--<p>This structure is derived from <a href="{{site.data.structuredefinitions[page.id].base}}">{{site.data.structuredefinitions[page.id].basename}}</a>.</p>-->
    <div id="tbl-diff-inner">
      <a name="summary"> </a>
-     {% include StructureDefinition-{{page.id}}-summary.xhtml %}
+     {% include {{[type]}}-{{[id]}}-summary.xhtml %}
    </div>
   </div>
 
  <div id="all-tbl-diff">
-   <p><b>Differential View</b></p>
+   <p><strong>Differential View</strong></p>
    <!--<p>This structure is derived from <a href="{{site.data.structuredefinitions[page.id].base}}">{{site.data.structuredefinitions[page.id].basename}}</a>.</p>-->
    <div id="all-tbl-diff-inner">
-    {% include StructureDefinition-{{page.id}}-diff.xhtml %}
+    {% include {{[type]}}-{{[id]}}-diff.xhtml %}
    </div>
   </div>
   <div id="all-tbl-snap">
-   <p><b>Snapshot View</b></p>
+   <p><strong>Snapshot View</strong></p>
    <div id="all-tbl-snap-inner">
-    {% include StructureDefinition-{{page.id}}-snapshot.xhtml %}
+    {% include {{[type]}}-{{[id]}}-snapshot.xhtml %}
    </div>
   </div>
   <!-- Uncomment once tooling is improved/implemented -->
   <!--<div id="all-xml">
-   <p><b>XML Template</b></p>
+   <p><strong>XML Template</strong></p>
    <div id="all-xml-inner">
-    {% include StructureDefinition-{{page.id}}-pseudo-xml.xhtml %}
+    {% include {{[type]}}-{{[id]}}-pseudo-xml.xhtml %}
    </div>
   </div>
   <div id="all-json">
-   <p><b>JSON Template</b></p>
+   <p><strong>JSON Template</strong></p>
    <div id="all-json-inner">
-    {% include StructureDefinition-{{page.id}}-pseudo-json.xhtml %}
+    {% include {{[type]}}-{{[id]}}-pseudo-json.xhtml %}
    </div>
   </div>-->
  </div>
@@ -115,11 +125,11 @@ Formal Views of Profile Content
 <p>&nbsp;</p>
 
 <a name="tx"> </a>
-<h4><span class="sectioncount">D.4.1.2</span> Terminology Bindings <a title="link to here" class="self-link" href="StructureDefinition-{{page.id}}.html#tx"><img src="target.png"/></a></h4>
-{% include StructureDefinition-{{page.id}}-tx.xhtml %}
+<h4><span class="sectioncount">D.4.1.2</span> Terminology Bindings <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#tx"><img src="target.png"/></a></h4>
+{% include {{[type]}}-{{[id]}}-tx.xhtml %}
 
-<h4><span class="sectioncount">D.4.1.3<a name="D.4.1.3"> </a></span> Constraints <a title="link to here" class="self-link" href="StructureDefinition-{{page.id}}.html#D.4.1.3"><img src="target.png"/></a></h4>
-{% include StructureDefinition-{{page.id}}-inv.xhtml %}
+<h4><span class="sectioncount">D.4.1.3<a name="D.4.1.3"> </a></span> Constraints <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}.html#D.4.1.3"><img src="target.png"/></a></h4>
+{% include {{[type]}}-{{[id]}}-inv.xhtml %}
 
 {% include container-end.html %}
 

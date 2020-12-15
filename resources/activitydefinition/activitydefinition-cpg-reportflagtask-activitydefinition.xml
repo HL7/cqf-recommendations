@@ -19,7 +19,7 @@
 		<coding>
 			<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"/>
 			<code value="report-flag"/>
-			<display value="Report Flag"/>
+			<display value="Report a flag"/>
 		</coding>
 	</code>
 	<!-- Set status to the string value 'draft' -->

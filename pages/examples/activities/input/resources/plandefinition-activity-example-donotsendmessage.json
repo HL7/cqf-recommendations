@@ -27,7 +27,7 @@
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-donotsendmessage",
   "name": "ActivityExampleDoNotSendMessage",
   "title": "Activity Example Do Not Send Message",
-  "description": "Activity Example Do Not Send Message",
+  "description": "Example Plan Definition for a recommendation not to send a message",
   "type": {
     "coding": [
       {
@@ -38,7 +38,7 @@
   },
   "status": "draft",
   "experimental": true,
-  "publisher": "HL7 FHIR Clinical Guidelines Example Artifact",
+  "publisher": "HL7 International - Clinical Decision Support WG",
   "library": [ "http://hl7.org/fhir/uv/cpg/Library/DoNotSendMessage" ],
   "action": [
     {

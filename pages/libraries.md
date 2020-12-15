@@ -92,7 +92,7 @@ All CQL expressions used directly or indirectly within an artifact SHALL referen
 For example:
 
 ```cql
-using FHIR version '4.0.0'
+using FHIR version '4.0.1'
 ```
 ### 6.1.3 Code Systems
 {: #code-systems}

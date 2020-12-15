@@ -1093,7 +1093,7 @@
 			</resource>
 			<resource>
 				<reference>
-					<reference value="Library/ckd-risk-recommendations"/>
+					<reference value="Library/CKDRiskLogic"/>
 				</reference>
 				<exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary"/>
 				<groupingId value="ckd-example"/>

@@ -1,5 +1,6 @@
 ---
 # jekyll header
+topofpage: true
 ---
 
 {% include header.html %}
@@ -16,7 +17,7 @@
 </ul>
 
 <h4>
-  <span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition: {{[id]}} - Detailed Descriptions
+  <span class="sectioncount">D.4.1.4<a name="D.4.1.4"> </a></span> StructureDefinition:{{page.type}} - Detailed Descriptions
   <a title="link to here" class="self-link" href="{{[type]}}-{{[id]}}-definitions.html#D.4.1.4">
     <img src="target.png"/>
   </a>
@@ -25,7 +26,7 @@
 <p>Definitions for the {{[type]}}-{{[id]}} Profile.</p>
 
 {% include {{[type]}}-{{[id]}}-dict.xhtml %}
-         
+
 {% include container-end.html %}
 
 {% include footer.html %}

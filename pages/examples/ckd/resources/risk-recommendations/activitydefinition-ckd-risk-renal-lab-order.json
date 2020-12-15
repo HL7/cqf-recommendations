@@ -29,7 +29,7 @@
   "name": "OrderRenalLabPanel",
   "title": "Order Renal Lab Panel",
   "description": "Create ServiceRequest to order Renal lab panel.",
-  "experimental": "true",
+  "experimental": true,
   "publisher": "HL7 FHIR Clinical Guidelines Example Artifact",
   "library": [
     "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"

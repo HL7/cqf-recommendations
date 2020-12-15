@@ -24,7 +24,7 @@
     "output": "output",
     "qa": "qa",
     "specification": "http://hl7.org/fhir/R4/",
-		"history": "http://hl7.org/fhir/uv/cpg/history.cfml"
+		"history": "http://hl7.org/fhir/uv/cpg/history.html"
   },
   "defaults": {
     "Any": {
@@ -387,45 +387,41 @@
 		"ValueSet/opioids-with-ambulatory-abuse-potential": {
 			"base": "ValueSet-opioids-with-ambulatory-abuse-potential.html"
 		},
+    "StructureDefinition/cpg-administermedication": {
+      "defns": "StructureDefinition-cpg-administermedication-definitions.html",
+      "base": "StructureDefinition-cpg-administermedication.html"
+    },
+    "StructureDefinition/cpg-administermedicationtask": {
+      "defns": "StructureDefinition-cpg-administermedicationtask-definitions.html",
+      "base": "StructureDefinition-cpg-administermedicationtask.html"
+    },
+    "StructureDefinition/cpg-answerValueSetSource": {
+      "defns": "StructureDefinition-cpg-answerValueSetSource-definitions.html",
+      "base": "StructureDefinition-cpg-answerValueSetSource.html"
+    },
+    "StructureDefinition/cpg-appointment": {
+      "defns": "StructureDefinition-cpg-appointment-definitions.html",
+      "base": "StructureDefinition-cpg-appointment.html"
+    },
     "StructureDefinition/cpg-artifactbundle": {
       "defns": "StructureDefinition-cpg-artifactbundle-definitions.html",
       "base": "StructureDefinition-cpg-artifactbundle.html"
     },
-    "StructureDefinition/cpg-testcasebundle": {
-      "defns": "StructureDefinition-cpg-testcasebundle-definitions.html",
-      "base": "StructureDefinition-cpg-testcasebundle.html"
+    "StructureDefinition/cpg-assertionExpression": {
+      "defns": "StructureDefinition-cpg-assertionExpression-definitions.html",
+      "base": "StructureDefinition-cpg-assertionExpression.html"
     },
-    "StructureDefinition/cpg-case": {
-      "defns": "StructureDefinition-cpg-case-definitions.html",
-      "base": "StructureDefinition-cpg-case.html"
+    "StructureDefinition/cpg-assetcollection": {
+      "defns": "StructureDefinition-cpg-assetcollection-definitions.html",
+      "base": "StructureDefinition-cpg-assetcollection.html"
     },
-    "StructureDefinition/cpg-casesummary": {
-      "defns": "StructureDefinition-cpg-casesummary-definitions.html",
-      "base": "StructureDefinition-cpg-casesummary.html"
-    },
-    "StructureDefinition/cpg-casesummarydefinition": {
-      "defns": "StructureDefinition-cpg-casesummarydefinition-definitions.html",
-      "base": "StructureDefinition-cpg-casesummarydefinition.html"
-    },
-    "StructureDefinition/cpg-caseplansummary": {
-      "defns": "StructureDefinition-cpg-caseplansummary-definitions.html",
-      "base": "StructureDefinition-cpg-caseplansummary.html"
-    },
-    "StructureDefinition/cpg-caseplansummarydefinition": {
-      "defns": "StructureDefinition-cpg-caseplansummarydefinition-definitions.html",
-      "base": "StructureDefinition-cpg-caseplansummarydefinition.html"
-    },
-    "StructureDefinition/cpg-caseplanprogressingnote": {
-      "defns": "StructureDefinition-cpg-caseplanprogressingnote-definitions.html",
-      "base": "StructureDefinition-cpg-caseplanprogressingnote.html"
+    "StructureDefinition/cpg-author": {
+      "defns": "StructureDefinition-cpg-author-definitions.html",
+      "base": "StructureDefinition-cpg-author.html"
     },
     "StructureDefinition/cpg-careplan": {
       "defns": "StructureDefinition-cpg-careplan-definitions.html",
       "base": "StructureDefinition-cpg-careplan.html"
-    },
-    "StructureDefinition/cpg-clinicalimpression": {
-      "defns": "StructureDefinition-cpg-clinicalimpression-definitions.html",
-      "base": "StructureDefinition-cpg-clinicalimpression.html"
     },
     "StructureDefinition/cpg-careteam": {
       "defns": "StructureDefinition-cpg-careteam-definitions.html",
@@ -435,117 +431,241 @@
       "defns": "StructureDefinition-cpg-careteamdefinition-definitions.html",
       "base": "StructureDefinition-cpg-careteamdefinition.html"
     },
-    "StructureDefinition/cpg-relatedperson": {
-      "defns": "StructureDefinition-cpg-relatedperson-definitions.html",
-      "base": "StructureDefinition-cpg-relatedperson.html"
+    "StructureDefinition/cpg-case": {
+      "defns": "StructureDefinition-cpg-case-definitions.html",
+      "base": "StructureDefinition-cpg-case.html"
     },
-    "StructureDefinition/cpg-computableactivity": {
-      "defns": "StructureDefinition-cpg-computableactivity-definitions.html",
-      "base": "StructureDefinition-cpg-computableactivity.html"
+    "StructureDefinition/cpg-casefeaturedefinition": {
+      "defns": "StructureDefinition-cpg-casefeaturedefinition-definitions.html",
+      "base": "StructureDefinition-cpg-casefeaturedefinition.html"
     },
-    "StructureDefinition/cpg-condition": {
-      "defns": "StructureDefinition-cpg-condition-definitions.html",
-      "base": "StructureDefinition-cpg-condition.html"
+    "StructureDefinition/cpg-caseFeatureOf": {
+      "defns": "StructureDefinition-cpg-caseFeatureOf-definitions.html",
+      "base": "StructureDefinition-cpg-caseFeatureOf.html"
     },
-    "StructureDefinition/cpg-observation": {
-      "defns": "StructureDefinition-cpg-observation-definitions.html",
-      "base": "StructureDefinition-cpg-observation.html"
+    "StructureDefinition/cpg-caseFeaturePertinence": {
+      "defns": "StructureDefinition-cpg-caseFeaturePertinence-definitions.html",
+      "base": "StructureDefinition-cpg-caseFeaturePertinence.html"
     },
-    "StructureDefinition/cpg-detectedissue": {
-      "defns": "StructureDefinition-cpg-detectedissue-definitions.html",
-      "base": "StructureDefinition-cpg-detectedissue.html"
+    "StructureDefinition/cpg-caseFeatureType": {
+      "defns": "StructureDefinition-cpg-caseFeatureType-definitions.html",
+      "base": "StructureDefinition-cpg-caseFeatureType.html"
     },
-    "StructureDefinition/cpg-flag": {
-      "defns": "StructureDefinition-cpg-flag-definitions.html",
-      "base": "StructureDefinition-cpg-flag.html"
+    "StructureDefinition/cpg-caseplanprogressingnote": {
+      "defns": "StructureDefinition-cpg-caseplanprogressingnote-definitions.html",
+      "base": "StructureDefinition-cpg-caseplanprogressingnote.html"
     },
-    "StructureDefinition/cpg-groupdefinition": {
-      "defns": "StructureDefinition-cpg-groupdefinition-definitions.html",
-      "base": "StructureDefinition-cpg-groupdefinition.html"
+    "StructureDefinition/cpg-caseplansummary": {
+      "defns": "StructureDefinition-cpg-caseplansummary-definitions.html",
+      "base": "StructureDefinition-cpg-caseplansummary.html"
     },
-    "StructureDefinition/cpg-group": {
-      "defns": "StructureDefinition-cpg-group-definitions.html",
-      "base": "StructureDefinition-cpg-group.html"
+    "StructureDefinition/cpg-caseplansummarydefinition": {
+      "defns": "StructureDefinition-cpg-caseplansummarydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-caseplansummarydefinition.html"
     },
-    "StructureDefinition/cpg-shareableactivitydefinition": {
-      "defns": "StructureDefinition-cpg-shareableactivitydefinition-definitions.html",
-      "base": "StructureDefinition-cpg-shareableactivitydefinition.html"
+    "StructureDefinition/cpg-casesummary": {
+      "defns": "StructureDefinition-cpg-casesummary-definitions.html",
+      "base": "StructureDefinition-cpg-casesummary.html"
     },
-    "StructureDefinition/cpg-publishableactivity": {
-      "defns": "StructureDefinition-cpg-publishableactivity-definitions.html",
-      "base": "StructureDefinition-cpg-publishableactivity.html"
+    "StructureDefinition/cpg-casesummarydefinition": {
+      "defns": "StructureDefinition-cpg-casesummarydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-casesummarydefinition.html"
     },
-    "StructureDefinition/cpg-communicationactivity": {
-      "defns": "StructureDefinition-cpg-communicationactivity-definitions.html",
-      "base": "StructureDefinition-cpg-communicationactivity.html"
+    "StructureDefinition/cpg-clinicalimpression": {
+      "defns": "StructureDefinition-cpg-clinicalimpression-definitions.html",
+      "base": "StructureDefinition-cpg-clinicalimpression.html"
     },
-    "StructureDefinition/cpg-immunizationactivity": {
-      "defns": "StructureDefinition-cpg-immunizationactivity-definitions.html",
-      "base": "StructureDefinition-cpg-immunizationactivity.html"
+    "StructureDefinition/cpg-collectinformationactivity": {
+      "defns": "StructureDefinition-cpg-collectinformationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-collectinformationactivity.html"
     },
-    "StructureDefinition/cpg-medicationrequestactivity": {
-      "defns": "StructureDefinition-cpg-medicationrequestactivity-definitions.html",
-      "base": "StructureDefinition-cpg-medicationrequestactivity.html"
-    },
-    "StructureDefinition/cpg-servicerequestactivity": {
-      "defns": "StructureDefinition-cpg-servicerequestactivity-definitions.html",
-      "base": "StructureDefinition-cpg-servicerequestactivity.html"
-    },
-    "StructureDefinition/cpg-appointment": {
-      "defns": "StructureDefinition-cpg-appointment-definitions.html",
-      "base": "StructureDefinition-cpg-appointment.html"
-    },
-    "StructureDefinition/cpg-procedure": {
-      "defns": "StructureDefinition-cpg-procedure-definitions.html",
-      "base": "StructureDefinition-cpg-procedure.html"
-    },
-    "StructureDefinition/cpg-diagnosticreport": {
-      "defns": "StructureDefinition-cpg-diagnosticreport-definitions.html",
-      "base": "StructureDefinition-cpg-diagnosticreport.html"
-    },
-    "StructureDefinition/cpg-shareablecodesystem": {
-      "defns": "StructureDefinition-cpg-shareablecodesystem-definitions.html",
-      "base": "StructureDefinition-cpg-shareablecodesystem.html"
-    },
-    "StructureDefinition/cpg-publishablecodesystem": {
-      "defns": "StructureDefinition-cpg-publishablecodesystem-definitions.html",
-      "base": "StructureDefinition-cpg-publishablecodesystem.html"
+    "StructureDefinition/cpg-collectWith": {
+      "defns": "StructureDefinition-cpg-collectWith-definitions.html",
+      "base": "StructureDefinition-cpg-collectWith.html"
     },
     "StructureDefinition/cpg-communication": {
       "defns": "StructureDefinition-cpg-communication-definitions.html",
       "base": "StructureDefinition-cpg-communication.html"
     },
+    "StructureDefinition/cpg-communicationactivity": {
+      "defns": "StructureDefinition-cpg-communicationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-communicationactivity.html"
+    },
     "StructureDefinition/cpg-communicationrequest": {
       "defns": "StructureDefinition-cpg-communicationrequest-definitions.html",
       "base": "StructureDefinition-cpg-communicationrequest.html"
     },
-    "StructureDefinition/cpg-devicerequest": {
-      "defns": "StructureDefinition-cpg-devicerequest-definitions.html",
-      "base": "StructureDefinition-cpg-devicerequest.html"
+    "StructureDefinition/cpg-computableactivity": {
+      "defns": "StructureDefinition-cpg-computableactivity-definitions.html",
+      "base": "StructureDefinition-cpg-computableactivity.html"
     },
-    "StructureDefinition/cpg-directionOfRecommendation": {
-      "defns": "StructureDefinition-cpg-directionOfRecommendation-definitions.html",
-      "base": "StructureDefinition-cpg-directionOfRecommendation.html"
+    "StructureDefinition/cpg-computablegraphdefinition": {
+      "defns": "StructureDefinition-cpg-computablegraphdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-computablegraphdefinition.html"
     },
-    "StructureDefinition/cpg-encounter": {
-      "defns": "StructureDefinition-cpg-encounter-definitions.html",
-      "base": "StructureDefinition-cpg-encounter.html"
+    "StructureDefinition/cpg-computableguideline": {
+      "defns": "StructureDefinition-cpg-computableguideline-definitions.html",
+      "base": "StructureDefinition-cpg-computableguideline.html"
+    },
+    "StructureDefinition/cpg-computablelibrary": {
+      "defns": "StructureDefinition-cpg-computablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-computablelibrary.html"
+    },
+    "StructureDefinition/cpg-computablemetric": {
+      "defns": "StructureDefinition-cpg-computablemetric-definitions.html",
+      "base": "StructureDefinition-cpg-computablemetric.html"
+    },
+    "StructureDefinition/cpg-computableplandefinition": {
+      "defns": "StructureDefinition-cpg-computableplandefinition-definitions.html",
+      "base": "StructureDefinition-cpg-computableplandefinition.html"
     },
     "StructureDefinition/cpg-computablevalueset": {
       "defns": "StructureDefinition-cpg-computablevalueset-definitions.html",
       "base": "StructureDefinition-cpg-computablevalueset.html"
     },
+    "StructureDefinition/cpg-condition": {
+      "defns": "StructureDefinition-cpg-condition-definitions.html",
+      "base": "StructureDefinition-cpg-condition.html"
+    },
+    "StructureDefinition/cpg-copyright": {
+      "defns": "StructureDefinition-cpg-copyright-definitions.html",
+      "base": "StructureDefinition-cpg-copyright.html"
+    },
+    "StructureDefinition/cpg-detectedissue": {
+      "defns": "StructureDefinition-cpg-detectedissue-definitions.html",
+      "base": "StructureDefinition-cpg-detectedissue.html"
+    },
+    "StructureDefinition/cpg-devicerequest": {
+      "defns": "StructureDefinition-cpg-devicerequest-definitions.html",
+      "base": "StructureDefinition-cpg-devicerequest.html"
+    },
+    "StructureDefinition/cpg-diagnosticreport": {
+      "defns": "StructureDefinition-cpg-diagnosticreport-definitions.html",
+      "base": "StructureDefinition-cpg-diagnosticreport.html"
+    },
+    "StructureDefinition/cpg-directionOfRecommendation": {
+      "defns": "StructureDefinition-cpg-directionOfRecommendation-definitions.html",
+      "base": "StructureDefinition-cpg-directionOfRecommendation.html"
+    },
+    "StructureDefinition/cpg-dispensemedicationactivity": {
+      "defns": "StructureDefinition-cpg-dispensemedicationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-dispensemedicationactivity.html"
+    },
+    "StructureDefinition/cpg-dispensemedicationtask": {
+      "defns": "StructureDefinition-cpg-dispensemedicationtask-definitions.html",
+      "base": "StructureDefinition-cpg-dispensemedicationtask.html"
+    },
+    "StructureDefinition/cpg-documentmedicationactivity": {
+      "defns": "StructureDefinition-cpg-documentmedicationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-documentmedicationactivity.html"
+    },
+    "StructureDefinition/cpg-documentmedicationtask": {
+      "defns": "StructureDefinition-cpg-documentmedicationtask-definitions.html",
+      "base": "StructureDefinition-cpg-documentmedicationtask.html"
+    },
+    "StructureDefinition/cpg-editor": {
+      "defns": "StructureDefinition-cpg-editor-definitions.html",
+      "base": "StructureDefinition-cpg-editor.html"
+    },
+    "StructureDefinition/cpg-enabled": {
+      "defns": "StructureDefinition-cpg-enabled-definitions.html",
+      "base": "StructureDefinition-cpg-enabled.html"
+    },
+    "StructureDefinition/cpg-encounter": {
+      "defns": "StructureDefinition-cpg-encounter-definitions.html",
+      "base": "StructureDefinition-cpg-encounter.html"
+    },
+    "StructureDefinition/cpg-endorser": {
+      "defns": "StructureDefinition-cpg-endorser-definitions.html",
+      "base": "StructureDefinition-cpg-endorser.html"
+    },
+    "StructureDefinition/cpg-enrolledIn": {
+      "defns": "StructureDefinition-cpg-enrolledIn-definitions.html",
+      "base": "StructureDefinition-cpg-enrolledIn.html"
+    },
+    "StructureDefinition/cpg-enrollIn": {
+      "defns": "StructureDefinition-cpg-enrollIn-definitions.html",
+      "base": "StructureDefinition-cpg-enrollIn.html"
+    },
+    "StructureDefinition/cpg-enrollmentactivity": {
+      "defns": "StructureDefinition-cpg-enrollmentactivity-definitions.html",
+      "base": "StructureDefinition-cpg-enrollmentactivity.html"
+    },
+    "StructureDefinition/cpg-enrollmenttask": {
+      "defns": "StructureDefinition-cpg-enrollmenttask-definitions.html",
+      "base": "StructureDefinition-cpg-enrollmenttask.html"
+    },
+    "StructureDefinition/cpg-executablelibrary": {
+      "defns": "StructureDefinition-cpg-executablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-executablelibrary.html"
+    },
     "StructureDefinition/cpg-executablevalueset": {
       "defns": "StructureDefinition-cpg-executablevalueset-definitions.html",
       "base": "StructureDefinition-cpg-executablevalueset.html"
+    },
+    "StructureDefinition/cpg-featureExpression": {
+      "defns": "StructureDefinition-cpg-featureExpression-definitions.html",
+      "base": "StructureDefinition-cpg-featureExpression.html"
+    },
+    "StructureDefinition/cpg-flag": {
+      "defns": "StructureDefinition-cpg-flag-definitions.html",
+      "base": "StructureDefinition-cpg-flag.html"
+    },
+    "StructureDefinition/cpg-generatereportactivity": {
+      "defns": "StructureDefinition-cpg-generatereportactivity-definitions.html",
+      "base": "StructureDefinition-cpg-generatereportactivity.html"
+    },
+    "StructureDefinition/cpg-generatereporttask": {
+      "defns": "StructureDefinition-cpg-generatereporttask-definitions.html",
+      "base": "StructureDefinition-cpg-generatereporttask.html"
+    },
+    "StructureDefinition/cpg-group": {
+      "defns": "StructureDefinition-cpg-group-definitions.html",
+      "base": "StructureDefinition-cpg-group.html"
+    },
+    "StructureDefinition/cpg-groupdefinition": {
+      "defns": "StructureDefinition-cpg-groupdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-groupdefinition.html"
+    },
+    "StructureDefinition/cpg-identifier": {
+      "defns": "StructureDefinition-cpg-identifier-definitions.html",
+      "base": "StructureDefinition-cpg-identifier.html"
     },
     "StructureDefinition/cpg-immunization": {
       "defns": "StructureDefinition-cpg-immunization-definitions.html",
       "base": "StructureDefinition-cpg-immunization.html"
     },
+    "StructureDefinition/cpg-immunizationactivity": {
+      "defns": "StructureDefinition-cpg-immunizationactivity-definitions.html",
+      "base": "StructureDefinition-cpg-immunizationactivity.html"
+    },
     "StructureDefinition/cpg-immunizationrecommendation": {
       "defns": "StructureDefinition-cpg-immunizationrecommendation-definitions.html",
       "base": "StructureDefinition-cpg-immunizationrecommendation.html"
+    },
+    "StructureDefinition/cpg-impressionFor": {
+      "defns": "StructureDefinition-cpg-impressionFor-definitions.html",
+      "base": "StructureDefinition-cpg-impressionFor.html"
+    },
+    "StructureDefinition/cpg-inferenceExpression": {
+      "defns": "StructureDefinition-cpg-inferenceExpression-definitions.html",
+      "base": "StructureDefinition-cpg-inferenceExpression.html"
+    },
+    "StructureDefinition/cpg-instantiatesCaseFeature": {
+      "defns": "StructureDefinition-cpg-instantiatesCaseFeature-definitions.html",
+      "base": "StructureDefinition-cpg-instantiatesCaseFeature.html"
+    },
+    "StructureDefinition/cpg-isUnenrollment": {
+      "defns": "StructureDefinition-cpg-isUnenrollment-definitions.html",
+      "base": "StructureDefinition-cpg-isUnenrollment.html"
+    },
+    "StructureDefinition/cpg-knowledgeCapability": {
+      "defns": "StructureDefinition-cpg-knowledgeCapability-definitions.html",
+      "base": "StructureDefinition-cpg-knowledgeCapability.html"
+    },
+    "StructureDefinition/cpg-knowledgeRepresentationLevel": {
+      "defns": "StructureDefinition-cpg-knowledgeRepresentationLevel-definitions.html",
+      "base": "StructureDefinition-cpg-knowledgeRepresentationLevel.html"
     },
     "StructureDefinition/cpg-location": {
       "defns": "StructureDefinition-cpg-location-definitions.html",
@@ -555,59 +675,39 @@
       "defns": "StructureDefinition-cpg-locationdefinition-definitions.html",
       "base": "StructureDefinition-cpg-locationdefinition.html"
     },
-    "StructureDefinition/cpg-shareablemetric": {
-      "defns": "StructureDefinition-cpg-shareablemetric-definitions.html",
-      "base": "StructureDefinition-cpg-shareablemetric.html"
-    },
-    "StructureDefinition/cpg-computablemetric": {
-      "defns": "StructureDefinition-cpg-computablemetric-definitions.html",
-      "base": "StructureDefinition-cpg-computablemetric.html"
-    },
-    "StructureDefinition/cpg-publishablemetric": {
-      "defns": "StructureDefinition-cpg-publishablemetric-definitions.html",
-      "base": "StructureDefinition-cpg-publishablemetric.html"
-    },
-    "StructureDefinition/cpg-metricreport": {
-      "defns": "StructureDefinition-cpg-metricreport-definitions.html",
-      "base": "StructureDefinition-cpg-metricreport.html"
-    },
-    "StructureDefinition/cpg-publishablelibrary": {
-      "defns": "StructureDefinition-cpg-publishablelibrary-definitions.html",
-      "base": "StructureDefinition-cpg-publishablelibrary.html"
-    },
-    "StructureDefinition/cpg-assetcollection": {
-      "defns": "StructureDefinition-cpg-assetcollection-definitions.html",
-      "base": "StructureDefinition-cpg-assetcollection.html"
-    },
-    "StructureDefinition/cpg-computablelibrary": {
-      "defns": "StructureDefinition-cpg-computablelibrary-definitions.html",
-      "base": "StructureDefinition-cpg-computablelibrary.html"
-    },
-    "StructureDefinition/cpg-executablelibrary": {
-      "defns": "StructureDefinition-cpg-executablelibrary-definitions.html",
-      "base": "StructureDefinition-cpg-executablelibrary.html"
-    },
-    "StructureDefinition/cpg-shareablelibrary": {
-      "defns": "StructureDefinition-cpg-shareablelibrary-definitions.html",
-      "base": "StructureDefinition-cpg-shareablelibrary.html"
-    },
-    "StructureDefinition/cpg-medicationrequest": {
-      "defns": "StructureDefinition-cpg-medicationrequest-definitions.html",
-      "base": "StructureDefinition-cpg-medicationrequest.html"
+    "StructureDefinition/cpg-medicationadministration": {
+      "defns": "StructureDefinition-cpg-medicationadministration-definitions.html",
+      "base": "StructureDefinition-cpg-medicationadministration.html"
     },
     "StructureDefinition/cpg-medicationdispense": {
       "defns": "StructureDefinition-cpg-medicationdispense-definitions.html",
       "base": "StructureDefinition-cpg-medicationdispense.html"
     },
+    "StructureDefinition/cpg-medicationrequest": {
+      "defns": "StructureDefinition-cpg-medicationrequest-definitions.html",
+      "base": "StructureDefinition-cpg-medicationrequest.html"
+    },
+    "StructureDefinition/cpg-medicationrequestactivity": {
+      "defns": "StructureDefinition-cpg-medicationrequestactivity-definitions.html",
+      "base": "StructureDefinition-cpg-medicationrequestactivity.html"
+    },
     "StructureDefinition/cpg-medicationstatement": {
       "defns": "StructureDefinition-cpg-medicationstatement-definitions.html",
       "base": "StructureDefinition-cpg-medicationstatement.html"
+    },
+    "StructureDefinition/cpg-metricreport": {
+      "defns": "StructureDefinition-cpg-metricreport-definitions.html",
+      "base": "StructureDefinition-cpg-metricreport.html"
     },
     "StructureDefinition/cpg-nutritionorder": {
       "defns": "StructureDefinition-cpg-nutritionorder-definitions.html",
       "base": "StructureDefinition-cpg-nutritionorder.html"
     },
-		"StructureDefinition/cpg-ordersetdefinition": {
+    "StructureDefinition/cpg-observation": {
+      "defns": "StructureDefinition-cpg-observation-definitions.html",
+      "base": "StructureDefinition-cpg-observation.html"
+    },
+    "StructureDefinition/cpg-ordersetdefinition": {
 			"defns": "StructureDefinition-cpg-ordersetdefinition-definitions.html",
 			"base": "StructureDefinition-cpg-ordersetdefinition.html"
 		},
@@ -619,21 +719,25 @@
       "defns": "StructureDefinition-cpg-participantCapabilityStatement-definitions.html",
       "base": "StructureDefinition-cpg-participantCapabilityStatement.html"
     },
+    "StructureDefinition/cpg-partOf": {
+      "defns": "StructureDefinition-cpg-partOf-definitions.html",
+      "base": "StructureDefinition-cpg-partOf.html"
+    },
+    "StructureDefinition/cpg-pathwaydefinition": {
+      "defns": "StructureDefinition-cpg-pathwaydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-pathwaydefinition.html"
+    },
     "StructureDefinition/cpg-patient": {
       "defns": "StructureDefinition-cpg-patient-definitions.html",
       "base": "StructureDefinition-cpg-patient.html"
     },
-    "StructureDefinition/cpg-shareableplandefinition": {
-      "defns": "StructureDefinition-cpg-shareableplandefinition-definitions.html",
-      "base": "StructureDefinition-cpg-shareableplandefinition.html"
+    "StructureDefinition/cpg-pertinent": {
+      "defns": "StructureDefinition-cpg-pertinent-definitions.html",
+      "base": "StructureDefinition-cpg-pertinent.html"
     },
-    "StructureDefinition/cpg-computableplandefinition": {
-      "defns": "StructureDefinition-cpg-computableplandefinition-definitions.html",
-      "base": "StructureDefinition-cpg-computableplandefinition.html"
-    },
-    "StructureDefinition/cpg-publishableplandefinition": {
-      "defns": "StructureDefinition-cpg-publishableplandefinition-definitions.html",
-      "base": "StructureDefinition-cpg-publishableplandefinition.html"
+    "StructureDefinition/cpg-planFor": {
+      "defns": "StructureDefinition-cpg-planFor-definitions.html",
+      "base": "StructureDefinition-cpg-planFor.html"
     },
     "StructureDefinition/cpg-practitioner": {
       "defns": "StructureDefinition-cpg-practitioner-definitions.html",
@@ -647,149 +751,205 @@
       "defns": "StructureDefinition-cpg-practitionerroledefinition-definitions.html",
       "base": "StructureDefinition-cpg-practitionerroledefinition.html"
     },
-    "StructureDefinition/cpg-pathwaydefinition": {
-      "defns": "StructureDefinition-cpg-pathwaydefinition-definitions.html",
-      "base": "StructureDefinition-cpg-pathwaydefinition.html"
-    },
-    "StructureDefinition/cpg-protocoldefinition": {
-      "defns": "StructureDefinition-cpg-protocoldefinition-definitions.html",
-      "base": "StructureDefinition-cpg-protocoldefinition.html"
-    },
-    "StructureDefinition/cpg-recommendationdefinition": {
-      "defns": "StructureDefinition-cpg-recommendationdefinition-definitions.html",
-      "base": "StructureDefinition-cpg-recommendationdefinition.html"
-    },
-    "StructureDefinition/cpg-servicerequest": {
-      "defns": "StructureDefinition-cpg-servicerequest-definitions.html",
-      "base": "StructureDefinition-cpg-servicerequest.html"
-    },
-    "StructureDefinition/cpg-strategydefinition": {
-      "defns": "StructureDefinition-cpg-strategydefinition-definitions.html",
-      "base": "StructureDefinition-cpg-strategydefinition.html"
-    },
-    "StructureDefinition/cpg-strategy": {
-      "defns": "StructureDefinition-cpg-strategy-definitions.html",
-      "base": "StructureDefinition-cpg-strategy.html"
-    },
-    "StructureDefinition/cpg-shareablestructuredef": {
-      "defns": "StructureDefinition-cpg-shareablestructuredef-definitions.html",
-      "base": "StructureDefinition-cpg-shareablestructuredef.html"
-    },
-    "StructureDefinition/cpg-casefeaturedefinition": {
-      "defns": "StructureDefinition-cpg-casefeaturedefinition-definitions.html",
-      "base": "StructureDefinition-cpg-casefeaturedefinition.html"
-    },
-    "StructureDefinition/cpg-publishablecasefeature": {
-      "defns": "StructureDefinition-cpg-publishablecasefeature-definitions.html",
-      "base": "StructureDefinition-cpg-publishablecasefeature.html"
-    },
-    "StructureDefinition/cpg-computableguideline": {
-      "defns": "StructureDefinition-cpg-computableguideline-definitions.html",
-      "base": "StructureDefinition-cpg-computableguideline.html"
-    },
-    "StructureDefinition/cpg-publishableguideline": {
-      "defns": "StructureDefinition-cpg-publishableguideline-definitions.html",
-      "base": "StructureDefinition-cpg-publishableguideline.html"
-    },
-    "StructureDefinition/cpg-shareableig": {
-      "defns": "StructureDefinition-cpg-shareableig-definitions.html",
-      "base": "StructureDefinition-cpg-shareableig.html"
-    },
-    "StructureDefinition/cpg-publishablequestionnaire": {
-      "defns": "StructureDefinition-cpg-publishablequestionnaire-definitions.html",
-      "base": "StructureDefinition-cpg-publishablequestionnaire.html"
-    },
-    "StructureDefinition/cpg-shareablequestionnaire": {
-      "defns": "StructureDefinition-cpg-shareablequestionnaire-definitions.html",
-      "base": "StructureDefinition-cpg-shareablequestionnaire.html"
-    },
-    "StructureDefinition/cpg-collectinformationactivity": {
-      "defns": "StructureDefinition-cpg-collectinformationactivity-definitions.html",
-      "base": "StructureDefinition-cpg-collectinformationactivity.html"
-    },
-    "StructureDefinition/cpg-enrollmentactivity": {
-      "defns": "StructureDefinition-cpg-enrollmentactivity-definitions.html",
-      "base": "StructureDefinition-cpg-enrollmentactivity.html"
-    },
-    "StructureDefinition/cpg-generatereportactivity": {
-      "defns": "StructureDefinition-cpg-generatereportactivity-definitions.html",
-      "base": "StructureDefinition-cpg-generatereportactivity.html"
-    },
-    "StructureDefinition/cpg-dispensemedicationactivity": {
-      "defns": "StructureDefinition-cpg-dispensemedicationactivity-definitions.html",
-      "base": "StructureDefinition-cpg-dispensemedicationactivity.html"
-    },
-    "StructureDefinition/cpg-administermedication": {
-      "defns": "StructureDefinition-cpg-administermedication-definitions.html",
-      "base": "StructureDefinition-cpg-administermedication.html"
+    "StructureDefinition/cpg-procedure": {
+      "defns": "StructureDefinition-cpg-procedure-definitions.html",
+      "base": "StructureDefinition-cpg-procedure.html"
     },
     "StructureDefinition/cpg-proposediagnosisactivity": {
       "defns": "StructureDefinition-cpg-proposediagnosisactivity-definitions.html",
       "base": "StructureDefinition-cpg-proposediagnosisactivity.html"
     },
-    "StructureDefinition/cpg-recordinferenceactivity": {
-      "defns": "StructureDefinition-cpg-recordinferenceactivity-definitions.html",
-      "base": "StructureDefinition-cpg-recordinferenceactivity.html"
-    },
-    "StructureDefinition/cpg-recorddetectedissueactivity": {
-      "defns": "StructureDefinition-cpg-recorddetectedissueactivity-definitions.html",
-      "base": "StructureDefinition-cpg-recorddetectedissueactivity.html"
-    },
-    "StructureDefinition/cpg-reportflagactivity": {
-      "defns": "StructureDefinition-cpg-reportflagactivity-definitions.html",
-      "base": "StructureDefinition-cpg-reportflagactivity.html"
-    },
-    "StructureDefinition/cpg-task": {
-      "defns": "StructureDefinition-cpg-task-definitions.html",
-      "base": "StructureDefinition-cpg-task.html"
-    },
-    "StructureDefinition/cpg-administermedicationtask": {
-      "defns": "StructureDefinition-cpg-administermedicationtask-definitions.html",
-      "base": "StructureDefinition-cpg-administermedicationtask.html"
-    },
-    "StructureDefinition/cpg-dispensemedicationtask": {
-      "defns": "StructureDefinition-cpg-dispensemedicationtask-definitions.html",
-      "base": "StructureDefinition-cpg-dispensemedicationtask.html"
-    },
-    "StructureDefinition/cpg-documentmedicationtask": {
-      "defns": "StructureDefinition-cpg-documentmedicationtask-definitions.html",
-      "base": "StructureDefinition-cpg-documentmedicationtask.html"
-    },
     "StructureDefinition/cpg-proposediagnosistask": {
       "defns": "StructureDefinition-cpg-proposediagnosistask-definitions.html",
       "base": "StructureDefinition-cpg-proposediagnosistask.html"
     },
-    "StructureDefinition/cpg-recordinferencetask": {
-      "defns": "StructureDefinition-cpg-recordinferencetask-definitions.html",
-      "base": "StructureDefinition-cpg-recordinferencetask.html"
+    "StructureDefinition/cpg-protocoldefinition": {
+      "defns": "StructureDefinition-cpg-protocoldefinition-definitions.html",
+      "base": "StructureDefinition-cpg-protocoldefinition.html"
     },
-    "StructureDefinition/cpg-recorddetectedissuetask": {
-      "defns": "StructureDefinition-cpg-recorddetectedissuetask-definitions.html",
-      "base": "StructureDefinition-cpg-recorddetectedissuetask.html"
+    "StructureDefinition/cpg-publishableactivity": {
+      "defns": "StructureDefinition-cpg-publishableactivity-definitions.html",
+      "base": "StructureDefinition-cpg-publishableactivity.html"
     },
-    "StructureDefinition/cpg-reportflagtask": {
-      "defns": "StructureDefinition-cpg-reportflagtask-definitions.html",
-      "base": "StructureDefinition-cpg-reportflagtask.html"
+    "StructureDefinition/cpg-publishablecasefeature": {
+      "defns": "StructureDefinition-cpg-publishablecasefeature-definitions.html",
+      "base": "StructureDefinition-cpg-publishablecasefeature.html"
     },
-    "StructureDefinition/cpg-enrollmenttask": {
-      "defns": "StructureDefinition-cpg-enrollmenttask-definitions.html",
-      "base": "StructureDefinition-cpg-enrollmenttask.html"
+    "StructureDefinition/cpg-publishablecodesystem": {
+      "defns": "StructureDefinition-cpg-publishablecodesystem-definitions.html",
+      "base": "StructureDefinition-cpg-publishablecodesystem.html"
     },
-    "StructureDefinition/cpg-generatereporttask": {
-      "defns": "StructureDefinition-cpg-generatereporttask-definitions.html",
-      "base": "StructureDefinition-cpg-generatereporttask.html"
+    "StructureDefinition/cpg-publishablegraphdefinition": {
+      "defns": "StructureDefinition-cpg-publishablegraphdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-publishablegraphdefinition.html"
     },
-    "StructureDefinition/cpg-questionnairetask": {
-      "defns": "StructureDefinition-cpg-questionnairetask-definitions.html",
-      "base": "StructureDefinition-cpg-questionnairetask.html"
+    "StructureDefinition/cpg-publishableguideline": {
+      "defns": "StructureDefinition-cpg-publishableguideline-definitions.html",
+      "base": "StructureDefinition-cpg-publishableguideline.html"
+    },
+    "StructureDefinition/cpg-publishablelibrary": {
+      "defns": "StructureDefinition-cpg-publishablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-publishablelibrary.html"
+    },
+    "StructureDefinition/cpg-publishablemetric": {
+      "defns": "StructureDefinition-cpg-publishablemetric-definitions.html",
+      "base": "StructureDefinition-cpg-publishablemetric.html"
+    },
+    "StructureDefinition/cpg-publishableplandefinition": {
+      "defns": "StructureDefinition-cpg-publishableplandefinition-definitions.html",
+      "base": "StructureDefinition-cpg-publishableplandefinition.html"
+    },
+    "StructureDefinition/cpg-publishablequestionnaire": {
+      "defns": "StructureDefinition-cpg-publishablequestionnaire-definitions.html",
+      "base": "StructureDefinition-cpg-publishablequestionnaire.html"
+    },
+    "StructureDefinition/cpg-publishablevalueset": {
+      "defns": "StructureDefinition-cpg-publishablevalueset-definitions.html",
+      "base": "StructureDefinition-cpg-publishablevalueset.html"
     },
     "StructureDefinition/cpg-questionnaireresponse": {
       "defns": "StructureDefinition-cpg-questionnaireresponse-definitions.html",
       "base": "StructureDefinition-cpg-questionnaireresponse.html"
     },
-    "StructureDefinition/cpg-publishablevalueset": {
-      "defns": "StructureDefinition-cpg-publishablevalueset-definitions.html",
-      "base": "StructureDefinition-cpg-publishablevalueset.html"
+    "StructureDefinition/cpg-questionnairetask": {
+      "defns": "StructureDefinition-cpg-questionnairetask-definitions.html",
+      "base": "StructureDefinition-cpg-questionnairetask.html"
+    },
+    "StructureDefinition/cpg-rationale": {
+      "defns": "StructureDefinition-cpg-rationale-definitions.html",
+      "base": "StructureDefinition-cpg-rationale.html"
+    },
+    "StructureDefinition/cpg-recommendationdefinition": {
+      "defns": "StructureDefinition-cpg-recommendationdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-recommendationdefinition.html"
+    },
+    "StructureDefinition/cpg-recorddetectedissueactivity": {
+      "defns": "StructureDefinition-cpg-recorddetectedissueactivity-definitions.html",
+      "base": "StructureDefinition-cpg-recorddetectedissueactivity.html"
+    },
+    "StructureDefinition/cpg-recorddetectedissuetask": {
+      "defns": "StructureDefinition-cpg-recorddetectedissuetask-definitions.html",
+      "base": "StructureDefinition-cpg-recorddetectedissuetask.html"
+    },
+    "StructureDefinition/cpg-recordinferenceactivity": {
+      "defns": "StructureDefinition-cpg-recordinferenceactivity-definitions.html",
+      "base": "StructureDefinition-cpg-recordinferenceactivity.html"
+    },
+    "StructureDefinition/cpg-recordinferencetask": {
+      "defns": "StructureDefinition-cpg-recordinferencetask-definitions.html",
+      "base": "StructureDefinition-cpg-recordinferencetask.html"
+    },
+    "StructureDefinition/cpg-relatedArtifact": {
+      "defns": "StructureDefinition-cpg-relatedArtifact-definitions.html",
+      "base": "StructureDefinition-cpg-relatedArtifact.html"
+    },
+    "StructureDefinition/cpg-relatedperson": {
+      "defns": "StructureDefinition-cpg-relatedperson-definitions.html",
+      "base": "StructureDefinition-cpg-relatedperson.html"
+    },
+    "StructureDefinition/cpg-reportflagactivity": {
+      "defns": "StructureDefinition-cpg-reportflagactivity-definitions.html",
+      "base": "StructureDefinition-cpg-reportflagactivity.html"
+    },
+    "StructureDefinition/cpg-reportflagtask": {
+      "defns": "StructureDefinition-cpg-reportflagtask-definitions.html",
+      "base": "StructureDefinition-cpg-reportflagtask.html"
+    },
+    "StructureDefinition/cpg-reportWith": {
+      "defns": "StructureDefinition-cpg-reportWith-definitions.html",
+      "base": "StructureDefinition-cpg-reportWith.html"
+    },
+    "StructureDefinition/cpg-reviewer": {
+      "defns": "StructureDefinition-cpg-reviewer-definitions.html",
+      "base": "StructureDefinition-cpg-reviewer.html"
+    },
+    "StructureDefinition/cpg-servicerequest": {
+      "defns": "StructureDefinition-cpg-servicerequest-definitions.html",
+      "base": "StructureDefinition-cpg-servicerequest.html"
+    },
+    "StructureDefinition/cpg-servicerequestactivity": {
+      "defns": "StructureDefinition-cpg-servicerequestactivity-definitions.html",
+      "base": "StructureDefinition-cpg-servicerequestactivity.html"
+    },
+    "StructureDefinition/cpg-shareableactivitydefinition": {
+      "defns": "StructureDefinition-cpg-shareableactivitydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-shareableactivitydefinition.html"
+    },
+    "StructureDefinition/cpg-shareablecodesystem": {
+      "defns": "StructureDefinition-cpg-shareablecodesystem-definitions.html",
+      "base": "StructureDefinition-cpg-shareablecodesystem.html"
+    },
+    "StructureDefinition/cpg-shareablegraphdefinition": {
+      "defns": "StructureDefinition-cpg-shareablegraphdefinition-definitions.html",
+      "base": "StructureDefinition-cpg-shareablegraphdefinition.html"
+    },
+    "StructureDefinition/cpg-shareableig": {
+      "defns": "StructureDefinition-cpg-shareableig-definitions.html",
+      "base": "StructureDefinition-cpg-shareableig.html"
+    },
+    "StructureDefinition/cpg-shareablelibrary": {
+      "defns": "StructureDefinition-cpg-shareablelibrary-definitions.html",
+      "base": "StructureDefinition-cpg-shareablelibrary.html"
+    },
+    "StructureDefinition/cpg-shareablemetric": {
+      "defns": "StructureDefinition-cpg-shareablemetric-definitions.html",
+      "base": "StructureDefinition-cpg-shareablemetric.html"
+    },
+    "StructureDefinition/cpg-shareableplandefinition": {
+      "defns": "StructureDefinition-cpg-shareableplandefinition-definitions.html",
+      "base": "StructureDefinition-cpg-shareableplandefinition.html"
+    },
+    "StructureDefinition/cpg-shareablequestionnaire": {
+      "defns": "StructureDefinition-cpg-shareablequestionnaire-definitions.html",
+      "base": "StructureDefinition-cpg-shareablequestionnaire.html"
+    },
+    "StructureDefinition/cpg-shareablestructuredef": {
+      "defns": "StructureDefinition-cpg-shareablestructuredef-definitions.html",
+      "base": "StructureDefinition-cpg-shareablestructuredef.html"
+    },
+    "StructureDefinition/cpg-shareablevalueset": {
+      "defns": "StructureDefinition-cpg-shareablevalueset-definitions.html",
+      "base": "StructureDefinition-cpg-shareablevalueset.html"
+    },
+    "StructureDefinition/cpg-sourceValueSet": {
+      "defns": "StructureDefinition-cpg-sourceValueSet-definitions.html",
+      "base": "StructureDefinition-cpg-sourceValueSet.html"
+    },
+    "StructureDefinition/cpg-strategy": {
+      "defns": "StructureDefinition-cpg-strategy-definitions.html",
+      "base": "StructureDefinition-cpg-strategy.html"
+    },
+    "StructureDefinition/cpg-strategydefinition": {
+      "defns": "StructureDefinition-cpg-strategydefinition-definitions.html",
+      "base": "StructureDefinition-cpg-strategydefinition.html"
+    },
+    "StructureDefinition/cpg-summaryDefinitionFor": {
+      "defns": "StructureDefinition-cpg-summaryDefinitionFor-definitions.html",
+      "base": "StructureDefinition-cpg-summaryDefinitionFor.html"
+    },
+    "StructureDefinition/cpg-summaryFor": {
+      "defns": "StructureDefinition-cpg-summaryFor-definitions.html",
+      "base": "StructureDefinition-cpg-summaryFor.html"
+    },
+    "StructureDefinition/cpg-task": {
+      "defns": "StructureDefinition-cpg-task-definitions.html",
+      "base": "StructureDefinition-cpg-task.html"
+    },
+    "StructureDefinition/cpg-testcasebundle": {
+      "defns": "StructureDefinition-cpg-testcasebundle-definitions.html",
+      "base": "StructureDefinition-cpg-testcasebundle.html"
+    },
+    "StructureDefinition/cpg-title": {
+      "defns": "StructureDefinition-cpg-title-definitions.html",
+      "base": "StructureDefinition-cpg-title.html"
+    },
+    "StructureDefinition/cpg-topic": {
+      "defns": "StructureDefinition-cpg-topic-definitions.html",
+      "base": "StructureDefinition-cpg-topic.html"
+    },
+    "StructureDefinition/cpg-usageWarning": {
+      "defns": "StructureDefinition-cpg-usageWarning-definitions.html",
+      "base": "StructureDefinition-cpg-usageWarning.html"
     },
     "StructureDefinition/cpg-workflowdefinition": {
       "defns": "StructureDefinition-cpg-workflowdefinition-definitions.html",

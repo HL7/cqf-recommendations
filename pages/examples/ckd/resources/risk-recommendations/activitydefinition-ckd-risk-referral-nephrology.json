@@ -29,7 +29,7 @@
   "name": "ReferralToNephrologist",
   "title": "Referral to Nephrologist",
   "description": "Create ServiceRequest to order Referral for nephrology.",
-  "experimental": "true",
+  "experimental": true,
   "publisher": "HL7 FHIR Clinical Guidelines Example Artifact",
   "library": [
     "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"

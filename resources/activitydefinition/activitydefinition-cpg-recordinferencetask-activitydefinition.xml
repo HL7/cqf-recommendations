@@ -19,7 +19,7 @@
 		<coding>
 			<system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"/>
 			<code value="record-inference"/>
-			<display value="Record Inference"/>
+			<display value="Record an inference"/>
 		</coding>
 	</code>
 	<!-- Set status to the string value 'draft' -->
