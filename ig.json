@@ -659,6 +659,10 @@
       "defns": "StructureDefinition-cpg-isUnenrollment-definitions.html",
       "base": "StructureDefinition-cpg-isUnenrollment.html"
     },
+    "StructureDefinition/cpg-itemImage": {
+      "defns": "StructureDefinition-cpg-itemImage-definitions.html",
+      "base": "StructureDefinition-cpg-itemImage.html"
+    },
     "StructureDefinition/cpg-knowledgeCapability": {
       "defns": "StructureDefinition-cpg-knowledgeCapability-definitions.html",
       "base": "StructureDefinition-cpg-knowledgeCapability.html"
@@ -858,6 +862,10 @@
     "StructureDefinition/cpg-reportWith": {
       "defns": "StructureDefinition-cpg-reportWith-definitions.html",
       "base": "StructureDefinition-cpg-reportWith.html"
+    },
+    "StructureDefinition/cpg-responseImage": {
+      "defns": "StructureDefinition-cpg-responseImage-definitions.html",
+      "base": "StructureDefinition-cpg-responseImage.html"
     },
     "StructureDefinition/cpg-reviewer": {
       "defns": "StructureDefinition-cpg-reviewer-definitions.html",
