@@ -352,6 +352,10 @@ Parameters to CQL libraries SHALL be either CQL-defined types that map to FHIR t
 
 Top level expressions in CQL libraries SHALL return either CQL-defined types that map to FHIR types, or FHIR resources types, optionally with profile designations
 
+Tuple types are represented with Parameters that have `part` elements corresponding to the elements of the tuple. List types are represented with Parameters that have a cardinality of 0..*.
+
+Libraries used in computable guideline content SHALL use the `parameter` element to identify input parameters as well as the type of all top-level expressions as output parameters.
+
 Libraries used in computable guideline content SHALL use the `dataRequirement` element to identify any retrieves present in the CQL:
 
 |Retrieve Element|DataRequirement Element|

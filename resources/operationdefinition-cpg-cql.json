@@ -33,7 +33,7 @@
       "use": "in"
     },
     {
-      "documentation": "Any input parameters for the expression. Parameters defined in this input will be made available by name to the CQL expression. If the parameter is a CQL system-defined type, it is represented using the corresponding FHIR-defined type, as defined in the Using CQL section of this implementation guide. If a parameter appears more than once in the input Parameters resource, it is represented with a List in the input CQL",
+      "documentation": "Any input parameters for the expression. Parameters defined in this input will be made available by name to the CQL expression. Parameter types are mapped to CQL as specified in the Using CQL section of this implementation guide. If a parameter appears more than once in the input Parameters resource, it is represented with a List in the input CQL. If a parameter has parts, it is represented as a Tuple in the input CQL.",
       "max": "1",
       "min": 0,
       "name": "parameters",
