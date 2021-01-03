@@ -1,0 +1,288 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "activity-example-pathway",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway",
+  "name": "ActivityExamplePathway",
+  "title": "Activity Example Pathway",
+  "description": "Example Pathway for activity examples",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "action": [
+    {
+      "title": "Administer medication",
+      "description": "Administer medication",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "dispense-medications"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication"
+    },
+    {
+      "title": "Collect information",
+      "description": "Collect information",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "history-and-physical"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-collectinformation"
+    },
+    {
+      "title": "Dispense medication",
+      "description": "Dispense medication",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "dispense-medications"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-dispensemedication"
+    },
+    {
+      "title": "Document medication",
+      "description": "Document medication",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "dispense-medications"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-documentmedication"
+    },
+    {
+      "title": "Do not collect information",
+      "description": "Do not collect information",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "history-and-physical"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-donotcollectinformation"
+    },
+    {
+      "title": "Do not send message",
+      "description": "Do not send message",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "provide-counseling"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-donotsendmessage"
+    },
+    {
+      "title": "Enroll patient",
+      "description": "Enroll patient",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "triage"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-enrollment"
+    },
+    {
+      "title": "Generate report",
+      "description": "Generate report",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "record-and-report"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-generatereport"
+    },
+    {
+      "title": "Order medication",
+      "description": "Order medication",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "dispense-medications"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-ordermedication"
+    },
+    {
+      "title": "Order service",
+      "description": "Order service",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "guideline-based-care"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-orderservice"
+    },
+    {
+      "title": "Propose diagnosis",
+      "description": "Propose diagnosis",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "determine-diagnosis"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-proposediagnosis"
+    },
+    {
+      "title": "Recommend immunization",
+      "description": "Recommend immunization",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "dispense-medications"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-recommendimmunization"
+    },
+    {
+      "title": "Record detected issue",
+      "description": "Record detected issue",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "guideline-based-care"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-recorddetectedissue"
+    },
+    {
+      "title": "Record inference",
+      "description": "Record inference",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "diagnostic-testing"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-recordinference"
+    },
+    {
+      "title": "Report flag",
+      "description": "Report flag",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "monitor-and-follow-up-of-patient"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-reportflag"
+    },
+    {
+      "title": "Send message",
+      "description": "Send message",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "provide-counseling"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-sendmessage"
+    }
+  ]
+}

@@ -14,7 +14,7 @@
 	<status value="draft"/>
 	<date value="2019-05-15"/>
 	<copyright value="© WHO 2019+."/>
-	
+
 	<action>
 		<title value="Registration"/>
 		<code>
@@ -42,7 +42,7 @@
 				</coding>
 			</role>
 		</participant>
-		
+
 		<!-- Gather identifying information -->
 		<action>
 			<title value="Gather identifying information"/>
@@ -60,7 +60,7 @@
 			</participant>
 			<definitionCanonical value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"/>
 		</action>
-		
+
 		<!-- Patient match -->
 		<action>
 			<title value="Patient match"/>
@@ -68,7 +68,7 @@
 				<type value="QuestionnaireResponse"/>
 				<codeFilter>
 					<path value="questionnaire"/>
-					<code><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"/></code>
+					<code><system value="urn:ietf:rfc:3986"/><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"/></code>
 				</codeFilter>
 			</input>
 			<output>
@@ -82,7 +82,7 @@
 			</participant>
 			<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-match"/>
 		</action>
-		
+
 		<!-- Resolve patient match results -->
 		<action>
 			<title value="Resolve patient match results"/>
@@ -126,7 +126,7 @@
 					<type value="QuestionnaireResponse"/>
 					<codeFilter>
 						<path value="questionnaire"/>
-						<code><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"/></code>
+						<code><system value="urn:ietf:rfc:3986"/><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"/></code>
 					</codeFilter>
 				</input>
 				<output>
@@ -135,7 +135,7 @@
 				<!-- TODO: Use SDC pre processing to auto-populate questionnaire content with the previously entered identity data -->
 				<definitionCanonical value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile"/>
 			</action>
-			
+
 			<!-- Record patient data -->
 			<action>
 				<title value="Record patient data"/>
@@ -143,7 +143,7 @@
 					<type value="QuestionnaireResponse"/>
 					<codeFilter>
 						<path value="questionnaire"/>
-						<code><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile"/></code>
+						<code><system value="urn:ietf:rfc:3986"/><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile"/></code>
 					</codeFilter>
 				</input>
 				<output>
@@ -160,7 +160,7 @@
 				<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-create"/>
 			</action>
 		</action>
-		
+
 		<!-- Existing patient -->
 		<action>
 			<title value="Existing patient"/>
@@ -182,7 +182,7 @@
 					<type value="QuestionnaireResponse"/>
 					<codeFilter>
 						<path value="questionnaire"/>
-						<code><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"/></code>
+						<code><system value="urn:ietf:rfc:3986"/><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-identity"/></code>
 					</codeFilter>
 				</input>
 				<output>
@@ -191,7 +191,7 @@
 				<!-- TODO: Use SDC pre processing to auto-populate questionnaire content with the previously entered identity data -->
 				<definitionCanonical value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile"/>
 			</action>
-			
+
 			<!-- Record patient data -->
 			<action>
 				<title value="Record patient data"/>
@@ -199,7 +199,7 @@
 					<type value="QuestionnaireResponse"/>
 					<codeFilter>
 						<path value="questionnaire"/>
-						<code><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile"/></code>
+						<code><system value="urn:ietf:rfc:3986"/><code value="http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile"/></code>
 					</codeFilter>
 				</input>
 				<output>
@@ -216,7 +216,7 @@
 				<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-update"/>
 			</action>
 		</action>
-		
+
 		<!-- Patient summary lookup -->
 		<action>
 			<title value="Patient summary lookup"/>
@@ -232,7 +232,6 @@
 				</extension>
 				<type value="device"/>
 			</participant>
-			<!-- TODO: Define this operation -->
 			<definitionUri value="http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-patient-summary"/>
 		</action>
 	</action>

@@ -1,0 +1,56 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "activity-example-orderservice",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-orderservice",
+  "name": "ActivityExampleOrderService",
+  "title": "Activity Example Order Service",
+  "status": "draft",
+  "experimental": true,
+  "description": "Example Activity Definition for a recommendation to order a service",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "kind": "ServiceRequest",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "code": "order-service",
+        "display": "Order a service"
+      }
+    ]
+  },
+  "intent": "proposal",
+  "doNotPerform": false,
+  "dynamicValue": [
+    {
+      "path": "status",
+      "expression": {
+        "language": "text/cql",
+        "expression": "'draft'"
+      }
+    }
+  ]
+}

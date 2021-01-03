@@ -1,0 +1,82 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "chf-o2-sat",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat",
+  "name": "CHFO2Sat",
+  "title": "CHF Oxygen Saturation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Monitor Oxygen Saturation",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "kind": "ServiceRequest",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "code": "order-service",
+        "display": "Order a service"
+      }
+    ]
+  },
+  "intent": "proposal",
+  "doNotPerform": false,
+  "location": {
+    "reference": "Location/chf-locationdefinition"
+  },
+  "participant": [
+    {
+      "type": "practitioner",
+      "role": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+            "code": "nurse",
+            "display": "Nurse"
+          }
+        ]
+      }
+    }
+  ],
+  "productCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "104847001",
+        "display": "Oxygen saturation measurement (procedure)"
+      }
+    ]
+  },
+  "dynamicValue": [
+    {
+      "path": "status",
+      "expression": {
+        "language": "text/cql",
+        "expression": "'draft'"
+      }
+    }
+  ]
+}

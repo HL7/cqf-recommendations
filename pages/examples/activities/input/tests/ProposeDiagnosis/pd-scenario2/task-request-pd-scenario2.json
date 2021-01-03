@@ -1,0 +1,81 @@
+{
+  "resourceType": "Task",
+  "id": "request-pd-scenario2",
+  "contained": [
+    {
+      "resourceType": "Condition",
+      "id": "proposed-diagnosis",
+      "clinicalStatus": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+            "code": "active"
+          }
+        ]
+      },
+      "verificationStatus": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+            "code": "provisional"
+          }
+        ]
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code": "problem-list-item"
+            }
+          ]
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "422504002",
+            "display": "Ischemic stroke (disorder)"
+          }
+        ],
+        "text": "Stroke"
+      },
+      "subject": {
+        "reference": "Patient/pd-scenario2"
+      },
+      "onsetDateTime": "2020-01-15"
+    }
+  ],
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-proposediagnosis",
+  "status": "draft",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "code": "propose-diagnosis",
+        "display": "Propose a diagnosis"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/pd-scenario2"
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "code": "propose-diagnosis",
+            "display": "Propose a diagnosis"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "#proposed-diagnosis"
+      }
+    }
+  ]
+}

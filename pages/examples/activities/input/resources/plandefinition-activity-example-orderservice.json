@@ -1,0 +1,68 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "activity-example-orderservice",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-orderservice",
+  "name": "ActivityExampleOrderService",
+  "title": "Activity Example Order Service",
+  "description": "Example Plan Definition for a recommendation to order a service",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "eca-rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "library": [ "http://hl7.org/fhir/uv/cpg/Library/SendMessage" ],
+  "action": [
+    {
+      "title": "Greet the patient",
+      "condition": [{
+        "kind": "applicability",
+        "expression": {
+          "language": "text/cql",
+          "expression": "Is Recommendation Applicable"
+        }
+      }],
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/action-type",
+            "code": "create"
+          }
+        ]
+      },
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-orderservice"
+    }
+  ]
+}

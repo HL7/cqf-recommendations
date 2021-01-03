@@ -1335,9 +1335,8 @@
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><Data ss:Type="String">&lt;type&gt;&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot;/&gt;&lt;code value=&quot;clinical-protocol&quot;/&gt;&lt;display value=&quot;Clinical Protocol&quot;/&gt;&lt;/coding&gt;&lt;/type&gt;</Data><NamedCell
+    <Cell ss:Index="12" ss:StyleID="s105"><Data ss:Type="String">&lt;type&gt;&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot;/&gt;&lt;code value=&quot;clinical-protocol&quot;/&gt;&lt;/coding&gt;&lt;/type&gt;</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2183,7 +2182,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>10</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

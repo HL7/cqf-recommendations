@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "chf-scenario1-bodyweight4",
+  "meta": {
+    "profile": ["http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight"]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-instantiatesCaseFeature",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureType",
+      "valueCode": "asserted"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
+      }
+    ]
+  },
+  "effectiveDateTime": "2019-02-03T07:00:00Z",
+  "issued": "2019-02-03T07:00:00Z",
+  "subject": {
+    "reference": "Patient/chf-scenario1"
+  },
+  "encounter": {
+    "reference": "Encounter/chf-scenario1"
+  },
+  "performer": [
+    {
+      "reference": "PractitionerRole/chf-scenario1"
+    }
+  ],
+  "valueQuantity": {
+    "value": 95.7,
+    "unit": "kg",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
+  }
+}

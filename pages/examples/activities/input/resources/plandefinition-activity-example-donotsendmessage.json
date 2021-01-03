@@ -22,6 +22,10 @@
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
       "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled",
+      "valueBoolean": true
     }
   ],
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-donotsendmessage",

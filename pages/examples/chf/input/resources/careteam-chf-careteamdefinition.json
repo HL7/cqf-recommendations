@@ -1,0 +1,23 @@
+{
+  "resourceType": "CareTeam",
+  "id": "chf-careteamdefinition",
+  "name": "CHF Care Team (definition)",
+  "participant": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17561000",
+              "display": "Cardiologist"
+            }
+          ]
+        }
+      ],
+      "member": {
+        "reference": "PractitionerRole/chf-practitionerroledefinition"
+      }
+    }
+  ]
+}

@@ -20,12 +20,13 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>18450</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>9135</WindowHeight>
+  <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -1133,9 +1134,9 @@
  <Worksheet ss:Name="cpg-enrollmenttask">
   <Names>
    <NamedRange ss:Name="_FilterDatabase"
-    ss:RefersTo="='cpg-enrollmenttask'!R1C1:R61C25" ss:Hidden="1"/>
+    ss:RefersTo="='cpg-enrollmenttask'!R1C1:R62C25" ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="48" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="49" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s85" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s85" ss:AutoFitWidth="0" ss:Width="305.25"/>
@@ -1289,6 +1290,38 @@
     <Cell ss:StyleID="s99"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s100"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s101"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s102"><Data ss:Type="String">isUnenrollment</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Task.extension</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">0..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Extension{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2578,8 +2611,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
-     <ActiveCol>3</ActiveCol>
+     <ActiveRow>3</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

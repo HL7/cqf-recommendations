@@ -1,0 +1,25 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "stop-dnsm-scenario5",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-donotsendmessage"
+    }
+  ],
+  "status": "draft",
+  "doNotPerform": true,
+  "subject": {
+    "reference": "Patient/dnsm-scenario5"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/dnsm-scenario5"
+    }
+  ]
+}

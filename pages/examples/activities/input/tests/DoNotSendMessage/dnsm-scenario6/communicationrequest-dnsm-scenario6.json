@@ -1,0 +1,18 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "dnsm-scenario6",
+  "status": "active",
+  "subject": {
+    "reference": "Patient/dnsm-scenario6"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/dnsm-scenario6"
+    }
+  ]
+}

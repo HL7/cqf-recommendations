@@ -1,0 +1,24 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "sm-scenario2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-sendmessage"
+    }
+  ],
+  "status": "active",
+  "subject": {
+    "reference": "Patient/sm-scenario2"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/sm-scenario2"
+    }
+  ]
+}

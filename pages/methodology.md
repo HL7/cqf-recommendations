@@ -506,7 +506,7 @@ The following table details the _event_ profiles for each activity type. Note th
 |Generate report|[CPGMetricReport](StructureDefinition-cpg-metricreport.html)<br/>[CPGCaseSummary](StructureDefinition-cpg-casesummary.html)<br/>[CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html)<br/>[CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html)|
 |Order a medication|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)<br/>[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)<br/>[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|
 |Recommend an immunization|[CPGImmunization](StructureDefinition-cpg-immunization.html)|
-|Order a service|[CPGProcedure](StructureDefinition-cpg-procedure.html)<br/>[CPGObservation](StructureDefinition-cpg-observation.html)<br/>[CPGDiagnosticReport](StructureDefinition-cpg-diagnosticreport.html)|
+|Order a service|[CPGProcedure](StructureDefinition-cpg-procedure.html)<br/>[CPGObservation](StructureDefinition-cpg-observation.html)|
 |Propose a diagnosis|[CPGCondition](StructureDefinition-cpg-condition.html)|
 |Record a detected issue|[CPGDetectedIssue](StructureDefinition-cpg-detectedissue.html)|
 |Record an inference|[CPGObservation](StructureDefinition-cpg-observation.html)|

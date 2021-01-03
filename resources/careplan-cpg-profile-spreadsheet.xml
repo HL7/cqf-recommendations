@@ -24,7 +24,7 @@
   <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
-  <ActiveSheet>4</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -1351,8 +1351,7 @@
     <Cell ss:StyleID="s104"><Data ss:Type="String">CarePlan.identifier</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">1..*</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
@@ -1824,7 +1823,7 @@
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Appointment){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-appointment} | Reference(CommunicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest} | Reference(MedicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest} | Reference(Task){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task} | Reference(ServiceRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest} | Reference(RequestGroup){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy}</Data><NamedCell
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Reference(Appointment) | Reference(CommunicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest} | Reference(MedicationRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest} | Reference(Task){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task} | Reference(ServiceRequest){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest} | Reference(RequestGroup){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3048,12 +3047,13 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>10</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>7</LeftColumnRightPane>
+   <LeftColumnRightPane>8</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -3065,11 +3065,11 @@
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>1</ActiveRow>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>20</ActiveRow>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>9</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -4696,7 +4696,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>

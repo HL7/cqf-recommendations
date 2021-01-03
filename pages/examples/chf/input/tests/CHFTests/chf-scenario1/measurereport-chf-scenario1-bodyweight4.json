@@ -1,0 +1,51 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "chf-scenario1-bodyweight4",
+  "status": "complete",
+  "type": "individual",
+  "measure": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight",
+  "subject": {
+    "reference": "Patient/chf-scenario1"
+  },
+  "date": "2019-02-03",
+  "period": {
+    "start": "2019-02-03",
+    "end": "2019-02-03"
+  },
+  "improvementNotation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+        "code": "decrease"
+      }
+    ]
+  },
+  "group": [
+    {
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "measure-observation"
+              }
+            ]
+          },
+          "count": 1
+        }
+      ],
+      "measureScore": {
+        "value": 95.7,
+        "unit": "kg",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg"
+      }
+    }
+  ],
+  "evaluatedResource": [
+    {
+      "reference": "Observation/chf-scenario1-bodyweight4"
+    }
+  ]
+}

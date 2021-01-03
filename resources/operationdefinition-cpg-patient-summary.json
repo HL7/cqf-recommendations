@@ -1,0 +1,50 @@
+{
+   "resourceType":"OperationDefinition",
+   "id":"cpg-patient-summary",
+   "extension":[
+      {
+         "url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+         "valueInteger":2
+      },
+      {
+         "url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+         "valueCode":"trial-use"
+      }
+   ],
+   "url":"http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-patient-summary",
+   "version":"0.1.0",
+   "name":"Summary",
+   "status":"draft",
+   "kind":"operation",
+   "date":"2019-11-01T09:29:23+11:00",
+   "publisher": "HL7 International - Clinical Decision Support WG",
+   "contact": [
+     {
+       "telecom": [
+         {
+           "system": "url",
+           "value": "http://hl7.org/Special/committees/dss"
+         }
+       ]
+     }
+   ],
+   "description":"The summary operation generates a patient summary for a patient",
+   "code":"summary",
+   "comment":"The result of this operation is a patient summary document, constructed according to agreed conventions such as the International Patient Summary.",
+   "resource":[
+      "Patient"
+   ],
+   "system":false,
+   "type":false,
+   "instance":true,
+   "parameter":[
+      {
+         "name":"return",
+         "use":"out",
+         "min": 1,
+         "max":"1",
+         "documentation":"The document Bundle that is the current patient summary document",
+         "type":"Bundle"
+      }
+   ]
+}

@@ -48,6 +48,10 @@
 				<name value="$match"/>
 				<definition value="http://hl7.org/fhir/OperationDefinition/Patient-match"/>
 			</operation>
+			<operation>
+				<name value="$summary"/>
+				<definition value="http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-patient-summary"/>
+			</operation>
 		</resource>
 	</rest>
 </CapabilityStatement>

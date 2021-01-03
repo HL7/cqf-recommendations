@@ -24,8 +24,8 @@
    <Path>/Users/christopherschuler/Documents/workspace/dcg/repos/HL7/cqf-measures/resources/\\ERICS-AIR-2\ehaas\Users\ehaas\Documents\FHIR\DaVinci\source\resources\davinci</Path>
    <SheetName>davinci</SheetName>
   </SupBook>
-  <WindowHeight>9135</WindowHeight>
-  <WindowWidth>22035</WindowWidth>
+  <WindowHeight>13425</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
@@ -754,7 +754,7 @@
     ss:RefersTo="=measurereport-'/Users/christopherschuler/Documents/workspace/dcg/repos/HL7/cqf-measures/resources/\\ERICS-AIR-2\ehaas\Users\ehaas\Documents\FHIR\DaVinci\source\resources\[davinci]davinci'!R1C1:R103C26"
     ss:Hidden="1"/>
   </Names>
-  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="61" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="57" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s81" ss:DefaultColumnWidth="65.25"
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="122.25"/>
@@ -949,83 +949,7 @@
     <Cell ss:StyleID="s81"><Data ss:Type="String">entry.resource</Data></Cell>
     <Cell ss:Formula="=R2C5&amp;&quot;.&quot;&amp;RC[-1]"><Data ss:Type="String">Bundle.entry.resource</Data></Cell>
     <Cell ss:Index="7"><Data ss:Type="String">1..1</Data></Cell>
-    <Cell ss:Index="9"><Data ss:Type="String">ActivityDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition}|CodeSystem{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem}|GraphDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition}|ImplementationGuide{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig}|Library{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary}|PlanDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition}|Questionnaire{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire}|StructureDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef}|ValueSet{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset}</Data></Cell>
-    <Cell><Data ss:Type="String">Y</Data></Cell>
-    <Cell ss:Index="18" ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s103"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s99"><Data ss:Type="String">requiredArtifact</Data></Cell>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">entry</Data></Cell>
-    <Cell ss:Formula="=R2C5&amp;&quot;.&quot;&amp;RC[-1]"><Data ss:Type="String">Bundle.entry</Data></Cell>
-    <Cell ss:Index="7"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="10"><Data ss:Type="String">Y</Data></Cell>
-    <Cell ss:Index="17"><Data ss:Type="String">Required code system</Data></Cell>
-    <Cell ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s103"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s99"/>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">entry.resource</Data></Cell>
-    <Cell ss:Formula="=R2C5&amp;&quot;.&quot;&amp;RC[-1]"><Data ss:Type="String">Bundle.entry.resource</Data></Cell>
-    <Cell ss:Index="7"><Data ss:Type="String">1..1</Data></Cell>
-    <Cell ss:Index="9"><Data ss:Type="String">ActivityDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition}|CodeSystem{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem}|GraphDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition}|ImplementationGuide{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig}|Library{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary}|PlanDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition}|Questionnaire{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire}|StructureDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef}|ValueSet{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset}</Data></Cell>
-    <Cell><Data ss:Type="String">Y</Data></Cell>
-    <Cell ss:Index="18" ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s103"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s99"><Data ss:Type="String">testCase</Data></Cell>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">entry</Data></Cell>
-    <Cell ss:Formula="=R2C5&amp;&quot;.&quot;&amp;RC[-1]"><Data ss:Type="String">Bundle.entry</Data></Cell>
-    <Cell ss:Index="7"><Data ss:Type="String">0..*</Data></Cell>
-    <Cell ss:Index="10"><Data ss:Type="String">Y</Data></Cell>
-    <Cell ss:Index="17"><Data ss:Type="String">Test case</Data></Cell>
-    <Cell ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s100"/>
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s102"/>
-    <Cell ss:StyleID="s103"/>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s99"/>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">entry.resource</Data></Cell>
-    <Cell ss:Formula="=R2C5&amp;&quot;.&quot;&amp;RC[-1]"><Data ss:Type="String">Bundle.entry.resource</Data></Cell>
-    <Cell ss:Index="7"><Data ss:Type="String">1..1</Data></Cell>
-    <Cell ss:Index="9"><Data ss:Type="String">Bundle{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle}</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">ActivityDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition}|Bundle{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle}|CareTeam{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteamdefinition}|CodeSystem{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem}|GraphDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition}|Group{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-groupdefinition}|ImplementationGuide{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig}|Library{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary}|Location{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-locationdefinition}|Measure{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablemetric}|PlanDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition}|PractitionerRole{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerroledefinition}|Questionnaire{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire}|StructureDefinition{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef}|ValueSet{http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset}</Data></Cell>
     <Cell><Data ss:Type="String">Y</Data></Cell>
     <Cell ss:Index="18" ss:StyleID="s100"/>
     <Cell ss:StyleID="s101"/>
@@ -1836,7 +1760,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>10</ActiveRow>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

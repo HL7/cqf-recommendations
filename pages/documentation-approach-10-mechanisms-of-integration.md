@@ -7,7 +7,7 @@ title: Mechanisms of Integration
 
 # Mechanisms of Integration
 
-Mechanisms of integration refers to the computational approaches and capabilities behave,  function, and interact as a system to deliver computational inferences and insights resulting from the faithful execution of the computable expressions of a clinical practice guideline (as expressed in using the knowledge artifacts defined in this implementation guide) against patient-specific data.  This includes results and inferences for CPGCaseFeatures, CPGRecommendations/CPGProposals, CPGMetrics, CPGeCaseReports, CPGCasePlanSummaryViews, and the results of other derived artifacts.  These inferences include individual resources and, as importantly, the relationships between them.
+Mechanisms of integration refers to the computational approaches and how capabilities behave, function, and interact as a system to deliver computational inferences and insights resulting from the faithful execution of the computable expressions of a clinical practice guideline (as expressed in using the knowledge artifacts defined in this implementation guide) against patient-specific data.  This includes results and inferences for CPGCaseFeatures, CPGRecommendations/CPGProposals, CPGMetrics, CPGeCaseReports, CPGCasePlanSummaryViews, and the results of other derived artifacts.  These inferences include individual resources and, as importantly, the relationships between them.
 
 * Do not remove this line (it will not be displayed)
 {:toc}

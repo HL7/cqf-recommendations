@@ -1,0 +1,38 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "chf-scenario1",
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/chf-scenario1"
+  },
+  "organization": {
+    "reference": "Organization/chf-scenario1"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona",
+          "code": "2212",
+          "display": "Specialist medical practitioner"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394579002",
+          "display": "Cardiology"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/chf-scenario1"
+    }
+  ]
+}

@@ -1379,9 +1379,8 @@
     <Cell ss:StyleID="s103"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s105"><Data ss:Type="String">&lt;type&gt;&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot;/&gt;&lt;code value=&quot;workflow-definition&quot;/&gt;&lt;display value=&quot;Workflow Definition&quot;/&gt;&lt;/coding&gt;&lt;/type&gt;</Data><NamedCell
+    <Cell ss:Index="12" ss:StyleID="s105"><Data ss:Type="String">&lt;type&gt;&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/plan-definition-type&quot;/&gt;&lt;code value=&quot;workflow-definition&quot;/&gt;&lt;/coding&gt;&lt;/type&gt;</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2233,7 +2232,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <LeftColumnRightPane>8</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -2248,7 +2247,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>18</ActiveRow>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>11</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

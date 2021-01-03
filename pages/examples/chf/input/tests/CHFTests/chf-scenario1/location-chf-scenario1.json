@@ -1,0 +1,21 @@
+{
+  "resourceType": "Location",
+  "id": "chf-scenario1",
+  "status": "active",
+  "name": "Unit 3 East",
+  "mode": "instance",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "CVDX",
+          "display": "Cardiovascular diagnostics or therapeutics unit"
+        }
+      ]
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/chf-scenario1"
+  }
+}

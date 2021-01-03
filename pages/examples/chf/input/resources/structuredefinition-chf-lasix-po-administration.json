@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "chf-lasix-po-administration",
+  "meta": {
+    "profile": ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition"]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-pathway"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-hypervolemia"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-lasix"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-po-administration",
+  "version": "1.0.0",
+  "name": "CHFLASIXPOAdminisistration",
+  "status": "draft",
+  "experimental": true,
+  "date": "2019-06-06",
+  "publisher": "Health Level Seven, Inc. - CDS WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/special/committees/DSS"
+        }
+      ]
+    }
+  ],
+  "description": "Documents the administration of LASIX PO as a pathway event within a congestive heart failure pathway",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration",
+        "path": "MedicationAdministration",
+        "mustSupport": false
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "path": "MedicationAdministration.medication[x]",
+        "mustSupport": true
+      }
+    ]
+  }
+}
