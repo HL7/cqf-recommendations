@@ -1057,865 +1057,1003 @@
 
       <!-- Congestive Heart Failure -->
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-bodyweight" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-bodyweight" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-bodyweight-change" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-bodyweight-change" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferenceactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-cardiology-consultation" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-cardiology-consultation" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-creatinine" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-creatinine" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-egfr" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-egfr" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-jvp" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-jvp" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-lasix-iv" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-lasix-iv" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-lasix-po" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-lasix-po" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-net-io" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-net-io" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-o2-sat" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-o2-sat" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-potassium" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-potassium" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-report-bodyweight" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-report-bodyweight" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-report-bodyweight-change" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-report-bodyweight-change" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-report-urine-out" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-report-urine-out" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity" />
+        <groupingId value="chf" />
       </resource>
       <resource>
-         <reference>
-            <reference value="ActivityDefinition/chf-urine-out" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="CarePlan/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careplan" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="CareTeam/chf-careteamdefinition" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteamdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="CareTeam/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="ClinicalImpression/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-clinicalimpression" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="CodeSystem/chf-codes" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Composition/chf-scenario1-caseplanprogressingnote" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplanprogressingnote" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Composition/chf-scenario1-caseplansummary" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummary" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Composition/chf-scenario1-casesummary" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummary" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Condition/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Encounter/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="EpisodeOfCare/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-cardiology-consultation" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-creatinine" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-egfr" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-jvp" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-lasix-iv" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-lasix-po" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-net-io" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-o2-sat" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-potassium" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-urine-out" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-weight" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Goal/chf-scenario1-weight-change" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="GraphDefinition/chf-caseplansummarydefinition" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="GraphDefinition/chf-casesummarydefinition" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Group/chf-groupdefinition" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-groupdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Group/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-group" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="ImplementationGuide/chf" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Library/CHF" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Location/chf-locationdefinition" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-locationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Location/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-location" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Measure/chf-bodyweight" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Measure/chf-bodyweight-change" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablemetric" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Measure/chf-urine-out" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablemetric" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-bodyweight-change1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-bodyweight-change2" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-bodyweight-change3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-bodyweight1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-bodyweight2" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-bodyweight3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-bodyweight4" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MeasureReport/chf-scenario1-urineout3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationAdministration/chf-scenario1-lasix-iv" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-iv-administration" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationAdministration/chf-scenario1-lasix-po" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-po-administration" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationRequest/chf-scenario1-lasix-po" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-po-request" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="MedicationRequest/chf-scenario1-stop-lasix-iv" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-iv-request" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-bodyweight-change1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-bodyweight-change2" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-bodyweight-change3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-bodyweight1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-bodyweight2" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-bodyweight3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-bodyweight4" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-creatinine1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-creatinine" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-egfr1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-egfr" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-jvp1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-jvp2" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-jvp3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-jvp4" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-jvp5" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-netio3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-net-io" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-o2sat1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-o2sat2" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-potassium1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-potassium" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Observation/chf-scenario1-urineout3" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-urine-out" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Organization/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Patient/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-bodyweight" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-bodyweight-change" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-cardiology-consultation" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-creatinine" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-daily-management" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-egfr" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-hypervolemia" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-jvp" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-lasix" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-net-io" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-o2-sat" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-pathway" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-potassium" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PlanDefinition/chf-urine-out" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Practitioner/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitioner" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PractitionerRole/chf-practitionerroledefinition" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerroledefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="PractitionerRole/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerrole" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="Procedure/chf-scenario1-cardiology-consult" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-cardiology-consult" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="RelatedPerson/chf-scenario1" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedperson" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="RequestGroup/chf-scenario1-daily-management" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="RequestGroup/chf-scenario1-hypervolemia" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="ServiceRequest/chf-scenario1-cardiology-consultation" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-cardiology-consult-request" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="ServiceRequest/chf-scenario1-jvp" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp-request" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="ServiceRequest/chf-scenario1-o2-sat" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat-request" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-bodyweight" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-bodyweight-change" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-cardiology-consult" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-cardiology-consult-request" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-creatinine" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-egfr" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-jvp" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-jvp-request" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-lasix-iv-administration" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-lasix-iv-request" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-lasix-po-administration" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-lasix-po-request" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-net-io" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-o2-sat" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-o2-sat-request" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-potassium" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef" />
-         <groupingId value="chf" />
-      </resource>
-      <resource>
-         <reference>
-            <reference value="StructureDefinition/chf-urine-out" />
-         </reference>
-         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecasefeature" />
-         <groupingId value="chf" />
+        <reference>
+          <reference value="ActivityDefinition/chf-urine-out" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="CarePlan/chf-scenario1" />
+        </reference>
+        <name value="CarePlan/chf-scenario1" />
+        <description value="CHF Example, Scenario1, CarePlan chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careplan" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="CareTeam/chf-careteamdefinition" />
+        </reference>
+        <name value="CareTeam/chf-careteamdefinition" />
+        <description value="CHF Example, CareTeamDefinition" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteamdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="CareTeam/chf-scenario1" />
+        </reference>
+        <name value="CareTeam/chf-scenario1" />
+        <description value="CHF Example, Scenario1, CareTeam chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ClinicalImpression/chf-scenario1" />
+        </reference>
+        <name value="ClinicalImpression/chf-scenario1" />
+        <description value="CHF Example, Scenario1, ClinicalImpression chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-clinicalimpression" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="CodeSystem/chf-codes" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Composition/chf-scenario1-caseplanprogressingnote" />
+        </reference>
+        <name value="Composition/chf-scenario1-caseplanprogressingnote" />
+        <description value="CHF Example, Scenario1, Composition chf-scenario1-caseplanprogressingnote" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplanprogressingnote" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Composition/chf-scenario1-caseplansummary" />
+        </reference>
+        <name value="Composition/chf-scenario1-caseplansummary" />
+        <description value="CHF Example, Scenario1, Composition chf-scenario1-caseplansummary" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummary" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Composition/chf-scenario1-casesummary" />
+        </reference>
+        <name value="Composition/chf-scenario1-casesummary" />
+        <description value="CHF Example, Scenario1, Composition chf-scenario1-casesummary" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummary" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Condition/chf-scenario1" />
+        </reference>
+        <name value="Condition/chf-scenario1" />
+        <description value="CHF Example, Scenario1, Condition chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Encounter/chf-scenario1" />
+        </reference>
+        <name value="Encounter/chf-scenario1" />
+        <description value="CHF Example, Scenario1, Encounter chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="EpisodeOfCare/chf-scenario1" />
+        </reference>
+        <name value="EpisodeOfCare/chf-scenario1" />
+        <description value="CHF Example, Scenario1, EpisodeOfCare chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-cardiology-consultation" />
+        </reference>
+        <name value="Goal/chf-scenario1-cardiology-consultation" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-cardiology-consultation" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-creatinine" />
+        </reference>
+        <name value="Goal/chf-scenario1-creatinine" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-creatinine" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-egfr" />
+        </reference>
+        <name value="Goal/chf-scenario1-egfr" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-egfr" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-jvp" />
+        </reference>
+        <name value="Goal/chf-scenario1-jvp" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-jvp" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-lasix-iv" />
+        </reference>
+        <name value="Goal/chf-scenario1-lasix-iv" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-lasix-iv" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-lasix-po" />
+        </reference>
+        <name value="Goal/chf-scenario1-lasix-po" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-lasix-po" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-net-io" />
+        </reference>
+        <name value="Goal/chf-scenario1-net-io" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-net-io" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-o2-sat" />
+        </reference>
+        <name value="Goal/chf-scenario1-o2-sat" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-o2-sat" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-potassium" />
+        </reference>
+        <name value="Goal/chf-scenario1-potassium" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-potassium" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-urine-out" />
+        </reference>
+        <name value="Goal/chf-scenario1-urine-out" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-urine-out" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-weight" />
+        </reference>
+        <name value="Goal/chf-scenario1-weight" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-weight" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Goal/chf-scenario1-weight-change" />
+        </reference>
+        <name value="Goal/chf-scenario1-weight-change" />
+        <description value="CHF Example, Scenario1, Goal chf-scenario1-weight-change" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="GraphDefinition/chf-caseplansummarydefinition" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="GraphDefinition/chf-casesummarydefinition" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Group/chf-groupdefinition" />
+        </reference>
+        <name value="Group/chf-groupdefinition" />
+        <description value="CHF Example, Group Definition" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-groupdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Group/chf-scenario1" />
+        </reference>
+        <name value="Group/chf-scenario1" />
+        <description value="CHF Example, Scenario1, Group chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-group" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ImplementationGuide/chf" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Library/CHF" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Location/chf-locationdefinition" />
+        </reference>
+        <name value="Location/chf-locationdefinition" />
+        <description value="CHF Example, Location Definition" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-locationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Location/chf-scenario1" />
+        </reference>
+        <name value="Location/chf-scenario1" />
+        <description value="CHF Example, Scenario1, Location chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-location" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Measure/chf-bodyweight" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Measure/chf-bodyweight-change" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablemetric" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Measure/chf-urine-out" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablemetric" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-bodyweight-change1" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-bodyweight-change1" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-bodyweight-change1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-bodyweight-change2" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-bodyweight-change2" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-bodyweight-change2" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-bodyweight-change3" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-bodyweight-change3" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-bodyweight-change3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-bodyweight1" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-bodyweight1" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-bodyweight1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-bodyweight2" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-bodyweight2" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-bodyweight2" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-bodyweight3" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-bodyweight3" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-bodyweight3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-bodyweight4" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-bodyweight4" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-bodyweight4" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MeasureReport/chf-scenario1-urineout3" />
+        </reference>
+        <name value="MeasureReport/chf-scenario1-urineout3" />
+        <description value="CHF Example, Scenario1, MeasureReport chf-scenario1-urineout3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MedicationAdministration/chf-scenario1-lasix-iv" />
+        </reference>
+        <name value="MedicationAdministration/chf-scenario1-lasix-iv" />
+        <description value="CHF Example, Scenario1, MedicationAdministration chf-scenario1-lasix-iv" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-iv-administration" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MedicationAdministration/chf-scenario1-lasix-po" />
+        </reference>
+        <name value="MedicationAdministration/chf-scenario1-lasix-po" />
+        <description value="CHF Example, Scenario1, MedicationAdministration chf-scenario1-lasix-po" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-po-administration" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MedicationRequest/chf-scenario1-lasix-po" />
+        </reference>
+        <name value="MedicationRequest/chf-scenario1-lasix-po" />
+        <description value="CHF Example, Scenario1, MedicationRequest chf-scenario1-lasix-po" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-po-request" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="MedicationRequest/chf-scenario1-stop-lasix-iv" />
+        </reference>
+        <name value="MedicationRequest/chf-scenario1-stop-lasix-iv" />
+        <description value="CHF Example, Scenario1, MedicationRequest chf-scenario1-stop-lasix-iv" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-iv-request" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-bodyweight-change1" />
+        </reference>
+        <name value="Observation/chf-scenario1-bodyweight-change1" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-bodyweight-change1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-bodyweight-change2" />
+        </reference>
+        <name value="Observation/chf-scenario1-bodyweight-change2" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-bodyweight-change2" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-bodyweight-change3" />
+        </reference>
+        <name value="Observation/chf-scenario1-bodyweight-change3" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-bodyweight-change3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-bodyweight1" />
+        </reference>
+        <name value="Observation/chf-scenario1-bodyweight1" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-bodyweight1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-bodyweight2" />
+        </reference>
+        <name value="Observation/chf-scenario1-bodyweight2" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-bodyweight2" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-bodyweight3" />
+        </reference>
+        <name value="Observation/chf-scenario1-bodyweight3" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-bodyweight3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-bodyweight4" />
+        </reference>
+        <name value="Observation/chf-scenario1-bodyweight4" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-bodyweight4" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-creatinine1" />
+        </reference>
+        <name value="Observation/chf-scenario1-creatinine1" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-creatinine1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-creatinine" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-egfr1" />
+        </reference>
+        <name value="Observation/chf-scenario1-egfr1" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-egfr1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-egfr" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-jvp1" />
+        </reference>
+        <name value="Observation/chf-scenario1-jvp1" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-jvp1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-jvp2" />
+        </reference>
+        <name value="Observation/chf-scenario1-jvp2" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-jvp2" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-jvp3" />
+        </reference>
+        <name value="Observation/chf-scenario1-jvp3" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-jvp3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-jvp4" />
+        </reference>
+        <name value="Observation/chf-scenario1-jvp4" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-jvp4" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-jvp5" />
+        </reference>
+        <name value="Observation/chf-scenario1-jvp5" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-jvp5" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-netio3" />
+        </reference>
+        <name value="Observation/chf-scenario1-netio3" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-netio3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-net-io" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-o2sat1" />
+        </reference>
+        <name value="Observation/chf-scenario1-o2sat1" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-o2sat1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-o2sat2" />
+        </reference>
+        <name value="Observation/chf-scenario1-o2sat2" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-o2sat2" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-potassium1" />
+        </reference>
+        <name value="Observation/chf-scenario1-potassium1" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-potassium1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-potassium" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Observation/chf-scenario1-urineout3" />
+        </reference>
+        <name value="Observation/chf-scenario1-urineout3" />
+        <description value="CHF Example, Scenario1, Observation chf-scenario1-urineout3" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-urine-out" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Organization/chf-scenario1" />
+        </reference>
+        <name value="Organization/chf-scenario1" />
+        <description value="CHF Example, Scenario1, Organization chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Patient/chf-scenario1" />
+        </reference>
+        <name value="Patient/chf-scenario1" />
+        <description value="CHF Example, Scenario1, Patient chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-bodyweight" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-bodyweight-change" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-cardiology-consultation" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-creatinine" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-daily-management" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-egfr" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-hypervolemia" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-jvp" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-lasix" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-net-io" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-o2-sat" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-pathway" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-potassium" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PlanDefinition/chf-urine-out" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Practitioner/chf-scenario1" />
+        </reference>
+        <name value="Practitioner/chf-scenario1" />
+        <description value="CHF Example, Scenario1, Practitioner chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitioner" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PractitionerRole/chf-practitionerroledefinition" />
+        </reference>
+        <name value="PractitionerRole/chf-practitionerroledefinition" />
+        <description value="CHF Example, PractitionerRole Definition" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerroledefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="PractitionerRole/chf-scenario1" />
+        </reference>
+        <name value="PractitionerRole/chf-scenario1" />
+        <description value="CHF Example, Scenario1, PractitionerRole chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerrole" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="Procedure/chf-scenario1-cardiology-consult" />
+        </reference>
+        <name value="Procedure/chf-scenario1-cardiology-consult" />
+        <description value="CHF Example, Scenario1, Procedure chf-scenario1-cardiology-consult" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-cardiology-consult" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="RelatedPerson/chf-scenario1" />
+        </reference>
+        <name value="RelatedPerson/chf-scenario1" />
+        <description value="CHF Example, Scenario1, RelatedPerson chf-scenario1" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedperson" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="RequestGroup/chf-scenario1-daily-management" />
+        </reference>
+        <name value="RequestGroup/chf-scenario1-daily-management" />
+        <description value="CHF Example, Scenario1, RequestGroup chf-scenario1-daily-management" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="RequestGroup/chf-scenario1-hypervolemia" />
+        </reference>
+        <name value="RequestGroup/chf-scenario1-hypervolemia" />
+        <description value="CHF Example, Scenario1, RequestGroup chf-scenario1-hypervolemia" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ServiceRequest/chf-scenario1-cardiology-consultation" />
+        </reference>
+        <name value="ServiceRequest/chf-scenario1-cardiology-consultation" />
+        <description value="CHF Example, Scenario1, ServiceRequest chf-scenario1-cardiology-consultation" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-cardiology-consult-request" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ServiceRequest/chf-scenario1-jvp" />
+        </reference>
+        <name value="ServiceRequest/chf-scenario1-jvp" />
+        <description value="CHF Example, Scenario1, ServiceRequest chf-scenario1-jvp" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp-request" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="ServiceRequest/chf-scenario1-o2-sat" />
+        </reference>
+        <name value="ServiceRequest/chf-scenario1-o2-sat" />
+        <description value="CHF Example, Scenario1, ServiceRequest chf-scenario1-o2-sat" />
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat-request" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-bodyweight" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-bodyweight-change" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-cardiology-consult" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-cardiology-consult-request" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-creatinine" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-egfr" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-jvp" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-jvp-request" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-lasix-iv-administration" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-lasix-iv-request" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-lasix-po-administration" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-lasix-po-request" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-net-io" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-o2-sat" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-o2-sat-request" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-potassium" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef" />
+        <groupingId value="chf" />
+      </resource>
+      <resource>
+        <reference>
+          <reference value="StructureDefinition/chf-urine-out" />
+        </reference>
+        <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecasefeature" />
+        <groupingId value="chf" />
       </resource>
 
 			<!-- Chronic Care Management -->
@@ -2492,6 +2630,8 @@
         <reference>
           <reference value="MedicationRequest/am-scenario1" />
         </reference>
+        <name value="MedicationRequest/am-scenario1" />
+        <description value="AdministerMedication Example, Scenario am-scenario1, MedicationRequest am-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2499,6 +2639,8 @@
         <reference>
           <reference value="Patient/am-scenario1" />
         </reference>
+        <name value="Patient/am-scenario1" />
+        <description value="AdministerMedication Example, Scenario am-scenario1, Patient am-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2506,6 +2648,8 @@
         <reference>
           <reference value="MedicationRequest/am-scenario2" />
         </reference>
+        <name value="MedicationRequest/am-scenario2" />
+        <description value="AdministerMedication Example, Scenario am-scenario2, MedicationRequest am-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2513,6 +2657,8 @@
         <reference>
           <reference value="Patient/am-scenario2" />
         </reference>
+        <name value="Patient/am-scenario2" />
+        <description value="AdministerMedication Example, Scenario am-scenario2, Patient am-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2520,6 +2666,8 @@
         <reference>
           <reference value="Task/request-am-scenario2" />
         </reference>
+        <name value="Task/request-am-scenario2" />
+        <description value="AdministerMedication Example, Scenario am-scenario2, Task request-am-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2527,6 +2675,8 @@
         <reference>
           <reference value="MedicationRequest/am-scenario3" />
         </reference>
+        <name value="MedicationRequest/am-scenario3" />
+        <description value="AdministerMedication Example, Scenario am-scenario3, MedicationRequest am-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2534,6 +2684,8 @@
         <reference>
           <reference value="Patient/am-scenario3" />
         </reference>
+        <name value="Patient/am-scenario3" />
+        <description value="AdministerMedication Example, Scenario am-scenario3, Patient am-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2541,6 +2693,8 @@
         <reference>
           <reference value="Task/request-am-scenario3" />
         </reference>
+        <name value="Task/request-am-scenario3" />
+        <description value="AdministerMedication Example, Scenario am-scenario3, Task request-am-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2548,6 +2702,8 @@
         <reference>
           <reference value="MedicationAdministration/am-scenario4" />
         </reference>
+        <name value="MedicationAdministration/am-scenario4" />
+        <description value="AdministerMedication Example, Scenario am-scenario4, MedicationAdministration am-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration" />
         <groupingId value="activity-example" />
       </resource>
@@ -2555,6 +2711,8 @@
         <reference>
           <reference value="MedicationRequest/am-scenario4" />
         </reference>
+        <name value="MedicationRequest/am-scenario4" />
+        <description value="AdministerMedication Example, Scenario am-scenario4, MedicationRequest am-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2562,6 +2720,8 @@
         <reference>
           <reference value="Patient/am-scenario4" />
         </reference>
+        <name value="Patient/am-scenario4" />
+        <description value="AdministerMedication Example, Scenario am-scenario4, Patient am-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2569,6 +2729,8 @@
         <reference>
           <reference value="MedicationAdministration/am-scenario5" />
         </reference>
+        <name value="MedicationAdministration/am-scenario5" />
+        <description value="AdministerMedication Example, Scenario am-scenario5, MedicationAdministration am-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration" />
         <groupingId value="activity-example" />
       </resource>
@@ -2576,6 +2738,8 @@
         <reference>
           <reference value="MedicationRequest/am-scenario5" />
         </reference>
+        <name value="MedicationRequest/am-scenario5" />
+        <description value="AdministerMedication Example, Scenario am-scenario5, MedicationRequest am-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2583,6 +2747,8 @@
         <reference>
           <reference value="Patient/am-scenario5" />
         </reference>
+        <name value="Patient/am-scenario5" />
+        <description value="AdministerMedication Example, Scenario am-scenario5, Patient am-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2590,6 +2756,8 @@
         <reference>
           <reference value="Task/request-am-scenario5" />
         </reference>
+        <name value="Task/request-am-scenario5" />
+        <description value="AdministerMedication Example, Scenario am-scenario5, Task request-am-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2597,6 +2765,8 @@
         <reference>
           <reference value="MedicationAdministration/am-scenario6" />
         </reference>
+        <name value="MedicationAdministration/am-scenario6" />
+        <description value="AdministerMedication Example, Scenario am-scenario6, MedicationAdministration am-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration" />
         <groupingId value="activity-example" />
       </resource>
@@ -2604,6 +2774,8 @@
         <reference>
           <reference value="MedicationRequest/am-scenario6" />
         </reference>
+        <name value="MedicationRequest/am-scenario6" />
+        <description value="AdministerMedication Example, Scenario am-scenario6, MedicationRequest am-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2611,6 +2783,8 @@
         <reference>
           <reference value="Patient/am-scenario6" />
         </reference>
+        <name value="Patient/am-scenario6" />
+        <description value="AdministerMedication Example, Scenario am-scenario6, Patient am-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2618,6 +2792,8 @@
         <reference>
           <reference value="Bundle/am-scenario7" />
         </reference>
+        <name value="Bundle/am-scenario7" />
+        <description value="AdministerMedication Example, Scenario am-scenario7, Bundle am-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle" />
         <groupingId value="activity-example" />
       </resource>
@@ -2625,12 +2801,16 @@
         <reference>
           <reference value="GuidanceResponse/am-scenario7" />
         </reference>
+        <name value="GuidanceResponse/am-scenario7" />
+        <description value="AdministerMedication Example, Scenario am-scenario7, GuidanceResponse am-scenario7" />
         <groupingId value="activity-example" />
       </resource>
       <resource>
         <reference>
           <reference value="MedicationAdministration/am-scenario7" />
         </reference>
+        <name value="MedicationAdministration/am-scenario7" />
+        <description value="AdministerMedication Example, Scenario am-scenario7, MedicationAdministration am-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration" />
         <groupingId value="activity-example" />
       </resource>
@@ -2638,6 +2818,8 @@
         <reference>
           <reference value="MedicationRequest/am-scenario7" />
         </reference>
+        <name value="MedicationRequest/am-scenario7" />
+        <description value="AdministerMedication Example, Scenario am-scenario7, MedicationRequest am-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2645,6 +2827,8 @@
         <reference>
           <reference value="Patient/am-scenario7" />
         </reference>
+        <name value="Patient/am-scenario7" />
+        <description value="AdministerMedication Example, Scenario am-scenario7, Patient am-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2652,6 +2836,8 @@
         <reference>
           <reference value="Task/request-am-scenario7" />
         </reference>
+        <name value="Task/request-am-scenario7" />
+        <description value="AdministerMedication Example, Scenario am-scenario7, Task request-am-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2659,6 +2845,8 @@
         <reference>
           <reference value="Patient/ci-scenario1" />
         </reference>
+        <name value="Patient/ci-scenario1" />
+        <description value="CollectInformation Example, Scenario ci-scenario1, Patient ci-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2666,6 +2854,8 @@
         <reference>
           <reference value="Patient/ci-scenario2" />
         </reference>
+        <name value="Patient/ci-scenario2" />
+        <description value="CollectInformation Example, Scenario ci-scenario2, Patient ci-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2673,6 +2863,8 @@
         <reference>
           <reference value="Task/request-ci-scenario2" />
         </reference>
+        <name value="Task/request-ci-scenario2" />
+        <description value="CollectInformation Example, Scenario ci-scenario2, Task request-ci-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2680,6 +2872,8 @@
         <reference>
           <reference value="Patient/ci-scenario3" />
         </reference>
+        <name value="Patient/ci-scenario3" />
+        <description value="CollectInformation Example, Scenario ci-scenario3, Patient ci-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2687,6 +2881,8 @@
         <reference>
           <reference value="Task/request-ci-scenario3" />
         </reference>
+        <name value="Task/request-ci-scenario3" />
+        <description value="CollectInformation Example, Scenario ci-scenario3, Task request-ci-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2694,6 +2890,8 @@
         <reference>
           <reference value="Patient/ci-scenario4" />
         </reference>
+        <name value="Patient/ci-scenario4" />
+        <description value="CollectInformation Example, Scenario ci-scenario4, Patient ci-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2701,6 +2899,8 @@
         <reference>
           <reference value="QuestionnaireResponse/ci-scenario4" />
         </reference>
+        <name value="QuestionnaireResponse/ci-scenario4" />
+        <description value="CollectInformation Example, Scenario ci-scenario4, QuestionnaireResponse ci-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaireresponse" />
         <groupingId value="activity-example" />
       </resource>
@@ -2708,6 +2908,8 @@
         <reference>
           <reference value="Task/event-ci-scenario4" />
         </reference>
+        <name value="Task/event-ci-scenario4" />
+        <description value="CollectInformation Example, Scenario ci-scenario4, Task event-ci-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2715,6 +2917,8 @@
         <reference>
           <reference value="Patient/ci-scenario5" />
         </reference>
+        <name value="Patient/ci-scenario5" />
+        <description value="CollectInformation Example, Scenario ci-scenario5, Patient ci-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2722,6 +2926,8 @@
         <reference>
           <reference value="QuestionnaireResponse/ci-scenario5" />
         </reference>
+        <name value="QuestionnaireResponse/ci-scenario5" />
+        <description value="CollectInformation Example, Scenario ci-scenario5, QuestionnaireResponse ci-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaireresponse" />
         <groupingId value="activity-example" />
       </resource>
@@ -2729,6 +2935,8 @@
         <reference>
           <reference value="Task/event-ci-scenario5" />
         </reference>
+        <name value="Task/event-ci-scenario5" />
+        <description value="CollectInformation Example, Scenario ci-scenario5, Task event-ci-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task" />
         <groupingId value="activity-example" />
       </resource>
@@ -2736,6 +2944,8 @@
         <reference>
           <reference value="Task/request-ci-scenario5" />
         </reference>
+        <name value="Task/request-ci-scenario5" />
+        <description value="CollectInformation Example, Scenario ci-scenario5, Task request-ci-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2743,6 +2953,8 @@
         <reference>
           <reference value="Patient/ci-scenario6" />
         </reference>
+        <name value="Patient/ci-scenario6" />
+        <description value="CollectInformation Example, Scenario ci-scenario6, Patient ci-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2750,6 +2962,8 @@
         <reference>
           <reference value="Task/event-ci-scenario6" />
         </reference>
+        <name value="Task/event-ci-scenario6" />
+        <description value="CollectInformation Example, Scenario ci-scenario6, Task event-ci-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2757,6 +2971,8 @@
         <reference>
           <reference value="Patient/ci-scenario7" />
         </reference>
+        <name value="Patient/ci-scenario7" />
+        <description value="CollectInformation Example, Scenario ci-scenario7, Patient ci-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2764,6 +2980,8 @@
         <reference>
           <reference value="Task/event-ci-scenario7" />
         </reference>
+        <name value="Task/event-ci-scenario7" />
+        <description value="CollectInformation Example, Scenario ci-scenario7, Task event-ci-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2771,6 +2989,8 @@
         <reference>
           <reference value="Task/request-ci-scenario7" />
         </reference>
+        <name value="Task/request-ci-scenario7" />
+        <description value="CollectInformation Example, Scenario ci-scenario7, Task request-ci-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2778,6 +2998,8 @@
         <reference>
           <reference value="MedicationRequest/dm-scenario1" />
         </reference>
+        <name value="MedicationRequest/dm-scenario1" />
+        <description value="DispenseMedication Example, Scenario dm-scenario1, MedicationRequest dm-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2785,6 +3007,8 @@
         <reference>
           <reference value="Patient/dm-scenario1" />
         </reference>
+        <name value="Patient/dm-scenario1" />
+        <description value="DispenseMedication Example, Scenario dm-scenario1, Patient dm-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2792,6 +3016,8 @@
         <reference>
           <reference value="MedicationRequest/dm-scenario2" />
         </reference>
+        <name value="MedicationRequest/dm-scenario2" />
+        <description value="DispenseMedication Example, Scenario dm-scenario2, MedicationRequest dm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2799,6 +3025,8 @@
         <reference>
           <reference value="Patient/dm-scenario2" />
         </reference>
+        <name value="Patient/dm-scenario2" />
+        <description value="DispenseMedication Example, Scenario dm-scenario2, Patient dm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2806,6 +3034,8 @@
         <reference>
           <reference value="Task/request-dm-scenario2" />
         </reference>
+        <name value="Task/request-dm-scenario2" />
+        <description value="DispenseMedication Example, Scenario dm-scenario2, Task request-dm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2813,6 +3043,8 @@
         <reference>
           <reference value="MedicationRequest/dm-scenario3" />
         </reference>
+        <name value="MedicationRequest/dm-scenario3" />
+        <description value="DispenseMedication Example, Scenario dm-scenario3, MedicationRequest dm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2820,6 +3052,8 @@
         <reference>
           <reference value="Patient/dm-scenario3" />
         </reference>
+        <name value="Patient/dm-scenario3" />
+        <description value="DispenseMedication Example, Scenario dm-scenario3, Patient dm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2827,6 +3061,8 @@
         <reference>
           <reference value="Task/request-dm-scenario3" />
         </reference>
+        <name value="Task/request-dm-scenario3" />
+        <description value="DispenseMedication Example, Scenario dm-scenario3, Task request-dm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2834,6 +3070,8 @@
         <reference>
           <reference value="MedicationDispense/dm-scenario4" />
         </reference>
+        <name value="MedicationDispense/dm-scenario4" />
+        <description value="DispenseMedication Example, Scenario dm-scenario4, MedicationDispense dm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -2841,6 +3079,8 @@
         <reference>
           <reference value="MedicationRequest/dm-scenario4" />
         </reference>
+        <name value="MedicationRequest/dm-scenario4" />
+        <description value="DispenseMedication Example, Scenario dm-scenario4, MedicationRequest dm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2848,6 +3088,8 @@
         <reference>
           <reference value="Patient/dm-scenario4" />
         </reference>
+        <name value="Patient/dm-scenario4" />
+        <description value="DispenseMedication Example, Scenario dm-scenario4, Patient dm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2855,6 +3097,8 @@
         <reference>
           <reference value="MedicationDispense/dm-scenario5" />
         </reference>
+        <name value="MedicationDispense/dm-scenario5" />
+        <description value="DispenseMedication Example, Scenario dm-scenario5, MedicationDispense dm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -2862,6 +3106,8 @@
         <reference>
           <reference value="MedicationRequest/dm-scenario5" />
         </reference>
+        <name value="MedicationRequest/dm-scenario5" />
+        <description value="DispenseMedication Example, Scenario dm-scenario5, MedicationRequest dm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2869,6 +3115,8 @@
         <reference>
           <reference value="Patient/dm-scenario5" />
         </reference>
+        <name value="Patient/dm-scenario5" />
+        <description value="DispenseMedication Example, Scenario dm-scenario5, Patient dm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2876,6 +3124,8 @@
         <reference>
           <reference value="Task/request-dm-scenario5" />
         </reference>
+        <name value="Task/request-dm-scenario5" />
+        <description value="DispenseMedication Example, Scenario dm-scenario5, Task request-dm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2883,6 +3133,8 @@
         <reference>
           <reference value="MedicationDispense/dm-scenario6" />
         </reference>
+        <name value="MedicationDispense/dm-scenario6" />
+        <description value="DispenseMedication Example, Scenario dm-scenario6, MedicationDispense dm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -2890,6 +3142,8 @@
         <reference>
           <reference value="MedicationRequest/dm-scenario6" />
         </reference>
+        <name value="MedicationRequest/dm-scenario6" />
+        <description value="DispenseMedication Example, Scenario dm-scenario6, MedicationRequest dm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2897,6 +3151,8 @@
         <reference>
           <reference value="Patient/dm-scenario6" />
         </reference>
+        <name value="Patient/dm-scenario6" />
+        <description value="DispenseMedication Example, Scenario dm-scenario6, Patient dm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2904,6 +3160,8 @@
         <reference>
           <reference value="MedicationDispense/dm-scenario7" />
         </reference>
+        <name value="MedicationDispense/dm-scenario7" />
+        <description value="DispenseMedication Example, Scenario dm-scenario7, MedicationDispense dm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -2911,6 +3169,8 @@
         <reference>
           <reference value="MedicationRequest/dm-scenario7" />
         </reference>
+        <name value="MedicationRequest/dm-scenario7" />
+        <description value="DispenseMedication Example, Scenario dm-scenario7, MedicationRequest dm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -2918,6 +3178,8 @@
         <reference>
           <reference value="Patient/dm-scenario7" />
         </reference>
+        <name value="Patient/dm-scenario7" />
+        <description value="DispenseMedication Example, Scenario dm-scenario7, Patient dm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2925,6 +3187,8 @@
         <reference>
           <reference value="Task/request-dm-scenario7" />
         </reference>
+        <name value="Task/request-dm-scenario7" />
+        <description value="DispenseMedication Example, Scenario dm-scenario7, Task request-dm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2932,6 +3196,8 @@
         <reference>
           <reference value="Patient/dnci-scenario1" />
         </reference>
+        <name value="Patient/dnci-scenario1" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario1, Patient dnci-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2939,6 +3205,8 @@
         <reference>
           <reference value="Task/event-dnci-scenario1" />
         </reference>
+        <name value="Task/event-dnci-scenario1" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario1, Task event-dnci-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2946,6 +3214,8 @@
         <reference>
           <reference value="Patient/dnci-scenario2" />
         </reference>
+        <name value="Patient/dnci-scenario2" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario2, Patient dnci-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2953,6 +3223,8 @@
         <reference>
           <reference value="Task/event-dnci-scenario2" />
         </reference>
+        <name value="Task/event-dnci-scenario2" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario2, Task event-dnci-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2960,6 +3232,8 @@
         <reference>
           <reference value="Task/request-dnci-scenario2" />
         </reference>
+        <name value="Task/request-dnci-scenario2" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario2, Task request-dnci-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2967,6 +3241,8 @@
         <reference>
           <reference value="Patient/dnci-scenario3" />
         </reference>
+        <name value="Patient/dnci-scenario3" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario3, Patient dnci-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2974,6 +3250,8 @@
         <reference>
           <reference value="Task/event-dnci-scenario3" />
         </reference>
+        <name value="Task/event-dnci-scenario3" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario3, Task event-dnci-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2981,6 +3259,8 @@
         <reference>
           <reference value="Task/request-dnci-scenario3" />
         </reference>
+        <name value="Task/request-dnci-scenario3" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario3, Task request-dnci-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -2988,6 +3268,8 @@
         <reference>
           <reference value="Patient/dnci-scenario4" />
         </reference>
+        <name value="Patient/dnci-scenario4" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario4, Patient dnci-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -2995,6 +3277,8 @@
         <reference>
           <reference value="Task/request-dnci-scenario4" />
         </reference>
+        <name value="Task/request-dnci-scenario4" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario4, Task request-dnci-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3002,6 +3286,8 @@
         <reference>
           <reference value="Patient/dnci-scenario5" />
         </reference>
+        <name value="Patient/dnci-scenario5" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario5, Patient dnci-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3009,6 +3295,8 @@
         <reference>
           <reference value="Task/request-dnci-scenario5" />
         </reference>
+        <name value="Task/request-dnci-scenario5" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario5, Task request-dnci-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3016,6 +3304,8 @@
         <reference>
           <reference value="Task/request-stop-dnci-scenario5" />
         </reference>
+        <name value="Task/request-stop-dnci-scenario5" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario5, Task request-stop-dnci-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3023,6 +3313,8 @@
         <reference>
           <reference value="Patient/dnci-scenario6" />
         </reference>
+        <name value="Patient/dnci-scenario6" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario6, Patient dnci-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3030,6 +3322,8 @@
         <reference>
           <reference value="Task/request-dnci-scenario6" />
         </reference>
+        <name value="Task/request-dnci-scenario6" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario6, Task request-dnci-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3037,6 +3331,8 @@
         <reference>
           <reference value="Task/request-stop-dnci-scenario6" />
         </reference>
+        <name value="Task/request-stop-dnci-scenario6" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario6, Task request-stop-dnci-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3044,6 +3340,8 @@
         <reference>
           <reference value="Patient/dnci-scenario7" />
         </reference>
+        <name value="Patient/dnci-scenario7" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario7, Patient dnci-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3051,6 +3349,8 @@
         <reference>
           <reference value="Task/event-dnci-scenario7" />
         </reference>
+        <name value="Task/event-dnci-scenario7" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario7, Task event-dnci-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3058,6 +3358,8 @@
         <reference>
           <reference value="Communication/scenario8" />
         </reference>
+        <name value="Communication/scenario8" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario8, Communication scenario8" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3065,6 +3367,8 @@
         <reference>
           <reference value="Patient/dnci-scenario8" />
         </reference>
+        <name value="Patient/dnci-scenario8" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario8, Patient dnci-scenario8" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3072,6 +3376,8 @@
         <reference>
           <reference value="QuestionnaireResponse/dnci-scenario8" />
         </reference>
+        <name value="QuestionnaireResponse/dnci-scenario8" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario8, QuestionnaireResponse dnci-scenario8" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaireresponse" />
         <groupingId value="activity-example" />
       </resource>
@@ -3079,6 +3385,8 @@
         <reference>
           <reference value="Task/event-dnci-scenario8" />
         </reference>
+        <name value="Task/event-dnci-scenario8" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario8, Task event-dnci-scenario8" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3086,6 +3394,8 @@
         <reference>
           <reference value="Patient/dnci-scenario9" />
         </reference>
+        <name value="Patient/dnci-scenario9" />
+        <description value="DoNotCollectInformation Example, Scenario dnci-scenario9, Patient dnci-scenario9" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3093,6 +3403,8 @@
         <reference>
           <reference value="Communication/dnsm-scenario1" />
         </reference>
+        <name value="Communication/dnsm-scenario1" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario1, Communication dnsm-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3100,6 +3412,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario1" />
         </reference>
+        <name value="Patient/dnsm-scenario1" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario1, Patient dnsm-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3107,6 +3421,8 @@
         <reference>
           <reference value="Communication/dnsm-scenario2" />
         </reference>
+        <name value="Communication/dnsm-scenario2" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario2, Communication dnsm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3114,6 +3430,8 @@
         <reference>
           <reference value="CommunicationRequest/dnsm-scenario2" />
         </reference>
+        <name value="CommunicationRequest/dnsm-scenario2" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario2, CommunicationRequest dnsm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3121,6 +3439,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario2" />
         </reference>
+        <name value="Patient/dnsm-scenario2" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario2, Patient dnsm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3128,6 +3448,8 @@
         <reference>
           <reference value="Communication/dnsm-scenario3" />
         </reference>
+        <name value="Communication/dnsm-scenario3" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario3, Communication dnsm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3135,6 +3457,8 @@
         <reference>
           <reference value="CommunicationRequest/dnsm-scenario3" />
         </reference>
+        <name value="CommunicationRequest/dnsm-scenario3" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario3, CommunicationRequest dnsm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3142,6 +3466,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario3" />
         </reference>
+        <name value="Patient/dnsm-scenario3" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario3, Patient dnsm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3149,6 +3475,8 @@
         <reference>
           <reference value="CommunicationRequest/dnsm-scenario4" />
         </reference>
+        <name value="CommunicationRequest/dnsm-scenario4" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario4, CommunicationRequest dnsm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3156,6 +3484,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario4" />
         </reference>
+        <name value="Patient/dnsm-scenario4" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario4, Patient dnsm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3163,6 +3493,8 @@
         <reference>
           <reference value="CommunicationRequest/dnsm-scenario5" />
         </reference>
+        <name value="CommunicationRequest/dnsm-scenario5" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario5, CommunicationRequest dnsm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3170,6 +3502,8 @@
         <reference>
           <reference value="CommunicationRequest/stop-dnsm-scenario5" />
         </reference>
+        <name value="CommunicationRequest/stop-dnsm-scenario5" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario5, CommunicationRequest stop-dnsm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3177,6 +3511,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario5" />
         </reference>
+        <name value="Patient/dnsm-scenario5" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario5, Patient dnsm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3184,6 +3520,8 @@
         <reference>
           <reference value="CommunicationRequest/dnsm-scenario6" />
         </reference>
+        <name value="CommunicationRequest/dnsm-scenario6" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario6, CommunicationRequest dnsm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3191,6 +3529,8 @@
         <reference>
           <reference value="CommunicationRequest/stop-dnsm-scenario6" />
         </reference>
+        <name value="CommunicationRequest/stop-dnsm-scenario6" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario6, CommunicationRequest stop-dnsm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3198,6 +3538,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario6" />
         </reference>
+        <name value="Patient/dnsm-scenario6" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario6, Patient dnsm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3205,6 +3547,8 @@
         <reference>
           <reference value="Communication/dnsm-scenario7" />
         </reference>
+        <name value="Communication/dnsm-scenario7" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario7, Communication dnsm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3212,6 +3556,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario7" />
         </reference>
+        <name value="Patient/dnsm-scenario7" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario7, Patient dnsm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3219,6 +3565,8 @@
         <reference>
           <reference value="Communication/dnsm-scenario8" />
         </reference>
+        <name value="Communication/dnsm-scenario8" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario8, Communication dnsm-scenario8" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3226,6 +3574,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario8" />
         </reference>
+        <name value="Patient/dnsm-scenario8" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario8, Patient dnsm-scenario8" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3233,6 +3583,8 @@
         <reference>
           <reference value="Patient/dnsm-scenario9" />
         </reference>
+        <name value="Patient/dnsm-scenario9" />
+        <description value="DoNotSendMessage Example, Scenario dnsm-scenario9, Patient dnsm-scenario9" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3240,6 +3592,8 @@
         <reference>
           <reference value="MedicationRequest/dcm-scenario1" />
         </reference>
+        <name value="MedicationRequest/dcm-scenario1" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario1, MedicationRequest dcm-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3247,6 +3601,8 @@
         <reference>
           <reference value="Patient/dcm-scenario1" />
         </reference>
+        <name value="Patient/dcm-scenario1" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario1, Patient dcm-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3254,6 +3610,8 @@
         <reference>
           <reference value="MedicationRequest/dcm-scenario2" />
         </reference>
+        <name value="MedicationRequest/dcm-scenario2" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario2, MedicationRequest dcm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3261,6 +3619,8 @@
         <reference>
           <reference value="Patient/dcm-scenario2" />
         </reference>
+        <name value="Patient/dcm-scenario2" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario2, Patient dcm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3268,6 +3628,8 @@
         <reference>
           <reference value="Task/request-dcm-scenario2" />
         </reference>
+        <name value="Task/request-dcm-scenario2" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario2, Task request-dcm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3275,6 +3637,8 @@
         <reference>
           <reference value="MedicationRequest/dcm-scenario3" />
         </reference>
+        <name value="MedicationRequest/dcm-scenario3" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario3, MedicationRequest dcm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3282,6 +3646,8 @@
         <reference>
           <reference value="Patient/dcm-scenario3" />
         </reference>
+        <name value="Patient/dcm-scenario3" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario3, Patient dcm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3289,6 +3655,8 @@
         <reference>
           <reference value="Task/request-dcm-scenario3" />
         </reference>
+        <name value="Task/request-dcm-scenario3" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario3, Task request-dcm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3296,6 +3664,8 @@
         <reference>
           <reference value="MedicationRequest/dcm-scenario4" />
         </reference>
+        <name value="MedicationRequest/dcm-scenario4" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario4, MedicationRequest dcm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3303,6 +3673,8 @@
         <reference>
           <reference value="MedicationStatement/dcm-scenario4" />
         </reference>
+        <name value="MedicationStatement/dcm-scenario4" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario4, MedicationStatement dcm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement" />
         <groupingId value="activity-example" />
       </resource>
@@ -3310,6 +3682,8 @@
         <reference>
           <reference value="Patient/dcm-scenario4" />
         </reference>
+        <name value="Patient/dcm-scenario4" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario4, Patient dcm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3317,6 +3691,8 @@
         <reference>
           <reference value="MedicationRequest/dcm-scenario5" />
         </reference>
+        <name value="MedicationRequest/dcm-scenario5" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario5, MedicationRequest dcm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3324,6 +3700,8 @@
         <reference>
           <reference value="MedicationStatement/dcm-scenario5" />
         </reference>
+        <name value="MedicationStatement/dcm-scenario5" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario5, MedicationStatement dcm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement" />
         <groupingId value="activity-example" />
       </resource>
@@ -3331,6 +3709,8 @@
         <reference>
           <reference value="Patient/dcm-scenario5" />
         </reference>
+        <name value="Patient/dcm-scenario5" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario5, Patient dcm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3338,6 +3718,8 @@
         <reference>
           <reference value="Task/request-dcm-scenario5" />
         </reference>
+        <name value="Task/request-dcm-scenario5" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario5, Task request-dcm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3345,6 +3727,8 @@
         <reference>
           <reference value="MedicationRequest/dcm-scenario6" />
         </reference>
+        <name value="MedicationRequest/dcm-scenario6" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario6, MedicationRequest dcm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3352,6 +3736,8 @@
         <reference>
           <reference value="MedicationStatement/dcm-scenario6" />
         </reference>
+        <name value="MedicationStatement/dcm-scenario6" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario6, MedicationStatement dcm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement" />
         <groupingId value="activity-example" />
       </resource>
@@ -3359,6 +3745,8 @@
         <reference>
           <reference value="Patient/dcm-scenario6" />
         </reference>
+        <name value="Patient/dcm-scenario6" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario6, Patient dcm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3366,6 +3754,8 @@
         <reference>
           <reference value="MedicationRequest/dcm-scenario7" />
         </reference>
+        <name value="MedicationRequest/dcm-scenario7" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario7, MedicationRequest dcm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3373,6 +3763,8 @@
         <reference>
           <reference value="MedicationStatement/dcm-scenario7" />
         </reference>
+        <name value="MedicationStatement/dcm-scenario7" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario7, MedicationStatement dcm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement" />
         <groupingId value="activity-example" />
       </resource>
@@ -3380,6 +3772,8 @@
         <reference>
           <reference value="Patient/dcm-scenario7" />
         </reference>
+        <name value="Patient/dcm-scenario7" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario7, Patient dcm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3387,6 +3781,8 @@
         <reference>
           <reference value="Task/request-dcm-scenario7" />
         </reference>
+        <name value="Task/request-dcm-scenario7" />
+        <description value="DocumentMedication Example, Scenario dcm-scenario7, Task request-dcm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3394,6 +3790,8 @@
         <reference>
           <reference value="Patient/ep-scenario1" />
         </reference>
+        <name value="Patient/ep-scenario1" />
+        <description value="EnrollPatient Example, Scenario ep-scenario1, Patient ep-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3401,6 +3799,8 @@
         <reference>
           <reference value="Patient/ep-scenario2" />
         </reference>
+        <name value="Patient/ep-scenario2" />
+        <description value="EnrollPatient Example, Scenario ep-scenario2, Patient ep-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3408,6 +3808,8 @@
         <reference>
           <reference value="Task/request-ep-scenario2" />
         </reference>
+        <name value="Task/request-ep-scenario2" />
+        <description value="EnrollPatient Example, Scenario ep-scenario2, Task request-ep-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3415,6 +3817,8 @@
         <reference>
           <reference value="Condition/ep-scenario4" />
         </reference>
+        <name value="Condition/ep-scenario4" />
+        <description value="EnrollPatient Example, Scenario ep-scenario4, Condition ep-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition" />
         <groupingId value="activity-example" />
       </resource>
@@ -3422,6 +3826,8 @@
         <reference>
           <reference value="Encounter/ep-scenario4" />
         </reference>
+        <name value="Encounter/ep-scenario4" />
+        <description value="EnrollPatient Example, Scenario ep-scenario4, Encounter ep-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter" />
         <groupingId value="activity-example" />
       </resource>
@@ -3429,6 +3835,8 @@
         <reference>
           <reference value="EpisodeOfCare/ep-scenario4" />
         </reference>
+        <name value="EpisodeOfCare/ep-scenario4" />
+        <description value="EnrollPatient Example, Scenario ep-scenario4, EpisodeOfCare ep-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case" />
         <groupingId value="activity-example" />
       </resource>
@@ -3436,6 +3844,8 @@
         <reference>
           <reference value="Patient/ep-scenario4" />
         </reference>
+        <name value="Patient/ep-scenario4" />
+        <description value="EnrollPatient Example, Scenario ep-scenario4, Patient ep-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3443,6 +3853,8 @@
         <reference>
           <reference value="Task/event-ep-scenario4" />
         </reference>
+        <name value="Task/event-ep-scenario4" />
+        <description value="EnrollPatient Example, Scenario ep-scenario4, Task event-ep-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3450,6 +3862,8 @@
         <reference>
           <reference value="Patient/gr-scenario1" />
         </reference>
+        <name value="Patient/gr-scenario1" />
+        <description value="GenerateReport Example, Scenario gr-scenario1, Patient gr-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3457,6 +3871,8 @@
         <reference>
           <reference value="Patient/gr-scenario2" />
         </reference>
+        <name value="Patient/gr-scenario2" />
+        <description value="GenerateReport Example, Scenario gr-scenario2, Patient gr-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3464,6 +3880,8 @@
         <reference>
           <reference value="Task/request-gr-scenario2" />
         </reference>
+        <name value="Task/request-gr-scenario2" />
+        <description value="GenerateReport Example, Scenario gr-scenario2, Task request-gr-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3471,6 +3889,8 @@
         <reference>
           <reference value="MeasureReport/gr-scenario4" />
         </reference>
+        <name value="MeasureReport/gr-scenario4" />
+        <description value="GenerateReport Example, Scenario gr-scenario4, MeasureReport gr-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport" />
         <groupingId value="activity-example" />
       </resource>
@@ -3478,6 +3898,8 @@
         <reference>
           <reference value="Patient/gr-scenario4" />
         </reference>
+        <name value="Patient/gr-scenario4" />
+        <description value="GenerateReport Example, Scenario gr-scenario4, Patient gr-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3485,6 +3907,8 @@
         <reference>
           <reference value="Task/event-gr-scenario4" />
         </reference>
+        <name value="Task/event-gr-scenario4" />
+        <description value="GenerateReport Example, Scenario gr-scenario4, Task event-gr-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3492,6 +3916,8 @@
         <reference>
           <reference value="Patient/om-scenario1" />
         </reference>
+        <name value="Patient/om-scenario1" />
+        <description value="OrderMedication Example, Scenario om-scenario1, Patient om-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3499,6 +3925,8 @@
         <reference>
           <reference value="MedicationRequest/om-scenario2" />
         </reference>
+        <name value="MedicationRequest/om-scenario2" />
+        <description value="OrderMedication Example, Scenario om-scenario2, MedicationRequest om-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3506,6 +3934,8 @@
         <reference>
           <reference value="Patient/om-scenario2" />
         </reference>
+        <name value="Patient/om-scenario2" />
+        <description value="OrderMedication Example, Scenario om-scenario2, Patient om-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3513,6 +3943,8 @@
         <reference>
           <reference value="MedicationRequest/om-scenario3" />
         </reference>
+        <name value="MedicationRequest/om-scenario3" />
+        <description value="OrderMedication Example, Scenario om-scenario3, MedicationRequest om-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3520,6 +3952,8 @@
         <reference>
           <reference value="Patient/om-scenario3" />
         </reference>
+        <name value="Patient/om-scenario3" />
+        <description value="OrderMedication Example, Scenario om-scenario3, Patient om-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3527,6 +3961,8 @@
         <reference>
           <reference value="MedicationDispense/om-scenario4" />
         </reference>
+        <name value="MedicationDispense/om-scenario4" />
+        <description value="OrderMedication Example, Scenario om-scenario4, MedicationDispense om-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -3534,6 +3970,8 @@
         <reference>
           <reference value="Patient/om-scenario4" />
         </reference>
+        <name value="Patient/om-scenario4" />
+        <description value="OrderMedication Example, Scenario om-scenario4, Patient om-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3541,6 +3979,8 @@
         <reference>
           <reference value="MedicationDispense/om-scenario5" />
         </reference>
+        <name value="MedicationDispense/om-scenario5" />
+        <description value="OrderMedication Example, Scenario om-scenario5, MedicationDispense om-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -3548,6 +3988,8 @@
         <reference>
           <reference value="MedicationRequest/om-scenario5" />
         </reference>
+        <name value="MedicationRequest/om-scenario5" />
+        <description value="OrderMedication Example, Scenario om-scenario5, MedicationRequest om-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3555,6 +3997,8 @@
         <reference>
           <reference value="Patient/om-scenario5" />
         </reference>
+        <name value="Patient/om-scenario5" />
+        <description value="OrderMedication Example, Scenario om-scenario5, Patient om-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3562,6 +4006,8 @@
         <reference>
           <reference value="MedicationDispense/om-scenario6" />
         </reference>
+        <name value="MedicationDispense/om-scenario6" />
+        <description value="OrderMedication Example, Scenario om-scenario6, MedicationDispense om-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -3569,6 +4015,8 @@
         <reference>
           <reference value="Patient/om-scenario6" />
         </reference>
+        <name value="Patient/om-scenario6" />
+        <description value="OrderMedication Example, Scenario om-scenario6, Patient om-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3576,6 +4024,8 @@
         <reference>
           <reference value="MedicationDispense/om-scenario7" />
         </reference>
+        <name value="MedicationDispense/om-scenario7" />
+        <description value="OrderMedication Example, Scenario om-scenario7, MedicationDispense om-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense" />
         <groupingId value="activity-example" />
       </resource>
@@ -3583,6 +4033,8 @@
         <reference>
           <reference value="MedicationRequest/om-scenario7" />
         </reference>
+        <name value="MedicationRequest/om-scenario7" />
+        <description value="OrderMedication Example, Scenario om-scenario7, MedicationRequest om-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3590,6 +4042,8 @@
         <reference>
           <reference value="Patient/om-scenario7" />
         </reference>
+        <name value="Patient/om-scenario7" />
+        <description value="OrderMedication Example, Scenario om-scenario7, Patient om-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3597,6 +4051,8 @@
         <reference>
           <reference value="Patient/os-scenario1" />
         </reference>
+        <name value="Patient/os-scenario1" />
+        <description value="OrderService Example, Scenario os-scenario1, Patient os-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3604,6 +4060,8 @@
         <reference>
           <reference value="Patient/os-scenario2" />
         </reference>
+        <name value="Patient/os-scenario2" />
+        <description value="OrderService Example, Scenario os-scenario2, Patient os-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3611,6 +4069,8 @@
         <reference>
           <reference value="ServiceRequest/os-scenario2" />
         </reference>
+        <name value="ServiceRequest/os-scenario2" />
+        <description value="OrderService Example, Scenario os-scenario2, ServiceRequest os-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3618,6 +4078,8 @@
         <reference>
           <reference value="Patient/os-scenario4" />
         </reference>
+        <name value="Patient/os-scenario4" />
+        <description value="OrderService Example, Scenario os-scenario4, Patient os-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3625,6 +4087,8 @@
         <reference>
           <reference value="Procedure/os-scenario4" />
         </reference>
+        <name value="Procedure/os-scenario4" />
+        <description value="OrderService Example, Scenario os-scenario4, Procedure os-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-procedure" />
         <groupingId value="activity-example" />
       </resource>
@@ -3632,6 +4096,8 @@
         <reference>
           <reference value="Patient/pd-scenario1" />
         </reference>
+        <name value="Patient/pd-scenario1" />
+        <description value="ProposeDiagnosis Example, Scenario pd-scenario1, Patient pd-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3639,6 +4105,8 @@
         <reference>
           <reference value="Patient/pd-scenario2" />
         </reference>
+        <name value="Patient/pd-scenario2" />
+        <description value="ProposeDiagnosis Example, Scenario pd-scenario2, Patient pd-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3646,6 +4114,8 @@
         <reference>
           <reference value="Task/request-pd-scenario2" />
         </reference>
+        <name value="Task/request-pd-scenario2" />
+        <description value="ProposeDiagnosis Example, Scenario pd-scenario2, Task request-pd-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3653,6 +4123,8 @@
         <reference>
           <reference value="Condition/pd-scenario4" />
         </reference>
+        <name value="Condition/pd-scenario4" />
+        <description value="ProposeDiagnosis Example, Scenario pd-scenario4, Condition pd-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition" />
         <groupingId value="activity-example" />
       </resource>
@@ -3660,6 +4132,8 @@
         <reference>
           <reference value="Patient/pd-scenario4" />
         </reference>
+        <name value="Patient/pd-scenario4" />
+        <description value="ProposeDiagnosis Example, Scenario pd-scenario4, Patient pd-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3667,6 +4141,8 @@
         <reference>
           <reference value="Task/event-pd-scenario4" />
         </reference>
+        <name value="Task/event-pd-scenario4" />
+        <description value="ProposeDiagnosis Example, Scenario pd-scenario4, Task event-pd-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3674,6 +4150,8 @@
         <reference>
           <reference value="Patient/ri-scenario1" />
         </reference>
+        <name value="Patient/ri-scenario1" />
+        <description value="RecommendImmunization Example, Scenario ri-scenario1, Patient ri-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3681,6 +4159,8 @@
         <reference>
           <reference value="ImmunizationRecommendation/ri-scenario2" />
         </reference>
+        <name value="ImmunizationRecommendation/ri-scenario2" />
+        <description value="RecommendImmunization Example, Scenario ri-scenario2, ImmunizationRecommendation ri-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation" />
         <groupingId value="activity-example" />
       </resource>
@@ -3688,6 +4168,8 @@
         <reference>
           <reference value="Patient/ri-scenario2" />
         </reference>
+        <name value="Patient/ri-scenario2" />
+        <description value="RecommendImmunization Example, Scenario ri-scenario2, Patient ri-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3695,6 +4177,8 @@
         <reference>
           <reference value="Immunization/ri-scenario4" />
         </reference>
+        <name value="Immunization/ri-scenario4" />
+        <description value="RecommendImmunization Example, Scenario ri-scenario4, Immunization ri-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunization" />
         <groupingId value="activity-example" />
       </resource>
@@ -3702,6 +4186,8 @@
         <reference>
           <reference value="Patient/ri-scenario4" />
         </reference>
+        <name value="Patient/ri-scenario4" />
+        <description value="RecommendImmunization Example, Scenario ri-scenario4, Patient ri-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3709,6 +4195,8 @@
         <reference>
           <reference value="Patient/di-scenario1" />
         </reference>
+        <name value="Patient/di-scenario1" />
+        <description value="RecordDetectedIssue Example, Scenario di-scenario1, Patient di-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3716,6 +4204,8 @@
         <reference>
           <reference value="Patient/di-scenario2" />
         </reference>
+        <name value="Patient/di-scenario2" />
+        <description value="RecordDetectedIssue Example, Scenario di-scenario2, Patient di-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3723,6 +4213,8 @@
         <reference>
           <reference value="Task/request-di-scenario2" />
         </reference>
+        <name value="Task/request-di-scenario2" />
+        <description value="RecordDetectedIssue Example, Scenario di-scenario2, Task request-di-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3730,6 +4222,8 @@
         <reference>
           <reference value="DetectedIssue/di-scenario4" />
         </reference>
+        <name value="DetectedIssue/di-scenario4" />
+        <description value="RecordDetectedIssue Example, Scenario di-scenario4, DetectedIssue di-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-detectedissue" />
         <groupingId value="activity-example" />
       </resource>
@@ -3737,6 +4231,8 @@
         <reference>
           <reference value="Patient/di-scenario4" />
         </reference>
+        <name value="Patient/di-scenario4" />
+        <description value="RecordDetectedIssue Example, Scenario di-scenario4, Patient di-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3744,6 +4240,8 @@
         <reference>
           <reference value="Task/event-di-scenario4" />
         </reference>
+        <name value="Task/event-di-scenario4" />
+        <description value="RecordDetectedIssue Example, Scenario di-scenario4, Task event-di-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3751,6 +4249,8 @@
         <reference>
           <reference value="Patient/inf-scenario1" />
         </reference>
+        <name value="Patient/inf-scenario1" />
+        <description value="RecordInference Example, Scenario inf-scenario1, Patient inf-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3758,6 +4258,8 @@
         <reference>
           <reference value="Patient/inf-scenario2" />
         </reference>
+        <name value="Patient/inf-scenario2" />
+        <description value="RecordInference Example, Scenario inf-scenario2, Patient inf-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3765,6 +4267,8 @@
         <reference>
           <reference value="Task/request-inf-scenario2" />
         </reference>
+        <name value="Task/request-inf-scenario2" />
+        <description value="RecordInference Example, Scenario inf-scenario2, Task request-inf-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3772,6 +4276,8 @@
         <reference>
           <reference value="Observation/inf-scenario4" />
         </reference>
+        <name value="Observation/inf-scenario4" />
+        <description value="RecordInference Example, Scenario inf-scenario4, Observation inf-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-observation" />
         <groupingId value="activity-example" />
       </resource>
@@ -3779,6 +4285,8 @@
         <reference>
           <reference value="Patient/inf-scenario4" />
         </reference>
+        <name value="Patient/inf-scenario4" />
+        <description value="RecordInference Example, Scenario inf-scenario4, Patient inf-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3786,6 +4294,8 @@
         <reference>
           <reference value="Task/event-inf-scenario4" />
         </reference>
+        <name value="Task/event-inf-scenario4" />
+        <description value="RecordInference Example, Scenario inf-scenario4, Task event-inf-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3793,6 +4303,8 @@
         <reference>
           <reference value="Patient/rf-scenario1" />
         </reference>
+        <name value="Patient/rf-scenario1" />
+        <description value="ReportFlag Example, Scenario rf-scenario1, Patient rf-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3800,6 +4312,8 @@
         <reference>
           <reference value="Patient/rf-scenario2" />
         </reference>
+        <name value="Patient/rf-scenario2" />
+        <description value="ReportFlag Example, Scenario rf-scenario2, Patient rf-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3807,6 +4321,8 @@
         <reference>
           <reference value="Task/request-rf-scenario2" />
         </reference>
+        <name value="Task/request-rf-scenario2" />
+        <description value="ReportFlag Example, Scenario rf-scenario2, Task request-rf-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3814,6 +4330,8 @@
         <reference>
           <reference value="Flag/rf-scenario4" />
         </reference>
+        <name value="Flag/rf-scenario4" />
+        <description value="ReportFlag Example, Scenario rf-scenario4, Flag rf-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-flag" />
         <groupingId value="activity-example" />
       </resource>
@@ -3821,6 +4339,8 @@
         <reference>
           <reference value="Patient/rf-scenario4" />
         </reference>
+        <name value="Patient/rf-scenario4" />
+        <description value="ReportFlag Example, Scenario rf-scenario4, Patient rf-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3828,6 +4348,8 @@
         <reference>
           <reference value="Task/event-rf-scenario4" />
         </reference>
+        <name value="Task/event-rf-scenario4" />
+        <description value="ReportFlag Example, Scenario rf-scenario4, Task event-rf-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask" />
         <groupingId value="activity-example" />
       </resource>
@@ -3835,6 +4357,8 @@
         <reference>
           <reference value="Patient/sm-scenario1" />
         </reference>
+        <name value="Patient/sm-scenario1" />
+        <description value="SendMessage Example, Scenario sm-scenario1, Patient sm-scenario1" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3842,6 +4366,8 @@
         <reference>
           <reference value="CommunicationRequest/sm-scenario2" />
         </reference>
+        <name value="CommunicationRequest/sm-scenario2" />
+        <description value="SendMessage Example, Scenario sm-scenario2, CommunicationRequest sm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3849,6 +4375,8 @@
         <reference>
           <reference value="Patient/sm-scenario2" />
         </reference>
+        <name value="Patient/sm-scenario2" />
+        <description value="SendMessage Example, Scenario sm-scenario2, Patient sm-scenario2" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3856,6 +4384,8 @@
         <reference>
           <reference value="CommunicationRequest/sm-scenario3" />
         </reference>
+        <name value="CommunicationRequest/sm-scenario3" />
+        <description value="SendMessage Example, Scenario sm-scenario3, CommunicationRequest sm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3863,6 +4393,8 @@
         <reference>
           <reference value="Patient/sm-scenario3" />
         </reference>
+        <name value="Patient/sm-scenario3" />
+        <description value="SendMessage Example, Scenario sm-scenario3, Patient sm-scenario3" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3870,6 +4402,8 @@
         <reference>
           <reference value="Communication/sm-scenario4" />
         </reference>
+        <name value="Communication/sm-scenario4" />
+        <description value="SendMessage Example, Scenario sm-scenario4, Communication sm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3877,6 +4411,8 @@
         <reference>
           <reference value="Patient/sm-scenario4" />
         </reference>
+        <name value="Patient/sm-scenario4" />
+        <description value="SendMessage Example, Scenario sm-scenario4, Patient sm-scenario4" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3884,6 +4420,8 @@
         <reference>
           <reference value="Communication/sm-scenario5" />
         </reference>
+        <name value="Communication/sm-scenario5" />
+        <description value="SendMessage Example, Scenario sm-scenario5, Communication sm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3891,6 +4429,8 @@
         <reference>
           <reference value="CommunicationRequest/sm-scenario5" />
         </reference>
+        <name value="CommunicationRequest/sm-scenario5" />
+        <description value="SendMessage Example, Scenario sm-scenario5, CommunicationRequest sm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3898,6 +4438,8 @@
         <reference>
           <reference value="Patient/sm-scenario5" />
         </reference>
+        <name value="Patient/sm-scenario5" />
+        <description value="SendMessage Example, Scenario sm-scenario5, Patient sm-scenario5" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3905,6 +4447,8 @@
         <reference>
           <reference value="Communication/sm-scenario6" />
         </reference>
+        <name value="Communication/sm-scenario6" />
+        <description value="SendMessage Example, Scenario sm-scenario6, Communication sm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3912,6 +4456,8 @@
         <reference>
           <reference value="Patient/sm-scenario6" />
         </reference>
+        <name value="Patient/sm-scenario6" />
+        <description value="SendMessage Example, Scenario sm-scenario6, Patient sm-scenario6" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>
@@ -3919,6 +4465,8 @@
         <reference>
           <reference value="Communication/sm-scenario7" />
         </reference>
+        <name value="Communication/sm-scenario7" />
+        <description value="SendMessage Example, Scenario sm-scenario7, Communication sm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication" />
         <groupingId value="activity-example" />
       </resource>
@@ -3926,6 +4474,8 @@
         <reference>
           <reference value="CommunicationRequest/sm-scenario7" />
         </reference>
+        <name value="CommunicationRequest/sm-scenario7" />
+        <description value="SendMessage Example, Scenario sm-scenario7, CommunicationRequest sm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest" />
         <groupingId value="activity-example" />
       </resource>
@@ -3933,6 +4483,8 @@
         <reference>
           <reference value="Patient/sm-scenario7" />
         </reference>
+        <name value="Patient/sm-scenario7" />
+        <description value="SendMessage Example, Scenario sm-scenario7, Patient sm-scenario7" />
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient" />
         <groupingId value="activity-example" />
       </resource>

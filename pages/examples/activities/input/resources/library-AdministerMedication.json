@@ -3,6 +3,7 @@
   "id": "AdministerMedication",
   "meta": {
     "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary",
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary",
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"
     ]
