@@ -20,10 +20,12 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>18450</WindowHeight>
-  <WindowWidth>32767</WindowWidth>
+  <WindowHeight>9135</WindowHeight>
+  <WindowWidth>22035</WindowWidth>
   <WindowTopX>32767</WindowTopX>
   <WindowTopY>32767</WindowTopY>
+  <ActiveSheet>5</ActiveSheet>
+  <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -2087,7 +2089,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -3552,7 +3553,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><Data ss:Type="String">Questionnaire.item</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s149"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s149"><Data ss:Type="String">answerValueSetSource</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><Data ss:Type="String">0..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3588,7 +3590,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><Data ss:Type="String">Questionnaire.item</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s149"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s149"><Data ss:Type="String">itemImage</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><Data ss:Type="String">0..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3623,7 +3626,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><Data ss:Type="String">Questionnaire.item.answerOption</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s149"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s149"><Data ss:Type="String">responseImage</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s149"><Data ss:Type="String">0..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -4514,6 +4518,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -4534,8 +4539,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>3</ActiveRow>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

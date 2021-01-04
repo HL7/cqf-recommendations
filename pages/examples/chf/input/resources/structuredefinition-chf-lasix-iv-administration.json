@@ -37,6 +37,7 @@
   "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-iv-administration",
   "version": "1.0.0",
   "name": "CHFLASIXIVAdminisistration",
+  "title": "CHF LASIX IV Administration",
   "status": "draft",
   "experimental": true,
   "date": "2019-06-06",

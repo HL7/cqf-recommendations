@@ -14,15 +14,21 @@
 
 <p>FHIR profiles are a key aspect of supporting interoperable computable content, providing a formal mechanism for defining the data elements used by computable content, as well as conformance expectations for the computable content itself. Readers of this implementation guide should be familiar with the <a href="http://hl7.org/fhir/R4/profiling.html">Profiling FHIR</a> topic in the base specification.</p>
 
-<p>In addition to an alphabetical profile listing, this page provides overview documentation for the following categories of profiles and documentation:</p>
+<p>This page provides overview documentation for the following categories of profiles and documentation:</p>
 
 <ul>
   <li><b><a href="#artifact-profiles">Artifact Profiles</a></b>: Profiles for shareable knowledge artifacts</li>
   <li><b><a href="#domain-profiles">Domain Profiles</a></b>: Domain profiles such as Case/Plan and Metric</li>
   <li><b><a href="#activity-profiles">Activity Profiles</a></b>: Activity profiles such as MedicationRequest</li>
   <li><b><a href="#content-profiles">Content Profiles</a></b>: Documentation on using profiles with CPG content</li>
-  <li><b><a href="#profile-index">Profile Index</a></b>: Alphabetical profile listing</li>
-  <li><b><a href="#extension-index">Extension Index</a></b>: Alphabetical extension listing</li>
+</ul>
+
+<p>For indexes of profiles and extensions defined in this implementation guide, see the following:</p>
+
+<ul>
+  <li><b><a href="artifacts.html#profile-index">Profile Index</a></b>: Alphabetical profile listing</li>
+  <li><b><a href="artifacts.html#extension-index">Extension Index</a></b>: Alphabetical extension listing</li>
+  <li><b><a href="examples.html#profile-index">Example Profile Index</a></b>: Alphabetical listing of profiles used in examples</li>
 </ul>
 
 <a name="artifact-profiles"> </a>
@@ -181,16 +187,6 @@ define "Active Ambulatory Opioid Rx":
 <p>Content conforming to this IG <b>SHOULD</b> select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG <b>SHOULD</b> use International Patient Summary.</p>
 
 <p>In general, implementation of any given computable content is based on the intersection of the interoperability and computability profiles. As such, content authors must take care not to define computability profiles that conflict with interoperability profiles in their intended target scope.</p>
-
-<a name="profile-index"> </a>
-<h3><span class="sectioncount">4.5.0</span> Profile Index <a href="profiles.html#profile-index" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h3>
-
-{%  include list-simple-profiles.xhtml %}
-
-<a name="extension-index"> </a>
-<h2><span class="sectioncount">4.6.0</span> Extension Index <a href="profiles.html#extension-index" title="link to here" class="self-link"><img src="target.png" width="20" class="self-link" height="20"/></a></h2>
-
-{%  include list-simple-extensions.xhtml %}
 
 <!-- ==============END CONTENT END CONTENT=================== -->
 

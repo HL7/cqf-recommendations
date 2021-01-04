@@ -2903,6 +2903,8 @@
     <Cell><Data ss:Type="String">Element</Data><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell><Data ss:Type="String">ActivityDefinition</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
+    <Cell><Data ss:Type="String">reportWith</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="7"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="9"><Data ss:Type="String">canonical(Measure){http://hl7.org/fhir/StructureDefinition/shareablemeasure}|canonical(GraphDefinition){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition}|canonical(StructureDefinition){http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef}</Data><NamedCell
@@ -3848,7 +3850,7 @@
     <Pane>
      <Number>0</Number>
      <ActiveRow>2</ActiveRow>
-     <ActiveCol>8</ActiveCol>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

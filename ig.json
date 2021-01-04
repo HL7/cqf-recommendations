@@ -371,9 +371,9 @@
       "source": "bundle-am-scenario7.json",
       "base": "Bundle-am-scenario7.html"
     },
-		"CapabilityStatement/cpg-patient-registry": {
-			"source": "capabilitystatement/cpg-patient-registry.xml",
-			"base": "CapabilityStatement-cpg-patient-registry.html"
+		"CapabilityStatement/cpg-common-patient-registry": {
+			"source": "capabilitystatement/cpg-common-patient-registry.xml",
+			"base": "CapabilityStatement-cpg-common-patient-registry.html"
 		},
     "CodeSystem/cpg-activity-type": {
 			"source": "codesystem-cpg-activity-type.xml",
@@ -522,8 +522,8 @@
     "OperationDefinition/cpg-cql": {
       "base": "OperationDefinition-cpg-cql.html"
     },
-    "OperationDefinition/cpg-patient-summary": {
-      "base": "OperationDefinition-cpg-patient-summary.html"
+    "OperationDefinition/cpg-common-patient-summary": {
+      "base": "OperationDefinition-cpg-common-patient-summary.html"
     },
 		"PlanDefinition/anc-contact": {
 			"base": "PlanDefinition-anc-contact.html"

@@ -1,6 +1,6 @@
 {
    "resourceType":"OperationDefinition",
-   "id":"cpg-patient-summary",
+   "id":"cpg-common-patient-summary",
    "extension":[
       {
          "url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
@@ -11,9 +11,10 @@
          "valueCode":"trial-use"
       }
    ],
-   "url":"http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-patient-summary",
+   "url":"http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary",
    "version":"0.1.0",
-   "name":"Summary",
+   "name":"CPGCommonPatientSummary",
+   "title": "CPG Common Patient Summary",
    "status":"draft",
    "kind":"operation",
    "date":"2019-11-01T09:29:23+11:00",

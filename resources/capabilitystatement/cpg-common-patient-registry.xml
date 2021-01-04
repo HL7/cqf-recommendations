@@ -1,13 +1,13 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-	<id value="cpg-patient-registry"/>
-	<url value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
+	<id value="cpg-common-patient-registry"/>
+	<url value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-common-patient-registry"/>
 	<version value="0.1.0"/>
-	<name value="CPGPatientRegistry"/>
-	<title value="CPG Patient Registry"/>
+	<name value="CPGCommonPatientRegistry"/>
+	<title value="CPG Common Patient Registry"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2019-06-15"/>
-	<description value="Describes the minimum set of functionality required for a patient registry service that supports the common registration process defined in this implementation guide."/>
+	<description value="Describes the expected set of functionality required for a patient registry service that supports the common registration process defined in this implementation guide."/>
 	<kind value="requirements"/>
 	<fhirVersion value="4.0.0"/>
 	<format value="xml"/>
@@ -50,7 +50,7 @@
 			</operation>
 			<operation>
 				<name value="$summary"/>
-				<definition value="http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-patient-summary"/>
+				<definition value="http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary"/>
 			</operation>
 		</resource>
 	</rest>

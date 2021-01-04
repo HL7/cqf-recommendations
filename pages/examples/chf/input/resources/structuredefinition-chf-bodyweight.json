@@ -37,7 +37,7 @@
   "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight",
   "version" : "1.0.0",
   "name" : "CHFBodyWeight",
-  "title" : "Observation CHF Body Weight Profile",
+  "title" : "CHF Body Weight",
   "status" : "draft",
   "experimental" : true,
   "date" : "2018-08-11",

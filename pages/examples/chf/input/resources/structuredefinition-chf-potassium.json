@@ -37,7 +37,7 @@
   "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-potassium",
   "version" : "1.0.0",
   "name" : "CHFPotassium",
-  "title" : "Observation CHF Potassium Profile",
+  "title" : "CHF Potassium",
   "status" : "draft",
   "experimental" : true,
   "date" : "2018-08-11",

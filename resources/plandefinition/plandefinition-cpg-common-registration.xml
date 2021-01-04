@@ -76,7 +76,7 @@
 			</output>
 			<participant>
 				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
+					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-common-patient-registry"/>
 				</extension>
 				<type value="device"/>
 			</participant>
@@ -151,7 +151,7 @@
 				</output>
 				<participant>
 					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
+						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-common-patient-registry"/>
 					</extension>
 					<type value="device"/>
 				</participant>
@@ -207,7 +207,7 @@
 				</output>
 				<participant>
 					<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
+						<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-common-patient-registry"/>
 					</extension>
 					<type value="device"/>
 				</participant>
@@ -228,11 +228,11 @@
 			</output>
 			<participant>
 				<extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement">
-					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-patient-registry"/>
+					<valueCanonical value="http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-common-patient-registry"/>
 				</extension>
 				<type value="device"/>
 			</participant>
-			<definitionUri value="http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-patient-summary"/>
+			<definitionUri value="http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary"/>
 		</action>
 	</action>
 </PlanDefinition>

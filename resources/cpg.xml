@@ -52,9 +52,9 @@
 			</grouping>
 			<resource>
 				<reference>
-					<reference value="CapabilityStatement/cpg-patient-registry"/>
+					<reference value="CapabilityStatement/cpg-common-patient-registry"/>
 				</reference>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
       <resource>
 				<reference>
@@ -86,13 +86,13 @@
 					<reference value="CodeSystem/cpg-common-persona"/>
 				</reference>
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"/>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="CodeSystem/cpg-common-process"/>
 				</reference>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 			<resource>
 				<reference>
@@ -215,35 +215,35 @@
 					<reference value="PlanDefinition/cpg-common-pathway"/>
 				</reference>
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition"/>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="PlanDefinition/cpg-common-registration"/>
 				</reference>
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-workflowdefinition"/>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Questionnaire/cpg-common-identity"/>
 				</reference>
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablequestionnaire"/>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="Questionnaire/cpg-common-patient-profile"/>
 				</reference>
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablequestionnaire"/>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
       <resource>
 				<reference>
 					<reference value="Questionnaire/cpg-common-resolve-patient-match"/>
 				</reference>
         <exampleCanonical value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablequestionnaire"/>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 			<!-- Need to finish adding linkIds for everything -->
 			<!--resource>
@@ -909,9 +909,9 @@
       </resource>
       <resource>
         <reference>
-          <reference value="OperationDefinition/cpg-patient-summary"/>
+          <reference value="OperationDefinition/cpg-common-patient-summary"/>
         </reference>
-        <groupingId value="main"/>
+        <groupingId value="common"/>
       </resource>
 
 			<!-- TODO: Consider whether this is too content-specific for inclusion here...
@@ -968,13 +968,13 @@
 				<reference>
 					<reference value="ValueSet/cpg-common-persona"/>
 				</reference>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 			<resource>
 				<reference>
 					<reference value="ValueSet/cpg-common-process"/>
 				</reference>
-				<groupingId value="main"/>
+				<groupingId value="common"/>
 			</resource>
 
 			<!-- ANC Example Resources -->

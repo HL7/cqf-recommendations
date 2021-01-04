@@ -4,7 +4,7 @@
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "http://hl7.org/fhir/uv/cpg/Library/activity-example-administermedication",
+      "fullUrl": "http://example.org/Library/activity-example-administermedication",
       "resource": {
         "resourceType": "Library",
         "id": "activity-example-administermedication",
@@ -32,7 +32,7 @@
           }
         ],
         "url": "http://hl7.org/fhir/uv/cpg/Library/activity-example-administermedication",
-        "version": "0.1.0",
+        "version": "1.0.0",
         "name": "ActivityExampleAdministerMedication",
         "title": "Activity Example - Administer Medication Collection",
         "status": "draft",
@@ -97,7 +97,7 @@
       }
     },
     {
-      "fullUrl": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication",
+      "fullUrl": "http://example.org/ActivityDefinition/activity-example-administermedication",
       "resource": {
         "resourceType": "Library",
         "id": "activity-example-administermedication",
@@ -125,7 +125,7 @@
           }
         ],
         "url": "http://hl7.org/fhir/uv/cpg/Library/activity-example-administermedication",
-        "version": "0.1.0",
+        "version": "1.0.0",
         "name": "ActivityExampleAdministerMedication",
         "title": "Activity Example - Administer Medication Collection",
         "status": "draft",
@@ -190,7 +190,7 @@
       }
     },
     {
-      "fullUrl": "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication",
+      "fullUrl": "http://example.org/Library/AdministerMedication",
       "resource": {
         "resourceType": "Library",
         "id": "AdministerMedication",
@@ -219,7 +219,7 @@
           }
         ],
         "url": "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication",
-        "version": "0.1.0",
+        "version": "1.0.0",
         "name": "AdministerMedication",
         "title": "Administer Medication",
         "status": "draft",
@@ -389,7 +389,7 @@
       }
     },
     {
-      "fullUrl": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication",
+      "fullUrl": "http://example.org/PlanDefinition/activity-example-administermedication",
       "resource": {
         "resourceType": "PlanDefinition",
         "id": "activity-example-administermedication",
@@ -417,6 +417,7 @@
           }
         ],
         "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication",
+        "version": "1.0.0",
         "name": "ActivityExampleAdministerMedication",
         "title": "Activity Example Administer Medication",
         "description": "Example Plan Definition for a recommendation to administer a medication",
@@ -456,14 +457,14 @@
       }
     },
     {
-      "fullUrl": "http://hl7.org/fhir/uv/cpg/Bundle/am-scenario7",
+      "fullUrl": "http://example.org/Bundle/am-scenario7",
       "resource": {
         "resourceType": "Bundle",
         "id": "am-scenario7",
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "http://hl7.org/fhir/uv/cpg/GuidanceResponse/am-scenario7",
+            "fullUrl": "http://example.org/GuidanceResponse/am-scenario7",
             "resource": {
               "resourceType": "GuidanceResponse",
               "id": "am-scenario7",
@@ -494,7 +495,7 @@
             }
           },
           {
-            "fullUrl": "http://hl7.org/fhir/uv/cpg/MedicationAdministration/am-scenario7",
+            "fullUrl": "http://example.org/MedicationAdministration/am-scenario7",
             "resource": {
               "resourceType": "MedicationAdministration",
               "id": "am-scenario7",
@@ -530,7 +531,7 @@
             }
           },
           {
-            "fullUrl": "http://hl7.org/fhir/uv/cpg/MedicationRequest/am-scenario7",
+            "fullUrl": "http://example.org/MedicationRequest/am-scenario7",
             "resource": {
               "resourceType": "MedicationRequest",
               "id": "am-scenario7",
@@ -602,7 +603,7 @@
             }
           },
           {
-            "fullUrl": "http://hl7.org/fhir/uv/cpg/Patient/am-scenario7",
+            "fullUrl": "http://example.org/Patient/am-scenario7",
             "resource": {
               "resourceType":"Patient",
               "id":"am-scenario7",
@@ -623,7 +624,7 @@
             }
           },
           {
-            "fullUrl": "http://hl7.org/fhir/uv/cpg/Task/request-am-scenario7",
+            "fullUrl": "http://example.org/Task/request-am-scenario7",
             "resource": {
               "resourceType": "Task",
               "id": "request-am-scenario7",

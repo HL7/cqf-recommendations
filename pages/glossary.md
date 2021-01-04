@@ -3,7 +3,7 @@ layout: default
 title: Glossary
 ---
 
-# 9.0.0 Glossary
+# 10.0.0 Glossary
 
 ## Activity
 

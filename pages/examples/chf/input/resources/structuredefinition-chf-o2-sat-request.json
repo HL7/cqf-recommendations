@@ -37,8 +37,9 @@
   "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat-request",
   "version": "1.0.0",
   "name": "CHFO2SatRequest",
+  "title": "CHF Oxygen Saturation Request",
   "status": "draft",
-  "experimental": false,
+  "experimental": true,
   "date": "2019-06-06",
   "publisher": "Health Level Seven, Inc. - CDS WG",
   "contact": [
