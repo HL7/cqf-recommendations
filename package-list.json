@@ -1,6 +1,6 @@
 {
     "package-id": "hl7.fhir.uv.cpg",
-    "title": "FHIR Clinical Guidelines",
+    "title": "Clinical Guidelines",
     "canonical": "http://hl7.org/fhir/uv/cpg",
     "introduction": "This implementation guide supports the development of standards-based computable representations of the content of clinical care guidelines. Its content pertains to technical aspects of digital guidelines implementation and is intended to be usable across multiple use cases across clinical domains as well as in the International Realm.",
     "list": [
@@ -14,8 +14,18 @@
             "current": true
         },
         {
-            "version": "0.1.0",
+            "version": "1.0.0",
             "date": "TBD",
+            "descmd": "* [J#23945](https:\/\/jira.hl7.org\/browse\/FHIR-23945): Changed protocol and workflow to pathway and strategy definitions\r\n* [J#24177](https:\/\/jira.hl7.org\/browse\/FHIR-23945): Improved activity catalog\r\n* [J#24087](https:\/\/jira.hl7.org\/browse\/FHIR-24087): Moved recommendation-specific extensions to recommendation definition\r\n* [J#26612](https:\/\/jira.hl7.org\/browse\/FHIR-26612): Defined shareable, computable, publishable, and executable knowledge capabilities and profiles\r\n* [J#23954](https:\/\/jira.hl7.org\/browse\/FHIR-23954): Added support for case features\r\n* [J#27154](https:\/\/jira.hl7.org\/browse\/FHIR-27154): Formalized $cql and Library\/$evaluate operations\r\n* [J#27151](https:\/\/jira.hl7.org\/browse\/FHIR-27151): Removed rating extensions from instance profiles\r\n* [J#23951](https:\/\/jira.hl7.org\/browse\/FHIR-23951): Formalized strategy behavior\r\n* [J#23952](https:\/\/jira.hl7.org\/browse\/FHIR-23952): Formalized case behavior\r\n* [J#23960](https:\/\/jira.hl7.org\/browse\/FHIR-23960): Formalized care plan behavior\r\n* [J#26875](https:\/\/jira.hl7.org\/browse\/FHIR-26875): Relaxed url requirement in related artifacts\r\n* [J#23968](https:\/\/jira.hl7.org\/browse\/FHIR-23968): Formalized request proposal\/plan\/order behavior\r\n* [J#23964](https:\/\/jira.hl7.org\/browse\/FHIR-23964): Formalized eligibility and enrollment behavior\r\n* [J#24163](https:\/\/jira.hl7.org\/browse\/FHIR-24163): Added testing and packaging support and documentation\r\n* [J#24161](https:\/\/jira.hl7.org\/browse\/FHIR-24161): Clarified rating systems conformance requirements\r\n* [J#23956](https:\/\/jira.hl7.org\/browse\/FHIR-23956): Formalized metric behavior\r\n* [J#23959](https:\/\/jira.hl7.org\/browse\/FHIR-23959): Added support for clinical impressions\r\n* [J#23957](https:\/\/jira.hl7.org\/browse\/FHIR-23957): Added case summary support\r\n* [J#23963](https:\/\/jira.hl7.org\/browse\/FHIR-23963): Added case plan summary support\r\n* [J#23958](https:\/\/jira.hl7.org\/browse\/FHIR-23958): Added case plan progressing note support\r\n* [J#23949](https:\/\/jira.hl7.org\/browse\/FHIR-23949): Completed examples for all activity types\r\n* [J#24221](https:\/\/jira.hl7.org\/browse\/FHIR-24221): Formalized activity processing semantics\r\n* [J#24217](https:\/\/jira.hl7.org\/browse\/FHIR-24217): Formalized triggering behavior\r\n* [J#23940](https:\/\/jira.hl7.org\/browse\/FHIR-23940): Added patient safety discussion to conformance page\r\n* [J#24165](https:\/\/jira.hl7.org\/browse\/FHIR-24165): Added Development\/methodology documentation and walkthroughs\r\n* [J#24236](https:\/\/jira.hl7.org\/browse\/FHIR-24236): Added a complete example for Congestive Heart Failure pathway\r\n* [J#24227](https:\/\/jira.hl7.org\/browse\/FHIR-24227): Updated narratives for examples throughout\r\n* [J#24156](https:\/\/jira.hl7.org\/browse\/FHIR-24156): Updated topic binding to preferred for all artifact types\r\n* [J#30007](https:\/\/jira.hl7.org\/browse\/FHIR-30007): Support for images in questionnaire questions and answers\r\n* [J#26885](https:\/\/jira.hl7.org\/browse\/FHIR-26885): Formalized conformance requirements for input and output of CQL libraries\r\n* [J#26621](https:\/\/jira.hl7.org\/browse\/FHIR-26621): Clarified conformance requirements for Library resolution and naming\/namespacing\r\n* [J#24150](https:\/\/jira.hl7.org\/browse\/FHIR-24150): Separated examples vs artifacts and provided index for both\r\n* [J#23991](https:\/\/jira.hl7.org\/browse\/FHIR-24150): Added a glossary of key terms\r\n* [J#24223](https:\/\/jira.hl7.org\/browse\/FHIR-24223): Added history of attempts to background section\r\n* [J#23948](https:\/\/jira.hl7.org\/browse\/FHIR-23948): Reorganized overall guide content and navigation\r\n\r\nIn addition, numerous corrections and clarifications were made throughout, as well as substantial expansion of approach and methodology documentation. Refer to the HL7 JIRA for a complete description of changes applied to the 1.0.0 version.",
+            "desc": "STU1 Release (v1.0.0)",
+            "path": "http://hl7.org/fhir/uv/cpg/STU1",
+            "status": "trial-use",
+            "fhirversion": "4.0.1",
+            "sequence": "STU 1"
+        },
+        {
+            "version": "0.1.0",
+            "date": "2019-08-04",
             "descmd": "STU1 (v0.1.0)\r\n* The initial ballot combines experience gained from multiple guideline representation projects, including Opioid Prescribing Support, Chronic Kidney Disease Management, Antenatal Care, HIV/HBV Screening, Prevention, and Treatment, and Immunization Decision Support.",
             "desc": "STU1 (v0.1.0)",
             "path": "http://hl7.org/fhir/uv/cpg/2019Sep",
@@ -23,5 +33,6 @@
 						"fhirversion": "4.0.0",
             "sequence": "STU 1"
         }
-    ]
+    ],
+    "category": "Quality / CDS"
 }
