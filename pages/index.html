@@ -16,6 +16,20 @@
 
   <p>The FHIR Clinical Guidelines Implementation Guide (CPG IG) provides a means of creating a computable representation of a narrative clinical guideline that is faithful to guideline intent and supports the derivation of downstream capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates that direct clinical documentation in support of determining guideline compliance.</p>
 
+  <div class="note-warning">
+    <p><b>Known Issues:</b></p>
+    <ul>
+      <li>Broken links: Questionnaire answer option link, recursive links in profile displays, and broken links in the ServiceRequest profiles are tooling issues.</li>
+      <li><a href="https://jira.hl7.org/browse/FHIR-30206" rel="external" target="_blank">FHIR-30206</a>: Resolution errors for Library-FHIRHelpers and Library-FHIRModelInfo.</li>
+      <li><a href="https://jira.hl7.org/browse/FHIR-30207" rel="external" target="_blank">FHIR-30207</a>: Allow request-doNotPerform extension to be used on Task.</li>
+      <li><a href="https://jira.hl7.org/browse/FHIR-30208" rel="external" target="_blank">FHIR-30208</a>: Allow workflow-instantiatesCanonical extension to be used on Composition.</li>
+      <li><a href="https://jira.hl7.org/browse/FHIR-30270" rel="external" target="_blank">FHIR-30270</a>: Allow event-basedOn extension to be used on MedicationAdministration.</li>
+      <li><a href="https://jira.hl7.org/browse/FHIR-30114" rel="external" target="_blank">FHIR-30114</a>: Allow cqf-strengthOfRecommendation extension to be used on any PlanDefinition.action element.</li>
+      <li>Invalid groupingId in ImplementationGuide errors: These errors are an artifact of the use of spreadsheets and will be addressed with the switch to a template-based IG.</li>
+      <li>Invalid URL Patient-create: These errors are related to the inability to reference a RESTful interaction as an operation within a PlanDefinition. See the Zulip discussion <a href="https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Referencing.20an.20interaction" rel="external" target="_blank">here</a> for more.</li>
+    </ul>
+  </div>
+
   <p>This implementation guide is organized into the following sections, accessible via the menu bar at the top of every page:</p>
 
 	<ul>
