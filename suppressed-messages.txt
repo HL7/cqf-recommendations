@@ -147,12 +147,21 @@ INFORMATION: Library/SendMessage: Library.content[0]: This element does not matc
 INFORMATION: Library/CHF: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
 INFORMATION: Library/CHF: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
 INFORMATION: Library/CHF: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
+INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset
+INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset
+INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset
 
 # Ignoring this, it's coming from the snapshot
 INFORMATION: StructureDefinition/cpg-medicationdispense: StructureDefinition.snapshot.element[31].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML withour appropraite post-processing, it may be a security risk
 
 # This code does appear to be valid for HepB-CpG, Active since 5/10/2018: https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx
 WARNING: Library/HepBAdultForecasting: Library.dataRequirement[1].codeFilter[0].code[0]: Unknown Code http://hl7.org/fhir/sid/cvx#189 in http://hl7.org/fhir/sid/cvx - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://hl7.org/fhir/sid/cvx#189'
+
+# This code is valid, not sure where this message is coming from
+WARNING: Observation/chf-scenario1-potassium1: Observation.code: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/observation-vitalsignresult because the value set or code system is not known to the validator]
+
+# Example code hasn't been determined yet
+INFORMATION: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition.code.coding[0]: Code System URI 'http://www.nlm.nih.gov/research/umls/xxxx' is unknown so the code cannot be validated
 
 # Confirmed profile validation messages
 INFORMATION: ActivityDefinition/activity-example-administermedication: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition

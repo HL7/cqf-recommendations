@@ -157,7 +157,7 @@
 				</participant>
 				<!-- TODO: There is some wizardry here about transforming the questionnaire response into a Patient resource -->
 				<!-- We can use SDC post processing to do this -->
-				<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-create"/>
+				<definitionUri value="http://hl7.org/fhir/restful-interaction#create"/>
 			</action>
 		</action>
 
@@ -213,7 +213,7 @@
 				</participant>
 				<!-- TODO: There is some wizardry here about transforming the questionnaire response into a Patient resource -->
 				<!-- We can use SDC post processing to do this -->
-				<definitionUri value="http://hl7.org/fhir/OperationDefinition/Patient-update"/>
+				<definitionUri value="http://hl7.org/fhir/restful-interaction#update"/>
 			</action>
 		</action>
 
