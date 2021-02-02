@@ -1,6 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="opioids-with-ambulatory-abuse-potential"/>
     <meta>
+      <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"/>
       <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"/>
       <profile value="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset"/>
     </meta>
@@ -11,10 +12,16 @@
       <valueCode value="computable"/>
     </extension>
     <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+      <valueCode value="executable"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
       <valueCode value="publishable"/>
     </extension>
     <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
       <valueCode value="structured"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+      <valueCode value="executable"/>
     </extension>
 		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-author">
 			<valueContactDetail>
