@@ -1,14 +1,7 @@
-/output
-/pages/tmp0000.html
-/qa
-/temp
 .DS_Store
-.idea/
-/ig.ini
-/resources/ig-expansion-parameters.json
-/resources/ig-new.json
-/resources/ig-new.xml
-/resources/ig-validation-parameters.json
-pages/documentation-approach-12-concpetual-knowledge-architecture.html
-pages/examples/diabetesIGBundle-201117-cleanup.json
-pages/documentation-approach-12-conceptual-knowledge-architecture copy.md
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/temp
+/template

@@ -1,0 +1,3629 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>FHIR Clinical Guidelines (v0.2.0) (Current)</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+  <link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+  <style type="text/css">
+      .lst-kix_9o3oayhvoio9-5 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-5;
+      }
+      ol.lst-kix_9o3oayhvoio9-6.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-6 0;
+      }
+      .lst-kix_jnel5fmf64a6-8 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-8, lower-roman) ". ";
+      }
+      ol.lst-kix_jnel5fmf64a6-1.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-1 0;
+      }
+      ol.lst-kix_i6slofl3eab9-8.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-8 0;
+      }
+      .lst-kix_jnel5fmf64a6-3 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-3;
+      }
+      .lst-kix_w26a63ilk7cx-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_w26a63ilk7cx-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_i6slofl3eab9-3 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-3;
+      }
+      ol.lst-kix_jnel5fmf64a6-8.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-8 0;
+      }
+      .lst-kix_jnel5fmf64a6-7 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-7, lower-latin) ". ";
+      }
+      .lst-kix_jnel5fmf64a6-6 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-6, decimal) ". ";
+      }
+      .lst-kix_jnel5fmf64a6-5 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-5, lower-roman) ". ";
+      }
+      .lst-kix_6g1hs4jb7sic-7 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-7;
+      }
+      .lst-kix_jnel5fmf64a6-4 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-4, lower-latin) ". ";
+      }
+      .lst-kix_jnel5fmf64a6-1 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-1, lower-latin) ". ";
+      }
+      ol.lst-kix_i6slofl3eab9-3.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-3 0;
+      }
+      .lst-kix_jnel5fmf64a6-3 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-3, decimal) ". ";
+      }
+      ol.lst-kix_6g1hs4jb7sic-3.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-3 0;
+      }
+      .lst-kix_jnel5fmf64a6-2 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-2, lower-roman) ". ";
+      }
+      .lst-kix_jnel5fmf64a6-0 > li:before {
+          content: "" counter(lst-ctn-kix_jnel5fmf64a6-0, decimal) ". ";
+      }
+      ol.lst-kix_bar9qlwqydnt-6.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-6 0;
+      }
+      .lst-kix_i6slofl3eab9-6 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-6;
+      }
+      .lst-kix_jnel5fmf64a6-6 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-6;
+      }
+      ol.lst-kix_bar9qlwqydnt-2 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-1 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-0 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-8 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-7 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-6 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-5 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-4 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-3 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-1.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-1 0;
+      }
+      .lst-kix_tjymi9z3w912-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_tjymi9z3w912-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_w26a63ilk7cx-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_w26a63ilk7cx-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_bar9qlwqydnt-2 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-2;
+      }
+      .lst-kix_w26a63ilk7cx-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_6g1hs4jb7sic-0 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-0;
+      }
+      ol.lst-kix_6g1hs4jb7sic-0.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-0 0;
+      }
+      .lst-kix_ttrud060bdi4-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_9o3oayhvoio9-1 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-1;
+      }
+      .lst-kix_ocs2kz1a3k9a-0 > li:before {
+          content: "\0025cf  ";
+      }
+      ul.lst-kix_zifspyj8x4z9-1 {
+          list-style-type: none;
+      }
+      ul.lst-kix_zifspyj8x4z9-2 {
+          list-style-type: none;
+      }
+      .lst-kix_ttrud060bdi4-6 > li:before {
+          content: "\0025cf  ";
+      }
+      ol.lst-kix_bar9qlwqydnt-4.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-4 0;
+      }
+      ul.lst-kix_zifspyj8x4z9-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_zifspyj8x4z9-5 {
+          list-style-type: none;
+      }
+      .lst-kix_ocs2kz1a3k9a-4 > li:before {
+          content: "\0025cb  ";
+      }
+      ul.lst-kix_zifspyj8x4z9-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_zifspyj8x4z9-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_zifspyj8x4z9-4 {
+          list-style-type: none;
+      }
+      .lst-kix_ocs2kz1a3k9a-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_ocs2kz1a3k9a-6 > li:before {
+          content: "\0025cf  ";
+      }
+      ul.lst-kix_zifspyj8x4z9-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_zifspyj8x4z9-8 {
+          list-style-type: none;
+      }
+      .lst-kix_9o3oayhvoio9-8 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-8;
+      }
+      .lst-kix_ocs2kz1a3k9a-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_jnel5fmf64a6-7 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-7;
+      }
+      .lst-kix_bar9qlwqydnt-3 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-3;
+      }
+      ol.lst-kix_9o3oayhvoio9-8.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-8 0;
+      }
+      .lst-kix_ttrud060bdi4-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_ttrud060bdi4-4 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_ttrud060bdi4-2 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_i4xubxhcvwdq-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_i4xubxhcvwdq-1 {
+          list-style-type: none;
+      }
+      .lst-kix_byn83pg4idr-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_byn83pg4idr-3 > li:before {
+          content: "\0025cf  ";
+      }
+      ol.lst-kix_i6slofl3eab9-8 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-1.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-1 0;
+      }
+      ol.lst-kix_i6slofl3eab9-1 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-0 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-3 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-2 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-5 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-4 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-7 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-6 {
+          list-style-type: none;
+      }
+      .lst-kix_bar9qlwqydnt-6 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-6, lower-latin) ". ";
+      }
+      ol.lst-kix_jnel5fmf64a6-4.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-4 0;
+      }
+      .lst-kix_bar9qlwqydnt-7 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-7, lower-roman) ". ";
+      }
+      .lst-kix_qlp14uikpwr4-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_qlp14uikpwr4-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_byn83pg4idr-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_byn83pg4idr-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_qlp14uikpwr4-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_qlp14uikpwr4-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_9qz6lw3w9c8a-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_7f78afighysn-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_9qz6lw3w9c8a-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_7f78afighysn-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_9qz6lw3w9c8a-4 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_bar9qlwqydnt-8.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-8 0;
+      }
+      .lst-kix_tjymi9z3w912-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_tjymi9z3w912-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_jnel5fmf64a6-2 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-2;
+      }
+      .lst-kix_bar9qlwqydnt-3 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-3, lower-latin) ". ";
+      }
+      .lst-kix_7f78afighysn-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_bar9qlwqydnt-2 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-2, decimal) ". ";
+      }
+      .lst-kix_7f78afighysn-2 > li:before {
+          content: "\0025a0  ";
+      }
+      ol.lst-kix_bar9qlwqydnt-7.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-7 0;
+      }
+      .lst-kix_6g1hs4jb7sic-4 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-4;
+      }
+      .lst-kix_9qz6lw3w9c8a-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_9qz6lw3w9c8a-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_9o3oayhvoio9-0 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-0;
+      }
+      .lst-kix_9o3oayhvoio9-1 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-1, lower-latin) ". ";
+      }
+      ul.lst-kix_9qz6lw3w9c8a-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_9qz6lw3w9c8a-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_9qz6lw3w9c8a-4 {
+          list-style-type: none;
+      }
+      .lst-kix_i4xubxhcvwdq-7 > li:before {
+          content: "\0025cb  ";
+      }
+      ul.lst-kix_9qz6lw3w9c8a-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_9qz6lw3w9c8a-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_9qz6lw3w9c8a-5 {
+          list-style-type: none;
+      }
+      .lst-kix_9o3oayhvoio9-5 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-5, lower-roman) ". ";
+      }
+      ul.lst-kix_9qz6lw3w9c8a-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_9qz6lw3w9c8a-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_9qz6lw3w9c8a-1 {
+          list-style-type: none;
+      }
+      .lst-kix_bar9qlwqydnt-1 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-1;
+      }
+      .lst-kix_i4xubxhcvwdq-3 > li:before {
+          content: "\0025cf  ";
+      }
+      ol.lst-kix_jnel5fmf64a6-3.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-3 0;
+      }
+      .lst-kix_zifspyj8x4z9-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_tjymi9z3w912-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_6g1hs4jb7sic-2 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-2;
+      }
+      .lst-kix_w26a63ilk7cx-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_6g1hs4jb7sic-0 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) ". ";
+      }
+      .lst-kix_w26a63ilk7cx-4 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_6g1hs4jb7sic-4 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-2, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-3, decimal) "."
+              counter(lst-ctn-kix_6g1hs4jb7sic-4, decimal) ". ";
+      }
+      .lst-kix_i6slofl3eab9-3 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-3, decimal) ". ";
+      }
+      ol.lst-kix_6g1hs4jb7sic-5.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-5 0;
+      }
+      .lst-kix_zifspyj8x4z9-7 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_6g1hs4jb7sic-8.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-8 0;
+      }
+      ol.lst-kix_6g1hs4jb7sic-7.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-7 0;
+      }
+      .lst-kix_ttrud060bdi4-7 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_jnel5fmf64a6-5.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-5 0;
+      }
+      .lst-kix_6g1hs4jb7sic-8 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-2, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-3, decimal) "."
+              counter(lst-ctn-kix_6g1hs4jb7sic-4, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-5, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-6, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-7, decimal) "."
+              counter(lst-ctn-kix_6g1hs4jb7sic-8, decimal) ". ";
+      }
+      .lst-kix_7x53zodnvet8-4 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_ocs2kz1a3k9a-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_ocs2kz1a3k9a-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_7x53zodnvet8-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_bar9qlwqydnt-6 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-6;
+      }
+      .lst-kix_sluje649sdzk-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_sluje649sdzk-4 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_jnel5fmf64a6-6.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-6 0;
+      }
+      .lst-kix_jnel5fmf64a6-4 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-4;
+      }
+      ol.lst-kix_6g1hs4jb7sic-6.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-6 0;
+      }
+      .lst-kix_ttrud060bdi4-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_i6slofl3eab9-8 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-8;
+      }
+      .lst-kix_7x53zodnvet8-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_bzsq8tgfuyz8-7 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_jnel5fmf64a6-7.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-7 0;
+      }
+      .lst-kix_bzsq8tgfuyz8-4 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_bzsq8tgfuyz8-8 > li:before {
+          content: "\0025a0  ";
+      }
+      ol.lst-kix_i6slofl3eab9-2.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-2 0;
+      }
+      .lst-kix_bar9qlwqydnt-8 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-8;
+      }
+      .lst-kix_bzsq8tgfuyz8-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_bzsq8tgfuyz8-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_jnel5fmf64a6-1 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-1;
+      }
+      .lst-kix_sluje649sdzk-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_sluje649sdzk-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_sluje649sdzk-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_i6slofl3eab9-1 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-1;
+      }
+      .lst-kix_bzsq8tgfuyz8-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_bzsq8tgfuyz8-3 > li:before {
+          content: "\0025cf  ";
+      }
+      ol.lst-kix_9o3oayhvoio9-0.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-0 0;
+      }
+      .lst-kix_bzsq8tgfuyz8-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_bzsq8tgfuyz8-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_i6slofl3eab9-8 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-8, lower-roman) ". ";
+      }
+      .lst-kix_i6slofl3eab9-7 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-7, lower-latin) ". ";
+      }
+      .lst-kix_u8zhtjgp8ayf-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_i6slofl3eab9-6 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-6, decimal) ". ";
+      }
+      .lst-kix_u8zhtjgp8ayf-7 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_jnel5fmf64a6-2.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-2 0;
+      }
+      .lst-kix_i6slofl3eab9-5 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-5, lower-roman) ". ";
+      }
+      .lst-kix_u8zhtjgp8ayf-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_u8zhtjgp8ayf-3 > li:before {
+          content: "\0025cf  ";
+      }
+      ol.lst-kix_6g1hs4jb7sic-4.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-4 0;
+      }
+      .lst-kix_bar9qlwqydnt-4 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-4;
+      }
+      .lst-kix_u8zhtjgp8ayf-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_u8zhtjgp8ayf-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_u8zhtjgp8ayf-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_u8zhtjgp8ayf-4 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_u8zhtjgp8ayf-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_jnel5fmf64a6-8 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-8;
+      }
+      ol.lst-kix_9o3oayhvoio9-5.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-5 0;
+      }
+      ol.lst-kix_jnel5fmf64a6-5 {
+          list-style-type: none;
+      }
+      ol.lst-kix_jnel5fmf64a6-6 {
+          list-style-type: none;
+      }
+      ol.lst-kix_jnel5fmf64a6-3 {
+          list-style-type: none;
+      }
+      ol.lst-kix_jnel5fmf64a6-4 {
+          list-style-type: none;
+      }
+      ol.lst-kix_jnel5fmf64a6-1 {
+          list-style-type: none;
+      }
+      ol.lst-kix_jnel5fmf64a6-2 {
+          list-style-type: none;
+      }
+      ol.lst-kix_jnel5fmf64a6-0 {
+          list-style-type: none;
+      }
+      .lst-kix_9o3oayhvoio9-3 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-3;
+      }
+      ol.lst-kix_jnel5fmf64a6-7 {
+          list-style-type: none;
+      }
+      ol.lst-kix_jnel5fmf64a6-8 {
+          list-style-type: none;
+      }
+      .lst-kix_i4xubxhcvwdq-8 > li:before {
+          content: "\0025a0  ";
+      }
+      ol.lst-kix_jnel5fmf64a6-0.start {
+          counter-reset: lst-ctn-kix_jnel5fmf64a6-0 0;
+      }
+      .lst-kix_i4xubxhcvwdq-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_9o3oayhvoio9-0 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-0, decimal) ". ";
+      }
+      .lst-kix_9o3oayhvoio9-4 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-4, lower-latin) ". ";
+      }
+      .lst-kix_i4xubxhcvwdq-4 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_6g1hs4jb7sic-2.start {
+          counter-reset: lst-ctn-kix_6g1hs4jb7sic-2 0;
+      }
+      .lst-kix_9o3oayhvoio9-6 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-6, decimal) ". ";
+      }
+      ul.lst-kix_w26a63ilk7cx-3 {
+          list-style-type: none;
+      }
+      .lst-kix_i4xubxhcvwdq-0 > li:before {
+          content: "\0025cf  ";
+      }
+      ul.lst-kix_w26a63ilk7cx-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_w26a63ilk7cx-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_w26a63ilk7cx-4 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_w26a63ilk7cx-7 {
+          list-style-type: none;
+      }
+      .lst-kix_i4xubxhcvwdq-2 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_w26a63ilk7cx-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_w26a63ilk7cx-8 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-3 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-2 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-1 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-0 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-7 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-6 {
+          list-style-type: none;
+      }
+      .lst-kix_9o3oayhvoio9-2 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-2, lower-roman) ". ";
+      }
+      ul.lst-kix_w26a63ilk7cx-1 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_w26a63ilk7cx-0 {
+          list-style-type: none;
+      }
+      ol.lst-kix_6g1hs4jb7sic-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_sluje649sdzk-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_sluje649sdzk-8 {
+          list-style-type: none;
+      }
+      .lst-kix_zifspyj8x4z9-2 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_sluje649sdzk-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_sluje649sdzk-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_sluje649sdzk-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_sluje649sdzk-6 {
+          list-style-type: none;
+      }
+      .lst-kix_6g1hs4jb7sic-1 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) ". ";
+      }
+      .lst-kix_i6slofl3eab9-4 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-4;
+      }
+      ul.lst-kix_sluje649sdzk-0 {
+          list-style-type: none;
+      }
+      .lst-kix_zifspyj8x4z9-4 > li:before {
+          content: "\0025cb  ";
+      }
+      ul.lst-kix_sluje649sdzk-1 {
+          list-style-type: none;
+      }
+      .lst-kix_zifspyj8x4z9-6 > li:before {
+          content: "\0025cf  ";
+      }
+      ul.lst-kix_sluje649sdzk-2 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-7.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-7 0;
+      }
+      ul.lst-kix_byn83pg4idr-6 {
+          list-style-type: none;
+      }
+      .lst-kix_i6slofl3eab9-2 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-2, lower-roman) ". ";
+      }
+      ul.lst-kix_byn83pg4idr-5 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-3.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-3 0;
+      }
+      ul.lst-kix_byn83pg4idr-8 {
+          list-style-type: none;
+      }
+      .lst-kix_zifspyj8x4z9-8 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_byn83pg4idr-7 {
+          list-style-type: none;
+      }
+      .lst-kix_i6slofl3eab9-0 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-0, decimal) ". ";
+      }
+      .lst-kix_i6slofl3eab9-4 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-4, lower-latin) ". ";
+      }
+      .lst-kix_6g1hs4jb7sic-5 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-5;
+      }
+      .lst-kix_6g1hs4jb7sic-5 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-2, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-3, decimal) "."
+              counter(lst-ctn-kix_6g1hs4jb7sic-4, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-5, decimal) ". ";
+      }
+      ul.lst-kix_byn83pg4idr-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_byn83pg4idr-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_byn83pg4idr-1 {
+          list-style-type: none;
+      }
+      ul.lst-kix_byn83pg4idr-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_byn83pg4idr-3 {
+          list-style-type: none;
+      }
+      .lst-kix_6g1hs4jb7sic-3 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-2, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-3, decimal) ". ";
+      }
+      .lst-kix_6g1hs4jb7sic-6 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-6;
+      }
+      .lst-kix_7x53zodnvet8-3 > li:before {
+          content: "\0025cf  ";
+      }
+      ol.lst-kix_i6slofl3eab9-0.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-0 0;
+      }
+      .lst-kix_7x53zodnvet8-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_9o3oayhvoio9-7 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-7;
+      }
+      .lst-kix_6g1hs4jb7sic-7 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-2, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-3, decimal) "."
+              counter(lst-ctn-kix_6g1hs4jb7sic-4, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-5, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-6, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-7, decimal) ". ";
+      }
+      ol.lst-kix_9o3oayhvoio9-3 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-4 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-5 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-6 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-7 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-8 {
+          list-style-type: none;
+      }
+      .lst-kix_7x53zodnvet8-7 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_9o3oayhvoio9-0 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-1 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-2 {
+          list-style-type: none;
+      }
+      .lst-kix_sluje649sdzk-3 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_zifspyj8x4z9-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_sluje649sdzk-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_sluje649sdzk-5 > li:before {
+          content: "\0025a0  ";
+      }
+      ol.lst-kix_bar9qlwqydnt-5.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-5 0;
+      }
+      .lst-kix_9o3oayhvoio9-8 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-8, lower-roman) ". ";
+      }
+      .lst-kix_i6slofl3eab9-5 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-5;
+      }
+      ul.lst-kix_7f78afighysn-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7f78afighysn-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7f78afighysn-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7f78afighysn-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7f78afighysn-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7f78afighysn-6 {
+          list-style-type: none;
+      }
+      .lst-kix_7x53zodnvet8-1 > li:before {
+          content: "\0025cb  ";
+      }
+      ul.lst-kix_7f78afighysn-8 {
+          list-style-type: none;
+      }
+      .lst-kix_9o3oayhvoio9-4 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-4;
+      }
+      .lst-kix_byn83pg4idr-4 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_i6slofl3eab9-0 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-0;
+      }
+      .lst-kix_byn83pg4idr-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_byn83pg4idr-5 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_7f78afighysn-1 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7f78afighysn-0 {
+          list-style-type: none;
+      }
+      .lst-kix_byn83pg4idr-0 > li:before {
+          content: "\0025cf  ";
+      }
+      ol.lst-kix_bar9qlwqydnt-2.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-2 0;
+      }
+      .lst-kix_bar9qlwqydnt-7 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-7;
+      }
+      .lst-kix_9o3oayhvoio9-2 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-2;
+      }
+      .lst-kix_bar9qlwqydnt-4 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-4, lower-roman) ". ";
+      }
+      .lst-kix_bar9qlwqydnt-5 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-5, decimal) ". ";
+      }
+      ol.lst-kix_9o3oayhvoio9-3.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-3 0;
+      }
+      ol.lst-kix_i6slofl3eab9-5.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-5 0;
+      }
+      .lst-kix_byn83pg4idr-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_qlp14uikpwr4-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_bar9qlwqydnt-8 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-8, decimal) ". ";
+      }
+      .lst-kix_6g1hs4jb7sic-8 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-8;
+      }
+      .lst-kix_jnel5fmf64a6-0 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-0;
+      }
+      .lst-kix_qlp14uikpwr4-4 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_7f78afighysn-4 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_9o3oayhvoio9-4.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-4 0;
+      }
+      .lst-kix_bar9qlwqydnt-5 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-5;
+      }
+      .lst-kix_qlp14uikpwr4-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_9qz6lw3w9c8a-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_7f78afighysn-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_7f78afighysn-8 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_qlp14uikpwr4-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_9qz6lw3w9c8a-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_7f78afighysn-7 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_tjymi9z3w912-1 > li:before {
+          content: "\0025cb  ";
+      }
+      ol.lst-kix_i6slofl3eab9-4.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-4 0;
+      }
+      .lst-kix_tjymi9z3w912-0 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_bar9qlwqydnt-0 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-0, lower-latin) ". ";
+      }
+      .lst-kix_bar9qlwqydnt-1 > li:before {
+          content: "" counter(lst-ctn-kix_bar9qlwqydnt-1, lower-roman) ". ";
+      }
+      .lst-kix_7f78afighysn-3 > li:before {
+          content: "\0025cf  ";
+      }
+      ul.lst-kix_tjymi9z3w912-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_tjymi9z3w912-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_tjymi9z3w912-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_tjymi9z3w912-3 {
+          list-style-type: none;
+      }
+      .lst-kix_9qz6lw3w9c8a-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_9o3oayhvoio9-6 > li {
+          counter-increment: lst-ctn-kix_9o3oayhvoio9-6;
+      }
+      .lst-kix_6g1hs4jb7sic-1 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-1;
+      }
+      ul.lst-kix_tjymi9z3w912-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_tjymi9z3w912-7 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-1.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-1 0;
+      }
+      ul.lst-kix_tjymi9z3w912-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_tjymi9z3w912-1 {
+          list-style-type: none;
+      }
+      ul.lst-kix_tjymi9z3w912-0 {
+          list-style-type: none;
+      }
+      .lst-kix_9qz6lw3w9c8a-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_6g1hs4jb7sic-3 > li {
+          counter-increment: lst-ctn-kix_6g1hs4jb7sic-3;
+      }
+      .lst-kix_i4xubxhcvwdq-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_9o3oayhvoio9-7 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-7, lower-latin) ". ";
+      }
+      ul.lst-kix_bzsq8tgfuyz8-6 {
+          list-style-type: none;
+      }
+      .lst-kix_i4xubxhcvwdq-1 > li:before {
+          content: "\0025cb  ";
+      }
+      ul.lst-kix_bzsq8tgfuyz8-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_bzsq8tgfuyz8-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_bzsq8tgfuyz8-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_bzsq8tgfuyz8-1 {
+          list-style-type: none;
+      }
+      .lst-kix_jnel5fmf64a6-5 > li {
+          counter-increment: lst-ctn-kix_jnel5fmf64a6-5;
+      }
+      .lst-kix_9o3oayhvoio9-3 > li:before {
+          content: "" counter(lst-ctn-kix_9o3oayhvoio9-3, decimal) ". ";
+      }
+      ul.lst-kix_bzsq8tgfuyz8-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_bzsq8tgfuyz8-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_bzsq8tgfuyz8-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_bzsq8tgfuyz8-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_u8zhtjgp8ayf-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_u8zhtjgp8ayf-1 {
+          list-style-type: none;
+      }
+      .lst-kix_tjymi9z3w912-8 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_u8zhtjgp8ayf-0 {
+          list-style-type: none;
+      }
+      ol.lst-kix_bar9qlwqydnt-0.start {
+          counter-reset: lst-ctn-kix_bar9qlwqydnt-0 0;
+      }
+      .lst-kix_zifspyj8x4z9-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_tjymi9z3w912-4 > li:before {
+          content: "\0025cb  ";
+      }
+      ul.lst-kix_u8zhtjgp8ayf-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_u8zhtjgp8ayf-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_u8zhtjgp8ayf-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_u8zhtjgp8ayf-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_u8zhtjgp8ayf-4 {
+          list-style-type: none;
+      }
+      .lst-kix_i6slofl3eab9-7 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-7;
+      }
+      ul.lst-kix_u8zhtjgp8ayf-3 {
+          list-style-type: none;
+      }
+      .lst-kix_w26a63ilk7cx-6 > li:before {
+          content: "\0025cf  ";
+      }
+      .lst-kix_6g1hs4jb7sic-6 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-2, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-3, decimal) "."
+              counter(lst-ctn-kix_6g1hs4jb7sic-4, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-5, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-6, decimal) ". ";
+      }
+      ul.lst-kix_qlp14uikpwr4-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_qlp14uikpwr4-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_qlp14uikpwr4-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_qlp14uikpwr4-2 {
+          list-style-type: none;
+      }
+      .lst-kix_w26a63ilk7cx-2 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_qlp14uikpwr4-1 {
+          list-style-type: none;
+      }
+      .lst-kix_6g1hs4jb7sic-2 > li:before {
+          content: "" counter(lst-ctn-kix_6g1hs4jb7sic-0, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-1, decimal) "." counter(lst-ctn-kix_6g1hs4jb7sic-2, decimal) ". ";
+      }
+      ul.lst-kix_qlp14uikpwr4-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_qlp14uikpwr4-7 {
+          list-style-type: none;
+      }
+      .lst-kix_i6slofl3eab9-1 > li:before {
+          content: "" counter(lst-ctn-kix_i6slofl3eab9-1, lower-latin) ". ";
+      }
+      ul.lst-kix_qlp14uikpwr4-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_qlp14uikpwr4-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-8 {
+          list-style-type: none;
+      }
+      .lst-kix_7x53zodnvet8-2 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_ocs2kz1a3k9a-7 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ocs2kz1a3k9a-8 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-6 {
+          list-style-type: none;
+      }
+      ol.lst-kix_i6slofl3eab9-7.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-7 0;
+      }
+      ul.lst-kix_ocs2kz1a3k9a-1 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ocs2kz1a3k9a-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-1 {
+          list-style-type: none;
+      }
+      .lst-kix_7x53zodnvet8-6 > li:before {
+          content: "\0025cf  ";
+      }
+      ul.lst-kix_ttrud060bdi4-1 {
+          list-style-type: none;
+      }
+      .lst-kix_qlp14uikpwr4-8 > li:before {
+          content: "\0025a0  ";
+      }
+      ul.lst-kix_7x53zodnvet8-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ttrud060bdi4-2 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ocs2kz1a3k9a-0 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ocs2kz1a3k9a-5 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ocs2kz1a3k9a-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-5 {
+          list-style-type: none;
+      }
+      .lst-kix_ocs2kz1a3k9a-1 > li:before {
+          content: "\0025cb  ";
+      }
+      ul.lst-kix_ocs2kz1a3k9a-3 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-6 {
+          list-style-type: none;
+      }
+      ul.lst-kix_ocs2kz1a3k9a-4 {
+          list-style-type: none;
+      }
+      ul.lst-kix_7x53zodnvet8-7 {
+          list-style-type: none;
+      }
+      ol.lst-kix_9o3oayhvoio9-1.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-1 0;
+      }
+      .lst-kix_ocs2kz1a3k9a-5 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_zifspyj8x4z9-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_bar9qlwqydnt-0 > li {
+          counter-increment: lst-ctn-kix_bar9qlwqydnt-0;
+      }
+      .lst-kix_i6slofl3eab9-2 > li {
+          counter-increment: lst-ctn-kix_i6slofl3eab9-2;
+      }
+      ol.lst-kix_i6slofl3eab9-6.start {
+          counter-reset: lst-ctn-kix_i6slofl3eab9-6 0;
+      }
+      .lst-kix_sluje649sdzk-2 > li:before {
+          content: "\0025a0  ";
+      }
+      .lst-kix_ttrud060bdi4-1 > li:before {
+          content: "\0025cb  ";
+      }
+      .lst-kix_ttrud060bdi4-5 > li:before {
+          content: "\0025a0  ";
+      }
+      ol.lst-kix_9o3oayhvoio9-2.start {
+          counter-reset: lst-ctn-kix_9o3oayhvoio9-2 0;
+      }
+      ol {
+          margin: 0;
+          padding: 0;
+      }
+      table td,
+      table th {
+          padding: 0;
+      }
+      .c23 {
+          border-right-style: solid;
+          padding: 5pt 5pt 5pt 5pt;
+          border-bottom-color: #000000;
+          border-top-width: 1pt;
+          border-right-width: 1pt;
+          border-left-color: #000000;
+          vertical-align: top;
+          border-right-color: #000000;
+          border-left-width: 1pt;
+          border-top-style: solid;
+          border-left-style: solid;
+          border-bottom-width: 1pt;
+          width: 156pt;
+          border-top-color: #000000;
+          border-bottom-style: solid;
+      }
+      .c12 {
+          border-right-style: solid;
+          padding: 5pt 5pt 5pt 5pt;
+          border-bottom-color: #000000;
+          border-top-width: 1pt;
+          border-right-width: 1pt;
+          border-left-color: #000000;
+          vertical-align: top;
+          border-right-color: #000000;
+          border-left-width: 1pt;
+          border-top-style: solid;
+          border-left-style: solid;
+          border-bottom-width: 1pt;
+          width: 117pt;
+          border-top-color: #000000;
+          border-bottom-style: solid;
+      }
+      .c8 {
+          margin-left: 36pt;
+          padding-top: 18pt;
+          padding-left: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c55 {
+          background-color: #ffffff;
+          color: #222222;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 11pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c13 {
+          margin-left: 108pt;
+          padding-top: 0pt;
+          padding-left: 0pt;
+          padding-bottom: 0pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c37 {
+          background-color: #ffffff;
+          color: #3c4043;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 10.5pt;
+          font-family: "Roboto";
+          font-style: normal;
+      }
+      .c9 {
+          margin-left: 90pt;
+          padding-top: 0pt;
+          padding-left: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c10 {
+          margin-left: 72pt;
+          padding-top: 0pt;
+          padding-left: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c16 {
+          color: #999999;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 11pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c11 {
+          margin-left: 72pt;
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c59 {
+          color: #3c4043;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 10.5pt;
+          font-family: "Roboto";
+          font-style: normal;
+      }
+      .c0 {
+          color: #000000;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 10pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c46 {
+          padding-top: 18pt;
+          padding-bottom: 6pt;
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c3 {
+          color: #434343;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 9pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c1 {
+          color: #000000;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 11pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c30 {
+          margin-left: 108pt;
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c19 {
+          color: #000000;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 16pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c29 {
+          margin-left: 90pt;
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c43 {
+          color: #000000;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 9pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c4 {
+          color: #000000;
+          font-weight: 700;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 13pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c57 {
+          color: #434343;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 14pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c7 {
+          margin-left: 36pt;
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c47 {
+          padding-top: 16pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c20 {
+          margin-left: 36pt;
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.1500000000000001;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c68 {
+          padding-top: 20pt;
+          padding-bottom: 6pt;
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c6 {
+          padding-top: 0pt;
+          padding-bottom: 0pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+          height: 11pt;
+      }
+      .c54 {
+          color: #000000;
+          font-weight: 400;
+          vertical-align: baseline;
+          font-size: 11pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c32 {
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c25 {
+          color: #000000;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 11pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c56 {
+          padding-top: 0pt;
+          padding-bottom: 11pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c51 {
+          padding-top: 0pt;
+          padding-bottom: 0pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: center;
+      }
+      .c31 {
+          color: #000000;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-size: 11pt;
+          font-family: "Arial";
+      }
+      .c18 {
+          padding-top: 0pt;
+          padding-bottom: 0pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .c64 {
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          orphans: 2;
+          widows: 2;
+          text-align: center;
+      }
+      .c45 {
+          color: #000000;
+          font-weight: 400;
+          text-decoration: none;
+          vertical-align: baseline;
+          font-family: "Arial";
+      }
+      .c40 {
+          background-color: #ffffff;
+          color: #1155cc;
+          font-weight: 400;
+          font-size: 10.5pt;
+          font-family: "Roboto";
+      }
+      .c15 {
+          margin-left: 18pt;
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          text-align: left;
+      }
+      .c60 {
+          color: #000000;
+          vertical-align: baseline;
+          font-size: 11pt;
+          font-family: "Arial";
+          font-style: normal;
+      }
+      .c42 {
+          background-color: #ffffff;
+          font-size: 10.5pt;
+          font-family: "Roboto";
+          color: #3c4043;
+          font-weight: 400;
+      }
+      .c53 {
+          margin-left: 18pt;
+          padding-top: 0pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          text-align: center;
+      }
+      .c2 {
+          padding-top: 12pt;
+          padding-bottom: 10pt;
+          line-height: 1.15;
+          text-align: left;
+      }
+      .c34 {
+          padding-top: 0pt;
+          padding-bottom: 0pt;
+          line-height: 1;
+          text-align: left;
+      }
+      .c36 {
+          text-decoration-skip-ink: none;
+          -webkit-text-decoration-skip: none;
+          text-decoration: underline;
+      }
+      .c65 {
+          background-color: #ffffff;
+          max-width: 468pt;
+          padding: 72pt 72pt 72pt 72pt;
+      }
+      .c49 {
+          font-size: 7pt;
+          font-family: "Times New Roman";
+          font-weight: 400;
+      }
+      .c50 {
+          border-spacing: 0;
+          border-collapse: collapse;
+          margin-right: auto;
+      }
+      .c66 {
+          color: #000000;
+          text-decoration: none;
+          vertical-align: baseline;
+      }
+      .c48 {
+          color: inherit;
+          text-decoration: inherit;
+      }
+      .c21 {
+          border: 1px solid black;
+          margin: 5px;
+      }
+      .c5 {
+          padding: 0;
+          margin: 0;
+      }
+      .c17 {
+          font-weight: 700;
+      }
+      .c63 {
+          font-size: 20pt;
+      }
+      .c52 {
+          color: #ff0000;
+      }
+      .c44 {
+          margin-left: 9pt;
+      }
+      .c27 {
+          font-style: italic;
+      }
+      .c38 {
+          font-size: 12pt;
+      }
+      .c28 {
+          font-size: 10pt;
+      }
+      .c67 {
+          background-color: #fce5cd;
+      }
+      .c33 {
+          margin-left: 180pt;
+      }
+      .c26 {
+          margin-left: 36pt;
+      }
+      .c24 {
+          height: 0pt;
+      }
+      .c61 {
+          font-style: normal;
+      }
+      .c22 {
+          padding-left: 0pt;
+      }
+      .c39 {
+          text-indent: 36pt;
+      }
+      .c62 {
+          margin-left: 144pt;
+      }
+      .c58 {
+          color: #1155cc;
+      }
+      .c35 {
+          margin-left: 72pt;
+      }
+      .c41 {
+          background-color: #ffff00;
+      }
+      .c14 {
+          height: 11pt;
+      }
+      .title {
+          padding-top: 0pt;
+          color: #000000;
+          font-size: 26pt;
+          padding-bottom: 3pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      .subtitle {
+          padding-top: 0pt;
+          color: #666666;
+          font-size: 15pt;
+          padding-bottom: 16pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      li {
+          color: #000000;
+          font-size: 11pt;
+          font-family: "Arial";
+      }
+      p {
+          margin: 0;
+          color: #000000;
+          font-size: 11pt;
+          font-family: "Arial";
+      }
+      h1 {
+          padding-top: 20pt;
+          color: #000000;
+          font-size: 20pt;
+          padding-bottom: 6pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      h2 {
+          padding-top: 18pt;
+          color: #000000;
+          font-size: 16pt;
+          padding-bottom: 6pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      h3 {
+          padding-top: 16pt;
+          color: #434343;
+          font-size: 14pt;
+          padding-bottom: 4pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      h4 {
+          padding-top: 14pt;
+          color: #666666;
+          font-size: 12pt;
+          padding-bottom: 4pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      h5 {
+          padding-top: 12pt;
+          color: #666666;
+          font-size: 11pt;
+          padding-bottom: 4pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+      h6 {
+          padding-top: 12pt;
+          color: #666666;
+          font-size: 11pt;
+          padding-bottom: 4pt;
+          font-family: "Arial";
+          line-height: 1.15;
+          page-break-after: avoid;
+          font-style: italic;
+          orphans: 2;
+          widows: 2;
+          text-align: left;
+      }
+  </style>
+</head>
+<body>
+
+<!-- ============CONTENT CONTENT=============== -->
+
+<div>
+    <p class="c51"><span class="c16">CPG Methodology- Using the Integrated Process, Agile KE, and BPM+ for</span></p>
+    <p class="c51"><span class="c16">ACEP&rsquo;s COVID-19 ED Severity Classification and Disposition Recommendations</span></p>
+</div>
+<p class="c6"><span class="c4"></span></p>
+<h1 class="c68" id="h.4qvf0hafy2n8"><span class="c45 c61 c63">Introduction</span></h1>
+<p class="c6"><span class="c1"></span></p>
+<h2 class="c46" id="h.css35s6bbqz8"><span class="c19">Problem Statement</span></h2>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span class="c1">
+        During 2020, a coalition of nearly fifty private sector organizations, including healthcare delivery organizations (e.g. hospital systems) formed to advance the rapid development and dissemination of computable clinical best
+        practice guidance for COVID-19. &nbsp;The coalition tackled the need for classifying COVID-19 patients presenting in emergency room settings to inform recommendations for triaging patients to differing levels of care and
+        settings.
+    </span>
+</p>
+<p class="c6"><span class="c25 c17"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<h2 class="c46" id="h.a232e54ckhyk"><span class="c19">Team</span></h2>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span class="c1">
+        Members of the team were drawn from CDC&rsquo;s Adapting Clinical Guidelines for the Digital Age initiative, where work was ongoing prior to the pandemic to coordinate and manage the development of standards-based computable
+        guideline representations using the HL-7 FHIR framework and corresponding lifecycle development processes, documented in this overall implementation guide.
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18"><span class="c1">The resulting COVID-19 Digital Guideline Working Group (C19 DGWG) organized into functional teams as follows: </span></p>
+<ul class="c5 lst-kix_ttrud060bdi4-0 start">
+    <li class="c18 c26 c22"><span class="c1">Program Management </span></li>
+    <li class="c18 c26 c22"><span class="c1">Content (Guideline development, content governance and prioritization)</span></li>
+    <li class="c18 c26 c22"><span class="c1">Knowledge Engineering </span></li>
+    <li class="c18 c26 c22"><span class="c1">Terminology </span></li>
+    <li class="c18 c26 c22"><span class="c1">Validation </span></li>
+    <li class="c18 c26 c22"><span class="c1">Delivery &amp; Dissemination</span></li>
+    <li class="c18 c26 c22"><span class="c1">Implementation </span></li>
+</ul>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18"><span>In addition, consultation was received on Knowledge Architecture (HL7 standards) from the </span><span>HL7 CDS Work Group, Informatics Sub-Group</span><span class="c1">).</span></p>
+<p class="c6"><span class="c1"></span></p>
+<h2 class="c46" id="h.i64sgsb58log"><span class="c19">Process Overview</span></h2>
+<p class="c6"><span class="c36 c17 c60"></span></p>
+<p class="c18">
+    <span>Members of the content team, which included f</span>
+    <span>rontline clinicians, clinical informaticians, and representatives from medical specialty professional societies and evidence-based practice centers (EPCs) provided content in the form of high-level use cases</span>
+    <span class="c52">&nbsp;</span><span>and detailed clinical domain knowledge. </span>
+    <span class="c1">
+        The knowledge engineering team worked with the content team to review and prioritize the content. Next, an integrated, cross-functional Agile CPG Team was formed for each use case consisting of members from each of the
+        functional teams. The work was performed using the Integrated Process and Agile Approach to CPG Development resulting in L1-L4 artifacts as shown in Figure MSC.01, as outlined in this implementation guide,. &nbsp;
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c0"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 142.09px;">
+        <img alt="" src="image37.png" style="width: 624px; height: 235px; margin-left: 0px; margin-top: -92.91px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c18">
+    <span class="c28">
+        Figure MSC.01. The Agile Approach to CPG Development using Agile Knowledge Engineering principles and practices including concurrent, iterative, and incremental development of all Levels of Representation by an integrated,
+        cross functional team.
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 659.84px; height: 363.76px;">
+        <img alt="" src="image30.png" style="width: 659.84px; height: 363.76px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c18"><span class="c0">Figure MSC.02 illustrates the high-level work activities and outputs tied to L1-L4, and which functional teams worked on these activities and outputs. &nbsp;</span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c25 c17"></span></p>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 602.85px; height: 339.1px;">
+        <img alt="" src="image10.png" style="width: 602.85px; height: 339.1px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c18"><span class="c0">Figure MSC.03 illustrates the full life-cycle anticipated by the team, from development to implementation.</span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18"><span class="c25 c17">Process </span></p>
+<p class="c6"><span class="c25 c17"></span></p>
+<p class="c18"><span class="c25 c17">Methodology WorkFlow and Artifacts</span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span>
+        Figure MSC.03 provides a visual overview of the CPG methodology and the interactions between the different teams and disciplines during the rapid execution of the CPG methodology (broken out into Part 1 &amp; 2 due to
+        formatting limitations).
+    </span>
+    <span class="c1">&nbsp;An in-depth description of the process will reference the artifacts shown in this visual overview. </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 348px;">
+        <img alt="" src="image14.png" style="width: 624px; height: 348px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 349.33px;">
+        <img alt="" src="image2.png" style="width: 624px; height: 349.33px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span class="c0">
+        Figure MSC.04 Interdisciplinary integration: &ldquo;Swim Lanes&rdquo; in enacting the Agile Approach to CPG development methodology gives an overview of the work products and artifacts produced during execution of this
+        methodology.
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 253.33px;">
+        <img alt="" src="image17.png" style="width: 624px; height: 253.33px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c18">
+    <span class="c0">
+        FIG MSC.05. &nbsp;Work products and artifacts produced during execution of the CPG methodology will be mapped to the Levels by TiersTable to illustrate where they are situated in the Knowledge Translation spectrum as well as
+        where they serve to span this translation.
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<h1 class="c68" id="h.vrd2ggeoqn7w"><span class="c45 c63 c61">Process In-Depth</span></h1>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span class="c1">
+        This section provides details how the clinical best practice guidance developed by the content team and their partners was translated into knowledge representations and expressions (FHIR Profiles), roughly following the
+        process presented in this implementation guide. &nbsp;These details include more information on the activities, the various tools and methods used, and the artifacts and outputs produced by the team.
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0 start" start="1">
+    <li class="c8">
+        <h2 id="h.xld6px5996yf" style="display: inline;">
+            <span>Scope Guideline and Review Eviden</span><span>ce</span>
+        </h2>
+    </li>
+</ol>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1 start" start="1">
+    <li class="c10">
+        <span>The </span>
+        <span class="c1">
+            Content Team consisting of frontline emergency medicine physicians/providers and members of the American College of Emergency Physicians (ACEP) identified the need for a tool to evaluate and classify the severity of
+            COVID-19 in the context of patient presenting in emergency department settings to inform recommendations on the disposition of patients. Anticipated clinical pathways included care in-home, general floor status,
+            progessive care (more intensive and extensive monitoring) short-term observation in the ED, triage to intensive or critical care units (ICU), and/or transfer to another facility.
+        </span>
+    </li>
+    <li class="c10">
+        <span class="c1">
+            Given the low level of formalized evidence, the urgent need by frontline providers for some guidance from expert bodies, and early stage of the entirely novel disease, &nbsp;the equivalent of a guideline development
+            group (C19 DGWG Content Team and ACEP) determined that a rapid review of available evidence was needed to inform initial guidance, in contrast to traditional approaches.* Evidence from the rapid review could be leveraged
+            quickly due to the affordances and capabilities of the CPG-IG and the ability to continually update this guidance as new evidence emerged (of note: a second iteration of this content has commenced at the time of this
+            writing).
+        </span>
+    </li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        *Traditional approaches incorporate well-established clinical evidence for diseases that have been known for decades, centuries, or even millennia that would inform more advanced knowledge synthesis processes (systematic
+        reviews and meta-analyses), to yield authoritative clinical best practice guidelines and recommendations.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="3">
+    <li class="c10">
+        <span class="c1">
+            A thorough rapid review of the evidence was commenced to identify relevant inputs into the development of the guidance. Key articles were selected and reviewed in a systematic process, while frontline providers needs
+            were assessed.
+        </span>
+    </li>
+</ol>
+<p class="c7"><span class="c36 c54">Scoping/Evidence Review Tool</span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 612.62px; height: 282.25px;">
+        <img alt="" src="image5.png" style="width: 612.62px; height: 282.25px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c1">FIG MSC.06 Scoping/review tool</span></p>
+<p class="c11">
+    <span class="c1">
+        The committee met on a weekly cadence for approximately 8 weeks as evidence was curated, the approach and format for the use case was formalized, and teams were assigned tasks to complete prior to the next meetings. To bring
+        such a diverse group of stakeholders together and have them agree upon guiding principles and distill such disparate evidence into a concise recommendation so quickly was unusual, but warranted by the emerging pandemic.
+    </span>
+</p>
+<p class="c11">
+    <span class="c1">
+        NOTE: At the time of the writing of this CPG methodology example (November 2020), the content team was still meeting and working on updates to use cases, based on anticipated developments during the northern hemisphere flu
+        season.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="2">
+    <li class="c8">
+        <h2 id="h.c29568n03f9g" style="display: inline;"><span class="c19">Initial Draft of Guidance and Recommendations</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 254.67px;">
+        <img alt="" src="image36.png" style="width: 624px; height: 254.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">FIG MSC.07. &nbsp;The initial Draft of the COVID-19 ED Severity Classification and Disposition Recommendations is clearly Level 1, but addresses some specification around both Logic and Data.</span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="4">
+    <li class="c10">
+        <span>The guidance development team (content) decided to represent the guidance in the form of a</span><span>&nbsp;two-step evaluation, which would inform a five-level classification of </span>
+        <span class="c1">
+            disease severity and risk of poor outcomes.This format was chosen considering &nbsp;the need to make the score readability available and easy to perform by frontline clinicians (initially- most likely without the aid of
+            automated computation). Together with the low level of evidence, It was decided to simplify the scoring and subsequent recommendations to a five-level, non-overlapping set of severity classifications.
+        </span>
+    </li>
+</ol>
+<p class="c11"><span class="c1">GUIDANCE</span></p>
+<p class="c11">
+    <span class="c17">Step 1: </span>
+    <span class="c1">
+        Perform a clinical assessment for initial severity classification and determination of further diagnostics. &nbsp;The clinical assessment itself consisted of vital sign values, the quick severity index (qCSI) based thereon,
+        and an assessment of signs and symptoms as well as risk factors for developing severe COVID-19 disease or risk for poor outcomes. &nbsp;
+    </span>
+</p>
+<p class="c11">
+    <span class="c17">Step 2: </span>
+    <span class="c1">
+        For patients with the four most severe classifications, the recommendation was to order an escalating set of diagnostics (labs, imaging, functional assessments). For the least severe classification, confirm patient to be low
+        risk and disposition to home with follow-up via home and/or telehealth with monitoring. &nbsp;
+    </span>
+</p>
+<p class="c11">
+    <span class="c1">
+        The results of diagnostics or findings further informed the overall COVID-19 severity classification. &nbsp;Of note, the clinical assessment was to be continued up to disposition and could escalate the severity
+        classification at any point, thus influencing further diagnostic testing and/or disposition. &nbsp;Thus, the clinical assessment is not merely a once-and-done assessment, but changing as a result of continual patient
+        monitoring, additional diagnostics, and interventions. Thus the patients&rsquo; pathophysiology and clinical actions should be represented as a series of states.
+    </span>
+</p>
+<p class="c11">
+    <span class="c1">
+        For the scope of the emergency medicine practice, the classification could only be escalated, not de-escalated during the patient&rsquo;s course of care in the emergency setting. &nbsp;A &ldquo;Fast Track&rdquo; to the
+        Critical Severity Classification with disposition to ICU was identified and recommended for patients who required respiratory interventions (e.g., high flow nasal cannula, non-invasive positive pressure ventilation,
+        mechanical ventilation) and/or hemodynamic support (e.g., vasopressors).
+    </span>
+</p>
+<p class="c32"><span class="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 329.33px;">
+        <img alt="" src="image15.png" style="width: 624px; height: 329.33px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c0">Figure. MSC.08. &nbsp;Initial draft of the Severity Classification and Disposition Guidance.</span></p>
+<p class="c11">
+    <span class="c1">
+        The diagnostic assessment included a constellation of laboratory tests (blood levels of key metabolites and proteins as well as blood cell cytology), chest radiology (CXR), and point-of-care cardiac ultrasound (POCUS).
+        &nbsp;Results from these diagnostics could further be indicative of severe disease and/or poor outcomes and therefore could escalate the ED COVID-19 Severity CLassification and Disposition Recommendations.
+    </span>
+</p>
+<p class="c11">
+    <span class="c1">
+        The disposition recommendations are driven by the overall ED COVID-19 severity classification, which as noted above is continually informed by a potentially evolving clinical assessment and resulting diagnostic assessment,
+        that are holistically monitored and assessed up to patient disposition to the next, appropriate care setting.
+    </span>
+</p>
+<p class="c11">
+    <span class="c41">The American College of Emergency Medicine&rsquo;s (ACEP) Guidance on: </span><span>COVID-19 ED Severity Classification and Disposition Recommendations can be found </span>
+    <span class="c36 c58">
+        <a
+            class="c48"
+            href="https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&amp;sa=D&amp;ust=1606246815901000&amp;usg=AOvVaw2uMkX1wZE0o4UGESgNYFp4"
+        >
+            here
+        </a>
+    </span>
+    <span>&nbsp;and the PDF is found </span>
+    <span class="c36 c58">
+        <a
+            class="c48"
+            href="https://www.google.com/url?q=https://www.acep.org/globalassets/sites/acep/media/covid-19-main/acep_evidencecare_covid19severitytool.pdf&amp;sa=D&amp;ust=1606246815901000&amp;usg=AOvVaw3ZqRn2_41xoIThVUtDt2kJ"
+        >
+            here
+        </a>
+    </span>
+    <span>.</span>
+</p>
+<p class="c11">
+    <span class="c31 c27">
+        Notes: The COVID-19 severity classification developed takes into account both current disease severity as well as risk for developing severe disease or having poor outcomes and would ideally be modeled as a Risk-Severity
+        Matrix in the future. &nbsp;
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="3">
+    <li class="c8">
+        <h2 id="h.t2nh17uvs2kv" style="display: inline;"><span class="c19">Structuring and Making Explicit Content from Guideline Development Process</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span class="c1">
+        The clinical or SME knowledge engineers (SME KE) actively participated in many of the guideline development conversations and reviewed even the earliest drafts of the evidence reviews and initial iterations of the severity
+        classification and recommendations. &nbsp;In an iterative and incremental fashion, SME KE elicited structured and more explicit information related to the severity classification and disposition recommendations, decision
+        logic, and high-level implications for clinical workflow, the orchestration and decision logic for the strategies, and overall pathway and captured this knowledge in a structured template. &nbsp;
+    </span>
+</p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 252px;">
+        <img alt="" src="image32.png" style="width: 624px; height: 252px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.09. The Structured Recommendation Template includes information such as: PICOTS; GRADES; Evidence Tables; Decision and Orchestration logic- including contraindications, interventions, clinical workflow activities;
+        Metrics/Measures; and Case Presentations and User Stories that are elicited from the Content Team (Clinician SMEs and EMB Experts) together with the identification of Clinical Concepts and the expected representative
+        clinical Data Elements &nbsp; It is situated across the Level 1 to Level 2 spectrum and spans the Data, Logic, and Forms Tiers. &nbsp;As such, this is a critical, definitional work product of the Agile CPG Team.
+    </span>
+</p>
+<p class="c7">
+    <span class="c1">
+        This template was based on tables and guidance provided by guideline development best practice resources (e.g. McMaster, NIH, CDC) with enhancements for knowledge elicitation and translation and is shared in the Tools and
+        Checklist section of this implementation guide and the final work product can be found in the Examples section.
+    </span>
+</p>
+<p class="c11 c14"><span class="c31 c27"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2 start" start="1">
+    <li class="c10">
+        <span class="c1">
+            One of the earliest activities that the clinical knowledge engineer was to identify as many clinical concepts and potential data elements that may be used to express and/or infer those concepts for the scope of the
+            entire guideline. &nbsp;The evidence (literature) was reviewed together with early summaries thereof, along with the initial draft of the severity classification and disposition guidance decisions. &nbsp;The concepts and
+            respective data elements identified were fairly exhaustive and ultimately included a number of concepts not required for the logic of the COVID ED CPG &ldquo;proper&rdquo;. However, it was expected that while the vast
+            majority of these concepts may represent elements of the evidence that might not ultimately inform the CPG logic for scoring and recommendations, they had potential to be of significant value in outcomes, health
+            services, and clinical research and were of the nature to be collected as part of the feedback mechanism enabled by the &ldquo;eCaseReport&rdquo; (i.e. a clinical registry scoped to the CPG content).
+        </span>
+    </li>
+    <li class="c10">
+        <span class="c1">
+            The clinically meaningful concepts and respective data elements were then transferred to the Clinical Concepts and Data Elements Table (spreadsheet) for further definition, clarification, codification in standard
+            terminologies (and value sets), and mapping to/from interface terminologies as expressed in real-world EHRs. Additional Clinical Concepts and respectiver Data Elements were elicited, clarified, and/or verified through
+            the activity of eliciting structured information for the Recommendations, Strategies, and Pathway as described next.
+        </span>
+    </li>
+</ol>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="5">
+    <li class="c7 c22">
+        <span class="c17">Structured Information</span><span class="c1">. The information sought, elicited, described or stated explicitly, clarified, and/or validated in a formal, structured approach. Elements included:</span>
+    </li>
+</ol>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2 start" start="1">
+    <li class="c10"><span class="c17">Narrative</span><span class="c1">&nbsp;for Recommendation(s), together with each&rsquo;s respective:</span></li>
+    <li class="c10"><span class="c17">Direction of Recommendation</span><span class="c1">&nbsp;(positive or negative)</span></li>
+</ol>
+<p class="c11"><span class="c1">For the ED COVID-19 CPG, all recommendations were positive.</span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="3">
+    <li class="c10"><span class="c17">Strength of Recommendation</span><span class="c1">/ Quality of Evidence (e.g. GRADES)- if applicable to this level of guidance. &nbsp;</span></li>
+</ol>
+<p class="c11"><span class="c1">For the ED COVID-19 CPG, it was decided by the Content Team that Strength of Recommendation and Quality of Evidence would not be used.</span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="4">
+    <li class="c10"><span class="c17">PICOTS</span><span class="c1">- Population, Intervention, Comparators (if available), Outcomes, Timing, and Setting related to the Recommendation</span></li>
+</ol>
+<ul class="c5 lst-kix_i4xubxhcvwdq-0 start">
+    <li class="c9">
+        <span class="c17">Population</span>
+        <span class="c1">&nbsp;definitions for each recommendation were used in part four applicability criteria including eligibility and enrollment as well as decision logic for individual recommendations.</span>
+    </li>
+</ul>
+<p class="c29">
+    <span class="c1">
+        Specifically, only adults over 18 years of age with a registration event in the emergency department were considered eligible for the CPG. &nbsp;And only these patients with confirmed or suspected COVID-19 (by diagnosis,
+        prior positive test, or SAR-CoV-2 test ordered) were to be enrolled in the CPG. &nbsp;Note that these populations actually are applied at the level of the Pathway, but as described below, the Pathway and Strategies use the
+        same structured Template to elicit this information. &nbsp;Otherwise, applicable &ldquo;populations&rdquo; for individual recommendations were either applied at the level of a Strategy and based on enrollment in the Pathway
+        (Clinical and Diagnostic Assessments) or were applied to individual recommendations and based on the overall Severity Classification (e.g. Diagnostic Testing Recommendations, Disposition Recommendations). &nbsp;Fast Track
+        for Advanced Respiratory or Hemodynamic Support was applied at the level of that respective Strategy and to patients with respectively defined interventions.
+    </span>
+</p>
+<ul class="c5 lst-kix_i4xubxhcvwdq-0">
+    <li class="c9"><span class="c25 c17">Interventions</span></li>
+</ul>
+<p class="c29">
+    <span class="c1">
+        Interventions were defined as the respective Activities (e.g. Orders and Assessments) to be performed by the Actors (Ordering Providers) for respective Recommendations (e.g. Clinical Assessment through documentation of Signs
+        and Symptoms as well as Risk Factors; Ordering of Diagnostic Tests; Diagnostic Assessment through documentation of Diagnostic Findings; Ordering/Request for Disposition)
+    </span>
+</p>
+<p class="c29">
+    <span class="c1">
+        Note that these Activities can then be mapped to the CPG Activity Profiles as enumerated in the Profiles section of this Implementation Guide and relevant information needed to define each can be elicited from the clinical
+        domain expert.
+    </span>
+</p>
+<ul class="c5 lst-kix_i4xubxhcvwdq-0">
+    <li class="c9"><span class="c17">Comparators</span></li>
+</ul>
+<p class="c29"><span>N</span><span class="c1">one were available for these Recommendations</span></p>
+<ul class="c5 lst-kix_i4xubxhcvwdq-0">
+    <li class="c9"><span class="c25 c17">Outcomes</span></li>
+</ul>
+<p class="c29">
+    <span>K</span>
+    <span>
+        ey Outcomes for each Recommendation and the overall CPG were elicited from the clinical domain expert. &nbsp;Outcomes can include end- and intermediate-outcomes. &nbsp;The primary Outcomes are the proper Disposition to the
+        Appropriate Level of Care that is recommended for each level of the Pathway (overall CPG). &nbsp;Additional Outcomes to consider included length of stay (including in specific care settings), need for transfer to higher or
+        lower level of acuity for care setting post disposition, return visit, and mortality by severity of illness. &nbsp;These Outcomes were considered for Metrics/Measures and are discussed further in that context below.
+    </span>
+</p>
+<ul class="c5 lst-kix_i4xubxhcvwdq-0">
+    <li class="c9"><span class="c25 c17">Timing</span></li>
+</ul>
+<p class="c29">
+    <span class="c1">
+        Timing and temporal relationships within and between the Recommendations were elicited and explicitly described. &nbsp;Much of this information exists at the level of the Strategies and overall Pathway. &nbsp;These
+        relationships are further illustrated in the Decision Flow Diagram described below. In general, enrollment in the Pathway predicates all recommendations including assessments, the Clinical Assessment drives the initial
+        Severity Classification, the Severity Classification drives the Diagnostic Testing Recommendations, the resulting Diagnostic Assessment is dependent on ordering the diagnostic test, both the continued Clinical Assessment and
+        Diagnostic drives the overall Severity Classification, and the Severity Classification drives the Disposition Recommendations. &nbsp;The Fast Track (for advanced respiratory and hemodynamic support) to Critical
+        classification and subsequent Recommendations (for diagnostic testing as well as disposition) is independent and can occur at any time after enrollment. &nbsp;Exclusion from the Pathway for life-threatening conditions
+        (including Acute MI and Stroke) is similarly independent of timing.
+    </span>
+</p>
+<ul class="c5 lst-kix_i4xubxhcvwdq-0">
+    <li class="c9"><span class="c25 c17">Setting</span></li>
+</ul>
+<p class="c29"><span>The primary setting for all recommendations is the Emergency Department.</span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="5">
+    <li class="c10"><span class="c17">Evidence Tables</span></li>
+</ol>
+<p class="c11"><span>A Rapid Review was conducted</span><span class="c1">&nbsp;as described above.</span></p>
+<p class="c11">
+    <span>
+        Shared spreadsheets were utilized by the group to aggregate and then organize all of the layers of evidence that were coming in rapidly from published studies around the world. These shared spreadsheets were then easily
+        shared with group members that were dispersed around the country and were able to contribute asynchronously to the work product.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="6">
+    <li class="c10">
+        <span class="c17">Narrative Case Presentation(s)</span>
+        <span class="c1">
+            - narrative descriptions of exemplary patients (prototypes or archetypes) as to how they might traverse the course of care scoped to the inferences and recommendations of this particular guideline (or guidance).
+            &nbsp;The clinical knowledge engineers elicit these narratives from the clinical domain experts who are instructed to do so in the natural words (vocabulary) as if they are describing such a patient to a junior trainee
+            (e.g. medical student or intern) who has a basic understanding of the vocabulary (clinical concepts) used, but may not have mastered the domain sufficiently to have an knowledge base of implicit or inferred meaning- thus
+            requiring explicit descriptions in the domain vernacular. &nbsp;
+        </span>
+    </li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        The clinical SME&rsquo;s may further prompt the clinical domain experts for exceptions and/or absolute and relative contraindications for their assessments, decisions and recommendations as these may be pertinent to include
+        in the decision logic. &nbsp;The Fast Track for Respiratory and Hemodynamic Support is one such critical exception to note in this CPG.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="7">
+    <li class="c10"><span class="c25 c17">Decision Logic</span></li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        The Clinical domain experts were instructed to &ldquo;explicitly, succinctly, and precisely describe the clinical or medical decision-making logic for applying recommendation. Consider describing as if you are doing so to a
+        junior trainee who is familiar with the vocabulary but needs explicit instructions to perform the recommended intervention. And to reference any applicable diagrams (e.g., decision flows, decision tables or trees,
+        figures).&rdquo;
+    </span>
+</p>
+<p class="c11">
+    <span class="c1">
+        Key decisions in this clinical practice guideline included all assessments and inputs for the Clinical Assessment including Vital Signs, the qCSI Score (referenced evidence therefor), Signs and Symptoms, and known Risk
+        Factors (including demographics and existing medical conditions) as well as the respective cutoffs, thresholds, and values used to infer severity of disease based thereon. &nbsp;Furthermore, decision logic for
+        Recommendations for ordering diagnostic testing based on this initial assessment was elicited. &nbsp;Next, decision logic for assessments and inputs for the Diagnostic Assessment including values for and numbers of severe
+        lab tests, a COVID-19 CXR Score and other CXR findings (Bilateral Pneumonia and RV Enlargement), and POCUS findings were elicited and described explicitly. &nbsp;The decision logic for integrating the Clinical Assessment and
+        Diagnostic Assessment into an overall ED COVID-19 Severity Classification (Mild- Low Risk, Mild- At-Risk, Moderate, Severe, Critical) was treated similarly. &nbsp;Lastly, The decision logic for the Disposition
+        Recommendations for each Severity Classification was elicited and explicitly described. &nbsp;The Fast Track (to Critical with Disposition to ICU) based on Respiratory and/or Hemodynamic support as described above was
+        similarly addressed in an explicit and structured manner.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="8">
+    <li class="c10"><span class="c25 c17">Contraindications</span></li>
+</ol>
+<p class="c11"><span class="c1">Since this clinical practice guideline does not directly address any pharmacological or other therapeutic interventions, there Were no absolute or relative contraindications to address.</span></p>
+<p class="c11">
+    <span class="c1">
+        However, notable exclusions to the overall disposition guidance based solely on the ED COVID-19 Severity Classification were noted to include Acute Myocardial Infarction, Stroke, and other life-threatening conditions.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="9">
+    <li class="c10"><span class="c25 c17">Goals</span></li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        The primary goals noted in this clinical practice guideline included: #1) Disposition of suspected or confirmed COVID-19 patients from the emergency department to a clinical setting that could provide appropriate level of
+        care; #2) Assignment of a severity classification for COVID-19 patients presenting to the Emergency Department using clinical and diagnostic assessments; #3) Determination of appropriate diagnostic testing for patients with
+        suspected or confirmed COVID-19 using an initial bedside clinical assessment.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="10">
+    <li class="c10"><span class="c25 c17">Metrics and Measures</span></li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        The Measures and/or Metrics for each Recommendation, if desired, were identified and clearly explicitly described. &nbsp;There are dozens of patterns directly derivable from the Recommendation including: If Proposed, was it
+        Ordered; If Proposed, was it Performed (done, fulfilled, resulted); Timing from Proposal to Order or Performance; &nbsp;Timing from Proposal to Goal Achieved or any other Key Event (essentially any Case Feature); Timing from
+        a Key Event (any Case Feature) to Order, Performance, Goal, or another Key Event; Timing from Order, Performance, or Goal Achieved to any Key Event; etc. Each desired Measure or Metric was assessed for alignment with
+        directly derivable patterns.
+    </span>
+</p>
+<p class="c11"><span class="c1">For the ED COVID-19 Severity Classification and Disposition Recommendation CPG several key metrics were identified including:</span></p>
+<ul class="c5 lst-kix_7x53zodnvet8-0 start">
+    <li class="c30 c22"><span class="c1">Performance of Clinical Assessment</span></li>
+    <li class="c22 c30"><span class="c1">Compliance with Diagnostic Testing Recommendations (based on Severity Classification)</span></li>
+    <li class="c30 c22"><span class="c1">Performance of Diagnostic Assessment</span></li>
+    <li class="c30 c22"><span class="c1">Compliance with Disposition Recommendations (based on Severity Classification)</span></li>
+    <li class="c30 c22"><span class="c1">Time from ED Registration (Eligibility) to Disposition</span></li>
+    <li class="c30 c22"><span class="c1">Time from ED Registration (Eligibility) to Clinical Assessment made</span></li>
+    <li class="c30 c22"><span class="c1">Time from ED Registration (Eligibility) to Diagnostic Testing Resulted</span></li>
+    <li class="c30 c22"><span>Time from ED Registration (Eligibility) to Diagnostic Assessment made</span></li>
+</ul>
+<p class="c11">
+    <span class="c1">
+        Note that many of these Metrics/Measures would actually be defined/derived at the level of a Strategy or the overall Pathway (see below). &nbsp;Additional Metrics/Measures were further considered for appropriateness of
+        disposition that would look at return visits to the emergency department, inpatient transfers, inpatient length of stay (including for specific levels of care such as ICU), and clinical end-outcomes; however, these were
+        determined to be out of scope for this version of the CPG given that these data elements may well be outside the scope of many implementations.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-2" start="11">
+    <li class="c10"><span class="c25 c17">Actors &amp; Activities</span></li>
+</ol>
+<p class="c11"><span class="c1">The primary Actors expected to participate in the Activities scoped to this clinical practice guideline were identified as Ordering Providers practicing in an Emergency Department.</span></p>
+<p class="c11">
+    <span class="c1">
+        The primary Activities scoped to this clinical practice guideline include: Clinical Assessment (primarily the patient interview and physical exam); Ordering of Diagnostic Tests; Evaluation of Diagnostic Tests; Clinical
+        Decision-making; and determination of Patient Disposition
+    </span>
+</p>
+<p class="c32">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 702.67px;">
+        <img alt="" src="image22.png" style="width: 624px; height: 702.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c32"><span class="c0">Figure MSC.10. Part 1 The Structured Recommendation Template used for capture of explicit/structured information for recommendations, decision logic, and workflows</span></p>
+<p class="c32 c14"><span class="c43"></span></p>
+<p class="c32">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 621.5px; height: 738.17px;">
+        <img alt="" src="image6.png" style="width: 621.5px; height: 738.17px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c32"><span class="c0">Figure MSC.11. Part 2 The Structured Recommendation Template for capture of explicit/structured information for recommendations, decision logic, and workflows</span></p>
+<p class="c32 c14"><span class="c0"></span></p>
+<p class="c32 c14"><span class="c0"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="6">
+    <li class="c7 c22"><span class="c17 c25">Pathway and Strategies</span></li>
+</ol>
+<p class="c7">
+    <span class="c1">
+        The information for collections of related Recommendations, called Strategies, as well as for the overall guideline scoped to all Recommendations and all Strategies, called the Pathway were similarly elicited, described or
+        stated explicitly, clarified, and/or validated in a formal, structured approach similar to the individual Recommendations as described above.
+    </span>
+</p>
+<p class="c7"><span class="c1">Strategies include:</span></p>
+<ul class="c5 lst-kix_9qz6lw3w9c8a-0 start">
+    <li class="c10"><span class="c1">Clinical Assessment</span></li>
+    <li class="c10"><span class="c1">ED COVID-19 Severity Classification based on Clinical and Diagnostic Assessments</span></li>
+    <li class="c10"><span class="c1">Diagnostic Testing Recommendations based on overall Severity Classification</span></li>
+    <li class="c10"><span class="c1">Diagnostic Assessment</span></li>
+    <li class="c10"><span class="c1">Disposition Recommendations based on overall Severity Classification</span></li>
+    <li class="c10"><span class="c1">Fast Track for Advanced Respiratory or Hemodynamic Support</span></li>
+</ul>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7"><span class="c1">Pathway:</span></p>
+<ul class="c5 lst-kix_bzsq8tgfuyz8-0 start">
+    <li class="c22 c35 c56">
+        <span class="c36">Eligibility</span>
+        <span class="c1">- for the COVID-19 ED Severity Classification and Disposition Recommendations, the eligibility criteria was determined to be Adults over 18 years old with an ED Visit (ED Registration Event).</span>
+    </li>
+    <li class="c10">
+        <span class="c36">Enrollment</span>
+        <span class="c1">
+            - for the COVID-19 ED Severity Classification and Disposition Recommendations, the enrollment criteria was determined to be &ldquo;confirmed of suspected COVID-19&rdquo; as defined by a positive SARS-CoV-2 test within
+            the past 14 days, a confirmed diagnosis of COVID-19 on the Problem List, an order for a SARS-CoV-2 test (suspected), or a clinician documentation activity for suspected COVID-19 specifically as part of an
+            encounter-specific interaction with this Severity Classification tool.
+        </span>
+    </li>
+</ul>
+<p class="c7 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="7">
+    <li class="c7 c22"><span class="c25 c17">Concepts and data elements for structured information</span></li>
+</ol>
+<p class="c7">
+    <span class="c1">
+        All structured information captured in the CPG recommendation template was analyzed by the clinical knowledge engineer and terminologist to identify key clinical concepts and their respective data elements (used to
+        represent/ express directly or for inferring/ informing such concepts), with further elicitation and verification from the clinical domain experts. &nbsp;The concepts and data elements were then transferred to another
+        template (spreadsheet) used exclusively for formalizing and expressing computable clinical concepts (clinically semantic data) in downstream work products (e.g. decision logic in CQL).
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="8">
+    <li class="c7 c22"><span class="c25 c17">Informing CPG-IG knowledge architecture and expression using CPG Profiles</span></li>
+</ol>
+<p class="c7">
+    <span class="c1">
+        The information content requirements for the individual CPG Profiles further drove the requirements for detailed and explicit information to be elicited from the clinical domain experts and captured in the structured
+        template.
+    </span>
+</p>
+<p class="c7">
+    <span>Much of the information needed to define the explicit content of the various </span>
+    <span class="c36 c58">
+        <a class="c48" href="https://www.google.com/url?q=http://build.fhir.org/ig/HL7/cqf-recommendations/profiles.html&amp;sa=D&amp;ust=1606246815912000&amp;usg=AOvVaw3LoZpOYUt8b8DtJRcu6fFJ">CPG Domain and Activity Profiles</a>
+    </span>
+    <span class="c1">&nbsp;for recommendations and respective activities, strategies, pathway, case features, metrics, and more is captured in this document. &nbsp;</span>
+</p>
+<p class="c7">
+    <span class="c1">
+        This information was elicited, analyzed, and further refined to be made explicit over the course of numerous working sessions, interviews, and asynchronous communications with the clinical domain experts (content team).
+        &nbsp;Further definition of the case features (including inferred case features) is described next in the section titled: &ldquo;Identification and Description of initial Clinical Concepts and Data Elements used in the
+        Guideline&rdquo;.
+    </span>
+</p>
+<p class="c7">
+    <span class="c31 c27">
+        Note: while more explicit narrative descriptions of decision and orchestration logic is captured in this document, much of the formal decision and orchestration logic to be expressed in various computable language libraries
+        (e.g. CQL) used in or by the CPG Profiles is more formally and explicitly defined, refined, and verified in additional activities described below (e.g. Decision Flow Diagram, Decision Tables and Decision Requirements
+        Diagrams [DMN], Pathway and Strategy Logic/ Orchestration Models [CMMN]). &nbsp;Some of these activities cross or combine what might be considered Level 2 and Level 3 representations through the use of fit-for-purpose
+        authoring tools that express computer-interpretable logic using visual analogs. &nbsp;Such tooling is invaluable for establishing a shared understanding and more so &ldquo;reasoning intent&rdquo; between domain experts and
+        computable logic expressions.
+    </span>
+</p>
+<p class="c11 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="4">
+    <li class="c8">
+        <h2 id="h.1f4ytyfo111" style="display: inline;"><span class="c19">Identification and Description of initial Clinical Concepts and Data Elements used in the Guideline</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 252px;">
+        <img alt="" src="image24.png" style="width: 624px; height: 252px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.12. &nbsp;Clinical Concepts and Data Elements with their descriptions were abstracted from the draft of the guidance above by the SME Knowledge Engineer with participation and review by the Content Team and
+        Terminology resources. &nbsp;This artifact clearly lies in the Level 1 space and the Data Tier.
+    </span>
+</p>
+<p class="c7 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="9">
+    <li class="c10"><span class="c1">Concepts from Template and Draft Guideline</span></li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        The clinical knowledge engineer and terminologist identified all potential clinical concepts and data elements that may be used to represent, resolve, and/or infer those clinical concepts from the structured template above
+        as well as a thorough review of successive drafts of the Clinical Practice Guideline. &nbsp;
+    </span>
+</p>
+<p class="c11">
+    <span class="c1">
+        The clinical concepts were reviewed with the clinical domain experts on the content Team (serving as the guideline development group). &nbsp;After these were clarified and/or verified, they were shared with the technical
+        knowledge engineers as well as representatives from the terminology vendors that service healthcare delivery systems in the context of their EHR&rsquo;s and other clinical information systems for review, further iteration
+        (e.g., clarifications on definitions) to ultimately &nbsp;provide coded concept definitions specific to context-of-use as well as mappings to proprietary (vendor) codes and value-sets used in system interface terminologies.
+    </span>
+</p>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 543px; height: 289.11px;">
+        <img alt="" src="image7.png" style="width: 543px; height: 668.3px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c0">Figure MSC.13: Identification of Concepts and Data Elements</span></p>
+<p class="c7 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="10">
+    <li class="c10"><span class="c1">Concept Maps (as needed)</span></li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        In part to accelerate the translation process and minimize rework and errors of mistranslation, a more explicit means of concept definition and mapping was undertaken by a cross-functional team using both a formal Clinical
+        Ontology to explicitly model and describe concepts (in Protege) as well as Decision Requirements Diagrams and Decision Tables from OMG&rsquo;s Decision Modeling Notation (using Trisotech). &nbsp;Both are described further
+        below.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="5">
+    <li class="c8">
+        <h2 id="h.9f0dt6dou0b" style="display: inline;"><span class="c19">Create Decision Flow Diagram(s)</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 253.33px;">
+        <img alt="" src="image18.png" style="width: 624px; height: 253.33px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.14. &nbsp;The Decision Flow Diagram contains five lanes- the first two lanes being Data Elements and Clinical Concepts, the middle lane being Decision points and flow, the fourth lane being Clinical Interventions
+        (Activities), and the fifth lane being potential decision support interventions or Enablements to manifest a specific clinical intervention. &nbsp;As such, this semi-structured flow diagram is clearly situated in the Level 2
+        space and across the Data, Logic, and Forms Tiers. &nbsp;Furthermore, it serves as a tool to span the gap between the narrative and structured representations and facilitates conversations and a shared understanding between
+        the Content SMEs, SME Knowledge Engineers, Terminologists, and Technical Knowledge Engineers. &nbsp;As such, it is partially built from and used in combination with the Structured Recommendation Template.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="11">
+    <li class="c10">
+        <span class="c1">
+            To make the overall flow of logic for recommendations including decisions and temporal orchestration implied, but not explicit in the illustration developed by the content team (Guideline Development Group), the clinical
+            knowledge engineers developed an explicit decision and activity flow diagram for this clinical practice guideline. &nbsp;
+        </span>
+    </li>
+</ol>
+<p class="c11">
+    <span class="c1">
+        The Template for such a flow diagram has been used in numerous prior guideline/ pathway translation initiatives. &nbsp;This template is a vertical flow diagram with five vertical columns showing the logical and temporal flow
+        of information and activities expressed by descending vertical flow. &nbsp;
+    </span>
+</p>
+<p class="c11">
+    <span>
+        The columns further express information flow and dependencies, except between the higher-order separation of concerns of Case, Plan, and Workflow. &nbsp;The foremost left column shows the Data Elements that are required or
+        used to resolve or infer the Clinical Concepts in the second column from the left, collectively representing the Case via CaseFeatures (and as more explicitly defined in prior steps described above and ultimately in the
+        Clinical Ontology). Then, the Clinical Concepts in the second column are used by/ as inputs for the Decisions &nbsp;(that are described in detail in the explicit narrative for Decision Logic in the Structured Template) in
+        the middle column. &nbsp;These Decisions then drive the Interventions or Activities (of a corresponding Recommendation) in the adjacent (fourth) column, and/or downstream decisions, and/or downstream inferred Clinical
+        Concepts. &nbsp;The foremost right (fifth) column describes the
+    </span>
+    <span class="c36 c58">
+        <a class="c48" href="https://www.google.com/url?q=http://build.fhir.org/ig/HL7/cqf-recommendations/approach.html%23conformance-levels&amp;sa=D&amp;ust=1606246815914000&amp;usg=AOvVaw0Kc0C-urWxYuTJktNZXxB_">
+            CPG Enablements
+        </a>
+    </span>
+    <span class="c1">&nbsp;that may be used to manifest these Interventions/ Activities in the clinical Workflow.</span>
+</p>
+<p class="c32 c44 c14"><span class="c1"></span></p>
+<p class="c32 c44">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 470.67px;">
+        <img alt="" src="image3.png" style="width: 624px; height: 470.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c32 c44"><span class="c0">Fig. MSC.15. &nbsp;The initial portion of the Decision Flow Diagram for the COVID-19 ED Severity Classification and Disposition Recommendation CPG.</span></p>
+<p class="c32 c44 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="6">
+    <li class="c8">
+        <h2 id="h.awyeyd8i7e3r" style="display: inline;"><span class="c19">Review and cross-reference: template, concept definitions, and flow diagram</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 252px;">
+        <img alt="" src="image28.png" style="width: 624px; height: 252px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        Fig. MSC.16. &nbsp;Together, the Structured Recommendation Template, the Decision Flow Diagram, and the Data Definitions for the COVID-19 ED Severity Classification and Disposition Recommendation guidance form the basis of
+        shared understanding between Content SMEs (Clinicians and EMB scientists) and the Knowledge Engineering Team (SME and Technical KE&rsquo;s, Terminologists). &nbsp;These artifacts cross-reference and reinforce one another as
+        they span the Levels 1, 2, and 3 space and cross the Data, Logic, and Forms Tiers.
+    </span>
+</p>
+<p class="c7">
+    <span class="c1">
+        The above work products of the Agile CPG Team (largely the Clinical Knowledge Engineer with significant contributions from the clinical domain expert, the Terminologist, and the Technical Knowledge Engineer) are reviewed and
+        cross-referenced to identify and resolve any inconsistencies, ambiguities, and/or missing elements. &nbsp;This step requires an integrated, cross-functional design review consisting of all the team members denoted so far.
+        This review may identify additional clarifications needed from the content team, may identify additional clinical concepts, data elements, and or logic that needs defined, may identify ambiguities or errors in the narrative
+        guideline artifact(s), and/or may denote areas of particular focus for further review in downstream translation activities (e.g., Decision Modeling, Pathway/ Strategy Logic Modeling).
+    </span>
+</p>
+<p class="c7">
+    <span class="c1">
+        For this particular CPG, of note, it was through this process that the need to explicitly describe, call-out, and model the continuously monitored &ldquo;Fast Track for Respiratory and/or Hemodynamic Support&rdquo; was
+        identified. &nbsp;It had previously been described as an exclusion or exemption from the pathway, when in fact it was a critical, integral part. &nbsp;All guideline artifacts and work products were updated to reflect this.
+    </span>
+</p>
+<p class="c7"><span class="c1">Other items discussed were:</span></p>
+<ul class="c5 lst-kix_zifspyj8x4z9-0 start">
+    <li class="c10"><span class="c1">Clarification of distinctions between laboratory test orders and results (e.g. Panels and Components); </span></li>
+    <li class="c10"><span class="c1">Clarification on the timing of a qualifying positive SARS-CoV-2 test (14 days prior); </span></li>
+    <li class="c10"><span class="c1">The use of encounter diagnoses, problem list conditions, and or phenotyping algorithms for automated detection of existing medical conditions as risk factors; </span></li>
+    <li class="c10"><span class="c1">Confirmation of the thresholds and or intervals for the qCSI score and vital sign values for the Clinical Assessment (and respective severity classification); </span></li>
+    <li class="c10"><span class="c1">Unambiguous naming of the two &ldquo;Mild&rdquo; classifications (Low-Risk and At-RIsk); </span></li>
+    <li class="c10">
+        <span class="c1">Clarification of the two-step assessment as well as the continuous evaluation of both the clinical assessment and/or diagnostic assessment for assigning the overall severity classification; </span>
+    </li>
+    <li class="c10"><span class="c1">Clarification that the overall severity classification can only remain the same or escalate, not de-escalate, over the course of the ED stay; </span></li>
+    <li class="c10"><span class="c1">And lastly, clarification that both &ldquo;work of breathing&rdquo; and &ldquo;Level of consciousness&rdquo; were to be required documentation from the clinicians</span></li>
+</ul>
+<p class="c11 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="7">
+    <li class="c8">
+        <h2 id="h.vbflrf6ihiy" style="display: inline;">
+            <span>Formalize </span><span>Terminologies </span><span>&nbsp;(Codes, Value Sets, Mappings)</span>
+        </h2>
+    </li>
+</ol>
+<p class="c18 c26">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 253.33px;">
+        <img alt="" src="image23.png" style="width: 624px; height: 253.33px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c6 c26"><span class="c37"></span></p>
+<p class="c18 c26">
+    <span class="c0">
+        FIG MSC.17. &nbsp;The formalization of the terminology mapping- from Interface Terminology codes and value sets to Standard Terminology codes and value sets) actually spans Levels 2, 3, and 4 (as they are used in real-world
+        implementations) and is largely focused on the Data Tier- though some description logic may be addressed here.
+    </span>
+</p>
+<p class="c6 c26"><span class="c1 c41"></span></p>
+<p class="c18 c26">
+    <span>Following the review and cross-referencing step of work products and artifacts produced in the </span><span>clinical domain knowledge engineering phase</span>
+    <span>, </span>
+    <span>
+        the next phase of the work involves normalizing the data elements and mapping these to standard terminologies to insure interoperability of the computable CPG. The following outline provides a detailed list of steps takes to
+        complete this work.
+    </span>
+</p>
+<p class="c6 c26"><span class="c37"></span></p>
+<ol class="c5 lst-kix_9o3oayhvoio9-0 start" start="1">
+    <li class="c6 c22 c35"><span class="c1"></span></li>
+</ol>
+<p class="c32 c14 c39"><span class="c1"></span></p>
+<p class="c32 c39 c14"><span class="c1"></span></p>
+<p class="c32 c39 c14"><span class="c1"></span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 333.33px;">
+        <img alt="" src="image8.png" style="width: 624px; height: 333.33px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c0">&nbsp;Figure MSC.18. Formalization of Term mappings of Terminologies for Data Elements and Concepts</span></p>
+<p class="c7 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="8">
+    <li class="c8">
+        <h2 id="h.ayjfpvh59v8f" style="display: inline;">
+            <span>Iterate, Update Draft of Guideline</span>
+        </h2>
+    </li>
+</ol>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 252px;">
+        <img alt="" src="image4.png" style="width: 624px; height: 252px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.19. &nbsp;The Content Team has continued to iterate on the COVID-19 ED Severity Classification and Disposition Recommendation guidance. &nbsp;As the severity classification, including decision logic and workflow
+        implications, and disposition recommendations continue to mature and evolve, these illustrations further drift into the Level 2 space and cross the Forms, Logic, and Data Tiers.
+    </span>
+</p>
+<p class="c7"><span class="c1">The Content Team (Guideline Development Group)</span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="12">
+    <li class="c10"><span class="c1">The Content Team has continued to review the evidence for patient characteristics and risk factors contributing to COVID-19 Severity.</span></li>
+    <li class="c10">
+        <span class="c1">
+            The Content Team further takes into consideration feedback and explicit definitions derived from their interactions with the Knowledge Engineering Team as well as representative front-line clinician users. In addition,
+            further feedback and clarification is derived from interactions with medical illustrators who are participating in developing the visual representation of the severity classification, workflow, and disposition
+            recommendations.
+        </span>
+    </li>
+    <li class="c10"><span class="c1">Throughout the course of the CPG development, multiple iterations of the visual depiction (illustrations shown), were undertaken by the Content Team.</span></li>
+</ol>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="9">
+    <li class="c8">
+        <h2 id="h.5kiusn85lead" style="display: inline;"><span>Initial Draft of Computable Decision Logic (Decision </span><span>Tables in DMN)</span></h2>
+    </li>
+</ol>
+<p class="c20">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 250.67px;">
+        <img alt="" src="image16.png" style="width: 624px; height: 250.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c20">
+    <span class="c0">
+        FIG MSC.20. &nbsp;Computable representations of decision logic (Decision Graphs and Tables in DMN) were developed by the technical Knowledge Engineers based on the various Level 2 artifacts developed to date (Structured
+        Recommendation Template, the Decision Flow Diagram, and the Data Definitions) as well as direct interactions with the Content SMEs. &nbsp;These decision graphs and tables span Levels 2 and 3 representations as well as the
+        Logic and Data Tiers. &nbsp;They explicitly represent the clinical concepts and logic in computer-interpretable forms, but are reviewable with Content SMEs.
+    </span>
+</p>
+<p class="c20">
+    <span class="c1">
+        Based on the various Level 2 artifacts- Structured Recommendation Template, the Decision Flow Diagram, and the Data Definitions- together with direct interactions with the contents SMEs, the technical knowledge engineer
+        developed computable representations of assessment and decision logic including Decision Graphs and Tables (in DMN). These Graphs and Tables explicitly represent the clinical concepts and logic in computer-interpretable
+        forms, but were reviewed with Content SMEs.
+    </span>
+</p>
+<p class="c20">
+    <span>
+        The first step in the formalization of the Assessment logic is the identification of the dependencies between the clinical concepts, in particular with respect to those concepts that will be resolved by means of computable
+        expressions.<br />
+        <br />
+        The
+    </span>
+    <span class="c27">resolution</span>
+    <span>
+        &nbsp;of a concept is the process by which a concept is assigned a specific value in the context of a given patient case. Resolution can be implemented by querying the EHR, having some clinician document the data, or by
+        means of computation.<br />
+        <br />
+        A
+    </span>
+    <span class="c27">dependency</span>
+    <span>
+        &nbsp;between two concepts A and B implies that A can be resolved to a higher degree of correctness and accuracy if B itself has been resolved. In the case of expression-based resolutions, B is usually an input to the
+        function that computes A.<br />
+        <br />
+        The Decision Modelling Notation standard (DMN) provides
+    </span>
+    <span class="c27">Decision Diagrams</span><span class="c1">&nbsp;that allow to assert, visualize and consequently review the mutual dependencies between concepts. An example is provided in Fig. MSC.21<br /></span>
+</p>
+<p class="c20">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 424px; height: 298px;">
+        <img alt="" src="image19.png" style="width: 424px; height: 298px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span>
+        Figure MSC.21. Formal model of inferences and decisions: decision diagrams<br />
+        <br />
+        Input concepts, depicted using oval shapes, represent concepts that are
+    </span>
+    <span class="c27">Retrieved</span><span>&nbsp;from the EHR, or acquired by means of Documentation. Decision Elements, depicted by boxes, model the inference processes that a human would use to infer </span>
+    <span class="c27">derivative </span><span>concepts.The diagrams provide a clear, holistic view that can be validated by the SMEs, in particular to verify that </span><span class="c27">all</span><span>&nbsp;and </span>
+    <span class="c27">only</span><span class="c1">&nbsp;the desired dependencies are captured.</span>
+</p>
+<p class="c20"><span class="c1">Once the concepts have been properly positioned, the next step consists in creating an initial draft of the expression logic that defines how each concept should be resolved.</span></p>
+<p class="c20">
+    <span class="c1">Decision tables, decision trees and/or simple expressions can be combined together in forms that facilitate the interaction between the (Clinical) Knowledge Engineers and the Subject Matter Experts.</span>
+</p>
+<p class="c7"><span class="c1">In this phase, the goal is to determine gaps, redundancies, conflicts, ambiguities and other inconsistencies in the logic, and solicit SME feedback accordingly. </span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 293.33px;">
+        <img alt="" src="image20.png" style="width: 624px; height: 293.33px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c0">FIG MSC.22. Formal model of inferences and decisions: Decision Tables</span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="10">
+    <li class="c8">
+        <h2 id="h.me70olq6d2ca" style="display: inline;"><span>Term Enrichment </span><span class="c19">&nbsp;</span></h2>
+    </li>
+</ol>
+<p class="c32 c14"><span class="c1"></span></p>
+<p class="c6"><span class="c16 c67"></span></p>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 252px;">
+        <img alt="" src="image34.png" style="width: 624px; height: 252px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c18">
+    <span class="c28">
+        &nbsp;Figure MSC.23. The Enriched Term Mappings Sheet for the COVID-19 ED Severity Classification and Disposition Recommendation guidance further formalizes the description and contextualization logic required for the
+        &ldquo;Clinical Ontology&rdquo; used within the various logic expressions and representations (e.g. Decision Tables and Graphs (DMN), Orchestration Logic (CMMN)). &nbsp;As such, this artifact is squarely situated in Level 3
+        and the Data Tier.
+    </span>
+</p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c18">
+    <span>In this step, the output of </span><span class="c27">#7 Formalize Term Mapping</span>
+    <span>&nbsp;(table of Data elements mapped to terms &amp; value sets from standard terminologies) is enriched to form the substrate for generating Situation terms based on </span><span class="c17">Situation patterns</span>
+    <span>. This involves adding 4 new columns to the</span><span class="c52">&nbsp;</span><span>Term Mapping Table</span><span class="c1">:</span>
+</p>
+<ul class="c5 lst-kix_w26a63ilk7cx-0 start">
+    <li class="c18 c26 c22">
+        <span class="c17">Type (Kind)</span>
+        <span class="c1">: to categorise the Data elements into discrete categories. E.g.: Condition, DeviceRequest, DiagnosticReport, MedicationRequest, MedicationStatement, Observation, Patient, Procedure, ServiceRequest.</span>
+    </li>
+    <li class="c18 c26 c22">
+        <span class="c17">Focal concept for Situation</span><span>: the core SNOMED term that will be the basis for the situation to be created. These will be mostly SNOMED observables with some procedure codes included. See </span>
+        <span class="c36 c40">
+            <a class="c48" href="https://www.google.com/url?q=https://confluence.ihtsdotools.org/pages/viewpage.action?pageId%3D71172311&amp;sa=D&amp;ust=1606246815922000&amp;usg=AOvVaw1hgWiTHe5m8OgZNeVmAzcs">
+                SNOMED Procedures vs Observations
+            </a>
+        </span>
+        <span class="c42">.</span>
+    </li>
+    <li class="c18 c26 c22"><span class="c17">LOINC preferred code</span><span class="c1">: where a LOINC code is available, this is captured.</span></li>
+    <li class="c18 c26 c22"><span class="c17">Situation</span><span>: where a SNOMED </span><span class="c27">Situation with explicit context </span><span class="c1">concept is available, this is captured.</span></li>
+</ul>
+<p class="c6"><span class="c1"></span></p>
+<p class="c6"><span class="c1"></span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 244px;">
+        <img alt="" src="image35.png" style="width: 624px; height: 244px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c18"><span class="c28">&nbsp;Figure MSC.24. COVID- ED Severity Classification - Term Enrichment Mappings Sheet</span></p>
+<p class="c7 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="11">
+    <li class="c8">
+        <h2 id="h.im7lbtlajt51" style="display: inline;"><span>Cross-Functi</span><span>onal Team Review, Open Questions, and Resolution of Ambiguities</span></h2>
+    </li>
+</ol>
+<p class="c6"><span class="c1"></span></p>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 250.67px;">
+        <img alt="" src="image11.png" style="width: 624px; height: 250.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.25. Open items, questions, and clarifications from various interactions collectively and individually with the members of the Content Team, Terminologists, and Technical Knowledge Engineers were documented by the SME
+        Knowledge Engineers. &nbsp;This documentation covered aspects of and had implications for Levels 1-3 and covered Data, Logic and Forms Tiers.
+    </span>
+</p>
+<p class="c7 c14"><span class="c0"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="15">
+    <li class="c18 c22 c35">
+        <span class="c1">
+            The SME Knowledge Engineers took copious notes on open items, questions, and clarifications from various interactions collectively and individually with the members of the Content Team, Terminologists, and Technical
+            Knowledge Engineers. &nbsp;These questions and clarifications were documented and sent to the Content Team lead for resolution with the broader Content Team. &nbsp;These questions included clarifications on cutoffs or
+            thresholds, ambiguities in logic, and clarifications of data definitions, scoring logic, and workflow implications.
+        </span>
+    </li>
+</ol>
+<p class="c6 c35"><span class="c1"></span></p>
+<p class="c18 c35"><span class="c1">These included:</span></p>
+<ul class="c5 lst-kix_byn83pg4idr-0 start">
+    <li class="c13"><span class="c1">&ldquo;Staleness&rdquo; of data elements (defining &ldquo;Current&rdquo;)</span></li>
+    <li class="c13"><span class="c1">Explicit, non-overlapping, but comprehensive cut-off boundaries</span></li>
+    <li class="c13"><span class="c1">Severity classification category nomenclature (Mild-1/ Mild-2 vs Mild-Low Risk/ Mild- At-Risk)</span></li>
+    <li class="c13"><span class="c1">Hemodynamic and respiratory support as &ldquo;Fast-track&rdquo; vs exclusion criteria</span></li>
+    <li class="c13"><span class="c1">Expected documentation vs communication for work of breathing and the level of consciousness</span></li>
+    <li class="c13"><span class="c1">Continuous evaluation of Clinical Severity (even after Diagnostic Severity evaluation is initiated)</span></li>
+    <li class="c13"><span class="c1">Ability of a single factor to drive highest the highest severity classification</span></li>
+    <li class="c13"><span class="c1">Persistence of highest severity classification for duration of ED encounter</span></li>
+    <li class="c13"><span class="c1">Ability of clinician user to override severity classification determination</span></li>
+    <li class="c13"><span class="c1">Distinctions between laboratory orders (panels) and results (components)</span></li>
+    <li class="c13"><span class="c1">Need for (or not) distinctions between ED labs and Admission labs</span></li>
+    <li class="c13"><span class="c1">Temporal definitions for Conditions as risk factors (past medical history versus active condition)</span></li>
+</ul>
+<p class="c6 c35"><span class="c1"></span></p>
+<p class="c6 c35"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="12">
+    <li class="c8">
+        <h2 id="h.k06lsblumtj3" style="display: inline;"><span>Iterate, Update Draft of Guideline based on Feedback from Community &amp; KE Team</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 252px;">
+        <img alt="" src="image13.png" style="width: 624px; height: 252px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.26. &nbsp;The Content Team has continued to iterate on the COVID-19 ED Severity Classification and Disposition Recommendation guidance. &nbsp;As the severity classification, including decision logic and workflow
+        implications, and disposition recommendations continue to mature and evolve, these illustrations further drift into the Level 2 space and cross the Forms, Logic, and Data Tiers.
+    </span>
+</p>
+<p class="c7"><span class="c1">The Content Team (Guideline Development Group)</span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-1" start="16">
+    <li class="c10"><span class="c1">The Content Team has continued to review the evidence for patient characteristics and risk factors contributing to COVID-19 Severity.</span></li>
+    <li class="c10">
+        <span class="c1">
+            The Content Team further takes into consideration feedback and explicit definitions derived from their interactions with the Knowledge Engineering Team as well as representative front-line clinician users. In addition,
+            further feedback and clarification is derived from interactions with medical illustrators who are participating in developing the visual representation of the severity classification, workflow, and disposition
+            recommendations.
+        </span>
+    </li>
+    <li class="c10"><span class="c1">Throughout the course of the CPG development, multiple iterations of the visual depiction (illustrations shown), were undertaken by the Content Team.</span></li>
+</ol>
+<p class="c7 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="13">
+    <li class="c8">
+        <h2 id="h.7o8kj4f8jokk" style="display: inline;"><span>Translate Case Presentations into Case Examples/ Test Cases</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 250.67px;">
+        <img alt="" src="image29.png" style="width: 624px; height: 250.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.27. &nbsp;Case Presentations and Test Cases were codeveloped by Content SMEs and SME Knowledge Engineers. &nbsp;The content of these case presentations and test cases covered Levels 1 and 2 and addressed all Tiers,
+        but further help span the gap between Levels 1 and 3.
+    </span>
+</p>
+<p class="c7">
+    <span class="c1">
+        To test the logic under &ldquo;real world&rdquo; scenarios of patients, the variation of clinical manifestations that they can present with, and the dynamic nature of which their physiology can change quickly, a series of
+        test cases were created by the Clinical SME group to allow the KE group to test the logic built into the use case. Each use case was designed to test particular scenarios of a patient switching from a Severity Classification
+        to another as new information is received about the patient, such as a new lab result, changing vital signs, imaging results, etc.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="14">
+    <li class="c8">
+        <h2 id="h.it5l1xe33vyr" style="display: inline;"><span>Finalize Clinical Ontology</span></h2>
+    </li>
+</ol>
+<p class="c18">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 250.67px;">
+        <img alt="" src="image21.png" style="width: 624px; height: 250.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c28">
+        FIG MSC.28. &nbsp;The Clinical Ontology is a shared conceptualization of the overall clinical care process for the COVID-19 ED Severity Classification and Disposition Recommendation CPG where all concepts are made explicit
+        such that they can be not only discussed and described among domain SMEs, but modeled and used computationally. &nbsp;As such, the Clinical Ontology spans the gap between Levels 2, 3, and 4, but may be considered a Level 3
+        artifact that largely addresses the Data Tier, but address description/ assessment logic in the Logic Tier as well.
+    </span>
+</p>
+<h3 class="c47" id="h.dkbktv8ybq5n"><span class="c57">Common Clinical Care Process Ontology (C3PO)</span></h3>
+<p class="c32">
+    <span>The Common Clinical Care Process Ontology provides a </span><span class="c27">shareable conceptualization</span>
+    <span class="c1">
+        &nbsp;of the Clinical Care process such that it can be discussed, described, analyzed, modelled, governed, and supported (e.g. with Information and Knowledge Management tools) effectively- in part, through use of consistent,
+        common, and sufficiently detailed vocabulary. Of note, the formal approach taken here leads in the direction of computability, allowing to consume the semantically well-founded artifacts at a larger scale.
+    </span>
+</p>
+<p class="c32">
+    <span class="c1">
+        At the highest level, the C3PO will describe features and patterns of a generalized abstraction of different kinds of Clinical Guidelines and Care Processes. These in turn will allow the description of clinical workflow
+        patterns, clinical concepts, terms as well as term enrichments.
+    </span>
+</p>
+<p class="c32">
+    <span>C3PO is an application ontology built on a framework of </span><span class="c27">Basic Formal Ontology (BFO)</span><span>&nbsp;and </span><span class="c27">Ontology for General Medical Science (OGMS) </span>
+    <span>along with modules from </span><span class="c27">OMRSE</span><span>&nbsp;&amp; </span><span class="c27">OBI</span>
+    <span class="c1">. These provide the upper and domain level frameworks on which the following axis have been developed:</span>
+</p>
+<ul class="c5 lst-kix_sluje649sdzk-0 start">
+    <li class="c10"><span class="c1">Activity</span></li>
+    <li class="c10"><span class="c1">Information entity</span></li>
+    <li class="c10"><span class="c1">Location</span></li>
+    <li class="c10"><span class="c1">Material entity</span></li>
+    <li class="c10"><span class="c1">Quality</span></li>
+    <li class="c10"><span>Role</span></li>
+</ul>
+<p class="c32"><span>These </span><span class="c1">axis reuse terms from existing ontologies and are enhanced with terms required for computable clinical guidelines. </span></p>
+<p class="c32"><span class="c17">Principles of C3PO development </span></p>
+<ul class="c5 lst-kix_tjymi9z3w912-0 start">
+    <li class="c7 c22"><span class="c1">Reuse existing ontology standards.</span></li>
+    <li class="c7 c22"><span class="c1">Use open data standards.</span></li>
+    <li class="c7 c22"><span class="c1">Establish dependencies between specific versions of the ontologies</span></li>
+    <li class="c7 c22"><span class="c1">Each ontology will have an ontology IRI, a version IRI and a document IRI</span></li>
+    <li class="c7 c22">
+        <span class="c1">
+            When only a subset of an ontology is needed, a new (local) document IRI will be created, and a new version IRI will be established, marked as a derivative of the original version. The ontology IRI will remain the same.
+            The new ontology document will contain only a strict subset of the axioms in the original (version of the original) ontology
+        </span>
+    </li>
+    <li class="c7 c22">
+        <span class="c1">
+            When an ontology (that is not owned) needs to be extended or refined, either with new axioms or by adding new classes, then a new extension ontology (with a new Ontology IRI and Version IRI) will be created and it will
+            import the original ontology.
+        </span>
+    </li>
+    <li class="c7 c22">
+        <span class="c1">When a domain ontology needs to be specialized, e.g. creating a new sub-domain, then a new ontology will be created. This will involve minting of new classes in the new sub-domain ontology. </span>
+    </li>
+    <li class="c7 c22"><span class="c1">When two ontologies need to be mediated, a &ldquo;bridge&rdquo; ontology will be created</span></li>
+</ul>
+<p class="c32 c14"><span class="c1"></span></p>
+<p class="c32 c14"><span class="c1"></span></p>
+<p class="c32 c14"><span class="c55"></span></p>
+<p class="c32"><span class="c25 c17">C3PO import graph</span></p>
+<p class="c32">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 708.31px; height: 213.4px;">
+        <img alt="" src="image9.png" style="width: 708.31px; height: 213.4px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c32">
+    <span class="c28">FIG MSC.29.</span>
+    <span class="c0">&nbsp;A hierarchical view of the C3PO modules as well as the framework ontologies. The generated ontology modules for the clinical guidelines will be added as sub-domain ontology modules.</span>
+</p>
+<p class="c32 c14"><span class="c1"></span></p>
+<p class="c32 c14"><span class="c1"></span></p>
+<p class="c32"><span class="c25 c17">Class hierarchy</span></p>
+<p class="c32">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 324px; height: 551px;">
+        <img alt="" src="image1.png" style="width: 324px; height: 551px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c32">
+    <span class="c28">FIG </span>
+    <span class="c0">MSC.30 View of the C3PO class hierarchy. The generated ontology terms for the clinical guidelines (e.g. for COVID-19 ED Severity Classification and Disposition Recommendation CPG) will use this hierarchy.</span>
+</p>
+<p class="c32 c14"><span class="c1"></span></p>
+<p class="c32 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="15">
+    <li class="c8">
+        <h2 id="h.h5x1xvj44iyl" style="display: inline;">
+            <span class="c17 c38">Overall Translation Approach from L1/L2 Work-Products to L3 Artifacts</span><span class="c17"><br /></span><span><br /></span>
+            <span class="c1">
+                The formalization of the CPG consists in the creation of a series of L3 artifacts which are expressed using standard and formal languages. A formal language is a language that is specified by means of a formal
+                grammar, which makes it machine-readable, and is defined to have formal semantics, which makes it machine-executable. <br />
+                <br />
+                The process consists in a translation from a (structured) human readable language into a machine-consumable language and is usually a specific responsibility of a Knowledge Engineer. To ensure a faithful translation,
+                the choice of language and tooling is critical. <br />
+                <br />
+                In the broad landscape of standards for knowledge representation and reasoning, each component of the CPG can usually be represented using different languages, which can be specific to a formalism (rules, ontologies,
+                processes, etc.) and/or a business domain (healthcare, finance, etc.). The notion of using different languages based on topic and audience is normal in L1/L2 artifacts, where the choice usually involves natural
+                languages (e.g. English, Chinese, and Italian) and multi-media (e.g. text, audio, diagrams).<br />
+                <br />
+                Analogously, L3 languages are chosen based on their fitness to express certain parts of the CPG. When multiple alternatives exist, mappings and translations can be used to derive alternative representations from an
+                initial source. In this sense, the choice of the initial language itself becomes less dogmatic, but rather contingent on the Knowledge Engineer&rsquo;s expertise, availability of tooling and consumer priorities.
+                <br />
+                <br />
+                In this sense, the FHIR architecture provides one candidate Knowledge Representation meta-language &ndash; the FHIR StructureDefinition &ndash; and several Profiles that can be mapped to ontology languages (e.g.
+                OWL), rule languages (e.g. DMN, Arden Syntax), process languages (e.g. BPMN, CMMN). <br />
+            </span>
+        </h2>
+    </li>
+    <li class="c8">
+        <h2 id="h.dz1h9kdkj2vf" style="display: inline;"><span>Refine Decision Logic/ Tables and Inferred Clinical Concepts (DMN)</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 252px;">
+        <img alt="" src="image33.png" style="width: 624px; height: 252px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.31. &nbsp;DMN diagrams/models (tables and graphs) express the assessment/inference logic as executable decision models that can be reviewed with Content SMEs. &nbsp;As such, these explicit, computable diagrams and
+        models with their visual representations span the Level 2 and 3 space and primarily address the Logic Tier with explicit implications for the Forms and Data Tiers.
+    </span>
+</p>
+<p class="c7">
+    <span class="c1">
+        When DMN is chosen as the primary language for the formalization of the Assessment/Inference logic, the initial DMN Diagrams are turned into formally executable decision models.<br />
+        <br />
+        Most DMN decision modeling tools are equipped with syntactic checkers, semantic validators, testing and simulation tools that support the Knowledge Engineer throughout the process.The fundamental goal of this step is to
+        further refine the preliminary decision tables / expressions into fully computable ones which can be executed and validated.
+    </span>
+</p>
+<p class="c7"><span class="c1">In doing so, two complementary aspects should be considered:</span></p>
+<ul class="c5 lst-kix_ocs2kz1a3k9a-0 start">
+    <li class="c10">
+        <span>Formalization and Optimization of the </span><span class="c27">Datatypes</span>
+        <span class="c1">
+            &nbsp;associated to the Concepts<br />
+            <br />
+            The datatypes define local &lsquo;view&rsquo; schemas that hold the values associated to the resolved concepts. The datatypes should be consistent and reusable across concepts, and should be designed to support the
+            information processing.<br />
+            <br />
+            Languages such as DMN and CQL provide basic datatypes (strings, numbers, dates) that can be composed into more complex &lsquo;structures&rsquo; which carry correlated information through the computation. These structures
+            are local, and thus optimized for, the inference logic, and do not necessarily correspond to the (much more complex) structures used to persist and exchange information (e.g. FHIR resources).<br />
+        </span>
+    </li>
+</ul>
+<ul class="c5 lst-kix_qlp14uikpwr4-0 start">
+    <li class="c10">
+        <span class="c1">
+            Stratification of the Logic<br />
+            <br />
+            The chaining of &lsquo;decision steps&rsquo; usually highlights operations that are performed for different purposes:
+        </span>
+    </li>
+</ul>
+<ul class="c5 lst-kix_qlp14uikpwr4-1 start">
+    <li class="c30 c22"><span class="c49">&nbsp; </span><span class="c1">Retrieval of Data from a documentation source</span></li>
+</ul>
+<ul class="c5 lst-kix_qlp14uikpwr4-2 start">
+    <li class="c32 c22 c62"><span class="c49">&nbsp;</span><span class="c1">Casting/Projection of the primitive data into structures that focus on the relevant information</span></li>
+    <li class="c32 c22 c62">
+        <span>Inference/Derivation of </span><span class="c27">Case Features<br /></span><span>A process also known as (Case) Enrichment, that involves:</span>
+    </li>
+</ul>
+<ul class="c5 lst-kix_qlp14uikpwr4-3 start">
+    <li class="c32 c33 c22"><span class="c1">Classification / Categorizations</span></li>
+    <li class="c32 c22 c33"><span class="c1">Correlations, e.g. temporal</span></li>
+    <li class="c32 c33 c22"><span class="c1">Mathematical Calculations</span></li>
+    <li class="c32 c33 c22"><span class="c49">&nbsp;</span><span class="c1">Predictions / Estimations</span></li>
+    <li class="c32 c33 c22"><span class="c1">State / Progress Identification</span></li>
+    <li class="c32 c33 c22"><span class="c1">Indications / Contraindications</span></li>
+    <li class="c32 c33 c22"><span class="c1">Dispositions</span></li>
+</ul>
+<p class="c7">
+    <span class="c1">
+        This meta-categorization is not only useful to maintain explicit connections between the formalization and its clinical intent, but can also help identify patterns to verify and optimize the logic itself.<br />
+        <br />
+        In the CoVid19 ED example, the qCSI score itself is a mathematical calculation based on the patient&rsquo; vitals which participates in a broader classification of the patient&rsquo;s disease severity. The severity, in
+        itself an estimation of the current state of disease progression, is used to predict the likelihood and degree of the patient&rsquo;s devolving if left untreated. This assessment ultimately determines the indicated
+        therapeutic interventions.
+    </span>
+</p>
+<p class="c11 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="17">
+    <li class="c8">
+        <h2 id="h.s01gakya2c08" style="display: inline;">
+            <span>Draft Pathway and Strategy Logic/ Orchestration (CMMN)</span>
+            <span>
+                <br />
+                <br />
+            </span>
+            <span
+                style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 250.67px;"
+            >
+                <img alt="" src="image38.png" style="width: 624px; height: 250.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+            </span>
+        </h2>
+    </li>
+</ol>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.32. &nbsp;The &ldquo;Care Process Model&rdquo; as the Pathway and Strategies&rsquo; decision and orchestration logic, together with Tasks (decision and human), Goals, Roles, Interventions, and their respective
+        Control Flow logic are modeled as CMMN (OMG Case Management Modeling Notation). &nbsp;These models are both computer interpretable as well as having explicit visualizations that are reviewable by Content SMEs. &nbsp;As such,
+        these artifacts are situated across Levels 2 and 3 and largely address the Logic Tier, but have explicit implications for the Forms and Data Tiers that are both computable and human reviewable.
+    </span>
+</p>
+<p class="c7">
+    <span>The &lsquo;Care Process Model&rsquo; component of the CPG focuses on the atomic </span><span class="c27">Tasks</span><span>&nbsp;that are expected to be performed by actors playing different </span>
+    <span class="c27">Roles</span><span>, to achieve specific </span><span class="c27">Goals</span><span>, under specific </span><span class="c27">Applicability</span><span>&nbsp;criteria, at specific points in </span>
+    <span class="c27">Time</span>
+    <span>
+        . The concepts maps directly to the Activities, Roles, Goals, Preconditions and Events identified during the Knowledge elicitation phase.<br />
+        <br />
+        Tasks are primarily differentiated between
+    </span>
+    <span class="c27">Decision Tasks</span><span>, which involve the processing of information, and </span><span class="c27">Human</span><span>&nbsp;(</span><span class="c27">Action</span><span>) </span>
+    <span class="c27">Tasks</span>
+    <span>
+        , which involve actions that require some form of interaction with the clinical environment.<br />
+        <br />
+        The former can be further distinguished between
+    </span>
+    <span class="c27">Assessment Tasks</span><span>, which lead to the resolution of new Clinical Concepts by means of derivation/inference, and </span><span class="c27">Strategic Planning </span>
+    <span>tasks, whose outcome is aimed to steer the following </span><span class="c27">Interventions</span>
+    <span>
+        . Assessment tasks are defined by means of the Assessment/Inference Decision models, while Strategic Planning tasks are defined by means of the &lsquo;Disposition&rsquo; decisions, and can be supported by means of Strategic
+        Recommendations at case execution time.<br />
+        <br />
+    </span>
+    <span class="c27">Interventions</span><span>&nbsp;can be further divided into </span><span class="c27">Information Gathering (Evaluation) Tasks, </span><span>whose goal is to acquire more data to be assessed, and </span>
+    <span class="c27">Intervention</span><span>&nbsp;</span><span class="c27">Tasks </span><span>(in the narrow sense)</span><span class="c27">&nbsp;</span>
+    <span class="c1">
+        which are performed to alter the normal (pato)physiological course of the patient.<br />
+        <br />
+        The language of choice for the representation of Care Process Models is OMG&rsquo;s CMMN. CMMN is designed to handle &ldquo;adaptive&rdquo; Case Models, i.e. Cases whose course is determined by events whose sequence is not
+        completely predictable at design time, and which require some strategic planning as the case unfolds.<br />
+        <br />
+        In a Case model, the primary notions are those of &lsquo;Stage&rsquo;, which can be used to model clinical stages (e.g. ED vs surgical setting) and/or disease stages, (Triggering) &lsquo;Event&rsquo;, (applicability)
+        &lsquo;Condition&rsquo; and Task (Action). In particular, the sequencing of Tasks is driven by Events (e.g. Task B is enabled upon the event of completion of Task A)
+    </span>
+</p>
+<p class="c64">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 500px; height: 210px;">
+        <img alt="" src="image25.png" style="width: 500px; height: 210px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c1">Figure MSC.33. Formal models of full orchestration</span></p>
+<p class="c7">
+    <span class="c1">
+        CMMN is compatible with DMN: (Decision) Tasks in CMMN can be linked to DMN Decisions, and the two languages can share data elements and data types &ndash; mostly by CMMN models reusing elements and types defined in DMN.
+    </span>
+</p>
+<p class="c7">
+    <span class="c1">
+        CMMN also embeds expressions, which are not used to derive new data, but to evaluate the applicability of Tasks and Stages in reaction to certain events. CMMN is a formal language and has execution semantics. CMMN models can
+        be simulated even during the authoring phase, and can be used to illustrate/validate different scenarios that correspond to (un)desirable courses.
+    </span>
+</p>
+<p class="c7">
+    <span class="c1">
+        Formal verification tools are not as common as for its companion language BPMN, but would be valuable. In particular, Knowledge Engineers should verify that Case Models are viable, i.e. it is impossible for a sequence of
+        events to lead to a case that (at least according to the model&rsquo;s specification) cannot be closed other than by aborting the case execution itself.
+    </span>
+</p>
+<p class="c32 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="18">
+    <li class="c8">
+        <h2 id="h.xhcbhsuz7j1u" style="display: inline;"><span>Cross-Functional Team Reviews Draft Computable Expressions/ Models</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 356px;">
+        <img alt="" src="image12.png" style="width: 624px; height: 356px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c0">
+        FIG MSC.34. &nbsp;Thorough, cross-functional detailed review of the initial drafts of the computable models described above- Clinical Ontology, Decision Models (DMN), and Care Process Model (CMMN) individually and
+        collectively.
+    </span>
+</p>
+<p class="c7">
+    <span>
+        Representatives from the Content Team, SME Knowledge Engineers, and the Technical Knowledge Engineers conducted a detailed multi-session, cross-functional review of the initial drafts of the computable models described
+        above- Clinical Ontology, Decision Models (DMN), and Care Process Model (CMMN) individually and collectively. &nbsp;All details of the models including their clinical intent and computational implications were thoroughly
+        reviewed. &nbsp;Some of the offering environments (e.g., CMMN) further afford simulation to visualize how case examples would traverse the logic expressions. At each point in the model where either definitions and
+        description logic (as expressed in the Clinical Ontology) or assessment/inference logic (as expressed in DMN), the respective models were reviewed. &nbsp;Feedback on adjustments to the logic expressions for
+        process/orchestration (CMMN), decision and assessment/inference (DMN), and description logic (Clinical Ontology) were fed back to the respective knowledge engineers with explicit documentation. &nbsp;And questions and
+        clarifications based on implications from the computable expressions were fed back to the Content Team. &nbsp;All team members were given explicit tasks and any implications that were determined either out of scope or not
+        currently resolvable were also noted.
+    </span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="19">
+    <li class="c8">
+        <h2 id="h.xuwkd0mj6tpr" style="display: inline;"><span>Final Narrative Guideline</span></h2>
+    </li>
+</ol>
+<p class="c7"><span class="c1">The final guideline was generated into a PDF document that was then disseminated by ACEP through its network for close to 50,000 members around the world.</span></p>
+<p class="c7"><span class="c1">Below is an image of the September 2020 version of the guideline.</span></p>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 466.44px; height: 598.5px;">
+        <img alt="" src="image27.png" style="width: 466.44px; height: 598.5px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c0">Figure MSC.35. Emergency Department COVID-19 Severity Classification (9/2020)</span></p>
+<p class="c7">
+    <span>The dynamic URL for the guideline can be found here: </span>
+    <span class="c36 c58">
+        <a
+            class="c48"
+            href="https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&amp;sa=D&amp;ust=1606246815936000&amp;usg=AOvVaw1M69Qy2HOG1O8RaXAN1tiY"
+        >
+            COVID-19 Severity Classification Tool
+        </a>
+    </span>
+</p>
+<p class="c32 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="20">
+    <li class="c46 c26 c22">
+        <h2 id="h.qcfwxulwez33" style="display: inline;">
+            <span>Finalize Expressions/ Models</span>
+            <span>
+                <br />
+                <br />
+            </span>
+            <span class="c1">
+                In this stage, the different models are combined together into a Composite model.<br />
+                <br />
+                Validating the consistency across interaction points should be the main focus of a Knowledge Engineer.For every interaction that is coordinated by the Case model &ndash; Events, Tasks, and the information
+                consumed/produced at each point &ndash; concepts and related data types should exist to formalize the clinical meaning of the information being transferred.<br />
+                <br />
+                Assuming that the expressions in the decision models are correct, the timeliness of their evaluation at the point in time specified by the case model should be evaluated.
+            </span>
+        </h2>
+    </li>
+</ol>
+<p class="c6 c26"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="21">
+    <li class="c8">
+        <h2 id="h.4lhc8bo4ei2y" style="display: inline;"><span>Translate Models into CPG Profiles (BPM+ &rarr; CPG profiled Plan Defs+CQL++)</span></h2>
+    </li>
+</ol>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 624px; height: 250.67px;">
+        <img alt="" src="image26.png" style="width: 624px; height: 250.67px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7">
+    <span class="c28">
+        FIG MSC.36. &nbsp;The various CPG artifacts (e.g. Pathway, Strategies, Recommendations, CaseFeatures, Metrics) are sharable, faithful, computable expressions of the clinical practice guideline for ACEP&rsquo;s COVID-19 ED
+        Severity Classification and Disposition Recommendation guidance. &nbsp;As such, these artifacts are squarely situated in Level 3 and across all three Tiers.
+    </span>
+    <span>
+        <br />
+        <br />
+        When the different components of the CPG are not authored using FHIR languages in the first place, the translation of the models into FHIR is not determined by the choice of
+    </span>
+    <span class="c27">source language</span><span>, but rather by the nature of the </span><span class="c27">knowledge</span>
+    <span class="c1">
+        &nbsp;content.<br />
+        <br />
+        The same content can be used to obtain iso-semantic, or at least iso-pragmatic representations (i.e. models that carry the same information or at least exhibit equivalent behavior when executed)<br />
+    </span>
+</p>
+<a id="t.a4fa3dea5e847206d83e3c001a5e207d5ce20dd4"></a><a id="t.0"></a>
+<table class="c26 c50">
+    <tbody>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c53"><span class="c25 c17">Knowledge Asset</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c53"><span class="c25 c17">Source</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c53"><span class="c25 c17">Target</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Concepts with mappings</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">OWL</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">SKOS</span></p>
+                <p class="c15"><span class="c1">FHIR ConceptMap</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Primitive Concepts + Datatypes</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">FHIR Resources / Datatypes</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">CQL Retrieve</span></p>
+                <p class="c15"><span class="c1">FHIR DataRequirement</span></p>
+                <p class="c15"><span class="c1">(FHIR Profiles)</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Enriched Concepts Datatypes</span></p>
+                <p class="c15"><span class="c1">(&ldquo;Situational Data Model&rdquo;)</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">DMN ItemDefinition</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">CQL ModelInfo</span></p>
+                <p class="c15"><span class="c1">CQL &lsquo;Struct&rsquo;</span></p>
+                <p class="c15"><span class="c1">(FHIR Logical Model)</span></p>
+                <p class="c15 c14"><span class="c1"></span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Enriched Concepts Definition</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">DMN / FEEL</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">CQL Library &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Assessment / Inference Model</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">DMN</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">FHIR PlanDefinition [Cognitive Process]</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Case (Process) Model</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">CMMN</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">FHIR PlanDefinition</span></p>
+                <p class="c15"><span class="c1">[Care Process Model]</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Case Features</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">DMN</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">FHIR Composition</span></p>
+                <p class="c15"><span class="c1">[eCase Report]</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">Applicability Criteria</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">DMN / FEEL</span></p>
+            </td>
+            <td class="c23" colspan="1" rowspan="1">
+                <p class="c15"><span class="c1">CQL Library</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p class="c7 c14"><span class="c1"></span></p>
+<p class="c7"><span class="c1">The core transformations are the mapping of the &lsquo;plan/process&rsquo; artifacts, and the expression logic. The former can be framed as follows:</span></p>
+<p class="c7">
+    <span style="overflow: hidden; display: inline-block; margin: 0px 0px; border: 0px solid #000000; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px); width: 556.23px; height: 455.5px;">
+        <img alt="" src="image31.png" style="width: 556.23px; height: 455.5px; margin-left: 0px; margin-top: 0px; transform: rotate(0rad) translateZ(0px); -webkit-transform: rotate(0rad) translateZ(0px);" title="" />
+    </span>
+</p>
+<p class="c7"><span class="c1">FIG MSC.37 Core artifact transformations</span></p>
+<p class="c7">
+    <span class="c1">
+        The mapping of the expression logic requires a finer grained discussion. Both FEEL and CQL are functional, stateless expression languages. A translation between the two languages is possible with a few caveats:
+    </span>
+</p>
+<ul class="c5 lst-kix_7f78afighysn-0 start">
+    <li class="c10"><span>CQL and FEEL handle </span><span class="c27">null</span><span class="c1">&nbsp;and unknown values slightly differently</span></li>
+    <li class="c10"><span>CQL covers the data/expression boundary more broadly thanks to the </span><span class="c27">Retrieve</span><span class="c1">&nbsp;operations, whereas BPM+ languages externalize that aspect</span></li>
+    <li class="c10"><span class="c1">CQL provides native support for Terminology</span></li>
+    <li class="c10"><span>CQL defines a broader set of primitive operators</span></li>
+</ul>
+<p class="c7">
+    <span>In general, CQL is </span><span class="c27">more expressive</span><span>: mapping from BPM+ into CQL is more likely to be successful than the inverse. Whether FEEL is </span><span class="c27">sufficient</span>
+    <span>, then, remains an open question in general. However, the added expressivity of CQL is mostly used in two places: (i) the </span><span class="c27">Retrieve filters</span>
+    <span>, which are isolated into the ontology-mediated data binding layer anyway, which is executed </span><span class="c27">before</span>
+    <span>&nbsp;the decision/case models, and (ii) complex functions which should be encapsulated anyway (in fact, certain complex functions are better expressed using quantitative languages such as PMML anyway).</span>
+</p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="22">
+    <li class="c46 c26 c22">
+        <h2 id="h.adc6fs6x8s00" style="display: inline;">
+            <span>Derive additional CPG Assets</span>
+            <span>
+                <br />
+                <br />
+            </span>
+            <span class="c1">
+                The set of core models can be augmented by means of additional derivations. This second category is different because the derived models are neither iso-semantic nor iso-pragmatic. Their generation involves the
+                information in the source model, as well as some additional methodology / technique.
+            </span>
+        </h2>
+    </li>
+</ol>
+<p class="c7 c14"><span class="c1"></span></p>
+<a id="t.25ebdd5f4319256aeac44998cadd22b459f3abf5"></a><a id="t.1"></a>
+<table class="c50 c26">
+    <tbody>
+        <tr class="c24">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c25 c17">Knowledge Asset</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c25 c17">Source</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c25 c17">Target</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c25 c17">Derivation Principle</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">Questionnaires</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">DMN</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">FHIR Questionnaire</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">DMN decision elements can capture &lsquo;questions&rsquo;.</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">Recommendations</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">DMN + CMMN</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">FHIR PlanDefinition</span></p>
+                <p class="c2"><span class="c1">[Strategy ECA Rule]</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">&ldquo;Disposition&rdquo; inferences can be, formalized as deontic (soft) constraints</span></p>
+                <p class="c2"><span class="c27 c31">X &rarr; Y indicated</span></p>
+                <p class="c2"><span class="c1">can be rewritten as</span></p>
+                <p class="c2"><span class="c27">IF X and not Y THEN recommend Y</span></p>
+                <p class="c2"><span class="c1">Using the decision in the context of a case model allows to further incorporate triggers and applicability into the rule</span></p>
+            </td>
+        </tr>
+        <tr class="c24">
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">Quality Measures</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">DMN +CMMN</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">QualityMeasure</span></p>
+            </td>
+            <td class="c12" colspan="1" rowspan="1">
+                <p class="c2"><span class="c1">Likewise, the interpretation of dispositions as constraints allows to derive measures from the count of violations/satisfactions</span></p>
+                <p class="c2">
+                    <span class="c1">
+                        Using the decision in the context of a case model allows to add time boundaries, using (evidence of) the execution of the intervention tasks that are informed by the disposition as measurable data.
+                    </span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p class="c7 c14"><span class="c1"></span></p>
+<ol class="c5 lst-kix_6g1hs4jb7sic-0" start="23">
+    <li class="c8">
+        <h2 id="h.vmthstwv4ifo" style="display: inline;">
+            <span class="c17 c38">Validate CPG Assets against Test Cases (FHIR Bundles)</span>
+            <span>
+                <br />
+                <br />
+            </span>
+            <span class="c1">
+                The CPG assets can be validated independently, or as a whole, or both.<br />
+                <br />
+                The availability of open source FHIR Servers (e.g. HAPI), Sandboxes (e.g. Logica), CQL and ECA Rule engines (e.g. CQF Ruler) allows to test the extraction of the Case Data, the derivation of the individual Case
+                Features, the execution of the Strategy recommendations, and the evaluation of the Quality Measures.<br />
+                <br />
+                One should not ignore that DMN and CMMN artifacts are also testable using native engines, provided that they are connected to a FHIR data source.
+            </span>
+        </h2>
+    </li>
+    <li class="c8">
+        <h2 id="h.j8ccsri22o76" style="display: inline;">
+            <span>Package all CPG Work Products in Composite CPG Asset (profiled IG resource)</span>
+        </h2>
+    </li>
+</ol>
+<p class="c7">
+    <span>Following the packaging guidance in the CPG implementation guide, the artifacts can be packaged independently, or using an </span><span class="c27">asset collection</span><span>, which is a Library with </span>
+    <span class="c27">composed-of</span><span>&nbsp;related artifacts references to all the artifacts. For distribution, this can then be packaged in a CPGArtifactBundle.</span>
+</p>
+
+<!-- ==============END CONTENT END CONTENT=================== -->
