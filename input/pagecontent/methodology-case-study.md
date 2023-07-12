@@ -12,29 +12,35 @@ Members of the team were drawn from CDC’s Adapting Clinical Guidelines for the
 
 The resulting COVID-19 Digital Guideline Working Group (C19 DGWG) organized into functional teams as follows:
 
-*   Program Management
-*   Content (Guideline development, content governance and prioritization)
-*   Knowledge Engineering
-*   Terminology
-*   Validation
-*   Delivery & Dissemination
-*   Implementation
+* Program Management
+* Content (Guideline development, content governance and prioritization)
+* Knowledge Engineering
+* Terminology
+* Validation
+* Delivery & Dissemination
+* Implementation
 
 In addition, consultation was received on Knowledge Architecture (HL7 standards) from the HL7 CDS Work Group, Informatics Sub-Group).
 
 #### Process Overview
 
-Members of the content team, which included f rontline clinicians, clinical informaticians, and representatives from medical specialty professional societies and evidence-based practice centers (EPCs) provided content in the form of high-level use cases  and detailed clinical domain knowledge. The knowledge engineering team worked with the content team to review and prioritize the content. Next, an integrated, cross-functional Agile CPG Team was formed for each use case consisting of members from each of the functional teams. The work was performed using the Integrated Process and Agile Approach to CPG Development resulting in L1-L4 artifacts as shown in Figure MSC.01, as outlined in this implementation guide,.  
+Members of the content team, which included f \rontline clinicians, clinical informaticians, and representatives from medical specialty professional societies and evidence-based practice centers (EPCs) provided content in the form of high-level use cases  and detailed clinical domain knowledge. The knowledge engineering team worked with the content team to review and prioritize the content. Next, an integrated, cross-functional Agile CPG Team was formed for each use case consisting of members from each of the functional teams. The work was performed using the Integrated Process and Agile Approach to CPG Development resulting in L1-L4 artifacts as shown in Figure MSC.01, as outlined in this implementation guide,.  
 
-![](image37.png)
+<div>
+    <img src="image37.png" width="750">
+</div>
 
 Figure MSC.01. The Agile Approach to CPG Development using Agile Knowledge Engineering principles and practices including concurrent, iterative, and incremental development of all Levels of Representation by an integrated, cross functional team.
 
-![](image30.png)
+<div>
+  <img src="image30.png" width="750"/>
+</div>
 
 Figure MSC.02 illustrates the high-level work activities and outputs tied to L1-L4, and which functional teams worked on these activities and outputs.  
 
-![](image10.png)
+<div>
+  <img src="image10.png" width="750"/>
+</div>
 
 Figure MSC.03 illustrates the full life-cycle anticipated by the team, from development to implementation.
 
@@ -42,13 +48,19 @@ Figure MSC.03 illustrates the full life-cycle anticipated by the team, from deve
 
 Figure MSC.03 provides a visual overview of the CPG methodology and the interactions between the different teams and disciplines during the rapid execution of the CPG methodology (broken out into Part 1 & 2 due to formatting limitations).  An in-depth description of the process will reference the artifacts shown in this visual overview.
 
-![](image14.png)
+<div>
+  <img src="image14.png" width="750"/>
+</div>
 
-![](image2.png)
+<div>
+  <img src="image2.png" width="750"/>
+</div>
 
 Figure MSC.04 Interdisciplinary integration: “Swim Lanes” in enacting the Agile Approach to CPG development methodology gives an overview of the work products and artifacts produced during execution of this methodology.
 
-![](image17.png)
+<div>
+  <img src="image17.png" width="750"/>
+</div>
 
 FIG MSC.05.  Work products and artifacts produced during execution of the CPG methodology will be mapped to the Levels by TiersTable to illustrate where they are situated in the Knowledge Translation spectrum as well as where they serve to span this translation.
 
@@ -68,7 +80,9 @@ This section provides details how the clinical best practice guidance developed 
 
 **Scoping/Evidence Review Tool**
 
-![](image5.png)
+<div>
+  <img src="image5.png" width="750"/>
+</div>
 
 FIG MSC.06 Scoping/review tool
 
@@ -78,7 +92,9 @@ NOTE: At the time of the writing of this CPG methodology example (November 2020)
 
 #### Initial Draft of Guidance and Recommendations
 
-![](image36.png)
+<div>
+  <img src="image36.png" width="750"/>
+</div>
 
 FIG MSC.07.  The initial Draft of the COVID-19 ED Severity Classification and Disposition Recommendations is clearly Level 1, but addresses some specification around both Logic and Data.
 
@@ -94,7 +110,9 @@ The results of diagnostics or findings further informed the overall COVID-19 sev
 
 For the scope of the emergency medicine practice, the classification could only be escalated, not de-escalated during the patient’s course of care in the emergency setting.  A “Fast Track” to the Critical Severity Classification with disposition to ICU was identified and recommended for patients who required respiratory interventions (e.g., high flow nasal cannula, non-invasive positive pressure ventilation, mechanical ventilation) and/or hemodynamic support (e.g., vasopressors).
 
-![](image15.png)
+<div>
+  <img src="image15.png" width="750"/>
+</div>
 
 Figure. MSC.08.  Initial draft of the Severity Classification and Disposition Guidance.
 
@@ -110,7 +128,9 @@ Notes: The COVID-19 severity classification developed takes into account both cu
 
 The clinical or SME knowledge engineers (SME KE) actively participated in many of the guideline development conversations and reviewed even the earliest drafts of the evidence reviews and initial iterations of the severity classification and recommendations.  In an iterative and incremental fashion, SME KE elicited structured and more explicit information related to the severity classification and disposition recommendations, decision logic, and high-level implications for clinical workflow, the orchestration and decision logic for the strategies, and overall pathway and captured this knowledge in a structured template.  
 
-![](image32.png)
+<div>
+  <img src="image32.png" width="750"/>
+</div>
 
 FIG MSC.09. The Structured Recommendation Template includes information such as: PICOTS; GRADES; Evidence Tables; Decision and Orchestration logic- including contraindications, interventions, clinical workflow activities; Metrics/Measures; and Case Presentations and User Stories that are elicited from the Content Team (Clinician SMEs and EMB Experts) together with the identification of Clinical Concepts and the expected representative clinical Data Elements   It is situated across the Level 1 to Level 2 spectrum and spans the Data, Logic, and Forms Tiers.  As such, this is a critical, definitional work product of the Agile CPG Team.
 
@@ -178,11 +198,15 @@ The information sought, elicited, described or stated explicitly, clarified, and
   </ol>
   <br>
 
-  ![](image22.png)
+  <div>
+    <img src="image22.png" width="750"/>
+</div>
 
   Figure MSC.10. Part 1 The Structured Recommendation Template used for capture of explicit/structured information for recommendations, decision logic, and workflows
 
-  ![](image6.png)
+  <div>
+    <img src="image6.png" width="750"/>
+</div>
 
   Figure MSC.11. Part 2 The Structured Recommendation Template for capture of explicit/structured information for recommendations, decision logic, and workflows
 
@@ -191,18 +215,16 @@ The information sought, elicited, described or stated explicitly, clarified, and
 The information for collections of related Recommendations, called Strategies, as well as for the overall guideline scoped to all Recommendations and all Strategies, called the Pathway were similarly elicited, described or stated explicitly, clarified, and/or validated in a formal, structured approach similar to the individual Recommendations as described above.
 
 Strategies include:
-
-*   Clinical Assessment
-*   ED COVID-19 Severity Classification based on Clinical and Diagnostic Assessments
-*   Diagnostic Testing Recommendations based on overall Severity Classification
-*   Diagnostic Assessment
-*   Disposition Recommendations based on overall Severity Classification
-*   Fast Track for Advanced Respiratory or Hemodynamic Support
+* Clinical Assessment
+* ED COVID-19 Severity Classification based on Clinical and Diagnostic Assessments
+* Diagnostic Testing Recommendations based on overall Severity Classification
+* Diagnostic Assessment
+* Disposition Recommendations based on overall Severity Classification
+* Fast Track for Advanced Respiratory or Hemodynamic Support
 
 Pathway:
-
-*   Eligibility \- for the COVID-19 ED Severity Classification and Disposition Recommendations, the eligibility criteria was determined to be Adults over 18 years old with an ED Visit (ED Registration Event).
-*   Enrollment \- for the COVID-19 ED Severity Classification and Disposition Recommendations, the enrollment criteria was determined to be “confirmed of suspected COVID-19” as defined by a positive SARS-CoV-2 test within the past 14 days, a confirmed diagnosis of COVID-19 on the Problem List, an order for a SARS-CoV-2 test (suspected), or a clinician documentation activity for suspected COVID-19 specifically as part of an encounter-specific interaction with this Severity Classification tool.
+* Eligibility - for the COVID-19 ED Severity Classification and Disposition Recommendations, the eligibility criteria was determined to be Adults over 18 years old with an ED Visit (ED Registration Event).
+* Enrollment - for the COVID-19 ED Severity Classification and Disposition Recommendations, the enrollment criteria was determined to be “confirmed of suspected COVID-19” as defined by a positive SARS-CoV-2 test within the past 14 days, a confirmed diagnosis of COVID-19 on the Problem List, an order for a SARS-CoV-2 test (suspected), or a clinician documentation activity for suspected COVID-19 specifically as part of an encounter-specific interaction with this Severity Classification tool.
 
 ##### **Concepts and data elements for structured information**
 
@@ -218,45 +240,55 @@ This information was elicited, analyzed, and further refined to be made explicit
 
 Note: while more explicit narrative descriptions of decision and orchestration logic is captured in this document, much of the formal decision and orchestration logic to be expressed in various computable language libraries (e.g. CQL) used in or by the CPG Profiles is more formally and explicitly defined, refined, and verified in additional activities described below (e.g. Decision Flow Diagram, Decision Tables and Decision Requirements Diagrams \[DMN\], Pathway and Strategy Logic/ Orchestration Models \[CMMN\]).  Some of these activities cross or combine what might be considered Level 2 and Level 3 representations through the use of fit-for-purpose authoring tools that express computer-interpretable logic using visual analogs.  Such tooling is invaluable for establishing a shared understanding and more so “reasoning intent” between domain experts and computable logic expressions.
 
-#### Identification and Description of initial Clinical Concepts and Data Elements used in the Guideline
+#### Identification and Description of Initial Clinical Concepts and Data Elements used in the Guideline
 
-![](image24.png)
+<div>
+  <img src="image24.png" width="750"/>
+</div>
 
 FIG MSC.12.  Clinical Concepts and Data Elements with their descriptions were abstracted from the draft of the guidance above by the SME Knowledge Engineer with participation and review by the Content Team and Terminology resources.  This artifact clearly lies in the Level 1 space and the Data Tier.
 
-9.  Concepts from Template and Draft Guideline
+##### Concepts from Template and Draft Guideline
 
 The clinical knowledge engineer and terminologist identified all potential clinical concepts and data elements that may be used to represent, resolve, and/or infer those clinical concepts from the structured template above as well as a thorough review of successive drafts of the Clinical Practice Guideline.  
 
 The clinical concepts were reviewed with the clinical domain experts on the content Team (serving as the guideline development group).  After these were clarified and/or verified, they were shared with the technical knowledge engineers as well as representatives from the terminology vendors that service healthcare delivery systems in the context of their EHR’s and other clinical information systems for review, further iteration (e.g., clarifications on definitions) to ultimately  provide coded concept definitions specific to context-of-use as well as mappings to proprietary (vendor) codes and value-sets used in system interface terminologies.
 
-![](image7.png)
+<div>
+  <img src="image7.png" width="750"/>
+</div>
 
 Figure MSC.13: Identification of Concepts and Data Elements
 
-10.  Concept Maps (as needed)
+##### Concept Maps (as needed)
 
 In part to accelerate the translation process and minimize rework and errors of mistranslation, a more explicit means of concept definition and mapping was undertaken by a cross-functional team using both a formal Clinical Ontology to explicitly model and describe concepts (in Protege) as well as Decision Requirements Diagrams and Decision Tables from OMG’s Decision Modeling Notation (using Trisotech).  Both are described further below.
 
 #### Create Decision Flow Diagram(s)
 
-![](image18.png)
+<div>
+  <img src="image18.png" width="750"/>
+</div>
 
 FIG MSC.14.  The Decision Flow Diagram contains five lanes- the first two lanes being Data Elements and Clinical Concepts, the middle lane being Decision points and flow, the fourth lane being Clinical Interventions (Activities), and the fifth lane being potential decision support interventions or Enablements to manifest a specific clinical intervention.  As such, this semi-structured flow diagram is clearly situated in the Level 2 space and across the Data, Logic, and Forms Tiers.  Furthermore, it serves as a tool to span the gap between the narrative and structured representations and facilitates conversations and a shared understanding between the Content SMEs, SME Knowledge Engineers, Terminologists, and Technical Knowledge Engineers.  As such, it is partially built from and used in combination with the Structured Recommendation Template.
 
-11.  To make the overall flow of logic for recommendations including decisions and temporal orchestration implied, but not explicit in the illustration developed by the content team (Guideline Development Group), the clinical knowledge engineers developed an explicit decision and activity flow diagram for this clinical practice guideline.  
+To make the overall flow of logic for recommendations including decisions and temporal orchestration implied, but not explicit in the illustration developed by the content team (Guideline Development Group), the clinical knowledge engineers developed an explicit decision and activity flow diagram for this clinical practice guideline.  
 
 The Template for such a flow diagram has been used in numerous prior guideline/ pathway translation initiatives.  This template is a vertical flow diagram with five vertical columns showing the logical and temporal flow of information and activities expressed by descending vertical flow.  
 
 The columns further express information flow and dependencies, except between the higher-order separation of concerns of Case, Plan, and Workflow.  The foremost left column shows the Data Elements that are required or used to resolve or infer the Clinical Concepts in the second column from the left, collectively representing the Case via CaseFeatures (and as more explicitly defined in prior steps described above and ultimately in the Clinical Ontology). Then, the Clinical Concepts in the second column are used by/ as inputs for the Decisions  (that are described in detail in the explicit narrative for Decision Logic in the Structured Template) in the middle column.  These Decisions then drive the Interventions or Activities (of a corresponding Recommendation) in the adjacent (fourth) column, and/or downstream decisions, and/or downstream inferred Clinical Concepts.  The foremost right (fifth) column describes the [CPG Enablements](https://www.google.com/url?q=http://build.fhir.org/ig/HL7/cqf-recommendations/approach.html%23conformance-levels&sa=D&ust=1606246815914000&usg=AOvVaw0Kc0C-urWxYuTJktNZXxB_)  that may be used to manifest these Interventions/ Activities in the clinical Workflow.
 
-![](image3.png)
+<div>
+  <img src="image3.png" width="750"/>
+</div>
 
 Fig. MSC.15.  The initial portion of the Decision Flow Diagram for the COVID-19 ED Severity Classification and Disposition Recommendation CPG.
 
 #### Review and cross-reference: template, concept definitions, and flow diagram
 
-![](image28.png)
+<div>
+  <img src="image28.png" width="750"/>
+</div>
 
 Fig. MSC.16.  Together, the Structured Recommendation Template, the Decision Flow Diagram, and the Data Definitions for the COVID-19 ED Severity Classification and Disposition Recommendation guidance form the basis of shared understanding between Content SMEs (Clinicians and EMB scientists) and the Knowledge Engineering Team (SME and Technical KE’s, Terminologists).  These artifacts cross-reference and reinforce one another as they span the Levels 1, 2, and 3 space and cross the Data, Logic, and Forms Tiers.
 
@@ -266,44 +298,52 @@ For this particular CPG, of note, it was through this process that the need to e
 
 Other items discussed were:
 
-*   Clarification of distinctions between laboratory test orders and results (e.g. Panels and Components);
-*   Clarification on the timing of a qualifying positive SARS-CoV-2 test (14 days prior);
-*   The use of encounter diagnoses, problem list conditions, and or phenotyping algorithms for automated detection of existing medical conditions as risk factors;
-*   Confirmation of the thresholds and or intervals for the qCSI score and vital sign values for the Clinical Assessment (and respective severity classification);
-*   Unambiguous naming of the two “Mild” classifications (Low-Risk and At-RIsk);
-*   Clarification of the two-step assessment as well as the continuous evaluation of both the clinical assessment and/or diagnostic assessment for assigning the overall severity classification;
-*   Clarification that the overall severity classification can only remain the same or escalate, not de-escalate, over the course of the ED stay;
-*   And lastly, clarification that both “work of breathing” and “Level of consciousness” were to be required documentation from the clinicians
+* Clarification of distinctions between laboratory test orders and results (e.g. Panels and Components);
+* Clarification on the timing of a qualifying positive SARS-CoV-2 test (14 days prior);
+* The use of encounter diagnoses, problem list conditions, and or phenotyping algorithms for automated detection of existing medical conditions as risk factors;
+* Confirmation of the thresholds and or intervals for the qCSI score and vital sign values for the Clinical Assessment (and respective severity classification);
+* Unambiguous naming of the two “Mild” classifications (Low-Risk and At-RIsk);
+* Clarification of the two-step assessment as well as the continuous evaluation of both the clinical assessment and/or diagnostic assessment for assigning the overall severity classification;
+* Clarification that the overall severity classification can only remain the same or escalate, not de-escalate, over the course of the ED stay;
+* And lastly, clarification that both “work of breathing” and “Level of consciousness” were to be required documentation from the clinicians
 
 #### Formalize Terminologies  (Codes, Value Sets, Mappings)
 
-![](image23.png)
+<div>
+  <img src="image23.png" width="750"/>
+</div>
 
 FIG MSC.17.  The formalization of the terminology mapping- from Interface Terminology codes and value sets to Standard Terminology codes and value sets) actually spans Levels 2, 3, and 4 (as they are used in real-world implementations) and is largely focused on the Data Tier- though some description logic may be addressed here.
 
 Following the review and cross-referencing step of work products and artifacts produced in the clinical domain knowledge engineering phase , the next phase of the work involves normalizing the data elements and mapping these to standard terminologies to insure interoperability of the computable CPG. The following outline provides a detailed list of steps takes to complete this work.
 
-![](image8.png)
+<div>
+  <img src="image8.png" width="750"/>
+</div>
 
- Figure MSC.18. Formalization of Term mappings of Terminologies for Data Elements and Concepts
+Figure MSC.18. Formalization of Term mappings of Terminologies for Data Elements and Concepts
 
-8.  Iterate, Update Draft of Guideline
-    ----------------------------------
+#### Iterate, Update Draft of Guideline
 
-
-![](image4.png)
+<div>
+  <img src="image4.png" width="750"/>
+</div>
 
 FIG MSC.19.  The Content Team has continued to iterate on the COVID-19 ED Severity Classification and Disposition Recommendation guidance.  As the severity classification, including decision logic and workflow implications, and disposition recommendations continue to mature and evolve, these illustrations further drift into the Level 2 space and cross the Forms, Logic, and Data Tiers.
 
-The Content Team (Guideline Development Group)
+**The Content Team (Guideline Development Group)**
 
-12.  The Content Team has continued to review the evidence for patient characteristics and risk factors contributing to COVID-19 Severity.
-13.  The Content Team further takes into consideration feedback and explicit definitions derived from their interactions with the Knowledge Engineering Team as well as representative front-line clinician users. In addition, further feedback and clarification is derived from interactions with medical illustrators who are participating in developing the visual representation of the severity classification, workflow, and disposition recommendations.
-14.  Throughout the course of the CPG development, multiple iterations of the visual depiction (illustrations shown), were undertaken by the Content Team.
+The Content Team has continued to review the evidence for patient characteristics and risk factors contributing to COVID-19 Severity.
+
+The Content Team further takes into consideration feedback and explicit definitions derived from their interactions with the Knowledge Engineering Team as well as representative front-line clinician users. In addition, further feedback and clarification is derived from interactions with medical illustrators who are participating in developing the visual representation of the severity classification, workflow, and disposition recommendations.
+
+Throughout the course of the CPG development, multiple iterations of the visual depiction (illustrations shown), were undertaken by the Content Team.
 
 #### Initial Draft of Computable Decision Logic (Decision Tables in DMN)
 
-![](image16.png)
+<div>
+  <img src="image16.png" width="750"/>
+</div>
 
 FIG MSC.20.  Computable representations of decision logic (Decision Graphs and Tables in DMN) were developed by the technical Knowledge Engineers based on the various Level 2 artifacts developed to date (Structured Recommendation Template, the Decision Flow Diagram, and the Data Definitions) as well as direct interactions with the Content SMEs.  These decision graphs and tables span Levels 2 and 3 representations as well as the Logic and Data Tiers.  They explicitly represent the clinical concepts and logic in computer-interpretable forms, but are reviewable with Content SMEs.
 
@@ -317,7 +357,9 @@ A dependency  between two concepts A and B implies that A can be resolved to a 
 
 The Decision Modelling Notation standard (DMN) provides Decision Diagrams that allow to assert, visualize and consequently review the mutual dependencies between concepts. An example is provided in Fig. MSC.21
 
-![](image19.png)
+<div>
+  <img src="image19.png" width="750"/>
+</div>
 
 Figure MSC.21. Formal model of inferences and decisions: decision diagrams
 
@@ -329,71 +371,81 @@ Decision tables, decision trees and/or simple expressions can be combined togeth
 
 In this phase, the goal is to determine gaps, redundancies, conflicts, ambiguities and other inconsistencies in the logic, and solicit SME feedback accordingly.
 
-![](image20.png)
+<div>
+  <img src="image20.png" width="750"/>
+</div>
 
 FIG MSC.22. Formal model of inferences and decisions: Decision Tables
 
 #### Term Enrichment  
 
 
-![](image34.png)
+<div>
+  <img src="image34.png" width="750"/>
+</div>
 
- Figure MSC.23. The Enriched Term Mappings Sheet for the COVID-19 ED Severity Classification and Disposition Recommendation guidance further formalizes the description and contextualization logic required for the “Clinical Ontology” used within the various logic expressions and representations (e.g. Decision Tables and Graphs (DMN), Orchestration Logic (CMMN)).  As such, this artifact is squarely situated in Level 3 and the Data Tier.
+Figure MSC.23. The Enriched Term Mappings Sheet for the COVID-19 ED Severity Classification and Disposition Recommendation guidance further formalizes the description and contextualization logic required for the “Clinical Ontology” used within the various logic expressions and representations (e.g. Decision Tables and Graphs (DMN), Orchestration Logic (CMMN)).  As such, this artifact is squarely situated in Level 3 and the Data Tier.
 
-In this step, the output of #7 Formalize Term Mapping  (table of Data elements mapped to terms & value sets from standard terminologies) is enriched to form the substrate for generating Situation terms based on Situation patterns . This involves adding 4 new columns to the Term Mapping Table:
+In this step, the output of #7 Formalize Term Mapping  (table of Data elements mapped to terms & value sets from standard terminologies) is enriched to form the substrate for generating Situation terms based on **Situation patterns** . This involves adding 4 new columns to the Term Mapping Table:
 
-*   Type (Kind) : to categorise the Data elements into discrete categories. E.g.: Condition, DeviceRequest, DiagnosticReport, MedicationRequest, MedicationStatement, Observation, Patient, Procedure, ServiceRequest.
-*   Focal concept for Situation: the core SNOMED term that will be the basis for the situation to be created. These will be mostly SNOMED observables with some procedure codes included. See [SNOMED Procedures vs Observations](https://www.google.com/url?q=https://confluence.ihtsdotools.org/pages/viewpage.action?pageId%3D71172311&sa=D&ust=1606246815922000&usg=AOvVaw1hgWiTHe5m8OgZNeVmAzcs) .
-*   LOINC preferred code: where a LOINC code is available, this is captured.
-*   Situation: where a SNOMED Situation with explicit context concept is available, this is captured.
+* **Type (Kind)** : to categorize the Data elements into discrete categories. E.g.: Condition, DeviceRequest, DiagnosticReport, MedicationRequest, MedicationStatement, Observation, Patient, Procedure, ServiceRequest.
+* **Focal concept for Situation**: the core SNOMED term that will be the basis for the situation to be created. These will be mostly SNOMED observables with some procedure codes included. See [SNOMED Procedures vs Observations](https://www.google.com/url?q=https://confluence.ihtsdotools.org/pages/viewpage.action?pageId%3D71172311&sa=D&ust=1606246815922000&usg=AOvVaw1hgWiTHe5m8OgZNeVmAzcs) .
+* **LOINC preferred code**: where a LOINC code is available, this is captured.
+* **Situation**: where a SNOMED Situation with explicit context concept is available, this is captured.
 
-![](image35.png)
+<div>
+  <img src="image35.png" width="750"/>
+</div>
 
  Figure MSC.24. COVID- ED Severity Classification - Term Enrichment Mappings Sheet
 
 #### Cross-Functional Team Review, Open Questions, and Resolution of Ambiguities
 
 
-![](image11.png)
+<div>
+  <img src="image11.png" width="750"/>
+</div>
 
 FIG MSC.25. Open items, questions, and clarifications from various interactions collectively and individually with the members of the Content Team, Terminologists, and Technical Knowledge Engineers were documented by the SME Knowledge Engineers.  This documentation covered aspects of and had implications for Levels 1-3 and covered Data, Logic and Forms Tiers.
 
-15.  The SME Knowledge Engineers took copious notes on open items, questions, and clarifications from various interactions collectively and individually with the members of the Content Team, Terminologists, and Technical Knowledge Engineers.  These questions and clarifications were documented and sent to the Content Team lead for resolution with the broader Content Team.  These questions included clarifications on cutoffs or thresholds, ambiguities in logic, and clarifications of data definitions, scoring logic, and workflow implications.
+The SME Knowledge Engineers took copious notes on open items, questions, and clarifications from various interactions collectively and individually with the members of the Content Team, Terminologists, and Technical Knowledge Engineers.  These questions and clarifications were documented and sent to the Content Team lead for resolution with the broader Content Team.  These questions included clarifications on cutoffs or thresholds, ambiguities in logic, and clarifications of data definitions, scoring logic, and workflow implications.
 
 These included:
 
-*   “Staleness” of data elements (defining “Current”)
-*   Explicit, non-overlapping, but comprehensive cut-off boundaries
-*   Severity classification category nomenclature (Mild-1/ Mild-2 vs Mild-Low Risk/ Mild- At-Risk)
-*   Hemodynamic and respiratory support as “Fast-track” vs exclusion criteria
-*   Expected documentation vs communication for work of breathing and the level of consciousness
-*   Continuous evaluation of Clinical Severity (even after Diagnostic Severity evaluation is initiated)
-*   Ability of a single factor to drive highest the highest severity classification
-*   Persistence of highest severity classification for duration of ED encounter
-*   Ability of clinician user to override severity classification determination
-*   Distinctions between laboratory orders (panels) and results (components)
-*   Need for (or not) distinctions between ED labs and Admission labs
-*   Temporal definitions for Conditions as risk factors (past medical history versus active condition)
+* “Staleness” of data elements (defining “Current”)
+* Explicit, non-overlapping, but comprehensive cut-off boundaries
+* Severity classification category nomenclature (Mild-1/ Mild-2 vs Mild-Low Risk/ Mild- At-Risk)
+* Hemodynamic and respiratory support as “Fast-track” vs exclusion criteria
+* Expected documentation vs communication for work of breathing and the level of consciousness
+* Continuous evaluation of Clinical Severity (even after Diagnostic Severity evaluation is initiated)
+* Ability of a single factor to drive highest the highest severity classification
+* Persistence of highest severity classification for duration of ED encounter
+* Ability of clinician user to override severity classification determination
+* Distinctions between laboratory orders (panels) and results (components)
+* Need for (or not) distinctions between ED labs and Admission labs
+* Temporal definitions for Conditions as risk factors (past medical history versus active condition)
 
-12.  Iterate, Update Draft of Guideline based on Feedback from Community & KE Team
-    -----------------------------------------------------------------------------
+#### Iterate, Update Draft of Guideline based on Feedback from Community & KE Team
 
-
-![](image13.png)
+<div>
+  <img src="image13.png" width="750"/>
+</div>
 
 FIG MSC.26.  The Content Team has continued to iterate on the COVID-19 ED Severity Classification and Disposition Recommendation guidance.  As the severity classification, including decision logic and workflow implications, and disposition recommendations continue to mature and evolve, these illustrations further drift into the Level 2 space and cross the Forms, Logic, and Data Tiers.
 
-The Content Team (Guideline Development Group)
+**The Content Team (Guideline Development Group)**
 
-16.  The Content Team has continued to review the evidence for patient characteristics and risk factors contributing to COVID-19 Severity.
-17.  The Content Team further takes into consideration feedback and explicit definitions derived from their interactions with the Knowledge Engineering Team as well as representative front-line clinician users. In addition, further feedback and clarification is derived from interactions with medical illustrators who are participating in developing the visual representation of the severity classification, workflow, and disposition recommendations.
-18.  Throughout the course of the CPG development, multiple iterations of the visual depiction (illustrations shown), were undertaken by the Content Team.
+The Content Team has continued to review the evidence for patient characteristics and risk factors contributing to COVID-19 Severity.
 
-13.  Translate Case Presentations into Case Examples/ Test Cases
-    -----------------------------------------------------------
+The Content Team further takes into consideration feedback and explicit definitions derived from their interactions with the Knowledge Engineering Team as well as representative front-line clinician users. In addition, further feedback and clarification is derived from interactions with medical illustrators who are participating in developing the visual representation of the severity classification, workflow, and disposition recommendations.
 
+Throughout the course of the CPG development, multiple iterations of the visual depiction (illustrations shown), were undertaken by the Content Team.
 
-![](image29.png)
+#### Translate Case Presentations into Case Examples/ Test Cases
+
+<div>
+  <img src="image29.png" width="750"/>
+</div>
 
 FIG MSC.27.  Case Presentations and Test Cases were codeveloped by Content SMEs and SME Knowledge Engineers.  The content of these case presentations and test cases covered Levels 1 and 2 and addressed all Tiers, but further help span the gap between Levels 1 and 3.
 
@@ -402,11 +454,13 @@ To test the logic under “real world” scenarios of patients, the variation of
 #### Finalize Clinical Ontology
 
 
-![](image21.png)
+<div>
+  <img src="image21.png" width="750"/>
+</div>
 
 FIG MSC.28.  The Clinical Ontology is a shared conceptualization of the overall clinical care process for the COVID-19 ED Severity Classification and Disposition Recommendation CPG where all concepts are made explicit such that they can be not only discussed and described among domain SMEs, but modeled and used computationally.  As such, the Clinical Ontology spans the gap between Levels 2, 3, and 4, but may be considered a Level 3 artifact that largely addresses the Data Tier, but address description/ assessment logic in the Logic Tier as well.
 
-**Common Clinical Care Process Ontology (C3PO)**
+##### Common Clinical Care Process Ontology (C3PO)
 
 The Common Clinical Care Process Ontology provides a shareable conceptualization  of the Clinical Care process such that it can be discussed, described, analyzed, modelled, governed, and supported (e.g. with Information and Knowledge Management tools) effectively- in part, through use of consistent, common, and sufficiently detailed vocabulary. Of note, the formal approach taken here leads in the direction of computability, allowing to consume the semantically well-founded artifacts at a larger scale.
 
@@ -414,55 +468,59 @@ At the highest level, the C3PO will describe features and patterns of a generali
 
 C3PO is an application ontology built on a framework of Basic Formal Ontology (BFO) and Ontology for General Medical Science (OGMS) along with modules from OMRSE & OBI . These provide the upper and domain level frameworks on which the following axis have been developed:
 
-*   Activity
-*   Information entity
-*   Location
-*   Material entity
-*   Quality
-*   Role
+* Activity
+* Information entity
+* Location
+* Material entity
+* Quality
+* Role
 
 These axis reuse terms from existing ontologies and are enhanced with terms required for computable clinical guidelines.
 
-Principles of C3PO development
+**Principles of C3PO development**
 
-*   Reuse existing ontology standards.
-*   Use open data standards.
-*   Establish dependencies between specific versions of the ontologies
-*   Each ontology will have an ontology IRI, a version IRI and a document IRI
-*   When only a subset of an ontology is needed, a new (local) document IRI will be created, and a new version IRI will be established, marked as a derivative of the original version. The ontology IRI will remain the same. The new ontology document will contain only a strict subset of the axioms in the original (version of the original) ontology
-*   When an ontology (that is not owned) needs to be extended or refined, either with new axioms or by adding new classes, then a new extension ontology (with a new Ontology IRI and Version IRI) will be created and it will import the original ontology.
-*   When a domain ontology needs to be specialized, e.g. creating a new sub-domain, then a new ontology will be created. This will involve minting of new classes in the new sub-domain ontology.
-*   When two ontologies need to be mediated, a “bridge” ontology will be created
+* Reuse existing ontology standards.
+* Use open data standards.
+* Establish dependencies between specific versions of the ontologies
+* Each ontology will have an ontology IRI, a version IRI and a document IRI
+* When only a subset of an ontology is needed, a new (local) document IRI will be created, and a new version IRI will be established, marked as a derivative of the original version. The ontology IRI will remain the same. The new ontology document will contain only a strict subset of the axioms in the original (version of the original) ontology
+* When an ontology (that is not owned) needs to be extended or refined, either with new axioms or by adding new classes, then a new extension ontology (with a new Ontology IRI and Version IRI) will be created and it will import the original ontology.
+* When a domain ontology needs to be specialized, e.g. creating a new sub-domain, then a new ontology will be created. This will involve minting of new classes in the new sub-domain ontology.
+* When two ontologies need to be mediated, a “bridge” ontology will be created
 
-C3PO import graph
+**C3PO import graph**
 
-![](image9.png)
+<div>
+  <img src="image9.png" width="750"/>
+</div>
 
 FIG MSC.29.  A hierarchical view of the C3PO modules as well as the framework ontologies. The generated ontology modules for the clinical guidelines will be added as sub-domain ontology modules.
 
-Class hierarchy
+**Class hierarchy**
 
-![](image1.png)
+<div>
+  <img src="image1.png" width="750"/>
+</div>
 
 FIG MSC.30 View of the C3PO class hierarchy. The generated ontology terms for the clinical guidelines (e.g. for COVID-19 ED Severity Classification and Disposition Recommendation CPG) will use this hierarchy.
 
-15.  Overall Translation Approach from L1/L2 Work-Products to L3 Artifacts
+#### Overall Translation Approach from L1/L2 Work-Products to L3 Artifacts
 
-    The formalization of the CPG consists in the creation of a series of L3 artifacts which are expressed using standard and formal languages. A formal language is a language that is specified by means of a formal grammar, which makes it machine-readable, and is defined to have formal semantics, which makes it machine-executable.
+The formalization of the CPG consists in the creation of a series of L3 artifacts which are expressed using standard and formal languages. A formal language is a language that is specified by means of a formal grammar, which makes it machine-readable, and is defined to have formal semantics, which makes it machine-executable.
 
-    The process consists in a translation from a (structured) human readable language into a machine-consumable language and is usually a specific responsibility of a Knowledge Engineer. To ensure a faithful translation, the choice of language and tooling is critical.
+The process consists in a translation from a (structured) human readable language into a machine-consumable language and is usually a specific responsibility of a Knowledge Engineer. To ensure a faithful translation, the choice of language and tooling is critical.
 
-    In the broad landscape of standards for knowledge representation and reasoning, each component of the CPG can usually be represented using different languages, which can be specific to a formalism (rules, ontologies, processes, etc.) and/or a business domain (healthcare, finance, etc.). The notion of using different languages based on topic and audience is normal in L1/L2 artifacts, where the choice usually involves natural languages (e.g. English, Chinese, and Italian) and multi-media (e.g. text, audio, diagrams).
+In the broad landscape of standards for knowledge representation and reasoning, each component of the CPG can usually be represented using different languages, which can be specific to a formalism (rules, ontologies, processes, etc.) and/or a business domain (healthcare, finance, etc.). The notion of using different languages based on topic and audience is normal in L1/L2 artifacts, where the choice usually involves natural languages (e.g. English, Chinese, and Italian) and multi-media (e.g. text, audio, diagrams).
 
-    Analogously, L3 languages are chosen based on their fitness to express certain parts of the CPG. When multiple alternatives exist, mappings and translations can be used to derive alternative representations from an initial source. In this sense, the choice of the initial language itself becomes less dogmatic, but rather contingent on the Knowledge Engineer’s expertise, availability of tooling and consumer priorities.
+Analogously, L3 languages are chosen based on their fitness to express certain parts of the CPG. When multiple alternatives exist, mappings and translations can be used to derive alternative representations from an initial source. In this sense, the choice of the initial language itself becomes less dogmatic, but rather contingent on the Knowledge Engineer’s expertise, availability of tooling and consumer priorities.
 
-    In this sense, the FHIR architecture provides one candidate Knowledge Representation meta-language – the FHIR StructureDefinition – and several Profiles that can be mapped to ontology languages (e.g. OWL), rule languages (e.g. DMN, Arden Syntax), process languages (e.g. BPMN, CMMN).
-
-    --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In this sense, the FHIR architecture provides one candidate Knowledge Representation meta-language – the FHIR StructureDefinition – and several Profiles that can be mapped to ontology languages (e.g. OWL), rule languages (e.g. DMN, Arden Syntax), process languages (e.g. BPMN, CMMN).
 
 #### Refine Decision Logic/ Tables and Inferred Clinical Concepts (DMN)
 
-![](image33.png)
+<div>
+  <img src="image33.png" width="750"/>
+</div>
 
 FIG MSC.31.  DMN diagrams/models (tables and graphs) express the assessment/inference logic as executable decision models that can be reviewed with Content SMEs.  As such, these explicit, computable diagrams and models with their visual representations span the Level 2 and 3 space and primarily address the Logic Tier with explicit implications for the Forms and Data Tiers.
 
@@ -472,29 +530,25 @@ Most DMN decision modeling tools are equipped with syntactic checkers, semantic 
 
 In doing so, two complementary aspects should be considered:
 
-*   Formalization and Optimization of the Datatypes  associated to the Concepts
+* Formalization and Optimization of the Datatypes  associated to the Concepts
 
     The datatypes define local ‘view’ schemas that hold the values associated to the resolved concepts. The datatypes should be consistent and reusable across concepts, and should be designed to support the information processing.
 
     Languages such as DMN and CQL provide basic datatypes (strings, numbers, dates) that can be composed into more complex ‘structures’ which carry correlated information through the computation. These structures are local, and thus optimized for, the inference logic, and do not necessarily correspond to the (much more complex) structures used to persist and exchange information (e.g. FHIR resources).
 
-*   Stratification of the Logic
-
+* Stratification of the Logic
     The chaining of ‘decision steps’ usually highlights operations that are performed for different purposes:
-
-*     Retrieval of Data from a documentation source
-
-*    Casting/Projection of the primitive data into structures that focus on the relevant information
-*   Inference/Derivation of Case Features
+  * Retrieval of Data from a documentation source
+    * Casting/Projection of the primitive data into structures that focus on the relevant information
+    * Inference/Derivation of Case Features
     A process also known as (Case) Enrichment, that involves:
-
-*   Classification / Categorizations
-*   Correlations, e.g. temporal
-*   Mathematical Calculations
-*    Predictions / Estimations
-*   State / Progress Identification
-*   Indications / Contraindications
-*   Dispositions
+      * Classification / Categorizations
+      * Correlations, e.g. temporal
+      * Mathematical Calculations
+      * Predictions / Estimations
+      * State / Progress Identification
+      * Indications / Contraindications
+      * Dispositions
 
 This meta-categorization is not only useful to maintain explicit connections between the formalization and its clinical intent, but can also help identify patterns to verify and optimize the logic itself.
 
@@ -502,7 +556,9 @@ In the CoVid19 ED example, the qCSI score itself is a mathematical calculation b
 
 #### Draft Pathway and Strategy Logic/ Orchestration (CMMN)
 
-    ![](image38.png)
+    <div>
+      <img src="image38.png" width="750"/>
+</div>
 
 
 FIG MSC.32.  The “Care Process Model” as the Pathway and Strategies’ decision and orchestration logic, together with Tasks (decision and human), Goals, Roles, Interventions, and their respective Control Flow logic are modeled as CMMN (OMG Case Management Modeling Notation).  These models are both computer interpretable as well as having explicit visualizations that are reviewable by Content SMEs.  As such, these artifacts are situated across Levels 2 and 3 and largely address the Logic Tier, but have explicit implications for the Forms and Data Tiers that are both computable and human reviewable.
@@ -519,7 +575,9 @@ The language of choice for the representation of Care Process Models is OMG’s 
 
 In a Case model, the primary notions are those of ‘Stage’, which can be used to model clinical stages (e.g. ED vs surgical setting) and/or disease stages, (Triggering) ‘Event’, (applicability) ‘Condition’ and Task (Action). In particular, the sequencing of Tasks is driven by Events (e.g. Task B is enabled upon the event of completion of Task A)
 
-![](image25.png)
+<div>
+  <img src="image25.png" width="750"/>
+</div>
 
 Figure MSC.33. Formal models of full orchestration
 
@@ -531,8 +589,9 @@ Formal verification tools are not as common as for its companion language BPMN, 
 
 #### Cross-Functional Team Reviews Draft Computable Expressions/ Models
 
-
-![](image12.png)
+<div>
+  <img src="image12.png" width="750"/>
+</div>
 
 FIG MSC.34.  Thorough, cross-functional detailed review of the initial drafts of the computable models described above- Clinical Ontology, Decision Models (DMN), and Care Process Model (CMMN) individually and collectively.
 
@@ -540,12 +599,13 @@ Representatives from the Content Team, SME Knowledge Engineers, and the Technica
 
 #### Final Narrative Guideline
 
-
 The final guideline was generated into a PDF document that was then disseminated by ACEP through its network for close to 50,000 members around the world.
 
 Below is an image of the September 2020 version of the guideline.
 
-![](image27.png)
+<div>
+  <img src="image27.png" width="750"/>
+</div>
 
 Figure MSC.35. Emergency Department COVID-19 Severity Classification (9/2020)
 
@@ -553,18 +613,17 @@ The dynamic URL for the guideline can be found here: [COVID-19 Severity Classifi
 
 #### Finalize Expressions/ Models
 
-    In this stage, the different models are combined together into a Composite model.
+In this stage, the different models are combined together into a Composite model.
 
-    Validating the consistency across interaction points should be the main focus of a Knowledge Engineer.For every interaction that is coordinated by the Case model – Events, Tasks, and the information consumed/produced at each point – concepts and related data types should exist to formalize the clinical meaning of the information being transferred.
+Validating the consistency across interaction points should be the main focus of a Knowledge Engineer.For every interaction that is coordinated by the Case model – Events, Tasks, and the information consumed/produced at each point – concepts and related data types should exist to formalize the clinical meaning of the information being transferred.
 
-    Assuming that the expressions in the decision models are correct, the timeliness of their evaluation at the point in time specified by the case model should be evaluated.
-    ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+Assuming that the expressions in the decision models are correct, the timeliness of their evaluation at the point in time specified by the case model should be evaluated.
 
 #### Translate Models into CPG Profiles (BPM+ → CPG profiled Plan Defs+CQL++)
 
-
-![](image26.png)
+<div>
+  <img src="image26.png" width="750"/>
+</div>
 
 FIG MSC.36.  The various CPG artifacts (e.g. Pathway, Strategies, Recommendations, CaseFeatures, Metrics) are sharable, faithful, computable expressions of the clinical practice guideline for ACEP’s COVID-19 ED Severity Classification and Disposition Recommendation guidance.  As such, these artifacts are squarely situated in Level 3 and across all three Tiers.When the different components of the CPG are not authored using FHIR languages in the first place, the translation of the models into FHIR is not determined by the choice of source language, but rather by the nature of the knowledge  content.
 
@@ -580,44 +639,43 @@ The same content can be used to obtain iso-semantic, or at least iso-pragmatic r
 | Case (Process) Model                                      | CMMN                       | FHIR PlanDefinition<br>[Care Process Model]             |
 | Case Features                                             | DMN                        | FHIR Composition<br>[eCase Report]                      |
 | Applicability Criteria                                    | DMN / FEEL                 | CQL Library                                             |
-{: grid}
-
+{:.grid}
 
 The core transformations are the mapping of the ‘plan/process’ artifacts, and the expression logic. The former can be framed as follows:
 
-![](image31.png)
+<div>
+  <img src="image31.png" width="750"/>
+</div>
 
 FIG MSC.37 Core artifact transformations
 
 The mapping of the expression logic requires a finer grained discussion. Both FEEL and CQL are functional, stateless expression languages. A translation between the two languages is possible with a few caveats:
 
-*   CQL and FEEL handle null and unknown values slightly differently
-*   CQL covers the data/expression boundary more broadly thanks to the Retrieve operations, whereas BPM+ languages externalize that aspect
-*   CQL provides native support for Terminology
-*   CQL defines a broader set of primitive operators
+* CQL and FEEL handle null and unknown values slightly differently
+* CQL covers the data/expression boundary more broadly thanks to the Retrieve operations, whereas BPM+ languages externalize that aspect
+* CQL provides native support for Terminology
+* CQL defines a broader set of primitive operators
 
 In general, CQL is more expressive: mapping from BPM+ into CQL is more likely to be successful than the inverse. Whether FEEL is sufficient , then, remains an open question in general. However, the added expressivity of CQL is mostly used in two places: (i) the Retrieve filters , which are isolated into the ontology-mediated data binding layer anyway, which is executed before  the decision/case models, and (ii) complex functions which should be encapsulated anyway (in fact, certain complex functions are better expressed using quantitative languages such as PMML anyway).
 
 #### Derive additional CPG Assets
 
-    The set of core models can be augmented by means of additional derivations. This second category is different because the derived models are neither iso-semantic nor iso-pragmatic. Their generation involves the information in the source model, as well as some additional methodology / technique.
-    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+The set of core models can be augmented by means of additional derivations. This second category is different because the derived models are neither iso-semantic nor iso-pragmatic. Their generation involves the information in the source model, as well as some additional methodology / technique.
 
 |Knowledge Asset|Source|Target|Derivation Principle|
 |---|---|---|---|
 |Questionnaires|DMN|FHIR Questionnaire|DMN decision elements can capture ‘questions’.|
 |Recommendations|DMN + CMMN|FHIR PlanDefinition<br><br>[Strategy ECA Rule]|“Disposition” inferences can be, formalized as deontic (soft) constraints<br><br>X → Y indicated<br><br>can be rewritten as<br><br>IF X and not Y THEN recommend Y<br><br>Using the decision in the context of a case model allows to further incorporate triggers and applicability into the rule|
 |Quality Measures|DMN +CMMN|QualityMeasure|Likewise, the interpretation of dispositions as constraints allows to derive measures from the count of violations/satisfactions<br><br>Using the decision in the context of a case model allows to add time boundaries, using (evidence of) the execution of the intervention tasks that are informed by the disposition as measurable data.|
+{:.grid}
 
 #### Validate CPG Assets against Test Cases (FHIR Bundles)
 
-    The CPG assets can be validated independently, or as a whole, or both.
+The CPG assets can be validated independently, or as a whole, or both.
 
-    The availability of open source FHIR Servers (e.g. HAPI), Sandboxes (e.g. Logica), CQL and ECA Rule engines (e.g. CQF Ruler) allows to test the extraction of the Case Data, the derivation of the individual Case Features, the execution of the Strategy recommendations, and the evaluation of the Quality Measures.
+The availability of open source FHIR Servers (e.g. HAPI), Sandboxes (e.g. Logica), CQL and ECA Rule engines (e.g. CQF Ruler) allows to test the extraction of the Case Data, the derivation of the individual Case Features, the execution of the Strategy recommendations, and the evaluation of the Quality Measures.
 
-    One should not ignore that DMN and CMMN artifacts are also testable using native engines, provided that they are connected to a FHIR data source.
-    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+One should not ignore that DMN and CMMN artifacts are also testable using native engines, provided that they are connected to a FHIR data source.
 
 #### Package all CPG Work Products in Composite CPG Asset (profiled IG resource)
 
