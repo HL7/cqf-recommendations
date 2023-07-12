@@ -6,8 +6,10 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/MyPatient" key="StructureDefinition-MyPatient" name="MyPatient"/>
-<artifact id="Patient/PatientExample" key="Patient-PatientExample" name="PatientExample"/>
+<artifact id="CodeSystem/cpg-activity-type" key="CodeSystem-cpg-activity-type" name="CPG Activity Type"/>
+<artifact id="CodeSystem/cpg-casefeature-pertinence" key="CodeSystem-cpg-casefeature-pertinence" name="CPG Case Feature Pertinence"/>
+<artifact id="ValueSet/cpg-knowledge-capability" key="ValueSet-cpg-knowledge-capability" name="CPG Knowledge Capability"/>
+<artifact id="CodeSystem/cpg-knowledge-capability" key="CodeSystem-cpg-knowledge-capability" name="CPG Knowledge Capability"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>
