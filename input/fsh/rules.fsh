@@ -26,7 +26,7 @@ RuleSet: ValueSetMetadata(id, type)
 * ^extension[=].valueCode = #computable
 * ^extension[+].url = $cpg-knowledgeCapability
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = $cpg/StructureDefinition/cpg-knowledgeRepresentationLevel
+* ^extension[+].url = $cpg-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * ^status = #active
