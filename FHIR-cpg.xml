@@ -6,10 +6,25 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="CodeSystem/cpg-activity-type" key="CodeSystem-cpg-activity-type" name="CPG Activity Type"/>
-<artifact id="CodeSystem/cpg-casefeature-pertinence" key="CodeSystem-cpg-casefeature-pertinence" name="CPG Case Feature Pertinence"/>
+<artifact id="ValueSet/cpg-active-condition" key="ValueSet-cpg-active-condition" name="CPG Active Condition"/>
+<artifact id="ValueSet/cpg-activity-type" key="ValueSet-cpg-activity-type" name="CPG Activity Type"/>
+<artifact id="CodeSystem/cpg-activity-type" key="CodeSystem-cpg-activity-type" name="CPG Activity Type Codes"/>
+<artifact id="ValueSet/cpg-casefeature-pertinence" key="ValueSet-cpg-casefeature-pertinence" name="CPG Case Feature Pertinence"/>
+<artifact id="CodeSystem/cpg-casefeature-pertinence" key="CodeSystem-cpg-casefeature-pertinence" name="CPG Case Feature Pertinence Codes"/>
+<artifact id="ValueSet/cpg-casefeature-type" key="ValueSet-cpg-casefeature-type" name="CPG Case Feature Type"/>
+<artifact id="CodeSystem/cpg-casefeature-type" key="CodeSystem-cpg-casefeature-type" name="CPG Case Feature Type Codes"/>
+<artifact id="ValueSet/cpg-common-persona" key="ValueSet-cpg-common-persona" name="CPG Common Persona"/>
+<artifact id="CodeSystem/cpg-common-persona" key="CodeSystem-cpg-common-persona" name="CPG Common Personas Codes"/>
+<artifact id="ValueSet/cpg-common-process" key="ValueSet-cpg-common-process" name="CPG Common Process"/>
+<artifact id="CodeSystem/cpg-common-process" key="CodeSystem-cpg-common-process" name="CPG Common Process Codes"/>
+<artifact id="ValueSet/cpg-indicator" key="ValueSet-cpg-indicator" name="CPG Indicator"/>
+<artifact id="CodeSystem/cpg-indicator" key="CodeSystem-cpg-indicator" name="CPG Indicator Codes"/>
 <artifact id="ValueSet/cpg-knowledge-capability" key="ValueSet-cpg-knowledge-capability" name="CPG Knowledge Capability"/>
-<artifact id="CodeSystem/cpg-knowledge-capability" key="CodeSystem-cpg-knowledge-capability" name="CPG Knowledge Capability"/>
+<artifact id="CodeSystem/cpg-knowledge-capability" key="CodeSystem-cpg-knowledge-capability" name="CPG Knowledge Capability Codes"/>
+<artifact id="ValueSet/cpg-knowledge-representation-level" key="ValueSet-cpg-knowledge-representation-level" name="CPG Knowledge Representation Level"/>
+<artifact id="CodeSystem/cpg-knowledge-representation-level" key="CodeSystem-cpg-knowledge-representation-level" name="CPG Knowledge Representation Level Codes"/>
+<artifact id="ValueSet/cpg-recommendation-direction" key="ValueSet-cpg-recommendation-direction" name="CPG Recommendation Direction"/>
+<artifact id="CodeSystem/cpg-recommendation-direction" key="CodeSystem-cpg-recommendation-direction" name="CPG Recommendation Direction Codes"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>

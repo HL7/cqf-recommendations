@@ -1,6 +1,6 @@
 CodeSystem: CPGCaseFeaturePertinence
 Id: cpg-casefeature-pertinence
-Title: "CPG Case Feature Pertinence"
+Title: "CPG Case Feature Pertinence Codes"
 Description: "The pertinence of a case feature relative to a case, guideline, pathway, strategy, or recommendation."
 * insert CodeSystemMetadata(cpg-casefeature-pertinence, CodeSystem)
 * ^date = "2019-05-08"

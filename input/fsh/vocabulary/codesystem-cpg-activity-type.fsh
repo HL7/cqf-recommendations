@@ -1,8 +1,8 @@
 CodeSystem: CPGActivityType
 Id: cpg-activity-type
-Title: "CPG Activity Type"
+Title: "CPG Activity Type Codes"
 Description: "A type of activity that can be performed as part of the delivery of guideline-based care."
-* insert CodeSystemMetadata(cpg-acticity-type, CodeSystem)
+* insert CodeSystemMetadata(cpg-activity-type, CodeSystem)
 * ^date = "2019-05-08"
 * #send-message "Send a message" "The activity of communicating a particular message to a patient"
 * #collect-information "Collect information" "The task of collecting information from a patient using a specified questionnaire"
