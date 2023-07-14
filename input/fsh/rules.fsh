@@ -1,12 +1,12 @@
 RuleSet: CodeSystemMetadata(id, type)
-* ^meta.profile = $cpg-publishableCodeSystem
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^meta.profile = $cpg-publishable-codesystem
+* ^extension[+].url = $cpg-knowledge-capability
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cpg-knowledge-capability
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cpg-knowledge-capability
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = $cpg-knowledgeRepresentationLevel
+* ^extension[+].url = $cpg-knowledge-representation-level
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * ^status = #draft
@@ -19,14 +19,14 @@ RuleSet: CodeSystemMetadata(id, type)
 * ^content = #complete
 
 RuleSet: ValueSetMetadata(id, type)
-* ^meta.profile = $cpg-publishableValueSet
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^meta.profile = $cpg-publishable-valueset
+* ^extension[+].url = $cpg-knowledge-capability
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cpg-knowledge-capability
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cpg-knowledge-capability
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = $cpg-knowledgeRepresentationLevel
+* ^extension[+].url = $cpg-knowledge-representation-level
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * ^status = #active
@@ -35,3 +35,13 @@ RuleSet: ValueSetMetadata(id, type)
 * ^publisher = "Health Level 7 International - Clinical Decision Support WG"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/dss/index.cfm"
+
+RuleSet: ExtensionMetadata(id, type)
+* ^url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
+* ^version = "1.0.0"
+* ^status = #draft
+* ^experimental = false
+* ^publisher = "Health Level 7 International - Clinical Decision Support WG"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://hl7.org/special/committees/DSS"
+* ^jurisdiction = $m49.htm#001 "World"
