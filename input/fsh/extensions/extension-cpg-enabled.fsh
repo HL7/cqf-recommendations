@@ -2,7 +2,7 @@ Extension: CPGEnabled
 Id: cpg-enabled
 Title: "CPG Enabled"
 Description: "Determines whether the artifact on which it appears is Enabled, as opposed to just Known."
-* insert ExtensionMetadata(cpg-enabled, StructureDefinition)
+* insert DefinitionMetadata(cpg-enabled, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

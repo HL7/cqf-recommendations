@@ -2,7 +2,7 @@ Extension: CPGReportWith
 Id: cpg-reportWith
 Title: "CPG Report With"
 Description: "The URL of the artifact that describes the report to be sent, a metric or measure, case report, or profile that describes the data to be reported."
-* insert ExtensionMetadata(cpg-reportWith, StructureDefinition)
+* insert DefinitionMetadata(cpg-reportWith, StructureDefinition)
 * ^date = "2018-06-06"
 * ^context.type = #element
 * ^context.expression = "ActivityDefinition"

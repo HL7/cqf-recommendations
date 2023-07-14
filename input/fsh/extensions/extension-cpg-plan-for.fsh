@@ -2,7 +2,7 @@ Extension: CPGPlanFor
 Id: cpg-planFor
 Title: "CPG Plan For"
 Description: "Specifies a case (episode of care) which this care plan is managing."
-* insert ExtensionMetadata(cpg-planFor, StructureDefinition)
+* insert DefinitionMetadata(cpg-planFor, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "CarePlan"

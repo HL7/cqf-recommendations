@@ -2,7 +2,7 @@ Extension: CPGAuthor
 Id: cpg-author
 Title: "CPG Author"
 Description: "Specifies the author of the content."
-* insert ExtensionMetadata(cpg-author, StructureDefinition)
+* insert DefinitionMetadata(cpg-author, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

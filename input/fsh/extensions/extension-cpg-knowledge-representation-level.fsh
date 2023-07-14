@@ -2,7 +2,7 @@ Extension: CPGKnowledgeRepresentationLevel
 Id: cpg-knowledgeRepresentationLevel
 Title: "CPG Knowledge Representation Level"
 Description: "Defines a knowledge representation level provided by this knowledge artifact."
-* insert ExtensionMetadata(cpg-knowledgeRepresentationLevel, StructureDefinition)
+* insert DefinitionMetadata(cpg-knowledgeRepresentationLevel, StructureDefinition)
 * ^date = "2018-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

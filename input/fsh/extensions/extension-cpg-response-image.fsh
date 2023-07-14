@@ -3,7 +3,7 @@ Extension: CPGResponseImage
 Id: cpg-responseImage
 Title: "CPG Response Image"
 Description: "An image to display as a visual accompaniment to the response."
-* insert ExtensionMetadata(cpg-responseImage, StructureDefinition)
+* insert DefinitionMetadata(cpg-responseImage, StructureDefinition)
 * ^date = "2019-06-06"
 * ^purpose = "Need to be able to provide a visual representation of the response to the question being asked."
 * ^context.type = #element

@@ -2,7 +2,7 @@ Extension: CPGRelatedArtifact
 Id: cpg-relatedArtifact
 Title: "CPG Related Artifact"
 Description: "Specifies additional artifacts related to the content."
-* insert ExtensionMetadata(cpg-relatedArtifact, StructureDefinition)
+* insert DefinitionMetadata(cpg-relatedArtifact, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

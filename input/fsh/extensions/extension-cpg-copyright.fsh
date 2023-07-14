@@ -2,7 +2,7 @@ Extension: CPGCopyright
 Id: cpg-copyright
 Title: "CPG Copyright"
 Description: "A copyright statement relating to the artifact and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the artifact."
-* insert ExtensionMetadata(cpg-copyright, StructureDefinition)
+* insert DefinitionMetadata(cpg-copyright, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

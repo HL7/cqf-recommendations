@@ -2,7 +2,7 @@ Extension: CPGEditor
 Id: cpg-editor
 Title: "CPG Editor"
 Description: "Specified the editor of the content."
-* insert ExtensionMetadata(cpg-editor, StructureDefinition)
+* insert DefinitionMetadata(cpg-editor, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

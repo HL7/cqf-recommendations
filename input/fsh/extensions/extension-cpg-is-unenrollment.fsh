@@ -2,7 +2,7 @@ Extension: CPGIsUnenrollment
 Id: cpg-isUnenrollment
 Title: "CPG Is Unenrollment"
 Description: "Determines whether the activity is to enroll or unenroll the patient in the specified strategy or pathway."
-* insert ExtensionMetadata(cpg-isUnenrollment, StructureDefinition)
+* insert DefinitionMetadata(cpg-isUnenrollment, StructureDefinition)
 * ^date = "2018-06-06"
 * ^context[0].type = #element
 * ^context[=].expression = "ActivityDefinition"

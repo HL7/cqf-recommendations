@@ -2,7 +2,7 @@ Extension: CPGParticipantCapabilityStatement
 Id: cpg-participantCapabilityStatement
 Title: "CPG Participant Capability Statement"
 Description: "A CapabilityStatement that specifies what capabilities a device must have in order to participant in this action of a PlanDefinition."
-* insert ExtensionMetadata(cpg-participantCapabilityStatement, StructureDefinition)
+* insert DefinitionMetadata(cpg-participantCapabilityStatement, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "PlanDefinition.action.participant"

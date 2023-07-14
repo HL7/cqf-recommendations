@@ -2,7 +2,7 @@ Extension: CPGInstantiatesCaseFeature
 Id: cpg-instantiatesCaseFeature
 Title: "CPG Instantiates Case Feature"
 Description: "References the definition for this case feature."
-* insert ExtensionMetadata(cpg-instantiatesCaseFeature, StructureDefinition)
+* insert DefinitionMetadata(cpg-instantiatesCaseFeature, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

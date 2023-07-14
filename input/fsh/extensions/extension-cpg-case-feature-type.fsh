@@ -2,7 +2,7 @@ Extension: CPGCaseFeatureType
 Id: cpg-caseFeatureType
 Title: "CPG Case Feature Type"
 Description: "Describes whether the case feature is asserted or inferred."
-* insert ExtensionMetadata(cpg-caseFeatureType, StructureDefinition)
+* insert DefinitionMetadata(cpg-caseFeatureType, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"

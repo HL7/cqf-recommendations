@@ -2,7 +2,7 @@ Extension: CPGPertinent
 Id: cpg-pertinent
 Title: "CPG Pertinent"
 Description: "The pertinent positive or negative information relevant to the recommendation."
-* insert ExtensionMetadata(cpg-pertinent, StructureDefinition)
+* insert DefinitionMetadata(cpg-pertinent, StructureDefinition)
 * ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"
