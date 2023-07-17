@@ -1,13 +1,6 @@
 Extension: CPGEditor
 Id: cpg-editor
-Title: "CPG Editor"
+Title: "CPG Editor Extension"
 Description: "Specified the editor of the content."
 * insert DefinitionMetadata(cpg-editor, StructureDefinition)
-* ^context.type = #element
-* ^context.expression = "Resource"
-* . 0..*
-  * ^short = "Who edited the content"
-  * ^definition = "Specified the editor of the content."
-* url only uri
-* url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-editor" (exactly)
 * value[x] only ContactDetail

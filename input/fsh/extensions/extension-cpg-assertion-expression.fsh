@@ -1,13 +1,8 @@
 Extension: CPGAssertionExpression
 Id: cpg-assertionExpression
-Title: "CPG Assertion Expression"
+Title: "CPG Assertion Expression Extension"
 Description: "Defines formal computational semantics for the feature if it is asserted. This is typically only required if the case feature is of a different type than the profile (e.g. a boolean feature)."
 * insert DefinitionMetadata(cpg-assertionExpression, StructureDefinition)
-* ^context.type = #element
-* ^context.expression = "StructureDefinition"
+* insert ExtensionContext(StructureDefinition)
 * . 0..1
-  * ^short = "How the feature is asserted"
-  * ^definition = "Defines formal computational semantics for the feature if it is asserted. This is typically only required if the case feature is of a different type than the profile (e.g. a boolean feature)."
-* url only uri
-* url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assertionExpression" (exactly)
 * value[x] only Expression

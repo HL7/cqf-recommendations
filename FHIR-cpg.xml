@@ -9,26 +9,26 @@
 <artifact id="ValueSet/cpg-active-condition" key="ValueSet-cpg-active-condition" name="CPG Active Condition"/>
 <artifact id="ValueSet/cpg-activity-type" key="ValueSet-cpg-activity-type" name="CPG Activity Type"/>
 <artifact id="CodeSystem/cpg-activity-type" key="CodeSystem-cpg-activity-type" name="CPG Activity Type Codes"/>
-<artifact id="StructureDefinition/cpg-answerValueSetSource" key="StructureDefinition-cpg-answerValueSetSource" name="CPG Answer Value Set Source"/>
-<artifact id="StructureDefinition/cpg-assertionExpression" key="StructureDefinition-cpg-assertionExpression" name="CPG Assertion Expression"/>
-<artifact id="StructureDefinition/cpg-author" key="StructureDefinition-cpg-author" name="CPG Author"/>
+<artifact id="StructureDefinition/cpg-answerValueSetSource" key="StructureDefinition-cpg-answerValueSetSource" name="CPG Answer Value Set Source Extension"/>
+<artifact id="StructureDefinition/cpg-assertionExpression" key="StructureDefinition-cpg-assertionExpression" name="CPG Assertion Expression Extension"/>
+<artifact id="StructureDefinition/cpg-author" key="StructureDefinition-cpg-author" name="CPG Author Extension"/>
 <artifact id="StructureDefinition/cpg-casefeaturedefinition" key="StructureDefinition-cpg-casefeaturedefinition" name="CPG Case Feature Definition"/>
-<artifact id="StructureDefinition/cpg-caseFeatureOf" key="StructureDefinition-cpg-caseFeatureOf" name="CPG Case Feature Of"/>
-<artifact id="StructureDefinition/cpg-caseFeaturePertinence" key="StructureDefinition-cpg-caseFeaturePertinence" name="CPG Case Feature Pertinence"/>
+<artifact id="StructureDefinition/cpg-caseFeatureOf" key="StructureDefinition-cpg-caseFeatureOf" name="CPG Case Feature Of Extension"/>
 <artifact id="ValueSet/cpg-casefeature-pertinence" key="ValueSet-cpg-casefeature-pertinence" name="CPG Case Feature Pertinence"/>
 <artifact id="CodeSystem/cpg-casefeature-pertinence" key="CodeSystem-cpg-casefeature-pertinence" name="CPG Case Feature Pertinence Codes"/>
-<artifact id="StructureDefinition/cpg-caseFeatureType" key="StructureDefinition-cpg-caseFeatureType" name="CPG Case Feature Type"/>
+<artifact id="StructureDefinition/cpg-caseFeaturePertinence" key="StructureDefinition-cpg-caseFeaturePertinence" name="CPG Case Feature Pertinence Extension"/>
 <artifact id="ValueSet/cpg-casefeature-type" key="ValueSet-cpg-casefeature-type" name="CPG Case Feature Type"/>
 <artifact id="CodeSystem/cpg-casefeature-type" key="CodeSystem-cpg-casefeature-type" name="CPG Case Feature Type Codes"/>
-<artifact id="StructureDefinition/cpg-collectWith" key="StructureDefinition-cpg-collectWith" name="CPG Collect With"/>
+<artifact id="StructureDefinition/cpg-caseFeatureType" key="StructureDefinition-cpg-caseFeatureType" name="CPG Case Feature Type Extension"/>
+<artifact id="StructureDefinition/cpg-collectWith" key="StructureDefinition-cpg-collectWith" name="CPG Collect With Extension"/>
 <artifact id="ValueSet/cpg-common-persona" key="ValueSet-cpg-common-persona" name="CPG Common Persona"/>
 <artifact id="CodeSystem/cpg-common-persona" key="CodeSystem-cpg-common-persona" name="CPG Common Personas Codes"/>
 <artifact id="ValueSet/cpg-common-process" key="ValueSet-cpg-common-process" name="CPG Common Process"/>
 <artifact id="CodeSystem/cpg-common-process" key="CodeSystem-cpg-common-process" name="CPG Common Process Codes"/>
-<artifact id="StructureDefinition/cpg-copyright" key="StructureDefinition-cpg-copyright" name="CPG Copyright"/>
-<artifact id="StructureDefinition/cpg-directionOfRecommendation" key="StructureDefinition-cpg-directionOfRecommendation" name="CPG Direction Of Recommendation"/>
-<artifact id="StructureDefinition/cpg-editor" key="StructureDefinition-cpg-editor" name="CPG Editor"/>
-<artifact id="StructureDefinition/cpg-enabled" key="StructureDefinition-cpg-enabled" name="CPG Enabled"/>
+<artifact id="StructureDefinition/cpg-copyright" key="StructureDefinition-cpg-copyright" name="CPG Copyright Extension"/>
+<artifact id="StructureDefinition/cpg-directionOfRecommendation" key="StructureDefinition-cpg-directionOfRecommendation" name="CPG Direction Of Recommendation Extension"/>
+<artifact id="StructureDefinition/cpg-editor" key="StructureDefinition-cpg-editor" name="CPG Editor Extension"/>
+<artifact id="StructureDefinition/cpg-enabled" key="StructureDefinition-cpg-enabled" name="CPG Enabled Extension"/>
 <artifact id="StructureDefinition/cpg-endorser" key="StructureDefinition-cpg-endorser" name="CPG Endorser"/>
 <artifact id="StructureDefinition/cpg-enrollIn" key="StructureDefinition-cpg-enrollIn" name="CPG Enroll In"/>
 <artifact id="StructureDefinition/cpg-enrolledIn" key="StructureDefinition-cpg-enrolledIn" name="CPG Enrolled In"/>

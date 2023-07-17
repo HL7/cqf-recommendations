@@ -34,3 +34,7 @@ RuleSet: DefinitionMetadata(id, type)
 * ^url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * ^status = #draft
 * ^experimental = false
+
+RuleSet: ExtensionContext(path)
+* ^context.type = #element
+* ^context.expression = "{path}"

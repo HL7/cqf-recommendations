@@ -77,7 +77,12 @@ Alias: $resource-effectivePeriod = http://hl7.org/fhir/StructureDefinition/resou
 Alias: $cpg-copyright = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-copyright
 
 Alias: $codesystem-concept-comments = http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments
-
+Alias: $cpg-shareablequestionnaire = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire
+Alias: $cpg-cpg-shareablestructuredef = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef
+Alias: $structureDefinition = http://hl7.org/fhir/StructureDefinition/StructureDefinition
+Alias: $capabilityStatement = http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+Alias: $cpg-shareableplandefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition
+Alias: $planDefinition = http://hl7.org/fhir/StructureDefinition/PlanDefinition
 
 
 
