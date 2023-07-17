@@ -1,6 +1,7 @@
 Profile: CPGComputableActivityDefinition
 Parent: $cpg-shareableactivitydefinition
 Id: cpg-computableactivity
+Title: "CPG Computable Activity Definition"
 Description: "Defines the minimum expectations and behavior for a computable activity definition for use with content conforming to the CPG implementation guide"
 * insert DefinitionMetadata(cpg-computableactivity, StructureDefinition)
 * subject[x] MS

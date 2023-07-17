@@ -1,6 +1,7 @@
 Profile: CPGPublishableGraphDefinition
 Parent: $cpg-shareablegraphdefinition
 Id: cpg-publishablegraphdefinition
+Title: "CPG Publishable Graph Definition"
 Description: "Profile of GraphDefinition to describe the minimum expectations for a publishable Graph Definition"
 * insert DefinitionMetadata(cpg-publishablegraphdefinition, StructureDefinition)
 * extension contains

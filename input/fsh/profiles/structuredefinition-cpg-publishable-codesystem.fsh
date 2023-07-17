@@ -1,6 +1,7 @@
 Profile: CPGPublishableCodeSystem
 Parent: $cpg-shareablecodesystem
 Id: cpg-publishablecodesystem
+Title: "CPG Publishable Code System"
 Description: "Defines the expectations for publishable code systems used in computable content"
 * insert DefinitionMetadata(cpg-publishablecodesystem, StructureDefinition)
 * extension contains
@@ -31,7 +32,6 @@ Description: "Defines the expectations for publishable code systems used in comp
 * purpose
 * copyright MS
 * caseSensitive 1..1
-
 
 Mapping: publishablecodesystem-rim
 Id: rim

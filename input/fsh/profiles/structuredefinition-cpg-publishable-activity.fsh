@@ -1,6 +1,7 @@
 Profile: CPGPublishableActivityDefinition
 Parent: $cpg-shareableactivitydefinition
 Id: cpg-publishableactivity
+Title: "CPG Publishable Activity Definition"
 Description: "Defines the minimum expectations for a publishable activity definition"
 * insert DefinitionMetadata(cpg-publishableactivity, StructureDefinition)
 * title 1..1 MS

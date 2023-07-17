@@ -9,14 +9,10 @@ Description: "Profile of StructureDefinition to represent a case feature of a cl
     $cpg-assertionExpression named assertionExpression 0..1 MS and
     $cpg-featureExpression named featureExpression 0..1 MS and
     $cpg-caseFeatureOf named caseFeatureOf 0..* MS
-* kind only code
 * kind = #resource (exactly)
-* abstract only boolean
 * abstract = false (exactly)
 * derivation 1..1
-* derivation only code
 * derivation = #constraint (exactly)
-
 
 Mapping: casefeature-rim
 Id: rim

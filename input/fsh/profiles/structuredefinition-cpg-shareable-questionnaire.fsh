@@ -1,6 +1,7 @@
 Profile: CPGShareableQuestionnaire
 Parent: Questionnaire
 Id: cpg-shareablequestionnaire
+Title: "CPG Shareable Questionnaire"
 Description: "Profile of Questionnaire to establish minimum expectations for sharing a Questionnaire, including URL, version, and name. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities"
 * insert DefinitionMetadata(cpg-shareablequestionnaire, StructureDefinition)
 * extension contains
