@@ -3,7 +3,6 @@ Parent: $cpg-shareableactivitydefinition
 Id: cpg-publishableactivity
 Description: "Defines the minimum expectations for a publishable activity definition"
 * insert DefinitionMetadata(cpg-publishableactivity, StructureDefinition)
-* ^date = "2018-06-06"
 * title 1..1 MS
 * date 1..1 MS
 * purpose

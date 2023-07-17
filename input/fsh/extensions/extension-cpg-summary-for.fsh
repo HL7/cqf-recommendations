@@ -3,7 +3,6 @@ Id: cpg-summaryFor
 Title: "CPG Summary For"
 Description: "Specifies a case (episode of care), pathway, strategy, or recommendation which this summary is for."
 * insert DefinitionMetadata(cpg-summaryFor, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Composition"
 * . 0..*

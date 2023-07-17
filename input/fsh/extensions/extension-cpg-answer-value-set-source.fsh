@@ -3,7 +3,6 @@ Id: cpg-answerValueSetSource
 Title: "CPG Answer Value Set Source"
 Description: "The canonical URL for the source value set for the answer options, when those options are provided directly in the questionnaire."
 * insert DefinitionMetadata(cpg-answerValueSetSource, StructureDefinition)
-* ^date = "2019-06-06"
 * ^purpose = "Need to be able to identify the source value set for the answer options."
 * ^context.type = #element
 * ^context.expression = "Questionnaire.item"

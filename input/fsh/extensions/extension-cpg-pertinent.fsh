@@ -3,7 +3,6 @@ Id: cpg-pertinent
 Title: "CPG Pertinent"
 Description: "The pertinent positive or negative information relevant to the recommendation."
 * insert DefinitionMetadata(cpg-pertinent, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"
 * . 0..*

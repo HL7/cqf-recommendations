@@ -3,7 +3,6 @@ Id: cpg-title
 Title: "CPG Title"
 Description: "A short, descriptive, user-friendly name for the artifact."
 * insert DefinitionMetadata(cpg-title, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"
 * . 0..1

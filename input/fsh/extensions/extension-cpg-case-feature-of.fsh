@@ -3,7 +3,6 @@ Id: cpg-caseFeatureOf
 Title: "CPG Case Feature Of"
 Description: "Defines which guideline elements this case feature definition is a feature of."
 * insert DefinitionMetadata(cpg-caseFeatureOf, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"
 * . 0..*

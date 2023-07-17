@@ -73,13 +73,10 @@ Alias: $codesystem-keyWord = http://hl7.org/fhir/StructureDefinition/codesystem-
 Alias: $codesystem-sourceReference = http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference
 
 Alias: $cpg-shareablegraphdefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-Alias: $resource-approvalDate = http://hl7.org/fhir/StructureDefinition/resource-approvalDate
 Alias: $resource-effectivePeriod = http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
 Alias: $cpg-copyright = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-copyright
 
-
-
-
+Alias: $codesystem-concept-comments = http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments
 
 
 

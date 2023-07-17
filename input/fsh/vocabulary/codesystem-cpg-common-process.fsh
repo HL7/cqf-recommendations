@@ -7,7 +7,6 @@ Description: "Common processes performed in providing guideline-based care, rega
 * ^extension[=].valueUri = "http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference"
 * ^extension[=].valueUri = "https://doi.org/10.1016/j.jbi.2008.05.012"
-* ^date = "2019-05-08"
 * #registration "Registration" "Identifying and recording the subject of care."
 * #triage "Triage" "Performing basic triage to identify any signs that emergency care is required."
 * #local-urgent-care "Local Urgent Care" "Providing local urgent care based on the outcome of a triage process."

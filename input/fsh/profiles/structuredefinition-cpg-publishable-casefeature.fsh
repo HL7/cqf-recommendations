@@ -4,7 +4,6 @@ Id: cpg-publishablecasefeature
 Title: "CPG Publishable Case Feature Definition"
 Description: "Profile of StructureDefinition to represent the minimum expectations for a publishable case feature of a clinical practice guideline"
 * insert DefinitionMetadata(cpg-publishablecasefeature, StructureDefinition)
-* ^date = "2019-06-06"
 * extension contains
     $resource-approvalDate named approvalDate 0..1 MS and
     $resource-effectivePeriod named effectivePeriod 0..1 MS and

@@ -3,7 +3,6 @@ Id: cpg-reviewer
 Title: "CPG Reviewer"
 Description: "Specifies the reviewer of the content."
 * insert DefinitionMetadata(cpg-reviewer, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"
 * . 0..*

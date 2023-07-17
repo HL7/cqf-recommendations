@@ -3,7 +3,6 @@ Id: cpg-planFor
 Title: "CPG Plan For"
 Description: "Specifies a case (episode of care) which this care plan is managing."
 * insert DefinitionMetadata(cpg-planFor, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "CarePlan"
 * . 0..*

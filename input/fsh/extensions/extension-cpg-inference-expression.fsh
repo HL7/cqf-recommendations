@@ -3,7 +3,6 @@ Id: cpg-inferenceExpression
 Title: "CPG Inference Expression"
 Description: "Defines formal computational semantics for calculating the case feature if it is not asserted."
 * insert DefinitionMetadata(cpg-inferenceExpression, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "StructureDefinition"
 * . 0..1

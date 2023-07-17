@@ -3,7 +3,6 @@ Id: cpg-topic
 Title: "CPG Topic"
 Description: "Descriptive topics related to the content of the artifact. Topics provide a high-level categorization of the artifact that can be useful for filtering and searching."
 * insert DefinitionMetadata(cpg-topic, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"
 * . 0..*

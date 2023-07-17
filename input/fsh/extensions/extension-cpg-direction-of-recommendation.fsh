@@ -3,7 +3,6 @@ Id: cpg-directionOfRecommendation
 Title: "CPG Direction Of Recommendation"
 Description: "Specifies whether the recommendation is \"for\" or \"against\" a particular activity. For example, the recommendation to prescribe a particular medication, versus the recommendation not to perform a particular procedure."
 * insert DefinitionMetadata(cpg-directionOfRecommendation, StructureDefinition)
-* ^date = "2019-06-06"
 * ^purpose = "Need to be able to clearly identify whether a recommendation is positive or negative."
 * ^context.type = #element
 * ^context.expression = "PlanDefinition.action"

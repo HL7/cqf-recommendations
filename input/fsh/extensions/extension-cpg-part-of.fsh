@@ -3,7 +3,6 @@ Id: cpg-partOf
 Title: "CPG Part Of"
 Description: "Specifies the canonical URL of a Pathway or Strategy that this definition is part of."
 * insert DefinitionMetadata(cpg-partOf, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "PlanDefinition"
 * . 0..1

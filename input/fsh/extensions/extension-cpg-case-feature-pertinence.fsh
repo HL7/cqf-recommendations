@@ -3,7 +3,6 @@ Id: cpg-caseFeaturePertinence
 Title: "CPG Case Feature Pertinence"
 Description: "Describes the pertinence of the case feature."
 * insert DefinitionMetadata(cpg-caseFeaturePertinence, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Resource"
 * . 0..1

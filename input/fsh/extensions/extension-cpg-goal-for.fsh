@@ -3,7 +3,6 @@ Id: cpg-goalFor
 Title: "CPG Goal For"
 Description: "The URL of the PlanDefinition (recommendation, strategy, or pathway) that the goal is related to, or defined in support of."
 * insert DefinitionMetadata(cpg-goalFor, StructureDefinition)
-* ^date = "2019-06-06"
 * ^context.type = #element
 * ^context.expression = "Goal"
 * . 0..*
