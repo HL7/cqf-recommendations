@@ -3,7 +3,7 @@ Parent: StructureDefinition
 Id: cpg-shareablestructuredef
 Title: "CPG Shareable Structure Definition"
 Description: "Profile of StructureDefinition to establish minimum expectations for sharing a StructureDefinition including URL, name, and version. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities."
-* insert DefinitionMetadata(cpg-shareablestructuredef, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-shareablestructuredef)
 * extension contains
   $cpg-knowledgeCapability named knowledgeCapability 1..* MS and
   $cpg-knowledgeRepresentationLevel named knowledgeRepresentationLevel 0..* MS

@@ -3,7 +3,7 @@ Parent: ImplementationGuide
 Id: cpg-shareableig
 Title: "CPG Shareable Implementation Guide"
 Description: "Profile of ImplementationGuide to establish minimum expectations for sharing an ImplementationGuide resource in support of computable content, including URL, version, and name. The profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities."
-* insert DefinitionMetadata(cpg-shareableig, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-shareableig)
 * extension contains
   $cpg-knowledgeCapability named knowledgeCapability 1..* MS and
   $cpg-knowledgeRepresentationLevel named knowledgeRepresentationLevel 0..* MS

@@ -3,7 +3,7 @@ Parent: $cpg-shareablevalueset
 Id: cpg-publishablevalueset
 Title: "CPG Publishable Value Set"
 Description: "Defines the expectations for publishable value sets used in computable content."
-* insert DefinitionMetadata(cpg-publishablevalueset, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-publishablevalueset)
 * extension contains
   $resource-approvalDate named approvalDate 0..1 MS and
   $valueset-effectiveDate named effectiveDate 0..1 MS and
@@ -20,27 +20,3 @@ Description: "Defines the expectations for publishable value sets used in comput
 * title 1..1
 * date 1..1
 * copyright MS
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGPublishableValueSet
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGPublishableValueSet
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGPublishableValueSet
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGPublishableValueSet
-// Target: "http://hl7.org/fhir/object-implementation"

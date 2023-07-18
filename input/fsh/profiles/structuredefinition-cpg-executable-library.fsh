@@ -3,7 +3,7 @@ Parent: $cpg-shareablelibrary
 Id: cpg-executablelibrary
 Title: "CPG Executable Library"
 Description: "This profile sets the minimum expectations for an executable CQL library. Specifically, the profile requires that the library contain one of ELM XML or JSON content, the compiled representation of the CQL logic."
-* insert DefinitionMetadata(cpg-executablelibrary, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-executablelibrary)
 * relatedArtifact MS
 * relatedArtifact
   * ^slicing.discriminator.type = #value
@@ -16,10 +16,7 @@ Description: "This profile sets the minimum expectations for an executable CQL l
   * type MS
   * resource only canonical
   * resource 1..1 MS
-  * resource
-    * ^type.targetProfile[0] = "http://hl7.org/fhir/StructureDefinition/CodeSystem"
-    * ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/ValueSet"
-    * ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/Library"
+  * resource only Canonical(CodeSystem or Library or ValueSet)
 * parameter MS
 * dataRequirement MS
 * content MS
@@ -41,27 +38,3 @@ Description: "This profile sets the minimum expectations for an executable CQL l
   * contentType 0..1 MS
   * contentType = #application/elm+json (exactly)
   * data 1..1
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGExecutableLibrary
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGExecutableLibrary
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGExecutableLibrary
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGExecutableLibrary
-// Target: "http://hl7.org/fhir/object-implementation"

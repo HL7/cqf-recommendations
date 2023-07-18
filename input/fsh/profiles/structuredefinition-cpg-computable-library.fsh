@@ -3,7 +3,7 @@ Parent: $cpg-shareablelibrary
 Id: cpg-computablelibrary
 Title: "CPG Computable Library"
 Description: "The computable library profile sets the minimum expectations for a computable CQL library"
-* insert DefinitionMetadata(cpg-computablelibrary, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-computablelibrary)
 * subject[x] MS
 * relatedArtifact MS
 * relatedArtifact
@@ -14,13 +14,8 @@ Description: "The computable library profile sets the minimum expectations for a
 * relatedArtifact[dependency]
   * type = #depends-on (exactly)
   * type MS
-  * resource only canonical
   * resource 1..1 MS
-  * resource only canonical
-  * resource
-    * ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/CodeSystem"
-    * ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/ValueSet"
-    * ^type.targetProfile[+] = "http://hl7.org/fhir/StructureDefinition/Library"
+  * resource only Canonical(CodeSystem or ValueSet or Library)
 * parameter MS
 * dataRequirement MS
 * content MS
@@ -35,27 +30,3 @@ Description: "The computable library profile sets the minimum expectations for a
   * contentType 1..1 MS
   * contentType = #text/cql (exactly)
   * data 1..1 MS
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGComputableLibrary
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGComputableLibrary
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGComputableLibrary
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGComputableLibrary
-// Target: "http://hl7.org/fhir/object-implementation"

@@ -2,7 +2,7 @@ ValueSet: CPGActiveCondition
 Id: cpg-active-condition
 Title: "CPG Active Condition"
 Description: "Active condition clinical status codes"
-* insert ValueSetMetadata(cpg-active-condition, ValueSet)
+* insert ValueSetMetadata(cpg-active-condition)
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/valueset-author"
 * ^extension[=].valueContactDetail.name = "Bryn Rhodes"
 * ^version = "0.1.0"

@@ -1,8 +1,9 @@
 Profile: CPGComputablePlanDefinition
 Parent: $cpg-shareableplandefinition
 Id: cpg-computableplandefinition
+Title: "CPG Computable Plan Definition"
 Description: "Defines the minimum expectations and behavior for a computable plan definition"
-* insert DefinitionMetadata(cpg-computableplandefinition, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-computableplandefinition)
 * extension contains
   $cpg-enabled named enabled 0..1 MS and
   $cpg-partOf named partOf 0..1 MS
@@ -35,27 +36,3 @@ Description: "Defines the minimum expectations and behavior for a computable pla
     * path MS
     * expression MS
   * action MS
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGComputablePlanDefinition
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGComputablePlanDefinition
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGComputablePlanDefinition
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGComputablePlanDefinition
-// Target: "http://hl7.org/fhir/object-implementation"

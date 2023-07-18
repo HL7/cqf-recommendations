@@ -12,6 +12,8 @@
 <artifact id="StructureDefinition/cpg-answerValueSetSource" key="StructureDefinition-cpg-answerValueSetSource" name="CPG Answer Value Set Source Extension"/>
 <artifact id="StructureDefinition/cpg-assertionExpression" key="StructureDefinition-cpg-assertionExpression" name="CPG Assertion Expression Extension"/>
 <artifact id="StructureDefinition/cpg-author" key="StructureDefinition-cpg-author" name="CPG Author Extension"/>
+<artifact id="StructureDefinition/cpg-careplan" key="StructureDefinition-cpg-careplan" name="CPG Care Plan"/>
+<artifact id="StructureDefinition/cpg-careteamdefinition" key="StructureDefinition-cpg-careteamdefinition" name="CPG Care Team Definition"/>
 <artifact id="StructureDefinition/cpg-casefeaturedefinition" key="StructureDefinition-cpg-casefeaturedefinition" name="CPG Case Feature Definition"/>
 <artifact id="StructureDefinition/cpg-caseFeatureOf" key="StructureDefinition-cpg-caseFeatureOf" name="CPG Case Feature Of Extension"/>
 <artifact id="ValueSet/cpg-casefeature-pertinence" key="ValueSet-cpg-casefeature-pertinence" name="CPG Case Feature Pertinence"/>
@@ -30,6 +32,7 @@
 <artifact id="StructureDefinition/cpg-computableguideline" key="StructureDefinition-cpg-computableguideline" name="CPG Computable Guideline"/>
 <artifact id="StructureDefinition/cpg-computablelibrary" key="StructureDefinition-cpg-computablelibrary" name="CPG Computable Library"/>
 <artifact id="StructureDefinition/cpg-computablemetric" key="StructureDefinition-cpg-computablemetric" name="CPG Computable Metric"/>
+<artifact id="StructureDefinition/cpg-computableplandefinition" key="StructureDefinition-cpg-computableplandefinition" name="CPG Computable Plan Definition"/>
 <artifact id="StructureDefinition/cpg-computablevalueset" key="StructureDefinition-cpg-computablevalueset" name="CPG Computable Value Set"/>
 <artifact id="StructureDefinition/cpg-copyright" key="StructureDefinition-cpg-copyright" name="CPG Copyright Extension"/>
 <artifact id="StructureDefinition/cpg-directionOfRecommendation" key="StructureDefinition-cpg-directionOfRecommendation" name="CPG Direction Of Recommendation Extension"/>
@@ -42,6 +45,8 @@
 <artifact id="StructureDefinition/cpg-executablevalueset" key="StructureDefinition-cpg-executablevalueset" name="CPG Executable Value Set"/>
 <artifact id="StructureDefinition/cpg-featureExpression" key="StructureDefinition-cpg-featureExpression" name="CPG Feature Expression Extension"/>
 <artifact id="StructureDefinition/cpg-goalFor" key="StructureDefinition-cpg-goalFor" name="CPG Goal For Extension"/>
+<artifact id="StructureDefinition/cpg-group" key="StructureDefinition-cpg-group" name="CPG Group"/>
+<artifact id="StructureDefinition/cpg-groupdefinition" key="StructureDefinition-cpg-groupdefinition" name="CPG Group Definition"/>
 <artifact id="StructureDefinition/cpg-identifier" key="StructureDefinition-cpg-identifier" name="CPG Identifier Extension"/>
 <artifact id="StructureDefinition/cpg-impressionFor" key="StructureDefinition-cpg-impressionFor" name="CPG Impression For Extension"/>
 <artifact id="ValueSet/cpg-indicator" key="ValueSet-cpg-indicator" name="CPG Indicator"/>
@@ -56,10 +61,14 @@
 <artifact id="ValueSet/cpg-knowledge-representation-level" key="ValueSet-cpg-knowledge-representation-level" name="CPG Knowledge Representation Level"/>
 <artifact id="CodeSystem/cpg-knowledge-representation-level" key="CodeSystem-cpg-knowledge-representation-level" name="CPG Knowledge Representation Level Codes"/>
 <artifact id="StructureDefinition/cpg-knowledgeRepresentationLevel" key="StructureDefinition-cpg-knowledgeRepresentationLevel" name="CPG Knowledge Representation Level Extension"/>
+<artifact id="StructureDefinition/cpg-location" key="StructureDefinition-cpg-location" name="CPG Location"/>
+<artifact id="StructureDefinition/cpg-locationdefinition" key="StructureDefinition-cpg-locationdefinition" name="CPG Location Definition"/>
 <artifact id="StructureDefinition/cpg-partOf" key="StructureDefinition-cpg-partOf" name="CPG Part Of Extension"/>
 <artifact id="StructureDefinition/cpg-participantCapabilityStatement" key="StructureDefinition-cpg-participantCapabilityStatement" name="CPG Participant Capability Statement Extension"/>
+<artifact id="StructureDefinition/cpg-pathwaydefinition" key="StructureDefinition-cpg-pathwaydefinition" name="CPG Pathway Definition"/>
 <artifact id="StructureDefinition/cpg-pertinent" key="StructureDefinition-cpg-pertinent" name="CPG Pertinent Extension"/>
 <artifact id="StructureDefinition/cpg-planFor" key="StructureDefinition-cpg-planFor" name="CPG Plan For Extension"/>
+<artifact id="StructureDefinition/cpg-practitionerroledefinition" key="StructureDefinition-cpg-practitionerroledefinition" name="CPG Practitioner Role Definition"/>
 <artifact id="StructureDefinition/cpg-publishableactivity" key="StructureDefinition-cpg-publishableactivity" name="CPG Publishable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-publishablecasefeature" key="StructureDefinition-cpg-publishablecasefeature" name="CPG Publishable Case Feature Definition"/>
 <artifact id="StructureDefinition/cpg-publishablecodesystem" key="StructureDefinition-cpg-publishablecodesystem" name="CPG Publishable Code System"/>
@@ -71,6 +80,7 @@
 <artifact id="StructureDefinition/cpg-publishablequestionnaire" key="StructureDefinition-cpg-publishablequestionnaire" name="CPG Publishable Questionnaire"/>
 <artifact id="StructureDefinition/cpg-publishablevalueset" key="StructureDefinition-cpg-publishablevalueset" name="CPG Publishable Value Set"/>
 <artifact id="StructureDefinition/cpg-rationale" key="StructureDefinition-cpg-rationale" name="CPG Rationale Extension"/>
+<artifact id="StructureDefinition/cpg-recommendationdefinition" key="StructureDefinition-cpg-recommendationdefinition" name="CPG Recommendation Definition"/>
 <artifact id="ValueSet/cpg-recommendation-direction" key="ValueSet-cpg-recommendation-direction" name="CPG Recommendation Direction"/>
 <artifact id="CodeSystem/cpg-recommendation-direction" key="CodeSystem-cpg-recommendation-direction" name="CPG Recommendation Direction Codes"/>
 <artifact id="StructureDefinition/cpg-relatedArtifact" key="StructureDefinition-cpg-relatedArtifact" name="CPG Related Artifact Extension"/>
@@ -87,12 +97,25 @@
 <artifact id="StructureDefinition/cpg-shareablequestionnaire" key="StructureDefinition-cpg-shareablequestionnaire" name="CPG Shareable Questionnaire"/>
 <artifact id="StructureDefinition/cpg-shareablestructuredef" key="StructureDefinition-cpg-shareablestructuredef" name="CPG Shareable Structure Definition"/>
 <artifact id="StructureDefinition/cpg-shareablevalueset" key="StructureDefinition-cpg-shareablevalueset" name="CPG Shareable Value Set"/>
+<artifact id="StructureDefinition/cpg-strategydefinition" key="StructureDefinition-cpg-strategydefinition" name="CPG Strategy Definition"/>
 <artifact id="StructureDefinition/cpg-summaryDefinitionFor" key="StructureDefinition-cpg-summaryDefinitionFor" name="CPG Summary Definition For Extension"/>
 <artifact id="StructureDefinition/cpg-summaryFor" key="StructureDefinition-cpg-summaryFor" name="CPG Summary For Extension"/>
 <artifact id="StructureDefinition/cpg-title" key="StructureDefinition-cpg-title" name="CPG Title Extension"/>
 <artifact id="StructureDefinition/cpg-topic" key="StructureDefinition-cpg-topic" name="CPG Topic Extension"/>
 <artifact id="StructureDefinition/cpg-usageWarning" key="StructureDefinition-cpg-usageWarning" name="CPG Usage Warning Extension"/>
-<artifact id="StructureDefinition/cpg-computableplandefinition" key="StructureDefinition-cpg-computableplandefinition" name="CPGComputablePlanDefinition"/>
+<artifact id="StructureDefinition/cpg-careteam" key="StructureDefinition-cpg-careteam" name="CPGCareTeam"/>
+<artifact id="StructureDefinition/cpg-case" key="StructureDefinition-cpg-case" name="CPGCase"/>
+<artifact id="StructureDefinition/cpg-caseplanprogressingnote" key="StructureDefinition-cpg-caseplanprogressingnote" name="CPGCasePlanProgressingNote"/>
+<artifact id="StructureDefinition/cpg-caseplansummary" key="StructureDefinition-cpg-caseplansummary" name="CPGCasePlanSummary"/>
+<artifact id="StructureDefinition/cpg-casesummary" key="StructureDefinition-cpg-casesummary" name="CPGCaseSummary"/>
+<artifact id="StructureDefinition/cpg-clinicalimpression" key="StructureDefinition-cpg-clinicalimpression" name="CPGClinicalImpression"/>
+<artifact id="StructureDefinition/cpg-goal" key="StructureDefinition-cpg-goal" name="CPGGoal"/>
+<artifact id="StructureDefinition/cpg-metricreport" key="StructureDefinition-cpg-metricreport" name="CPGMetricReport"/>
+<artifact id="StructureDefinition/cpg-organization" key="StructureDefinition-cpg-organization" name="CPGOrganization"/>
+<artifact id="StructureDefinition/cpg-patient" key="StructureDefinition-cpg-patient" name="CPGPatient"/>
+<artifact id="StructureDefinition/cpg-practitioner" key="StructureDefinition-cpg-practitioner" name="CPGPractitioner"/>
+<artifact id="StructureDefinition/cpg-practitionerrole" key="StructureDefinition-cpg-practitionerrole" name="CPGPractitionerRole"/>
+<artifact id="StructureDefinition/cpg-strategy" key="StructureDefinition-cpg-strategy" name="CPGStrategy"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>

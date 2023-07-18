@@ -3,7 +3,7 @@ Parent: GraphDefinition
 Id: cpg-shareablegraphdefinition
 Title: "CPG Shareable Graph Definition"
 Description: "Profile of GraphDefinition to establish minimum expectations for sharing an GraphDefinition resource, including URL, version, and name. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities."
-* insert DefinitionMetadata(cpg-shareablegraphdefinition, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-shareablegraphdefinition)
 * extension contains
   $cpg-knowledgeCapability named knowledgeCapability 1..* MS and
   $cpg-knowledgeRepresentationLevel named knowledgeRepresentationLevel 0..* MS and

@@ -3,7 +3,7 @@ Parent: $cpg-shareableig
 Id: cpg-publishableguideline
 Title: "CPG Publishable Guideline"
 Description: "Profile of ImplementationGuide to describe the minimum expectations for a publishable Clinical Practice Guideline"
-* insert DefinitionMetadata(cpg-publishableguideline, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-publishableguideline)
 * extension contains
   $resource-approvalDate named approvalDate 0..1 MS and
   $resource-effectivePeriod named effectivePeriod 0..1 MS and
@@ -16,27 +16,3 @@ Description: "Profile of ImplementationGuide to describe the minimum expectation
   $cpg-relatedArtifact named relatedArtifact 0..* MS
 * copyright MS
 * license MS
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGPublishableGuideline
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGPublishableGuideline
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGPublishableGuideline
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGPublishableGuideline
-// Target: "http://hl7.org/fhir/object-implementation"

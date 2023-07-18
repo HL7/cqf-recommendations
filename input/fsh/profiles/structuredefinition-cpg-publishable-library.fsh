@@ -3,7 +3,7 @@ Parent: $cpg-shareablelibrary
 Id: cpg-publishablelibrary
 Title: "CPG Publishable Library"
 Description: "The publishable library defines the must support elements that are important for implementers to use and understand a library"
-* insert DefinitionMetadata(cpg-publishablelibrary, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-publishablelibrary)
 * title 1..1 MS
 * type 1..1
 * date 1..1 MS
@@ -18,27 +18,3 @@ Description: "The publishable library defines the must support elements that are
   * display MS
   * url MS
   * resource MS
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGPublishableLibrary
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGPublishableLibrary
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGPublishableLibrary
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGPublishableLibrary
-// Target: "http://hl7.org/fhir/object-implementation"

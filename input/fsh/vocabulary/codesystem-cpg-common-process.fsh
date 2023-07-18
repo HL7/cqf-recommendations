@@ -2,7 +2,7 @@ CodeSystem: CPG_Common_Process
 Id: cpg-common-process
 Title: "CPG Common Process Codes"
 Description: "Common processes performed in providing guideline-based care, regardless of the specific guideline."
-* insert CodeSystemMetadata(cpg-common-process, CodeSystem)
+* insert CodeSystemMetadata(cpg-common-process)
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference"
 * ^extension[=].valueUri = "http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference"

@@ -3,7 +3,7 @@ Parent: $cpg-shareablevalueset
 Id: cpg-computablevalueset
 Title: "CPG Computable Value Set"
 Description: "Defines a computable value set as one that SHALL have an expression-based definition (i.e. a value set defined intensionally using expressions of the code systems involved) and MAY have an expansion included. The expression-based definition SHALL be represented in only one of three ways; using the compose element, using the expression extension, or using the rules-text extension to provide a step-by-step process for expanding the value set definition"
-* insert DefinitionMetadata(cpg-computablevalueset, StructureDefinition)
+* insert StructureDefinitionMetadata(cpg-computablevalueset)
 * obeys cvs-1
 * . ^definition = "A value set that includes instructions for construction of the value set using one and only one of human instructions, machine instructions, or the value set compose element."
 * extension contains
@@ -29,27 +29,3 @@ Description: "Only one of rulesText, expression, or a compose definition SHALL b
 Severity: #error
 Expression: "extension('http://hl7.org/fhir/StructureDefinition/valueset-rules-text').exists() xor extension('http://hl7.org/fhir/StructureDefinition/valueset-expression').exists() xor compose.exists()"
 XPath: "exists(f:extension)"
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGComputableValueSet
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGComputableValueSet
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGComputableValueSet
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGComputableValueSet
-// Target: "http://hl7.org/fhir/object-implementation"
