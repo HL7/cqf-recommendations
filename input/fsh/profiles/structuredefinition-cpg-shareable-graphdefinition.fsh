@@ -5,10 +5,10 @@ Title: "CPG Shareable Graph Definition"
 Description: "Profile of GraphDefinition to establish minimum expectations for sharing an GraphDefinition resource, including URL, version, and name. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities."
 * insert DefinitionMetadata(cpg-shareablegraphdefinition, StructureDefinition)
 * extension contains
-    $cpg-knowledgeCapability named knowledgeCapability 1..* MS and
-    $cpg-knowledgeRepresentationLevel named knowledgeRepresentationLevel 0..* MS and
-    $cpg-identifier named identifier 0..* MS and
-    $cpg-title named title 0..1 MS
+  $cpg-knowledgeCapability named knowledgeCapability 1..* MS and
+  $cpg-knowledgeRepresentationLevel named knowledgeRepresentationLevel 0..* MS and
+  $cpg-identifier named identifier 0..* MS and
+  $cpg-title named title 0..1 MS
 * url 1..1
 * version 1..1
 * experimental 1..1

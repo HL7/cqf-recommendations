@@ -16,26 +16,26 @@ Description: "Defines the minimum expectations and behavior for a computable act
   * path MS
   * expression MS
 
-Mapping: computableactivity-rim
-Id: rim
-Title: "RIM Mapping"
-Source: CPGComputableActivityDefinition
-Target: "http://hl7.org/v3"
+// Mapping: computableactivity-rim
+// Id: rim
+// Title: "RIM Mapping"
+// Source: CPGComputableActivityDefinition
+// Target: "http://hl7.org/v3"
 
-Mapping: computableactivity-workflow
-Id: workflow
-Title: "Workflow Pattern"
-Source: CPGComputableActivityDefinition
-Target: "http://hl7.org/fhir/workflow"
+// Mapping: computableactivity-workflow
+// Id: workflow
+// Title: "Workflow Pattern"
+// Source: CPGComputableActivityDefinition
+// Target: "http://hl7.org/fhir/workflow"
 
-Mapping: computableactivity-w5
-Id: w5
-Title: "FiveWs Pattern Mapping"
-Source: CPGComputableActivityDefinition
-Target: "http://hl7.org/fhir/fivews"
+// Mapping: computableactivity-w5
+// Id: w5
+// Title: "FiveWs Pattern Mapping"
+// Source: CPGComputableActivityDefinition
+// Target: "http://hl7.org/fhir/fivews"
 
-Mapping: computableactivity-objimpl
-Id: objimpl
-Title: "Object Implementation Information"
-Source: CPGComputableActivityDefinition
-Target: "http://hl7.org/fhir/object-implementation"
+// Mapping: computableactivity-objimpl
+// Id: objimpl
+// Title: "Object Implementation Information"
+// Source: CPGComputableActivityDefinition
+// Target: "http://hl7.org/fhir/object-implementation"

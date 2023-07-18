@@ -27,6 +27,10 @@
 <artifact id="CodeSystem/cpg-common-process" key="CodeSystem-cpg-common-process" name="CPG Common Process Codes"/>
 <artifact id="StructureDefinition/cpg-computableactivity" key="StructureDefinition-cpg-computableactivity" name="CPG Computable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-computablegraphdefinition" key="StructureDefinition-cpg-computablegraphdefinition" name="CPG Computable Graph Definition"/>
+<artifact id="StructureDefinition/cpg-computableguideline" key="StructureDefinition-cpg-computableguideline" name="CPG Computable Guideline"/>
+<artifact id="StructureDefinition/cpg-computablelibrary" key="StructureDefinition-cpg-computablelibrary" name="CPG Computable Library"/>
+<artifact id="StructureDefinition/cpg-computablemetric" key="StructureDefinition-cpg-computablemetric" name="CPG Computable Metric"/>
+<artifact id="StructureDefinition/cpg-computablevalueset" key="StructureDefinition-cpg-computablevalueset" name="CPG Computable Value Set"/>
 <artifact id="StructureDefinition/cpg-copyright" key="StructureDefinition-cpg-copyright" name="CPG Copyright Extension"/>
 <artifact id="StructureDefinition/cpg-directionOfRecommendation" key="StructureDefinition-cpg-directionOfRecommendation" name="CPG Direction Of Recommendation Extension"/>
 <artifact id="StructureDefinition/cpg-editor" key="StructureDefinition-cpg-editor" name="CPG Editor Extension"/>
@@ -34,6 +38,8 @@
 <artifact id="StructureDefinition/cpg-endorser" key="StructureDefinition-cpg-endorser" name="CPG Endorser Extension"/>
 <artifact id="StructureDefinition/cpg-enrollIn" key="StructureDefinition-cpg-enrollIn" name="CPG Enroll In Extension"/>
 <artifact id="StructureDefinition/cpg-enrolledIn" key="StructureDefinition-cpg-enrolledIn" name="CPG Enrolled In Extension"/>
+<artifact id="StructureDefinition/cpg-executablelibrary" key="StructureDefinition-cpg-executablelibrary" name="CPG Executable Library"/>
+<artifact id="StructureDefinition/cpg-executablevalueset" key="StructureDefinition-cpg-executablevalueset" name="CPG Executable Value Set"/>
 <artifact id="StructureDefinition/cpg-featureExpression" key="StructureDefinition-cpg-featureExpression" name="CPG Feature Expression Extension"/>
 <artifact id="StructureDefinition/cpg-goalFor" key="StructureDefinition-cpg-goalFor" name="CPG Goal For Extension"/>
 <artifact id="StructureDefinition/cpg-identifier" key="StructureDefinition-cpg-identifier" name="CPG Identifier Extension"/>
@@ -58,6 +64,12 @@
 <artifact id="StructureDefinition/cpg-publishablecasefeature" key="StructureDefinition-cpg-publishablecasefeature" name="CPG Publishable Case Feature Definition"/>
 <artifact id="StructureDefinition/cpg-publishablecodesystem" key="StructureDefinition-cpg-publishablecodesystem" name="CPG Publishable Code System"/>
 <artifact id="StructureDefinition/cpg-publishablegraphdefinition" key="StructureDefinition-cpg-publishablegraphdefinition" name="CPG Publishable Graph Definition"/>
+<artifact id="StructureDefinition/cpg-publishableguideline" key="StructureDefinition-cpg-publishableguideline" name="CPG Publishable Guideline"/>
+<artifact id="StructureDefinition/cpg-publishablelibrary" key="StructureDefinition-cpg-publishablelibrary" name="CPG Publishable Library"/>
+<artifact id="StructureDefinition/cpg-publishablemetric" key="StructureDefinition-cpg-publishablemetric" name="CPG Publishable Metric"/>
+<artifact id="StructureDefinition/cpg-publishableplandefinition" key="StructureDefinition-cpg-publishableplandefinition" name="CPG Publishable Plan Definition"/>
+<artifact id="StructureDefinition/cpg-publishablequestionnaire" key="StructureDefinition-cpg-publishablequestionnaire" name="CPG Publishable Questionnaire"/>
+<artifact id="StructureDefinition/cpg-publishablevalueset" key="StructureDefinition-cpg-publishablevalueset" name="CPG Publishable Value Set"/>
 <artifact id="StructureDefinition/cpg-rationale" key="StructureDefinition-cpg-rationale" name="CPG Rationale Extension"/>
 <artifact id="ValueSet/cpg-recommendation-direction" key="ValueSet-cpg-recommendation-direction" name="CPG Recommendation Direction"/>
 <artifact id="CodeSystem/cpg-recommendation-direction" key="CodeSystem-cpg-recommendation-direction" name="CPG Recommendation Direction Codes"/>
@@ -80,6 +92,7 @@
 <artifact id="StructureDefinition/cpg-title" key="StructureDefinition-cpg-title" name="CPG Title Extension"/>
 <artifact id="StructureDefinition/cpg-topic" key="StructureDefinition-cpg-topic" name="CPG Topic Extension"/>
 <artifact id="StructureDefinition/cpg-usageWarning" key="StructureDefinition-cpg-usageWarning" name="CPG Usage Warning Extension"/>
+<artifact id="StructureDefinition/cpg-computableplandefinition" key="StructureDefinition-cpg-computableplandefinition" name="CPGComputablePlanDefinition"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>
