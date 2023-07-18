@@ -1,20 +1,13 @@
 Profile: CPGPractitioner
 Parent: Practitioner
 Id: cpg-practitioner
+Title: "CPG Practitioner"
 Description: "Profile of Practitioner for use with CPG Implementation Guide"
-* ^version = "1.0.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2019-06-20"
-* ^publisher = "Health Level Seven, Inc. - CDS WG"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/special/committees/DSS"
-* ^jurisdiction = $m49.htm#001 "World"
-* . ^mustSupport = false
+* insert StructureDefinitionMetadata(cpg-practitioner)
 * identifier MS
-* identifier.use MS
-* identifier.value MS
+  * use MS
+  * value MS
 * active MS
 * name 1..* MS
-* name.use MS
-* name.text MS
+  * use MS
+  * text MS

@@ -15,9 +15,8 @@ Description: "Defines an actual group of subjects, suitable for use in various c
 * code MS
 * name 1..1 MS
 * characteristic 0..0
-* characteristic ^mustSupport = false
 * member MS
-* member.entity only Reference($cpg-patient)
-* member.entity MS
-* member.period MS
-* member.inactive MS
+  * entity only Reference($cpg-patient)
+  * entity MS
+  * period MS
+  * inactive MS

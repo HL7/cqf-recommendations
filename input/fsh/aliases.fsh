@@ -87,7 +87,6 @@ Alias: $cpg-shareablequestionnaire = http://hl7.org/fhir/uv/cpg/StructureDefinit
 Alias: $cpg-shareablestructuredef = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef
 Alias: $cpg-shareablevalueset = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset
 Alias: $cpg-strategy = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy
-Alias: $cpg-strategy = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy
 Alias: $cpg-summaryDefinitionFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryDefinitionFor
 Alias: $cpg-summaryFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryFor
 Alias: $cpg-task = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task

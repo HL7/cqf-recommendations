@@ -3,7 +3,6 @@ Parent: Group
 Id: cpg-groupdefinition
 Title: "CPG Group Definition"
 Description: "Represents the definition of a group of subjects, suitable for use in various contexts, such as a cohort definition, a recommendation inclusion or exclusion criteria, the members of a study, or a population criteria"
-* ^version = "1.0.0"
 * insert StructureDefinitionMetadata(cpg-groupdefinition)
 * obeys gdf-1
 * extension contains $cqf-expression named expression 0..1 MS

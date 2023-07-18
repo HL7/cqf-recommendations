@@ -1,16 +1,9 @@
 Profile: CPGGoal
 Parent: Goal
 Id: cpg-goal
+Title: "CPG Goal"
 Description: "Defines the expectations for the representation of goals used in computable guidelines"
-* ^version = "1.0.0"
-* ^status = #draft
-* ^experimental = false
-* ^date = "2019-06-06"
-* ^publisher = "Health Level Seven, Inc. - CDS WG"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/special/committees/DSS"
-* ^jurisdiction = $m49.htm#001 "World"
-* . ^mustSupport = false
+* insert StructureDefinitionMetadata(cpg-goal)
 * extension contains $cpg-goalFor named goalFor 0..* MS
 * identifier MS
 * lifecycleStatus MS
@@ -21,5 +14,5 @@ Description: "Defines the expectations for the representation of goals used in c
 * subject MS
 * start[x] MS
 * target MS
-* target.measure MS
-* target.detail[x] MS
+  * measure MS
+  * detail[x] MS

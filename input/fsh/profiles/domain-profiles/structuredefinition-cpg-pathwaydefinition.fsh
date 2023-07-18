@@ -8,46 +8,21 @@ Description: "Profile of PlanDefinition as a Clinical Pathway for use with CPG I
 * type = $plan-definition-type#clinical-protocol
 * type MS
 * action MS
-* action.title 1..1 MS
-* action.description 1..1 MS
-* action.code 1..1 MS
-* action.code from $cpg-common-process-valueset (extensible)
-* action.code ^binding.description = "High-level processes identified in guideline-based care"
-* action.input 0..0
-* action.output 0..0
-* action.relatedAction 0..0
-* action.type 0..0 MS
-* action.groupingBehavior 0..0
-* action.selectionBehavior 0..0
-* action.requiredBehavior 0..0
-* action.precheckBehavior 0..0
-* action.cardinalityBehavior 0..0
-* action.definition[x] only canonical
-* action.definition[x] MS
-* action.definition[x] ^type.targetProfile = "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
-* action.transform 0..0 MS
-* action.dynamicValue 0..0 MS
-
-// Mapping: rim
-// Id: rim
-// Title: "RIM Mapping"
-// Source: CPGPathwayDefinition
-// Target: "http://hl7.org/v3"
-
-// Mapping: workflow
-// Id: workflow
-// Title: "Workflow Pattern"
-// Source: CPGPathwayDefinition
-// Target: "http://hl7.org/fhir/workflow"
-
-// Mapping: w5
-// Id: w5
-// Title: "FiveWs Pattern Mapping"
-// Source: CPGPathwayDefinition
-// Target: "http://hl7.org/fhir/fivews"
-
-// Mapping: objimpl
-// Id: objimpl
-// Title: "Object Implementation Information"
-// Source: CPGPathwayDefinition
-// Target: "http://hl7.org/fhir/object-implementation"
+  * title 1..1 MS
+  * description 1..1 MS
+  * code 1..1 MS
+  * code from $cpg-common-process-valueset (extensible)
+    * ^binding.description = "High-level processes identified in guideline-based care"
+  * input 0..0
+  * output 0..0
+  * relatedAction 0..0
+  * type 0..0 MS
+  * groupingBehavior 0..0
+  * selectionBehavior 0..0
+  * requiredBehavior 0..0
+  * precheckBehavior 0..0
+  * cardinalityBehavior 0..0
+  * definition[x] only Canonical(PlanDefinition)
+  * definitionCanonical MS
+  * transform 0..0 MS
+  * dynamicValue 0..0 MS

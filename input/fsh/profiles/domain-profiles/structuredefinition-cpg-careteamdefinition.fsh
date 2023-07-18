@@ -11,9 +11,9 @@ Description: "Defines the minimum expectations for a definitional care team for 
 * encounter 0..0
 * period 0..0
 * participant MS
-* participant.role MS
-* participant.member only Reference($cpg-practitionerroledefinition or CPGCareTeamDefinition)
-* participant.member MS
+* participant
+  * role MS
+  * member only Reference($cpg-practitionerroledefinition or CPGCareTeamDefinition)
+  * member MS
 * managingOrganization 0..0
 * telecom 0..0
-* telecom ^mustSupport = false

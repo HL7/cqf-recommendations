@@ -3,7 +3,6 @@ Parent: Location
 Id: cpg-locationdefinition
 Title: "CPG Location Definition"
 Description: "CPG location represents the minimum expectations for communicating a definitional location as part of computable guideline content"
-* ^version = "1.0.0"
 * insert StructureDefinitionMetadata(cpg-locationdefinition)
 * identifier 0..0
 * status 0..0 MS
@@ -20,4 +19,3 @@ Description: "CPG location represents the minimum expectations for communicating
 * hoursOfOperation 0..0
 * availabilityExceptions 0..0
 * endpoint 0..0
-* endpoint ^mustSupport = false
