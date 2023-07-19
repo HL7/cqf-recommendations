@@ -1,9 +1,13 @@
 RuleSet: CodeSystemMetadata(id)
 * ^meta.profile = $cpg-publishable-codesystem
-* ^extension[$cpg-knowledgeCapability].valueCode = #shareable
-* ^extension[$cpg-knowledgeCapability].valueCode = #computable
-* ^extension[$cpg-knowledgeCapability].valueCode = #publishable
-* ^extension[$cpg-knowledgeCapability].valueCode = #structured
+* ^extension[+].url = $cpg-knowledgeCapability //causing errors when refering to by slice url
+* ^extension[=].valueCode = #shareable
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #computable
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #publishable
+* ^extension[+].url = $cpg-knowledgeRepresentationLevel //causing errors when refering to by slice
+* ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/{id}"
 * ^status = #draft
 * ^experimental = false
@@ -18,10 +22,14 @@ RuleSet: CodeSystemDates(approvalDate, effectiveDate, lastReviewDate )
 
 RuleSet: ValueSetMetadata(id)
 * ^meta.profile = $cpg-publishable-valueset
-* ^extension[$cpg-knowledgeCapability].valueCode = #shareable
-* ^extension[$cpg-knowledgeCapability].valueCode = #computable
-* ^extension[$cpg-knowledgeCapability].valueCode = #publishable
-* ^extension[$cpg-knowledgeCapability].valueCode = #structured
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #shareable
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #computable
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #publishable
+* ^extension[+].url = $cpg-knowledgeRepresentationLevel
+* ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
 * ^status = #active
 * ^experimental = false

@@ -24,6 +24,7 @@
 <artifact id="ValueSet/cpg-casefeature-type" key="ValueSet-cpg-casefeature-type" name="CPG Case Feature Type"/>
 <artifact id="CodeSystem/cpg-casefeature-type" key="CodeSystem-cpg-casefeature-type" name="CPG Case Feature Type Codes"/>
 <artifact id="StructureDefinition/cpg-caseFeatureType" key="StructureDefinition-cpg-caseFeatureType" name="CPG Case Feature Type Extension"/>
+<artifact id="StructureDefinition/cpg-caseplanprogressingnote" key="StructureDefinition-cpg-caseplanprogressingnote" name="CPG Case Plan Progressing Note"/>
 <artifact id="StructureDefinition/cpg-caseplansummary" key="StructureDefinition-cpg-caseplansummary" name="CPG Case Plan Summary"/>
 <artifact id="StructureDefinition/cpg-caseplansummarydefinition" key="StructureDefinition-cpg-caseplansummarydefinition" name="CPG Case Plan Summary Definition"/>
 <artifact id="StructureDefinition/cpg-casesummary" key="StructureDefinition-cpg-casesummary" name="CPG Case Summary"/>
@@ -119,7 +120,6 @@
 <artifact id="StructureDefinition/cpg-title" key="StructureDefinition-cpg-title" name="CPG Title Extension"/>
 <artifact id="StructureDefinition/cpg-topic" key="StructureDefinition-cpg-topic" name="CPG Topic Extension"/>
 <artifact id="StructureDefinition/cpg-usageWarning" key="StructureDefinition-cpg-usageWarning" name="CPG Usage Warning Extension"/>
-<artifact id="StructureDefinition/cpg-caseplanprogressingnote" key="StructureDefinition-cpg-caseplanprogressingnote" name="CPGCasePlanProgressingNote"/>
 <artifact id="StructureDefinition/cpg-organization" key="StructureDefinition-cpg-organization" name="CPGOrganization"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>

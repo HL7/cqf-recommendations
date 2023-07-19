@@ -3,9 +3,9 @@ Id: cpg-common-process
 Title: "CPG Common Process Codes"
 Description: "Common processes performed in providing guideline-based care, regardless of the specific guideline."
 * insert CodeSystemMetadata(cpg-common-process)
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference"
+* ^extension[+].url = $codesystem-sourceReference
 * ^extension[=].valueUri = "http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference"
+* ^extension[+].url = $codesystem-sourceReference
 * ^extension[=].valueUri = "https://doi.org/10.1016/j.jbi.2008.05.012"
 * #registration "Registration" "Identifying and recording the subject of care."
 * #triage "Triage" "Performing basic triage to identify any signs that emergency care is required."
