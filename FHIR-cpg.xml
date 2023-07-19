@@ -10,7 +10,9 @@
 <artifact id="ValueSet/cpg-activity-type" key="ValueSet-cpg-activity-type" name="CPG Activity Type"/>
 <artifact id="CodeSystem/cpg-activity-type" key="CodeSystem-cpg-activity-type" name="CPG Activity Type Codes"/>
 <artifact id="StructureDefinition/cpg-answerValueSetSource" key="StructureDefinition-cpg-answerValueSetSource" name="CPG Answer Value Set Source Extension"/>
+<artifact id="StructureDefinition/cpg-artifactbundle" key="StructureDefinition-cpg-artifactbundle" name="CPG Artifact Bundle"/>
 <artifact id="StructureDefinition/cpg-assertionExpression" key="StructureDefinition-cpg-assertionExpression" name="CPG Assertion Expression Extension"/>
+<artifact id="StructureDefinition/cpg-assetcollection" key="StructureDefinition-cpg-assetcollection" name="CPG Asset Collection"/>
 <artifact id="StructureDefinition/cpg-author" key="StructureDefinition-cpg-author" name="CPG Author Extension"/>
 <artifact id="StructureDefinition/cpg-careplan" key="StructureDefinition-cpg-careplan" name="CPG Care Plan"/>
 <artifact id="StructureDefinition/cpg-careteam" key="StructureDefinition-cpg-careteam" name="CPG Care Team"/>
@@ -44,6 +46,7 @@
 <artifact id="StructureDefinition/cpg-computablevalueset" key="StructureDefinition-cpg-computablevalueset" name="CPG Computable Value Set"/>
 <artifact id="StructureDefinition/cpg-condition" key="StructureDefinition-cpg-condition" name="CPG Condition"/>
 <artifact id="StructureDefinition/cpg-copyright" key="StructureDefinition-cpg-copyright" name="CPG Copyright Extension"/>
+<artifact id="StructureDefinition/cpg-detectedissue" key="StructureDefinition-cpg-detectedissue" name="CPG Detected Issue"/>
 <artifact id="StructureDefinition/cpg-directionOfRecommendation" key="StructureDefinition-cpg-directionOfRecommendation" name="CPG Direction Of Recommendation Extension"/>
 <artifact id="StructureDefinition/cpg-editor" key="StructureDefinition-cpg-editor" name="CPG Editor Extension"/>
 <artifact id="StructureDefinition/cpg-enabled" key="StructureDefinition-cpg-enabled" name="CPG Enabled Extension"/>
@@ -54,6 +57,7 @@
 <artifact id="StructureDefinition/cpg-executablelibrary" key="StructureDefinition-cpg-executablelibrary" name="CPG Executable Library"/>
 <artifact id="StructureDefinition/cpg-executablevalueset" key="StructureDefinition-cpg-executablevalueset" name="CPG Executable Value Set"/>
 <artifact id="StructureDefinition/cpg-featureExpression" key="StructureDefinition-cpg-featureExpression" name="CPG Feature Expression Extension"/>
+<artifact id="StructureDefinition/cpg-flag" key="StructureDefinition-cpg-flag" name="CPG Flag"/>
 <artifact id="StructureDefinition/cpg-goal" key="StructureDefinition-cpg-goal" name="CPG Goal"/>
 <artifact id="StructureDefinition/cpg-goalFor" key="StructureDefinition-cpg-goalFor" name="CPG Goal For Extension"/>
 <artifact id="StructureDefinition/cpg-group" key="StructureDefinition-cpg-group" name="CPG Group"/>
@@ -75,6 +79,7 @@
 <artifact id="StructureDefinition/cpg-location" key="StructureDefinition-cpg-location" name="CPG Location"/>
 <artifact id="StructureDefinition/cpg-locationdefinition" key="StructureDefinition-cpg-locationdefinition" name="CPG Location Definition"/>
 <artifact id="StructureDefinition/cpg-metricreport" key="StructureDefinition-cpg-metricreport" name="CPG Metric Report"/>
+<artifact id="StructureDefinition/cpg-ordersetdefinition" key="StructureDefinition-cpg-ordersetdefinition" name="CPG Order Set Definition"/>
 <artifact id="StructureDefinition/cpg-partOf" key="StructureDefinition-cpg-partOf" name="CPG Part Of Extension"/>
 <artifact id="StructureDefinition/cpg-participantCapabilityStatement" key="StructureDefinition-cpg-participantCapabilityStatement" name="CPG Participant Capability Statement Extension"/>
 <artifact id="StructureDefinition/cpg-pathwaydefinition" key="StructureDefinition-cpg-pathwaydefinition" name="CPG Pathway Definition"/>
@@ -117,10 +122,12 @@
 <artifact id="StructureDefinition/cpg-strategydefinition" key="StructureDefinition-cpg-strategydefinition" name="CPG Strategy Definition"/>
 <artifact id="StructureDefinition/cpg-summaryDefinitionFor" key="StructureDefinition-cpg-summaryDefinitionFor" name="CPG Summary Definition For Extension"/>
 <artifact id="StructureDefinition/cpg-summaryFor" key="StructureDefinition-cpg-summaryFor" name="CPG Summary For Extension"/>
+<artifact id="StructureDefinition/cpg-testcasebundle" key="StructureDefinition-cpg-testcasebundle" name="CPG Test Case Bundle"/>
 <artifact id="StructureDefinition/cpg-title" key="StructureDefinition-cpg-title" name="CPG Title Extension"/>
 <artifact id="StructureDefinition/cpg-topic" key="StructureDefinition-cpg-topic" name="CPG Topic Extension"/>
 <artifact id="StructureDefinition/cpg-usageWarning" key="StructureDefinition-cpg-usageWarning" name="CPG Usage Warning Extension"/>
 <artifact id="StructureDefinition/cpg-organization" key="StructureDefinition-cpg-organization" name="CPGOrganization"/>
+<artifact id="StructureDefinition/cpg-workflowdefinition" key="StructureDefinition-cpg-workflowdefinition" name="CPGWorkflowDefinition"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>
