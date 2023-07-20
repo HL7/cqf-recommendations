@@ -10,12 +10,12 @@ Description: "CPG Clinical Impression captures clinician judgement at any partic
 * status MS
 * code MS
 * description MS
-* subject only Reference($cpg-patient)
+* subject only Reference(CPGPatient)
 * subject MS
-* encounter only Reference($cpg-encounter)
+* encounter only Reference(CPGEncounter)
 * encounter MS
 * effective[x] MS
 * date MS
-* assessor only Reference($cpg-practitioner or $cpg-practitionerrole)
+* assessor only Reference(CPGPractitioner or CPGPractitionerRole)
 * assessor MS
 * protocol MS

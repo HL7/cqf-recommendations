@@ -5,4 +5,4 @@ Description: "Specifies a case (episode of care) which this care plan is managin
 * insert StructureDefinitionMetadata(cpg-planFor)
 * insert ExtensionContext(CarePlan)
 * . ^comment = "The enrollment may be automatic, prompted, or manual."
-// * value[x] only Reference($cpg-case)
+* value[x] only Reference(CPGCase)

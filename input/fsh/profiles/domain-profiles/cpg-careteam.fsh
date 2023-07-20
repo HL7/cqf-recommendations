@@ -8,14 +8,14 @@ Description: "CPG care team represents a care team for a specific patient"
 * status 1..1 MS
 * name 1..1 MS
 * subject 1..1 MS
-* subject only Reference($cpg-patient)
-* encounter only Reference($cpg-encounter)
+* subject only Reference(CPGPatient)
+* encounter only Reference(CPGEncounter)
 * encounter MS
 * period MS
 * participant MS
 * participant
   * role MS
-  * member only Reference($cpg-practitioner or $cpg-practitionerrole or $cpg-organization or $cpg-relatedperson or $cpg-patient or $cpg-careteam)
+  * member only Reference(CPGPractitioner or CPGPractitionerRole or $cpg-organization or CPGRelatedPerson or CPGPatient or $cpg-careteam)
   * member MS
 * managingOrganization only Reference($cpg-organization)
 * managingOrganization MS

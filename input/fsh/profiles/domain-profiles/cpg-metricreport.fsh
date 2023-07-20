@@ -5,9 +5,9 @@ Title: "CPG Metric Report"
 Description: "Records a contextualized metric as calculated within the context of the implementation of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-metricreport)
 * extension contains
-  $cpg-instantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
-  $cpg-caseFeatureType named caseFeatureType 0..1 MS and
-  $cpg-caseFeaturePertinence named caseFeaturePertinence 0..1 MS
+  CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
+  CPGCaseFeatureType named caseFeatureType 0..1 MS and
+  CPGCaseFeaturePertinence named caseFeaturePertinence 0..1 MS
 * identifier MS
 * status MS
 * type MS

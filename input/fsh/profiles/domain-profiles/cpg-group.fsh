@@ -16,7 +16,7 @@ Description: "Defines an actual group of subjects, suitable for use in various c
 * name 1..1 MS
 * characteristic 0..0
 * member MS
-  * entity only Reference($cpg-patient)
+  * entity only Reference(CPGPatient)
   * entity MS
   * period MS
   * inactive MS

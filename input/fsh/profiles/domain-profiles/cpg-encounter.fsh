@@ -7,15 +7,15 @@ Description: "CPG encounter represents the minimum expectations for communicatin
 * status MS
 * class MS
 * type 1..* MS
-* subject only Reference($cpg-patient)
+* subject only Reference(CPGPatient)
 * subject MS
-* episodeOfCare only Reference($cpg-case)
+* episodeOfCare only Reference(CPGCase)
 * episodeOfCare MS
 * participant MS
 * participant
   * type MS
   * period MS
-  * individual only Reference($cpg-practitioner or $cpg-practitionerrole)
+  * individual only Reference(CPGPractitioner or CPGPractitionerRole)
   * individual MS
 * period MS
 * reasonCode MS

@@ -70,7 +70,7 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[practitionerRoleDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-practitionerroledefinition
+  * resource only CPGPractitionerRoleDefinition
 * entry[questionnaire]
   * ^short = "The packaged artifact"
   * resource 1..1 MS

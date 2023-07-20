@@ -1,5 +1,5 @@
 Profile: CPGReportFlagActivity
-Parent: $cpg-computableactivity
+Parent: CPGComputableActivityDefinition
 Id: cpg-reportflagactivity
 Title: "CPG Report Flag Activity"
 Description: "Definition of a recommendation to report a particular flag as part of a computable clinical practice guideline"
@@ -9,7 +9,7 @@ Description: "Definition of a recommendation to report a particular flag as part
 * kind = #Task (exactly)
 * profile 1..1 MS
 * profile only canonical
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask" (exactly)
+* profile = $cpg-reportflagtask (exactly)
   * ^short = "At least a CPG CommunicationRequest"
   * ^definition = "The profile that the resulting communication request must conform to; at least a CPGCommunicationRequest, though the activity definition may introduce further constraints."
 * intent 1..1 MS

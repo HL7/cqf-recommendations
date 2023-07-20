@@ -1,10 +1,10 @@
 Profile: CPGCollectInformationActivity
-Parent: $cpg-computableactivity
+Parent: CPGComputableActivityDefinition
 Id: cpg-collectinformationactivity
 Title: "CPG Collect Information Activity"
 Description: "Definition of a recommendation to collect information using a specific questionnaire as part of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-collectinformationactivity)
-* extension contains $cpg-collectWith named collectWith 0..1 MS
+* extension contains CPGCollectWith named collectWith 0..1 MS
 * kind 1..1 MS
 * kind only code
 * kind = #Task (exactly)

@@ -1,5 +1,5 @@
 Profile: CPGGenerateReportActivity
-Parent: $cpg-computableactivity
+Parent: CPGComputableActivityDefinition
 Id: cpg-generatereportactivity
 Title: "CPG Generate Report Activity"
 Description: "Definition of an activity to generate a metric, measure, or case report as part of a computable clinical practice guideline"
@@ -10,7 +10,7 @@ Description: "Definition of an activity to generate a metric, measure, or case r
 * kind = #Task (exactly)
 * profile 1..1 MS
 * profile only canonical
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask" (exactly)
+* profile = $cpg-generatereporttask (exactly)
   * ^short = "At least a CPG Questionnaire Task"
   * ^definition = "The profile that the resulting task must conform to; at least a CPGQuestionnaireTask, though the activity definition may introduce further constraints."
 * intent 1..1 MS

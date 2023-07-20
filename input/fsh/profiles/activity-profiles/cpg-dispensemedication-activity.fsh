@@ -1,5 +1,5 @@
 Profile: CPGDispenseMedicationActivity
-Parent: $cpg-computableactivity
+Parent: CPGComputableActivityDefinition
 Id: cpg-dispensemedicationactivity
 Title: "CPG Dispense Medication Activity"
 Description: "Definition of an activity to dispense a specific medication as part of a computable clinical practice guideline"
@@ -9,7 +9,7 @@ Description: "Definition of an activity to dispense a specific medication as par
 * kind = #Task (exactly)
 * profile 1..1 MS
 * profile only canonical
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask" (exactly)
+* profile = $cpg-dispensemedicationtask (exactly)
   * ^short = "At least a CPG Dispense Medication Task"
   * ^definition = "The profile that the resulting Task must conform to; at least a CPGDispenseMedicationTask, though the activity definition may introduce further constraints."
 * intent 1..1 MS

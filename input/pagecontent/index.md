@@ -162,7 +162,7 @@ It is important to note that this effort is a concerted attempt to build on, lea
 |J. Rex Astles, PhD, FAACC|CDC, Health Scientist|Contributor|
 |Wendy Blumenthal, MPH|CDC, Health Scientist|Contributor|
 |Mike Boston|UX Architect|Contributor|
-|Matthew M. Burton, MD||Apervita, Inc., VP Clinical Informatics|Editor|
+|Matthew M. Burton, MD|Apervita, Inc., VP Clinical Informatics|Editor|
 |Zahid Butt MD, FACG|Medisolv Inc, CEO|Contributor|
 |Dave Carlson, PhD|Clinical Cloud Solutions, Solution Architect|Contributor|
 |Daryl Chertcoff|HLN Consulting, Solution Architect|Contributor|
@@ -193,6 +193,7 @@ It is important to note that this effort is a concerted attempt to build on, lea
 |Keith Toussaint|KMT Strategies, Principal|Contributor|
 |Jodi Wachs MD, FAAPM&R FAMIA|Clinical Informaticist|Contributor|
 |David Winters|The MITRE Corporation|Contributor|
+{:.grid}
 
 ### Disclaimers
 

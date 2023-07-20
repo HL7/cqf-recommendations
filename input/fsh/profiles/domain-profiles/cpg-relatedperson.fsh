@@ -7,6 +7,6 @@ Description: "CPG related person defines the minimum expectations for a person r
 * identifier MS
 * active 1..1 MS
 * patient 1..1 MS
-* patient only Reference($cpg-patient)
+* patient only Reference(CPGPatient)
 * relationship MS
 * name 1..* MS

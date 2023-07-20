@@ -15,10 +15,10 @@ Description: "CPG Case Plan Summary addresses information from the plan portion 
 * status MS
 * type MS
 * category MS
-* subject only Reference($cpg-patient)
+* subject only Reference(CPGPatient)
 * subject MS
-* encounter only Reference($cpg-encounter)
+* encounter only Reference(CPGEncounter)
 * encounter MS
 * date MS
-* author only Reference($cpg-practitioner or $cpg-practitionerrole)
+* author only Reference(CPGPractitioner or CPGPractitionerRole)
 * author MS
