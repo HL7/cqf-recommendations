@@ -1,5 +1,5 @@
-CodeSystem: CPG_Knowledge_Capability
-Id: cpg-knowledge-capability
+CodeSystem: CPGKnowledgeCapabilityCS
+Id: cpg-knowledge-capability-cs
 Title: "CPG Knowledge Capability Codes"
 Description: "A capability afforded by a knowledge artifact."
 * insert CodeSystemMetadata(cpg-knowledge-capability)

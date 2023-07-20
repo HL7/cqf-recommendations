@@ -1,13 +1,13 @@
-CodeSystem: CPG_Common_Persona
-Id: cpg-common-persona
+CodeSystem: CPGCommonPersonaCS
+Id: cpg-common-persona-cs
 Title: "CPG Common Personas Codes"
 Description: "Personas are the types of participants in the recommendations of a healthcare guideline, including practitioners, patients, nurses, community health workers, and care partners. The personas identified in this code system are defined based on the WHO recommendation for [Classifying health workers](https://www.who.int/hrh/statistics/Health_workers_classification.pdf). This recommendation uses codes from the [International Standard Classification for Occupations](http://www.ilo.org/public/english/bureau/stat/isco/index.htm) but defines several additional categories of health workers. In addition, the codes in that recommendation are focused on health workers, so codes for patient and care partner personas need to be considered as well. Where a code from the ISCO exists, it is used. Where a WHO recommended health worker category is used, a code is constructed beginning with a W. Where a code is introduced by this implementation guide, it is constructed beginning with a C. Note that the content is incomplete, pending a computable representation of the WHO recommendations."
 * insert CodeSystemMetadata(cpg-common-persona)
 * insert CodeSystemDates("2019-05-08", "2019-05-08", "2019-08-02")
-* ^extension.url = $codesystem-sourceReference
-* ^extension.valueUri = "http://www.ilo.org/public/english/bureau/stat/isco/index.htm"
-* ^extension.url = $codesystem-sourceReference
-* ^extension.valueUri = "https://www.who.int/hrh/statistics/Health_workers_classification.pdf"
+* ^extension[+].url = $codesystem-sourceReference
+* ^extension[=].valueUri = "http://www.ilo.org/public/english/bureau/stat/isco/index.htm"
+* ^extension[+].url = $codesystem-sourceReference
+* ^extension[=].valueUri = "https://www.who.int/hrh/statistics/Health_workers_classification.pdf"
 * #C000 "Patient" "The subject of care in a guideline."
 * #C001 "Care partner" "Care partners provide direct care (as for children, elderly people, or the chronically ill) and have a close relationship with the subject of care. This category is distinguished from 'Home-based personal care worker'-5322 because it is characterized as an unpaid relationship."
 * #2211 "General medical practitioner" "Generalist medical doctors (including family and primary care doctors) diagnose, treat and prevent illness, disease, injury, and other physical and mental impairments and maintain general health in humans through application of the principles and procedures of modern medicine. They plan, supervise and evaluate the implementation of care and treatment plans by other health care providers.They do not limit their practice to certain diseasecategories or methods of treatment, and may assume responsibility for the provision of continuing and comprehensive medical care to individuals, families and communities. (e.g. Medical doctor (general), Medical officer (general), Physician (general), General practitioner, Family medical practitioner, Primary health care physician, District medical doctor, Resident medical officer specializing in general practice)"

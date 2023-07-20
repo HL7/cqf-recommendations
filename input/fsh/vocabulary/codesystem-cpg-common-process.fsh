@@ -1,5 +1,5 @@
-CodeSystem: CPG_Common_Process
-Id: cpg-common-process
+CodeSystem: CPGCommonProcessCS
+Id: cpg-common-process-cs
 Title: "CPG Common Process Codes"
 Description: "Common processes performed in providing guideline-based care, regardless of the specific guideline."
 * insert CodeSystemMetadata(cpg-common-process)

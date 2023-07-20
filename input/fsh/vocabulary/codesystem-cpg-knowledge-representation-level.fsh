@@ -1,5 +1,5 @@
-CodeSystem: CPG_Knowledge_Representation_Level
-Id: cpg-knowledge-representation-level
+CodeSystem: CPGKnowledgeRepresentationLevelCS
+Id: cpg-knowledge-representation-level-cs
 Title: "CPG Knowledge Representation Level Codes"
 Description: "A knowledge representation level, narrative, semi-structured, structured, and executable"
 * insert CodeSystemMetadata(cpg-knowledge-representation-level)

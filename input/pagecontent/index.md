@@ -76,7 +76,7 @@ _Direct goals:_
 *   Measure compliance with clinical practice guideline recommendations
 *   Improve appropriate compliance with clinical practice guideline recommendations
 *   Afford means for full lifecycle feedback loop in best practice development process (e.g. Professional Guideline Development, Learning Health System, Clinical Translational and Implementation Sciences) including basic considerations for discovery to delivery.
-*   \[NOTE: EBM IG focused on up front processes; Public Health and QI on reporting results, and Registries on data collection and input into EBM/research activities. Suggest expolicit collaboration with these groups.\]
+*   \[NOTE: EBM IG focused on up front processes; Public Health and QI on reporting results, and Registries on data collection and input into EBM/research activities. Suggest explicit collaboration with these groups.\]
 
 _Indirect goals:_
 
@@ -120,7 +120,7 @@ The need for computable care guidelines can be considered in the context of the 
 
 <div>
   <img src="delivering-actionable-knowledge.png" alt="Delivering actionable knowledge" height="350" width="712"/>
-<div>
+</div>
 
 _Figure 1.3_ The data lifecycle and impacts to the public’s health (Michaels, M, U.S. Centers for Disease Control and Prevention, 2019).
 

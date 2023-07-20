@@ -1,5 +1,5 @@
-CodeSystem: CPG_Indicator
-Id: cpg-indicator
+CodeSystem: CPGIndicatorCS
+Id: cpg-indicator-cs
 Title: "CPG Indicator Codes"
 Description: "Indicates the urgency/importance of what this recommendation conveys"
 * insert CodeSystemMetadata(cpg-indicator)

@@ -1,6 +1,6 @@
-ValueSet: CPGCaseFeaturePertinence
-Id: cpg-casefeature-pertinence
+ValueSet: CPGCaseFeaturePertinenceVS
+Id: cpg-casefeature-pertinence-vs
 Title: "CPG Case Feature Pertinence"
 Description: "A type of activity that can be performed as part of the delivery of guideline-based care"
-* insert ValueSetMetadata(cpg-casefeature-pertinence)
-* include codes from system $cpg-casefeature-pertinence
+* insert ValueSetMetadata(cpg-casefeature-pertinence-vs)
+* include codes from system CPGCaseFeaturePertinenceCS

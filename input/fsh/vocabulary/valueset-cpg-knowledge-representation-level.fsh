@@ -1,6 +1,6 @@
-ValueSet: CPG_Knowledge_Representation_Level
-Id: cpg-knowledge-representation-level
+ValueSet: CPGKnowledgeRepresentationLevel
+Id: cpg-knowledge-representation-level-vs
 Title: "CPG Knowledge Representation Level"
 Description: "A knowledge representation level, narrative, semi-structured, structured, and executable"
-* insert ValueSetMetadata(cpg-knowledge-representation-level)
-* include codes from system $cpg-knowledge-representation-level-codes
+* insert ValueSetMetadata(cpg-knowledge-representation-level-vs)
+* include codes from system CPGKnowledgeRepresentationLevelCS

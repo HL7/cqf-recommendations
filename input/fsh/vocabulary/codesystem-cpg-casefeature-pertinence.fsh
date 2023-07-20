@@ -1,5 +1,5 @@
-CodeSystem: CPGCaseFeaturePertinence
-Id: cpg-casefeature-pertinence
+CodeSystem: CPGCaseFeaturePertinenceCS
+Id: cpg-casefeature-pertinence-cs
 Title: "CPG Case Feature Pertinence Codes"
 Description: "The pertinence of a case feature relative to a case, guideline, pathway, strategy, or recommendation."
 * insert CodeSystemMetadata(cpg-casefeature-pertinence)
