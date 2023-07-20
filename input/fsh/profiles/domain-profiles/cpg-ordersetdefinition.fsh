@@ -1,5 +1,5 @@
 Profile: CPGOrderSetDefinition
-Parent: $cpg-computableplandefinition
+Parent: CPGComputablePlanDefinition
 Id: cpg-ordersetdefinition
 Title: "CPG Order Set Definition"
 Description: "Profile of PlanDefinition as a Order Set for use with CPG Implementation Guide"

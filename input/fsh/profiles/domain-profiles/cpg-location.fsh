@@ -10,5 +10,5 @@ Description: "CPG location represents the minimum expectations for communicating
 * mode only code
 * mode = #instance (exactly)
 * type 1..* MS
-* managingOrganization only Reference($cpg-organization)
+* managingOrganization only Reference(CPGOrganization)
 * managingOrganization MS

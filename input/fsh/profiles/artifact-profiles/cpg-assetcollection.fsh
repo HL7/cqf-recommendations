@@ -1,5 +1,5 @@
 Profile: CPGAssetCollection
-Parent: $shareablelibrary
+Parent: shareablelibrary
 Id: cpg-assetcollection
 Title: "CPG Asset Collection"
 Description: "Profile of the Library resource to describe a collection of related knowledge assets. The collection is a general purpose organizational structure for the purposes of distribution and dependency-management"

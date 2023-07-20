@@ -1,5 +1,5 @@
 Profile: CPGPublishableValueSet
-Parent: $cpg-shareablevalueset
+Parent: CPGShareableValueSet
 Id: cpg-publishablevalueset
 Title: "CPG Publishable Value Set"
 Description: "Defines the expectations for publishable value sets used in computable content."

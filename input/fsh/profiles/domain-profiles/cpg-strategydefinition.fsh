@@ -1,5 +1,5 @@
 Profile: CPGStrategyDefinition
-Parent: $cpg-computableplandefinition
+Parent: CPGComputablePlanDefinition
 Id: cpg-strategydefinition
 Title: "CPG Strategy Definition"
 Description: "Profile of PlanDefinition as a Strategy Definition for use with CPG Implementation Guide. Strategies are used to group recommendations together, typically focused on a particular condition or state within the overall guideline or pathway"

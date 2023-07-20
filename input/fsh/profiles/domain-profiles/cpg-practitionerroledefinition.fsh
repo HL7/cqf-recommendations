@@ -10,11 +10,11 @@ Description: "Profile of PractitionerRole to establish definitional practitioner
 * practitioner 0..0
 * organization 0..0
 * code 0..* MS
-* code from $cpg-common-persona-valueset (preferred)
+* code from CPGCommonPersonaVS (preferred)
   * ^binding.description = "Common personas for use with computable guideline content"
 * specialty 0..* MS
 * location 0..* MS
-* location only Reference($cpg-locationdefinition)
+* location only Reference(CPGLocationDefinition)
 * telecom 0..0
 * availableTime 0..0
 * notAvailable 0..0

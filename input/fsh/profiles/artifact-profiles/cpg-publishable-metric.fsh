@@ -1,5 +1,5 @@
 Profile: CPGPublishableMetric
-Parent: $cpg-shareablemetric
+Parent: CPGShareableMetric
 Id: cpg-publishablemetric
 Title: "CPG Publishable Metric"
 Description: "Defines the minimum expectations for a publishable metric for use with computable content"

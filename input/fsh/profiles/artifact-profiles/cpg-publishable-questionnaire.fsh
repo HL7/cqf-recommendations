@@ -1,5 +1,5 @@
 Profile: CPGPublishableQuestionnaire
-Parent: $cpg-shareablequestionnaire
+Parent: CPGShareableQuestionnaire
 Id: cpg-publishablequestionnaire
 Title: "CPG Publishable Questionnaire"
 Description: "Profile of Questionnaire to represent the minimum expectations for a publishable questionnaire used in a clinical practice guideline"

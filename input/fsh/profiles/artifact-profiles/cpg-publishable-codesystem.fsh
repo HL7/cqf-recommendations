@@ -1,5 +1,5 @@
 Profile: CPGPublishableCodeSystem
-Parent: $cpg-shareablecodesystem
+Parent: CPGShareableCodeSystem
 Id: cpg-publishablecodesystem
 Title: "CPG Publishable Code System"
 Description: "Defines the expectations for publishable code systems used in computable content"

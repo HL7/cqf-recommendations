@@ -30,43 +30,43 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[activityDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareableactivitydefinition
+  * resource only CPGShareableActivityDefinition
 * entry[careTeamDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-careteamdefinition
+  * resource only CPGCareTeamDefinition
 * entry[codeSystem]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareablecodesystem
+  * resource only CPGShareableCodeSystem
 * entry[graphDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareablegraphdefinition
+  * resource only CPGShareableGraphDefinition
 * entry[groupDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-groupdefinition
+  * resource only CPGGroupDefinition
 * entry[implementationGuide]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareableig
+  * resource only CPGShareableIG
 * entry[library]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareablelibrary
+  * resource only CPGShareableLibrary
 * entry[locationDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-locationdefinition
+  * resource only CPGLocationDefinition
 * entry[measure]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareablemetric
+  * resource only CPGShareableMetric
 * entry[planDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareableplandefinition
+  * resource only CPGShareablePlanDefinition
 * entry[practitionerRoleDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
@@ -74,16 +74,16 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[questionnaire]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareablequestionnaire
+  * resource only CPGShareableQuestionnaire
 * entry[structureDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareablestructuredef
+  * resource only CPGShareableStructureDefinition
 * entry[valueSet]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-shareablevalueset
+  * resource only CPGShareableValueSet
 * entry[testCase]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only $cpg-testcasebundle
+  * resource only CPGTestCaseBundle

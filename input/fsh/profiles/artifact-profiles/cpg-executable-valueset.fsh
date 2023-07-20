@@ -1,5 +1,5 @@
 Profile: CPGExecutableValueSet
-Parent: $cpg-shareablevalueset
+Parent: CPGShareableValueSet
 Id: cpg-executablevalueset
 Title: "CPG Executable Value Set"
 Description: "Defines an executable value set as one that SHALL have an expansion included, as well as a usage warning indicating the expansion is a point-in-time snapshot and must be maintained over time for production usage."

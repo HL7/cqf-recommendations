@@ -1,5 +1,5 @@
 Profile: CPGRecommendationDefinition
-Parent: $cpg-computableplandefinition
+Parent: CPGComputablePlanDefinition
 Id: cpg-recommendationdefinition
 Title: "CPG Recommendation Definition"
 Description: "Profile of PlanDefinition as a Recommendation Definition for use with CPG Implementation Guide"

@@ -10,5 +10,5 @@ Description: "Profile of PractitionerRole for use with CPG Implementation Guide"
 * practitioner 1..1
 * practitioner only Reference(CPGPractitioner)
 * code 0..* MS
-* code from $cpg-common-persona-valueset (preferred)
+* code from CPGCommonPersonaVS (preferred)
   * ^binding.description = "Common personas for use with computable guideline content"

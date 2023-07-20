@@ -8,6 +8,6 @@ Description: "CPG case represents a specific case of a patient enrolled in a par
 * type from $episodeofcare-type (preferred)
   * ^binding.description = "Expresses the type of an episode of care"
 * diagnosis 1..*
-  * condition only Reference($cpg-condition)
+  * condition only Reference(CPGCondition)
 * patient only Reference(CPGPatient)
 * period MS

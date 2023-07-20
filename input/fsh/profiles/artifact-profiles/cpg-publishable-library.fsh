@@ -1,5 +1,5 @@
 Profile: CPGPublishableLibrary
-Parent: $cpg-shareablelibrary
+Parent: CPGShareableLibrary
 Id: cpg-publishablelibrary
 Title: "CPG Publishable Library"
 Description: "The publishable library defines the must support elements that are important for implementers to use and understand a library"

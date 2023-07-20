@@ -1,5 +1,5 @@
 Profile: CPGPathwayDefinition
-Parent: $cpg-computableplandefinition
+Parent: CPGComputablePlanDefinition
 Id: cpg-pathwaydefinition
 Title: "CPG Pathway Definition"
 Description: "Profile of PlanDefinition as a Clinical Pathway for use with CPG Implementation Guide. A pathway provides groupings of strategies to provide a longitudinal view of the guideline"

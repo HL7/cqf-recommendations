@@ -1,5 +1,5 @@
 Profile: CPGPublishableGraphDefinition
-Parent: $cpg-shareablegraphdefinition
+Parent: CPGShareableGraphDefinition
 Id: cpg-publishablegraphdefinition
 Title: "CPG Publishable Graph Definition"
 Description: "Profile of GraphDefinition to describe the minimum expectations for a publishable Graph Definition"

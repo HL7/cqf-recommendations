@@ -1,5 +1,5 @@
 Profile: CPGComputableGuideline
-Parent: $cpg-shareableig
+Parent: CPGShareableIG
 Id: cpg-computableguideline
 Title: "CPG Computable Guideline"
 Description: "Profile of ImplementationGuide to describe a computable Clinical Practice Guideline"

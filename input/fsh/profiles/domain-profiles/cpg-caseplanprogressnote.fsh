@@ -1,5 +1,5 @@
 Profile: CPGCasePlanProgressingNote
-Parent: $cpg-caseplansummary
+Parent: CPGCasePlanSummary
 Id: cpg-caseplanprogressingnote
 Title: "CPG Case Plan Progressing Note"
 Description: "CPG Case Plan Progressing Note combines relevant case features and feature groups with proposals, plans, and clinical impressions to provide a means to document patient progression with respect to a pathway in the context of a computable clinical practice guideline"
@@ -19,4 +19,4 @@ Description: "CPG Case Plan Progressing Note combines relevant case features and
   * code = $loinc#51848-0
   * code MS
   * entry 1..1 MS
-  * entry only Reference($cpg-clinicalimpression)
+  * entry only Reference(CPGClinicalImpression)

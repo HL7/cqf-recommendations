@@ -18,14 +18,14 @@ Description: "CPG care plan represents the care plan for a specific patient. The
 * encounter MS
 * period MS
 * created MS
-* careTeam only Reference($cpg-careteam)
+* careTeam only Reference(CPGCareTeam)
 * careTeam MS
-* addresses only Reference($cpg-condition)
+* addresses only Reference(CPGCondition)
 * addresses MS
 * goal MS
 * activity MS
   * outcomeReference MS
-  * reference only Reference(Appointment or CPGCommunicationRequest or CPGMedicationRequest or CPGTask or $cpg-servicerequest or CPGStrategy)
+  * reference only Reference(Appointment or CPGCommunicationRequest or CPGMedicationRequest or CPGTask or CPGServiceRequest or CPGStrategy)
 * activity
   * reference MS
   * detail MS
@@ -39,6 +39,6 @@ Description: "CPG care plan represents the care plan for a specific patient. The
     * scheduled[x] MS
     * location only Reference($cpg-location)
     * location MS
-    * performer only Reference(CPGPractitioner or CPGPractitionerRole or $cpg-organization or CPGRelatedPerson or CPGPatient or $cpg-careteam)
+    * performer only Reference(CPGPractitioner or CPGPractitionerRole or CPGOrganization or CPGRelatedPerson or CPGPatient or CPGCareTeam)
     * performer MS
     * description 1..1 MS

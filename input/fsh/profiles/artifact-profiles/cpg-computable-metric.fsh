@@ -1,5 +1,5 @@
 Profile: CPGComputableMetric
-Parent: $cpg-shareablemetric
+Parent: CPGShareableMetric
 Id: cpg-computablemetric
 Title: "CPG Computable Metric"
 Description: "Defines the minimum expectations and behavior for a computable metric for use with content conforming to the CPG implementation guide"

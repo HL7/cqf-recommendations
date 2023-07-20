@@ -1,5 +1,5 @@
 Profile: CPGPublishableCaseFeatureDefinition
-Parent: $cpg-shareablestructuredef
+Parent: CPGShareableStructureDefinition
 Id: cpg-publishablecasefeature
 Title: "CPG Publishable Case Feature Definition"
 Description: "Profile of StructureDefinition to represent the minimum expectations for a publishable case feature of a clinical practice guideline"

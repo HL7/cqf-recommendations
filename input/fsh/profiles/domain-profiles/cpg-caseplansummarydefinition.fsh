@@ -1,5 +1,5 @@
 Profile: CPGCasePlanSummaryDefinition
-Parent: $cpg-computablegraphdefinition
+Parent: CPGCommutableGraphDefinition
 Id: cpg-caseplansummarydefinition
 Title: "CPG Case Plan Summary Definition"
 Description: "CPG Case Plan Summary Definition provides a computable definition for the case features and feature groups relevant to a particular pathway, strategy, or recommendation of a clinical practice guideline"

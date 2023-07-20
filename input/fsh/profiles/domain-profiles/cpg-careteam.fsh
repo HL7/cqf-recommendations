@@ -15,7 +15,7 @@ Description: "CPG care team represents a care team for a specific patient"
 * participant MS
 * participant
   * role MS
-  * member only Reference(CPGPractitioner or CPGPractitionerRole or $cpg-organization or CPGRelatedPerson or CPGPatient or $cpg-careteam)
+  * member only Reference(CPGPractitioner or CPGPractitionerRole or CPGOrganization or CPGRelatedPerson or CPGPatient or CPGCareTeam)
   * member MS
-* managingOrganization only Reference($cpg-organization)
+* managingOrganization only Reference(CPGOrganization)
 * managingOrganization MS

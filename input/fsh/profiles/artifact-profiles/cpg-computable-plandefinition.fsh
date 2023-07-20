@@ -1,5 +1,5 @@
 Profile: CPGComputablePlanDefinition
-Parent: $cpg-shareableplandefinition
+Parent: CPGShareablePlanDefinition
 Id: cpg-computableplandefinition
 Title: "CPG Computable Plan Definition"
 Description: "Defines the minimum expectations and behavior for a computable plan definition"
@@ -27,8 +27,8 @@ Description: "Defines the minimum expectations and behavior for a computable pla
   * timing[x] MS
   * participant MS
     * role MS
-    * role from $cpg-common-persona-valueset (preferred)
-    * role ^binding.description = "Personas used in identifying participants and their roles in computable content"
+    * role from CPGCommonPersonaVS (preferred)
+      * ^binding.description = "Personas used in identifying participants and their roles in computable content"
   * type MS
   * definition[x] MS
   * dynamicValue MS

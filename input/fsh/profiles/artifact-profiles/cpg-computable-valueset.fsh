@@ -1,5 +1,5 @@
 Profile: CPGComputableValueSet
-Parent: $cpg-shareablevalueset
+Parent: CPGShareableValueSet
 Id: cpg-computablevalueset
 Title: "CPG Computable Value Set"
 Description: "Defines a computable value set as one that SHALL have an expression-based definition (i.e. a value set defined intensionally using expressions of the code systems involved) and MAY have an expansion included. The expression-based definition SHALL be represented in only one of three ways; using the compose element, using the expression extension, or using the rules-text extension to provide a step-by-step process for expanding the value set definition"
@@ -20,7 +20,6 @@ Description: "Defines a computable value set as one that SHALL have an expressio
   * ^comment = "Only one of rulesText, expression, or compose SHALL be provided for any given value set instance. Note that to provide a human-readable description of the expression, use the description element of the expression datatype."
   * ^condition = "cvs-1"
 * compose 0..1 MS
-* compose
   * ^comment = "Only one of rulesText, expression, or compose SHALL be provided for any given valueset instance."
   * ^condition = "cvs-1"
 

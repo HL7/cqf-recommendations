@@ -1,5 +1,5 @@
 Profile: CPGExecutableLibrary
-Parent: $cpg-shareablelibrary
+Parent: CPGShareableLibrary
 Id: cpg-executablelibrary
 Title: "CPG Executable Library"
 Description: "This profile sets the minimum expectations for an executable CQL library. Specifically, the profile requires that the library contain one of ELM XML or JSON content, the compiled representation of the CQL logic."
@@ -14,7 +14,6 @@ Description: "This profile sets the minimum expectations for an executable CQL l
   * type = #depends-on (exactly)
   * type only code
   * type MS
-  * resource only canonical
   * resource 1..1 MS
   * resource only Canonical(CodeSystem or Library or ValueSet)
 * parameter MS

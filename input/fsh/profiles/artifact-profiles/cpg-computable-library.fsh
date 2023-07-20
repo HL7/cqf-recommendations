@@ -1,5 +1,5 @@
 Profile: CPGComputableLibrary
-Parent: $cpg-shareablelibrary
+Parent: CPGShareableLibrary
 Id: cpg-computablelibrary
 Title: "CPG Computable Library"
 Description: "The computable library profile sets the minimum expectations for a computable CQL library"

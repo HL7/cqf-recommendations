@@ -18,7 +18,7 @@ Description: "Represents the definition of a group of subjects, suitable for use
 * code MS
 * name 1..1 MS
 * characteristic MS
-* characteristic ^condition = "gdf-1"
+  * ^condition = "gdf-1"
 * member 0..0
 
 Invariant: gdf-1

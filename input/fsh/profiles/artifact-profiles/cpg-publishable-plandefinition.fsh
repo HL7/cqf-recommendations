@@ -1,5 +1,5 @@
 Profile: CPGPublishablePlanDefinition
-Parent: $cpg-shareableplandefinition
+Parent: CPGShareablePlanDefinition
 Id: cpg-publishableplandefinition
 Title: "CPG Publishable Plan Definition"
 Description: "Profile of PlanDefinition that defines the minimum expectations for a publishable plan definition"
