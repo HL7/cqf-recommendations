@@ -37,7 +37,7 @@ The common pathway provides an abstract or generalized description of the overal
 
 The result is the definition of a [Common Pathway](common-pathway.html) that is intended to be applicable in any guideline-based care content, but not a specific localization or implementation thereof.  Using this common pathway, content can indicate where in the overall process of care delivery a given recommendation or intervention should occur.
 
-Content conforming to this implementation guide SHALL identify processes using the [Common Processes code system](CodeSystem-cpg-common-process.html).
+Content conforming to this implementation guide SHALL identify processes using the [Common Processes code system](CodeSystem-cpg-common-process-cs.html).
 
 #### Use of Common Pathway in Localization
 

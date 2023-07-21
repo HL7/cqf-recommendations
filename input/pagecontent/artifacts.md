@@ -23,39 +23,39 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
 ### CodeSystem Index
 
-*   [CPG Activity Type](CodeSystem-cpg-activity-type.html)
+*   [CPG Activity Type](CodeSystem-cpg-activity-type-cs.html)
 
     A type of activity that can be performed as part of the delivery of guideline-based care.
 
-*   [CPG Case Feature Type](CodeSystem-cpg-casefeature-type.html)
+*   [CPG Case Feature Type](CodeSystem-cpg-casefeature-type-cs.html)
 
     The type of a case feature, whether asserted (i.e. documented in the patient's record) or inferred (i.e. calculated from the case feature expression)
 
-*   [CPG Case Feature Pertinence](CodeSystem-cpg-casefeature-pertinence.html)
+*   [CPG Case Feature Pertinence](CodeSystem-cpg-casefeature-pertinence-cs.html)
 
     The pertinence of a case feature relative to a case, guideline, pathway, strategy, or recommendation.
 
-*   [CPG Indicator](CodeSystem-cpg-indicator.html)
+*   [CPG Indicator](CodeSystem-cpg-indicator-cs.html)
 
     Indicates the urgency/importance of what this recommendation conveys
 
-*   [CPG Common Personas](CodeSystem-cpg-common-persona.html)
+*   [CPG Common Personas](CodeSystem-cpg-common-persona-cs.html)
 
     Personas are the types of participants in the recommendations of a healthcare guideline, including practitioners, patients, nurses, community health workers, and care partners. The personas identified in this code system are defined based on the WHO recommendation for [Classifying health workers](https://www.who.int/hrh/statistics/Health_workers_classification.pdf). This recommendation uses codes from the [International Standard Classification for Occupations](http://www.ilo.org/public/english/bureau/stat/isco/index.htm) but defines several additional categories of health workers. In addition, the codes in that recommendation are focused on health workers, so codes for patient and care partner personas need to be considered as well. Where a code from the ISCO exists, it is used. Where a WHO recommended health worker category is used, a code is constructed beginning with a W. Where a code is introduced by this implementation guide, it is constructed beginning with a C. Note that the content is incomplete, pending a computable representation of the WHO recommendations.
 
-*   [CPG Common Process](CodeSystem-cpg-common-process.html)
+*   [CPG Common Process](CodeSystem-cpg-common-process-cs.html)
 
     Common processes performed in providing guideline-based care, regardless of the specific guideline.
 
-*   [CPG Recommendation Direction](CodeSystem-cpg-recommendation-direction.html)
+*   [CPG Recommendation Direction](CodeSystem-cpg-recommendation-direction-cs.html)
 
     The direction of a recommendation, either for or against a particular action, taking into account the balance between desirable and undersirable outcomes; the confidence in the magnitude of estimates of effect; the confidence in values and preferences and their variability; and resource use.
 
-*   [CPG Knowledge Capability](CodeSystem-cpg-knowledge-capability.html)
+*   [CPG Knowledge Capability](CodeSystem-cpg-knowledge-capability-cs.html)
 
     A capability afforded by a knowledge artifact.
 
-*   [CPG Knowledge Representation Level](CodeSystem-cpg-knowledge-representation-level.html)
+*   [CPG Knowledge Representation Level](CodeSystem-cpg-knowledge-representation-level-cs.html)
 
     A knowledge representation level, narrative, semi-structured, structured, and executable
 
@@ -492,38 +492,38 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
 ### ValueSet Index
 
-*   [CPG Activity Type](ValueSet-cpg-activity-type.html)
+*   [CPG Activity Type](ValueSet-cpg-activity-type-vs.html)
 
     A type of activity that can be performed as part of the delivery of guideline-based care
 
-*   [CPG Case Feature Type](ValueSet-cpg-casefeature-type.html)
+*   [CPG Case Feature Type](ValueSet-cpg-casefeature-type-vs.html)
 
     A type of activity that can be performed as part of the delivery of guideline-based care
 
-*   [CPG Case Feature Pertinence](ValueSet-cpg-casefeature-pertinence.html)
+*   [CPG Case Feature Pertinence](ValueSet-cpg-casefeature-pertinence-vs.html)
 
     A type of activity that can be performed as part of the delivery of guideline-based care
 
-*   [CPG Recommendation Direction](ValueSet-cpg-recommendation-direction.html)
+*   [CPG Recommendation Direction](ValueSet-cpg-recommendation-direction-vs.html)
 
     The direction of a recommendation, either for or against a particular action, taking into account the balance between desirable and undesirable outcomes; the confidence in the magnitude of estimates of effect; the confidence in values and preferences and their variability; and resource use.
 
-*   [CPG Knowledge Capability](ValueSet-cpg-knowledge-capability.html)
+*   [CPG Knowledge Capability](ValueSet-cpg-knowledge-capability-vs.html)
 
     A capability afforded by a knowledge artifact, e.g. shareable, computable, publishable, executable
 
-*   [CPG Knowledge Representation Level](ValueSet-cpg-knowledge-representation-level.html)
+*   [CPG Knowledge Representation Level](ValueSet-cpg-knowledge-representation-level-vs.html)
 
     A knowledge representation level, narrative, semi-structured, structured, and executable
 
-*   [CPG Indicator](ValueSet-cpg-indicator.html)
+*   [CPG Indicator](ValueSet-cpg-indicator-vs.html)
 
     Indicates the urgency/importance of what this recommendation conveys
 
-*   [CPG Common Persona](ValueSet-cpg-common-persona.html)
+*   [CPG Common Persona](ValueSet-cpg-common-persona-vs.html)
 
     Common personas used to describe roles and participants in computable content
 
-*   [CPG Common Process](ValueSet-cpg-common-process.html)
+*   [CPG Common Process](ValueSet-cpg-common-process-vs.html)
 
     Common processes used to describe the high-level, conceptual activities that occur as part of the delivery of guideline-based care

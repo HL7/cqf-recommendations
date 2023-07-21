@@ -153,15 +153,15 @@ In addition, technical and informatics specialists from specific (or at least re
 
 Personas are narrative descriptions of the actors and roles, or the _who_, referred to by the guideline. For example, nurse midwife, community healthworker, and pregnant mother are all examples of personas.
 
-To provide a potential starting point for formally identifying personas, this implementation guide provides a [Common Personas](CodeSystem-cpg-common-persona.html) CodeSystem based on the WHO recommendation for [Classifying health workers](https://www.who.int/hrh/statistics/Health_workers_classification.pdf). This recommendation uses codes from the [International Standard Classification for Occupations](http://www.ilo.org/public/english/bureau/stat/isco/index.htm) but defines several additional categories of workers. In addition, the codes in that recommendation are focused on health workers, so codes for patient and care partner personas need to be considered as well.
+To provide a potential starting point for formally identifying personas, this implementation guide provides a [Common Personas](CodeSystem-cpg-common-persona-cs.html) CodeSystem based on the WHO recommendation for [Classifying health workers](https://www.who.int/hrh/statistics/Health_workers_classification.pdf). This recommendation uses codes from the [International Standard Classification for Occupations](http://www.ilo.org/public/english/bureau/stat/isco/index.htm) but defines several additional categories of workers. In addition, the codes in that recommendation are focused on health workers, so codes for patient and care partner personas need to be considered as well.
 
 Where a code from the ISCO exists, it is used. Where a WHO recommended health worker category is used, a code is constructed beginning with a `W`. Where a code is introduced by this implementation guide, it is constructed beginning with a `C`.
 
-Content conforming to this implementation guide MAY identify personas using the [Common Personas](CodeSystem-cpg-common-persona.html) code system.
+Content conforming to this implementation guide MAY identify personas using the [Common Personas](CodeSystem-cpg-common-persona-cs.html) code system.
 
 #### Activities
 
-Activities identified as part of the select step are the narrative description of _what_ needs to happen. This implementation guide defines the [Activity Type](CodeSystem-cpg-activity-type.html) CodeSystem to support computable representation of clinical activities:
+Activities identified as part of the select step are the narrative description of _what_ needs to happen. This implementation guide defines the [Activity Type](CodeSystem-cpg-activity-type-cs.html) CodeSystem to support computable representation of clinical activities:
 
 * **Send a message**: Communicating a particular message to a patient or other related participant
 * **Collect information**: Collect information from a patient or other relevant participant using a questionnaire
@@ -185,7 +185,7 @@ The common processes identified in this implementation guide are based on survey
 
 Using this common pathway, content can indicate where in the overall process of care delivery a given recommendation or intervention should occur.
 
-Content conforming to this implementation guide MAY identify processes using the [Common Processes](CodeSystem-cpg-common-process.html) code system.
+Content conforming to this implementation guide MAY identify processes using the [Common Processes](CodeSystem-cpg-common-process-cs.html) code system.
 
 #### Settings
 
