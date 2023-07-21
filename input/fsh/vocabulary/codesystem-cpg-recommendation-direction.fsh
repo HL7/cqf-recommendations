@@ -1,6 +1,6 @@
 CodeSystem: CPGRecommendationDirectionCS
 Id: cpg-recommendation-direction-cs
-Title: "CPG Recommendation Direction Codes"
+Title: "CPG Recommendation Direction Code System"
 Description: "The direction of a recommendation, either for or against a particular action, taking into account the balance between desirable and undersirable outcomes; the confidence in the magnitude of estimates of effect; the confidence in values and preferences and their variability; and resource use."
 * insert CodeSystemMetadata(cpg-recommendation-direction)
 * ^extension[+].url = $codesystem-sourceReference

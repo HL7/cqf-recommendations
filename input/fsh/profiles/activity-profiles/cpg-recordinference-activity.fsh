@@ -1,6 +1,7 @@
 Profile: CPGRecordInferenceActivity
 Parent: CPGComputableActivityDefinition
 Id: cpg-recordinferenceactivity
+Title: "CPG Record Inference Activity"
 Description: "Definition of a recommendation to record a specific inference as part of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-recordinferenceactivity)
 * kind 1..1 MS

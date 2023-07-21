@@ -1,6 +1,6 @@
 CodeSystem: CPGIndicatorCS
 Id: cpg-indicator-cs
-Title: "CPG Indicator Codes"
+Title: "CPG Indicator Code System"
 Description: "Indicates the urgency/importance of what this recommendation conveys"
 * insert CodeSystemMetadata(cpg-indicator)
 * #info "Information" "Indicates that the recommendation is informational"

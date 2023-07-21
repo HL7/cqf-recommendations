@@ -1,6 +1,6 @@
 CodeSystem: CPGActivityTypeCS
 Id: cpg-activity-type-cs
-Title: "CPG Activity Type Codes"
+Title: "CPG Activity Type Code System"
 Description: "A type of activity that can be performed as part of the delivery of guideline-based care."
 * insert CodeSystemMetadata(cpg-activity-type)
 * #send-message "Send a message" "The activity of communicating a particular message to a patient"

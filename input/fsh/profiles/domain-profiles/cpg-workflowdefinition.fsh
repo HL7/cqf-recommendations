@@ -1,6 +1,7 @@
 Profile: CPGWorkflowDefinition
 Parent: CPGComputablePlanDefinition
 Id: cpg-workflowdefinition
+Title: "CPG Workflow Definition"
 Description: "Profile of PlanDefinition as a Workflow Definition for use with CPG Implementation Guide"
 * insert StructureDefinitionMetadata(cpg-workflowdefinition)
 * type = $plan-definition-type#workflow-definition

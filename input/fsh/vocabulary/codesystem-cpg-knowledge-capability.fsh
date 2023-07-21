@@ -1,6 +1,6 @@
 CodeSystem: CPGKnowledgeCapabilityCS
 Id: cpg-knowledge-capability-cs
-Title: "CPG Knowledge Capability Codes"
+Title: "CPG Knowledge Capability Code System"
 Description: "A capability afforded by a knowledge artifact."
 * insert CodeSystemMetadata(cpg-knowledge-capability)
 * #shareable "Shareable" "The artifact provides essential information necessary to ensure shareability of the content as a FHIR resource."

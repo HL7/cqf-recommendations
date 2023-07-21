@@ -1,6 +1,6 @@
 ValueSet: CPGActiveConditionVS
 Id: cpg-active-condition-vs
-Title: "CPG Active Condition"
+Title: "CPG Active Condition Value Set"
 Description: "Active condition clinical status codes"
 * insert ValueSetMetadata(cpg-active-condition-vs)
 * ^purpose = "Used to specify the set of clinical status codes that are considered active"

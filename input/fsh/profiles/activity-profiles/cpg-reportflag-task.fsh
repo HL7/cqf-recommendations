@@ -1,7 +1,7 @@
 Profile: CPGReportFlagTask
 Parent: CPGTask
 Id: cpg-reportflagtask
-Title: "Report Flag Task"
+Title: "CPG Report Flag Task"
 Description: "Recommendation to report a flag as part of the delivery of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-reportflagtask)
 * code only CodeableConcept

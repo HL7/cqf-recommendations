@@ -1,6 +1,6 @@
 CodeSystem: CPGCommonProcessCS
 Id: cpg-common-process-cs
-Title: "CPG Common Process Codes"
+Title: "CPG Common Process Code System"
 Description: "Common processes performed in providing guideline-based care, regardless of the specific guideline."
 * insert CodeSystemMetadata(cpg-common-process)
 * ^extension[+].url = $codesystem-sourceReference

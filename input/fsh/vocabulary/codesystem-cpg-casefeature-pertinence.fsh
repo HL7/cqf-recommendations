@@ -1,6 +1,6 @@
 CodeSystem: CPGCaseFeaturePertinenceCS
 Id: cpg-casefeature-pertinence-cs
-Title: "CPG Case Feature Pertinence Codes"
+Title: "CPG Case Feature Pertinence Code System"
 Description: "The pertinence of a case feature relative to a case, guideline, pathway, strategy, or recommendation."
 * insert CodeSystemMetadata(cpg-casefeature-pertinence)
 * #weakly-positive "Weakly Positive" "The case feature has weak positive pertinence to the case"

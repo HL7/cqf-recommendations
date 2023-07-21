@@ -1,6 +1,6 @@
 CodeSystem: CPGKnowledgeRepresentationLevelCS
 Id: cpg-knowledge-representation-level-cs
-Title: "CPG Knowledge Representation Level Codes"
+Title: "CPG Knowledge Representation Level Code System"
 Description: "A knowledge representation level, narrative, semi-structured, structured, and executable"
 * insert CodeSystemMetadata(cpg-knowledge-representation-level)
 * #narrative "Narrative" "The knowledge is expressed as narrative text, affording broad shareability, but limited computability. The knowledge is typically expressed independent of delivery method (modality), technology platform, and implementation site. Knowledge at this level is typically authored by guideline developers for a broad range of purposes including communication of policy, synthesis of evidence, and dissemination of best-practices."
