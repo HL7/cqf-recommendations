@@ -8,7 +8,7 @@ canonical: http://hl7.org/fhir/uv/cpg
 name: CPG
 title: Clinical Practice Guidelines
 description: Implementation guidance for creating Clinical Practice Guidelines with formal artifacts to facilitate sharing and implementation of the guideline
-status: draft # draft | active | retired | unknown
+status: active # draft | active | retired | unknown
 version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+

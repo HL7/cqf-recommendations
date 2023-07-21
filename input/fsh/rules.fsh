@@ -9,7 +9,6 @@ RuleSet: CodeSystemMetadata(id-prefix)
 * ^extension[+].url = $cpg-knowledgeRepresentationLevel //causing errors when refering to by slice
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/{id-prefix}-cs"
-* ^status = #draft
 * ^experimental = false
 * ^caseSensitive = true
 * ^valueSet = "http://hl7.org/fhir/uv/cpg/ValueSet/{id-prefix}-vs"
@@ -34,12 +33,10 @@ RuleSet: ValueSetMetadata(id)
 * ^extension[+].url = $cpg-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
-* ^status = #active
 * ^experimental = false
 
 RuleSet: StructureDefinitionMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
-* ^status = #draft
 * ^experimental = false
 
 RuleSet: ExtensionContext(path)
