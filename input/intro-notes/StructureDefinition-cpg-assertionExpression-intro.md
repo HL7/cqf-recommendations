@@ -1,4 +1,4 @@
-**Examples**
+**Examples:**
 
 *   [CHF Body Weight Change Metric](Measure-chf-bodyweight-change.html)
 
