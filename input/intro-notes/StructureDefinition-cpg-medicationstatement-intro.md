@@ -1,0 +1,1 @@
+This is an [activity event profile](profiles.html#activity-profiles)

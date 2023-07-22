@@ -1,4 +1,5 @@
-# cqf-recommendations
+## Clinical Practice Guidelines IG
+
 Representation of Clinical Practice Guideline Recommendations in FHIR (FHIR R4 (4.0.1))
 
 This project provides the source for the HL7 Representation of Clinical Practice Guideline Recommendations in FHIR Implementation Guide
@@ -17,10 +18,9 @@ Debugging information is available here:
 
 ## Local Build
 
-The HL7 IG Publisher is committed to this repository to make building as easy as possible. To build locally, clone the repository and issue the following command in the root:
+The HL7 IG Publisher is committed to this repository to make building as easy as possible. To build locally:
 
-    java -Xmx16G -jar publisher.jar -ig ig.json
+  1. Clone the respository
+  2. Run _updatePublisher to get the latest IG publisher
+  3. Run _genonce to generate the IG
 
-The latest version of the IG publisher is available here:
-
-[https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publisher.jar](https://github.com/FHIR/latest-ig-publisher/raw/master/org.hl7.fhir.publisher.jar)
