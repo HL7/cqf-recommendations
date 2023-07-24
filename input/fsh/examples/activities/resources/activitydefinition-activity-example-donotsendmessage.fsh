@@ -1,16 +1,16 @@
-
-
-Instance: activity-example-donotsendmessage
+Instance: activity-example-donotsendmessage-ad
 InstanceOf: ActivityDefinition
 Usage: #example
 Description: "Example Activity Definition for a recommendation not to send a message"
-* insert ActivityDefinitionMetadata(activity-example-donotsendmessage)
-* name = "ActivityExampleDoNotSendMessage"
-* title = "Activity Example Do Not Send Message"
+* insert ActivityDefinitionMetadata(activity-example-donotsendmessage-ad)
+* name = "ActivityExampleDoNotSendMessageAD"
+* title = "Activity Example Do Not Send Message AD"
 * kind = #CommunicationRequest
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
+* profile = Canonical(CPGCommunicationRequest)
 * code = $cpg-activity-type-cs#send-message "Send a message"
 * doNotPerform = true
-* dynamicValue.path = "status"
-* dynamicValue.expression.language = #text/cql
-* dynamicValue.expression.expression = "'draft'"
+* dynamicValue
+  * path = "status"
+  * expression
+    * language = #text/cql
+    * expression = "'draft'"

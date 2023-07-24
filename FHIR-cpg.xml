@@ -6,6 +6,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="Library/AdministerMedication" key="Library-AdministerMedication" name="AdministerMedication"/>
 <artifact id="ValueSet/cpg-active-condition-vs" key="ValueSet-cpg-active-condition-vs" name="CPG Active Condition Value Set"/>
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
 <artifact id="ValueSet/cpg-activity-type-vs" key="ValueSet-cpg-activity-type-vs" name="CPG Activity Type Value Set"/>
@@ -165,9 +166,61 @@
 <artifact id="StructureDefinition/cpg-topic" key="StructureDefinition-cpg-topic" name="CPG Topic Extension"/>
 <artifact id="StructureDefinition/cpg-usageWarning" key="StructureDefinition-cpg-usageWarning" name="CPG Usage Warning Extension"/>
 <artifact id="StructureDefinition/cpg-workflowdefinition" key="StructureDefinition-cpg-workflowdefinition" name="CPG Workflow Definition"/>
+<artifact id="Library/CollectInformation" key="Library-CollectInformation" name="CollectInformation"/>
+<artifact id="Library/DispenseMedication" key="Library-DispenseMedication" name="DispenseMedication"/>
+<artifact id="Library/DoNotCollectInformation" key="Library-DoNotCollectInformation" name="DoNotCollectInformation"/>
+<artifact id="Library/DoNotSendMessage" key="Library-DoNotSendMessage" name="DoNotSendMessage"/>
+<artifact id="Library/DocumentMedication" key="Library-DocumentMedication" name="DocumentMedication"/>
+<artifact id="Library/EnrollPatient" key="Library-EnrollPatient" name="EnrollPatient"/>
+<artifact id="Library/GenerateReport" key="Library-GenerateReport" name="GenerateReport"/>
+<artifact id="Library/OrderMedication" key="Library-OrderMedication" name="OrderMedication"/>
+<artifact id="Library/OrderService" key="Library-OrderService" name="OrderService"/>
+<artifact id="Library/ProposeDiagnosis" key="Library-ProposeDiagnosis" name="ProposeDiagnosis"/>
+<artifact id="Library/RecommendImmunization" key="Library-RecommendImmunization" name="RecommendImmunization"/>
+<artifact id="Library/RecordDetectedIssue" key="Library-RecordDetectedIssue" name="RecordDetectedIssue"/>
+<artifact id="Library/RecordInference" key="Library-RecordInference" name="RecordInference"/>
+<artifact id="Library/ReportFlag" key="Library-ReportFlag" name="ReportFlag"/>
+<artifact id="Library/SendMessage" key="Library-SendMessage" name="SendMessage"/>
+<artifact id="Library/activity-example-administermedication" key="Library-activity-example-administermedication" name="activity-example-administermedication"/>
+<artifact id="ActivityDefinition/activity-example-administermedication-ad" key="ActivityDefinition-activity-example-administermedication-ad" name="activity-example-administermedication-ad"/>
+<artifact id="PlanDefinition/activity-example-administermedication-pd" key="PlanDefinition-activity-example-administermedication-pd" name="activity-example-administermedication-pd"/>
+<artifact id="ActivityDefinition/activity-example-collectinformation-ad" key="ActivityDefinition-activity-example-collectinformation-ad" name="activity-example-collectinformation-ad"/>
+<artifact id="PlanDefinition/activity-example-collectinformation-pd" key="PlanDefinition-activity-example-collectinformation-pd" name="activity-example-collectinformation-pd"/>
+<artifact id="Questionnaire/activity-example-collectinformation-questionnaire" key="Questionnaire-activity-example-collectinformation-questionnaire" name="activity-example-collectinformation-questionnaire"/>
+<artifact id="ActivityDefinition/activity-example-dispensemedication-ad" key="ActivityDefinition-activity-example-dispensemedication-ad" name="activity-example-dispensemedication-ad"/>
+<artifact id="PlanDefinition/activity-example-dispensemedication-pd" key="PlanDefinition-activity-example-dispensemedication-pd" name="activity-example-dispensemedication-pd"/>
+<artifact id="ActivityDefinition/activity-example-documentmedication-ad" key="ActivityDefinition-activity-example-documentmedication-ad" name="activity-example-documentmedication-ad"/>
+<artifact id="PlanDefinition/activity-example-documentmedication-pd" key="PlanDefinition-activity-example-documentmedication-pd" name="activity-example-documentmedication-pd"/>
+<artifact id="ActivityDefinition/activity-example-donotcollectinformation-ad" key="ActivityDefinition-activity-example-donotcollectinformation-ad" name="activity-example-donotcollectinformation-ad"/>
+<artifact id="PlanDefinition/activity-example-donotcollectinformation-pd" key="PlanDefinition-activity-example-donotcollectinformation-pd" name="activity-example-donotcollectinformation-pd"/>
+<artifact id="ActivityDefinition/activity-example-donotsendmessage-ad" key="ActivityDefinition-activity-example-donotsendmessage-ad" name="activity-example-donotsendmessage-ad"/>
+<artifact id="PlanDefinition/activity-example-donotsendmessage-pd" key="PlanDefinition-activity-example-donotsendmessage-pd" name="activity-example-donotsendmessage-pd"/>
+<artifact id="ActivityDefinition/activity-example-enrollment-ad" key="ActivityDefinition-activity-example-enrollment-ad" name="activity-example-enrollment-ad"/>
+<artifact id="PlanDefinition/activity-example-enrollment-pd" key="PlanDefinition-activity-example-enrollment-pd" name="activity-example-enrollment-pd"/>
+<artifact id="ActivityDefinition/activity-example-generatereport-ad" key="ActivityDefinition-activity-example-generatereport-ad" name="activity-example-generatereport-ad"/>
+<artifact id="Measure/activity-example-generatereport-measure" key="Measure-activity-example-generatereport-measure" name="activity-example-generatereport-measure"/>
+<artifact id="PlanDefinition/activity-example-generatereport-pd" key="PlanDefinition-activity-example-generatereport-pd" name="activity-example-generatereport-pd"/>
+<artifact id="ActivityDefinition/activity-example-ordermedication-ad" key="ActivityDefinition-activity-example-ordermedication-ad" name="activity-example-ordermedication-ad"/>
+<artifact id="PlanDefinition/activity-example-ordermedication-pd" key="PlanDefinition-activity-example-ordermedication-pd" name="activity-example-ordermedication-pd"/>
+<artifact id="ActivityDefinition/activity-example-orderservice-ad" key="ActivityDefinition-activity-example-orderservice-ad" name="activity-example-orderservice-ad"/>
+<artifact id="PlanDefinition/activity-example-orderservice-pd" key="PlanDefinition-activity-example-orderservice-pd" name="activity-example-orderservice-pd"/>
+<artifact id="PlanDefinition/activity-example-pathway-pd" key="PlanDefinition-activity-example-pathway-pd" name="activity-example-pathway-pd"/>
+<artifact id="ActivityDefinition/activity-example-proposediagnosis-ad" key="ActivityDefinition-activity-example-proposediagnosis-ad" name="activity-example-proposediagnosis-ad"/>
+<artifact id="PlanDefinition/activity-example-proposediagnosis-pd" key="PlanDefinition-activity-example-proposediagnosis-pd" name="activity-example-proposediagnosis-pd"/>
+<artifact id="ActivityDefinition/activity-example-recommendimmunization-ad" key="ActivityDefinition-activity-example-recommendimmunization-ad" name="activity-example-recommendimmunization-ad"/>
+<artifact id="PlanDefinition/activity-example-recommendimmunization-pd" key="PlanDefinition-activity-example-recommendimmunization-pd" name="activity-example-recommendimmunization-pd"/>
+<artifact id="ActivityDefinition/activity-example-recorddetectedissue-ad" key="ActivityDefinition-activity-example-recorddetectedissue-ad" name="activity-example-recorddetectedissue-ad"/>
+<artifact id="PlanDefinition/activity-example-recorddetectedissue-pd" key="PlanDefinition-activity-example-recorddetectedissue-pd" name="activity-example-recorddetectedissue-pd"/>
+<artifact id="ActivityDefinition/activity-example-recordinference-ad" key="ActivityDefinition-activity-example-recordinference-ad" name="activity-example-recordinference-ad"/>
+<artifact id="PlanDefinition/activity-example-recordinference-pd" key="PlanDefinition-activity-example-recordinference-pd" name="activity-example-recordinference-pd"/>
+<artifact id="ActivityDefinition/activity-example-reportflag-ad" key="ActivityDefinition-activity-example-reportflag-ad" name="activity-example-reportflag-ad"/>
+<artifact id="PlanDefinition/activity-example-reportflag-pd" key="PlanDefinition-activity-example-reportflag-pd" name="activity-example-reportflag-pd"/>
+<artifact id="ActivityDefinition/activity-example-sendmessage-ad" key="ActivityDefinition-activity-example-sendmessage-ad" name="activity-example-sendmessage-ad"/>
+<artifact id="PlanDefinition/activity-example-sendmessage-pd" key="PlanDefinition-activity-example-sendmessage-pd" name="activity-example-sendmessage-pd"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>
+<page key="activity-examples" name="Activity Examples"/>
 <page key="documentation-approach-05-06-agile-cpg-development-approach" name="Agile CPG Development Approach"/>
 <page key="documentation-approach-04-04-analysis-of-evidence-recommendations-reporting" name="Analysis of Evidence, Recommendations, and Reporting"/>
 <page key="approach" name="Approach"/>

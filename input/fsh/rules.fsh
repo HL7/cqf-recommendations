@@ -7,6 +7,31 @@ RuleSet: ActivityDefinitionMetadata(id)
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * status = #draft
+* intent = #proposal
+
+RuleSet: PDRecommendationMetadata(id)
+* meta.profile = $cpg-recommendationdefinition
+* extension[$cpg-enabled].valueBoolean = true
+* extension[$cpg-knowledgeCapability].valueCode = #shareable
+* extension[$cpg-knowledgeCapability].valueCode = #computable
+* extension[$cpg-knowledgeCapability].valueCode = #publishable
+* extension[$cpg-knowledgeRepresentationLevel].valueCode = #structured
+* experimental = true
+* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
+* status = #draft
+* experimental = true
+
+RuleSet: ProfileMeta(id)
+* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
+
+RuleSet: KnowledgeArtifactMetadata(id)
+* extension[$cpg-knowledgeCapability].valueCode = #shareable
+* extension[$cpg-knowledgeCapability].valueCode = #computable
+* extension[$cpg-knowledgeCapability].valueCode = #publishable
+* extension[$cpg-knowledgeRepresentationLevel].valueCode = #structured
+* experimental = true
+* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
+* status = #draft
 
 RuleSet: CodeSystemMetadata(id-prefix)
 * ^meta.profile = $cpg-publishable-codesystem

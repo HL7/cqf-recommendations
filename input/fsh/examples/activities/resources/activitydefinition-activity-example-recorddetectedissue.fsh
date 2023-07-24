@@ -1,14 +1,12 @@
-
-
-Instance: activity-example-recorddetectedissue
+Instance: activity-example-recorddetectedissue-ad
 InstanceOf: ActivityDefinition
 Usage: #example
 Description: "Example Activity Definition for a recommendation to record a detected issue"
-* insert ActivityDefinitionMetadata(activity-example-recorddetectedissue)
-* name = "ActivityExampleRecordDetectedIssue"
-* title = "Activity Example Record Detected Issue"
+* insert ActivityDefinitionMetadata(activity-example-recorddetectedissue-ad)
+* name = "ActivityExampleRecordDetectedIssueAD"
+* title = "Activity Example Record Detected Issue AD"
 * kind = #Task
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask"
+* profile = Canonical(CPGRecordDetectedIssueTask)
 * code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
 * doNotPerform = false
 * dynamicValue[+]

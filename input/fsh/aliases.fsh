@@ -98,3 +98,25 @@ Alias: $cpg-computableactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/
 Alias: $cpg-servicerequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest
 Alias: $cpg-communicationRequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
 Alias: $cpg-immunizationrecommendation = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation
+
+Alias: $cpg-enrollIn = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn
+Alias: $cpg-isUnenrollment = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment
+Alias: $cpg-reportWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith
+
+Alias: $sct = http://snomed.info/sct
+Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
+
+Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
+Alias: $measure-improvement-notation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation
+Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
+
+Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
+Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
+
+Alias: $cpg-recommendationdefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition
+
+Alias: $cpg-common-process-codesystem = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
+
+Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
+
+Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type

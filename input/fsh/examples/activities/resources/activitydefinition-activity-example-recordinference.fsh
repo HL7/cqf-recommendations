@@ -1,14 +1,12 @@
-
-
-Instance: activity-example-recordinference
+Instance: activity-example-recordinference-ad
 InstanceOf: ActivityDefinition
 Usage: #example
 Description: "Example Activity Definition for a recommendation to record an inference"
-* insert ActivityDefinitionMetadata(activity-example-recordinference)
-* name = "ActivityExampleRecordInference"
-* title = "Activity Example Record Inference"
+* insert ActivityDefinitionMetadata(activity-example-recordinference-ad)
+* name = "ActivityExampleRecordInferenceAD"
+* title = "Activity Example Record Inference AD"
 * kind = #Task
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask"
+* profile = Canonical(CPGRecordInferenceTask)
 * code = $cpg-activity-type-cs#record-inference "Record an inference"
 * doNotPerform = false
 * dynamicValue[+]

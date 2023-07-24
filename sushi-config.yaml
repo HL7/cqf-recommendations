@@ -122,6 +122,8 @@ pages:
   libraries.md:
   artifacts.md:
   examples.md:
+    activity-examples.md:
+      title: Activity Examples
   downloads.md:
   glossary.md:
   checklists.md:

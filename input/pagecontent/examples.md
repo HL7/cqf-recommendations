@@ -1,6 +1,6 @@
 This page lists examples of various clinical guidelines expressed as computable content conforming to this implementation guide:
 
-*   [Activity Examples](examples/activities/activities.html)
+*   [Activity Examples](activity-examples.html)
 *   [Antenatal Care Guidelines](examples/anc/anc-guidelines.html)
 *   [Anthrax Post-Exposure Prophylaxis](examples/anthrax/README.html)
 *   [Chronic Disease Management - Chronic Kidney Disease](examples/ckd/ckd-guideline.html)
@@ -114,67 +114,67 @@ The following sections provide listings of resources defined in these examples, 
 
     As part of the workflow for recommendation 7, it is recommended that a risk assessment be conducted if the inclusion criteria is met.
 
-*   [Activity Example Administer Medication](ActivityDefinition-activity-example-administermedication.html)
+*   [Activity Example Administer Medication](ActivityDefinition-activity-example-administermedication-ad.html)
 
     Example Activity Definition for a recommendation to administer a medication
 
-*   [Activity Example Collect Information](ActivityDefinition-activity-example-collectinformation.html)
+*   [Activity Example Collect Information](ActivityDefinition-activity-example-collectinformation-ad.html)
 
     Example Activity Definition for a recommendation to collect information
 
-*   [Activity Example Dispense Medication](ActivityDefinition-activity-example-dispensemedication.html)
+*   [Activity Example Dispense Medication](ActivityDefinition-activity-example-dispensemedication-ad.html)
 
     Example Activity Definition for a recommendation to dispense a medication
 
-*   [Activity Example Document Medication](ActivityDefinition-activity-example-documentmedication.html)
+*   [Activity Example Document Medication](ActivityDefinition-activity-example-documentmedication-ad.html)
 
     Example Activity Definition for a recommendation to document a medication
 
-*   [Activity Example Do Not Collect Information](ActivityDefinition-activity-example-donotcollectinformation.html)
+*   [Activity Example Do Not Collect Information](ActivityDefinition-activity-example-donotcollectinformation-ad.html)
 
     Example Activity Definition for a recommendation not to collect information
 
-*   [Activity Example Do Not Send Message](ActivityDefinition-activity-example-donotsendmessage.html)
+*   [Activity Example Do Not Send Message](ActivityDefinition-activity-example-donotsendmessage-ad.html)
 
     Example Activity Definition for a recommendation not to send a message
 
-*   [Activity Example Enrollment](ActivityDefinition-activity-example-enrollment.html)
+*   [Activity Example Enrollment](ActivityDefinition-activity-example-enrollment-ad.html)
 
     Example Activity Definition for a recommendation to enroll a patient in a pathway
 
-*   [Activity Example Generate Report](ActivityDefinition-activity-example-generatereport.html)
+*   [Activity Example Generate Report](ActivityDefinition-activity-example-generatereport-ad.html)
 
     Example Activity Definition for a recommendation to generate a report
 
-*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication.html)
+*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication-ad.html)
 
     Example Activity Definition for a recommendation to order a medication
 
-*   [Activity Example Order Service](ActivityDefinition-activity-example-orderservice.html)
+*   [Activity Example Order Service](ActivityDefinition-activity-example-orderservice-ad.html)
 
     Example Activity Definition for a recommendation to order a service
 
-*   [Activity Example Propose Diagnosis](ActivityDefinition-activity-example-proposediagnosis.html)
+*   [Activity Example Propose Diagnosis](ActivityDefinition-activity-example-proposediagnosis-ad.html)
 
     Example Activity Definition for a recommendation to propose a diagnosis
 
-*   [Activity Example Recommend Immunization](ActivityDefinition-activity-example-recommendimmunization.html)
+*   [Activity Example Recommend Immunization](ActivityDefinition-activity-example-recommendimmunization-ad.html)
 
     Example Activity Definition for a recommendation to provide an immunization
 
-*   [Activity Example Record Detected Issue](ActivityDefinition-activity-example-recorddetectedissue.html)
+*   [Activity Example Record Detected Issue](ActivityDefinition-activity-example-recorddetectedissue-ad.html)
 
     Example Activity Definition for a recommendation to record a detected issue
 
-*   [Activity Example Record Inference](ActivityDefinition-activity-example-recordinference.html)
+*   [Activity Example Record Inference](ActivityDefinition-activity-example-recordinference-ad.html)
 
     Example Activity Definition for a recommendation to record an inference
 
-*   [Activity Example Report Flag](ActivityDefinition-activity-example-reportflag.html)
+*   [Activity Example Report Flag](ActivityDefinition-activity-example-reportflag-ad.html)
 
     Example Activity Definition for a recommendation to report a flag
 
-*   [Activity Example Send Message](ActivityDefinition-activity-example-sendmessage.html)
+*   [Activity Example Send Message](ActivityDefinition-activity-example-sendmessage-ad.html)
 
     Example Activity Definition for a recommendation to send a message
 
@@ -394,71 +394,71 @@ The following sections provide listings of resources defined in these examples, 
 
     When opioids are started, providers should prescribe the lowest effective dosage.
 
-*   [Activity Example Administer Medication](PlanDefinition-activity-example-administermedication.html)
+*   [Activity Example Administer Medication](PlanDefinition-activity-example-administermedication-pd.html)
 
     Example Plan Definition for a recommendation to administer a medication
 
-*   [Activity Example Collect Information](PlanDefinition-activity-example-collectinformation.html)
+*   [Activity Example Collect Information](PlanDefinition-activity-example-collectinformation-pd.html)
 
     Example Plan Definition for a recommendation to collect information
 
-*   [Activity Example Dispense Medication](PlanDefinition-activity-example-dispensemedication.html)
+*   [Activity Example Dispense Medication](PlanDefinition-activity-example-dispensemedication-pd.html)
 
     Example Plan Definition for a recommendation to dispense a medication
 
-*   [Activity Example Document Medication](PlanDefinition-activity-example-documentmedication.html)
+*   [Activity Example Document Medication](PlanDefinition-activity-example-documentmedication-pd.html)
 
     Example Plan Definition for a recommendation to document a medication
 
-*   [Activity Example Do Not Collect Information](PlanDefinition-activity-example-donotcollectinformation.html)
+*   [Activity Example Do Not Collect Information](PlanDefinition-activity-example-donotcollectinformation-pd.html)
 
     Example Plan Definition for a recommendation not to collect information
 
-*   [Activity Example Do Not Send Message](PlanDefinition-activity-example-donotsendmessage.html)
+*   [Activity Example Do Not Send Message](PlanDefinition-activity-example-donotsendmessage-pd.html)
 
     Example Plan Definition for a recommendation not to send a message
 
-*   [Activity Example Enrollment](PlanDefinition-activity-example-enrollment.html)
+*   [Activity Example Enrollment](PlanDefinition-activity-example-enrollment-pd.html)
 
     Example Plan Definition for a recommendation to enroll a patient
 
-*   [Activity Example Generate Report](PlanDefinition-activity-example-generatereport.html)
+*   [Activity Example Generate Report](PlanDefinition-activity-example-generatereport-pd.html)
 
     Example Plan Definition for a recommendation to generate a report
 
-*   [Activity Example Order Medication](PlanDefinition-activity-example-ordermedication.html)
+*   [Activity Example Order Medication](PlanDefinition-activity-example-ordermedication-pd.html)
 
     Example Plan Definition for a recommendation to order a medication
 
-*   [Activity Example Order Service](PlanDefinition-activity-example-orderservice.html)
+*   [Activity Example Order Service](PlanDefinition-activity-example-orderservice-pd.html)
 
     Example Plan Definition for a recommendation to order a service
 
-*   [Activity Example Pathway](PlanDefinition-activity-example-pathway.html)
+*   [Activity Example Pathway](PlanDefinition-activity-example-pathway-pd.html)
 
     Example Pathway for activity examples
 
-*   [Activity Example Propose Diagnosis](PlanDefinition-activity-example-proposediagnosis.html)
+*   [Activity Example Propose Diagnosis](PlanDefinition-activity-example-proposediagnosis-pd.html)
 
     Example Plan Definition for a recommendation to propose a diagnosis
 
-*   [Activity Example Recommend Immunization](PlanDefinition-activity-example-recommendimmunization.html)
+*   [Activity Example Recommend Immunization](PlanDefinition-activity-example-recommendimmunization-pd.html)
 
     Example Plan Definition for a recommendation to provide an immunization
 
-*   [Activity Example Record Detected Issue](PlanDefinition-activity-example-recorddetectedissue.html)
+*   [Activity Example Record Detected Issue](PlanDefinition-activity-example-recorddetectedissue-pd.html)
 
     Example Plan Definition for a recommendation to record a detected issue
 
-*   [Activity Example Record Inference](PlanDefinition-activity-example-recordinference.html)
+*   [Activity Example Record Inference](PlanDefinition-activity-example-recordinference-pd.html)
 
     Example Plan Definition for a recommendation to record an inference
 
-*   [Activity Example Report Flag](PlanDefinition-activity-example-reportflag.html)
+*   [Activity Example Report Flag](PlanDefinition-activity-example-reportflag-pd.html)
 
     Example Plan Definition for a recommendation to report a flat
 
-*   [Activity Example Send Message](PlanDefinition-activity-example-sendmessage.html)
+*   [Activity Example Send Message](PlanDefinition-activity-example-sendmessage-pd.html)
 
     Example Plan Definition for a recommendation to send a message
 
@@ -551,7 +551,7 @@ The following sections provide listings of resources defined in these examples, 
 *   [Questionnaire - ANC Every Contact](Questionnaire-anc-every-contact.html) ANC\_Every\_Contact
 *   [Questionnaire - ANC First Contact](Questionnaire-anc-first-contact.html) ANC\_First\_Contact
 *   [Questionnaire - ANC Quick Check](Questionnaire-anc-quick-check.html) ANC\_Quick\_Check
-*   [Activity Example Collect Information Questionnaire](Questionnaire-activity-example-collectinformation.html)
+*   [Activity Example Collect Information Questionnaire](Questionnaire-activity-example-collectinformation-questionnaire.html)
 
     Example Questionnaire for use in collect information activity examples
 

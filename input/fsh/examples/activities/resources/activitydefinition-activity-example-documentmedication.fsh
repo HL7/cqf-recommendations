@@ -1,21 +1,23 @@
-
-
-Instance: activity-example-documentmedication
+Instance: activity-example-documentmedication-ad
 InstanceOf: ActivityDefinition
 Usage: #example
 Description: "Example Activity Definition for a recommendation to document a medication"
-* insert ActivityDefinitionMetadata(activity-example-documentmedication)
-* name = "ActivityExampleDocumentMedication"
-* title = "Activity Example Document Medication"
+* insert ActivityDefinitionMetadata(activity-example-documentmedication-ad)
+* name = "ActivityExampleDocumentMedicationAD"
+* title = "Activity Example Document Medication AD"
 * kind = #Task
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask"
+* profile = Canonical(CPGDocumentMedicationTask)
 * code = $cpg-activity-type-cs#document-medication "Document a medication"
 * intent = #proposal
 * doNotPerform = false
-* dynamicValue[+].path = "input.type"
-* dynamicValue[=].expression.language = #text/cql
-* dynamicValue[=].expression.expression = "code"
-* dynamicValue[+].path = "input.value"
-* dynamicValue[=].expression.language = #text/cql
-* dynamicValue[=].expression.expression = "Medication Proposal"
-* dynamicValue[=].expression.reference = "http://hl7.org/fhir/uv/cpg/Library/DocumentMedication"
+* dynamicValue[+]
+  * path = "input.type"
+  * expression
+    * language = #text/cql
+    * expression = "code"
+* dynamicValue[+]
+  * path = "input.value"
+  * expression
+    * language = #text/cql
+    * expression = "Medication Proposal"
+    * reference = "http://hl7.org/fhir/uv/cpg/Library/DocumentMedication"

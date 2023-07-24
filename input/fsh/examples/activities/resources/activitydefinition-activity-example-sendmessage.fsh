@@ -1,14 +1,12 @@
-
-
-Instance: activity-example-sendmessage
+Instance: activity-example-sendmessage-ad
 InstanceOf: ActivityDefinition
 Usage: #example
 Description: "Example Activity Definition for a recommendation to send a message"
-* insert ActivityDefinitionMetadata(activity-example-sendmessage)
-* name = "ActivityExampleSendMessage"
-* title = "Activity Example Send Message"
+* insert ActivityDefinitionMetadata(activity-example-sendmessage-ad)
+* name = "ActivityExampleSendMessageAD"
+* title = "Activity Example Send Message AD"
 * kind = #CommunicationRequest
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
+* profile = Canonical(CPGCommunicationRequest)
 * code = $cpg-activity-type-cs#send-message "Send a message"
 * doNotPerform = false
 * dynamicValue[+]

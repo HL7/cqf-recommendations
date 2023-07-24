@@ -1,23 +1,23 @@
-
-
-Instance: activity-example-enrollment
+Instance: activity-example-enrollment-ad
 InstanceOf: ActivityDefinition
 Usage: #example
 Description: "Example Activity Definition for a recommendation to enroll a patient in a pathway"
-* insert ActivityDefinitionMetadata(activity-example-enrollment)
-* extension[+].url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn"
-* extension[=].valueCanonical = "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway"
-* modifierExtension.url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment"
-* modifierExtension.valueBoolean = false
-* name = "ActivityExampleEnrollment"
-* title = "Activity Example Enrollment"
+* insert ActivityDefinitionMetadata(activity-example-enrollment-ad)
+* extension[$cpg-enrollIn].valueCanonical = "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway"
+* modifierExtension[$cpg-isUnenrollment].valueBoolean = false
+* name = "ActivityExampleEnrollmentAD"
+* title = "Activity Example Enrollment AD"
 * kind = #Task
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask"
+* profile = Canonical(CPGEnrollmentTask)
 * code = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
 * doNotPerform = false
-* dynamicValue[+].path = "input.type"
-* dynamicValue[=].expression.language = #text/cql
-* dynamicValue[=].expression.expression = "code"
-* dynamicValue[+].path = "input.value"
-* dynamicValue[=].expression.language = #text/cql
-* dynamicValue[=].expression.expression = "extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn').value"
+* dynamicValue[+]
+  * path = "input.type"
+  * expression
+    * language = #text/cql
+    * expression = "code"
+* dynamicValue[+]
+  * path = "input.value"
+  * expression
+    * language = #text/cql
+    * expression = "extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn').value"

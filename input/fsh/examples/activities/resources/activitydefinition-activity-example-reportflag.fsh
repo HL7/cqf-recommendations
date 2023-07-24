@@ -1,14 +1,12 @@
-
-
-Instance: activity-example-reportflag
+Instance: activity-example-reportflag-ad
 InstanceOf: ActivityDefinition
 Usage: #example
 Description: "Example Activity Definition for a recommendation to report a flag"
-* insert ActivityDefinitionMetadata(activity-example-reportflag)
-* name = "ActivityExampleReportFlag"
-* title = "Activity Example Report Flag"
+* insert ActivityDefinitionMetadata(activity-example-reportflag-ad)
+* name = "ActivityExampleReportFlagAD"
+* title = "Activity Example Report Flag AD"
 * kind = #Task
-* profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask"
+* profile = Canonical(CPGReportFlagTask)
 * code = $cpg-activity-type-cs#report-flag "Report a flag"
 * doNotPerform = false
 * dynamicValue[+]
