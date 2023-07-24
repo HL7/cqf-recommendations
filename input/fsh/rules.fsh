@@ -1,3 +1,13 @@
+RuleSet: ActivityDefinitionMetadata(id)
+* meta.profile = $cpg-computableactivity
+* extension[$cpg-knowledgeCapability].valueCode = #shareable
+* extension[$cpg-knowledgeCapability].valueCode = #computable
+* extension[$cpg-knowledgeCapability].valueCode = #publishable
+* extension[$cpg-knowledgeRepresentationLevel].valueCode = #structured
+* experimental = true
+* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
+* status = #draft
+
 RuleSet: CodeSystemMetadata(id-prefix)
 * ^meta.profile = $cpg-publishable-codesystem
 * ^extension[+].url = $cpg-knowledgeCapability //causing errors when refering to by slice url

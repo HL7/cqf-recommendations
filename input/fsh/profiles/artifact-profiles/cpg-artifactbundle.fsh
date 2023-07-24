@@ -50,7 +50,7 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[implementationGuide]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableIG
+  * resource only CPGShareableImplementationGuide
 * entry[library]
   * ^short = "The packaged artifact"
   * resource 1..1 MS

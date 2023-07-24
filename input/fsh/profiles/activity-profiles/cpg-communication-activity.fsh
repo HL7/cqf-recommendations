@@ -9,7 +9,7 @@ Description: "Definition of a recommendation for a specific communication with t
 * kind = #CommunicationRequest (exactly)
 * profile 1..1 MS
 * profile only canonical
-* profile = CPGCommunicationRequest (exactly)
+* profile = $cpg-communicationRequest (exactly)
   * ^short = "At least a CPG CommunicationRequest"
   * ^definition = "The profile that the resulting communication request must conform to; at least a CPGCommunicationRequest, though the activity definition may introduce further constraints."
 * intent 1..1 MS
