@@ -1,22 +1,17 @@
-Instance: DoNotCollectInformation
+Instance: donotcollectinformation-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation not to collect information"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
-* name = "DoNotCollectInformation"
-* title = "Do Not Collect Information"
+Title: "Do Not Collect Information Library"
+* description = "Logic for an example recommendation not to collect information"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(donotcollectinformation-library, Library)
+* insert RelatedFHIRLibraries
+* name = "DoNotCollectInformationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(CPGActivityTypeCS)
 * parameter[+]
   * name = #collectWithQuestionnaire
   * use = #in
@@ -85,9 +80,9 @@ Description: "Logic for an example recommendation not to collect information"
   * type = #boolean
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * content
-  * id = "ig-loader-CollectInformation.cql"
+  * id = "ig-loader-DoNotCollectInformation.cql"

@@ -1,12 +1,12 @@
 Instance: activity-example-donotsendmessage-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation not to send a message"
+Title: "Activity Example Do Not Send Message PD"
+* description = "Example Plan Definition for a recommendation not to send a message"
 * insert PDRecommendationMetadata(activity-example-donotsendmessage-pd)
 * name = "ActivityExampleDoNotSendMessagePD"
-* title = "Activity Example Do Not Send Message PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/DoNotSendMessage"
+* library = Canonical(donotsendmessage-library)
 * action
   * title = "Do not greet the patient"
   * condition

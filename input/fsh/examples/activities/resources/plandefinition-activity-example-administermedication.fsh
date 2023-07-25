@@ -1,12 +1,12 @@
 Instance: activity-example-administermedication-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation to administer a medication"
+Title: "Activity Example Administer Medication PD"
+* description = "Example Plan Definition for a recommendation to administer a medication"
 * insert PDRecommendationMetadata(activity-example-administermedication-pd)
 * name = "ActivityExampleAdministerMedicationPD"
-* title = "Activity Example Administer Medication PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/administer-medication-library"
+* library = Canonical(administermedication-library)
 * action
   * title = "Collect date of patient last visit"
   * condition
@@ -16,3 +16,4 @@ Description: "Example Plan Definition for a recommendation to administer a medic
       * expression = "Is Recommendation Applicable"
   * type = $action-type#create
   * definitionCanonical = Canonical(activity-example-administermedication-ad)
+

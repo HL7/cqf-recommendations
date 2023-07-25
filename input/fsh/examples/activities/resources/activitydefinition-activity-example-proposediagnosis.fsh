@@ -1,10 +1,10 @@
 Instance: activity-example-proposediagnosis-ad
 InstanceOf: ActivityDefinition
 Usage: #example
-Description: "Example Activity Definition for a recommendation to propose a diagnosis"
+Title: "Activity Example Propose Diagnosis AD"
+* description = "Example Activity Definition for a recommendation to propose a diagnosis"
 * insert ActivityDefinitionMetadata(activity-example-proposediagnosis-ad)
 * name = "ActivityExampleProposeDiagnosisAD"
-* title = "Activity Example Propose Diagnosis AD"
 * kind = #Task
 * profile = Canonical(CPGProposeDiagnosisTask)
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"

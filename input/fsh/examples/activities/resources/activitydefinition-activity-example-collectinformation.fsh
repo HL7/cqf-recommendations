@@ -1,11 +1,13 @@
 Instance: activity-example-collectinformation-ad
 InstanceOf: ActivityDefinition
 Usage: #example
-Description: "Example Activity Definition for a recommendation to collect information"
+Title: "Activity Example Collect Information AD"
+* description = "Example Activity Definition for a recommendation to collect information"
 * insert ActivityDefinitionMetadata(activity-example-collectinformation-ad)
-* extension[$cpg-collectWith].valueCanonical = "http://hl7.org/fhir/uv/cpg/Questionnaire/activity-example-collectinformation"
+* extension[+]
+  * url = $cpg-collectWith
+  * valueCanonical = Canonical(activity-example-collectinformation-questionnaire)
 * name = "ActivityExampleCollectInformationAD"
-* title = "Activity Example Collect Information AD"
 * kind = #Task
 * profile = Canonical(CPGQuestionnaireTask)
 * code = $cpg-activity-type-cs#collect-information "Collect information"

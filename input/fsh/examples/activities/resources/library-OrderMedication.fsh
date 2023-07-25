@@ -1,19 +1,14 @@
-Instance: OrderMedication
+Instance: ordermedication-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to order a medication"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
+Title: "Order Medication"
+* description = "Logic for an example recommendation to order a medication"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(ordermedication-library, Library)
+* insert RelatedFHIRLibraries
 * name = "OrderMedication"
-* title = "Order Medication"
 * type = $library-type#logic-library
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -70,21 +65,21 @@ Description: "Logic for an example recommendation to order a medication"
   * type = #boolean
 * dataRequirement[+]
   * type = #MedicationAdministration
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+  * profile = Canonical(MedicationAdministration)
 * dataRequirement[+]
   * type = #MedicationAdministration
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+  * profile = Canonical(MedicationAdministration)
 * dataRequirement[+]
   * type = #MedicationDispense
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationDispense"
+  * profile = Canonical(MedicationDispense)
 * dataRequirement[+]
   * type = #MedicationDispense
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationDispense"
+  * profile = Canonical(MedicationDispense)
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * content
   * id = "ig-loader-OrderMedication.cql"

@@ -1,10 +1,10 @@
 Instance: activity-example-ordermedication-ad
 InstanceOf: ActivityDefinition
 Usage: #example
-Description: "Example Activity Definition for a recommendation to order a medication"
+Title: "Activity Example Generate Report AD"
+* description = "Example Activity Definition for a recommendation to order a medication"
 * insert ActivityDefinitionMetadata(activity-example-ordermedication-ad)
 * name = "ActivityExampleOrderMedicationAD"
-* title = "Activity Example Order Medication AD"
 * kind = #MedicationRequest
 * profile = Canonical(CPGMedicationRequest)
 * code = $cpg-activity-type-cs#order-medication "Order a medication"

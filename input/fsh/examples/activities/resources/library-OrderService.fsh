@@ -1,19 +1,14 @@
-Instance: OrderService
+Instance: orderservice-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to order a service"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
-* name = "OrderService"
-* title = "Order Service"
+Title: "Order Service Library"
+* description = "Logic for an example recommendation to order a service"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(orderservice-library, Library)
+* name = "OrderServiceLibrary"
 * type = $library-type#logic-library
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+* insert RelatedFHIRLibraries
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -58,15 +53,15 @@ Description: "Logic for an example recommendation to order a service"
   * type = #boolean
 * dataRequirement[+]
   * type = #Procedure
-  * profile = "http://hl7.org/fhir/StructureDefinition/Procedure"
+  * profile = Canonical(Procedure)
 * dataRequirement[+]
   * type = #Procedure
-  * profile = "http://hl7.org/fhir/StructureDefinition/Procedure"
+  * profile = Canonical(Procedure)
 * dataRequirement[+]
   * type = #ServiceRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+  * profile = Canonical(ServiceRequest)
 * dataRequirement[+]
   * type = #ServiceRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
+  * profile = Canonical(ServiceRequest)
 * content
   * id = "ig-loader-OrderService.cql"

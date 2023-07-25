@@ -1,11 +1,11 @@
 Instance: activity-example-pathway-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Pathway for activity examples"
-* insert ProfileMeta(cpg-pathwaydefinition)
-* insert KnowledgeArtifactMetadata(activity-example-pathway-pd)
+Title: "Activity Example Pathway PD"
+* description = "Example Pathway for activity examples"
+* insert Profile(cpg-pathwaydefinition)
+* insert KnowledgeArtifactMetadata(activity-example-pathway-pd, PlanDefinition)
 * name = "ActivityExamplePathwayPD"
-* title = "Activity Example Pathway PD"
 * type = $plan-definition-type#clinical-protocol
 * action[+]
   * title = "Administer medication"

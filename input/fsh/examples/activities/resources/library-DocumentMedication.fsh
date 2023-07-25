@@ -1,26 +1,17 @@
-Instance: DocumentMedication
+Instance: documentmedication-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to document a medication"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
-* name = "DocumentMedication"
-* title = "Document Medication"
+Title: "Document Medication Library"
+* description = "Logic for an example recommendation to document a medication"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(documentmedication-library, Library)
+* insert RelatedFHIRLibraries
+* name = "DocumentMedicationLibrary"
 * type = $library-type#logic-library
-* publisher = "HL7 International - Clinical Decision Support WG"
-* contact.telecom
-  * system = #url
-  * value = "http://hl7.org/Special/committees/dss"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(CPGActivityTypeCS)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -65,15 +56,15 @@ Description: "Logic for an example recommendation to document a medication"
   * type = #boolean
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * content
   * id = "ig-loader-DocumentMedication.cql"

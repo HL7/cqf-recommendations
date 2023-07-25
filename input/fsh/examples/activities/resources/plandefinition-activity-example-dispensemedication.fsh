@@ -1,12 +1,12 @@
 Instance: activity-example-dispensemedication-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation to dispense a medication"
+Title: "Activity Example Dispense Medication PD"
+* description = "Example Plan Definition for a recommendation to dispense a medication"
 * insert PDRecommendationMetadata(activity-example-dispensemedication-pd)
 * name = "ActivityExampleDispenseMedicationPD"
-* title = "Activity Example Dispense Medication PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/DispenseMedication"
+* library = Canonical(dispensemedication-library)
 * action
   * title = "Collect date of patient last visit"
   * condition

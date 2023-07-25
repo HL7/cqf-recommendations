@@ -1,28 +1,23 @@
-Instance: ProposeDiagnosis
+Instance: proposediagnosis-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to propose a diagnosis"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
-* name = "ProposeDiagnosis"
-* title = "Propose Diagnosis"
+Title: "Propose Diagnosis Library"
+* description = "Logic for an example recommendation to propose a diagnosis"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(proposediagnosis-library, Library)
+* insert RelatedFHIRLibraries
+* name = "ProposeDiagnosisLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+  * resource = Canonical(CPGActivityTypeCS)
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+  * resource = Canonical(ConditionClinicalStatusCodes)
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://terminology.hl7.org/CodeSystem/condition-clinical"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+  * resource = Canonical(ConditionVerificationStatus)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -79,9 +74,9 @@ Description: "Logic for an example recommendation to propose a diagnosis"
   * type = #boolean
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #Condition
-  * profile = "http://hl7.org/fhir/StructureDefinition/Condition"
+  * profile = Canonical(Condition)
 * content
   * id = "ig-loader-ProposeDiagnosis.cql"

@@ -1,12 +1,12 @@
 Instance: activity-example-sendmessage-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation to send a message"
+Title: "Activity Example Send Message PD"
+* description = "Example Plan Definition for a recommendation to send a message"
 * insert PDRecommendationMetadata(activity-example-sendmessage-pd)
 * name = "ActivityExampleSendMessagePD"
-* title = "Activity Example Send Message PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/SendMessage"
+* library = Canonical(sendmessage-library)
 * action
   * title = "Greet the patient"
   * condition

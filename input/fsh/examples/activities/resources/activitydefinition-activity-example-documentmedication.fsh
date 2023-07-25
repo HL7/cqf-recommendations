@@ -1,10 +1,10 @@
 Instance: activity-example-documentmedication-ad
 InstanceOf: ActivityDefinition
 Usage: #example
-Description: "Example Activity Definition for a recommendation to document a medication"
+Title: "Activity Example Document Medication AD"
+* description = "Example Activity Definition for a recommendation to document a medication"
 * insert ActivityDefinitionMetadata(activity-example-documentmedication-ad)
 * name = "ActivityExampleDocumentMedicationAD"
-* title = "Activity Example Document Medication AD"
 * kind = #Task
 * profile = Canonical(CPGDocumentMedicationTask)
 * code = $cpg-activity-type-cs#document-medication "Document a medication"
@@ -20,4 +20,4 @@ Description: "Example Activity Definition for a recommendation to document a med
   * expression
     * language = #text/cql
     * expression = "Medication Proposal"
-    * reference = "http://hl7.org/fhir/uv/cpg/Library/DocumentMedication"
+    * reference = Canonical(documentmedication-library)

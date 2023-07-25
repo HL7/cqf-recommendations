@@ -1,12 +1,14 @@
 Instance: activity-example-enrollment-ad
 InstanceOf: ActivityDefinition
 Usage: #example
-Description: "Example Activity Definition for a recommendation to enroll a patient in a pathway"
+Title: "Activity Example Enrollment AD"
+* description = "Example Activity Definition for a recommendation to enroll a patient in a pathway"
 * insert ActivityDefinitionMetadata(activity-example-enrollment-ad)
-* extension[$cpg-enrollIn].valueCanonical = "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway"
+* extension[+]
+  * url = $cpg-enrollIn
+  * valueCanonical = Canonical(activity-example-pathway-pd)
 * modifierExtension[$cpg-isUnenrollment].valueBoolean = false
 * name = "ActivityExampleEnrollmentAD"
-* title = "Activity Example Enrollment AD"
 * kind = #Task
 * profile = Canonical(CPGEnrollmentTask)
 * code = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"

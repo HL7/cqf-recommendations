@@ -1,22 +1,17 @@
-Instance: RecommendImmunization
+Instance: recommendimmunization-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to recommend an immunization"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
+Title: "Recommend Immunization"
+* description = "Logic for an example recommendation to recommend an immunization"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(recommendimmunization-library, Library)
+* insert RelatedFHIRLibraries
 * name = "RecommendImmunization"
-* title = "Recommend Immunization"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"
+  * resource = Canonical(ImmunizationRecommendationStatusCodes)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -61,15 +56,15 @@ Description: "Logic for an example recommendation to recommend an immunization"
   * type = #boolean
 * dataRequirement[+]
   * type = #Immunization
-  * profile = "http://hl7.org/fhir/StructureDefinition/Immunization"
+  * profile = Canonical(Immunization)
 * dataRequirement[+]
   * type = #Immunization
-  * profile = "http://hl7.org/fhir/StructureDefinition/Immunization"
+  * profile = Canonical(Immunization)
 * dataRequirement[+]
   * type = #ImmunizationRecommendation
-  * profile = "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"
+  * profile = Canonical(ImmunizationRecommendation)
 * dataRequirement[+]
   * type = #ImmunizationRecommendation
-  * profile = "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"
+  * profile = Canonical(ImmunizationRecommendation)
 * content
   * id = "ig-loader-RecommendImmunization.cql"

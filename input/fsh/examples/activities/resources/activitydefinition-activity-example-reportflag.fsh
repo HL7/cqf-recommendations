@@ -1,10 +1,10 @@
 Instance: activity-example-reportflag-ad
 InstanceOf: ActivityDefinition
 Usage: #example
-Description: "Example Activity Definition for a recommendation to report a flag"
+Title: "Activity Example Report Flag AD"
+* description = "Example Activity Definition for a recommendation to report a flag"
 * insert ActivityDefinitionMetadata(activity-example-reportflag-ad)
 * name = "ActivityExampleReportFlagAD"
-* title = "Activity Example Report Flag AD"
 * kind = #Task
 * profile = Canonical(CPGReportFlagTask)
 * code = $cpg-activity-type-cs#report-flag "Report a flag"

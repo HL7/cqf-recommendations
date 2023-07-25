@@ -1,12 +1,12 @@
 Instance: activity-example-orderservice-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation to order a service"
+Title: "Activity Example Order Service PD"
+* description = "Example Plan Definition for a recommendation to order a service"
 * insert PDRecommendationMetadata(activity-example-orderservice-pd)
 * name = "ActivityExampleOrderServicePD"
-* title = "Activity Example Order Service PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/SendMessage"
+* library = Canonical(orderservice-library)
 * action
   * title = "Greet the patient"
   * condition

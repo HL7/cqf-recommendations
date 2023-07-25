@@ -1,12 +1,12 @@
 Instance: activity-example-reportflag-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation to report a flat"
+Title: "Activity Example Report Flag PD"
+* description = "Example Plan Definition for a recommendation to report a flat"
 * insert PDRecommendationMetadata(activity-example-reportflag-pd)
 * name = "ActivityExampleReportFlagPD"
-* title = "Activity Example Report Flag PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/ReportFlag"
+* library = Canonical(reportflag-library)
 * action
   * title = "Report a flag"
   * condition

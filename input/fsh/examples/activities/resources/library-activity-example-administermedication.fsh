@@ -1,31 +1,23 @@
-
-
-
 Instance: activity-example-administermedication-library
 InstanceOf: Library
 Usage: #example
-Description: "Asset collection of artifacts in the Administer Medication activity example"
-* insert ProfileMeta(cpg-assetcollection)
-* insert KnowledgeArtifactMetadata(activity-example-administermedication-library)
+Title: "Activity Example - Administer Medication Library Collection"
+* description = "Asset collection of artifacts in the Administer Medication activity example"
+* insert Profile(cpg-assetcollection)
+* insert KnowledgeArtifactMetadata(activity-example-administermedication-library, Library)
+* insert RelatedFHIRLibraries
 * name = "ActivityExampleAdministerMedicationLibrary"
-* title = "Activity Example - Administer Medication Library Collection"
 * type = $library-type#asset-collection
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(CPGActivityTypeCS)
 * relatedArtifact[+]
   * type = #composed-of
-  * resource = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication"
+  * resource = Canonical(activity-example-administermedication-ad)
 * relatedArtifact[+]
   * type = #composed-of
-  * resource = "http://hl7.org/fhir/uv/cpg/Library/administer-medication-library"
+  * resource = Canonical(administermedication-library)
 * relatedArtifact[+]
   * type = #composed-of
-  * resource = "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication"
+  * resource = Canonical(activity-example-administermedication-pd)
 

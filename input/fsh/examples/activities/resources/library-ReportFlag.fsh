@@ -1,22 +1,17 @@
-Instance: ReportFlag
+Instance: reportflag-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to record an inference"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
+Title: "Report Flag"
+* description = "Logic for an example recommendation to record an inference"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(reportflag-library, Library)
+* insert RelatedFHIRLibraries
 * name = "ReportFlag"
-* title = "Report Flag"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(CPGActivityTypeCS)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -73,9 +68,9 @@ Description: "Logic for an example recommendation to record an inference"
   * type = #boolean
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #Flag
-  * profile = "http://hl7.org/fhir/StructureDefinition/Flag"
+  * profile = Canonical(Flag)
 * content
   * id = "ig-loader-ReportFlag.cql"

@@ -1,12 +1,12 @@
 Instance: activity-example-proposediagnosis-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation to propose a diagnosis"
+Title: "Activity Example Propose Diagnosis PD"
+* description = "Example Plan Definition for a recommendation to propose a diagnosis"
 * insert PDRecommendationMetadata(activity-example-proposediagnosis-pd)
 * name = "ActivityExampleProposeDiagnosisPD"
-* title = "Activity Example Propose Diagnosis PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/ProposeDiagnosis"
+* library = Canonical(proposediagnosis-library)
 * action
   * title = "Propose a diagnosis"
   * condition

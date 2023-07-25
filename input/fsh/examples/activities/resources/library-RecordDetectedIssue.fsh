@@ -1,22 +1,17 @@
-Instance: RecordDetectedIssue
+Instance: recorddetectedissue-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to record a detected issue"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
-* name = "RecordDetectedIssue"
-* title = "Record Detected Issue"
+Title: "Record Detected Issue Library"
+* description = "Logic for an example recommendation to record a detected issue"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(recorddetectedissue-library, Library)
+* insert RelatedFHIRLibraries
+* name = "RecordDetectedIssueLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(CPGActivityTypeCS)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -73,9 +68,9 @@ Description: "Logic for an example recommendation to record a detected issue"
   * type = #boolean
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #DetectedIssue
-  * profile = "http://hl7.org/fhir/StructureDefinition/DetectedIssue"
+  * profile = Canonical(DetectedIssue)
 * content
   * id = "ig-loader-RecordDetectedIssue.cql"

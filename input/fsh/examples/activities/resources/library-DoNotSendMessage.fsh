@@ -1,23 +1,18 @@
-Instance: DoNotSendMessage
+Instance: donotsendmessage-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation not to send a message"
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata()
+Title: "Do Not Send Message"
+* description = "Logic for an example recommendation not to send a message"
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(donotsendmessage-library, Library)
 * name = "DoNotSendMessage"
-* title = "Do Not Send Message"
 * type = $library-type#logic-library
 * publisher = "HL7 International - Clinical Decision Support WG"
 * contact.telecom
   * system = #url
   * value = "http://hl7.org/Special/committees/[something]"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+* insert RelatedFHIRLibraries
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -68,18 +63,18 @@ Description: "Logic for an example recommendation not to send a message"
   * type = #boolean
 * dataRequirement[+]
   * type = #Communication
-  * profile = "http://hl7.org/fhir/StructureDefinition/Communication"
+  * profile = Canonical(Communication)
 * dataRequirement[+]
   * type = #Communication
-  * profile = "http://hl7.org/fhir/StructureDefinition/Communication"
+  * profile = Canonical(Communication)
 * dataRequirement[+]
   * type = #CommunicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/CommunicationRequest"
+  * profile = Canonical(CommunicationRequest)
 * dataRequirement[+]
   * type = #CommunicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/CommunicationRequest"
+  * profile = Canonical(CommunicationRequest)
 * dataRequirement[+]
   * type = #CommunicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/CommunicationRequest"
+  * profile = Canonical(CommunicationRequest)
 * content
   * id = "ig-loader-DoNotSendMessage.cql"

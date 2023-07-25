@@ -1,4 +1,6 @@
-Alias: $capabilityStatement = http://hl7.org/fhir/StructureDefinition/CapabilityStatement
+Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
+Alias: $administermedication-library = http://example.org/Library/administermedication-library
+Alias: $am-scenario7-bundle = http://example.org/Bundle/am-scenario7
 Alias: $codesystem-author = http://hl7.org/fhir/StructureDefinition/codesystem-author
 Alias: $codesystem-concept-comments = http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments
 Alias: $codesystem-effectiveDate = http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate
@@ -16,9 +18,13 @@ Alias: $cpg-casefeature-pertinence-valueset = http://hl7.org/fhir/uv/cpg/ValueSe
 Alias: $cpg-casefeature-type = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-casefeature-type-cs
 Alias: $cpg-casefeature-type-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-type-vs
 Alias: $cpg-caseFeatureOf = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf
+Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
 Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs
 Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-vs
+Alias: $cpg-common-process-codesystem = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
 Alias: $cpg-common-process-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process-vs
+Alias: $cpg-communicationRequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
+Alias: $cpg-computableactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity
 Alias: $cpg-copyright = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-copyright
 Alias: $cpg-cpg-shareablestructuredef = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef
 Alias: $cpg-detectedissue = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-detectedissue
@@ -28,13 +34,18 @@ Alias: $cpg-editor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-editor
 Alias: $cpg-enabled = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled
 Alias: $cpg-endorser = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-endorser
 Alias: $cpg-enrolledIn = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn
+Alias: $cpg-enrollIn = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn
+Alias: $cpg-enrollmenttask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask
 Alias: $cpg-featureExpression = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-featureExpression
 Alias: $cpg-flag = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-flag
+Alias: $cpg-generatereporttask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask
 Alias: $cpg-goalFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor
 Alias: $cpg-identifier = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-identifier
+Alias: $cpg-immunizationrecommendation = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation
 Alias: $cpg-impressionFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-impressionFor
 Alias: $cpg-indicator = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-indicator-cs
 Alias: $cpg-inferenceExpression = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-inferenceExpression
+Alias: $cpg-isUnenrollment = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment
 Alias: $cpg-itemImage = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-itemImage
 Alias: $cpg-knowledge-capability-codes = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability-cs
 Alias: $cpg-knowledge-capability-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-knowledge-capability-vs
@@ -43,6 +54,7 @@ Alias: $cpg-knowledge-representation-level-valueset = http://hl7.org/fhir/uv/cpg
 Alias: $cpg-knowledgeCapability = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability
 Alias: $cpg-knowledgeRepresentationLevel = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel
 Alias: $cpg-location = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-location
+Alias: $cpg-medicationrequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 Alias: $cpg-participantCapabilityStatement = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement
 Alias: $cpg-partOf = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf
 Alias: $cpg-planFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-planFor
@@ -52,6 +64,7 @@ Alias: $cpg-publishable-valueset = http://hl7.org/fhir/uv/cpg/StructureDefinitio
 Alias: $cpg-questionnairetask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
 Alias: $cpg-recommendation-direction = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction-cs
 Alias: $cpg-recommendation-direction-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-recommendation-direction-vs
+Alias: $cpg-recommendationdefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition
 Alias: $cpg-recorddetectedissuetask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask
 Alias: $cpg-recordinferencetask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask
 Alias: $cpg-relatedArtifact = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedArtifact
@@ -59,6 +72,7 @@ Alias: $cpg-reportflagtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-
 Alias: $cpg-reportWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith
 Alias: $cpg-responseImage = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-responseImage
 Alias: $cpg-reviewer = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reviewer
+Alias: $cpg-servicerequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest
 Alias: $cpg-summaryDefinitionFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryDefinitionFor
 Alias: $cpg-summaryFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryFor
 Alias: $cpg-title = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-title
@@ -68,17 +82,25 @@ Alias: $cqf-expression = http://hl7.org/fhir/StructureDefinition/cqf-expression
 Alias: $cqf-qualityOfEvidence = http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence
 Alias: $cqf-strengthOfRecommendation = http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation
 Alias: $definition-topic = http://hl7.org/fhir/ValueSet/definition-topic
+Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
 Alias: $episodeofcare-type = http://hl7.org/fhir/ValueSet/episodeofcare-type
 Alias: $event-basedOn = http://hl7.org/fhir/StructureDefinition/event-basedOn
+Alias: $inline-activity-example-administermedication-library = http://example.org/Library/inline-activity-example-administermedication-library
+Alias: $inline-activity-example-administermedication-pd = http://example.org/PlanDefinition/inline-activity-example-administermedication-pd
 Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
 Alias: $loinc = http://loinc.org
+Alias: $measure-improvement-notation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation
+Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
+Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
 Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 Alias: $planDefinition = http://hl7.org/fhir/StructureDefinition/PlanDefinition
 Alias: $request-doNotPerform = http://hl7.org/fhir/StructureDefinition/request-doNotPerform
 Alias: $resource-approvalDate = http://hl7.org/fhir/StructureDefinition/resource-approvalDate
 Alias: $resource-effectivePeriod = http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
 Alias: $resource-lastReviewDate = http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate
+Alias: $sct = http://snomed.info/sct
 Alias: $structureDefinition = http://hl7.org/fhir/StructureDefinition/StructureDefinition
+Alias: $v3-orderableDrugForm-cs = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $valueset-author = http://hl7.org/fhir/StructureDefinition/valueset-author
 Alias: $valueset-effectiveDate = http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate
 Alias: $valueset-expirationDate = http://hl7.org/fhir/StructureDefinition/valueset-expirationDate
@@ -87,36 +109,3 @@ Alias: $valueset-keyWord = http://hl7.org/fhir/StructureDefinition/valueset-keyW
 Alias: $valueset-rules-text = http://hl7.org/fhir/StructureDefinition/valueset-rules-text
 Alias: $valueset-sourceReference = http://hl7.org/fhir/StructureDefinition/valueset-sourceReference
 Alias: $workflow-instantiatesCanonical = http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
-Alias: $cpg-enrollmenttask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask
-Alias: $cpg-generatereporttask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask
-Alias: $cpg-medicationrequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-
-Alias: $cpg-computableactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity
-
-// Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
-
-Alias: $cpg-servicerequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest
-Alias: $cpg-communicationRequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-Alias: $cpg-immunizationrecommendation = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation
-
-Alias: $cpg-enrollIn = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn
-Alias: $cpg-isUnenrollment = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment
-Alias: $cpg-reportWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith
-
-Alias: $sct = http://snomed.info/sct
-Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
-
-Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
-Alias: $measure-improvement-notation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation
-Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
-
-Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
-Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
-
-Alias: $cpg-recommendationdefinition = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition
-
-Alias: $cpg-common-process-codesystem = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
-
-Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
-
-Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type

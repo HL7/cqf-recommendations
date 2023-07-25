@@ -1,12 +1,12 @@
 Instance: activity-example-recordinference-pd
 InstanceOf: PlanDefinition
 Usage: #example
-Description: "Example Plan Definition for a recommendation to record an inference"
+Title: "Activity Example Record Inference PD"
+* description = "Example Plan Definition for a recommendation to record an inference"
 * insert PDRecommendationMetadata(activity-example-recordinference-pd)
 * name = "ActivityExampleRecordInferencePD"
-* title = "Activity Example Record Inference PD"
 * type = $plan-definition-type#eca-rule
-* library = "http://hl7.org/fhir/uv/cpg/Library/RecordInference"
+* library = Canonical(recordinference-library)
 * action
   * title = "Record an inference"
   * condition

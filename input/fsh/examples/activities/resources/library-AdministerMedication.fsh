@@ -1,23 +1,18 @@
-Instance: administer-medication-library
+Instance: administermedication-library
 InstanceOf: Library
 Usage: #example
-Description: "Logic for an example recommendation to administer a medication"
-* insert ProfileMeta(cpg-shareablelibrary)
-* insert ProfileMeta(cpg-computablelibrary)
-* insert ProfileMeta(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(administer-medication-library)
+Title: "Administer Medication Library"
+* description = "Logic for an example recommendation to administer a medication"
+* insert Profile(cpg-shareablelibrary)
+* insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-executablelibrary)
+* insert KnowledgeArtifactMetadata(administermedication-library, Library)
+* insert RelatedFHIRLibraries
 * name = "AdministerMedicationLibrary"
-* title = "Administer Medication Library"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(CPGActivityTypeCS)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -74,21 +69,21 @@ Description: "Logic for an example recommendation to administer a medication"
   * type = #boolean
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
   * type = #MedicationAdministration
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+  * profile = Canonical(MedicationAdministration)
 * dataRequirement[+]
   * type = #MedicationAdministration
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+  * profile = Canonical(MedicationAdministration)
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * content
   * id = "ig-loader-AdministerMedication.cql"

@@ -1,9 +1,17 @@
 RuleSet: ActivityDefinitionMetadata(id)
 * meta.profile = $cpg-computableactivity
-* extension[$cpg-knowledgeCapability].valueCode = #shareable
-* extension[$cpg-knowledgeCapability].valueCode = #computable
-* extension[$cpg-knowledgeCapability].valueCode = #publishable
-* extension[$cpg-knowledgeRepresentationLevel].valueCode = #structured
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #shareable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #computable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #publishable
+* extension[+]
+  * url = $cpg-knowledgeRepresentationLevel
+  * valueCode = #structured
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * status = #draft
@@ -11,37 +19,60 @@ RuleSet: ActivityDefinitionMetadata(id)
 
 RuleSet: PDRecommendationMetadata(id)
 * meta.profile = $cpg-recommendationdefinition
-* extension[$cpg-enabled].valueBoolean = true
-* extension[$cpg-knowledgeCapability].valueCode = #shareable
-* extension[$cpg-knowledgeCapability].valueCode = #computable
-* extension[$cpg-knowledgeCapability].valueCode = #publishable
-* extension[$cpg-knowledgeRepresentationLevel].valueCode = #structured
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #shareable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #computable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #publishable
+* extension[+]
+  * url = $cpg-knowledgeRepresentationLevel
+  * valueCode = #structured
 * experimental = true
-* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
+* url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
 * status = #draft
 * experimental = true
 
-RuleSet: ProfileMeta(id)
-* meta.profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
-
-RuleSet: KnowledgeArtifactMetadata(id)
-* extension[$cpg-knowledgeCapability].valueCode = #shareable
-* extension[$cpg-knowledgeCapability].valueCode = #computable
-* extension[$cpg-knowledgeCapability].valueCode = #publishable
-* extension[$cpg-knowledgeRepresentationLevel].valueCode = #structured
+RuleSet: KnowledgeArtifactMetadata(id, type)
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #shareable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #computable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #publishable
+* extension[+]
+  * url = $cpg-knowledgeRepresentationLevel
+  * valueCode = #structured
 * experimental = true
-* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
+* url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * status = #draft
+
+RuleSet: Profile(profile-id)
+* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
+
+RuleSet: RelatedFHIRLibraries
+* relatedArtifact[+]
+  * type = #depends-on
+  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1" //this does not resolve
+* relatedArtifact[+]
+  * type = #depends-on
+  * resource = "https://hl7.org/fhir/R4/library-fhir-helpers|4.0.1"
 
 RuleSet: CodeSystemMetadata(id-prefix)
 * ^meta.profile = $cpg-publishable-codesystem
-* ^extension[+].url = $cpg-knowledgeCapability //causing errors when refering to by slice url
+* ^extension[+].url = $cpg-knowledgeCapability
 * ^extension[=].valueCode = #shareable
 * ^extension[+].url = $cpg-knowledgeCapability
 * ^extension[=].valueCode = #computable
 * ^extension[+].url = $cpg-knowledgeCapability
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = $cpg-knowledgeRepresentationLevel //causing errors when refering to by slice
+* ^extension[+].url = $cpg-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/{id-prefix}-cs"
 * ^experimental = false
