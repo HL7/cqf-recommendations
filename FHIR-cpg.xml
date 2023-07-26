@@ -210,6 +210,8 @@
 <artifact id="Library/documentmedication-library" key="Library-documentmedication-library" name="Document Medication Library"/>
 <artifact id="Library/enrollment-library" key="Library-enrollment-library" name="Enrollment Library"/>
 <artifact id="Library/generatereport-library" key="Library-generatereport-library" name="Generate Report Library"/>
+<artifact id="Library/HepBAdultForecastingLibrary" key="Library-HepBAdultForecastingLibrary" name="HepBAdultForecastingLibrary"/>
+<artifact id="PlanDefinition/HepBAdultForecastingPD" key="PlanDefinition-HepBAdultForecastingPD" name="HepBAdultForecastingPD"/>
 <artifact id="Library/OpioidCDSR4Common" key="Library-OpioidCDSR4Common" name="OpioidCDSR4Common"/>
 <artifact id="Library/OpioidCDSR4Recommendation05" key="Library-OpioidCDSR4Recommendation05" name="OpioidCDSR4Recommendation05"/>
 <artifact id="Library/ordermedication-library" key="Library-ordermedication-library" name="Order Medication"/>
@@ -221,7 +223,25 @@
 <artifact id="Library/reportflag-library" key="Library-reportflag-library" name="Report Flag"/>
 <artifact id="Library/sendmessage-library" key="Library-sendmessage-library" name="Send Message Library"/>
 <artifact id="Bundle/activity-example-administermedication-bundle" key="Bundle-activity-example-administermedication-bundle" name="activity-example-administermedication-bundle"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-edu-hypertension" key="ActivityDefinition-cc-cpg-activity-edu-hypertension" name="cc-cpg-activity-edu-hypertension"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-edu-renal-diet" key="ActivityDefinition-cc-cpg-activity-edu-renal-diet" name="cc-cpg-activity-edu-renal-diet"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-lab-creatinine" key="ActivityDefinition-cc-cpg-activity-lab-creatinine" name="cc-cpg-activity-lab-creatinine"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-lab-metabolic" key="ActivityDefinition-cc-cpg-activity-lab-metabolic" name="cc-cpg-activity-lab-metabolic"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-referral-dietition" key="ActivityDefinition-cc-cpg-activity-referral-dietition" name="cc-cpg-activity-referral-dietition"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-referral-nephrology" key="ActivityDefinition-cc-cpg-activity-referral-nephrology" name="cc-cpg-activity-referral-nephrology"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-ultrasound-renal" key="ActivityDefinition-cc-cpg-activity-ultrasound-renal" name="cc-cpg-activity-ultrasound-renal"/>
+<artifact id="PlanDefinition/cc-cpg-plan-ckd" key="PlanDefinition-cc-cpg-plan-ckd" name="cc-cpg-plan-ckd"/>
+<artifact id="ActivityDefinition/ckd-risk-referral-nephrology" key="ActivityDefinition-ckd-risk-referral-nephrology" name="ckd-risk-referral-nephrology"/>
+<artifact id="ActivityDefinition/ckd-risk-renal-lab-order" key="ActivityDefinition-ckd-risk-renal-lab-order" name="ckd-risk-renal-lab-order"/>
+<artifact id="PlanDefinition/ckd-risk-screening" key="PlanDefinition-ckd-risk-screening" name="ckd-risk-screening"/>
+<artifact id="ValueSet/ckd-valueset-ckd" key="ValueSet-ckd-valueset-ckd" name="ckd-valueset-ckd"/>
+<artifact id="ValueSet/ckd-valueset-creatinine" key="ValueSet-ckd-valueset-creatinine" name="ckd-valueset-creatinine"/>
+<artifact id="ValueSet/ckd-valueset-diabetes" key="ValueSet-ckd-valueset-diabetes" name="ckd-valueset-diabetes"/>
+<artifact id="ValueSet/ckd-valueset-egfr" key="ValueSet-ckd-valueset-egfr" name="ckd-valueset-egfr"/>
+<artifact id="ValueSet/ckd-valueset-uacr" key="ValueSet-ckd-valueset-uacr" name="ckd-valueset-uacr"/>
 <artifact id="Library/omtklogic" key="Library-omtklogic" name="omtklogic"/>
+<artifact id="PlanDefinition/va-ckd-protocol" key="PlanDefinition-va-ckd-protocol" name="va-ckd-protocol"/>
+<artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="va-ckd-recommendations"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>

@@ -1,3 +1,12 @@
+RuleSet: ExampleArtifactMetadata(id, type, identifier)
+* url = "http://example.org/fhir/uv/cpg/{type}/{id}"
+* experimental = true
+* identifier
+  * use = #official
+  * value = "{identifier}"
+* name = "{id}"
+* status = #draft
+
 RuleSet: ActivityDefinitionMetadata(id)
 * meta.profile = $cpg-computableactivity
 * extension[+]

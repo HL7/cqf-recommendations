@@ -1,0 +1,52 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ckd-valueset-creatinine",
+	"meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+	"name": "CreatinineLabResults",
+	"title": "Creatinine Lab Results",
+	"description": "Creatinine Lab Results",
+	"status": "active",
+	"experimental": true,
+	"publisher": "HL7 FHIR Clinical Guidelines Example Artifact",
+	"copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+	"compose": {
+		"include": [
+			{
+				"system": "http://loinc.org",
+				"concept": [
+					{
+						"code": "77140-2"
+					},
+					{
+						"code": "14682-9"
+					},
+					{
+						"code": "2160-0"
+					}
+				]
+			}
+		]
+	}
+}

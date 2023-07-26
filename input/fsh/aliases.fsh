@@ -109,3 +109,12 @@ Alias: $valueset-keyWord = http://hl7.org/fhir/StructureDefinition/valueset-keyW
 Alias: $valueset-rules-text = http://hl7.org/fhir/StructureDefinition/valueset-rules-text
 Alias: $valueset-sourceReference = http://hl7.org/fhir/StructureDefinition/valueset-sourceReference
 Alias: $workflow-instantiatesCanonical = http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
+
+Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
+Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
+Alias: $sct = http://snomed.info/sct
+Alias: $cvx = http://hl7.org/fhir/sid/cvx
+
+Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
+Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
+Alias: $sct = http://snomed.info/sct
