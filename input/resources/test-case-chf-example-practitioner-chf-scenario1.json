@@ -1,0 +1,15 @@
+{
+  "resourceType": "Practitioner",
+  "id": "chf-scenario1",
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Rodriguez, Jesse",
+      "family": "Rodriguez",
+      "given": [
+        "Jesse"
+      ]
+    }
+  ]
+}

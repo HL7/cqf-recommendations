@@ -1,0 +1,18 @@
+{
+  "resourceType": "Communication",
+  "id": "sm-scenario4",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/sm-scenario4"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/sm-scenario4"
+    }
+  ]
+}

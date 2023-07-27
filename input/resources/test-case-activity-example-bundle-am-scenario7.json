@@ -1,0 +1,205 @@
+{
+  "resourceType": "Bundle",
+  "id": "am-scenario7",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/GuidanceResponse/am-scenario7",
+      "resource": {
+        "resourceType": "GuidanceResponse",
+        "id": "am-scenario7",
+        "contained": [
+          {
+            "resourceType": "Parameters",
+            "id": "output",
+            "parameter": [
+              {
+                "name": "Inclusion Criteria",
+                "valueBoolean": true
+              },
+              {
+                "name": "Is Recommendation Applicable",
+                "valueBoolean": false
+              }
+            ]
+          }
+        ],
+        "moduleCanonical": "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication",
+        "status": "success",
+        "subject": {
+          "reference": "Patient/am-scenario7"
+        },
+        "outputParameters": {
+          "reference": "#output"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/MedicationAdministration/am-scenario7",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+        "id": "am-scenario7",
+        "status": "not-done",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "333919005",
+              "display": "Fentanyl 25micrograms/hour patch (product)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/am-scenario7"
+        },
+        "effectivePeriod": {
+          "start": "2015-01-15T22:03:00+01:00",
+          "end": "2015-01-16T02:03:00+01:00"
+        },
+        "request": {
+          "reference": "MedicationRequest/am-scenario7"
+        },
+        "dosage": {
+          "text": "apply one patch three times per week",
+          "dose": {
+            "value": 1,
+            "unit": "patch",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+            "code": "PATCH"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/MedicationRequest/am-scenario7",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "am-scenario7",
+        "status": "active",
+        "intent": "order",
+        "priority": "routine",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "333919005",
+              "display": "Fentanyl 25micrograms/hour patch (product)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/am-scenario7"
+        },
+        "dosageInstruction": [
+          {
+            "sequence": 1,
+            "text": "apply one patch three times per week",
+            "timing": {
+              "repeat": {
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "wk"
+              }
+            },
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "patch",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                  "code": "PATCH"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "validityPeriod": {
+            "start": "2015-01-15",
+            "end": "2016-01-15"
+          },
+          "quantity": {
+            "value": 6,
+            "unit": "patch",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+            "code": "PATCH"
+          },
+          "expectedSupplyDuration": {
+            "value": 14,
+            "unit": "days",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Patient/am-scenario7",
+      "resource": {
+        "resourceType":"Patient",
+        "id":"am-scenario7",
+        "active":true,
+        "name":[
+           {
+              "use":"usual",
+              "text":"Example Patient",
+              "family":"Patient",
+              "given":[
+                 "Example"
+              ]
+           }
+        ],
+        "gender":"female",
+        "birthDate":"1990-10-01",
+        "deceasedBoolean":false
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Task/request-am-scenario7",
+      "resource": {
+        "resourceType": "Task",
+        "id": "request-am-scenario7",
+        "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication",
+        "status": "in-progress",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+              "code": "administer-medication",
+              "display": "Administer a medication"
+            }
+          ]
+        },
+        "for": {
+            "reference": "Patient/am-scenario7"
+        },
+        "input": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+                  "code": "administer-medication",
+                  "display": "Administer a medication"
+                }
+              ]
+            },
+            "valueReference": {
+              "reference": "MedicationRequest/am-scenario7"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType": "Goal",
+  "id": "chf-scenario1-potassium",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-potassium"
+    }
+  ],
+  "lifecycleStatus": "active",
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "code": "improving"
+      }
+    ]
+  },
+  "description": {
+    "text": "Potassium 3.5-5.0 mEq/L"
+  },
+  "subject": {
+    "reference": "Patient/chf-scenario1"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "86919-8"
+          }
+        ]
+      },
+      "detailRange": {
+        "low": {
+          "value": 3.0,
+          "unit": "mEq/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "meq/L"
+        },
+        "high": {
+          "value": 5.0,
+          "unit": "mEq/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "meq/L"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "ci-scenario4",
+  "questionnaire": "http://hl7.org/fhir/uv/cpg/Questionnaire/activity-example-collectinformation",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/ci-scenario4"
+  },
+  "item": [
+    {
+      "linkId": "A",
+      "answer": [
+        {
+          "valueDate": "2020-12-10"
+        }
+      ]
+    }
+  ]
+}

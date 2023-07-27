@@ -1,0 +1,56 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "chf-scenario1-lasix-po",
+  "status": "draft",
+  "intent": "proposal",
+  "priority": "routine",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes",
+        "code": "lasix-po",
+        "display": "LASIX PO"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/chf-scenario1"
+  },
+  "instantiatesCanonical": [
+    "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-lasix-po"
+  ],
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "text": "40mg",
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral Route (qualifier value)"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                "code": "ordered",
+                "display": "Ordered"
+              }
+            ]
+          },
+          "doseQuantity": {
+            "value": 40,
+            "unit": "mg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "dcm-scenario6",
+  "status": "stopped",
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+        "code": "inpatient",
+        "display": "Inpatient"
+      }
+    ]
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/ndc",
+        "code": "0378-1805-10",
+        "display": "1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/dcm-scenario6"
+  },
+  "effectiveDateTime": "2015-01-23",
+  "dateAsserted": "2015-02-22",
+  "informationSource": {
+    "reference": "Patient/dcm-scenario6"
+  },
+  "derivedFrom": [
+    {
+      "reference": "MedicationRequest/dm-scenario6"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "40930008",
+          "display": "Hypothyroidism (disorder)"
+        }
+      ]
+    }
+  ],
+  "dosage": [
+    {
+      "sequence": 1,
+      "text": "75mcg daily",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral Route (qualifier value)"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "type": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                "code": "ordered",
+                "display": "Ordered"
+              }
+            ]
+          },
+          "doseQuantity": {
+            "value": 75,
+            "unit": "mcg",
+            "system": "http://unitsofmeasure.org",
+            "code": "ug"
+          }
+        }
+      ]
+    }
+  ]
+}

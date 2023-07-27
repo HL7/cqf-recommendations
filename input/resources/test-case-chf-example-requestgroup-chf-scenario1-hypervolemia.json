@@ -1,0 +1,287 @@
+{
+  "resourceType": "RequestGroup",
+  "id": "chf-scenario1-hypervolemia",
+  "instantiatesCanonical": [
+    "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-hypervolemia"
+  ],
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/chf-scenario1"
+  },
+  "encounter": {
+    "reference": "Encounter/chf-scenario1"
+  },
+  "action": [
+    {
+      "title": "JVP",
+      "description": "Measure JVP daily",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "action": [
+        {
+          "id": "jvp",
+          "title": "JVP",
+          "description": "Measure JVP daily",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "diagnostic-testing"
+              }
+            ]
+          }],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 1,
+              "periodUnit": "d"
+            }
+          },
+          "resource": {
+            "reference": "ServiceRequest/chf-scenario1-jvp"
+          }
+        }
+      ]
+    },
+    {
+      "title": "O2 Sat",
+      "description": "Monitor O2 Sat",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "action": [
+        {
+          "id": "o2-sat",
+          "title": "O2 Sat",
+          "description": "Monitor oxygen saturation",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "diagnostic-testing"
+              }
+            ]
+          }],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 1,
+              "periodUnit": "d"
+            }
+          },
+          "resource": {
+            "reference": "ServiceRequest/chf-scenario1-o2-sat"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Potassium",
+      "description": "Monitor Potassium",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "action": [
+        {
+          "id": "potassium",
+          "title": "Potassium",
+          "description": "Monitor potassium",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "diagnostic-testing"
+              }
+            ]
+          }],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 1,
+              "periodUnit": "d"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Creatinine",
+      "description": "Monitor Creatinine",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "action": [
+        {
+          "id": "creatinine",
+          "title": "Creatinine",
+          "description": "Monitor creatinine",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "diagnostic-testing"
+              }
+            ]
+          }],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 1,
+              "periodUnit": "d"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "eGFR",
+      "description": "Monitor eGFR",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "action": [
+        {
+          "id": "egfr",
+          "title": "eGFR",
+          "description": "Monitor eGFR",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "diagnostic-testing"
+              }
+            ]
+          }],
+          "timingTiming": {
+            "repeat": {
+              "frequency": 1,
+              "period": 1,
+              "periodUnit": "d"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "LASIX",
+      "description": "LASIX",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "guideline-based-care"
+          }
+        ]
+      }],
+      "action": [
+        {
+          "id": "lasix-iv",
+          "title": "LASIX IV",
+          "description": "Administer LASIX IV",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "dispense-medications"
+              }
+            ]
+          }],
+          "condition": [
+            {
+              "kind": "stop",
+              "expression": {
+                "language": "text/cql-identifier",
+                "expression": "Should Stop LASIX IV"
+              }
+            }
+          ],
+          "resource": {
+            "reference": "MedicationRequest/chf-scenario1-stop-lasix-iv"
+          }
+        },
+        {
+          "id": "lasix-po",
+          "title": "LASIX PO",
+          "description": "Administer LASIX PO",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "dispense-medications"
+              }
+            ]
+          }],
+          "condition": [
+            {
+              "kind": "start",
+              "expression": {
+                "language": "text/cql-identifier",
+                "expression": "Should Start LASIX PO"
+              }
+            }
+          ],
+          "resource": {
+            "reference": "MedicationRequest/chf-scenario1-lasix-po"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Cardiology Consultation",
+      "description": "Cardiology Consultation within 24 hours",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "guideline-based-care"
+          }
+        ]
+      }],
+      "action": [
+        {
+          "id": "cardiology-consultation",
+          "title": "Cardiology Consultation",
+          "description": "Cardiology Consultation",
+          "code": [{
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                "code": "guideline-based-care"
+              }
+            ]
+          }],
+          "resource": {
+            "reference": "ServiceRequest/chf-scenario1-cardiology-consultation"
+          }
+        }
+      ]
+    }
+  ]
+}

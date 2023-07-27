@@ -1,0 +1,22 @@
+{
+  "resourceType": "Flag",
+  "id": "rf-scenario4",
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/flag-category",
+          "code": "admin",
+          "display": "Administrative"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "text": "Flag"
+  },
+  "subject": {
+    "reference": "Patient/rf-scenario4"
+  }
+}
