@@ -6,47 +6,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Goal/chf-scenario1-egfr" key="Goal-chf-scenario1-egfr" name=""/>
-<artifact id="MeasureReport/chf-scenario1-bodyweight3" key="MeasureReport-chf-scenario1-bodyweight3" name=""/>
-<artifact id="Goal/chf-scenario1-creatinine" key="Goal-chf-scenario1-creatinine" name=""/>
-<artifact id="ServiceRequest/chf-scenario1-o2-sat" key="ServiceRequest-chf-scenario1-o2-sat" name=""/>
-<artifact id="MeasureReport/chf-scenario1-bodyweight-change3" key="MeasureReport-chf-scenario1-bodyweight-change3" name=""/>
-<artifact id="MeasureReport/chf-scenario1-bodyweight-change2" key="MeasureReport-chf-scenario1-bodyweight-change2" name=""/>
-<artifact id="CareTeam/chf-scenario1" key="CareTeam-chf-scenario1" name=""/>
-<artifact id="Patient/chf-scenario1" key="Patient-chf-scenario1" name=""/>
-<artifact id="MeasureReport/chf-scenario1-bodyweight2" key="MeasureReport-chf-scenario1-bodyweight2" name=""/>
-<artifact id="RelatedPerson/chf-scenario1" key="RelatedPerson-chf-scenario1" name=""/>
-<artifact id="Location/chf-scenario1" key="Location-chf-scenario1" name=""/>
-<artifact id="MeasureReport/chf-scenario1-bodyweight4" key="MeasureReport-chf-scenario1-bodyweight4" name=""/>
-<artifact id="Goal/chf-scenario1-lasix-po" key="Goal-chf-scenario1-lasix-po" name=""/>
-<artifact id="PractitionerRole/chf-scenario1" key="PractitionerRole-chf-scenario1" name=""/>
-<artifact id="Goal/chf-scenario1-lasix-iv" key="Goal-chf-scenario1-lasix-iv" name=""/>
-<artifact id="Goal/chf-scenario1-o2-sat" key="Goal-chf-scenario1-o2-sat" name=""/>
-<artifact id="Goal/chf-scenario1-weight" key="Goal-chf-scenario1-weight" name=""/>
-<artifact id="Organization/chf-scenario1" key="Organization-chf-scenario1" name=""/>
-<artifact id="Procedure/chf-scenario1-cardiology-consult" key="Procedure-chf-scenario1-cardiology-consult" name=""/>
-<artifact id="RequestGroup/chf-scenario1-daily-management" key="RequestGroup-chf-scenario1-daily-management" name=""/>
-<artifact id="Encounter/chf-scenario1" key="Encounter-chf-scenario1" name=""/>
-<artifact id="Goal/chf-scenario1-net-io" key="Goal-chf-scenario1-net-io" name=""/>
-<artifact id="ServiceRequest/chf-scenario1-jvp" key="ServiceRequest-chf-scenario1-jvp" name=""/>
-<artifact id="ServiceRequest/chf-scenario1-cardiology-consultation" key="ServiceRequest-chf-scenario1-cardiology-consultation" name=""/>
-<artifact id="MeasureReport/chf-scenario1-urineout3" key="MeasureReport-chf-scenario1-urineout3" name=""/>
-<artifact id="MeasureReport/chf-scenario1-bodyweight1" key="MeasureReport-chf-scenario1-bodyweight1" name=""/>
-<artifact id="Condition/chf-scenario1" key="Condition-chf-scenario1" name=""/>
-<artifact id="Practitioner/chf-scenario1" key="Practitioner-chf-scenario1" name=""/>
-<artifact id="MedicationRequest/chf-scenario1-lasix-po" key="MedicationRequest-chf-scenario1-lasix-po" name=""/>
-<artifact id="EpisodeOfCare/chf-scenario1" key="EpisodeOfCare-chf-scenario1" name=""/>
-<artifact id="MeasureReport/chf-scenario1-bodyweight-change1" key="MeasureReport-chf-scenario1-bodyweight-change1" name=""/>
-<artifact id="Goal/chf-scenario1-urine-out" key="Goal-chf-scenario1-urine-out" name=""/>
-<artifact id="Goal/chf-scenario1-potassium" key="Goal-chf-scenario1-potassium" name=""/>
-<artifact id="Group/chf-scenario1" key="Group-chf-scenario1" name=""/>
-<artifact id="Goal/chf-scenario1-weight-change" key="Goal-chf-scenario1-weight-change" name=""/>
-<artifact id="RequestGroup/chf-scenario1-hypervolemia" key="RequestGroup-chf-scenario1-hypervolemia" name=""/>
-<artifact id="MedicationAdministration/chf-scenario1-lasix-iv" key="MedicationAdministration-chf-scenario1-lasix-iv" name=""/>
-<artifact id="Goal/chf-scenario1-cardiology-consultation" key="Goal-chf-scenario1-cardiology-consultation" name=""/>
-<artifact id="MedicationAdministration/chf-scenario1-lasix-po" key="MedicationAdministration-chf-scenario1-lasix-po" name=""/>
-<artifact id="Goal/chf-scenario1-jvp" key="Goal-chf-scenario1-jvp" name=""/>
-<artifact id="MedicationRequest/chf-scenario1-stop-lasix-iv" key="MedicationRequest-chf-scenario1-stop-lasix-iv" name=""/>
+<artifact id="Organization/chf-scenario1" key="Organization-chf-scenario1" name="ACME Hospital"/>
 <artifact id="Library/ANCCommon" key="Library-ANCCommon" name="ANCCommon"/>
 <artifact id="Library/ANCRecommendationA2" key="Library-ANCRecommendationA2" name="ANCRecommendationA2"/>
 <artifact id="Library/activity-example-administermedication-library" key="Library-activity-example-administermedication-library" name="Activity Example - Administer Medication Library Collection"/>
@@ -87,6 +47,7 @@
 <artifact id="PlanDefinition/activity-example-sendmessage-pd" key="PlanDefinition-activity-example-sendmessage-pd" name="Activity Example Send Message PD"/>
 <artifact id="Library/administermedication-library" key="Library-administermedication-library" name="Administer Medication Library"/>
 <artifact id="Library/CHF" key="Library-CHF" name="CHF"/>
+<artifact id="CareTeam/chf-scenario1" key="CareTeam-chf-scenario1" name="CHF Care Team"/>
 <artifact id="Library/CKDRiskLogic" key="Library-CKDRiskLogic" name="CKDRiskLogic"/>
 <artifact id="ValueSet/cpg-active-condition-vs" key="ValueSet-cpg-active-condition-vs" name="CPG Active Condition Value Set"/>
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
@@ -251,35 +212,16 @@
 <artifact id="Composition/chf-scenario1-casesummary" key="Composition-chf-scenario1-casesummary" name="Congestive Heart Failure Case Summary"/>
 <artifact id="Composition/chf-scenario1-caseplanprogressingnote" key="Composition-chf-scenario1-caseplanprogressingnote" name="Congestive Heart Failure Case/Plan Progressing Note"/>
 <artifact id="Composition/chf-scenario1-caseplansummary" key="Composition-chf-scenario1-caseplansummary" name="Congestive Heart Failure Case/Plan Summary"/>
+<artifact id="Group/chf-scenario1" key="Group-chf-scenario1" name="Congestive Heart Failure Patients"/>
 <artifact id="Library/dispensemedication-library" key="Library-dispensemedication-library" name="Dispense Medication Library"/>
 <artifact id="Library/donotcollectinformation-library" key="Library-donotcollectinformation-library" name="Do Not Collect Information Library"/>
 <artifact id="Library/donotsendmessage-library" key="Library-donotsendmessage-library" name="Do Not Send Message"/>
 <artifact id="Library/documentmedication-library" key="Library-documentmedication-library" name="Document Medication Library"/>
 <artifact id="Library/enrollment-library" key="Library-enrollment-library" name="Enrollment Library"/>
-<artifact id="ClinicalImpression/chf-scenario1" key="ClinicalImpression-chf-scenario1" name="Example ClinicalImpression - chf-scenario1"/>
-<artifact id="Observation/chf-scenario1-bodyweight-change1" key="Observation-chf-scenario1-bodyweight-change1" name="Example Observation - chf-scenario1-bodyweight-change1"/>
-<artifact id="Observation/chf-scenario1-bodyweight-change2" key="Observation-chf-scenario1-bodyweight-change2" name="Example Observation - chf-scenario1-bodyweight-change2"/>
-<artifact id="Observation/chf-scenario1-bodyweight-change3" key="Observation-chf-scenario1-bodyweight-change3" name="Example Observation - chf-scenario1-bodyweight-change3"/>
-<artifact id="Observation/chf-scenario1-bodyweight1" key="Observation-chf-scenario1-bodyweight1" name="Example Observation - chf-scenario1-bodyweight1"/>
-<artifact id="Observation/chf-scenario1-bodyweight2" key="Observation-chf-scenario1-bodyweight2" name="Example Observation - chf-scenario1-bodyweight2"/>
-<artifact id="Observation/chf-scenario1-bodyweight3" key="Observation-chf-scenario1-bodyweight3" name="Example Observation - chf-scenario1-bodyweight3"/>
-<artifact id="Observation/chf-scenario1-bodyweight4" key="Observation-chf-scenario1-bodyweight4" name="Example Observation - chf-scenario1-bodyweight4"/>
-<artifact id="Observation/chf-scenario1-creatinine1" key="Observation-chf-scenario1-creatinine1" name="Example Observation - chf-scenario1-creatinine1"/>
-<artifact id="Observation/chf-scenario1-egfr1" key="Observation-chf-scenario1-egfr1" name="Example Observation - chf-scenario1-egfr1"/>
-<artifact id="Observation/chf-scenario1-jvp1" key="Observation-chf-scenario1-jvp1" name="Example Observation - chf-scenario1-jvp1"/>
-<artifact id="Observation/chf-scenario1-jvp2" key="Observation-chf-scenario1-jvp2" name="Example Observation - chf-scenario1-jvp2"/>
-<artifact id="Observation/chf-scenario1-jvp3" key="Observation-chf-scenario1-jvp3" name="Example Observation - chf-scenario1-jvp3"/>
-<artifact id="Observation/chf-scenario1-jvp4" key="Observation-chf-scenario1-jvp4" name="Example Observation - chf-scenario1-jvp4"/>
-<artifact id="Observation/chf-scenario1-jvp5" key="Observation-chf-scenario1-jvp5" name="Example Observation - chf-scenario1-jvp5"/>
-<artifact id="Observation/chf-scenario1-netio3" key="Observation-chf-scenario1-netio3" name="Example Observation - chf-scenario1-netio3"/>
-<artifact id="Observation/chf-scenario1-o2sat1" key="Observation-chf-scenario1-o2sat1" name="Example Observation - chf-scenario1-o2sat1"/>
-<artifact id="Observation/chf-scenario1-o2sat2" key="Observation-chf-scenario1-o2sat2" name="Example Observation - chf-scenario1-o2sat2"/>
-<artifact id="Observation/chf-scenario1-potassium1" key="Observation-chf-scenario1-potassium1" name="Example Observation - chf-scenario1-potassium1"/>
-<artifact id="Observation/chf-scenario1-urineout3" key="Observation-chf-scenario1-urineout3" name="Example Observation - chf-scenario1-urineout3"/>
 <artifact id="Library/generatereport-library" key="Library-generatereport-library" name="Generate Report Library"/>
 <artifact id="CarePlan/chf-scenario1" key="CarePlan-chf-scenario1" name="Heart Failure Care Pathway"/>
-<artifact id="Library/HepBAdultForecastingLibrary" key="Library-HepBAdultForecastingLibrary" name="HepBAdultForecastingLibrary"/>
-<artifact id="PlanDefinition/HepBAdultForecastingPD" key="PlanDefinition-HepBAdultForecastingPD" name="HepBAdultForecastingPD"/>
+<artifact id="Library/HepBAdultForecasting" key="Library-HepBAdultForecasting" name="HepBAdultForecasting"/>
+<artifact id="PlanDefinition/HepBAdultForecasting" key="PlanDefinition-HepBAdultForecasting" name="HepBAdultForecasting"/>
 <artifact id="Library/OpioidCDSR4Common" key="Library-OpioidCDSR4Common" name="OpioidCDSR4Common"/>
 <artifact id="Library/OpioidCDSR4Recommendation05" key="Library-OpioidCDSR4Recommendation05" name="OpioidCDSR4Recommendation05"/>
 <artifact id="Library/ordermedication-library" key="Library-ordermedication-library" name="Order Medication"/>
@@ -290,6 +232,7 @@
 <artifact id="Library/recordinference-library" key="Library-recordinference-library" name="Record Inference"/>
 <artifact id="Library/reportflag-library" key="Library-reportflag-library" name="Report Flag"/>
 <artifact id="Library/sendmessage-library" key="Library-sendmessage-library" name="Send Message Library"/>
+<artifact id="Location/chf-scenario1" key="Location-chf-scenario1" name="Unit 3 East"/>
 <artifact id="Bundle/activity-example-administermedication-bundle" key="Bundle-activity-example-administermedication-bundle" name="activity-example-administermedication-bundle"/>
 <artifact id="MedicationRequest/am-scenario1" key="MedicationRequest-am-scenario1" name="am-scenario1"/>
 <artifact id="Patient/am-scenario1" key="Patient-am-scenario1" name="am-scenario1"/>
@@ -316,10 +259,15 @@
 <artifact id="Questionnaire/anc-every-contact" key="Questionnaire-anc-every-contact" name="anc-every-contact"/>
 <artifact id="Questionnaire/anc-first-contact" key="Questionnaire-anc-first-contact" name="anc-first-contact"/>
 <artifact id="Questionnaire/anc-quick-check" key="Questionnaire-anc-quick-check" name="anc-quick-check"/>
-<artifact id="ValueSet/anc-reason-for-visit" key="ValueSet-anc-reason-for-visit" name="anc-reason-for-visit"/>
 <artifact id="CodeSystem/anc-reason-for-visit" key="CodeSystem-anc-reason-for-visit" name="anc-reason-for-visit"/>
+<artifact id="ValueSet/anc-reason-for-visit" key="ValueSet-anc-reason-for-visit" name="anc-reason-for-visit"/>
 <artifact id="PlanDefinition/anc-recommendation-a2" key="PlanDefinition-anc-recommendation-a2" name="anc-recommendation-a2"/>
 <artifact id="GraphDefinition/anc-summary" key="GraphDefinition-anc-summary" name="anc-summary"/>
+<artifact id="Device/anthrax-example-device" key="Device-anthrax-example-device" name="anthrax-example-device"/>
+<artifact id="Library/anthrax-post-exposure-prophylaxis-library" key="Library-anthrax-post-exposure-prophylaxis-library" name="anthrax-post-exposure-prophylaxis-library"/>
+<artifact id="Flag/antimicrobial-allergy-flag" key="Flag-antimicrobial-allergy-flag" name="antimicrobial-allergy-flag"/>
+<artifact id="PlanDefinition/antimicrobial-not-pregnant-pd" key="PlanDefinition-antimicrobial-not-pregnant-pd" name="antimicrobial-not-pregnant-pd"/>
+<artifact id="PlanDefinition/antimicrobial-pregnant-pd" key="PlanDefinition-antimicrobial-pregnant-pd" name="antimicrobial-pregnant-pd"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-edu-hypertension" key="ActivityDefinition-cc-cpg-activity-edu-hypertension" name="cc-cpg-activity-edu-hypertension"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-edu-renal-diet" key="ActivityDefinition-cc-cpg-activity-edu-renal-diet" name="cc-cpg-activity-edu-renal-diet"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-lab-creatinine" key="ActivityDefinition-cc-cpg-activity-lab-creatinine" name="cc-cpg-activity-lab-creatinine"/>
@@ -328,7 +276,8 @@
 <artifact id="ActivityDefinition/cc-cpg-activity-referral-nephrology" key="ActivityDefinition-cc-cpg-activity-referral-nephrology" name="cc-cpg-activity-referral-nephrology"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-ultrasound-renal" key="ActivityDefinition-cc-cpg-activity-ultrasound-renal" name="cc-cpg-activity-ultrasound-renal"/>
 <artifact id="PlanDefinition/cc-cpg-plan-ckd" key="PlanDefinition-cc-cpg-plan-ckd" name="cc-cpg-plan-ckd"/>
-<artifact id="ImplementationGuide/chf" key="ImplementationGuide-chf" name="chf"/>
+<artifact id="Library/cdc-common-logic-library" key="Library-cdc-common-logic-library" name="cdc-common-logic-library"/>
+<artifact id="Library/cds-connect-commons-library" key="Library-cds-connect-commons-library" name="cds-connect-commons-library"/>
 <artifact id="ActivityDefinition/chf-bodyweight" key="ActivityDefinition-chf-bodyweight" name="chf-bodyweight"/>
 <artifact id="Measure/chf-bodyweight" key="Measure-chf-bodyweight" name="chf-bodyweight"/>
 <artifact id="PlanDefinition/chf-bodyweight" key="PlanDefinition-chf-bodyweight" name="chf-bodyweight"/>
@@ -344,6 +293,7 @@
 <artifact id="CareTeam/chf-careteamdefinition" key="CareTeam-chf-careteamdefinition" name="chf-careteamdefinition"/>
 <artifact id="GraphDefinition/chf-caseplansummarydefinition" key="GraphDefinition-chf-caseplansummarydefinition" name="chf-caseplansummarydefinition"/>
 <artifact id="GraphDefinition/chf-casesummarydefinition" key="GraphDefinition-chf-casesummarydefinition" name="chf-casesummarydefinition"/>
+<artifact id="CodeSystem/chf-codes" key="CodeSystem-chf-codes" name="chf-codes"/>
 <artifact id="ActivityDefinition/chf-creatinine" key="ActivityDefinition-chf-creatinine" name="chf-creatinine"/>
 <artifact id="PlanDefinition/chf-creatinine" key="PlanDefinition-chf-creatinine" name="chf-creatinine"/>
 <artifact id="StructureDefinition/chf-creatinine" key="StructureDefinition-chf-creatinine" name="chf-creatinine"/>
@@ -380,6 +330,63 @@
 <artifact id="ActivityDefinition/chf-report-bodyweight" key="ActivityDefinition-chf-report-bodyweight" name="chf-report-bodyweight"/>
 <artifact id="ActivityDefinition/chf-report-bodyweight-change" key="ActivityDefinition-chf-report-bodyweight-change" name="chf-report-bodyweight-change"/>
 <artifact id="ActivityDefinition/chf-report-urine-out" key="ActivityDefinition-chf-report-urine-out" name="chf-report-urine-out"/>
+<artifact id="ClinicalImpression/chf-scenario1" key="ClinicalImpression-chf-scenario1" name="chf-scenario1"/>
+<artifact id="Condition/chf-scenario1" key="Condition-chf-scenario1" name="chf-scenario1"/>
+<artifact id="Encounter/chf-scenario1" key="Encounter-chf-scenario1" name="chf-scenario1"/>
+<artifact id="EpisodeOfCare/chf-scenario1" key="EpisodeOfCare-chf-scenario1" name="chf-scenario1"/>
+<artifact id="Patient/chf-scenario1" key="Patient-chf-scenario1" name="chf-scenario1"/>
+<artifact id="Practitioner/chf-scenario1" key="Practitioner-chf-scenario1" name="chf-scenario1"/>
+<artifact id="PractitionerRole/chf-scenario1" key="PractitionerRole-chf-scenario1" name="chf-scenario1"/>
+<artifact id="RelatedPerson/chf-scenario1" key="RelatedPerson-chf-scenario1" name="chf-scenario1"/>
+<artifact id="MeasureReport/chf-scenario1-bodyweight-change1" key="MeasureReport-chf-scenario1-bodyweight-change1" name="chf-scenario1-bodyweight-change1"/>
+<artifact id="Observation/chf-scenario1-bodyweight-change1" key="Observation-chf-scenario1-bodyweight-change1" name="chf-scenario1-bodyweight-change1"/>
+<artifact id="MeasureReport/chf-scenario1-bodyweight-change2" key="MeasureReport-chf-scenario1-bodyweight-change2" name="chf-scenario1-bodyweight-change2"/>
+<artifact id="Observation/chf-scenario1-bodyweight-change2" key="Observation-chf-scenario1-bodyweight-change2" name="chf-scenario1-bodyweight-change2"/>
+<artifact id="MeasureReport/chf-scenario1-bodyweight-change3" key="MeasureReport-chf-scenario1-bodyweight-change3" name="chf-scenario1-bodyweight-change3"/>
+<artifact id="Observation/chf-scenario1-bodyweight-change3" key="Observation-chf-scenario1-bodyweight-change3" name="chf-scenario1-bodyweight-change3"/>
+<artifact id="MeasureReport/chf-scenario1-bodyweight1" key="MeasureReport-chf-scenario1-bodyweight1" name="chf-scenario1-bodyweight1"/>
+<artifact id="Observation/chf-scenario1-bodyweight1" key="Observation-chf-scenario1-bodyweight1" name="chf-scenario1-bodyweight1"/>
+<artifact id="MeasureReport/chf-scenario1-bodyweight2" key="MeasureReport-chf-scenario1-bodyweight2" name="chf-scenario1-bodyweight2"/>
+<artifact id="Observation/chf-scenario1-bodyweight2" key="Observation-chf-scenario1-bodyweight2" name="chf-scenario1-bodyweight2"/>
+<artifact id="MeasureReport/chf-scenario1-bodyweight3" key="MeasureReport-chf-scenario1-bodyweight3" name="chf-scenario1-bodyweight3"/>
+<artifact id="Observation/chf-scenario1-bodyweight3" key="Observation-chf-scenario1-bodyweight3" name="chf-scenario1-bodyweight3"/>
+<artifact id="MeasureReport/chf-scenario1-bodyweight4" key="MeasureReport-chf-scenario1-bodyweight4" name="chf-scenario1-bodyweight4"/>
+<artifact id="Observation/chf-scenario1-bodyweight4" key="Observation-chf-scenario1-bodyweight4" name="chf-scenario1-bodyweight4"/>
+<artifact id="Procedure/chf-scenario1-cardiology-consult" key="Procedure-chf-scenario1-cardiology-consult" name="chf-scenario1-cardiology-consult"/>
+<artifact id="Goal/chf-scenario1-cardiology-consultation" key="Goal-chf-scenario1-cardiology-consultation" name="chf-scenario1-cardiology-consultation"/>
+<artifact id="ServiceRequest/chf-scenario1-cardiology-consultation" key="ServiceRequest-chf-scenario1-cardiology-consultation" name="chf-scenario1-cardiology-consultation"/>
+<artifact id="Goal/chf-scenario1-creatinine" key="Goal-chf-scenario1-creatinine" name="chf-scenario1-creatinine"/>
+<artifact id="Observation/chf-scenario1-creatinine1" key="Observation-chf-scenario1-creatinine1" name="chf-scenario1-creatinine1"/>
+<artifact id="RequestGroup/chf-scenario1-daily-management" key="RequestGroup-chf-scenario1-daily-management" name="chf-scenario1-daily-management"/>
+<artifact id="Goal/chf-scenario1-egfr" key="Goal-chf-scenario1-egfr" name="chf-scenario1-egfr"/>
+<artifact id="Observation/chf-scenario1-egfr1" key="Observation-chf-scenario1-egfr1" name="chf-scenario1-egfr1"/>
+<artifact id="RequestGroup/chf-scenario1-hypervolemia" key="RequestGroup-chf-scenario1-hypervolemia" name="chf-scenario1-hypervolemia"/>
+<artifact id="Goal/chf-scenario1-jvp" key="Goal-chf-scenario1-jvp" name="chf-scenario1-jvp"/>
+<artifact id="ServiceRequest/chf-scenario1-jvp" key="ServiceRequest-chf-scenario1-jvp" name="chf-scenario1-jvp"/>
+<artifact id="Observation/chf-scenario1-jvp1" key="Observation-chf-scenario1-jvp1" name="chf-scenario1-jvp1"/>
+<artifact id="Observation/chf-scenario1-jvp2" key="Observation-chf-scenario1-jvp2" name="chf-scenario1-jvp2"/>
+<artifact id="Observation/chf-scenario1-jvp3" key="Observation-chf-scenario1-jvp3" name="chf-scenario1-jvp3"/>
+<artifact id="Observation/chf-scenario1-jvp4" key="Observation-chf-scenario1-jvp4" name="chf-scenario1-jvp4"/>
+<artifact id="Observation/chf-scenario1-jvp5" key="Observation-chf-scenario1-jvp5" name="chf-scenario1-jvp5"/>
+<artifact id="Goal/chf-scenario1-lasix-iv" key="Goal-chf-scenario1-lasix-iv" name="chf-scenario1-lasix-iv"/>
+<artifact id="MedicationAdministration/chf-scenario1-lasix-iv" key="MedicationAdministration-chf-scenario1-lasix-iv" name="chf-scenario1-lasix-iv"/>
+<artifact id="Goal/chf-scenario1-lasix-po" key="Goal-chf-scenario1-lasix-po" name="chf-scenario1-lasix-po"/>
+<artifact id="MedicationAdministration/chf-scenario1-lasix-po" key="MedicationAdministration-chf-scenario1-lasix-po" name="chf-scenario1-lasix-po"/>
+<artifact id="MedicationRequest/chf-scenario1-lasix-po" key="MedicationRequest-chf-scenario1-lasix-po" name="chf-scenario1-lasix-po"/>
+<artifact id="Goal/chf-scenario1-net-io" key="Goal-chf-scenario1-net-io" name="chf-scenario1-net-io"/>
+<artifact id="Observation/chf-scenario1-netio3" key="Observation-chf-scenario1-netio3" name="chf-scenario1-netio3"/>
+<artifact id="Goal/chf-scenario1-o2-sat" key="Goal-chf-scenario1-o2-sat" name="chf-scenario1-o2-sat"/>
+<artifact id="ServiceRequest/chf-scenario1-o2-sat" key="ServiceRequest-chf-scenario1-o2-sat" name="chf-scenario1-o2-sat"/>
+<artifact id="Observation/chf-scenario1-o2sat1" key="Observation-chf-scenario1-o2sat1" name="chf-scenario1-o2sat1"/>
+<artifact id="Observation/chf-scenario1-o2sat2" key="Observation-chf-scenario1-o2sat2" name="chf-scenario1-o2sat2"/>
+<artifact id="Goal/chf-scenario1-potassium" key="Goal-chf-scenario1-potassium" name="chf-scenario1-potassium"/>
+<artifact id="Observation/chf-scenario1-potassium1" key="Observation-chf-scenario1-potassium1" name="chf-scenario1-potassium1"/>
+<artifact id="MedicationRequest/chf-scenario1-stop-lasix-iv" key="MedicationRequest-chf-scenario1-stop-lasix-iv" name="chf-scenario1-stop-lasix-iv"/>
+<artifact id="Goal/chf-scenario1-urine-out" key="Goal-chf-scenario1-urine-out" name="chf-scenario1-urine-out"/>
+<artifact id="MeasureReport/chf-scenario1-urineout3" key="MeasureReport-chf-scenario1-urineout3" name="chf-scenario1-urineout3"/>
+<artifact id="Observation/chf-scenario1-urineout3" key="Observation-chf-scenario1-urineout3" name="chf-scenario1-urineout3"/>
+<artifact id="Goal/chf-scenario1-weight" key="Goal-chf-scenario1-weight" name="chf-scenario1-weight"/>
+<artifact id="Goal/chf-scenario1-weight-change" key="Goal-chf-scenario1-weight-change" name="chf-scenario1-weight-change"/>
 <artifact id="ActivityDefinition/chf-urine-out" key="ActivityDefinition-chf-urine-out" name="chf-urine-out"/>
 <artifact id="Measure/chf-urine-out" key="Measure-chf-urine-out" name="chf-urine-out"/>
 <artifact id="PlanDefinition/chf-urine-out" key="PlanDefinition-chf-urine-out" name="chf-urine-out"/>
@@ -400,7 +407,6 @@
 <artifact id="ValueSet/ckd-valueset-creatinine" key="ValueSet-ckd-valueset-creatinine" name="ckd-valueset-creatinine"/>
 <artifact id="ValueSet/ckd-valueset-diabetes" key="ValueSet-ckd-valueset-diabetes" name="ckd-valueset-diabetes"/>
 <artifact id="ValueSet/ckd-valueset-egfr" key="ValueSet-ckd-valueset-egfr" name="ckd-valueset-egfr"/>
-<artifact id="ValueSet/ckd-valueset-uacr" key="ValueSet-ckd-valueset-uacr" name="ckd-valueset-uacr"/>
 <artifact id="Condition/condition-ra2-iron-side-effects" key="Condition-condition-ra2-iron-side-effects" name="condition-ra2-iron-side-effects"/>
 <artifact id="MedicationRequest/dcm-scenario1" key="MedicationRequest-dcm-scenario1" name="dcm-scenario1"/>
 <artifact id="Patient/dcm-scenario1" key="Patient-dcm-scenario1" name="dcm-scenario1"/>
@@ -492,6 +498,11 @@
 <artifact id="Task/event-inf-scenario4" key="Task-event-inf-scenario4" name="event-inf-scenario4"/>
 <artifact id="Task/event-pd-scenario4" key="Task-event-pd-scenario4" name="event-pd-scenario4"/>
 <artifact id="Task/event-rf-scenario4" key="Task-event-rf-scenario4" name="event-rf-scenario4"/>
+<artifact id="DetectedIssue/existing-antimicrobial-detected-issue" key="DetectedIssue-existing-antimicrobial-detected-issue" name="existing-antimicrobial-detected-issue"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-not-pregnant-pd" name="first-vaccine-dose-antimicrobial-not-pregnant-pd"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-pregnant-pd" name="first-vaccine-dose-antimicrobial-pregnant-pd"/>
+<artifact id="PlanDefinition/first-vaccine-dose-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-not-pregnant-pd" name="first-vaccine-dose-not-pregnant-pd"/>
+<artifact id="PlanDefinition/first-vaccine-dose-pregnant-pd" key="PlanDefinition-first-vaccine-dose-pregnant-pd" name="first-vaccine-dose-pregnant-pd"/>
 <artifact id="Patient/gr-scenario1" key="Patient-gr-scenario1" name="gr-scenario1"/>
 <artifact id="Patient/gr-scenario2" key="Patient-gr-scenario2" name="gr-scenario2"/>
 <artifact id="MeasureReport/gr-scenario4" key="MeasureReport-gr-scenario4" name="gr-scenario4"/>
@@ -500,6 +511,9 @@
 <artifact id="Patient/inf-scenario2" key="Patient-inf-scenario2" name="inf-scenario2"/>
 <artifact id="Observation/inf-scenario4" key="Observation-inf-scenario4" name="inf-scenario4"/>
 <artifact id="Patient/inf-scenario4" key="Patient-inf-scenario4" name="inf-scenario4"/>
+<artifact id="Flag/latex-allergy-flag" key="Flag-latex-allergy-flag" name="latex-allergy-flag"/>
+<artifact id="Library/model-definition" key="Library-model-definition" name="model-definition"/>
+<artifact id="Flag/no-asymptomatic-observation-flag" key="Flag-no-asymptomatic-observation-flag" name="no-asymptomatic-observation-flag"/>
 <artifact id="Observation/observation-anc-ra2-gestational-age" key="Observation-observation-anc-ra2-gestational-age" name="observation-anc-ra2-gestational-age"/>
 <artifact id="Observation/observation-anc-ra2-hb-concentration" key="Observation-observation-anc-ra2-hb-concentration" name="observation-anc-ra2-hb-concentration"/>
 <artifact id="Patient/om-scenario1" key="Patient-om-scenario1" name="om-scenario1"/>
@@ -570,6 +584,10 @@
 <artifact id="Immunization/ri-scenario4" key="Immunization-ri-scenario4" name="ri-scenario4"/>
 <artifact id="Patient/ri-scenario4" key="Patient-ri-scenario4" name="ri-scenario4"/>
 <artifact id="Communication/scenario8" key="Communication-scenario8" name="scenario8"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-notpregnant-pd" name="second-vaccinedose-antimicrobial-notpregnant-pd"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-pregnant-pd" name="second-vaccinedose-antimicrobial-pregnant-pd"/>
+<artifact id="PlanDefinition/second-vaccinedose-notpregnant-pd" key="PlanDefinition-second-vaccinedose-notpregnant-pd" name="second-vaccinedose-notpregnant-pd"/>
+<artifact id="PlanDefinition/second-vaccinedose-pregnant-pd" key="PlanDefinition-second-vaccinedose-pregnant-pd" name="second-vaccinedose-pregnant-pd"/>
 <artifact id="Patient/sm-scenario1" key="Patient-sm-scenario1" name="sm-scenario1"/>
 <artifact id="CommunicationRequest/sm-scenario2" key="CommunicationRequest-sm-scenario2" name="sm-scenario2"/>
 <artifact id="Patient/sm-scenario2" key="Patient-sm-scenario2" name="sm-scenario2"/>
@@ -587,8 +605,15 @@
 <artifact id="Patient/sm-scenario7" key="Patient-sm-scenario7" name="sm-scenario7"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario5" key="CommunicationRequest-stop-dnsm-scenario5" name="stop-dnsm-scenario5"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario6" key="CommunicationRequest-stop-dnsm-scenario6" name="stop-dnsm-scenario6"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-notpregnant-pd" name="third-vaccinedose-antimicrobial-notpregnant-pd"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-pregnant-pd" name="third-vaccinedose-antimicrobial-pregnant-pd"/>
+<artifact id="PlanDefinition/third-vaccinedose-notpregnant-pd" key="PlanDefinition-third-vaccinedose-notpregnant-pd" name="third-vaccinedose-notpregnant-pd"/>
+<artifact id="PlanDefinition/third-vaccinedose-pregnant-pd" key="PlanDefinition-third-vaccinedose-pregnant-pd" name="third-vaccinedose-pregnant-pd"/>
+<artifact id="ValueSet/us-core-vital-signs" key="ValueSet-us-core-vital-signs" name="us-core-vital-signs"/>
 <artifact id="PlanDefinition/va-ckd-protocol" key="PlanDefinition-va-ckd-protocol" name="va-ckd-protocol"/>
 <artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="va-ckd-recommendations"/>
+<artifact id="Flag/vaccine-allergy-flag" key="Flag-vaccine-allergy-flag" name="vaccine-allergy-flag"/>
+<artifact id="DetectedIssue/vaccine-history-inconsistencies-detected-issue" key="DetectedIssue-vaccine-history-inconsistencies-detected-issue" name="vaccine-history-inconsistencies-detected-issue"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>

@@ -33,18 +33,17 @@
         ]
       },
       "detailRange": {
-          "low": {
-            "value": 0.5,
-            "unit": "kg/d",
-            "system": "http://unitsofmeasure.org",
-            "code": "kg/d"
-          },
-          "high": {
-            "value": 1.5,
-            "unit": "kg/d",
-            "system": "http://unitsofmeasure.org",
-            "code": "kg/d"
-          }
+        "low": {
+          "value": 0.5,
+          "unit": "kg/d",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/d"
+        },
+        "high": {
+          "value": 1.5,
+          "unit": "kg/d",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/d"
         }
       }
     }
