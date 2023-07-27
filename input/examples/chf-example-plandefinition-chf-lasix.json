@@ -1,0 +1,114 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "chf-lasix",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-hypervolemia"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-lasix",
+  "name": "CHFLASIX",
+  "title": "CHF LASIX",
+  "description": "Administer LASIX IV, transition to PO as appropriate",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "eca-rule"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "goal": [
+    {
+      "description": {
+        "text": "Transition to LASIX PO"
+      },
+      "start": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "32485007",
+            "display": "Admission to hospital"
+          }
+        ]
+      }
+    }
+  ],
+  "action": [
+    {
+      "id": "lasix-iv",
+      "title": "LASIX IV",
+      "description": "Administer LASIX IV",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "dispense-medications"
+          }
+        ]
+      }],
+      "condition": [
+        {
+          "kind": "stop",
+          "expression": {
+            "language": "text/cql-identifier",
+            "expression": "Should Stop LASIX IV"
+          }
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-lasix-iv"
+    },
+    {
+      "id": "lasix-po",
+      "title": "LASIX PO",
+      "description": "Administer LASIX PO",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "dispense-medications"
+          }
+        ]
+      }],
+      "condition": [
+        {
+          "kind": "start",
+          "expression": {
+            "language": "text/cql-identifier",
+            "expression": "Should Start LASIX PO"
+          }
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-lasix-po"
+    }
+  ]
+}

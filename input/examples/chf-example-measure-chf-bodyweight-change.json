@@ -1,0 +1,93 @@
+{
+  "resourceType": "Measure",
+  "id": "chf-bodyweight-change",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight-change",
+  "version": "1.0.0",
+  "name": "CHFBodyWeightChange",
+  "title": "CHF Body Weight Change Metric",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-11-29T15:54:22-07:00",
+  "description": "Body weight change metric as a feature of a congestive heart failure pathway",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "library": [ "http://hl7.org/fhir/uv/cpg/Library/CHF" ],
+  "scoring": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+        "code": "continuous-variable"
+      }
+    ]
+  },
+  "improvementNotation": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+        "code": "decrease"
+      }
+    ]
+  },
+  "group": [
+    {
+      "population": [
+        {
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "measure-observation"
+              }
+            ]
+          },
+          "criteria": {
+            "language": "text/cql-identifier",
+            "expression": "Current Body Weight Change"
+          }
+        }
+      ]
+    }
+  ]
+}

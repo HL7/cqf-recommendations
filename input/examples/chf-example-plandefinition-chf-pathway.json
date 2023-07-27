@@ -1,0 +1,78 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "chf-pathway",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-pathway",
+  "name": "CHFPathway",
+  "title": "Congestive Heart Failure Care Pathway",
+  "description": "Treatment and management care pathway for patients with admitting diagnosis of congestive heart failure",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "clinical-protocol"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "action": [
+    {
+      "title": "CHF Daily Management",
+      "description": "Daily Management strategy for Congestive Heart Failure",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "guideline-based-care"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-daily-management"
+    },
+    {
+      "title": "CHF Hypervolemia",
+      "description": "Hypervolemia strategy for Congestive Heart Failure",
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "code": "guideline-based-care"
+            }
+          ]
+        }
+      ],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-hypervolemia"
+    }
+  ]
+}

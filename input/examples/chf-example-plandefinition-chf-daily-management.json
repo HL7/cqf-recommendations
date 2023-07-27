@@ -1,0 +1,104 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "chf-daily-management",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-pathway"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled",
+      "valueBoolean": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-daily-management",
+  "name": "CHFDailyManagement",
+  "title": "CHF Daily Management",
+  "description": "Daily management strategy as part of a care pathway for patients with admitting diagnosis of congestive heart failure",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "workflow-definition"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "action": [
+    {
+      "title": "Weight",
+      "description": "Measure weight daily",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-bodyweight"
+    },
+    {
+      "title": "Weight Change",
+      "description": "Manage weight change",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-bodyweight-change"
+    },
+    {
+      "title": "Urine Output",
+      "description": "Measure urine output daily",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-urine-out"
+    },
+    {
+      "title": "Net I/Os",
+      "description": "Measure net intake/output daily",
+      "code": [{
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "code": "diagnostic-testing"
+          }
+        ]
+      }],
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-net-io"
+    }
+  ]
+}
