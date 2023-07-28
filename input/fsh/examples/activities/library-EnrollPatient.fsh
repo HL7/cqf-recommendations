@@ -11,7 +11,7 @@ Title: "Enrollment Library"
 * insert RelatedFHIRLibraries
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(CPGActivityTypeCS)
+  * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
   * name = #enrollInPathway
   * use = #in

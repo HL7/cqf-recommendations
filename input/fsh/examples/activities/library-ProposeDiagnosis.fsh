@@ -11,7 +11,7 @@ Title: "Propose Diagnosis Library"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(CPGActivityTypeCS)
+  * resource = Canonical(cpg-activity-type-cs)
 * relatedArtifact[+]
   * type = #depends-on
   * resource = Canonical(ConditionClinicalStatusCodes)

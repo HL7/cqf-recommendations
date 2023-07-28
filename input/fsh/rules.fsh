@@ -115,5 +115,5 @@ RuleSet: StructureDefinitionMetadata(id)
 * ^experimental = false
 
 RuleSet: ExtensionContext(path)
-* ^context.type = #element
-* ^context.expression = "{path}"
+* ^context[+].type = #element
+* ^context[=].expression = "{path}"

@@ -11,7 +11,7 @@ Title: "Do Not Collect Information Library"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(CPGActivityTypeCS)
+  * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
   * name = #collectWithQuestionnaire
   * use = #in
