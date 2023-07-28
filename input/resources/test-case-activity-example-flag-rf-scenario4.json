@@ -1,6 +1,6 @@
 {
   "resourceType": "Flag",
-  "id": "rf-scenario4-flag",
+  "id": "rf-scenario4",
   "status": "active",
   "category": [
     {
@@ -17,6 +17,6 @@
     "text": "Flag"
   },
   "subject": {
-    "reference": "Patient/rf-scenario4-patient"
+    "reference": "Patient/rf-scenario4"
   }
 }

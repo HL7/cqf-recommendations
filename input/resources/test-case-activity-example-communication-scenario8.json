@@ -1,9 +1,9 @@
 {
   "resourceType": "Communication",
-  "id": "scenario8-communication",
+  "id": "scenario8",
   "status": "completed",
   "subject": {
-    "reference": "Patient/dnci-scenario8-patient"
+    "reference": "Patient/dnci-scenario8"
   },
   "payload": [
     {
@@ -12,7 +12,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnci-scenario8-patient"
+      "reference": "Patient/dnci-scenario8"
     }
   ]
 }

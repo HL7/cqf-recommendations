@@ -1,6 +1,6 @@
 {
   "resourceType": "Encounter",
-  "id": "ep-scenario4-encounter",
+  "id": "ep-scenario4",
   "status": "in-progress",
   "class": {
     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -28,11 +28,11 @@
     ]
   },
   "subject": {
-    "reference": "Patient/ep-scenario4-patient"
+    "reference": "Patient/ep-scenario4"
   },
   "episodeOfCare": [
     {
-      "reference": "EpisodeOfCare/ep-scenario4-eoc"
+      "reference": "EpisodeOfCare/ep-scenario4"
     }
   ]
 }

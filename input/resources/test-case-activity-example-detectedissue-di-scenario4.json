@@ -13,7 +13,7 @@
   },
   "severity": "high",
   "patient": {
-    "reference": "Patient/di-scenario4-patient"
+    "reference": "Patient/di-scenario4"
   },
   "detail": "Proposed therapy may be inappropriate or ineffective based on proposed start or end time."
 }

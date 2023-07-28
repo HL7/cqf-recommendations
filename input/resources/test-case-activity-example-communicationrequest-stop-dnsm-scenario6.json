@@ -1,6 +1,6 @@
 {
   "resourceType": "CommunicationRequest",
-  "id": "stop-dnsm-scenario6-cr",
+  "id": "stop-dnsm-scenario6",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
@@ -13,7 +13,7 @@
   },
   "doNotPerform": true,
   "subject": {
-    "reference": "Patient/dnsm-scenario6-patient"
+    "reference": "Patient/dnsm-scenario6"
   },
   "payload": [
     {
@@ -22,7 +22,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnsm-scenario6-patient"
+      "reference": "Patient/dnsm-scenario6"
     }
   ]
 }

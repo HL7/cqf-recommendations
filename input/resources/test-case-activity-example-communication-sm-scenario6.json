@@ -1,12 +1,12 @@
 {
   "resourceType": "Communication",
-  "id": "sm-scenario6-communication",
+  "id": "sm-scenario6",
   "status": "not-done",
   "statusReason": {
     "text": "Patient refused"
   },
   "subject": {
-    "reference": "Patient/sm-scenario6-patient"
+    "reference": "Patient/sm-scenario6"
   },
   "payload": [
     {
@@ -15,7 +15,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario6-patient"
+      "reference": "Patient/sm-scenario6"
     }
   ]
 }

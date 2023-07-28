@@ -1,14 +1,14 @@
 {
   "resourceType": "Communication",
-  "id": "sm-scenario5-communication",
+  "id": "sm-scenario5",
   "basedOn": [
     {
-      "reference": "CommunicationRequest/sm-scenario5-cr"
+      "reference": "CommunicationRequest/sm-scenario5"
     }
   ],
   "status": "completed",
   "subject": {
-    "reference": "Patient/sm-scenario5-patient"
+    "reference": "Patient/sm-scenario5"
   },
   "payload": [
     {
@@ -17,7 +17,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario5-patient"
+      "reference": "Patient/sm-scenario5"
     }
   ]
 }

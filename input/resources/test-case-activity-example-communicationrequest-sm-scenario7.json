@@ -1,6 +1,6 @@
 {
   "resourceType": "CommunicationRequest",
-  "id": "sm-scenario7-cr",
+  "id": "sm-scenario7",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
@@ -12,7 +12,7 @@
     "text": "Patient refused"
   },
   "subject": {
-    "reference": "Patient/sm-scenario7-patient"
+    "reference": "Patient/sm-scenario7"
   },
   "payload": [
     {
@@ -21,7 +21,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario7-patient"
+      "reference": "Patient/sm-scenario7"
     }
   ]
 }

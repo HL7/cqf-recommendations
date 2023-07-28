@@ -1,9 +1,9 @@
 {
   "resourceType": "CommunicationRequest",
-  "id": "dnsm-scenario4-cr",
+  "id": "dnsm-scenario4",
   "status": "active",
   "subject": {
-    "reference": "Patient/dnsm-scenario4-patient"
+    "reference": "Patient/dnsm-scenario4"
   },
   "payload": [
     {
@@ -12,7 +12,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnsm-scenario4-patient"
+      "reference": "Patient/dnsm-scenario4"
     }
   ]
 }

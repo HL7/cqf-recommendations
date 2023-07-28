@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "ep-scenario4-condition",
+  "id": "ep-scenario4",
   "clinicalStatus": {
     "coding": [
       {
@@ -38,10 +38,10 @@
     "text": "Stroke"
   },
   "subject": {
-    "reference": "Patient/ep-scenario4-patient"
+    "reference": "Patient/ep-scenario4"
   },
   "encounter": {
-    "reference": "Encounter/ep-scenario4-encounter"
+    "reference": "Encounter/ep-scenario4"
   },
   "onsetDateTime": "2020-01-15"
 }

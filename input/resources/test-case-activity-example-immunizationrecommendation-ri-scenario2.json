@@ -1,6 +1,6 @@
 {
   "resourceType": "ImmunizationRecommendation",
-  "id": "ri-scenario2-ir",
+  "id": "ri-scenario2",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
@@ -8,7 +8,7 @@
     }
   ],
   "patient": {
-    "reference": "Patient/ri-scenario2-patient"
+    "reference": "Patient/ri-scenario2"
   },
   "date": "2020-12-22",
   "recommendation": [

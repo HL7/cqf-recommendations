@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "am-scenario7-mr",
+  "id": "am-scenario7",
   "status": "active",
   "intent": "order",
   "priority": "routine",

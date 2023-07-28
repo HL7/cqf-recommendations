@@ -1,6 +1,6 @@
 {
   "resourceType": "CommunicationRequest",
-  "id": "sm-scenario2-cr",
+  "id": "sm-scenario2",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
@@ -9,7 +9,7 @@
   ],
   "status": "active",
   "subject": {
-    "reference": "Patient/sm-scenario2-patient"
+    "reference": "Patient/sm-scenario2"
   },
   "payload": [
     {
@@ -18,7 +18,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario2-patient"
+      "reference": "Patient/sm-scenario2"
     }
   ]
 }

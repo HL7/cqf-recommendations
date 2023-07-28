@@ -1,9 +1,9 @@
 {
   "resourceType": "Communication",
-  "id": "sm-scenario7-communication",
+  "id": "sm-scenario7",
   "basedOn": [
     {
-      "reference": "CommunicationRequest/sm-scenario7-cr"
+      "reference": "CommunicationRequest/sm-scenario7"
     }
   ],
   "status": "not-done",
@@ -11,7 +11,7 @@
     "text": "Patient refused"
   },
   "subject": {
-    "reference": "Patient/sm-scenario7-patient"
+    "reference": "Patient/sm-scenario7"
   },
   "payload": [
     {
@@ -20,7 +20,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario7-patient"
+      "reference": "Patient/sm-scenario7"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "resourceType": "Communication",
-  "id": "sm-scenario4-communication",
+  "id": "sm-scenario4",
   "status": "completed",
   "subject": {
-    "reference": "Patient/sm-scenario4-patient"
+    "reference": "Patient/sm-scenario4"
   },
   "payload": [
     {
@@ -12,7 +12,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario4-patient"
+      "reference": "Patient/sm-scenario4"
     }
   ]
 }

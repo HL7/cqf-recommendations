@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "pd-scenario4-condition",
+  "id": "pd-scenario4",
   "clinicalStatus": {
     "coding": [
       {
@@ -38,7 +38,7 @@
     "text": "Stroke"
   },
   "subject": {
-    "reference": "Patient/pd-scenario4-patient"
+    "reference": "Patient/pd-scenario4"
   },
   "onsetDateTime": "2020-01-15"
 }
