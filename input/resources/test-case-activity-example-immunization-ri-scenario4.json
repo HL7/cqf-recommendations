@@ -1,6 +1,6 @@
 {
   "resourceType": "Immunization",
-  "id": "ri-scenario4",
+  "id": "ri-scenario4-immunization",
   "status": "completed",
   "vaccineCode": {
     "coding": [
@@ -12,7 +12,7 @@
     ]
   },
   "patient": {
-    "reference": "Patient/ri-scenario4"
+    "reference": "Patient/ri-scenario4-patient"
   },
   "occurrenceDateTime": "2020-01-15"
 }

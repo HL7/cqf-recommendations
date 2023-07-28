@@ -1,12 +1,12 @@
 {
   "resourceType": "Communication",
-  "id": "dnsm-scenario7",
+  "id": "dnsm-scenario7-communication",
   "status": "not-done",
   "statusReason": {
     "text": "Medical reason"
   },
   "subject": {
-    "reference": "Patient/dnsm-scenario7"
+    "reference": "Patient/dnsm-scenario7-patient"
   },
   "payload": [
     {
@@ -15,7 +15,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnsm-scenario7"
+      "reference": "Patient/dnsm-scenario7-patient"
     }
   ]
 }

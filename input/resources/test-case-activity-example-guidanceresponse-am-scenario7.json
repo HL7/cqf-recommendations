@@ -1,6 +1,6 @@
 {
   "resourceType": "GuidanceResponse",
-  "id": "am-scenario7",
+  "id": "am-scenario7-gr",
   "contained": [
     {
       "resourceType": "Parameters",
@@ -20,7 +20,7 @@
   "moduleCanonical": "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication",
   "status": "success",
   "subject": {
-    "reference": "Patient/am-scenario7"
+    "reference": "Patient/am-scenario7-patient"
   },
   "outputParameters": {
     "reference": "#output"

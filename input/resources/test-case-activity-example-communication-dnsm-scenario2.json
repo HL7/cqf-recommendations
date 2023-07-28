@@ -1,9 +1,9 @@
 {
   "resourceType": "Communication",
-  "id": "dnsm-scenario2",
+  "id": "dnsm-scenario2-communication",
   "status": "in-progress",
   "subject": {
-    "reference": "Patient/dnsm-scenario2"
+    "reference": "Patient/dnsm-scenario2-patient"
   },
   "payload": [
     {
@@ -12,7 +12,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnsm-scenario2"
+      "reference": "Patient/dnsm-scenario2-patient"
     }
   ]
 }

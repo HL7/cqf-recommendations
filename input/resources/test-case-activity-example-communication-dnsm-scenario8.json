@@ -1,9 +1,9 @@
 {
   "resourceType": "Communication",
-  "id": "dnsm-scenario8",
+  "id": "dnsm-scenario8-communication",
   "status": "completed",
   "subject": {
-    "reference": "Patient/dnsm-scenario8"
+    "reference": "Patient/dnsm-scenario8-patient"
   },
   "payload": [
     {
@@ -12,7 +12,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnsm-scenario8"
+      "reference": "Patient/dnsm-scenario8-patient"
     }
   ]
 }

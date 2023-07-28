@@ -1,6 +1,6 @@
 {
   "resourceType": "EpisodeOfCare",
-  "id": "ep-scenario4",
+  "id": "ep-scenario4-eoc",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn",
@@ -11,11 +11,11 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "Condition/ep-scenario4"
+        "reference": "Condition/ep-scenario4-condition"
       }
     }
   ],
   "patient": {
-    "reference": "Patient/ep-scenario4"
+    "reference": "Patient/ep-scenario4-patient"
   }
 }
