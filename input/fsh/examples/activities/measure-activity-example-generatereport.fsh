@@ -3,6 +3,7 @@ InstanceOf: Measure
 Usage: #example
 Title: "Activity Example Generate Report Measure"
 * description = "Example measure for the activity example to generate a report"
+* title = "Activity Example Generate Report Measure"
 * insert KnowledgeArtifactMetadata(activity-example-generatereport-measure, Measure)
 * name = "ActivityExampleGenerateReportMeasure"
 * description = "Example measure for the activity example to generate a report"

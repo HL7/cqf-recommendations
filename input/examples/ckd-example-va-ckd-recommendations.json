@@ -123,7 +123,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction",
+                "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction-cs",
                 "code": "for",
                 "display": "For"
               }

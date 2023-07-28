@@ -54,7 +54,7 @@
       "code": [{
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code": "diagnostic-testing"
           }
         ]
@@ -67,7 +67,7 @@
       "code": [{
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code": "diagnostic-testing"
           }
         ]
@@ -80,7 +80,7 @@
       "code": [{
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code": "diagnostic-testing"
           }
         ]
@@ -93,7 +93,7 @@
       "code": [{
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code": "diagnostic-testing"
           }
         ]
@@ -106,7 +106,7 @@
       "code": [{
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code": "diagnostic-testing"
           }
         ]
@@ -119,7 +119,7 @@
       "code": [{
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code": "guideline-based-care"
           }
         ]
@@ -132,7 +132,7 @@
       "code": [{
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
             "code": "guideline-based-care"
           }
         ]

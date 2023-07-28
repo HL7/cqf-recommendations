@@ -48,7 +48,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "registration"
 						}
 					]
@@ -67,7 +67,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "history-and-physical"
 						}
 					]
@@ -99,7 +99,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "triage"
 						}
 					]
@@ -113,7 +113,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "diagnostic-testing"
 						}
 					]
@@ -126,7 +126,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "discharge-referral-of-patient"
 						}
 					]
@@ -139,7 +139,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "monitor-and-follow-up-of-patient"
 						}
 					]

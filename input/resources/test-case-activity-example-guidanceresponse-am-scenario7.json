@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "moduleCanonical": "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication",
+  "moduleCanonical": "http://hl7.org/fhir/uv/cpg/Library/administermedication-library",
   "status": "success",
   "subject": {
     "reference": "Patient/am-scenario7-patient"

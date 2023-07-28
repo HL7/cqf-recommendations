@@ -1,13 +1,13 @@
 {
   "resourceType": "Task",
   "id": "request-dm-scenario7",
-  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-dispensemedication",
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-dispensemedication-ad",
   "status": "draft",
   "intent": "proposal",
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
         "code": "dispense-medication",
         "display": "Dispense a medication"
       }
@@ -21,7 +21,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
             "code": "order-medication",
             "display": "Order a medication"
           }

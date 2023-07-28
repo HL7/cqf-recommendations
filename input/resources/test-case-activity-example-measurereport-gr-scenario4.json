@@ -3,7 +3,7 @@
   "id": "gr-scenario4",
   "status": "complete",
   "type": "individual",
-  "measure": "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport",
+  "measure": "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport-measure",
   "subject": {
     "reference": "Patient/gr-scenario4"
   },

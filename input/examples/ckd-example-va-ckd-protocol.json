@@ -108,7 +108,7 @@
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
               "code": "history-and-physical",
               "display": "History and Physical"
             }
@@ -124,7 +124,7 @@
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
               "code": "history-and-physical",
               "display": "History and Physical"
             }
@@ -140,7 +140,7 @@
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
               "code": "triage",
               "display": "Triage"
             }
@@ -156,7 +156,7 @@
             {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
                   "code": "triage",
                   "display": "Triage"
                 }
@@ -174,7 +174,7 @@
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
               "code": "determine-diagnosis",
               "display": "Determine Diagnosis"
             }
@@ -199,7 +199,7 @@
             {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
                   "code": "determine-diagnosis",
                   "display": "Determine Diagnosis"
                 }
@@ -215,7 +215,7 @@
             {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+                  "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
                   "code": "guideline-based-care",
                   "display": "Guideline-based Care"
                 }

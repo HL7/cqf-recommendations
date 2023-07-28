@@ -1,13 +1,13 @@
 {
   "resourceType": "Task",
   "id": "event-gr-scenario4",
-  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-generatereport",
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-generatereport-ad",
   "status": "completed",
   "intent": "order",
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
         "code": "generate-report",
         "display": "Generate a metric or case report"
       }
@@ -21,13 +21,13 @@
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
             "code": "generate-report",
             "display": "Generate a metric or case report"
           }
         ]
       },
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/Measure/activity-example-generatereport-measure"
     }
   ],
   "output": [
@@ -35,7 +35,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
             "code": "generate-report",
             "display": "Generate a metric or case report"
           }

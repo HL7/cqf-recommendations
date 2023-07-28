@@ -47,13 +47,13 @@
       "onsetDateTime": "2020-01-15"
     }
   ],
-  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-proposediagnosis",
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-proposediagnosis-ad",
   "status": "draft",
   "intent": "proposal",
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
         "code": "propose-diagnosis",
         "display": "Propose a diagnosis"
       }
@@ -67,7 +67,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
             "code": "propose-diagnosis",
             "display": "Propose a diagnosis"
           }

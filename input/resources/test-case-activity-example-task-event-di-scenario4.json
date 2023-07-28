@@ -22,13 +22,13 @@
       "detail": "Proposed therapy may be inappropriate or ineffective based on proposed start or end time."
     }
   ],
-  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-recorddetectedissue",
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-recorddetectedissue-ad",
   "status": "completed",
   "intent": "order",
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
         "code": "record-detected-issue",
         "display": "Record a detected issue"
       }
@@ -42,7 +42,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
             "code": "record-detected-issue",
             "display": "Record a detected issue"
           }
@@ -58,7 +58,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
             "code": "record-detected-issue",
             "display": "Record a detected issue"
           }

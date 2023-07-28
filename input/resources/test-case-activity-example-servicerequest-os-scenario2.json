@@ -1,7 +1,7 @@
 {
   "resourceType": "ServiceRequest",
   "id": "os-scenario2",
-  "instantiatesCanonical": [ "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-orderservice" ],
+  "instantiatesCanonical": [ "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-orderservice-ad" ],
   "status": "active",
   "intent": "proposal",
   "category": [

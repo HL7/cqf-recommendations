@@ -1,13 +1,13 @@
 {
   "resourceType": "Task",
   "id": "request-am-scenario3",
-  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication",
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication-ad",
   "status": "in-progress",
   "intent": "order",
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
         "code": "administer-medication",
         "display": "Administer a medication"
       }
@@ -21,7 +21,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
             "code": "administer-medication",
             "display": "Administer a medication"
           }

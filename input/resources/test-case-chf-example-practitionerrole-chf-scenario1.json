@@ -12,7 +12,7 @@
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona",
+          "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs",
           "code": "2212",
           "display": "Specialist medical practitioner"
         }

@@ -4,7 +4,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-pathway-pd"
     }
   ],
   "status": "active",

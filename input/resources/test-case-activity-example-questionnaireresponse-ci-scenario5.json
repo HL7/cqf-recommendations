@@ -1,7 +1,7 @@
 {
   "resourceType": "QuestionnaireResponse",
   "id": "ci-scenario5",
-  "questionnaire": "http://hl7.org/fhir/uv/cpg/Questionnaire/activity-example-collectinformation",
+  "questionnaire": "http://hl7.org/fhir/uv/cpg/Questionnaire/activity-example-collectinformation-questionnaire",
   "status": "completed",
   "subject": {
     "reference": "Patient/ci-scenario5"

@@ -17,7 +17,7 @@
     "reference": "Patient/om-scenario5"
   },
   "instantiatesCanonical": [
-    "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-ordermedication"
+    "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-ordermedication-ad"
   ],
   "reasonCode": [
     {
