@@ -790,24 +790,24 @@ INFORMATION: ActivityDefinition/cpg-recordinferencetask-activitydefinition: Acti
 INFORMATION: ActivityDefinition/cpg-reportflagtask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/cpg-servicerequest-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: CapabilityStatement/cpg-common-patient-registry: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
-INFORMATION: CodeSystem/cpg-activity-type: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-activity-type: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-casefeature-pertinence: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-casefeature-pertinence: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-casefeature-type: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-casefeature-type: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-common-persona: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-common-persona: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-common-process: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-common-process: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-indicator: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-indicator: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-knowledge-capability: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-knowledge-capability: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-knowledge-representation-level: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-knowledge-representation-level: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-recommendation-direction: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-recommendation-direction: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-activity-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-activity-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-casefeature-pertinence-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-casefeature-pertinence-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-casefeature-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-casefeature-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-common-process-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-common-process-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-indicator-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-indicator-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-knowledge-capability-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-knowledge-capability-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-knowledge-representation-level-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-knowledge-representation-level-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/cpg-recommendation-direction-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/cpg-recommendation-direction-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
 INFORMATION: ImplementationGuide/hl7.fhir.uv.cpg: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 INFORMATION: OperationDefinition/cpg-careplan-apply: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
 INFORMATION: OperationDefinition/cpg-common-patient-summary: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
@@ -819,24 +819,24 @@ INFORMATION: PlanDefinition/cpg-common-registration: PlanDefinition: Validate re
 INFORMATION: Questionnaire/cpg-common-identity: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 INFORMATION: Questionnaire/cpg-common-patient-profile: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 INFORMATION: Questionnaire/cpg-common-resolve-patient-match: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
-INFORMATION: ValueSet/cpg-activity-type: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-activity-type: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-casefeature-pertinence: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-casefeature-pertinence: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-casefeature-type: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-casefeature-type: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-common-persona: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-common-persona: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-common-process: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-common-process: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-indicator: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-indicator: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-knowledge-capability: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-knowledge-capability: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-knowledge-representation-level: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-knowledge-representation-level: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-recommendation-direction: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-recommendation-direction: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-activity-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-activity-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-casefeature-pertinence-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-casefeature-pertinence-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-casefeature-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-casefeature-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-common-persona-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-common-persona-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-common-process-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-common-process-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-indicator-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-indicator-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-knowledge-capability-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-knowledge-capability:-vs ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-knowledge-representation-level-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-knowledge-representation-level-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/cpg-recommendation-direction-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/cpg-recommendation-direction-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
 INFORMATION: StructureDefinition/cpg-administermedication: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/cpg-administermedicationtask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/cpg-artifactbundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

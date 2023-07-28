@@ -224,7 +224,7 @@
 	],
 	"content": [
 		{
-			"id": "OpioidCDSR4Common.cql"
+			"id": "ig-loader-OpioidCDSR4Common.cql"
 		}
 	]
 }
