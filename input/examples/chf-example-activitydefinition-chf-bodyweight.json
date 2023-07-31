@@ -1,6 +1,6 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "chf-bodyweight",
+  "id": "chf-bodyweight-ad",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight-ad",
   "name": "CHFBodyWeight",
   "title": "CHF Body Weight",
   "status": "draft",

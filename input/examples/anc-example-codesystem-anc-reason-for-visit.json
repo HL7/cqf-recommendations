@@ -1,6 +1,6 @@
 {
 	"resourceType": "CodeSystem",
-	"id": "anc-reason-for-visit",
+	"id": "anc-reason-for-visit-cs",
 	"meta": {
 		"profile": [
 			"http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
@@ -24,7 +24,7 @@
 			"valueCode": "structured"
 		}
 	],
-	"url": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-reason-for-visit",
+	"url": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-reason-for-visit-cs",
 	"name": "ANCReasonForVisit",
 	"title": "ANC Reason for Visit",
 	"status": "draft",
@@ -43,7 +43,7 @@
 	],
 	"description": "Codes used to identify the reason for an antenatal care visit",
 	"caseSensitive": true,
-	"valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/anc-reason-for-visit",
+	"valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/anc-reason-for-visit-vs",
 	"content": "complete",
 	"concept": [
 		{

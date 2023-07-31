@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "chf-scenario1-lasix-po",
+  "id": "chf-scenario1-lasix-po-mr",
   "status": "draft",
   "intent": "proposal",
   "priority": "routine",

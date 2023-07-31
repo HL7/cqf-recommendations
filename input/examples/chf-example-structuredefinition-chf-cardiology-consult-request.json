@@ -15,7 +15,7 @@
     },
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-cardiology-consultation"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-cardiology-consultation-pd"
     },
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",

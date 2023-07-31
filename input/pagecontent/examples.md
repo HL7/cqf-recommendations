@@ -12,13 +12,13 @@ This page lists examples of various clinical guidelines expressed as computable 
 
 The following sections provide listings of resources defined in these examples, indexed by resource type.
 
-### Example ActivityDefinition Indexexamples.html#activitydefinition-index "link to here")
+### Example ActivityDefinition
 
 *   [CHF Body Weight](ActivityDefinition-chf-bodyweight.html)
 
     Measure body weight
 
-*   [CHF Body Weight Change](ActivityDefinition-chf-bodyweight-change.html)
+*   [CHF Body Weight Change](ActivityDefinition-chf-bodyweight-change-ad.html)
 
     Record body weight change
 
@@ -183,21 +183,21 @@ The following sections provide listings of resources defined in these examples, 
 
 {% include list-bundles.xhtml %}
 
-### Example CarePlan Indexexamples.html#careplan-index "link to here")
+### Example CarePlan
 
 {% include list-careplans.xhtml %}
 
-### Example CareTeam Indexexamples.html#careteam-index "link to here")
+### Example CareTeam
 
 {% include list-careteams.xhtml %}
 
-### Example ClinicalImpression Indexexamples.html#clinicalimpression-index "link to here")
+### Example ClinicalImpression
 
 {% include list-clinicalimpressions.xhtml %}
 
-### Example CodeSystem Indexexamples.html#codesystem-index "link to here")
+### Example CodeSystem
 
-*   [ANC Reason for Visit](CodeSystem-anc-reason-for-visit.html)
+*   [ANC Reason for Visit](CodeSystem-anc-reason-for-visit-cs.html)
 
     Codes used to identify the reason for an antenatal care visit
 
@@ -206,127 +206,127 @@ The following sections provide listings of resources defined in these examples, 
     Codes used in the congestive heart failure pathway. Ideally these shouldn't exist, but where I couldn't find an appropriate code in a standard terminology, I defined codes here.
 
 
-### Example Communication Indexexamples.html#communication-index "link to here")
+### Example Communication Indexexamples.html#communication-index
 
 {% include list-communications.xhtml %}
 
-### Example CommunicationRequest Indexexamples.html#communicationrequest-index "link to here")
+### Example CommunicationRequest
 
 {% include list-communicationrequests.xhtml %}
 
-### Example Composition Indexexamples.html#composition-index "link to here")
+### Example Composition
 
 {% include list-compositions.xhtml %}
 
-### Example Condition Indexexamples.html#condition-index "link to here")
+### Example Condition
 
 {% include list-conditions.xhtml %}
 
-### Example DetectedIssue Indexexamples.html#detectedissue-index "link to here")
+### Example DetectedIssue
 
 {% include list-detectedissues.xhtml %}
 
-### Example Encounter Indexexamples.html#encounter-index "link to here")
+### Example Encounter
 
 {% include list-encounters.xhtml %}
 
-### Example EpisodeOfCare Indexexamples.html#episodeofcare-index "link to here")
+### Example EpisodeOfCare
 
 {% include list-episodeofcares.xhtml %}
 
-### Example Flag Indexexamples.html#flag-index "link to here")
+### Example Flag
 
 {% include list-flags.xhtml %}
 
-### Example Goal Indexexamples.html#goal-index "link to here")
+### Example Goal
 
 {% include list-goals.xhtml %}
 
-### Example GraphDefinition Indexexamples.html#graphdefinition-index "link to here")
+### Example GraphDefinition
 
 {% include list-graphdefinitions.xhtml %}
 
-### Example Group Indexexamples.html#group-index "link to here")
+### Example Group
 
 {% include list-groups.xhtml %}
 
-### Example Immunization Indexexamples.html#immunization-index "link to here")
+### Example Immunization
 
 {% include list-immunizations.xhtml %}
 
-### Example ImmunizationRecommendation Indexexamples.html#immunizationrecommendation-index "link to here")
+### Example ImmunizationRecommendation
 
 {% include list-immunizationrecommendations.xhtml %}
 
-### Example ImplementationGuide Indexexamples.html#implementationguide-index "link to here")
+### Example ImplementationGuide
 
 *   [Congestive Heart Failure Care Pathway](ImplementationGuide-chf.html)
 
     Request to measure oxygen saturation as part of a congestive heart failure pathway
 
 
-### Example Library Indexexamples.html#library-index "link to here")
+### Example Library
 
 {% include list-libraries.xhtml %}
 
-### Example Location Indexexamples.html#location-index "link to here")
+### Example Location
 
 {% include list-locations.xhtml %}
 
-### Example Measure Indexexamples.html#measure-index "link to here")
+### Example Measure
 
 {% include list-measures.xhtml %}
 
-### Example MeasureReport Indexexamples.html#measurereport-index "link to here")
+### Example MeasureReport
 
 {% include list-measurereports.xhtml %}
 
-### Example MedicationAdministration Indexexamples.html#medicationadministration-index "link to here")
+### Example MedicationAdministration
 
 {% include list-medicationadministrations.xhtml %}
 
-### Example MedicationDispense Indexexamples.html#medicationdispense-index "link to here")
+### Example MedicationDispense
 
 {% include list-medicationdispenses.xhtml %}
 
-### Example MedicationRequest Indexexamples.html#medicationrequest-index "link to here")
+### Example MedicationRequest
 
 {% include list-medicationrequests.xhtml %}
 
-### Example MedicationStatement Indexexamples.html#medicationstatement-index "link to here")
+### Example MedicationStatement
 
 {% include list-medicationstatements.xhtml %}
 
-### Example Observation Indexexamples.html#observation-index "link to here")
+### Example Observation
 
 {% include list-observations.xhtml %}
 
-### Example Organization Indexexamples.html#organization-index "link to here")
+### Example Organization
 
 {% include list-organizations.xhtml %}
 
-### Example Patient Indexexamples.html#patient-index "link to here")
+### Example Patient
 
 {% include list-patients.xhtml %}
 
-### Example PlanDefinition Indexexamples.html#plandefinition-index "link to here")
+### Example PlanDefinition
 
 *   [PlanDefinition - WHO ANC Guideline Contact Schedule](PlanDefinition-anc-contact-schedule.html) ANC\_Contact\_Schedule
 *   [PlanDefinition - WHO ANC Guideline Contact](PlanDefinition-anc-contact.html) ANC\_Contact
 *   [PlanDefinition - WHO ANC Guideline Recommendation #A2](PlanDefinition-anc-recommendation-a2.html) Recommendation\_A2
-*   [CHF Body Weight](PlanDefinition-chf-bodyweight.html)
+*   [CHF Body Weight](PlanDefinition-chf-bodyweight-pd.html)
 
     Measure body weight daily
 
-*   [CHF Body Weight Change](PlanDefinition-chf-bodyweight-change.html)
+*   [CHF Body Weight Change](PlanDefinition-chf-bodyweight-change-pd.html)
 
     Measure body weight change daily
 
-*   [CHF Cardiology Consultation](PlanDefinition-chf-cardiology-consultation.html)
+*   [CHF Cardiology Consultation](PlanDefinition-chf-cardiology-consultation-pd.html)
 
     Cardiology consultation within 24 hrs
 
-*   [CHF Creatinine](PlanDefinition-chf-creatinine.html)
+*   [CHF Creatinine](PlanDefinition-chf-creatinine-pd.html)
 
     Monitor creatinine
 
@@ -334,7 +334,7 @@ The following sections provide listings of resources defined in these examples, 
 
     Daily management strategy as part of a care pathway for patients with admitting diagnosis of congestive heart failure
 
-*   [CHF eGFR](PlanDefinition-chf-egfr.html)
+*   [CHF eGFR](PlanDefinition-chf-egfr-pd.html)
 
     Monitor eGFR
 
@@ -342,7 +342,7 @@ The following sections provide listings of resources defined in these examples, 
 
     Hypervolemia strategy as part of a care pathway for patients with admitting diagnosis of congestive heart failure
 
-*   [CHF Jugular Venous Pressure](PlanDefinition-chf-jvp.html)
+*   [CHF Jugular Venous Pressure](PlanDefinition-chf-jvp-pd.html)
 
     Measure jugular venous pressure
 
@@ -350,11 +350,11 @@ The following sections provide listings of resources defined in these examples, 
 
     Administer LASIX IV, transition to PO as appropriate
 
-*   [CHF Net IO](PlanDefinition-chf-net-io.html)
+*   [CHF Net IO](PlanDefinition-chf-net-io-pd.html)
 
     Measure net intake/output daily
 
-*   [CHF Oxygen Saturation](PlanDefinition-chf-o2-sat.html)
+*   [CHF Oxygen Saturation](PlanDefinition-chf-o2-sat-pd.html)
 
     Monitor oxygen saturation
 
@@ -362,11 +362,11 @@ The following sections provide listings of resources defined in these examples, 
 
     Treatment and management care pathway for patients with admitting diagnosis of congestive heart failure
 
-*   [CHF Potassium](PlanDefinition-chf-potassium.html)
+*   [CHF Potassium](PlanDefinition-chf-potassium-pd.html)
 
     Monitor potassium
 
-*   [CHF Urine Out](PlanDefinition-chf-urine-out.html)
+*   [CHF Urine Out](PlanDefinition-chf-urine-out-pd.html)
 
     Measure urine output daily
 
@@ -463,19 +463,19 @@ The following sections provide listings of resources defined in these examples, 
     Example Plan Definition for a recommendation to send a message
 
 
-### Example Practitioner Indexexamples.html#practitioner-index "link to here")
+### Example Practitioner
 
 {% include list-practitioners.xhtml %}
 
-### Example PractitionerRole Indexexamples.html#practitionerrole-index "link to here")
+### Example PractitionerRole
 
 {% include list-practitionerroles.xhtml %}
 
-### Example Procedure Indexexamples.html#procedure-index "link to here")
+### Example Procedure
 
 {% include list-procedures.xhtml %}
 
-### Example Profile Indexexamples.html#profile-index "link to here")
+### Example Profile
 
 *   [CHF Body Weight](StructureDefinition-chf-bodyweight.html)
 
@@ -546,7 +546,7 @@ The following sections provide listings of resources defined in these examples, 
     CHF EGFR (in mol/mm/m2) Profile
 
 
-### Example Questionnaire Indexexamples.html#questionnaire-index "link to here")
+### Example Questionnaire
 
 *   [Questionnaire - ANC Every Contact](Questionnaire-anc-every-contact.html) ANC\_Every\_Contact
 *   [Questionnaire - ANC First Contact](Questionnaire-anc-first-contact.html) ANC\_First\_Contact
@@ -556,29 +556,29 @@ The following sections provide listings of resources defined in these examples, 
     Example Questionnaire for use in collect information activity examples
 
 
-### Example QuestionnaireResponse Indexexamples.html#questionnaireresponse-index "link to here")
+### Example QuestionnaireResponse
 
 {% include list-questionnaireresponses.xhtml %}
 
-### Example RelatedPerson Indexexamples.html#relatedperson-index "link to here")
+### Example RelatedPerson
 
 {% include list-relatedpeople.xhtml %}
 
-### Example RequestGroup Indexexamples.html#requestgroup-index "link to here")
+### Example RequestGroup
 
 {% include list-requestgroups.xhtml %}
 
-### Example ServiceRequest Indexexamples.html#servicerequest-index "link to here")
+### Example ServiceRequest
 
 {% include list-servicerequests.xhtml %}
 
-### Example Task Indexexamples.html#task-index "link to here")
+### Example Task
 
 {% include list-tasks.xhtml %}
 
-### Example ValueSet Indexexamples.html#valueset-index "link to here")
+### Example ValueSet
 
-*   [ANC Reason for Visit](ValueSet-anc-reason-for-visit.html)
+*   [ANC Reason for Visit](ValueSet-anc-reason-for-visit-vs.html)
 
     Codes that identify the reason for an antenatal care visit
 

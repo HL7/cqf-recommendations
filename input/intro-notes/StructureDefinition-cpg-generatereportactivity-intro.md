@@ -2,7 +2,7 @@ This is an [activity definition](profiles.html#activity-profiles) profile
 
 **Examples:**
 
-*  [Activity Example Generate Report](ActivityDefinition-activity-example-generatereport.html)
+*  [Activity Example Generate Report](ActivityDefinition-activity-example-generatereport-ad.html)
 
     Example Activity Definition for a recommendation to generate a report
 

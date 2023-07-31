@@ -15,7 +15,7 @@
     },
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-net-io"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-net-io-pd"
     },
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",

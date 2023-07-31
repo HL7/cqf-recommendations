@@ -26,13 +26,13 @@
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pertinent",
       "valueReference": {
-        "reference": "Observation/chf-scenario1-bodyweight4"
+        "reference": "Observation/chf-scenario1-bodyweight4-observation"
       }
     },
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pertinent",
       "valueReference": {
-        "reference": "Observation/chf-scenario1-urineout3"
+        "reference": "Observation/chf-scenario1-urineout3-observation"
       }
     }
   ],

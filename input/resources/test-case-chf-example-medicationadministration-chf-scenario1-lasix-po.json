@@ -5,7 +5,7 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/event-basedOn",
       "valueReference": {
-        "reference": "MedicationRequest/chf-scenario1-lasix-po"
+        "reference": "MedicationRequest/chf-scenario1-lasix-po-mr"
       }
     }
   ],

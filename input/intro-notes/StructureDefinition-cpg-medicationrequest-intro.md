@@ -2,7 +2,7 @@ This is an [activity request profile](profiles.html#activity-profiles)
 
 **Examples:**
 
-*   [MedicationRequest/chf-scenario1-lasix-po](MedicationRequest-chf-scenario1-lasix-po.html) MedicationRequest/chf-scenario1-lasix-po
+*   [MedicationRequest/chf-scenario1-lasix-po](MedicationRequest-chf-scenario1-lasix-po-mr.html) MedicationRequest/chf-scenario1-lasix-po
 *   [MedicationRequest/chf-scenario1-stop-lasix-iv](MedicationRequest-chf-scenario1-stop-lasix-iv.html) MedicationRequest/chf-scenario1-stop-lasix-iv
 *   [MedicationRequest/am-scenario1](MedicationRequest-am-scenario1.html) MedicationRequest/am-scenario1
 *   [MedicationRequest/am-scenario2](MedicationRequest-am-scenario2.html) MedicationRequest/am-scenario2

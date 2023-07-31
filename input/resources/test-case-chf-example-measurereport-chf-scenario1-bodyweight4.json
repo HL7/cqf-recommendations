@@ -3,7 +3,7 @@
   "id": "chf-scenario1-bodyweight4",
   "status": "complete",
   "type": "individual",
-  "measure": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight",
+  "measure": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight-measure",
   "subject": {
     "reference": "Patient/chf-scenario1-patient"
   },
@@ -45,7 +45,7 @@
   ],
   "evaluatedResource": [
     {
-      "reference": "Observation/chf-scenario1-bodyweight4"
+      "reference": "Observation/chf-scenario1-bodyweight4-observation"
     }
   ]
 }

@@ -248,7 +248,7 @@
             }
           ],
           "resource": {
-            "reference": "MedicationRequest/chf-scenario1-lasix-po"
+            "reference": "MedicationRequest/chf-scenario1-lasix-po-mr"
           }
         }
       ]

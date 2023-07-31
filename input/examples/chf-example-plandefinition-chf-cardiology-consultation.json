@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "chf-cardiology-consultation",
+  "id": "chf-cardiology-consultation-pd",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
@@ -32,7 +32,7 @@
       "valueBoolean": true
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-cardiology-consultation",
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-cardiology-consultation-pd",
   "name": "CHFCardiologyConsultation",
   "title": "CHF Cardiology Consultation",
   "description": "Cardiology consultation within 24 hrs",

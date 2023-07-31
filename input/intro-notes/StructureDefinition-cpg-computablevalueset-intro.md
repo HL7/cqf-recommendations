@@ -2,7 +2,7 @@ This is a [computable artifact profile](profiles.html#artifact-profiles)
 
 **Examples:**
 
-*  [ANC Reason for Visit](ValueSet-anc-reason-for-visit.html)
+*  [ANC Reason for Visit](ValueSet-anc-reason-for-visit-vs.html)
 
     Codes that identify the reason for an antenatal care visit
 

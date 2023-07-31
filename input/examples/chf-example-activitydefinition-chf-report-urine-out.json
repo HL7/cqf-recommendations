@@ -25,7 +25,7 @@
     },
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/Measure/chf-urine-out"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/Measure/chf-urine-out-measure"
     }
   ],
   "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-report-urine-out",

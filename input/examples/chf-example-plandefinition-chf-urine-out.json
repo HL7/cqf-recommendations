@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "chf-urine-out",
+  "id": "chf-urine-out-pd",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
@@ -32,7 +32,7 @@
       "valueBoolean": true
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-urine-out",
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-urine-out-pd",
   "name": "CHFUrineOut",
   "title": "CHF Urine Out",
   "description": "Measure urine output daily",

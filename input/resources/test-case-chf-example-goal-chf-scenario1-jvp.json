@@ -1,10 +1,10 @@
 {
   "resourceType": "Goal",
-  "id": "chf-scenario1-jvp",
+  "id": "chf-scenario1-jvp-goal",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-jvp"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-jvp-pd"
     }
   ],
   "lifecycleStatus": "active",

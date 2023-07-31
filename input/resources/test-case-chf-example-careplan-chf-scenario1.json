@@ -55,10 +55,10 @@
       "reference": "Goal/chf-scenario1-net-io"
     },
     {
-      "reference": "Goal/chf-scenario1-jvp"
+      "reference": "Goal/chf-scenario1-jvp-goal"
     },
     {
-      "reference": "Goal/chf-scenario1-o2-sat"
+      "reference": "Goal/chf-scenario1-o2-sat-goal"
     },
     {
       "reference": "Goal/chf-scenario1-potassium"
@@ -70,13 +70,13 @@
       "reference": "Goal/chf-scenario1-egfr"
     },
     {
-      "reference": "Goal/chf-scenario1-lasix-iv"
+      "reference": "Goal/chf-scenario1-lasix-iv-goal"
     },
     {
-      "reference": "Goal/chf-scenario1-lasix-po"
+      "reference": "Goal/chf-scenario1-lasix-po-goal"
     },
     {
-      "reference": "Goal/chf-scenario1-cardiology-consultation"
+      "reference": "Goal/chf-scenario1-cardiology-consultation-goal"
     }
   ],
   "activity": [

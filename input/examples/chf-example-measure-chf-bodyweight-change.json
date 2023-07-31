@@ -1,6 +1,6 @@
 {
   "resourceType": "Measure",
-  "id": "chf-bodyweight-change",
+  "id": "chf-bodyweight-change-measure",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight-change",
+  "url": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight-change-measure",
   "version": "1.0.0",
   "name": "CHFBodyWeightChange",
   "title": "CHF Body Weight Change Metric",

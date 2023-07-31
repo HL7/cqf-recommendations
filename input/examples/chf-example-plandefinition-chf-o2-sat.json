@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "chf-o2-sat",
+  "id": "chf-o2-sat-pd",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
@@ -32,7 +32,7 @@
       "valueBoolean": true
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-o2-sat",
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-o2-sat-pd",
   "name": "CHFO2Sat",
   "title": "CHF Oxygen Saturation",
   "description": "Monitor oxygen saturation",

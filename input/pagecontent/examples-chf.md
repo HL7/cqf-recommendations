@@ -36,18 +36,18 @@ The example CPG artifacts are organized as follows:
 
 * [CHF Pathway](PlanDefinition-chf-pathway.html)
     * [CHF Daily Management Strategy](PlanDefinition-chf-daily-management.html)
-        * [CHF Bodyweight Recommendation](PlanDefinition-chf-bodyweight.html)
-        * [CHF Bodyweight Change Recommendation](PlanDefinition-chf-bodyweight-change.html)
-        * [CHF Urine Out Recommendation](PlanDefinition-chf-urine-out.html)
-        * [CHF Net Intake/Output Recommendation](PlanDefinition-chf-net-io.html)
+        * [CHF Bodyweight Recommendation](PlanDefinition-chf-bodyweight-pd.html)
+        * [CHF Bodyweight Change Recommendation](PlanDefinition-chf-bodyweight-change-pd.html)
+        * [CHF Urine Out Recommendation](PlanDefinition-chf-urine-out-pd.html)
+        * [CHF Net Intake/Output Recommendation](PlanDefinition-chf-net-io-pd.html)
     * [CHF Hypervolemia](PlanDefinition-chf-hypervolemia.html)
-        * [CHF Jugular Venous Pressure Recommendation](PlanDefinition-chf-jvp.html)
-        * [CHF Oxygen Saturation Recommendation](PlanDefinition-chf-o2-sat.html)
-        * [CHF Potassium Recommendation](PlanDefinition-chf-potassium.html)
-        * [CHF Creatinine Recommendation](PlanDefinition-chf-creatinine.html)
-        * [CHF eGFR Recommendation](PlanDefinition-chf-egfr.html)
+        * [CHF Jugular Venous Pressure Recommendation](PlanDefinition-chf-jvp-pd.html)
+        * [CHF Oxygen Saturation Recommendation](PlanDefinition-chf-o2-sat-pd.html)
+        * [CHF Potassium Recommendation](PlanDefinition-chf-potassium-pd.html)
+        * [CHF Creatinine Recommendation](PlanDefinition-chf-creatinine-pd.html)
+        * [CHF eGFR Recommendation](PlanDefinition-chf-egfr-pd.html)
         * [CHF LASIX Recommendation](PlanDefinition-chf-lasix.html)
-        * [CHF Cardiology Consultation Recommendation](PlanDefinition-chf-cardiology-consultation.html)
+        * [CHF Cardiology Consultation Recommendation](PlanDefinition-chf-cardiology-consultation-pd.html)
 
 #### Case Features
 
@@ -75,9 +75,9 @@ The example CPG artifacts are organized as follows:
 
 #### Metrics
 
-* [CHF Bodyweight Change Metric](Measure-chf-bodyweight-change.html)
-* [CHF Bodyweight Metric](Measure-chf-bodyweight.html)
-* [CHF Urine Out Metric](Measure-chf-urine-out.html)
+* [CHF Bodyweight Change Metric](Measure-chf-bodyweight-change-measure.html)
+* [CHF Bodyweight Metric](Measure-chf-bodyweight-measure.html)
+* [CHF Urine Out Metric](Measure-chf-urine-out-measure.html)
 
 ### Example Case
 
@@ -188,14 +188,14 @@ The following index lists all the case-specific resources in this example:
 |Condition|[chf-scenario1-condition](Condition-chf-scenario1-condition.html)|
 |Encounter|[chf-scenario1-encounter](Encounter-chf-scenario1-encounter.html)|
 |EpisodeOfCare|[chf-scenario1-eoc](EpisodeOfCare-chf-scenario1-eoc.html)|
-|Goal|[chf-scenario1-cardiology-consultation](Goal-chf-scenario1-cardiology-consultation.html)|
+|Goal|[chf-scenario1-cardiology-consultation](Goal-chf-scenario1-cardiology-consultation-goal.html)|
 |Goal|[chf-scenario1-creatinine](Goal-chf-scenario1-creatinine.html)|
 |Goal|[chf-scenario1-egfr](Goal-chf-scenario1-egfr.html)|
-|Goal|[chf-scenario1-jvp](Goal-chf-scenario1-jvp.html)|
-|Goal|[chf-scenario1-lasix-iv](Goal-chf-scenario1-lasix-iv.html)|
-|Goal|[chf-scenario1-lasix-po](Goal-chf-scenario1-lasix-po.html)|
+|Goal|[chf-scenario1-jvp](Goal-chf-scenario1-jvp-goal.tml)|
+|Goal|[chf-scenario1-lasix-iv](Goal-chf-scenario1-lasix-iv-goal.html)|
+|Goal|[chf-scenario1-lasix-po](Goal-chf-scenario1-lasix-po-goal.html)|
 |Goal|[chf-scenario1-net-io](Goal-chf-scenario1-net-io.html)|
-|Goal|[chf-scenario1-o2-sat](Goal-chf-scenario1-o2-sat.html)|
+|Goal|[chf-scenario1-o2-sat](Goal-chf-scenario1-o2-sat-goal.html)|
 |Goal|[chf-scenario1-potassium](Goal-chf-scenario1-potassium.html)|
 |Goal|[chf-scenario1-urine-out](Goal-chf-scenario1-urine-out.html)|
 |Goal|[chf-scenario1-weight-change](Goal-chf-scenario1-weight-change.html)|
@@ -212,15 +212,15 @@ The following index lists all the case-specific resources in this example:
 |MeasureReport|[chf-scenario1-urineout3](MeasureReport-chf-scenario1-urineout3.html)|
 |MedicationAdministration|[chf-scenario1-lasix-iv](MedicationAdministration-chf-scenario1-lasix-iv.html)|
 |MedicationAdministration|[chf-scenario1-lasix-po](MedicationAdministration-chf-scenario1-lasix-po.html)|
-|MedicationRequest|[chf-scenario1-lasix-po](MedicationRequest-chf-scenario1-lasix-po.html)|
+|MedicationRequest|[chf-scenario1-lasix-po](MedicationRequest-chf-scenario1-lasix-po-mr.html)|
 |MedicationRequest|[chf-scenario1-stop-lasix-iv](MedicationRequest-chf-scenario1-stop-lasix-iv.html)|
-|Observation|[chf-scenario1-bodyweight-change1](Observation-chf-scenario1-bodyweight-change1.html)|
-|Observation|[chf-scenario1-bodyweight-change2](Observation-chf-scenario1-bodyweight-change2.html)|
-|Observation|[chf-scenario1-bodyweight-change3](Observation-chf-scenario1-bodyweight-change3.html)|
-|Observation|[chf-scenario1-bodyweight1](Observation-chf-scenario1-bodyweight1.html)|
-|Observation|[chf-scenario1-bodyweight2](Observation-chf-scenario1-bodyweight2.html)|
-|Observation|[chf-scenario1-bodyweight3](Observation-chf-scenario1-bodyweight3.html)|
-|Observation|[chf-scenario1-bodyweight4](Observation-chf-scenario1-bodyweight4.html)|
+|Observation|[chf-scenario1-bodyweight-change1](Observation-chf-scenario1-bodyweight-change1-observation.html)|
+|Observation|[chf-scenario1-bodyweight-change2](Observation-chf-scenario1-bodyweight-change2-observation.html)|
+|Observation|[chf-scenario1-bodyweight-change3](Observation-chf-scenario1-bodyweight-change3-observation.html)|
+|Observation|[chf-scenario1-bodyweight1](Observation-chf-scenario1-bodyweight1-observation.html)|
+|Observation|[chf-scenario1-bodyweight2](Observation-chf-scenario1-bodyweight2-observation.html)|
+|Observation|[chf-scenario1-bodyweight3](Observation-chf-scenario1-bodyweight3-observation.html)|
+|Observation|[chf-scenario1-bodyweight4](Observation-chf-scenario1-bodyweight4-observation.html)|
 |Observation|[chf-scenario1-creatinine1](Observation-chf-scenario1-creatinine1.html)|
 |Observation|[chf-scenario1-egfr1](Observation-chf-scenario1-egfr1.html)|
 |Observation|[chf-scenario1-jvp1](Observation-chf-scenario1-jvp1.html)|
@@ -232,7 +232,7 @@ The following index lists all the case-specific resources in this example:
 |Observation|[chf-scenario1-o2sat1](Observation-chf-scenario1-o2sat1.html)|
 |Observation|[chf-scenario1-o2sat2](Observation-chf-scenario1-o2sat2.html)|
 |Observation|[chf-scenario1-potassium1](Observation-chf-scenario1-potassium1.html)|
-|Observation|[chf-scenario1-urineout3](Observation-chf-scenario1-urineout3.html)|
+|Observation|[chf-scenario1-urineout3](Observation-chf-scenario1-urineout3-observation.html)|
 |Organization|[chf-scenario1-organization](Organization-chf-scenario1-organization.html)|
 |Patient|[chf-scenario1-patient](Patient-chf-scenario1-patient.html)|
 |PractitionerRole|[chf-scenario1-practitionerrole](PractitionerRole-chf-scenario1-practitionerrole.html)|
@@ -251,7 +251,7 @@ The following index lists all the artifacts (case-independent) in this example:
 
 |Resource Type|Resource|
 |---|---|
-|ActivityDefinition|[chf-bodyweight-change](ActivityDefinition-chf-bodyweight-change.html)|
+|ActivityDefinition|[chf-bodyweight-change](ActivityDefinition-chf-bodyweight-change-ad.html)|
 |ActivityDefinition|[chf-bodyweight](ActivityDefinition-chf-bodyweight.html)|
 |ActivityDefinition|[chf-cardiology-consultation](ActivityDefinition-chf-cardiology-consultation.html)|
 |ActivityDefinition|[chf-creatinine](ActivityDefinition-chf-creatinine.html)|
@@ -274,23 +274,23 @@ The following index lists all the artifacts (case-independent) in this example:
 |ImplementationGuide|[chf](ImplementationGuide-chf.html)|
 |Library|[CHF](Library-CHF.html)|
 |Location|[chf-locationdefinition](Location-chf-locationdefinition.html)|
-|Measure|[chf-bodyweight-change](Measure-chf-bodyweight-change.html)|
-|Measure|[chf-bodyweight](Measure-chf-bodyweight.html)|
-|Measure|[chf-urine-out](Measure-chf-urine-out.html)|
-|PlanDefinition|[chf-bodyweight-change](PlanDefinition-chf-bodyweight-change.html)|
-|PlanDefinition|[chf-bodyweight](PlanDefinition-chf-bodyweight.html)|
-|PlanDefinition|[chf-cardiology-consultation](PlanDefinition-chf-cardiology-consultation.html)|
-|PlanDefinition|[chf-creatinine](PlanDefinition-chf-creatinine.html)|
+|Measure|[chf-bodyweight-change](Measure-chf-bodyweight-change-measure.html)|
+|Measure|[chf-bodyweight](Measure-chf-bodyweight-measure.html)|
+|Measure|[chf-urine-out](Measure-chf-urine-out-measure.html)|
+|PlanDefinition|[chf-bodyweight-change](PlanDefinition-chf-bodyweight-change-pd.html)|
+|PlanDefinition|[chf-bodyweight](PlanDefinition-chf-bodyweight-pd.html)|
+|PlanDefinition|[chf-cardiology-consultation](PlanDefinition-chf-cardiology-consultation-pd.html)|
+|PlanDefinition|[chf-creatinine](PlanDefinition-chf-creatinine-pd.html)|
 |PlanDefinition|[chf-daily-management](PlanDefinition-chf-daily-management.html)|
-|PlanDefinition|[chf-egfr](PlanDefinition-chf-egfr.html)|
+|PlanDefinition|[chf-egfr](PlanDefinition-chf-egfr-pd.html)|
 |PlanDefinition|[chf-hypervolemia](PlanDefinition-chf-hypervolemia.html)|
-|PlanDefinition|[chf-jvp](PlanDefinition-chf-jvp.html)|
+|PlanDefinition|[chf-jvp](PlanDefinition-chf-jvp-pd.html)|
 |PlanDefinition|[chf-lasix](PlanDefinition-chf-lasix.html)|
-|PlanDefinition|[chf-net-io](PlanDefinition-chf-net-io.html)|
-|PlanDefinition|[chf-o2-sat](PlanDefinition-chf-o2-sat.html)|
+|PlanDefinition|[chf-net-io](PlanDefinition-chf-net-io-pd.html)|
+|PlanDefinition|[chf-o2-sat](PlanDefinition-chf-o2-sat-pd.html)|
 |PlanDefinition|[chf-pathway](PlanDefinition-chf-pathway.html)|
-|PlanDefinition|[chf-potassium](PlanDefinition-chf-potassium.html)|
-|PlanDefinition|[chf-urine-out](PlanDefinition-chf-urine-out.html)|
+|PlanDefinition|[chf-potassium](PlanDefinition-chf-potassium-pd.html)|
+|PlanDefinition|[chf-urine-out](PlanDefinition-chf-urine-out-pd.html)|
 |PractitionerRole|[chf-practitionerroledefinition](PractitionerRole-chf-practitionerroledefinition.html)|
 |StructureDefinition|[chf-bodyweight-change](StructureDefinition-chf-bodyweight-change.html)|
 |StructureDefinition|[chf-bodyweight](StructureDefinition-chf-bodyweight.html)|

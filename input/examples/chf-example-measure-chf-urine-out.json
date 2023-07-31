@@ -1,6 +1,6 @@
 {
   "resourceType": "Measure",
-  "id": "chf-urine-out",
+  "id": "chf-urine-out-measure",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/Measure/chf-urine-out",
+  "url": "http://hl7.org/fhir/uv/cpg/Measure/chf-urine-out-measure",
   "version": "1.0.0",
   "name": "CHFUrineOut",
   "title": "CHF Urine Out Metric",

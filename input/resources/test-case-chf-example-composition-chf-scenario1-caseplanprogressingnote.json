@@ -116,16 +116,16 @@
           },
           "entry": [
             {
-              "reference": "Observation/chf-scenario1-bodyweight1"
+              "reference": "Observation/chf-scenario1-bodyweight1-observation"
             },
             {
-              "reference": "Observation/chf-scenario1-bodyweight2"
+              "reference": "Observation/chf-scenario1-bodyweight2-observation"
             },
             {
-              "reference": "Observation/chf-scenario1-bodyweight3"
+              "reference": "Observation/chf-scenario1-bodyweight3-observation"
             },
             {
-              "reference": "Observation/chf-scenario1-bodyweight4"
+              "reference": "Observation/chf-scenario1-bodyweight4-observation"
             },
             {
               "reference": "MeasureReport/chf-scenario1-bodyweight1"
@@ -148,13 +148,13 @@
           },
           "entry": [
             {
-              "reference": "Observation/chf-scenario1-bodyweight-change1"
+              "reference": "Observation/chf-scenario1-bodyweight-change1-observation"
             },
             {
-              "reference": "Observation/chf-scenario1-bodyweight-change2"
+              "reference": "Observation/chf-scenario1-bodyweight-change2-observation"
             },
             {
-              "reference": "Observation/chf-scenario1-bodyweight-change3"
+              "reference": "Observation/chf-scenario1-bodyweight-change3-observation"
             },
             {
               "reference": "MeasureReport/chf-scenario1-bodyweight-change1"
@@ -174,7 +174,7 @@
           },
           "entry": [
             {
-              "reference": "Observation/chf-scenario1-urineout3"
+              "reference": "Observation/chf-scenario1-urineout3-observation"
             },
             {
               "reference": "MeasureReport/chf-scenario1-urineout3"
@@ -281,7 +281,7 @@
               "reference": "MedicationRequest/chf-scenario1-stop-lasix-iv"
             },
             {
-              "reference": "MedicationRequest/chf-scenario1-lasix-po"
+              "reference": "MedicationRequest/chf-scenario1-lasix-po-mr"
             }
           ]
         }

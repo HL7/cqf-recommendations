@@ -1,6 +1,6 @@
 {
   "resourceType": "Goal",
-  "id": "chf-scenario1-lasix-iv",
+  "id": "chf-scenario1-lasix-iv-goal",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor",

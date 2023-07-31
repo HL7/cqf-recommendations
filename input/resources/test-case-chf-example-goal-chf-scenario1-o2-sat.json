@@ -1,10 +1,10 @@
 {
   "resourceType": "Goal",
-  "id": "chf-scenario1-o2-sat",
+  "id": "chf-scenario1-o2-sat-goal",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-o2-sat"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-o2-sat-pd"
     }
   ],
   "lifecycleStatus": "active",

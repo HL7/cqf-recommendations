@@ -4,7 +4,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-creatinine"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-creatinine-pd"
     }
   ],
   "lifecycleStatus": "active",

@@ -3,7 +3,7 @@
   "id": "chf-scenario1-bodyweight-change1",
   "status": "complete",
   "type": "individual",
-  "measure": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight-change",
+  "measure": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight-change-measure",
   "subject": {
     "reference": "Patient/chf-scenario1-patient"
   },
@@ -45,13 +45,13 @@
   ],
   "evaluatedResource": [
     {
-      "reference": "Observation/chf-scenario1-bodyweight1"
+      "reference": "Observation/chf-scenario1-bodyweight1-observation"
     },
     {
-      "reference": "Observation/chf-scenario1-bodyweight2"
+      "reference": "Observation/chf-scenario1-bodyweight2-observation"
     },
     {
-      "reference": "Observation/chf-scenario1-bodyweight-change1"
+      "reference": "Observation/chf-scenario1-bodyweight-change1-observation"
     }
   ]
 }

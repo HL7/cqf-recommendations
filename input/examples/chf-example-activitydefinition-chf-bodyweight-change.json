@@ -1,6 +1,6 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "chf-bodyweight-change",
+  "id": "chf-bodyweight-change-ad",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight-change",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight-change-ad",
   "name": "CHFBodyWeightChange",
   "title": "CHF Body Weight Change",
   "status": "draft",

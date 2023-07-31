@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "chf-bodyweight-change",
+  "id": "chf-bodyweight-change-pd",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
@@ -32,7 +32,7 @@
       "valueBoolean": true
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-bodyweight-change",
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-bodyweight-change-pd",
   "name": "CHFBodyWeightChange",
   "title": "CHF Body Weight Change",
   "description": "Measure body weight change daily",
@@ -86,7 +86,7 @@
           }
         }
       }],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight-change"
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight-change-ad"
     },
     {
       "title": "Report Weight Change",

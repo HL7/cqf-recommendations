@@ -1,10 +1,10 @@
 {
   "resourceType": "Goal",
-  "id": "chf-scenario1-cardiology-consultation",
+  "id": "chf-scenario1-cardiology-consultation-goal",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor",
-      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-cardiology-consultation"
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-cardiology-consultation-pd"
     }
   ],
   "lifecycleStatus": "active",

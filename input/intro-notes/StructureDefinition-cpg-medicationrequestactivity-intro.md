@@ -2,7 +2,7 @@ This is an [activity definition](profiles.html#activity-profiles) profile
 
 **Examples:**
 
-*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication.html)
+*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication-ad.html)
 
     Example Activity Definition for a recommendation to order a medication
 
@@ -15,7 +15,7 @@ This is an [activity definition](profiles.html#activity-profiles) profile
     Activity definition to administer LASIX PO as part of a congestive heart failure pathway
 
 
-*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication.html)
+*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication-ad.html)
 
     Example Activity Definition for a recommendation to order a medication
 

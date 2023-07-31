@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "chf-scenario1-bodyweight4",
+  "id": "chf-scenario1-bodyweight4-observation",
   "meta": {
     "profile": ["http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight"]
   },

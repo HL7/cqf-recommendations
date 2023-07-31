@@ -55,19 +55,19 @@
       "reference": "Observation/chf-scenario1-jvp4"
     },
     {
-      "reference": "Observation/chf-scenario1-bodyweight1"
+      "reference": "Observation/chf-scenario1-bodyweight1-observation"
     },
     {
-      "reference": "Observation/chf-scenario1-bodyweight2"
+      "reference": "Observation/chf-scenario1-bodyweight2-observation"
     },
     {
-      "reference": "Observation/chf-scenario1-bodyweight3"
+      "reference": "Observation/chf-scenario1-bodyweight3-observation"
     },
     {
-      "reference": "Observation/chf-scenario1-bodyweight4"
+      "reference": "Observation/chf-scenario1-bodyweight4-observation"
     },
     {
-      "reference": "Observation/chf-scenario1-urineout3"
+      "reference": "Observation/chf-scenario1-urineout3-observation"
     },
     {
       "reference": "MedicationAdministration/chf-scenario1-lasix-iv"

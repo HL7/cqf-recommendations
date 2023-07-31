@@ -1,6 +1,6 @@
 {
 	"resourceType": "ValueSet",
-	"id": "anc-reason-for-visit",
+	"id": "anc-reason-for-visit-vs",
 	"meta": {
 		"profile": [
 			"http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"
@@ -24,7 +24,7 @@
 			"valueCode": "structured"
 		}
 	],
-	"url": "http://fhir.org/guides/who/anc-cds/ValueSet/anc-reason-for-visit",
+	"url": "http://fhir.org/guides/who/anc-cds/ValueSet/anc-reason-for-visit-vs",
 	"name": "ANCReasonForVisit",
 	"title": "ANC Reason for Visit",
 	"status": "active",
@@ -45,7 +45,7 @@
 	"compose": {
 		"include": [
 			{
-				"system": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-reason-for-visit"
+				"system": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-reason-for-visit-cs"
 			}
 		]
 	}

@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "chf-egfr",
+  "id": "chf-egfr-pd",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
@@ -32,7 +32,7 @@
       "valueBoolean": true
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-egfr",
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-egfr-pd",
   "name": "CHFEGFR",
   "title": "CHF eGFR",
   "description": "Monitor eGFR",

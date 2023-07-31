@@ -531,8 +531,8 @@ INFORMATION: Patient/sm-scenario6: Patient: Validate resource against profile ht
 INFORMATION: Communication/sm-scenario7-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: CommunicationRequest/sm-scenario7: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
 INFORMATION: Patient/sm-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: CodeSystem/anc-reason-for-visit: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/anc-reason-for-visit: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
+INFORMATION: CodeSystem/anc-reason-for-visit-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: CodeSystem/anc-reason-for-visit-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
 INFORMATION: GraphDefinition/anc-summary: GraphDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/GraphDefinition
 INFORMATION: Library/ANCCommon: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
 INFORMATION: Library/ANCRecommendationA2: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
@@ -542,12 +542,12 @@ INFORMATION: PlanDefinition/anc-recommendation-a2: PlanDefinition: Validate reso
 INFORMATION: Questionnaire/anc-every-contact: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 INFORMATION: Questionnaire/anc-first-contact: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 INFORMATION: Questionnaire/anc-quick-check: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
-INFORMATION: ValueSet/anc-reason-for-visit: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/anc-reason-for-visit: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
+INFORMATION: ValueSet/anc-reason-for-visit-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+INFORMATION: ValueSet/anc-reason-for-visit-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
 INFORMATION: ActivityDefinition/chf-bodyweight: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-bodyweight: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-bodyweight-change: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-bodyweight-change: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-bodyweight-change-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-bodyweight-change-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-cardiology-consultation: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-cardiology-consultation: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-creatinine: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
@@ -592,40 +592,40 @@ INFORMATION: Library/CHF: Library: Validate resource against profile http://hl7.
 INFORMATION: Library/CHF: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
 INFORMATION: Library/CHF: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
 INFORMATION: Location/chf-locationdefinition: Location: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-locationdefinition
-INFORMATION: Measure/chf-bodyweight: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
-INFORMATION: Measure/chf-bodyweight: Measure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric - listed in meta
-INFORMATION: Measure/chf-bodyweight-change: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
-INFORMATION: Measure/chf-bodyweight-change: Measure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric - listed in meta
-INFORMATION: Measure/chf-urine-out: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
-INFORMATION: Measure/chf-urine-out: Measure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric - listed in meta
-INFORMATION: PlanDefinition/chf-bodyweight: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-bodyweight: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
-INFORMATION: PlanDefinition/chf-bodyweight-change: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-bodyweight-change: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
-INFORMATION: PlanDefinition/chf-cardiology-consultation: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-cardiology-consultation: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
-INFORMATION: PlanDefinition/chf-creatinine: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-creatinine: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: Measure/chf-bodyweight-measure: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
+INFORMATION: Measure/chf-bodyweight-measure: Measure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric - listed in meta
+INFORMATION: Measure/chf-bodyweight-change-measure: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
+INFORMATION: Measure/chf-bodyweight-change-measure: Measure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric - listed in meta
+INFORMATION: Measure/chf-urine-out-measure: Measure: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Measure
+INFORMATION: Measure/chf-urine-out-measure: Measure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric - listed in meta
+INFORMATION: PlanDefinition/chf-bodyweight-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-bodyweight-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-bodyweight-change-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-bodyweight-change-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-cardiology-consultation-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-cardiology-consultation-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-creatinine-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-creatinine-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
 INFORMATION: PlanDefinition/chf-daily-management: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
 INFORMATION: PlanDefinition/chf-daily-management: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition - listed in meta
-INFORMATION: PlanDefinition/chf-egfr: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-egfr: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-egfr-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-egfr-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
 INFORMATION: PlanDefinition/chf-hypervolemia: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
 INFORMATION: PlanDefinition/chf-hypervolemia: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategydefinition - listed in meta
-INFORMATION: PlanDefinition/chf-jvp: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-jvp: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-jvp-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-jvp-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
 INFORMATION: PlanDefinition/chf-lasix: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
 INFORMATION: PlanDefinition/chf-lasix: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
-INFORMATION: PlanDefinition/chf-net-io: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-net-io: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
-INFORMATION: PlanDefinition/chf-o2-sat: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-o2-sat: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-net-io-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-net-io-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-o2-sat-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-o2-sat-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
 INFORMATION: PlanDefinition/chf-pathway: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
 INFORMATION: PlanDefinition/chf-pathway: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition - listed in meta
-INFORMATION: PlanDefinition/chf-potassium: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-potassium: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
-INFORMATION: PlanDefinition/chf-urine-out: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/chf-urine-out: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-potassium-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-potassium-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
+INFORMATION: PlanDefinition/chf-urine-out-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/chf-urine-out-pd: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
 INFORMATION: PractitionerRole/chf-practitionerroledefinition: PractitionerRole: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerroledefinition
 INFORMATION: StructureDefinition/chf-bodyweight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/chf-bodyweight: StructureDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition - listed in meta
@@ -670,7 +670,7 @@ INFORMATION: Composition/chf-scenario1-casesummary: Composition: Validate resour
 INFORMATION: Condition/chf-scenario1-condition: Condition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition
 INFORMATION: Encounter/chf-scenario1-encounter: Encounter: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter
 INFORMATION: EpisodeOfCare/chf-scenario1-eoc: EpisodeOfCare: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case
-INFORMATION: Goal/chf-scenario1-cardiology-consultation: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
+INFORMATION: Goal/chf-scenario1-cardiology-consultation-goal: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
 INFORMATION: Goal/chf-scenario1-creatinine: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
 INFORMATION: Goal/chf-scenario1-egfr: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
 INFORMATION: Goal/chf-scenario1-jvp: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
@@ -766,7 +766,7 @@ INFORMATION: PlanDefinition/va-ckd-protocol: PlanDefinition: Validate resource a
 INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
 INFORMATION: PlanDefinition/va-ckd-recommendations: PlanDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition - listed in meta
 INFORMATION: Library/HepBAdultForecasting: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: PlanDefinition/HepBAdultForecasting: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
+INFORMATION: PlanDefinition/HepBAdultForecastingPD: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
 INFORMATION: ActivityDefinition/opioidcds-riskassessment-request: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: Library/OpioidCDSR4Common: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
 INFORMATION: Library/OpioidCDSR4Recommendation05: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library

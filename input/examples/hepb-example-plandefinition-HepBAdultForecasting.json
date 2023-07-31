@@ -1,7 +1,7 @@
 {
 	"resourceType": "PlanDefinition",
-	"id": "HepBAdultForecasting",
-	"url": "http://example.org/fhir/uv/cpg/PlanDefinition/HepBAdultForecasting",
+	"id": "HepBAdultForecastingPD",
+	"url": "http://example.org/fhir/uv/cpg/PlanDefinition/HepBAdultForecastingPD",
 	"identifier": [
 		{
 			"use": "official",
