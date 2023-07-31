@@ -1,0 +1,286 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "chf",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableguideline",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "42343007",
+            "display": "Congestive heart failure (disorder)"
+          }
+        ],
+        "text": "Congestive heart failure"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-author",
+      "valueContactDetail": {
+        "name": "Matthew Burton, MD"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-editor",
+      "valueContactDetail": {
+        "name": "Bryn Rhodes"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reviewer",
+      "valueContactDetail": {
+        "name": "Davide Sottara"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-endorser",
+      "valueContactDetail": {
+        "name": "Example Quality Assurance Organization"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedArtifact",
+      "valueRelatedArtifact": {
+        "type": "citation",
+        "citation": "Representation primitives, process models and patient data in computer-interpretable clinical practice guidelines: A literature review of guideline representation models. Dongwen Wang, Mor Peleg, Samson W Tu, Aziz A Boxwala, Robert A Greenes, Vimla L Patel, Edward H Shortliffe. International Journal of Medical Informatics, Volume 68, Issues 1–3, 2002, Pages 59-70, ISSN 1386-5056, https://doi.org/10.1016/S1386-5056(02)00065-5."
+      }
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/ImplementationGuide/chf",
+  "version": "1.0.0",
+  "name": "CHF",
+  "title": "Congestive Heart Failure Care Pathway",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-12-31",
+  "publisher": "Health Level Seven, Inc. - CDS WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/special/committees/DSS"
+        }
+      ]
+    }
+  ],
+  "description": "Request to measure oxygen saturation as part of a congestive heart failure pathway",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.uv.cpg.chf",
+  "copyright": "Copyright (c) 2019+ HL7 International",
+  "license": "CC0-1.0",
+  "fhirVersion": [ "4.0.1" ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org/fhir/uv/cpg/ImplementationGuide/uv-cpg",
+      "packageId": "hl7.fhir.uv.cpg",
+      "version": "1.0.0"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": { "reference": "ActivityDefinition/chf-bodyweight-change" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-bodyweight" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-cardiology-consultation" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-creatinine" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-egfr" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-jvp" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-lasix-iv" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-lasix-po" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-net-io" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-o2-sat" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-potassium" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-report-bodyweight-change" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-report-bodyweight" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-report-urine-out" }
+      },
+      {
+        "reference": { "reference": "ActivityDefinition/chf-urine-out" }
+      },
+      {
+        "reference": { "reference": "CareTeam/chf-careteamdefinition" }
+      },
+      {
+        "reference": { "reference": "GraphDefinition/chf-caseplansummarydefinition" }
+      },
+      {
+        "reference": { "reference": "GraphDefinition/chf-casesummarydefinition" }
+      },
+      {
+        "reference": { "reference": "Group/chf-groupdefinition" }
+      },
+      {
+        "reference": { "reference": "Library/CHF" }
+      },
+      {
+        "reference": { "reference": "Location/chf-locationdefinition" }
+      },
+      {
+        "reference": { "reference": "Measure/chf-bodyweight-change" }
+      },
+      {
+        "reference": { "reference": "Measure/chf-bodyweight" }
+      },
+      {
+        "reference": { "reference": "Measure/chf-urine-out" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-bodyweight-change" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-bodyweight" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-cardiology-consultation" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-creatinine" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-daily-management" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-egfr" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-hypervolemia" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-jvp" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-lasix" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-net-io" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-o2-sat" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-pathway" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-potassium" }
+      },
+      {
+        "reference": { "reference": "PlanDefinition/chf-urine-out" }
+      },
+      {
+        "reference": { "reference": "PractitionerRole/chf-practitionerroledefinition" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-bodyweight-change" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-bodyweight" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-cardiology-consult-request" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-cardiology-consult" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-creatinine" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-egfr" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-jvp-request" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-jvp" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-lasix-iv-administration" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-lasix-iv-request" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-lasix-po-administration" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-lasix-po-request" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-net-io" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-o2-sat-request" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-o2-sat" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-potassium" }
+      },
+      {
+        "reference": { "reference": "StructureDefinition/chf-urine-out" }
+      }
+    ]
+  }
+}
