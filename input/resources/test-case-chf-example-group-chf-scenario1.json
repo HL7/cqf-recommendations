@@ -1,6 +1,6 @@
 {
   "resourceType": "Group",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-group",
   "active": true,
   "type": "person",
   "actual": true,
@@ -17,7 +17,7 @@
   "member": [
     {
       "entity": {
-        "reference": "Patient/chf-scenario1"
+        "reference": "Patient/chf-scenario1-patient"
       }
     }
   ]

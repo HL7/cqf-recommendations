@@ -1,9 +1,9 @@
 {
   "resourceType": "RelatedPerson",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-relatedperson",
   "active": true,
   "patient": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "relationship": [
     {

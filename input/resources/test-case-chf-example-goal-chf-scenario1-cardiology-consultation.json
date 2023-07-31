@@ -20,7 +20,7 @@
     "text": "Cardiology Consultation Within 24 Hours"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

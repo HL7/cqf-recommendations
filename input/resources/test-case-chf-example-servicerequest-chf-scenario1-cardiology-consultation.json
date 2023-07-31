@@ -28,10 +28,10 @@
     "text": "Cardiology Consultation"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "occurrencePeriod": {
     "start": "2019-02-03T11:00:00Z",

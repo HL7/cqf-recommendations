@@ -1,6 +1,6 @@
 {
   "resourceType": "Encounter",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-encounter",
   "status": "in-progress",
   "class": {
     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -28,11 +28,11 @@
     ]
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "episodeOfCare": [
     {
-      "reference": "EpisodeOfCare/chf-scenario1"
+      "reference": "EpisodeOfCare/chf-scenario1-eoc"
     }
   ],
   "participant": [
@@ -49,7 +49,7 @@
         }
       ],
       "individual": {
-        "reference": "PractitionerRole/chf-scenario1"
+        "reference": "PractitionerRole/chf-scenario1-practitionerrole"
       }
     }
   ],
@@ -59,7 +59,7 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "Condition/chf-scenario1"
+        "reference": "Condition/chf-scenario1-condition"
       },
       "use": {
         "coding": [
@@ -75,7 +75,7 @@
   "location": [
     {
       "location": {
-        "reference": "Location/chf-scenario1"
+        "reference": "Location/chf-scenario1-location"
       },
       "status": "active",
       "period": {

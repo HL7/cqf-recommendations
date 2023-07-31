@@ -20,7 +20,7 @@
     "text": "Jugular venous pressure < 8.0 cmH2O"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

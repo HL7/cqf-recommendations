@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-organization",
   "active": true,
   "name": "ACME Hospital"
 }

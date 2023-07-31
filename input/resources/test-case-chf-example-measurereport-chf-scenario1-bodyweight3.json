@@ -5,7 +5,7 @@
   "type": "individual",
   "measure": "http://hl7.org/fhir/uv/cpg/Measure/chf-bodyweight",
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "date": "2019-02-02",
   "period": {

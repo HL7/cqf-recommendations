@@ -20,7 +20,7 @@
     "text": "eGFR > 60 mol/mm/m2"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

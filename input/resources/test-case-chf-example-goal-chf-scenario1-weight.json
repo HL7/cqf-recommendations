@@ -20,7 +20,7 @@
     "text": "Body weight 92kg"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

@@ -12,7 +12,7 @@
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryFor",
       "valueReference": {
-        "reference": "EpisodeOfCare/chf-scenario1"
+        "reference": "EpisodeOfCare/chf-scenario1-eoc"
       }
     }
   ],
@@ -36,14 +36,14 @@
     ]
   }],
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "date": "2019-02-03",
   "author": [{
-    "reference": "PractitionerRole/chf-scenario1"
+    "reference": "PractitionerRole/chf-scenario1-practitionerrole"
   }],
   "title": "Congestive Heart Failure Case/Plan Progressing Note",
   "attester": [
@@ -51,12 +51,12 @@
       "mode": "professional",
       "time": "2019-02-03",
       "party": {
-        "reference": "PractitionerRole/chf-scenario1"
+        "reference": "PractitionerRole/chf-scenario1-practitionerrole"
       }
     }
   ],
   "custodian": {
-    "reference": "Organization/chf-scenario1"
+    "reference": "Oragnization/chf-scenario1-organization"
   },
   "event": [
     {
@@ -76,7 +76,7 @@
       },
       "detail": [
         {
-          "reference": "EpisodeOfCare/chf-scenario1"
+          "reference": "EpisodeOfCare/chf-scenario1-eoc"
         }
       ]
     }
@@ -94,7 +94,7 @@
       },
       "entry": [
         {
-          "reference": "ClinicalImpression/chf-scenario1"
+          "reference": "ClinicalImpression/chf-scenario1-clinicalimpression"
         }
       ]
     },
@@ -105,7 +105,7 @@
       },
       "entry": [
         {
-          "reference": "Encounter/chf-scenario1"
+          "reference": "Encounter/chf-scenario1-encounter"
         }
       ],
       "section": [

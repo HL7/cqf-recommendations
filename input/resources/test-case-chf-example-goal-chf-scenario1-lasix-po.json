@@ -20,7 +20,7 @@
     "text": "PO 24 hr Prior to Discharge"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

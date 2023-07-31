@@ -20,7 +20,7 @@
     "text": "Body weight change 0.5-1.5 kg/day"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

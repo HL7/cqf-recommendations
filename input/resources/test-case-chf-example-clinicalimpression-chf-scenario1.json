@@ -1,6 +1,6 @@
 {
   "resourceType": "ClinicalImpression",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-clinicalimpression",
   "meta": {
     "profile": ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-clinicalimpression"]
   },
@@ -8,19 +8,19 @@
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-impressionFor",
       "valueReference": {
-        "reference": "EpisodeOfCare/chf-scenario1"
+        "reference": "EpisodeOfCare/chf-scenario1-eoc"
       }
     }
   ],
   "status": "completed",
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "assessor": {
-    "reference": "PractitionerRole/chf-scenario1"
+    "reference": "PractitionerRole/chf-scenario1-practitionerrole"
   },
   "protocol": [
     "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-pathway"

@@ -1,6 +1,6 @@
 {
   "resourceType": "EpisodeOfCare",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-eoc",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn",
@@ -11,12 +11,12 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "Condition/chf-scenario1"
+        "reference": "Condition/chf-scenario1-condition"
       }
     }
   ],
   "patient": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "period": {
     "start": "2019-01-31T05:03:00Z"

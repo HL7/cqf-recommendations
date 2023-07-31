@@ -1,12 +1,3 @@
-RuleSet: ExampleArtifactMetadata(id, type, identifier)
-* url = "http://example.org/fhir/uv/cpg/{type}/{id}"
-* experimental = true
-* identifier
-  * use = #official
-  * value = "{identifier}"
-* name = "{id}"
-* status = #draft
-
 RuleSet: ActivityDefinitionMetadata(id)
 * meta.profile = $cpg-computableactivity
 * extension[+]
@@ -113,6 +104,25 @@ RuleSet: ValueSetMetadata(id)
 RuleSet: StructureDefinitionMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
 * ^experimental = false
+
+RuleSet: CapabilityStatementMetadata(id)
+* url = "http://hl7.org/fhir/uv/cpg/CapabilityStatement/{id}"
+* experimental = true
+* status = #draft
+* date = "2019-06-15"
+
+RuleSet: OperationDefinitionMetadata(id)
+* url = "http://hl7.org/fhir/uv/cpg/OperationDefinition/{id}"
+* kind = #operation
+* status = #draft
+
+RuleSet: OperationExtensions
+* extension[+]
+  * url = $structuredefinition-fmm
+  * valueInteger = 2
+* extension[+]
+  * url = $structuredefinition-standards-status
+  * valueCode = #trial-use
 
 RuleSet: ExtensionContext(path)
 * ^context[+].type = #element

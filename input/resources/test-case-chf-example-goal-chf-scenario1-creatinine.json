@@ -20,7 +20,7 @@
     "text": "Creatinine < 1.2 mg/dL"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

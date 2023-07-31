@@ -12,7 +12,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "effectiveDateTime": "2019-02-03T07:08:00Z",
   "dosage": {

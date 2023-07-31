@@ -662,14 +662,14 @@ INFORMATION: StructureDefinition/chf-potassium: StructureDefinition: Validate re
 INFORMATION: StructureDefinition/chf-urine-out: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/chf-urine-out: StructureDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition - listed in meta
 INFORMATION: CarePlan/chf-scenario1: CarePlan: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careplan
-INFORMATION: CareTeam/chf-scenario1: CareTeam: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam
-INFORMATION: ClinicalImpression/chf-scenario1: ClinicalImpression: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-clinicalimpression
+INFORMATION: CareTeam/chf-scenario1-careteam: CareTeam: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam
+INFORMATION: ClinicalImpression/chf-scenario1-clinicalimpression: ClinicalImpression: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-clinicalimpression
 INFORMATION: Composition/chf-scenario1-caseplanprogressingnote: Composition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplanprogressingnote
 INFORMATION: Composition/chf-scenario1-caseplansummary: Composition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummary
 INFORMATION: Composition/chf-scenario1-casesummary: Composition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummary
-INFORMATION: Condition/chf-scenario1: Condition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition
-INFORMATION: Encounter/chf-scenario1: Encounter: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter
-INFORMATION: EpisodeOfCare/chf-scenario1: EpisodeOfCare: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case
+INFORMATION: Condition/chf-scenario1-condition: Condition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition
+INFORMATION: Encounter/chf-scenario1-encounter: Encounter: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter
+INFORMATION: EpisodeOfCare/chf-scenario1-eoc: EpisodeOfCare: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case
 INFORMATION: Goal/chf-scenario1-cardiology-consultation: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
 INFORMATION: Goal/chf-scenario1-creatinine: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
 INFORMATION: Goal/chf-scenario1-egfr: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
@@ -682,8 +682,8 @@ INFORMATION: Goal/chf-scenario1-potassium: Goal: Validate resource against profi
 INFORMATION: Goal/chf-scenario1-urine-out: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
 INFORMATION: Goal/chf-scenario1-weight: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
 INFORMATION: Goal/chf-scenario1-weight-change: Goal: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal
-INFORMATION: Group/chf-scenario1: Group: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-group
-INFORMATION: Location/chf-scenario1: Location: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-location
+INFORMATION: Group/chf-scenario1-group: Group: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-group
+INFORMATION: Location/chf-scenario1-location: Location: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-location
 INFORMATION: MeasureReport/chf-scenario1-bodyweight-change1: MeasureReport: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport
 INFORMATION: MeasureReport/chf-scenario1-bodyweight-change2: MeasureReport: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport
 INFORMATION: MeasureReport/chf-scenario1-bodyweight-change3: MeasureReport: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport
@@ -715,10 +715,10 @@ INFORMATION: Observation/chf-scenario1-o2sat1: Observation: Validate resource ag
 INFORMATION: Observation/chf-scenario1-o2sat2: Observation: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat
 INFORMATION: Observation/chf-scenario1-potassium1: Observation: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-potassium
 INFORMATION: Observation/chf-scenario1-urineout3: Observation: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-urine-out
-INFORMATION: Organization/chf-scenario1: Organization: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization
-INFORMATION: Patient/chf-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Practitioner/chf-scenario1: Practitioner: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitioner
-INFORMATION: PractitionerRole/chf-scenario1: PractitionerRole: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerrole
+INFORMATION: Oragnization/chf-scenario1-organization: Organization: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization
+INFORMATION: Patient/chf-scenario1-patient: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
+INFORMATION: Practitioner/chf-scenario1-practitioner: Practitioner: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitioner
+INFORMATION: PractitionerRole/chf-scenario1-practitionerrole: PractitionerRole: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerrole
 INFORMATION: Procedure/chf-scenario1-cardiology-consult: Procedure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-cardiology-consult
 INFORMATION: RelatedPerson/chf-scenario1: RelatedPerson: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedperson
 INFORMATION: RequestGroup/chf-scenario1-daily-management: RequestGroup: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy

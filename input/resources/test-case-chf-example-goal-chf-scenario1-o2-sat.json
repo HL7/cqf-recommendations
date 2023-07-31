@@ -20,7 +20,7 @@
     "text": "Oxygen saturation > 94% SaO2"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

@@ -1,12 +1,12 @@
 {
   "resourceType": "PractitionerRole",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-practitionerrole",
   "active": true,
   "practitioner": {
-    "reference": "Practitioner/chf-scenario1"
+    "reference": "Practitioner/chf-scenario1-practitioner"
   },
   "organization": {
-    "reference": "Organization/chf-scenario1"
+    "reference": "Oragnization/chf-scenario1-organization"
   },
   "code": [
     {
@@ -32,7 +32,7 @@
   ],
   "location": [
     {
-      "reference": "Location/chf-scenario1"
+      "reference": "Location/chf-scenario1-location"
     }
   ]
 }

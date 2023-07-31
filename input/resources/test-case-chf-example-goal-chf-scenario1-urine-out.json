@@ -20,7 +20,7 @@
     "text": "Urine output 3-5 L/day"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

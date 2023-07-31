@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-practitioner",
   "active": true,
   "name": [
     {

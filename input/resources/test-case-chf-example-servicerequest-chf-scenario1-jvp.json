@@ -34,10 +34,10 @@
     "text": "Measure jugular venous pressure"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "occurrenceDateTime": "2019-02-03T09:41:00Z",
   "authoredOn": "2019-02-03",

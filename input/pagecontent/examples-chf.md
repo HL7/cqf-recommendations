@@ -81,13 +81,13 @@ The example CPG artifacts are organized as follows:
 
 ### Example Case
 
-For the example case, a [Patient](Patient-chf-scenario1.html) is defined with
-a [Case](EpisodeOfCare-chf-scenario1.html), an [Encounter](Encounter-chf-scenario1.html),
-and a [Condition](Condition-chf-scenario1.html), establishing the patient
+For the example case, a [Patient](Patient-chf-scenario1-patient.html) is defined with
+a [Case](EpisodeOfCare-chf-scenario1-eoc.html), an [Encounter](Encounter-chf-scenario1-encounter.html),
+and a [Condition](Condition-chf-scenario1-condition.html), establishing the patient
 as having an admitting diagnosis of Congestive Heart Failure. This meets the `Inclusion Criteria`
 defined by the group, and results in the patient being added to the pathway, and
 included as a member of the [CHF Group](Group-chf-scenario1.html). This
-results in the creation of a [CarePlan](CarePlan-chf-scenario1.html), with
+results in the creation of a [CarePlan](CarePlan-chf-scenario1-careplan.html), with
 [Daily Management](RequestGroup-chf-scenario1-daily-management.html) and
 [Hypervolemia](RequestGroup-chf-scenario1-hypervolemia.html) strategies. Each of these
 strategies establish actions and goals for each of the recommendations.
@@ -179,15 +179,15 @@ The following index lists all the case-specific resources in this example:
 
 |Resource Type|Resource|
 |---|---|
-|CarePlan|[chf-scenario1](CarePlan-chf-scenario1.html)|
-|CareTeam|[chf-scenario1](CareTeam-chf-scenario1.html)|
-|ClinicalImpression|[chf-scenario1](ClinicalImpression-chf-scenario1.html)|
+|CarePlan|[chf-scenario1-careplan](CarePlan-chf-scenario1-careplan.html)|
+|CareTeam|[chf-scenario1-careteam](CareTeam-chf-scenario1-careteam.html)|
+|ClinicalImpression|[chf-scenario1-clinical-impression](ClinicalImpression-chf-scenario1-clinicalimpression.html)|
 |Composition|[chf-scenario1-caseplanprogressingnote](Composition-chf-scenario1-caseplanprogressingnote.html)|
 |Composition|[chf-scenario1-caseplansummary](Composition-chf-scenario1-caseplansummary.html)|
 |Composition|[chf-scenario1-casesummary](Composition-chf-scenario1-casesummary.html)|
-|Condition|[chf-scenario1](Condition-chf-scenario1.html)|
-|Encounter|[chf-scenario1](Encounter-chf-scenario1.html)|
-|EpisodeOfCare|[chf-scenario1](EpisodeOfCare-chf-scenario1.html)|
+|Condition|[chf-scenario1-condition](Condition-chf-scenario1-condition.html)|
+|Encounter|[chf-scenario1-encounter](Encounter-chf-scenario1-encounter.html)|
+|EpisodeOfCare|[chf-scenario1-eoc](EpisodeOfCare-chf-scenario1-eoc.html)|
 |Goal|[chf-scenario1-cardiology-consultation](Goal-chf-scenario1-cardiology-consultation.html)|
 |Goal|[chf-scenario1-creatinine](Goal-chf-scenario1-creatinine.html)|
 |Goal|[chf-scenario1-egfr](Goal-chf-scenario1-egfr.html)|
@@ -200,8 +200,8 @@ The following index lists all the case-specific resources in this example:
 |Goal|[chf-scenario1-urine-out](Goal-chf-scenario1-urine-out.html)|
 |Goal|[chf-scenario1-weight-change](Goal-chf-scenario1-weight-change.html)|
 |Goal|[chf-scenario1-weight](Goal-chf-scenario1-weight.html)|
-|Group|[chf-scenario1](Group-chf-scenario1.html)|
-|Location|[chf-scenario1](Location-chf-scenario1.html)|
+|Group|[chf-scenario1-group](Group-chf-scenario1.html)|
+|Location|[chf-scenario1-location](Location-chf-scenario1-location.html)|
 |MeasureReport|[chf-scenario1-bodyweight-change1](MeasureReport-chf-scenario1-bodyweight-change1.html)|
 |MeasureReport|[chf-scenario1-bodyweight-change2](MeasureReport-chf-scenario1-bodyweight-change2.html)|
 |MeasureReport|[chf-scenario1-bodyweight-change3](MeasureReport-chf-scenario1-bodyweight-change3.html)|
@@ -233,12 +233,12 @@ The following index lists all the case-specific resources in this example:
 |Observation|[chf-scenario1-o2sat2](Observation-chf-scenario1-o2sat2.html)|
 |Observation|[chf-scenario1-potassium1](Observation-chf-scenario1-potassium1.html)|
 |Observation|[chf-scenario1-urineout3](Observation-chf-scenario1-urineout3.html)|
-|Organization|[chf-scenario1](Organization-chf-scenario1.html)|
-|Patient|[chf-scenario1](Patient-chf-scenario1.html)|
-|PractitionerRole|[chf-scenario1](PractitionerRole-chf-scenario1.html)|
-|Practitioner|[chf-scenario1](Practitioner-chf-scenario1.html)|
+|Organization|[chf-scenario1-organization](Organization-chf-scenario1-organization.html)|
+|Patient|[chf-scenario1-patient](Patient-chf-scenario1-patient.html)|
+|PractitionerRole|[chf-scenario1-practitionerrole](PractitionerRole-chf-scenario1-practitionerrole.html)|
+|Practitioner|[chf-scenario1-practitioner](Practitioner-chf-scenario1-practitioner.html)|
 |Procedure|[chf-scenario1-cardiology-consult](Procedure-chf-scenario1-cardiology-consult.html)|
-|RelatedPerson|[chf-scenario1](RelatedPerson-chf-scenario1.html)|
+|RelatedPerson|[chf-scenario1-relatedperson](RelatedPerson-chf-scenario1-relatedperson.html)|
 |RequestGroup|[chf-scenario1-daily-management](RequestGroup-chf-scenario1-daily-management.html)|
 |RequestGroup|[chf-scenario1-hypervolemia](RequestGroup-chf-scenario1-hypervolemia.html)|
 |ServiceRequest|[chf-scenario1-cardiology-consultation](ServiceRequest-chf-scenario1-cardiology-consultation.html)|

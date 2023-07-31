@@ -118,3 +118,11 @@ Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
 Alias: $sct = http://snomed.info/sct
+
+Alias: $patient-match-operation = http://hl7.org/fhir/OperationDefinition/Patient-match
+Alias: $cpg-common-patient-summary-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary
+
+Alias: $structuredefinition-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+Alias: $structuredefinition-standards-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+
+Alias: $plandefinition-apply = http://hl7.org/fhir/OperationDefinition/PlanDefinition-apply

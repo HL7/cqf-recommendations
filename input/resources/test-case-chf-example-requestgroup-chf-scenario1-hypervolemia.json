@@ -7,10 +7,10 @@
   "status": "active",
   "intent": "plan",
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "action": [
     {

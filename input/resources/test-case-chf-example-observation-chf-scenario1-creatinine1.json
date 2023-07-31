@@ -26,14 +26,14 @@
   "effectiveDateTime": "2019-02-03T09:40:00Z",
   "issued": "2019-02-03T09:40:00Z",
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "performer": [
     {
-      "reference": "PractitionerRole/chf-scenario1"
+      "reference": "PractitionerRole/chf-scenario1-practitionerrole"
     }
   ],
   "valueQuantity": {

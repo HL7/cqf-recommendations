@@ -20,7 +20,7 @@
     "text": "Net intake/output -1.5 L/day"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "target": [
     {

@@ -1,11 +1,11 @@
 {
   "resourceType": "CarePlan",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-careplan",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-planFor",
       "valueReference": {
-        "reference": "EpisodeOfCare/chf-scenario1"
+        "reference": "EpisodeOfCare/chf-scenario1-eoc"
       }
     }
   ],
@@ -22,10 +22,10 @@
   "title": "Heart Failure Care Pathway",
   "description": "Care Pathway for treatment of congestive heart failure",
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "period": {
     "start": "2019-01-31T07:00:00Z"
@@ -33,12 +33,12 @@
   "created": "2019-01-31T07:00:00Z",
   "careTeam": [
     {
-      "reference": "CareTeam/chf-scenario1"
+      "reference": "CareTeam/chf-scenario1-careteam"
     }
   ],
   "addresses": [
     {
-      "reference": "Condition/chf-scenario1"
+      "reference": "Condition/chf-scenario1-condition"
     }
   ],
   "goal": [

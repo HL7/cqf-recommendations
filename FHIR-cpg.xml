@@ -6,7 +6,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Organization/chf-scenario1" key="Organization-chf-scenario1" name="ACME Hospital"/>
+<artifact id="Organization/chf-scenario1-organization" key="Organization-chf-scenario1-organization" name="ACME Hospital"/>
 <artifact id="Library/ANCCommon" key="Library-ANCCommon" name="ANCCommon"/>
 <artifact id="Library/ANCRecommendationA2" key="Library-ANCRecommendationA2" name="ANCRecommendationA2"/>
 <artifact id="Library/activity-example-administermedication-library" key="Library-activity-example-administermedication-library" name="Activity Example - Administer Medication Library Collection"/>
@@ -47,7 +47,7 @@
 <artifact id="PlanDefinition/activity-example-sendmessage-pd" key="PlanDefinition-activity-example-sendmessage-pd" name="Activity Example Send Message PD"/>
 <artifact id="Library/administermedication-library" key="Library-administermedication-library" name="Administer Medication Library"/>
 <artifact id="Library/CHF" key="Library-CHF" name="CHF"/>
-<artifact id="CareTeam/chf-scenario1" key="CareTeam-chf-scenario1" name="CHF Care Team"/>
+<artifact id="CareTeam/chf-scenario1-careteam" key="CareTeam-chf-scenario1-careteam" name="CHF Care Team"/>
 <artifact id="Library/CKDRiskLogic" key="Library-CKDRiskLogic" name="CKDRiskLogic"/>
 <artifact id="ValueSet/cpg-active-condition-vs" key="ValueSet-cpg-active-condition-vs" name="CPG Active Condition Value Set"/>
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
@@ -59,9 +59,11 @@
 <artifact id="StructureDefinition/cpg-assertionExpression" key="StructureDefinition-cpg-assertionExpression" name="CPG Assertion Expression Extension"/>
 <artifact id="StructureDefinition/cpg-assetcollection" key="StructureDefinition-cpg-assetcollection" name="CPG Asset Collection"/>
 <artifact id="StructureDefinition/cpg-author" key="StructureDefinition-cpg-author" name="CPG Author Extension"/>
+<artifact id="OperationDefinition/cpg-cql" key="OperationDefinition-cpg-cql" name="CPG CQL"/>
 <artifact id="StructureDefinition/cpg-careplan" key="StructureDefinition-cpg-careplan" name="CPG Care Plan"/>
 <artifact id="StructureDefinition/cpg-careteam" key="StructureDefinition-cpg-careteam" name="CPG Care Team"/>
 <artifact id="StructureDefinition/cpg-careteamdefinition" key="StructureDefinition-cpg-careteamdefinition" name="CPG Care Team Definition"/>
+<artifact id="OperationDefinition/cpg-careplan-apply" key="OperationDefinition-cpg-careplan-apply" name="CPG CarePlan Applly"/>
 <artifact id="StructureDefinition/cpg-case" key="StructureDefinition-cpg-case" name="CPG Case"/>
 <artifact id="StructureDefinition/cpg-casefeaturedefinition" key="StructureDefinition-cpg-casefeaturedefinition" name="CPG Case Feature Definition"/>
 <artifact id="StructureDefinition/cpg-caseFeatureOf" key="StructureDefinition-cpg-caseFeatureOf" name="CPG Case Feature Of Extension"/>
@@ -79,6 +81,8 @@
 <artifact id="StructureDefinition/cpg-clinicalimpression" key="StructureDefinition-cpg-clinicalimpression" name="CPG Clinical Impression"/>
 <artifact id="StructureDefinition/cpg-collectinformationactivity" key="StructureDefinition-cpg-collectinformationactivity" name="CPG Collect Information Activity"/>
 <artifact id="StructureDefinition/cpg-collectWith" key="StructureDefinition-cpg-collectWith" name="CPG Collect With Extension"/>
+<artifact id="CapabilityStatement/cpg-common-patient-registry" key="CapabilityStatement-cpg-common-patient-registry" name="CPG Common Patient Registry"/>
+<artifact id="OperationDefinition/cpg-common-patient-summary" key="OperationDefinition-cpg-common-patient-summary" name="CPG Common Patient Summary"/>
 <artifact id="ValueSet/cpg-common-persona-vs" key="ValueSet-cpg-common-persona-vs" name="CPG Common Persona Value Set"/>
 <artifact id="CodeSystem/cpg-common-persona-cs" key="CodeSystem-cpg-common-persona-cs" name="CPG Common Personas Code System"/>
 <artifact id="CodeSystem/cpg-common-process-cs" key="CodeSystem-cpg-common-process-cs" name="CPG Common Process Code System"/>
@@ -136,6 +140,7 @@
 <artifact id="CodeSystem/cpg-knowledge-representation-level-cs" key="CodeSystem-cpg-knowledge-representation-level-cs" name="CPG Knowledge Representation Level Code System"/>
 <artifact id="StructureDefinition/cpg-knowledgeRepresentationLevel" key="StructureDefinition-cpg-knowledgeRepresentationLevel" name="CPG Knowledge Representation Level Extension"/>
 <artifact id="ValueSet/cpg-knowledge-representation-level-vs" key="ValueSet-cpg-knowledge-representation-level-vs" name="CPG Knowledge Representation Level Value Set"/>
+<artifact id="OperationDefinition/cpg-library-evaluate" key="OperationDefinition-cpg-library-evaluate" name="CPG Library Evaluate"/>
 <artifact id="StructureDefinition/cpg-location" key="StructureDefinition-cpg-location" name="CPG Location"/>
 <artifact id="StructureDefinition/cpg-locationdefinition" key="StructureDefinition-cpg-locationdefinition" name="CPG Location Definition"/>
 <artifact id="StructureDefinition/cpg-medicationrequest" key="StructureDefinition-cpg-medicationrequest" name="CPG Medicaiton Request"/>
@@ -153,6 +158,7 @@
 <artifact id="StructureDefinition/cpg-patient" key="StructureDefinition-cpg-patient" name="CPG Patient"/>
 <artifact id="StructureDefinition/cpg-pertinent" key="StructureDefinition-cpg-pertinent" name="CPG Pertinent Extension"/>
 <artifact id="StructureDefinition/cpg-planFor" key="StructureDefinition-cpg-planFor" name="CPG Plan For Extension"/>
+<artifact id="OperationDefinition/cpg-plandefinition-apply" key="OperationDefinition-cpg-plandefinition-apply" name="CPG PlanDefinition Apply"/>
 <artifact id="StructureDefinition/cpg-practitioner" key="StructureDefinition-cpg-practitioner" name="CPG Practitioner"/>
 <artifact id="StructureDefinition/cpg-practitionerrole" key="StructureDefinition-cpg-practitionerrole" name="CPG Practitioner Role"/>
 <artifact id="StructureDefinition/cpg-practitionerroledefinition" key="StructureDefinition-cpg-practitionerroledefinition" name="CPG Practitioner Role Definition"/>
@@ -212,14 +218,14 @@
 <artifact id="Composition/chf-scenario1-casesummary" key="Composition-chf-scenario1-casesummary" name="Congestive Heart Failure Case Summary"/>
 <artifact id="Composition/chf-scenario1-caseplanprogressingnote" key="Composition-chf-scenario1-caseplanprogressingnote" name="Congestive Heart Failure Case/Plan Progressing Note"/>
 <artifact id="Composition/chf-scenario1-caseplansummary" key="Composition-chf-scenario1-caseplansummary" name="Congestive Heart Failure Case/Plan Summary"/>
-<artifact id="Group/chf-scenario1" key="Group-chf-scenario1" name="Congestive Heart Failure Patients"/>
+<artifact id="Group/chf-scenario1-group" key="Group-chf-scenario1-group" name="Congestive Heart Failure Patients"/>
 <artifact id="Library/dispensemedication-library" key="Library-dispensemedication-library" name="Dispense Medication Library"/>
 <artifact id="Library/donotcollectinformation-library" key="Library-donotcollectinformation-library" name="Do Not Collect Information Library"/>
 <artifact id="Library/donotsendmessage-library" key="Library-donotsendmessage-library" name="Do Not Send Message"/>
 <artifact id="Library/documentmedication-library" key="Library-documentmedication-library" name="Document Medication Library"/>
 <artifact id="Library/enrollment-library" key="Library-enrollment-library" name="Enrollment Library"/>
 <artifact id="Library/generatereport-library" key="Library-generatereport-library" name="Generate Report Library"/>
-<artifact id="CarePlan/chf-scenario1" key="CarePlan-chf-scenario1" name="Heart Failure Care Pathway"/>
+<artifact id="CarePlan/chf-scenario1-careplan" key="CarePlan-chf-scenario1-careplan" name="Heart Failure Care Pathway"/>
 <artifact id="Library/HepBAdultForecasting" key="Library-HepBAdultForecasting" name="HepBAdultForecasting"/>
 <artifact id="PlanDefinition/HepBAdultForecasting" key="PlanDefinition-HepBAdultForecasting" name="HepBAdultForecasting"/>
 <artifact id="Library/OpioidCDSR4Common" key="Library-OpioidCDSR4Common" name="OpioidCDSR4Common"/>
@@ -232,8 +238,7 @@
 <artifact id="Library/recordinference-library" key="Library-recordinference-library" name="Record Inference"/>
 <artifact id="Library/reportflag-library" key="Library-reportflag-library" name="Report Flag"/>
 <artifact id="Library/sendmessage-library" key="Library-sendmessage-library" name="Send Message Library"/>
-<artifact id="Location/chf-scenario1" key="Location-chf-scenario1" name="Unit 3 East"/>
-<artifact id="Bundle/activity-example-administermedication-bundle" key="Bundle-activity-example-administermedication-bundle" name="activity-example-administermedication-bundle"/>
+<artifact id="Location/chf-scenario1-location" key="Location-chf-scenario1-location" name="Unit 3 East"/>
 <artifact id="MedicationRequest/am-scenario1" key="MedicationRequest-am-scenario1" name="am-scenario1"/>
 <artifact id="Patient/am-scenario1" key="Patient-am-scenario1" name="am-scenario1"/>
 <artifact id="MedicationRequest/am-scenario2" key="MedicationRequest-am-scenario2" name="am-scenario2"/>
@@ -249,11 +254,11 @@
 <artifact id="MedicationAdministration/am-scenario6" key="MedicationAdministration-am-scenario6" name="am-scenario6"/>
 <artifact id="MedicationRequest/am-scenario6" key="MedicationRequest-am-scenario6" name="am-scenario6"/>
 <artifact id="Patient/am-scenario6" key="Patient-am-scenario6" name="am-scenario6"/>
+<artifact id="Bundle/am-scenario7" key="Bundle-am-scenario7" name="am-scenario7"/>
+<artifact id="GuidanceResponse/am-scenario7" key="GuidanceResponse-am-scenario7" name="am-scenario7"/>
 <artifact id="MedicationAdministration/am-scenario7" key="MedicationAdministration-am-scenario7" name="am-scenario7"/>
+<artifact id="MedicationRequest/am-scenario7" key="MedicationRequest-am-scenario7" name="am-scenario7"/>
 <artifact id="Patient/am-scenario7" key="Patient-am-scenario7" name="am-scenario7"/>
-<artifact id="Bundle/am-scenario7-bundle" key="Bundle-am-scenario7-bundle" name="am-scenario7-bundle"/>
-<artifact id="GuidanceResponse/am-scenario7-gr" key="GuidanceResponse-am-scenario7-gr" name="am-scenario7-gr"/>
-<artifact id="MedicationRequest/am-scenario7-mr" key="MedicationRequest-am-scenario7-mr" name="am-scenario7-mr"/>
 <artifact id="PlanDefinition/anc-contact" key="PlanDefinition-anc-contact" name="anc-contact"/>
 <artifact id="PlanDefinition/anc-contact-schedule" key="PlanDefinition-anc-contact-schedule" name="anc-contact-schedule"/>
 <artifact id="Questionnaire/anc-every-contact" key="Questionnaire-anc-every-contact" name="anc-every-contact"/>
@@ -323,14 +328,6 @@
 <artifact id="ActivityDefinition/chf-report-bodyweight" key="ActivityDefinition-chf-report-bodyweight" name="chf-report-bodyweight"/>
 <artifact id="ActivityDefinition/chf-report-bodyweight-change" key="ActivityDefinition-chf-report-bodyweight-change" name="chf-report-bodyweight-change"/>
 <artifact id="ActivityDefinition/chf-report-urine-out" key="ActivityDefinition-chf-report-urine-out" name="chf-report-urine-out"/>
-<artifact id="ClinicalImpression/chf-scenario1" key="ClinicalImpression-chf-scenario1" name="chf-scenario1"/>
-<artifact id="Condition/chf-scenario1" key="Condition-chf-scenario1" name="chf-scenario1"/>
-<artifact id="Encounter/chf-scenario1" key="Encounter-chf-scenario1" name="chf-scenario1"/>
-<artifact id="EpisodeOfCare/chf-scenario1" key="EpisodeOfCare-chf-scenario1" name="chf-scenario1"/>
-<artifact id="Patient/chf-scenario1" key="Patient-chf-scenario1" name="chf-scenario1"/>
-<artifact id="Practitioner/chf-scenario1" key="Practitioner-chf-scenario1" name="chf-scenario1"/>
-<artifact id="PractitionerRole/chf-scenario1" key="PractitionerRole-chf-scenario1" name="chf-scenario1"/>
-<artifact id="RelatedPerson/chf-scenario1" key="RelatedPerson-chf-scenario1" name="chf-scenario1"/>
 <artifact id="MeasureReport/chf-scenario1-bodyweight-change1" key="MeasureReport-chf-scenario1-bodyweight-change1" name="chf-scenario1-bodyweight-change1"/>
 <artifact id="Observation/chf-scenario1-bodyweight-change1" key="Observation-chf-scenario1-bodyweight-change1" name="chf-scenario1-bodyweight-change1"/>
 <artifact id="MeasureReport/chf-scenario1-bodyweight-change2" key="MeasureReport-chf-scenario1-bodyweight-change2" name="chf-scenario1-bodyweight-change2"/>
@@ -348,11 +345,15 @@
 <artifact id="Procedure/chf-scenario1-cardiology-consult" key="Procedure-chf-scenario1-cardiology-consult" name="chf-scenario1-cardiology-consult"/>
 <artifact id="Goal/chf-scenario1-cardiology-consultation" key="Goal-chf-scenario1-cardiology-consultation" name="chf-scenario1-cardiology-consultation"/>
 <artifact id="ServiceRequest/chf-scenario1-cardiology-consultation" key="ServiceRequest-chf-scenario1-cardiology-consultation" name="chf-scenario1-cardiology-consultation"/>
+<artifact id="ClinicalImpression/chf-scenario1-clinicalimpression" key="ClinicalImpression-chf-scenario1-clinicalimpression" name="chf-scenario1-clinicalimpression"/>
+<artifact id="Condition/chf-scenario1-condition" key="Condition-chf-scenario1-condition" name="chf-scenario1-condition"/>
 <artifact id="Goal/chf-scenario1-creatinine" key="Goal-chf-scenario1-creatinine" name="chf-scenario1-creatinine"/>
 <artifact id="Observation/chf-scenario1-creatinine1" key="Observation-chf-scenario1-creatinine1" name="chf-scenario1-creatinine1"/>
 <artifact id="RequestGroup/chf-scenario1-daily-management" key="RequestGroup-chf-scenario1-daily-management" name="chf-scenario1-daily-management"/>
 <artifact id="Goal/chf-scenario1-egfr" key="Goal-chf-scenario1-egfr" name="chf-scenario1-egfr"/>
 <artifact id="Observation/chf-scenario1-egfr1" key="Observation-chf-scenario1-egfr1" name="chf-scenario1-egfr1"/>
+<artifact id="Encounter/chf-scenario1-encounter" key="Encounter-chf-scenario1-encounter" name="chf-scenario1-encounter"/>
+<artifact id="EpisodeOfCare/chf-scenario1-eoc" key="EpisodeOfCare-chf-scenario1-eoc" name="chf-scenario1-eoc"/>
 <artifact id="RequestGroup/chf-scenario1-hypervolemia" key="RequestGroup-chf-scenario1-hypervolemia" name="chf-scenario1-hypervolemia"/>
 <artifact id="Goal/chf-scenario1-jvp" key="Goal-chf-scenario1-jvp" name="chf-scenario1-jvp"/>
 <artifact id="ServiceRequest/chf-scenario1-jvp" key="ServiceRequest-chf-scenario1-jvp" name="chf-scenario1-jvp"/>
@@ -372,8 +373,12 @@
 <artifact id="ServiceRequest/chf-scenario1-o2-sat" key="ServiceRequest-chf-scenario1-o2-sat" name="chf-scenario1-o2-sat"/>
 <artifact id="Observation/chf-scenario1-o2sat1" key="Observation-chf-scenario1-o2sat1" name="chf-scenario1-o2sat1"/>
 <artifact id="Observation/chf-scenario1-o2sat2" key="Observation-chf-scenario1-o2sat2" name="chf-scenario1-o2sat2"/>
+<artifact id="Patient/chf-scenario1-patient" key="Patient-chf-scenario1-patient" name="chf-scenario1-patient"/>
 <artifact id="Goal/chf-scenario1-potassium" key="Goal-chf-scenario1-potassium" name="chf-scenario1-potassium"/>
 <artifact id="Observation/chf-scenario1-potassium1" key="Observation-chf-scenario1-potassium1" name="chf-scenario1-potassium1"/>
+<artifact id="Practitioner/chf-scenario1-practitioner" key="Practitioner-chf-scenario1-practitioner" name="chf-scenario1-practitioner"/>
+<artifact id="PractitionerRole/chf-scenario1-practitionerrole" key="PractitionerRole-chf-scenario1-practitionerrole" name="chf-scenario1-practitionerrole"/>
+<artifact id="RelatedPerson/chf-scenario1-relatedperson" key="RelatedPerson-chf-scenario1-relatedperson" name="chf-scenario1-relatedperson"/>
 <artifact id="MedicationRequest/chf-scenario1-stop-lasix-iv" key="MedicationRequest-chf-scenario1-stop-lasix-iv" name="chf-scenario1-stop-lasix-iv"/>
 <artifact id="Goal/chf-scenario1-urine-out" key="Goal-chf-scenario1-urine-out" name="chf-scenario1-urine-out"/>
 <artifact id="MeasureReport/chf-scenario1-urineout3" key="MeasureReport-chf-scenario1-urineout3" name="chf-scenario1-urineout3"/>
@@ -452,31 +457,31 @@
 <artifact id="Patient/dnci-scenario8" key="Patient-dnci-scenario8" name="dnci-scenario8"/>
 <artifact id="QuestionnaireResponse/dnci-scenario8" key="QuestionnaireResponse-dnci-scenario8" name="dnci-scenario8"/>
 <artifact id="Patient/dnci-scenario9" key="Patient-dnci-scenario9" name="dnci-scenario9"/>
+<artifact id="Communication/dnsm-scenario1" key="Communication-dnsm-scenario1" name="dnsm-scenario1"/>
 <artifact id="Patient/dnsm-scenario1" key="Patient-dnsm-scenario1" name="dnsm-scenario1"/>
-<artifact id="Communication/dnsm-scenario1-communication" key="Communication-dnsm-scenario1-communication" name="dnsm-scenario1-communication"/>
+<artifact id="Communication/dnsm-scenario2" key="Communication-dnsm-scenario2" name="dnsm-scenario2"/>
+<artifact id="CommunicationRequest/dnsm-scenario2" key="CommunicationRequest-dnsm-scenario2" name="dnsm-scenario2"/>
 <artifact id="Patient/dnsm-scenario2" key="Patient-dnsm-scenario2" name="dnsm-scenario2"/>
-<artifact id="Communication/dnsm-scenario2-communication" key="Communication-dnsm-scenario2-communication" name="dnsm-scenario2-communication"/>
-<artifact id="CommunicationRequest/dnsm-scenario2-cr" key="CommunicationRequest-dnsm-scenario2-cr" name="dnsm-scenario2-cr"/>
+<artifact id="Communication/dnsm-scenario3" key="Communication-dnsm-scenario3" name="dnsm-scenario3"/>
+<artifact id="CommunicationRequest/dnsm-scenario3" key="CommunicationRequest-dnsm-scenario3" name="dnsm-scenario3"/>
 <artifact id="Patient/dnsm-scenario3" key="Patient-dnsm-scenario3" name="dnsm-scenario3"/>
-<artifact id="Communication/dnsm-scenario3-communication" key="Communication-dnsm-scenario3-communication" name="dnsm-scenario3-communication"/>
-<artifact id="CommunicationRequest/dnsm-scenario3-cr" key="CommunicationRequest-dnsm-scenario3-cr" name="dnsm-scenario3-cr"/>
+<artifact id="CommunicationRequest/dnsm-scenario4" key="CommunicationRequest-dnsm-scenario4" name="dnsm-scenario4"/>
 <artifact id="Patient/dnsm-scenario4" key="Patient-dnsm-scenario4" name="dnsm-scenario4"/>
-<artifact id="CommunicationRequest/dnsm-scenario4-cr" key="CommunicationRequest-dnsm-scenario4-cr" name="dnsm-scenario4-cr"/>
+<artifact id="CommunicationRequest/dnsm-scenario5" key="CommunicationRequest-dnsm-scenario5" name="dnsm-scenario5"/>
 <artifact id="Patient/dnsm-scenario5" key="Patient-dnsm-scenario5" name="dnsm-scenario5"/>
-<artifact id="CommunicationRequest/dnsm-scenario5-cr" key="CommunicationRequest-dnsm-scenario5-cr" name="dnsm-scenario5-cr"/>
+<artifact id="CommunicationRequest/dnsm-scenario6" key="CommunicationRequest-dnsm-scenario6" name="dnsm-scenario6"/>
 <artifact id="Patient/dnsm-scenario6" key="Patient-dnsm-scenario6" name="dnsm-scenario6"/>
-<artifact id="CommunicationRequest/dnsm-scenario6-cr" key="CommunicationRequest-dnsm-scenario6-cr" name="dnsm-scenario6-cr"/>
+<artifact id="Communication/dnsm-scenario7" key="Communication-dnsm-scenario7" name="dnsm-scenario7"/>
 <artifact id="Patient/dnsm-scenario7" key="Patient-dnsm-scenario7" name="dnsm-scenario7"/>
-<artifact id="Communication/dnsm-scenario7-communication" key="Communication-dnsm-scenario7-communication" name="dnsm-scenario7-communication"/>
+<artifact id="Communication/dnsm-scenario8" key="Communication-dnsm-scenario8" name="dnsm-scenario8"/>
 <artifact id="Patient/dnsm-scenario8" key="Patient-dnsm-scenario8" name="dnsm-scenario8"/>
-<artifact id="Communication/dnsm-scenario8-communication" key="Communication-dnsm-scenario8-communication" name="dnsm-scenario8-communication"/>
 <artifact id="Patient/dnsm-scenario9" key="Patient-dnsm-scenario9" name="dnsm-scenario9"/>
 <artifact id="Patient/ep-scenario1" key="Patient-ep-scenario1" name="ep-scenario1"/>
 <artifact id="Patient/ep-scenario2" key="Patient-ep-scenario2" name="ep-scenario2"/>
+<artifact id="Condition/ep-scenario4" key="Condition-ep-scenario4" name="ep-scenario4"/>
+<artifact id="Encounter/ep-scenario4" key="Encounter-ep-scenario4" name="ep-scenario4"/>
+<artifact id="EpisodeOfCare/ep-scenario4" key="EpisodeOfCare-ep-scenario4" name="ep-scenario4"/>
 <artifact id="Patient/ep-scenario4" key="Patient-ep-scenario4" name="ep-scenario4"/>
-<artifact id="Condition/ep-scenario4-condition" key="Condition-ep-scenario4-condition" name="ep-scenario4-condition"/>
-<artifact id="Encounter/ep-scenario4-encounter" key="Encounter-ep-scenario4-encounter" name="ep-scenario4-encounter"/>
-<artifact id="EpisodeOfCare/ep-scenario4-eoc" key="EpisodeOfCare-ep-scenario4-eoc" name="ep-scenario4-eoc"/>
 <artifact id="Task/event-ci-scenario4" key="Task-event-ci-scenario4" name="event-ci-scenario4"/>
 <artifact id="Task/event-ci-scenario5" key="Task-event-ci-scenario5" name="event-ci-scenario5"/>
 <artifact id="Task/event-ci-scenario6" key="Task-event-ci-scenario6" name="event-ci-scenario6"/>
@@ -529,8 +534,8 @@
 <artifact id="Patient/patient-anc-ra2" key="Patient-patient-anc-ra2" name="patient-anc-ra2"/>
 <artifact id="Patient/pd-scenario1" key="Patient-pd-scenario1" name="pd-scenario1"/>
 <artifact id="Patient/pd-scenario2" key="Patient-pd-scenario2" name="pd-scenario2"/>
+<artifact id="Condition/pd-scenario4" key="Condition-pd-scenario4" name="pd-scenario4"/>
 <artifact id="Patient/pd-scenario4" key="Patient-pd-scenario4" name="pd-scenario4"/>
-<artifact id="Condition/pd-scenario4-condition" key="Condition-pd-scenario4-condition" name="pd-scenario4-condition"/>
 <artifact id="Task/request-am-scenario2" key="Task-request-am-scenario2" name="request-am-scenario2"/>
 <artifact id="Task/request-am-scenario3" key="Task-request-am-scenario3" name="request-am-scenario3"/>
 <artifact id="Task/request-am-scenario5" key="Task-request-am-scenario5" name="request-am-scenario5"/>
@@ -562,31 +567,31 @@
 <artifact id="Task/request-stop-dnci-scenario6" key="Task-request-stop-dnci-scenario6" name="request-stop-dnci-scenario6"/>
 <artifact id="Patient/rf-scenario1" key="Patient-rf-scenario1" name="rf-scenario1"/>
 <artifact id="Patient/rf-scenario2" key="Patient-rf-scenario2" name="rf-scenario2"/>
+<artifact id="Flag/rf-scenario4" key="Flag-rf-scenario4" name="rf-scenario4"/>
 <artifact id="Patient/rf-scenario4" key="Patient-rf-scenario4" name="rf-scenario4"/>
-<artifact id="Flag/rf-scenario4-flag" key="Flag-rf-scenario4-flag" name="rf-scenario4-flag"/>
 <artifact id="Patient/ri-scenario1" key="Patient-ri-scenario1" name="ri-scenario1"/>
+<artifact id="ImmunizationRecommendation/ri-scenario2" key="ImmunizationRecommendation-ri-scenario2" name="ri-scenario2"/>
 <artifact id="Patient/ri-scenario2" key="Patient-ri-scenario2" name="ri-scenario2"/>
-<artifact id="ImmunizationRecommendation/ri-scenario2-ir" key="ImmunizationRecommendation-ri-scenario2-ir" name="ri-scenario2-ir"/>
+<artifact id="Immunization/ri-scenario4" key="Immunization-ri-scenario4" name="ri-scenario4"/>
 <artifact id="Patient/ri-scenario4" key="Patient-ri-scenario4" name="ri-scenario4"/>
-<artifact id="Immunization/ri-scenario4-immunization" key="Immunization-ri-scenario4-immunization" name="ri-scenario4-immunization"/>
-<artifact id="Communication/scenario8-communication" key="Communication-scenario8-communication" name="scenario8-communication"/>
+<artifact id="Communication/scenario8" key="Communication-scenario8" name="scenario8"/>
 <artifact id="Patient/sm-scenario1" key="Patient-sm-scenario1" name="sm-scenario1"/>
+<artifact id="CommunicationRequest/sm-scenario2" key="CommunicationRequest-sm-scenario2" name="sm-scenario2"/>
 <artifact id="Patient/sm-scenario2" key="Patient-sm-scenario2" name="sm-scenario2"/>
-<artifact id="CommunicationRequest/sm-scenario2-cr" key="CommunicationRequest-sm-scenario2-cr" name="sm-scenario2-cr"/>
+<artifact id="CommunicationRequest/sm-scenario3" key="CommunicationRequest-sm-scenario3" name="sm-scenario3"/>
 <artifact id="Patient/sm-scenario3" key="Patient-sm-scenario3" name="sm-scenario3"/>
-<artifact id="CommunicationRequest/sm-scenario3-cr" key="CommunicationRequest-sm-scenario3-cr" name="sm-scenario3-cr"/>
+<artifact id="Communication/sm-scenario4" key="Communication-sm-scenario4" name="sm-scenario4"/>
 <artifact id="Patient/sm-scenario4" key="Patient-sm-scenario4" name="sm-scenario4"/>
-<artifact id="Communication/sm-scenario4-communication" key="Communication-sm-scenario4-communication" name="sm-scenario4-communication"/>
+<artifact id="Communication/sm-scenario5" key="Communication-sm-scenario5" name="sm-scenario5"/>
+<artifact id="CommunicationRequest/sm-scenario5" key="CommunicationRequest-sm-scenario5" name="sm-scenario5"/>
 <artifact id="Patient/sm-scenario5" key="Patient-sm-scenario5" name="sm-scenario5"/>
-<artifact id="Communication/sm-scenario5-communication" key="Communication-sm-scenario5-communication" name="sm-scenario5-communication"/>
-<artifact id="CommunicationRequest/sm-scenario5-cr" key="CommunicationRequest-sm-scenario5-cr" name="sm-scenario5-cr"/>
+<artifact id="Communication/sm-scenario6" key="Communication-sm-scenario6" name="sm-scenario6"/>
 <artifact id="Patient/sm-scenario6" key="Patient-sm-scenario6" name="sm-scenario6"/>
-<artifact id="Communication/sm-scenario6-communication" key="Communication-sm-scenario6-communication" name="sm-scenario6-communication"/>
+<artifact id="Communication/sm-scenario7" key="Communication-sm-scenario7" name="sm-scenario7"/>
+<artifact id="CommunicationRequest/sm-scenario7" key="CommunicationRequest-sm-scenario7" name="sm-scenario7"/>
 <artifact id="Patient/sm-scenario7" key="Patient-sm-scenario7" name="sm-scenario7"/>
-<artifact id="Communication/sm-scenario7-communication" key="Communication-sm-scenario7-communication" name="sm-scenario7-communication"/>
-<artifact id="CommunicationRequest/sm-scenario7-cr" key="CommunicationRequest-sm-scenario7-cr" name="sm-scenario7-cr"/>
-<artifact id="CommunicationRequest/stop-dnsm-scenario5-cr" key="CommunicationRequest-stop-dnsm-scenario5-cr" name="stop-dnsm-scenario5-cr"/>
-<artifact id="CommunicationRequest/stop-dnsm-scenario6-cr" key="CommunicationRequest-stop-dnsm-scenario6-cr" name="stop-dnsm-scenario6-cr"/>
+<artifact id="CommunicationRequest/stop-dnsm-scenario5" key="CommunicationRequest-stop-dnsm-scenario5" name="stop-dnsm-scenario5"/>
+<artifact id="CommunicationRequest/stop-dnsm-scenario6" key="CommunicationRequest-stop-dnsm-scenario6" name="stop-dnsm-scenario6"/>
 <artifact id="PlanDefinition/va-ckd-protocol" key="PlanDefinition-va-ckd-protocol" name="va-ckd-protocol"/>
 <artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="va-ckd-recommendations"/>
 <page key="NA" name="(NA)"/>

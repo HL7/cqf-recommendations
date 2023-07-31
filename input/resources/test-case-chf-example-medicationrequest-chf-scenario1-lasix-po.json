@@ -14,7 +14,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "instantiatesCanonical": [
     "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-lasix-po"

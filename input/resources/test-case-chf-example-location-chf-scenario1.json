@@ -1,6 +1,6 @@
 {
   "resourceType": "Location",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-location",
   "status": "active",
   "name": "Unit 3 East",
   "mode": "instance",
@@ -16,6 +16,6 @@
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/chf-scenario1"
+    "reference": "Oragnization/chf-scenario1-organization"
   }
 }

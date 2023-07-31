@@ -2,7 +2,7 @@ This is a [domain case/instance profile](profiles.html#domain-profiles)
 
 **Examples:**
 
-*   [Patient/chf-scenario1](Patient-chf-scenario1.html) Patient/chf-scenario1
+*   [Patient/chf-scenario1-patient](Patient-chf-scenario1-patient.html) Patient/chf-scenario1-patient
 *   [Patient/am-scenario1](Patient-am-scenario1.html) Patient/am-scenario1
 *   [Patient/am-scenario2](Patient-am-scenario2.html) Patient/am-scenario2
 *   [Patient/am-scenario3](Patient-am-scenario3.html) Patient/am-scenario3

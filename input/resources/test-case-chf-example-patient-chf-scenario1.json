@@ -1,6 +1,6 @@
 {
    "resourceType":"Patient",
-   "id":"chf-scenario1",
+   "id":"chf-scenario1-patient",
    "active":true,
    "name":[
       {

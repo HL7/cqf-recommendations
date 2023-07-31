@@ -28,10 +28,10 @@
     "text": "Oxygen saturation measurement"
   },
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "occurrenceDateTime": "2019-02-03T13:00:00Z",
   "authoredOn": "2019-02-03"

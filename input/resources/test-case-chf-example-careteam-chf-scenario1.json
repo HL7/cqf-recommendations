@@ -1,13 +1,13 @@
 {
   "resourceType": "CareTeam",
-  "id": "chf-scenario1",
+  "id": "chf-scenario1-careteam",
   "status": "active",
   "name": "CHF Care Team",
   "subject": {
-    "reference": "Patient/chf-scenario1"
+    "reference": "Patient/chf-scenario1-patient"
   },
   "encounter": {
-    "reference": "Encounter/chf-scenario1"
+    "reference": "Encounter/chf-scenario1-encounter"
   },
   "participant": [
     {
@@ -23,7 +23,7 @@
         }
       ],
       "member": {
-        "reference": "PractitionerRole/chf-scenario1"
+        "reference": "PractitionerRole/chf-scenario1-practitionerrole"
       }
     },
     {
@@ -45,7 +45,7 @@
   ],
   "managingOrganization": [
     {
-      "reference": "Organization/chf-scenario1"
+      "reference": "Oragnization/chf-scenario1-organization"
     }
   ]
 }
