@@ -14,7 +14,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/am-scenario6"
+    "reference": "Patient/am-scenario6-patient"
   },
   "dosageInstruction": [
     {

@@ -28,7 +28,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/ep-scenario4"
+    "reference": "Patient/ep-scenario4-patient"
   },
   "episodeOfCare": [
     {

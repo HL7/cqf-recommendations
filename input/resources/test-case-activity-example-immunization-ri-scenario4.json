@@ -12,7 +12,7 @@
     ]
   },
   "patient": {
-    "reference": "Patient/ri-scenario4"
+    "reference": "Patient/ri-scenario4-patient"
   },
   "occurrenceDateTime": "2020-01-15"
 }

@@ -42,7 +42,7 @@
         "text": "Stroke"
       },
       "subject": {
-        "reference": "Patient/pd-scenario2"
+        "reference": "Patient/pd-scenario2-patient"
       },
       "onsetDateTime": "2020-01-15"
     }
@@ -60,7 +60,7 @@
     ]
   },
   "for": {
-    "reference": "Patient/pd-scenario2"
+    "reference": "Patient/pd-scenario2-patient"
   },
   "input": [
     {

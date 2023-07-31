@@ -27,7 +27,7 @@
     "text": "Assessment of passive range of motion"
   },
   "subject": {
-    "reference": "Patient/os-scenario2"
+    "reference": "Patient/os-scenario2-patient"
   },
   "occurrenceDateTime": "2016-09-27",
   "authoredOn": "2016-09-20",

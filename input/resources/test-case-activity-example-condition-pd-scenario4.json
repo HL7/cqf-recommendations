@@ -38,7 +38,7 @@
     "text": "Stroke"
   },
   "subject": {
-    "reference": "Patient/pd-scenario4"
+    "reference": "Patient/pd-scenario4-patient"
   },
   "onsetDateTime": "2020-01-15"
 }

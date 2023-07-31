@@ -1,6 +1,6 @@
 {
    "resourceType":"Patient",
-   "id":"dm-scenario7",
+   "id":"dm-scenario7-patient",
    "active":true,
    "name":[
       {

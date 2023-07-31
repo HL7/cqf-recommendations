@@ -21,7 +21,7 @@
         "text": "Flag"
       },
       "subject": {
-        "reference": "Patient/rf-scenario2"
+        "reference": "Patient/rf-scenario2-patient"
       }
     }
   ],
@@ -38,7 +38,7 @@
     ]
   },
   "for": {
-    "reference": "Patient/rf-scenario2"
+    "reference": "Patient/rf-scenario2-patient"
   },
   "input": [
     {

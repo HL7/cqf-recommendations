@@ -9,7 +9,7 @@
   ],
   "status": "active",
   "subject": {
-    "reference": "Patient/sm-scenario2"
+    "reference": "Patient/sm-scenario2-patient"
   },
   "payload": [
     {
@@ -18,7 +18,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario2"
+      "reference": "Patient/sm-scenario2-patient"
     }
   ]
 }

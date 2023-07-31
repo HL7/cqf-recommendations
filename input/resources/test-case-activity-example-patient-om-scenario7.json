@@ -1,6 +1,6 @@
 {
    "resourceType":"Patient",
-   "id":"om-scenario7",
+   "id":"om-scenario7-patient",
    "active":true,
    "name":[
       {

@@ -14,7 +14,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/dcm-scenario1"
+    "reference": "Patient/dcm-scenario1-patient"
   },
   "reasonCode": [
     {

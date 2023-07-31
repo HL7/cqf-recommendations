@@ -1,6 +1,6 @@
 {
    "resourceType":"Patient",
-   "id":"ci-scenario6",
+   "id":"ci-scenario6-patient",
    "active":true,
    "name":[
       {

@@ -20,7 +20,7 @@
     ]
   },
   "for": {
-    "reference": "Patient/dnci-scenario6"
+    "reference": "Patient/dnci-scenario6-patient"
   },
   "input": [
     {

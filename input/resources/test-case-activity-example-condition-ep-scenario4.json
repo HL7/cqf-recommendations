@@ -38,7 +38,7 @@
     "text": "Stroke"
   },
   "subject": {
-    "reference": "Patient/ep-scenario4"
+    "reference": "Patient/ep-scenario4-patient"
   },
   "encounter": {
     "reference": "Encounter/ep-scenario4"

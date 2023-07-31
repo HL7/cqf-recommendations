@@ -19,7 +19,7 @@
     ]
   },
   "for": {
-      "reference": "Patient/ci-scenario5"
+      "reference": "Patient/dnsm-scenario5-patient"
   },
   "input": [
     {

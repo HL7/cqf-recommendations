@@ -14,7 +14,7 @@
     ]
   },
   "for": {
-      "reference": "Patient/ci-scenario2"
+      "reference": "Patient/ci-scenario2-patient"
   },
   "input": [
     {

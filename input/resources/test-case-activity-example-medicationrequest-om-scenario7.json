@@ -14,7 +14,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/om-scenario7"
+    "reference": "Patient/om-scenario7-patient"
   },
   "instantiatesCanonical": [
     "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-ordermedication-ad"

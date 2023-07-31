@@ -21,12 +21,12 @@
     ]
   },
   "subject": {
-    "reference": "Patient/dcm-scenario5"
+    "reference": "Patient/dcm-scenario5-patient"
   },
   "effectiveDateTime": "2015-01-23",
   "dateAsserted": "2015-02-22",
   "informationSource": {
-    "reference": "Patient/dcm-scenario5"
+    "reference": "Patient/dcm-scenario5-patient"
   },
   "derivedFrom": [
     {

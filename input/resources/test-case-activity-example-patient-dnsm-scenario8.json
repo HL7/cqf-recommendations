@@ -1,6 +1,6 @@
 {
    "resourceType":"Patient",
-   "id":"dnsm-scenario8",
+   "id":"dnsm-scenario8-patient",
    "active":true,
    "name":[
       {

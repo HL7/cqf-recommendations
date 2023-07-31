@@ -14,7 +14,7 @@
     ]
   },
   "for": {
-    "reference": "Patient/ep-scenario4"
+    "reference": "Patient/ep-scenario4-patient"
   },
   "input": [
     {

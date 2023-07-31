@@ -9,7 +9,7 @@
   ],
   "status": "completed",
   "subject": {
-    "reference": "Patient/sm-scenario5"
+    "reference": "Patient/sm-scenario5-patient"
   },
   "payload": [
     {
@@ -18,7 +18,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario5"
+      "reference": "Patient/sm-scenario5-patient"
     }
   ]
 }

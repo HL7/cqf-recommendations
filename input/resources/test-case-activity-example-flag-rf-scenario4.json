@@ -17,6 +17,6 @@
     "text": "Flag"
   },
   "subject": {
-    "reference": "Patient/rf-scenario4"
+    "reference": "Patient/rf-scenario4-patient"
   }
 }

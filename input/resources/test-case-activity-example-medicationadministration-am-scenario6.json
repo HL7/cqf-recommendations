@@ -12,7 +12,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/am-scenario6"
+    "reference": "Patient/am-scenario6-patient"
   },
   "effectivePeriod": {
     "start": "2015-01-15T22:03:00+01:00",

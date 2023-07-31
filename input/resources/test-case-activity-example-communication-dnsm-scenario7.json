@@ -6,7 +6,7 @@
     "text": "Medical reason"
   },
   "subject": {
-    "reference": "Patient/dnsm-scenario7"
+    "reference": "Patient/dnsm-scenario7-patient"
   },
   "payload": [
     {
@@ -15,7 +15,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnsm-scenario7"
+      "reference": "Patient/dnsm-scenario7-patient"
     }
   ]
 }

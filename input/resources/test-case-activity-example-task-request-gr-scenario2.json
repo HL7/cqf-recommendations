@@ -14,7 +14,7 @@
     ]
   },
   "for": {
-    "reference": "Patient/gr-scenario2"
+    "reference": "Patient/gr-scenario2-patient"
   },
   "input": [
     {

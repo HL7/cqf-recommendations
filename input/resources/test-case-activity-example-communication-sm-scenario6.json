@@ -6,7 +6,7 @@
     "text": "Patient refused"
   },
   "subject": {
-    "reference": "Patient/sm-scenario6"
+    "reference": "Patient/sm-scenario6-patient"
   },
   "payload": [
     {
@@ -15,7 +15,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/sm-scenario6"
+      "reference": "Patient/sm-scenario6-patient"
     }
   ]
 }

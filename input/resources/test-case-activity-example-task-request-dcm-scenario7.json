@@ -14,7 +14,7 @@
     ]
   },
   "for": {
-      "reference": "Patient/dcm-scenario7"
+      "reference": "Patient/dcm-scenario7-patient"
   },
   "input": [
     {

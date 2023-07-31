@@ -3,7 +3,7 @@
   "id": "dnsm-scenario8",
   "status": "completed",
   "subject": {
-    "reference": "Patient/dnsm-scenario8"
+    "reference": "Patient/dnsm-scenario8-patient"
   },
   "payload": [
     {
@@ -12,7 +12,7 @@
   ],
   "recipient": [
     {
-      "reference": "Patient/dnsm-scenario8"
+      "reference": "Patient/dnsm-scenario8-patient"
     }
   ]
 }

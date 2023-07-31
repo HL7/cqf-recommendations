@@ -1,6 +1,6 @@
 {
    "resourceType":"Patient",
-   "id":"dnci-scenario2",
+   "id":"dnci-scenario2-patient",
    "active":true,
    "name":[
       {

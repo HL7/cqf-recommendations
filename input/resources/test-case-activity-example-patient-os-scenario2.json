@@ -1,6 +1,6 @@
 {
    "resourceType":"Patient",
-   "id":"os-scenario2",
+   "id":"os-scenario2-patient",
    "active":true,
    "name":[
       {

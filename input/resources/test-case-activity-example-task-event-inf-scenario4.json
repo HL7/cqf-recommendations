@@ -11,7 +11,7 @@
       },
       "issued": "2020-01-15T10:30:00Z",
       "subject": {
-        "reference": "Patient/inf-scenario4"
+        "reference": "Patient/inf-scenario4-patient"
       }
     }
   ],
@@ -28,7 +28,7 @@
     ]
   },
   "for": {
-    "reference": "Patient/inf-scenario4"
+    "reference": "Patient/inf-scenario4-patient"
   },
   "input": [
     {

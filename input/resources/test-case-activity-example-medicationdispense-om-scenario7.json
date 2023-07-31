@@ -12,7 +12,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/om-scenario7"
+    "reference": "Patient/om-scenario7-patient"
   },
   "type": {
     "coding": [

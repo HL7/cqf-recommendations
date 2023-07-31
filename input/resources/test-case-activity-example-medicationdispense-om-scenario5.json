@@ -12,7 +12,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/om-scenario5"
+    "reference": "Patient/om-scenario5-patient"
   },
   "authorizingPrescription": [
     {

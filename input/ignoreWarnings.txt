@@ -404,10 +404,10 @@ INFORMATION: Task/event-dnci-scenario8: Task: Validate resource against profile 
 INFORMATION: Patient/dnci-scenario9: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Communication/dnsm-scenario1: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: Patient/dnsm-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/dnsm-scenario2: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
+INFORMATION: Communication/dnsm-scenario2-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: CommunicationRequest/dnsm-scenario2: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
 INFORMATION: Patient/dnsm-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/dnsm-scenario3: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
+INFORMATION: Communication/dnsm-scenario3-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: CommunicationRequest/dnsm-scenario3: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
 INFORMATION: Patient/dnsm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: CommunicationRequest/dnsm-scenario4: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
@@ -523,12 +523,12 @@ INFORMATION: CommunicationRequest/sm-scenario3: CommunicationRequest: Validate r
 INFORMATION: Patient/sm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Communication/sm-scenario4: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: Patient/sm-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/sm-scenario5: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
+INFORMATION: Communication/sm-scenario5-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: CommunicationRequest/sm-scenario5: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
 INFORMATION: Patient/sm-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Communication/sm-scenario6: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: Patient/sm-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/sm-scenario7: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
+INFORMATION: Communication/sm-scenario7-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
 INFORMATION: CommunicationRequest/sm-scenario7: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
 INFORMATION: Patient/sm-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: CodeSystem/anc-reason-for-visit: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
