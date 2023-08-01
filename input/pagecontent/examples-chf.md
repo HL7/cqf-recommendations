@@ -86,7 +86,7 @@ a [Case](EpisodeOfCare-chf-scenario1-eoc.html), an [Encounter](Encounter-chf-sce
 and a [Condition](Condition-chf-scenario1-condition.html), establishing the patient
 as having an admitting diagnosis of Congestive Heart Failure. This meets the `Inclusion Criteria`
 defined by the group, and results in the patient being added to the pathway, and
-included as a member of the [CHF Group](Group-chf-scenario1.html). This
+included as a member of the [CHF Group](Group-chf-scenario1-group.html). This
 results in the creation of a [CarePlan](CarePlan-chf-scenario1-careplan.html), with
 [Daily Management](RequestGroup-chf-scenario1-daily-management.html) and
 [Hypervolemia](RequestGroup-chf-scenario1-hypervolemia.html) strategies. Each of these
@@ -200,7 +200,7 @@ The following index lists all the case-specific resources in this example:
 |Goal|[chf-scenario1-urine-out](Goal-chf-scenario1-urine-out.html)|
 |Goal|[chf-scenario1-weight-change](Goal-chf-scenario1-weight-change.html)|
 |Goal|[chf-scenario1-weight](Goal-chf-scenario1-weight.html)|
-|Group|[chf-scenario1-group](Group-chf-scenario1.html)|
+|Group|[chf-scenario1-group](Group-chf-scenario1-group.html)|
 |Location|[chf-scenario1-location](Location-chf-scenario1-location.html)|
 |MeasureReport|[chf-scenario1-bodyweight-change1](MeasureReport-chf-scenario1-bodyweight-change1.html)|
 |MeasureReport|[chf-scenario1-bodyweight-change2](MeasureReport-chf-scenario1-bodyweight-change2.html)|
@@ -252,7 +252,7 @@ The following index lists all the artifacts (case-independent) in this example:
 |Resource Type|Resource|
 |---|---|
 |ActivityDefinition|[chf-bodyweight-change](ActivityDefinition-chf-bodyweight-change-ad.html)|
-|ActivityDefinition|[chf-bodyweight](ActivityDefinition-chf-bodyweight.html)|
+|ActivityDefinition|[chf-bodyweight](ActivityDefinition-chf-bodyweight-ad.html)|
 |ActivityDefinition|[chf-cardiology-consultation](ActivityDefinition-chf-cardiology-consultation.html)|
 |ActivityDefinition|[chf-creatinine](ActivityDefinition-chf-creatinine.html)|
 |ActivityDefinition|[chf-egfr](ActivityDefinition-chf-egfr.html)|

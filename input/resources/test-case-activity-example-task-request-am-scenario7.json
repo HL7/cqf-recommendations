@@ -28,7 +28,7 @@
         ]
       },
       "valueReference": {
-        "reference": "MedicationRequest/am-scenario7"
+        "reference": "MedicationRequest/am-scenario7-mr"
       }
     }
   ]

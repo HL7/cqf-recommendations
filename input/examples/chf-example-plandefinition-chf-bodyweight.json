@@ -86,7 +86,7 @@
           }
         }
       }],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight"
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-bodyweight-ad"
     },
     {
       "title": "Report Weight",

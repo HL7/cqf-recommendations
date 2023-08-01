@@ -6,7 +6,7 @@
     "reference": "Practitioner/chf-scenario1-practitioner"
   },
   "organization": {
-    "reference": "Oragnization/chf-scenario1-organization"
+    "reference": "Organization/chf-scenario1-organization"
   },
   "code": [
     {

@@ -14,7 +14,7 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example ActivityDefinition
 
-*   [CHF Body Weight](ActivityDefinition-chf-bodyweight.html)
+*   [CHF Body Weight](ActivityDefinition-chf-bodyweight-ad.html)
 
     Measure body weight
 
@@ -195,7 +195,7 @@ The following sections provide listings of resources defined in these examples, 
 
 {% include list-clinicalimpressions.xhtml %}
 
-### Example CodeSystem
+### Example CodeSystem [codesystem-index](examples.html#codesystem-index "link to here")
 
 *   [ANC Reason for Visit](CodeSystem-anc-reason-for-visit-cs.html)
 
@@ -386,7 +386,7 @@ The following sections provide listings of resources defined in these examples, 
 
     VA CKD Recommendations
 
-*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](PlanDefinition-HepBAdultForecasting.html)
+*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](PlanDefinition-HepBAdultForecastingPD.html)
 
     If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast.
 
@@ -576,7 +576,7 @@ The following sections provide listings of resources defined in these examples, 
 
 {% include list-tasks.xhtml %}
 
-### Example ValueSet
+### Example ValueSet [valueset-index](examples.html#valueset-index "link to here")
 
 *   [ANC Reason for Visit](ValueSet-anc-reason-for-visit-vs.html)
 

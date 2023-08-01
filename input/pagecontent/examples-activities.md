@@ -32,12 +32,12 @@ A positive recommendation to send a message
 * sm-scenario3   * [Patient-sm-scenario3](Patient-sm-scenario3-patient.html)
 * sm-scenario4   * [Communication-sm-scenario4](Communication-sm-scenario4.html)
 * sm-scenario4   * [Patient-sm-scenario4](Patient-sm-scenario4-patient.html)
-* sm-scenario5   * [Communication-sm-scenario5](Communication-sm-scenario5.html)
+* sm-scenario5   * [Communication-sm-scenario5](Communication-sm-scenario5-communication.html)
 * sm-scenario5   * [CommunicationRequest-sm-scenario5](CommunicationRequest-sm-scenario5.html)
 * sm-scenario5   * [Patient-sm-scenario5](Patient-sm-scenario5-patient.html)
 * sm-scenario6   * [Communication-sm-scenario6](Communication-sm-scenario6.html)
 * sm-scenario6   * [Patient-sm-scenario6](Patient-sm-scenario6-patient.html)
-* sm-scenario7   * [Communication-sm-scenario7](Communication-sm-scenario7.html)
+* sm-scenario7   * [Communication-sm-scenario7](Communication-sm-scenario7-communication.html)
 * sm-scenario7   * [CommunicationRequest-sm-scenario7](CommunicationRequest-sm-scenario7.html)
 * sm-scenario7   * [Patient-sm-scenario7](Patient-sm-scenario7-patient.html)
 
@@ -51,10 +51,10 @@ A negative recommendation not to send a message
 
 * dnsm-scenario1 * [Communication-dnsm-scenario1](Communication-dnsm-scenario1.html)
 * dnsm-scenario1 * [Patient-dnsm-scenario1](Patient-dnsm-scenario1-patient.html)
-* dnsm-scenario2 * [Communication-dnsm-scenario2](Communication-dnsm-scenario2.html)
+* dnsm-scenario2 * [Communication-dnsm-scenario2](Communication-dnsm-scenario2-communication.html)
 * dnsm-scenario2 * [CommunicationRequest-dnsm-scenario2](CommunicationRequest-dnsm-scenario2.html)
 * dnsm-scenario2 * [Patient-dnsm-scenario2](Patient-dnsm-scenario2-patient.html)
-* dnsm-scenario3 * [Communication-dnsm-scenario3](Communication-dnsm-scenario3.html)
+* dnsm-scenario3 * [Communication-dnsm-scenario3](Communication-dnsm-scenario3-communication.html)
 * dnsm-scenario3 * [CommunicationRequest-dnsm-scenario3](CommunicationRequest-dnsm-scenario3.html)
 * dnsm-scenario3 * [Patient-dnsm-scenario3](Patient-dnsm-scenario3-patient.html)
 * dnsm-scenario4 * [CommunicationRequest-dnsm-scenario4](CommunicationRequest-dnsm-scenario4.html)
@@ -191,17 +191,17 @@ A negative recommendation not to send a message
 * am-scenario3   * [Patient-am-scenario3](Patient-am-scenario3-patient.html)
 * am-scenario3   * [Task-request-am-scenario3](Task-request-am-scenario3.html)
 * am-scenario4   * [MedicationAdministration-am-scenario4](MedicationAdministration-am-scenario4.html)
-* am-scenario4   * [MedicationRequest-am-scenario4](MedicationRequest-am-scenario4.html)
+* am-scenario4   * [MedicationRequest-am-scenario4](MedicationRequest-am-scenario4-mr.html)
 * am-scenario4   * [Patient-am-scenario4](Patient-am-scenario4-patient.html)
 * am-scenario5   * [MedicationAdministration-am-scenario5](MedicationAdministration-am-scenario5.html)
-* am-scenario5   * [MedicationRequest-am-scenario5](MedicationRequest-am-scenario5.html)
+* am-scenario5   * [MedicationRequest-am-scenario5](MedicationRequest-am-scenario5-mr.html)
 * am-scenario5   * [Patient-am-scenario5](Patient-am-scenario5-patient.html)
 * am-scenario5   * [Task-request-am-scenario5](Task-request-am-scenario5.html)
 * am-scenario6   * [MedicationAdministration-am-scenario6](MedicationAdministration-am-scenario6.html)
-* am-scenario6   * [MedicationRequest-am-scenario6](MedicationRequest-am-scenario6.html)
+* am-scenario6   * [MedicationRequest-am-scenario6](MedicationRequest-am-scenario6-mr.html)
 * am-scenario6   * [Patient-am-scenario6](Patient-am-scenario6-patient.html)
 * am-scenario7   * [MedicationAdministration-am-scenario7](MedicationAdministration-am-scenario7.html)
-* am-scenario7   * [MedicationRequest-am-scenario7](MedicationRequest-am-scenario7.html)
+* am-scenario7   * [MedicationRequest-am-scenario7](MedicationRequest-am-scenario7-mr.html)
 * am-scenario7   * [Patient-am-scenario7](Patient-am-scenario7-patient.html)
 * am-scenario7   * [Task-request-am-scenario7](Task-request-am-scenario7.html)
 
@@ -229,7 +229,7 @@ A negative recommendation not to send a message
 * dcm-scenario6  * [MedicationRequest-dcm-scenario6](MedicationRequest-dcm-scenario6.html)
 * dcm-scenario6  * [MedicationStatement-dcm-scenario6](MedicationStatement-dcm-scenario6.html)
 * dcm-scenario6  * [Patient-dcm-scenario6](Patient-dcm-scenario6-patient.html)
-* dcm-scenario7  * [MedicationRequest-dcm-scenario7](MedicationRequest-dcm-scenario7.html)
+* dcm-scenario7  * [MedicationRequest-dcm-scenario7](MedicationRequest-dcm-scenario7-mr.html)
 * dcm-scenario7  * [MedicationStatement-dcm-scenario7](MedicationStatement-dcm-scenario7.html)
 * dcm-scenario7  * [Patient-dcm-scenario7](Patient-dcm-scenario7-patient.html)
 * dcm-scenario7  * [Task-request-dcm-scenario7](Task-request-dcm-scenario7.html)
@@ -347,5 +347,5 @@ the AdministerMedication example:
 |---|---|
 |[Library-activity-example-administermedication](Library-activity-example-administermedication-library.html)|Asset collection detailing the knowledge artifacts in the AdministerMedication example|
 |[Bundle-activity-example-administermedication](Bundle-activity-example-administermedication-bundle.html)|Bundle for the asset collection including all the artifacts, packaged with a single test case example|
-|[GuidanceResponse-am-scenario7](GuidanceResponse-am-scenario7.html)|Expected results for the am-scenario7 test case|
+|[GuidanceResponse-am-scenario7](GuidanceResponse-am-scenario7-gr.html)|Expected results for the am-scenario7 test case|
 |[Bundle-am-scenario7](Bundle-am-scenario7.html)|Test case bundle for the am-scenario7 test case for the AdministerMedication example|

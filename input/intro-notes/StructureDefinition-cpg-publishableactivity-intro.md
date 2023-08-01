@@ -2,7 +2,7 @@ This is a [publishable artifact profile](profiles.html#artifact-profiles)
 
 **Examples:**
 
-*   [CHF Body Weight](ActivityDefinition-chf-bodyweight.html)
+*   [CHF Body Weight](ActivityDefinition-chf-bodyweight-ad.html)
 
     Measure body weight
 

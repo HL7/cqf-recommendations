@@ -2,7 +2,7 @@ This is a [shareable artifact profile](profiles.html#artifact-profiles)
 
 **Examples:**
 
-*   [CHF Body Weight](ActivityDefinition-chf-bodyweight.html)
+*   [CHF Body Weight](ActivityDefinition-chf-bodyweight-ad.html)
 
     Measure body weight
 
@@ -162,6 +162,6 @@ This is a [shareable artifact profile](profiles.html#artifact-profiles)
 
     Example Activity Definition for a recommendation to report a flag
 
-*   [Activity Example Send Message](ActivityDefinition-activity-example-sendmessage.html)
+*   [Activity Example Send Message](ActivityDefinition-activity-example-sendmessage-ad.html)
 
     Example Activity Definition for a recommendation to send a message

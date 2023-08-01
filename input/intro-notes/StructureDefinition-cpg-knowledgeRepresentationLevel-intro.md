@@ -4,7 +4,7 @@
 
     Example Activity Definition for a recommendation to administer a medication
 
-*   [Administer Medication](Library-AdministerMedication.html)
+*   [Administer Medication](Library-administermedication-library.html)
 
     Logic for an example recommendation to administer a medication
 

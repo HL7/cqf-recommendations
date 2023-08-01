@@ -34,70 +34,70 @@ This is a [publishable artifact profile](profiles.html#artifact-profiles)
 
     Opioid Decision Support Logic for use in implementing CDC Opioid Prescribing Guidelines.
 
-*   [Activity Example - Administer Medication Collection](Library-activity-example-administermedication.html)
+*   [Activity Example - Administer Medication Collection](Library-activity-example-administermedication-library.html)
 
     Asset collection of artifacts in the Administer Medication activity example
 
-*   [Administer Medication](Library-AdministerMedication.html)
+*   [Administer Medication](Library-administermedication-library.html)
 
     Logic for an example recommendation to administer a medication
 
-*   [Collect Information](Library-CollectInformation.html)
+*   [Collect Information](Library-collectinformation-library.html)
 
     Logic for an example recommendation to collect information
 
-*   [Dispense Medication](Library-DispenseMedication.html)
+*   [Dispense Medication](Library-dispensemedication-library.html)
 
     Logic for an example recommendation to dispense a medication
 
-*   [Document Medication](Library-DocumentMedication.html)
+*   [Document Medication](Library-documentmedication-library.html)
 
     Logic for an example recommendation to document a medication
 
-*   [Do Not Collect Information](Library-DoNotCollectInformation.html)
+*   [Do Not Collect Information](Library-donotcollectinformation-library.html)
 
     Logic for an example recommendation not to collect information
 
-*   [Do Not Send Message](Library-DoNotSendMessage.html)
+*   [Do Not Send Message](Library-donotsendmessage-library.html)
 
     Logic for an example recommendation not to send a message
 
-*   [Enroll Patient](Library-EnrollPatient.html)
+*   [Enroll Patient](Library-enrollpatient-library.html)
 
     Logic for an example recommendation to enroll a patient in a pathway
 
-*   [Generate Report](Library-GenerateReport.html)
+*   [Generate Report](Library-generatereport-library.html)
 
     Logic for an example recommendation to generate a report
 
-*   [Order Medication](Library-OrderMedication.html)
+*   [Order Medication](Library-ordermedication-library.html)
 
     Logic for an example recommendation to order a medication
 
-*   [Order Service](Library-OrderService.html)
+*   [Order Service](Library-orderservice-library.html)
 
     Logic for an example recommendation to order a service
 
-*   [Propose Diagnosis](Library-ProposeDiagnosis.html)
+*   [Propose Diagnosis](Library-proposediagnosis-library.html)
 
     Logic for an example recommendation to propose a diagnosis
 
-*   [Recommend Immunization](Library-RecommendImmunization.html)
+*   [Recommend Immunization](Library-recommendimmunization-library.html)
 
     Logic for an example recommendation to recommend an immunization
 
-*   [Record Detected Issue](Library-RecordDetectedIssue.html)
+*   [Record Detected Issue](Library-recorddetectedissue-library.html)
 
     Logic for an example recommendation to record a detected issue
 
-*   [Record Inference](Library-RecordInference.html)
+*   [Record Inference](Library-recordinference-library.html)
 
     Logic for an example recommendation to record an inference
 
-*   [Report Flag](Library-ReportFlag.html)
+*   [Report Flag](Library-reportflag-library.html)
 
     Logic for an example recommendation to record an inference
 
-*   [Send Message](Library-SendMessage.html)
+*   [Send Message](Library-sendmessage-library.html)
 
     Logic for an example recommendation to send a message

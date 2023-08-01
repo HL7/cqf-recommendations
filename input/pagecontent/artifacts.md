@@ -21,7 +21,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
 {% include list-capabilitystatements.xhtml %}
 
-### CodeSystem Index
+### CodeSystem Index [codesystem-index](artifacts.html#codesystem-index "link to here")
 
 *   [CPG Activity Type](CodeSystem-cpg-activity-type-cs.html)
 
@@ -490,7 +490,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPG Common Questionnaire - Patient information](Questionnaire-cpg-common-patient-profile.html) CPG\_Common\_Questionnaire\_Patient\_Profile
 *   [CPG Common Questionnaire - Resolve Patient Match](Questionnaire-cpg-common-resolve-patient-match.html) CPG\_Common\_Questionnaire\_Resolve\_Patient\_Match
 
-### ValueSet Index
+### ValueSet Index [valueset-index](artifacts.html#valueset-index "link to here")
 
 *   [CPG Activity Type](ValueSet-cpg-activity-type-vs.html)
 

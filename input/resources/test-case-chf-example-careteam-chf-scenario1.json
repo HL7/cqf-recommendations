@@ -45,7 +45,7 @@
   ],
   "managingOrganization": [
     {
-      "reference": "Oragnization/chf-scenario1-organization"
+      "reference": "Organization/chf-scenario1-organization"
     }
   ]
 }

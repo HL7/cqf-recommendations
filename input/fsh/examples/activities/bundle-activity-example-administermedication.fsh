@@ -65,7 +65,7 @@
 // Usage: #inline
 // * type = #collection
 // * entry[0]
-//   * fullUrl = "http://example.org/GuidanceResponse/am-scenario7"
+//   * fullUrl = "http://example.org/GuidanceResponse/am-scenario7-gr"
 //   * resource
 //     * resourceType = "GuidanceResponse"
 //     * id = "am-scenario7"
@@ -93,12 +93,12 @@
 //     * effectivePeriod
 //       * start = "2015-01-15T22:03:00+01:00"
 //       * end = "2015-01-16T02:03:00+01:00"
-//     * request.reference = "MedicationRequest/am-scenario7"
+//     * request.reference = "MedicationRequest/am-scenario7-mr"
 //     * dosage
 //       * text = "apply one patch three times per week"
 //       * dose = 1 $v3-orderableDrugForm-cs#PATCH "patch"
 // * entry[+]
-//   * fullUrl = "http://example.org/MedicationRequest/am-scenario7"
+//   * fullUrl = "http://example.org/MedicationRequest/am-scenario7-mr"
 //   * resource
 //     * resourceType = "MedicationRequest"
 //     * id = "am-scenario7"
@@ -149,4 +149,4 @@
 //     * for.reference = "Patient/am-scenario7"
 //     * input
 //       * type = $cpg-activity-type-cs#administer-medication "Administer a medication"
-//       * valueReference.reference = "MedicationRequest/am-scenario7"
+//       * valueReference.reference = "MedicationRequest/am-scenario7-mr"

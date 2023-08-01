@@ -77,7 +77,7 @@ This is a [computable artifact profile](profiles.html#artifact-profiles)
 
     VA CKD Recommendations
 
-*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](PlanDefinition-HepBAdultForecasting.html)
+*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](PlanDefinition-HepBAdultForecastingPD.html)
 
     If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast.
 

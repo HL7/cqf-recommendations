@@ -1,4 +1,4 @@
-This profile is a \_case feature definition\_ as part of the [Congestive Heart Failure](examples/chf/chf.html) example.
+This profile is a \_case feature definition\_ as part of the [Congestive Heart Failure](examples-chf.html) example.
 
 *   [Observation/chf-scenario1-bodyweight1](Observation-chf-scenario1-bodyweight1-observation.html) Observation/chf-scenario1-bodyweight1
 *   [Observation/chf-scenario1-bodyweight2](Observation-chf-scenario1-bodyweight2-observation.html) Observation/chf-scenario1-bodyweight2

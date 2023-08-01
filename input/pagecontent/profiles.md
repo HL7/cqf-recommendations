@@ -39,7 +39,7 @@ Note that explicit profiles for capabilities are only defined when there are spe
 
 {% include profile-tables/domain-profiles.html %}
 
-Examples of the use of these profiles are available in the Examples page. In particular, see the [Congestive Heart Failure Pathway](examples/chf/chf.html) example.
+Examples of the use of these profiles are available in the Examples page. In particular, see the [Congestive Heart Failure Pathway](examples-chf.html) example.
 
 ### Activity Profiles[](profiles.html#activity-profiles "link to here")
 
@@ -61,7 +61,7 @@ Note that the intent of these profiles is not to establish the content of the ac
 
 {% include profile-tables/activity-profiles.html %}
 
-See the [Activity Examples](examples/activities/activities.html) for a complete example of each of the above activity types.
+See the [Activity Examples](examples-activities.html) for a complete example of each of the above activity types.
 
 ### Content Profiles[](profiles.html#content-profiles "link to here")
 

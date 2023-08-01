@@ -28,5 +28,5 @@ For the second dose:
 
 #### Artifacts
 
-* [Library](Library-HepBAdultForecastingLibrary.html)
+* [Library](Library-HepBAdultForecasting.html)
 * [PlanDefinition](PlanDefinition-HepBAdultForecastingPD.html)
