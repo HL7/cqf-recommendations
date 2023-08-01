@@ -27,7 +27,7 @@ This implementation guide is organized into the following sections, accessible v
 *   [Examples](examples.html): Index of examples and example artifacts
 *   [Downloads](downloads.html): Downloads for the specification
 *   [Glossary](glossary.html): Glossary of key terms used in the specification
-*   [Version History](history.html): Index of all versions of this implementation guide
+*   [Version History](http://hl7.org/fhir/uv/cpg/history.html): Index of all versions of this implementation guide
 
 ### Introduction
 

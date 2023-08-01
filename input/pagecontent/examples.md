@@ -195,7 +195,7 @@ The following sections provide listings of resources defined in these examples, 
 
 {% include list-clinicalimpressions.xhtml %}
 
-### Example CodeSystem [codesystem-index](examples.html#codesystem-index "link to here")
+### Example CodeSystem {#codesystem-index}
 
 *   [ANC Reason for Visit](CodeSystem-anc-reason-for-visit-cs.html)
 
@@ -206,7 +206,7 @@ The following sections provide listings of resources defined in these examples, 
     Codes used in the congestive heart failure pathway. Ideally these shouldn't exist, but where I couldn't find an appropriate code in a standard terminology, I defined codes here.
 
 
-### Example Communication Indexexamples.html#communication-index
+### Example Communication
 
 {% include list-communications.xhtml %}
 
@@ -475,7 +475,7 @@ The following sections provide listings of resources defined in these examples, 
 
 {% include list-procedures.xhtml %}
 
-### Example Profile
+### Example Profile {#profile-index}
 
 *   [CHF Body Weight](StructureDefinition-chf-bodyweight.html)
 
@@ -576,7 +576,7 @@ The following sections provide listings of resources defined in these examples, 
 
 {% include list-tasks.xhtml %}
 
-### Example ValueSet [valueset-index](examples.html#valueset-index "link to here")
+### Example ValueSet {#valueset-index}
 
 *   [ANC Reason for Visit](ValueSet-anc-reason-for-visit-vs.html)
 

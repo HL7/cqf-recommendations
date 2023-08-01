@@ -219,7 +219,7 @@ A negative recommendation not to send a message
 * dcm-scenario3  * [MedicationRequest-dcm-scenario3](MedicationRequest-dcm-scenario3.html)
 * dcm-scenario3  * [Patient-dcm-scenario3](Patient-dcm-scenario3-patient.html)
 * dcm-scenario3  * [Task-request-dcm-scenario3](Task-request-dcm-scenario3.html)
-* dcm-scenario4  * [MedicationRequest-dcm-scenario4](MedicationRequest-dcm-scenario4-m.html)
+* dcm-scenario4  * [MedicationRequest-dcm-scenario4](MedicationRequest-dcm-scenario4-mr.html)
 * dcm-scenario4  * [MedicationStatement-dcm-scenario4](MedicationStatement-dcm-scenario4.html)
 * dcm-scenario4  * [Patient-dcm-scenario4](Patient-dcm-scenario4-patient.html)
 * dcm-scenario5  * [MedicationRequest-dcm-scenario5](MedicationRequest-dcm-scenario5-mr.html)
@@ -348,4 +348,4 @@ the AdministerMedication example:
 |[Library-activity-example-administermedication](Library-activity-example-administermedication-library.html)|Asset collection detailing the knowledge artifacts in the AdministerMedication example|
 |[Bundle-activity-example-administermedication](Bundle-activity-example-administermedication-bundle.html)|Bundle for the asset collection including all the artifacts, packaged with a single test case example|
 |[GuidanceResponse-am-scenario7](GuidanceResponse-am-scenario7-gr.html)|Expected results for the am-scenario7 test case|
-|[Bundle-am-scenario7](Bundle-am-scenario7.html)|Test case bundle for the am-scenario7 test case for the AdministerMedication example|
+|[Bundle-am-scenario7](Bundle-am-scenario7-bundle.html)|Test case bundle for the am-scenario7 test case for the AdministerMedication example|

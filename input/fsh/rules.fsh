@@ -53,6 +53,24 @@ RuleSet: KnowledgeArtifactMetadata(id, type)
 * url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * status = #draft
 
+RuleSet: ExampleKnowledgeArtifactMetadata(id, type)
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #shareable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #computable
+* extension[+]
+  * url = $cpg-knowledgeCapability
+  * valueCode = #publishable
+* extension[+]
+  * url = $cpg-knowledgeRepresentationLevel
+  * valueCode = #structured
+* experimental = true
+* url = "http://example.org/{type}/{id}"
+* version = "1.0.0"
+* publisher = "Clinical Decision Support WG"
+
 RuleSet: Profile(profile-id)
 * meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
 

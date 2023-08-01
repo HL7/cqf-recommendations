@@ -121,7 +121,7 @@ Description: "The apply operation applies a PlanDefinition to a given context"
   * min = 0
   * name = #prefetchData
   * use = #in
-  * part[0]
+  * part[+]
     * documentation = "The key of the prefetch item. This typically corresponds to the name of a parameter in a library, or the name of a prefetch item in a CDS Hooks discovery response"
     * name = #key
     * max = "1"

@@ -1,6 +1,6 @@
 Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 Alias: $administermedication-library = http://example.org/Library/administermedication-library
-Alias: $am-scenario7-bundle = http://example.org/Bundle/am-scenario7
+Alias: $am-scenario7-bundle = http://hl7.org/fhir/uv/cpg/Bundle/am-scenario7-bundle
 Alias: $codesystem-author = http://hl7.org/fhir/StructureDefinition/codesystem-author
 Alias: $codesystem-concept-comments = http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments
 Alias: $codesystem-effectiveDate = http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate
@@ -19,6 +19,7 @@ Alias: $cpg-casefeature-type = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-casefea
 Alias: $cpg-casefeature-type-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-type-vs
 Alias: $cpg-caseFeatureOf = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf
 Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
+Alias: $cpg-common-patient-summary-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary
 Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs
 Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-vs
 Alias: $cpg-common-process-codesystem = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
@@ -81,6 +82,7 @@ Alias: $cpg-usageWarning = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-us
 Alias: $cqf-expression = http://hl7.org/fhir/StructureDefinition/cqf-expression
 Alias: $cqf-qualityOfEvidence = http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence
 Alias: $cqf-strengthOfRecommendation = http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation
+Alias: $cvx = http://hl7.org/fhir/sid/cvx
 Alias: $definition-topic = http://hl7.org/fhir/ValueSet/definition-topic
 Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
 Alias: $episodeofcare-type = http://hl7.org/fhir/ValueSet/episodeofcare-type
@@ -92,14 +94,19 @@ Alias: $loinc = http://loinc.org
 Alias: $measure-improvement-notation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation
 Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
 Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
+Alias: $patient-match-operation = http://hl7.org/fhir/OperationDefinition/Patient-match
 Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 Alias: $planDefinition = http://hl7.org/fhir/StructureDefinition/PlanDefinition
+Alias: $plandefinition-apply = http://hl7.org/fhir/OperationDefinition/PlanDefinition-apply
 Alias: $request-doNotPerform = http://hl7.org/fhir/StructureDefinition/request-doNotPerform
 Alias: $resource-approvalDate = http://hl7.org/fhir/StructureDefinition/resource-approvalDate
 Alias: $resource-effectivePeriod = http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
 Alias: $resource-lastReviewDate = http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate
 Alias: $sct = http://snomed.info/sct
 Alias: $structureDefinition = http://hl7.org/fhir/StructureDefinition/StructureDefinition
+Alias: $structuredefinition-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+Alias: $structuredefinition-standards-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
 Alias: $v3-orderableDrugForm-cs = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $valueset-author = http://hl7.org/fhir/StructureDefinition/valueset-author
 Alias: $valueset-effectiveDate = http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate
@@ -109,20 +116,3 @@ Alias: $valueset-keyWord = http://hl7.org/fhir/StructureDefinition/valueset-keyW
 Alias: $valueset-rules-text = http://hl7.org/fhir/StructureDefinition/valueset-rules-text
 Alias: $valueset-sourceReference = http://hl7.org/fhir/StructureDefinition/valueset-sourceReference
 Alias: $workflow-instantiatesCanonical = http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
-
-Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
-Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
-Alias: $sct = http://snomed.info/sct
-Alias: $cvx = http://hl7.org/fhir/sid/cvx
-
-Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
-Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
-Alias: $sct = http://snomed.info/sct
-
-Alias: $patient-match-operation = http://hl7.org/fhir/OperationDefinition/Patient-match
-Alias: $cpg-common-patient-summary-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary
-
-Alias: $structuredefinition-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
-Alias: $structuredefinition-standards-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-
-Alias: $plandefinition-apply = http://hl7.org/fhir/OperationDefinition/PlanDefinition-apply
