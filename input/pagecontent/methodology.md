@@ -124,7 +124,7 @@ The _validate_ step involves ensuring that the structured content meets the requ
 
 For a more detailed discussion of this step, refer to the [Validate Step](methodology.html#validate-step) topic.
 
-### Select Step (#select-step)
+### Select Step {#select-step}
 
 The _select_ step involves selection of the specific content for implementation, along with the target enablement strategies, specifically identifying the _who_, _what_, _when_, _where_, and _why_ for the selected content.
 
@@ -244,7 +244,7 @@ At this step, concepts referred to by the narrative are identified and represent
 * **Details**: Details about the data element, including how it might be gathered, and how it is relevant
 * **Modeling**: The conceptual type of data, including how it might be represented in potential target environments
 
-For example, the following data dictionary excerpt shows the data elements for recommendation 5 of the [Opioid Prescribing Guideline](examples/opg/opg-guideline.html) example included in this implementation guide:
+For example, the following data dictionary excerpt shows the data elements for recommendation 5 of the [Opioid Prescribing Guideline](examples-opg-guideline.html) example included in this implementation guide:
 
 <div>
   <img src="opg-recommendation-5-data-dictionary.png" alt="OPG Recommendation 5 Data Elements" class="img-responsive img-rounded center-block"/>
