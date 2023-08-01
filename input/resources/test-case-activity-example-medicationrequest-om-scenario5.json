@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "om-scenario5",
+  "id": "om-scenario5-mr",
   "status": "completed",
   "intent": "proposal",
   "priority": "routine",

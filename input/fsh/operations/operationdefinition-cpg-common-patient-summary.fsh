@@ -3,7 +3,7 @@ InstanceOf: OperationDefinition
 Usage: #definition
 Title: "CPG Common Patient Summary"
 Description: "The summary operation generates a patient summary for a patient"
-* insert OperationDefinitionMetadata(cpg-careplan-apply)
+* insert OperationDefinitionMetadata(cpg-common-patient-summary)
 * insert OperationExtensions
 * name = "CPGCommonPatientSummary"
 * code = #summary

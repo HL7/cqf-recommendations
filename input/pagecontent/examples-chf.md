@@ -191,7 +191,7 @@ The following index lists all the case-specific resources in this example:
 |Goal|[chf-scenario1-cardiology-consultation](Goal-chf-scenario1-cardiology-consultation-goal.html)|
 |Goal|[chf-scenario1-creatinine](Goal-chf-scenario1-creatinine.html)|
 |Goal|[chf-scenario1-egfr](Goal-chf-scenario1-egfr.html)|
-|Goal|[chf-scenario1-jvp](Goal-chf-scenario1-jvp-goal.tml)|
+|Goal|[chf-scenario1-jvp](Goal-chf-scenario1-jvp-goal.html)|
 |Goal|[chf-scenario1-lasix-iv](Goal-chf-scenario1-lasix-iv-goal.html)|
 |Goal|[chf-scenario1-lasix-po](Goal-chf-scenario1-lasix-po-goal.html)|
 |Goal|[chf-scenario1-net-io](Goal-chf-scenario1-net-io.html)|

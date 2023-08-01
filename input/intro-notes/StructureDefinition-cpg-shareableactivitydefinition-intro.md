@@ -150,7 +150,7 @@ This is a [shareable artifact profile](profiles.html#artifact-profiles)
 
     Example Activity Definition for a recommendation to provide an immunization
 
-*   [Activity Example Record Detected Issue](ActivityDefinition-activity-example-recorddetectedissuead.html)
+*   [Activity Example Record Detected Issue](ActivityDefinition-activity-example-recorddetectedissue-ad.html)
 
     Example Activity Definition for a recommendation to record a detected issue
 

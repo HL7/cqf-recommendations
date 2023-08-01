@@ -42,7 +42,7 @@
         ]
       },
       "valueReference": {
-        "reference": "EpisodeOfCare/ep-scenario4"
+        "reference": "EpisodeOfCare/ep-scenario4-eoc"
       }
     }
   ]

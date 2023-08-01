@@ -14,6 +14,6 @@ This is a [shareable artifact profile](profiles.html#artifact-profiles)
 
     Urine output metric as a feature of a congestive heart failure pathway
 
-*   [Activity Example Generate Report](Measure-activity-example-generatereport-ad.html)
+*   [Activity Example Generate Report](Measure-activity-example-generatereport-measure.html)
 
     Example measure for the activity example to generate a report

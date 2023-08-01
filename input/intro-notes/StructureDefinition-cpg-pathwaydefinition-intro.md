@@ -7,6 +7,6 @@ This is a [domain definition profile](profiles.html#domain-profiles)
 
     Treatment and management care pathway for patients with admitting diagnosis of congestive heart failure
 
-*   [Activity Example Pathway](PlanDefinition-activity-example-pathway.html)
+*   [Activity Example Pathway](PlanDefinition-activity-example-pathway-pd.html)
 
     Example Pathway for activity examples

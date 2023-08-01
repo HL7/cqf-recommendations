@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "dcm-scenario5",
+  "id": "dcm-scenario5-mr",
   "status": "active",
   "intent": "order",
   "priority": "routine",

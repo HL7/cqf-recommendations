@@ -114,9 +114,9 @@ INFORMATION: Library/donotsendmessage-library: Library.content[0]: This element 
 INFORMATION: Library/documentmedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
 INFORMATION: Library/documentmedication-library: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
 INFORMATION: Library/documentmedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
-INFORMATION: Library/enrollpatient-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
-INFORMATION: Library/enrollpatient-library: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
-INFORMATION: Library/enrollpatient-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
+INFORMATION: Libraryenrollment-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Libraryenrollment-library: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
+INFORMATION: Libraryenrollment-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
 INFORMATION: Library/generatereport-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
 INFORMATION: Library/generatereport-library: Library.content[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary
 INFORMATION: Library/generatereport-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary
@@ -239,9 +239,9 @@ INFORMATION: Library/donotsendmessage-library: Library: Validate resource agains
 INFORMATION: Library/documentmedication-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
 INFORMATION: Library/documentmedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
 INFORMATION: Library/documentmedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/enrollpatient-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/enrollpatient-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/enrollpatient-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
+INFORMATION: Libraryenrollment-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
+INFORMATION: Libraryenrollment-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
+INFORMATION: Libraryenrollment-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
 INFORMATION: Library/generatereport-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
 INFORMATION: Library/generatereport-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
 INFORMATION: Library/generatereport-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
@@ -366,17 +366,17 @@ INFORMATION: MedicationRequest/dm-scenario3: MedicationRequest: Validate resourc
 INFORMATION: Patient/dm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Task/request-dm-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask
 INFORMATION: MedicationDispense/dm-scenario4: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario4: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/dm-scenario4-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: Patient/dm-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: MedicationDispense/dm-scenario5: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario5: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/dm-scenario5-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: Patient/dm-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Task/request-dm-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask
 INFORMATION: MedicationDispense/dm-scenario6: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario6: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/dm-scenario6-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: Patient/dm-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: MedicationDispense/dm-scenario7: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario7: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/dm-scenario7-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: Patient/dm-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Task/request-dm-scenario7: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask
 INFORMATION: Patient/dnci-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
@@ -431,14 +431,14 @@ INFORMATION: Task/request-dcm-scenario2: Task: Validate resource against profile
 INFORMATION: MedicationRequest/dcm-scenario3: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: Patient/dcm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Task/request-dcm-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
-INFORMATION: MedicationRequest/dcm-scenario4: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/dcm-scenario4-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: MedicationStatement/dcm-scenario4: MedicationStatement: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement
 INFORMATION: Patient/dcm-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/dcm-scenario5: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/dcm-scenario5-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: MedicationStatement/dcm-scenario5: MedicationStatement: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement
 INFORMATION: Patient/dcm-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Task/request-dcm-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
-INFORMATION: MedicationRequest/dcm-scenario6: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/dcm-scenario6-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: MedicationStatement/dcm-scenario6: MedicationStatement: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement
 INFORMATION: Patient/dcm-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: MedicationRequest/dcm-scenario7: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
@@ -448,9 +448,9 @@ INFORMATION: Task/request-dcm-scenario7: Task: Validate resource against profile
 INFORMATION: Patient/ep-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Patient/ep-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Task/request-ep-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask
-INFORMATION: Condition/ep-scenario4: Condition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition
-INFORMATION: Encounter/ep-scenario4: Encounter: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter
-INFORMATION: EpisodeOfCare/ep-scenario4: EpisodeOfCare: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case
+INFORMATION: Condition/ep-scenario4-condition: Condition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition
+INFORMATION: Encounter/ep-scenario4-encounter: Encounter: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter
+INFORMATION: EpisodeOfCare/ep-scenario4-eoc: EpisodeOfCare: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case
 INFORMATION: Patient/ep-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Task/event-ep-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask
 INFORMATION: Patient/gr-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
@@ -467,12 +467,12 @@ INFORMATION: Patient/om-scenario3: Patient: Validate resource against profile ht
 INFORMATION: MedicationDispense/om-scenario4: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
 INFORMATION: Patient/om-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: MedicationDispense/om-scenario5: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/om-scenario5: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/om-scenario5-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: Patient/om-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: MedicationDispense/om-scenario6: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
 INFORMATION: Patient/om-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: MedicationDispense/om-scenario7: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/om-scenario7: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
+INFORMATION: MedicationRequest/om-scenario7-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
 INFORMATION: Patient/om-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Patient/os-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: Patient/os-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient

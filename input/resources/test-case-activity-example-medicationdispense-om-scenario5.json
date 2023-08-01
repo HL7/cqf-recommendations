@@ -16,7 +16,7 @@
   },
   "authorizingPrescription": [
     {
-      "reference": "MedicationRequest/om-scenario5"
+      "reference": "MedicationRequest/om-scenario5-mr"
     }
   ],
   "type": {

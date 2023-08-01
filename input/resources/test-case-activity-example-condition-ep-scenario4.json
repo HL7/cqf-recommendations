@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "ep-scenario4",
+  "id": "ep-scenario4-condition",
   "clinicalStatus": {
     "coding": [
       {
@@ -41,7 +41,7 @@
     "reference": "Patient/ep-scenario4-patient"
   },
   "encounter": {
-    "reference": "Encounter/ep-scenario4"
+    "reference": "Encounter/ep-scenario4-encounter"
   },
   "onsetDateTime": "2020-01-15"
 }

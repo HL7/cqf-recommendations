@@ -1,6 +1,6 @@
 {
   "resourceType": "GuidanceResponse",
-  "id": "am-scenario7",
+  "id": "am-scenario7-gr",
   "contained": [
     {
       "resourceType": "Parameters",

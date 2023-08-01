@@ -39,7 +39,7 @@
         }
       ],
       "member": {
-        "reference": "RelatedPerson/chf-scenario1"
+        "reference": "RelatedPerson/chf-scenario1-relatedperson"
       }
     }
   ],

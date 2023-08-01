@@ -28,7 +28,7 @@
         ]
       },
       "valueReference": {
-        "reference": "MedicationRequest/dcm-scenario5"
+        "reference": "MedicationRequest/dcm-scenario5-mr"
       }
     }
   ]

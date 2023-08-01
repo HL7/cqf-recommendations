@@ -62,7 +62,7 @@ This is a [shareable artifact profile](profiles.html#artifact-profiles)
 
     Logic for an example recommendation not to send a message
 
-*   [Enroll Patient](Library-enrollpatient-library.html)
+*   [Enroll Patient](Library-enrollment-library.html)
 
     Logic for an example recommendation to enroll a patient in a pathway
 

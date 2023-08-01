@@ -30,7 +30,7 @@
   },
   "derivedFrom": [
     {
-      "reference": "MedicationRequest/dm-scenario6"
+      "reference": "MedicationRequest/dm-scenario6-mr"
     }
   ],
   "reasonCode": [

@@ -1,7 +1,7 @@
 Instance: activity-example-ordermedication-ad
 InstanceOf: ActivityDefinition
 Usage: #example
-Title: "Activity Example Generate Report AD"
+Title: "Activity Example Order Medication AD"
 * description = "Example Activity Definition for a recommendation to order a medication"
 * insert ActivityDefinitionMetadata(activity-example-ordermedication-ad)
 * name = "ActivityExampleOrderMedicationAD"
