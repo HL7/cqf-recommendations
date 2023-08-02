@@ -31,16 +31,16 @@ Usage: #inline
 * description = "Asset collection of artifacts in the Administer Medication activity example"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(cpg-activity-type-cs)
 * relatedArtifact[+]
   * type = #composed-of
-  * resource = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication"
+  * resource = Canonical(activity-example-administermedication-ad)
 * relatedArtifact[+]
   * type = #composed-of
-  * resource = "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication"
+  * resource = Canonical(administermedication-library)
 * relatedArtifact[+]
   * type = #composed-of
-  * resource = "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication"
+  * resource = Canonical(activity-example-administermedication-pd)
 
 Instance: AdministerMedication
 InstanceOf: Library
@@ -58,7 +58,7 @@ Usage: #inline
 * description = "Logic for an example recommendation to administer a medication"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type"
+  * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -146,7 +146,7 @@ Usage: #inline
 * description = "Example Plan Definition for a recommendation to administer a medication"
 * type = $plan-definition-type#eca-rule
 * experimental = true
-* library = "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication"
+* library = Canonical(administermedication-library)
 * action
   * title = "Collect date of patient last visit"
   * condition
@@ -155,7 +155,7 @@ Usage: #inline
       * language = #text/cql
       * expression = "Is Recommendation Applicable"
   * type = $action-type#create
-  * definitionCanonical = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication"
+  * definitionCanonical = Canonical(activity-example-administermedication-ad)
 
 Instance: am-scenario7-inline-bundle
 InstanceOf: Bundle
@@ -175,7 +175,7 @@ Usage: #inline
       * parameter[+]
         * name = "Is Recommendation Applicable"
         * valueBoolean = false
-    * moduleCanonical = "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication"
+    * moduleCanonical = Canonical(administermedication-library)
     * status = #success
     * subject.reference = "Patient/am-scenario7-patient"
     * outputParameters.reference = "#output"
@@ -239,7 +239,7 @@ Usage: #inline
   * resource
     * resourceType = "Task"
     * id = "request-am-scenario7-5"
-    * instantiatesCanonical = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication"
+    * instantiatesCanonical = Canonical(activity-example-administermedication-ad)
     * status = #in-progress
     * intent = #order
     * code = $cpg-activity-type-cs#administer-medication "Administer a medication"

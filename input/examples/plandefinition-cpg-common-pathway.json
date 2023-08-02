@@ -31,7 +31,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "registration",
 							"display": "Registration"
 						}
@@ -47,7 +47,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "triage",
 							"display": "Triage"
 						}
@@ -63,7 +63,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "local-urgent-care",
 							"display": "Local Urgent Care"
 						}
@@ -79,7 +79,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "history-and-physical",
 							"display": "History and Physical"
 						}
@@ -95,7 +95,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "provide-counseling",
 							"display": "Provide Counseling"
 						}
@@ -111,7 +111,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "diagnostic-testing",
 							"display": "Conduct Diagnostic Tests"
 						}
@@ -127,7 +127,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "determine-diagnosis",
 							"display": "Determine Diagnosis"
 						}
@@ -143,7 +143,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "guideline-based-care",
 							"display": "Guideline-based Care"
 						}
@@ -159,7 +159,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "dispense-medications",
 							"display": "Dispense Medications"
 						}
@@ -175,7 +175,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "emergency-care",
 							"display": "Emergency Care"
 						}
@@ -191,7 +191,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "actue-tertiary-care",
 							"display": "Acute/Tertiary Care"
 						}
@@ -207,7 +207,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "charge-for-service",
 							"display": "Charge for Service"
 						}
@@ -223,7 +223,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "discharge-referral-of-patient",
 							"display": "Discharge/Referral of Patient"
 						}
@@ -239,7 +239,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "record-and-report",
 							"display": "Record and Report"
 						}
@@ -255,7 +255,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "monitor-and-follow-up-of-patient",
 							"display": "Monitor and Follow-up of Patient"
 						}
@@ -271,7 +271,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "alerts-reminders-education",
 							"display": "Alerts Reminders Education"
 						}

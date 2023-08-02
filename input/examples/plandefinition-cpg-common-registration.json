@@ -24,7 +24,7 @@
 				{
 					"coding": [
 						{
-							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process",
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
 							"code": "registration"
 						}
 					]
@@ -36,7 +36,7 @@
 					"role": {
 						"coding": [
 							{
-								"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona",
+								"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs",
 								"code": "C000"
 							}
 						]
@@ -47,7 +47,7 @@
 					"role": {
 						"coding": [
 							{
-								"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona",
+								"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs",
 								"code": "W000",
 								"display": "Clerical support worker"
 							}
@@ -69,7 +69,7 @@
 							"role": {
 								"coding": [
 									{
-										"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona",
+										"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs",
 										"code": "C000"
 									}
 								]
@@ -138,7 +138,7 @@
 							"role": {
 								"coding": [
 									{
-										"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona",
+										"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs",
 										"code": "W000",
 										"display": "Clerical support worker"
 									}

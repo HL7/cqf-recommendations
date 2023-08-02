@@ -126,13 +126,13 @@ RuleSet: StructureDefinitionMetadata(id)
 RuleSet: CapabilityStatementMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/CapabilityStatement/{id}"
 * experimental = true
-* status = #draft
+* status = #active
 * date = "2019-06-15"
 
 RuleSet: OperationDefinitionMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/OperationDefinition/{id}"
 * kind = #operation
-* status = #draft
+* status = #active
 
 RuleSet: OperationExtensions
 * extension[+]

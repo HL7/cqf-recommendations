@@ -19,7 +19,7 @@
 	"code": {
 		"coding": [
 			{
-				"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type",
+				"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
 				"code": "record-inference",
 				"display": "Record an inference"
 			}

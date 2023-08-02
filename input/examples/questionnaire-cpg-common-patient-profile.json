@@ -1,0 +1,31 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "cpg-common-patient-profile",
+	"url": "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile",
+	"_url": {
+		"fhir_comments": [
+			"meta>\n\t\t<profile value=\"http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire\"/>\n\t</meta"
+		]
+	},
+	"version": "0.1.0",
+	"name": "CPG_Common_Questionnaire_Patient_Profile",
+	"title": "CPG Common Questionnaire - Patient information",
+	"status": "draft",
+	"subjectType": [
+		"Patient"
+	],
+	"item": [
+		{
+			"linkId": "name",
+			"text": "Name",
+			"type": "string",
+			"required": true
+		},
+		{
+			"linkId": "birthdate",
+			"text": "Birthdate",
+			"type": "date",
+			"required": true
+		}
+	]
+}
