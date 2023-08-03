@@ -1,0 +1,65 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "chf-cardiology-consultation",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-cardiology-consultation",
+  "name": "CHFCardiologyConsultation",
+  "title": "CHF Cardiology Consultation",
+  "status": "draft",
+  "experimental": true,
+  "description": "Cardiology consultation as part of a congestive heart failure care pathway",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "kind": "ServiceRequest",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "code": "order-service",
+        "display": "Order a service"
+      }
+    ]
+  },
+  "intent": "proposal",
+  "doNotPerform": false,
+  "productCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes",
+        "code": "cardiology-consultation",
+        "display": "Cardiology Consultation"
+      }
+    ]
+  },
+  "dynamicValue": [
+    {
+      "path": "status",
+      "expression": {
+        "language": "text/cql",
+        "expression": "'draft'"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "Location",
+  "id": "chf-locationdefinition",
+  "name": "Cardiovascular diagnostics or therapeutics unit",
+  "mode": "kind",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code": "CVDX",
+          "display": "Cardiovascular diagnostics or therapeutics unit"
+        }
+      ]
+    }
+  ]
+}

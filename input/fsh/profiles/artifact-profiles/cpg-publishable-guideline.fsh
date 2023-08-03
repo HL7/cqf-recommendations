@@ -1,5 +1,5 @@
 Profile: CPGPublishableGuideline
-Parent: CPGShareableIG
+Parent: CPGShareableImplementationGuide
 Id: cpg-publishableguideline
 Title: "CPG Publishable Guideline"
 Description: "Profile of ImplementationGuide to describe the minimum expectations for a publishable Clinical Practice Guideline"

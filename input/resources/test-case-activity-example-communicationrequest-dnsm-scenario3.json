@@ -1,0 +1,28 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "dnsm-scenario3",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-donotsendmessage-ad"
+    }
+  ],
+  "status": "revoked",
+  "statusReason": {
+    "text": "Medical reason"
+  },
+  "doNotPerform": true,
+  "subject": {
+    "reference": "Patient/dnsm-scenario3-patient"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/dnsm-scenario3-patient"
+    }
+  ]
+}

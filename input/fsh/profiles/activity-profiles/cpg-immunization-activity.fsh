@@ -9,7 +9,7 @@ Description: "Definition of a recommendation for a particular immunization as pa
 * kind = #ImmunizationRecommendation (exactly)
 * profile 1..1 MS
 * profile only canonical
-* profile = CPGImmunizationrecommendation (exactly)
+* profile = $cpg-immunizationrecommendation (exactly)
   * ^short = "At least a CPG ImmunizationRecommendation"
   * ^definition = "The profile that the resulting immunization recommendation must conform to; at least a CPGImmunizationRecommendation, though the activity definition may introduce further constraints."
 * intent 1..1 MS

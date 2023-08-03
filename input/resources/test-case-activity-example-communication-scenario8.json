@@ -1,0 +1,18 @@
+{
+  "resourceType": "Communication",
+  "id": "scenario8",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/dnci-scenario8-patient"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/dnci-scenario8-patient"
+    }
+  ]
+}

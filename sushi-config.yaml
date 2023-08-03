@@ -122,6 +122,32 @@ pages:
   libraries.md:
   artifacts.md:
   examples.md:
+    examples-activities.md:
+      title: Activity Examples
+    examples-adult-hepb-immunization.md:
+      title: Hepatitis B Immunization Forecasting Example
+    examples-anc-guidelines.md:
+      title: Antenatal Care Guideline Example
+    examples-anthrax.md:
+      title: Anthrax Post-Exposure Prophylaxis Example
+      examples-anthrax-index-fhirv400.md:
+        title: Anthrax Post-Exposure Prophylaxis Example - FHIRv400 Example Index
+    examples-chf.md:
+      title: Congestive Heart Failure Example
+    examples-ckd-guideline.md:
+      title: Chronic Disease Management - Chronic Kidney Disease (CKD) Example
+      examples-ckd-logic.md:
+        title: Chronic Kidney Disease (CKD) Guideline Example Example - CQL Source
+    examples-hiv-guideline.md:
+      title: HIV Screening Guideline Recommendations
+    examples-opg-guideline.md:
+      title: Opioid Prescribing Guideline Example
+      examples-omtk-logic.md:
+        title: Opioid Prescribing Guideline Example - OMTK Logic - CQL Source
+      examples-opioid-cds-common.md:
+        title: Opioid Prescribing Guideline Example - Common Logic - CQL Source
+      examples-opioid-cds-recommendation.md:
+        title: Opioid Prescribing Guideline Example - Recommendation 5 Logic - CQL Source
   downloads.md:
   glossary.md:
   checklists.md:
@@ -155,6 +181,7 @@ parameters:
   apply-publisher: true
   apply-version: true
   apply-jurisdiction: true
+  path-binary: ./input/cql
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
@@ -175,6 +202,7 @@ menu:
   Examples: examples.html
   Downloads: downloads.html
   Glossary: glossary.html
+  Version History: http://hl7.org/fhir/uv/cpg/history.html
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

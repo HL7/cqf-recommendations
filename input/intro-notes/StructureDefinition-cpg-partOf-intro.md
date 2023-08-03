@@ -4,6 +4,6 @@
 
     Daily management strategy as part of a care pathway for patients with admitting diagnosis of congestive heart failure
 
-*   [CHF Body Weight Change](PlanDefinition-chf-bodyweight-change.html)
+*   [CHF Body Weight Change](PlanDefinition-chf-bodyweight-change-pd.html)
 
     Measure body weight change daily

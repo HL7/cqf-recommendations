@@ -21,7 +21,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
 {% include list-capabilitystatements.xhtml %}
 
-### CodeSystem Index
+### CodeSystem Index {#codesystem-index}
 
 *   [CPG Activity Type](CodeSystem-cpg-activity-type-cs.html)
 
@@ -60,7 +60,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
     A knowledge representation level, narrative, semi-structured, structured, and executable
 
 
-### Extension Index
+### Extension Index {#extension-index}
 
 {% include list-extensions.xhtml %}
 
@@ -73,7 +73,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPG Common Pathway](PlanDefinition-cpg-common-pathway.html) CPG\_Common\_Pathway
 *   [PlanDefinition - CPG Common Registration](PlanDefinition-cpg-common-registration.html) PlanDefinition\_CPG\_Common\_Registration
 
-### Profile Index
+### Profile Index {#profile-index}
 
 *   [CPGAdministerMedicationActivity](StructureDefinition-cpg-administermedication.html)
 
@@ -490,7 +490,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPG Common Questionnaire - Patient information](Questionnaire-cpg-common-patient-profile.html) CPG\_Common\_Questionnaire\_Patient\_Profile
 *   [CPG Common Questionnaire - Resolve Patient Match](Questionnaire-cpg-common-resolve-patient-match.html) CPG\_Common\_Questionnaire\_Resolve\_Patient\_Match
 
-### ValueSet Index
+### ValueSet Index {#valueset-index}
 
 *   [CPG Activity Type](ValueSet-cpg-activity-type-vs.html)
 

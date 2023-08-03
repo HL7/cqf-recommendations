@@ -2,11 +2,11 @@ This is an [activity definition](profiles.html#activity-profiles) profile
 
 **Examples:**
 
-*   [Activity Example Order Service](ActivityDefinition-activity-example-orderservice.html)
+*   [Activity Example Order Service](ActivityDefinition-activity-example-orderservice-ad.html)
 
     Example Activity Definition for a recommendation to order a service
 
-*   [CHF Body Weight](ActivityDefinition-chf-bodyweight.html)
+*   [CHF Body Weight](ActivityDefinition-chf-bodyweight-ad.html)
 
     Measure body weight
 

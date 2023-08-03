@@ -1,0 +1,52 @@
+{
+	"resourceType": "ValueSet",
+	"id": "anc-reason-for-visit-vs",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset"
+		]
+	},
+	"extension": [
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+			"valueCode": "shareable"
+		},
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+			"valueCode": "computable"
+		},
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+			"valueCode": "publishable"
+		},
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+			"valueCode": "structured"
+		}
+	],
+	"url": "http://fhir.org/guides/who/anc-cds/ValueSet/anc-reason-for-visit-vs",
+	"name": "ANCReasonForVisit",
+	"title": "ANC Reason for Visit",
+	"status": "active",
+	"experimental": false,
+	"date": "2019-07-21",
+	"publisher": "Health Level 7 International - Clinical Decision Support WG",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://www.hl7.org/Special/committees/dss/index.cfm"
+				}
+			]
+		}
+	],
+	"description": "Codes that identify the reason for an antenatal care visit",
+	"compose": {
+		"include": [
+			{
+				"system": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-reason-for-visit-cs"
+			}
+		]
+	}
+}

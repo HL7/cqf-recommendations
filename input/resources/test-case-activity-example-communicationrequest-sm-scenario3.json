@@ -1,0 +1,27 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "sm-scenario3",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-sendmessage-ad"
+    }
+  ],
+  "status": "revoked",
+  "statusReason": {
+    "text": "Patient refused"
+  },
+  "subject": {
+    "reference": "Patient/sm-scenario3-patient"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/sm-scenario3-patient"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "Communication",
+  "id": "dnsm-scenario3-communication",
+  "status": "in-progress",
+  "subject": {
+    "reference": "Patient/dnsm-scenario3-patient"
+  },
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/dnsm-scenario3-patient"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType": "Goal",
+  "id": "chf-scenario1-net-io",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-net-io-pd"
+    }
+  ],
+  "lifecycleStatus": "active",
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "code": "improving"
+      }
+    ]
+  },
+  "description": {
+    "text": "Net intake/output -1.5 L/day"
+  },
+  "subject": {
+    "reference": "Patient/chf-scenario1-patient"
+  },
+  "target": [
+    {
+      "measure": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes",
+            "code": "net-intake-output"
+          }
+        ]
+      },
+      "detailQuantity": {
+        "value": -1.5,
+        "unit": "L/day",
+        "system": "http://unitsofmeasure.org",
+        "code": "L/d"
+      }
+    }
+  ]
+}

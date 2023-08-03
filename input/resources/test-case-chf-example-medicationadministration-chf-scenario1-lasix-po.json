@@ -1,0 +1,44 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "chf-scenario1-lasix-po",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/event-basedOn",
+      "valueReference": {
+        "reference": "MedicationRequest/chf-scenario1-lasix-po-mr"
+      }
+    }
+  ],
+  "status": "on-hold",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes",
+        "code": "lasix-po",
+        "display": "LASIX PO"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/chf-scenario1-patient"
+  },
+  "effectiveDateTime": "2019-02-03T13:00:00Z",
+  "dosage": {
+    "text": "40mg",
+    "route": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "26643006",
+          "display": "Oral Route (qualifier value)"
+        }
+      ]
+    },
+    "dose": {
+      "value": 40,
+      "unit": "mg",
+      "system": "http://unitsofmeasure.org",
+      "code": "mg"
+    }
+  }
+}

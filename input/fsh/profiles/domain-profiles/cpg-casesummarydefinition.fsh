@@ -1,5 +1,5 @@
 Profile: CPGCaseSummaryDefinition
-Parent: CPGCommutableGraphDefinition
+Parent: CPGComputableGraphDefinition
 Id: cpg-casesummarydefinition
 Title: "CPG Case Summary Definition"
 Description: "CPG Case Summary Definition provides a computable definition for all the case features and feature groups relevant to a clinical practice guideline"

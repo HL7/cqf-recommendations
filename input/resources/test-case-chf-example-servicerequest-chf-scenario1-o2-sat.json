@@ -1,0 +1,38 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "chf-scenario1-o2-sat",
+  "instantiatesCanonical": [ "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat" ],
+  "status": "completed",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "386053000",
+          "display": "Evaluation procedure (procedure)"
+        }
+      ],
+      "text": "Evaluation"
+    }
+  ],
+  "doNotPerform": false,
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "104847001",
+        "display": "Oxygen saturation measurement (procedure)"
+      }
+    ],
+    "text": "Oxygen saturation measurement"
+  },
+  "subject": {
+    "reference": "Patient/chf-scenario1-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/chf-scenario1-encounter"
+  },
+  "occurrenceDateTime": "2019-02-03T13:00:00Z",
+  "authoredOn": "2019-02-03"
+}

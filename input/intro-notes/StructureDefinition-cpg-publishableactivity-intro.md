@@ -2,11 +2,11 @@ This is a [publishable artifact profile](profiles.html#artifact-profiles)
 
 **Examples:**
 
-*   [CHF Body Weight](ActivityDefinition-chf-bodyweight.html)
+*   [CHF Body Weight](ActivityDefinition-chf-bodyweight-ad.html)
 
     Measure body weight
 
-*   [CHF Body Weight Change](ActivityDefinition-chf-bodyweight-change.html)
+*   [CHF Body Weight Change](ActivityDefinition-chf-bodyweight-change-ad.html)
 
     Record body weight change
 
@@ -102,66 +102,66 @@ This is a [publishable artifact profile](profiles.html#artifact-profiles)
 
     As part of the workflow for recommendation 7, it is recommended that a risk assessment be conducted if the inclusion criteria is met.
 
-*   [Activity Example Administer Medication](ActivityDefinition-activity-example-administermedication.html)
+*   [Activity Example Administer Medication](ActivityDefinition-activity-example-administermedication-ad.html)
 
     Example Activity Definition for a recommendation to administer a medication
 
-*   [Activity Example Collect Information](ActivityDefinition-activity-example-collectinformation.html)
+*   [Activity Example Collect Information](ActivityDefinition-activity-example-collectinformation-ad.html)
 
     Example Activity Definition for a recommendation to collect information
 
-*   [Activity Example Dispense Medication](ActivityDefinition-activity-example-dispensemedication.html)
+*   [Activity Example Dispense Medication](ActivityDefinition-activity-example-dispensemedication-ad.html)
 
     Example Activity Definition for a recommendation to dispense a medication
 
-*   [Activity Example Document Medication](ActivityDefinition-activity-example-documentmedication.html)
+*   [Activity Example Document Medication](ActivityDefinition-activity-example-documentmedication-ad.html)
 
     Example Activity Definition for a recommendation to document a medication
 
-*   [Activity Example Do Not Collect Information](ActivityDefinition-activity-example-donotcollectinformation.html)
+*   [Activity Example Do Not Collect Information](ActivityDefinition-activity-example-donotcollectinformation-ad.html)
 
     Example Activity Definition for a recommendation not to collect information
 
-*   [Activity Example Do Not Send Message](ActivityDefinition-activity-example-donotsendmessage.html)
+*   [Activity Example Do Not Send Message](ActivityDefinition-activity-example-donotsendmessage-ad.html)
 
     Example Activity Definition for a recommendation not to send a message
 
-*   [Activity Example Enrollment](ActivityDefinition-activity-example-enrollment.html)
+*   [Activity Example Enrollment](ActivityDefinition-activity-example-enrollment-ad.html)
 
     Example Activity Definition for a recommendation to enroll a patient in a pathway
 
-*   [Activity Example Generate Report](ActivityDefinition-activity-example-generatereport.html)
+*   [Activity Example Generate Report](ActivityDefinition-activity-example-generatereport-ad.html)
 
     Example Activity Definition for a recommendation to generate a report
 
-*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication.html)
+*   [Activity Example Order Medication](ActivityDefinition-activity-example-ordermedication-ad.html)
 
     Example Activity Definition for a recommendation to order a medication
 
-*   [Activity Example Order Service](ActivityDefinition-activity-example-orderservice.html)
+*   [Activity Example Order Service](ActivityDefinition-activity-example-orderservice-ad.html)
 
     Example Activity Definition for a recommendation to order a service
 
-*   [Activity Example Propose Diagnosis](ActivityDefinition-activity-example-proposediagnosis.html)
+*   [Activity Example Propose Diagnosis](ActivityDefinition-activity-example-proposediagnosis-ad.html)
 
     Example Activity Definition for a recommendation to propose a diagnosis
 
-*   [Activity Example Recommend Immunization](ActivityDefinition-activity-example-recommendimmunization.html)
+*   [Activity Example Recommend Immunization](ActivityDefinition-activity-example-recommendimmunization-ad.html)
 
     Example Activity Definition for a recommendation to provide an immunization
 
-*   [Activity Example Record Detected Issue](ActivityDefinition-activity-example-recorddetectedissue.html)
+*   [Activity Example Record Detected Issue](ActivityDefinition-activity-example-recorddetectedissue-ad.html)
 
     Example Activity Definition for a recommendation to record a detected issue
 
-*   [Activity Example Record Inference](ActivityDefinition-activity-example-recordinference.html)
+*   [Activity Example Record Inference](ActivityDefinition-activity-example-recordinference-ad.html)
 
     Example Activity Definition for a recommendation to record an inference
 
-*   [Activity Example Report Flag](ActivityDefinition-activity-example-reportflag.html)
+*   [Activity Example Report Flag](ActivityDefinition-activity-example-reportflag-ad.html)
 
     Example Activity Definition for a recommendation to report a flag
 
-*   [Activity Example Send Message](ActivityDefinition-activity-example-sendmessage.html)
+*   [Activity Example Send Message](ActivityDefinition-activity-example-sendmessage-ad.html)
 
     Example Activity Definition for a recommendation to send a message

@@ -342,7 +342,7 @@ Libraries used in computable guideline content SHALL use the `relatedArtifact` e
 
 |Dependency|RelatedArtifact representation|
 |Data Model (using declaration)|`depends-on` with `url` of the ModelInfo Library (e.g. `http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1`)|
-|Library (include declaration)|`depends-on` with `url` of the Library (e.g. `http://hl7.org/fhir/Library/FHIRHelpers|4.0.1`)|
+|Library (include declaration)|`depends-on` with `url` of the Library (e.g. `http://hl7.org/fhir/Library/library-fhir-helpers|4.0.1`)|
 |Code System|`depends-on` with `url` of the CodeSystem (e.g. `http://loing.org`)|
 |Value Set|`depends-on` with `url` of the ValueSet (e.g. `http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1116.89`)|
 

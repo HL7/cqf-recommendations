@@ -6,7 +6,7 @@ the understanding, communication, and implementation of guideline content.
 
 > NOTE: The methodology documented here is a general framework for applying the approach to produce standards-based, computable guideline content. For a detailed illustration of following the approach and methodology described in this implementation guide, refer to the [COVID-19 CPG Methodology Case Study](methodology-case-study.html).
 
-### Content Implementation Guides
+### Content Implementation Guides {#content-igs}
 
 Figure 3.1 below, FHIR-based Knowledge Representation Specifications, depicts four categories of specifications, with representative examples of each category, illustrating how the various pieces can be used together to deliver shareable clinical reasoning artifacts.
 
@@ -65,10 +65,10 @@ In the top row of Figure 4, the Content Implementation Guides are FHIR Implement
 
 Overall, the methodology used by this implementation guide consists of the following steps:
 
-* [**Select:**](#select) Select content and recommendations for implementation
-* [**Represent:**](#represent) Apply selected recommendations to the implementation approach
-* [**Translate:**](#translate) Express concepts, flow diagrams, and narrative content formally
-* [**Validate:**](#validate) Build and run test cases to verify expected functionality
+* **Select:** Select content and recommendations for implementation
+* **Represent:**Apply selected recommendations to the implementation approach
+* **Translate:** Express concepts, flow diagrams, and narrative content formally
+* **Validate:** Build and run test cases to verify expected functionality
 
 Note that throughout the process of applying this methodology, the various teams will necessarily make decisions, balancing trade-offs between effort, feasibility, and value. The decisions, and especially the rationale for how they were made, are in and of themselves important products of this process, and should at the very least be captured as supplemental documentation within the content implementation guide. Often, these decision points will surface as configuration capabilities in the resulting knowledge artifacts, enabling implementation sites to understand the trade-offs, and make informed decisions about appropriate configuration. Surfacing these capabilities and decisions with appropriate documentation is critical to fully enabling reusable, shareable knowledge artifacts.
 
@@ -76,55 +76,55 @@ Note that throughout the process of applying this methodology, the various teams
 
 The _select_ step involves selecting content and recommendations for implementation, as well as determining the implementation approach for the recommendation. The [approach](approach.html) section provides detailed information on the many factors to be considered as part of this process. For the purposes of this methodology, we focus on the output of that process as having identified:
 
-* [**Personas**](#select-personas): _Who_ are the participants in the recommendation and what roles do they play?
-* [**Activities**](#select-activities): _What_ needs to happen?
-* [**Processes**](#select-processes): _When_ does it happen?
-* [**Settings**](#select-settings): _Where_ do the activities in the recommendation occur?
-* [**Support**](#select-support): _Why_ should it happen?
+* **Personas**: _Who_ are the participants in the recommendation and what roles do they play?
+* **Activities**: _What_ needs to happen?
+* **Processes**: _When_ does it happen?
+* **Settings**: _Where_ do the activities in the recommendation occur?
+* **Support**: _Why_ should it happen?
 
 The outcome of this step is typically in the form of narrative (L1 content) requirements, sometimes accompanied by explanatory figures and diagrams (approaching L2).
 
-For a more detailed discussion of this step, refer to the [Select Step](#select-step) topic.
+For a more detailed discussion of this step, refer to the [Select Step](methodology.html#select-step) topic.
 
 #### Represent
 
 The _represent_ step involves further refining and detailing the concepts, activities and processes identified in the _select_ step to create semi-structured (L2) content that is domain-specific (i.e. clinician-oriented), but informed by health informatics concerns to ensure accurate and unambiguous communication of guideline intent. This is accomplished by producing:
 
-* [**Concepts**](#represent-concepts): Data dictionary entries describing the concepts referred to by the recommendation
-* [**Criteria**](#represent-criteria): Functional descriptions (i.e. domain-specific pseudo-code)
-* [**Processes**](#represent-processes): Flow diagrams connecting the personas, activities, and settings to clinical processes
+* **Concepts**: Data dictionary entries describing the concepts referred to by the recommendation
+* **Criteria**: Functional descriptions (i.e. domain-specific pseudo-code)
+* **Processes**: Flow diagrams connecting the personas, activities, and settings to clinical processes
 
-For a more detailed discussion of this step, refer to the [Represent Step](#represent-step) topic.
+For a more detailed discussion of this step, refer to the [Represent Step](methodology.html#represent-step) topic.
 
 #### Translate
 
 The _translate_ step involves expressing the semi-structured (L2) data elements, activities, and flow diagrams as structured (L3) content. Specifically, as FHIR profiles (i.e. _case features_), CPG activities, CQL logic, and CPG recommendations, strategies, and pathways.
 
-* [**Profiles**](#translate-profiles): Data elements are represented as FHIR profiles of the appropriate resource
-* [**Terminology**](#translate-terminology): CodeSystem and ValueSet resources as appropriate
-* [**Criteria**](#translate-criteria): CQL libraries of criteria and related expressions, contained in Library resources
-* [**Activities**](#translate-activities): ActivityDefinition resources
-* [**Recommendations**](#translate-recommendations): PlanDefinition resources focused on particular recommendations
-* [**Strategies**](#translate-strategies): PlanDefinition resources focused on particular conditions or states
-* [**Pathways**](#translate-pathways): PlanDefinition resources describing the overall pathway
+* **Profiles**: Data elements are represented as FHIR profiles of the appropriate resource
+* **Terminology**: CodeSystem and ValueSet resources as appropriate
+* **Criteria**: CQL libraries of criteria and related expressions, contained in Library resources
+* **Activities**: ActivityDefinition resources
+* **Recommendations**: PlanDefinition resources focused on particular recommendations
+* **Strategies**: PlanDefinition resources focused on particular conditions or states
+* **Pathways**: PlanDefinition resources describing the overall pathway
 
-For a more detailed discussion of this step, refer to the [Translate Step](#translate-step) topic.
+For a more detailed discussion of this step, refer to the [Translate Step](methodology.html#translate-step) topic.
 
 #### Validate
 
 The _validate_ step involves ensuring that the structured content meets the requirements and expectations for conformance and intent, and that it behaves as expected. This typically involves the creation of at least a positive and negative _scenario_, or test case, that can be used to test the behavior of the structured content. In practice, this requires the ability to _execute_ the L3 content in at least simulated environments. For content structured according to the CPG, and delivered via standard mechanisms such as SDC Questionnaires, Clinical Reasoning activities and processes, or CDS Hooks, there are reference implementations and sandbox environments that can provide this level of validation.
 
-* [**Conformance**](#validate-conformance): Conformance checking of the profiles and conformance requirements of this implementation guide
-* [**Checklists**](#validate-checklists): Checklists to help determine readiness and facilitate communication
-* [**Expert Review**](#validate-expert-review): Review by relevant subject matter experts
-* [**Test Scenarios**](#validate-testing-scenarios): Test scenarios that exercise happy paths as well as edge cases
-* [**Unit Testing**](#validate-unit-testing): Testing that each piece functions correctly in isolation
-* [**Component Testing**](#validate-component-testing): Testing that the components function correctly together
-* [**Integration Testing**](#validate-integration-testing): Testing that the artifacts behave correctly in simulated target environments
+* **Conformance**: Conformance checking of the profiles and conformance requirements of this implementation guide
+* **Checklists**: Checklists to help determine readiness and facilitate communication
+* **Expert Review**: Review by relevant subject matter experts
+* **Test Scenarios**: Test scenarios that exercise happy paths as well as edge cases
+* **Unit Testing**: Testing that each piece functions correctly in isolation
+* **Component Testing**: Testing that the components function correctly together
+* **Integration Testing**: Testing that the artifacts behave correctly in simulated target environments
 
-For a more detailed discussion of this step, refer to the [Validate Step](#validate-step) topic.
+For a more detailed discussion of this step, refer to the [Validate Step](methodology.html#validate-step) topic.
 
-### Select Step
+### Select Step {#select-step}
 
 The _select_ step involves selection of the specific content for implementation, along with the target enablement strategies, specifically identifying the _who_, _what_, _when_, _where_, and _why_ for the selected content.
 
@@ -227,7 +227,7 @@ The [CPGComputablePlanDefinition](StructureDefinition-cpg-computableplandefiniti
 
 Documenting pertinent information related to a recommendation is critical to helping the intended recipient determine why the recommendation applies in each particular case. For definitional content, pertinent information can typically be inferred from the content referenced by the logic involved. To support cases where pertinent information cannot be inferred from the content, as well as to allow content developers to highlight particular aspects, the `input` and `output` elements of the PlanDefinition can be used to identify pertinent information for the recommendation.
 
-### Represent Step
+### Represent Step {#represent-step}
 
 The represent step involves taking the narrative input from the select step, the _who_, _what_, _when_, _where_, and _why_, and further refining it to produce a _data dictionary_ of concepts, _functional descriptions_ of the criteria involved in the recommendations, and _flow diagrams_ illustrating how the recommendations should be applied in a clinical context. This step is typically performed by a cross-functional team consisting of at least:
 
@@ -244,7 +244,7 @@ At this step, concepts referred to by the narrative are identified and represent
 * **Details**: Details about the data element, including how it might be gathered, and how it is relevant
 * **Modeling**: The conceptual type of data, including how it might be represented in potential target environments
 
-For example, the following data dictionary excerpt shows the data elements for recommendation 5 of the [Opioid Prescribing Guideline](examples/opg/opg-guideline.html) example included in this implementation guide:
+For example, the following data dictionary excerpt shows the data elements for recommendation 5 of the [Opioid Prescribing Guideline](examples-opg-guideline.html) example included in this implementation guide:
 
 <div>
   <img src="opg-recommendation-5-data-dictionary.png" alt="OPG Recommendation 5 Data Elements" class="img-responsive img-rounded center-block"/>
@@ -316,7 +316,7 @@ A complete walkthrough of this process using freely available open source tools 
 
 #### Computable Clinical Practice Guideline
 
-As discussed in the [content implementation guides](#content-igs) section, a computable Clinical Practice Guideline (CPG) following this methodology is delivered as a FHIR Implementation Guide, and the first step to developing the content is to establish the content IG. This typically takes the form of a Github repository, similar to the [Sample Content IG](https://github.com/cqframework/sample-content-ig).
+As discussed in the [content implementation guides](methodology.html#content-igs) section, a computable Clinical Practice Guideline (CPG) following this methodology is delivered as a FHIR Implementation Guide, and the first step to developing the content is to establish the content IG. This typically takes the form of a Github repository, similar to the [Sample Content IG](https://github.com/cqframework/sample-content-ig).
 
 Pay particular attention at this step to the selection of the canonical URL for the computable guideline, as it will determine the base of the URLs for all the artifacts published by the IG, as well as enable resolution of artifacts when the IG is published at its canonical URL.
 
@@ -515,7 +515,7 @@ Also note that depending on the guideline, there may be aspects of the pathway t
 
 Content conforming to this implementation guide SHALL use the [cpg-pathwaydefinition](StructureDefinition-cpg-pathwaydefinition.html) profile to represent pathway definitions.
 
-### Validate Step
+### Validate Step {#validate-step}
 
 The _validate_ step involves ensuring that the structured (L3) content produced matches the intent of the (L1) and (L2) content for the guideline. This implementation guide provides several approaches for validation, including conformance requirements, L2, L3, and L4 checklists, as well as supporting several layers of testing.
 

@@ -1,0 +1,164 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "chf-o2-sat",
+  "meta": {
+    "profile": ["http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition"]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-pathway"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-hypervolemia"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-o2-sat-pd"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat",
+  "version" : "1.0.0",
+  "name" : "CHFO2Sat",
+  "title" : "CHF Oxygen Saturation",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2018-08-11",
+  "publisher" : "Health Level Seven International (Orders and Observations Workgroup)",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/orders/index.cfm Orders and Observations"
+    }]
+  }],
+  "description" : "CHF Oxygen Saturation (%) Profile",
+  "fhirVersion" : "4.0.1",
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Observation",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation",
+      "short" : "CHF O2 Sat Profile",
+      "definition" : "This profile defines how to represent oxygen saturation observations in FHIR using a standard LOINC code and UCUM units of measure.",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Observation.code",
+      "path" : "Observation.code",
+      "short" : "O2 Sat",
+      "definition" : "Oxygen Saturation."
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "code"
+        },
+        {
+          "type" : "value",
+          "path" : "system"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:O2SatCode",
+      "path" : "Observation.code.coding",
+      "sliceName" : "O2SatCode",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.code.coding:O2SatCode.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Observation.code.coding:O2SatCode.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "fixedCode" : "2708-6"
+    },
+    {
+      "id" : "Observation.valueQuantity",
+      "path" : "Observation.valueQuantity"
+    },
+    {
+      "id" : "Observation.valueQuantity.value",
+      "path" : "Observation.valueQuantity.value",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "decimal"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.valueQuantity.unit",
+      "path" : "Observation.valueQuantity.unit",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.valueQuantity.system",
+      "path" : "Observation.valueQuantity.system",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://unitsofmeasure.org",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.valueQuantity.code",
+      "path" : "Observation.valueQuantity.code",
+      "short" : "%",
+      "definition" : "Percent saturation",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "fixedCode": "%"
+    }]
+  }
+}
