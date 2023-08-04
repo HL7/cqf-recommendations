@@ -1,5 +1,5 @@
 Instance: activity-example-donotsendmessage-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGCommunicationActivity
 Usage: #example
 Title: "Activity Example Do Not Send Message AD"
 * description = "Example Activity Definition for a recommendation not to send a message"

@@ -6,13 +6,9 @@ Title: "Do Not Send Message"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(donotsendmessage-library, Library)
+* insert RelatedFHIRLibraries
 * name = "DoNotSendMessage"
 * type = $library-type#logic-library
-* publisher = "HL7 International - Clinical Decision Support WG"
-* contact.telecom
-  * system = #url
-  * value = "http://hl7.org/Special/committees/[something]"
-* insert RelatedFHIRLibraries
 * parameter[+]
   * name = #Patient
   * use = #out

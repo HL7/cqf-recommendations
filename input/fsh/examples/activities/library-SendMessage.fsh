@@ -6,9 +6,9 @@ Title: "Send Message Library"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(sendmessage-library, Library)
+* insert RelatedFHIRLibraries
 * name = "SendMessageLibrary"
 * type = $library-type#logic-library
-* insert RelatedFHIRLibraries
 * parameter[+]
   * name = #Patient
   * use = #out

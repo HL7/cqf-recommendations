@@ -1,5 +1,5 @@
 Instance: activity-example-donotcollectinformation-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGCollectInformationActivity
 Usage: #example
 Title: "Activity Example Do Not Collect Information AD"
 * description = "Example Activity Definition for a recommendation not to collect information"
@@ -15,10 +15,10 @@ Title: "Activity Example Do Not Collect Information AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"
   * expression.
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith').value"

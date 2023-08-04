@@ -115,22 +115,22 @@ Usage: #inline
   * type = #boolean
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
   * type = #MedicationRequest
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+  * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
   * type = #MedicationAdministration
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+  * profile = Canonical(MedicationAdministration)
 * dataRequirement[+]
   * type = #MedicationAdministration
-  * profile = "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+  * profile = Canonical(MedicationAdministration)
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * content
   * id = "ig-loader-AdministerMedication.cql"
 
@@ -193,7 +193,7 @@ Usage: #inline
     * request.reference = "MedicationRequest/am-scenario7-mr"
     * dosage
       * text = "apply one patch three times per week"
-      * dose = 1 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#PATCH "patch"
+      * dose = 1 $v3-orderableDrugForm-cs#PATCH "patch"
 * entry[+]
   * fullUrl = "http://example.org/MedicationRequest/am-scenario7-3"
   * resource
@@ -213,12 +213,12 @@ Usage: #inline
         * periodUnit = #wk
       * doseAndRate
         * type = $dose-rate-type#ordered "Ordered"
-        * doseQuantity = 1 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#PATCH "patch"
+        * doseQuantity = 1 $v3-orderableDrugForm-cs#PATCH "patch"
     * dispenseRequest
       * validityPeriod
         * start = "2015-01-15"
         * end = "2016-01-15"
-      * quantity = 6 http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm#PATCH "patch"
+      * quantity = 6 $v3-orderableDrugForm-cs#PATCH "patch"
       * expectedSupplyDuration = 14 'd' "days"
 * entry[+]
   * fullUrl = "http://example.org/Patient/am-scenario7-4"

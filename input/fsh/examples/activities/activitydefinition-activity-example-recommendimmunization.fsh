@@ -1,5 +1,5 @@
 Instance: activity-example-recommendimmunization-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGImmunizationActivity
 Usage: #example
 Title: "Activity Example Recommend Immunization AD"
 * description = "Example Activity Definition for a recommendation to provide an immunization"

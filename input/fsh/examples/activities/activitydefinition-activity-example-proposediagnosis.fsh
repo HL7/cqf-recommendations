@@ -1,5 +1,5 @@
 Instance: activity-example-proposediagnosis-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGProposeDiagnosisActivity
 Usage: #example
 Title: "Activity Example Propose Diagnosis AD"
 * description = "Example Activity Definition for a recommendation to propose a diagnosis"
@@ -12,7 +12,7 @@ Title: "Activity Example Propose Diagnosis AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql-expression
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"

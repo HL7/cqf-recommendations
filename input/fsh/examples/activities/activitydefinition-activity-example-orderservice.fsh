@@ -1,5 +1,5 @@
 Instance: activity-example-orderservice-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGServiceRequestActivity
 Usage: #example
 Title: "Activity Example Order Service AD"
 * description = "Example Activity Definition for a recommendation to order a service"

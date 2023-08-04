@@ -1,10 +1,9 @@
 Instance: activity-example-collectinformation-questionnaire
-InstanceOf: Questionnaire
+InstanceOf: CPGShareableQuestionnaire
 Usage: #example
 Title: "Activity Example Collect Information Questionnaire"
+* insert QuestionnaireMetadata(activity-example-collectinformation-questionnaire)
 * description = "Example Questionnaire for use in collect information activity examples"
-* insert Profile(cpg-shareablequestionnaire)
-* insert KnowledgeArtifactMetadata(activity-example-collectinformation-questionnaire, Questionnaire)
 * name = "ActivityExampleCollectInformationQuestionnaire"
 * item
   * linkId = "A"

@@ -1,5 +1,5 @@
 Instance: activity-example-ordermedication-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGMedicationRequestActivity
 Usage: #example
 Title: "Activity Example Order Medication AD"
 * description = "Example Activity Definition for a recommendation to order a medication"

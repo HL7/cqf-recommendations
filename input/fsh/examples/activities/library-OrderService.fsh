@@ -6,9 +6,9 @@ Title: "Order Service Library"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(orderservice-library, Library)
+* insert RelatedFHIRLibraries
 * name = "OrderServiceLibrary"
 * type = $library-type#logic-library
-* insert RelatedFHIRLibraries
 * parameter[+]
   * name = #Patient
   * use = #out

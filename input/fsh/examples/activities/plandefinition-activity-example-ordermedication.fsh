@@ -12,7 +12,7 @@ Title: "Activity Example Order Medication PD"
   * condition
     * kind = #applicability
     * expression
-      * language = #text/cql
+      * language = #text/cql-identifier
       * expression = "Is Recommendation Applicable"
   * type = $action-type#create
   * definitionCanonical = Canonical(activity-example-ordermedication-ad)

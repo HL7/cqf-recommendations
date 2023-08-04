@@ -1,7 +1,7 @@
 Instance: ordermedication-library
 InstanceOf: Library
 Usage: #example
-Title: "Order Medication"
+Title: "Order Medication Library"
 * description = "Logic for an example recommendation to order a medication"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)

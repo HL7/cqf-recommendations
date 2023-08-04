@@ -1,5 +1,5 @@
 Instance: activity-example-documentmedication-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGDocumentMedicationActivity
 Usage: #example
 Title: "Activity Example Document Medication AD"
 * description = "Example Activity Definition for a recommendation to document a medication"
@@ -13,11 +13,11 @@ Title: "Activity Example Document Medication AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"
   * expression
-    * language = #text/cql
+    * language = #text/cql-identifier
     * expression = "Medication Proposal"
     * reference = Canonical(documentmedication-library)

@@ -68,6 +68,6 @@ Title: "Collect Information Library"
   * type = #boolean
 * dataRequirement
   * type = #Task
-  * profile = "http://hl7.org/fhir/StructureDefinition/Task"
+  * profile = Canonical(Task)
 * content
   * id = "ig-loader-CollectInformation.cql"

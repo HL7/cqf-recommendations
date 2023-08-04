@@ -1,5 +1,5 @@
 Instance: activity-example-recorddetectedissue-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGRecordDetectedIssueActivity
 Usage: #example
 Title: "Activity Example Record Detected Issue AD"
 * description = "Example Activity Definition for a recommendation to record a detected issue"
@@ -12,7 +12,7 @@ Title: "Activity Example Record Detected Issue AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql-expression
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"

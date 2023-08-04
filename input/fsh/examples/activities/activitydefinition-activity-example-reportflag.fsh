@@ -1,5 +1,5 @@
 Instance: activity-example-reportflag-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGReportFlagActivity
 Usage: #example
 Title: "Activity Example Report Flag AD"
 * description = "Example Activity Definition for a recommendation to report a flag"
@@ -12,7 +12,7 @@ Title: "Activity Example Report Flag AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql-expression
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"

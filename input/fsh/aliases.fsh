@@ -116,3 +116,7 @@ Alias: $valueset-keyWord = http://hl7.org/fhir/StructureDefinition/valueset-keyW
 Alias: $valueset-rules-text = http://hl7.org/fhir/StructureDefinition/valueset-rules-text
 Alias: $valueset-sourceReference = http://hl7.org/fhir/StructureDefinition/valueset-sourceReference
 Alias: $workflow-instantiatesCanonical = http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
+
+Alias: $cpg-documentmedicationtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
+
+Alias: $v3-orderableDrugForm-cs = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm

@@ -1,5 +1,5 @@
 Instance: activity-example-generatereport-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGGenerateReportActivity
 Usage: #example
 Title: "Activity Example Generate Report AD"
 * description = "Example Activity Definition for a recommendation to generate a report"
@@ -15,10 +15,10 @@ Title: "Activity Example Generate Report AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"
   * expression
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith').value"

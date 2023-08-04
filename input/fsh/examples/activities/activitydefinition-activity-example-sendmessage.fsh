@@ -1,5 +1,5 @@
 Instance: activity-example-sendmessage-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGCommunicationActivity
 Usage: #example
 Title: "Activity Example Send Message AD"
 * description = "Example Activity Definition for a recommendation to send a message"

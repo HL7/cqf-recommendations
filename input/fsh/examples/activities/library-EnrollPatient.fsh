@@ -6,9 +6,9 @@ Title: "Enrollment Library"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(enrollment-library, Library)
+* insert RelatedFHIRLibraries
 * name = "EnrollmentLibrary"
 * type = $library-type#logic-library
-* insert RelatedFHIRLibraries
 * relatedArtifact[+]
   * type = #depends-on
   * resource = Canonical(cpg-activity-type-cs)

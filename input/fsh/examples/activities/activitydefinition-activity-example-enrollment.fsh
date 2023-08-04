@@ -1,5 +1,5 @@
 Instance: activity-example-enrollment-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGEnrollmentActivity
 Usage: #example
 Title: "Activity Example Enrollment AD"
 * description = "Example Activity Definition for a recommendation to enroll a patient in a pathway"
@@ -16,10 +16,10 @@ Title: "Activity Example Enrollment AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"
   * expression
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn').value"

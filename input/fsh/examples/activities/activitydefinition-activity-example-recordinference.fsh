@@ -1,5 +1,5 @@
 Instance: activity-example-recordinference-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGRecordInferenceActivity
 Usage: #example
 Title: "Activity Example Record Inference AD"
 * description = "Example Activity Definition for a recommendation to record an inference"
@@ -12,7 +12,7 @@ Title: "Activity Example Record Inference AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql-expression
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"

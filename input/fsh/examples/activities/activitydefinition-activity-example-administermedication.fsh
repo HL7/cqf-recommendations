@@ -1,5 +1,5 @@
 Instance: activity-example-administermedication-ad
-InstanceOf: ActivityDefinition
+InstanceOf: CPGAdministerMedicationActivity
 Usage: #example
 Title: "Activity Example Administer Medication AD"
 * description = "Example Activity Definition for a recommendation to administer a medication"
@@ -12,11 +12,11 @@ Title: "Activity Example Administer Medication AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/cql
+    * language = #text/fhirpath
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"
   * expression
-    * language = #text/cql
+    * language = #text/cql-identifier
     * expression = "Medication Proposal"
     * reference = Canonical(administermedication-library)
