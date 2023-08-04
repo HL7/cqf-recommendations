@@ -119,4 +119,3 @@ Alias: $workflow-instantiatesCanonical = http://hl7.org/fhir/StructureDefinition
 
 Alias: $cpg-documentmedicationtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
 
-Alias: $v3-orderableDrugForm-cs = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
