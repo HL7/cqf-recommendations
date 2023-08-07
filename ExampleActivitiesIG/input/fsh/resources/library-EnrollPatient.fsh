@@ -11,7 +11,7 @@ Title: "Enrollment Library"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-//  * resource = Canonical(cpg-activity-type-cs)
+  * resource = $cpg-activity-type-cs
 * parameter[+]
   * name = #enrollInPathway
   * use = #in

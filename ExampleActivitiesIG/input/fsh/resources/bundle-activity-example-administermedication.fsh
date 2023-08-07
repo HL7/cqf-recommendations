@@ -31,7 +31,7 @@ Usage: #inline
 * description = "Asset collection of artifacts in the Administer Medication activity example"
 * relatedArtifact[+]
   * type = #depends-on
-//  * resource = Canonical(cpg-activity-type-cs)
+  * resource = $cpg-activity-type-cs
 * relatedArtifact[+]
   * type = #composed-of
   * resource = Canonical(activity-example-administermedication-ad)
@@ -58,7 +58,7 @@ Usage: #inline
 * description = "Logic for an example recommendation to administer a medication"
 * relatedArtifact[+]
   * type = #depends-on
-//  * resource = Canonical(cpg-activity-type-cs)
+  * resource = $cpg-activity-type-cs
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -138,7 +138,7 @@ Instance: Inline-Instance-for-activity-example-administermedication-2
 InstanceOf: PlanDefinition
 Usage: #inline
 * id = "activity-example-administermedication-2"
-* insert PDRecommendationMetadata(activity-example-administermedication-2, PlanDefinition)
+* insert PDRecommendationMetadata(activity-example-administermedication-2)
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example Administer Medication"
 * status = #draft

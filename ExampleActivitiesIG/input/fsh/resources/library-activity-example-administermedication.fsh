@@ -10,7 +10,7 @@ Title: "Activity Example - Administer Medication Library Collection"
 * type = $library-type#asset-collection
 * relatedArtifact[+]
   * type = #depends-on
-//  * resource = Canonical(cpg-activity-type-cs)
+  * resource = $cpg-activity-type-cs
 * relatedArtifact[+]
   * type = #composed-of
   * resource = Canonical(activity-example-administermedication-ad)
