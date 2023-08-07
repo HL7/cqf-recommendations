@@ -2,8 +2,8 @@ Instance: activity-example-recorddetectedissue-ad
 InstanceOf: CPGRecordDetectedIssueActivity
 Usage: #example
 Title: "Activity Example Record Detected Issue AD"
-* description = "Example Activity Definition for a recommendation to record a detected issue"
 * insert ActivityDefinitionMetadata(activity-example-recorddetectedissue-ad)
+* description = "Example Activity Definition for a recommendation to record a detected issue"
 * name = "ActivityExampleRecordDetectedIssueAD"
 * kind = #Task
 * profile = Canonical(CPGRecordDetectedIssueTask)

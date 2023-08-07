@@ -2,8 +2,8 @@ Instance: activity-example-enrollment-ad
 InstanceOf: CPGEnrollmentActivity
 Usage: #example
 Title: "Activity Example Enrollment AD"
-* description = "Example Activity Definition for a recommendation to enroll a patient in a pathway"
 * insert ActivityDefinitionMetadata(activity-example-enrollment-ad)
+* description = "Example Activity Definition for a recommendation to enroll a patient in a pathway"
 * extension[+]
   * url = $cpg-enrollIn
   * valueCanonical = Canonical(activity-example-pathway-pd)

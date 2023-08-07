@@ -2,11 +2,11 @@ Instance: dispensemedication-library
 InstanceOf: Library
 Usage: #example
 Title: "Dispense Medication Library"
-* description = "Logic for an example recommendation to dispense a medication"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(dispensemedication-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to dispense a medication"
 * name = "DispenseMedicationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]

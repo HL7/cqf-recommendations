@@ -2,11 +2,11 @@ Instance: recorddetectedissue-library
 InstanceOf: Library
 Usage: #example
 Title: "Record Detected Issue Library"
-* description = "Logic for an example recommendation to record a detected issue"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(recorddetectedissue-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to record a detected issue"
 * name = "RecordDetectedIssueLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]

@@ -2,8 +2,8 @@ Instance: activity-example-donotcollectinformation-ad
 InstanceOf: CPGCollectInformationActivity
 Usage: #example
 Title: "Activity Example Do Not Collect Information AD"
-* description = "Example Activity Definition for a recommendation not to collect information"
 * insert ActivityDefinitionMetadata(activity-example-donotcollectinformation-ad)
+* description = "Example Activity Definition for a recommendation not to collect information"
 * extension[+]
   * url = $cpg-collectWith
   * valueCanonical = Canonical(activity-example-collectinformation-questionnaire)

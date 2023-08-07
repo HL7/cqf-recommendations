@@ -2,11 +2,11 @@ Instance: reportflag-library
 InstanceOf: Library
 Usage: #example
 Title: "Report Flag"
-* description = "Logic for an example recommendation to record an inference"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(reportflag-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to record an inference"
 * name = "ReportFlag"
 * type = $library-type#logic-library
 * relatedArtifact[+]

@@ -2,11 +2,11 @@ Instance: orderservice-library
 InstanceOf: Library
 Usage: #example
 Title: "Order Service Library"
-* description = "Logic for an example recommendation to order a service"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(orderservice-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to order a service"
 * name = "OrderServiceLibrary"
 * type = $library-type#logic-library
 * parameter[+]

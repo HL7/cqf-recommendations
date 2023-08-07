@@ -2,8 +2,8 @@ Instance: activity-example-generatereport-pd
 InstanceOf: PlanDefinition
 Usage: #example
 Title: "Activity Example Generate Report PD"
-* description = "Example Plan Definition for a recommendation to generate a report"
 * insert PDRecommendationMetadata(activity-example-generatereport-pd)
+* description = "Example Plan Definition for a recommendation to generate a report"
 * name = "ActivityExampleGenerateReportPD"
 * type = $plan-definition-type#eca-rule
 * library = Canonical(generatereport-library)

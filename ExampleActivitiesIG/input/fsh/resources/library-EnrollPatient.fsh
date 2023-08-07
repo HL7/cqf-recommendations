@@ -2,11 +2,11 @@ Instance: enrollment-library
 InstanceOf: Library
 Usage: #example
 Title: "Enrollment Library"
-* description = "Logic for an example recommendation to enroll a patient in a pathway"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(enrollment-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to enroll a patient in a pathway"
 * name = "EnrollmentLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]

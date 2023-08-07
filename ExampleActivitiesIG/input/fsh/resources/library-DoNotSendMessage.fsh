@@ -2,11 +2,11 @@ Instance: donotsendmessage-library
 InstanceOf: Library
 Usage: #example
 Title: "Do Not Send Message"
-* description = "Logic for an example recommendation not to send a message"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(donotsendmessage-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation not to send a message"
 * name = "DoNotSendMessage"
 * type = $library-type#logic-library
 * parameter[+]

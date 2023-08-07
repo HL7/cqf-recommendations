@@ -2,8 +2,8 @@ Instance: activity-example-documentmedication-ad
 InstanceOf: CPGDocumentMedicationActivity
 Usage: #example
 Title: "Activity Example Document Medication AD"
-* description = "Example Activity Definition for a recommendation to document a medication"
 * insert ActivityDefinitionMetadata(activity-example-documentmedication-ad)
+* description = "Example Activity Definition for a recommendation to document a medication"
 * name = "ActivityExampleDocumentMedicationAD"
 * kind = #Task
 // * profile = Canonical(CPGDocumentMedicationTask) now corrected to document (vs dispense) in profile, but throwing sushi error d/t dependcy

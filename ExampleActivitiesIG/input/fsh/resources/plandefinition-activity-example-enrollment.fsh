@@ -2,8 +2,8 @@ Instance: activity-example-enrollment-pd
 InstanceOf: PlanDefinition
 Usage: #example
 Title: "Activity Example Enrollment PD"
-* description = "Example Plan Definition for a recommendation to enroll a patient"
 * insert PDRecommendationMetadata(activity-example-enrollment-pd)
+* description = "Example Plan Definition for a recommendation to enroll a patient"
 * name = "ActivityExampleEnrollmentPD"
 * type = $plan-definition-type#eca-rule
 * library = Canonical(enrollment-library)

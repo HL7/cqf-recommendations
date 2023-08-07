@@ -2,11 +2,11 @@ Instance: documentmedication-library
 InstanceOf: Library
 Usage: #example
 Title: "Document Medication Library"
-* description = "Logic for an example recommendation to document a medication"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(documentmedication-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to document a medication"
 * name = "DocumentMedicationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]

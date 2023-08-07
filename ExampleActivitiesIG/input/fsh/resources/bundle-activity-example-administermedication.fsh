@@ -18,11 +18,11 @@ Usage: #example
 Instance: Inline-Instance-for-activity-example-administermedication-1
 InstanceOf: Library
 Usage: #inline
-* id = "activity-example-administermedication-1"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-assetcollection)
 * insert KnowledgeArtifactMetadata(activity-example-administermedication-1, Library)
 * insert RelatedFHIRLibraries
+* id = "activity-example-administermedication-1"
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example - Administer Medication Collection"
 * status = #draft
@@ -138,8 +138,7 @@ Instance: Inline-Instance-for-activity-example-administermedication-2
 InstanceOf: PlanDefinition
 Usage: #inline
 * id = "activity-example-administermedication-2"
-* insert Profile(cpg-recommendationdefinition)
-* insert (activity-example-administermedication-2, PlanDefinition)
+* insert PDRecommendationMetadata(activity-example-administermedication-2, PlanDefinition)
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example Administer Medication"
 * status = #draft
@@ -245,5 +244,5 @@ Usage: #inline
     * code = $cpg-activity-type-cs#administer-medication "Administer a medication"
     * for.reference = "Patient/am-scenario7-patient"
     * input
-      // * type = $cpg-activity-type-cs#administer-medication "Administer a medication"
+      * type = $cpg-activity-type-cs#administer-medication "Administer a medication"
       * valueReference.reference = "MedicationRequest/am-scenario7-mr"

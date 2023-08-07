@@ -2,11 +2,11 @@ Instance: donotcollectinformation-library
 InstanceOf: Library
 Usage: #example
 Title: "Do Not Collect Information Library"
-* description = "Logic for an example recommendation not to collect information"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(donotcollectinformation-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation not to collect information"
 * name = "DoNotCollectInformationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]

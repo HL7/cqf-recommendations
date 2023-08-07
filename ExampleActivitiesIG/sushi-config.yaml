@@ -25,7 +25,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.uv.cpg: 1.0.0
+  hl7.fhir.uv.cpg: dev
     # id: hl7.fhir.uv.cpg
     # uri: http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg
     # version: 1.0.0

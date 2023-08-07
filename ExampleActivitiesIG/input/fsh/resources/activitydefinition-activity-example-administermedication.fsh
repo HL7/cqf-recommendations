@@ -2,8 +2,8 @@ Instance: activity-example-administermedication-ad
 InstanceOf: CPGAdministerMedicationActivity
 Usage: #example
 Title: "Activity Example Administer Medication AD"
-* description = "Example Activity Definition for a recommendation to administer a medication"
 * insert ActivityDefinitionMetadata(activity-example-administermedication-ad)
+* description = "Example Activity Definition for a recommendation to administer a medication"
 * name = "ActivityExampleAdministerMedicationAD"
 * kind = #Task
 * profile = Canonical(CPGAdministerMedicationTask)

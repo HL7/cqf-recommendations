@@ -2,8 +2,8 @@ Instance: activity-example-recorddetectedissue-pd
 InstanceOf: PlanDefinition
 Usage: #example
 Title: "Activity Example Record Detected Issue PD"
-* description = "Example Plan Definition for a recommendation to record a detected issue"
 * insert PDRecommendationMetadata(activity-example-recorddetectedissue-pd)
+* description = "Example Plan Definition for a recommendation to record a detected issue"
 * name = "ActivityExampleRecordDetectedIssuePD"
 * type = $plan-definition-type#eca-rule
 * library = Canonical(recorddetectedissue-library)

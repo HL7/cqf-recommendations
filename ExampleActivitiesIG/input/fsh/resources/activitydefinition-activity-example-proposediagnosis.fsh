@@ -2,8 +2,8 @@ Instance: activity-example-proposediagnosis-ad
 InstanceOf: CPGProposeDiagnosisActivity
 Usage: #example
 Title: "Activity Example Propose Diagnosis AD"
-* description = "Example Activity Definition for a recommendation to propose a diagnosis"
 * insert ActivityDefinitionMetadata(activity-example-proposediagnosis-ad)
+* description = "Example Activity Definition for a recommendation to propose a diagnosis"
 * name = "ActivityExampleProposeDiagnosisAD"
 * kind = #Task
 * profile = Canonical(CPGProposeDiagnosisTask)

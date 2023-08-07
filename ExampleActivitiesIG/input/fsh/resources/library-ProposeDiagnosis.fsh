@@ -2,11 +2,11 @@ Instance: proposediagnosis-library
 InstanceOf: Library
 Usage: #example
 Title: "Propose Diagnosis Library"
-* description = "Logic for an example recommendation to propose a diagnosis"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(proposediagnosis-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to propose a diagnosis"
 * name = "ProposeDiagnosisLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]

@@ -2,11 +2,11 @@ Instance: ordermedication-library
 InstanceOf: Library
 Usage: #example
 Title: "Order Medication Library"
-* description = "Logic for an example recommendation to order a medication"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(ordermedication-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to order a medication"
 * name = "OrderMedication"
 * type = $library-type#logic-library
 * parameter[+]

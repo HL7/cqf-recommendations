@@ -2,11 +2,11 @@ Instance: collectinformation-library
 InstanceOf: Library
 Usage: #example
 Title: "Collect Information Library"
-* description = "Logic for an example recommendation to collect information"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(collectinformation-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to collect information"
 * name = "CollectInformationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]

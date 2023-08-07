@@ -2,8 +2,8 @@ Instance: activity-example-administermedication-pd
 InstanceOf: PlanDefinition
 Usage: #example
 Title: "Activity Example Administer Medication PD"
-* description = "Example Plan Definition for a recommendation to administer a medication"
 * insert PDRecommendationMetadata(activity-example-administermedication-pd)
+* description = "Example Plan Definition for a recommendation to administer a medication"
 * name = "ActivityExampleAdministerMedicationPD"
 * type = $plan-definition-type#eca-rule
 * library = Canonical(administermedication-library)

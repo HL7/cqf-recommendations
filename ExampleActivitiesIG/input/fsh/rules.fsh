@@ -14,6 +14,8 @@ RuleSet: KnowledgeArtifactMetadata(id, type)
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * status = #draft
+* version = "1.0.0"
+* publisher = "HL7 International - Clinical Decision Support WG"
 
 RuleSet: QuestionnaireMetadata(id)
 * extension[+]

@@ -2,11 +2,11 @@ Instance: recommendimmunization-library
 InstanceOf: Library
 Usage: #example
 Title: "Recommend Immunization"
-* description = "Logic for an example recommendation to recommend an immunization"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(recommendimmunization-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to recommend an immunization"
 * name = "RecommendImmunization"
 * type = $library-type#logic-library
 * relatedArtifact[+]

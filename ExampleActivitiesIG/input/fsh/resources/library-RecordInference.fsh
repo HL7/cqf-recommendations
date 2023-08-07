@@ -2,11 +2,11 @@ Instance: recordinference-library
 InstanceOf: Library
 Usage: #example
 Title: "Record Inference"
-* description = "Logic for an example recommendation to record an inference"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(recordinference-library, Library)
 * insert RelatedFHIRLibraries
+* description = "Logic for an example recommendation to record an inference"
 * name = "RecordInference"
 * type = $library-type#logic-library
 * relatedArtifact[+]

@@ -2,8 +2,8 @@ Instance: activity-example-collectinformation-ad
 InstanceOf: CPGCollectInformationActivity
 Usage: #example
 Title: "Activity Example Collect Information AD"
-* description = "Example Activity Definition for a recommendation to collect information"
 * insert ActivityDefinitionMetadata(activity-example-collectinformation-ad)
+* description = "Example Activity Definition for a recommendation to collect information"
 * extension[+]
   * url = $cpg-collectWith
   * valueCanonical = Canonical(activity-example-collectinformation-questionnaire)
