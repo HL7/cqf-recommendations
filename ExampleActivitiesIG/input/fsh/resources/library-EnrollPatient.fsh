@@ -1,17 +1,23 @@
-Instance: recordinference-library
+Instance: enrollment-library
 InstanceOf: Library
 Usage: #example
-Title: "Record Inference"
-* description = "Logic for an example recommendation to record an inference"
+Title: "Enrollment Library"
+* description = "Logic for an example recommendation to enroll a patient in a pathway"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(recordinference-library, Library)
+* insert KnowledgeArtifactMetadata(enrollment-library, Library)
 * insert RelatedFHIRLibraries
-* name = "RecordInference"
+* name = "EnrollmentLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
+//  * resource = Canonical(cpg-activity-type-cs)
+* parameter[+]
+  * name = #enrollInPathway
+  * use = #in
+  * min = 0
+  * max = "1"
+  * type = #string
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -19,23 +25,35 @@ Title: "Record Inference"
   * max = "1"
   * type = #Patient
 * parameter[+]
+  * name = #Tasks
+  * use = #out
+  * min = 0
+  * max = "*"
+  * type = #Task
+* parameter[+]
+  * name = #EpisodesOfCare
+  * use = #out
+  * min = 0
+  * max = "*"
+  * type = #EpisodeOfCare
+* parameter[+]
   * name = #"Inclusion Criteria"
   * use = #out
   * min = 0
   * max = "1"
   * type = #boolean
 * parameter[+]
-  * name = #"Record Inference Task"
+  * name = #"Enrollment Task"
   * use = #out
   * min = 0
   * max = "*"
   * type = #Task
 * parameter[+]
-  * name = #Inference
+  * name = #Case
   * use = #out
   * min = 0
   * max = "*"
-  * type = #Observation
+  * type = #EpisodeOfCare
 * parameter[+]
   * name = #"Active or Completed Activity"
   * use = #out
@@ -70,7 +88,13 @@ Title: "Record Inference"
   * type = #Task
   * profile = Canonical(Task)
 * dataRequirement[+]
-  * type = #Observation
-  * profile = Canonical(Observation)
+  * type = #EpisodeOfCare
+  * profile = Canonical(EpisodeOfCare)
+* dataRequirement[+]
+  * type = #Task
+  * profile = Canonical(Task)
+* dataRequirement[+]
+  * type = #EpisodeOfCare
+  * profile = Canonical(EpisodeOfCare)
 * content
-  * id = "ig-loader-RecordInference.cql"
+  * id = "ig-loader-EnrollPatient.cql"

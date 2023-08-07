@@ -1,17 +1,18 @@
-Instance: documentmedication-library
+Instance: administermedication-library
 InstanceOf: Library
 Usage: #example
-Title: "Document Medication Library"
-* description = "Logic for an example recommendation to document a medication"
+Title: "Administer Medication Library"
+* description = "Logic for an example recommendation to administer a medication"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(documentmedication-library, Library)
+* insert KnowledgeArtifactMetadata(administermedication-library, Library)
 * insert RelatedFHIRLibraries
-* name = "DocumentMedicationLibrary"
+* name = "AdministerMedicationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
+  // * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -37,13 +38,25 @@ Title: "Document Medication Library"
   * max = "1"
   * type = #boolean
 * parameter[+]
-  * name = #"Document Proposal"
+  * name = #"Active or Completed Medication Administration"
+  * use = #out
+  * min = 0
+  * max = "*"
+  * type = #MedicationAdministration
+* parameter[+]
+  * name = #"Medication Administration Not Done"
+  * use = #out
+  * min = 0
+  * max = "*"
+  * type = #MedicationAdministration
+* parameter[+]
+  * name = #"Administer Proposal"
   * use = #out
   * min = 0
   * max = "*"
   * type = #Task
 * parameter[+]
-  * name = #"Document Proposal Rejected"
+  * name = #"Administer Proposal Rejected"
   * use = #out
   * min = 0
   * max = "*"
@@ -61,10 +74,16 @@ Title: "Document Medication Library"
   * type = #MedicationRequest
   * profile = Canonical(MedicationRequest)
 * dataRequirement[+]
+  * type = #MedicationAdministration
+  * profile = Canonical(MedicationAdministration)
+* dataRequirement[+]
+  * type = #MedicationAdministration
+  * profile = Canonical(MedicationAdministration)
+* dataRequirement[+]
   * type = #Task
   * profile = Canonical(Task)
 * dataRequirement[+]
   * type = #Task
   * profile = Canonical(Task)
 * content
-  * id = "ig-loader-DocumentMedication.cql"
+  * id = "ig-loader-AdministerMedication.cql"

@@ -1,23 +1,23 @@
-Instance: donotcollectinformation-library
+Instance: proposediagnosis-library
 InstanceOf: Library
 Usage: #example
-Title: "Do Not Collect Information Library"
-* description = "Logic for an example recommendation not to collect information"
+Title: "Propose Diagnosis Library"
+* description = "Logic for an example recommendation to propose a diagnosis"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(donotcollectinformation-library, Library)
+* insert KnowledgeArtifactMetadata(proposediagnosis-library, Library)
 * insert RelatedFHIRLibraries
-* name = "DoNotCollectInformationLibrary"
+* name = "ProposeDiagnosisLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
-* parameter[+]
-  * name = #collectWithQuestionnaire
-  * use = #in
-  * min = 0
-  * max = "1"
-  * type = #string
+//  * resource = Canonical(cpg-activity-type-cs)
+* relatedArtifact[+]
+  * type = #depends-on
+  * resource = Canonical(ConditionClinicalStatusCodes)
+* relatedArtifact[+]
+  * type = #depends-on
+  * resource = Canonical(ConditionVerificationStatus)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -31,19 +31,19 @@ Title: "Do Not Collect Information Library"
   * max = "1"
   * type = #boolean
 * parameter[+]
-  * name = #"Collect Information Task"
+  * name = #"Propose Diagnosis Task"
   * use = #out
   * min = 0
   * max = "*"
   * type = #Task
 * parameter[+]
-  * name = #"Do Not Collect Information Task"
+  * name = #Diagnosis
   * use = #out
   * min = 0
   * max = "*"
-  * type = #Task
+  * type = #Condition
 * parameter[+]
-  * name = #"Active or In-progress Activity"
+  * name = #"Active or Completed Activity"
   * use = #out
   * min = 0
   * max = "*"
@@ -61,13 +61,7 @@ Title: "Do Not Collect Information Library"
   * max = "*"
   * type = #Task
 * parameter[+]
-  * name = #"Do Not Perform Activity Proposal"
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #Task
-* parameter[+]
-  * name = #"Rejected Do Not Perform Activity Proposal"
+  * name = #"Activity Proposal Rejected"
   * use = #out
   * min = 0
   * max = "*"
@@ -82,7 +76,7 @@ Title: "Do Not Collect Information Library"
   * type = #Task
   * profile = Canonical(Task)
 * dataRequirement[+]
-  * type = #Task
-  * profile = Canonical(Task)
+  * type = #Condition
+  * profile = Canonical(Condition)
 * content
-  * id = "ig-loader-DoNotCollectInformation.cql"
+  * id = "ig-loader-ProposeDiagnosis.cql"

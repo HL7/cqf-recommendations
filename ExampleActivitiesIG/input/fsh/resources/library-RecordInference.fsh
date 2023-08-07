@@ -1,23 +1,17 @@
-Instance: proposediagnosis-library
+Instance: recordinference-library
 InstanceOf: Library
 Usage: #example
-Title: "Propose Diagnosis Library"
-* description = "Logic for an example recommendation to propose a diagnosis"
+Title: "Record Inference"
+* description = "Logic for an example recommendation to record an inference"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(proposediagnosis-library, Library)
+* insert KnowledgeArtifactMetadata(recordinference-library, Library)
 * insert RelatedFHIRLibraries
-* name = "ProposeDiagnosisLibrary"
+* name = "RecordInference"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = Canonical(ConditionClinicalStatusCodes)
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = Canonical(ConditionVerificationStatus)
+//  * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -31,17 +25,17 @@ Title: "Propose Diagnosis Library"
   * max = "1"
   * type = #boolean
 * parameter[+]
-  * name = #"Propose Diagnosis Task"
+  * name = #"Record Inference Task"
   * use = #out
   * min = 0
   * max = "*"
   * type = #Task
 * parameter[+]
-  * name = #Diagnosis
+  * name = #Inference
   * use = #out
   * min = 0
   * max = "*"
-  * type = #Condition
+  * type = #Observation
 * parameter[+]
   * name = #"Active or Completed Activity"
   * use = #out
@@ -76,7 +70,7 @@ Title: "Propose Diagnosis Library"
   * type = #Task
   * profile = Canonical(Task)
 * dataRequirement[+]
-  * type = #Condition
-  * profile = Canonical(Condition)
+  * type = #Observation
+  * profile = Canonical(Observation)
 * content
-  * id = "ig-loader-ProposeDiagnosis.cql"
+  * id = "ig-loader-RecordInference.cql"

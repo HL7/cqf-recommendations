@@ -1,23 +1,17 @@
-Instance: collectinformation-library
+Instance: recorddetectedissue-library
 InstanceOf: Library
 Usage: #example
-Title: "Collect Information Library"
-* description = "Logic for an example recommendation to collect information"
+Title: "Record Detected Issue Library"
+* description = "Logic for an example recommendation to record a detected issue"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(collectinformation-library, Library)
+* insert KnowledgeArtifactMetadata(recorddetectedissue-library, Library)
 * insert RelatedFHIRLibraries
-* name = "CollectInformationLibrary"
+* name = "RecordDetectedIssueLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
-* parameter[+]
-  * name = #collectWithQuestionnaire
-  * use = #in
-  * min = 0
-  * max = "1"
-  * type = #string
+//  * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -31,11 +25,17 @@ Title: "Collect Information Library"
   * max = "1"
   * type = #boolean
 * parameter[+]
-  * name = #"Collect Information Task"
+  * name = #"Record Detected Issue Task"
   * use = #out
   * min = 0
   * max = "*"
   * type = #Task
+* parameter[+]
+  * name = #"Detected Issue"
+  * use = #out
+  * min = 0
+  * max = "*"
+  * type = #DetectedIssue
 * parameter[+]
   * name = #"Active or Completed Activity"
   * use = #out
@@ -66,8 +66,11 @@ Title: "Collect Information Library"
   * min = 0
   * max = "1"
   * type = #boolean
-* dataRequirement
+* dataRequirement[+]
   * type = #Task
   * profile = Canonical(Task)
+* dataRequirement[+]
+  * type = #DetectedIssue
+  * profile = Canonical(DetectedIssue)
 * content
-  * id = "ig-loader-CollectInformation.cql"
+  * id = "ig-loader-RecordDetectedIssue.cql"

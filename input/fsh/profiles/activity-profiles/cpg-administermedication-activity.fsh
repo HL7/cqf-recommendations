@@ -1,9 +1,9 @@
 Profile: CPGAdministerMedicationActivity
 Parent: CPGComputableActivityDefinition
-Id: cpg-administermedication
+Id: cpg-administermedicationactivity
 Title: "CPG Administer Medication Activity"
 Description: "Definition of a proposal to administer a medication as part of a computable clinical practice guideline"
-* insert StructureDefinitionMetadata(cpg-administermedication)
+* insert StructureDefinitionMetadata(cpg-administermedicationactivity)
 * kind 1..1 MS
 * kind only code
 * kind = #Task (exactly)

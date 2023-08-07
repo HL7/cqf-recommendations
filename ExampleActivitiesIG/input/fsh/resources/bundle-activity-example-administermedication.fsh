@@ -21,7 +21,7 @@ Usage: #inline
 * id = "activity-example-administermedication-1"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-assetcollection)
-* insert ExampleKnowledgeArtifactMetadata(activity-example-administermedication-1, Library)
+* insert KnowledgeArtifactMetadata(activity-example-administermedication-1, Library)
 * insert RelatedFHIRLibraries
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example - Administer Medication Collection"
@@ -31,7 +31,7 @@ Usage: #inline
 * description = "Asset collection of artifacts in the Administer Medication activity example"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
+//  * resource = Canonical(cpg-activity-type-cs)
 * relatedArtifact[+]
   * type = #composed-of
   * resource = Canonical(activity-example-administermedication-ad)
@@ -48,7 +48,7 @@ Usage: #inline
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert ExampleKnowledgeArtifactMetadata(AdministerMedication, Library)
+* insert KnowledgeArtifactMetadata(AdministerMedication, Library)
 * insert RelatedFHIRLibraries
 * name = "AdministerMedication"
 * title = "Administer Medication"
@@ -58,7 +58,7 @@ Usage: #inline
 * description = "Logic for an example recommendation to administer a medication"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
+//  * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -139,7 +139,7 @@ InstanceOf: PlanDefinition
 Usage: #inline
 * id = "activity-example-administermedication-2"
 * insert Profile(cpg-recommendationdefinition)
-* insert ExampleKnowledgeArtifactMetadata(activity-example-administermedication-2, PlanDefinition)
+* insert (activity-example-administermedication-2, PlanDefinition)
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example Administer Medication"
 * status = #draft
@@ -245,5 +245,5 @@ Usage: #inline
     * code = $cpg-activity-type-cs#administer-medication "Administer a medication"
     * for.reference = "Patient/am-scenario7-patient"
     * input
-      * type = $cpg-activity-type-cs#administer-medication "Administer a medication"
+      // * type = $cpg-activity-type-cs#administer-medication "Administer a medication"
       * valueReference.reference = "MedicationRequest/am-scenario7-mr"

@@ -1,17 +1,23 @@
-Instance: recorddetectedissue-library
+Instance: donotcollectinformation-library
 InstanceOf: Library
 Usage: #example
-Title: "Record Detected Issue Library"
-* description = "Logic for an example recommendation to record a detected issue"
+Title: "Do Not Collect Information Library"
+* description = "Logic for an example recommendation not to collect information"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(recorddetectedissue-library, Library)
+* insert KnowledgeArtifactMetadata(donotcollectinformation-library, Library)
 * insert RelatedFHIRLibraries
-* name = "RecordDetectedIssueLibrary"
+* name = "DoNotCollectInformationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
+//  * resource = Canonical(cpg-activity-type-cs)
+* parameter[+]
+  * name = #collectWithQuestionnaire
+  * use = #in
+  * min = 0
+  * max = "1"
+  * type = #string
 * parameter[+]
   * name = #Patient
   * use = #out
@@ -25,19 +31,19 @@ Title: "Record Detected Issue Library"
   * max = "1"
   * type = #boolean
 * parameter[+]
-  * name = #"Record Detected Issue Task"
+  * name = #"Collect Information Task"
   * use = #out
   * min = 0
   * max = "*"
   * type = #Task
 * parameter[+]
-  * name = #"Detected Issue"
+  * name = #"Do Not Collect Information Task"
   * use = #out
   * min = 0
   * max = "*"
-  * type = #DetectedIssue
+  * type = #Task
 * parameter[+]
-  * name = #"Active or Completed Activity"
+  * name = #"Active or In-progress Activity"
   * use = #out
   * min = 0
   * max = "*"
@@ -55,7 +61,13 @@ Title: "Record Detected Issue Library"
   * max = "*"
   * type = #Task
 * parameter[+]
-  * name = #"Activity Proposal Rejected"
+  * name = #"Do Not Perform Activity Proposal"
+  * use = #out
+  * min = 0
+  * max = "*"
+  * type = #Task
+* parameter[+]
+  * name = #"Rejected Do Not Perform Activity Proposal"
   * use = #out
   * min = 0
   * max = "*"
@@ -70,7 +82,7 @@ Title: "Record Detected Issue Library"
   * type = #Task
   * profile = Canonical(Task)
 * dataRequirement[+]
-  * type = #DetectedIssue
-  * profile = Canonical(DetectedIssue)
+  * type = #Task
+  * profile = Canonical(Task)
 * content
-  * id = "ig-loader-RecordDetectedIssue.cql"
+  * id = "ig-loader-DoNotCollectInformation.cql"

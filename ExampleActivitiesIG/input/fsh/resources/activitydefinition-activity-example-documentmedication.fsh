@@ -6,7 +6,7 @@ Title: "Activity Example Document Medication AD"
 * insert ActivityDefinitionMetadata(activity-example-documentmedication-ad)
 * name = "ActivityExampleDocumentMedicationAD"
 * kind = #Task
-* profile = Canonical(CPGDocumentMedicationTask)
+// * profile = Canonical(CPGDocumentMedicationTask) now corrected to document (vs dispense) in profile, but throwing sushi error d/t dependcy
 * code = $cpg-activity-type-cs#document-medication "Document a medication"
 * intent = #proposal
 * doNotPerform = false

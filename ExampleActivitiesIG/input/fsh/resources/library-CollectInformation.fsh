@@ -1,19 +1,19 @@
-Instance: enrollment-library
+Instance: collectinformation-library
 InstanceOf: Library
 Usage: #example
-Title: "Enrollment Library"
-* description = "Logic for an example recommendation to enroll a patient in a pathway"
+Title: "Collect Information Library"
+* description = "Logic for an example recommendation to collect information"
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-executablelibrary)
-* insert KnowledgeArtifactMetadata(enrollment-library, Library)
+* insert KnowledgeArtifactMetadata(collectinformation-library, Library)
 * insert RelatedFHIRLibraries
-* name = "EnrollmentLibrary"
+* name = "CollectInformationLibrary"
 * type = $library-type#logic-library
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(cpg-activity-type-cs)
+//  * resource = Canonical(cpg-activity-type-cs)
 * parameter[+]
-  * name = #enrollInPathway
+  * name = #collectWithQuestionnaire
   * use = #in
   * min = 0
   * max = "1"
@@ -25,35 +25,17 @@ Title: "Enrollment Library"
   * max = "1"
   * type = #Patient
 * parameter[+]
-  * name = #Tasks
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #Task
-* parameter[+]
-  * name = #EpisodesOfCare
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #EpisodeOfCare
-* parameter[+]
   * name = #"Inclusion Criteria"
   * use = #out
   * min = 0
   * max = "1"
   * type = #boolean
 * parameter[+]
-  * name = #"Enrollment Task"
+  * name = #"Collect Information Task"
   * use = #out
   * min = 0
   * max = "*"
   * type = #Task
-* parameter[+]
-  * name = #Case
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #EpisodeOfCare
 * parameter[+]
   * name = #"Active or Completed Activity"
   * use = #out
@@ -84,17 +66,8 @@ Title: "Enrollment Library"
   * min = 0
   * max = "1"
   * type = #boolean
-* dataRequirement[+]
+* dataRequirement
   * type = #Task
   * profile = Canonical(Task)
-* dataRequirement[+]
-  * type = #EpisodeOfCare
-  * profile = Canonical(EpisodeOfCare)
-* dataRequirement[+]
-  * type = #Task
-  * profile = Canonical(Task)
-* dataRequirement[+]
-  * type = #EpisodeOfCare
-  * profile = Canonical(EpisodeOfCare)
 * content
-  * id = "ig-loader-EnrollPatient.cql"
+  * id = "ig-loader-CollectInformation.cql"

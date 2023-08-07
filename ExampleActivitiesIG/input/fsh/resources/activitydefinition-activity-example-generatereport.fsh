@@ -1,5 +1,5 @@
 Instance: activity-example-generatereport-ad
-InstanceOf: CPGGenerateReportActivity
+InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity
 Usage: #example
 Title: "Activity Example Generate Report AD"
 * description = "Example Activity Definition for a recommendation to generate a report"
