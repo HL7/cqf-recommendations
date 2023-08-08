@@ -1,15 +1,13 @@
 Instance: cpg-servicerequest-activitydefinition
 InstanceOf: ActivityDefinition
 Usage: #example
+Title: "CPG ServiceRequest ActivityDefinition"
+* insert ActivityDefinitionMetadata(cpg-servicerequest-activitydefinition,CPGServiceRequestActivityDefinition)
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-servicerequest-activitydefinition"
-* identifier
-  * use = #official
-  * value = "CPGServiceRequestActivityDefinition"
-* name = "CPGServiceRequestActivityDefinition"
-* title = "CPG ServiceRequest ActivityDefinition"
-
+* description = "Example Activity Definition for a recommendation to request a service"
 * kind = #ServiceRequest
-* profile = Canonical(cpg-servicerequest"
+* profile = Canonical(cpg-servicerequest)
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression

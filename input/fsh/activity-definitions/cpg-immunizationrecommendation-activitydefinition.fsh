@@ -1,10 +1,12 @@
 Instance: cpg-immunizationrecommendation-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGImmunizationActivity
 Usage: #example
 Title: "CPG ImmunizationRecommendation ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-immunizationrecommendation-activitydefinition, CPGImmunizationRecommendationActivityDefinition)
+* description = "Example Activity Definition for a recommendation to recommend an immunization"
 * kind = #ImmunizationRecommendation
 * profile = Canonical(cpg-immunizationrecommendation)
+* doNotPerform = false
 * dynamicValue[+]
   * path = "patient"
   * expression

@@ -1,11 +1,13 @@
 Instance: cpg-generatereport-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGGenerateReportActivity
 Usage: #example
 Title: "CPG Generate Report ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-generatereport-activitydefinition,CPGGenerateReportActivityDefinition)
+* description = "Example Activity Definition for a recommendation to generate a report"
 * kind = #Task
 * profile = Canonical(cpg-generatereporttask)
 * code = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression

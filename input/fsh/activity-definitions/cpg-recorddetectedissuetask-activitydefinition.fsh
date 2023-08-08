@@ -1,13 +1,13 @@
 Instance: cpg-recorddetectedissuetask-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGRecordDetectedIssueActivity
 Usage: #example
 Title: "CPG Record DetectedIssue ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-recorddetectedissuetask-activitydefinition, CPGRecordDetectedIssueTaskActivityDefinition)
+* description = "Example Activity Definition for a recommendation to record a detected issue"
 * kind = #Task
 * profile = Canonical(cpg-recorddetectedissuetask)
-* code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
-* intent = #proposal
-* priority = #urgent
+* code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue record a detected issue"
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression

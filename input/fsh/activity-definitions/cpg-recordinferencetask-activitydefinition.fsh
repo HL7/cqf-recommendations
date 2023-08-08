@@ -1,11 +1,13 @@
 Instance: cpg-recordinferencetask-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGRecordInferenceActivity
 Usage: #example
 Title: "CPG Record Inference ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-recordinferencetask-activitydefinition, CPGRecordInferenceTaskActivityDefinition)
+* description = "Example Activity Definition for a recommendation to record an inference"
 * kind = #Task
 * profile = Canonical(cpg-recordinferencetask)
 * code = $cpg-activity-type-cs#record-inference "Record an inference"
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression

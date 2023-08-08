@@ -1,11 +1,13 @@
 Instance: cpg-collectinformation-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGCollectInformationActivity
 Usage: #example
 Title: "CPG CollectInformation ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-collectinformation-activitydefinition, CPGCollectInformationActivityDefinition)
+* description = "Example Activity Definition for a recommendation to collect information"
 * kind = #Task
 * profile = Canonical(cpg-questionnairetask)
 * code = $cpg-activity-type-cs#collect-information "Collect Information"
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression

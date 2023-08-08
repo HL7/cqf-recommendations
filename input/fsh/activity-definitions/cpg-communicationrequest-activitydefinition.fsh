@@ -1,8 +1,9 @@
 Instance: cpg-communicationrequest-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGCommunicationActivity
 Usage: #example
 Title: "CPG CommunicationRequest ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-communicationrequest-activitydefinition,CPGCommunicationRequestActivityDefinition)
+* description = "Example Activity Definition for a recommendation to send a message"
 * kind = #CommunicationRequest
 * profile = Canonical(cpg-communicationrequest)
 * doNotPerform = false

@@ -117,8 +117,8 @@ RuleSet: OperationExtensions
 RuleSet: ActivityDefinitionMetadata(id, name)
 * identifier
   * use = #official
-  * value = {name}
-* name = "name"
+  * value = "{name}"
+* name = "{name}"
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable

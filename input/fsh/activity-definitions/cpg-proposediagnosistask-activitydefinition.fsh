@@ -1,11 +1,13 @@
 Instance: cpg-proposediagnosistask-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGProposeDiagnosisActivity
 Usage: #example
 Title: "CPG Propose Diagnosis ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-proposediagnosistask-activitydefinition, CPGProposeDiagnosisTaskActivityDefinition)
+* description = "Example Activity Definition for a recommendation to propose a diagnosis"
 * kind = #Task
 * profile = Canonical(cpg-proposediagnosistask)
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression

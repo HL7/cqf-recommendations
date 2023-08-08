@@ -1,11 +1,13 @@
 Instance: cpg-dispensemedication-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGDispenseMedicationActivity
 Usage: #example
 Title: "CPG Dispense Medication ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-dispensemedication-activitydefinition, CPGDispenseMedicationActivityDefinition)
+* description = "Example Activity Definition for a recommendation to dispense a medication"
 * kind = #Task
 * profile = Canonical(cpg-dispensemedicationtask)
 * code = $cpg-activity-type-cs#dispense-medication "Dispense a medication"
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression

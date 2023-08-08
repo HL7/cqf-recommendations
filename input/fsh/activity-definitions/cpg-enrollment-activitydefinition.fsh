@@ -1,11 +1,13 @@
 Instance: cpg-enrollment-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGEnrollmentActivity
 Usage: #example
 Title: "CPG Enrollment ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-enrollment-activitydefinition, CPGEnrollmentActivityDefinition)
+* description = "Example Activity Definition for a recommendation to enroll patient"
 * kind = #Task
 * profile = Canonical(cpg-enrollmenttask)
 * code = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
+* doNotPerform = false
 * dynamicValue[+]
   * path = "status"
   * expression
