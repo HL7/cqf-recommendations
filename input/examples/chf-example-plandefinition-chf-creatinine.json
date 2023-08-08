@@ -33,7 +33,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-creatinine-pd",
-  "name": "CHFCreatinine",
+  "name": "CHFCreatininePD",
   "title": "CHF Creatinine",
   "description": "Monitor creatinine",
   "type": {

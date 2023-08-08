@@ -130,7 +130,7 @@
       }],
       "action": [
         {
-          "id": "urine-out",
+          "id": "urine-out-action",
           "title": "Urine Out",
           "description": "Measure urine output daily",
           "code": [{
@@ -182,7 +182,7 @@
       }],
       "action": [
         {
-          "id": "net-io",
+          "id": "net-io-action",
           "title": "Net IOs",
           "description": "Measure net intake/output daily",
           "code": [{

@@ -33,7 +33,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-o2-sat-pd",
-  "name": "CHFO2Sat",
+  "name": "CHFO2SatPD",
   "title": "CHF Oxygen Saturation",
   "description": "Monitor oxygen saturation",
   "type": {
