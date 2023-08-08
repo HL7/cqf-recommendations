@@ -107,21 +107,21 @@ define function Prescriptions(Orders List<MedicationRequest>):
   Orders O
     let
       // NOTE: Assuming medication is specified as a CodeableConcept with a single RxNorm code
-      rxNormCode: ToCode(O.medication.coding[0]),
+      rxNormCode: ToCode(O.medication.coding[+]),
       medicationName: OMTKLogic.GetMedicationName(rxNormCode),
       // NOTE: Assuming a single dosage instruction element
-      dosageInstruction: O.dosageInstruction[0],
+      dosageInstruction: O.dosageInstruction[+],
       repeat: dosageInstruction.timing.repeat,
       frequency: Coalesce(repeat.frequencyMax.value, repeat.frequency.value),
       period: System.Quantity { value: repeat.period.value, unit: repeat.periodUnit.value },
       doseDescription:
         Coalesce(
           // There should be a conversion from FHIR.SimpleQuantity to System.Quantity
-          if dosageInstruction.doseAndRate[0].dose is FHIR.Range
-            then ToString(ToQuantity(dosageInstruction.doseAndRate[0].dose.low))
-                          + '-' + ToString(ToQuantity(dosageInstruction.doseAndRate[0].dose.high))
-                          + dosageInstruction.doseAndRate[0].dose.high.unit.value
-            else ToString(ToQuantity(dosageInstruction.doseAndRate[0].dose)),
+          if dosageInstruction.doseAndRate[+].dose is FHIR.Range
+            then ToString(ToQuantity(dosageInstruction.doseAndRate[+].dose.low))
+                          + '-' + ToString(ToQuantity(dosageInstruction.doseAndRate[+].dose.high))
+                          + dosageInstruction.doseAndRate[+].dose.high.unit.value
+            else ToString(ToQuantity(dosageInstruction.doseAndRate[+].dose)),
             ''
         ),
       frequencyDescription:
@@ -142,9 +142,9 @@ define function Prescriptions(Orders List<MedicationRequest>):
           // TODO: Shouldn't need the .value here on asNeededBoolean
           medicationName + ' ' + doseDescription + ' q' + frequencyDescription + (if dosageInstruction.asNeeded.value then ' PRN' else ''),
       // TODO: Shouldn't need the ToQuantity here...
-      dose: if dosageInstruction.doseAndRate[0].dose is FHIR.Range
-            then ToQuantity(dosageInstruction.doseAndRate[0].dose.high)
-            else ToQuantity(dosageInstruction.doseAndRate[0].dose),
+      dose: if dosageInstruction.doseAndRate[+].dose is FHIR.Range
+            then ToQuantity(dosageInstruction.doseAndRate[+].dose.high)
+            else ToQuantity(dosageInstruction.doseAndRate[+].dose),
       dosesPerDay: Coalesce(OMTKLogic.ToDaily(frequency, period), 1.0)
     }
 
@@ -170,9 +170,9 @@ define function TotalMME(prescriptions List<MedicationRequest>):
 define function ProbableDaysInRange(Orders List<MedicationRequest>, daysPast Integer, numDaysInDaysPast Integer):
   Orders orders
     let
-      frequency: orders.dosageInstruction[0].timing.repeat.frequency.value,
-      period: orders.dosageInstruction[0].timing.repeat.period.value,
-      periodDays: GetPeriodDays(orders.dosageInstruction[0].timing.repeat.periodUnit.value),
+      frequency: orders.dosageInstruction[+].timing.repeat.frequency.value,
+      period: orders.dosageInstruction[+].timing.repeat.period.value,
+      periodDays: GetPeriodDays(orders.dosageInstruction[+].timing.repeat.periodUnit.value),
       dosesPerDay:
         if (frequency / (period * periodDays)) >= 1.0
         then 1.0

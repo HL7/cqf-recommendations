@@ -37,7 +37,6 @@ RuleSet: QuestionnaireMetadata(id)
 * experimental = true
 
 RuleSet: ActivityDefinitionMetadata(id)
-* meta.profile = $cpg-computableactivity
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable
@@ -53,7 +52,6 @@ RuleSet: ActivityDefinitionMetadata(id)
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * intent = #proposal
-* experimental = true
 * status = #draft
 * publisher = "HL7 International - Clinical Decision Support WG"
 * version = "1.0.0"

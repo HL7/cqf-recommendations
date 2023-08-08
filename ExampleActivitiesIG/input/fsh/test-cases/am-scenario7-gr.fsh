@@ -10,7 +10,7 @@ Usage: #example
 Instance: output
 InstanceOf: Parameters
 Usage: #inline
-* parameter[0]
+* parameter[+]
   * name = "Inclusion Criteria"
   * valueBoolean = true
 * parameter[+]
