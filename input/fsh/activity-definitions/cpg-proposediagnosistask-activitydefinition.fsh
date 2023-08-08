@@ -1,5 +1,5 @@
 Instance: cpg-proposediagnosistask-activitydefinition
-InstanceOf: CPGProposeDiagnosisActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Propose Diagnosis ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-proposediagnosistask-activitydefinition, CPGProposeDiagnosisTaskActivityDefinition)

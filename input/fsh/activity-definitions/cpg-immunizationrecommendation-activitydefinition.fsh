@@ -1,5 +1,5 @@
 Instance: cpg-immunizationrecommendation-activitydefinition
-InstanceOf: CPGImmunizationActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG ImmunizationRecommendation ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-immunizationrecommendation-activitydefinition, CPGImmunizationRecommendationActivityDefinition)

@@ -1,5 +1,5 @@
 Instance: cpg-generatereport-activitydefinition
-InstanceOf: CPGGenerateReportActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Generate Report ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-generatereport-activitydefinition,CPGGenerateReportActivityDefinition)

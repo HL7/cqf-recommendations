@@ -1,5 +1,5 @@
 Instance: cpg-dispensemedication-activitydefinition
-InstanceOf: CPGDispenseMedicationActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Dispense Medication ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-dispensemedication-activitydefinition, CPGDispenseMedicationActivityDefinition)

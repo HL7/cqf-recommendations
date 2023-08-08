@@ -1,5 +1,5 @@
 Instance: cpg-recorddetectedissuetask-activitydefinition
-InstanceOf: CPGRecordDetectedIssueActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Record DetectedIssue ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-recorddetectedissuetask-activitydefinition, CPGRecordDetectedIssueTaskActivityDefinition)

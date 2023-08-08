@@ -1,5 +1,5 @@
 Instance: cpg-medicationrequest-activitydefinition
-InstanceOf: CPGMedicationRequestActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 * insert ActivityDefinitionMetadata(cpg-medicationrequest-activitydefinition,CPGMedicationRequestActivityDefinition)
 * title = "CPG MedicationRequest ActivityDefinition"

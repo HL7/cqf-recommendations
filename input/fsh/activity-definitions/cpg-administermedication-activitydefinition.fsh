@@ -1,5 +1,5 @@
 Instance: cpg-administermedication-activitydefinition
-InstanceOf:  CPGAdministerMedicationActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Administer Medication ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-administermedication-activitydefinition, CPGAdministerMedicationActivityDefinition)

@@ -17,7 +17,6 @@ Alias: $cpg-casefeature-type-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-
 Alias: $cpg-caseFeatureOf = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf
 Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
 Alias: $cpg-common-patient-summary-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary
-Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-vs
 Alias: $cpg-common-process-codesystem = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
 Alias: $cpg-common-process-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process-vs
 Alias: $cpg-communicationRequest = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
@@ -92,3 +91,6 @@ Alias: $valueset-keyWord = http://hl7.org/fhir/StructureDefinition/valueset-keyW
 Alias: $valueset-rules-text = http://hl7.org/fhir/StructureDefinition/valueset-rules-text
 Alias: $valueset-sourceReference = http://hl7.org/fhir/StructureDefinition/valueset-sourceReference
 Alias: $workflow-instantiatesCanonical = http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
+
+Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
+Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona

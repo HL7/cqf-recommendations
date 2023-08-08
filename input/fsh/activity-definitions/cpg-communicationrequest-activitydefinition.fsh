@@ -1,5 +1,5 @@
 Instance: cpg-communicationrequest-activitydefinition
-InstanceOf: CPGCommunicationActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG CommunicationRequest ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-communicationrequest-activitydefinition,CPGCommunicationRequestActivityDefinition)

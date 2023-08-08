@@ -1,5 +1,5 @@
 Instance: cpg-reportflagtask-activitydefinition
-InstanceOf: CPGReportFlagActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Report Flag ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-reportflagtask-activitydefinition, CPGReportFlagTaskActivityDefinition)

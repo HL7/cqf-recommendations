@@ -4,7 +4,6 @@ Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-cli
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
 Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
-Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-vs
 Alias: $cpg-common-process-codesystem = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
 Alias: $cpg-computableactivity = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity
 Alias: $cpg-enrollIn = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn

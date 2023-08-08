@@ -1,5 +1,5 @@
 Instance: cpg-recordinferencetask-activitydefinition
-InstanceOf: CPGRecordInferenceActivity
+InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Record Inference ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-recordinferencetask-activitydefinition, CPGRecordInferenceTaskActivityDefinition)
