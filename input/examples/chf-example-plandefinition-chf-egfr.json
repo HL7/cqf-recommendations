@@ -33,7 +33,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-egfr-pd",
-  "name": "CHFEGFR",
+  "name": "CHFEGFRPD",
   "title": "CHF eGFR",
   "description": "Monitor eGFR",
   "type": {
