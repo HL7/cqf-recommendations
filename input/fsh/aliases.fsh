@@ -91,6 +91,3 @@ Alias: $valueset-keyWord = http://hl7.org/fhir/StructureDefinition/valueset-keyW
 Alias: $valueset-rules-text = http://hl7.org/fhir/StructureDefinition/valueset-rules-text
 Alias: $valueset-sourceReference = http://hl7.org/fhir/StructureDefinition/valueset-sourceReference
 Alias: $workflow-instantiatesCanonical = http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical
-
-Alias: $cpg-common-process = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process
-Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona

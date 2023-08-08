@@ -5,15 +5,15 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * start = #Patient
-* profile = "http://http://fhir.org/guides/who/anc-cds/ancpatient"
-* link[0]
+* profile = $anc-patient
+* link[+]
   * min = 0
   * max = "*"
   * description = "Encounters"
   * target
     * type = #Encounter
     * params = "patient={ref}"
-    * profile = "http://fhir.org/guides/who/anc-cds/ancencounter"
+    * profile = $anc-encounter
 * link[+]
   * min = 0
   * max = "*"
@@ -21,4 +21,4 @@ Usage: #definition
   * target
     * type = #Observation
     * params = "patient={ref}"
-    * profile = "http://fhir.org/guides/who/anc-cds/StructureDefinition/lmpobservation"
+    * profile = $anc-lmpobservation

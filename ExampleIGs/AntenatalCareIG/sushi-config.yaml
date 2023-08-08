@@ -3,28 +3,28 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.example
-canonical: http://example.org
-name: AntenatalCareIG
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+id: hl7.fhir.uv.cpg.antenatalcare
+canonical: http://fhir.org/guides/who/anc-cds
+name: CPGAntenatalCareExamples
+title: CPG Antenatal Care Examples
+description: Examples of CPG computable content from the WHO Antenatal Care Guidelines
 status: active # draft | active | retired | unknown
 version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 publisher:
-  name: Example Publisher
-  url: http://example.org/example-publisher
+  name: HL7 International - Clinical Decision Support WG
+  url: http://www.hl7.org/Special/committees/dss/index.cfm
   # email: test@example.org
-
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
+dependencies:
+  hl7.fhir.uv.cpg: dev
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -62,9 +62,14 @@ publisher:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
-#   excludettl: true
-#   validation: [allow-any-extensions, no-broken-links]
+parameters:
+  apply-copyright: true
+  apply-contact: true
+  apply-license: true
+  apply-publisher: true
+  apply-version: true
+  apply-jurisdiction: true
+  path-binary: ./input/cql
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
