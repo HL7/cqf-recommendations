@@ -1,6 +1,7 @@
 Instance: gr-scenario4
 InstanceOf: MeasureReport
 Usage: #example
+Description: "Example test case"
 * status = #complete
 * type = #individual
 * measure = Canonical(activity-example-generatereport-measure)

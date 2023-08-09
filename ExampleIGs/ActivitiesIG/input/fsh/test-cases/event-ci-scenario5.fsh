@@ -1,6 +1,7 @@
 Instance: event-ci-scenario5
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * basedOn = Reference(request-ci-scenario5)
 * status = #completed

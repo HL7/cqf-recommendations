@@ -1,6 +1,7 @@
 Instance: am-scenario7
 InstanceOf: MedicationAdministration
 Usage: #example
+Description: "Example test case"
 * status = #not-done
 * medicationCodeableConcept = $sct#333919005 "Fentanyl 25micrograms/hour patch (product)"
 * subject = Reference(am-scenario7-patient)

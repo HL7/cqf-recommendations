@@ -1,6 +1,7 @@
 Instance: dm-scenario4
 InstanceOf: MedicationDispense
 Usage: #example
+Description: "Example test case"
 * status = #completed
 * medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package)"
 * subject = Reference(dm-scenario4-patient)

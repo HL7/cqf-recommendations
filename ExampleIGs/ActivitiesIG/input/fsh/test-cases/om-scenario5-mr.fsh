@@ -1,6 +1,7 @@
 Instance: om-scenario5-mr
 InstanceOf: MedicationRequest
 Usage: #example
+Description: "Example test case"
 * status = #completed
 * intent = #proposal
 * priority = #routine

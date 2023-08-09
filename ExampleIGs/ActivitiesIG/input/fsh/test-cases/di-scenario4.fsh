@@ -1,6 +1,7 @@
 Instance: di-scenario4
 InstanceOf: DetectedIssue
 Usage: #example
+Description: "Example test case"
 * status = #final
 * code = $v3-ActCode#TIME "timing detected issue"
 * severity = #high

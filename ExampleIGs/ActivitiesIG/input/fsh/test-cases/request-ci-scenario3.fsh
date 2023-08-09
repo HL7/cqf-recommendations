@@ -1,6 +1,7 @@
 Instance: request-ci-scenario3
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #rejected
 * intent = #proposal

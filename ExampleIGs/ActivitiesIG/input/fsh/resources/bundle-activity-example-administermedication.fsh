@@ -22,6 +22,7 @@ Usage: #inline
 * insert Profile(cpg-assetcollection)
 * insert KnowledgeArtifactMetadata(activity-example-administermedication-1, Library)
 * insert RelatedFHIRLibraries
+* description = "Asset collection of artifacts in the Administer Medication activity example"
 * id = "activity-example-administermedication-1"
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example - Administer Medication Collection"
@@ -137,11 +138,13 @@ Usage: #inline
 Instance: Inline-Instance-for-activity-example-administermedication-2
 InstanceOf: PlanDefinition
 Usage: #inline
-* id = "activity-example-administermedication-2"
 * insert PDRecommendationMetadata(activity-example-administermedication-2)
+* id = "activity-example-administermedication-2"
+* description = "Logic for an example recommendation to administer a medication"
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example Administer Medication"
 * status = #draft
+* version = "1.0.0"
 * description = "Example Plan Definition for a recommendation to administer a medication"
 * type = $plan-definition-type#eca-rule
 * experimental = true

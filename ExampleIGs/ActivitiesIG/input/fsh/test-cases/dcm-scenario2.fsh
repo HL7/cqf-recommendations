@@ -1,6 +1,7 @@
 Instance: dcm-scenario2
 InstanceOf: MedicationRequest
 Usage: #example
+Description: "Example test case"
 * status = #active
 * intent = #order
 * priority = #routine

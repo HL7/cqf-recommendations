@@ -1,6 +1,7 @@
 Instance: request-dcm-scenario5
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-documentmedication-ad)
 * status = #completed
 * intent = #order

@@ -1,6 +1,7 @@
 Instance: stop-dnsm-scenario5
 InstanceOf: CommunicationRequest
 Usage: #example
+Description: "Example test case"
 * extension[workflow-instantiatesCanonical].valueCanonical = Canonical(activity-example-donotsendmessage-ad)
 * status = #draft
 * doNotPerform = true

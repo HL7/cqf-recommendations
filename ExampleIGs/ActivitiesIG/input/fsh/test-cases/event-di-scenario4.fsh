@@ -1,6 +1,7 @@
 Instance: event-di-scenario4
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = detected-issue
 * instantiatesCanonical = Canonical(activity-example-recorddetectedissue-ad)
 * status = #completed

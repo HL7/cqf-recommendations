@@ -1,6 +1,7 @@
 Instance: request-ep-scenario2
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-enrollment-ad)
 * status = #draft
 * intent = #proposal

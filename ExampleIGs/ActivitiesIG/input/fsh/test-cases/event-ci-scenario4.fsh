@@ -1,6 +1,7 @@
 Instance: event-ci-scenario4
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #completed
 * intent = #order

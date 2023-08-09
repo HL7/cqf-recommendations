@@ -1,6 +1,7 @@
 Instance: request-rf-scenario2
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = Inline-Instance-for-request-rf-scenario2
 * instantiatesCanonical = Canonical(activity-example-reportflag-ad)
 * status = #draft

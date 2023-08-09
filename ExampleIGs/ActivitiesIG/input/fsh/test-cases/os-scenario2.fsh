@@ -1,6 +1,7 @@
 Instance: os-scenario2
 InstanceOf: ServiceRequest
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-orderservice-ad)
 * status = #active
 * intent = #proposal

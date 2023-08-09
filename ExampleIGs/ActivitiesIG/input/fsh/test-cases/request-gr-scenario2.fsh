@@ -1,6 +1,7 @@
 Instance: request-gr-scenario2
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-generatereport-ad)
 * status = #draft
 * intent = #proposal

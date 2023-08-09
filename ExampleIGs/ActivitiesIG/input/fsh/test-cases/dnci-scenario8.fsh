@@ -1,6 +1,7 @@
 Instance: dnci-scenario8
 InstanceOf: QuestionnaireResponse
 Usage: #example
+Description: "Example test case"
 * questionnaire = Canonical(activity-example-collectinformation-questionnaire)
 * status = #completed
 * subject = Reference(dnci-scenario8-patient)

@@ -1,6 +1,7 @@
 Instance: request-dm-scenario3
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-dispensemedication-ad)
 * status = #in-progress
 * intent = #order

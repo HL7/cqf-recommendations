@@ -1,6 +1,7 @@
 Instance: request-dnci-scenario6
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #ready
 * intent = #order

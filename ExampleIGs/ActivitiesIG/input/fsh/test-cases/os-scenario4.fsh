@@ -1,6 +1,7 @@
 Instance: os-scenario4
 InstanceOf: Procedure
 Usage: #example
+Description: "Example test case"
 * status = #completed
 * category = $sct#386053000 "Evaluation procedure (procedure)"
   * text = "Evaluation"

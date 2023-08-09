@@ -1,6 +1,7 @@
 Instance: request-inf-scenario2
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = Inline-Instance-for-request-inf-scenario2
 * instantiatesCanonical = Canonical(activity-example-recordinference-ad)
 * status = #draft

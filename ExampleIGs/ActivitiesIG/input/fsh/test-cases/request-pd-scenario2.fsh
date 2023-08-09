@@ -1,6 +1,7 @@
 Instance: request-pd-scenario2
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = Inline-Instance-for-request-pd-scenario2
 * instantiatesCanonical = Canonical(activity-example-proposediagnosis-ad)
 * status = #draft

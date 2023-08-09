@@ -1,6 +1,7 @@
 Instance: event-rf-scenario4
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = flag
 * instantiatesCanonical = Canonical(activity-example-reportflag-ad)
 * status = #completed

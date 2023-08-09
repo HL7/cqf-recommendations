@@ -1,6 +1,7 @@
 Instance: request-am-scenario3
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-administermedication-ad)
 * status = #in-progress
 * intent = #order

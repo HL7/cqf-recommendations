@@ -1,6 +1,7 @@
 Instance: am-scenario7-gr
 InstanceOf: GuidanceResponse
 Usage: #example
+Description: "Example test case"
 * contained = output
 * moduleCanonical = "http://hl7.org/fhir/uv/cpg/Library/administermedication-library"
 * status = #success

@@ -1,6 +1,7 @@
 Instance: ep-scenario4-condition
 InstanceOf: Condition
 Usage: #example
+Description: "Example test case"
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $condition-category#problem-list-item

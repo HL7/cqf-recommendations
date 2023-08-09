@@ -1,6 +1,7 @@
 Instance: om-scenario6-patient
 InstanceOf: Patient
 Usage: #example
+Description: "Example test case"
 * active = true
 * name
   * use = #usual

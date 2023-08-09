@@ -1,6 +1,7 @@
 Instance: request-dnci-scenario3
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * modifierExtension
   * url = "http://hl7.org/fhir/StructureDefinition/request-doNotPerform"
   * valueBoolean = true

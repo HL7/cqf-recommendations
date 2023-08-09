@@ -1,6 +1,7 @@
 Instance: request-stop-dnci-scenario6
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * modifierExtension[request-doNotPerform].valueBoolean = true
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #rejected

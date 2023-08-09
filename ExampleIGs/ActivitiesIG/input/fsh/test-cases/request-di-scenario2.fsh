@@ -1,6 +1,7 @@
 Instance: request-di-scenario2
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = Inline-Instance-for-request-di-scenario2
 * instantiatesCanonical = Canonical(activity-example-recorddetectedissue-ad)
 * status = #draft

@@ -1,6 +1,7 @@
 Instance: sm-scenario3
 InstanceOf: CommunicationRequest
 Usage: #example
+Description: "Example test case"
 * extension[workflow-instantiatesCanonical].valueCanonical = Canonical(activity-example-sendmessage-ad)
 * status = #revoked
 * statusReason.text = "Patient refused"

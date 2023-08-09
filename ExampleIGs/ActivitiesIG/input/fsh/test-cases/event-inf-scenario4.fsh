@@ -1,6 +1,7 @@
 Instance: event-inf-scenario4
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = inference
 * instantiatesCanonical = Canonical(activity-example-recordinference-ad)
 * status = #completed

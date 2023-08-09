@@ -1,6 +1,7 @@
 Instance: ri-scenario2
 InstanceOf: ImmunizationRecommendation
 Usage: #example
+Description: "Example test case"
 * extension[workflow-instantiatesCanonical].valueCanonical = Canonical(activity-example-recommendimmunization-ad)
 * patient = Reference(ri-scenario2-patient)
 * date = "2020-12-22"

@@ -1,6 +1,7 @@
 Instance: am-scenario3
 InstanceOf: MedicationRequest
 Usage: #example
+Description: "Example test case"
 * status = #active
 * intent = #order
 * priority = #routine

@@ -1,6 +1,7 @@
 Instance: event-pd-scenario4
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * contained = proposed-diagnosis
 * instantiatesCanonical = Canonical(activity-example-proposediagnosis-ad)
 * status = #completed

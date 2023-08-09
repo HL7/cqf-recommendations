@@ -1,6 +1,7 @@
 Instance: request-dcm-scenario7
 InstanceOf: Task
 Usage: #example
+Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-documentmedication-ad)
 * status = #draft
 * intent = #proposal
