@@ -51,6 +51,3 @@ define "38 weeks gestation":
 
 define "40 weeks gestation":
 	"Gestational Age in Weeks" = 40
-
-define "Start of Current Pregnancy":
-// current date - age in weeks

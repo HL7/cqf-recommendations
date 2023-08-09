@@ -54,3 +54,11 @@ RuleSet: QuestionnaireMetadata(id)
 * url = "http://fhir.org/guides/who/anc-cds/Questionnaire/{id}"
 * status = #active
 
+RuleSet: GraphDefinitionMetadata(id) // QA warning: The resource needed to modified during loading to apply common headers contact, jurisdiction, publisher=HL7 International - Clinical Decision Support WG, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+* url = "http://fhir.org/guides/who/anc-cds/GraphDefinition/{id}"
+* status = #active
+* version = "1.0.0"
+* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+* publisher = "HL7 International - Clinical Decision Support WG"
+* experimental = true
+
