@@ -3,10 +3,11 @@ InstanceOf: PlanDefinition
 Usage: #example
 Title: "PlanDefinition - WHO ANC Guideline Contact Schedule"
 * insert PlanDefinitionMetadata(anc-contact-schedule, ANCContactSchedule)
+* description = "Example of a Plan Definition Pathway based on the recommended ANC contact schedule"
 * type = $plan-definition-type#clinical-protocol "Clinical Protocol"
 * useContext
   * code = $usage-context-type#focus
-  * valueCodeableConcept = $sct#77386006 "Pregnant (finding)"
+  * valueCodeableConcept = $sct#77386006 "Pregnancy (finding)"
 * library = Canonical(ANCCommon)
 * action[+]
   * title = "Contact 1"

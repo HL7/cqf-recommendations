@@ -12,6 +12,7 @@ Alias: $cpg-common-registration = http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-
 Alias: $cpg-itemImage = http://hl7.org/fhir/uv/cpg/Extension/cpg-itemImage
 Alias: $cpg-knowledgeCapability = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability
 Alias: $cpg-knowledgeRepresentationLevel = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel
+Alias: $cpg-publishable-codesystem = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem
 Alias: $cpg-publishable-valueset = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset
 Alias: $anc-reason-for-visit-image = http://example.org/images/reason-for-visit.png
 Alias: $anc-reason-for-visit-routine-image = http://example.org/images/reason-for-visit-routine.png
@@ -19,3 +20,4 @@ Alias: $anc-reason-for-visit-specific-complaint-image = http://example.org/image
 Alias: $anc-reason-for-visit-first-image = http://example.org/images/reason-for-visit-first.png
 Alias: $anc-reason-for-visit-follow-up-image = http://example.org/images/reason-for-visit-follow-up.png
 Alias: $anc-reason-for-visit-include-family-member-image = http://example.org/images/reason-for-visit-include-family-member.png
+

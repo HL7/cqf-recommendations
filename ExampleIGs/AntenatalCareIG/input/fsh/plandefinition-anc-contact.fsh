@@ -3,10 +3,11 @@ InstanceOf: PlanDefinition
 Usage: #example
 Title: "PlanDefinition - WHO ANC Guideline Contact"
 * insert PlanDefinitionMetadata(anc-contact, ANCContact)
+* description = "Example of Plan Definition Strategy for an ANC Contact"
 * type = $plan-definition-type#workflow-definition "Workflow Definition"
 * useContext
   * code = $usage-context-type#focus
-  * valueCodeableConcept = $sct#77386006 "Pregnant (finding)"
+  * valueCodeableConcept = $sct#77386006 "Pregnancy (finding)"
 * action[+]
   * title = "Registration"
   * code = $cpg-common-process-cs#registration

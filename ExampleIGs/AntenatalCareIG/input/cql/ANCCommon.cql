@@ -4,7 +4,7 @@ using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 
-codesystem OpenMRSEntity: 'http://openmrs.org/concepts'
+codesystem OpenMRSEntity: 'httcp://openmrs.org/concepts'
 
 valueset "Active Condition": 'http://hl7.org/fhir/uv/cpg/ValueSet/cpg-active-condition-vs'
 
@@ -51,3 +51,6 @@ define "38 weeks gestation":
 
 define "40 weeks gestation":
 	"Gestational Age in Weeks" = 40
+
+define "Start of Current Pregnancy":
+// current date - age in weeks

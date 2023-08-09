@@ -8,7 +8,7 @@ RuleSet: CodeSystemMetadata(id-prefix)
 * ^extension[=].valueCode = #publishable
 * ^extension[+].url = $cpg-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
-* ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/{id-prefix}-cs"
+* ^url = "http://fhir.org/guides/who/anc-cds/CodeSystem/{id-prefix}-cs"
 * ^experimental = true
 * ^content = #complete
 * ^caseSensitive = true
@@ -24,16 +24,16 @@ RuleSet: ValueSetMetadata(id)
 * ^extension[=].valueCode = #publishable
 * ^extension[+].url = $cpg-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
-* ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
+* ^url = "http://fhir.org/guides/who/anc-cds/ValueSet/{id}"
 * ^status = #active
 * ^experimental = false
 
 RuleSet: LibraryMetaData(id)
-* url = "http://fhir.org/guides/who/anc/Library/{id}"
+* url = "http://fhir.org/guides/who/anc-cds/Library/{id}"
 * identifier
   * use = #official
   * value = "{id}"
-* name = "id"
+* name = "{id}"
 * status = #active
 * experimental = true
 * publisher = "World Health Organization (WHO)"
@@ -46,11 +46,11 @@ RuleSet: PlanDefinitionMetadata(id, name)
   * use = #official
   * value = "{name}"
 * name = "{name}"
-* status = #draft
+* status = #active
 * experimental = true
 * copyright = "© WHO 2019+."
 
 RuleSet: QuestionnaireMetadata(id)
 * url = "http://fhir.org/guides/who/anc-cds/Questionnaire/{id}"
-* status = #draft
+* status = #active
 

@@ -3,6 +3,7 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Questionnaire - ANC Quick Check"
 * insert QuestionnaireMetadata(anc-quick-check)
+* description = "Example of a Questionnaire for an ANC Quick Check"
 * name = "ANCQuickCheck"
 * subjectType = #Patient
 * item

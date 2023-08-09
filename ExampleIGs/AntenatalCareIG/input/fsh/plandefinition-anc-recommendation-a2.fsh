@@ -3,6 +3,7 @@ InstanceOf: PlanDefinition
 Usage: #example
 Title: "PlanDefinition - WHO ANC Guideline Recommendation #A2"
 * insert PlanDefinitionMetadata(anc-recommendation-a2, Recommendation_A2)
+* description = "Example of a Plan Definition for ANC Recommendation A2.1"
 * type = $plan-definition-type#eca-rule "ECA Rule"
 * library = Canonical(ANCRecommendationA2)
 * action

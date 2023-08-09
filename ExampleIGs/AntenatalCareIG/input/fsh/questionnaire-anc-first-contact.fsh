@@ -3,6 +3,7 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Questionnaire - ANC First Contact"
 * insert QuestionnaireMetadata(anc-first-contact)
+* description = "Example of a Questionnaire for first ANC contact"
 * name = "ANCFirstContact"
 * subjectType = #Patient
 * item[+]

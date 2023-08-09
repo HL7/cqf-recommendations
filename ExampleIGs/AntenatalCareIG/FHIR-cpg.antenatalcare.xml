@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="cds" url="http://fhir.org/guides/who/anc-cds">
+<version code="current" url=""/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/anc-reason-for-visit-cs" key="CodeSystem-anc-reason-for-visit-cs" name="CodeSystem - ANC Reason for Visit"/>
+<artifact id="PlanDefinition/anc-contact" key="PlanDefinition-anc-contact" name="PlanDefinition - WHO ANC Guideline Contact"/>
+<artifact id="PlanDefinition/anc-contact-schedule" key="PlanDefinition-anc-contact-schedule" name="PlanDefinition - WHO ANC Guideline Contact Schedule"/>
+<artifact id="PlanDefinition/anc-recommendation-a2" key="PlanDefinition-anc-recommendation-a2" name="PlanDefinition - WHO ANC Guideline Recommendation #A2"/>
+<artifact id="Questionnaire/anc-every-contact" key="Questionnaire-anc-every-contact" name="Questionnaire - ANC Every Contact"/>
+<artifact id="Questionnaire/anc-first-contact" key="Questionnaire-anc-first-contact" name="Questionnaire - ANC First Contact"/>
+<artifact id="Questionnaire/anc-quick-check" key="Questionnaire-anc-quick-check" name="Questionnaire - ANC Quick Check"/>
+<artifact id="ValueSet/anc-reason-for-visit-vs" key="ValueSet-anc-reason-for-visit-vs" name="ValueSet - ANC Reason for Visit"/>
+<artifact id="Library/ANCCommon" key="Library-ANCCommon" name="WHO Antenatal Care Guidelines Common Logic"/>
+<artifact id="Library/ANCRecommendationA2" key="Library-ANCRecommendationA2" name="WHO Antenatal Care Guidelines Logic for recommendation #A2"/>
+<artifact id="GraphDefinition/anc-summary" key="GraphDefinition-anc-summary" name="anc-summary"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="index" name="Home"/>
+<page key="toc" name="Table of Contents"/>
+</specification>

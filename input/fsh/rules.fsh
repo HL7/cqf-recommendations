@@ -70,15 +70,15 @@ RuleSet: ActivityDefinitionMetadata(id, name)
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * intent = #proposal
 * experimental = false
-* status = #draft
+* status = #active
 * priority = #routine
 * publisher = "HL7 International - Clinical Decision Support WG"
 * version = "1.0.0"
 
 RuleSet: PlanDefinitionMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
-* status = #draft
+* status = #active
 
 RuleSet: QuestionnaireMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/Questionnaire/{id}"
-* status = #draft
+* status = #active

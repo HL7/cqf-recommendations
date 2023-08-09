@@ -6,7 +6,7 @@ Title: "WHO Antenatal Care Guidelines Logic for recommendation #A2"
 * description = "Decision Support Logic for use in ANC Recommendation A2"
 * useContext
   * code = $usage-context-type#focus
-  * valueCodeableConcept = $sct#77386006 "Pregnant (finding)"
+  * valueCodeableConcept = $sct#77386006 "Pregnancy (finding)"
 * topic.text = "Pregnancy"
 * relatedArtifact[+]
   * type = #documentation
