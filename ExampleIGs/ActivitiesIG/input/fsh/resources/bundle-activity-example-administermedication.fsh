@@ -1,6 +1,7 @@
 Instance: activity-example-administermedication-bundle
 InstanceOf: Bundle
 Usage: #example
+Description: "Example of a bundle for administering a medication"
 * type = #collection
 * entry[+]
   * fullUrl = "http://example.org/Library/activity-example-administermedication-1"
@@ -145,6 +146,7 @@ Usage: #inline
 * title = "Activity Example Administer Medication"
 * status = #draft
 * version = "1.0.0"
+* publisher = "HL7 International - Clinical Decision Support WG"
 * description = "Example Plan Definition for a recommendation to administer a medication"
 * type = $plan-definition-type#eca-rule
 * experimental = true
@@ -162,6 +164,7 @@ Usage: #inline
 Instance: am-scenario7-inline-bundle
 InstanceOf: Bundle
 Usage: #inline
+Description: "Test Case Bundle"
 * type = #collection
 * entry[+]
   * fullUrl = "http://example.org/GuidanceResponse/am-scenario7-1"
