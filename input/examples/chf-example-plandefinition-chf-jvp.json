@@ -33,7 +33,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-jvp-pd",
-  "name": "CHFJVP",
+  "name": "CHFJVPPD",
   "title": "CHF Jugular Venous Pressure",
   "description": "Measure jugular venous pressure",
   "type": {

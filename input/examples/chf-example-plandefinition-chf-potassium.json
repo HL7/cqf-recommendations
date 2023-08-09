@@ -33,7 +33,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-potassium-pd",
-  "name": "CHFPotassium",
+  "name": "CHFPotassiumPD",
   "title": "CHF Potassium",
   "description": "Monitor potassium",
   "type": {
