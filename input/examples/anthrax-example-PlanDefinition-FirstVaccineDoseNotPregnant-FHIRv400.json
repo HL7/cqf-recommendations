@@ -76,7 +76,7 @@
           {
             "system": "http://hl7.org/fhir/sid/icd-10-cm",
             "code": "Z20.810",
-            "display": "Exposure to Anthrax"
+            "display": "Contact with and (suspected) exposure to anthrax"
           }
         ]
       }
@@ -179,7 +179,7 @@
                     {
                       "system": "http://hl7.org/fhir/sid/icd-10-cm",
                       "code": "Z20.810",
-                      "display": "Exposure to Anthrax"
+                      "display": "Contact with and (suspected) exposure to anthrax"
                     },
                     {
                       "system": "http://snomed.info/sct",
@@ -204,7 +204,7 @@
                     {
                       "system": "http://hl7.org/fhir/sid/icd-10-cm",
                       "code": "Z20.810",
-                      "display": "Exposure to Anthrax"
+                      "display": "Contact with and (suspected) exposure to anthrax"
                     },
                     {
                       "system": "http://snomed.info/sct",
@@ -395,7 +395,7 @@
               {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
                 "code": "Z20.810",
-                "display": "Exposure to Anthrax"
+                "display": "Contact with and (suspected) exposure to anthrax"
               }
             ]
           }
@@ -479,7 +479,7 @@
       },
       "quantity": {
         "value": 120,
-        "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
         "code": "ORTAB"
       },
       "dosage": [
@@ -589,7 +589,7 @@
               {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
                 "code": "Z20.810",
-                "display": "Exposure to Anthrax"
+                "display": "Contact with and (suspected) exposure to anthrax"
               }
             ]
           }
@@ -673,7 +673,7 @@
       },
       "quantity": {
         "value": 120,
-        "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
         "code": "ORTAB"
       },
       "dosage": [
@@ -780,7 +780,7 @@
               {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
                 "code": "Z20.810",
-                "display": "Exposure to Anthrax"
+                "display": "Contact with and (suspected) exposure to anthrax"
               }
             ]
           }
@@ -864,7 +864,7 @@
       },
       "quantity": {
         "value": 60,
-        "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
         "code": "ORTAB"
       },
       "dosage": [
@@ -967,7 +967,7 @@
               {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
                 "code": "Z20.810",
-                "display": "Exposure to Anthrax"
+                "display": "Contact with and (suspected) exposure to anthrax"
               }
             ]
           }
@@ -1051,7 +1051,7 @@
       },
       "quantity": {
         "value": 60,
-        "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
         "code": "ORTAB"
       },
       "dosage": [
@@ -1154,7 +1154,7 @@
               {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
                 "code": "Z20.810",
-                "display": "Exposure to Anthrax"
+                "display": "Contact with and (suspected) exposure to anthrax"
               }
             ]
           }
@@ -1238,7 +1238,7 @@
       },
       "quantity": {
         "value": 360,
-        "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
         "code": "ORTAB"
       },
       "dosage": [
@@ -1341,7 +1341,7 @@
               {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
                 "code": "Z20.810",
-                "display": "Exposure to Anthrax"
+                "display": "Contact with and (suspected) exposure to anthrax"
               }
             ]
           }
@@ -1418,12 +1418,12 @@
           {
             "system": "http://snomed.info/sct",
             "code": "49598002",
-            "display": "Anthrax vaccination (procedure)"
+            "display": "Anthrax vaccination"
           },
           {
             "system": "http://snomed.info/sct",
             "code": "170338000",
-            "display": "First anthrax vaccination (procedure)"
+            "display": "First anthrax vaccination"
           }
         ]
       },

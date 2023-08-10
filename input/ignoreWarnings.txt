@@ -866,3 +866,5 @@ INFORMATION: StructureDefinition/cpg-task: StructureDefinition: Validate resourc
 INFORMATION: StructureDefinition/cpg-testcasebundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/cpg-participantCapabilityStatement: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/cpg-workflowdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+
+#Output files do contain elmXmlContent.data for FSH generated libraries

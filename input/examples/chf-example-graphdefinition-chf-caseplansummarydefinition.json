@@ -8,6 +8,7 @@
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition"
     ]
   },
+  "status": "active",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryDefinitionFor",

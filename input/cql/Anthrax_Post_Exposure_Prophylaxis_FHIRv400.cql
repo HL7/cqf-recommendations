@@ -79,7 +79,7 @@ code "Asymptomatic code": '84387000' from "SNOMED-CT" display 'Asymptomatic (fin
 
 // Pregnancy codes.
 code "Pregnancy status code": '82810-3' from "LOINC" display 'Pregnancy status'
-code "Pregnant code": '77386006' from "SNOMED-CT" display 'Patient currently pregnant (finding)'
+code "Pregnant code": '77386006' from "SNOMED-CT" display 'Patient currently Pregnancy (finding)'
 
 // Anthrax vaccine represented as four separate codes, one for each sequentially administered dose.
 code "Anthrax vaccination code": '49598002' from "SNOMED-CT" display 'Anthrax vaccination (procedure)'
@@ -136,7 +136,7 @@ concept "Anthrax vaccine": { "Anthrax vaccine substance code", "Anthrax vaccine 
 
 // Pregnancy can be represented as a status, an observation, or a condition (see valueset above).
 concept "Pregnancy status": { "Pregnancy status code" } display 'Pregnancy status'
-concept "Pregnant": { "Pregnant code" } display 'Patient currently pregnant (finding)'
+concept "Pregnant": { "Pregnant code" } display 'Patient currently Pregnancy (finding)'
 
 // ------------- PARAMETERS ----------------------------------------------------
 // Lookback period for defining "recent" exposure (default: 60 days).
@@ -1163,7 +1163,7 @@ define CiprofloxacinRequest:
     },
     quantity: {
       value: 120,
-      system: 'http://hl7.org/fhir/v3/orderableDrugForm',
+      system: 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm',
       code: 'ORTAB'
     },
     dosage: {
@@ -1246,7 +1246,7 @@ define DoxycyclineRequest:
     },
     quantity: {
       value: 120,
-      system: 'http://hl7.org/fhir/v3/orderableDrugForm',
+      system: 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm',
       code: 'ORTAB'
     },
     dosage: {
@@ -1317,7 +1317,7 @@ define LevofloxacinRequest:
     },
     quantity: {
       value: 60,
-      system: 'http://hl7.org/fhir/v3/orderableDrugForm',
+      system: 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm',
       code: 'ORTAB'
     },
     dosage: {
@@ -1387,7 +1387,7 @@ define MoxifloxacinRequest:
     },
     quantity: {
       value: 60,
-      system: 'http://hl7.org/fhir/v3/orderableDrugForm',
+      system: 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm',
       code: 'ORTAB'
     },
     dosage: {
@@ -1457,7 +1457,7 @@ define ClindamycinRequest:
     },
     quantity: {
       value: 360,
-      system: 'http://hl7.org/fhir/v3/orderableDrugForm',
+      system: 'http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm',
       code: 'ORTAB'
     },
     dosage: {
