@@ -12,7 +12,7 @@ Title: "Activity Example Generate Report PD"
   * condition
     * kind = #applicability
     * expression
-      * language = #text/cql-identifier
+      * language = #text/cql
       * expression = "Is Recommendation Applicable"
   * type = $action-type#create
   * definitionCanonical = Canonical(activity-example-generatereport-ad)

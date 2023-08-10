@@ -12,7 +12,7 @@ Title: "Activity Example Propose Diagnosis PD"
   * condition
     * kind = #applicability
     * expression
-      * language = #text/cql-identifier
+      * language = #text/cql
       * expression = "Is Recommendation Applicable"
   * type = $action-type#create
   * definitionCanonical = Canonical(activity-example-proposediagnosis-ad)

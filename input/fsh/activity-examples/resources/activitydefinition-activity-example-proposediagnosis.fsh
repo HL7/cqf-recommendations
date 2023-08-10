@@ -12,7 +12,7 @@ Title: "Activity Example Propose Diagnosis AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/fhirpath
+    * language = #text/cql
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"

@@ -15,10 +15,10 @@ Title: "Activity Example Do Not Collect Information AD"
 * dynamicValue[+]
   * path = "input.type"
   * expression
-    * language = #text/fhirpath
+    * language = #text/cql
     * expression = "code"
 * dynamicValue[+]
   * path = "input.value"
   * expression.
-    * language = #text/fhirpath
+    * language = #text/cql
     * expression = "extension('http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith').value"
