@@ -17,7 +17,7 @@
 				{
 					"system": "http://snomed.info/sct",
 					"code": "14657009",
-					"display": "Diagnosis"
+					"display": "Established diagnosis"
 				}
 			],
 			"text": "Diagnosis"

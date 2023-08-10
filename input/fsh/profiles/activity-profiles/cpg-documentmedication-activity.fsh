@@ -9,7 +9,7 @@ Description: "Definition of an activity to document a specific medication as par
 * kind = #Task (exactly)
 * profile 1..1 MS
 * profile only canonical
-* profile = $cpg-dispensemedicationtask (exactly)
+* profile = $cpg-documentmedicationtask (exactly)
   * ^short = "At least a CPG Document Medication Task"
   * ^definition = "The profile that the resulting Task must conform to; at least a CPGDocumentMedicationTask, though the activity definition may introduce further constraints."
 * intent 1..1 MS

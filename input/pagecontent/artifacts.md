@@ -75,7 +75,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
 ### Profile Index {#profile-index}
 
-*   [CPGAdministerMedicationActivity](StructureDefinition-cpg-administermedication.html)
+*   [CPGAdministerMedicationActivity](StructureDefinition-cpg-administermedicationactivity.html)
 
     Definition of a proposal to administer a medication as part of a computable clinical practice guideline
 

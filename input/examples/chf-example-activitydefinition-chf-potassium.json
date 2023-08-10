@@ -1,6 +1,6 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "chf-potassium",
+  "id": "chf-potassium-ad",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-potassium",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-potassium-ad",
   "name": "CHFPotassium",
   "title": "CHF Potassium",
   "status": "draft",

@@ -1,0 +1,197 @@
+{
+  "resourceType": "Library",
+  "id": "anthrax-post-exposure-prophylaxis-library",
+  "url": "http://hl7.org/fhir/uv/cpg/Library/anthrax-post-exposure-prophylaxis-library",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "Anthrax_Post_Exposure_Prophylaxis_FHIRv400"
+    }
+  ],
+  "version": "1.1.0",
+  "name": "Anthrax_Post_Exposure_Prophylaxis_FHIRv400_Library",
+  "title": "Anthrax Post Exposure Prophylaxis (PEP) for Adults FHIRv400 Logic",
+  "status": "draft",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2019-06-07",
+  "publisher": "Centers for Disease Control and Prevention",
+  "description": "Clinical decision support logic for Anthrax Post Exposure Prophylaxis (PEP) for Adults based on the following Centers for Disease Control and Prevention reports: \\n- Hendricks, K.A. et al., Centers for Disease Control and Prevention Expert Panel Meetings on Prevention and Treatment of Anthrax in Adults. Emerg Infect Dis, 20(20), Feb 2014. \\n - Hendricks, K.A. et al., Centers for Disease Control and Prevention Expert Panel Meetings on Prevention and Treatment of Anthrax in Adults: Technical Report. Emerg Infect Dis. 20(20), Feb 2014. \\n- Emergent BioSolutions, BioThrax Anthrax Vaccine Adsorbed (http://www.biothrax.com/whatisbiothrax/). \\n- Centers for Disease Control and Prevention, Ciprofloxacin for Post-Exposure Prophylaxis of Anthrax: Emergency Use Instructions for Healthcare Providers, 2017. \\n- Centers for Disease Control and Prevention. Doxycyxcline for Post-Exposure Prophylaxis of Anthrax: Emergency Use Instructions for Healthcare Providers, 2017. \\n- Public Health Information Network Vocabulary Access and Distribution System (PHIN VADS), PHVS_SignsSymptoms_Anthrax (OID 2.16.840.1.114222.4.11.3212), 2009. \\n- Meanye-Delman D et al., Special Considerations for Prophylaxis for and Treatment of Anthrax in Pregnant and Postpartum Women, Emerg Infect Dis, 20(2), 2014. \\n- Meanye-Delman D et al., Special Considerations for Prophylaxis for and Treatment of Anthrax in Pregnant and Postpartum Women: Technical Report, Emerg Infect Dis, 20(2), 2014. \\n- Wright, J.G et al., Use of Anthrax Vaccine in the United States: Recommendations of the Advisory Committee on Immunization Practices (ACIP), 2009, Morbidity and Mortality Weeklly Report, July 23, 2010 / 59(RR06); 1-30.",
+  "purpose": "Provides clinicians with information for quickly assessing individuals exposed to anthrax unrelated to occupational exposure, for example in bioterrorism events, and provides the recommended post-exposure prophylaxis (PEP) regimen for asymptomatic patients. Includes immediate treatment with antimicrobials and vaccine and follow-up administration of subsequent vaccines to complete the recommended 3-dose vaccination series.",
+  "usage": "Intended for use by clinicians caring for individuals ≥18 years of age in an outpatient setting.",
+  "approvalDate": "2019-06-07",
+  "lastReviewDate": "2019-06-07",
+  "effectivePeriod": {
+    "start": "2019-06-07"
+  },
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "age",
+        "display": "Age Range"
+      },
+      "valueRange": {
+        "low": {
+          "value": 18
+        }
+      }
+    },
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "venue",
+        "display": "Clinical Venue"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "440655000",
+            "display": "Outpatient environment"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+            "code": "Z20.810",
+            "display": "Contact with and (suspected) exposure to anthrax"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "170475009",
+            "display": "Exposure to Bacillus anthracis (event)"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "84387000",
+            "display": "Asymptomatic (finding)"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ]
+    }
+  ],
+  "topic": [
+    {
+      "text": "Anthrax"
+    },
+    {
+      "text": "Emergency Medicine"
+    },
+    {
+      "text": "Post-Exposure Prophylaxis"
+    }
+  ],
+  "author": [
+    {
+      "name": "Alliance to Modernize Healthcare FFRDC"
+    }
+  ],
+  "endorser": [
+    {
+      "name": "Centers for Disease Control and Prevention"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://cds.ahrq.gov/cdsconnect/artifact/anthrax-post-exposure-prophylaxis",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "copyright": "(C) 2018 The MITRE Corporation. All Rights Reserved.",
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "Library/FHIRv400/CDC_Common_Logic_FHIRv400",
+      "url": "Library/FHIRv400/CDC_Common_Logic_FHIRv400.json",
+      "display": "CDS_Connect_Commons_for_FHIRv400_Library"
+    },
+    {
+      "type": "depends-on",
+      "resource": "Library/FHIRv400/FHIRHelpers_v400_Library",
+      "url": "Library/FHIRv400/FHIRHelpers_v400_Library.json",
+      "display": "FHIRHelpers_v400_Library"
+    },
+    {
+      "type": "depends-on",
+      "resource": "Library/FHIRv400/FHIRv400_Model_Definition",
+      "url": "Library/FHIRv400/FHIRv400_Model_Definition.json",
+      "display": "FHIRv400_Model_Definition"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "Exposure_Look_Back_Period",
+      "use": "in",
+      "min": 60,
+      "max": "60",
+      "type": "integer"
+    },
+    {
+      "name": "Spacing_Between_Vaccine_Doses",
+      "use": "in",
+      "min": 2,
+      "max": "2",
+      "type": "integer"
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-Anthrax_Post_Exposure_Prophylaxis_FHIRv400.cql"
+    }
+  ]
+}

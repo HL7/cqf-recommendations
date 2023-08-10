@@ -16,7 +16,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 publisher:
-  name: Clinical Decision Support WG
+  name: HL7 International - Clinical Decision Support WG
   url: http://www.hl7.org/Special/committees/dss/index.cfm
   # email: test@example.org
 

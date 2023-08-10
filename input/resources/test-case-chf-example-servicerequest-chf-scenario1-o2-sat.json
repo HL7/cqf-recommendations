@@ -1,7 +1,7 @@
 {
   "resourceType": "ServiceRequest",
   "id": "chf-scenario1-o2-sat",
-  "instantiatesCanonical": [ "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat" ],
+  "instantiatesCanonical": [ "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat-ad" ],
   "status": "completed",
   "intent": "order",
   "category": [

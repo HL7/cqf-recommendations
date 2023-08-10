@@ -26,7 +26,6 @@
 <artifact id="ActivityDefinition/activity-example-enrollment-ad" key="ActivityDefinition-activity-example-enrollment-ad" name="Activity Example Enrollment AD"/>
 <artifact id="PlanDefinition/activity-example-enrollment-pd" key="PlanDefinition-activity-example-enrollment-pd" name="Activity Example Enrollment PD"/>
 <artifact id="ActivityDefinition/activity-example-generatereport-ad" key="ActivityDefinition-activity-example-generatereport-ad" name="Activity Example Generate Report AD"/>
-<artifact id="Measure/activity-example-generatereport-measure" key="Measure-activity-example-generatereport-measure" name="Activity Example Generate Report Measure"/>
 <artifact id="PlanDefinition/activity-example-generatereport-pd" key="PlanDefinition-activity-example-generatereport-pd" name="Activity Example Generate Report PD"/>
 <artifact id="ActivityDefinition/activity-example-ordermedication-ad" key="ActivityDefinition-activity-example-ordermedication-ad" name="Activity Example Order Medication AD"/>
 <artifact id="PlanDefinition/activity-example-ordermedication-pd" key="PlanDefinition-activity-example-ordermedication-pd" name="Activity Example Order Medication PD"/>
@@ -52,7 +51,8 @@
 <artifact id="ValueSet/cpg-active-condition-vs" key="ValueSet-cpg-active-condition-vs" name="CPG Active Condition Value Set"/>
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
 <artifact id="ValueSet/cpg-activity-type-vs" key="ValueSet-cpg-activity-type-vs" name="CPG Activity Type Value Set"/>
-<artifact id="StructureDefinition/cpg-administermedication" key="StructureDefinition-cpg-administermedication" name="CPG Administer Medication Activity"/>
+<artifact id="StructureDefinition/cpg-administermedicationactivity" key="StructureDefinition-cpg-administermedicationactivity" name="CPG Administer Medication Activity"/>
+<artifact id="ActivityDefinition/cpg-administermedication-activitydefinition" key="ActivityDefinition-cpg-administermedication-activitydefinition" name="CPG Administer Medication ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-administermedicationtask" key="StructureDefinition-cpg-administermedicationtask" name="CPG Administer Medication Task"/>
 <artifact id="StructureDefinition/cpg-answerValueSetSource" key="StructureDefinition-cpg-answerValueSetSource" name="CPG Answer Value Set Source Extension"/>
 <artifact id="StructureDefinition/cpg-artifactbundle" key="StructureDefinition-cpg-artifactbundle" name="CPG Artifact Bundle"/>
@@ -81,15 +81,21 @@
 <artifact id="StructureDefinition/cpg-clinicalimpression" key="StructureDefinition-cpg-clinicalimpression" name="CPG Clinical Impression"/>
 <artifact id="StructureDefinition/cpg-collectinformationactivity" key="StructureDefinition-cpg-collectinformationactivity" name="CPG Collect Information Activity"/>
 <artifact id="StructureDefinition/cpg-collectWith" key="StructureDefinition-cpg-collectWith" name="CPG Collect With Extension"/>
+<artifact id="ActivityDefinition/cpg-collectinformation-activitydefinition" key="ActivityDefinition-cpg-collectinformation-activitydefinition" name="CPG CollectInformation ActivityDefinition"/>
+<artifact id="PlanDefinition/cpg-common-pathway" key="PlanDefinition-cpg-common-pathway" name="CPG Common Pathway"/>
 <artifact id="CapabilityStatement/cpg-common-patient-registry" key="CapabilityStatement-cpg-common-patient-registry" name="CPG Common Patient Registry"/>
 <artifact id="OperationDefinition/cpg-common-patient-summary" key="OperationDefinition-cpg-common-patient-summary" name="CPG Common Patient Summary"/>
 <artifact id="ValueSet/cpg-common-persona-vs" key="ValueSet-cpg-common-persona-vs" name="CPG Common Persona Value Set"/>
 <artifact id="CodeSystem/cpg-common-persona-cs" key="CodeSystem-cpg-common-persona-cs" name="CPG Common Personas Code System"/>
 <artifact id="CodeSystem/cpg-common-process-cs" key="CodeSystem-cpg-common-process-cs" name="CPG Common Process Code System"/>
 <artifact id="ValueSet/cpg-common-process-vs" key="ValueSet-cpg-common-process-vs" name="CPG Common Process Value Set"/>
+<artifact id="Questionnaire/cpg-common-identity" key="Questionnaire-cpg-common-identity" name="CPG Common Questionnaire - Identifying information"/>
+<artifact id="Questionnaire/cpg-common-patient-profile" key="Questionnaire-cpg-common-patient-profile" name="CPG Common Questionnaire - Patient information"/>
+<artifact id="Questionnaire/cpg-common-resolve-patient-match" key="Questionnaire-cpg-common-resolve-patient-match" name="CPG Common Questionnaire - Resolve Patient Match"/>
 <artifact id="StructureDefinition/cpg-communication" key="StructureDefinition-cpg-communication" name="CPG Communication"/>
 <artifact id="StructureDefinition/cpg-communicationactivity" key="StructureDefinition-cpg-communicationactivity" name="CPG Communication Activity"/>
 <artifact id="StructureDefinition/cpg-communicationrequest" key="StructureDefinition-cpg-communicationrequest" name="CPG Communication Request"/>
+<artifact id="ActivityDefinition/cpg-communicationrequest-activitydefinition" key="ActivityDefinition-cpg-communicationrequest-activitydefinition" name="CPG CommunicationRequest ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-computableactivity" key="StructureDefinition-cpg-computableactivity" name="CPG Computable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-computablegraphdefinition" key="StructureDefinition-cpg-computablegraphdefinition" name="CPG Computable Graph Definition"/>
 <artifact id="StructureDefinition/cpg-computableguideline" key="StructureDefinition-cpg-computableguideline" name="CPG Computable Guideline"/>
@@ -102,8 +108,10 @@
 <artifact id="StructureDefinition/cpg-detectedissue" key="StructureDefinition-cpg-detectedissue" name="CPG Detected Issue"/>
 <artifact id="StructureDefinition/cpg-directionOfRecommendation" key="StructureDefinition-cpg-directionOfRecommendation" name="CPG Direction Of Recommendation Extension"/>
 <artifact id="StructureDefinition/cpg-dispensemedicationactivity" key="StructureDefinition-cpg-dispensemedicationactivity" name="CPG Dispense Medication Activity"/>
+<artifact id="ActivityDefinition/cpg-dispensemedication-activitydefinition" key="ActivityDefinition-cpg-dispensemedication-activitydefinition" name="CPG Dispense Medication ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-dispensemedicationtask" key="StructureDefinition-cpg-dispensemedicationtask" name="CPG Dispense Medication Task"/>
 <artifact id="StructureDefinition/cpg-documentmedicationactivity" key="StructureDefinition-cpg-documentmedicationactivity" name="CPG Document Medication Activity"/>
+<artifact id="ActivityDefinition/cpg-documentmedication-activitydefinition" key="ActivityDefinition-cpg-documentmedication-activitydefinition" name="CPG Document Medication ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-documentmedicationtask" key="StructureDefinition-cpg-documentmedicationtask" name="CPG Document Medication Task"/>
 <artifact id="StructureDefinition/cpg-editor" key="StructureDefinition-cpg-editor" name="CPG Editor Extension"/>
 <artifact id="StructureDefinition/cpg-enabled" key="StructureDefinition-cpg-enabled" name="CPG Enabled Extension"/>
@@ -112,12 +120,14 @@
 <artifact id="StructureDefinition/cpg-enrollIn" key="StructureDefinition-cpg-enrollIn" name="CPG Enroll In Extension"/>
 <artifact id="StructureDefinition/cpg-enrolledIn" key="StructureDefinition-cpg-enrolledIn" name="CPG Enrolled In Extension"/>
 <artifact id="StructureDefinition/cpg-enrollmentactivity" key="StructureDefinition-cpg-enrollmentactivity" name="CPG Enrollment Activity"/>
+<artifact id="ActivityDefinition/cpg-enrollment-activitydefinition" key="ActivityDefinition-cpg-enrollment-activitydefinition" name="CPG Enrollment ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-enrollmenttask" key="StructureDefinition-cpg-enrollmenttask" name="CPG Enrollment Task"/>
 <artifact id="StructureDefinition/cpg-executablelibrary" key="StructureDefinition-cpg-executablelibrary" name="CPG Executable Library"/>
 <artifact id="StructureDefinition/cpg-executablevalueset" key="StructureDefinition-cpg-executablevalueset" name="CPG Executable Value Set"/>
 <artifact id="StructureDefinition/cpg-featureExpression" key="StructureDefinition-cpg-featureExpression" name="CPG Feature Expression Extension"/>
 <artifact id="StructureDefinition/cpg-flag" key="StructureDefinition-cpg-flag" name="CPG Flag"/>
 <artifact id="StructureDefinition/cpg-generatereportactivity" key="StructureDefinition-cpg-generatereportactivity" name="CPG Generate Report Activity"/>
+<artifact id="ActivityDefinition/cpg-generatereport-activitydefinition" key="ActivityDefinition-cpg-generatereport-activitydefinition" name="CPG Generate Report ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-generatereporttask" key="StructureDefinition-cpg-generatereporttask" name="CPG Generate Report Task"/>
 <artifact id="StructureDefinition/cpg-goal" key="StructureDefinition-cpg-goal" name="CPG Goal"/>
 <artifact id="StructureDefinition/cpg-goalFor" key="StructureDefinition-cpg-goalFor" name="CPG Goal For Extension"/>
@@ -127,6 +137,7 @@
 <artifact id="StructureDefinition/cpg-immunization" key="StructureDefinition-cpg-immunization" name="CPG Immunization"/>
 <artifact id="StructureDefinition/cpg-immunizationactivity" key="StructureDefinition-cpg-immunizationactivity" name="CPG Immunization Activity"/>
 <artifact id="StructureDefinition/cpg-immunizationrecommendation" key="StructureDefinition-cpg-immunizationrecommendation" name="CPG Immunization Recommendation"/>
+<artifact id="ActivityDefinition/cpg-immunizationrecommendation-activitydefinition" key="ActivityDefinition-cpg-immunizationrecommendation-activitydefinition" name="CPG ImmunizationRecommendation ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-impressionFor" key="StructureDefinition-cpg-impressionFor" name="CPG Impression For Extension"/>
 <artifact id="CodeSystem/cpg-indicator-cs" key="CodeSystem-cpg-indicator-cs" name="CPG Indicator Code System"/>
 <artifact id="ValueSet/cpg-indicator-vs" key="ValueSet-cpg-indicator-vs" name="CPG Indicator Value Set"/>
@@ -164,6 +175,7 @@
 <artifact id="StructureDefinition/cpg-practitionerroledefinition" key="StructureDefinition-cpg-practitionerroledefinition" name="CPG Practitioner Role Definition"/>
 <artifact id="StructureDefinition/cpg-procedure" key="StructureDefinition-cpg-procedure" name="CPG Procedure"/>
 <artifact id="StructureDefinition/cpg-proposediagnosisactivity" key="StructureDefinition-cpg-proposediagnosisactivity" name="CPG Propose Diagnosis Activity"/>
+<artifact id="ActivityDefinition/cpg-proposediagnosistask-activitydefinition" key="ActivityDefinition-cpg-proposediagnosistask-activitydefinition" name="CPG Propose Diagnosis ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-proposediagnosistask" key="StructureDefinition-cpg-proposediagnosistask" name="CPG Propose Diagnosis Task"/>
 <artifact id="StructureDefinition/cpg-publishableactivity" key="StructureDefinition-cpg-publishableactivity" name="CPG Publishable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-publishablecasefeature" key="StructureDefinition-cpg-publishablecasefeature" name="CPG Publishable Case Feature Definition"/>
@@ -183,17 +195,21 @@
 <artifact id="ValueSet/cpg-recommendation-direction-vs" key="ValueSet-cpg-recommendation-direction-vs" name="CPG Recommendation Direction Value Set"/>
 <artifact id="StructureDefinition/cpg-recorddetectedissueactivity" key="StructureDefinition-cpg-recorddetectedissueactivity" name="CPG Record Detected Issue Activity"/>
 <artifact id="StructureDefinition/cpg-recorddetectedissuetask" key="StructureDefinition-cpg-recorddetectedissuetask" name="CPG Record Detected Issue Task"/>
+<artifact id="ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition" key="ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition" name="CPG Record DetectedIssue ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-recordinferenceactivity" key="StructureDefinition-cpg-recordinferenceactivity" name="CPG Record Inference Activity"/>
+<artifact id="ActivityDefinition/cpg-recordinferencetask-activitydefinition" key="ActivityDefinition-cpg-recordinferencetask-activitydefinition" name="CPG Record Inference ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-recordinferencetask" key="StructureDefinition-cpg-recordinferencetask" name="CPG Record Inference Task"/>
 <artifact id="StructureDefinition/cpg-relatedArtifact" key="StructureDefinition-cpg-relatedArtifact" name="CPG Related Artifact Extension"/>
 <artifact id="StructureDefinition/cpg-relatedperson" key="StructureDefinition-cpg-relatedperson" name="CPG Related Person"/>
 <artifact id="StructureDefinition/cpg-reportflagactivity" key="StructureDefinition-cpg-reportflagactivity" name="CPG Report Flag Activity"/>
+<artifact id="ActivityDefinition/cpg-reportflagtask-activitydefinition" key="ActivityDefinition-cpg-reportflagtask-activitydefinition" name="CPG Report Flag ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-reportflagtask" key="StructureDefinition-cpg-reportflagtask" name="CPG Report Flag Task"/>
 <artifact id="StructureDefinition/cpg-reportWith" key="StructureDefinition-cpg-reportWith" name="CPG Report With Extension"/>
 <artifact id="StructureDefinition/cpg-responseImage" key="StructureDefinition-cpg-responseImage" name="CPG Response Image Extension"/>
 <artifact id="StructureDefinition/cpg-reviewer" key="StructureDefinition-cpg-reviewer" name="CPG Reviewer Extension"/>
 <artifact id="StructureDefinition/cpg-servicerequest" key="StructureDefinition-cpg-servicerequest" name="CPG Service Request"/>
 <artifact id="StructureDefinition/cpg-servicerequestactivity" key="StructureDefinition-cpg-servicerequestactivity" name="CPG Service Request Activity"/>
+<artifact id="ActivityDefinition/cpg-servicerequest-activitydefinition" key="ActivityDefinition-cpg-servicerequest-activitydefinition" name="CPG ServiceRequest ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-shareableactivitydefinition" key="StructureDefinition-cpg-shareableactivitydefinition" name="CPG Shareable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-shareablecodesystem" key="StructureDefinition-cpg-shareablecodesystem" name="CPG Shareable Code System"/>
 <artifact id="StructureDefinition/cpg-shareablegraphdefinition" key="StructureDefinition-cpg-shareablegraphdefinition" name="CPG Shareable Graph Definition"/>
@@ -230,8 +246,9 @@
 <artifact id="PlanDefinition/HepBAdultForecastingPD" key="PlanDefinition-HepBAdultForecastingPD" name="HepBAdultForecastingPD"/>
 <artifact id="Library/OpioidCDSR4Common" key="Library-OpioidCDSR4Common" name="OpioidCDSR4Common"/>
 <artifact id="Library/OpioidCDSR4Recommendation05" key="Library-OpioidCDSR4Recommendation05" name="OpioidCDSR4Recommendation05"/>
-<artifact id="Library/ordermedication-library" key="Library-ordermedication-library" name="Order Medication"/>
+<artifact id="Library/ordermedication-library" key="Library-ordermedication-library" name="Order Medication Library"/>
 <artifact id="Library/orderservice-library" key="Library-orderservice-library" name="Order Service Library"/>
+<artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="PlanDefinition - CPG Common Registration"/>
 <artifact id="Library/proposediagnosis-library" key="Library-proposediagnosis-library" name="Propose Diagnosis Library"/>
 <artifact id="Library/recommendimmunization-library" key="Library-recommendimmunization-library" name="Recommend Immunization"/>
 <artifact id="Library/recorddetectedissue-library" key="Library-recorddetectedissue-library" name="Record Detected Issue Library"/>
@@ -240,6 +257,7 @@
 <artifact id="Library/sendmessage-library" key="Library-sendmessage-library" name="Send Message Library"/>
 <artifact id="Location/chf-scenario1-location" key="Location-chf-scenario1-location" name="Unit 3 East"/>
 <artifact id="Bundle/activity-example-administermedication-bundle" key="Bundle-activity-example-administermedication-bundle" name="activity-example-administermedication-bundle"/>
+<artifact id="Measure/activity-example-generatereport-measure" key="Measure-activity-example-generatereport-measure" name="activity-example-generatereport-measure"/>
 <artifact id="MedicationRequest/am-scenario1" key="MedicationRequest-am-scenario1" name="am-scenario1"/>
 <artifact id="Patient/am-scenario1-patient" key="Patient-am-scenario1-patient" name="am-scenario1-patient"/>
 <artifact id="MedicationRequest/am-scenario2" key="MedicationRequest-am-scenario2" name="am-scenario2"/>
@@ -269,6 +287,11 @@
 <artifact id="ValueSet/anc-reason-for-visit-vs" key="ValueSet-anc-reason-for-visit-vs" name="anc-reason-for-visit-vs"/>
 <artifact id="PlanDefinition/anc-recommendation-a2" key="PlanDefinition-anc-recommendation-a2" name="anc-recommendation-a2"/>
 <artifact id="GraphDefinition/anc-summary" key="GraphDefinition-anc-summary" name="anc-summary"/>
+<artifact id="Device/anthrax-example-device" key="Device-anthrax-example-device" name="anthrax-example-device"/>
+<artifact id="Library/anthrax-post-exposure-prophylaxis-library" key="Library-anthrax-post-exposure-prophylaxis-library" name="anthrax-post-exposure-prophylaxis-library"/>
+<artifact id="Flag/antimicrobial-allergy-flag" key="Flag-antimicrobial-allergy-flag" name="antimicrobial-allergy-flag"/>
+<artifact id="PlanDefinition/antimicrobial-not-pregnant-pd" key="PlanDefinition-antimicrobial-not-pregnant-pd" name="antimicrobial-not-pregnant-pd"/>
+<artifact id="PlanDefinition/antimicrobial-pregnant-pd" key="PlanDefinition-antimicrobial-pregnant-pd" name="antimicrobial-pregnant-pd"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-edu-hypertension" key="ActivityDefinition-cc-cpg-activity-edu-hypertension" name="cc-cpg-activity-edu-hypertension"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-edu-renal-diet" key="ActivityDefinition-cc-cpg-activity-edu-renal-diet" name="cc-cpg-activity-edu-renal-diet"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-lab-creatinine" key="ActivityDefinition-cc-cpg-activity-lab-creatinine" name="cc-cpg-activity-lab-creatinine"/>
@@ -277,6 +300,8 @@
 <artifact id="ActivityDefinition/cc-cpg-activity-referral-nephrology" key="ActivityDefinition-cc-cpg-activity-referral-nephrology" name="cc-cpg-activity-referral-nephrology"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-ultrasound-renal" key="ActivityDefinition-cc-cpg-activity-ultrasound-renal" name="cc-cpg-activity-ultrasound-renal"/>
 <artifact id="PlanDefinition/cc-cpg-plan-ckd" key="PlanDefinition-cc-cpg-plan-ckd" name="cc-cpg-plan-ckd"/>
+<artifact id="Library/cdc-common-logic-library" key="Library-cdc-common-logic-library" name="cdc-common-logic-library"/>
+<artifact id="Library/cds-connect-commons-library" key="Library-cds-connect-commons-library" name="cds-connect-commons-library"/>
 <artifact id="StructureDefinition/chf-bodyweight" key="StructureDefinition-chf-bodyweight" name="chf-bodyweight"/>
 <artifact id="ActivityDefinition/chf-bodyweight-ad" key="ActivityDefinition-chf-bodyweight-ad" name="chf-bodyweight-ad"/>
 <artifact id="StructureDefinition/chf-bodyweight-change" key="StructureDefinition-chf-bodyweight-change" name="chf-bodyweight-change"/>
@@ -293,17 +318,17 @@
 <artifact id="GraphDefinition/chf-caseplansummarydefinition" key="GraphDefinition-chf-caseplansummarydefinition" name="chf-caseplansummarydefinition"/>
 <artifact id="GraphDefinition/chf-casesummarydefinition" key="GraphDefinition-chf-casesummarydefinition" name="chf-casesummarydefinition"/>
 <artifact id="CodeSystem/chf-codes" key="CodeSystem-chf-codes" name="chf-codes"/>
-<artifact id="ActivityDefinition/chf-creatinine" key="ActivityDefinition-chf-creatinine" name="chf-creatinine"/>
 <artifact id="StructureDefinition/chf-creatinine" key="StructureDefinition-chf-creatinine" name="chf-creatinine"/>
+<artifact id="ActivityDefinition/chf-creatinine-ad" key="ActivityDefinition-chf-creatinine-ad" name="chf-creatinine-ad"/>
 <artifact id="PlanDefinition/chf-creatinine-pd" key="PlanDefinition-chf-creatinine-pd" name="chf-creatinine-pd"/>
 <artifact id="PlanDefinition/chf-daily-management" key="PlanDefinition-chf-daily-management" name="chf-daily-management"/>
-<artifact id="ActivityDefinition/chf-egfr" key="ActivityDefinition-chf-egfr" name="chf-egfr"/>
 <artifact id="StructureDefinition/chf-egfr" key="StructureDefinition-chf-egfr" name="chf-egfr"/>
+<artifact id="ActivityDefinition/chf-egfr-ad" key="ActivityDefinition-chf-egfr-ad" name="chf-egfr-ad"/>
 <artifact id="PlanDefinition/chf-egfr-pd" key="PlanDefinition-chf-egfr-pd" name="chf-egfr-pd"/>
 <artifact id="Group/chf-groupdefinition" key="Group-chf-groupdefinition" name="chf-groupdefinition"/>
 <artifact id="PlanDefinition/chf-hypervolemia" key="PlanDefinition-chf-hypervolemia" name="chf-hypervolemia"/>
-<artifact id="ActivityDefinition/chf-jvp" key="ActivityDefinition-chf-jvp" name="chf-jvp"/>
 <artifact id="StructureDefinition/chf-jvp" key="StructureDefinition-chf-jvp" name="chf-jvp"/>
+<artifact id="ActivityDefinition/chf-jvp-ad" key="ActivityDefinition-chf-jvp-ad" name="chf-jvp-ad"/>
 <artifact id="PlanDefinition/chf-jvp-pd" key="PlanDefinition-chf-jvp-pd" name="chf-jvp-pd"/>
 <artifact id="StructureDefinition/chf-jvp-request" key="StructureDefinition-chf-jvp-request" name="chf-jvp-request"/>
 <artifact id="PlanDefinition/chf-lasix" key="PlanDefinition-chf-lasix" name="chf-lasix"/>
@@ -314,16 +339,16 @@
 <artifact id="StructureDefinition/chf-lasix-po-administration" key="StructureDefinition-chf-lasix-po-administration" name="chf-lasix-po-administration"/>
 <artifact id="StructureDefinition/chf-lasix-po-request" key="StructureDefinition-chf-lasix-po-request" name="chf-lasix-po-request"/>
 <artifact id="Location/chf-locationdefinition" key="Location-chf-locationdefinition" name="chf-locationdefinition"/>
-<artifact id="ActivityDefinition/chf-net-io" key="ActivityDefinition-chf-net-io" name="chf-net-io"/>
 <artifact id="StructureDefinition/chf-net-io" key="StructureDefinition-chf-net-io" name="chf-net-io"/>
+<artifact id="ActivityDefinition/chf-net-io-ad" key="ActivityDefinition-chf-net-io-ad" name="chf-net-io-ad"/>
 <artifact id="PlanDefinition/chf-net-io-pd" key="PlanDefinition-chf-net-io-pd" name="chf-net-io-pd"/>
-<artifact id="ActivityDefinition/chf-o2-sat" key="ActivityDefinition-chf-o2-sat" name="chf-o2-sat"/>
 <artifact id="StructureDefinition/chf-o2-sat" key="StructureDefinition-chf-o2-sat" name="chf-o2-sat"/>
+<artifact id="ActivityDefinition/chf-o2-sat-ad" key="ActivityDefinition-chf-o2-sat-ad" name="chf-o2-sat-ad"/>
 <artifact id="PlanDefinition/chf-o2-sat-pd" key="PlanDefinition-chf-o2-sat-pd" name="chf-o2-sat-pd"/>
 <artifact id="StructureDefinition/chf-o2-sat-request" key="StructureDefinition-chf-o2-sat-request" name="chf-o2-sat-request"/>
 <artifact id="PlanDefinition/chf-pathway" key="PlanDefinition-chf-pathway" name="chf-pathway"/>
-<artifact id="ActivityDefinition/chf-potassium" key="ActivityDefinition-chf-potassium" name="chf-potassium"/>
 <artifact id="StructureDefinition/chf-potassium" key="StructureDefinition-chf-potassium" name="chf-potassium"/>
+<artifact id="ActivityDefinition/chf-potassium-ad" key="ActivityDefinition-chf-potassium-ad" name="chf-potassium-ad"/>
 <artifact id="PlanDefinition/chf-potassium-pd" key="PlanDefinition-chf-potassium-pd" name="chf-potassium-pd"/>
 <artifact id="PractitionerRole/chf-practitionerroledefinition" key="PractitionerRole-chf-practitionerroledefinition" name="chf-practitionerroledefinition"/>
 <artifact id="ActivityDefinition/chf-report-bodyweight" key="ActivityDefinition-chf-report-bodyweight" name="chf-report-bodyweight"/>
@@ -386,8 +411,8 @@
 <artifact id="Observation/chf-scenario1-urineout3-observation" key="Observation-chf-scenario1-urineout3-observation" name="chf-scenario1-urineout3-observation"/>
 <artifact id="Goal/chf-scenario1-weight" key="Goal-chf-scenario1-weight" name="chf-scenario1-weight"/>
 <artifact id="Goal/chf-scenario1-weight-change" key="Goal-chf-scenario1-weight-change" name="chf-scenario1-weight-change"/>
-<artifact id="ActivityDefinition/chf-urine-out" key="ActivityDefinition-chf-urine-out" name="chf-urine-out"/>
 <artifact id="StructureDefinition/chf-urine-out" key="StructureDefinition-chf-urine-out" name="chf-urine-out"/>
+<artifact id="ActivityDefinition/chf-urine-out-ad" key="ActivityDefinition-chf-urine-out-ad" name="chf-urine-out-ad"/>
 <artifact id="Measure/chf-urine-out-measure" key="Measure-chf-urine-out-measure" name="chf-urine-out-measure"/>
 <artifact id="PlanDefinition/chf-urine-out-pd" key="PlanDefinition-chf-urine-out-pd" name="chf-urine-out-pd"/>
 <artifact id="Patient/ci-scenario1-patient" key="Patient-ci-scenario1-patient" name="ci-scenario1-patient"/>
@@ -408,25 +433,7 @@
 <artifact id="ValueSet/ckd-valueset-egfr" key="ValueSet-ckd-valueset-egfr" name="ckd-valueset-egfr"/>
 <artifact id="ValueSet/ckd-valueset-uacr" key="ValueSet-ckd-valueset-uacr" name="ckd-valueset-uacr"/>
 <artifact id="Condition/condition-ra2-iron-side-effects" key="Condition-condition-ra2-iron-side-effects" name="condition-ra2-iron-side-effects"/>
-<artifact id="ActivityDefinition/cpg-administermedication-activitydefinition" key="ActivityDefinition-cpg-administermedication-activitydefinition" name="cpg-administermedication-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-collectinformation-activitydefinition" key="ActivityDefinition-cpg-collectinformation-activitydefinition" name="cpg-collectinformation-activitydefinition"/>
-<artifact id="Questionnaire/cpg-common-identity" key="Questionnaire-cpg-common-identity" name="cpg-common-identity"/>
-<artifact id="PlanDefinition/cpg-common-pathway" key="PlanDefinition-cpg-common-pathway" name="cpg-common-pathway"/>
-<artifact id="Questionnaire/cpg-common-patient-profile" key="Questionnaire-cpg-common-patient-profile" name="cpg-common-patient-profile"/>
-<artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="cpg-common-registration"/>
-<artifact id="Questionnaire/cpg-common-resolve-patient-match" key="Questionnaire-cpg-common-resolve-patient-match" name="cpg-common-resolve-patient-match"/>
-<artifact id="ActivityDefinition/cpg-communicationrequest-activitydefinition" key="ActivityDefinition-cpg-communicationrequest-activitydefinition" name="cpg-communicationrequest-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-dispensemedication-activitydefinition" key="ActivityDefinition-cpg-dispensemedication-activitydefinition" name="cpg-dispensemedication-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-documentmedication-activitydefinition" key="ActivityDefinition-cpg-documentmedication-activitydefinition" name="cpg-documentmedication-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-enrollment-activitydefinition" key="ActivityDefinition-cpg-enrollment-activitydefinition" name="cpg-enrollment-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-generatereport-activitydefinition" key="ActivityDefinition-cpg-generatereport-activitydefinition" name="cpg-generatereport-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-immunizationrecommendation-activitydefinition" key="ActivityDefinition-cpg-immunizationrecommendation-activitydefinition" name="cpg-immunizationrecommendation-activitydefinition"/>
 <artifact id="ActivityDefinition/cpg-medicationrequest-activitydefinition" key="ActivityDefinition-cpg-medicationrequest-activitydefinition" name="cpg-medicationrequest-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-proposediagnosistask-activitydefinition" key="ActivityDefinition-cpg-proposediagnosistask-activitydefinition" name="cpg-proposediagnosistask-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition" key="ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition" name="cpg-recorddetectedissuetask-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-recordinferencetask-activitydefinition" key="ActivityDefinition-cpg-recordinferencetask-activitydefinition" name="cpg-recordinferencetask-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-reportflagtask-activitydefinition" key="ActivityDefinition-cpg-reportflagtask-activitydefinition" name="cpg-reportflagtask-activitydefinition"/>
-<artifact id="ActivityDefinition/cpg-servicerequest-activitydefinition" key="ActivityDefinition-cpg-servicerequest-activitydefinition" name="cpg-servicerequest-activitydefinition"/>
 <artifact id="MedicationRequest/dcm-scenario1" key="MedicationRequest-dcm-scenario1" name="dcm-scenario1"/>
 <artifact id="Patient/dcm-scenario1-patient" key="Patient-dcm-scenario1-patient" name="dcm-scenario1-patient"/>
 <artifact id="MedicationRequest/dcm-scenario2" key="MedicationRequest-dcm-scenario2" name="dcm-scenario2"/>
@@ -517,6 +524,11 @@
 <artifact id="Task/event-inf-scenario4" key="Task-event-inf-scenario4" name="event-inf-scenario4"/>
 <artifact id="Task/event-pd-scenario4" key="Task-event-pd-scenario4" name="event-pd-scenario4"/>
 <artifact id="Task/event-rf-scenario4" key="Task-event-rf-scenario4" name="event-rf-scenario4"/>
+<artifact id="DetectedIssue/existing-antimicrobial-detected-issue" key="DetectedIssue-existing-antimicrobial-detected-issue" name="existing-antimicrobial-detected-issue"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-not-pregnant-pd" name="first-vaccine-dose-antimicrobial-not-pregnant-pd"/>
+<artifact id="PlanDefinition/first-vaccine-dose-antimicrobial-pregnant-pd" key="PlanDefinition-first-vaccine-dose-antimicrobial-pregnant-pd" name="first-vaccine-dose-antimicrobial-pregnant-pd"/>
+<artifact id="PlanDefinition/first-vaccine-dose-not-pregnant-pd" key="PlanDefinition-first-vaccine-dose-not-pregnant-pd" name="first-vaccine-dose-not-pregnant-pd"/>
+<artifact id="PlanDefinition/first-vaccine-dose-pregnant-pd" key="PlanDefinition-first-vaccine-dose-pregnant-pd" name="first-vaccine-dose-pregnant-pd"/>
 <artifact id="Patient/gr-scenario1-patient" key="Patient-gr-scenario1-patient" name="gr-scenario1-patient"/>
 <artifact id="Patient/gr-scenario2-patient" key="Patient-gr-scenario2-patient" name="gr-scenario2-patient"/>
 <artifact id="MeasureReport/gr-scenario4" key="MeasureReport-gr-scenario4" name="gr-scenario4"/>
@@ -525,6 +537,9 @@
 <artifact id="Patient/inf-scenario2-patient" key="Patient-inf-scenario2-patient" name="inf-scenario2-patient"/>
 <artifact id="Observation/inf-scenario4" key="Observation-inf-scenario4" name="inf-scenario4"/>
 <artifact id="Patient/inf-scenario4-patient" key="Patient-inf-scenario4-patient" name="inf-scenario4-patient"/>
+<artifact id="Flag/latex-allergy-flag" key="Flag-latex-allergy-flag" name="latex-allergy-flag"/>
+<artifact id="Library/model-definition" key="Library-model-definition" name="model-definition"/>
+<artifact id="Flag/no-asymptomatic-observation-flag" key="Flag-no-asymptomatic-observation-flag" name="no-asymptomatic-observation-flag"/>
 <artifact id="Observation/observation-anc-ra2-gestational-age" key="Observation-observation-anc-ra2-gestational-age" name="observation-anc-ra2-gestational-age"/>
 <artifact id="Observation/observation-anc-ra2-hb-concentration" key="Observation-observation-anc-ra2-hb-concentration" name="observation-anc-ra2-hb-concentration"/>
 <artifact id="Patient/om-scenario1-patient" key="Patient-om-scenario1-patient" name="om-scenario1-patient"/>
@@ -594,7 +609,10 @@
 <artifact id="Patient/ri-scenario2-patient" key="Patient-ri-scenario2-patient" name="ri-scenario2-patient"/>
 <artifact id="Immunization/ri-scenario4" key="Immunization-ri-scenario4" name="ri-scenario4"/>
 <artifact id="Patient/ri-scenario4-patient" key="Patient-ri-scenario4-patient" name="ri-scenario4-patient"/>
-<artifact id="Communication/scenario8" key="Communication-scenario8" name="scenario8"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-notpregnant-pd" name="second-vaccinedose-antimicrobial-notpregnant-pd"/>
+<artifact id="PlanDefinition/second-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-second-vaccinedose-antimicrobial-pregnant-pd" name="second-vaccinedose-antimicrobial-pregnant-pd"/>
+<artifact id="PlanDefinition/second-vaccinedose-notpregnant-pd" key="PlanDefinition-second-vaccinedose-notpregnant-pd" name="second-vaccinedose-notpregnant-pd"/>
+<artifact id="PlanDefinition/second-vaccinedose-pregnant-pd" key="PlanDefinition-second-vaccinedose-pregnant-pd" name="second-vaccinedose-pregnant-pd"/>
 <artifact id="Patient/sm-scenario1-patient" key="Patient-sm-scenario1-patient" name="sm-scenario1-patient"/>
 <artifact id="CommunicationRequest/sm-scenario2" key="CommunicationRequest-sm-scenario2" name="sm-scenario2"/>
 <artifact id="Patient/sm-scenario2-patient" key="Patient-sm-scenario2-patient" name="sm-scenario2-patient"/>
@@ -612,8 +630,14 @@
 <artifact id="Patient/sm-scenario7-patient" key="Patient-sm-scenario7-patient" name="sm-scenario7-patient"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario5" key="CommunicationRequest-stop-dnsm-scenario5" name="stop-dnsm-scenario5"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario6" key="CommunicationRequest-stop-dnsm-scenario6" name="stop-dnsm-scenario6"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-notpregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-notpregnant-pd" name="third-vaccinedose-antimicrobial-notpregnant-pd"/>
+<artifact id="PlanDefinition/third-vaccinedose-antimicrobial-pregnant-pd" key="PlanDefinition-third-vaccinedose-antimicrobial-pregnant-pd" name="third-vaccinedose-antimicrobial-pregnant-pd"/>
+<artifact id="PlanDefinition/third-vaccinedose-notpregnant-pd" key="PlanDefinition-third-vaccinedose-notpregnant-pd" name="third-vaccinedose-notpregnant-pd"/>
+<artifact id="PlanDefinition/third-vaccinedose-pregnant-pd" key="PlanDefinition-third-vaccinedose-pregnant-pd" name="third-vaccinedose-pregnant-pd"/>
 <artifact id="PlanDefinition/va-ckd-protocol" key="PlanDefinition-va-ckd-protocol" name="va-ckd-protocol"/>
 <artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="va-ckd-recommendations"/>
+<artifact id="Flag/vaccine-allergy-flag" key="Flag-vaccine-allergy-flag" name="vaccine-allergy-flag"/>
+<artifact id="DetectedIssue/vaccine-history-inconsistencies-detected-issue" key="DetectedIssue-vaccine-history-inconsistencies-detected-issue" name="vaccine-history-inconsistencies-detected-issue"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>

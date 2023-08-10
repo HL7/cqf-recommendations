@@ -86,7 +86,7 @@
           }
         }
       }],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat"
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat-ad"
     }
   ]
 }

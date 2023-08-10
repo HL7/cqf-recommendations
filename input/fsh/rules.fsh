@@ -1,87 +1,3 @@
-RuleSet: ActivityDefinitionMetadata(id)
-* meta.profile = $cpg-computableactivity
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #shareable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #computable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #publishable
-* extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
-  * valueCode = #structured
-* experimental = true
-* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
-* status = #draft
-* intent = #proposal
-
-RuleSet: PDRecommendationMetadata(id)
-* meta.profile = $cpg-recommendationdefinition
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #shareable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #computable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #publishable
-* extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
-  * valueCode = #structured
-* experimental = true
-* url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
-* status = #draft
-* experimental = true
-
-RuleSet: KnowledgeArtifactMetadata(id, type)
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #shareable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #computable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #publishable
-* extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
-  * valueCode = #structured
-* experimental = true
-* url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
-* status = #draft
-
-RuleSet: ExampleKnowledgeArtifactMetadata(id, type)
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #shareable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #computable
-* extension[+]
-  * url = $cpg-knowledgeCapability
-  * valueCode = #publishable
-* extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
-  * valueCode = #structured
-* experimental = true
-* url = "http://example.org/{type}/{id}"
-* version = "1.0.0"
-* publisher = "Clinical Decision Support WG"
-
-RuleSet: Profile(profile-id)
-* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
-
-RuleSet: RelatedFHIRLibraries
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1" //this does not resolve
-* relatedArtifact[+]
-  * type = #depends-on
-  * resource = "https://hl7.org/fhir/R4/library-fhir-helpers|4.0.1"
-
 RuleSet: CodeSystemMetadata(id-prefix)
 * ^meta.profile = $cpg-publishable-codesystem
 * ^extension[+].url = $cpg-knowledgeCapability
@@ -123,11 +39,15 @@ RuleSet: StructureDefinitionMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
 * ^experimental = false
 
+RuleSet: ExtensionContext(path)
+* ^context[+].type = #element
+* ^context[=].expression = "{path}"
+
 RuleSet: CapabilityStatementMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/CapabilityStatement/{id}"
 * experimental = true
 * status = #active
-* date = "2019-06-15"
+* date = "2023-08-04"
 
 RuleSet: OperationDefinitionMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/OperationDefinition/{id}"
@@ -142,6 +62,23 @@ RuleSet: OperationExtensions
   * url = $structuredefinition-standards-status
   * valueCode = #trial-use
 
-RuleSet: ExtensionContext(path)
-* ^context[+].type = #element
-* ^context[=].expression = "{path}"
+RuleSet: ActivityDefinitionMetadata(id, name)
+* identifier
+  * use = #official
+  * value = "{name}"
+* name = "{name}"
+* url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
+* intent = #proposal
+* experimental = false
+* status = #active
+* priority = #routine
+* publisher = "HL7 International - Clinical Decision Support WG"
+* version = "1.0.0"
+
+RuleSet: PlanDefinitionMetadata(id)
+* url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
+* status = #active
+
+RuleSet: QuestionnaireMetadata(id)
+* url = "http://hl7.org/fhir/uv/cpg/Questionnaire/{id}"
+* status = #active

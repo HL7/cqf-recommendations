@@ -49,7 +49,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "103699006",
-        "display": "Patient referral to dietitian (procedure)"
+        "display": "Referral to dietitian (procedure)"
       }
     ],
     "text": "Referral to dietitian"

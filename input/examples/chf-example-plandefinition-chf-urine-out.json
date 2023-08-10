@@ -86,7 +86,7 @@
           }
         }
       }],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-urine-out"
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-urine-out-ad"
     },
     {
       "title": "Report Urine Out",

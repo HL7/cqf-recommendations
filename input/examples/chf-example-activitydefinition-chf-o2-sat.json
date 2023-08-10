@@ -1,6 +1,6 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "chf-o2-sat",
+  "id": "chf-o2-sat-ad",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-o2-sat-ad",
   "name": "CHFO2Sat",
   "title": "CHF Oxygen Saturation",
   "status": "draft",

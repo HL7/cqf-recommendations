@@ -14,31 +14,31 @@ This is an [activity definition](profiles.html#activity-profiles) profile
 
     Cardiology consultation as part of a congestive heart failure care pathway
 
-*   [CHF Creatinine](ActivityDefinition-chf-creatinine.html)
+*   [CHF Creatinine](ActivityDefinition-chf-creatinine-ad.html)
 
     Monitor Creatinine
 
-*   [CHF eGFR](ActivityDefinition-chf-egfr.html)
+*   [CHF eGFR](ActivityDefinition-chf-egfr-ad.html)
 
     Measure eGFR
 
-*   [CHF Jugular Venous Pressure](ActivityDefinition-chf-jvp.html)
+*   [CHF Jugular Venous Pressure](ActivityDefinition-chf-jvp-ad.html)
 
     Measure jugular venous pressure
 
-*   [CHF Net IO](ActivityDefinition-chf-net-io.html)
+*   [CHF Net IO](ActivityDefinition-chf-net-io-ad.html)
 
     Measure net intake/output
 
-*   [CHF Oxygen Saturation](ActivityDefinition-chf-o2-sat.html)
+*   [CHF Oxygen Saturation](ActivityDefinition-chf-o2-sat-ad.html)
 
     Monitor Oxygen Saturation
 
-*   [CHF Potassium](ActivityDefinition-chf-potassium.html)
+*   [CHF Potassium](ActivityDefinition-chf-potassium-ad.html)
 
     Monitor Potassium
 
-*   [CHF Urine Out](ActivityDefinition-chf-urine-out.html)
+*   [CHF Urine Out](ActivityDefinition-chf-urine-out-ad.html)
 
     Measure urine output
 
