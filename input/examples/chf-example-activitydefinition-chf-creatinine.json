@@ -1,6 +1,6 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "chf-creatinine",
+  "id": "chf-creatinine-ad",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-creatinine",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-creatinine-ad",
   "name": "CHFCreatinine",
   "title": "CHF Creatinine",
   "status": "draft",

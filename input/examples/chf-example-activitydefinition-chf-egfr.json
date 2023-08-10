@@ -1,6 +1,6 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "chf-egfr",
+  "id": "chf-egfr-ad",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-egfr",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-egfr-ad",
   "name": "CHFEGFR",
   "title": "CHF eGFR",
   "status": "draft",

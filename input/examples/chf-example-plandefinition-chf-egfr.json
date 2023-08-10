@@ -86,7 +86,7 @@
           }
         }
       }],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-egfr"
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-egfr-ad"
     }
   ]
 }

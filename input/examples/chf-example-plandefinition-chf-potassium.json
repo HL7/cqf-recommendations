@@ -86,7 +86,7 @@
           }
         }
       }],
-      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-potassium"
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-potassium-ad"
     }
   ]
 }

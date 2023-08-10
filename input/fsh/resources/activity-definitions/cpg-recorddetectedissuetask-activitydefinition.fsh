@@ -6,7 +6,7 @@ Title: "CPG Record DetectedIssue ActivityDefinition"
 * description = "Example Activity Definition for a recommendation to record a detected issue"
 * kind = #Task
 * profile = Canonical(cpg-recorddetectedissuetask)
-* code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue record a detected issue"
+* code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
 * doNotPerform = false
 * dynamicValue[+]
   * path = "status"

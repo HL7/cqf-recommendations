@@ -1,6 +1,6 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "chf-jvp",
+  "id": "chf-jvp-ad",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity"
@@ -24,7 +24,7 @@
       "valueCode": "structured"
     }
   ],
-  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-jvp",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/chf-jvp-ad",
   "name": "CHFJVP",
   "title": "CHF Jugular Venous Pressure",
   "status": "draft",

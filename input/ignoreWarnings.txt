@@ -7,6 +7,7 @@ INFORMATION: Bundle/am-scenario7: Bundle.entry[3]: This element does not match a
 INFORMATION: Bundle/am-scenario7: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle
 
 # The slice is valid in a derived profile
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[1].resource/*Library/AdministerMedication*/.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
 INFORMATION: Composition/chf-scenario1-caseplanprogressingnote: Composition.section[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplanprogressingnote
 INFORMATION: Task/request-am-scenario2: Task.input[+]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask
 INFORMATION: Task/request-am-scenario3: Task.input[+]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask
@@ -438,30 +439,30 @@ INFORMATION: ActivityDefinition/chf-bodyweight-change-ad: ActivityDefinition: Va
 INFORMATION: ActivityDefinition/chf-bodyweight-change-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-cardiology-consultation: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-cardiology-consultation: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-creatinine: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-creatinine: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-egfr: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-egfr: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-jvp: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-jvp: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-creatinine-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-creatinine-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-egfr-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-egfr-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-jvp-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-jvp-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-lasix-iv: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-lasix-iv: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-lasix-po: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-lasix-po: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-net-io: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-net-io: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-o2-sat: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-o2-sat: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-potassium: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-potassium: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-net-io-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-net-io-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-o2-sat-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-o2-sat-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-potassium-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-potassium-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-report-bodyweight: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-report-bodyweight: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-report-bodyweight-change: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-report-bodyweight-change: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: ActivityDefinition/chf-report-urine-out: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/chf-report-urine-out: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
-INFORMATION: ActivityDefinition/chf-urine-out: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/chf-urine-out: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
+INFORMATION: ActivityDefinition/chf-urine-out-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/chf-urine-out-ad: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity - listed in meta
 INFORMATION: CareTeam/chf-careteamdefinition: CareTeam: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteamdefinition
 INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/GraphDefinition
 INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition - listed in meta
