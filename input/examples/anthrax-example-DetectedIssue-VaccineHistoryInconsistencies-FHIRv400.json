@@ -1,0 +1,36 @@
+{
+  "resourceType": "DetectedIssue",
+  "id": "vaccine-history-inconsistencies-detected-issue",
+  "detail": "The patient has an active prescription for [Ciprofloxacin]. Evaluate the dosage and duration to ensure a 60-day regimen of appropriate antibiotic post-anthrax exposure: [Ciprofloxacin 500 mg by mouth every 12 hours for 60 days].",
+  "author": {
+    "reference": "Device/anthrax-example-device"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "NOTEQUIV",
+        "display": "Not equivalent alert"
+      }
+    ]
+  },
+  "implicated": [
+    {
+      "reference": "MedicationRequest/7d5a007b-4182-49b0-9113-0acd5a283e91"
+    }
+  ],
+  "mitigation": [
+    {
+      "action": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "314529007",
+            "display": "Medication review due (situation)"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "preliminary"
+}

@@ -1,0 +1,150 @@
+{
+	"resourceType": "PlanDefinition",
+	"id": "anc-contact",
+	"url": "http://fhir.org/guides/who/anc-cds/PlanDefinition/ANC_Contact",
+	"identifier": [
+		{
+			"use": "official",
+			"value": "ANC_Contact"
+		}
+	],
+	"version": "0.1.0",
+	"name": "ANC_Contact",
+	"title": "PlanDefinition - WHO ANC Guideline Contact",
+	"type": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+				"code": "workflow-definition",
+				"display": "Workflow Definition"
+			}
+		]
+	},
+	"status": "draft",
+	"experimental": true,
+	"date": "2019-05-15",
+	"useContext": [
+		{
+			"code": {
+				"system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+				"code": "focus"
+			},
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "77386006",
+						"display": "Pregnant (finding)"
+					}
+				]
+			}
+		}
+	],
+	"copyright": "© WHO 2019+.",
+	"action": [
+		{
+			"title": "Registration",
+			"code": [
+				{
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
+							"code": "registration"
+						}
+					]
+				}
+			],
+			"definitionCanonical": "http://hl7.org/fhir/uv/cpg/PlanDefinition/cpg-common-registration",
+			"_definitionCanonical": {
+				"fhir_comments": [
+					"TODO: Can use the common registration process, or override with an ANC-specific registration process"
+				]
+			}
+		},
+		{
+			"title": "Record health history",
+			"code": [
+				{
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
+							"code": "history-and-physical"
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"title": "Record first contact information",
+					"condition": [
+						{
+							"kind": "applicability",
+							"expression": {
+								"language": "text/cql",
+								"expression": "Is First Contact"
+							}
+						}
+					],
+					"definitionCanonical": "http://fhir.org/guides/who/anc-cds/Questionnaire/anc-first-contact"
+				},
+				{
+					"title": "Record every contact information",
+					"definitionCanonical": "http://fhir.org/guides/who/anc-cds/Questionnaire/anc-every-contact"
+				}
+			]
+		},
+		{
+			"title": "Assess danger signs",
+			"code": [
+				{
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
+							"code": "triage"
+						}
+					]
+				}
+			],
+			"definitionCanonical": "http://fhir.org/guides/who/anc-cds/Questionnaire/anc-quick-check"
+		},
+		{
+			"title": "Assess current pregnancy conditions, including symptoms and lab tests",
+			"code": [
+				{
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
+							"code": "diagnostic-testing"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Case management or referral",
+			"code": [
+				{
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
+							"code": "discharge-referral-of-patient"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Schedule follow-up visit",
+			"code": [
+				{
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs",
+							"code": "monitor-and-follow-up-of-patient"
+						}
+					]
+				}
+			]
+		}
+	]
+}

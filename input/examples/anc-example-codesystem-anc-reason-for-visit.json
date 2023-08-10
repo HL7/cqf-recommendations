@@ -1,0 +1,75 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "anc-reason-for-visit-cs",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
+		]
+	},
+	"extension": [
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+			"valueCode": "shareable"
+		},
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+			"valueCode": "computable"
+		},
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+			"valueCode": "publishable"
+		},
+		{
+			"url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+			"valueCode": "structured"
+		}
+	],
+	"url": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-reason-for-visit-cs",
+	"name": "ANCReasonForVisit",
+	"title": "ANC Reason for Visit",
+	"status": "draft",
+	"experimental": true,
+	"date": "2019-05-08",
+	"publisher": "Health Level 7 International - Clinical Decision Support WG",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://www.hl7.org/Special/committees/dss/index.cfm"
+				}
+			]
+		}
+	],
+	"description": "Codes used to identify the reason for an antenatal care visit",
+	"caseSensitive": true,
+	"valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/anc-reason-for-visit-vs",
+	"content": "complete",
+	"concept": [
+		{
+			"code": "routine",
+			"display": "Routine",
+			"definition": "For a scheduled (routine) visit"
+		},
+		{
+			"code": "specific-complaint",
+			"display": "Specific complaint",
+			"definition": "For specific complaints about you or your baby"
+		},
+		{
+			"code": "first-visit",
+			"display": "First visit",
+			"definition": "First visit"
+		},
+		{
+			"code": "follow-up-visit",
+			"display": "Follow-up visit",
+			"definition": "Follow-up visit"
+		},
+		{
+			"code": "include-family-member",
+			"display": "Include family member",
+			"definition": "Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?"
+		}
+	]
+}
