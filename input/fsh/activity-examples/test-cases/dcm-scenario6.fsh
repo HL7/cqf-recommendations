@@ -4,7 +4,7 @@ Usage: #example
 Description: "Example test case"
 * status = #stopped
 * category = $medication-statement-category#inpatient "Inpatient"
-* medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package) (package)"
+* medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package)"
 * subject = Reference(dcm-scenario6-patient)
 * effectiveDateTime = "2015-01-23"
 * dateAsserted = "2015-02-22"

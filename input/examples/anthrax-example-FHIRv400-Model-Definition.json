@@ -1,7 +1,7 @@
 {
   "resourceType": "Library",
   "id": "model-definition",
-  "url": "Library/FHIRv400/FHIRv400_Model_Definition.json",
+  "url": "http://hl7.org/fhir/uv/cpg/Library/model-definition",
   "identifier": [
     {
       "use": "official",

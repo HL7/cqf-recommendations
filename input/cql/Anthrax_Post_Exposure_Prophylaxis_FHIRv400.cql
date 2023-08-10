@@ -1627,7 +1627,7 @@ define OrderSet:
     contact: ContactInfo,
     copyright: CopyrightStatement,
     "library": {
-      'Library/Anthrax_Post_Exposure_Prophylaxis_FHIRv400_Library'
+      'http://hl7.org/fhir/uv/cpg/Library/anthrax-post-exposure-prophylaxis-library'
     },
     action: { {
       title: 'Anthrax Post Exposure Prophylaxis',

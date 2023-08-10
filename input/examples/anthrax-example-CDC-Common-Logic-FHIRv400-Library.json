@@ -1,7 +1,7 @@
 {
   "resourceType": "Library",
   "id": "cdc-common-logic-library",
-  "url": "Library/FHIRv400/CDC_Common_Logic_FHIRv400_Library.json",
+  "url": "http://hl7.org/fhir/uv/cpg/Library/cdc-common-logic-library",
   "identifier": [
     {
       "use": "official",

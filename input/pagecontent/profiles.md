@@ -2,10 +2,10 @@ FHIR profiles are a key aspect of supporting interoperable computable content, p
 
 This page provides overview documentation for the following categories of profiles and documentation:
 
-*   **[Artifact Profiles](profiles.html#artifact-profiles)**: Profiles for shareable knowledge artifacts
-*   **[Domain Profiles](profiles.html#domain-profiles)**: Domain profiles such as Case/Plan and Metric
-*   **[Activity Profiles](profiles.html#activity-profiles)**: Activity profiles such as MedicationRequest
-*   **[Content Profiles](profiles.html#content-profiles)**: Documentation on using profiles with CPG content
+*   **Artifact Profiles**: Profiles for shareable knowledge artifacts
+*   **Domain Profiles**: Domain profiles such as Case/Plan and Metric
+*   **Activity Profiles**: Activity profiles such as MedicationRequest
+*   **Content Profiles**: Documentation on using profiles with CPG content
 
 For indexes of profiles and extensions defined in this implementation guide, see the following:
 
@@ -13,7 +13,7 @@ For indexes of profiles and extensions defined in this implementation guide, see
 *   **[Extension Index](artifacts.html#extension-index)**: Alphabetical extension listing
 *   **[Example Profile Index](examples.html#profile-index)**: Alphabetical listing of profiles used in examples
 
-### Artifact profiles {#artifact-profiles}
+### Artifact profiles
 
 For definitional artifacts, this implementation guide defines profile classes to represent knowledge capabilities for shareable, computable, publishable, and executable knowledge artifacts. All knowledge artifacts must be at least shareable, and where appropriate for the target environment, artifacts should declare the capabilities they support using the \[cpg-knowledgeCapability\](StructureDefinition-cpg-knowledgeCapability.html) extension, as well as the knowledge representation level of the artifact using the \[cpg-knowledgeRepresentationLevel\](StructureDefinition-cpg-knowledgeRepresentationLevel) extension, as defined in the shareable profiles.
 
@@ -35,13 +35,13 @@ Note that explicit profiles for capabilities are only defined when there are spe
 \* - Conformance expectations covered by the Computable profile
 \*\* - Conformance expectations covered by the Shareable profile
 
-### Domain Profiles {#domain-profiles}
+### Domain Profiles
 
 {% include profile-tables/domain-profiles.html %}
 
 Examples of the use of these profiles are available in the Examples page. In particular, see the [Congestive Heart Failure Pathway](examples-chf.html) example.
 
-### Activity Profiles {#activity-profiles}
+### Activity Profiles
 
 To represent the activities in a computable guideline, this implementation guide follows the workflow patterns established by the base FHIR specification, _definition_, _request_, and _event_. For each type of activity, these profiles establish at least:
 
@@ -63,7 +63,7 @@ Note that the intent of these profiles is not to establish the content of the ac
 
 See the [Activity Examples](examples-activities.html) for a complete example of each of the above activity types.
 
-### Content Profiles {#content-profiles}
+### Content Profiles
 
 In addition to the profiles defined by this implementation guide, computable content generally deals with two broad categories of profiles:
 
@@ -94,7 +94,7 @@ In this example, the condition is referencing the `status` and `category` elemen
 
 Note that for logic expressed in CQL, this information can be inferred by static analysis of the CQL expressions and is exposed statically in the `dataRequirement` element of the `Library` resource. In addition, the [`$data-requirements`](http://hl7.org/fhir/R4/library-operation-data-requirements.html) operation can be used to extract this information from a CQL Library dynamically.
 
-#### Implementation Considerations[](profiles.html#implementation-considerations "link to here")
+#### Implementation Considerations
 
 Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG **SHOULD** use International Patient Summary.
 

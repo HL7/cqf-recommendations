@@ -13,7 +13,7 @@ RuleSet: KnowledgeArtifactMetadata(id, type)
   * valueCode = #structured
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
-* status = #draft
+* status = #active
 * version = "1.0.0"
 * publisher = "HL7 International - Clinical Decision Support WG"
 
@@ -34,7 +34,7 @@ RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
 * experimental = true
-* status = #draft
+* status = #active
 
 RuleSet: Profile(profile-id)
 * meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
@@ -63,7 +63,7 @@ RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
 * url = "http://example.org/Questionnaire/{id}"
 * publisher = "HL7 International - Clinical Decision Support WG"
 * version = "1.0.0"
-* status = #draft
+* status = #active
 * experimental = true
 
 RuleSet: KnowledgeArtifactADMetadata(id)
@@ -82,6 +82,6 @@ RuleSet: KnowledgeArtifactADMetadata(id)
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * intent = #proposal
-* status = #draft
+* status = #active
 * publisher = "HL7 International - Clinical Decision Support WG"
 * version = "1.0.0"

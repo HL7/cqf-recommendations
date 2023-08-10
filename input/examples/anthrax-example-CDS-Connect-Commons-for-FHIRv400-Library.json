@@ -1,7 +1,7 @@
 {
   "resourceType": "Library",
   "id": "cds-connect-commons-library",
-  "url": "Library/FHIRv400/CDS_Connect_Commons_for_FHIRv400_Library.json",
+  "url": "http://hl7.org/fhir/uv/cpg/Library/cds-connect-commons-library",
   "identifier": [
     {
       "use": "official",

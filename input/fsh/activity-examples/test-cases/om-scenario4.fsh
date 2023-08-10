@@ -3,7 +3,7 @@ InstanceOf: MedicationDispense
 Usage: #example
 Description: "Example test case"
 * status = #completed
-* medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package) (package)"
+* medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package)"
 * subject = Reference(om-scenario4-patient)
 * type = $v3-ActCode#RFP "Refill - Part Fill"
 * quantity = 100 $v3-orderableDrugForm-cs#TAB
