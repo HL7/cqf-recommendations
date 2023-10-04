@@ -2,7 +2,7 @@ Profile: CPGImmunizationRecommendation
 Parent: ImmunizationRecommendation
 Id: cpg-immunizationrecommendation
 Title: "CPG Immunization Recommendation"
-Description: "Recommendation for a particular immunization as part of the delivery of a computable clinical practice guideline"
+Description: "DEPRECATED: Use CPGMedicationRequest resource with immunization bindings. Recommendation for a particular immunization as part of the delivery of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-immunizationrecommendation)
 * extension contains
   $workflow-instantiatesCanonical named instantiatesCanonical 0..1 MS and

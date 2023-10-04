@@ -69,17 +69,18 @@ define "Immunization Not Done":
     where C.status in { 'not-done' }
 
 define "Immunization Proposal":
-  [ImmunizationRecommendation] R
-    let Recommendation: First(R.recommendation) // NOTE: Should select specific recommendation here based on vaccineCode
-    where Recommendation.forecastStatus ~ "Immunization Due"
-      or Recommendation.forecastStatus ~ "Immunization Overdue"
+  [MedicationRequest] MR
+    where MR.status in { 'draft', 'active' }
+      and MR.doNotPerform is not true
 
 define "Immunization Not Proposed":
-  [ImmunizationRecommendation] R
-    let Recommendation: First(R.recommendation) // NOTE: Should select specific recommendation here based on vaccineCode
-    where Recommendation.forecastStatus ~ "Immunization Immune"
-      or Recommendation.forecastStatus ~ "Immunization Contraindicated"
-      or Recommendation.forecastStatus ~ "Immunization Complete"
+  [MedicationRequest] MR
+    where MR.status in { 'draft', 'active' }
+      and MR.doNotPerform is true
+
+define "Immunization Proposal Rejected":
+  [MedicationRequest] MR
+    where MR.status = 'cancelled'
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
@@ -90,4 +91,5 @@ define "Is Recommendation Applicable":
     and not exists (
       "Immunization Proposal"
         union "Immunization Not Proposed"
+        union "Immunization Proposal Rejected"
     )

@@ -2,6 +2,7 @@ Instance: cpg-immunizationrecommendation-activitydefinition
 InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG ImmunizationRecommendation ActivityDefinition"
+Description: "DEPRECATED: Use MedicationRequest ActivityDefinition with vaccine bindings"
 * insert ActivityDefinitionMetadata(cpg-immunizationrecommendation-activitydefinition, CPGImmunizationRecommendationActivityDefinition)
 * description = "Example Activity Definition for a recommendation to recommend an immunization"
 * kind = #ImmunizationRecommendation
