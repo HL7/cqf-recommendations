@@ -1,10 +1,12 @@
 Instance: ri-scenario2
-InstanceOf: ImmunizationRecommendation
+InstanceOf: MedicationRequest
 Usage: #example
 Description: "Example test case"
-* extension[workflow-instantiatesCanonical].valueCanonical = Canonical(activity-example-recommendimmunization-ad)
-* patient = Reference(ri-scenario2-patient)
-* date = "2020-12-22"
-* recommendation
-  * vaccineCode = $sct#14745005 "Hepatitis A vaccine"
-  * forecastStatus = $immunization-recommendation-status#due "Due"
+* status = #draft
+* intent = #proposal
+* category[+] = $cpg-activity-type-cs#recommend-immunization
+* priority = #routine
+* medicationCodeableConcept = $sct#14745005 "Hepatitis A vaccine"
+* subject = Reference(ri-scenario2-patient)
+* instantiatesCanonical = Canonical(activity-example-recommendimmunization-ad)
+* authoredOn = "2020-12-22"

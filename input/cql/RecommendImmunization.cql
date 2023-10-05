@@ -4,13 +4,9 @@ using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 
-codesystem "Immunization Recommendation Status Codes": 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status'
+codesystem "Activity Type": 'http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs'
 
-code "Immunization Due": 'due' from "Immunization Recommendation Status Codes"
-code "Immunization Overdue": 'overdue' from "Immunization Recommendation Status Codes"
-code "Immunization Immune": 'immune' from "Immunization Recommendation Status Codes"
-code "Immunization Contraindicated": 'contraindicated' from "Immunization Recommendation Status Codes"
-code "Immunization Complete": 'complete' from "Immunization Recommendation Status Codes"
+code "Recommend Immunization": 'immunization-recommendation' from "Activity Type"
 
 context Patient
 
@@ -69,17 +65,21 @@ define "Immunization Not Done":
     where C.status in { 'not-done' }
 
 define "Immunization Proposal":
-  [ImmunizationRecommendation] R
-    let Recommendation: First(R.recommendation) // NOTE: Should select specific recommendation here based on vaccineCode
-    where Recommendation.forecastStatus ~ "Immunization Due"
-      or Recommendation.forecastStatus ~ "Immunization Overdue"
+  [MedicationRequest] MR
+    where exists ( (MR.category) C where C ~ "Recommend Immunization" )
+      and MR.status in { 'draft', 'active' }
+      and MR.doNotPerform is not true
 
 define "Immunization Not Proposed":
-  [ImmunizationRecommendation] R
-    let Recommendation: First(R.recommendation) // NOTE: Should select specific recommendation here based on vaccineCode
-    where Recommendation.forecastStatus ~ "Immunization Immune"
-      or Recommendation.forecastStatus ~ "Immunization Contraindicated"
-      or Recommendation.forecastStatus ~ "Immunization Complete"
+  [MedicationRequest] MR
+    where exists ( (MR.category) C where C ~ "Recommend Immunization" )
+      and MR.status in { 'draft', 'active' }
+      and MR.doNotPerform is true
+
+define "Immunization Proposal Rejected":
+  [MedicationRequest] MR
+    where exists ( (MR.category) C where C ~ "Recommend Immunization" )
+      and MR.status = 'cancelled'
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
@@ -90,4 +90,5 @@ define "Is Recommendation Applicable":
     and not exists (
       "Immunization Proposal"
         union "Immunization Not Proposed"
+        union "Immunization Proposal Rejected"
     )

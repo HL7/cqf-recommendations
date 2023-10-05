@@ -10,7 +10,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPG Dispense Medication ActivityDefinition](ActivityDefinition-cpg-dispensemedication-activitydefinition.html) CPGDispenseMedicationActivityDefinition
 *   [CPG Administer Medication ActivityDefinition](ActivityDefinition-cpg-administermedication-activitydefinition.html) CPGAdministerMedicationActivityDefinition
 *   [CPG Document Medication ActivityDefinition](ActivityDefinition-cpg-documentmedication-activitydefinition.html) CPGDocumentMedicationActivityDefinition
-*   [CPG ImmunizationRecommendation ActivityDefinition](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html) CPGImmunizationRecommendationActivityDefinition
+*   [CPG ImmunizationRecommendation ActivityDefinition (DEPRECATED: Use MedicationRequest)](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html) CPGImmunizationRecommendationActivityDefinition
 *   [CPG ServiceRequest ActivityDefinition](ActivityDefinition-cpg-servicerequest-activitydefinition.html) CPGServiceRequestActivityDefinition
 *   [CPG Propose Diagnosis ActivityDefinition](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html) CPGProposeDiagnosisTaskActivityDefinition
 *   [CPG Record DetectedIssue ActivityDefinition](ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition.html) CPGRecordDetectedIssueTaskActivityDefinition

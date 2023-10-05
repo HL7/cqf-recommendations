@@ -270,7 +270,7 @@ Work through this level of detail for each of the activities (https://hl7.org/fh
 ## Dispense a medication
 ## Administer a medication
 ## Document a medication
-## Recommend an immunization
+## Recommend an immunization (DEPRECATED: Use Order a medication)
 ## Order a service
 ## Enroll a patient
 ## Generate a report
