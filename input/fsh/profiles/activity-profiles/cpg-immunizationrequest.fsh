@@ -12,8 +12,10 @@ Description: "Recommendation for a particular immunization as part of the delive
 * category MS
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = coding
+* category ^slicing.rules = #open
+* category ^slicing.description = "Slice based on the coding pattern"
 * category contains immunization 1..1 MS
-* category[immunization].coding = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs#immunization-recommendation
+* category[immunization].coding = $cpg-activity-type-cs#recommend-immunization
 * priority MS
 * doNotPerform MS
 * medication[x] MS
