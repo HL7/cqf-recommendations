@@ -4,13 +4,9 @@ using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 
-codesystem "Immunization Recommendation Status Codes": 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status'
+codesystem "Activity Type": 'http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs'
 
-code "Immunization Due": 'due' from "Immunization Recommendation Status Codes"
-code "Immunization Overdue": 'overdue' from "Immunization Recommendation Status Codes"
-code "Immunization Immune": 'immune' from "Immunization Recommendation Status Codes"
-code "Immunization Contraindicated": 'contraindicated' from "Immunization Recommendation Status Codes"
-code "Immunization Complete": 'complete' from "Immunization Recommendation Status Codes"
+code "Recommend Immunization": 'immunization-recommendation' from "Activity Type"
 
 context Patient
 
@@ -70,17 +66,20 @@ define "Immunization Not Done":
 
 define "Immunization Proposal":
   [MedicationRequest] MR
-    where MR.status in { 'draft', 'active' }
+    where exists ( (MR.category) C where C ~ "Recommend Immunization" )
+      and MR.status in { 'draft', 'active' }
       and MR.doNotPerform is not true
 
 define "Immunization Not Proposed":
   [MedicationRequest] MR
-    where MR.status in { 'draft', 'active' }
+    where exists ( (MR.category) C where C ~ "Recommend Immunization" )
+      and MR.status in { 'draft', 'active' }
       and MR.doNotPerform is true
 
 define "Immunization Proposal Rejected":
   [MedicationRequest] MR
-    where MR.status = 'cancelled'
+    where exists ( (MR.category) C where C ~ "Recommend Immunization" )
+      and MR.status = 'cancelled'
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
