@@ -872,22 +872,54 @@ INFORMATION: StructureDefinition/cpg-workflowdefinition: StructureDefinition: Va
 # Code '333919005' is used for example purposes only
 INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[1].resource/*MedicationAdministration/am-scenario7-2*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
 INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[2].resource/*MedicationRequest/am-scenario7-3*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
-== fsh-generated/resources/Bundle-am-scenario7-bundle.json ==
 INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[1].resource/*MedicationAdministration/am-scenario7*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
 INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[2].resource/*MedicationRequest/am-scenario7-mr*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
 INFORMATION: MedicationRequest/am-scenario1: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
-== fsh-generated/resources/MedicationRequest-am-scenario2.json ==
 INFORMATION: MedicationRequest/am-scenario2: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
-== fsh-generated/resources/MedicationRequest-am-scenario3.json ==
 INFORMATION: MedicationRequest/am-scenario3: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
-== fsh-generated/resources/MedicationRequest-am-scenario4-mr.json ==
 INFORMATION: MedicationRequest/am-scenario4-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
-== fsh-generated/resources/MedicationRequest-am-scenario5-mr.json ==
 INFORMATION: MedicationRequest/am-scenario5-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
-== fsh-generated/resources/MedicationRequest-am-scenario6-mr.json ==
 INFORMATION: MedicationRequest/am-scenario6-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
-== fsh-generated/resources/MedicationRequest-am-scenario7-mr.json ==
 INFORMATION: MedicationRequest/am-scenario7-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+INFORMATION: MedicationAdministration/am-scenario4: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+INFORMATION: MedicationAdministration/am-scenario5: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+INFORMATION: MedicationAdministration/am-scenario6: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+INFORMATION: MedicationAdministration/am-scenario7: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
 
 # Code '14745005' is used for example purposes only
 INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.product.ofType(CodeableConcept).coding[0]: The code '14745005' is valid but is not active
+INFORMATION: Immunization/ri-scenario4: Immunization.vaccineCode.coding[0]: The code '14745005' is valid but is not active
+INFORMATION: ImmunizationRecommendation/ri-scenario2: ImmunizationRecommendation.recommendation[0].vaccineCode[0].coding[0]: The code '14745005' is valid but is not active
+
+# Library.content slicing
+INFORMATION: Library/administermedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/administermedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/collectinformation-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/collectinformation-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/dispensemedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/dispensemedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/documentmedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/documentmedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/donotcollectinformation-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/donotcollectinformation-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/donotsendmessage-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/donotsendmessage-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/enrollment-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/enrollment-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/generatereport-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/generatereport-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/ordermedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/ordermedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/orderservice-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/orderservice-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/proposediagnosis-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/proposediagnosis-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/recommendimmunization-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/recommendimmunization-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/recorddetectedissue-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/recorddetectedissue-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/recordinference-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/recordinference-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/reportflag-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
+INFORMATION: Library/reportflag-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/sendmessage-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0

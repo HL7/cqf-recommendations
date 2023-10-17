@@ -2,6 +2,7 @@ Instance: cpg-common-identity
 InstanceOf: Questionnaire
 Usage: #example
 Title: "CPG Common Questionnaire - Identifying information"
+Description: "Questionnaire used to identify patient"
 * insert QuestionnaireMetadata(cpg-common-identity)
 * name = "CPG_Common_Questionnaire_Identity"
 * subjectType = #Patient

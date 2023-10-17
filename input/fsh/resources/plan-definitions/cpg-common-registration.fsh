@@ -2,6 +2,7 @@ Instance: cpg-common-registration
 InstanceOf: PlanDefinition
 Usage: #example
 Title: "PlanDefinition - CPG Common Registration"
+Description: "Plan for registering patient"
 * insert PlanDefinitionMetadata(cpg-common-registration)
 * name = "PlanDefinition_CPG_Common_Registration"
 * type = $plan-definition-type#workflow-definition "Workflow Definition"
