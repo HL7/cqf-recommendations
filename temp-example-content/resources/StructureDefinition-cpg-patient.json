@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-patient",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient",
+  "name": "CPGPatient",
+  "title": "CPG Patient",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile of Patient for use with CPG Implementation Guide",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.use",
+        "path": "Patient.identifier.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name.use",
+        "path": "Patient.name.use",
+        "mustSupport": true
+      }
+    ]
+  }
+}

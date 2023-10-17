@@ -1,0 +1,149 @@
+{
+  "resourceType": "Library",
+  "id": "proposediagnosis-library",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/ValueSet/condition-clinical"
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/ValueSet/condition-ver-status"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "Patient",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
+    },
+    {
+      "name": "Inclusion Criteria",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Propose Diagnosis Task",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Task"
+    },
+    {
+      "name": "Diagnosis",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Condition"
+    },
+    {
+      "name": "Active or Completed Activity",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Task"
+    },
+    {
+      "name": "Activity Not Done",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Task"
+    },
+    {
+      "name": "Activity Proposal",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Task"
+    },
+    {
+      "name": "Activity Proposal Rejected",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Task"
+    },
+    {
+      "name": "Is Recommendation Applicable",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Task"
+      ],
+      "type": "Task"
+    },
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/Condition"
+      ],
+      "type": "Condition"
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-ProposeDiagnosis.cql"
+    }
+  ],
+  "experimental": true,
+  "url": "http://hl7.org/fhir/uv/cpg/Library/proposediagnosis-library",
+  "status": "active",
+  "version": "1.0.0",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "description": "Logic for an example recommendation to propose a diagnosis",
+  "name": "ProposeDiagnosisLibrary",
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  }
+}

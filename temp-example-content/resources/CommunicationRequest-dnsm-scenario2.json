@@ -1,0 +1,25 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "dnsm-scenario2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-donotsendmessage-ad"
+    }
+  ],
+  "payload": [
+    {
+      "contentString": "Hello!"
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "Patient/dnsm-scenario2-patient"
+    }
+  ],
+  "status": "active",
+  "doNotPerform": true,
+  "subject": {
+    "reference": "Patient/dnsm-scenario2-patient"
+  }
+}

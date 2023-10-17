@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-computablemetric",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric",
+  "name": "CPGComputableMetric",
+  "title": "CPG Computable Metric",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines the minimum expectations and behavior for a computable metric for use with content conforming to the CPG implementation guide",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Measure",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablemetric",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Measure.subject[x]",
+        "path": "Measure.subject[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.library",
+        "path": "Measure.library",
+        "max": "1",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.scoring",
+        "path": "Measure.scoring",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.compositeScoring",
+        "path": "Measure.compositeScoring",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.type",
+        "path": "Measure.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.improvementNotation",
+        "path": "Measure.improvementNotation",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.group",
+        "path": "Measure.group",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.group.population",
+        "path": "Measure.group.population",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

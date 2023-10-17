@@ -1,0 +1,68 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-immunizationactivity",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity",
+  "name": "CPGImmunizationActivity",
+  "title": "CPG Immunization Activity",
+  "status": "active",
+  "experimental": false,
+  "description": "Definition of a recommendation for a particular immunization as part of a computable clinical practice guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ActivityDefinition",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ActivityDefinition.kind",
+        "path": "ActivityDefinition.kind",
+        "fixedCode": "ImmunizationRecommendation"
+      },
+      {
+        "id": "ActivityDefinition.profile",
+        "path": "ActivityDefinition.profile",
+        "short": "At least a CPG ImmunizationRecommendation",
+        "definition": "The profile that the resulting immunization recommendation must conform to; at least a CPGImmunizationRecommendation, though the activity definition may introduce further constraints.",
+        "min": 1,
+        "fixedCanonical": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation"
+      },
+      {
+        "id": "ActivityDefinition.intent",
+        "path": "ActivityDefinition.intent",
+        "min": 1,
+        "fixedCode": "proposal",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.doNotPerform",
+        "path": "ActivityDefinition.doNotPerform",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

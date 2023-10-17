@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-summaryFor",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryFor",
+  "name": "CPGSummaryFor",
+  "title": "CPG Summary For Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "Specifies a case (episode of care), pathway, strategy, or recommendation which this summary is for.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Composition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Summary For Extension",
+        "definition": "Specifies a case (episode of care), pathway, strategy, or recommendation which this summary is for."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryFor"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careplan",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-strategy",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

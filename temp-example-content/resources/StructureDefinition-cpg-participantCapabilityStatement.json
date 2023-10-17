@@ -1,0 +1,62 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-participantCapabilityStatement",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement",
+  "name": "CPGParticipantCapabilityStatement",
+  "title": "CPG Participant Capability Statement Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "A CapabilityStatement that specifies what capabilities a device must have in order to participant in this action of a PlanDefinition.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PlanDefinition.action.participant"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Participant Capability Statement Extension",
+        "definition": "A CapabilityStatement that specifies what capabilities a device must have in order to participant in this action of a PlanDefinition.",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CapabilityStatement"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

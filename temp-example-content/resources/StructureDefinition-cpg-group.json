@@ -1,0 +1,98 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-group",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-group",
+  "name": "CPGGroup",
+  "title": "CPG Group",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines an actual group of subjects, suitable for use in various contexts, such as a enrollment in a pathway or participant in a study",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Group",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group.identifier",
+        "path": "Group.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.active",
+        "path": "Group.active",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.type",
+        "path": "Group.type",
+        "fixedCode": "person",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.actual",
+        "path": "Group.actual",
+        "fixedBoolean": true,
+        "mustSupport": true
+      },
+      {
+        "id": "Group.code",
+        "path": "Group.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.name",
+        "path": "Group.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Group.characteristic",
+        "path": "Group.characteristic",
+        "max": "0"
+      },
+      {
+        "id": "Group.member",
+        "path": "Group.member",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.member.entity",
+        "path": "Group.member.entity",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Group.member.period",
+        "path": "Group.member.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.member.inactive",
+        "path": "Group.member.inactive",
+        "mustSupport": true
+      }
+    ]
+  }
+}

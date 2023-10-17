@@ -1,0 +1,68 @@
+{
+  "resourceType": "Library",
+  "id": "activity-example-administermedication-library",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assetcollection"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+    },
+    {
+      "type": "composed-of",
+      "resource": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication-ad"
+    },
+    {
+      "type": "composed-of",
+      "resource": "http://hl7.org/fhir/uv/cpg/Library/administermedication-library"
+    },
+    {
+      "type": "composed-of",
+      "resource": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication-pd"
+    }
+  ],
+  "experimental": true,
+  "url": "http://hl7.org/fhir/uv/cpg/Library/activity-example-administermedication-library",
+  "status": "active",
+  "version": "1.0.0",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "description": "Asset collection of artifacts in the Administer Medication activity example",
+  "name": "ActivityExampleAdministerMedicationLibrary",
+  "type": {
+    "coding": [
+      {
+        "code": "asset-collection",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  }
+}

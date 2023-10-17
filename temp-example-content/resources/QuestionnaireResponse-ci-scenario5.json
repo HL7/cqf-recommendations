@@ -1,0 +1,19 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "ci-scenario5",
+  "item": [
+    {
+      "answer": [
+        {
+          "valueDate": "2020-12-10"
+        }
+      ],
+      "linkId": "A"
+    }
+  ],
+  "questionnaire": "http://example.org/Questionnaire/activity-example-collectinformation-questionnaire",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/ci-scenario5-patient"
+  }
+}

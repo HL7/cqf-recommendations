@@ -1,0 +1,35 @@
+{
+  "resourceType": "Task",
+  "id": "request-am-scenario2",
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "administer-medication",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+            "display": "Administer a medication"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "MedicationRequest/am-scenario2"
+      }
+    }
+  ],
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication-ad",
+  "status": "draft",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "code": "administer-medication",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Administer a medication"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/am-scenario2-patient"
+  }
+}

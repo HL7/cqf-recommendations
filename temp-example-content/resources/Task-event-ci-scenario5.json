@@ -1,0 +1,54 @@
+{
+  "resourceType": "Task",
+  "id": "event-ci-scenario5",
+  "basedOn": [
+    {
+      "reference": "Task/request-ci-scenario5"
+    }
+  ],
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "collect-information",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+            "display": "Collect information"
+          }
+        ]
+      },
+      "valueCanonical": "http://example.org/Questionnaire/activity-example-collectinformation-questionnaire"
+    }
+  ],
+  "output": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "collect-information",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+            "display": "Collect information"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "QuestionnaireResponse/ci-scenario5"
+      }
+    }
+  ],
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-collectinformation-ad",
+  "status": "completed",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "collect-information",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Collect information"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/dnsm-scenario5-patient"
+  }
+}

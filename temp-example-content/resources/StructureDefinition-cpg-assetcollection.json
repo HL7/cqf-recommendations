@@ -1,0 +1,139 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-assetcollection",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assetcollection",
+  "name": "CPGAssetCollection",
+  "title": "CPG Asset Collection",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile of the Library resource to describe a collection of related knowledge assets. The collection is a general purpose organizational structure for the purposes of distribution and dependency-management",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Library",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/shareablelibrary",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Library.type",
+        "path": "Library.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "asset-collection",
+              "system": "http://terminology.hl7.org/CodeSystem/library-type"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Library.subject[x]",
+        "path": "Library.subject[x]",
+        "max": "0"
+      },
+      {
+        "id": "Library.relatedArtifact",
+        "path": "Library.relatedArtifact",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:asset",
+        "path": "Library.relatedArtifact",
+        "sliceName": "asset",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:asset.type",
+        "path": "Library.relatedArtifact.type",
+        "fixedCode": "composed-of",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:asset.display",
+        "path": "Library.relatedArtifact.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:asset.resource",
+        "path": "Library.relatedArtifact.resource",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:requiredAsset",
+        "path": "Library.relatedArtifact",
+        "sliceName": "requiredAsset",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:requiredAsset.type",
+        "path": "Library.relatedArtifact.type",
+        "fixedCode": "depends-on",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:requiredAsset.display",
+        "path": "Library.relatedArtifact.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:requiredAsset.resource",
+        "path": "Library.relatedArtifact.resource",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Library.parameter",
+        "path": "Library.parameter",
+        "max": "0"
+      },
+      {
+        "id": "Library.dataRequirement",
+        "path": "Library.dataRequirement",
+        "max": "0"
+      },
+      {
+        "id": "Library.content",
+        "path": "Library.content",
+        "max": "0"
+      }
+    ]
+  }
+}

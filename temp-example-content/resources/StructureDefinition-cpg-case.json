@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-case",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case",
+  "name": "CPGCase",
+  "title": "CPG Case",
+  "status": "active",
+  "experimental": false,
+  "description": "CPG case represents a specific case of a patient enrolled in a particular pathway. The enrollment may have been automatic, prompted, or manual.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "EpisodeOfCare",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "EpisodeOfCare.extension",
+        "path": "EpisodeOfCare.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "EpisodeOfCare.extension:enrolledIn",
+        "path": "EpisodeOfCare.extension",
+        "sliceName": "enrolledIn",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "EpisodeOfCare.type",
+        "path": "EpisodeOfCare.type",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/episodeofcare-type",
+          "description": "Expresses the type of an episode of care"
+        }
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis",
+        "path": "EpisodeOfCare.diagnosis",
+        "min": 1
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis.condition",
+        "path": "EpisodeOfCare.diagnosis.condition",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EpisodeOfCare.patient",
+        "path": "EpisodeOfCare.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EpisodeOfCare.period",
+        "path": "EpisodeOfCare.period",
+        "mustSupport": true
+      }
+    ]
+  }
+}

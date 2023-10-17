@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-assertionExpression",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assertionExpression",
+  "name": "CPGAssertionExpression",
+  "title": "CPG Assertion Expression Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines formal computational semantics for the feature if it is asserted. This is typically only required if the case feature is of a different type than the profile (e.g. a boolean feature).",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Assertion Expression Extension",
+        "definition": "Defines formal computational semantics for the feature if it is asserted. This is typically only required if the case feature is of a different type than the profile (e.g. a boolean feature)."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assertionExpression"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Expression"
+          }
+        ]
+      }
+    ]
+  }
+}

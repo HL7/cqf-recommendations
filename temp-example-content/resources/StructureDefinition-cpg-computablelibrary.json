@@ -1,0 +1,139 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-computablelibrary",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary",
+  "name": "CPGComputableLibrary",
+  "title": "CPG Computable Library",
+  "status": "active",
+  "experimental": false,
+  "description": "The computable library profile sets the minimum expectations for a computable CQL library",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Library",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Library.subject[x]",
+        "path": "Library.subject[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact",
+        "path": "Library.relatedArtifact",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:dependency",
+        "path": "Library.relatedArtifact",
+        "sliceName": "dependency",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:dependency.type",
+        "path": "Library.relatedArtifact.type",
+        "fixedCode": "depends-on",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:dependency.resource",
+        "path": "Library.relatedArtifact.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+              "http://hl7.org/fhir/StructureDefinition/ValueSet",
+              "http://hl7.org/fhir/StructureDefinition/Library"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Library.parameter",
+        "path": "Library.parameter",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.dataRequirement",
+        "path": "Library.dataRequirement",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content",
+        "path": "Library.content",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "contentType"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content:cqlContent",
+        "path": "Library.content",
+        "sliceName": "cqlContent",
+        "short": "CQL Content",
+        "definition": "The CQL content represented as base-64 encoded data.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content:cqlContent.contentType",
+        "path": "Library.content.contentType",
+        "min": 1,
+        "fixedCode": "text/cql",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content:cqlContent.data",
+        "path": "Library.content.data",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

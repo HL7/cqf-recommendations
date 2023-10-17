@@ -1,0 +1,127 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-careteam",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam",
+  "name": "CPGCareTeam",
+  "title": "CPG Care Team",
+  "status": "active",
+  "experimental": false,
+  "description": "CPG care team represents a care team for a specific patient",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "CareTeam",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CareTeam",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CareTeam.identifier",
+        "path": "CareTeam.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.status",
+        "path": "CareTeam.status",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.name",
+        "path": "CareTeam.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.subject",
+        "path": "CareTeam.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.encounter",
+        "path": "CareTeam.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.period",
+        "path": "CareTeam.period",
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.participant",
+        "path": "CareTeam.participant",
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.participant.role",
+        "path": "CareTeam.participant.role",
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.participant.member",
+        "path": "CareTeam.participant.member",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitioner",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerrole",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedperson",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteam"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "CareTeam.managingOrganization",
+        "path": "CareTeam.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

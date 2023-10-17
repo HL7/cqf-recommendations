@@ -1,0 +1,170 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-enrollmenttask",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask",
+  "name": "CPGEnrollmentTask",
+  "title": "CPG Enrollment Task",
+  "status": "active",
+  "experimental": false,
+  "description": "Proposal to enroll the patient in a strategy or pathway as part of a computable clinical practice guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.modifierExtension:isUnenrollment",
+        "path": "Task.modifierExtension",
+        "sliceName": "isUnenrollment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Task.code",
+        "path": "Task.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "enrollment",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Task.input",
+        "path": "Task.input",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:pathway",
+        "path": "Task.input",
+        "sliceName": "pathway",
+        "short": "Pathway or Strategy",
+        "definition": "The Pathway or Strategy in which the patient is to be enrolled.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:pathway.type",
+        "path": "Task.input.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "enrollment",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:pathway.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Task.output",
+        "path": "Task.output",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Task.output:case",
+        "path": "Task.output",
+        "sliceName": "case",
+        "short": "Response",
+        "definition": "The QuestionnaireResponse that is the result of completing the task.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.output:case.type",
+        "path": "Task.output.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "enrollment",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Task.output:case.value[x]",
+        "path": "Task.output.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

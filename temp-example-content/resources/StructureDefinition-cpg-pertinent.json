@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-pertinent",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pertinent",
+  "name": "CPGPertinent",
+  "title": "CPG Pertinent Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "The pertinent positive or negative information relevant to the recommendation.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Pertinent Extension",
+        "definition": "The pertinent positive or negative information relevant to the recommendation.",
+        "comment": "This will typically be the most relevant case features used in determining applicability, but could also be other patient-specific information relevant to interpreting or assessing appropriateness of the recommendation with respect to the patient."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pertinent"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}

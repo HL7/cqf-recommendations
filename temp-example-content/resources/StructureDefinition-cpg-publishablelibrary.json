@@ -1,0 +1,101 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-publishablelibrary",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary",
+  "name": "CPGPublishableLibrary",
+  "title": "CPG Publishable Library",
+  "status": "active",
+  "experimental": false,
+  "description": "The publishable library defines the must support elements that are important for implementers to use and understand a library",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Library",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Library.title",
+        "path": "Library.title",
+        "min": 1
+      },
+      {
+        "id": "Library.date",
+        "path": "Library.date",
+        "min": 1
+      },
+      {
+        "id": "Library.copyright",
+        "path": "Library.copyright",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.approvalDate",
+        "path": "Library.approvalDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.lastReviewDate",
+        "path": "Library.lastReviewDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.effectivePeriod",
+        "path": "Library.effectivePeriod",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.topic",
+        "path": "Library.topic",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/definition-topic",
+          "description": "Topics for categorization and searching of artifacts"
+        }
+      },
+      {
+        "id": "Library.relatedArtifact",
+        "path": "Library.relatedArtifact",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact.display",
+        "path": "Library.relatedArtifact.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact.url",
+        "path": "Library.relatedArtifact.url",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact.resource",
+        "path": "Library.relatedArtifact.resource",
+        "mustSupport": true
+      }
+    ]
+  }
+}

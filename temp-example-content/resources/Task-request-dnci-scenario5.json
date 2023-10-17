@@ -1,0 +1,33 @@
+{
+  "resourceType": "Task",
+  "id": "request-dnci-scenario5",
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "collect-information",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+            "display": "Collect information"
+          }
+        ]
+      },
+      "valueCanonical": "http://example.org/Questionnaire/activity-example-collectinformation-questionnaire"
+    }
+  ],
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-collectinformation-ad",
+  "status": "ready",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "collect-information",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Collect information"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/dnci-scenario5-patient"
+  }
+}

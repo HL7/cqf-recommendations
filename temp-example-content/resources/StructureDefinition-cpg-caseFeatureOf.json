@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-caseFeatureOf",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf",
+  "name": "CPGCaseFeatureOf",
+  "title": "CPG Case Feature Of Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines which guideline elements this case feature definition is a feature of.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Case Feature Of Extension",
+        "definition": "Defines which guideline elements this case feature definition is a feature of."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "canonical"
+          }
+        ]
+      }
+    ]
+  }
+}

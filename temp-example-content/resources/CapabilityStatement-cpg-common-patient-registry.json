@@ -1,0 +1,69 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "cpg-common-patient-registry",
+  "url": "http://hl7.org/fhir/uv/cpg/CapabilityStatement/cpg-common-patient-registry",
+  "title": "CPG Common Patient Registry",
+  "description": "Describes the expected set of functionality required for a patient registry service that supports the common registration process defined in this implementation guide.",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "rest": [
+    {
+      "resource": [
+        {
+          "interaction": [
+            {
+              "code": "read"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "active",
+              "type": "token"
+            },
+            {
+              "name": "birthdate",
+              "type": "date"
+            },
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "identifier",
+              "type": "token"
+            }
+          ],
+          "operation": [
+            {
+              "name": "$match",
+              "definition": "http://hl7.org/fhir/OperationDefinition/Patient-match"
+            },
+            {
+              "name": "$summary",
+              "definition": "http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary"
+            }
+          ],
+          "type": "Patient"
+        }
+      ],
+      "mode": "server"
+    }
+  ],
+  "experimental": true,
+  "status": "active",
+  "date": "2023-08-04",
+  "name": "CPGCommonPatientRegistry",
+  "kind": "requirements",
+  "fhirVersion": "4.0.0"
+}

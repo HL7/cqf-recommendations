@@ -1,0 +1,98 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "activity-example-ordermedication-ad",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "dosage": [
+    {
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "doseAndRate": [
+        {
+          "type": {
+            "coding": [
+              {
+                "code": "ordered",
+                "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                "display": "Ordered"
+              }
+            ]
+          },
+          "doseQuantity": {
+            "value": 75,
+            "code": "ug",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mcg"
+          }
+        }
+      ],
+      "sequence": 1,
+      "text": "75mcg daily",
+      "route": {
+        "coding": [
+          {
+            "code": "26643006",
+            "system": "http://snomed.info/sct",
+            "display": "Oral Route (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "kind": "MedicationRequest",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest",
+  "intent": "proposal",
+  "experimental": true,
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-ordermedication-ad",
+  "status": "active",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "version": "1.0.0",
+  "description": "Example Activity Definition for a recommendation to order a medication",
+  "name": "ActivityExampleOrderMedicationAD",
+  "code": {
+    "coding": [
+      {
+        "code": "order-medication",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Order a medication"
+      }
+    ]
+  },
+  "priority": "routine",
+  "doNotPerform": false,
+  "productCodeableConcept": {
+    "coding": [
+      {
+        "code": "376988009",
+        "system": "http://snomed.info/sct",
+        "display": "Levothyroxine sodium 75 microgram oral tablet"
+      }
+    ]
+  }
+}

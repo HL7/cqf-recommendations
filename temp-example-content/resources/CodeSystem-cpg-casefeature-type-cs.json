@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CPGCaseFeatureTypeCS",
+  "id": "cpg-casefeature-type-cs",
+  "title": "CPG Case Feature Type Code System",
+  "description": "The type of a case feature, whether asserted (i.e. documented in the patient's record) or inferred (i.e. calculated from the case feature expression)",
+  "url": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-casefeature-type-cs",
+  "concept": [
+    {
+      "code": "asserted",
+      "display": "Asserted",
+      "definition": "The case feature is asserted as part of the patient's record"
+    },
+    {
+      "code": "inferred",
+      "display": "Inferred",
+      "definition": "The case feature was inferred by calculation of the case feature expression"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-type-vs",
+  "count": 2
+}

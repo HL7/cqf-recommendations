@@ -1,0 +1,35 @@
+{
+  "resourceType": "Task",
+  "id": "request-dcm-scenario2",
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "order-medication",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+            "display": "Order a medication"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "MedicationRequest/dcm-scenario2"
+      }
+    }
+  ],
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-documentmedication-ad",
+  "status": "draft",
+  "intent": "proposal",
+  "code": {
+    "coding": [
+      {
+        "code": "document-medication",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Document a medication"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/dcm-scenario2-patient"
+  }
+}

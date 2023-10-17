@@ -1,0 +1,53 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "os-scenario2",
+  "instantiatesCanonical": [
+    "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-orderservice-ad"
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "386053000",
+          "system": "http://snomed.info/sct",
+          "display": "Evaluation procedure (procedure)"
+        }
+      ],
+      "text": "Evaluation"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "710830005",
+        "system": "http://snomed.info/sct",
+        "display": "Assessment of passive range of motion (procedure)"
+      }
+    ],
+    "text": "Assessment of passive range of motion"
+  },
+  "reasonCode": [
+    {
+      "text": "assessment of mobility limitations due to osteoarthritis"
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "36701003",
+          "system": "http://snomed.info/sct",
+          "display": "Both knees (body structure)"
+        }
+      ],
+      "text": "Both knees"
+    }
+  ],
+  "status": "active",
+  "intent": "proposal",
+  "subject": {
+    "reference": "Patient/os-scenario2-patient"
+  },
+  "occurrenceDateTime": "2016-09-27",
+  "authoredOn": "2016-09-20"
+}

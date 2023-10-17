@@ -1,0 +1,19 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "dnci-scenario8",
+  "item": [
+    {
+      "answer": [
+        {
+          "valueDate": "2020-12-10"
+        }
+      ],
+      "linkId": "A"
+    }
+  ],
+  "questionnaire": "http://example.org/Questionnaire/activity-example-collectinformation-questionnaire",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/dnci-scenario8-patient"
+  }
+}

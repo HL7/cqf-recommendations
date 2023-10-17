@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-proposediagnosistask",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask",
+  "name": "CPGProposeDiagnosisTask",
+  "title": "CPG Propose Diagnosis Task",
+  "status": "active",
+  "experimental": false,
+  "description": "Recommendation to propose a specific diagnosis as part of the delivery of a computable clinical practice guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.code",
+        "path": "Task.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "propose-diagnosis",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Task.input",
+        "path": "Task.input",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:diagnosis",
+        "path": "Task.input",
+        "sliceName": "diagnosis",
+        "short": "Proposed diagnosis",
+        "definition": "The diagnosis being proposed.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:diagnosis.type",
+        "path": "Task.input.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "propose-diagnosis",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:diagnosis.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Condition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

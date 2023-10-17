@@ -1,0 +1,154 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-generatereporttask",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask",
+  "name": "CPGGenerateReportTask",
+  "title": "CPG Generate Report Task",
+  "status": "active",
+  "experimental": false,
+  "description": "Proposal to generate a metric, measure, or case report as part of a computable clinical practice guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.code",
+        "path": "Task.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "generate-report",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Task.input",
+        "path": "Task.input",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:definition",
+        "path": "Task.input",
+        "sliceName": "definition",
+        "short": "Pathway or Strategy",
+        "definition": "The definition of the metric, measure, case report, or profile that is to be used to generate the report.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:definition.type",
+        "path": "Task.input.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "generate-report",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Task.input:definition.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/shareablemeasure",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Task.output",
+        "path": "Task.output",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Task.output:report",
+        "path": "Task.output",
+        "sliceName": "report",
+        "short": "Response",
+        "definition": "The generated report, such as a MeasureReport, Composition, or case feature.",
+        "comment": "If the definition is a Measure, the result SHALL be a MeasureReport. If the definition is a GraphDefinition, the result SHALL be a Composition. If the definition is a StructureDefinition, the result SHALL be a resource of the type defined by the profile.",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Task.output:report.type",
+        "path": "Task.output.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "generate-report",
+              "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Task.output:report.value[x]",
+        "path": "Task.output.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

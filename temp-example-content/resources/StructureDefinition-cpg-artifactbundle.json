@@ -1,0 +1,409 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-artifactbundle",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle",
+  "name": "CPGArtifactBundle",
+  "title": "CPG Artifact Bundle",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines the minimum expectations for an artifact bundle used to package and distribute artifact content",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "short": "The bundle is a collection of artifacts for distribution",
+        "fixedCode": "collection",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resource"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:activityDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "activityDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:activityDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "ActivityDefinition",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:careTeamDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "careTeamDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:careTeamDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "CareTeam",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-careteamdefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:codeSystem",
+        "path": "Bundle.entry",
+        "sliceName": "codeSystem",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:codeSystem.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeSystem",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablecodesystem"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:graphDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "graphDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:graphDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "GraphDefinition",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:groupDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "groupDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:groupDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Group",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-groupdefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:implementationGuide",
+        "path": "Bundle.entry",
+        "sliceName": "implementationGuide",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:implementationGuide.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "ImplementationGuide",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:library",
+        "path": "Bundle.entry",
+        "sliceName": "library",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:library.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Library",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:locationDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "locationDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:locationDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Location",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-locationdefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:measure",
+        "path": "Bundle.entry",
+        "sliceName": "measure",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:measure.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Measure",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablemetric"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:planDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "planDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:planDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "PlanDefinition",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:practitionerRoleDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "practitionerRoleDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:practitionerRoleDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "PractitionerRole",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-practitionerroledefinition"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:questionnaire",
+        "path": "Bundle.entry",
+        "sliceName": "questionnaire",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:questionnaire.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Questionnaire",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:structureDefinition",
+        "path": "Bundle.entry",
+        "sliceName": "structureDefinition",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:structureDefinition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "StructureDefinition",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:valueSet",
+        "path": "Bundle.entry",
+        "sliceName": "valueSet",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:valueSet.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "ValueSet",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablevalueset"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:testCase",
+        "path": "Bundle.entry",
+        "sliceName": "testCase",
+        "short": "The packaged artifact",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:testCase.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Bundle",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

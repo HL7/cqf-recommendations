@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-relatedArtifact",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedArtifact",
+  "name": "CPGRelatedArtifact",
+  "title": "CPG Related Artifact Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "Specifies additional artifacts related to the content.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Related Artifact Extension",
+        "definition": "Specifies additional artifacts related to the content."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedArtifact"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "RelatedArtifact"
+          }
+        ]
+      }
+    ]
+  }
+}

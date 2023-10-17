@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-isUnenrollment",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment",
+  "name": "CPGIsUnenrollment",
+  "title": "CPG Is Unenrollment Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "Determines whether the activity is to enroll or unenroll the patient in the specified strategy or pathway.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ActivityDefinition"
+    },
+    {
+      "type": "element",
+      "expression": "Task"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Is Unenrollment Extension",
+        "definition": "Determines whether the activity is to enroll or unenroll the patient in the specified strategy or pathway.",
+        "isModifier": true,
+        "isModifierReason": "Not known why this is labelled a modifier"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-isUnenrollment"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

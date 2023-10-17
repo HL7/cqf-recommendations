@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-directionOfRecommendation",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-directionOfRecommendation",
+  "name": "CPGDirectionOfRecommendation",
+  "title": "CPG Direction Of Recommendation Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "Specifies whether the recommendation is \"for\" or \"against\" a particular activity. For example, the recommendation to prescribe a particular medication, versus the recommendation not to perform a particular procedure.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PlanDefinition.action"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Direction Of Recommendation Extension",
+        "definition": "Specifies whether the recommendation is \"for\" or \"against\" a particular activity. For example, the recommendation to prescribe a particular medication, versus the recommendation not to perform a particular procedure."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-directionOfRecommendation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-recommendation-direction-vs",
+          "description": "The direction of the recommendation, for or against"
+        }
+      }
+    ]
+  }
+}

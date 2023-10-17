@@ -1,0 +1,240 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-shareablequestionnaire",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire",
+  "name": "CPGShareableQuestionnaire",
+  "title": "CPG Shareable Questionnaire",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile of Questionnaire to establish minimum expectations for sharing a Questionnaire, including URL, version, and name. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.extension",
+        "path": "Questionnaire.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.extension:knowledgeCapability",
+        "path": "Questionnaire.extension",
+        "sliceName": "knowledgeCapability",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.extension:knowledgeRepresentationLevel",
+        "path": "Questionnaire.extension",
+        "sliceName": "knowledgeRepresentationLevel",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.url",
+        "path": "Questionnaire.url",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.identifier",
+        "path": "Questionnaire.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.version",
+        "path": "Questionnaire.version",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.name",
+        "path": "Questionnaire.name",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.title",
+        "path": "Questionnaire.title",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.experimental",
+        "path": "Questionnaire.experimental",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.date",
+        "path": "Questionnaire.date",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.publisher",
+        "path": "Questionnaire.publisher",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.contact",
+        "path": "Questionnaire.contact",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.description",
+        "path": "Questionnaire.description",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.useContext",
+        "path": "Questionnaire.useContext",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.jurisdiction",
+        "path": "Questionnaire.jurisdiction",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item",
+        "path": "Questionnaire.item",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.extension",
+        "path": "Questionnaire.item.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Questionnaire.item.extension:answerValueSetSource",
+        "path": "Questionnaire.item.extension",
+        "sliceName": "answerValueSetSource",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-answerValueSetSource"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.extension:itemImage",
+        "path": "Questionnaire.item.extension",
+        "sliceName": "itemImage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-itemImage"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.answerOption",
+        "path": "Questionnaire.item.answerOption",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.item.answerOption.extension",
+        "path": "Questionnaire.item.answerOption.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Questionnaire.item.answerOption.extension:responseImage",
+        "path": "Questionnaire.item.answerOption.extension",
+        "sliceName": "responseImage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-responseImage"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

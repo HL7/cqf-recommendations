@@ -1,0 +1,530 @@
+{
+  "resourceType": "Bundle",
+  "id": "activity-example-administermedication-bundle",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/Library/activity-example-administermedication-1",
+      "resource": {
+        "resourceType": "Library",
+        "id": "activity-example-administermedication-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary",
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-assetcollection"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "shareable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "computable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "publishable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+            "valueCode": "structured"
+          }
+        ],
+        "relatedArtifact": [
+          {
+            "type": "depends-on",
+            "resource": "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+          },
+          {
+            "type": "depends-on",
+            "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+          },
+          {
+            "type": "depends-on",
+            "resource": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+          },
+          {
+            "type": "composed-of",
+            "resource": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication-ad"
+          },
+          {
+            "type": "composed-of",
+            "resource": "http://hl7.org/fhir/uv/cpg/Library/administermedication-library"
+          },
+          {
+            "type": "composed-of",
+            "resource": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication-pd"
+          }
+        ],
+        "experimental": true,
+        "url": "http://hl7.org/fhir/uv/cpg/Library/activity-example-administermedication-1",
+        "status": "draft",
+        "version": "1.0.0",
+        "publisher": "HL7 International - Clinical Decision Support WG",
+        "description": "Asset collection of artifacts in the Administer Medication activity example",
+        "name": "ActivityExampleAdministerMedication",
+        "title": "Activity Example - Administer Medication Collection",
+        "type": {
+          "coding": [
+            {
+              "code": "asset-collection",
+              "system": "http://terminology.hl7.org/CodeSystem/library-type"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Library/AdministerMedication",
+      "resource": {
+        "resourceType": "Library",
+        "id": "AdministerMedication",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary",
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary",
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "shareable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "computable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "publishable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+            "valueCode": "structured"
+          }
+        ],
+        "relatedArtifact": [
+          {
+            "type": "depends-on",
+            "resource": "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+          },
+          {
+            "type": "depends-on",
+            "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+          },
+          {
+            "type": "depends-on",
+            "resource": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs"
+          }
+        ],
+        "parameter": [
+          {
+            "name": "Patient",
+            "use": "out",
+            "min": 0,
+            "max": "1",
+            "type": "Patient"
+          },
+          {
+            "name": "Medication Proposal",
+            "use": "out",
+            "min": 0,
+            "max": "*",
+            "type": "MedicationRequest"
+          },
+          {
+            "name": "Medication Not Proposed",
+            "use": "out",
+            "min": 0,
+            "max": "*",
+            "type": "MedicationRequest"
+          },
+          {
+            "name": "Inclusion Criteria",
+            "use": "out",
+            "min": 0,
+            "max": "1",
+            "type": "boolean"
+          },
+          {
+            "name": "Active or Completed Medication Administration",
+            "use": "out",
+            "min": 0,
+            "max": "*",
+            "type": "MedicationAdministration"
+          },
+          {
+            "name": "Medication Administration Not Done",
+            "use": "out",
+            "min": 0,
+            "max": "*",
+            "type": "MedicationAdministration"
+          },
+          {
+            "name": "Administer Proposal",
+            "use": "out",
+            "min": 0,
+            "max": "*",
+            "type": "Task"
+          },
+          {
+            "name": "Administer Proposal Rejected",
+            "use": "out",
+            "min": 0,
+            "max": "*",
+            "type": "Task"
+          },
+          {
+            "name": "Is Recommendation Applicable",
+            "use": "out",
+            "min": 0,
+            "max": "1",
+            "type": "boolean"
+          }
+        ],
+        "dataRequirement": [
+          {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+            ],
+            "type": "MedicationRequest"
+          },
+          {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+            ],
+            "type": "MedicationRequest"
+          },
+          {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+            ],
+            "type": "MedicationAdministration"
+          },
+          {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+            ],
+            "type": "MedicationAdministration"
+          },
+          {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Task"
+            ],
+            "type": "Task"
+          },
+          {
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/Task"
+            ],
+            "type": "Task"
+          }
+        ],
+        "content": [
+          {
+            "id": "ig-loader-AdministerMedication.cql"
+          }
+        ],
+        "experimental": true,
+        "url": "http://hl7.org/fhir/uv/cpg/Library/AdministerMedication",
+        "status": "draft",
+        "version": "1.0.0",
+        "publisher": "HL7 International - Clinical Decision Support WG",
+        "name": "AdministerMedication",
+        "title": "Administer Medication",
+        "type": {
+          "coding": [
+            {
+              "code": "logic-library",
+              "system": "http://terminology.hl7.org/CodeSystem/library-type"
+            }
+          ]
+        },
+        "description": "Logic for an example recommendation to administer a medication"
+      }
+    },
+    {
+      "fullUrl": "http://example.org/PlanDefinition/activity-example-administermedication-2",
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "activity-example-administermedication-2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "shareable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "computable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+            "valueCode": "publishable"
+          },
+          {
+            "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+            "valueCode": "structured"
+          }
+        ],
+        "library": [
+          "http://hl7.org/fhir/uv/cpg/Library/administermedication-library"
+        ],
+        "action": [
+          {
+            "condition": [
+              {
+                "expression": {
+                  "language": "text/cql",
+                  "expression": "Is Recommendation Applicable"
+                },
+                "kind": "applicability"
+              }
+            ],
+            "title": "Collect date of patient last visit",
+            "type": {
+              "coding": [
+                {
+                  "code": "create",
+                  "system": "http://terminology.hl7.org/CodeSystem/action-type"
+                }
+              ]
+            },
+            "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication-ad"
+          }
+        ],
+        "experimental": true,
+        "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-administermedication-2",
+        "status": "draft",
+        "description": "Example Plan Definition for a recommendation to administer a medication",
+        "name": "ActivityExampleAdministerMedication",
+        "title": "Activity Example Administer Medication",
+        "version": "1.0.0",
+        "publisher": "HL7 International - Clinical Decision Support WG",
+        "type": {
+          "coding": [
+            {
+              "code": "eca-rule",
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/Bundle/am-scenario7-inline-bundle",
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "am-scenario7-inline-bundle",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "GuidanceResponse",
+              "id": "am-scenario7-1",
+              "contained": [
+                {
+                  "resourceType": "Parameters",
+                  "id": "output",
+                  "parameter": [
+                    {
+                      "name": "Inclusion Criteria",
+                      "valueBoolean": true
+                    },
+                    {
+                      "name": "Is Recommendation Applicable",
+                      "valueBoolean": false
+                    }
+                  ]
+                }
+              ],
+              "moduleCanonical": "http://hl7.org/fhir/uv/cpg/Library/administermedication-library",
+              "status": "success",
+              "subject": {
+                "reference": "Patient/am-scenario7-patient"
+              },
+              "outputParameters": {
+                "reference": "#output"
+              }
+            },
+            "fullUrl": "http://example.org/GuidanceResponse/am-scenario7-1"
+          },
+          {
+            "resource": {
+              "resourceType": "MedicationAdministration",
+              "id": "am-scenario7-2",
+              "status": "not-done",
+              "medicationCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "333919005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Fentanyl 25micrograms/hour patch (product)"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/am-scenario7-patient"
+              },
+              "effectivePeriod": {
+                "start": "2015-01-15T22:03:00+01:00",
+                "end": "2015-01-16T02:03:00+01:00"
+              },
+              "request": {
+                "reference": "MedicationRequest/am-scenario7-mr"
+              },
+              "dosage": {
+                "text": "apply one patch three times per week",
+                "dose": {
+                  "value": 1,
+                  "code": "PATCH",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                  "unit": "patch"
+                }
+              }
+            },
+            "fullUrl": "http://example.org/MedicationAdministration/am-scenario7-2"
+          },
+          {
+            "resource": {
+              "resourceType": "MedicationRequest",
+              "id": "am-scenario7-3",
+              "status": "active",
+              "intent": "order",
+              "priority": "routine",
+              "medicationCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "333919005",
+                    "system": "http://snomed.info/sct",
+                    "display": "Fentanyl 25micrograms/hour patch (product)"
+                  }
+                ]
+              },
+              "subject": {
+                "reference": "Patient/am-scenario7-patient"
+              },
+              "dosageInstruction": [
+                {
+                  "sequence": 1,
+                  "text": "apply one patch three times per week",
+                  "timing": {
+                    "repeat": {
+                      "frequency": 3,
+                      "period": 1,
+                      "periodUnit": "wk"
+                    }
+                  },
+                  "doseAndRate": [
+                    {
+                      "type": {
+                        "coding": [
+                          {
+                            "code": "ordered",
+                            "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                            "display": "Ordered"
+                          }
+                        ]
+                      },
+                      "doseQuantity": {
+                        "value": 1,
+                        "code": "PATCH",
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                        "unit": "patch"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "dispenseRequest": {
+                "validityPeriod": {
+                  "start": "2015-01-15",
+                  "end": "2016-01-15"
+                },
+                "quantity": {
+                  "value": 6,
+                  "code": "PATCH",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                  "unit": "patch"
+                },
+                "expectedSupplyDuration": {
+                  "value": 14,
+                  "code": "d",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "days"
+                }
+              }
+            },
+            "fullUrl": "http://example.org/MedicationRequest/am-scenario7-3"
+          },
+          {
+            "resource": {
+              "resourceType": "Patient",
+              "id": "am-scenario7-4",
+              "active": true,
+              "name": [
+                {
+                  "use": "usual",
+                  "text": "Example Patient",
+                  "family": "Patient",
+                  "given": [
+                    "Example"
+                  ]
+                }
+              ],
+              "gender": "female",
+              "birthDate": "1990-10-01",
+              "deceasedBoolean": false
+            },
+            "fullUrl": "http://example.org/Patient/am-scenario7-4"
+          },
+          {
+            "resource": {
+              "resourceType": "Task",
+              "id": "request-am-scenario7-5",
+              "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-administermedication-ad",
+              "status": "in-progress",
+              "intent": "order",
+              "code": {
+                "coding": [
+                  {
+                    "code": "administer-medication",
+                    "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                    "display": "Administer a medication"
+                  }
+                ]
+              },
+              "for": {
+                "reference": "Patient/am-scenario7-patient"
+              },
+              "input": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "code": "administer-medication",
+                        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+                        "display": "Administer a medication"
+                      }
+                    ]
+                  },
+                  "valueReference": {
+                    "reference": "MedicationRequest/am-scenario7-mr"
+                  }
+                }
+              ]
+            },
+            "fullUrl": "http://example.org/Task/request-am-scenario7-5"
+          }
+        ],
+        "type": "collection"
+      }
+    }
+  ],
+  "type": "collection"
+}

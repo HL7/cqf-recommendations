@@ -1,0 +1,66 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "activity-example-reportflag-pd",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "library": [
+    "http://hl7.org/fhir/uv/cpg/Library/reportflag-library"
+  ],
+  "action": [
+    {
+      "condition": [
+        {
+          "expression": {
+            "language": "text/cql",
+            "expression": "Is Recommendation Applicable"
+          },
+          "kind": "applicability"
+        }
+      ],
+      "title": "Report a flag",
+      "type": {
+        "coding": [
+          {
+            "code": "create",
+            "system": "http://terminology.hl7.org/CodeSystem/action-type"
+          }
+        ]
+      },
+      "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-reportflag-ad"
+    }
+  ],
+  "experimental": true,
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/activity-example-reportflag-pd",
+  "status": "active",
+  "description": "Example Plan Definition for a recommendation to report a flat",
+  "name": "ActivityExampleReportFlagPD",
+  "type": {
+    "coding": [
+      {
+        "code": "eca-rule",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+      }
+    ]
+  }
+}

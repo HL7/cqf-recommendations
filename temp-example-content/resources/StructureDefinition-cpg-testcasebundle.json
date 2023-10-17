@@ -1,0 +1,104 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-testcasebundle",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle",
+  "name": "CPGTestCaseBundle",
+  "title": "CPG Test Case Bundle",
+  "status": "active",
+  "experimental": false,
+  "description": "The CPG Test Case Bundle Profile describes a shareable, published test case for a specific artifact",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "short": "The bundle is a collection of artifacts for distribution",
+        "fixedCode": "collection",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this.resource"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:expectedGuidanceResponse",
+        "path": "Bundle.entry",
+        "sliceName": "expectedGuidanceResponse",
+        "short": "Expected guidance response or measure result",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:expectedGuidanceResponse.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "GuidanceResponse"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:expectedMeasureReport",
+        "path": "Bundle.entry",
+        "sliceName": "expectedMeasureReport",
+        "short": "Expected guidance response or measure result",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:expectedMeasureReport.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "MeasureReport"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

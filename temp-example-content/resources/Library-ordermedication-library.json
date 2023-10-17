@@ -1,0 +1,161 @@
+{
+  "resourceType": "Library",
+  "id": "ordermedication-library",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+    },
+    {
+      "type": "depends-on",
+      "resource": "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+    }
+  ],
+  "parameter": [
+    {
+      "name": "Patient",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Patient"
+    },
+    {
+      "name": "Inclusion Criteria",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "Active or Completed Medication Administration",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "MedicationAdministration"
+    },
+    {
+      "name": "Medication Administration Not Done",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "MedicationAdministration"
+    },
+    {
+      "name": "Active or Completed Medication Dispense",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "MedicationDispense"
+    },
+    {
+      "name": "Medication Dispense Not Done",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "MedicationDispense"
+    },
+    {
+      "name": "Medication Proposal",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "MedicationRequest"
+    },
+    {
+      "name": "Medication Not Proposed",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "MedicationRequest"
+    },
+    {
+      "name": "Is Recommendation Applicable",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+      ],
+      "type": "MedicationAdministration"
+    },
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/MedicationAdministration"
+      ],
+      "type": "MedicationAdministration"
+    },
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/MedicationDispense"
+      ],
+      "type": "MedicationDispense"
+    },
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/MedicationDispense"
+      ],
+      "type": "MedicationDispense"
+    },
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      ],
+      "type": "MedicationRequest"
+    },
+    {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+      ],
+      "type": "MedicationRequest"
+    }
+  ],
+  "content": [
+    {
+      "id": "ig-loader-OrderMedication.cql"
+    }
+  ],
+  "experimental": true,
+  "url": "http://hl7.org/fhir/uv/cpg/Library/ordermedication-library",
+  "status": "active",
+  "version": "1.0.0",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "description": "Logic for an example recommendation to order a medication",
+  "name": "OrderMedication",
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library",
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
+      }
+    ]
+  }
+}

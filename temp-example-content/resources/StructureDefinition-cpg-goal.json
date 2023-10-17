@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-goal",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goal",
+  "name": "CPGGoal",
+  "title": "CPG Goal",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines the expectations for the representation of goals used in computable guidelines",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Goal",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Goal",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Goal.extension",
+        "path": "Goal.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Goal.extension:goalFor",
+        "path": "Goal.extension",
+        "sliceName": "goalFor",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-goalFor"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.identifier",
+        "path": "Goal.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.lifecycleStatus",
+        "path": "Goal.lifecycleStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.achievementStatus",
+        "path": "Goal.achievementStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.category",
+        "path": "Goal.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.priority",
+        "path": "Goal.priority",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.description",
+        "path": "Goal.description",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.subject",
+        "path": "Goal.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.start[x]",
+        "path": "Goal.start[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.target",
+        "path": "Goal.target",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.target.measure",
+        "path": "Goal.target.measure",
+        "mustSupport": true
+      },
+      {
+        "id": "Goal.target.detail[x]",
+        "path": "Goal.target.detail[x]",
+        "mustSupport": true
+      }
+    ]
+  }
+}

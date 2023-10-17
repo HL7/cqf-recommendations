@@ -1,0 +1,97 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-publishablemetric",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablemetric",
+  "name": "CPGPublishableMetric",
+  "title": "CPG Publishable Metric",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines the minimum expectations for a publishable metric for use with computable content",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Measure",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablemetric",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Measure.title",
+        "path": "Measure.title",
+        "min": 1
+      },
+      {
+        "id": "Measure.date",
+        "path": "Measure.date",
+        "min": 1
+      },
+      {
+        "id": "Measure.copyright",
+        "path": "Measure.copyright",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.approvalDate",
+        "path": "Measure.approvalDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.lastReviewDate",
+        "path": "Measure.lastReviewDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.topic",
+        "path": "Measure.topic",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/definition-topic",
+          "description": "Topics for categorization and searching of artifacts"
+        }
+      },
+      {
+        "id": "Measure.relatedArtifact",
+        "path": "Measure.relatedArtifact",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.relatedArtifact.display",
+        "path": "Measure.relatedArtifact.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.relatedArtifact.url",
+        "path": "Measure.relatedArtifact.url",
+        "mustSupport": true
+      },
+      {
+        "id": "Measure.relatedArtifact.resource",
+        "path": "Measure.relatedArtifact.resource",
+        "mustSupport": true
+      }
+    ]
+  }
+}

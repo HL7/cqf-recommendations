@@ -1,0 +1,24 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "cpg-common-patient-profile",
+  "subjectType": [
+    "Patient"
+  ],
+  "item": [
+    {
+      "linkId": "name",
+      "text": "Name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "linkId": "birthdate",
+      "text": "Birthdate",
+      "type": "date",
+      "required": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-patient-profile",
+  "status": "draft",
+  "name": "CPG_Common_Questionnaire_Patient_Profile"
+}

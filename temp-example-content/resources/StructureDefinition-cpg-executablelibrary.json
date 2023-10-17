@@ -1,0 +1,152 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-executablelibrary",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary",
+  "name": "CPGExecutableLibrary",
+  "title": "CPG Executable Library",
+  "status": "active",
+  "experimental": false,
+  "description": "This profile sets the minimum expectations for an executable CQL library. Specifically, the profile requires that the library contain one of ELM XML or JSON content, the compiled representation of the CQL logic.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Library",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Library.relatedArtifact",
+        "path": "Library.relatedArtifact",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:dependency",
+        "path": "Library.relatedArtifact",
+        "sliceName": "dependency",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:dependency.type",
+        "path": "Library.relatedArtifact.type",
+        "fixedCode": "depends-on",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.relatedArtifact:dependency.resource",
+        "path": "Library.relatedArtifact.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+              "http://hl7.org/fhir/StructureDefinition/Library",
+              "http://hl7.org/fhir/StructureDefinition/ValueSet"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Library.parameter",
+        "path": "Library.parameter",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.dataRequirement",
+        "path": "Library.dataRequirement",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content",
+        "path": "Library.content",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "contentType"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content:elmXmlContent",
+        "path": "Library.content",
+        "sliceName": "elmXmlContent",
+        "short": "ELM XML Content",
+        "definition": "The ELM XML translation of the CQL content represented as  base-64 encoded data.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Library.content:elmXmlContent.contentType",
+        "path": "Library.content.contentType",
+        "min": 1,
+        "fixedCode": "application/elm+xml",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content:elmXmlContent.data",
+        "path": "Library.content.data",
+        "min": 1
+      },
+      {
+        "id": "Library.content:elmJsonContent",
+        "path": "Library.content",
+        "sliceName": "elmJsonContent",
+        "short": "ELM JSON Content",
+        "definition": "The ELM JSON translation of the CQL content represented as base-64 encoded data.",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Library.content:elmJsonContent.contentType",
+        "path": "Library.content.contentType",
+        "min": 1,
+        "fixedCode": "application/elm+json",
+        "mustSupport": true
+      },
+      {
+        "id": "Library.content:elmJsonContent.data",
+        "path": "Library.content.data",
+        "min": 1
+      }
+    ]
+  }
+}

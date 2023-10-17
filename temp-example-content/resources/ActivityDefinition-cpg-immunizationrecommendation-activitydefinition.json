@@ -1,0 +1,52 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "cpg-immunizationrecommendation-activitydefinition",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "CPGImmunizationRecommendationActivityDefinition"
+    }
+  ],
+  "dynamicValue": [
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "Patient"
+      },
+      "path": "patient"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "Now()"
+      },
+      "path": "date"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "VaccineCodeableConcept"
+      },
+      "path": "recommendation.vaccineCode"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "Code { system: 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status', code: 'due' }"
+      },
+      "path": "recommendation.forecastStatus"
+    }
+  ],
+  "name": "CPGImmunizationRecommendationActivityDefinition",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-immunizationrecommendation-activitydefinition",
+  "intent": "proposal",
+  "experimental": false,
+  "status": "active",
+  "priority": "routine",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "version": "1.0.0",
+  "description": "Example Activity Definition for a recommendation to recommend an immunization",
+  "kind": "ImmunizationRecommendation",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation",
+  "doNotPerform": false
+}

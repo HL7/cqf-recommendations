@@ -1,0 +1,181 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-communication",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication",
+  "name": "CPGCommunication",
+  "title": "CPG Communication",
+  "status": "active",
+  "experimental": false,
+  "description": "Documents a communication with a patient or other participant as an activity within the context of a computable clinical practice guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication.extension",
+        "path": "Communication.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Communication.extension:instantiatesCaseFeature",
+        "path": "Communication.extension",
+        "sliceName": "instantiatesCaseFeature",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-instantiatesCaseFeature"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.extension:caseFeatureType",
+        "path": "Communication.extension",
+        "sliceName": "caseFeatureType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureType"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.extension:caseFeaturePertinence",
+        "path": "Communication.extension",
+        "sliceName": "caseFeaturePertinence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeaturePertinence"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.identifier",
+        "path": "Communication.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.instantiatesCanonical",
+        "path": "Communication.instantiatesCanonical",
+        "short": "Source",
+        "definition": "A link back to the definition that ultimately produced this communication. This is typically a Plan or Activity Definition.",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.basedOn",
+        "path": "Communication.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.status",
+        "path": "Communication.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.statusReason",
+        "path": "Communication.statusReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.category",
+        "path": "Communication.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.priority",
+        "path": "Communication.priority",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.subject",
+        "path": "Communication.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.about",
+        "path": "Communication.about",
+        "short": "Pertinent information",
+        "definition": "The pertinent positive or negative information relative to this event.",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.encounter",
+        "path": "Communication.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.sent",
+        "path": "Communication.sent",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.received",
+        "path": "Communication.received",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.recipient",
+        "path": "Communication.recipient",
+        "mustSupport": true
+      },
+      {
+        "id": "Communication.sender",
+        "path": "Communication.sender",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-locationdefinition",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-locationdefinition",
+  "name": "CPGLocationDefinition",
+  "title": "CPG Location Definition",
+  "status": "active",
+  "experimental": false,
+  "description": "CPG location represents the minimum expectations for communicating a definitional location as part of computable guideline content",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.name",
+        "path": "Location.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.mode",
+        "path": "Location.mode",
+        "min": 1,
+        "fixedCode": "kind",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.telecom",
+        "path": "Location.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "max": "0"
+      },
+      {
+        "id": "Location.position",
+        "path": "Location.position",
+        "max": "0"
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Location.hoursOfOperation",
+        "path": "Location.hoursOfOperation",
+        "max": "0"
+      },
+      {
+        "id": "Location.availabilityExceptions",
+        "path": "Location.availabilityExceptions",
+        "max": "0"
+      },
+      {
+        "id": "Location.endpoint",
+        "path": "Location.endpoint",
+        "max": "0"
+      }
+    ]
+  }
+}

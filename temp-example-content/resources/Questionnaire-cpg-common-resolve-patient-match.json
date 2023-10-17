@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "cpg-common-resolve-patient-match",
+  "subjectType": [
+    "Patient"
+  ],
+  "item": [
+    {
+      "linkId": "id",
+      "text": "Id",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cpg/Questionnaire/cpg-common-resolve-patient-match",
+  "status": "draft",
+  "name": "CPG_Common_Questionnaire_Resolve_Patient_Match"
+}

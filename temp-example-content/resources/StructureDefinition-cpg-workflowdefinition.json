@@ -1,0 +1,160 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-workflowdefinition",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-workflowdefinition",
+  "name": "CPGWorkflowDefinition",
+  "title": "CPG Workflow Definition",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile of PlanDefinition as a Workflow Definition for use with CPG Implementation Guide",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition.type",
+        "path": "PlanDefinition.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "workflow-definition",
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+            }
+          ]
+        }
+      },
+      {
+        "id": "PlanDefinition.action.title",
+        "path": "PlanDefinition.action.title",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.action.description",
+        "path": "PlanDefinition.action.description",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.action.code",
+        "path": "PlanDefinition.action.code",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process-vs",
+          "description": "High-level processes identified in guideline-based care"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.input",
+        "path": "PlanDefinition.action.input",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.output",
+        "path": "PlanDefinition.action.output",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.relatedAction",
+        "path": "PlanDefinition.action.relatedAction",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.participant.extension",
+        "path": "PlanDefinition.action.participant.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.participant.extension:participantCapabilityStatement",
+        "path": "PlanDefinition.action.participant.extension",
+        "sliceName": "participantCapabilityStatement",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-participantCapabilityStatement"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.type",
+        "path": "PlanDefinition.action.type",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.groupingBehavior",
+        "path": "PlanDefinition.action.groupingBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.selectionBehavior",
+        "path": "PlanDefinition.action.selectionBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.requiredBehavior",
+        "path": "PlanDefinition.action.requiredBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.precheckBehavior",
+        "path": "PlanDefinition.action.precheckBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.cardinalityBehavior",
+        "path": "PlanDefinition.action.cardinalityBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.transform",
+        "path": "PlanDefinition.action.transform",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.dynamicValue",
+        "path": "PlanDefinition.action.dynamicValue",
+        "max": "0"
+      }
+    ]
+  }
+}

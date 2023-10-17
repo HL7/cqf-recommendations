@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CPGIndicatorCS",
+  "id": "cpg-indicator-cs",
+  "title": "CPG Indicator Code System",
+  "description": "Indicates the urgency/importance of what this recommendation conveys",
+  "url": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-indicator-cs",
+  "concept": [
+    {
+      "code": "info",
+      "display": "Information",
+      "definition": "Indicates that the recommendation is informational"
+    },
+    {
+      "code": "warning",
+      "display": "Warning",
+      "definition": "Indicates that the recommendation is a warning"
+    },
+    {
+      "code": "critical",
+      "display": "Critical",
+      "definition": "Indicates that the recommendation is critical and the workflow should not be allowed to proceed. When implemented, an alternative pathway should be provided, and care should be taken to ensure that the user experience is not disruptive."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-indicator-vs",
+  "count": 3
+}

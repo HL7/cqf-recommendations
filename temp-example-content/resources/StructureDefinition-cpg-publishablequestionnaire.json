@@ -1,0 +1,173 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-publishablequestionnaire",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablequestionnaire",
+  "name": "CPGPublishableQuestionnaire",
+  "title": "CPG Publishable Questionnaire",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile of Questionnaire to represent the minimum expectations for a publishable questionnaire used in a clinical practice guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.extension:topic",
+        "path": "Questionnaire.extension",
+        "sliceName": "topic",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-topic"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.extension:author",
+        "path": "Questionnaire.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-author"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.extension:editor",
+        "path": "Questionnaire.extension",
+        "sliceName": "editor",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-editor"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.extension:reviewer",
+        "path": "Questionnaire.extension",
+        "sliceName": "reviewer",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reviewer"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.extension:endorser",
+        "path": "Questionnaire.extension",
+        "sliceName": "endorser",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-endorser"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Questionnaire.extension:relatedArtifact",
+        "path": "Questionnaire.extension",
+        "sliceName": "relatedArtifact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-relatedArtifact"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.title",
+        "path": "Questionnaire.title",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.date",
+        "path": "Questionnaire.date",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.copyright",
+        "path": "Questionnaire.copyright",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.approvalDate",
+        "path": "Questionnaire.approvalDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.lastReviewDate",
+        "path": "Questionnaire.lastReviewDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.effectivePeriod",
+        "path": "Questionnaire.effectivePeriod",
+        "mustSupport": true
+      },
+      {
+        "id": "Questionnaire.code",
+        "path": "Questionnaire.code",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "ImmunizationRecommendation",
+  "id": "ri-scenario2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-recommendimmunization-ad"
+    }
+  ],
+  "recommendation": [
+    {
+      "vaccineCode": [
+        {
+          "coding": [
+            {
+              "code": "14745005",
+              "system": "http://snomed.info/sct",
+              "display": "Hepatitis A vaccine"
+            }
+          ]
+        }
+      ],
+      "forecastStatus": {
+        "coding": [
+          {
+            "code": "due",
+            "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+            "display": "Due"
+          }
+        ]
+      }
+    }
+  ],
+  "patient": {
+    "reference": "Patient/ri-scenario2-patient"
+  },
+  "date": "2020-12-22"
+}

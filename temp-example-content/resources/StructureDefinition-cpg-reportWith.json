@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-reportWith",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith",
+  "name": "CPGReportWith",
+  "title": "CPG Report With Extension",
+  "status": "active",
+  "experimental": false,
+  "description": "The URL of the artifact that describes the report to be sent, a metric or measure, case report, or profile that describes the data to be reported.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ActivityDefinition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "CPG Report With Extension",
+        "definition": "The URL of the artifact that describes the report to be sent, a metric or measure, case report, or profile that describes the data to be reported."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportWith"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/shareablemeasure",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition",
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablestructuredef"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

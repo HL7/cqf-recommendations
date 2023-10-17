@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-pathwaydefinition",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition",
+  "name": "CPGPathwayDefinition",
+  "title": "CPG Pathway Definition",
+  "status": "active",
+  "experimental": false,
+  "description": "Profile of PlanDefinition as a Clinical Pathway for use with CPG Implementation Guide. A pathway provides groupings of strategies to provide a longitudinal view of the guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition.type",
+        "path": "PlanDefinition.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "clinical-protocol",
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+            }
+          ]
+        }
+      },
+      {
+        "id": "PlanDefinition.action.title",
+        "path": "PlanDefinition.action.title",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.action.description",
+        "path": "PlanDefinition.action.description",
+        "min": 1
+      },
+      {
+        "id": "PlanDefinition.action.code",
+        "path": "PlanDefinition.action.code",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-process-vs",
+          "description": "High-level processes identified in guideline-based care"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.input",
+        "path": "PlanDefinition.action.input",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.output",
+        "path": "PlanDefinition.action.output",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.relatedAction",
+        "path": "PlanDefinition.action.relatedAction",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.type",
+        "path": "PlanDefinition.action.type",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.groupingBehavior",
+        "path": "PlanDefinition.action.groupingBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.selectionBehavior",
+        "path": "PlanDefinition.action.selectionBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.requiredBehavior",
+        "path": "PlanDefinition.action.requiredBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.precheckBehavior",
+        "path": "PlanDefinition.action.precheckBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.cardinalityBehavior",
+        "path": "PlanDefinition.action.cardinalityBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.definition[x]",
+        "path": "PlanDefinition.action.definition[x]",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.transform",
+        "path": "PlanDefinition.action.transform",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.dynamicValue",
+        "path": "PlanDefinition.action.dynamicValue",
+        "max": "0"
+      }
+    ]
+  }
+}

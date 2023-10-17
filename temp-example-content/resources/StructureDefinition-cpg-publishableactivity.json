@@ -1,0 +1,102 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-publishableactivity",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity",
+  "name": "CPGPublishableActivityDefinition",
+  "title": "CPG Publishable Activity Definition",
+  "status": "active",
+  "experimental": false,
+  "description": "Defines the minimum expectations for a publishable activity definition",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ActivityDefinition",
+  "baseDefinition": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ActivityDefinition.title",
+        "path": "ActivityDefinition.title",
+        "min": 1
+      },
+      {
+        "id": "ActivityDefinition.date",
+        "path": "ActivityDefinition.date",
+        "min": 1
+      },
+      {
+        "id": "ActivityDefinition.copyright",
+        "path": "ActivityDefinition.copyright",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.approvalDate",
+        "path": "ActivityDefinition.approvalDate",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.lastReviewDate",
+        "path": "ActivityDefinition.lastReviewDate",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.effectivePeriod",
+        "path": "ActivityDefinition.effectivePeriod",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.topic",
+        "path": "ActivityDefinition.topic",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/definition-topic",
+          "description": "Topics for categorization and searching of artifacts"
+        }
+      },
+      {
+        "id": "ActivityDefinition.relatedArtifact",
+        "path": "ActivityDefinition.relatedArtifact",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.relatedArtifact.display",
+        "path": "ActivityDefinition.relatedArtifact.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.relatedArtifact.url",
+        "path": "ActivityDefinition.relatedArtifact.url",
+        "mustSupport": true
+      },
+      {
+        "id": "ActivityDefinition.relatedArtifact.resource",
+        "path": "ActivityDefinition.relatedArtifact.resource",
+        "mustSupport": true
+      }
+    ]
+  }
+}

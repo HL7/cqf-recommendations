@@ -1,0 +1,75 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "cpg-administermedication-activitydefinition",
+  "identifier": [
+    {
+      "use": "official",
+      "value": "CPGAdministerMedicationActivityDefinition"
+    }
+  ],
+  "dynamicValue": [
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "'draft'"
+      },
+      "path": "status"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "Patient"
+      },
+      "path": "for"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "Encounter"
+      },
+      "path": "encounter"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "Now()"
+      },
+      "path": "authoredOn"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "Practitioner"
+      },
+      "path": "owner"
+    },
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "TaskInput { type: \"Administer Medication\", value: MedicationAdministration }"
+      },
+      "path": "input"
+    }
+  ],
+  "name": "CPGAdministerMedicationActivityDefinition",
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-administermedication-activitydefinition",
+  "intent": "proposal",
+  "experimental": false,
+  "status": "active",
+  "priority": "routine",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "version": "1.0.0",
+  "description": "Example Activity Definition for a recommendation to administer a medication",
+  "kind": "Task",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask",
+  "code": {
+    "coding": [
+      {
+        "code": "administer-medication",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Administer a medication"
+      }
+    ]
+  },
+  "doNotPerform": false
+}

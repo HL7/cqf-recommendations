@@ -1,0 +1,65 @@
+{
+  "resourceType": "Task",
+  "id": "event-inf-scenario4",
+  "contained": [
+    {
+      "resourceType": "Observation",
+      "id": "inference",
+      "code": {
+        "text": "Inference"
+      },
+      "status": "final",
+      "issued": "2020-01-15T10:30:00Z",
+      "subject": {
+        "reference": "Patient/inf-scenario4-patient"
+      }
+    }
+  ],
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "record-inference",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+            "display": "Record an inference"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "#inference"
+      }
+    }
+  ],
+  "output": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "record-inference",
+            "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+            "display": "Record an inference"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Observation/inf-scenario4"
+      }
+    }
+  ],
+  "instantiatesCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-recordinference-ad",
+  "status": "completed",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "record-inference",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Record an inference"
+      }
+    ]
+  },
+  "for": {
+    "reference": "Patient/inf-scenario4-patient"
+  }
+}

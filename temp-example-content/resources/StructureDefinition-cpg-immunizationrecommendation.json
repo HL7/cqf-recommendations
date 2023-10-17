@@ -1,0 +1,141 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cpg-immunizationrecommendation",
+  "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation",
+  "name": "CPGImmunizationRecommendation",
+  "title": "CPG Immunization Recommendation",
+  "status": "active",
+  "experimental": false,
+  "description": "Recommendation for a particular immunization as part of the delivery of a computable clinical practice guideline",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ImmunizationRecommendation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ImmunizationRecommendation.extension",
+        "path": "ImmunizationRecommendation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ImmunizationRecommendation.extension:instantiatesCanonical",
+        "path": "ImmunizationRecommendation.extension",
+        "sliceName": "instantiatesCanonical",
+        "short": "Source",
+        "definition": "A link back to the definition that produced thi  s  Typically a Plan or Activity Definition.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.extension:rationale",
+        "path": "ImmunizationRecommendation.extension",
+        "sliceName": "rationale",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rationale"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.identifier",
+        "path": "ImmunizationRecommendation.identifier",
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.patient",
+        "path": "ImmunizationRecommendation.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.date",
+        "path": "ImmunizationRecommendation.date",
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation",
+        "path": "ImmunizationRecommendation.recommendation",
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation.vaccineCode",
+        "path": "ImmunizationRecommendation.recommendation.vaccineCode",
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation.forecastStatus",
+        "path": "ImmunizationRecommendation.recommendation.forecastStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation.dateCriterion",
+        "path": "ImmunizationRecommendation.recommendation.dateCriterion",
+        "mustSupport": true
+      },
+      {
+        "id": "ImmunizationRecommendation.recommendation.supportingPatientInformation",
+        "path": "ImmunizationRecommendation.recommendation.supportingPatientInformation",
+        "short": "Pertinent information",
+        "definition": "The pertinent positive or negative information relevant to th e ",
+        "comment": "This will typically be the most relevant case features used in determining applicability, but could also be other patient-specific information relevant to interpreting or assessing appropriateness of the recommendation with respect to the patient.",
+        "mustSupport": true
+      }
+    ]
+  }
+}

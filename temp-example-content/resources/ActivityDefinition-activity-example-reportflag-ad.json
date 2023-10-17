@@ -1,0 +1,63 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "activity-example-reportflag-ad",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagactivity"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "dynamicValue": [
+    {
+      "expression": {
+        "language": "text/cql",
+        "expression": "code"
+      },
+      "path": "input.type"
+    },
+    {
+      "expression": {
+        "language": "text/cql-expression",
+        "expression": "Flag { id: 'flag', status: 'active', code: \"Flag\", subject: Patient }"
+      },
+      "path": "input.value"
+    }
+  ],
+  "kind": "Task",
+  "profile": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask",
+  "intent": "proposal",
+  "description": "Example Activity Definition for a recommendation to report a flag",
+  "experimental": true,
+  "url": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/activity-example-reportflag-ad",
+  "status": "active",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "version": "1.0.0",
+  "name": "ActivityExampleReportFlagAD",
+  "code": {
+    "coding": [
+      {
+        "code": "report-flag",
+        "system": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs",
+        "display": "Report a flag"
+      }
+    ]
+  },
+  "doNotPerform": false
+}

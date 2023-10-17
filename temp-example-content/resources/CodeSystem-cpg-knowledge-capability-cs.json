@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CPGKnowledgeCapabilityCS",
+  "id": "cpg-knowledge-capability-cs",
+  "title": "CPG Knowledge Capability Code System",
+  "description": "A capability afforded by a knowledge artifact.",
+  "url": "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-knowledge-capability-cs",
+  "concept": [
+    {
+      "code": "shareable",
+      "display": "Shareable",
+      "definition": "The artifact provides essential information necessary to ensure shareability of the content as a FHIR resource."
+    },
+    {
+      "code": "computable",
+      "display": "Computable",
+      "definition": "The artifact provides at least machine-readable capability (i.e. it does not _only_ have narrative or unstructured elements). This capability can also be characterized as the artifact provides design-time capability, for example, an artifact is computable if it contains semantically verified CQL logic."
+    },
+    {
+      "code": "publishable",
+      "display": "Publishable",
+      "definition": "The artifact provides information necessary to provide content management capability, including dependency management, artifact lifecycle, and publishing and repository metadata."
+    },
+    {
+      "code": "executable",
+      "display": "Executable",
+      "definition": "The artifact is guaranteed to have the elements required to support execution of at least one run-time operation appropriate for the type of artifact. This capability can also be characterized as the artifact provides run-time capability, for example, an artifact is executable if it contains compiled ELM logic."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "computable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+      "valueCode": "structured"
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-knowledge-capability-vs",
+  "count": 4
+}
