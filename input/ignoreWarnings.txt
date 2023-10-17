@@ -868,3 +868,26 @@ INFORMATION: StructureDefinition/cpg-participantCapabilityStatement: StructureDe
 INFORMATION: StructureDefinition/cpg-workflowdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 
 #Output files do contain elmXmlContent.data for FSH generated libraries
+
+# Code '333919005' is used for example purposes only
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[1].resource/*MedicationAdministration/am-scenario7-2*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[2].resource/*MedicationRequest/am-scenario7-3*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+== fsh-generated/resources/Bundle-am-scenario7-bundle.json ==
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[1].resource/*MedicationAdministration/am-scenario7*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[2].resource/*MedicationRequest/am-scenario7-mr*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+INFORMATION: MedicationRequest/am-scenario1: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+== fsh-generated/resources/MedicationRequest-am-scenario2.json ==
+INFORMATION: MedicationRequest/am-scenario2: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+== fsh-generated/resources/MedicationRequest-am-scenario3.json ==
+INFORMATION: MedicationRequest/am-scenario3: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+== fsh-generated/resources/MedicationRequest-am-scenario4-mr.json ==
+INFORMATION: MedicationRequest/am-scenario4-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+== fsh-generated/resources/MedicationRequest-am-scenario5-mr.json ==
+INFORMATION: MedicationRequest/am-scenario5-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+== fsh-generated/resources/MedicationRequest-am-scenario6-mr.json ==
+INFORMATION: MedicationRequest/am-scenario6-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+== fsh-generated/resources/MedicationRequest-am-scenario7-mr.json ==
+INFORMATION: MedicationRequest/am-scenario7-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+
+# Code '14745005' is used for example purposes only
+INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.product.ofType(CodeableConcept).coding[0]: The code '14745005' is valid but is not active
