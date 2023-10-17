@@ -367,6 +367,7 @@
 <artifact id="Patient/gr-scenario2-patient" key="Patient-gr-scenario2-patient" name="gr-scenario2-patient"/>
 <artifact id="MeasureReport/gr-scenario4" key="MeasureReport-gr-scenario4" name="gr-scenario4"/>
 <artifact id="Patient/gr-scenario4-patient" key="Patient-gr-scenario4-patient" name="gr-scenario4-patient"/>
+<artifact id="Practitioner/inf-practitioner" key="Practitioner-inf-practitioner" name="inf-practitioner"/>
 <artifact id="Patient/inf-scenario1-patient" key="Patient-inf-scenario1-patient" name="inf-scenario1-patient"/>
 <artifact id="Patient/inf-scenario2-patient" key="Patient-inf-scenario2-patient" name="inf-scenario2-patient"/>
 <artifact id="Observation/inf-scenario4" key="Observation-inf-scenario4" name="inf-scenario4"/>

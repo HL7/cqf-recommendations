@@ -7,4 +7,4 @@ Description: "Example test case"
 * issued = "2020-01-15T10:30:00Z"
 * subject = Reference(inf-scenario4-patient)
 * performer = Reference(inf-practitioner)
-* effectiveDateTime = "03-01-2023"
+* effectiveDateTime = "2023-01-23"
