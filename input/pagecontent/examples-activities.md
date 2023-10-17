@@ -119,7 +119,7 @@ A negative recommendation not to send a message
 * dnci-scenario6 * [Task-request-stop-dnci-scenario6](Task-request-stop-dnci-scenario6.html)
 * dnci-scenario7 * [Patient-dnci-scenario7](Patient-dnci-scenario7-patient.html)
 * dnci-scenario7 * [Task-event-dnci-scenario7](Task-event-dnci-scenario7.html)
-* dnci-scenario8 * [Communication-scenario8](Communication-scenario8.html)
+* dnci-scenario8 * [Communication-dnci-scenario8](Communication-dnci-scenario8-communication.html)
 * dnci-scenario8 * [Patient-dnci-scenario8](Patient-dnci-scenario8-patient.html)
 * dnci-scenario8 * [QuestionnaireResponse-dnci-scenario8](QuestionnaireResponse-dnci-scenario8.html)
 * dnci-scenario8 * [Task-event-dnci-scenario8](Task-event-dnci-scenario8.html)
