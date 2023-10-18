@@ -646,6 +646,9 @@
 <page key="examples-activities" name="Activity Examples"/>
 <page key="documentation-approach-05-06-agile-cpg-development-approach" name="Agile CPG Development Approach"/>
 <page key="documentation-approach-04-04-analysis-of-evidence-recommendations-reporting" name="Analysis of Evidence, Recommendations, and Reporting"/>
+<page key="examples-anc-guidelines" name="Antenatal Care Guideline Example"/>
+<page key="examples-anthrax" name="Anthrax Post-Exposure Prophylaxis Example"/>
+<page key="examples-anthrax-index-fhirv400" name="Anthrax Post-Exposure Prophylaxis Example - FHIRv400 Example Index"/>
 <page key="approach" name="Approach"/>
 <page key="packaging" name="Artifact Packaging"/>
 <page key="artifacts" name="Artifacts"/>
@@ -656,8 +659,11 @@
 <page key="documentation-approach-12-07-cpg-derivative-and-related-assets" name="CPGGuideline and Derivative &amp; Related Assets"/>
 <page key="documentation-approach-12-03-cpg-plan" name="CPGPlan"/>
 <page key="checklists" name="Checklists"/>
+<page key="examples-ckd-guideline" name="Chronic Disease Management - Chronic Kidney Disease (CKD) Example"/>
+<page key="examples-ckd-logic" name="Chronic Kidney Disease (CKD) Guideline Example Example - CQL Source"/>
 <page key="common-care-pathway" name="Common Care Pathway"/>
 <page key="documentation-conformance" name="Conformance"/>
+<page key="examples-chf" name="Congestive Heart Failure Example"/>
 <page key="documentation-approach-04-05-computable-guideline-artifacts" name="Development of Computable Clinical Guideline Artifacts"/>
 <page key="downloads" name="Downloads"/>
 <page key="documentation-careplanning" name="Evidence-Based Care Planning"/>
@@ -666,6 +672,8 @@
 <page key="documentation-approach-04-guideline-development" name="Guideline Development"/>
 <page key="documentation-approach-04-02-guideline-development-frameworks" name="Guideline Development Frameworks"/>
 <page key="documentation-approach-04-01-guideline-development-group" name="Guideline Development Group"/>
+<page key="examples-hiv-guideline" name="HIV Screening Guideline Recommendations"/>
+<page key="examples-adult-hepb-immunization" name="Hepatitis B Immunization Forecasting Example"/>
 <page key="documentation-approach-02-05-knowledge-implementation" name="Implementation Computable Knowledge"/>
 <page key="documentation-approach-05-01-knowledge-acquisition" name="Knowledge Acquisition"/>
 <page key="documentation-approach-06-03-knowledge-architecture" name="Knowledge Architecture"/>
@@ -688,6 +696,10 @@
 <page key="methodology" name="Methodology"/>
 <page key="methodology-case-study" name="Methodology Example - COVID-19 Severity Classification"/>
 <page key="documentation-approach-09-methods-of-implementation" name="Methods of Implementation"/>
+<page key="examples-opg-guideline" name="Opioid Prescribing Guideline Example"/>
+<page key="examples-opioid-cds-common" name="Opioid Prescribing Guideline Example - Common Logic - CQL Source"/>
+<page key="examples-omtk-logic" name="Opioid Prescribing Guideline Example - OMTK Logic - CQL Source"/>
+<page key="examples-opioid-cds-recommendation" name="Opioid Prescribing Guideline Example - Recommendation 5 Logic - CQL Source"/>
 <page key="profiles" name="Profile Definitions and Documentation"/>
 <page key="documentation-approach-12-02-separating-and-defining-case-plan-and-workflow" name="Separating and Defining Case, Plan, and Workflow"/>
 <page key="documentation-approach-12-01-separations-of-concerns-in-the-cpg" name="Separations of Concerns"/>
