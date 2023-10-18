@@ -6,12 +6,12 @@ Description: "Definition of a recommendation for a particular immunization as pa
 * insert StructureDefinitionMetadata(cpg-immunizationactivity)
 * kind 1..1 MS
 * kind only code
-* kind = #ImmunizationRecommendation (exactly)
+* kind = #MedicationRequest (exactly)
 * profile 1..1 MS
 * profile only canonical
-* profile = $cpg-immunizationrecommendation (exactly)
-  * ^short = "At least a CPG ImmunizationRecommendation"
-  * ^definition = "The profile that the resulting immunization recommendation must conform to; at least a CPGImmunizationRecommendation, though the activity definition may introduce further constraints."
+* profile = $cpg-immunizationrequest (exactly)
+  * ^short = "At least a CPG ImmunizationRequest"
+  * ^definition = "The profile that the resulting immunization recommendation must conform to; at least a CPGImmunizationRequest, though the activity definition may introduce further constraints."
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

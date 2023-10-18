@@ -5,8 +5,8 @@ Title: "Activity Example Recommend Immunization AD"
 * insert KnowledgeArtifactADMetadata(activity-example-recommendimmunization-ad)
 * description = "Example Activity Definition for a recommendation to provide an immunization"
 * name = "ActivityExampleRecommendImmunizationAD"
-* kind = #ImmunizationRecommendation
-* profile = Canonical(CPGImmunizationRecommendation)
+* kind = #MedicationRequest
+* profile = Canonical(CPGImmunizationRequest)
 * code = $cpg-activity-type-cs#recommend-immunization "Recommend an immunization"
 * intent = #proposal
 * priority = #routine

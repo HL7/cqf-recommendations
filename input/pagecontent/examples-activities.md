@@ -241,7 +241,7 @@ A negative recommendation not to send a message
 * [RecommendImmunization PlanDefinition](PlanDefinition-activity-example-recommendimmunization-pd.html)
 
 * ri-scenario1   * [Patient-ri-scenario1](Patient-ri-scenario1-patient.html)
-* ri-scenario2   * [ImmunizationRecommendation-ri-scenario2](ImmunizationRecommendation-ri-scenario2.html)
+* ri-scenario2   * [MedicationRequest-ri-scenario2](MedicationRequest-ri-scenario2.html)
 * ri-scenario2   * [Patient-ri-scenario2](Patient-ri-scenario2-patient.html)
 * ri-scenario4   * [Immunization-ri-scenario4](Immunization-ri-scenario4.html)
 * ri-scenario4   * [Patient-ri-scenario4](Patient-ri-scenario4-patient.html)
