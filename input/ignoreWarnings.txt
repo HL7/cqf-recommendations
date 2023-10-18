@@ -1,59 +1,5 @@
 == Suppressed Messages ==
 
-# The slice is valid in a derived profile
-INFORMATION: ActivityDefinition/chf-report-bodyweight: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity
-INFORMATION: ActivityDefinition/chf-report-bodyweight-change: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity
-INFORMATION: ActivityDefinition/chf-report-urine-out: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[+]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[+]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition
-INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[+]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[+]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[11]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[12]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition
-INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition
-INFORMATION: ImplementationGuide/chf: ImplementationGuide.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig
-INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset
-INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset
-
 # Complementary profiles (slices on the same list...)
 INFORMATION: Library/administermedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
 INFORMATION: Library/administermedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
@@ -91,15 +37,6 @@ INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[1
 
 # Messaage related to snapshot
 INFORMATION: StructureDefinition/cpg-medicationdispense: StructureDefinition.snapshot.element[31].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-
-# This code does appear to be valid for HepB-CpG, Active since 5/10/2018: https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx
-WARNING: Library/HepBAdultForecasting: Library.dataRequirement[1].codeFilter[+].code[+]: Unknown Code http://hl7.org/fhir/sid/cvx#189 in http://hl7.org/fhir/sid/cvx - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://hl7.org/fhir/sid/cvx#189'
-
-# This code is valid, not sure where this message is coming from
-WARNING: Observation/chf-scenario1-potassium1: Observation.code: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/observation-vitalsignresult because the value set or code system is not known to the validator]
-
-# Example code hasn't been determined yet
-INFORMATION: ActivityDefinition/cc-cpg-activity-lab-metabolic: ActivityDefinition.code.coding[+]: Code System URI 'http://www.nlm.nih.gov/research/umls/xxxx' is unknown so the code cannot be validated
 
 # Confirmed profile validation messages
 INFORMATION: Library/administermedication-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
