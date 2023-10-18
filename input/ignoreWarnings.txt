@@ -87,6 +87,7 @@ INFORMATION: Library/reportflag-library: Library.content[1]: This element does n
 INFORMATION: Library/reportflag-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
 INFORMATION: Library/sendmessage-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
 INFORMATION: Library/sendmessage-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[1].resource/*Library/AdministerMedication*/.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
 
 # Messaage related to snapshot
 INFORMATION: StructureDefinition/cpg-medicationdispense: StructureDefinition.snapshot.element[31].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
