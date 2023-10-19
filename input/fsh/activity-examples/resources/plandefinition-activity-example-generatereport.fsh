@@ -1,5 +1,5 @@
 Instance: activity-example-generatereport-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "Activity Example Generate Report PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-generatereport-pd)

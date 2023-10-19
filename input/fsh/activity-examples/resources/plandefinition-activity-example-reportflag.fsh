@@ -1,5 +1,5 @@
 Instance: activity-example-reportflag-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "Activity Example Report Flag PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-reportflag-pd)

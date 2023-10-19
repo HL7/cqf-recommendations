@@ -1,5 +1,5 @@
 Instance: activity-example-proposediagnosis-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "Activity Example Propose Diagnosis PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-proposediagnosis-pd)

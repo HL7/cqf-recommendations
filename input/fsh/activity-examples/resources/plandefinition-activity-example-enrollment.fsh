@@ -1,5 +1,5 @@
 Instance: activity-example-enrollment-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "Activity Example Enrollment PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-enrollment-pd)

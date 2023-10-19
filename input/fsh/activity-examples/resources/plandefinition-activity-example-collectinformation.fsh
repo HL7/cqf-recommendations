@@ -1,5 +1,5 @@
 Instance: activity-example-collectinformation-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "Activity Example Collect Information PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-collectinformation-pd)

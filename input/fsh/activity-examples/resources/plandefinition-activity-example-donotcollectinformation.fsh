@@ -1,5 +1,5 @@
 Instance: activity-example-donotcollectinformation-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "Activity Example Do Not Collect Information PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-donotcollectinformation-pd)
