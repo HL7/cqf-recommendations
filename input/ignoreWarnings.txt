@@ -674,8 +674,8 @@ INFORMATION: ActivityDefinition/cpg-generatereport-activitydefinition: ActivityD
 INFORMATION: ActivityDefinition/cpg-immunizationrecommendation-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/cpg-medicationrequest-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/cpg-proposediagnosistask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-recordinferencetask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cpg-recorddetectedissue-activity: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
+INFORMATION: ActivityDefinition/cpg-recordinference-activity: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/cpg-reportflagtask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: ActivityDefinition/cpg-servicerequest-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
 INFORMATION: CapabilityStatement/cpg-common-patient-registry: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement

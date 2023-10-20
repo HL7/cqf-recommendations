@@ -1,5 +1,5 @@
 Instance: request-dm-scenario7
-InstanceOf: Task
+InstanceOf: cpg-dispensemedicationtask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-dispensemedication-ad)
@@ -7,6 +7,6 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#dispense-medication "Dispense a medication"
 * for = Reference(dm-scenario7-patient)
-* input
+* input[medicationRequest]
   * type = $cpg-activity-type-cs#order-medication "Order a medication"
   * valueReference = Reference(dm-scenario7-mr)

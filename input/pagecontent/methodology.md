@@ -396,8 +396,8 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 |[**ImmunizationRecommendation**](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
 |[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
 |[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConept**: The diagnosis being proposed|
-|[**RecordDetectedIssueTask**](ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition.html)|**IssueCodeableConcept**: The issue being recorded|
-|[**RecordInferenceTask**](ActivityDefinition-cpg-recordinferencetask-activitydefinition.html)|**InferenceCodeableConcept**: The type of inference being recorded<br/>InferenceValue: The value of the inference being recorded|
+|[**RecordDetectedIssueTask**](ActivityDefinition-cpg-recorddetectedissue-activity.html)|**IssueCodeableConcept**: The issue being recorded|
+|[**RecordInferenceTask**](ActivityDefinition-cpg-recordinference-activity.html)|**InferenceCodeableConcept**: The type of inference being recorded<br/>InferenceValue: The value of the inference being recorded|
 |[**ReportFlagTask**](ActivityDefinition-cpg-reportflagtask-activitydefinition.html)|**IssueCodeableConcept**: The issue being flagged|
 |[**ServiceRequest**](ActivityDefinition-cpg-servicerequest-activitydefinition.html)|**ServiceCodeableConcept**: The type of service being proposed|
 {:.grid}

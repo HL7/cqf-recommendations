@@ -1,5 +1,5 @@
 Instance: ep-scenario4-eoc
-InstanceOf: EpisodeOfCare
+InstanceOf: CPGCase
 Usage: #example
 Description: "Example test case"
 * extension[cpg-enrolledIn].valueCanonical = Canonical(activity-example-pathway-pd)

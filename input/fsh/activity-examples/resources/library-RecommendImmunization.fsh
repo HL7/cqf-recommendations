@@ -1,9 +1,10 @@
 Instance: recommendimmunization-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
 Title: "Recommend Immunization"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-executablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert KnowledgeArtifactMetadata(recommendimmunization-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to recommend an immunization"

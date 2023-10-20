@@ -1,0 +1,275 @@
+{
+  "resourceType": "Composition",
+  "id": "chf-scenario1-caseplansummary",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummary" ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+      "valueCanonical": "http://hl7.org/fhir/uv/cpg/GraphDefinition/chf-caseplansummarydefinition"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-summaryFor",
+      "valueReference": {
+        "reference": "EpisodeOfCare/chf-scenario1-eoc"
+      }
+    }
+  ],
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11503-0",
+        "display": "Medical records"
+      }
+    ]
+  },
+  "category": [{
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11503-0",
+        "display": "Medical records"
+      }
+    ]
+  }],
+  "subject": {
+    "reference": "Patient/chf-scenario1-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/chf-scenario1-encounter"
+  },
+  "date": "2019-02-03",
+  "author": [{
+    "reference": "PractitionerRole/chf-scenario1-practitionerrole"
+  }],
+  "title": "Congestive Heart Failure Case/Plan Summary",
+  "attester": [
+    {
+      "mode": "professional",
+      "time": "2019-02-03",
+      "party": {
+        "reference": "PractitionerRole/chf-scenario1-practitionerrole"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/chf-scenario1-organization"
+  },
+  "event": [
+    {
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "42343007",
+              "display": "Congestive heart failure (disorder)"
+            }
+          ]
+        }
+      ],
+      "period": {
+        "start": "2019-01-31T05:03:00Z"
+      },
+      "detail": [
+        {
+          "reference": "EpisodeOfCare/chf-scenario1-eoc"
+        }
+      ]
+    }
+  ],
+  "section": [
+    {
+      "title": "Pathway Events",
+      "code": {
+        "text": "Pathway Events"
+      },
+      "entry": [
+        {
+          "reference": "Encounter/chf-scenario1-encounter"
+        }
+      ],
+      "section": [
+        {
+          "title": "Weight",
+          "code": {
+            "text": "Weight"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-bodyweight1-observation"
+            },
+            {
+              "reference": "Observation/chf-scenario1-bodyweight2-observation"
+            },
+            {
+              "reference": "Observation/chf-scenario1-bodyweight3-observation"
+            },
+            {
+              "reference": "Observation/chf-scenario1-bodyweight4-observation"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-bodyweight1"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-bodyweight2"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-bodyweight3"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-bodyweight4"
+            }
+          ]
+        },
+        {
+          "title": "Weight Change",
+          "code": {
+            "text": "Weight Change"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-bodyweight-change1-observation"
+            },
+            {
+              "reference": "Observation/chf-scenario1-bodyweight-change2-observation"
+            },
+            {
+              "reference": "Observation/chf-scenario1-bodyweight-change3-observation"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-bodyweight-change1"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-bodyweight-change2"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-bodyweight-change3"
+            }
+          ]
+        },
+        {
+          "title": "Urine Out",
+          "code": {
+            "text": "Urine Out"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-urineout3-observation"
+            },
+            {
+              "reference": "MeasureReport/chf-scenario1-urineout3"
+            }
+          ]
+        },
+        {
+          "title": "Net IO's",
+          "code": {
+            "text": "Net IO's"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-netio3"
+            }
+          ]
+        },
+        {
+          "title": "JVP",
+          "code": {
+            "text": "JVP"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-jvp1"
+            },
+            {
+              "reference": "Observation/chf-scenario1-jvp2"
+            },
+            {
+              "reference": "Observation/chf-scenario1-jvp3"
+            },
+            {
+              "reference": "Observation/chf-scenario1-jvp4"
+            },
+            {
+              "reference": "Observation/chf-scenario1-jvp5"
+            },
+            {
+              "reference": "ServiceRequest/chf-scenario1-jvp"
+            }
+          ]
+        },
+        {
+          "title": "O2 Sat",
+          "code": {
+            "text": "O2 Sat"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-o2sat1"
+            },
+            {
+              "reference": "Observation/chf-scenario1-o2sat2"
+            },
+            {
+              "reference": "ServiceRequest/chf-scenario1-o2-sat"
+            }
+          ]
+        },
+        {
+          "title": "Potassium",
+          "code": {
+            "text": "Potassium"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-potassium1"
+            }
+          ]
+        },
+        {
+          "title": "Creatinine",
+          "code": {
+            "text": "Creatinine"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-creatinine1"
+            }
+          ]
+        },
+        {
+          "title": "eGFR",
+          "code": {
+            "text": "eGFR"
+          },
+          "entry": [
+            {
+              "reference": "Observation/chf-scenario1-egfr1"
+            }
+          ]
+        },
+        {
+          "title": "LASIX IV",
+          "code": {
+            "text": "LASIX IV"
+          },
+          "entry": [
+            {
+              "reference": "MedicationAdministration/chf-scenario1-lasix-iv"
+            },
+            {
+              "reference": "MedicationRequest/chf-scenario1-stop-lasix-iv"
+            },
+            {
+              "reference": "MedicationRequest/chf-scenario1-lasix-po-mr"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

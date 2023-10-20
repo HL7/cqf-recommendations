@@ -1,5 +1,5 @@
 Instance: request-pd-scenario2
-InstanceOf: Task
+InstanceOf: cpg-proposediagnosistask
 Usage: #example
 Description: "Example test case"
 * contained = Inline-Instance-for-request-pd-scenario2
@@ -8,7 +8,7 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
 * for = Reference(pd-scenario2-patient)
-* input
+* input[diagnosis]
   * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
   * valueReference = Reference(proposed-diagnosis)
 

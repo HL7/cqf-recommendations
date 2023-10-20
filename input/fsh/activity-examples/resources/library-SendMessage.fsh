@@ -1,9 +1,10 @@
 Instance: sendmessage-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
 Title: "Send Message Library"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-executablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert KnowledgeArtifactMetadata(sendmessage-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to send a message"

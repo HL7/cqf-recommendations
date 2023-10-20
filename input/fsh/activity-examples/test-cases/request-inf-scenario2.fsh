@@ -1,5 +1,5 @@
 Instance: request-inf-scenario2
-InstanceOf: Task
+InstanceOf: cpg-recordinferencetask
 Usage: #example
 Description: "Example test case"
 * contained = Inline-Instance-for-request-inf-scenario2
@@ -8,7 +8,7 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#record-inference "Record an inference"
 * for = Reference(inf-scenario2-patient)
-* input
+* input[inference]
   * type = $cpg-activity-type-cs#record-inference "Record an inference"
   * valueReference = Reference(inference)
 

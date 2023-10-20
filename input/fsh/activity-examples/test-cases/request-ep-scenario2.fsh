@@ -1,5 +1,5 @@
 Instance: request-ep-scenario2
-InstanceOf: Task
+InstanceOf: cpg-enrollmenttask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-enrollment-ad)
@@ -7,6 +7,6 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
 * for = Reference(ep-scenario2-patient)
-* input
+* input[pathway]
   * type = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
   * valueCanonical = Canonical(activity-example-pathway-pd)

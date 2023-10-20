@@ -1,5 +1,5 @@
 Instance: request-dnci-scenario2
-InstanceOf: Task
+InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
 * modifierExtension
@@ -10,6 +10,6 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#collect-information "Collect information"
 * for = Reference(dnci-scenario2-patient)
-* input
+* input[questionnaire]
   * type = $cpg-activity-type-cs#collect-information "Collect information"
   * valueCanonical = Canonical(activity-example-collectinformation-questionnaire)

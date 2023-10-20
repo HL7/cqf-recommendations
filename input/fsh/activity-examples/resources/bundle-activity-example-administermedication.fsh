@@ -1,5 +1,5 @@
 Instance: activity-example-administermedication-bundle
-InstanceOf: Bundle
+InstanceOf: CPGArtifactBundle
 Usage: #example
 Description: "Example of a bundle for administering a medication"
 * type = #collection

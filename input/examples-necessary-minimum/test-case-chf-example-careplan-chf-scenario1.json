@@ -1,0 +1,94 @@
+{
+  "resourceType": "CarePlan",
+  "id": "chf-scenario1-careplan",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-planFor",
+      "valueReference": {
+        "reference": "EpisodeOfCare/chf-scenario1-eoc"
+      }
+    }
+  ],
+  "instantiatesCanonical": [
+    "http://hl7.org/fhir/uv/cpg/PlanDefinition/chf-pathway"
+  ],
+  "status": "active",
+  "intent": "plan",
+  "category": [
+    {
+      "text": "Heart Failure Care Pathway"
+    }
+  ],
+  "title": "Heart Failure Care Pathway",
+  "description": "Care Pathway for treatment of congestive heart failure",
+  "subject": {
+    "reference": "Patient/chf-scenario1-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/chf-scenario1-encounter"
+  },
+  "period": {
+    "start": "2019-01-31T07:00:00Z"
+  },
+  "created": "2019-01-31T07:00:00Z",
+  "careTeam": [
+    {
+      "reference": "CareTeam/chf-scenario1-careteam"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/chf-scenario1-condition"
+    }
+  ],
+  "goal": [
+    {
+      "reference": "Goal/chf-scenario1-weight"
+    },
+    {
+      "reference": "Goal/chf-scenario1-weight-change"
+    },
+    {
+      "reference": "Goal/chf-scenario1-urine-out"
+    },
+    {
+      "reference": "Goal/chf-scenario1-net-io"
+    },
+    {
+      "reference": "Goal/chf-scenario1-jvp-goal"
+    },
+    {
+      "reference": "Goal/chf-scenario1-o2-sat-goal"
+    },
+    {
+      "reference": "Goal/chf-scenario1-potassium"
+    },
+    {
+      "reference": "Goal/chf-scenario1-creatinine"
+    },
+    {
+      "reference": "Goal/chf-scenario1-egfr"
+    },
+    {
+      "reference": "Goal/chf-scenario1-lasix-iv-goal"
+    },
+    {
+      "reference": "Goal/chf-scenario1-lasix-po-goal"
+    },
+    {
+      "reference": "Goal/chf-scenario1-cardiology-consultation-goal"
+    }
+  ],
+  "activity": [
+    {
+      "reference": {
+        "reference": "RequestGroup/chf-scenario1-daily-management"
+      }
+    },
+    {
+      "reference": {
+        "reference": "RequestGroup/chf-scenario1-hypervolemia"
+      }
+    }
+  ]
+}

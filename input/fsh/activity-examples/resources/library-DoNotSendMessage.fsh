@@ -1,9 +1,10 @@
 Instance: donotsendmessage-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
 Title: "Do Not Send Message"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-executablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert KnowledgeArtifactMetadata(donotsendmessage-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation not to send a message"

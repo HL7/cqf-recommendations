@@ -195,9 +195,9 @@
 <artifact id="ValueSet/cpg-recommendation-direction-vs" key="ValueSet-cpg-recommendation-direction-vs" name="CPG Recommendation Direction Value Set"/>
 <artifact id="StructureDefinition/cpg-recorddetectedissueactivity" key="StructureDefinition-cpg-recorddetectedissueactivity" name="CPG Record Detected Issue Activity"/>
 <artifact id="StructureDefinition/cpg-recorddetectedissuetask" key="StructureDefinition-cpg-recorddetectedissuetask" name="CPG Record Detected Issue Task"/>
-<artifact id="ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition" key="ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition" name="CPG Record DetectedIssue ActivityDefinition"/>
+<artifact id="ActivityDefinition/cpg-recorddetectedissue-activity" key="ActivityDefinition-cpg-recorddetectedissue-activity" name="CPG Record DetectedIssue ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-recordinferenceactivity" key="StructureDefinition-cpg-recordinferenceactivity" name="CPG Record Inference Activity"/>
-<artifact id="ActivityDefinition/cpg-recordinferencetask-activitydefinition" key="ActivityDefinition-cpg-recordinferencetask-activitydefinition" name="CPG Record Inference ActivityDefinition"/>
+<artifact id="ActivityDefinition/cpg-recordinference-activity" key="ActivityDefinition-cpg-recordinference-activity" name="CPG Record Inference ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-recordinferencetask" key="StructureDefinition-cpg-recordinferencetask" name="CPG Record Inference Task"/>
 <artifact id="StructureDefinition/cpg-relatedArtifact" key="StructureDefinition-cpg-relatedArtifact" name="CPG Related Artifact Extension"/>
 <artifact id="StructureDefinition/cpg-relatedperson" key="StructureDefinition-cpg-relatedperson" name="CPG Related Person"/>

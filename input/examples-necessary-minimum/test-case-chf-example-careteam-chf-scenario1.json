@@ -1,0 +1,51 @@
+{
+  "resourceType": "CareTeam",
+  "id": "chf-scenario1-careteam",
+  "status": "active",
+  "name": "CHF Care Team",
+  "subject": {
+    "reference": "Patient/chf-scenario1-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/chf-scenario1-encounter"
+  },
+  "participant": [
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "17561000",
+              "display": "Cardiologist"
+            }
+          ]
+        }
+      ],
+      "member": {
+        "reference": "PractitionerRole/chf-scenario1-practitionerrole"
+      }
+    },
+    {
+      "role": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "407542009",
+              "display": "Informal carer"
+            }
+          ]
+        }
+      ],
+      "member": {
+        "reference": "RelatedPerson/chf-scenario1-relatedperson"
+      }
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "Organization/chf-scenario1-organization"
+    }
+  ]
+}

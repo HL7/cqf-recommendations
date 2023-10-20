@@ -36,6 +36,7 @@ RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 * status = #active
 * url = "http://example.org/Questionnaire/{id}"
 * publisher = "HL7 International / Clinical Decision Support"
+* version = "2.0.0"
 
 RuleSet: Profile(profile-id)
 * meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"

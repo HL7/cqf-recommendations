@@ -1,5 +1,5 @@
 Instance: request-dcm-scenario7
-InstanceOf: Task
+InstanceOf: cpg-documentmedicationtask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-documentmedication-ad)
@@ -7,6 +7,6 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#document-medication "Document a medication"
 * for = Reference(dcm-scenario7-patient)
-* input
+* input[medicationRequest]
   * type = $cpg-activity-type-cs#order-medication "Order a medication"
   * valueReference = Reference(dcm-scenario7-mr)

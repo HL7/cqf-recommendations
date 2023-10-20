@@ -13,8 +13,8 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPG ImmunizationRecommendation ActivityDefinition (DEPRECATED: Use MedicationRequest)](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html) CPGImmunizationRecommendationActivityDefinition
 *   [CPG ServiceRequest ActivityDefinition](ActivityDefinition-cpg-servicerequest-activitydefinition.html) CPGServiceRequestActivityDefinition
 *   [CPG Propose Diagnosis ActivityDefinition](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html) CPGProposeDiagnosisTaskActivityDefinition
-*   [CPG Record DetectedIssue ActivityDefinition](ActivityDefinition-cpg-recorddetectedissuetask-activitydefinition.html) CPGRecordDetectedIssueTaskActivityDefinition
-*   [CPG Record Inference ActivityDefinition](ActivityDefinition-cpg-recordinferencetask-activitydefinition.html) CPGRecordInferenceTaskActivityDefinition
+*   [CPG Record DetectedIssue ActivityDefinition](ActivityDefinition-cpg-recorddetectedissue-activity.html) CPGRecordDetectedIssueTaskActivityDefinition
+*   [CPG Record Inference ActivityDefinition](ActivityDefinition-cpg-recordinference-activity.html) CPGRecordInferenceTaskActivityDefinition
 *   [CPG Report Flag ActivityDefinition](ActivityDefinition-cpg-reportflagtask-activitydefinition.html) CPGReportFlagTaskActivityDefinition
 
 ### CapabilityStatement Index
