@@ -1,5 +1,5 @@
 Instance: event-di-scenario4
-InstanceOf: Task
+InstanceOf: cpg-recorddetectedissuetask
 Usage: #example
 Description: "Example test case"
 * contained = detected-issue

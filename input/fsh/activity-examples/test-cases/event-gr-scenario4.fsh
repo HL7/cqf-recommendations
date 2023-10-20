@@ -1,5 +1,5 @@
 Instance: event-gr-scenario4
-InstanceOf: Task
+InstanceOf: cpg-generatereporttask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-generatereport-ad)

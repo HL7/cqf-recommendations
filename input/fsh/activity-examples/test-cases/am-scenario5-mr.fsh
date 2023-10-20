@@ -1,5 +1,5 @@
 Instance: am-scenario5-mr
-InstanceOf: MedicationRequest
+InstanceOf: CPGMedicationRequest
 Usage: #example
 Description: "Example test case"
 * status = #active

@@ -1,5 +1,5 @@
 Instance: am-scenario7-patient
-InstanceOf: Patient
+InstanceOf: CPGPatient
 Usage: #example
 Description: "Example test case"
 * active = true

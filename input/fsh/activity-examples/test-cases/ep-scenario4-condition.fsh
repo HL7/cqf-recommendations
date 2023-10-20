@@ -1,5 +1,5 @@
 Instance: ep-scenario4-condition
-InstanceOf: Condition
+InstanceOf: CPGCondition
 Usage: #example
 Description: "Example test case"
 * clinicalStatus = $condition-clinical#active

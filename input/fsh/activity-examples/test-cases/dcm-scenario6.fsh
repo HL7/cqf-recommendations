@@ -1,5 +1,5 @@
 Instance: dcm-scenario6
-InstanceOf: MedicationStatement
+InstanceOf: CPGMedicationStatement
 Usage: #example
 Description: "Example test case"
 * status = #stopped

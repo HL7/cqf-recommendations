@@ -1,5 +1,5 @@
 Instance: event-dnci-scenario8
-InstanceOf: Task
+InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)

@@ -1,5 +1,5 @@
 Instance: am-scenario5
-InstanceOf: MedicationAdministration
+InstanceOf: CPGMedicationAdministration
 Usage: #example
 Description: "Example test case"
 * status = #completed

@@ -1,5 +1,5 @@
 Instance: event-rf-scenario4
-InstanceOf: Task
+InstanceOf: cpg-reportflagtask
 Usage: #example
 Description: "Example test case"
 * contained = flag

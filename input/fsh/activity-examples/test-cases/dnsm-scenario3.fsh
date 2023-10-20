@@ -1,5 +1,5 @@
 Instance: dnsm-scenario3
-InstanceOf: CommunicationRequest
+InstanceOf: CPGCommunicationRequest
 Usage: #example
 Description: "Example test case"
 * extension[workflow-instantiatesCanonical].valueCanonical = Canonical(activity-example-donotsendmessage-ad)

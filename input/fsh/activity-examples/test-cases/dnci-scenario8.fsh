@@ -1,5 +1,5 @@
 Instance: dnci-scenario8
-InstanceOf: QuestionnaireResponse
+InstanceOf: CPGQuestionnaireResponse
 Usage: #example
 Description: "Example test case"
 * questionnaire = Canonical(activity-example-collectinformation-questionnaire)

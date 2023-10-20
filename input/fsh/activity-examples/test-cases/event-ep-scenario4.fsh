@@ -1,5 +1,5 @@
 Instance: event-ep-scenario4
-InstanceOf: Task
+InstanceOf: cpg-enrollmenttask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-enrollment-ad)

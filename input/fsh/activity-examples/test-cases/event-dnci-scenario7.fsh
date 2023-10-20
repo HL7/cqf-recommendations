@@ -1,5 +1,5 @@
 Instance: event-dnci-scenario7
-InstanceOf: Task
+InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
 * modifierExtension[request-doNotPerform].valueBoolean = true

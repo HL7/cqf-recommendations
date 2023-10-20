@@ -7,7 +7,7 @@ Description: "Example test case"
 * status = #completed
 * intent = #order
 * code = $cpg-activity-type-cs#collect-information "Collect information"
-* for = Reference(dnsm-scenario5-patient)
+* for = Reference(ci-scenario5-patient)
 * input
   * type = $cpg-activity-type-cs#collect-information "Collect information"
   * valueCanonical = Canonical(activity-example-collectinformation-questionnaire)

@@ -1,5 +1,5 @@
 Instance: event-inf-scenario4
-InstanceOf: Task
+InstanceOf: cpg-recordinferencetask
 Usage: #example
 Description: "Example test case"
 * contained = inference

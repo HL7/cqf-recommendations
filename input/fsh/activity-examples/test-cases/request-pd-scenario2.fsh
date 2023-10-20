@@ -13,7 +13,7 @@ Description: "Example test case"
   * valueReference = Reference(proposed-diagnosis)
 
 Instance: Inline-Instance-for-request-pd-scenario2
-InstanceOf: Condition
+InstanceOf: CPGCondition
 Usage: #inline
 * id = "proposed-diagnosis"
 * clinicalStatus = $condition-clinical#active

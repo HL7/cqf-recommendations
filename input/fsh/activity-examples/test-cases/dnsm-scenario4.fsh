@@ -1,5 +1,5 @@
 Instance: dnsm-scenario4
-InstanceOf: CommunicationRequest
+InstanceOf: CPGCommunicationRequest
 Usage: #example
 Description: "Example test case"
 * status = #active

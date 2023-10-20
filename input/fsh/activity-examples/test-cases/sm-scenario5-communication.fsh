@@ -1,5 +1,5 @@
 Instance: sm-scenario5-communication
-InstanceOf: Communication
+InstanceOf: CPGCommunication
 Usage: #example
 Description: "Example test case"
 * basedOn = Reference(sm-scenario5)
