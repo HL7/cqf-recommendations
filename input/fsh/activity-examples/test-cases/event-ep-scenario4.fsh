@@ -7,7 +7,7 @@ Description: "Example test case"
 * intent = #order
 * code = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
 * for = Reference(ep-scenario4-patient)
-* input
+* input[pathway]
   * type = $cpg-activity-type-cs#enrollment "Enroll in a pathway or strategy"
   * valueCanonical = Canonical(activity-example-pathway-pd)
 * output

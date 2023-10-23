@@ -7,7 +7,7 @@ Description: "Example test case"
 * intent = #order
 * code = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
 * for = Reference(gr-scenario4-patient)
-* input
+* input[definition]
   * type = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
   * valueCanonical = Canonical(activity-example-generatereport-measure)
 * output

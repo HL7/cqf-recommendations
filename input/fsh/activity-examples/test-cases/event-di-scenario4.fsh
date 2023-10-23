@@ -8,7 +8,7 @@ Description: "Example test case"
 * intent = #order
 * code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
 * for = Reference(di-scenario4-patient)
-* input
+* input[detectedIssue]
   * type = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
   * valueReference = Reference(detected-issue)
 * output

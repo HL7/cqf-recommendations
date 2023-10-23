@@ -8,7 +8,7 @@ Description: "Example test case"
 * intent = #order
 * code = $cpg-activity-type-cs#record-inference "Record an inference"
 * for = Reference(inf-scenario4-patient)
-* input
+* input[inference]
   * type = $cpg-activity-type-cs#record-inference "Record an inference"
   * valueReference = Reference(inference)
 * output
