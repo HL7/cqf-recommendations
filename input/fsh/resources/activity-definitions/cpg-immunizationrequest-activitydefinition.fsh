@@ -1,8 +1,8 @@
-Instance: cpg-immunizationrecommendation-activitydefinition
+Instance: cpg-immunizationrequest-activitydefinition
 InstanceOf: ActivityDefinition
 Usage: #example
-Title: "CPG ImmunizationRecommendation ActivityDefinition"
-* insert ActivityDefinitionMetadata(cpg-immunizationrecommendation-activitydefinition, CPGImmunizationRecommendationActivityDefinition)
+Title: "CPG ImmunizationRequest ActivityDefinition"
+* insert ActivityDefinitionMetadata(cpg-immunizationrequest-activitydefinition, CPGImmunizationRequestActivityDefinition)
 * description = "Example Activity Definition for a recommendation to provide an immunization"
 * kind = #MedicationRequest
 * profile = Canonical(cpg-immunizationrequest)
