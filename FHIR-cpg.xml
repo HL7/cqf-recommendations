@@ -136,7 +136,7 @@
 <artifact id="StructureDefinition/cpg-identifier" key="StructureDefinition-cpg-identifier" name="CPG Identifier Extension"/>
 <artifact id="StructureDefinition/cpg-immunization" key="StructureDefinition-cpg-immunization" name="CPG Immunization"/>
 <artifact id="StructureDefinition/cpg-immunizationactivity" key="StructureDefinition-cpg-immunizationactivity" name="CPG Immunization Activity"/>
-<artifact id="StructureDefinition/cpg-immunizationrecommendation" key="StructureDefinition-cpg-immunizationrecommendation" name="CPG Immunization Recommendation"/>
+<artifact id="StructureDefinition/cpg-immunizationrequest" key="StructureDefinition-cpg-immunizationrequest" name="CPG Immunization Request"/>
 <artifact id="ActivityDefinition/cpg-immunizationrecommendation-activitydefinition" key="ActivityDefinition-cpg-immunizationrecommendation-activitydefinition" name="CPG ImmunizationRecommendation ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-impressionFor" key="StructureDefinition-cpg-impressionFor" name="CPG Impression For Extension"/>
 <artifact id="CodeSystem/cpg-indicator-cs" key="CodeSystem-cpg-indicator-cs" name="CPG Indicator Code System"/>
@@ -482,6 +482,7 @@
 <artifact id="Patient/dnci-scenario6-patient" key="Patient-dnci-scenario6-patient" name="dnci-scenario6-patient"/>
 <artifact id="Patient/dnci-scenario7-patient" key="Patient-dnci-scenario7-patient" name="dnci-scenario7-patient"/>
 <artifact id="QuestionnaireResponse/dnci-scenario8" key="QuestionnaireResponse-dnci-scenario8" name="dnci-scenario8"/>
+<artifact id="Communication/dnci-scenario8-communication" key="Communication-dnci-scenario8-communication" name="dnci-scenario8-communication"/>
 <artifact id="Patient/dnci-scenario8-patient" key="Patient-dnci-scenario8-patient" name="dnci-scenario8-patient"/>
 <artifact id="Patient/dnci-scenario9-patient" key="Patient-dnci-scenario9-patient" name="dnci-scenario9-patient"/>
 <artifact id="Communication/dnsm-scenario1" key="Communication-dnsm-scenario1" name="dnsm-scenario1"/>
@@ -533,6 +534,7 @@
 <artifact id="Patient/gr-scenario2-patient" key="Patient-gr-scenario2-patient" name="gr-scenario2-patient"/>
 <artifact id="MeasureReport/gr-scenario4" key="MeasureReport-gr-scenario4" name="gr-scenario4"/>
 <artifact id="Patient/gr-scenario4-patient" key="Patient-gr-scenario4-patient" name="gr-scenario4-patient"/>
+<artifact id="Practitioner/inf-practitioner" key="Practitioner-inf-practitioner" name="inf-practitioner"/>
 <artifact id="Patient/inf-scenario1-patient" key="Patient-inf-scenario1-patient" name="inf-scenario1-patient"/>
 <artifact id="Patient/inf-scenario2-patient" key="Patient-inf-scenario2-patient" name="inf-scenario2-patient"/>
 <artifact id="Observation/inf-scenario4" key="Observation-inf-scenario4" name="inf-scenario4"/>
@@ -605,7 +607,7 @@
 <artifact id="Flag/rf-scenario4" key="Flag-rf-scenario4" name="rf-scenario4"/>
 <artifact id="Patient/rf-scenario4-patient" key="Patient-rf-scenario4-patient" name="rf-scenario4-patient"/>
 <artifact id="Patient/ri-scenario1-patient" key="Patient-ri-scenario1-patient" name="ri-scenario1-patient"/>
-<artifact id="ImmunizationRecommendation/ri-scenario2" key="ImmunizationRecommendation-ri-scenario2" name="ri-scenario2"/>
+<artifact id="MedicationRequest/ri-scenario2" key="MedicationRequest-ri-scenario2" name="ri-scenario2"/>
 <artifact id="Patient/ri-scenario2-patient" key="Patient-ri-scenario2-patient" name="ri-scenario2-patient"/>
 <artifact id="Immunization/ri-scenario4" key="Immunization-ri-scenario4" name="ri-scenario4"/>
 <artifact id="Patient/ri-scenario4-patient" key="Patient-ri-scenario4-patient" name="ri-scenario4-patient"/>

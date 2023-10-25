@@ -2,6 +2,7 @@ Instance: cpg-common-patient-profile
 InstanceOf: Questionnaire
 Usage: #example
 Title: "CPG Common Questionnaire - Patient information"
+Description: "Questionnaire to gather patient infomration"
 * insert QuestionnaireMetadata(cpg-common-patient-profile)
 * name = "CPG_Common_Questionnaire_Patient_Profile"
 * status = #draft

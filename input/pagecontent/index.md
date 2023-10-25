@@ -6,8 +6,6 @@ The FHIR Clinical Guidelines Implementation Guide (CPG IG) provides a means of c
 
 These issues are all related to various publication tooling issues. A technical correction is planned once the tooling issues have been addressed.
 
-*   Broken links: Questionnaire answer option link, recursive links in profile displays, and broken links in the ServiceRequest profiles are tooling issues.
-*   Invalid groupingId in ImplementationGuide errors: These errors are an artifact of the use of spreadsheets and will be addressed with the switch to a template-based IG.
 *   [FHIR-30206](https://jira.hl7.org/browse/FHIR-30206): Resolution errors for Library-FHIRHelpers and Library-FHIRModelInfo.
 *   [FHIR-30207](https://jira.hl7.org/browse/FHIR-30207): Allow request-doNotPerform extension to be used on Task.
 *   [FHIR-30208](https://jira.hl7.org/browse/FHIR-30208): Allow workflow-instantiatesCanonical extension to be used on Composition.

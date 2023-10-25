@@ -42,10 +42,10 @@ RuleSet: Profile(profile-id)
 RuleSet: RelatedFHIRLibraries
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1" //this does not resolve - should it be 	http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo ?
+  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "https://hl7.org/fhir/R4/library-fhir-helpers|4.0.1"
+  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
 
 RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
 * extension[+]

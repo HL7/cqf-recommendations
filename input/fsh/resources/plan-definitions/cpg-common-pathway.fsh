@@ -2,6 +2,7 @@ Instance: cpg-common-pathway
 InstanceOf: PlanDefinition
 Usage: #example
 Title: "CPG Common Pathway"
+Description: "Common patient care pathway"
 * insert PlanDefinitionMetadata(cpg-common-pathway)
 * identifier
   * use = #official
