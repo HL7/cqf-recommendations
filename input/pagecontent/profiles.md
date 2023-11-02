@@ -32,8 +32,8 @@ Note that explicit profiles for capabilities are only defined when there are spe
 
 {% include profile-tables/artifact-profiles.html %}
 
-\* - Conformance expectations covered by the Computable profile
-\*\* - Conformance expectations covered by the Shareable profile
+\* - Conformance expectations covered by the Computable profile<a id="exec"></a><br>
+\*\* - Conformance expectations covered by the Shareable profile<a id="comp"></a>
 
 ### Domain Profiles
 

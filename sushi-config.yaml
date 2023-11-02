@@ -9,15 +9,18 @@ name: CPG
 title: Clinical Practice Guidelines
 description: Implementation guidance for creating Clinical Practice Guidelines with formal artifacts to facilitate sharing and implementation of the guideline
 status: active # draft | active | retired | unknown
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
+    valueCode: cds  # <<< The value must be the code for the workgroup
 version: 2.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2022+
+copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 publisher:
-  name: HL7 International - Clinical Decision Support WG
-  url: http://www.hl7.org/Special/committees/dss/index.cfm
+  name: HL7 International / Clinical Decision Support
+  url:  http://www.hl7.org/Special/committees/dss
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -181,6 +184,7 @@ parameters:
   apply-publisher: true
   apply-version: true
   apply-jurisdiction: true
+  apply-wg: true
   path-binary: ./input/cql
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
