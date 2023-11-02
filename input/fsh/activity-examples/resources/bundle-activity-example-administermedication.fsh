@@ -146,6 +146,7 @@ Usage: #inline
 * title = "Activity Example Administer Medication"
 * status = #draft
 * version = "2.0.0"
+* date = "2023-11-02"
 * publisher = "HL7 International / Clinical Decision Support"
 * description = "Example Plan Definition for a recommendation to administer a medication"
 * type = $plan-definition-type#eca-rule
