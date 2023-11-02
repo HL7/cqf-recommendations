@@ -5,6 +5,7 @@ Title: "Administer Medication Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)
+* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(administermedication-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to administer a medication"

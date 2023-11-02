@@ -5,6 +5,7 @@ Title: "Generate Report Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)
+* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(generatereport-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to generate a report"

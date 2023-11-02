@@ -5,6 +5,7 @@ Title: "Send Message Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)
+* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(sendmessage-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to send a message"

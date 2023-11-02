@@ -1,3 +1,6 @@
+RuleSet: Profile(profile-id)
+* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
+
 RuleSet: KnowledgeArtifactMetadata(id, type)
 * extension[+]
   * url = $cpg-knowledgeCapability
@@ -18,6 +21,9 @@ RuleSet: KnowledgeArtifactMetadata(id, type)
 * publisher = "HL7 International / Clinical Decision Support"
 
 RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
+* insert Profile(cpg-computableplandefinition)
+* insert Profile(cpg-shareableplandefinition)
+* insert Profile(cpg-publishableplandefinition)
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable
@@ -38,8 +44,6 @@ RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 * publisher = "HL7 International / Clinical Decision Support"
 * version = "2.0.0"
 
-RuleSet: Profile(profile-id)
-* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
 
 RuleSet: RelatedFHIRLibraries
 * relatedArtifact[+]
@@ -50,6 +54,8 @@ RuleSet: RelatedFHIRLibraries
   * resource = "https://hl7.org/fhir/R4/library-fhir-helpers|4.0.1"
 
 RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
+* insert Profile(cpg-shareablequestionnaire)
+* insert Profile(cpg-publishablequestionnaire)
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable
@@ -69,6 +75,9 @@ RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
 * experimental = true
 
 RuleSet: KnowledgeArtifactADMetadata(id)
+* insert Profile(cpg-computableactivity)
+* insert Profile(cpg-shareableactivitydefinition)
+* insert Profile(cpg-publishableactivity)
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable
