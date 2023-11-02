@@ -255,7 +255,7 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
     Definition of a recommendation for a particular immunization as part of a computable clinical practice guideline
 
-*   [CPGImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html)
+*   [CPGImmunizationRequest](StructureDefinition-cpg-immunizationrequest.html)
 
     Recommendation for a particular immunization as part of the delivery of a computable clinical practice guideline
 

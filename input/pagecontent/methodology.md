@@ -393,7 +393,7 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 |[**DocumentMedication**](ActivityDefinition-cpg-documentmedication-activitydefinition.html)|**MedicationRequest**: The detailed medication request to be documented. This may be an existing order, or it may be produced as part of the document medication activity|
 |[**Enrollment**]|**PathwayCanonical**: The canonical URL of the pathway or strategy in which the patient is enrolled/unenrolled|
 |[**GenerateReport**]|**DefinitionCanonical**: The canonical URL of the metric, case report, or profile to use to generate the report|
-|[**ImmunizationRecommendation**](ActivityDefinition-cpg-immunizationrecommendation-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
+|[**ImmunizationRequest**](ActivityDefinition-cpg-immunizationrequest-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
 |[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
 |[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConept**: The diagnosis being proposed|
 |[**RecordDetectedIssueTask**](ActivityDefinition-cpg-recorddetectedissue-activity.html)|**IssueCodeableConcept**: The issue being recorded|
@@ -418,7 +418,7 @@ This implementation guide defines profiles for each of the request resources to 
 * [CommunicationRequest](StructureDefinition-cpg-communicationrequest.html): Recommendation for a specific communication
 * [DispenseMedicationTask](StructureDefinition-cpg-dispensemedicationtask.html): Recommendation to dispense a specific medication
 * [DocumentMedicationTask](StructureDefinition-cpg-documentmedicationtask.html): Recommendation to document use of a specific medication
-* [ImmunizationRecommendation](StructureDefinition-cpg-immunizationrecommendation.html): Recommendation for a particular immunization
+* [ImmunizationRequest](StructureDefinition-cpg-immunizationrequest.html): Recommendation for a particular immunization
 * [MedicationRequest](StructureDefinition-cpg-medicationrequest.html): Recommendation for a specific medication
 * [ProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html): Recommendation to propose a specific diagnosis
 * [QuestionnaireTask](StructureDefinition-cpg-questionnairetask.html): Recommendation to collect specific information using a questionnaire
