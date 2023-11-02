@@ -1,7 +1,7 @@
 Instance: activity-example-reportflag-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Report Flag PD"
+* title = "Activity Example Report Flag PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-reportflag-pd)
 * description = "Example Plan Definition for a recommendation to report a flat"
 * name = "ActivityExampleReportFlagPD"

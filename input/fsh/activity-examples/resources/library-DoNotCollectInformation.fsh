@@ -1,7 +1,7 @@
 Instance: donotcollectinformation-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Do Not Collect Information Library"
+* title = "Do Not Collect Information Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

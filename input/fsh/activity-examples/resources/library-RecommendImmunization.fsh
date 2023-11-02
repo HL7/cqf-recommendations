@@ -1,7 +1,7 @@
 Instance: recommendimmunization-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Recommend Immunization"
+* title = "Recommend Immunization"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

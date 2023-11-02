@@ -1,7 +1,7 @@
 Instance: activity-example-sendmessage-ad
 InstanceOf: CPGCommunicationActivity
 Usage: #example
-Title: "Activity Example Send Message AD"
+* title = "Activity Example Send Message AD"
 * insert KnowledgeArtifactADMetadata(activity-example-sendmessage-ad)
 * description = "Example Activity Definition for a recommendation to send a message"
 * name = "ActivityExampleSendMessageAD"

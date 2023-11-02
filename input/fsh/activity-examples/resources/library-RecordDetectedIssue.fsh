@@ -1,7 +1,7 @@
 Instance: recorddetectedissue-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Record Detected Issue Library"
+* title = "Record Detected Issue Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

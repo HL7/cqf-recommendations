@@ -1,7 +1,7 @@
 Instance: activity-example-dispensemedication-ad
 InstanceOf: CPGDispenseMedicationActivity
 Usage: #example
-Title: "Activity Example Dispense Medication AD"
+* title = "Activity Example Dispense Medication AD"
 * insert KnowledgeArtifactADMetadata(activity-example-dispensemedication-ad)
 * description = "Example Activity Definition for a recommendation to dispense a medication"
 * name = "ActivityExampleDispenseMedicationAD"

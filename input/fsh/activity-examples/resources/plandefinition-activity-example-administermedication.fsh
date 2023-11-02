@@ -1,7 +1,7 @@
 Instance: activity-example-administermedication-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Administer Medication PD"
+* title = "Activity Example Administer Medication PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-administermedication-pd)
 * description = "Example Plan Definition for a recommendation to administer a medication"
 * name = "ActivityExampleAdministerMedicationPD"

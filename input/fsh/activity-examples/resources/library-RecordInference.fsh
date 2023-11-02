@@ -1,7 +1,7 @@
 Instance: recordinference-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Record Inference"
+* title = "Record Inference"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

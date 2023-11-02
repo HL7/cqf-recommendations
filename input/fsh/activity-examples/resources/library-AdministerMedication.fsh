@@ -1,7 +1,7 @@
 Instance: administermedication-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Administer Medication Library"
+* title = "Administer Medication Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

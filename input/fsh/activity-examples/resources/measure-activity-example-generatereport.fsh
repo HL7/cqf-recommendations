@@ -4,7 +4,6 @@ Usage: #example
 * insert Profile(cpg-computablemetric)
 * insert Profile(cpg-shareablemetric)
 * insert Profile(cpg-publishablemetric)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(activity-example-generatereport-measure, Measure)
 * description = "Example measure for the activity example to generate a report"
 * title = "Activity Example Generate Report Measure"

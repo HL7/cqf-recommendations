@@ -1,7 +1,7 @@
 Instance: generatereport-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Generate Report Library"
+* title = "Generate Report Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

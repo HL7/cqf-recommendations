@@ -1,7 +1,7 @@
 Instance: activity-example-administermedication-ad
 InstanceOf: CPGAdministerMedicationActivity
 Usage: #example
-Title: "Activity Example Administer Medication AD"
+* title = "Activity Example Administer Medication AD"
 * insert KnowledgeArtifactADMetadata(activity-example-administermedication-ad)
 * description = "Example Activity Definition for a recommendation to administer a medication"
 * name = "ActivityExampleAdministerMedicationAD"

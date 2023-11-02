@@ -1,7 +1,7 @@
 Instance: reportflag-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Report Flag"
+* title = "Report Flag"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

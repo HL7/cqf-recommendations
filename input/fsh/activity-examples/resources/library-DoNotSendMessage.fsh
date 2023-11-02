@@ -1,7 +1,7 @@
 Instance: donotsendmessage-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Do Not Send Message"
+* title = "Do Not Send Message"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

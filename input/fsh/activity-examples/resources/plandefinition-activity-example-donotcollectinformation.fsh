@@ -1,7 +1,7 @@
 Instance: activity-example-donotcollectinformation-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Do Not Collect Information PD"
+* title = "Activity Example Do Not Collect Information PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-donotcollectinformation-pd)
 * description = "Example Plan Definition for a recommendation not to collect information"
 * name = "ActivityExampleDoNotCollectInformationPD"

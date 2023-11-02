@@ -1,7 +1,7 @@
 Instance: activity-example-recorddetectedissue-ad
 InstanceOf: CPGRecordDetectedIssueActivity
 Usage: #example
-Title: "Activity Example Record Detected Issue AD"
+* title = "Activity Example Record Detected Issue AD"
 * insert KnowledgeArtifactADMetadata(activity-example-recorddetectedissue-ad)
 * description = "Example Activity Definition for a recommendation to record a detected issue"
 * name = "ActivityExampleRecordDetectedIssueAD"

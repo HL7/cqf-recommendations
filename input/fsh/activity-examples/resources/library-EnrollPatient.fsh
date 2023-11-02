@@ -1,7 +1,7 @@
 Instance: enrollment-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Enrollment Library"
+* title = "Enrollment Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

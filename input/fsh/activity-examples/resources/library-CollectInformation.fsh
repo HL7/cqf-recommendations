@@ -1,7 +1,7 @@
 Instance: collectinformation-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Collect Information Library"
+* title = "Collect Information Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

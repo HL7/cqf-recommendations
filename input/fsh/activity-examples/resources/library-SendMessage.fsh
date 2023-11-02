@@ -1,7 +1,7 @@
 Instance: sendmessage-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Send Message Library"
+* title = "Send Message Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)

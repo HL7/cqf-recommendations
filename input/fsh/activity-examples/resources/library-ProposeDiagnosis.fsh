@@ -1,7 +1,7 @@
 Instance: proposediagnosis-library
 InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Propose Diagnosis Library"
+* title = "Propose Diagnosis Library"
 * insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
 * insert Profile(cpg-publishablelibrary)
