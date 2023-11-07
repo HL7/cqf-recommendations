@@ -1,7 +1,7 @@
 Instance: activity-example-sendmessage-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Send Message PD"
+* title = "Activity Example Send Message PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-sendmessage-pd)
 * description = "Example Plan Definition for a recommendation to send a message"
 * name = "ActivityExampleSendMessagePD"

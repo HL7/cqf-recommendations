@@ -1,7 +1,7 @@
 Instance: activity-example-enrollment-ad
 InstanceOf: CPGEnrollmentActivity
 Usage: #example
-Title: "Activity Example Enrollment AD"
+* title = "Activity Example Enrollment AD"
 * insert KnowledgeArtifactADMetadata(activity-example-enrollment-ad)
 * description = "Example Activity Definition for a recommendation to enroll a patient in a pathway"
 * extension[+]

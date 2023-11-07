@@ -1,5 +1,5 @@
 Instance: dcm-scenario3
-InstanceOf: MedicationRequest
+InstanceOf: CPGMedicationRequest
 Usage: #example
 Description: "Example test case"
 * status = #active

@@ -1,5 +1,5 @@
 Instance: activity-example-administermedication-bundle
-InstanceOf: Bundle
+InstanceOf: CPGArtifactBundle
 Usage: #example
 Description: "Example of a bundle for administering a medication"
 * type = #collection
@@ -137,7 +137,7 @@ Usage: #inline
   * id = "ig-loader-AdministerMedication.cql"
 
 Instance: Inline-Instance-for-activity-example-administermedication-2
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #inline
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-administermedication-2)
 * id = "activity-example-administermedication-2"
@@ -145,8 +145,9 @@ Usage: #inline
 * name = "ActivityExampleAdministerMedication"
 * title = "Activity Example Administer Medication"
 * status = #draft
-* version = "1.0.0"
-* publisher = "HL7 International - Clinical Decision Support WG"
+* version = "2.0.0"
+* date = "2023-11-02"
+* publisher = "HL7 International / Clinical Decision Support"
 * description = "Example Plan Definition for a recommendation to administer a medication"
 * type = $plan-definition-type#eca-rule
 * experimental = true

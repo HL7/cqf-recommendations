@@ -1,5 +1,5 @@
 Instance: sm-scenario6
-InstanceOf: Communication
+InstanceOf: CPGCommunication
 Usage: #example
 Description: "Example test case"
 * status = #not-done

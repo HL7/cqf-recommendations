@@ -1,5 +1,5 @@
 Instance: event-rf-scenario4
-InstanceOf: Task
+InstanceOf: cpg-reportflagtask
 Usage: #example
 Description: "Example test case"
 * contained = flag
@@ -8,7 +8,7 @@ Description: "Example test case"
 * intent = #order
 * code = $cpg-activity-type-cs#report-flag "Report a flag"
 * for = Reference(rf-scenario4-patient)
-* input
+* input[flag]
   * type = $cpg-activity-type-cs#report-flag "Report a flag"
   * valueReference = Reference(flag)
 * output

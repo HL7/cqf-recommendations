@@ -1,5 +1,5 @@
 Instance: sm-scenario4
-InstanceOf: Communication
+InstanceOf: CPGCommunication
 Usage: #example
 Description: "Example test case"
 * status = #completed

@@ -1,5 +1,5 @@
 Instance: ep-scenario4-encounter
-InstanceOf: Encounter
+InstanceOf: CPGEncounter
 Usage: #example
 Description: "Example test case"
 * status = #in-progress

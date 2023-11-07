@@ -1,8 +1,10 @@
 Instance: reportflag-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Report Flag"
+* title = "Report Flag"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(reportflag-library, Library)
 * insert RelatedFHIRLibraries

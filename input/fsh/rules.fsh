@@ -72,8 +72,8 @@ RuleSet: ActivityDefinitionMetadata(id, name)
 * experimental = false
 * status = #active
 * priority = #routine
-* publisher = "HL7 International - Clinical Decision Support WG"
-* version = "1.0.0"
+* publisher = "HL7 International / Clinical Decision Support"
+* version = "2.0.0"
 
 RuleSet: PlanDefinitionMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"

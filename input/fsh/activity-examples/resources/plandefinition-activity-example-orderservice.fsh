@@ -1,7 +1,7 @@
 Instance: activity-example-orderservice-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Order Service PD"
+* title = "Activity Example Order Service PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-orderservice-pd)
 * description = "Example Plan Definition for a recommendation to order a service"
 * name = "ActivityExampleOrderServicePD"

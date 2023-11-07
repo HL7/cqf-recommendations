@@ -1,315 +1,44 @@
 == Suppressed Messages ==
 
 # Complementary profiles (slices on the same list...)
-INFORMATION: Library/administermedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/administermedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/collectinformation-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/collectinformation-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/dispensemedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/dispensemedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/documentmedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/documentmedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/donotcollectinformation-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/donotcollectinformation-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/donotsendmessage-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/donotsendmessage-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/enrollment-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/enrollment-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/generatereport-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/generatereport-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/ordermedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/ordermedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/orderservice-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/orderservice-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/proposediagnosis-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/proposediagnosis-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/recommendimmunization-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/recommendimmunization-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/recorddetectedissue-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/recorddetectedissue-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/recordinference-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/recordinference-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/reportflag-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/reportflag-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/sendmessage-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/sendmessage-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[1].resource/*Library/AdministerMedication*/.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
+INFORMATION: Library/administermedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/administermedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/collectinformation-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/collectinformation-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/dispensemedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/dispensemedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/documentmedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/documentmedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/donotcollectinformation-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/donotcollectinformation-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/donotsendmessage-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/donotsendmessage-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/enrollment-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/enrollment-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/generatereport-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/generatereport-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/ordermedication-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/ordermedication-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/orderservice-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/orderservice-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/proposediagnosis-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/proposediagnosis-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/recommendimmunization-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/recommendimmunization-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/recorddetectedissue-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/recorddetectedissue-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/recordinference-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/recordinference-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/reportflag-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/reportflag-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/sendmessage-library: Library.content[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/sendmessage-library: Library.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[1].resource/*Library/AdministerMedication*/.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
 
 # Messaage related to snapshot
 INFORMATION: StructureDefinition/cpg-medicationdispense: StructureDefinition.snapshot.element[31].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
 # Confirmed profile validation messages
-INFORMATION: Library/administermedication-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/administermedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary - listed in meta
-INFORMATION: Library/administermedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/administermedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/collectinformation-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/collectinformation-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/collectinformation-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/dispensemedication-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/dispensemedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/dispensemedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/donotcollectinformation-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/donotcollectinformation-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/donotcollectinformation-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/donotsendmessage-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/donotsendmessage-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/donotsendmessage-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/documentmedication-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/documentmedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/documentmedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Libraryenrollment-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Libraryenrollment-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Libraryenrollment-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/generatereport-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/generatereport-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/generatereport-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/ordermedication-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/ordermedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/ordermedication-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/orderservice-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/orderservice-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/orderservice-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/proposediagnosis-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/proposediagnosis-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/proposediagnosis-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/recommendimmunization-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/recommendimmunization-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/recommendimmunization-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/recorddetectedissue-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/recorddetectedissue-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/recorddetectedissue-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/recordinference-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/recordinference-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/recordinference-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/reportflag-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/reportflag-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/reportflag-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: Library/sendmessage-library: Library: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Library
-INFORMATION: Library/sendmessage-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary - listed in meta
-INFORMATION: Library/sendmessage-library: Library: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary - listed in meta
-INFORMATION: MedicationRequest/am-scenario1: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/am-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/am-scenario2: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/am-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-am-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask
-INFORMATION: MedicationRequest/am-scenario3: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/am-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-am-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask
-INFORMATION: MedicationAdministration/am-scenario4: MedicationAdministration: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration
-INFORMATION: MedicationRequest/am-scenario4: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/am-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationAdministration/am-scenario5: MedicationAdministration: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration
-INFORMATION: MedicationRequest/am-scenario5: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/am-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-am-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask
-INFORMATION: MedicationAdministration/am-scenario6: MedicationAdministration: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration
-INFORMATION: MedicationRequest/am-scenario6: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/am-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Bundle/am-scenario7: Bundle: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle
-INFORMATION: Bundle/am-scenario7: Bundle.entry[+].resource.ofType(GuidanceResponse): Validate resource against profile http://hl7.org/fhir/StructureDefinition/GuidanceResponse
-INFORMATION: Bundle/am-scenario7: Bundle.entry[+].resource.ofType(GuidanceResponse).contained.ofType(Parameters): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Parameters
-INFORMATION: Bundle/am-scenario7: Bundle.entry[1].resource.ofType(MedicationAdministration): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationAdministration
-INFORMATION: Bundle/am-scenario7: Bundle.entry[2].resource.ofType(MedicationRequest): Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationRequest
-INFORMATION: Bundle/am-scenario7: Bundle.entry[3].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-INFORMATION: Bundle/am-scenario7: Bundle.entry[4].resource.ofType(Task): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Task
-INFORMATION: GuidanceResponse/am-scenario7: GuidanceResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/GuidanceResponse
-INFORMATION: GuidanceResponse/am-scenario7: GuidanceResponse.contained.ofType(Parameters): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Parameters
-INFORMATION: MedicationAdministration/am-scenario7: MedicationAdministration: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationadministration
-INFORMATION: MedicationRequest/am-scenario7: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/am-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-am-scenario7: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask
-INFORMATION: Patient/ci-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/ci-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-ci-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/ci-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-ci-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/ci-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: QuestionnaireResponse/ci-scenario4: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaireresponse
-INFORMATION: Task/event-ci-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/ci-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: QuestionnaireResponse/ci-scenario5: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaireresponse
-INFORMATION: Task/event-ci-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-task
-INFORMATION: Task/request-ci-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/ci-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-ci-scenario6: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/ci-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-ci-scenario7: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Task/request-ci-scenario7: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: MedicationRequest/dm-scenario1: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dm-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/dm-scenario2: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dm-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dm-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask
-INFORMATION: MedicationRequest/dm-scenario3: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dm-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask
-INFORMATION: MedicationDispense/dm-scenario4: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario4-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dm-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationDispense/dm-scenario5: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario5-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dm-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dm-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask
-INFORMATION: MedicationDispense/dm-scenario6: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario6-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dm-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationDispense/dm-scenario7: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/dm-scenario7-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dm-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dm-scenario7: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationtask
-INFORMATION: Patient/dnci-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-dnci-scenario1: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/dnci-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-dnci-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Task/request-dnci-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/dnci-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-dnci-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Task/request-dnci-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/dnci-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dnci-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/dnci-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dnci-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Task/request-stop-dnci-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/dnci-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dnci-scenario6: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Task/request-stop-dnci-scenario6: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/dnci-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-dnci-scenario7: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Communication/scenario8: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: Patient/dnci-scenario8: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: QuestionnaireResponse/dnci-scenario8: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnaireresponse
-INFORMATION: Task/event-dnci-scenario8: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask
-INFORMATION: Patient/dnci-scenario9: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/dnsm-scenario1: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: Patient/dnsm-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/dnsm-scenario2-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: CommunicationRequest/dnsm-scenario2: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/dnsm-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/dnsm-scenario3-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: CommunicationRequest/dnsm-scenario3: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/dnsm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: CommunicationRequest/dnsm-scenario4: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/dnsm-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: CommunicationRequest/dnsm-scenario5: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: CommunicationRequest/stop-dnsm-scenario5: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/dnsm-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: CommunicationRequest/dnsm-scenario6: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: CommunicationRequest/stop-dnsm-scenario6: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/dnsm-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/dnsm-scenario7: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: Patient/dnsm-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/dnsm-scenario8: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: Patient/dnsm-scenario8: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/dnsm-scenario9: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/dcm-scenario1: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dcm-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/dcm-scenario2: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dcm-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dcm-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
-INFORMATION: MedicationRequest/dcm-scenario3: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/dcm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dcm-scenario3: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
-INFORMATION: MedicationRequest/dcm-scenario4-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: MedicationStatement/dcm-scenario4: MedicationStatement: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement
-INFORMATION: Patient/dcm-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/dcm-scenario5-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: MedicationStatement/dcm-scenario5: MedicationStatement: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement
-INFORMATION: Patient/dcm-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dcm-scenario5: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
-INFORMATION: MedicationRequest/dcm-scenario6-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: MedicationStatement/dcm-scenario6: MedicationStatement: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement
-INFORMATION: Patient/dcm-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/dcm-scenario7: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: MedicationStatement/dcm-scenario7: MedicationStatement: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationstatement
-INFORMATION: Patient/dcm-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-dcm-scenario7: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
-INFORMATION: Patient/ep-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/ep-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-ep-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask
-INFORMATION: Condition/ep-scenario4-condition: Condition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition
-INFORMATION: Encounter/ep-scenario4-encounter: Encounter: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-encounter
-INFORMATION: EpisodeOfCare/ep-scenario4-eoc: EpisodeOfCare: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-case
-INFORMATION: Patient/ep-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-ep-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmenttask
-INFORMATION: Patient/gr-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/gr-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-gr-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask
-INFORMATION: MeasureReport/gr-scenario4: MeasureReport: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-metricreport
-INFORMATION: Patient/gr-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-gr-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereporttask
-INFORMATION: Patient/om-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/om-scenario2: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/om-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationRequest/om-scenario3: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/om-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationDispense/om-scenario4: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: Patient/om-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationDispense/om-scenario5: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/om-scenario5-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/om-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationDispense/om-scenario6: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: Patient/om-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: MedicationDispense/om-scenario7: MedicationDispense: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationdispense
-INFORMATION: MedicationRequest/om-scenario7-mr: MedicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequest
-INFORMATION: Patient/om-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/os-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/os-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: ServiceRequest/os-scenario2: ServiceRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequest
-INFORMATION: Patient/os-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Procedure/os-scenario4: Procedure: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-procedure
-INFORMATION: Patient/pd-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/pd-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-pd-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask
-INFORMATION: Task/request-pd-scenario2: Task.contained.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
-INFORMATION: Condition/pd-scenario4: Condition: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-condition
-INFORMATION: Patient/pd-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-pd-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosistask
-INFORMATION: Task/event-pd-scenario4: Task.contained.ofType(Condition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
-INFORMATION: Patient/ri-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: ImmunizationRecommendation/ri-scenario2: ImmunizationRecommendation: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationrecommendation
-INFORMATION: Patient/ri-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Immunization/ri-scenario4: Immunization: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunization
-INFORMATION: Patient/ri-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/di-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/di-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-di-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask
-INFORMATION: Task/request-di-scenario2: Task.contained.ofType(DetectedIssue): Validate resource against profile http://hl7.org/fhir/StructureDefinition/DetectedIssue
-INFORMATION: DetectedIssue/di-scenario4: DetectedIssue: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-detectedissue
-INFORMATION: Patient/di-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-di-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissuetask
-INFORMATION: Task/event-di-scenario4: Task.contained.ofType(DetectedIssue): Validate resource against profile http://hl7.org/fhir/StructureDefinition/DetectedIssue
-INFORMATION: Patient/inf-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/inf-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-inf-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask
-INFORMATION: Task/request-inf-scenario2: Task.contained.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Observation/inf-scenario4: Observation: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-observation
-INFORMATION: Patient/inf-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-inf-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferencetask
-INFORMATION: Task/event-inf-scenario4: Task.contained.ofType(Observation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-INFORMATION: Patient/rf-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Patient/rf-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/request-rf-scenario2: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask
-INFORMATION: Task/request-rf-scenario2: Task.contained.ofType(Flag): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Flag
-INFORMATION: Flag/rf-scenario4: Flag: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-flag
-INFORMATION: Patient/rf-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Task/event-rf-scenario4: Task: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagtask
-INFORMATION: Task/event-rf-scenario4: Task.contained.ofType(Flag): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Flag
-INFORMATION: Patient/sm-scenario1: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: CommunicationRequest/sm-scenario2: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/sm-scenario2: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: CommunicationRequest/sm-scenario3: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/sm-scenario3: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/sm-scenario4: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: Patient/sm-scenario4: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/sm-scenario5-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: CommunicationRequest/sm-scenario5: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/sm-scenario5: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/sm-scenario6: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: Patient/sm-scenario6: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
-INFORMATION: Communication/sm-scenario7-communication: Communication: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communication
-INFORMATION: CommunicationRequest/sm-scenario7: CommunicationRequest: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationrequest
-INFORMATION: Patient/sm-scenario7: Patient: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-patient
 INFORMATION: CodeSystem/anc-reason-for-visit-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 INFORMATION: CodeSystem/anc-reason-for-visit-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
 INFORMATION: GraphDefinition/anc-summary: GraphDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/GraphDefinition
@@ -554,210 +283,8 @@ INFORMATION: PlanDefinition/opioidcds-r4-recommendation-05: PlanDefinition: Vali
 INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
 INFORMATION: ValueSet/opioids-with-ambulatory-abuse-potential: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablevalueset - listed in meta
-INFORMATION: ActivityDefinition/cpg-administermedication-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-collectinformation-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-communicationrequest-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-dispensemedication-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-documentmedication-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-enrollment-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-generatereport-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-immunizationrecommendation-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-medicationrequest-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-proposediagnosistask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-recorddetectedissuetask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-recordinferencetask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-reportflagtask-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: ActivityDefinition/cpg-servicerequest-activitydefinition: ActivityDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ActivityDefinition
-INFORMATION: CapabilityStatement/cpg-common-patient-registry: CapabilityStatement: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement
-INFORMATION: CodeSystem/cpg-activity-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-activity-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-casefeature-pertinence-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-casefeature-pertinence-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-casefeature-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-casefeature-type-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-common-process-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-common-process-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-indicator-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-indicator-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-knowledge-capability-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-knowledge-capability-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-knowledge-representation-level-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-knowledge-representation-level-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: CodeSystem/cpg-recommendation-direction-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-INFORMATION: CodeSystem/cpg-recommendation-direction-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem - listed in meta
-INFORMATION: ImplementationGuide/hl7.fhir.uv.cpg: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-INFORMATION: OperationDefinition/cpg-careplan-apply: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
-INFORMATION: OperationDefinition/cpg-common-patient-summary: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
-INFORMATION: OperationDefinition/cpg-cql: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
-INFORMATION: OperationDefinition/cpg-library-evaluate: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
-INFORMATION: OperationDefinition/cpg-plandefinition-apply: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
-INFORMATION: PlanDefinition/cpg-common-pathway: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: PlanDefinition/cpg-common-registration: PlanDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/PlanDefinition
-INFORMATION: Questionnaire/cpg-common-identity: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
-INFORMATION: Questionnaire/cpg-common-patient-profile: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
-INFORMATION: Questionnaire/cpg-common-resolve-patient-match: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
-INFORMATION: ValueSet/cpg-activity-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-activity-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-casefeature-pertinence-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-casefeature-pertinence-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-casefeature-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-casefeature-type-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-common-persona-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-common-persona-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-common-process-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-common-process-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-indicator-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-indicator-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-knowledge-capability-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-knowledge-capability:-vs ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-knowledge-representation-level-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-knowledge-representation-level-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: ValueSet/cpg-recommendation-direction-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-INFORMATION: ValueSet/cpg-recommendation-direction-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset - listed in meta
-INFORMATION: StructureDefinition/cpg-administermedication: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-administermedicationtask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-artifactbundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-assetcollection: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-planFor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-careplan: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-careteam: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-careteamdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-enrolledIn: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-case: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-caseFeatureType: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-caseFeaturePertinence: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-instantiatesCaseFeature: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-caseFeatureOf: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-inferenceExpression: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-assertionExpression: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-featureExpression: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-casefeaturedefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-caseplanprogressingnote: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-caseplansummary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-caseplansummarydefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-summaryFor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-casesummary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-summaryDefinitionFor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-casesummarydefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-impressionFor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-clinicalimpression: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-collectWith: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-collectinformationactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-communication: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-communicationactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-rationale: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-communicationrequest: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-computableactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-computablegraphdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-computableguideline: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-computablelibrary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-computablemetric: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-directionOfRecommendation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-partOf: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-enabled: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-computableplandefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-computablevalueset: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-condition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-detectedissue: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-dispensemedicationactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-dispensemedicationtask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-documentmedicationactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-documentmedicationtask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-enrollIn: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-isUnenrollment: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-enrollmentactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-enrollmenttask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-executablelibrary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-usageWarning: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-executablevalueset: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-flag: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-reportWith: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-generatereportactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-generatereporttask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-goalFor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-goal: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-group: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-groupdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-immunization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-immunizationactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-immunizationrecommendation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-location: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-locationdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-medicationadministration: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-medicationdispense: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-medicationrequest: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-medicationrequestactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-medicationstatement: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-metricreport: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-ordersetdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-pathwaydefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-practitionerrole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-practitionerroledefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-procedure: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-proposediagnosisactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-proposediagnosistask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishableactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishablecasefeature: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishablecodesystem: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-copyright: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-topic: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishablegraphdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-author: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-editor: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-reviewer: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-endorser: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-relatedArtifact: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishableguideline: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishablelibrary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishablemetric: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishableplandefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishablequestionnaire: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-publishablevalueset: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-questionnaireresponse: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-pertinent: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-questionnairetask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-recommendationdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-recorddetectedissueactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-recorddetectedissuetask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-recordinferenceactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-recordinferencetask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-relatedperson: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-reportflagactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-reportflagtask: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-servicerequest: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-servicerequestactivity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-knowledgeCapability: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-knowledgeRepresentationLevel: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareableactivitydefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareablecodesystem: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-title: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareablegraphdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareableig: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareablelibrary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareablemetric: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareableplandefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-answerValueSetSource: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-itemImage: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-responseImage: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareablequestionnaire: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareablestructuredef: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-shareablevalueset: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-strategy: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-strategydefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-task: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-testcasebundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-participantCapabilityStatement: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-INFORMATION: StructureDefinition/cpg-workflowdefinition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 
-#Output files do contain elmXmlContent.data for FSH generated libraries
+# Output files do contain elmXmlContent.data for FSH generated libraries
 
 # Code '333919005' is used for example purposes only
 INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[1].resource/*MedicationAdministration/am-scenario7-2*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
@@ -782,97 +309,261 @@ INFORMATION: Immunization/ri-scenario4: Immunization.vaccineCode.coding[0]: The 
 INFORMATION: ImmunizationRecommendation/ri-scenario2: ImmunizationRecommendation.recommendation[0].vaccineCode[0].coding[0]: The code '14745005' is valid but is not active
 
 # WG extension slice is valid
-INFORMATION: ActivityDefinition/activity-example-administermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-dispensemedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-documentmedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-donotsendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmentactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-ordermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-orderservice-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-proposediagnosis-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosisactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-recorddetectedissue-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissueactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-recordinference-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferenceactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-reportflag-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagactivity|1.0.0
-INFORMATION: ActivityDefinition/activity-example-sendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity|1.0.0
-INFORMATION: CodeSystem/cpg-recommendation-direction-cs: CodeSystem.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: Library/administermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|1.0.0
-INFORMATION: Library/administermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/administermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/collectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/collectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/dispensemedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/dispensemedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/documentmedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/documentmedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/donotcollectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/donotcollectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/donotsendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/donotsendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/enrollment-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/enrollment-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/generatereport-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/generatereport-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/ordermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/ordermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/orderservice-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/orderservice-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/proposediagnosis-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/proposediagnosis-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/recommendimmunization-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/recommendimmunization-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/recorddetectedissue-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/recorddetectedissue-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/recordinference-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/recordinference-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/reportflag-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/reportflag-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: Library/sendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|1.0.0
-INFORMATION: Library/sendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|1.0.0
-INFORMATION: CodeSystem/cpg-activity-type-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: CodeSystem/cpg-casefeature-pertinence-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: CodeSystem/cpg-casefeature-type-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: CodeSystem/cpg-common-process-cs: CodeSystem.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: CodeSystem/cpg-indicator-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: CodeSystem/cpg-knowledge-capability-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: CodeSystem/cpg-knowledge-representation-level-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|1.0.0
-INFORMATION: PlanDefinition/activity-example-administermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-collectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-dispensemedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-documentmedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-donotcollectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-donotsendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-enrollment-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-generatereport-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-ordermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-orderservice-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-pathway-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-proposediagnosis-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-recommendimmunization-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-recorddetectedissue-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-recordinference-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-reportflag-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: PlanDefinition/activity-example-sendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|1.0.0
-INFORMATION: Questionnaire/activity-example-collectinformation-questionnaire: Questionnaire.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire|1.0.0
-INFORMATION: ValueSet/cpg-active-condition-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-activity-type-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-casefeature-pertinence-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-casefeature-type-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-common-persona-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-common-process-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-indicator-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-knowledge-capability-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-knowledge-representation-level-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
-INFORMATION: ValueSet/cpg-recommendation-direction-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|1.0.0
+INFORMATION: ActivityDefinition/activity-example-administermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-dispensemedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-dispensemedicationactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-documentmedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectinformationactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotsendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollmentactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-ordermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-medicationrequestactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-orderservice-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-servicerequestactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-proposediagnosis-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-proposediagnosisactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-immunizationactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recorddetectedissue-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recorddetectedissueactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recordinference-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recordinferenceactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-reportflag-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-reportflagactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-sendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-communicationactivity|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-recommendation-direction-cs: CodeSystem.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: Library/administermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/administermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/administermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/collectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/collectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/dispensemedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/dispensemedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/documentmedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/documentmedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/donotcollectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/donotcollectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/donotsendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/donotsendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/enrollment-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/enrollment-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/generatereport-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/generatereport-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/ordermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/ordermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/orderservice-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/orderservice-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/proposediagnosis-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/proposediagnosis-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/recommendimmunization-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/recommendimmunization-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/recorddetectedissue-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/recorddetectedissue-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/recordinference-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/recordinference-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/reportflag-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/reportflag-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Library/sendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablelibrary|2.0.0-ballot
+INFORMATION: Library/sendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-activity-type-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-casefeature-pertinence-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-casefeature-type-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[9]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-common-process-cs: CodeSystem.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-indicator-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-knowledge-capability-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: CodeSystem/cpg-knowledge-representation-level-cs: CodeSystem.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablecodesystem|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-administermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-collectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-dispensemedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-documentmedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotcollectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotsendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-enrollment-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-generatereport-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-ordermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-orderservice-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-pathway-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-pathwaydefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-proposediagnosis-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recommendimmunization-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recorddetectedissue-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recordinference-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-reportflag-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-sendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-ballot
+INFORMATION: Questionnaire/activity-example-collectinformation-questionnaire: Questionnaire.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablequestionnaire|2.0.0-ballot
+INFORMATION: ValueSet/cpg-active-condition-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-activity-type-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-casefeature-pertinence-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-casefeature-type-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-common-persona-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-common-process-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-indicator-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-knowledge-capability-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-knowledge-representation-level-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ValueSet/cpg-recommendation-direction-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-administermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-administermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-administermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-collectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-dispensemedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-dispensemedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-dispensemedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-documentmedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-documentmedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-documentmedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotcollectinformation-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotsendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotsendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-donotsendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-enrollment-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-generatereport-ad: ActivityDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-ordermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-ordermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-ordermedication-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-orderservice-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-orderservice-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-orderservice-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-proposediagnosis-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-proposediagnosis-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-proposediagnosis-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recorddetectedissue-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recorddetectedissue-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recorddetectedissue-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recordinference-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recordinference-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-recordinference-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-reportflag-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-reportflag-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-reportflag-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-sendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableactivity|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-sendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableactivitydefinition|2.0.0-ballot
+INFORMATION: ActivityDefinition/activity-example-sendmessage-ad: ActivityDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableactivity|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle|2.0.0-ballot
+StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle|2.0.0-ballot
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle|2.0.0-ballot
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle|2.0.0-ballot
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle|2.0.0-ballot
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle|2.0.0-ballot
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-artifactbundle|2.0.0-ballot
+INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[4].resource/*Task/request-am-scenario7*/.input[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask|2.0.0-ballot
+INFORMATION: Library/administermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/collectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/collectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/dispensemedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/dispensemedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/documentmedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/documentmedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/donotcollectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/donotcollectinformation-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/donotsendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/donotsendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/enrollment-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/enrollment-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/generatereport-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/generatereport-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/ordermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/ordermedication-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/orderservice-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/orderservice-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/proposediagnosis-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/proposediagnosis-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/recommendimmunization-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/recommendimmunization-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/recorddetectedissue-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/recorddetectedissue-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/recordinference-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/recordinference-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/reportflag-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/reportflag-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Library/sendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablelibrary|2.0.0-ballot
+INFORMATION: Library/sendmessage-library: Library.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablelibrary|2.0.0-ballot
+INFORMATION: Measure/activity-example-generatereport-measure: Measure.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablemetric|2.0.0-ballot
+INFORMATION: Measure/activity-example-generatereport-measure: Measure.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablemetric|2.0.0-ballot
+INFORMATION: Measure/activity-example-generatereport-measure: Measure.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablemetric|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-administermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-administermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-administermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-collectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-collectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-collectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-dispensemedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-dispensemedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-dispensemedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-documentmedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-documentmedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-documentmedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotcollectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotcollectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotcollectinformation-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotsendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotsendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-donotsendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-enrollment-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-enrollment-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-enrollment-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-generatereport-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-generatereport-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-generatereport-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-ordermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-ordermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-ordermedication-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-orderservice-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-orderservice-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-orderservice-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-proposediagnosis-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-proposediagnosis-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-proposediagnosis-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recommendimmunization-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recommendimmunization-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recommendimmunization-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recorddetectedissue-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recorddetectedissue-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recorddetectedissue-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recordinference-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recordinference-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-recordinference-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-reportflag-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-reportflag-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-reportflag-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-sendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-sendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableplandefinition|2.0.0-ballot
+INFORMATION: PlanDefinition/activity-example-sendmessage-pd: PlanDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableplandefinition|2.0.0-ballot
+INFORMATION: Questionnaire/activity-example-collectinformation-questionnaire: Questionnaire.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablequestionnaire|2.0.0-ballot
+INFORMATION: ValueSet/anc-reason-for-visit-vs: ValueSet.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishablevalueset|2.0.0-ballot
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[1].resource.content[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-executablelibrary|2.0.0-ballot
+INFORMATION: Task/request-am-scenario2: Task.input[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask|2.0.0-ballot
+INFORMATION: Task/request-am-scenario3: Task.input[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask|2.0.0-ballot
+INFORMATION: Task/request-am-scenario5: Task.input[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask|2.0.0-ballot
+INFORMATION: Task/request-am-scenario7: Task.input[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-administermedicationtask|2.0.0-ballot
 
-# Ignore best practice for example use
-WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[0].resource/*GuidanceResponse/am-scenario7-1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[1].resource/*MedicationAdministration/am-scenario7-2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[2].resource/*MedicationRequest/am-scenario7-3*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[3].resource/*Patient/am-scenario7-4*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-inline-bundle*/.entry[4].resource/*Task/request-am-scenario7-5*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+# Ignore 'A resource should have narrative for robust management' for example use
+WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[0].resource/*GuidanceResponse/am-scenario7-1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[1].resource/*MedicationAdministration/am-scenario7-2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[1].resource/*MedicationAdministration/am-scenario7-2*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[2].resource/*MedicationRequest/am-scenario7-3*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[2].resource/*MedicationRequest/am-scenario7-3*/.medication.ofType(CodeableConcept).coding[0]: The code '333919005' is valid but is not active
+WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[3].resource/*Patient/am-scenario7-4*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource.entry[4].resource/*Task/request-am-scenario7-5*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 

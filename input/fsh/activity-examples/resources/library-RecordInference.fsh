@@ -1,8 +1,10 @@
 Instance: recordinference-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Record Inference"
+* title = "Record Inference"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(recordinference-library, Library)
 * insert RelatedFHIRLibraries

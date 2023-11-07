@@ -1,5 +1,5 @@
 Instance: ri-scenario4
-InstanceOf: Immunization
+InstanceOf: CPGImmunization
 Usage: #example
 Description: "Example test case"
 * status = #completed

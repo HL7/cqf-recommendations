@@ -1,7 +1,7 @@
 Instance: activity-example-recommendimmunization-ad
 InstanceOf: CPGImmunizationActivity
 Usage: #example
-Title: "Activity Example Recommend Immunization AD"
+* title = "Activity Example Recommend Immunization AD"
 * insert KnowledgeArtifactADMetadata(activity-example-recommendimmunization-ad)
 * description = "Example Activity Definition for a recommendation to provide an immunization"
 * name = "ActivityExampleRecommendImmunizationAD"

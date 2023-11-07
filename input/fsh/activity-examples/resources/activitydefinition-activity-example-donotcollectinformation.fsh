@@ -1,7 +1,7 @@
 Instance: activity-example-donotcollectinformation-ad
 InstanceOf: CPGCollectInformationActivity
 Usage: #example
-Title: "Activity Example Do Not Collect Information AD"
+* title = "Activity Example Do Not Collect Information AD"
 * insert KnowledgeArtifactADMetadata(activity-example-donotcollectinformation-ad)
 * description = "Example Activity Definition for a recommendation not to collect information"
 * extension[+]

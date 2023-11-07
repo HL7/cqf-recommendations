@@ -1,7 +1,7 @@
 Instance: activity-example-donotsendmessage-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Do Not Send Message PD"
+* title = "Activity Example Do Not Send Message PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-donotsendmessage-pd)
 * description = "Example Plan Definition for a recommendation not to send a message"
 * name = "ActivityExampleDoNotSendMessagePD"

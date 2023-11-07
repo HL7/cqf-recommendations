@@ -1,8 +1,8 @@
-Instance: cpg-recorddetectedissuetask-activitydefinition
+Instance: cpg-recorddetectedissue-activity
 InstanceOf: ActivityDefinition
 Usage: #example
 Title: "CPG Record DetectedIssue ActivityDefinition"
-* insert ActivityDefinitionMetadata(cpg-recorddetectedissuetask-activitydefinition, CPGRecordDetectedIssueTaskActivityDefinition)
+* insert ActivityDefinitionMetadata(cpg-recorddetectedissue-activity, CPGRecordDetectedIssueTaskActivityDefinition)
 * description = "Example Activity Definition for a recommendation to record a detected issue"
 * kind = #Task
 * profile = Canonical(cpg-recorddetectedissuetask)

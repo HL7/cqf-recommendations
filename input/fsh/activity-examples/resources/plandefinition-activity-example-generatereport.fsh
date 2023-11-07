@@ -1,7 +1,7 @@
 Instance: activity-example-generatereport-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Generate Report PD"
+* title = "Activity Example Generate Report PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-generatereport-pd)
 * description = "Example Plan Definition for a recommendation to generate a report"
 * name = "ActivityExampleGenerateReportPD"

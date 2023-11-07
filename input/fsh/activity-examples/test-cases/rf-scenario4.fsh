@@ -1,5 +1,5 @@
 Instance: rf-scenario4
-InstanceOf: Flag
+InstanceOf: CPGFlag
 Usage: #example
 Description: "Example test case"
 * status = #active

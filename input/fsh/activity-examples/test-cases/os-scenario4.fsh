@@ -1,5 +1,5 @@
 Instance: os-scenario4
-InstanceOf: Procedure
+InstanceOf: CPGProcedure
 Usage: #example
 Description: "Example test case"
 * status = #completed

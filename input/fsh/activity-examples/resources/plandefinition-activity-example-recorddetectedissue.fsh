@@ -1,7 +1,7 @@
 Instance: activity-example-recorddetectedissue-pd
-InstanceOf: PlanDefinition
+InstanceOf: CPGRecommendationDefinition
 Usage: #example
-Title: "Activity Example Record Detected Issue PD"
+* title = "Activity Example Record Detected Issue PD"
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-recorddetectedissue-pd)
 * description = "Example Plan Definition for a recommendation to record a detected issue"
 * name = "ActivityExampleRecordDetectedIssuePD"

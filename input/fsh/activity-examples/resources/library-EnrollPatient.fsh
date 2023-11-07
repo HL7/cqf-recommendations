@@ -1,8 +1,10 @@
 Instance: enrollment-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Enrollment Library"
+* title = "Enrollment Library"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(enrollment-library, Library)
 * insert RelatedFHIRLibraries

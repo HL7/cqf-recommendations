@@ -1,5 +1,5 @@
 Instance: os-scenario2
-InstanceOf: ServiceRequest
+InstanceOf: CPGServiceRequest
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-orderservice-ad)

@@ -1,8 +1,10 @@
 Instance: recorddetectedissue-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Record Detected Issue Library"
+* title = "Record Detected Issue Library"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(recorddetectedissue-library, Library)
 * insert RelatedFHIRLibraries

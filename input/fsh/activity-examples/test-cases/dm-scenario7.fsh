@@ -1,5 +1,5 @@
 Instance: dm-scenario7
-InstanceOf: MedicationDispense
+InstanceOf: CPGMedicationDispense
 Usage: #example
 Description: "Example test case"
 * status = #cancelled

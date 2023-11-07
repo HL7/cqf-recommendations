@@ -1,8 +1,10 @@
 Instance: generatereport-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Generate Report Library"
+* title = "Generate Report Library"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(generatereport-library, Library)
 * insert RelatedFHIRLibraries

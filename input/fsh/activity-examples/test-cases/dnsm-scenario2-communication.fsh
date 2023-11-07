@@ -1,5 +1,5 @@
 Instance: dnsm-scenario2-communication
-InstanceOf: Communication
+InstanceOf: CPGCommunication
 Usage: #example
 Description: "Example test case"
 * status = #in-progress

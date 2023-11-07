@@ -1,5 +1,5 @@
 Instance: request-gr-scenario2
-InstanceOf: Task
+InstanceOf: cpg-generatereporttask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-generatereport-ad)
@@ -7,6 +7,6 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
 * for = Reference(gr-scenario2-patient)
-* input
+* input[definition]
   * type = $cpg-activity-type-cs#generate-report "Generate a metric or case report"
   * valueCanonical = Canonical(activity-example-generatereport-measure)

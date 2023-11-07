@@ -16,7 +16,7 @@ Description: "Example test case"
   * valueReference = Reference(pd-scenario4)
 
 Instance: proposed-diagnosis
-InstanceOf: Condition
+InstanceOf: CPGCondition
 Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#provisional

@@ -1,5 +1,5 @@
 Instance: request-am-scenario5
-InstanceOf: Task
+InstanceOf: cpg-administermedicationtask
 Usage: #example
 Description: "Example test case"
 * instantiatesCanonical = Canonical(activity-example-administermedication-ad)

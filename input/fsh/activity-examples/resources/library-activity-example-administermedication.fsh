@@ -1,8 +1,7 @@
 Instance: activity-example-administermedication-library
-InstanceOf: Library
+InstanceOf: CPGAssetCollection
 Usage: #example
-Title: "Activity Example - Administer Medication Library Collection"
-* insert Profile(cpg-assetcollection)
+* title = "Activity Example - Administer Medication Library Collection"
 * insert KnowledgeArtifactMetadata(activity-example-administermedication-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Asset collection of artifacts in the Administer Medication activity example"

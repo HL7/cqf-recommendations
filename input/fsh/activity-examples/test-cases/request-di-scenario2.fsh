@@ -1,5 +1,5 @@
 Instance: request-di-scenario2
-InstanceOf: Task
+InstanceOf: cpg-recorddetectedissuetask
 Usage: #example
 Description: "Example test case"
 * contained = Inline-Instance-for-request-di-scenario2
@@ -8,7 +8,7 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
 * for = Reference(di-scenario2-patient)
-* input
+* input[detectedIssue]
   * type = $cpg-activity-type-cs#record-detected-issue "Record a detected issue"
   * valueReference = Reference(detected-issue)
 

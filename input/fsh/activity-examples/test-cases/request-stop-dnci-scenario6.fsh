@@ -1,5 +1,5 @@
 Instance: request-stop-dnci-scenario6
-InstanceOf: Task
+InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
 * modifierExtension[request-doNotPerform].valueBoolean = true
@@ -8,6 +8,6 @@ Description: "Example test case"
 * intent = #proposal
 * code = $cpg-activity-type-cs#collect-information "Collect information"
 * for = Reference(dnci-scenario6-patient)
-* input
+* input[questionnaire]
   * type = $cpg-activity-type-cs#collect-information "Collect information"
   * valueCanonical = Canonical(activity-example-collectinformation-questionnaire)

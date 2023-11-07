@@ -1,5 +1,5 @@
 Instance: di-scenario4
-InstanceOf: DetectedIssue
+InstanceOf: CPGDetectedIssue
 Usage: #example
 Description: "Example test case"
 * status = #final

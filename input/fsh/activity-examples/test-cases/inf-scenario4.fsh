@@ -1,5 +1,5 @@
 Instance: inf-scenario4
-InstanceOf: Observation
+InstanceOf: CPGObservation
 Usage: #example
 Description: "Example test case"
 * status = #final

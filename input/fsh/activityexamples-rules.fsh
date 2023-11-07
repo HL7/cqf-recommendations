@@ -1,3 +1,6 @@
+RuleSet: Profile(profile-id)
+* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
+
 RuleSet: KnowledgeArtifactMetadata(id, type)
 * extension[+]
   * url = $cpg-knowledgeCapability
@@ -14,11 +17,13 @@ RuleSet: KnowledgeArtifactMetadata(id, type)
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
 * status = #active
-* version = "1.0.0"
-* publisher = "HL7 International - Clinical Decision Support WG"
+* version = "2.0.0"
+* publisher = "HL7 International / Clinical Decision Support"
 
 RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
-* meta.profile = $cpg-recommendationdefinition
+* insert Profile(cpg-computableplandefinition)
+* insert Profile(cpg-shareableplandefinition)
+* insert Profile(cpg-publishableplandefinition)
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable
@@ -35,9 +40,10 @@ RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
 * experimental = true
 * status = #active
+* url = "http://example.org/Questionnaire/{id}"
+* publisher = "HL7 International / Clinical Decision Support"
+* version = "2.0.0"
 
-RuleSet: Profile(profile-id)
-* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
 
 RuleSet: RelatedFHIRLibraries
 * relatedArtifact[+]
@@ -48,6 +54,8 @@ RuleSet: RelatedFHIRLibraries
   * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
 
 RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
+* insert Profile(cpg-shareablequestionnaire)
+* insert Profile(cpg-publishablequestionnaire)
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable
@@ -61,12 +69,15 @@ RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
   * url = $cpg-knowledgeRepresentationLevel
   * valueCode = #structured
 * url = "http://example.org/Questionnaire/{id}"
-* publisher = "HL7 International - Clinical Decision Support WG"
-* version = "1.0.0"
+* publisher = "HL7 International / Clinical Decision Support"
+* version = "2.0.0"
 * status = #active
 * experimental = true
 
 RuleSet: KnowledgeArtifactADMetadata(id)
+* insert Profile(cpg-computableactivity)
+* insert Profile(cpg-shareableactivitydefinition)
+* insert Profile(cpg-publishableactivity)
 * extension[+]
   * url = $cpg-knowledgeCapability
   * valueCode = #shareable
@@ -83,5 +94,5 @@ RuleSet: KnowledgeArtifactADMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * intent = #proposal
 * status = #active
-* publisher = "HL7 International - Clinical Decision Support WG"
-* version = "1.0.0"
+* publisher = "HL7 International / Clinical Decision Support"
+* version = "2.0.0"

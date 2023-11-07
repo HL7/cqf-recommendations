@@ -1,8 +1,10 @@
 Instance: dispensemedication-library
-InstanceOf: Library
+InstanceOf: CPGExecutableLibrary
 Usage: #example
-Title: "Dispense Medication Library"
+* title = "Dispense Medication Library"
+* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-computablelibrary)
+* insert Profile(cpg-publishablelibrary)
 * insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(dispensemedication-library, Library)
 * insert RelatedFHIRLibraries
