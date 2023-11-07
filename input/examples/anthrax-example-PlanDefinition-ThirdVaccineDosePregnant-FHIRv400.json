@@ -166,63 +166,6 @@
       "title": "Anthrax Post Exposure Prophylaxis",
       "groupingBehavior": "logical-group",
       "selectionBehavior": "any",
-      "trigger": [
-        {
-          "type": "data-added",
-          "data": [
-            {
-              "type": "Condition",
-              "codeFilter": [
-                {
-                  "path": "code",
-                  "code": [
-                    {
-                      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                      "code": "Z20.810",
-                      "display": "Contact with and (suspected) exposure to anthrax"
-                    },
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "170475009",
-                      "display": "Exposure to Bacillus anthracis (event)"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "data-added",
-          "data": [
-            {
-              "type": "Observation",
-              "codeFilter": [
-                {
-                  "path": "code",
-                  "code": [
-                    {
-                      "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                      "code": "Z20.810",
-                      "display": "Contact with and (suspected) exposure to anthrax"
-                    },
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "170475009",
-                      "display": "Exposure to Bacillus anthracis (event)"
-                    },
-                    {
-                      "system": "http://snomed.info/sct",
-                      "code": "84387000",
-                      "display": "Asymptomatic (finding)"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
       "condition": [
         {
           "kind": "applicability",
