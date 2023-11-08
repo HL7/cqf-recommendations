@@ -82,3 +82,6 @@ RuleSet: PlanDefinitionMetadata(id)
 RuleSet: QuestionnaireMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/Questionnaire/{id}"
 * status = #active
+
+RuleSet: Profile(profile-id)
+* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"

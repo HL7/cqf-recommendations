@@ -1,4 +1,3 @@
-
 Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 Alias: $codesystem-author = http://hl7.org/fhir/StructureDefinition/codesystem-author
 Alias: $codesystem-concept-comments = http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments
@@ -125,3 +124,29 @@ Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-orderableDrugForm-cs = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $cpg-common-persona-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs
 Alias: $patient-match = http://hl7.org/fhir/OperationDefinition/Patient-match
+
+Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
+Alias: $practitioner-role = http://terminology.hl7.org/CodeSystem/practitioner-role
+Alias: $sct = http://snomed.info/sct
+Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
+Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
+Alias: $loinc = http://loinc.org
+Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
+Alias: $measure-improvement-notation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation
+Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
+Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
+Alias: $cpg-common-process-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
+Alias: $cpg-common-persona-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs
+Alias: $unitsofmeasure = http://unitsofmeasure.org
+Alias: $chf-implementationguide =   http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/hl7.fhir.uv.cpg.chf
+
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
+Alias: $goal-achievement = http://terminology.hl7.org/CodeSystem/goal-achievement
+Alias: $chf-codes = http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category

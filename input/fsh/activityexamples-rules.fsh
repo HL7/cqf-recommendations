@@ -1,6 +1,3 @@
-RuleSet: Profile(profile-id)
-* meta.profile[+] = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{profile-id}"
-
 RuleSet: KnowledgeArtifactMetadata(id, type)
 * extension[+]
   * url = $cpg-knowledgeCapability

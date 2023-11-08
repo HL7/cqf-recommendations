@@ -6,11 +6,54 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Organization/chf-scenario1-organization" key="Organization-chf-scenario1-organization" name="ACME Hospital"/>
 <artifact id="Library/ANCCommon" key="Library-ANCCommon" name="ANCCommon"/>
 <artifact id="Library/ANCRecommendationA2" key="Library-ANCRecommendationA2" name="ANCRecommendationA2"/>
-<artifact id="Library/CHF" key="Library-CHF" name="CHF"/>
-<artifact id="CareTeam/chf-scenario1-careteam" key="CareTeam-chf-scenario1-careteam" name="CHF Care Team"/>
+<artifact id="StructureDefinition/chf-bodyweight" key="StructureDefinition-chf-bodyweight" name="CHF Body Weight"/>
+<artifact id="ActivityDefinition/chf-bodyweight-ad" key="ActivityDefinition-chf-bodyweight-ad" name="CHF Body Weight Activity Defintion"/>
+<artifact id="StructureDefinition/chf-bodyweight-change" key="StructureDefinition-chf-bodyweight-change" name="CHF Body Weight Change"/>
+<artifact id="ActivityDefinition/chf-bodyweight-change-ad" key="ActivityDefinition-chf-bodyweight-change-ad" name="CHF Body Weight Change Activity Defintion"/>
+<artifact id="PlanDefinition/chf-bodyweight-change-pd" key="PlanDefinition-chf-bodyweight-change-pd" name="CHF Body Weight Change Recommendation"/>
+<artifact id="PlanDefinition/chf-bodyweight-pd" key="PlanDefinition-chf-bodyweight-pd" name="CHF Body Weight Recommendation"/>
+<artifact id="StructureDefinition/chf-cardiology-consult" key="StructureDefinition-chf-cardiology-consult" name="CHF Cardiology Consult"/>
+<artifact id="StructureDefinition/chf-cardiology-consult-request" key="StructureDefinition-chf-cardiology-consult-request" name="CHF Cardiology Consult Request"/>
+<artifact id="ActivityDefinition/chf-cardiology-consultation" key="ActivityDefinition-chf-cardiology-consultation" name="CHF Cardiology Consultation Activity Defintion"/>
+<artifact id="PlanDefinition/chf-cardiology-consultation-pd" key="PlanDefinition-chf-cardiology-consultation-pd" name="CHF Cardiology Consultation Recommendation"/>
+<artifact id="CodeSystem/chf-codes" key="CodeSystem-chf-codes" name="CHF Codes"/>
+<artifact id="StructureDefinition/chf-creatinine" key="StructureDefinition-chf-creatinine" name="CHF Creatinine"/>
+<artifact id="ActivityDefinition/chf-creatinine-ad" key="ActivityDefinition-chf-creatinine-ad" name="CHF Creatinine Activity Defintion"/>
+<artifact id="PlanDefinition/chf-creatinine-pd" key="PlanDefinition-chf-creatinine-pd" name="CHF Creatinine Recommendation"/>
+<artifact id="PlanDefinition/chf-daily-management" key="PlanDefinition-chf-daily-management" name="CHF Daily Management Strategy"/>
+<artifact id="PlanDefinition/chf-hypervolemia" key="PlanDefinition-chf-hypervolemia" name="CHF Hypervolemia Strategy"/>
+<artifact id="StructureDefinition/chf-jvp" key="StructureDefinition-chf-jvp" name="CHF Jugular Venous Pressure"/>
+<artifact id="ActivityDefinition/chf-jvp-ad" key="ActivityDefinition-chf-jvp-ad" name="CHF Jugular Venous Pressure Activity Defintion"/>
+<artifact id="PlanDefinition/chf-jvp-pd" key="PlanDefinition-chf-jvp-pd" name="CHF Jugular Venous Pressure Recommendation"/>
+<artifact id="StructureDefinition/chf-jvp-request" key="StructureDefinition-chf-jvp-request" name="CHF Jugular Venous Pressure Request"/>
+<artifact id="ActivityDefinition/chf-lasix-iv" key="ActivityDefinition-chf-lasix-iv" name="CHF LASIX IV Activity Defintion"/>
+<artifact id="StructureDefinition/chf-lasix-iv-administration" key="StructureDefinition-chf-lasix-iv-administration" name="CHF LASIX IV Administration"/>
+<artifact id="StructureDefinition/chf-lasix-iv-request" key="StructureDefinition-chf-lasix-iv-request" name="CHF LASIX IV Request"/>
+<artifact id="ActivityDefinition/chf-lasix-po" key="ActivityDefinition-chf-lasix-po" name="CHF LASIX PO Activity Defintion"/>
+<artifact id="StructureDefinition/chf-lasix-po-administration" key="StructureDefinition-chf-lasix-po-administration" name="CHF LASIX PO Administration"/>
+<artifact id="StructureDefinition/chf-lasix-po-request" key="StructureDefinition-chf-lasix-po-request" name="CHF LASIX PO Request"/>
+<artifact id="PlanDefinition/chf-lasix" key="PlanDefinition-chf-lasix" name="CHF LASIX Recommendation"/>
+<artifact id="ActivityDefinition/chf-net-io-ad" key="ActivityDefinition-chf-net-io-ad" name="CHF Net IO Activity Defintion"/>
+<artifact id="PlanDefinition/chf-net-io-pd" key="PlanDefinition-chf-net-io-pd" name="CHF Net IO Recommendation"/>
+<artifact id="StructureDefinition/chf-net-io" key="StructureDefinition-chf-net-io" name="CHF Net Intake/Output"/>
+<artifact id="StructureDefinition/chf-o2-sat" key="StructureDefinition-chf-o2-sat" name="CHF Oxygen Saturation"/>
+<artifact id="ActivityDefinition/chf-o2-sat-ad" key="ActivityDefinition-chf-o2-sat-ad" name="CHF Oxygen Saturation Activity Defintion"/>
+<artifact id="PlanDefinition/chf-o2-sat-pd" key="PlanDefinition-chf-o2-sat-pd" name="CHF Oxygen Saturation Recommendation"/>
+<artifact id="StructureDefinition/chf-o2-sat-request" key="StructureDefinition-chf-o2-sat-request" name="CHF Oxygen Saturation Request"/>
+<artifact id="StructureDefinition/chf-potassium" key="StructureDefinition-chf-potassium" name="CHF Potassium"/>
+<artifact id="ActivityDefinition/chf-potassium-ad" key="ActivityDefinition-chf-potassium-ad" name="CHF Potassium Activity Defintion"/>
+<artifact id="PlanDefinition/chf-potassium-pd" key="PlanDefinition-chf-potassium-pd" name="CHF Potassium Recommendation"/>
+<artifact id="ActivityDefinition/chf-report-bodyweight" key="ActivityDefinition-chf-report-bodyweight" name="CHF Report Body Weight Activity Defintion"/>
+<artifact id="ActivityDefinition/chf-report-bodyweight-change" key="ActivityDefinition-chf-report-bodyweight-change" name="CHF Report Body Weight Change Activity Defintion"/>
+<artifact id="ActivityDefinition/chf-report-urine-out" key="ActivityDefinition-chf-report-urine-out" name="CHF Report Urine Out Activity Defintion"/>
+<artifact id="StructureDefinition/chf-urine-out" key="StructureDefinition-chf-urine-out" name="CHF Urine Out"/>
+<artifact id="ActivityDefinition/chf-urine-out-ad" key="ActivityDefinition-chf-urine-out-ad" name="CHF Urine Out Activity Defintion"/>
+<artifact id="PlanDefinition/chf-urine-out-pd" key="PlanDefinition-chf-urine-out-pd" name="CHF Urine Out Recommendation"/>
+<artifact id="StructureDefinition/chf-egfr" key="StructureDefinition-chf-egfr" name="CHF eGFR"/>
+<artifact id="ActivityDefinition/chf-egfr-ad" key="ActivityDefinition-chf-egfr-ad" name="CHF eGFR Activity Defintion"/>
+<artifact id="PlanDefinition/chf-egfr-pd" key="PlanDefinition-chf-egfr-pd" name="CHF eGFR Recommendation"/>
 <artifact id="Library/CKDRiskLogic" key="Library-CKDRiskLogic" name="CKDRiskLogic"/>
 <artifact id="ValueSet/cpg-active-condition-vs" key="ValueSet-cpg-active-condition-vs" name="CPG Active Condition Value Set"/>
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
@@ -194,17 +237,13 @@
 <artifact id="StructureDefinition/cpg-topic" key="StructureDefinition-cpg-topic" name="CPG Topic Extension"/>
 <artifact id="StructureDefinition/cpg-usageWarning" key="StructureDefinition-cpg-usageWarning" name="CPG Usage Warning Extension"/>
 <artifact id="StructureDefinition/cpg-workflowdefinition" key="StructureDefinition-cpg-workflowdefinition" name="CPG Workflow Definition"/>
-<artifact id="Composition/chf-scenario1-casesummary" key="Composition-chf-scenario1-casesummary" name="Congestive Heart Failure Case Summary"/>
-<artifact id="Composition/chf-scenario1-caseplanprogressingnote" key="Composition-chf-scenario1-caseplanprogressingnote" name="Congestive Heart Failure Case/Plan Progressing Note"/>
-<artifact id="Composition/chf-scenario1-caseplansummary" key="Composition-chf-scenario1-caseplansummary" name="Congestive Heart Failure Case/Plan Summary"/>
-<artifact id="Group/chf-scenario1-group" key="Group-chf-scenario1-group" name="Congestive Heart Failure Patients"/>
-<artifact id="CarePlan/chf-scenario1-careplan" key="CarePlan-chf-scenario1-careplan" name="Heart Failure Care Pathway"/>
+<artifact id="PlanDefinition/chf-pathway" key="PlanDefinition-chf-pathway" name="Congestive Heart Failure Care Pathway"/>
+<artifact id="Library/CHF" key="Library-CHF" name="Congestive Heart Failure Logic"/>
 <artifact id="Library/HepBAdultForecasting" key="Library-HepBAdultForecasting" name="HepBAdultForecasting"/>
 <artifact id="PlanDefinition/HepBAdultForecastingPD" key="PlanDefinition-HepBAdultForecastingPD" name="HepBAdultForecastingPD"/>
 <artifact id="Library/OpioidCDSR4Common" key="Library-OpioidCDSR4Common" name="OpioidCDSR4Common"/>
 <artifact id="Library/OpioidCDSR4Recommendation05" key="Library-OpioidCDSR4Recommendation05" name="OpioidCDSR4Recommendation05"/>
 <artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="PlanDefinition - CPG Common Registration"/>
-<artifact id="Location/chf-scenario1-location" key="Location-chf-scenario1-location" name="Unit 3 East"/>
 <artifact id="ActivityDefinition/activity-example-administermedication-ad" key="ActivityDefinition-activity-example-administermedication-ad" name="activity-example-administermedication-ad"/>
 <artifact id="Bundle/activity-example-administermedication-bundle" key="Bundle-activity-example-administermedication-bundle" name="activity-example-administermedication-bundle"/>
 <artifact id="Library/activity-example-administermedication-library" key="Library-activity-example-administermedication-library" name="activity-example-administermedication-library"/>
@@ -287,58 +326,14 @@
 <artifact id="PlanDefinition/cc-cpg-plan-ckd" key="PlanDefinition-cc-cpg-plan-ckd" name="cc-cpg-plan-ckd"/>
 <artifact id="Library/cdc-common-logic-library" key="Library-cdc-common-logic-library" name="cdc-common-logic-library"/>
 <artifact id="Library/cds-connect-commons-library" key="Library-cds-connect-commons-library" name="cds-connect-commons-library"/>
-<artifact id="StructureDefinition/chf-bodyweight" key="StructureDefinition-chf-bodyweight" name="chf-bodyweight"/>
-<artifact id="ActivityDefinition/chf-bodyweight-ad" key="ActivityDefinition-chf-bodyweight-ad" name="chf-bodyweight-ad"/>
-<artifact id="StructureDefinition/chf-bodyweight-change" key="StructureDefinition-chf-bodyweight-change" name="chf-bodyweight-change"/>
-<artifact id="ActivityDefinition/chf-bodyweight-change-ad" key="ActivityDefinition-chf-bodyweight-change-ad" name="chf-bodyweight-change-ad"/>
 <artifact id="Measure/chf-bodyweight-change-measure" key="Measure-chf-bodyweight-change-measure" name="chf-bodyweight-change-measure"/>
-<artifact id="PlanDefinition/chf-bodyweight-change-pd" key="PlanDefinition-chf-bodyweight-change-pd" name="chf-bodyweight-change-pd"/>
 <artifact id="Measure/chf-bodyweight-measure" key="Measure-chf-bodyweight-measure" name="chf-bodyweight-measure"/>
-<artifact id="PlanDefinition/chf-bodyweight-pd" key="PlanDefinition-chf-bodyweight-pd" name="chf-bodyweight-pd"/>
-<artifact id="StructureDefinition/chf-cardiology-consult" key="StructureDefinition-chf-cardiology-consult" name="chf-cardiology-consult"/>
-<artifact id="StructureDefinition/chf-cardiology-consult-request" key="StructureDefinition-chf-cardiology-consult-request" name="chf-cardiology-consult-request"/>
-<artifact id="ActivityDefinition/chf-cardiology-consultation" key="ActivityDefinition-chf-cardiology-consultation" name="chf-cardiology-consultation"/>
-<artifact id="PlanDefinition/chf-cardiology-consultation-pd" key="PlanDefinition-chf-cardiology-consultation-pd" name="chf-cardiology-consultation-pd"/>
 <artifact id="CareTeam/chf-careteamdefinition" key="CareTeam-chf-careteamdefinition" name="chf-careteamdefinition"/>
 <artifact id="GraphDefinition/chf-caseplansummarydefinition" key="GraphDefinition-chf-caseplansummarydefinition" name="chf-caseplansummarydefinition"/>
 <artifact id="GraphDefinition/chf-casesummarydefinition" key="GraphDefinition-chf-casesummarydefinition" name="chf-casesummarydefinition"/>
-<artifact id="CodeSystem/chf-codes" key="CodeSystem-chf-codes" name="chf-codes"/>
-<artifact id="StructureDefinition/chf-creatinine" key="StructureDefinition-chf-creatinine" name="chf-creatinine"/>
-<artifact id="ActivityDefinition/chf-creatinine-ad" key="ActivityDefinition-chf-creatinine-ad" name="chf-creatinine-ad"/>
-<artifact id="PlanDefinition/chf-creatinine-pd" key="PlanDefinition-chf-creatinine-pd" name="chf-creatinine-pd"/>
-<artifact id="PlanDefinition/chf-daily-management" key="PlanDefinition-chf-daily-management" name="chf-daily-management"/>
-<artifact id="StructureDefinition/chf-egfr" key="StructureDefinition-chf-egfr" name="chf-egfr"/>
-<artifact id="ActivityDefinition/chf-egfr-ad" key="ActivityDefinition-chf-egfr-ad" name="chf-egfr-ad"/>
-<artifact id="PlanDefinition/chf-egfr-pd" key="PlanDefinition-chf-egfr-pd" name="chf-egfr-pd"/>
 <artifact id="Group/chf-groupdefinition" key="Group-chf-groupdefinition" name="chf-groupdefinition"/>
-<artifact id="PlanDefinition/chf-hypervolemia" key="PlanDefinition-chf-hypervolemia" name="chf-hypervolemia"/>
-<artifact id="StructureDefinition/chf-jvp" key="StructureDefinition-chf-jvp" name="chf-jvp"/>
-<artifact id="ActivityDefinition/chf-jvp-ad" key="ActivityDefinition-chf-jvp-ad" name="chf-jvp-ad"/>
-<artifact id="PlanDefinition/chf-jvp-pd" key="PlanDefinition-chf-jvp-pd" name="chf-jvp-pd"/>
-<artifact id="StructureDefinition/chf-jvp-request" key="StructureDefinition-chf-jvp-request" name="chf-jvp-request"/>
-<artifact id="PlanDefinition/chf-lasix" key="PlanDefinition-chf-lasix" name="chf-lasix"/>
-<artifact id="ActivityDefinition/chf-lasix-iv" key="ActivityDefinition-chf-lasix-iv" name="chf-lasix-iv"/>
-<artifact id="StructureDefinition/chf-lasix-iv-administration" key="StructureDefinition-chf-lasix-iv-administration" name="chf-lasix-iv-administration"/>
-<artifact id="StructureDefinition/chf-lasix-iv-request" key="StructureDefinition-chf-lasix-iv-request" name="chf-lasix-iv-request"/>
-<artifact id="ActivityDefinition/chf-lasix-po" key="ActivityDefinition-chf-lasix-po" name="chf-lasix-po"/>
-<artifact id="StructureDefinition/chf-lasix-po-administration" key="StructureDefinition-chf-lasix-po-administration" name="chf-lasix-po-administration"/>
-<artifact id="StructureDefinition/chf-lasix-po-request" key="StructureDefinition-chf-lasix-po-request" name="chf-lasix-po-request"/>
 <artifact id="Location/chf-locationdefinition" key="Location-chf-locationdefinition" name="chf-locationdefinition"/>
-<artifact id="StructureDefinition/chf-net-io" key="StructureDefinition-chf-net-io" name="chf-net-io"/>
-<artifact id="ActivityDefinition/chf-net-io-ad" key="ActivityDefinition-chf-net-io-ad" name="chf-net-io-ad"/>
-<artifact id="PlanDefinition/chf-net-io-pd" key="PlanDefinition-chf-net-io-pd" name="chf-net-io-pd"/>
-<artifact id="StructureDefinition/chf-o2-sat" key="StructureDefinition-chf-o2-sat" name="chf-o2-sat"/>
-<artifact id="ActivityDefinition/chf-o2-sat-ad" key="ActivityDefinition-chf-o2-sat-ad" name="chf-o2-sat-ad"/>
-<artifact id="PlanDefinition/chf-o2-sat-pd" key="PlanDefinition-chf-o2-sat-pd" name="chf-o2-sat-pd"/>
-<artifact id="StructureDefinition/chf-o2-sat-request" key="StructureDefinition-chf-o2-sat-request" name="chf-o2-sat-request"/>
-<artifact id="PlanDefinition/chf-pathway" key="PlanDefinition-chf-pathway" name="chf-pathway"/>
-<artifact id="StructureDefinition/chf-potassium" key="StructureDefinition-chf-potassium" name="chf-potassium"/>
-<artifact id="ActivityDefinition/chf-potassium-ad" key="ActivityDefinition-chf-potassium-ad" name="chf-potassium-ad"/>
-<artifact id="PlanDefinition/chf-potassium-pd" key="PlanDefinition-chf-potassium-pd" name="chf-potassium-pd"/>
 <artifact id="PractitionerRole/chf-practitionerroledefinition" key="PractitionerRole-chf-practitionerroledefinition" name="chf-practitionerroledefinition"/>
-<artifact id="ActivityDefinition/chf-report-bodyweight" key="ActivityDefinition-chf-report-bodyweight" name="chf-report-bodyweight"/>
-<artifact id="ActivityDefinition/chf-report-bodyweight-change" key="ActivityDefinition-chf-report-bodyweight-change" name="chf-report-bodyweight-change"/>
-<artifact id="ActivityDefinition/chf-report-urine-out" key="ActivityDefinition-chf-report-urine-out" name="chf-report-urine-out"/>
 <artifact id="MeasureReport/chf-scenario1-bodyweight-change1" key="MeasureReport-chf-scenario1-bodyweight-change1" name="chf-scenario1-bodyweight-change1"/>
 <artifact id="Observation/chf-scenario1-bodyweight-change1-observation" key="Observation-chf-scenario1-bodyweight-change1-observation" name="chf-scenario1-bodyweight-change1-observation"/>
 <artifact id="MeasureReport/chf-scenario1-bodyweight-change2" key="MeasureReport-chf-scenario1-bodyweight-change2" name="chf-scenario1-bodyweight-change2"/>
@@ -356,6 +351,11 @@
 <artifact id="Procedure/chf-scenario1-cardiology-consult" key="Procedure-chf-scenario1-cardiology-consult" name="chf-scenario1-cardiology-consult"/>
 <artifact id="ServiceRequest/chf-scenario1-cardiology-consultation" key="ServiceRequest-chf-scenario1-cardiology-consultation" name="chf-scenario1-cardiology-consultation"/>
 <artifact id="Goal/chf-scenario1-cardiology-consultation-goal" key="Goal-chf-scenario1-cardiology-consultation-goal" name="chf-scenario1-cardiology-consultation-goal"/>
+<artifact id="CarePlan/chf-scenario1-careplan" key="CarePlan-chf-scenario1-careplan" name="chf-scenario1-careplan"/>
+<artifact id="CareTeam/chf-scenario1-careteam" key="CareTeam-chf-scenario1-careteam" name="chf-scenario1-careteam"/>
+<artifact id="Composition/chf-scenario1-caseplanprogressingnote" key="Composition-chf-scenario1-caseplanprogressingnote" name="chf-scenario1-caseplanprogressingnote"/>
+<artifact id="Composition/chf-scenario1-caseplansummary" key="Composition-chf-scenario1-caseplansummary" name="chf-scenario1-caseplansummary"/>
+<artifact id="Composition/chf-scenario1-casesummary" key="Composition-chf-scenario1-casesummary" name="chf-scenario1-casesummary"/>
 <artifact id="ClinicalImpression/chf-scenario1-clinicalimpression" key="ClinicalImpression-chf-scenario1-clinicalimpression" name="chf-scenario1-clinicalimpression"/>
 <artifact id="Condition/chf-scenario1-condition" key="Condition-chf-scenario1-condition" name="chf-scenario1-condition"/>
 <artifact id="Goal/chf-scenario1-creatinine" key="Goal-chf-scenario1-creatinine" name="chf-scenario1-creatinine"/>
@@ -365,6 +365,7 @@
 <artifact id="Observation/chf-scenario1-egfr1" key="Observation-chf-scenario1-egfr1" name="chf-scenario1-egfr1"/>
 <artifact id="Encounter/chf-scenario1-encounter" key="Encounter-chf-scenario1-encounter" name="chf-scenario1-encounter"/>
 <artifact id="EpisodeOfCare/chf-scenario1-eoc" key="EpisodeOfCare-chf-scenario1-eoc" name="chf-scenario1-eoc"/>
+<artifact id="Group/chf-scenario1-group" key="Group-chf-scenario1-group" name="chf-scenario1-group"/>
 <artifact id="RequestGroup/chf-scenario1-hypervolemia" key="RequestGroup-chf-scenario1-hypervolemia" name="chf-scenario1-hypervolemia"/>
 <artifact id="ServiceRequest/chf-scenario1-jvp" key="ServiceRequest-chf-scenario1-jvp" name="chf-scenario1-jvp"/>
 <artifact id="Goal/chf-scenario1-jvp-goal" key="Goal-chf-scenario1-jvp-goal" name="chf-scenario1-jvp-goal"/>
@@ -378,12 +379,14 @@
 <artifact id="MedicationAdministration/chf-scenario1-lasix-po" key="MedicationAdministration-chf-scenario1-lasix-po" name="chf-scenario1-lasix-po"/>
 <artifact id="Goal/chf-scenario1-lasix-po-goal" key="Goal-chf-scenario1-lasix-po-goal" name="chf-scenario1-lasix-po-goal"/>
 <artifact id="MedicationRequest/chf-scenario1-lasix-po-mr" key="MedicationRequest-chf-scenario1-lasix-po-mr" name="chf-scenario1-lasix-po-mr"/>
+<artifact id="Location/chf-scenario1-location" key="Location-chf-scenario1-location" name="chf-scenario1-location"/>
 <artifact id="Goal/chf-scenario1-net-io" key="Goal-chf-scenario1-net-io" name="chf-scenario1-net-io"/>
 <artifact id="Observation/chf-scenario1-netio3" key="Observation-chf-scenario1-netio3" name="chf-scenario1-netio3"/>
 <artifact id="ServiceRequest/chf-scenario1-o2-sat" key="ServiceRequest-chf-scenario1-o2-sat" name="chf-scenario1-o2-sat"/>
 <artifact id="Goal/chf-scenario1-o2-sat-goal" key="Goal-chf-scenario1-o2-sat-goal" name="chf-scenario1-o2-sat-goal"/>
 <artifact id="Observation/chf-scenario1-o2sat1" key="Observation-chf-scenario1-o2sat1" name="chf-scenario1-o2sat1"/>
 <artifact id="Observation/chf-scenario1-o2sat2" key="Observation-chf-scenario1-o2sat2" name="chf-scenario1-o2sat2"/>
+<artifact id="Organization/chf-scenario1-organization" key="Organization-chf-scenario1-organization" name="chf-scenario1-organization"/>
 <artifact id="Patient/chf-scenario1-patient" key="Patient-chf-scenario1-patient" name="chf-scenario1-patient"/>
 <artifact id="Goal/chf-scenario1-potassium" key="Goal-chf-scenario1-potassium" name="chf-scenario1-potassium"/>
 <artifact id="Observation/chf-scenario1-potassium1" key="Observation-chf-scenario1-potassium1" name="chf-scenario1-potassium1"/>
@@ -396,10 +399,7 @@
 <artifact id="Observation/chf-scenario1-urineout3-observation" key="Observation-chf-scenario1-urineout3-observation" name="chf-scenario1-urineout3-observation"/>
 <artifact id="Goal/chf-scenario1-weight" key="Goal-chf-scenario1-weight" name="chf-scenario1-weight"/>
 <artifact id="Goal/chf-scenario1-weight-change" key="Goal-chf-scenario1-weight-change" name="chf-scenario1-weight-change"/>
-<artifact id="StructureDefinition/chf-urine-out" key="StructureDefinition-chf-urine-out" name="chf-urine-out"/>
-<artifact id="ActivityDefinition/chf-urine-out-ad" key="ActivityDefinition-chf-urine-out-ad" name="chf-urine-out-ad"/>
 <artifact id="Measure/chf-urine-out-measure" key="Measure-chf-urine-out-measure" name="chf-urine-out-measure"/>
-<artifact id="PlanDefinition/chf-urine-out-pd" key="PlanDefinition-chf-urine-out-pd" name="chf-urine-out-pd"/>
 <artifact id="Patient/ci-scenario1-patient" key="Patient-ci-scenario1-patient" name="ci-scenario1-patient"/>
 <artifact id="Patient/ci-scenario2-patient" key="Patient-ci-scenario2-patient" name="ci-scenario2-patient"/>
 <artifact id="Patient/ci-scenario3-patient" key="Patient-ci-scenario3-patient" name="ci-scenario3-patient"/>
