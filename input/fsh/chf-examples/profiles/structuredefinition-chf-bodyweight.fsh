@@ -6,7 +6,7 @@ Description: "This profile defines how to represent body weight observations in 
 * insert CaseFeatureOfExtension(chf-pathway)
 * insert CaseFeatureOfExtension(chf-daily-management)
 * insert CaseFeatureOfExtension(chf-bodyweight-pd)
-* insert CaseFeatureMetadataWithPublisher(chf-bodyweight)
+* insert CaseFeatureMetadata(chf-bodyweight)
 * code ^short = "Body Weight"
   * ^definition = "Body Weight."
   * ^comment = "additional codes that translate or map to this code are allowed.  For example a more granular LOINC code or code that is used locally in a system."

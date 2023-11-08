@@ -20,7 +20,7 @@ Description: "CHF Scenario One"
 * goal[+] = Reference(chf-scenario1-weight)
 * goal[+] = Reference(chf-scenario1-weight-change)
 * goal[+] = Reference(chf-scenario1-urine-out)
-* goal[+] = Reference(chf-scenario1-net-io)
+* goal[+] = Reference(chf-scenario1-net-io-goal)
 * goal[+] = Reference(chf-scenario1-jvp-goal)
 * goal[+] = Reference(chf-scenario1-o2-sat-goal)
 * goal[+] = Reference(chf-scenario1-potassium)

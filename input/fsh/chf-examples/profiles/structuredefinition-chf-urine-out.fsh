@@ -6,7 +6,7 @@ Description: "This profile defines how to represent urine output observations in
 * insert CaseFeatureOfExtension(chf-pathway)
 * insert CaseFeatureOfExtension(chf-daily-management)
 * insert CaseFeatureOfExtension(chf-urine-out-pd)
-* insert CaseFeatureMetadataWithPublisher(chf-urine-out)
+* insert CaseFeatureMetadata(chf-urine-out)
 * code ^short = "Urine output"
   * ^definition = "Urine output over 24 hours, measured in L/day."
   * coding ^slicing.discriminator[0].type = #value

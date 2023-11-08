@@ -6,7 +6,7 @@ Description: "This profile defines how to represent potassium observations in FH
 * insert CaseFeatureOfExtension(chf-pathway)
 * insert CaseFeatureOfExtension(chf-hypervolemia)
 * insert CaseFeatureOfExtension(chf-potassium-pd)
-* insert CaseFeatureMetadataWithPublisher(chf-potassium)
+* insert CaseFeatureMetadata(chf-potassium)
 * code ^short = "Potassium"
   * ^definition = "Potassium (in meq/L)."
   * coding ^slicing.discriminator[0].type = #value

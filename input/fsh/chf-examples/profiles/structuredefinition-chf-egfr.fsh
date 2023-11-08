@@ -6,7 +6,7 @@ Description: "This profile defines how to represent eGFR in FHIR using a CHF cod
 * insert CaseFeatureOfExtension(chf-pathway)
 * insert CaseFeatureOfExtension(chf-hypervolemia)
 * insert CaseFeatureOfExtension(chf-egfr-pd)
-* insert CaseFeatureMetadataWithPublisher(chf-egfr)
+* insert CaseFeatureMetadata(chf-egfr)
 * code ^short = "eGFR"
   * ^definition = "eGFR, measured in mol/mm/m2."
   * coding ^slicing.discriminator[0].type = #value

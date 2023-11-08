@@ -6,7 +6,7 @@ Description: "This profile defines how to represent oxygen saturation observatio
 * insert CaseFeatureOfExtension(chf-pathway)
 * insert CaseFeatureOfExtension(chf-hypervolemia)
 * insert CaseFeatureOfExtension(chf-o2-sat-pd)
-* insert CaseFeatureMetadataWithPublisher(chf-o2-sat)
+* insert CaseFeatureMetadata(chf-o2-sat)
 * code ^short = "O2 Sat"
   * ^definition = "Oxygen Saturation."
   * coding ^slicing.discriminator[0].type = #value

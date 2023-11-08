@@ -6,7 +6,7 @@ Description: "This profile defines how to represent creatinine observations in F
 * insert CaseFeatureOfExtension(chf-pathway)
 * insert CaseFeatureOfExtension(chf-daily-management)
 * insert CaseFeatureOfExtension(chf-creatinine-pd)
-* insert CaseFeatureMetadataWithPublisher(chf-creatinine)
+* insert CaseFeatureMetadata(chf-creatinine)
 * code ^short = "Intake/output"
   * ^definition = "Creatinine, measured in mg/dL."
   * coding ^slicing.discriminator[0].type = #value

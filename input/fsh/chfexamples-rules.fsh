@@ -1,22 +1,6 @@
 RuleSet: CaseFeatureOfExtension(plan-id)
 * ^extension[+].url = Canonical(cpg-caseFeatureOf)
-* ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/cpg/chf/PlanDefinition/{plan-id}"
-
-RuleSet: CaseFeatureMetadataWithPublisher(id)
-* ^meta.profile = Canonical(cpg-casefeaturedefinition)
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
-* ^extension[=].valueCode = #shareable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
-* ^extension[=].valueCode = #computable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
-* ^extension[=].valueCode = #publishable
-* ^extension[+].url = Canonical(cpg-knowledgeRepresentationLevel)
-* ^extension[=].valueCode = #structured
-* ^experimental = true
-* ^publisher = "Health Level Seven International (Orders and Observations Workgroup)"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://www.hl7.org/Special/committees/orders/index.cfm Orders and Observations"
-* ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
+* ^extension[=].valueCanonical = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{plan-id}"
 
 RuleSet: CPGExpressionExtensions
 * ^extension[+].url = Canonical(cpg-inferenceExpression)
@@ -139,7 +123,7 @@ RuleSet: CHFPlanDefinitionMetadata(id)
 RuleSet: PlanDefinitionPartOfExtension(partOf)
 * extension[+]
   * url = Canonical(cpg-partOf)
-  * valueCanonical = "http://hl7.org/fhir/uv/cpg/chf/PlanDefinition/{partOf}"
+  * valueCanonical = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{partOf}"
 
 RuleSet: PlanDefinitionEnabledExtension
 * extension[+]

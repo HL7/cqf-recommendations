@@ -7,7 +7,7 @@ Description: "This profile defines how to represent body weight change observati
 * insert CaseFeatureOfExtension(chf-daily-management)
 * insert CaseFeatureOfExtension(chf-bodyweight-change-pd)
 * insert CPGExpressionExtensions
-* insert CaseFeatureMetadataWithPublisher(chf-bodyweight-change)
+* insert CaseFeatureMetadata(chf-bodyweight-change)
 * code ^short = "Body Weight Change"
   * ^definition = "Body Weight Change."
   * coding ^slicing.discriminator[0].type = #value

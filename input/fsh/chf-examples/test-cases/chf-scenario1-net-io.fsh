@@ -1,4 +1,4 @@
-Instance: chf-scenario1-netio
+Instance: chf-scenario1-net-io
 InstanceOf: CHFNetIO
 Usage: #example
 Description: "CHF Scenario One"

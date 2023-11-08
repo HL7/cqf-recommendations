@@ -6,7 +6,7 @@ Description: "This profile defines how to represent jugular venous pressure obse
 * insert CaseFeatureOfExtension(chf-pathway)
 * insert CaseFeatureOfExtension(chf-hypervolemia)
 * insert CaseFeatureOfExtension(chf-jvp-pd)
-* insert CaseFeatureMetadataWithPublisher(chf-jvp)
+* insert CaseFeatureMetadata(chf-jvp)
 * code ^short = "JVP"
   * ^definition = "Jugular venous pressure, measured in cmH2O."
   * coding ^slicing.discriminator[0].type = #value
