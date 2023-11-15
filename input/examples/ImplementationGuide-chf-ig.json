@@ -1,16 +1,36 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.uv.cpg.chf",
+  "id" : "chf-ig",
+  "name": "CHFExampleImplementationGuide",
+  "title": "CHF Example Implementation Guide",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableguideline"
+    ]
+  },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGCongestiveHeartFailureExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/hl7.fhir.uv.cpg.chf</pre><div><p>Examples of CPG computable content representing a congestive heart failure pathway</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGCongestiveHeartFailureExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/chf-ig</pre><div><p>Examples of CPG computable content representing a congestive heart failure pathway</p>\n</div></div>"
   },
-  "url" : "http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/hl7.fhir.uv.cpg.chf",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  }],
+  "url" : "http://hl7.org/fhir/uv/cpg/ImplementationGuide/chf-ig",
   "version" : "1.0.0",
-  "name" : "CPGCongestiveHeartFailureExamples",
-  "title" : "Clinical Practice Guidelines Example Implementation Guide - Congestive Heart Failure",
   "status" : "active",
-  "date" : "2023-11-07T13:25:04-05:00",
+  "experimental" : true,
+  "date" : "2023-11-14T17:14:04-05:00",
   "publisher" : "HL7 International - Clinical Decision Support WG",
   "contact" : [{
     "name" : "HL7 International - Clinical Decision Support WG",
@@ -27,7 +47,7 @@
       "display" : "World"
     }]
   }],
-  "packageId" : "hl7.fhir.uv.cpg.chf",
+  "packageId" : "chf-ig",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -1498,9 +1518,9 @@
         "valueString" : "Goal"
       }],
       "reference" : {
-        "reference" : "Goal/chf-scenario1-net-io"
+        "reference" : "Goal/chf-scenario1-net-io-goal"
       },
-      "name" : "chf-scenario1-net-io",
+      "name" : "chf-scenario1-net-io-goal",
       "description" : "CHF Scenario One",
       "exampleBoolean" : true
     },
@@ -1510,9 +1530,9 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/chf-scenario1-netio3"
+        "reference" : "Observation/chf-scenario1-net-io"
       },
-      "name" : "chf-scenario1-netio3",
+      "name" : "chf-scenario1-net-io",
       "description" : "CHF Scenario One",
       "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-net-io"
     },

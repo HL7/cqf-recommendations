@@ -135,8 +135,8 @@ pages:
     #   title: Anthrax Post-Exposure Prophylaxis Example
     #   examples-anthrax-index-fhirv400.md:
     #     title: Anthrax Post-Exposure Prophylaxis Example - FHIRv400 Example Index
-    # examples-chf.md:
-    #   title: Congestive Heart Failure Example
+    examples-chf.md:
+      title: Congestive Heart Failure Example
     # examples-ckd-guideline.md:
     #   title: Chronic Disease Management - Chronic Kidney Disease (CKD) Example
     #   examples-ckd-logic.md:
@@ -260,6 +260,7 @@ menu:
 # look like:
 #
 # resources:
+  # ImplementationGuide/hl7.fhir.uv.cpg.chf: omit #omit this because this template does not generate HTML for IG, so the link from TOC fails
 #   Patient/my-example-patient:
 #     name: My Example Patient
 #     description: An example Patient

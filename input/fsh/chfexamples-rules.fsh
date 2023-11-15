@@ -17,7 +17,7 @@ RuleSet: CPGExpressionExtensions
 * ^extension[=].valueExpression.reference = Canonical(CHF)
 
 RuleSet: CaseFeatureMetadata(id)
-* ^meta.profile = Canonical(cpg-casefeaturedefinition)
+// * ^meta.profile = Canonical(cpg-casefeaturedefinition)
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)
 * ^extension[=].valueCode = #shareable
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)

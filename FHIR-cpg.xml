@@ -301,6 +301,7 @@
 <artifact id="GraphDefinition/chf-caseplansummarydefinition" key="GraphDefinition-chf-caseplansummarydefinition" name="chf-caseplansummarydefinition"/>
 <artifact id="GraphDefinition/chf-casesummarydefinition" key="GraphDefinition-chf-casesummarydefinition" name="chf-casesummarydefinition"/>
 <artifact id="Group/chf-groupdefinition" key="Group-chf-groupdefinition" name="chf-groupdefinition"/>
+<artifact id="ImplementationGuide/chf-ig" key="ImplementationGuide-chf-ig" name="chf-ig"/>
 <artifact id="Location/chf-locationdefinition" key="Location-chf-locationdefinition" name="chf-locationdefinition"/>
 <artifact id="PractitionerRole/chf-practitionerroledefinition" key="PractitionerRole-chf-practitionerroledefinition" name="chf-practitionerroledefinition"/>
 <artifact id="MeasureReport/chf-scenario1-bodyweight-change1" key="MeasureReport-chf-scenario1-bodyweight-change1" name="chf-scenario1-bodyweight-change1"/>
@@ -481,7 +482,6 @@
 <artifact id="Patient/gr-scenario2-patient" key="Patient-gr-scenario2-patient" name="gr-scenario2-patient"/>
 <artifact id="MeasureReport/gr-scenario4" key="MeasureReport-gr-scenario4" name="gr-scenario4"/>
 <artifact id="Patient/gr-scenario4-patient" key="Patient-gr-scenario4-patient" name="gr-scenario4-patient"/>
-<artifact id="ImplementationGuide/hl7.fhir.uv.cpg.chf" key="ImplementationGuide-hl7.fhir.uv.cpg.chf" name="hl7.fhir.uv.cpg.chf"/>
 <artifact id="Practitioner/inf-practitioner" key="Practitioner-inf-practitioner" name="inf-practitioner"/>
 <artifact id="Patient/inf-scenario1-patient" key="Patient-inf-scenario1-patient" name="inf-scenario1-patient"/>
 <artifact id="Patient/inf-scenario2-patient" key="Patient-inf-scenario2-patient" name="inf-scenario2-patient"/>
@@ -583,6 +583,7 @@
 <page key="approach" name="Approach"/>
 <page key="packaging" name="Artifact Packaging"/>
 <page key="artifacts" name="Artifacts"/>
+<page key="examples-chf-implementationguide" name="CHF Example Implementation Guide"/>
 <page key="index" name="CPG Home"/>
 <page key="documentation-approach-12-conceptual-knowledge-architecture" name="CPG Knowledge Architecture-Conceptual Perspective"/>
 <page key="documentation-approach-12-05-cpg-careplan" name="CPGCarePlan"/>
@@ -592,6 +593,7 @@
 <page key="checklists" name="Checklists"/>
 <page key="common-care-pathway" name="Common Care Pathway"/>
 <page key="documentation-conformance" name="Conformance"/>
+<page key="examples-chf" name="Congestive Heart Failure Example"/>
 <page key="documentation-approach-04-05-computable-guideline-artifacts" name="Development of Computable Clinical Guideline Artifacts"/>
 <page key="downloads" name="Downloads"/>
 <page key="documentation-careplanning" name="Evidence-Based Care Planning"/>

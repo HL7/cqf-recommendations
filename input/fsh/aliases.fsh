@@ -139,7 +139,7 @@ Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-defini
 Alias: $cpg-common-process-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
 Alias: $cpg-common-persona-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs
 Alias: $unitsofmeasure = http://unitsofmeasure.org
-Alias: $chf-implementationguide =   http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/hl7.fhir.uv.cpg.chf
+Alias: $chf-implementationguide = http://hl7.org/fhir/uv/cpg/ImplementationGuide/chf-ig
 
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
