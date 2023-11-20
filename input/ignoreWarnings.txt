@@ -310,8 +310,23 @@ INFORMATION: MedicationAdministration/am-scenario7: MedicationAdministration.med
 INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.product.ofType(CodeableConcept).coding[0]: The code '14745005' is valid but is not active
 INFORMATION: Immunization/ri-scenario4: Immunization.vaccineCode.coding[0]: The code '14745005' is valid but is not active
 INFORMATION: ImmunizationRecommendation/ri-scenario2: ImmunizationRecommendation.recommendation[0].vaccineCode[0].coding[0]: The code '14745005' is valid but is not active
+INFORMATION: MedicationRequest/ri-scenario2: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: The code '14745005' is valid but is not active
+
+# Version conversion isn't working properly for GraphDefinition - addressed by applying headers to instances
+WARNING: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/GraphDefinition/chf-caseplansummarydefinition'): The resource needed to modified during loading to apply common headers version=2.0.0-ballot, contact, jurisdiction, publisher=HL7 International / Clinical Decision Support but this isn't possible for the type GraphDefinition because version conversion isn't working completely
+ GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/GraphDefinition/chf-casesummarydefinition'): The resource needed to modified during loading to apply common headers version=2.0.0-ballot, contact, jurisdiction, publisher=HL7 International / Clinical Decision Support but this isn't possible for the type GraphDefinition because version conversion isn't working completely
 
 # WG extension slice is valid
+INFORMATION: ImplementationGuide/chf-ig: ImplementationGuide.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig|2.0.0-ballot
+INFORMATION: ImplementationGuide/chf-ig: ImplementationGuide.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline|2.0.0-ballot
+INFORMATION: ImplementationGuide/chf-ig: ImplementationGuide.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableguideline|2.0.0-ballot
+INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition|2.0.0-ballot
+INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition|2.0.0-ballot
+INFORMATION: GraphDefinition/chf-caseplansummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition|2.0.0-ballot
+INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casesummarydefinition|2.0.0-ballot
+INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareablegraphdefinition|2.0.0-ballot
+INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computablegraphdefinition|2.0.0-ballot
+INFORMATION: GraphDefinition/chf-casesummarydefinition: GraphDefinition.extension[13]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseplansummarydefinition|2.0.0-ballot
 INFORMATION: StructureDefinition/chf-bodyweight: StructureDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition|2.0.0-ballot
 INFORMATION: StructureDefinition/chf-bodyweight-change: StructureDefinition.extension[10]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition|2.0.0-ballot
 INFORMATION: StructureDefinition/chf-cardiology-consult: StructureDefinition.extension[7]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-casefeaturedefinition|2.0.0-ballot

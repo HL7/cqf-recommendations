@@ -187,7 +187,9 @@ RuleSet: GraphDefinitionMetadata(id)
 * publisher = "HL7 International / Clinical Decision Support"
 * date = "2023-11-15T14:53:25-05:00"
 * jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
-* contact.name = "HL7 International / Clinical Decision Support"
-* contact.telecom.system = #url
-* contact.telecom.value = "http://www.hl7.org/Special/committees/dss"
+* contact
+  * name = "HL7 International / Clinical Decision Support"
+  * telecom
+    * system = #url
+    * value = "http://www.hl7.org/Special/committees/dss"
 

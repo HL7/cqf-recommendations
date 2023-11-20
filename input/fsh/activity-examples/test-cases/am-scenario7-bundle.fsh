@@ -1,5 +1,5 @@
 Instance: am-scenario7-bundle
-InstanceOf: CPGArtifactBundle
+InstanceOf: CPGTestCaseBundle
 Usage: #example
 Description: "Example test case"
 * type = #collection

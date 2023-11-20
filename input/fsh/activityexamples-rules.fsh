@@ -33,13 +33,11 @@ RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 * extension[+]
   * url = $cpg-knowledgeRepresentationLevel
   * valueCode = #structured
-* experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
 * experimental = true
 * status = #active
-* url = "http://example.org/Questionnaire/{id}"
 * publisher = "HL7 International / Clinical Decision Support"
-* version = "2.0.0"
+* version = "2.0.0-ballot"
 
 
 RuleSet: RelatedFHIRLibraries
