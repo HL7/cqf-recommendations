@@ -102,15 +102,15 @@ The following sections provide listings of resources defined in these examples, 
 
     Ultrasound, Renal; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for exam\]
 
-*   [Referral to Nephrologist](ActivityDefinition-ckd-risk-referral-nephrology.html)
+*   [Referral to Nephrologist](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-ckd-risk-referral-nephrology.html)
 
     Create ServiceRequest to order Referral for nephrology.
 
-*   [Order Renal Lab Panel](ActivityDefinition-ckd-risk-renal-lab-order.html)
+*   [Order Renal Lab Panel](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-ckd-risk-renal-lab-order.html)
 
     Create ServiceRequest to order Renal lab panel.
 
-*   [CDC Opioid Prescribing Guideline Recommendation #7 - Risk Assessment ProcedureRequest](ActivityDefinition-opioidcds-riskassessment-request.html)
+*   [CDC Opioid Prescribing Guideline Recommendation #7 - Risk Assessment ProcedureRequest](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/ActivityDefinition-opioidcds-riskassessment-request.html)
 
     As part of the workflow for recommendation 7, it is recommended that a risk assessment be conducted if the inclusion criteria is met.
 
@@ -197,7 +197,7 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example CodeSystem {#codesystem-index}
 
-*   [ANC Reason for Visit](CodeSystem-anc-reason-for-visit-cs.html)
+*   [ANC Reason for Visit](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/CodeSystem-anc-reason-for-visit-cs.html)
 
     Codes used to identify the reason for an antenatal care visit
 
@@ -311,9 +311,9 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example PlanDefinition
 
-*   [PlanDefinition - WHO ANC Guideline Contact Schedule](PlanDefinition-anc-contact-schedule.html) ANC\_Contact\_Schedule
-*   [PlanDefinition - WHO ANC Guideline Contact](PlanDefinition-anc-contact.html) ANC\_Contact
-*   [PlanDefinition - WHO ANC Guideline Recommendation #A2](PlanDefinition-anc-recommendation-a2.html) Recommendation\_A2
+*   [PlanDefinition - WHO ANC Guideline Contact Schedule](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/PlanDefinition-anc-contact-schedule.html) ANC\_Contact\_Schedule
+*   [PlanDefinition - WHO ANC Guideline Contact](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/PlanDefinition-anc-contact.html) ANC\_Contact
+*   [PlanDefinition - WHO ANC Guideline Recommendation #A2](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/PlanDefinition-anc-recommendation-a2.html) Recommendation\_A2
 *   [CHF Body Weight](PlanDefinition-chf-bodyweight-pd.html)
 
     Measure body weight daily
@@ -370,27 +370,27 @@ The following sections provide listings of resources defined in these examples, 
 
     Measure urine output daily
 
-*   [Chronic Kidney Disease - Ambulatory](PlanDefinition-cc-cpg-plan-ckd.html)
+*   [Chronic Kidney Disease - Ambulatory](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-cc-cpg-plan-ckd.html)
 
     Chronic Kidney Disease - Ambulatory
 
-*   [Chronic Kidney Disease (CKD) risk screening](PlanDefinition-ckd-risk-screening.html)
+*   [Chronic Kidney Disease (CKD) risk screening](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-ckd-risk-screening.html)
 
     Chronic Kidney Disease (CKD) risk screening
 
-*   [VA CKD Protocol](PlanDefinition-va-ckd-protocol.html)
+*   [VA CKD Protocol](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-va-ckd-protocol.html)
 
     VA CKD Protocol
 
-*   [VA CKD Recommendations](PlanDefinition-va-ckd-recommendations.html)
+*   [VA CKD Recommendations](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-va-ckd-recommendations.html)
 
     VA CKD Recommendations
 
-*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](PlanDefinition-HepBAdultForecastingPD.html)
+*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](https://build.fhir.org/ig/cqframework/cpg-example-hepb/branches/main/PlanDefinition-HepBAdultForecastingPD.html)
 
     If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast.
 
-*   [CDC Opioid Prescribing Guideline Recommendation #5](PlanDefinition-opioidcds-r4-recommendation-05.html)
+*   [CDC Opioid Prescribing Guideline Recommendation #5](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/PlanDefinition-opioidcds-r4-recommendation-05.html)
 
     When opioids are started, providers should prescribe the lowest effective dosage.
 
@@ -548,9 +548,9 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example Questionnaire
 
-*   [Questionnaire - ANC Every Contact](Questionnaire-anc-every-contact.html) ANC\_Every\_Contact
-*   [Questionnaire - ANC First Contact](Questionnaire-anc-first-contact.html) ANC\_First\_Contact
-*   [Questionnaire - ANC Quick Check](Questionnaire-anc-quick-check.html) ANC\_Quick\_Check
+*   [Questionnaire - ANC Every Contact](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/Questionnaire-anc-every-contact.html) ANC\_Every\_Contact
+*   [Questionnaire - ANC First Contact](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/Questionnaire-anc-first-contact.html) ANC\_First\_Contact
+*   [Questionnaire - ANC Quick Check](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/Questionnaire-anc-quick-check.html) ANC\_Quick\_Check
 *   [Activity Example Collect Information Questionnaire](Questionnaire-activity-example-collectinformation-questionnaire.html)
 
     Example Questionnaire for use in collect information activity examples
@@ -578,30 +578,30 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example ValueSet {#valueset-index}
 
-*   [ANC Reason for Visit](ValueSet-anc-reason-for-visit-vs.html)
+*   [ANC Reason for Visit](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/ValueSet-anc-reason-for-visit-vs.html)
 
     Codes that identify the reason for an antenatal care visit
 
-*   [Chronic renal disease finding](ValueSet-ckd-valueset-ckd.html)
+*   [Chronic renal disease finding](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-ckd.html)
 
     Chronic renal disease finding
 
-*   [Creatinine Lab Results](ValueSet-ckd-valueset-creatinine.html)
+*   [Creatinine Lab Results](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-creatinine.html)
 
     Creatinine Lab Results
 
-*   [Diabetes Finding Codes](ValueSet-ckd-valueset-diabetes.html)
+*   [Diabetes Finding Codes](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-diabetes.html)
 
     Diabetes Finding Codes
 
-*   [eGFR Lab Results](ValueSet-ckd-valueset-egfr.html)
+*   [eGFR Lab Results](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-egfr.html)
 
     eGFR Lab Results
 
-*   [UACR Lab Results](ValueSet-ckd-valueset-uacr.html)
+*   [UACR Lab Results](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-uacr.html)
 
     UACR Lab Results
 
-*   [Opioids with Ambulatory Abuse Potential](ValueSet-opioids-with-ambulatory-abuse-potential.html)
+*   [Opioids with Ambulatory Abuse Potential](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/ValueSet-opioids-with-ambulatory-abuse-potential.html)
 
     ValueSet containing an example subset of opioid medication formulations used in ambulatory settings that have the potential for misuse or abuse. Includes opioid drugs not restricted to surgical use that can be used in ambulatory setting. Excludes formulations with dose form Topical Cream(RXCUI 316982) or Topical Solution(RXCUI 316986) and ingredients available in surgery. NOTE: This is a deliberately reduced value set for example purposes.
