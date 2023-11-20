@@ -1,7 +1,7 @@
 Instance: chf-caseplansummarydefinition
 InstanceOf: cpg-caseplansummarydefinition
 Usage: #definition
-* insert CaseSummaryDefinitionMetadata(chf-caseplansummarydefinition)
+* insert GraphDefinitionMetadata(chf-caseplansummarydefinition)
 * extension[+]
   * url = Canonical(cpg-identifier)
   * valueIdentifier

@@ -17,7 +17,7 @@ RuleSet: CPGExpressionExtensions
 * ^extension[=].valueExpression.reference = Canonical(CHF)
 
 RuleSet: CaseFeatureMetadata(id)
-// * ^meta.profile = Canonical(cpg-casefeaturedefinition)
+// * ^meta.profile = Canonical(cpg-casefeaturedefinition) --> temp comment out - causing templating errors
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)
 * ^extension[=].valueCode = #shareable
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)
@@ -59,9 +59,9 @@ RuleSet: CHFActivityDefinitionMetadata(id)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * experimental = true
-* version = "1.0.0"
+* version = "2.0.0-ballot"
 * status = #active
-* publisher = "HL7 International - Clinical Decision Support WG"
+* publisher = "HL7 International / Clinical Decision Support"
 
 RuleSet: CHFLibraryMetaData(id)
 * extension[+]
@@ -78,9 +78,9 @@ RuleSet: CHFLibraryMetaData(id)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/Library/{id}"
 * experimental = true
-* version = "1.0.0"
+* version = "2.0.0-ballot"
 * status = #active
-* publisher = "HL7 International - Clinical Decision Support WG"
+* publisher = "HL7 International / Clinical Decision Support"
 
 RuleSet: CHFMeasureMetadata(id)
 * extension[+]
@@ -97,9 +97,9 @@ RuleSet: CHFMeasureMetadata(id)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/Measure/{id}"
 * experimental = true
-* version = "1.0.0"
+* version = "2.0.0-ballot"
 * status = #active
-* publisher = "HL7 International - Clinical Decision Support WG"
+* publisher = "HL7 International / Clinical Decision Support"
 
 RuleSet: CHFPlanDefinitionMetadata(id)
 * extension[+]
@@ -116,9 +116,9 @@ RuleSet: CHFPlanDefinitionMetadata(id)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
 * experimental = true
-* version = "1.0.0"
+* version = "2.0.0-ballot"
 * status = #active
-* publisher = "HL7 International - Clinical Decision Support WG"
+* publisher = "HL7 International / Clinical Decision Support"
 
 RuleSet: PlanDefinitionPartOfExtension(partOf)
 * extension[+]
@@ -130,7 +130,7 @@ RuleSet: PlanDefinitionEnabledExtension
   * url = Canonical(cpg-enabled)
   * valueBoolean = true
 
-RuleSet: CaseSummaryDefinitionMetadata(id)
+RuleSet: GraphDefinitionMetadata(id)
 * meta
   * profile[+] = Canonical(cpg-shareablegraphdefinition)
   * profile[+] = Canonical(cpg-computablegraphdefinition)
@@ -178,9 +178,16 @@ RuleSet: CaseSummaryDefinitionMetadata(id)
   * valueRelatedArtifact
     * type = #citation
     * citation = "Representation primitives, process models and patient data in computer-interpretable clinical practice guidelines: A literature review of guideline representation models. Dongwen Wang, Mor Peleg, Samson W Tu, Aziz A Boxwala, Robert A Greenes, Vimla L Patel, Edward H Shortliffe. International Journal of Medical Informatics, Volume 68, Issues 1–3, 2002, Pages 59-70, ISSN 1386-5056, https://doi.org/10.1016/S1386-5056(02)00065-5."
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
+  * valueCode = #cds
 * experimental = true
-* version = "1.0.0"
+* version = "2.0.0-ballot"
 * status = #active
-* publisher = "HL7 International - Clinical Decision Support WG"
-
+* publisher = "HL7 International / Clinical Decision Support"
+* date = "2023-11-15T14:53:25-05:00"
+* jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+* contact.name = "HL7 International / Clinical Decision Support"
+* contact.telecom.system = #url
+* contact.telecom.value = "http://www.hl7.org/Special/committees/dss"
 

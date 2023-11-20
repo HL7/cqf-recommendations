@@ -178,12 +178,12 @@ pages:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
 parameters:
-  apply-copyright: true
-  apply-contact: true
+  default-contact: true
+  default-publisher: true
+  default-version: true
+  default-jurisdiction: true
   apply-license: true
-  apply-publisher: true
-  apply-version: true
-  apply-jurisdiction: true
+  apply-copyright: true
   apply-wg: true
   path-binary: ./input/cql
 #
