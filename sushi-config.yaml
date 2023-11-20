@@ -129,6 +129,10 @@ pages:
       title: Activity Examples
     examples-chf.md:
       title: Congestive Heart Failure Example
+    examples-hiv-guideline.md:
+      title: HIV Screening Guideline Recommendations
+    methodology-case-study.md:
+      title: Methodology Example - COVID-19 Severity Classification
   downloads.md:
   glossary.md:
   checklists.md:
@@ -143,8 +147,6 @@ pages:
   documentation-methodology.md:
     title: Mapping and Other Formalisms
   common-care-pathway.md:
-  methodology-case-study.md:
-    title: Methodology Example - COVID-19 Severity Classification
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
