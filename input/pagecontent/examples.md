@@ -74,31 +74,31 @@ The following sections provide listings of resources defined in these examples, 
 
     Measure urine output
 
-*   [Patient education: Managing Your High Blood Pressure (Hypertension)](ActivityDefinition-cc-cpg-activity-edu-hypertension.html)
+*   [Patient education: Managing Your High Blood Pressure (Hypertension)](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-edu-hypertension.html)
 
     Patient education: Managing Your High Blood Pressure (Hypertension)
 
-*   [Patient education: Renal diet](ActivityDefinition-cc-cpg-activity-edu-renal-diet.html)
+*   [Patient education: Renal diet](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-edu-renal-diet.html)
 
     Patient education: Renal diet
 
-*   [Lab: Creatinine, Urine Random, Once](ActivityDefinition-cc-cpg-activity-lab-creatinine.html)
+*   [Lab: Creatinine, Urine Random, Once](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-lab-creatinine.html)
 
     Lab: Creatinine, Urine Random, Once
 
-*   [Lab: Comprehensive Metabolic Panel, Once](ActivityDefinition-cc-cpg-activity-lab-metabolic.html)
+*   [Lab: Comprehensive Metabolic Panel, Once](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-lab-metabolic.html)
 
     Lab: Comprehensive Metabolic Panel, Once
 
-*   [Referral: Dietitian; History: chronic kidney disease; Question: \[add reason for referral\]](ActivityDefinition-cc-cpg-activity-referral-dietition.html)
+*   [Referral: Dietitian; History: chronic kidney disease; Question: \[add reason for referral\]](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-referral-dietition.html)
 
     Referral: Dietitian; History: chronic kidney disease; Question: \[add reason for referral\]
 
-*   [Referral: Nephrology; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for referral\]](ActivityDefinition-cc-cpg-activity-referral-nephrology.html)
+*   [Referral: Nephrology; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for referral\]](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-referral-nephrology.html)
 
     Referral: Nephrology; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for referral\]
 
-*   [Ultrasound, Renal; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for exam\]](ActivityDefinition-cc-cpg-activity-ultrasound-renal.html)
+*   [Ultrasound, Renal; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for exam\]](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-ultrasound-renal.html)
 
     Ultrasound, Renal; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for exam\]
 
