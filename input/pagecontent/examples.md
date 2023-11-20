@@ -1,14 +1,14 @@
 This page lists examples of various clinical guidelines expressed as computable content conforming to this implementation guide:
 
 *   [Activity Examples](examples-activities.html)
-*   [Antenatal Care Guidelines](examples-anc-guidelines.html)
-*   [Anthrax Post-Exposure Prophylaxis](examples-anthrax.html)
-*   [Chronic Disease Management - Chronic Kidney Disease](examples-ckd-guideline.html)
+*   [Antenatal Care Guidelines](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/index.html)
+*   [Anthrax Post-Exposure Prophylaxis](https://build.fhir.org/ig/cqframework/cpg-example-anthrax/branches/main/index.html)
+*   [Chronic Disease Management - Chronic Kidney Disease](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/index.html)
 *   [Congestive Heart Failure](examples-chf.html)
 *   [COVID-19 CPG Methodology Case Study](methodology-case-study.html)
-*   [Opioid Prescribing Guideline](examples-opg-guideline.html)
+*   [Opioid Prescribing Guideline](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/index.html)
 *   [HIV Screening, Immunization, and Follow-up](examples-hiv-guideline.html)
-*   [Hepatitis B Adult Immunization Forecasting](examples-adult-hepb-immunization.html)
+*   [Hepatitis B Adult Immunization Forecasting](https://build.fhir.org/ig/cqframework/cpg-example-hepb/branches/main/index.html)
 
 The following sections provide listings of resources defined in these examples, indexed by resource type.
 
