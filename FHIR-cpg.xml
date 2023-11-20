@@ -256,6 +256,7 @@
 <artifact id="GuidanceResponse/am-scenario7-gr" key="GuidanceResponse-am-scenario7-gr" name="am-scenario7-gr"/>
 <artifact id="MedicationRequest/am-scenario7-mr" key="MedicationRequest-am-scenario7-mr" name="am-scenario7-mr"/>
 <artifact id="Patient/am-scenario7-patient" key="Patient-am-scenario7-patient" name="am-scenario7-patient"/>
+<artifact id="Questionnaire/anc-quick-check" key="Questionnaire-anc-quick-check" name="anc-quick-check"/>
 <artifact id="StructureDefinition/chf-bodyweight" key="StructureDefinition-chf-bodyweight" name="chf-bodyweight"/>
 <artifact id="ActivityDefinition/chf-bodyweight-ad" key="ActivityDefinition-chf-bodyweight-ad" name="chf-bodyweight-ad"/>
 <artifact id="StructureDefinition/chf-bodyweight-change" key="StructureDefinition-chf-bodyweight-change" name="chf-bodyweight-change"/>
@@ -501,6 +502,7 @@
 <artifact id="MedicationDispense/om-scenario7" key="MedicationDispense-om-scenario7" name="om-scenario7"/>
 <artifact id="MedicationRequest/om-scenario7-mr" key="MedicationRequest-om-scenario7-mr" name="om-scenario7-mr"/>
 <artifact id="Patient/om-scenario7-patient" key="Patient-om-scenario7-patient" name="om-scenario7-patient"/>
+<artifact id="ValueSet/opioids-with-ambulatory-abuse-potential" key="ValueSet-opioids-with-ambulatory-abuse-potential" name="opioids-with-ambulatory-abuse-potential"/>
 <artifact id="Library/ordermedication-library" key="Library-ordermedication-library" name="ordermedication-library"/>
 <artifact id="Library/orderservice-library" key="Library-orderservice-library" name="orderservice-library"/>
 <artifact id="Patient/os-scenario1-patient" key="Patient-os-scenario1-patient" name="os-scenario1-patient"/>
@@ -573,6 +575,7 @@
 <artifact id="Patient/sm-scenario7-patient" key="Patient-sm-scenario7-patient" name="sm-scenario7-patient"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario5" key="CommunicationRequest-stop-dnsm-scenario5" name="stop-dnsm-scenario5"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario6" key="CommunicationRequest-stop-dnsm-scenario6" name="stop-dnsm-scenario6"/>
+<artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="va-ckd-recommendations"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>
