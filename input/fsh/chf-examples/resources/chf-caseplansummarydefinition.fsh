@@ -1,6 +1,6 @@
 Instance: chf-caseplansummarydefinition
 InstanceOf: cpg-caseplansummarydefinition
-Usage: #definition
+Usage: #example
 * insert GraphDefinitionMetadata(chf-caseplansummarydefinition)
 * extension[+]
   * url = Canonical(cpg-identifier)
