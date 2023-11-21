@@ -99,9 +99,6 @@
       ]
     }
   ],
-  "library": [
-    "http://hl7.org/fhir/uv/cpg/Library/CKDRiskLogic"
-  ],
   "action": [
     {
       "id": "001",

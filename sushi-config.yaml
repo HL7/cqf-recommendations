@@ -127,30 +127,12 @@ pages:
   examples.md:
     examples-activities.md:
       title: Activity Examples
-    examples-adult-hepb-immunization.md:
-      title: Hepatitis B Immunization Forecasting Example
-    examples-anc-guidelines.md:
-      title: Antenatal Care Guideline Example
-    examples-anthrax.md:
-      title: Anthrax Post-Exposure Prophylaxis Example
-      examples-anthrax-index-fhirv400.md:
-        title: Anthrax Post-Exposure Prophylaxis Example - FHIRv400 Example Index
     examples-chf.md:
       title: Congestive Heart Failure Example
-    examples-ckd-guideline.md:
-      title: Chronic Disease Management - Chronic Kidney Disease (CKD) Example
-      examples-ckd-logic.md:
-        title: Chronic Kidney Disease (CKD) Guideline Example Example - CQL Source
     examples-hiv-guideline.md:
       title: HIV Screening Guideline Recommendations
-    examples-opg-guideline.md:
-      title: Opioid Prescribing Guideline Example
-      examples-omtk-logic.md:
-        title: Opioid Prescribing Guideline Example - OMTK Logic - CQL Source
-      examples-opioid-cds-common.md:
-        title: Opioid Prescribing Guideline Example - Common Logic - CQL Source
-      examples-opioid-cds-recommendation.md:
-        title: Opioid Prescribing Guideline Example - Recommendation 5 Logic - CQL Source
+    methodology-case-study.md:
+      title: Methodology Example - COVID-19 Severity Classification
   downloads.md:
   glossary.md:
   checklists.md:
@@ -165,8 +147,6 @@ pages:
   documentation-methodology.md:
     title: Mapping and Other Formalisms
   common-care-pathway.md:
-  methodology-case-study.md:
-    title: Methodology Example - COVID-19 Severity Classification
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide

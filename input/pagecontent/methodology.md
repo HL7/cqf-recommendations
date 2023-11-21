@@ -244,7 +244,7 @@ At this step, concepts referred to by the narrative are identified and represent
 * **Details**: Details about the data element, including how it might be gathered, and how it is relevant
 * **Modeling**: The conceptual type of data, including how it might be represented in potential target environments
 
-For example, the following data dictionary excerpt shows the data elements for recommendation 5 of the [Opioid Prescribing Guideline](examples-opg-guideline.html) example included in this implementation guide:
+For example, the following data dictionary excerpt shows the data elements for recommendation 5 of the [Opioid Prescribing Guideline](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/index.html) example included in this implementation guide:
 
 <div>
   <img src="opg-recommendation-5-data-dictionary.png" alt="OPG Recommendation 5 Data Elements" class="img-responsive img-rounded center-block"/>
