@@ -239,7 +239,6 @@
 <artifact id="PlanDefinition/chf-pathway" key="PlanDefinition-chf-pathway" name="Congestive Heart Failure Care Pathway"/>
 <artifact id="Library/CHF" key="Library-CHF" name="Congestive Heart Failure Logic"/>
 <artifact id="ValueSet/opioids-with-ambulatory-abuse-potential" key="ValueSet-opioids-with-ambulatory-abuse-potential" name="Opioids with Ambulatory Abuse Potential"/>
-<artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="PlanDefinition - CPG Common Registration"/>
 <artifact id="Questionnaire/anc-quick-check" key="Questionnaire-anc-quick-check" name="Questionnaire - ANC Quick Check"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-referral-dietitian" key="ActivityDefinition-cc-cpg-activity-referral-dietitian" name="Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-referral-nephrology" key="ActivityDefinition-cc-cpg-activity-referral-nephrology" name="Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]"/>
@@ -388,6 +387,7 @@
 <artifact id="Patient/ci-scenario6-patient" key="Patient-ci-scenario6-patient" name="ci-scenario6-patient"/>
 <artifact id="Patient/ci-scenario7-patient" key="Patient-ci-scenario7-patient" name="ci-scenario7-patient"/>
 <artifact id="Library/collectinformation-library" key="Library-collectinformation-library" name="collectinformation-library"/>
+<artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="cpg-common-registration"/>
 <artifact id="ActivityDefinition/cpg-medicationrequest-activitydefinition" key="ActivityDefinition-cpg-medicationrequest-activitydefinition" name="cpg-medicationrequest-activitydefinition"/>
 <artifact id="MedicationRequest/dcm-scenario1" key="MedicationRequest-dcm-scenario1" name="dcm-scenario1"/>
 <artifact id="Patient/dcm-scenario1-patient" key="Patient-dcm-scenario1-patient" name="dcm-scenario1-patient"/>

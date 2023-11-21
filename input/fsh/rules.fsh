@@ -33,6 +33,18 @@ RuleSet: ValueSetMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
 * ^experimental = false
 
+RuleSet: ExampleValueSetMetadata(id)
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #shareable
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #computable
+* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[=].valueCode = #publishable
+* ^extension[+].url = $cpg-knowledgeRepresentationLevel
+* ^extension[=].valueCode = #structured
+* ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
+* ^experimental = true
+
 RuleSet: StructureDefinitionMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
 * ^experimental = false

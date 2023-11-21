@@ -155,7 +155,6 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $ckd-clinical-overview-1 = http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75E10232E05352E3610A5325
 Alias: $ckd-clinical-overview-11 = http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325
 Alias: $recommendation-strength = http://terminology.hl7.org/CodeSystem/recommendation-strength
-Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
 Alias: $cpg-recommendation-direction-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction-cs
 Alias: $va-clinical-practice-guidelines = http://www.healthquality.va.gov
 
@@ -166,3 +165,5 @@ Alias: $anc-reason-for-visit-first-image = http://example.org/images/reason-for-
 Alias: $anc-reason-for-visit-follow-up-image = http://example.org/images/reason-for-visit-follow-up.png
 Alias: $anc-reason-for-visit-include-family-member-image = http://example.org/images/reason-for-visit-include-family-member.png
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
+Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
+Alias: $sct = http://snomed.info/sct

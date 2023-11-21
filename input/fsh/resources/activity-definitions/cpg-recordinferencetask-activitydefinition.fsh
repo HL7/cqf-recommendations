@@ -1,6 +1,6 @@
 Instance: cpg-recordinference-activity
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "CPG Record Inference ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-recordinference-activity, CPGRecordInferenceTaskActivityDefinition)
 * description = "Example Activity Definition for a recommendation to record an inference"

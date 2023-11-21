@@ -1,6 +1,6 @@
 Instance: cpg-common-resolve-patient-match
 InstanceOf: Questionnaire
-Usage: #example
+Usage: #definition
 Title: "CPG Common Questionnaire - Resolve Patient Match"
 Description: "Questionnaire to resolve patient"
 * insert QuestionnaireMetadata(cpg-common-resolve-patient-match)
