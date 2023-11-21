@@ -1,7 +1,7 @@
 Instance: cpg-careplan-apply
 InstanceOf: OperationDefinition
 Usage: #definition
-Title: "CPG CarePlan Applly"
+Title: "CPG CarePlan Apply"
 Description: "The apply operation applies any conditional logic within a CarePlan to a given context"
 * insert OperationDefinitionMetadata(cpg-careplan-apply)
 * insert OperationExtensions

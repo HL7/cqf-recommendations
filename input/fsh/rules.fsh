@@ -1,5 +1,4 @@
 RuleSet: CodeSystemMetadata(id-prefix)
-* ^meta.profile = $cpg-publishable-codesystem
 * ^extension[+].url = $cpg-knowledgeCapability
 * ^extension[=].valueCode = #shareable
 * ^extension[+].url = $cpg-knowledgeCapability
@@ -23,7 +22,6 @@ RuleSet: CodeSystemDates(approvalDate, effectiveDate, lastReviewDate )
 * ^extension[=].valueDate = {lastReviewDate}
 
 RuleSet: ValueSetMetadata(id)
-* ^meta.profile = $cpg-publishable-valueset
 * ^extension[+].url = $cpg-knowledgeCapability
 * ^extension[=].valueCode = #shareable
 * ^extension[+].url = $cpg-knowledgeCapability

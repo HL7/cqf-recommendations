@@ -1,0 +1,103 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "cc-cpg-plan-ckd",
+  "url": "http://hl7.org/fhir/uv/cpg/PlanDefinition/cc-cpg-plan-ckd",
+  "version": "1.0.1",
+  "name": "ChronicKidneyDiseaseAmbulatory",
+  "title": "Chronic Kidney Disease - Ambulatory",
+  "description": "Chronic Kidney Disease - Ambulatory",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+        "code": "order-set",
+        "display": "Order Set"
+      }
+    ]
+  },
+  "status": "draft",
+  "experimental": true,
+  "date": "2019-07-28T00:00:00+00:00",
+  "approvalDate": "2019-07-28",
+  "lastReviewDate": "2019-07-28",
+  "effectivePeriod": {
+    "start": "2019-07-28"
+  },
+  "publisher": "HL7 FHIR Clinical Guidelines Example Artifact",
+  "copyright": "Copyright © Elsevier, and others.",
+  "useContext": [
+    {
+      "code": {
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+        "code": "focus",
+        "display": "Clinical Focus"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "709044004",
+            "display": "Chronic kidney disease (disorder)"
+          }
+        ]
+      }
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America"
+        }
+      ],
+      "text": "United States of America"
+    }
+  ],
+  "topic": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/definition-topic",
+          "code": "treatment",
+          "display": "Treatment"
+        }
+      ],
+      "text": "Treatment"
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "justification",
+      "display": "SYNOPSIS - Chronic Kidney Disease\n\n\n\t\n\tKEY POINTS\n\n\t\n\t\tDecline in function of the kidney characterized by at least 3 months of reduced GFR (less than 60 mL/minute/ 1.73 m&sup2;) or at least 3 months of structural or functional kidney damage\n\t\tAssessment of both GFR and albuminuria is necessary to diagnose chronic kidney disease and monitor disease progression\n\t\tGFR is most commonly estimated through measuring serum creatinine and the use of GFR estimating equations, either the Modification of Diet in Renal Disease Study equation or the Chronic Kidney Disease Epidemiology Collaboration equation\n\t\tAlbuminuria is measured by urine albumin/creatinine ratio; greater than 30 mg/g indicates albuminuria\n\t\tChronic kidney disease is commonly associated with hypertension, diabetes, and cardiovascular disease\n\t\tFirst line therapy includes ACE inhibitors and/or angiotensin II receptor blockers to reduce albuminuria and hypertension\n\t\tIf left untreated, chronic kidney disease can progress to end-stage renal disease requiring dialysis or renal transplant\n\t\t\n\t\t\tSymptoms of end-stage renal disease (eg, pruritus, refractory electrolyte imbalances, metabolic acidosis, severe nausea, neurologic impairments) typically occur when GFR is 5 to 10 mL/minute/1.73 m&sup2;\n\t\t\n\t\t\n\t\tCarefully monitor electrolyte levels, hemoglobin, parathyroid hormone levels, and sodium bicarbonate levels to detect complications of chronic kidney disease, including cardiovascular disease, anemia, bone mineral disease, and metabolic acidosis\n\t\n\t\n\n\n\n\t\n\tURGENT ACTION\n\n\t\n\t\tHyperkalemia may require urgent treatment in patients being treated for chronic kidney disease\n\t\t\n\t\t\tUrgent treatment consists of calcium chloride or calcium gluconate and regimens of sodium bicarbonate, glucose and insulin, or nebulized albuterol\n\t\t\n\t\t\n\t\n\t\n\n\n\n\t\n\tPITFALLS\n\n\t\n\t\tEarly stages are often asymptomatic, causing chronic kidney disease to be untreated, leading to further progression of kidney damage and worse prognosis",
+      "citation": "Chronic Kidney Disease Clinical Overview. ClinicalKey. Source",
+      "url": "http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75E10232E05352E3610A5325"
+    }
+  ],
+  "action": [
+    {
+      "id": "cc-cpg-activity-referral-nephrology",
+      "title": "Referrals",
+      "groupingBehavior": "visual-group",
+      "action": [
+        {
+          "id": "34387224",
+          "title": "Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]",
+          "description": "Referrals",
+          "requiredBehavior": "could",
+          "precheckBehavior": "no",
+          "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cc-cpg-activity-referral-nephrology"
+        },
+        {
+          "id": "cc-cpg-activity-referral-dietition",
+          "title": "Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]",
+          "description": "Referrals",
+          "requiredBehavior": "could",
+          "precheckBehavior": "no",
+          "definitionCanonical": "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cc-cpg-activity-referral-dietition"
+        }
+      ]
+    }
+  ]
+}
