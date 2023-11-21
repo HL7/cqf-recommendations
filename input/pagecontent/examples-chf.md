@@ -271,7 +271,7 @@ The following index lists all the artifacts (case-independent) in this example:
 |GraphDefinition|[chf-caseplansummarydefinition](GraphDefinition-chf-caseplansummarydefinition.html)|
 |GraphDefinition|[chf-casesummarydefinition](GraphDefinition-chf-casesummarydefinition.html)|
 |Group|[chf-groupdefinition](Group-chf-groupdefinition.html)|
-|ImplementationGuide|[chf](ImplementationGuide-chf.html)|
+|ImplementationGuide|[chf](ImplementationGuide-chf-ig.html)|
 |Library|[CHF](Library-CHF.html)|
 |Location|[chf-locationdefinition](Location-chf-locationdefinition.html)|
 |Measure|[chf-bodyweight-change](Measure-chf-bodyweight-change-measure.html)|

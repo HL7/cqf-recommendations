@@ -260,7 +260,7 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example ImplementationGuide
 
-*   [Congestive Heart Failure Care Pathway](ImplementationGuide-chf.html)
+*   [Congestive Heart Failure Care Pathway](ImplementationGuide-chf-ig.html)
 
     Request to measure oxygen saturation as part of a congestive heart failure pathway
 
