@@ -17,7 +17,9 @@ RuleSet: CPGExpressionExtensions
 * ^extension[=].valueExpression.reference = Canonical(CHF)
 
 RuleSet: CaseFeatureMetadata(id)
-// * ^meta.profile = Canonical(cpg-casefeaturedefinition) --> temp comment out - causing templating errors
+* ^meta.profile = Canonical(cpg-shareablestructuredef)
+* ^meta.profile = Canonical(cpg-casefeaturedefinition)
+* ^meta.profile = Canonical(cpg-publishablecasefeature)
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)
 * ^extension[=].valueCode = #shareable
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)
