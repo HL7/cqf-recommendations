@@ -2,6 +2,7 @@ Instance: request-ci-scenario2
 InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #draft
 * intent = #proposal

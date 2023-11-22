@@ -2,6 +2,7 @@ Instance: event-dnci-scenario7
 InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * modifierExtension[request-doNotPerform].valueBoolean = true
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #completed

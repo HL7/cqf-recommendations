@@ -2,6 +2,7 @@ Instance: request-pd-scenario2
 InstanceOf: cpg-proposediagnosistask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * contained = Inline-Instance-for-request-pd-scenario2
 * instantiatesCanonical = Canonical(activity-example-proposediagnosis-ad)
 * status = #draft

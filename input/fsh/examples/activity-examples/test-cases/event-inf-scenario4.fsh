@@ -2,6 +2,7 @@ Instance: event-inf-scenario4
 InstanceOf: cpg-recordinferencetask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * contained = inference
 * instantiatesCanonical = Canonical(activity-example-recordinference-ad)
 * status = #completed

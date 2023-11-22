@@ -2,6 +2,7 @@ Instance: request-dnci-scenario2
 InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * modifierExtension
   * url = "http://hl7.org/fhir/StructureDefinition/request-doNotPerform"
   * valueBoolean = true

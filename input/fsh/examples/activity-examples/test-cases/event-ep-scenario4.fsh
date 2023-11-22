@@ -2,6 +2,7 @@ Instance: event-ep-scenario4
 InstanceOf: cpg-enrollmenttask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-enrollment-ad)
 * status = #completed
 * intent = #order

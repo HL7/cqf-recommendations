@@ -39,7 +39,6 @@ RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 * publisher = "HL7 International / Clinical Decision Support"
 * version = "2.0.0-ballot"
 
-
 RuleSet: RelatedFHIRLibraries
 * relatedArtifact[+]
   * type = #depends-on

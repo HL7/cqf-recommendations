@@ -2,6 +2,7 @@ Instance: event-ci-scenario7
 InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #cancelled
 * intent = #order

@@ -2,6 +2,7 @@ Instance: request-rf-scenario2
 InstanceOf: cpg-reportflagtask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * contained = Inline-Instance-for-request-rf-scenario2
 * instantiatesCanonical = Canonical(activity-example-reportflag-ad)
 * status = #draft

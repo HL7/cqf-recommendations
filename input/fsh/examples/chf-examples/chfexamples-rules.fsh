@@ -30,7 +30,8 @@ RuleSet: CaseFeatureMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
 
 RuleSet: CHFCodeSystemMetadata(id)
-* ^meta.profile = Canonical(cpg-publishablecodesystem)
+* ^meta.profile[+] = Canonical(cpg-shareablecodesystem)
+* ^meta.profile[+] = Canonical(cpg-publishablecodesystem)
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)
 * ^extension[=].valueCode = #shareable
 * ^extension[+].url = Canonical(cpg-knowledgeCapability)
@@ -133,6 +134,7 @@ RuleSet: PlanDefinitionEnabledExtension
 RuleSet: GraphDefinitionMetadata(id)
 * meta
   * profile[+] = Canonical(cpg-shareablegraphdefinition)
+  * profile[+] = Canonical(cpg-publishablegraphdefinition)
   * profile[+] = Canonical(cpg-computablegraphdefinition)
   * profile[+] = Canonical(cpg-caseplansummarydefinition)
 * url = "http://hl7.org/fhir/uv/cpg/GraphDefinition/{id}"
@@ -151,9 +153,6 @@ RuleSet: GraphDefinitionMetadata(id)
 * extension[+]
   * url = Canonical(cpg-summaryDefinitionFor)
   * valueCanonical = Canonical(chf-pathway)
-* extension[+]
-  * url = Canonical(cpg-copyright)
-  * valueMarkdown = "Copyright (c) 2019+ HL7 International"
 * extension[+]
   * url = Canonical(cpg-topic)
   * valueCodeableConcept = $sct#42343007 "Congestive heart failure (disorder)"

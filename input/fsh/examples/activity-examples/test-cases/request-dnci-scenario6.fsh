@@ -2,6 +2,7 @@ Instance: request-dnci-scenario6
 InstanceOf: cpg-questionnairetask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * status = #ready
 * intent = #order

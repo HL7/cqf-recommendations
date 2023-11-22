@@ -1,14 +1,15 @@
 Instance: event-pd-scenario4
-InstanceOf: Task
+InstanceOf: cpg-proposediagnosistask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * contained = proposed-diagnosis
 * instantiatesCanonical = Canonical(activity-example-proposediagnosis-ad)
 * status = #completed
 * intent = #order
 * code = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
 * for = Reference(pd-scenario4-patient)
-* input
+* input[diagnosis]
   * type = $cpg-activity-type-cs#propose-diagnosis "Propose a diagnosis"
   * valueReference = Reference(proposed-diagnosis)
 * output

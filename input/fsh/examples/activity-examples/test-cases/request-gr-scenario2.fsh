@@ -2,6 +2,7 @@ Instance: request-gr-scenario2
 InstanceOf: cpg-generatereporttask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-generatereport-ad)
 * status = #draft
 * intent = #proposal

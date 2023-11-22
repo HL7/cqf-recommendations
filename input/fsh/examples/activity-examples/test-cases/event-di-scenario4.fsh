@@ -2,6 +2,7 @@ Instance: event-di-scenario4
 InstanceOf: cpg-recorddetectedissuetask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * contained = detected-issue
 * instantiatesCanonical = Canonical(activity-example-recorddetectedissue-ad)
 * status = #completed

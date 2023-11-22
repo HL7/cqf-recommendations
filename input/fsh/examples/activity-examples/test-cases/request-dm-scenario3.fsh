@@ -2,6 +2,7 @@ Instance: request-dm-scenario3
 InstanceOf: cpg-dispensemedicationtask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-dispensemedication-ad)
 * status = #in-progress
 * intent = #order

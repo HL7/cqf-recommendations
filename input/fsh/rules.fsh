@@ -44,6 +44,10 @@ RuleSet: ExampleValueSetMetadata(id)
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
 * ^experimental = true
+* ^meta.profile[+] = Canonical(cpg-shareablevalueset)
+* ^meta.profile[+] = Canonical(cpg-computablevalueset)
+* ^meta.profile[+]  = Canonical(cpg-publishablevalueset)
+* ^meta.profile[+] = Canonical(cpg-executablevalueset)
 
 RuleSet: StructureDefinitionMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"

@@ -2,6 +2,7 @@ Instance: event-gr-scenario4
 InstanceOf: cpg-generatereporttask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-generatereport-ad)
 * status = #completed
 * intent = #order

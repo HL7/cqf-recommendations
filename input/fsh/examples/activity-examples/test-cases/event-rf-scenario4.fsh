@@ -2,6 +2,7 @@ Instance: event-rf-scenario4
 InstanceOf: cpg-reportflagtask
 Usage: #example
 Description: "Example test case"
+* meta.profile = Canonical(CPGTask)
 * contained = flag
 * instantiatesCanonical = Canonical(activity-example-reportflag-ad)
 * status = #completed
