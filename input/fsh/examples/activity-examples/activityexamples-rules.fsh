@@ -42,10 +42,10 @@ RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 RuleSet: RelatedFHIRLibraries
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIR-ModelInfo|4.0.1"
+  * resource = "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://hl7.org/fhir/Library/FHIRHelpers|4.0.1"
+  * resource = "http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1"
 
 RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
 * insert Profile(cpg-shareablequestionnaire)
