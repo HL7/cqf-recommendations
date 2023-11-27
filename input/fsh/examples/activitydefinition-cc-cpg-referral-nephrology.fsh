@@ -1,7 +1,7 @@
 Instance: cc-cpg-activity-referral-nephrology
 InstanceOf: CPGComputableActivityDefinition
 Usage: #definition
-Title: "Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]"
+Title: "CKD Referral Nephrology"
 * insert KnowledgeArtifactADMetadata(cc-cpg-activity-referral-nephrology)
 * name = "ReferralNephrology"
 * description = "Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]"

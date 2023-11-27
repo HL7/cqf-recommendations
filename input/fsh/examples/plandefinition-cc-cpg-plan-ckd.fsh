@@ -1,7 +1,7 @@
 Instance: cc-cpg-plan-ckd
 InstanceOf: CPGOrderSetDefinition
 Usage: #definition
-Title: "Chronic Kidney Disease - Ambulatory Plan Definition"
+Title: "CKD Ambulatory Plan Definition"
 * insert KnowledgeArtifactPDRecommendationMetadata(cc-cpg-plan-ckd)
 * name = "ChronicKidneyDiseaseAmbulatory"
 * description = "Chronic Kidney Disease - Ambulatory"

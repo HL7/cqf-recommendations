@@ -1,7 +1,7 @@
 Instance: cc-cpg-activity-referral-dietitian
 InstanceOf: CPGComputableActivityDefinition
 Usage: #definition
-Title: "Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]"
+Title: "CKD Referral Dietitian"
 * insert KnowledgeArtifactADMetadata(cc-cpg-activity-referral-dietitian)
 * name = "ReferralDietitian"
 * description = "Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]"

@@ -1,4 +1,4 @@
-Instance: chf-scenario1-cardiology-consultation
+Instance: chf-scenario1-cardiology-consult-request
 InstanceOf: chf-cardiology-consult-request
 Usage: #example
 Description: "CHF Scenario One"

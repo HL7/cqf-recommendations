@@ -109,4 +109,4 @@ Description: "CHF Scenario One"
     * title = "Cardiology Consultation"
     * description = "Cardiology Consultation"
     * code = $cpg-common-process-cs#guideline-based-care
-    * resource = Reference(chf-scenario1-cardiology-consultation)
+    * resource = Reference(chf-scenario1-cardiology-consult-request)
