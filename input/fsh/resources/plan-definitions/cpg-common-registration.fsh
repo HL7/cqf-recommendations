@@ -1,13 +1,14 @@
 Instance: cpg-common-registration
-InstanceOf: PlanDefinition
-Usage: #example
-Title: "PlanDefinition - CPG Common Registration"
-Description: "Plan for registering patient"
-* insert PlanDefinitionMetadata(cpg-common-registration)
+InstanceOf: CPGWorkflowDefinition
+Usage: #definition
+* insert KnowledgeArtifactPDRecommendationMetadata(cpg-common-registration)
+* title = "PlanDefinition - CPG Common Registration"
+* description = "Plan for registering patient"
 * name = "PlanDefinition_CPG_Common_Registration"
 * type = $plan-definition-type#workflow-definition "Workflow Definition"
 * copyright = "© WHO 2019+."
 * action
+  * description = "Registration"
   * title = "Registration"
   * code = $cpg-common-process-codesystem#registration
   * participant[+]
@@ -17,6 +18,7 @@ Description: "Plan for registering patient"
     * type = #practitioner
     * role = $cpg-common-persona-cs#W000 "Clerical support worker"
   * action[+]
+    * description = "Gather identifying information"
     * title = "Gather identifying information"
     * output.type = #QuestionnaireResponse
     * participant
@@ -25,6 +27,7 @@ Description: "Plan for registering patient"
     * definitionCanonical = Canonical(cpg-common-identity)
     // * fhir_comments = "Gather identifying information"
   * action[+]
+    * description = "Patient match"
     * title = "Patient match"
     * input
       * type = #QuestionnaireResponse
@@ -40,6 +43,7 @@ Description: "Plan for registering patient"
     * definitionUri = $patient-match
     // * fhir_comments = "Patient match"
   * action[+]
+    * description = "Resolve patient match results"
     * title = "Resolve patient match results"
     * input.type = #Bundle
     * output.type = #Patient
@@ -50,6 +54,7 @@ Description: "Plan for registering patient"
       // * fhir_comments = "TODO: Use SDC post processing to establish the output as the specific patient selected"
     // * fhir_comments = "Resolve patient match results"
   * action[+]
+    * description = "New patient"
     * title = "New patient"
     * condition
       * kind = #applicability
@@ -58,6 +63,7 @@ Description: "Plan for registering patient"
         * expression = "not exists %input i where i is Patient"
     * input.type = #Patient
     * action[+]
+      * description = "Gather patient information"
       * title = "Gather patient information"
       * input
         * type = #QuestionnaireResponse
@@ -68,6 +74,7 @@ Description: "Plan for registering patient"
       * definitionCanonical = Canonical(cpg-common-patient-profile)
         // * fhir_comments = "TODO: Use SDC pre processing to auto-populate questionnaire content with the previously entered identity data"
     * action[+]
+      * description = "Record patient data"
       * title = "Record patient data"
       * input
         * type = #QuestionnaireResponse
@@ -86,6 +93,7 @@ Description: "Plan for registering patient"
       // * fhir_comments = "Record patient data"
     // * fhir_comments = "New patient"
   * action[+]
+    * description = "Existing patient"
     * title = "Existing patient"
     * condition
       * kind = #applicability
@@ -94,6 +102,7 @@ Description: "Plan for registering patient"
         * expression = "exists %input i where i is Patient"
     * input.type = #Patient
     * action[+]
+      * description = "Ensure patient information is up to date"
       * title = "Ensure patient information is up to date"
       * input
         * type = #QuestionnaireResponse
@@ -105,6 +114,7 @@ Description: "Plan for registering patient"
         // * fhir_comments = "TODO: Use SDC pre processing to auto-populate questionnaire content with the previously entered identity data"
       // * fhir_comments = "Patient data update"
     * action[+]
+      * description = "Record patient data"
       * title = "Record patient data"
       * input
         * type = #QuestionnaireResponse
@@ -123,6 +133,7 @@ Description: "Plan for registering patient"
       // * fhir_comments = "Record patient data"
     // * fhir_comments = "Existing patient"
   * action[+]
+    * description = "Patient summary lookup"
     * title = "Patient summary lookup"
     * input.type = #Patient
     * output.type = #Bundle

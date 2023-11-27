@@ -1,6 +1,6 @@
 Instance: cpg-generatereport-activitydefinition
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "CPG Generate Report ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-generatereport-activitydefinition,CPGGenerateReportActivityDefinition)
 * description = "Example Activity Definition for a recommendation to generate a report"

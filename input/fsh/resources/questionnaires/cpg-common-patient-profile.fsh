@@ -1,6 +1,6 @@
 Instance: cpg-common-patient-profile
 InstanceOf: Questionnaire
-Usage: #example
+Usage: #definition
 Title: "CPG Common Questionnaire - Patient information"
 Description: "Questionnaire to gather patient infomration"
 * insert QuestionnaireMetadata(cpg-common-patient-profile)

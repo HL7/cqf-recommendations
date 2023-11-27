@@ -1,0 +1,1858 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "chf-ig",
+  "name": "CHFExampleImplementationGuide",
+  "title": "CHF Example Implementation Guide",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline",
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableguideline"
+    ]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGCongestiveHeartFailureExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/chf-ig</pre><div><p>Examples of CPG computable content representing a congestive heart failure pathway</p>\n</div></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "publishable"
+  }],
+  "url" : "http://hl7.org/fhir/uv/cpg/ImplementationGuide/chf-ig",
+  "version" : "1.0.0",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-11-14T17:14:04-05:00",
+  "publisher" : "HL7 International - Clinical Decision Support WG",
+  "contact" : [{
+    "name" : "HL7 International - Clinical Decision Support WG",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/dss/index.cfm"
+    }]
+  }],
+  "description" : "Examples of CPG computable content representing a congestive heart failure pathway",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "packageId" : "chf-ig",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "5.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_cpg",
+    "uri" : "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg",
+    "packageId" : "hl7.fhir.uv.cpg",
+    "version" : "dev"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2023+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-binary"
+      },
+      {
+        "url" : "value",
+        "valueString" : "./input/cql"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/uv/cpg/chf/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-bodyweight"
+      },
+      "name" : "CHF Body Weight",
+      "description" : "This profile defines how to represent body weight observations in FHIR using a standard LOINC code and UCUM units of measure (in kg).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-bodyweight-ad"
+      },
+      "name" : "CHF Body Weight Activity Defintion",
+      "description" : "Measure body weight",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-bodyweight-change"
+      },
+      "name" : "CHF Body Weight Change",
+      "description" : "This profile defines how to represent body weight change observations in FHIR using a CHF code and UCUM units of measure (in kg).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-bodyweight-change-ad"
+      },
+      "name" : "CHF Body Weight Change Activity Defintion",
+      "description" : "Record body weight change",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-bodyweight-change-pd"
+      },
+      "name" : "CHF Body Weight Change Recommendation",
+      "description" : "Measure body weight change daily",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-bodyweight-pd"
+      },
+      "name" : "CHF Body Weight Recommendation",
+      "description" : "Measure body weight daily",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-cardiology-consult"
+      },
+      "name" : "CHF Cardiology Consult",
+      "description" : "Documents a procedure as an activity within the context of a computable clinical practice guideline",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-cardiology-consult-request"
+      },
+      "name" : "CHF Cardiology Consult Request",
+      "description" : "Request for a cardiology consultation as part of a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-cardiology-consultation"
+      },
+      "name" : "CHF Cardiology Consultation Activity Defintion",
+      "description" : "Cardiology consultation as part of a congestive heart failure care pathway",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-cardiology-consultation-pd"
+      },
+      "name" : "CHF Cardiology Consultation Recommendation",
+      "description" : "Cardiology consultation within 24 hrs",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/chf-codes"
+      },
+      "name" : "CHF Codes",
+      "description" : "Codes used in the congestive heart failure pathway. Ideally these shouldn't exist, but where I couldn't find an appropriate code in a standard terminology, I defined codes here.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-creatinine"
+      },
+      "name" : "CHF Creatinine",
+      "description" : "This profile defines how to represent creatinine observations in FHIR using a LOINC code and UCUM units of measure (in mg/dL).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-creatinine-ad"
+      },
+      "name" : "CHF Creatinine Activity Defintion",
+      "description" : "Monitor Creatinine",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-creatinine-pd"
+      },
+      "name" : "CHF Creatinine Recommendation",
+      "description" : "Monitor creatinine",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-daily-management"
+      },
+      "name" : "CHF Daily Management Strategy",
+      "description" : "Daily management strategy as part of a care pathway for patients with admitting diagnosis of congestive heart failure",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-egfr"
+      },
+      "name" : "CHF eGFR",
+      "description" : "This profile defines how to represent eGFR in FHIR using a CHF code and UCUM units of measure (in mol/mm/m2).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-egfr-ad"
+      },
+      "name" : "CHF eGFR Activity Defintion",
+      "description" : "Measure eGFR",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-egfr-pd"
+      },
+      "name" : "CHF eGFR Recommendation",
+      "description" : "Monitor eGFR",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-hypervolemia"
+      },
+      "name" : "CHF Hypervolemia Strategy",
+      "description" : "Hypervolemia strategy as part of a care pathway for patients with admitting diagnosis of congestive heart failure",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-jvp"
+      },
+      "name" : "CHF Jugular Venous Pressure",
+      "description" : "This profile defines how to represent jugular venous pressure observations in FHIR using a CHF code and UCUM units of measure (in cmH2O).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-jvp-ad"
+      },
+      "name" : "CHF Jugular Venous Pressure Activity Defintion",
+      "description" : "Measure jugular venous pressure",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-jvp-pd"
+      },
+      "name" : "CHF Jugular Venous Pressure Recommendation",
+      "description" : "Measure jugular venous pressure",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-jvp-request"
+      },
+      "name" : "CHF Jugular Venous Pressure Request",
+      "description" : "Request to measure jugular venous pressure as part of a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-lasix-iv"
+      },
+      "name" : "CHF LASIX IV Activity Defintion",
+      "description" : "Activity definition to administer LASIX IV as part of a congestive heart failure pathway",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-lasix-iv-administration"
+      },
+      "name" : "CHF LASIX IV Administration",
+      "description" : "Documents the administration of LASIX IV as a pathway event within a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-lasix-iv-request"
+      },
+      "name" : "CHF LASIX IV Request",
+      "description" : "Request to administer LASIX IV as part of a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-lasix-po"
+      },
+      "name" : "CHF LASIX PO Activity Defintion",
+      "description" : "Activity definition to administer LASIX PO as part of a congestive heart failure pathway",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-lasix-po-administration"
+      },
+      "name" : "CHF LASIX PO Administration",
+      "description" : "Documents the administration of LASIX PO as a pathway event within a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-lasix-po-request"
+      },
+      "name" : "CHF LASIX PO Request",
+      "description" : "Request to administer LASIX PO as part of a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-lasix"
+      },
+      "name" : "CHF LASIX Recommendation",
+      "description" : "Administer LASIX IV, transition to PO as appropriate",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-net-io"
+      },
+      "name" : "CHF Net Intake/Output",
+      "description" : "This profile defines how to represent net intake/output observations in FHIR using a CHF code and UCUM units of measure (in L/day).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-net-io-ad"
+      },
+      "name" : "CHF Net IO Activity Defintion",
+      "description" : "Measure net intake/output",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-net-io-pd"
+      },
+      "name" : "CHF Net IO Recommendation",
+      "description" : "Measure net intake/output daily",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-o2-sat"
+      },
+      "name" : "CHF Oxygen Saturation",
+      "description" : "This profile defines how to represent oxygen saturation observations in FHIR using a standard LOINC code and UCUM units of measure.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-o2-sat-ad"
+      },
+      "name" : "CHF Oxygen Saturation Activity Defintion",
+      "description" : "Monitor Oxygen Saturation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-o2-sat-pd"
+      },
+      "name" : "CHF Oxygen Saturation Recommendation",
+      "description" : "Monitor oxygen saturation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-o2-sat-request"
+      },
+      "name" : "CHF Oxygen Saturation Request",
+      "description" : "Request to measure oxygen saturation as part of a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-potassium"
+      },
+      "name" : "CHF Potassium",
+      "description" : "This profile defines how to represent potassium observations in FHIR using a standard LOINC code and UCUM units of measure (in meq/L).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-potassium-ad"
+      },
+      "name" : "CHF Potassium Activity Defintion",
+      "description" : "Monitor Potassium",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-potassium-pd"
+      },
+      "name" : "CHF Potassium Recommendation",
+      "description" : "Monitor potassium",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-report-bodyweight"
+      },
+      "name" : "CHF Report Body Weight Activity Defintion",
+      "description" : "Record body weight metric",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-report-bodyweight-change"
+      },
+      "name" : "CHF Report Body Weight Change Activity Defintion",
+      "description" : "Record body weight change metric",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-report-urine-out"
+      },
+      "name" : "CHF Report Urine Out Activity Defintion",
+      "description" : "Record urine output metric",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chf-urine-out"
+      },
+      "name" : "CHF Urine Out",
+      "description" : "This profile defines how to represent urine output observations in FHIR using a LOINC code and UCUM units of measure (in L/day).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/chf-urine-out-ad"
+      },
+      "name" : "CHF Urine Out Activity Defintion",
+      "description" : "Measure urine output",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-urine-out-pd"
+      },
+      "name" : "CHF Urine Out Recommendation",
+      "description" : "Measure urine output daily",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/chf-bodyweight-change-measure"
+      },
+      "name" : "chf-bodyweight-change-measure",
+      "description" : "Body weight change metric as a feature of a congestive heart failure pathway",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/chf-bodyweight-measure"
+      },
+      "name" : "chf-bodyweight-measure",
+      "description" : "Body weight metric as a feature of a congestive heart failure pathway",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CareTeam"
+      }],
+      "reference" : {
+        "reference" : "CareTeam/chf-careteamdefinition"
+      },
+      "name" : "chf-careteamdefinition",
+      "description" : "CHF care team",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "GraphDefinition"
+      }],
+      "reference" : {
+        "reference" : "GraphDefinition/chf-caseplansummarydefinition"
+      },
+      "name" : "chf-caseplansummarydefinition",
+      "description" : "Definition of the case plan summary document for a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "GraphDefinition"
+      }],
+      "reference" : {
+        "reference" : "GraphDefinition/chf-casesummarydefinition"
+      },
+      "name" : "chf-casesummarydefinition",
+      "description" : "Definition of the case summary document for a congestive heart failure pathway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/chf-groupdefinition"
+      },
+      "name" : "chf-groupdefinition",
+      "description" : "CHF Group",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/chf-locationdefinition"
+      },
+      "name" : "chf-locationdefinition",
+      "description" : "CHF location",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/chf-practitionerroledefinition"
+      },
+      "name" : "chf-practitionerroledefinition",
+      "description" : "CHF practitioner role",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-bodyweight-change1"
+      },
+      "name" : "chf-scenario1-bodyweight-change1",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-bodyweight-change1-observation"
+      },
+      "name" : "chf-scenario1-bodyweight-change1-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-bodyweight-change2"
+      },
+      "name" : "chf-scenario1-bodyweight-change2",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-bodyweight-change2-observation"
+      },
+      "name" : "chf-scenario1-bodyweight-change2-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-bodyweight-change3"
+      },
+      "name" : "chf-scenario1-bodyweight-change3",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-bodyweight-change3-observation"
+      },
+      "name" : "chf-scenario1-bodyweight-change3-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight-change"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-bodyweight1"
+      },
+      "name" : "chf-scenario1-bodyweight1",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-bodyweight1-observation"
+      },
+      "name" : "chf-scenario1-bodyweight1-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-bodyweight2"
+      },
+      "name" : "chf-scenario1-bodyweight2",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-bodyweight2-observation"
+      },
+      "name" : "chf-scenario1-bodyweight2-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-bodyweight3"
+      },
+      "name" : "chf-scenario1-bodyweight3",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-bodyweight3-observation"
+      },
+      "name" : "chf-scenario1-bodyweight3-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-bodyweight4"
+      },
+      "name" : "chf-scenario1-bodyweight4",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-bodyweight4-observation"
+      },
+      "name" : "chf-scenario1-bodyweight4-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-bodyweight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/chf-scenario1-cardiology-consult"
+      },
+      "name" : "chf-scenario1-cardiology-consult",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-cardiology-consult"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/chf-scenario1-cardiology-consultation"
+      },
+      "name" : "chf-scenario1-cardiology-consultation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-cardiology-consult-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-cardiology-consultation-goal"
+      },
+      "name" : "chf-scenario1-cardiology-consultation-goal",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/chf-scenario1-careplan"
+      },
+      "name" : "chf-scenario1-careplan",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CareTeam"
+      }],
+      "reference" : {
+        "reference" : "CareTeam/chf-scenario1-careteam"
+      },
+      "name" : "chf-scenario1-careteam",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/chf-scenario1-caseplanprogressingnote"
+      },
+      "name" : "chf-scenario1-caseplanprogressingnote",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/chf-scenario1-caseplansummary"
+      },
+      "name" : "chf-scenario1-caseplansummary",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/chf-scenario1-casesummary"
+      },
+      "name" : "chf-scenario1-casesummary",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ClinicalImpression"
+      }],
+      "reference" : {
+        "reference" : "ClinicalImpression/chf-scenario1-clinicalimpression"
+      },
+      "name" : "chf-scenario1-clinicalimpression",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/chf-scenario1-condition"
+      },
+      "name" : "chf-scenario1-condition",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-creatinine"
+      },
+      "name" : "chf-scenario1-creatinine",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-creatinine1"
+      },
+      "name" : "chf-scenario1-creatinine1",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-creatinine"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RequestGroup"
+      }],
+      "reference" : {
+        "reference" : "RequestGroup/chf-scenario1-daily-management"
+      },
+      "name" : "chf-scenario1-daily-management",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-egfr"
+      },
+      "name" : "chf-scenario1-egfr",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-egfr1"
+      },
+      "name" : "chf-scenario1-egfr1",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-egfr"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/chf-scenario1-encounter"
+      },
+      "name" : "chf-scenario1-encounter",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EpisodeOfCare"
+      }],
+      "reference" : {
+        "reference" : "EpisodeOfCare/chf-scenario1-eoc"
+      },
+      "name" : "chf-scenario1-eoc",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/chf-scenario1-group"
+      },
+      "name" : "chf-scenario1-group",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RequestGroup"
+      }],
+      "reference" : {
+        "reference" : "RequestGroup/chf-scenario1-hypervolemia"
+      },
+      "name" : "chf-scenario1-hypervolemia",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/chf-scenario1-jvp"
+      },
+      "name" : "chf-scenario1-jvp",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-jvp-goal"
+      },
+      "name" : "chf-scenario1-jvp-goal",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-jvp1"
+      },
+      "name" : "chf-scenario1-jvp1",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-jvp2"
+      },
+      "name" : "chf-scenario1-jvp2",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-jvp3"
+      },
+      "name" : "chf-scenario1-jvp3",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-jvp4"
+      },
+      "name" : "chf-scenario1-jvp4",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-jvp5"
+      },
+      "name" : "chf-scenario1-jvp5",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-jvp"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/chf-scenario1-lasix-iv"
+      },
+      "name" : "chf-scenario1-lasix-iv",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-iv-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-lasix-iv-goal"
+      },
+      "name" : "chf-scenario1-lasix-iv-goal",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/chf-scenario1-lasix-po"
+      },
+      "name" : "chf-scenario1-lasix-po",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-po-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-lasix-po-goal"
+      },
+      "name" : "chf-scenario1-lasix-po-goal",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/chf-scenario1-lasix-po-mr"
+      },
+      "name" : "chf-scenario1-lasix-po-mr",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-po-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/chf-scenario1-location"
+      },
+      "name" : "chf-scenario1-location",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-net-io-goal"
+      },
+      "name" : "chf-scenario1-net-io-goal",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-net-io"
+      },
+      "name" : "chf-scenario1-net-io",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-net-io"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/chf-scenario1-o2-sat"
+      },
+      "name" : "chf-scenario1-o2-sat",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-o2-sat-goal"
+      },
+      "name" : "chf-scenario1-o2-sat-goal",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-o2sat1"
+      },
+      "name" : "chf-scenario1-o2sat1",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-o2sat2"
+      },
+      "name" : "chf-scenario1-o2sat2",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-o2-sat"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/chf-scenario1-organization"
+      },
+      "name" : "chf-scenario1-organization",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/chf-scenario1-patient"
+      },
+      "name" : "chf-scenario1-patient",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-potassium"
+      },
+      "name" : "chf-scenario1-potassium",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-potassium1"
+      },
+      "name" : "chf-scenario1-potassium1",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-potassium"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/chf-scenario1-practitioner"
+      },
+      "name" : "chf-scenario1-practitioner",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/chf-scenario1-practitionerrole"
+      },
+      "name" : "chf-scenario1-practitionerrole",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/chf-scenario1-relatedperson"
+      },
+      "name" : "chf-scenario1-relatedperson",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/chf-scenario1-stop-lasix-iv"
+      },
+      "name" : "chf-scenario1-stop-lasix-iv",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-lasix-iv-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-urine-out"
+      },
+      "name" : "chf-scenario1-urine-out",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MeasureReport"
+      }],
+      "reference" : {
+        "reference" : "MeasureReport/chf-scenario1-urineout3"
+      },
+      "name" : "chf-scenario1-urineout3",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/chf-scenario1-urineout3-observation"
+      },
+      "name" : "chf-scenario1-urineout3-observation",
+      "description" : "CHF Scenario One",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/chf-urine-out"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-weight"
+      },
+      "name" : "chf-scenario1-weight",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Goal"
+      }],
+      "reference" : {
+        "reference" : "Goal/chf-scenario1-weight-change"
+      },
+      "name" : "chf-scenario1-weight-change",
+      "description" : "CHF Scenario One",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Measure"
+      }],
+      "reference" : {
+        "reference" : "Measure/chf-urine-out-measure"
+      },
+      "name" : "chf-urine-out-measure",
+      "description" : "Urine output metric as a feature of a congestive heart failure pathway",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/chf-pathway"
+      },
+      "name" : "Congestive Heart Failure Care Pathway",
+      "description" : "Treatment and management care pathway for patients with admitting diagnosis of congestive heart failure",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Library"
+      }],
+      "reference" : {
+        "reference" : "Library/CHF"
+      },
+      "name" : "Congestive Heart Failure Logic",
+      "description" : "Logic for an example congestive heart failure pathway",
+      "exampleBoolean" : true
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

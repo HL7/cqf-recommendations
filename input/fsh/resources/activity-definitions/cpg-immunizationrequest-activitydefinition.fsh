@@ -1,6 +1,6 @@
 Instance: cpg-immunizationrequest-activitydefinition
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "CPG ImmunizationRequest ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-immunizationrequest-activitydefinition, CPGImmunizationRequestActivityDefinition)
 * description = "Example Activity Definition for a recommendation to provide an immunization"

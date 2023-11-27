@@ -194,7 +194,7 @@ The following index lists all the case-specific resources in this example:
 |Goal|[chf-scenario1-jvp](Goal-chf-scenario1-jvp-goal.html)|
 |Goal|[chf-scenario1-lasix-iv](Goal-chf-scenario1-lasix-iv-goal.html)|
 |Goal|[chf-scenario1-lasix-po](Goal-chf-scenario1-lasix-po-goal.html)|
-|Goal|[chf-scenario1-net-io](Goal-chf-scenario1-net-io.html)|
+|Goal|[chf-scenario1-net-io](Goal-chf-scenario1-net-io-goal.html)|
 |Goal|[chf-scenario1-o2-sat](Goal-chf-scenario1-o2-sat-goal.html)|
 |Goal|[chf-scenario1-potassium](Goal-chf-scenario1-potassium.html)|
 |Goal|[chf-scenario1-urine-out](Goal-chf-scenario1-urine-out.html)|
@@ -228,7 +228,7 @@ The following index lists all the case-specific resources in this example:
 |Observation|[chf-scenario1-jvp3](Observation-chf-scenario1-jvp3.html)|
 |Observation|[chf-scenario1-jvp4](Observation-chf-scenario1-jvp4.html)|
 |Observation|[chf-scenario1-jvp5](Observation-chf-scenario1-jvp5.html)|
-|Observation|[chf-scenario1-netio3](Observation-chf-scenario1-netio3.html)|
+|Observation|[chf-scenario1-netio3](Observation-chf-scenario1-net-io.html)|
 |Observation|[chf-scenario1-o2sat1](Observation-chf-scenario1-o2sat1.html)|
 |Observation|[chf-scenario1-o2sat2](Observation-chf-scenario1-o2sat2.html)|
 |Observation|[chf-scenario1-potassium1](Observation-chf-scenario1-potassium1.html)|
@@ -271,7 +271,7 @@ The following index lists all the artifacts (case-independent) in this example:
 |GraphDefinition|[chf-caseplansummarydefinition](GraphDefinition-chf-caseplansummarydefinition.html)|
 |GraphDefinition|[chf-casesummarydefinition](GraphDefinition-chf-casesummarydefinition.html)|
 |Group|[chf-groupdefinition](Group-chf-groupdefinition.html)|
-|ImplementationGuide|[chf](ImplementationGuide-chf.html)|
+|ImplementationGuide|[chf](ImplementationGuide-chf-ig.html)|
 |Library|[CHF](Library-CHF.html)|
 |Location|[chf-locationdefinition](Location-chf-locationdefinition.html)|
 |Measure|[chf-bodyweight-change](Measure-chf-bodyweight-change-measure.html)|

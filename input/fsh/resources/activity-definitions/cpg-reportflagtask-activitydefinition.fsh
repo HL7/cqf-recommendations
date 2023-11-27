@@ -1,6 +1,6 @@
 Instance: cpg-reportflagtask-activitydefinition
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "CPG Report Flag ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-reportflagtask-activitydefinition, CPGReportFlagTaskActivityDefinition)
 * description = "Example Activity Definition for a recommendation to report a flag"

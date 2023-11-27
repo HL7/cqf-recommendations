@@ -1,4 +1,3 @@
-
 Alias: $action-type = http://terminology.hl7.org/CodeSystem/action-type
 Alias: $codesystem-author = http://hl7.org/fhir/StructureDefinition/codesystem-author
 Alias: $codesystem-concept-comments = http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments
@@ -70,6 +69,7 @@ Alias: $cqf-expression = http://hl7.org/fhir/StructureDefinition/cqf-expression
 Alias: $cqf-qualityOfEvidence = http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence
 Alias: $cqf-strengthOfRecommendation = http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation
 Alias: $definition-topic = http://hl7.org/fhir/ValueSet/definition-topic
+Alias: $definition-topic-cs = http://terminology.hl7.org/CodeSystem/definition-topic
 Alias: $episodeofcare-type = http://hl7.org/fhir/ValueSet/episodeofcare-type
 Alias: $event-basedOn = http://hl7.org/fhir/StructureDefinition/event-basedOn
 Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
@@ -125,3 +125,45 @@ Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-orderableDrugForm-cs = http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm
 Alias: $cpg-common-persona-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs
 Alias: $patient-match = http://hl7.org/fhir/OperationDefinition/Patient-match
+
+Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
+Alias: $practitioner-role = http://terminology.hl7.org/CodeSystem/practitioner-role
+Alias: $sct = http://snomed.info/sct
+Alias: $dose-rate-type = http://terminology.hl7.org/CodeSystem/dose-rate-type
+Alias: $library-type = http://terminology.hl7.org/CodeSystem/library-type
+Alias: $loinc = http://loinc.org
+Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $measure-scoring = http://terminology.hl7.org/CodeSystem/measure-scoring
+Alias: $measure-improvement-notation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation
+Alias: $measure-population = http://terminology.hl7.org/CodeSystem/measure-population
+Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
+Alias: $cpg-common-process-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs
+Alias: $cpg-common-persona-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-persona-cs
+Alias: $unitsofmeasure = http://unitsofmeasure.org
+Alias: $chf-implementationguide = http://hl7.org/fhir/uv/cpg/ImplementationGuide/chf-ig
+
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
+Alias: $goal-achievement = http://terminology.hl7.org/CodeSystem/goal-achievement
+Alias: $chf-codes = http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+
+Alias: $ckd-clinical-overview-1 = http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75E10232E05352E3610A5325
+Alias: $ckd-clinical-overview-11 = http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325
+Alias: $recommendation-strength = http://terminology.hl7.org/CodeSystem/recommendation-strength
+Alias: $cpg-recommendation-direction-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction-cs
+Alias: $va-clinical-practice-guidelines = http://www.healthquality.va.gov
+
+Alias: $anc-reason-for-visit-image = http://example.org/images/reason-for-visit.png
+Alias: $anc-reason-for-visit-routine-image = http://example.org/images/reason-for-visit-routine.png
+Alias: $anc-reason-for-visit-specific-complaint-image = http://example.org/images/reason-for-visit-specific-complaint.png
+Alias: $anc-reason-for-visit-first-image = http://example.org/images/reason-for-visit-first.png
+Alias: $anc-reason-for-visit-follow-up-image = http://example.org/images/reason-for-visit-follow-up.png
+Alias: $anc-reason-for-visit-include-family-member-image = http://example.org/images/reason-for-visit-include-family-member.png
+Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
+Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
+Alias: $sct = http://snomed.info/sct

@@ -1,6 +1,6 @@
 Instance: cpg-communicationrequest-activitydefinition
 InstanceOf: ActivityDefinition
-Usage: #example
+Usage: #definition
 Title: "CPG CommunicationRequest ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-communicationrequest-activitydefinition,CPGCommunicationRequestActivityDefinition)
 * description = "Example Activity Definition for a recommendation to send a message"

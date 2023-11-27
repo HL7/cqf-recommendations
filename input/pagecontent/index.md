@@ -193,15 +193,11 @@ It is important to note that this effort is a concerted attempt to build on, lea
 |David Winters|The MITRE Corporation|Contributor|
 {:.grid}
 
-### Disclaimers
-
-**RxNorm**: This product uses publicly available data courtesy of the U.S. National Library of Medicine (NLM), National Institutes of Health, Department of Health and Human Services; NLM is not responsible for the product and does not endorse or recommend this or any other product.
-
-Nelson SJ, Zeng K, Kilbourne J, Powell T, Moore R. Normalized names for clinical drugs: RxNorm at 6 years.
-J Am Med Inform Assoc. 2011 Jul-Aug;18(4)441-8. doi: 10.1136/amiajnl-2011-000116.
-Epub 2011 Apr 21. PubMed PMID: 21515544; PubMed Central PMCID: PMC3128404.
-[Full text](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3128404/)
-
-**UCUM**: This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at [http://unitsofmeasure.org](http://unitsofmeasure.org). The current complete UCUM table, UCUM Specification are available for download at [http://unitsofmeasure.org](http://unitsofmeasure.org). The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.
-
-THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED "AS IS." ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+### Cross Version Analysis
+{% include cross-version-analysis.xhtml %}
+### Dependency Table
+{% include dependency-table.xhtml %}
+### Globals Table
+{% include globals-table.xhtml %}
+### IP Statements
+{% include ip-statements.xhtml %}
