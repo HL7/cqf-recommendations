@@ -19,7 +19,7 @@ Description: "Proposal to enroll the patient in a strategy or pathway as part of
   * type only CodeableConcept
   * type = $cpg-activity-type-cs#enrollment
   * type MS
-  * value[x] only Canonical(CPGShareablePlanDefinition)
+  * value[x] only Canonical(CPGComputablePlanDefinition)
   * value[x] MS
 * output ..* MS
   * ^slicing.discriminator.type = #value

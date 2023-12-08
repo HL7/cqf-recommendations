@@ -1,5 +1,5 @@
 Profile: CPGComputableGraphDefinition
-Parent: CPGShareableGraphDefinition
+Parent: GraphDefinition
 Id: cpg-computablegraphdefinition
 Title: "CPG Computable Graph Definition"
 Description: "Profile of GraphDefinition to establish computable expectations for the use of the GraphDefinition resource"

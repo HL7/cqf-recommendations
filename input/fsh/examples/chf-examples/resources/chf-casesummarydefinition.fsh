@@ -3,13 +3,13 @@ InstanceOf: cpg-casesummarydefinition
 Usage: #example
 * insert GraphDefinitionMetadata(chf-casesummarydefinition)
 * extension[+]
-  * url = Canonical(cpg-identifier)
+  * url = Canonical(artifact-identifier)
   * valueIdentifier
     * use = #official
     * system = $chf-implementationguide
     * value = "CHFCaseSummaryDefinition"
 * extension[+]
-  * url = Canonical(cpg-title)
+  * url = Canonical(artifact-title)
   * valueString = "CHF Case Summary Definition"
 * name = "CHFCaseSummaryDefinition"
 * description = "Definition of the case summary document for a congestive heart failure pathway"

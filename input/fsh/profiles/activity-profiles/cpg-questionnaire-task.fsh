@@ -18,9 +18,9 @@ Description: "Recommendation to collect specific information using a particular 
   * type only CodeableConcept
   * type = $cpg-activity-type-cs#collect-information
   * type MS
-  * value[x] only Canonical(CPGShareableQuestionnaire)
+  * value[x] only Canonical(CPGComputableQuestionnaire)
   * value[x] MS
-    * ^comment = "The canonical SHALL be a reference to at least a CPGShareableQuestionnaire."
+    * ^comment = "The canonical SHALL be a reference to at least a CPGComputableQuestionnaire."
 * output ..* MS
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "type"

@@ -1,5 +1,5 @@
 Instance: activity-example-collectinformation-questionnaire
-InstanceOf: CPGShareableQuestionnaire
+InstanceOf: CPGComputableQuestionnaire
 Usage: #example
 * title = "Activity Example Collect Information Questionnaire"
 * insert KnowledgeArtifactQuestionnaireMetadata(activity-example-collectinformation-questionnaire)

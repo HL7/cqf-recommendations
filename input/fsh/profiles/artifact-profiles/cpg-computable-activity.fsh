@@ -1,5 +1,5 @@
 Profile: CPGComputableActivityDefinition
-Parent: CPGShareableActivityDefinition
+Parent: ActivityDefinition
 Id: cpg-computableactivity
 Title: "CPG Computable Activity Definition"
 Description: "Defines the minimum expectations and behavior for a computable activity definition for use with content conforming to the CPG implementation guide"

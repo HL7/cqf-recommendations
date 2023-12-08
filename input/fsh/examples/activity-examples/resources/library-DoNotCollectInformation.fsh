@@ -1,11 +1,7 @@
 Instance: donotcollectinformation-library
-InstanceOf: CPGExecutableLibrary
+InstanceOf: Library
 Usage: #example
 * title = "Do Not Collect Information Library"
-* insert Profile(cpg-shareablelibrary)
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-publishablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(donotcollectinformation-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation not to collect information"

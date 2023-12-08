@@ -2,7 +2,7 @@ FHIR profiles are a key aspect of supporting interoperable computable content, p
 
 This page provides overview documentation for the following categories of profiles and documentation:
 
-*   **Artifact Profiles**: Profiles for shareable knowledge artifacts
+*   **Artifact Profiles**: Profiles for computable knowledge artifacts
 *   **Domain Profiles**: Domain profiles such as Case/Plan and Metric
 *   **Activity Profiles**: Activity profiles such as MedicationRequest
 *   **Content Profiles**: Documentation on using profiles with CPG content
@@ -15,25 +15,31 @@ For indexes of profiles and extensions defined in this implementation guide, see
 
 ### Artifact profiles
 
-For definitional artifacts, this implementation guide defines profile classes to represent knowledge capabilities for shareable, computable, publishable, and executable knowledge artifacts. All knowledge artifacts must be at least shareable, and where appropriate for the target environment, artifacts should declare the capabilities they support using the \[cpg-knowledgeCapability\](StructureDefinition-cpg-knowledgeCapability.html) extension, as well as the knowledge representation level of the artifact using the \[cpg-knowledgeRepresentationLevel\](StructureDefinition-cpg-knowledgeRepresentationLevel) extension, as defined in the shareable profiles.
-
-*   **Shareable**: Shareable profiles set the minimum expectations for exchanging an artifact, including the URL, version, name, and publisher.
-*   **Computable**: Computable profiles deal with authoring and design-time considerations, describing the minimum expectations for exchanging a machine-readable representation of an artifact. At a minimum, a computable artifact is one that does not have _only_ human-readable content.
-*   **Publishable**: Publishable profiles describe the expectations for publication and distribution of an artifact, typically as part of an artifact repository.
-*   **Executable**: Executable profiles deal with run-time behavior and implementation considerations. For example, an executable library may contain compiled content that can be directly executed by an engine. At a minimum, an executable artifact is guaranteed to have all the elements required to support at least one operation appropriate to the type of artifact.
-
-These capabilities are introduced to support separation of concerns along the spectrum from authoring to distribution to consumption, as illustrated by the following diagram:
-
-![Knowledge Capabilities](knowledge-capabilities.png)
-
-A given artifact may provide all knowledge capabilities (Shareable plus Computable, Publishable, and Executable), or it may be focused on a particular capability. For example, a ValueSet may be only Shareable and Executable because it is intended for use in environments without access to a terminology service capable of expanding the Computable value set.
-
-Note that explicit profiles for capabilities are only defined when there are specific elements of the artifact involved in supporting that capability. For example, there is no executable ActivityDefinition profile, but that doesn't mean that ActivityDefinition artifacts cannot be executable, only that there are no additional conformance expectations for executable ActivityDefinitions specified by this implementation guide.
+For definitional artifacts, this implementation guide builds on the capability profiles defined in the Canonical Resource Management Infrastructure (CRMI) Implementation Guide, defining profiles for computable knowledge artifacts used in the representation of clinical guidelines. For background on the CRMI capability profiles, see the [Profiles](http://build.fhir.org/ig/HL7/crmi-ig/profiles.html) discussion in the CRMI IG.
 
 {% include profile-tables/artifact-profiles.html %}
 
-\* - Conformance expectations covered by the Computable profile<a id="exec"></a><br>
-\*\* - Conformance expectations covered by the Shareable profile<a id="comp"></a>
+In addition, content claiming conformance to this implementation guide SHALL use the Shareable profile and SHOULD use the Publishable profile for the following artifact types:
+
+* ActivityDefinition
+* CapabilityStatement
+* CodeSystem
+* ConceptMap
+* GraphDefinition
+* ImplementationGuide
+* Library
+* Measure
+* Medication
+* MedicationKnowledge
+* NamingSystem
+* OperationDefinition
+* PlanDefinition
+* Questionnaire
+* SearchParameter
+* StructureDefinition
+* StructureMap
+* TerminologyCapabilities
+* ValueSet
 
 ### Domain Profiles
 
@@ -96,6 +102,6 @@ Note that for logic expressed in CQL, this information can be inferred by static
 
 #### Implementation Considerations
 
-Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG **SHOULD** use International Patient Summary.
+Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG **SHOULD** use [International Patient Summary](http://hl7.org/fhir/uv/ips).
 
 In general, implementation of any given computable content is based on the intersection of the interoperability and computability profiles. As such, content authors must take care not to define computability profiles that conflict with interoperability profiles in their intended target scope.

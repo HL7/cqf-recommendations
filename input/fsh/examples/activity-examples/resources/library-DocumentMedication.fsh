@@ -1,11 +1,7 @@
 Instance: documentmedication-library
-InstanceOf: CPGExecutableLibrary
+InstanceOf: Library
 Usage: #example
 * title = "Document Medication Library"
-* insert Profile(cpg-shareablelibrary)
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-publishablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(documentmedication-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to document a medication"

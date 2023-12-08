@@ -18,7 +18,7 @@ Description: "Proposal to generate a metric, measure, or case report as part of 
   * type only CodeableConcept
   * type = $cpg-activity-type-cs#generate-report
   * type MS
-  * value[x] only Canonical(shareablemeasure or CPGShareableGraphDefinition or CPGShareableStructureDefinition)
+  * value[x] only Canonical(CPGComputableMetric or CPGComputableGraphDefinition or CPGCaseFeatureDefinition)
   * value[x] MS
 * output ..* MS
   * ^slicing.discriminator.type = #value

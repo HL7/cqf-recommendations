@@ -1,11 +1,7 @@
 Instance: ordermedication-library
-InstanceOf: CPGExecutableLibrary
+InstanceOf: Library
 Usage: #example
 * title = "Order Medication Library"
-* insert Profile(cpg-shareablelibrary)
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-publishablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(ordermedication-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to order a medication"

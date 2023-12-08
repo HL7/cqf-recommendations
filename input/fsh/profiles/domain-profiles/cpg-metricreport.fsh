@@ -11,7 +11,7 @@ Description: "Records a contextualized metric as calculated within the context o
 * identifier MS
 * status MS
 * type MS
-* measure only Canonical(CPGShareableMetric)
+* measure only Canonical(CPGComputableMetric)
 * measure MS
   * ^short = "Source"
   * ^definition = "A link back to the definition that ultimately produced this MeasureReport. This is typically a Plan or Activity Definition."
