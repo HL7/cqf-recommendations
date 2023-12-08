@@ -17,30 +17,26 @@ RuleSet: CPGExpressionExtensions
 * ^extension[=].valueExpression.reference = Canonical(CHF)
 
 RuleSet: CaseFeatureMetadata(id)
-* ^meta.profile[+] = Canonical(cpg-shareablestructuredef)
 * ^meta.profile[+] = Canonical(cpg-casefeaturedefinition)
-* ^meta.profile[+] = Canonical(cpg-publishablecasefeature)
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = Canonical(cpg-knowledgeRepresentationLevel)
+* ^extension[+].url = Canonical(cqf-knowledgeRepresentationLevel)
 * ^extension[=].valueCode = #structured
 * ^experimental = true
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"
 
 RuleSet: CHFCodeSystemMetadata(id)
-* ^meta.profile[+] = Canonical(cpg-shareablecodesystem)
-* ^meta.profile[+] = Canonical(cpg-publishablecodesystem)
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = Canonical(cpg-knowledgeCapability)
+* ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = Canonical(cpg-knowledgeRepresentationLevel)
+* ^extension[+].url = Canonical(cqf-knowledgeRepresentationLevel)
 * ^extension[=].valueCode = #structured
 * ^experimental = true
 * ^caseSensitive = true
@@ -49,16 +45,16 @@ RuleSet: CHFCodeSystemMetadata(id)
 
 RuleSet: CHFActivityDefinitionMetadata(id)
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"
 * experimental = true
@@ -68,16 +64,16 @@ RuleSet: CHFActivityDefinitionMetadata(id)
 
 RuleSet: CHFLibraryMetaData(id)
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/Library/{id}"
 * experimental = true
@@ -87,16 +83,16 @@ RuleSet: CHFLibraryMetaData(id)
 
 RuleSet: CHFMeasureMetadata(id)
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/Measure/{id}"
 * experimental = true
@@ -106,16 +102,16 @@ RuleSet: CHFMeasureMetadata(id)
 
 RuleSet: CHFPlanDefinitionMetadata(id)
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
 * experimental = true
@@ -135,47 +131,45 @@ RuleSet: PlanDefinitionEnabledExtension
 
 RuleSet: GraphDefinitionMetadata(id)
 * meta
-  * profile[+] = Canonical(cpg-shareablegraphdefinition)
-  * profile[+] = Canonical(cpg-publishablegraphdefinition)
   * profile[+] = Canonical(cpg-computablegraphdefinition)
   * profile[+] = Canonical(cpg-caseplansummarydefinition)
 * url = "http://hl7.org/fhir/uv/cpg/GraphDefinition/{id}"
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #shareable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #computable
 * extension[+]
-  * url = Canonical(cpg-knowledgeCapability)
+  * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #publishable
 * extension[+]
-  * url = Canonical(cpg-knowledgeRepresentationLevel)
+  * url = Canonical(cqf-knowledgeRepresentationLevel)
   * valueCode = #structured
 * extension[+]
   * url = Canonical(cpg-summaryDefinitionFor)
   * valueCanonical = Canonical(chf-pathway)
 * extension[+]
-  * url = Canonical(cpg-topic)
+  * url = Canonical(artifact-topic)
   * valueCodeableConcept = $sct#42343007 "Congestive heart failure (disorder)"
     * text = "Congestive heart failure"
 * extension[+]
-  * url = Canonical(cpg-author)
+  * url = Canonical(artifact-author)
   * valueContactDetail.name = "Matthew Burton, MD"
 * extension[+]
-  * url = Canonical(cpg-editor)
+  * url = Canonical(artifact-editor)
   * valueContactDetail.name = "Bryn Rhodes"
 * extension[+]
-  * url = Canonical(cpg-reviewer)
+  * url = Canonical(artifact-reviewer)
   * valueContactDetail.name = "Davide Sottara"
 * extension[+]
-  * url = Canonical(cpg-endorser)
+  * url = Canonical(artifact-endorser)
   * valueContactDetail.name = "Example Quality Assurance Organization"
 * extension[+]
-  * url = Canonical(cpg-copyright)
+  * url = Canonical(artifact-copyright)
   * valueMarkdown = "Copyright (c) 2019+ HL7 International"
 * extension[+]
-  * url = Canonical(cpg-relatedArtifact)
+  * url = Canonical(artifact-relatedArtifact)
   * valueRelatedArtifact
     * type = #citation
     * citation = "Representation primitives, process models and patient data in computer-interpretable clinical practice guidelines: A literature review of guideline representation models. Dongwen Wang, Mor Peleg, Samson W Tu, Aziz A Boxwala, Robert A Greenes, Vimla L Patel, Edward H Shortliffe. International Journal of Medical Informatics, Volume 68, Issues 1–3, 2002, Pages 59-70, ISSN 1386-5056, https://doi.org/10.1016/S1386-5056(02)00065-5."

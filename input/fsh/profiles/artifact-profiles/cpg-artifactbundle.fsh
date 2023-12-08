@@ -30,7 +30,7 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[activityDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableActivityDefinition
+  * resource only CPGComputableActivityDefinition
 * entry[careTeamDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
@@ -38,11 +38,11 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[codeSystem]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableCodeSystem
+  * resource only CodeSystem
 * entry[graphDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableGraphDefinition
+  * resource only CPGComputableGraphDefinition
 * entry[groupDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
@@ -50,11 +50,11 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[implementationGuide]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableImplementationGuide
+  * resource only CPGComputableGuideline
 * entry[library]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableLibrary
+  * resource only Library
 * entry[locationDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
@@ -62,11 +62,11 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[measure]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableMetric
+  * resource only CPGComputableMetric
 * entry[planDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareablePlanDefinition
+  * resource only CPGComputablePlanDefinition
 * entry[practitionerRoleDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
@@ -74,15 +74,15 @@ Description: "Defines the minimum expectations for an artifact bundle used to pa
 * entry[questionnaire]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableQuestionnaire
+  * resource only CPGComputableQuestionnaire
 * entry[structureDefinition]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableStructureDefinition
+  * resource only CPGCaseFeatureDefinition
 * entry[valueSet]
   * ^short = "The packaged artifact"
   * resource 1..1 MS
-  * resource only CPGShareableValueSet
+  * resource only ValueSet
 * entry[testCase]
   * ^short = "The packaged artifact"
   * resource 1..1 MS

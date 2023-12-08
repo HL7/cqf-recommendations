@@ -1,11 +1,7 @@
 Instance: collectinformation-library
-InstanceOf: CPGExecutableLibrary
+InstanceOf: Library
 Usage: #example
 * title = "Collect Information Library"
-* insert Profile(cpg-shareablelibrary)
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-publishablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(collectinformation-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to collect information"

@@ -1,11 +1,11 @@
 RuleSet: CodeSystemMetadata(id-prefix)
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = $cpg-knowledgeRepresentationLevel
+* ^extension[+].url = $cqf-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/{id-prefix}-cs"
 * ^experimental = false
@@ -22,32 +22,28 @@ RuleSet: CodeSystemDates(approvalDate, effectiveDate, lastReviewDate )
 * ^extension[=].valueDate = {lastReviewDate}
 
 RuleSet: ValueSetMetadata(id)
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = $cpg-knowledgeRepresentationLevel
+* ^extension[+].url = $cqf-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
 * ^experimental = false
 
 RuleSet: ExampleValueSetMetadata(id)
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #shareable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #computable
-* ^extension[+].url = $cpg-knowledgeCapability
+* ^extension[+].url = $cqf-knowledgeCapability
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = $cpg-knowledgeRepresentationLevel
+* ^extension[+].url = $cqf-knowledgeRepresentationLevel
 * ^extension[=].valueCode = #structured
 * ^url = "http://hl7.org/fhir/uv/cpg/ValueSet/{id}"
 * ^experimental = true
-* ^meta.profile[+] = Canonical(cpg-shareablevalueset)
-* ^meta.profile[+] = Canonical(cpg-computablevalueset)
-* ^meta.profile[+]  = Canonical(cpg-publishablevalueset)
-* ^meta.profile[+] = Canonical(cpg-executablevalueset)
 
 RuleSet: StructureDefinitionMetadata(id)
 * ^url = "http://hl7.org/fhir/uv/cpg/StructureDefinition/{id}"

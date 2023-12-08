@@ -1,5 +1,5 @@
 Profile: CPGComputablePlanDefinition
-Parent: CPGShareablePlanDefinition
+Parent: PlanDefinition
 Id: cpg-computableplandefinition
 Title: "CPG Computable Plan Definition"
 Description: "Defines the minimum expectations and behavior for a computable plan definition"

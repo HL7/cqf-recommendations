@@ -1,11 +1,7 @@
 Instance: orderservice-library
-InstanceOf: CPGExecutableLibrary
+InstanceOf: Library
 Usage: #example
 * title = "Order Service Library"
-* insert Profile(cpg-shareablelibrary)
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-publishablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(orderservice-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to order a service"

@@ -19,7 +19,6 @@ Description: "Example of a bundle for administering a medication"
 Instance: Inline-Instance-for-activity-example-administermedication-1
 InstanceOf: Library
 Usage: #inline
-* insert Profile(cpg-shareablelibrary)
 * insert Profile(cpg-assetcollection)
 * insert KnowledgeArtifactMetadata(activity-example-administermedication-1, Library)
 * insert RelatedFHIRLibraries
@@ -47,9 +46,6 @@ Usage: #inline
 Instance: AdministerMedication
 InstanceOf: Library
 Usage: #inline
-* insert Profile(cpg-shareablelibrary)
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(AdministerMedication, Library)
 * insert RelatedFHIRLibraries
 * name = "AdministerMedication"

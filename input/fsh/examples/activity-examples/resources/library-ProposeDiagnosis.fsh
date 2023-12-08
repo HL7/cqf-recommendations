@@ -1,11 +1,7 @@
 Instance: proposediagnosis-library
-InstanceOf: CPGExecutableLibrary
+InstanceOf: Library
 Usage: #example
 * title = "Propose Diagnosis Library"
-* insert Profile(cpg-shareablelibrary)
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-publishablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert KnowledgeArtifactMetadata(proposediagnosis-library, Library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to propose a diagnosis"

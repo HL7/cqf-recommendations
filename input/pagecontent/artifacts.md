@@ -59,7 +59,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
     A knowledge representation level, narrative, semi-structured, structured, and executable
 
-
 ### Extension Index {#extension-index}
 
 {% include list-extensions.xhtml %}
@@ -163,10 +162,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
     Profile of ImplementationGuide to describe a computable Clinical Practice Guideline
 
-*   [CPGComputableLibrary](StructureDefinition-cpg-computablelibrary.html)
-
-    The computable library profile sets the minimum expectations for a computable CQL library
-
 *   [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html)
 
     Defines the minimum expectations and behavior for a computable metric for use with content conforming to the CPG implementation guide
@@ -174,10 +169,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPGComputablePlanDefinition](StructureDefinition-cpg-computableplandefinition.html)
 
     Defines the minimum expectations and behavior for a computable plan definition
-
-*   [CPGComputableValueSet](StructureDefinition-cpg-computablevalueset.html)
-
-    Defines a computable value set as one that SHALL have an expression-based definition (i.e. a value set defined intensionally using expressions of the code systems involved) and MAY have an expansion included. The expression-based definition SHALL be represented in only one of three ways; using the compose element, using the expression extension, or using the rules-text extension to provide a step-by-step process for expanding the value set definition
 
 *   [CPGCondition](StructureDefinition-cpg-condition.html)
 
@@ -214,14 +205,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPGEnrollmentTask](StructureDefinition-cpg-enrollmenttask.html)
 
     Proposal to enroll the patient in a strategy or pathway as part of a computable clinical practice guideline
-
-*   [CPGExecutableLibrary](StructureDefinition-cpg-executablelibrary.html)
-
-    This profile sets the minimum expectations for an executable CQL library. Specifically, the profile requires that the library contain one of ELM XML or JSON content, the compiled representation of the CQL logic.
-
-*   [CPGExecutableValueSet](StructureDefinition-cpg-executablevalueset.html)
-
-    Defines an executable value set as one that SHALL have an expansion included, as well as a usage warning indicating the expansion is a point-in-time snapshot and must be maintained over time for production usage.
 
 *   [CPGFlag](StructureDefinition-cpg-flag.html)
 
@@ -335,46 +318,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
     Recommendation to propose a specific diagnosis as part of the delivery of a computable clinical practice guideline
 
-*   [CPGPublishableActivityDefinition](StructureDefinition-cpg-publishableactivity.html)
-
-    Defines the minimum expectations for a publishable activity definition
-
-*   [CPGPublishableCaseFeatureDefinition](StructureDefinition-cpg-publishablecasefeature.html)
-
-    Profile of StructureDefinition to represent the minimum expectations for a publishable case feature of a clinical practice guideline
-
-*   [CPGPublishableCodeSystem](StructureDefinition-cpg-publishablecodesystem.html)
-
-    Defines the expectations for publishable code systems used in computable content
-
-*   [CPGPublishableGraphDefinition](StructureDefinition-cpg-publishablegraphdefinition.html)
-
-    Profile of GraphDefinition to describe the minimum expectations for a publishable Graph Definition
-
-*   [CPGPublishableGuideline](StructureDefinition-cpg-publishableguideline.html)
-
-    Profile of ImplementationGuide to describe the minimum expectations for a publishable Clinical Practice Guideline
-
-*   [CPGPublishableLibrary](StructureDefinition-cpg-publishablelibrary.html)
-
-    The publishable library defines the must support elements that are important for implementers to use and understand a library
-
-*   [CPGPublishableMetric](StructureDefinition-cpg-publishablemetric.html)
-
-    Defines the minimum expectations for a publishable metric for use with computable content
-
-*   [CPGPublishablePlanDefinition](StructureDefinition-cpg-publishableplandefinition.html)
-
-    Profile of PlanDefinition that defines the minimum expectations for a publishable plan definition
-
-*   [CPGPublishableQuestionnaire](StructureDefinition-cpg-publishablequestionnaire.html)
-
-    Profile of Questionnaire to represent the minimum expectations for a publishable questionnaire used in a clinical practice guideline
-
-*   [CPGPublishableValueSet](StructureDefinition-cpg-publishablevalueset.html)
-
-    Defines the expectations for publishable value sets used in computable content.
-
 *   [CPGQuestionnaireResponse](StructureDefinition-cpg-questionnaireresponse.html)
 
     The response to a particular questionnaire as an activity within the context of a computable clinical practice guideline
@@ -422,46 +365,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPGServiceRequestActivity](StructureDefinition-cpg-servicerequestactivity.html)
 
     The definition of a recommendation for a particular procedure or referral to a specialist or instructions for self-care such as smoking cessation counseling or exercise
-
-*   [CPGShareableActivityDefinition](StructureDefinition-cpg-shareableactivitydefinition.html)
-
-    Defines the minimum expectations for a shareable activity definition for use with computable guideline content. This profile derives from the ShareableActivityDefinition profile defined in the base FHIR specification, and adds support for declaring knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareableCodeSystem](StructureDefinition-cpg-shareablecodesystem.html)
-
-    Defines the minimum expectations for a shareable code systems described for use with computable content. This profile derives from the ShareableCodeSystem profile defined in the base FHIR specification, and adds support declaring knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareableGraphDefinition](StructureDefinition-cpg-shareablegraphdefinition.html)
-
-    Profile of GraphDefinition to establish minimum expectations for sharing an GraphDefinition resource, including URL, version, and name. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareableImplementationGuide](StructureDefinition-cpg-shareableig.html)
-
-    Profile of ImplementationGuide to establish minimum expectations for sharing an ImplementationGuide resource in support of computable content, including URL, version, and name. The profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareableLibrary](StructureDefinition-cpg-shareablelibrary.html)
-
-    Defines the minimum expectations for a shareable library for use with computable content. This profile derives from the ShareableLibrary profile defined in the base FHIR specification, and adds support for declaring knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareableMetric](StructureDefinition-cpg-shareablemetric.html)
-
-    Defines the minimum expectations for a shareable metric definition described for use with computable content. This profile derives from the ShareableMeasure profile defined in the base FHIR specification, and adds support declaring knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareablePlanDefinition](StructureDefinition-cpg-shareableplandefinition.html)
-
-    Defines the minimum expectations for a shareable plan definition for use with computable guideline content. This profile derives from the ShareablePlanDefinition profile defined in the base FHIR specification, and adds support for declaring knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareableQuestionnaire](StructureDefinition-cpg-shareablequestionnaire.html)
-
-    Profile of Questionnaire to establish minimum expectations for sharing a Questionnaire, including URL, version, and name. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities
-
-*   [CPGShareableStructureDefinition](StructureDefinition-cpg-shareablestructuredef.html)
-
-    Profile of StructureDefinition to establish minimum expectations for sharing a StructureDefinition including URL, name, and version. This profile also provides the ability to declare knowledge representation level and knowledge artifact capabilities.
-
-*   [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html)
-
-    Defines the minimum expectations for shareable value sets described in support of computable content. This profile derives from the ShareableValueSet profile defined in the base FHIR specification, and adds support for declaring knowledge representation level and knowledge artifact capabilities.
 
 *   [CPGStrategy](StructureDefinition-cpg-strategy.html)
 

@@ -1,5 +1,5 @@
 Profile: CPGCaseFeatureDefinition
-Parent: CPGShareableStructureDefinition
+Parent: StructureDefinition
 Id: cpg-casefeaturedefinition
 Title: "CPG Case Feature Definition"
 Description: "Profile of StructureDefinition to represent a case feature of a clinical practice guideline, optionally specifying formal computational semantics, as well as relationships to other case features and specific aspects of the guideline"

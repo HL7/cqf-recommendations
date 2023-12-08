@@ -1,15 +1,15 @@
 RuleSet: KnowledgeArtifactMetadata(id, type)
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #shareable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #computable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #publishable
 * extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
+  * url = $cqf-knowledgeRepresentationLevel
   * valueCode = #structured
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/{type}/{id}"
@@ -19,19 +19,17 @@ RuleSet: KnowledgeArtifactMetadata(id, type)
 
 RuleSet: KnowledgeArtifactPDRecommendationMetadata(id)
 * insert Profile(cpg-computableplandefinition)
-* insert Profile(cpg-shareableplandefinition)
-* insert Profile(cpg-publishableplandefinition)
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #shareable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #computable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #publishable
 * extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
+  * url = $cqf-knowledgeRepresentationLevel
   * valueCode = #structured
 * url = "http://hl7.org/fhir/uv/cpg/PlanDefinition/{id}"
 * experimental = true
@@ -48,19 +46,18 @@ RuleSet: RelatedFHIRLibraries
   * resource = "http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1"
 
 RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
-* insert Profile(cpg-shareablequestionnaire)
-* insert Profile(cpg-publishablequestionnaire)
+* insert Profile(cpg-computablequestionnaire)
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #shareable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #computable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #publishable
 * extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
+  * url = $cqf-knowledgeRepresentationLevel
   * valueCode = #structured
 * url = "http://example.org/Questionnaire/{id}"
 * publisher = "HL7 International / Clinical Decision Support"
@@ -70,19 +67,17 @@ RuleSet: KnowledgeArtifactQuestionnaireMetadata(id)
 
 RuleSet: KnowledgeArtifactADMetadata(id)
 * insert Profile(cpg-computableactivity)
-* insert Profile(cpg-shareableactivitydefinition)
-* insert Profile(cpg-publishableactivity)
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #shareable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #computable
 * extension[+]
-  * url = $cpg-knowledgeCapability
+  * url = $cqf-knowledgeCapability
   * valueCode = #publishable
 * extension[+]
-  * url = $cpg-knowledgeRepresentationLevel
+  * url = $cqf-knowledgeRepresentationLevel
   * valueCode = #structured
 * experimental = true
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/{id}"

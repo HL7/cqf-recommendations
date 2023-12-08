@@ -166,6 +166,11 @@ parameters:
   apply-copyright: true
   apply-wg: true
   path-binary: ./input/cql
+  path-resource: 
+    - ./input/vocabulary/codesystem
+    - ./input/vocabulary/valueset
+  special-url-base: http://hl7.org/fhir
+
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
