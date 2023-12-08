@@ -138,6 +138,8 @@ pages:
   downloads.md:
   glossary.md:
   checklists.md:
+    clinical-guidelines-development-L1-checklist.md:
+      title: L1 Checklist
     clinical-guidelines-development-L2-checklist.md:
       title: L2 Checklist
     clinical-guidelines-development-L3-checklist.md:
