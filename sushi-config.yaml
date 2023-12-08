@@ -110,6 +110,8 @@ pages:
       title: Implementation Computable Knowledge
       documentation-approach-09-methods-of-implementation.md:
         title: Methods of Implementation
+        activityflow.md:
+          title: Activity Flow
         documentation-careplanning.md:
           title: Evidence-Based Care Planning
       documentation-approach-10-mechanisms-of-integration.md:
