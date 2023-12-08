@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "knowledge-capability",
+  "meta" : {
+    "lastUpdated" : "2023-03-20T05:08:14.907+11:00",
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  }],
+  "url" : "http://hl7.org/fhir/ValueSet/knowledge-capability",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.3.3222"
+  }],
+  "name" : "KnowledgeCapabilityValues",
+  "title" : "Knowledge Capability Values",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2019-07-21",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.org/Special/committees/fhir-i"
+    }]
+  }],
+  "description" : "A capability afforded by a knowledge artifact, e.g. shareable, computable, publishable, executable",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/CodeSystem/knowledge-capability"
+    }]
+  }
+}
