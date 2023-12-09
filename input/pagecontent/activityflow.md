@@ -4,7 +4,11 @@
 
 Building on the [Workflow](https://hl7.org/fhir/R4/workflow.html) module in FHIR, this topic describes in detail how each type of activity in a computable Clinical Guideline transitions through the overall phases of the activity lifecycle, as depicted in the following diagram:
 
-![Unified State Diagram for Activity Workflow](images/unified-activity-flow.png)
+<div>
+  <img src="unified-activity-flow.png" alt="Unified State Diagram for Activity Workflow" height="400" width="700"/>
+</div>
+
+![Unified State Diagram for Activity Workflow](unified-activity-flow.png)
 
 Down the left side of the diagram are the activity _phases_:
 
