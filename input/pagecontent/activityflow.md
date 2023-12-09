@@ -8,8 +8,6 @@ Building on the [Workflow](https://hl7.org/fhir/R4/workflow.html) module in FHIR
   <img src="unified-activity-flow.png" alt="Unified State Diagram for Activity Workflow" height="400" width="700"/>
 </div>
 
-![Unified State Diagram for Activity Workflow](unified-activity-flow.png)
-
 Down the left side of the diagram are the activity _phases_:
 
 * Definition: Activities are specified as definitions using one of the ActivityDefinition profiles
