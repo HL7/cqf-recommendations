@@ -254,7 +254,6 @@
 <artifact id="ValueSet/knowledge-capability" key="ValueSet-knowledge-capability" name="Knowledge Capability Values"/>
 <artifact id="CodeSystem/knowledge-representation-level" key="CodeSystem-knowledge-representation-level" name="Knowledge Representation Level Codes"/>
 <artifact id="ValueSet/knowledge-representation-level" key="ValueSet-knowledge-representation-level" name="Knowledge Representation Level Values"/>
-<artifact id="ValueSet/opioids-with-ambulatory-abuse-potential" key="ValueSet-opioids-with-ambulatory-abuse-potential" name="Opioids with Ambulatory Abuse Potential"/>
 <artifact id="Library/ordermedication-library" key="Library-ordermedication-library" name="Order Medication Library"/>
 <artifact id="Library/orderservice-library" key="Library-orderservice-library" name="Order Service Library"/>
 <artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="PlanDefinition - CPG Common Registration"/>
@@ -549,6 +548,7 @@
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>
 <page key="examples-activities" name="Activity Examples"/>
+<page key="activityflow" name="Activity Flow"/>
 <page key="documentation-approach-05-06-agile-cpg-development-approach" name="Agile CPG Development Approach"/>
 <page key="documentation-approach-04-04-analysis-of-evidence-recommendations-reporting" name="Analysis of Evidence, Recommendations, and Reporting"/>
 <page key="approach" name="Approach"/>
@@ -584,6 +584,7 @@
 <page key="documentation-approach-02-04-knowledge-representation" name="Knowledge Representation Overview"/>
 <page key="documentation-approach-05-03-knowledge-representation" name="Knowledge Representation/Expression"/>
 <page key="documentation-approach-05-02-knowledge-translation" name="Knowledge Translation"/>
+<page key="clinical-guidelines-development-L1-checklist" name="L1 Checklist"/>
 <page key="clinical-guidelines-development-L2-checklist" name="L2 Checklist"/>
 <page key="clinical-guidelines-development-L3-checklist" name="L3 Checklist"/>
 <page key="clinical-guidelines-development-L4-checklist" name="L4 Checklist"/>

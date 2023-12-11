@@ -2,8 +2,6 @@ Instance: CHF
 InstanceOf: Library
 Usage: #example
 Title: "Congestive Heart Failure Logic"
-* insert Profile(cpg-computablelibrary)
-* insert Profile(cpg-executablelibrary)
 * insert CHFLibraryMetaData(CHF)
 * insert RelatedFHIRLibraries
 * name = "CHF"

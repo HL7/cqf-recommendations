@@ -134,12 +134,12 @@ Applications can integrate with this by tracking and invoking known (and enabled
 
 NOTE: The type-level [$apply](OperationDefinition-cpg-plandefinition-apply.html) operation has specific requirements that would need to be relaxed in order to achieve this result. In particular, the planDefinition parameter should _not_ be required for the type-level $apply, which would result in the behavior described here. In addition, the cpg-customized $apply defines a mergedNestedCarePlans parameter to indicate that results of nested plan definitions should be merged.
 
-### Evaluation
+<!-- ### Evaluation
 
-In addition to the behaviors described by Activity and PlanDefinitions, libraries of reusable logic can be distributed and used to support calculations and other types of logic. This implementation guide defines two operations to support this use case:
+In addition to the behaviors described by Activity and PlanDefinitions, libraries of reusable logic can be distributed and used to support calculations and other types of logic.This implementation guide defines two operations to support this use case:
 
 * [$cql](OperationDefinition-cpg-cql.html): A system-level operation that supports evaluation of arbitrary CQL expressions
-* [Library/$evaluate](OperationDefinition-cpg-library-evaluate.html): A type- and instance-level operation that supports evaluation of a specific Library of CQL, including specific expressions within the Library.
+* [Library/$evaluate](OperationDefinition-cpg-library-evaluate.html): A type- and instance-level operation that supports evaluation of a specific Library of CQL, including specific expressions within the Library. -->
 
 ### Care Planning
 

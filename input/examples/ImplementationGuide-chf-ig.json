@@ -5,26 +5,27 @@
   "title": "CHF Example Implementation Guide",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-shareableig",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline",
-      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-publishableguideline"
-    ]
+      "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableguideline"    ]
   },
   "text" : {
     "status" : "extensions",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGCongestiveHeartFailureExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/chf-ig</pre><div><p>Examples of CPG computable content representing a congestive heart failure pathway</p>\n</div></div>"
   },
   "extension" : [{
-    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
     "valueCode" : "shareable"
   },
   {
-    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
     "valueCode" : "computable"
   },
   {
-    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
     "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
   }],
   "url" : "http://hl7.org/fhir/uv/cpg/ImplementationGuide/chf-ig",
   "version" : "1.0.0",
