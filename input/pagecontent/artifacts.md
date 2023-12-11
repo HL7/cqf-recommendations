@@ -51,14 +51,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
     The direction of a recommendation, either for or against a particular action, taking into account the balance between desirable and undersirable outcomes; the confidence in the magnitude of estimates of effect; the confidence in values and preferences and their variability; and resource use.
 
-*   [CPG Knowledge Capability](CodeSystem-cpg-knowledge-capability-cs.html)
-
-    A capability afforded by a knowledge artifact.
-
-*   [CPG Knowledge Representation Level](CodeSystem-cpg-knowledge-representation-level-cs.html)
-
-    A knowledge representation level, narrative, semi-structured, structured, and executable
-
 ### Extension Index {#extension-index}
 
 {% include list-extensions.xhtml %}
@@ -410,14 +402,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPG Recommendation Direction](ValueSet-cpg-recommendation-direction-vs.html)
 
     The direction of a recommendation, either for or against a particular action, taking into account the balance between desirable and undesirable outcomes; the confidence in the magnitude of estimates of effect; the confidence in values and preferences and their variability; and resource use.
-
-*   [CPG Knowledge Capability](ValueSet-cpg-knowledge-capability-vs.html)
-
-    A capability afforded by a knowledge artifact, e.g. shareable, computable, publishable, executable
-
-*   [CPG Knowledge Representation Level](ValueSet-cpg-knowledge-representation-level-vs.html)
-
-    A knowledge representation level, narrative, semi-structured, structured, and executable
 
 *   [CPG Indicator](ValueSet-cpg-indicator-vs.html)
 
