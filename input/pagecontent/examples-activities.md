@@ -345,7 +345,7 @@ the AdministerMedication example:
 
 |Resource|Description|
 |---|---|
-|[Library-activity-example-administermedication](Library-activity-example-administermedication-library.html)|Asset collection detailing the knowledge artifacts in the AdministerMedication example|
+|[Library-activity-example-administermedication](Library-administermedication-asset-collection.html)|Asset collection detailing the knowledge artifacts in the AdministerMedication example|
 |[Bundle-activity-example-administermedication](Bundle-activity-example-administermedication-bundle.html)|Bundle for the asset collection including all the artifacts, packaged with a single test case example|
 |[GuidanceResponse-am-scenario7](GuidanceResponse-am-scenario7-gr.html)|Expected results for the am-scenario7 test case|
 |[Bundle-am-scenario7](Bundle-am-scenario7-bundle.html)|Test case bundle for the am-scenario7 test case for the AdministerMedication example|
