@@ -16,14 +16,14 @@ Title: "VA CKD Recommendations Plan Definition"
 * action
   * id = "001"
   * extension[+]
-    * url = Canonical(cqf-strengthOfRecommendation)
-    * valueCodeableConcept = $recommendation-strength#weak "Weak"
-  * extension[+]
     * url = Canonical(cpg-directionOfRecommendation)
     * valueCodeableConcept = $cpg-recommendation-direction-cs#for "For"
   * title = "CKD Protein Diet"
   * description = "In patients with stage 3 and 4 CKD, we suggest a protein diet of 0.6 to 0.8 g/kg/day as it may slow the decline in glomerular filtration rate (GFR) and progression to end-stage renal disease (ESRD)."
   * documentation
+    * extension[+]
+      * url = Canonical(cqf-strengthOfRecommendation)
+      * valueCodeableConcept = $recommendation-strength#weak "Weak"
     * type = #documentation
     * display = "VA/DoD Clinical Practice Guideline for The management of Chronic Kidney Disease in Primary care"
     * url = $va-clinical-practice-guidelines

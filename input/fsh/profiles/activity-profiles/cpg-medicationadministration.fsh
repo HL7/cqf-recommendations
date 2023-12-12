@@ -7,8 +7,7 @@ Description: "Documents the administration of a particular medication as an acti
 * extension contains
   CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
   CPGCaseFeatureType named caseFeatureType 0..1 MS and
-  CPGCaseFeaturePertinence named caseFeaturePertinence 0..1 MS and
-  $event-basedOn named basedOn 0..1 MS
+  CPGCaseFeaturePertinence named caseFeaturePertinence 0..1 MS
 * identifier MS
 * instantiates MS
   * ^short = "Source"

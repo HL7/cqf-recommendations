@@ -166,6 +166,7 @@
 <artifact id="StructureDefinition/cpg-generatereportactivity" key="StructureDefinition-cpg-generatereportactivity" name="CPG Generate Report Activity"/>
 <artifact id="ActivityDefinition/cpg-generatereport-activitydefinition" key="ActivityDefinition-cpg-generatereport-activitydefinition" name="CPG Generate Report ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-generatereporttask" key="StructureDefinition-cpg-generatereporttask" name="CPG Generate Report Task"/>
+<artifact id="StructureDefinition/cpg-generatedFrom" key="StructureDefinition-cpg-generatedFrom" name="CPG Generated From Extension"/>
 <artifact id="StructureDefinition/cpg-goal" key="StructureDefinition-cpg-goal" name="CPG Goal"/>
 <artifact id="StructureDefinition/cpg-goalFor" key="StructureDefinition-cpg-goalFor" name="CPG Goal For Extension"/>
 <artifact id="StructureDefinition/cpg-group" key="StructureDefinition-cpg-group" name="CPG Group"/>

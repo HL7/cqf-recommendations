@@ -14,6 +14,7 @@ Alias: $artifact-author = http://hl7.org/fhir/StructureDefinition/artifact-autho
 Alias: $cpg-casefeature-pertinence-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-pertinence-vs
 Alias: $cpg-casefeature-type-valueset = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-casefeature-type-vs
 Alias: $cpg-caseFeatureOf = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-caseFeatureOf
+Alias: $cpg-generatedFrom = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatedFrom
 Alias: $cpg-collectWith = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-collectWith
 Alias: $cpg-common-patient-summary-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-common-patient-summary
 Alias: $cpg-common-process-codesystem = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process-cs

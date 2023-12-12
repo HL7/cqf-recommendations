@@ -3,7 +3,7 @@ InstanceOf: CPGCaseSummary
 Usage: #example
 Description: "CHF Scenario One"
 * extension[+]
-  * url = Canonical(workflow-instantiatesCanonical)
+  * url = Canonical(cpg-generatedFrom)
   * valueCanonical = Canonical(chf-casesummarydefinition)
 * extension[+]
   * url = Canonical(cpg-summaryFor)
