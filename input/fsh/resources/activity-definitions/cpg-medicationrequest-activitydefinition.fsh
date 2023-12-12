@@ -1,6 +1,6 @@
 Instance: cpg-medicationrequest-activitydefinition
-InstanceOf: ActivityDefinition
-Usage: #definition
+InstanceOf: CPGMedicationRequestActivity
+Usage: #example
 * insert ActivityDefinitionMetadata(cpg-medicationrequest-activitydefinition,CPGMedicationRequestActivityDefinition)
 * title = "CPG MedicationRequest ActivityDefinition"
 * description = "Example Activity Definition for a recommendation to request a medication"

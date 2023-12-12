@@ -1,6 +1,6 @@
 Instance: cpg-enrollment-activitydefinition
 InstanceOf: CPGEnrollmentActivity
-Usage: #definition
+Usage: #example
 Title: "CPG Enrollment ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-enrollment-activitydefinition, CPGEnrollmentActivityDefinition)
 * description = "Example Activity Definition for a recommendation to enroll patient"

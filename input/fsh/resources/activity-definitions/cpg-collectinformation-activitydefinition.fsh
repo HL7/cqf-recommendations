@@ -1,6 +1,6 @@
 Instance: cpg-collectinformation-activitydefinition
-InstanceOf: ActivityDefinition
-Usage: #definition
+InstanceOf: CPGCollectInformationActivity
+Usage: #example
 Title: "CPG CollectInformation ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-collectinformation-activitydefinition, CPGCollectInformationActivityDefinition)
 * description = "Example Activity Definition for a recommendation to collect information"
