@@ -39,7 +39,6 @@ Alias: $cpg-immunizationrequest = http://hl7.org/fhir/uv/cpg/StructureDefinition
 Alias: $cpg-impressionFor = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-impressionFor
 Alias: $cpg-inferenceExpression = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-inferenceExpression
 Alias: $cpg-itemImage = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-itemImage
-Alias: $knowledge-representation-level-valueset = http://hl7.org/fhir/ValueSet/knowledge-representation-level
 Alias: $cqf-knowledgeCapability = http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
 Alias: $cqf-knowledgeRepresentationLevel = http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel
 Alias: $cpg-location = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-location

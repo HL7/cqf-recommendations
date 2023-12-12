@@ -133,7 +133,7 @@ Usage: #inline
   * id = "ig-loader-AdministerMedication.cql"
 
 Instance: Inline-Instance-for-activity-example-administermedication-2
-InstanceOf: CPGRecommendationDefinition
+InstanceOf: CPGComputablePlanDefinition
 Usage: #inline
 * insert KnowledgeArtifactPDRecommendationMetadata(activity-example-administermedication-2)
 * id = "activity-example-administermedication-2"
@@ -159,7 +159,7 @@ Usage: #inline
   * definitionCanonical = Canonical(activity-example-administermedication-ad)
 
 Instance: am-scenario7-inline-bundle
-InstanceOf: Bundle
+InstanceOf: CPGTestCaseBundle
 Usage: #inline
 Description: "Test Case Bundle"
 * type = #collection

@@ -347,7 +347,7 @@ In addition, content implementation guides will typically select a target realm 
 
 For terminology, the _translate_ step involves identifying and/or constructing appropriate value sets for the concepts referred to in the selected recommendations. This step is typically performed by the terminologist with help from the knowledge engineering role to assist in creating FHIR representations. For terminology servers that already support authoring and distribution of FHIR ValueSet resources, this is less of an issue, but often there are not complete solutions available, and additional tooling is required to support the terminology publishing needs.
 
-Specifically, terminology that is included as part of content implementation guides SHALL be at least [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html), and SHOULD be Computable, Publishable, and/or Executable, depending on the target.
+<!-- Specifically, terminology that is included as part of content implementation guides SHALL be at least [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html), and SHOULD be Computable, Publishable, and/or Executable, depending on the target. -->
 
 For more discussion on the creation and distribution of value sets, see the [Terminology](terminology.html) page.
 
@@ -402,7 +402,7 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 |[**ServiceRequest**](ActivityDefinition-cpg-servicerequest-activitydefinition.html)|**ServiceCodeableConcept**: The type of service being proposed|
 {:.grid}
 
-Content conforming to this implementation guide SHALL use at least the [CPG Shareable Activity Definition](StructureDefinition-cpg-shareableactivitydefinition.html) profile, and SHOULD use the Computable and Publishable profiles when specifying activity definitions.
+<!-- Content conforming to this implementation guide SHALL use at least the [CPG Shareable Activity Definition](StructureDefinition-cpg-shareableactivitydefinition.html) profile, and SHOULD use the Computable and Publishable profiles when specifying activity definitions. -->
 
 ##### Activity Requests (Proposals)
 
