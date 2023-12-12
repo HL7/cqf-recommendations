@@ -2,7 +2,7 @@ Instance: chf-potassium-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Potassium Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-potassium-ad)
+* insert ExampleActivityDefinitionMetadata(chf-potassium-ad)
 * name = "CHFPotassium"
 * description = "Monitor Potassium"
 * kind = #ServiceRequest

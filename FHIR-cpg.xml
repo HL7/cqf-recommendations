@@ -2,11 +2,15 @@
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cpg/2019Sep" ciUrl="http://build.fhir.org/ig/HL7/cqf-recommendations" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cqf-recommendations" url="http://hl7.org/fhir/uv/cpg">
 <version code="current" url="http://build.fhir.org/ig/HL7/cqf-recommendations"/>
 <version code="1.0.0" url="http://hl7.org/fhir/uv/cpg/STU1"/>
-<version code="0.1.0" url="http://hl7.org/fhir/uv/cpg/2019Sep"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/cpg/2019Sep"/>
+<version code="0.1" deprecated="true" url="http://hl7.org/fhir/uv/cpg/2019Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Library/activity-example-administermedication-library" key="Library-activity-example-administermedication-library" name="Activity Example - Administer Medication Library Collection"/>
+<artifact id="Questionnaire/anc-quick-check" key="Questionnaire-anc-quick-check" name="ANC Quick Check Questionnaire"/>
+<artifact id="CodeSystem/anc-reason-for-visit-cs" key="CodeSystem-anc-reason-for-visit-cs" name="ANC Reason for Visit Codesystem"/>
+<artifact id="ValueSet/anc-reason-for-visit-vs" key="ValueSet-anc-reason-for-visit-vs" name="ANC Reason for Visit ValueSet"/>
+<artifact id="Library/administermedication-asset-collection" key="Library-activity-example-administermedication-library" name="Activity Example - Administer Medication Library Collection"/>
 <artifact id="ActivityDefinition/activity-example-administermedication-ad" key="ActivityDefinition-activity-example-administermedication-ad" name="Activity Example Administer Medication AD"/>
 <artifact id="PlanDefinition/activity-example-administermedication-pd" key="PlanDefinition-activity-example-administermedication-pd" name="Activity Example Administer Medication PD"/>
 <artifact id="ActivityDefinition/activity-example-collectinformation-ad" key="ActivityDefinition-activity-example-collectinformation-ad" name="Activity Example Collect Information AD"/>
@@ -93,6 +97,10 @@
 <artifact id="StructureDefinition/chf-egfr" key="StructureDefinition-chf-egfr" name="CHF eGFR"/>
 <artifact id="ActivityDefinition/chf-egfr-ad" key="ActivityDefinition-chf-egfr-ad" name="CHF eGFR Activity Defintion"/>
 <artifact id="PlanDefinition/chf-egfr-pd" key="PlanDefinition-chf-egfr-pd" name="CHF eGFR Recommendation"/>
+<artifact id="PlanDefinition/cc-cpg-plan-ckd" key="PlanDefinition-cc-cpg-plan-ckd" name="CKD Ambulatory Plan Definition"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-referral-dietitian" key="ActivityDefinition-cc-cpg-activity-referral-dietitian" name="CKD Referral Dietitian"/>
+<artifact id="ActivityDefinition/cc-cpg-activity-referral-nephrology" key="ActivityDefinition-cc-cpg-activity-referral-nephrology" name="CKD Referral Nephrology"/>
+<artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="CKD VA Recommendations Plan Definition"/>
 <artifact id="ValueSet/cpg-active-condition-vs" key="ValueSet-cpg-active-condition-vs" name="CPG Active Condition Value Set"/>
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
 <artifact id="ValueSet/cpg-activity-type-vs" key="ValueSet-cpg-activity-type-vs" name="CPG Activity Type Value Set"/>
@@ -236,8 +244,6 @@
 <artifact id="StructureDefinition/cpg-task" key="StructureDefinition-cpg-task" name="CPG Task"/>
 <artifact id="StructureDefinition/cpg-testcasebundle" key="StructureDefinition-cpg-testcasebundle" name="CPG Test Case Bundle"/>
 <artifact id="StructureDefinition/cpg-workflowdefinition" key="StructureDefinition-cpg-workflowdefinition" name="CPG Workflow Definition"/>
-<artifact id="PlanDefinition/cc-cpg-plan-ckd" key="PlanDefinition-cc-cpg-plan-ckd" name="Chronic Kidney Disease - Ambulatory Plan Definition"/>
-<artifact id="CodeSystem/anc-reason-for-visit-cs" key="CodeSystem-anc-reason-for-visit-cs" name="CodeSystem - ANC Reason for Visit"/>
 <artifact id="Library/collectinformation-library" key="Library-collectinformation-library" name="Collect Information Library"/>
 <artifact id="PlanDefinition/chf-pathway" key="PlanDefinition-chf-pathway" name="Congestive Heart Failure Care Pathway"/>
 <artifact id="Composition/chf-scenario1-casesummary" key="Composition-chf-scenario1-casesummary" name="Congestive Heart Failure Case Summary"/>
@@ -259,16 +265,11 @@
 <artifact id="Library/orderservice-library" key="Library-orderservice-library" name="Order Service Library"/>
 <artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="PlanDefinition - CPG Common Registration"/>
 <artifact id="Library/proposediagnosis-library" key="Library-proposediagnosis-library" name="Propose Diagnosis Library"/>
-<artifact id="Questionnaire/anc-quick-check" key="Questionnaire-anc-quick-check" name="Questionnaire - ANC Quick Check"/>
 <artifact id="Library/recommendimmunization-library" key="Library-recommendimmunization-library" name="Recommend Immunization"/>
 <artifact id="Library/recorddetectedissue-library" key="Library-recorddetectedissue-library" name="Record Detected Issue Library"/>
 <artifact id="Library/recordinference-library" key="Library-recordinference-library" name="Record Inference"/>
-<artifact id="ActivityDefinition/cc-cpg-activity-referral-dietitian" key="ActivityDefinition-cc-cpg-activity-referral-dietitian" name="Referral: Dietitian; History: chronic kidney disease; Question: [add reason for referral]"/>
-<artifact id="ActivityDefinition/cc-cpg-activity-referral-nephrology" key="ActivityDefinition-cc-cpg-activity-referral-nephrology" name="Referral: Nephrology; History: [add diagnosis, symptom(s)]; Question: [add reason for referral]"/>
 <artifact id="Library/reportflag-library" key="Library-reportflag-library" name="Report Flag"/>
 <artifact id="Library/sendmessage-library" key="Library-sendmessage-library" name="Send Message Library"/>
-<artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="VA CKD Recommendations Plan Definition"/>
-<artifact id="ValueSet/anc-reason-for-visit-vs" key="ValueSet-anc-reason-for-visit-vs" name="ValueSet - ANC Reason for Visit"/>
 <artifact id="Bundle/activity-example-administermedication-bundle" key="Bundle-activity-example-administermedication-bundle" name="activity-example-administermedication-bundle"/>
 <artifact id="MedicationRequest/am-scenario1" key="MedicationRequest-am-scenario1" name="am-scenario1"/>
 <artifact id="Patient/am-scenario1-patient" key="Patient-am-scenario1-patient" name="am-scenario1-patient"/>
@@ -311,7 +312,8 @@
 <artifact id="MeasureReport/chf-scenario1-bodyweight4" key="MeasureReport-chf-scenario1-bodyweight4" name="chf-scenario1-bodyweight4"/>
 <artifact id="Observation/chf-scenario1-bodyweight4-observation" key="Observation-chf-scenario1-bodyweight4-observation" name="chf-scenario1-bodyweight4-observation"/>
 <artifact id="Procedure/chf-scenario1-cardiology-consult" key="Procedure-chf-scenario1-cardiology-consult" name="chf-scenario1-cardiology-consult"/>
-<artifact id="ServiceRequest/chf-scenario1-cardiology-consultation" key="ServiceRequest-chf-scenario1-cardiology-consultation" name="chf-scenario1-cardiology-consultation"/>
+<artifact id="ServiceRequest/chf-scenario1-cardiology-consult-request" key="ServiceRequest-chf-scenario1-cardiology-consult-request" name="chf-scenario1-cardiology-consult-request"/>
+<artifact deprecated="true" id="ServiceRequest/chf-scenario1-cardiology-consultation" key="ServiceRequest-chf-scenario1-cardiology-consultation" name="chf-scenario1-cardiology-consultation"/>
 <artifact id="Goal/chf-scenario1-cardiology-consultation-goal" key="Goal-chf-scenario1-cardiology-consultation-goal" name="chf-scenario1-cardiology-consultation-goal"/>
 <artifact id="CareTeam/chf-scenario1-careteam" key="CareTeam-chf-scenario1-careteam" name="chf-scenario1-careteam"/>
 <artifact id="ClinicalImpression/chf-scenario1-clinicalimpression" key="ClinicalImpression-chf-scenario1-clinicalimpression" name="chf-scenario1-clinicalimpression"/>

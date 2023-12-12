@@ -7,8 +7,8 @@ Description: "Example of a bundle for administering a medication"
   * fullUrl = Canonical(administermedication-asset-collection)
   * resource = administermedication-asset-collection
 * entry[+]
-  * fullUrl = Canonical(admininistermedication-library)
-  * resource = admininistermedication-library
+  * fullUrl = Canonical(administermedication-library)
+  * resource = administermedication-library
 * entry[+]
   * fullUrl = Canonical(activity-example-administermedication-pd)
   * resource = activity-example-administermedication-pd

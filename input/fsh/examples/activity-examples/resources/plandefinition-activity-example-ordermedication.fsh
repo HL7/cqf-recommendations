@@ -2,7 +2,7 @@ Instance: activity-example-ordermedication-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Order Medication PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-ordermedication-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-ordermedication-pd)
 * description = "Example Plan Definition for a recommendation to order a medication"
 * name = "ActivityExampleOrderMedicationPD"
 * type = $plan-definition-type#eca-rule

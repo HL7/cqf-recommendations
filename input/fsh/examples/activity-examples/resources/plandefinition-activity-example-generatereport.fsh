@@ -2,7 +2,7 @@ Instance: activity-example-generatereport-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Generate Report PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-generatereport-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-generatereport-pd)
 * description = "Example Plan Definition for a recommendation to generate a report"
 * name = "ActivityExampleGenerateReportPD"
 * type = $plan-definition-type#eca-rule

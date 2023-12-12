@@ -2,7 +2,7 @@ Instance: reportflag-library
 InstanceOf: Library
 Usage: #example
 * title = "Report Flag"
-* insert KnowledgeArtifactMetadata(reportflag-library, Library)
+* insert ExampleLibraryMetadata(reportflag-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to record an inference"
 * name = "ReportFlag"

@@ -2,7 +2,7 @@ Instance: chf-creatinine-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Creatinine Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-creatinine-pd)
+* insert ExamplePlanDefinitionMetadata(chf-creatinine-pd)
 * insert PlanDefinitionPartOfExtension(chf-hypervolemia)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFCreatininePD"

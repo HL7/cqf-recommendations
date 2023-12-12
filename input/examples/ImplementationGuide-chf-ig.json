@@ -1147,7 +1147,7 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/chf-scenario1-cardiology-consultation"
+        "reference" : "ServiceRequest/chf-scenario1-cardiology-consult-request"
       },
       "name" : "chf-scenario1-cardiology-consultation",
       "description" : "CHF Scenario One",

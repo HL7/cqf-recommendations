@@ -2,7 +2,7 @@ Instance: chf-hypervolemia
 InstanceOf: CPGStrategyDefinition
 Usage: #example
 Title: "CHF Hypervolemia Strategy"
-* insert CHFPlanDefinitionMetadata(chf-hypervolemia)
+* insert ExamplePlanDefinitionMetadata(chf-hypervolemia)
 * insert PlanDefinitionPartOfExtension(chf-pathway)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFHypervolemia"

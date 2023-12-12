@@ -1,5 +1,5 @@
 Instance: cpg-enrollment-activitydefinition
-InstanceOf: ActivityDefinition
+InstanceOf: CPGEnrollmentActivity
 Usage: #definition
 Title: "CPG Enrollment ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-enrollment-activitydefinition, CPGEnrollmentActivityDefinition)

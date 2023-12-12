@@ -2,7 +2,7 @@ Instance: CHF
 InstanceOf: Library
 Usage: #example
 Title: "Congestive Heart Failure Logic"
-* insert CHFLibraryMetaData(CHF)
+* insert ExampleLibraryMetadata(CHF)
 * insert RelatedFHIRLibraries
 * name = "CHF"
 * type = $library-type#logic-library

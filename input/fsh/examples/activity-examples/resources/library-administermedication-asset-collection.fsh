@@ -2,7 +2,7 @@ Instance: administermedication-asset-collection
 InstanceOf: CPGAssetCollection
 Usage: #example
 * title = "Activity Example - Administer Medication Library Collection"
-* insert KnowledgeArtifactMetadata(administermedication-asset-collection, Library)
+* insert ExampleLibraryMetadata(administermedication-asset-collection)
 * insert RelatedFHIRLibraries
 * description = "Asset collection of artifacts in the Administer Medication activity example"
 * name = "ActivityExampleAdministerMedicationLibrary"

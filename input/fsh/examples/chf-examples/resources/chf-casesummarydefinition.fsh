@@ -1,7 +1,7 @@
 Instance: chf-casesummarydefinition
 InstanceOf: cpg-casesummarydefinition
 Usage: #example
-* insert GraphDefinitionMetadata(chf-casesummarydefinition)
+* insert CHFGraphDefinitionMetadata(chf-casesummarydefinition)
 * extension[+]
   * url = Canonical(artifact-identifier)
   * valueIdentifier

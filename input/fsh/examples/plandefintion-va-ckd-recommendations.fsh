@@ -1,8 +1,8 @@
 Instance: va-ckd-recommendations
 InstanceOf: CPGRecommendationDefinition
-Usage: #definition
+Usage: #example
 Title: "CKD VA Recommendations Plan Definition"
-* insert KnowledgeArtifactPDRecommendationMetadata(va-ckd-recommendations)
+* insert ExamplePlanDefinitionMetadata(va-ckd-recommendations)
 * identifier
   * use = #official
   * value = "VA_CKD_Recommendations"

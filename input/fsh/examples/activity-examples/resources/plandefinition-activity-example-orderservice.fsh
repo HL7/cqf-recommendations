@@ -2,7 +2,7 @@ Instance: activity-example-orderservice-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Order Service PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-orderservice-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-orderservice-pd)
 * description = "Example Plan Definition for a recommendation to order a service"
 * name = "ActivityExampleOrderServicePD"
 * type = $plan-definition-type#eca-rule

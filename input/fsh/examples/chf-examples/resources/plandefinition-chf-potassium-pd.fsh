@@ -2,7 +2,7 @@ Instance: chf-potassium-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Potassium Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-potassium-pd)
+* insert ExamplePlanDefinitionMetadata(chf-potassium-pd)
 * insert PlanDefinitionPartOfExtension(chf-hypervolemia)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFPotassiumPD"

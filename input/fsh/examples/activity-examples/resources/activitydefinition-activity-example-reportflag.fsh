@@ -3,7 +3,7 @@ InstanceOf: CPGReportFlagActivity
 Usage: #example
 * title = "Activity Example Report Flag AD"
 * description = "Example Activity Definition for a recommendation to report a flag"
-* insert KnowledgeArtifactADMetadata(activity-example-reportflag-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-reportflag-ad)
 * name = "ActivityExampleReportFlagAD"
 * kind = #Task
 * profile = Canonical(CPGReportFlagTask)

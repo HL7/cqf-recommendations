@@ -2,7 +2,7 @@ Instance: dispensemedication-library
 InstanceOf: Library
 Usage: #example
 * title = "Dispense Medication Library"
-* insert KnowledgeArtifactMetadata(dispensemedication-library, Library)
+* insert ExampleLibraryMetadata(dispensemedication-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to dispense a medication"
 * name = "DispenseMedicationLibrary"

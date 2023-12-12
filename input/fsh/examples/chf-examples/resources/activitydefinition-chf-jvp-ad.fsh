@@ -2,7 +2,7 @@ Instance: chf-jvp-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Jugular Venous Pressure Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-jvp-ad)
+* insert ExampleActivityDefinitionMetadata(chf-jvp-ad)
 * name = "CHFJVP"
 * description = "Measure jugular venous pressure"
 * kind = #ServiceRequest
