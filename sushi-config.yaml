@@ -15,7 +15,7 @@ extension:
 version: 2.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 publisher:
@@ -151,6 +151,10 @@ pages:
   documentation-methodology.md:
     title: Mapping and Other Formalisms
   common-care-pathway.md:
+    title: Common Care Pathway
+  changes.md:
+    title: Version History
+
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -169,6 +173,7 @@ parameters:
   apply-license: true
   apply-copyright: true
   apply-wg: true
+  path-history: http://hl7.org/fhir/uv/cpg/history.html
   path-binary: ./input/cql
   path-resource: 
     - ./input/vocabulary/codesystem
@@ -195,8 +200,7 @@ menu:
   Examples: examples.html
   Downloads: downloads.html
   Glossary: glossary.html
-  Version History: http://hl7.org/fhir/uv/cpg/history.html
-
+  Version History: changes.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

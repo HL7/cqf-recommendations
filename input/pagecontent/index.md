@@ -1,18 +1,27 @@
+{:toc}
+
 The FHIR Clinical Guidelines Implementation Guide (CPG IG) provides a means of creating a computable representation of a narrative clinical guideline that is faithful to guideline intent and supports the derivation of downstream capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates that direct clinical documentation in support of determining guideline compliance.
 
 ---
 
+Where possible, new and updated content will be highlighted with green text and background.
+{:.new-content}
+
+<div markdown="1" class="bg-info">
+
+{{ site.data.package-list.list[0].desc }}
+
+</div>
+
 **Known Issues:**
 
-These issues are all related to various publication tooling issues. A technical correction is planned once the tooling issues have been addressed.
+The doNotPerform extension was approved to be allowed on Task, however, that context change was missed in the application, the following TC is to address this issue:
 
-*   [FHIR-30206](https://jira.hl7.org/browse/FHIR-30206): Resolution errors for Library-FHIRHelpers and Library-FHIRModelInfo.
-*   [FHIR-30207](https://jira.hl7.org/browse/FHIR-30207): Allow request-doNotPerform extension to be used on Task.
-*   [FHIR-30208](https://jira.hl7.org/browse/FHIR-30208): Allow workflow-instantiatesCanonical extension to be used on Composition.
-*   [FHIR-30270](https://jira.hl7.org/browse/FHIR-30270): Allow event-basedOn extension to be used on MedicationAdministration.
-*   [FHIR-30114](https://jira.hl7.org/browse/FHIR-30114): Allow cqf-strengthOfRecommendation extension to be used on any PlanDefinition.action element.
+*   [FHIR-43369](https://jira.hl7.org/browse/FHIR-43369): Fix context of request-doNotPerform extension (see [FHIR-30207](https://jira.hl7.org/browse/FHIR-30207) for original resolution)
 
 ---
+
+{: #clinical-guidelines-implementation-guide}
 
 This implementation guide is organized into the following sections, accessible via the menu bar at the top of every page:
 

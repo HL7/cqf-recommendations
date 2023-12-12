@@ -1,0 +1,33 @@
+package-id: hl7.fhir.uv.crmi
+title: Clinical Guidelines
+canonical: 'http://hl7.org/fhir/uv/crmi'
+introduction: >-
+  The FHIR Clinical Guidelines Implementation Guide (CPG IG) provides a means of creating a computable representation 
+  of a narrative clinical guideline that is faithful to guideline intent and supports the derivation of downstream 
+  capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates 
+  that direct clinical documentation in support of determining guideline compliance.
+
+list:
+  - version: current
+    desc: |-
+      
+      The following trackers were applied for this version:
+
+      **Status**: **Summary**:(**Jira Issue**)
+    
+      * **Applied**: Add extensions to identify the packaging and testing tooling for an artifact([FHIR-25741](https://jira.hl7.org/browse/FHIR-25741))
+      * **Applied**: Better definitions for each activity([FHIR-38743](https://jira.hl7.org/browse/FHIR-38743))
+      * **Applied**: Add support for specifying CQL options in CQL/ELM libraries and projects([FHIR-32672](https://jira.hl7.org/browse/FHIR-32672))
+      * **Applied**: Add a CPG Packaging Like the Measure Packaging Operation([FHIR-35796](https://jira.hl7.org/browse/FHIR-35796))
+      * **Applied**: Ability to specify supported CQL versions([FHIR-32676](https://jira.hl7.org/browse/FHIR-32676))
+      * **Applied**: Add guidance on when available ELM can be used([FHIR-40486](https://jira.hl7.org/browse/FHIR-40486))
+      * **Applied**: Add description of types of artifacts([FHIR-26607](https://jira.hl7.org/browse/FHIR-26607))
+      * **Applied**: Unable to file issues against 1.0 version in HL7 JIRA([FHIR-40964](https://jira.hl7.org/browse/FHIR-40964))
+      * **Applied**: Add more detailed description of activity flow([FHIR-43074](https://jira.hl7.org/browse/FHIR-43074))
+      * **Applied**: ImmunizationRecommendation example does not point at meta.profile([FHIR-34350](https://jira.hl7.org/browse/FHIR-34350))
+      * **Applied**: Change Immunization action([FHIR-40298](https://jira.hl7.org/browse/FHIR-40298))
+      * **Applied**: Refactor to use CRMI profiles([FHIR-42973](https://jira.hl7.org/browse/FHIR-42973))
+
+      In addition, the implementation guide source was completely updated to run on the latest IG publication tooling, which included numerous typographical and technical corrections throughout.
+      
+
