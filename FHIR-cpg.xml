@@ -108,7 +108,7 @@
 <artifact id="StructureDefinition/cpg-careplan" key="StructureDefinition-cpg-careplan" name="CPG Care Plan"/>
 <artifact id="StructureDefinition/cpg-careteam" key="StructureDefinition-cpg-careteam" name="CPG Care Team"/>
 <artifact id="StructureDefinition/cpg-careteamdefinition" key="StructureDefinition-cpg-careteamdefinition" name="CPG Care Team Definition"/>
-<artifact id="OperationDefinition/cpg-careplan-apply" key="OperationDefinition-cpg-careplan-apply" name="CPG CarePlan Apply"/>
+<artifact deprecated="true" id="OperationDefinition/cpg-careplan-apply" key="OperationDefinition-cpg-careplan-apply" name="CPG CarePlan Apply"/>
 <artifact id="StructureDefinition/cpg-case" key="StructureDefinition-cpg-case" name="CPG Case"/>
 <artifact id="StructureDefinition/cpg-casefeaturedefinition" key="StructureDefinition-cpg-casefeaturedefinition" name="CPG Case Feature Definition"/>
 <artifact id="StructureDefinition/cpg-caseFeatureOf" key="StructureDefinition-cpg-caseFeatureOf" name="CPG Case Feature Of Extension"/>

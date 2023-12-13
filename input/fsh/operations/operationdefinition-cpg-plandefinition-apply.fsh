@@ -7,7 +7,29 @@ Description: "The apply operation applies a PlanDefinition to a given context"
 * insert OperationExtensions
 * name = "CPGPlanDefinitionApply"
 * code = #apply
-* comment = "The result of this operation is a CarePlan resource with a single activity represented by a RequestGroup. The RequestGroup will have actions for each of the applicable actions in the plan based on evaluating the applicability condition in context. For each applicable action, the definition is applied as described in the $apply operation of the ActivityDefinition resource, and the resulting resource is added as an activity to the CarePlan. If the ActivityDefinition includes library references, those libraries will be available to the evaluated expressions. If those libraries have parameters, those parameters will be bound by name to the parameters given to the operation. In addition, parameters to the $apply operation are available within dynamicValue expressions as context variables, accessible by the name of the parameter, prefixed with a percent (%) symbol. For a more detailed description, refer to the PlanDefinition and ActivityDefinition resource documentation. Note that result of this operation is transient (i.e. none of the resources created by the operation are persisted in the server, they are all returned as contained resources in the result). The result effectively represents a proposed set of activities, and it is up to the caller to determine whether and how those activities are actually carried out."
+* comment = """
+The result of this operation is a RequestGroup resource.
+
+The RequestGroup will have actions for each of the applicable actions in the
+plan based on evaluating the applicability condition in context. For each
+applicable action, the definition is applied as described in the `$apply`
+operation of the ActivityDefinition resource, and the resulting resource is
+added as an activity to the RequestGroup.
+
+If the ActivityDefinition includes library references, those
+libraries will be available to the evaluated expressions. If those libraries
+have parameters, those parameters will be bound by name to the parameters given
+to the operation.  In addition, parameters to the `$apply` operation are available
+within dynamicValue expressions as context variables, accessible by the name of
+the parameter, prefixed with a percent (%) symbol.
+
+For a more detailed description, refer to the PlanDefinition and
+ActivityDefinition resource documentation. Note that result of this operation is
+transient (i.e. none of the resources created by the operation are persisted in
+the server, they are all returned as contained resources in the result). The
+result effectively represents a proposed set of activities, and it is up to the
+caller to determine whether and how those activities are actually carried out.
+"""
 * base = $plandefinition-apply
 * resource = #PlanDefinition
 * system = false
@@ -168,5 +190,5 @@ Description: "The apply operation applies a PlanDefinition to a given context"
   * use = #out
   * min = 1
   * max = "1"
-  * documentation = "The CarePlan that is the result of applying the plan definition"
-  * type = #CarePlan
+  * documentation = "The RequestGroup that is the result of applying the PlanDefinition"
+  * type = #RequestGroup
