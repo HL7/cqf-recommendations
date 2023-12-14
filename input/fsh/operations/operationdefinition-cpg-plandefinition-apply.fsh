@@ -7,18 +7,54 @@ Description: "The apply operation applies a PlanDefinition to a given context"
 * insert OperationExtensions
 * name = "CPGPlanDefinitionApply"
 * code = #apply
-* comment = "The result of this operation is a CarePlan resource with a single activity represented by a RequestGroup. The RequestGroup will have actions for each of the applicable actions in the plan based on evaluating the applicability condition in context. For each applicable action, the definition is applied as described in the $apply operation of the ActivityDefinition resource, and the resulting resource is added as an activity to the CarePlan. If the ActivityDefinition includes library references, those libraries will be available to the evaluated expressions. If those libraries have parameters, those parameters will be bound by name to the parameters given to the operation. In addition, parameters to the $apply operation are available within dynamicValue expressions as context variables, accessible by the name of the parameter, prefixed with a percent (%) symbol. For a more detailed description, refer to the PlanDefinition and ActivityDefinition resource documentation. Note that result of this operation is transient (i.e. none of the resources created by the operation are persisted in the server, they are all returned as contained resources in the result). The result effectively represents a proposed set of activities, and it is up to the caller to determine whether and how those activities are actually carried out."
+* comment = """
+The result of this operation is a RequestGroup resource.
+
+The RequestGroup will have actions for each of the applicable actions in the
+plan based on evaluating the applicability condition in context. For each
+applicable action, the definition is applied as described in the `$apply`
+operation of the ActivityDefinition resource, and the resulting resource is
+added as an activity to the RequestGroup.
+
+If the ActivityDefinition includes library references, those
+libraries will be available to the evaluated expressions. If those libraries
+have parameters, those parameters will be bound by name to the parameters given
+to the operation.  In addition, parameters to the `$apply` operation are available
+within dynamicValue expressions as context variables, accessible by the name of
+the parameter, prefixed with a percent (%) symbol.
+
+For a more detailed description, refer to the PlanDefinition and
+ActivityDefinition resource documentation. Note that result of this operation is
+transient (i.e. none of the resources created by the operation are persisted in
+the server, they are all returned as contained resources in the result). The
+result effectively represents a proposed set of activities, and it is up to the
+caller to determine whether and how those activities are actually carried out.
+"""
 * base = $plandefinition-apply
 * resource = #PlanDefinition
 * system = false
 * type = true
 * instance = true
 * parameter[+]
+  * name = #url
+  * use = #in
+  * min = 0
+  * max = "1"
+  * documentation = "Canonical URL of the PlanDefinition when invoked at the resource type level. This is exclusive with the `planDefinition` parameter."
+  * type = #uri
+* parameter[+]
+  * name = #version
+  * use = #in
+  * min = 0
+  * max = "1"
+  * documentation = "Version of the PlanDefinition when invoked at the resource type level. This is exclusive with the `planDefinition` parameter."
+  * type = #uri
+* parameter[+]
   * name = #planDefinition
   * use = #in
   * min = 0
   * max = "1"
-  * documentation = "The plan definition to be applied. If the operation is invoked at the instance level, this parameter is not allowed; if the operation is invoked at the type level, this parameter is required"
+  * documentation = "The plan definition to be applied. If the operation is invoked at the instance level, this parameter is not allowed; if the operation is invoked at the type level, either this parameter or `url` (and optionally `version`) must be supplied."
   * type = #PlanDefinition
 * parameter[+]
   * name = #subject
@@ -149,13 +185,58 @@ Description: "The apply operation applies a PlanDefinition to a given context"
   * name = #dataEndpoint
   * type = #Endpoint
   * use = #in
+
 * parameter[+]
-  * documentation = "An endpoint to use to access content (i.e. libraries) referenced by the PlanDefinition. If no content endpoint is supplied, the evaluation will attempt to retrieve content from the server on which the operation is being performed."
-  * max = "1"
+  * name = #artifactEndpointConfiguration
   * min = 0
-  * name = #contentEndpoint
-  * type = #Endpoint
+  * max = "*"
   * use = #in
+  * documentation = """
+Configuration information to resolve canonical artifacts
+
+Processing Semantics:
+
+Create a canonical-like reference (e.g.
+`{canonical.url}|{canonical.version}` or similar extensions for non-canonical artifacts).
+
+* Given a single `artifactEndpointConfiguration`
+  * When `artifactRoute` is present
+    * And `artifactRoute` *starts with* canonical or artifact reference
+    * Then attempt to resolve with `endpointUri` or `endpoint`
+  * When `artifactRoute` is not present
+    * Then attempt to resolve with `endpointUri` or `endpoint`
+* Given multiple `artifactEndpointConfiguration`s
+  * Then rank order each configuration (see below)
+  * And attempt to resolve with `endpointUri` or `endpoint` in order until resolved
+
+Rank each `artifactEndpointConfiguration` such that:
+* if `artifactRoute` is present *and* `artifactRoute` *starts with* canonical or artifact reference: rank based on number of matching characters 
+* if `artifactRoute` is *not* present: include but rank lower
+
+NOTE: For evenly ranked `artifactEndpointConfiguration`s, order as defined in the
+OperationDefinition.
+"""
+  * part[+]
+    * name = #artifactRoute
+    * min = 0
+    * max = "1"
+    * use = #in
+    * type = #uri
+    * documentation = "An optional route used to determine whether this endpoint is expected to be able to resolve artifacts that match the route (i.e. start with the route, up to and including the entire url)"
+  * part[+]
+    * name = #endpointUri
+    * min = 0
+    * max = "1"
+    * use = #in
+    * type = #uri
+    * documentation = "The URI of the endpoint, exclusive with the `endpoint` parameter"
+  * part[+]
+    * name = #endpoint
+    * min = 0
+    * max = "1"
+    * use = #in
+    * type = #Endpoint
+    * documentation = "An Endpoint resource describing the endpoint, exclusive with the `endpointUri` parameter"
 * parameter[+]
   * documentation = "An endpoint to use to access terminology (i.e. valuesets, codesystems, and membership testing) referenced by the PlanDefinition. If no terminology endpoint is supplied, the evaluation will attempt to use the server on which the operation is being performed as the terminology server."
   * max = "1"
@@ -168,5 +249,5 @@ Description: "The apply operation applies a PlanDefinition to a given context"
   * use = #out
   * min = 1
   * max = "1"
-  * documentation = "The CarePlan that is the result of applying the plan definition"
-  * type = #CarePlan
+  * documentation = "The RequestGroup that is the result of applying the PlanDefinition"
+  * type = #RequestGroup
