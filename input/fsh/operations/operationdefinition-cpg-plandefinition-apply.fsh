@@ -48,7 +48,7 @@ caller to determine whether and how those activities are actually carried out.
   * min = 0
   * max = "1"
   * documentation = "Version of the PlanDefinition when invoked at the resource type level. This is exclusive with the `planDefinition` parameter."
-  * type = #uri
+  * type = #string
 * parameter[+]
   * name = #planDefinition
   * use = #in
