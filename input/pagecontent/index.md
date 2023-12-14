@@ -181,9 +181,11 @@ It is important to note that this effort is a concerted attempt to build on, lea
 |Aaron M. Harris, MD, MPH, FACP|CDC, Subject Matter Expert|Contributor|
 |Dwayne Hoelscher, DNP, RN-BC, CPHIMS|Nursing Informaticist|Contributor|
 |Emma Jones RN-BC, MSN|Allscripts, Expert Business Analyst|Contributor, Co-Chair (Patient Care), IHE Co-Chair (Patient Care Coordination)|
+|Brian Kaney|Vermonster|Editor|
 |James Kariuki|CDC, Health Scientist|Contributor|
 |Kensaku Kawamoto, MD, PhD, MHS||Contributor, Co-Chair (Clinical Decision Support)
 |Robert Lario, MSE, MBA|University of Utah/US Department of Veterans Affairs, Health Standards Architect|Contributor|
+|Taylor Le|Vermonster|Editor|
 |Ira M. Lubin, PhD|CDC, Health Scientist|Contributor|
 |Laura Haak Marcial|RTI International, Health Informaticist|Contributor|
 |Robert McClure, MD, MPH||Contributor, Co-Chair (Vocabulary)
