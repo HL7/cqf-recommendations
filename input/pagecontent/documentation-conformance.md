@@ -30,8 +30,8 @@ In addition, because FHIR-based CPGs are themselves FHIR implementation guides, 
 
 The [Profiles](profiles.html) page provides an overview of the various categories of profiles defined by this implementation guide, as well as a discussion of the use of profiles generally in computable content. In summary:
 
-* Knowledge Artifacts SHALL conform to at least the appropriate Shareable profile for the type of knowledge artifact
-* Knowledge Artifacts SHOULD conform to the appropriate Computable, Publishable, and Executable profiles for the type of knowledge artifact, and SHALL provide documentation describing the expected packaging and distribution targets for content.
+* Knowledge Artifacts SHALL conform to at least the appropriate Shareable profile defined in the [Canonical Resource Management Infrastructure](http://hl7.org/fhir/uv/crmi) for the type of knowledge artifact
+* Knowledge Artifacts SHOULD conform to the appropriate Computable, Publishable, and Executable profiles in CRMI and this implementation guide for the type of knowledge artifact, and SHALL provide documentation describing the expected packaging and distribution targets for content.
 * Content implementation guides SHOULD provide _case features_ describing the minimum data set appropriate for their content
 * Content implementation guides SHOULD nominate a candidate set of _interoperability profiles_
 
@@ -46,8 +46,8 @@ The [Terminology](terminology.html) page provides an overview of the usage of te
 
 The [Libraries](libraries.html) page provides an overview of the usage of Library resources to represent computable content, as well as general guidance for authoring shareable logic using CQL. In summary:
 
-* Logic distributed as part of content implementation guides SHALL conform to at least the ShareableLibrary profile
-* Logic distributed as part of content implementation guides SHOULD conform to the Computable, Publishable, and Executable profiles, and SHALL provide documentation describing the expected packaging and distribution targets for content.
+* Logic distributed as part of content implementation guides SHALL conform to at least the ShareableLibrary profile defined in [CRMI](https://build.fhir.org/ig/HL7/crmi-ig)
+* Logic distributed as part of content implementation guides SHOULD conform to the Computable, Publishable, and Executable profiles, in [Using CQL With FHIR](https://build.fhir.org/ig/HL7/cql-ig), CRMI, and this impplelemtnation guide and SHALL provide documentation describing the expected packaging and distribution targets for content.
 
 ### Levels of Conformance
 

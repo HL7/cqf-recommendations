@@ -64,6 +64,10 @@ Translating guideline recommendations and other types of guidance into practice 
 2.  Common standards that can work across the entire data lifecycle (a.k.a. learning health system - see Figure 1.2) and different electronic health record (EHR) platforms
 3.  Closed-loop guideline content and information flow inclusive of feedback and feedforward processes
 
+This implementation guide is focused on the development of computable representations of Clinical Guideline content as FHIR knowledge artifacts. Since the initial publication, much of the guidance around the content management lifecycle (Shareable, Publishable, Computable, and Executable profile categories) has been generalized to apply across similar content management use cases in other FHIR IGs and is now available in the [Canonical Resource Management Infrastructure](https://build.fhir.org/ig/HL7/crmi-ig). Content conforming to this implementation guide should make use of the content development approach supported by that implementation guide.
+
+In addition, the initial publication of this IG included conformance and guidance related to the use of CQL. This material has been generalized to apply across similar use cases in other FHIR IGs and is now available in the [Using CQL With FHIR](https://build.fhir.org/ig/HL7/cql-ig) implementation guide. Content conforming to this implementation guide should make use of the CQL approach supported by that implementation guide.
+
 ### Goals
 
 **The purpose of the CPG-IG is to:**

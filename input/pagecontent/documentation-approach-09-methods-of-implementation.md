@@ -53,9 +53,9 @@ In general, activities within a computable practice guideline are modeled as req
 Note that although these elements are described by the base _request_ pattern within FHIR, the request resources do not necessarily follow these patterns exactly. Variability in use cases and scope of the request resources results in variability in how the request pattern is applied. This results in differences in the way the pattern is implemented, but in general, activities in the CPG move through the following basic steps:
 
 1. Activities are proposed as requests with a status of `draft` and an intent of `proposal`.
-2. Proposals that are accepted move to a status of `active` and an intent of `plan`.
+2. Proposals that are accepted result in a new _request_, linked to the proposal and with a status of `active` and an intent of `plan`.
 3. Proposals that are rejected move to a status of `cancelled`.
-4. Accepted proposals that are _authorized_ move to an intent of `order`
+4. Accepted proposals (plans) that are _authorized_ result in a new _request_, linked to the plan with an intent of `order`
 5. Orders that are _fulfilled_ move to a status of `completed`, and result in the creation of a corresponding _event_ resource.
 6. Events are typically created with a status of `preparation` or `in-progress`, and the `basedOn` element is used to indicate the request the event is fulling
 7. In-progress events that are completed move to a status of `completed`
@@ -67,11 +67,13 @@ Note also that an _event_ may be documented directly without a corresponding req
 
 Following this pattern for a positive recommendation (i.e. a recommendation _to_ perform some activity), we can state the applicability logic generally as:
 
-_If the activity has not performed (nor documented as not having been performed), and is not proposed, planned, or ordered, then propose the activity_
+_If the activity has not been performed (nor documented as not having been performed), and is not proposed, planned, or ordered, then propose the activity_
 
 And similarly, for a negative recommendation (i.e. a recommendation _not to_ perform some activity), we can state the applicability logic generally as:
 
-_If the activity is proposed, planned, ordered, or in-progress (and not documented as not having been performed), and there is no proposal (planned or rejected) to stop or not to perform the activity, the propose stopping and/or not performing the activity_
+_If the activity is proposed, planned, ordered, or in-progress (and not documented as not having been performed), and there is no proposal (planned or rejected) to stop or not to perform the activity, then propose stopping and/or not performing the activity_
+
+The [Activity Flow](activityflow.html) topic provides a detailed description of the above process, including how each activity is realized in each FHIR resource. 
 
 #### PlanDefinition Processing Semantics
 

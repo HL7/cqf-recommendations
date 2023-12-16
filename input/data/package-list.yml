@@ -10,7 +10,21 @@ introduction: >-
 list:
   - version: current
     desc: |-
-      
+      This ballot of the Clinical Guidelines implementation guides incorporates feedback that has been received during the trial-use 
+      implementation period. Feedback from production implementations of clinical reasoning capability as well as multiple content 
+      development projects covering various aspects of computable guideline content development and implementation has been included.
+
+      Major changes include:
+
+      * Removed Shareable/Publishable/Executable profiles and referenced the CRMI IG for those capabilities instead (see [Profiles](profiles.html))
+      * Removed the Using CQL and Libraries conformance requirements and referenced the Using CQL with FHIR IG for those capabilities instead (see [Libraries](libraries.html))
+      * Detailed descriptions of activity flow (see [Activity Flow](activityflow.html))
+      * Recommend an Immunization activity now uses MedicationRequest 
+      * Added L1 checklist from GIN-NA working group (see [L1 Checklist](clinical-guidelines-development-L1-checklist.html))
+      * Moved most example IGs to cqframework (see [Examples](examples.html))
+
+      The following sections detail the changes that were applied for this ballot.
+
       The following trackers were applied for this version:
 
       **Status**: **Summary**:(**Jira Issue**)
