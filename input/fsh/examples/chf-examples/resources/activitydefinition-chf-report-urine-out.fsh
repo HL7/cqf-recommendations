@@ -2,7 +2,7 @@ Instance: chf-report-urine-out
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Report Urine Out Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-report-urine-out)
+* insert ExampleActivityDefinitionMetadata(chf-report-urine-out)
 * extension[+]
   * url = Canonical(cpg-reportWith)
   * valueCanonical = Canonical(chf-urine-out-measure)

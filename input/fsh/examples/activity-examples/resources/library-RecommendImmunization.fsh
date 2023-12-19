@@ -2,7 +2,7 @@ Instance: recommendimmunization-library
 InstanceOf: Library
 Usage: #example
 * title = "Recommend Immunization"
-* insert KnowledgeArtifactMetadata(recommendimmunization-library, Library)
+* insert ExampleLibraryMetadata(recommendimmunization-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to recommend an immunization"
 * name = "RecommendImmunization"

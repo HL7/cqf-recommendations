@@ -2,7 +2,7 @@ Instance: chf-jvp-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Jugular Venous Pressure Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-jvp-pd)
+* insert ExamplePlanDefinitionMetadata(chf-jvp-pd)
 * insert PlanDefinitionPartOfExtension(chf-hypervolemia)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFJVPPD"

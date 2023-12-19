@@ -2,7 +2,7 @@ Instance: chf-cardiology-consultation
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Cardiology Consultation Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-cardiology-consultation)
+* insert ExampleActivityDefinitionMetadata(chf-cardiology-consultation)
 * name = "CHFCardiologyConsultation"
 * description = "Cardiology consultation as part of a congestive heart failure care pathway"
 * kind = #ServiceRequest

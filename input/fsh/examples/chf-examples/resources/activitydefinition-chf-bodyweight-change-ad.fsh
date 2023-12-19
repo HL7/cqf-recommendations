@@ -2,7 +2,7 @@ Instance: chf-bodyweight-change-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Body Weight Change Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-bodyweight-change-ad)
+* insert ExampleActivityDefinitionMetadata(chf-bodyweight-change-ad)
 * name = "CHFBodyWeightChange"
 * description = "Record body weight change"
 * kind = #Task

@@ -2,7 +2,7 @@ Instance: activity-example-recordinference-ad
 InstanceOf: CPGRecordInferenceActivity
 Usage: #example
 * title = "Activity Example Record Inference AD"
-* insert KnowledgeArtifactADMetadata(activity-example-recordinference-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-recordinference-ad)
 * description = "Example Activity Definition for a recommendation to record an inference"
 * name = "ActivityExampleRecordInferenceAD"
 * kind = #Task

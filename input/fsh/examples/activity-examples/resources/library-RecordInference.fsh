@@ -2,7 +2,7 @@ Instance: recordinference-library
 InstanceOf: Library
 Usage: #example
 * title = "Record Inference"
-* insert KnowledgeArtifactMetadata(recordinference-library, Library)
+* insert ExampleLibraryMetadata(recordinference-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to record an inference"
 * name = "RecordInference"

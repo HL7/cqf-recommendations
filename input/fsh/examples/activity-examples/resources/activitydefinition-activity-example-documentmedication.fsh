@@ -2,7 +2,7 @@ Instance: activity-example-documentmedication-ad
 InstanceOf: CPGDocumentMedicationActivity
 Usage: #example
 * title = "Activity Example Document Medication AD"
-* insert KnowledgeArtifactADMetadata(activity-example-documentmedication-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-documentmedication-ad)
 * description = "Example Activity Definition for a recommendation to document a medication"
 * name = "ActivityExampleDocumentMedicationAD"
 * kind = #Task

@@ -2,7 +2,7 @@ Instance: activity-example-collectinformation-ad
 InstanceOf: CPGCollectInformationActivity
 Usage: #example
 * title = "Activity Example Collect Information AD"
-* insert KnowledgeArtifactADMetadata(activity-example-collectinformation-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-collectinformation-ad)
 * description = "Example Activity Definition for a recommendation to collect information"
 * extension[+]
   * url = $cpg-collectWith

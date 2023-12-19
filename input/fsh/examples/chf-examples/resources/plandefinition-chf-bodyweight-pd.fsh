@@ -2,7 +2,7 @@ Instance: chf-bodyweight-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Body Weight Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-bodyweight-pd)
+* insert ExamplePlanDefinitionMetadata(chf-bodyweight-pd)
 * insert PlanDefinitionPartOfExtension(chf-daily-management)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFBodyWeight"

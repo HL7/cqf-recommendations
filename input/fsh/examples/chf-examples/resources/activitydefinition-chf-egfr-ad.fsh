@@ -2,7 +2,7 @@ Instance: chf-egfr-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF eGFR Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-egfr-ad)
+* insert ExampleActivityDefinitionMetadata(chf-egfr-ad)
 * name = "CHFEGFR"
 * description = "Measure eGFR"
 * kind = #ServiceRequest

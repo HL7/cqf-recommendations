@@ -2,7 +2,7 @@ Instance: activity-example-reportflag-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Report Flag PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-reportflag-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-reportflag-pd)
 * description = "Example Plan Definition for a recommendation to report a flat"
 * name = "ActivityExampleReportFlagPD"
 * type = $plan-definition-type#eca-rule

@@ -2,7 +2,7 @@ Instance: chf-urine-out-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Urine Out Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-urine-out-ad)
+* insert ExampleActivityDefinitionMetadata(chf-urine-out-ad)
 * name = "CHFUrineOut"
 * description = "Measure urine output"
 * kind = #ServiceRequest

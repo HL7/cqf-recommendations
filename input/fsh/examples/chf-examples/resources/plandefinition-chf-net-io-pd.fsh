@@ -2,7 +2,7 @@ Instance: chf-net-io-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Net IO Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-net-io-pd)
+* insert ExamplePlanDefinitionMetadata(chf-net-io-pd)
 * insert PlanDefinitionPartOfExtension(chf-daily-management)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFNetIO"

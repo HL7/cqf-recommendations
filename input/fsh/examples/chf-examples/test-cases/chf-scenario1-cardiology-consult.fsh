@@ -5,7 +5,7 @@ Description: "CHF Scenario One"
 * extension
   * url = Canonical(cpg-instantiatesCaseFeature)
   * valueCanonical = Canonical(chf-cardiology-consult)
-* basedOn = Reference(chf-scenario1-cardiology-consultation)
+* basedOn = Reference(chf-scenario1-cardiology-consult-request)
 * status = #preparation
 * category = $sct#386053000 "Evaluation procedure (procedure)"
   * text = "Evaluation"

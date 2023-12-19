@@ -2,7 +2,7 @@ Instance: activity-example-orderservice-ad
 InstanceOf: CPGServiceRequestActivity
 Usage: #example
 * title = "Activity Example Order Service AD"
-* insert KnowledgeArtifactADMetadata(activity-example-orderservice-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-orderservice-ad)
 * description = "Example Activity Definition for a recommendation to order a service"
 * name = "ActivityExampleOrderServiceAD"
 * kind = #ServiceRequest

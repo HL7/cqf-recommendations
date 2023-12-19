@@ -2,7 +2,7 @@ Instance: chf-lasix
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF LASIX Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-lasix)
+* insert ExamplePlanDefinitionMetadata(chf-lasix)
 * insert PlanDefinitionPartOfExtension(chf-hypervolemia)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFLASIX"

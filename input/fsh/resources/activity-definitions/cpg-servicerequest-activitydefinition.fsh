@@ -1,6 +1,6 @@
 Instance: cpg-servicerequest-activitydefinition
-InstanceOf: ActivityDefinition
-Usage: #definition
+InstanceOf: CPGServiceRequestActivity
+Usage: #example
 Title: "CPG ServiceRequest ActivityDefinition"
 * insert ActivityDefinitionMetadata(cpg-servicerequest-activitydefinition,CPGServiceRequestActivityDefinition)
 * url = "http://hl7.org/fhir/uv/cpg/ActivityDefinition/cpg-servicerequest-activitydefinition"

@@ -2,7 +2,7 @@ Instance: proposediagnosis-library
 InstanceOf: Library
 Usage: #example
 * title = "Propose Diagnosis Library"
-* insert KnowledgeArtifactMetadata(proposediagnosis-library, Library)
+* insert ExampleLibraryMetadata(proposediagnosis-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to propose a diagnosis"
 * name = "ProposeDiagnosisLibrary"

@@ -2,7 +2,7 @@ Instance: activity-example-recommendimmunization-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Recommend Immunization PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-recommendimmunization-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-recommendimmunization-pd)
 * description = "Example Plan Definition for a recommendation to provide an immunization"
 * name = "ActivityExampleRecommendImmunizationPD"
 * type = $plan-definition-type#eca-rule

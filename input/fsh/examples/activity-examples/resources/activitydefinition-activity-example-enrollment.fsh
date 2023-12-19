@@ -2,7 +2,7 @@ Instance: activity-example-enrollment-ad
 InstanceOf: CPGEnrollmentActivity
 Usage: #example
 * title = "Activity Example Enrollment AD"
-* insert KnowledgeArtifactADMetadata(activity-example-enrollment-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-enrollment-ad)
 * description = "Example Activity Definition for a recommendation to enroll a patient in a pathway"
 * extension[+]
   * url = $cpg-enrollIn

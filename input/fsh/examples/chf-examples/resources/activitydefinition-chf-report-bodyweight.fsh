@@ -2,7 +2,7 @@ Instance: chf-report-bodyweight
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Report Body Weight Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-report-bodyweight)
+* insert ExampleActivityDefinitionMetadata(chf-report-bodyweight)
 * extension[+]
   * url = Canonical(cpg-reportWith)
   * valueCanonical = Canonical(chf-bodyweight-measure)

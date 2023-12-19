@@ -1,6 +1,6 @@
 This is an [executable artifact profile](profiles.html#artifact-profiles)
 
-**Examples:**
+**External Examples:**
 
 *  [https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/Opioids with Ambulatory Abuse Potential](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/ValueSet-opioids-with-ambulatory-abuse-potential.html)
 

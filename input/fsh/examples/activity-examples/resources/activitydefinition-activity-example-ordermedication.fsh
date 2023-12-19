@@ -2,7 +2,7 @@ Instance: activity-example-ordermedication-ad
 InstanceOf: CPGMedicationRequestActivity
 Usage: #example
 * title = "Activity Example Order Medication AD"
-* insert KnowledgeArtifactADMetadata(activity-example-ordermedication-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-ordermedication-ad)
 * description = "Example Activity Definition for a recommendation to order a medication"
 * name = "ActivityExampleOrderMedicationAD"
 * kind = #MedicationRequest

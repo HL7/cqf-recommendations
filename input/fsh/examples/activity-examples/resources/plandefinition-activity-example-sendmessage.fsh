@@ -2,7 +2,7 @@ Instance: activity-example-sendmessage-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Send Message PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-sendmessage-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-sendmessage-pd)
 * description = "Example Plan Definition for a recommendation to send a message"
 * name = "ActivityExampleSendMessagePD"
 * type = $plan-definition-type#eca-rule

@@ -1,6 +1,6 @@
 This is a [publishable artifact profile](profiles.html#artifact-profiles)
 
-**Examples:**
+**External Examples:**
 
 *   [ANC Reason for Visit](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/alueSet-anc-reason-for-visit-vs.html)
 

@@ -2,7 +2,7 @@ Instance: chf-o2-sat-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Oxygen Saturation Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-o2-sat-pd)
+* insert ExamplePlanDefinitionMetadata(chf-o2-sat-pd)
 * insert PlanDefinitionPartOfExtension(chf-hypervolemia)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFO2SatPD"

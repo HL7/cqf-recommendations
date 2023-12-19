@@ -2,7 +2,7 @@ Instance: chf-pathway
 InstanceOf: CPGPathwayDefinition
 Usage: #example
 Title: "Congestive Heart Failure Care Pathway"
-* insert CHFPlanDefinitionMetadata(chf-pathway)
+* insert ExamplePlanDefinitionMetadata(chf-pathway)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFPathway"
 * description = "Treatment and management care pathway for patients with admitting diagnosis of congestive heart failure"

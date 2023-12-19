@@ -2,7 +2,7 @@ Instance: activity-example-collectinformation-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Collect Information PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-collectinformation-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-collectinformation-pd)
 * description = "Example Plan Definition for a recommendation to collect information"
 * name = "ActivityExampleCollectInformationPD"
 * type = $plan-definition-type#eca-rule

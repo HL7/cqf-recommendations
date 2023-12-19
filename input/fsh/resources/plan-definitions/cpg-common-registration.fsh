@@ -1,7 +1,7 @@
 Instance: cpg-common-registration
 InstanceOf: CPGWorkflowDefinition
 Usage: #definition
-* insert KnowledgeArtifactPDRecommendationMetadata(cpg-common-registration)
+* insert ExamplePlanDefinitionMetadata(cpg-common-registration)
 * title = "PlanDefinition - CPG Common Registration"
 * description = "Plan for registering patient"
 * name = "PlanDefinition_CPG_Common_Registration"

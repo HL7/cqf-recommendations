@@ -2,7 +2,7 @@ Instance: orderservice-library
 InstanceOf: Library
 Usage: #example
 * title = "Order Service Library"
-* insert KnowledgeArtifactMetadata(orderservice-library, Library)
+* insert ExampleLibraryMetadata(orderservice-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to order a service"
 * name = "OrderServiceLibrary"

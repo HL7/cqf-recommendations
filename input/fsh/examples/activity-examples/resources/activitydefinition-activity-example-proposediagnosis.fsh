@@ -2,7 +2,7 @@ Instance: activity-example-proposediagnosis-ad
 InstanceOf: CPGProposeDiagnosisActivity
 Usage: #example
 * title = "Activity Example Propose Diagnosis AD"
-* insert KnowledgeArtifactADMetadata(activity-example-proposediagnosis-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-proposediagnosis-ad)
 * description = "Example Activity Definition for a recommendation to propose a diagnosis"
 * name = "ActivityExampleProposeDiagnosisAD"
 * kind = #Task

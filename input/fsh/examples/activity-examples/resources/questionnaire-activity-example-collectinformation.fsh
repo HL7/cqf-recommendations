@@ -2,7 +2,7 @@ Instance: activity-example-collectinformation-questionnaire
 InstanceOf: CPGComputableQuestionnaire
 Usage: #example
 * title = "Activity Example Collect Information Questionnaire"
-* insert KnowledgeArtifactQuestionnaireMetadata(activity-example-collectinformation-questionnaire)
+* insert ExampleQuestionnaireMetadata(activity-example-collectinformation-questionnaire)
 * description = "Example Questionnaire for use in collect information activity examples"
 * name = "ActivityExampleCollectInformationQuestionnaire"
 * item

@@ -2,7 +2,7 @@ Instance: chf-egfr-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF eGFR Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-egfr-pd)
+* insert ExamplePlanDefinitionMetadata(chf-egfr-pd)
 * insert PlanDefinitionPartOfExtension(chf-hypervolemia)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFEGFRPD"

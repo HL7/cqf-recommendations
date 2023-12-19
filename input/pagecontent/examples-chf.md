@@ -241,7 +241,7 @@ The following index lists all the case-specific resources in this example:
 |RelatedPerson|[chf-scenario1-relatedperson](RelatedPerson-chf-scenario1-relatedperson.html)|
 |RequestGroup|[chf-scenario1-daily-management](RequestGroup-chf-scenario1-daily-management.html)|
 |RequestGroup|[chf-scenario1-hypervolemia](RequestGroup-chf-scenario1-hypervolemia.html)|
-|ServiceRequest|[chf-scenario1-cardiology-consultation](ServiceRequest-chf-scenario1-cardiology-consultation.html)|
+|ServiceRequest|[chf-scenario1-cardiology-consult-request](ServiceRequest-chf-scenario1-cardiology-consult-request.html)|
 |ServiceRequest|[chf-scenario1-jvp](ServiceRequest-chf-scenario1-jvp.html)|
 |ServiceRequest|[chf-scenario1-o2-sat](ServiceRequest-chf-scenario1-o2-sat.html)|
 

@@ -2,7 +2,7 @@ Instance: chf-daily-management
 InstanceOf: CPGStrategyDefinition
 Usage: #example
 Title: "CHF Daily Management Strategy"
-* insert CHFPlanDefinitionMetadata(chf-daily-management)
+* insert ExamplePlanDefinitionMetadata(chf-daily-management)
 * insert PlanDefinitionPartOfExtension(chf-pathway)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFDailyManagement"

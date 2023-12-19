@@ -2,7 +2,7 @@ Instance: activity-example-recorddetectedissue-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Record Detected Issue PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-recorddetectedissue-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-recorddetectedissue-pd)
 * description = "Example Plan Definition for a recommendation to record a detected issue"
 * name = "ActivityExampleRecordDetectedIssuePD"
 * type = $plan-definition-type#eca-rule
