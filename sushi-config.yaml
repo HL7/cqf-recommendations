@@ -36,7 +36,7 @@ publisher:
 #
 
 dependencies:
-  hl7.fhir.uv.extensions: current
+  hl7.fhir.uv.extensions: 5.1.0-ballot1
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
