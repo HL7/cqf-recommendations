@@ -193,7 +193,7 @@
 <artifact id="StructureDefinition/cpg-itemImage" key="StructureDefinition-cpg-itemImage" name="CPG Item Image Extension"/>
 <artifact id="StructureDefinition/cpg-location" key="StructureDefinition-cpg-location" name="CPG Location"/>
 <artifact id="StructureDefinition/cpg-locationdefinition" key="StructureDefinition-cpg-locationdefinition" name="CPG Location Definition"/>
-<artifact id="StructureDefinition/cpg-medicationrequest" key="StructureDefinition-cpg-medicationrequest" name="CPG Medicaiton Request"/>
+<artifact id="StructureDefinition/cpg-medicationrequest" key="StructureDefinition-cpg-medicationrequest" name="CPG Medication Request"/>
 <artifact id="StructureDefinition/cpg-medicationadministration" key="StructureDefinition-cpg-medicationadministration" name="CPG Medication Administration"/>
 <artifact id="StructureDefinition/cpg-medicationdispense" key="StructureDefinition-cpg-medicationdispense" name="CPG Medication Dispense"/>
 <artifact id="StructureDefinition/cpg-medicationrequestactivity" key="StructureDefinition-cpg-medicationrequestactivity" name="CPG Medication Request Activity"/>
