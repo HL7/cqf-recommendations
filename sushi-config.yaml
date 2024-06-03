@@ -37,7 +37,7 @@ publisher:
 
 dependencies:
   hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions: 5.1.0-cibuild
+  hl7.fhir.uv.extensions: 5.1.0
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
