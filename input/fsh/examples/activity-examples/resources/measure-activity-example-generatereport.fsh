@@ -2,7 +2,7 @@ Instance: activity-example-generatereport-measure
 InstanceOf: CPGComputableMetric
 Usage: #example
 * insert Profile(cpg-computablemetric)
-* insert KnowledgeArtifactMetadata(activity-example-generatereport-measure, Measure)
+* insert ExampleMeasureMetadata(activity-example-generatereport-measure)
 * description = "Example measure for the activity example to generate a report"
 * title = "Activity Example Generate Report Measure"
 * name = "ActivityExampleGenerateReportMeasure"

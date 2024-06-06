@@ -2,7 +2,7 @@ Instance: chf-cardiology-consultation-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Cardiology Consultation Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-cardiology-consultation-pd)
+* insert ExamplePlanDefinitionMetadata(chf-cardiology-consultation-pd)
 * insert PlanDefinitionPartOfExtension(chf-hypervolemia)
 * insert PlanDefinitionEnabledExtension
 * url = Canonical(chf-cardiology-consultation-pd)

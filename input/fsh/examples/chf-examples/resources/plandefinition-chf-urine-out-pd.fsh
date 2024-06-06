@@ -2,7 +2,7 @@ Instance: chf-urine-out-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 Title: "CHF Urine Out Recommendation"
-* insert CHFPlanDefinitionMetadata(chf-urine-out-pd)
+* insert ExamplePlanDefinitionMetadata(chf-urine-out-pd)
 * insert PlanDefinitionPartOfExtension(chf-daily-management)
 * insert PlanDefinitionEnabledExtension
 * name = "CHFUrineOut"

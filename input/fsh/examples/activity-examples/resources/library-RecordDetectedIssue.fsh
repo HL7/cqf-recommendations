@@ -2,7 +2,7 @@ Instance: recorddetectedissue-library
 InstanceOf: Library
 Usage: #example
 * title = "Record Detected Issue Library"
-* insert KnowledgeArtifactMetadata(recorddetectedissue-library, Library)
+* insert ExampleLibraryMetadata(recorddetectedissue-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to record a detected issue"
 * name = "RecordDetectedIssueLibrary"

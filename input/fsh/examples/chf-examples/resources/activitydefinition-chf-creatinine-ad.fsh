@@ -2,7 +2,7 @@ Instance: chf-creatinine-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Creatinine Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-creatinine-ad)
+* insert ExampleActivityDefinitionMetadata(chf-creatinine-ad)
 * name = "CHFCreatinine"
 * description = "Monitor Creatinine"
 * kind = #ServiceRequest

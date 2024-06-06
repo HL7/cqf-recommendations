@@ -2,7 +2,7 @@ Instance: activity-example-recordinference-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Record Inference PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-recordinference-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-recordinference-pd)
 * description = "Example Plan Definition for a recommendation to record an inference"
 * name = "ActivityExampleRecordInferencePD"
 * type = $plan-definition-type#eca-rule

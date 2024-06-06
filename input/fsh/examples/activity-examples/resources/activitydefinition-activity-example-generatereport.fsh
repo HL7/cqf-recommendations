@@ -2,7 +2,7 @@ Instance: activity-example-generatereport-ad
 InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-generatereportactivity
 Usage: #example
 * title = "Activity Example Generate Report AD"
-* insert KnowledgeArtifactADMetadata(activity-example-generatereport-ad)
+* insert ExampleActivityDefinitionMetadata(activity-example-generatereport-ad)
 * description = "Example Activity Definition for a recommendation to generate a report"
 * extension[+]
   * url = $cpg-reportWith

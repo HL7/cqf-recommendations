@@ -2,7 +2,7 @@ Instance: sendmessage-library
 InstanceOf: Library
 Usage: #example
 * title = "Send Message Library"
-* insert KnowledgeArtifactMetadata(sendmessage-library, Library)
+* insert ExampleLibraryMetadata(sendmessage-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to send a message"
 * name = "SendMessageLibrary"

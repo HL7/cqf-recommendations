@@ -2,7 +2,7 @@ Instance: donotsendmessage-library
 InstanceOf: Library
 Usage: #example
 * title = "Do Not Send Message"
-* insert KnowledgeArtifactMetadata(donotsendmessage-library, Library)
+* insert ExampleLibraryMetadata(donotsendmessage-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation not to send a message"
 * name = "DoNotSendMessage"

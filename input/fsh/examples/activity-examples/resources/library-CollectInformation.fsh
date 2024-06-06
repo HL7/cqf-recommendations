@@ -2,7 +2,7 @@ Instance: collectinformation-library
 InstanceOf: Library
 Usage: #example
 * title = "Collect Information Library"
-* insert KnowledgeArtifactMetadata(collectinformation-library, Library)
+* insert ExampleLibraryMetadata(collectinformation-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to collect information"
 * name = "CollectInformationLibrary"

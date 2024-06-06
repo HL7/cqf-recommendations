@@ -2,7 +2,7 @@ Instance: enrollment-library
 InstanceOf: Library
 Usage: #example
 * title = "Enrollment Library"
-* insert KnowledgeArtifactMetadata(enrollment-library, Library)
+* insert ExampleLibraryMetadata(enrollment-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to enroll a patient in a pathway"
 * name = "EnrollmentLibrary"

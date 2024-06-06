@@ -2,7 +2,7 @@ Instance: chf-bodyweight-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Body Weight Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-bodyweight-ad)
+* insert ExampleActivityDefinitionMetadata(chf-bodyweight-ad)
 * name = "CHFBodyWeight"
 * description = "Measure body weight"
 * kind = #ServiceRequest

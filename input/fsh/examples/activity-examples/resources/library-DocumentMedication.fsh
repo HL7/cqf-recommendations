@@ -2,7 +2,7 @@ Instance: documentmedication-library
 InstanceOf: Library
 Usage: #example
 * title = "Document Medication Library"
-* insert KnowledgeArtifactMetadata(documentmedication-library, Library)
+* insert ExampleLibraryMetadata(documentmedication-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to document a medication"
 * name = "DocumentMedicationLibrary"

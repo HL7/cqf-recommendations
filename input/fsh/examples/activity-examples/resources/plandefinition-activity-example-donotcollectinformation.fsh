@@ -2,7 +2,7 @@ Instance: activity-example-donotcollectinformation-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Do Not Collect Information PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-donotcollectinformation-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-donotcollectinformation-pd)
 * description = "Example Plan Definition for a recommendation not to collect information"
 * name = "ActivityExampleDoNotCollectInformationPD"
 * type = $plan-definition-type#eca-rule

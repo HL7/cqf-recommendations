@@ -2,7 +2,7 @@ Instance: chf-o2-sat-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Oxygen Saturation Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-o2-sat-ad)
+* insert ExampleActivityDefinitionMetadata(chf-o2-sat-ad)
 * name = "CHFO2Sat"
 * description = "Monitor Oxygen Saturation"
 * kind = #ServiceRequest

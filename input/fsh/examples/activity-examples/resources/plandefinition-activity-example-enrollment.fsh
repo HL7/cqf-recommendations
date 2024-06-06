@@ -2,7 +2,7 @@ Instance: activity-example-enrollment-pd
 InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Enrollment PD"
-* insert KnowledgeArtifactPDRecommendationMetadata(activity-example-enrollment-pd)
+* insert ExamplePlanDefinitionMetadata(activity-example-enrollment-pd)
 * description = "Example Plan Definition for a recommendation to enroll a patient"
 * name = "ActivityExampleEnrollmentPD"
 * type = $plan-definition-type#eca-rule

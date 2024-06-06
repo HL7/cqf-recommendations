@@ -2,7 +2,7 @@ Instance: donotcollectinformation-library
 InstanceOf: Library
 Usage: #example
 * title = "Do Not Collect Information Library"
-* insert KnowledgeArtifactMetadata(donotcollectinformation-library, Library)
+* insert ExampleLibraryMetadata(donotcollectinformation-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation not to collect information"
 * name = "DoNotCollectInformationLibrary"

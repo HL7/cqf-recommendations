@@ -1,7 +1,7 @@
 Profile: CPGMedicationRequest
 Parent: MedicationRequest
 Id: cpg-medicationrequest
-Title: "CPG Medicaiton Request"
+Title: "CPG Medication Request"
 Description: "Recommendation for a specific medication as part of the delivery of a computable clinical practice guideline"
 * ^version = "2.0.0-ballot"
 * insert StructureDefinitionMetadata(cpg-medicationrequest)

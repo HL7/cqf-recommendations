@@ -2,7 +2,7 @@ Instance: chf-net-io-ad
 InstanceOf: CPGComputableActivityDefinition
 Usage: #example
 Title: "CHF Net IO Activity Defintion"
-* insert CHFActivityDefinitionMetadata(chf-net-io-ad)
+* insert ExampleActivityDefinitionMetadata(chf-net-io-ad)
 * name = "CHFNetIO"
 * description = "Measure net intake/output"
 * kind = #ServiceRequest

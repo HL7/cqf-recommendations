@@ -2,7 +2,7 @@ Instance: chf-bodyweight-change-measure
 InstanceOf: CPGComputableMetric
 Usage: #example
 * title = "CHF Body Weight Change Metric"
-* insert CHFMeasureMetadata(chf-bodyweight-change-measure)
+* insert ExampleMeasureMetadata(chf-bodyweight-change-measure)
 * name = "CHFBodyWeightChange"
 * description = "Body weight change metric as a feature of a congestive heart failure pathway"
 * library = Canonical(CHF)

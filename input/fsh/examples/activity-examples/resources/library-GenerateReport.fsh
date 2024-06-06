@@ -2,7 +2,7 @@ Instance: generatereport-library
 InstanceOf: Library
 Usage: #example
 * title = "Generate Report Library"
-* insert KnowledgeArtifactMetadata(generatereport-library, Library)
+* insert ExampleLibraryMetadata(generatereport-library)
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to generate a report"
 * name = "GenerateReportLibrary"
