@@ -606,6 +606,7 @@
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 <page key="documentation-approach-07-tiers-of-functionality" name="Tiers of Functionality"/>
+<page deprecated="true" key="changes" name="Version History"/>
 <page key="documentation-approach-12-06-cpg-common-pathway" name="Workflow and Common Pathway"/>
 <page key="documentation-approach-06-01-levels-of-knowledge-representation" name="“Levels” of Knowledge Representation Framing"/>
 </specification>
