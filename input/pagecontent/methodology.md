@@ -66,7 +66,7 @@ In the top row of Figure 4, the Content Implementation Guides are FHIR Implement
 Overall, the methodology used by this implementation guide consists of the following steps:
 
 * **Select:** Select content and recommendations for implementation
-* **Represent:**Apply selected recommendations to the implementation approach
+* **Represent:** Apply selected recommendations to the implementation approach
 * **Translate:** Express concepts, flow diagrams, and narrative content formally
 * **Validate:** Build and run test cases to verify expected functionality
 
