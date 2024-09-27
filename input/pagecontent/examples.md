@@ -6,7 +6,7 @@ This page lists examples of various clinical guidelines expressed as computable 
 *   [Chronic Disease Management - Chronic Kidney Disease](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/index.html)
 *   [Congestive Heart Failure](examples-chf.html)
 *   [COVID-19 CPG Methodology Case Study](methodology-case-study.html)
-*   [Opioid Prescribing Guideline](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/index.html)
+*   [Opioid Prescribing Guideline 2016](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/index.html)
 *   [HIV Screening, Immunization, and Follow-up](examples-hiv-guideline.html)
 *   [Hepatitis B Adult Immunization Forecasting](https://build.fhir.org/ig/cqframework/cpg-example-hepb/branches/main/index.html)
 
