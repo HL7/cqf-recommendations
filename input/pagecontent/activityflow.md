@@ -16,8 +16,7 @@ Down the left side of the diagram are the activity _phases_:
 * Order: The plan is authorized by an appropriately qualified user, resulting in an order to perform (or not perform) the activity
 * Event: The order is fulfilled through actually performing the activity.
 
-The proposal, plan, and order phases are all represented using the request pattern ([Request State Machine](https://hl7.org/fhir/R4/request.html#statemachine)),
-while the event phase is represented using the event pattern ([Event Statement Machine](https://hl7.org/fhir/R4/event.html#statemachine)).
+The proposal, plan, and order phases are all represented using the request pattern ([Request State Machine](https://hl7.org/fhir/R4/request.html#statemachine)), while the event phase is represented using the event pattern ([Event Statement Machine](https://hl7.org/fhir/R4/event.html#statemachine)).
 
 <!--
 Phase -> Definition -> Proposal -> Plan -> Order -> Event
@@ -27,7 +26,7 @@ RequestStatus -> draft | active | on-hold | revoked | completed | entered-in-err
 EventStatus -> preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown
 -->
 
-In general, decision support services will typically produce Request resources in proposal intent with a status of draft
+In general, decision support services will typically produce Request resources in proposal intent with a status of draft, indicating the proposal is in need of additional information, or active, indicating the proposal is a complete recommendation, ready to be accepted or rejected.
 
 Valid state transitions for RequestStatus:
 
@@ -39,13 +38,15 @@ Valid state transitions for RequestStatus:
 
 In addition, any state can be transitioned to entered-in-error
 
-Only active proposals can be transitioned to plans. Transitioning a proposal to a plan is expected to produce a Request resource in plan intent with a status of draft
+Only active proposals can be transitioned to plans. Transitioning a proposal to a plan is expected to produce a Request resource in plan intent with a status of draft or active
 
-Only active plans can be transitioned to orders. Transitioning a plan to an order is expected to produce a Request resource in order intent with a status of draft
+Only active plans can be transitioned to orders. Transitioning a plan to an order is expected to produce a Request resource in order intent with a status of draft or active
 
-Only active orders can be transitioned to events. Transitioning an order to an event is expected to produce an Event resource with a status of prepration
+Only active orders can be transitioned to events. Transitioning an order to an event is expected to produce an Event resource with a status of prepration or in-progress
 
-Note that with the appropriate authority, the plan step in this process can be skipped (i.e. a proposal can transition directly to an order)
+Note that with the appropriate authority, the plan and/or order steps in this flow can be skipped (i.e. a proposal can transition directly to an order or an event)
+
+Note that the draft status for requests can be used to indicate that the request is not yet complete enough to be moved to the next phase and that more information is needed to do so. This information (and the status change to active) can be provided with the Update operation.
 
 Valid state transitions for EventStatus:
 
@@ -61,14 +62,13 @@ In addition, any state can be transitioned to entered-in-error
 Accounting for these general state transitions, the following sections detail a proposed set of capabilities for transitioning activities
 through the various phases of proposal, plan, order, and event. Each capability provides a snippet of pseudo-code that describes what
 changes are made to resource elements by that transition. These capabilities are described in terms of the Request and Event patterns,
-so this is only a pattern-level description of the capability. Following the description of each capability is a set of tables that describe
-exactly what elements and values need to be used in these capabilities to apply each transition to the concrete resources used to represent each type of activity.
+so this is only a pattern-level description of the capability. Following the description of each capability is a set of tables that describe exactly what elements and values need to be used in these capabilities to apply each transition to the concrete resources used to represent each type of activity.
 
 ## Activity Flow State Transition Capabilities
 
 ### Update
 
-Given a draft or active request, update the request
+Given a draft or active request, update the request. This includes transitioning a request from draft to active status.
 
 ```
 requestApi.update(Request inputRequest)
@@ -222,7 +222,7 @@ Given an active order, perform the event
 
 ```
 Event requestApi.beginPerform(Request inputRequest)
-    check inputRequest.intent = order
+    check inputRequest.intent in { proposal | plan | order }
     check inputRequest.status = active
     var result = new Event(copy from inputRequest)
     result.status = preparation
@@ -231,7 +231,7 @@ Event requestApi.beginPerform(Request inputRequest)
 requestApi.endPerform(Event inputEvent)
     check inputEvent.basedOn is not null
     var basedOn = engine.get(inputEvent.basedOn)
-    check basedOn.intent = order
+    check basedOn.intent in { proposal | plan | order }
     check basedOn.status = active
     check inputEvent.status in { preparation | in-progress }
     set basedOn.status = completed
@@ -291,7 +291,7 @@ requestApi.complete(Event inputEvent)
 
 The following table summarizes the request resource types and the `instantiates`, `basedOn`, and `status` elements and values for each activity as it moves through the activity flow.
 
-* The `instatiates` Element column is the name of the element in the resource type that provides the link from the proposal to the definition
+* The `instantiates` Element column is the name of the element in the resource type that provides the link from the proposal to the definition
 * The `basedOn` Element column is the name of the element in the resource type that provides the link from the plan to the proposal, and from the order to the plan
 * The `status` Element column is the name of the status element in the resource type
 * Each of the status value columns (Draft, Active, etc.) give the status values for each request resource (i.e. proposal, plan, order)
