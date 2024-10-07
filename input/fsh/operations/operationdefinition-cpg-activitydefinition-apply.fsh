@@ -12,7 +12,7 @@ The result of invoking this operation is a resource of the type specified by the
 
 If the ActivityDefinition includes library references, those libraries will be available to the evaluated expressions. If those libraries have parameters, those parameters will be bound by name to the parameters given to the operation. In addition, parameters to the $apply operation are available within dynamicValue expressions as context variables, accessible by the name of the parameter, prefixed with a percent (%) symbol. For a more detailed description, refer to the ActivityDefinition resource.
 
-Note that result of this operation is transient (i.e. the resource created by the operation is not persisted in the server, but returned as a contained resource in the result). The result effectively represents a proposed activity, and it is up to the caller to determine whether and how the activity is carried out.
+Note that the result of this operation is transient (i.e. the resource created by the operation is not persisted in the server, but returned as a contained resource in the result). The result effectively represents a proposed activity, and it is up to the caller to determine whether and how the activity is carried out.
 """
 * resource = #ActivityDefinition
 * system = false
