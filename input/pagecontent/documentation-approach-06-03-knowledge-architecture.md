@@ -68,7 +68,7 @@ Knowledge Architecture in the healthcare domain poses a particularly challenging
 *   Fitting Representation/ Expressions see the individual [Profiles](profiles.html) <!-- link to - Profiles !--> in the CPG as well as how they are employed in the [Methodology](methodology.html) Section <!-- link to - Medhodology !-->
 *   Layers of Abstraction is largely done within and across the knowledge assets definitions themselves described in the respective sub-section on [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html) <!-- link to - 06.02 - Knowledge Assets !--> in the Knowledge Representation section
 *   Sharing of Formalisms is in large part why to HL-7 FHIR and many of its various features; though other standards-based formalisms may be employed as well such as is discussed in the BPM+ implementation in [Methodology](methodology.html) Section <!-- link to - Medhodology !-->
-*   Ecosystem ease of use is another reason to use HL-7 FHIR and in particular the various related Application Programming Interfaces (APIs) (FHIR Data Access, CDSHooks, SMART-on-FHIR, etc.)
+*   Ecosystem ease of use is another reason to use HL-7 FHIR and in particular the various related Application Programming Interfaces (APIs) (FHIR Data Access, CDS Hooks, SMART-on-FHIR, etc.)
 
 **Developing** **the CPG Knowledge Architecture**
 

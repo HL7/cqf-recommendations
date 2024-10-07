@@ -21,6 +21,3 @@ All examples used in this Implementation Guide:
 The full implementation guide can be downloaded here:
 
 *   [Full IG](full-ig.zip)
-[](full-ig.zip)
-
-[](full-ig.zip)

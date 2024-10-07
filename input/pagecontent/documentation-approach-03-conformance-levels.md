@@ -16,7 +16,7 @@ This implementation guide defines the following levels of enablement:
 *   Contextualized Narrative (searchable)
 *   Contextualized Narrative (delivered in context)
 *   Contextualized Narrative with Patient-level Information (basic summary view)
-*   Actionable Intervention (with and without narrative and summary view; CDSHooks)
+*   Actionable Intervention (with and without narrative and summary view; CDS Hooks)
 *   Actionable Summary View (maybe CDSCards, AdaptiveForms, iFrame depending on implementation/ integration)
 *   EHR Import of CPG (features determined and subsetted by EHR)
 *   Deep EHR Integrations with CDS Service

@@ -52,11 +52,11 @@ In general, activities within a computable practice guideline are modeled as req
 
 Note that although these elements are described by the base _request_ pattern within FHIR, the request resources do not necessarily follow these patterns exactly. Variability in use cases and scope of the request resources results in variability in how the request pattern is applied. This results in differences in the way the pattern is implemented, but in general, activities in the CPG move through the following basic steps:
 
-1. Activities are proposed as requests with a status of `draft` and an intent of `proposal`.
-2. Proposals that are accepted result in a new _request_, linked to the proposal and with a status of `active` and an intent of `plan`.
-3. Proposals that are rejected move to a status of `cancelled`.
+1. Activities are proposed as requests with a status of `draft` and an intent of `proposal`
+2. Proposals that are accepted result in a new _request_, linked to the proposal and with a status of `active` and an intent of `plan`
+3. Proposals that are rejected move to a status of `cancelled`
 4. Accepted proposals (plans) that are _authorized_ result in a new _request_, linked to the plan with an intent of `order`
-5. Orders that are _fulfilled_ move to a status of `completed`, and result in the creation of a corresponding _event_ resource.
+5. Orders that are _fulfilled_ move to a status of `completed`, and result in the creation of a corresponding _event_ resource
 6. Events are typically created with a status of `preparation` or `in-progress`, and the `basedOn` element is used to indicate the request the event is fulling
 7. In-progress events that are completed move to a status of `completed`
 8. In-progress events that are stopped or cancelled move to a status of `suspected` or `aborted`
@@ -73,21 +73,21 @@ And similarly, for a negative recommendation (i.e. a recommendation _not to_ per
 
 _If the activity is proposed, planned, ordered, or in-progress (and not documented as not having been performed), and there is no proposal (planned or rejected) to stop or not to perform the activity, then propose stopping and/or not performing the activity_
 
-The [Activity Flow](activityflow.html) topic provides a detailed description of the above process, including how each activity is realized in each FHIR resource. 
+The [Activity Flow](activityflow.html) topic provides a detailed description of the above process, including how each activity is realized in each FHIR resource.
 
 #### PlanDefinition Processing Semantics
 
 The knowledge architecture presented here uses the PlanDefinition in various ways to represent recommendations, strategies, and pathways. Recommendations are represented with a PlanDefinition playing the role of an _event-condition-action_ rule, while strategies and pathways are represented with a PlanDefinition playing the role of a _workflow-definition_ or _clinical-protocol_. In all these cases, the following execution semantics are used to ensure consistent and meaningful interpretation of knowledge artifacts.
 
 1. PlanDefinitions are hierarchies of _actions_, with each action have any number of children (including zero)
-2. PlanDefinition actions can be related to other actions in the same PlanDefinition using the _relatedAction_ element.
-3. Although the action element may appear multiple times, there is no assumption of sequence of execution implied by the order of appearance of action elements in a PlanDefinition, consistent with FHIR methodology that order of elements cannot be meaningful unless stated as such in the base resource.
-4. This means that if required, sequencing must be established by chaining related actions.
+2. PlanDefinition actions can be related to other actions in the same PlanDefinition using the _relatedAction_ element
+3. Although the action element may appear multiple times, there is no assumption of sequence of execution implied by the order of appearance of action elements in a PlanDefinition, consistent with FHIR methodology that order of elements cannot be meaningful unless stated as such in the base resource
+4. This means that if required, sequencing must be established by chaining related actions
 5. The only way an action can be initiated is by _trigger_, or by being _invoked_, either through a parent or related action
 6. In particular, the _timing_ element of actions cannot be used as part of execution semantics (with the exception of pathways and schedules, that are allowed to use timings to establish schedules of expected activities)
 7. Related actions can only use the `before-start` relationship, with or without an `offset` to allow for delays
-8. Related actions can be cyclic, either directly, or indirectly. (NOTE: This means in particular that execution environments must take care to guard against runaway and infinite loops).
-9. Only one action can specify a `trigger`, all other action execution occurs through either child or related actions.
+8. Related actions can be cyclic, either directly, or indirectly. (NOTE: This means in particular that execution environments must take care to guard against runaway and infinite loops)
+9. Only one action can specify a `trigger`, all other action execution occurs through either child or related actions
 
 ##### Enabled vs Known Content
 
