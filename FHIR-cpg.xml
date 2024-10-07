@@ -105,6 +105,7 @@
 <artifact id="ValueSet/cpg-active-condition-vs" key="ValueSet-cpg-active-condition-vs" name="CPG Active Condition Value Set"/>
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
 <artifact id="ValueSet/cpg-activity-type-vs" key="ValueSet-cpg-activity-type-vs" name="CPG Activity Type Value Set"/>
+<artifact id="OperationDefinition/cpg-activitydefinition-apply" key="OperationDefinition-cpg-activitydefinition-apply" name="CPG ActivityDefinition Apply"/>
 <artifact id="StructureDefinition/cpg-administermedicationactivity" key="StructureDefinition-cpg-administermedicationactivity" name="CPG Administer Medication Activity"/>
 <artifact id="ActivityDefinition/cpg-administermedication-activitydefinition" key="ActivityDefinition-cpg-administermedication-activitydefinition" name="CPG Administer Medication ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-administermedicationtask" key="StructureDefinition-cpg-administermedicationtask" name="CPG Administer Medication Task"/>
@@ -185,17 +186,17 @@
 <artifact id="StructureDefinition/cpg-immunizationrequest" key="StructureDefinition-cpg-immunizationrequest" name="CPG Immunization Request"/>
 <artifact id="ActivityDefinition/cpg-immunizationrequest-activitydefinition" key="ActivityDefinition-cpg-immunizationrequest-activitydefinition" name="CPG ImmunizationRequest ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-impressionFor" key="StructureDefinition-cpg-impressionFor" name="CPG Impression For Extension"/>
-<artifact id="CodeSystem/cpg-indicator-cs" key="CodeSystem-cpg-indicator-cs" name="CPG Indicator Code System"/>
-<artifact id="ValueSet/cpg-indicator-vs" key="ValueSet-cpg-indicator-vs" name="CPG Indicator Value Set"/>
+<artifact deprecated="true" id="CodeSystem/cpg-indicator-cs" key="CodeSystem-cpg-indicator-cs" name="CPG Indicator Code System"/>
+<artifact deprecated="true" id="ValueSet/cpg-indicator-vs" key="ValueSet-cpg-indicator-vs" name="CPG Indicator Value Set"/>
 <artifact id="StructureDefinition/cpg-inferenceExpression" key="StructureDefinition-cpg-inferenceExpression" name="CPG Inference Expression Extension"/>
 <artifact id="StructureDefinition/cpg-instantiatesCaseFeature" key="StructureDefinition-cpg-instantiatesCaseFeature" name="CPG Instantiates Case Feature Extension"/>
 <artifact id="StructureDefinition/cpg-isUnenrollment" key="StructureDefinition-cpg-isUnenrollment" name="CPG Is Unenrollment Extension"/>
 <artifact id="StructureDefinition/cpg-itemImage" key="StructureDefinition-cpg-itemImage" name="CPG Item Image Extension"/>
 <artifact id="StructureDefinition/cpg-location" key="StructureDefinition-cpg-location" name="CPG Location"/>
 <artifact id="StructureDefinition/cpg-locationdefinition" key="StructureDefinition-cpg-locationdefinition" name="CPG Location Definition"/>
-<artifact id="StructureDefinition/cpg-medicationrequest" key="StructureDefinition-cpg-medicationrequest" name="CPG Medication Request"/>
 <artifact id="StructureDefinition/cpg-medicationadministration" key="StructureDefinition-cpg-medicationadministration" name="CPG Medication Administration"/>
 <artifact id="StructureDefinition/cpg-medicationdispense" key="StructureDefinition-cpg-medicationdispense" name="CPG Medication Dispense"/>
+<artifact id="StructureDefinition/cpg-medicationrequest" key="StructureDefinition-cpg-medicationrequest" name="CPG Medication Request"/>
 <artifact id="StructureDefinition/cpg-medicationrequestactivity" key="StructureDefinition-cpg-medicationrequestactivity" name="CPG Medication Request Activity"/>
 <artifact id="StructureDefinition/cpg-medicationstatement" key="StructureDefinition-cpg-medicationstatement" name="CPG Medication Statement"/>
 <artifact id="ActivityDefinition/cpg-medicationrequest-activitydefinition" key="ActivityDefinition-cpg-medicationrequest-activitydefinition" name="CPG MedicationRequest ActivityDefinition"/>
