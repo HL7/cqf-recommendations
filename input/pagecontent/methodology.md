@@ -6,11 +6,11 @@ the understanding, communication, and implementation of guideline content.
 
 > NOTE: The methodology documented here is a general framework for applying the approach to produce standards-based, computable guideline content. For a detailed illustration of following the approach and methodology described in this implementation guide, refer to the [COVID-19 CPG Methodology Case Study](methodology-case-study.html).
 
-### Content Implementation Guides {#content-igs}
+### Implementation Guide Categories {#implementation-guide-categories}
 
 Figure 3.1 below, FHIR-based Knowledge Representation Specifications, depicts four categories of specifications, with representative examples of each category, illustrating how the various pieces can be used together to deliver shareable clinical reasoning artifacts.
 
-Following this model, a computable guideline is a FHIR Content Implementation Guide, and specifically, a content IG that _conforms_ to the profiles and conformance requirements established by the CPG-on-FHIR IG.
+Following this model, a computable guideline is a FHIR Content Implementation Guide, and specifically, a [content IG](#content-implementation-guides) that _conforms_ to the profiles and conformance requirements established by the CPG-on-FHIR IG.
 
 <div>
 <img src="types-of-igs.png" alt="Types of FHIR Implementation Guides" class="img-responsive img-rounded center-block" width="700" height="700"/>
@@ -37,7 +37,7 @@ The following sections describe this diagram and the related specifications in m
 
 #### Model Implementation Guides
 
-The middle row on the left of the Figure 4 shows the Model Implementation Guides (IGs), typically derived from FHIR Administration and Clinical resources such as Patient, Encounter, and MedicationRequest. These Model IGs are typically built to address a broad range of use cases, focused on a particular target realm or domain.
+The middle row on the left of the Figure 3.1 shows the Model Implementation Guides (IGs), typically derived from FHIR Administration and Clinical resources such as Patient, Encounter, and MedicationRequest. These Model IGs are typically built to address a broad range of use cases, focused on a particular target realm or domain.
 
 * [**International Patient Summary (IPS)**](http://hl7.org/fhir/uv/ips) is a set of internationally applicable FHIR profiles used to share an extract of essential patient healthcare information across international boundaries. As a result, it forms an excellent foundation for expressing universally applicable content guidelines such as the WHO Antenatal Care (WHO ANC).
 * [**US Core**](http://hl7.org/fhir/us/core) is a set of profiles focused on enabling exchange of the US Clinical Data for Interoperability (USCDI) and is supported by a broad range of EMR vendors within the US.
@@ -45,7 +45,7 @@ The middle row on the left of the Figure 4 shows the Model Implementation Guides
 
 #### Specification Implementation Guides
 
-The middle row on the right of the Figure 4 shows the Specification Implementation Guides, which derive from the FHIR Clinical Reasoning resources to provide implementation guidance and conformance requirements for the creation, distribution, evaluation, and maintenance of shareable clinical knowledge. These include the Quality Measure IG (QM), Data Exchange for Quality Measures (DEQM), the Clinical Practice Guidelines IG (CPG-on-FHIR), and Evidence-based Medicine on FHIR (EBM-on-FHIR).
+The middle row on the right of the Figure 3.1 shows the Specification Implementation Guides, which derive from the FHIR Clinical Reasoning resources to provide implementation guidance and conformance requirements for the creation, distribution, evaluation, and maintenance of shareable clinical knowledge. These include the Quality Measure IG (QM), Data Exchange for Quality Measures (DEQM), the Clinical Practice Guidelines IG (CPG-on-FHIR), and Evidence-based Medicine on FHIR (EBM-on-FHIR).
 
 * [**Quality Measure IG (QM)**](http://hl7.org/fhir/us/cqfmeasures) provides guidance on and conformance requirements for the use of the FHIR Reasoning resources, Measure and Library, to create and share clinical quality measures.
 * [**Data Exchange for Quality Measures (DEQM)**](http://hl7.org/fhir/us/davinci-deqm) provides guidance for reporting quality measures.
@@ -54,8 +54,13 @@ The middle row on the right of the Figure 4 shows the Specification Implementati
 * [**Evidence-Based Medicine on FHIR (EBM-on-FHIR)**](http://build.fhir.org/clinicalreasoning-evidence-and-statistics.html) provides interoperability (standards for data exchange) for those producing, analyzing, synthesizing, disseminating and implementing clinical research (evidence) and recommendations for clinical care (clinical practice guidelines). It specifies resources and patterns for the exchange of data involved in evidence-based medicine including study results, quality of evidence and strength of recommendation and relevant context, environmental surveys, and systematic reviews.
 
 #### Content Implementation Guides
+The Content Implementation Guides in the top row of Figure 3.1 include computable representations of clinical knowledge artifacts and definitional resources as FHIR Resources, specifically:
+* **Library**
+* **ActivityDefinition**
+* **PlanDefinition**
+* **Measure**
 
-In the top row of Figure 4, the Content Implementation Guides are FHIR Implementation Guides. These IGs are not necessarily balloted as HL7 standards; rather, they use the FHIR publication toolchain to support authoring and distribution as depicted in the rest of the diagram. The content is stewarded by separate authorities such as quality agencies, specialty societies, and guideline developers; groups that have their own governance and maintenance policies. The content IGs conform to the specification IGs on the right of row 2, and typically make use of the model IGs on the left of row 2 to define content focused on a particular realm.
+These IGs are not necessarily balloted as HL7 standards; rather, they use the FHIR publication toolchain to support authoring and distribution as depicted in the rest of the diagram. The content is stewarded by separate authorities such as quality agencies, specialty societies, and guideline developers; groups that have their own governance and maintenance policies. The content IGs conform to the specification IGs on the right of row 2, and typically make use of the model IGs on the left of row 2 to define content focused on a particular realm.
 
 * [**HEDIS IG**](http://build.fhir.org/ig/cqframework/hedis-ig) contains Healthcare and Effectiveness Data and Information Set (HEDIS) quality measures expressed using FHIR Reasoning Measure and Library resources and conforming to the Quality Measure IG (QM) profiles.
 * [**CDC Opioid Prescribing IG**](http://build.fhir.org/ig/cqframework/opioid-cds-r4) contains decision support content to streamline guideline implementation regarding the use of opioids for chronic pain in clinical settings.
@@ -63,7 +68,7 @@ In the top row of Figure 4, the Content Implementation Guides are FHIR Implement
 
 ### Overview
 
-Overall, the methodology used by this implementation guide consists of the following steps:
+The methodology described by this implementation guide is used to develop computable guidelines as content implementation guides. Overall, computable guideline development consists of the following steps:
 
 * **Select:** Select content and recommendations for implementation
 * **Represent:**Apply selected recommendations to the implementation approach
