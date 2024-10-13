@@ -1,6 +1,4 @@
-# Activity Flow
-
-## General Activity Flow
+### General Activity Flow
 
 Building on the [Workflow](https://hl7.org/fhir/R4/workflow.html) module in FHIR, this topic describes in detail how each type of activity in a computable Clinical Guideline transitions through the overall phases of the activity lifecycle, as depicted in the following diagram:
 
@@ -64,9 +62,9 @@ through the various phases of proposal, plan, order, and event. Each capability 
 changes are made to resource elements by that transition. These capabilities are described in terms of the Request and Event patterns,
 so this is only a pattern-level description of the capability. Following the description of each capability is a set of tables that describe exactly what elements and values need to be used in these capabilities to apply each transition to the concrete resources used to represent each type of activity.
 
-## Activity Flow State Transition Capabilities
+### Activity Flow State Transition Capabilities
 
-### Update
+#### Update
 
 Given a draft or active request, update the request. This includes transitioning a request from draft to active status.
 
@@ -84,7 +82,7 @@ requestApi.update(Event inputEvent)
     engine.save(inputEvent)
 ```
 
-### Suspend
+#### Suspend
 
 Given an active request, suspend the request, with or without a reason
 
@@ -106,7 +104,7 @@ requestApi.suspend(Event inputEvent, String Reason)
     engine.save(inputEvent)
 ```
 
-### Resume
+#### Resume
 
 Given a suspended request, resume the request
 
@@ -128,7 +126,7 @@ requestApi.resume(Event inputEvent)
     engine.save(inputEvent)
 ```
 
-### Plan
+#### Plan
 
 Given an active proposal, plan the proposal
 
@@ -156,7 +154,7 @@ requestApi.endPlan(Request inputPlan)
     commit
 ```
 
-### Reject
+#### Reject
 
 Given an active request, reject the request, with or without a reason
 
@@ -168,7 +166,7 @@ requestApi.reject(Request inputRequest, String inputReason)
     engine.save(inputProposal)
 ```
 
-### Order
+#### Order
 
 Given an active proposal or plan, order the proposal
 
@@ -196,7 +194,7 @@ requestApi.endOrder(Request inputOrder)
     commit
 ```
 
-### Entered In Error
+#### Entered In Error
 
 Given a request, mark the proposal entered-in-error, with or without a reason
 
@@ -216,7 +214,7 @@ requestApi.enteredInError(Event inputEvent, String reason)
     engine.save(inputEvent)
 ```
 
-### Perform
+#### Perform
 
 Given an active order, perform the event
 
@@ -241,7 +239,7 @@ requestApi.endPerform(Event inputEvent)
     commit
 ```
 
-### Start
+#### Start
 
 Given a preparation event, start the event
 
@@ -252,7 +250,7 @@ requestApi.start(Event inputEvent)
     engine.save(inputEvent)
 ```
 
-### Not Done
+#### Not Done
 
 Given a preparation event, mark the event not-done  (with or without a reason)
 
@@ -264,7 +262,7 @@ requestApi.notDone(Event inputEvent, String reason)
     engine.save(inputEvent)
 ```
 
-### Stop
+#### Stop
 
 Given an in-progress event, stop the event, with or without a reason
 
@@ -276,7 +274,7 @@ requestApi.stop(Event inputEvent, String reason)
     engine.save(inputEvent)
 ```
 
-### Complete
+#### Complete
 
 Given an in-progress event, complete the event
 
@@ -287,7 +285,7 @@ requestApi.complete(Event inputEvent)
     engine.save(inputEvent)
 ```
 
-## Activity Lifecycle - Request Phases (Proposal, Plan, Order)
+### Activity Lifecycle - Request Phases (Proposal, Plan, Order)
 
 The following table summarizes the request resource types and the `instantiates`, `basedOn`, and `status` elements and values for each activity as it moves through the activity flow.
 
@@ -314,7 +312,7 @@ The following table summarizes the request resource types and the `instantiates`
 |[Report a flag](examples-activities.html#report-a-flag)|[CPGReportFlagTask](StructureDefinition-cpg-reportflagtask.html)|[instantiatesCanonical](StructureDefinition-cpg-reportflagtask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-reportflagtask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-reportflagtask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
 
 
-## Activity Lifecycle - Event Phase
+### Activity Lifecycle - Event Phase
 
 The following table summarizes the event reosurce types for each activity type, and the `basedOn` and `status` elements and values for each activity as it moves through the activity flow.
 
