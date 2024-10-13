@@ -1,5 +1,5 @@
 Instance: administermedication-asset-collection
-InstanceOf: CPGAssetCollection
+InstanceOf: Library
 Usage: #example
 * title = "Activity Example - Administer Medication Library Collection"
 * insert ExampleLibraryMetadata(administermedication-asset-collection)

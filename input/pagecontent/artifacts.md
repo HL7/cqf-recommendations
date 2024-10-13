@@ -74,14 +74,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
     Recommendation to administer a specific medication as part of the delivery of a computable clinical practice guideline
 
-*   [CPGArtifactBundle](StructureDefinition-cpg-artifactbundle.html)
-
-    Defines the minimum expectations for an artifact bundle used to package and distribute artifact content
-
-*   [CPGAssetCollection](StructureDefinition-cpg-assetcollection.html)
-
-    Profile of the Library resource to describe a collection of related knowledge assets. The collection is a general purpose organizational structure for the purposes of distribution and dependency-management
-
 *   [CPGCarePlan](StructureDefinition-cpg-careplan.html)
 
     CPG care plan represents the care plan for a specific patient. The care plan may be associated with management of a specific condition, and instantiated based on a particular pathway or strategy, or it may be a combined care plan, focused on the patient, and managing treatment for multiple conditions, instantiated based on multiple pathways and strategies
@@ -369,10 +361,6 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 *   [CPGTask](StructureDefinition-cpg-task.html)
 
     Defines the expectations common to tasks that represent activities used in computable guidelines
-
-*   [CPGTestCaseBundle](StructureDefinition-cpg-testcasebundle.html)
-
-    The CPG Test Case Bundle Profile describes a shareable, published test case for a specific artifact
 
 *   [CPGWorkflowDefinition](StructureDefinition-cpg-workflowdefinition.html)
 

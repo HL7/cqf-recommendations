@@ -679,4 +679,4 @@ One should not ignore that DMN and CMMN artifacts are also testable using native
 
 #### Package all CPG Work Products in Composite CPG Asset (profiled IG resource)
 
-Following the packaging guidance in the CPG implementation guide, the artifacts can be packaged independently, or using an asset collection, which is a Library with composed-of related artifacts references to all the artifacts. For distribution, this can then be packaged in a CPGArtifactBundle.
+Following the packaging guidance in the CPG implementation guide, the artifacts can be packaged independently, or using an asset collection, which is a Library with composed-of related artifacts references to all the artifacts. For distribution, this can then be packaged in a CRMIManifestLibrary.
