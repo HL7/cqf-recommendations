@@ -32,7 +32,7 @@ The following sections describe this diagram and the related specifications in m
     * **Reasoning** layer – provides definitional artifacts like plan and activity definitions, libraries, and measures.
 * [**FHIRPath**](http://hl7.org/fhirpath) is a simple, yet powerful, model-independent expression language that is used extensively throughout FHIR to describe paths to elements on resources, and to define invariants on profiles.
 * [**Clinical Quality Language (CQL)**](http://cql.hl7.org) is a superset of FHIRPath that provides an author-friendly format for the description of clinical logic, as well as a machine-friendly format for processing the logic.
-* [**CDS Hooks**](http://cds-hooks.hl7.org) is an HL7 standard specification for integrating decision support services with clinical systems. It is primarily focused on clinician-facing remote decision support within an EHR.</li>
+* [**CDS Hooks**](http://cds-hooks.hl7.org) is an HL7 standard specification for integrating decision support services with clinical systems. It is primarily focused on clinician-facing remote decision support within an EHR.
 * [**SMART-on-FHIR (SMART)**](http://hl7.org/fhir/smart-app-launch.html) is an HL7 standard specification for integrating clinical applications into EMRs using FHIR.
 
 #### Model Implementation Guides
@@ -66,7 +66,7 @@ In the top row of Figure 4, the Content Implementation Guides are FHIR Implement
 Overall, the methodology used by this implementation guide consists of the following steps:
 
 * **Select:** Select content and recommendations for implementation
-* **Represent:**Apply selected recommendations to the implementation approach
+* **Represent:** Apply selected recommendations to the implementation approach
 * **Translate:** Express concepts, flow diagrams, and narrative content formally
 * **Validate:** Build and run test cases to verify expected functionality
 

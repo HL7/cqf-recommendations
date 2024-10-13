@@ -186,7 +186,7 @@ Some of the most fundamental features of a knowledge content management system i
 
 In a healthcare, the knowledge content management system often includes and/or references openly available (or commercial) foundational knowledge content such as terminologies and ontologies. These terminologies and ontologies contain coded concepts and codified or semantic relationships that can be further leveraged as knowledge asset content as well as for their metadata and inferring relationships between assets.
 
-# knowledge Engineering Workflow Support
+# Knowledge Engineering Workflow Support
 
 Furthermore, a knowledge content management system also provides workflow (and/or ‘decision’) support for the knowledge engineers, and large teams thereof.  The workflow and/or decision-support capabilities are likewise tied to the various features of the knowledge assets described above.  A knowledge content management system may further  address dependency management (inclusive of versioning) as part of the knowledge engineers’ “decision support”.  Governance processes and Publication rights management may be further included in the knowledge content management system.
 
