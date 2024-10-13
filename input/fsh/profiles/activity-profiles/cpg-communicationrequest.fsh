@@ -5,6 +5,7 @@ Title: "CPG Communication Request"
 Description: "Recommendation for a specific communication with the patient or other participant as part of the delivery of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-communicationrequest)
 * extension contains
+  $request-intent named intent 0..1 MS and
   $workflow-instantiatesCanonical named instantiatesCanonical 0..1 MS and
   CPGRationale named rationale 0..1 MS
 * extension[instantiatesCanonical]

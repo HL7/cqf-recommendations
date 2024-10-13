@@ -76,6 +76,7 @@ Alias: $patient-match-operation = http://hl7.org/fhir/OperationDefinition/Patien
 Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 Alias: $plandefinition-apply = http://hl7.org/fhir/OperationDefinition/PlanDefinition-apply
 Alias: $request-doNotPerform = http://hl7.org/fhir/StructureDefinition/request-doNotPerform
+Alias: $request-intent = http://hl7.org/fhir/StructureDefinition/request-intent
 Alias: $resource-approvalDate = http://hl7.org/fhir/StructureDefinition/resource-approvalDate
 Alias: $resource-effectivePeriod = http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
 Alias: $resource-lastReviewDate = http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate
