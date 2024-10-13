@@ -538,7 +538,7 @@ To support validation, testing scenarios should be devised based on the personas
 
 Ideally, each artifact should have at least one _positive_ and one _negative_ test case. In addition, edge cases and boundary conditions should be considered and where appropriate, additional test cases provided. The goal of unit testing is to ensure that each of the artifacts functions as expected in isolation.
 
-As of the time of this writing, unit testing for Libraries can be accomplished using the Atom CQL plugin by creating test folders for each test case. See the [Adding Test Cases](https://github.com/cqframework/content-ig-walkthrough#adding-test-cases) topic in the Content IG Walkthrough for more information.
+As of the time of this writing, unit testing for Libraries can be accomplished using the [VSCode CQL](https://github.com/cqframework/vscode-cql) plugin by creating test folders for each test case. See the [Adding Test Cases](https://github.com/cqframework/vscode-cql/wiki/User-Guide#adding-test-data) topic in the VSCode User's Guide for more information.
 
 #### Component Testing
 
@@ -554,7 +554,7 @@ See the [Validation with CQF Ruler and CDS Hooks](https://github.com/cqframework
 
 ### Packaging
 
-<p>The <a href="packaging.html">Packaging</a> topic describes how content, including test cases, are packaged for distribution.</p>
+Because the artifacts defined in this implementation guide are _canonical resources_, they follow the artifact lifecycle established in the Canonical Resource Management Infrastructure implementation guide. Packaging artifacts is accomplished directly as part of publishing the content as a Content Implementation Guide, or can be published through an Artifact Repository and packaged for use using the CRMIManifestLibrary profile. See the [Packaging]({{site.data.fhir.ver.crmi}}/packaging.html) discussion in the CRMI IG for more information.
 
 ### Mapping and Other Formalisms
 
