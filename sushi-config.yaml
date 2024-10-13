@@ -37,7 +37,9 @@ publisher:
 
 dependencies:
   hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions: 5.1.0
+  hl7.fhir.uv.extensions.r4: 
+    id: ext
+    version: 5.1.0
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -151,8 +153,6 @@ pages:
       title: L3 Checklist
     clinical-guidelines-development-L4-checklist.md:
       title: L4 Checklist
-  packaging.md:
-    title:  Artifact Packaging
   documentation-methodology.md:
     title: Mapping and Other Formalisms
   common-care-pathway.md:

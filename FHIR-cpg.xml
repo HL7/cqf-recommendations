@@ -110,9 +110,9 @@
 <artifact id="ActivityDefinition/cpg-administermedication-activitydefinition" key="ActivityDefinition-cpg-administermedication-activitydefinition" name="CPG Administer Medication ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-administermedicationtask" key="StructureDefinition-cpg-administermedicationtask" name="CPG Administer Medication Task"/>
 <artifact id="StructureDefinition/cpg-answerValueSetSource" key="StructureDefinition-cpg-answerValueSetSource" name="CPG Answer Value Set Source Extension"/>
-<artifact id="StructureDefinition/cpg-artifactbundle" key="StructureDefinition-cpg-artifactbundle" name="CPG Artifact Bundle"/>
+<artifact deprecated="true" id="StructureDefinition/cpg-artifactbundle" key="StructureDefinition-cpg-artifactbundle" name="CPG Artifact Bundle"/>
 <artifact id="StructureDefinition/cpg-assertionExpression" key="StructureDefinition-cpg-assertionExpression" name="CPG Assertion Expression Extension"/>
-<artifact id="StructureDefinition/cpg-assetcollection" key="StructureDefinition-cpg-assetcollection" name="CPG Asset Collection"/>
+<artifact deprecated="true" id="StructureDefinition/cpg-assetcollection" key="StructureDefinition-cpg-assetcollection" name="CPG Asset Collection"/>
 <artifact id="StructureDefinition/cpg-careplan" key="StructureDefinition-cpg-careplan" name="CPG Care Plan"/>
 <artifact id="StructureDefinition/cpg-careteam" key="StructureDefinition-cpg-careteam" name="CPG Care Team"/>
 <artifact id="StructureDefinition/cpg-careteamdefinition" key="StructureDefinition-cpg-careteamdefinition" name="CPG Care Team Definition"/>
@@ -149,6 +149,7 @@
 <artifact id="StructureDefinition/cpg-communicationactivity" key="StructureDefinition-cpg-communicationactivity" name="CPG Communication Activity"/>
 <artifact id="StructureDefinition/cpg-communicationrequest" key="StructureDefinition-cpg-communicationrequest" name="CPG Communication Request"/>
 <artifact id="ActivityDefinition/cpg-communicationrequest-activitydefinition" key="ActivityDefinition-cpg-communicationrequest-activitydefinition" name="CPG CommunicationRequest ActivityDefinition"/>
+<artifact id="StructureDefinition/cpg-communicationrequestIntent" key="StructureDefinition-cpg-communicationrequestIntent" name="CPG CommunicationRequest Intent Extension"/>
 <artifact id="StructureDefinition/cpg-computableactivity" key="StructureDefinition-cpg-computableactivity" name="CPG Computable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-computablegraphdefinition" key="StructureDefinition-cpg-computablegraphdefinition" name="CPG Computable Graph Definition"/>
 <artifact id="StructureDefinition/cpg-computableguideline" key="StructureDefinition-cpg-computableguideline" name="CPG Computable Guideline"/>
@@ -244,7 +245,7 @@
 <artifact id="StructureDefinition/cpg-summaryDefinitionFor" key="StructureDefinition-cpg-summaryDefinitionFor" name="CPG Summary Definition For Extension"/>
 <artifact id="StructureDefinition/cpg-summaryFor" key="StructureDefinition-cpg-summaryFor" name="CPG Summary For Extension"/>
 <artifact id="StructureDefinition/cpg-task" key="StructureDefinition-cpg-task" name="CPG Task"/>
-<artifact id="StructureDefinition/cpg-testcasebundle" key="StructureDefinition-cpg-testcasebundle" name="CPG Test Case Bundle"/>
+<artifact deprecated="true" id="StructureDefinition/cpg-testcasebundle" key="StructureDefinition-cpg-testcasebundle" name="CPG Test Case Bundle"/>
 <artifact id="StructureDefinition/cpg-workflowdefinition" key="StructureDefinition-cpg-workflowdefinition" name="CPG Workflow Definition"/>
 <artifact id="Library/collectinformation-library" key="Library-collectinformation-library" name="Collect Information Library"/>
 <artifact id="PlanDefinition/chf-pathway" key="PlanDefinition-chf-pathway" name="Congestive Heart Failure Care Pathway"/>
