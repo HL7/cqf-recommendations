@@ -244,36 +244,19 @@ At this step, concepts referred to by the narrative are identified and represent
 * **Details**: Details about the data element, including how it might be gathered, and how it is relevant
 * **Modeling**: The conceptual type of data, including how it might be represented in potential target environments
 
-For example, the following data dictionary excerpt shows the data elements for recommendation 5 of the [Opioid Prescribing Guideline](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/index.html) example included in this implementation guide:
+For example, the following data dictionary excerpt shows the data elements for recommendation 4 of the [Opioid Prescribing Guideline](https://build.fhir.org/ig/cqframework/opioid-cds-r4/recommendation-04-05.html) example included in this implementation guide:
 
-<div>
-  <img src="opg-recommendation-5-data-dictionary.png" alt="OPG Recommendation 5 Data Elements" class="img-responsive img-rounded center-block"/>
-</div>
+{% include opg-recommendation-4/opg-recommendation-04-05-data-dictionary.html %}
 
 #### Criteria
 
-For criteria, the _represent_ step involves further refining the narrative from the _select_ step by creating a _functional description_, or a detailed, domain-specific description of the recommendation that is effectively clinical pseudo-code. For example, given the recommendation statement for Recommendation 5 from the CDC Opioid Prescribing Guideline:
+For criteria, the _represent_ step involves further refining the narrative from the _select_ step by creating a _functional description_, or a detailed, domain-specific description of the recommendation that is effectively clinical pseudo-code. For example, given the recommendation statement for Recommendation 4 from the CDC Opioid Prescribing Guideline:
 
-> When opioids are started, providers should prescribe the lowest effective dosage. Providers should use caution when prescribing opioids at any dosage, should carefully reassess evidence of individual benefits and risks when considering increasing dosage to ≥50 morphine milligram equivalents (MME)/day, and should avoid increasing dosage to ≥90 MME/day or carefully justify a decision to titrate dosage to >90 MME/day (recommendation category: A, evidence type: 3).
+> When opioids are initiated for opioid-naïve patients with acute, subacute, or chronic pain, clinicians should prescribe the lowest effective dosage. If opioids are continued for subacute or chronic pain, clinicians should use caution when prescribing opioids at any dosage, should carefully evaluate individual benefits and risks when considering increasing dosage, and should avoid increasing dosage above levels likely to yield diminishing returns in benefits relative to risks to patients (recommendation category: A, evidence type: 3).
 
 The following functional description illustrates, in precise and clinical terms, how the recommendation could be applied in a clinical setting:
 
-* When
-    * Provider is prescribing an opioid analgesic with ambulatory misuse potential in the outpatient setting
-    * Prescription is for treating chronic pain
-    * Opioid review is use for this patient:
-        * Patient is 18 or over
-        * Patient does not have findings indicating limited life expectancy
-        * Patient does not have orders for therapies indicating end of life care
-        * Patient is not undergoing active cancer treatment:
-            * Patient has had at least 2 encounters within the past year with any diagnosis of cancer
-    * Patient Morphine Milligram Equivalent (MME) greater than or equal to 50
-* Then
-    * Recommend prescribing the lowest effective dosage[, and avoid increasing dosage to >= 90 MME]:
-        * Will prescribe a lower dosage
-        * Benefits outweigh risks, snooze 3 months
-        * Active pain, snooze 1 month
-        * N/A - see comment, snooze 3 months
+{% include opg-recommendation-4/recommendation-04-05-functional-description.html %}
 
 This functional description provides a clear representation of what should happen, when, where, to whom, and by whom, tying together all the aspects of the recommendation, and facilitating communication of those aspects to the knowledge engineers in the _translate_ step.
 
@@ -281,27 +264,28 @@ This functional description provides a clear representation of what should happe
 
 There are a wide variety of methods and approaches available for representing and communicating the details of a workflow. One of the simplest, and most widely used is the [flowchart](https://en.wikipedia.org/wiki/Flowchart), a versatile diagramming tool with virtually ubiquitous authoring and viewing support, and that is immediately understandable. For these reasons, this methodology focuses on the use of flowcharts to visually represent processes. In particular, the processes that have been most useful are simple flow diagrams that provide a visual representation of the functional description.
 
-For example, the following flow diagram illustrates the functional description for the Opioid Prescribing Guideline recommendation 5:
+For example, the following flow diagram illustrates the functional description for the Opioid Prescribing Guideline recommendation 4:
 
 <div>
-  <img src="opg-recommendation-5-flow-diagram.png" alt="OPG Recommendation 5 Data Elements" class="img-responsive img-rounded center-block"/>
+  <img src="Recommendation04-05-flow.png" alt="OPG Recommendation 4 Flow Diagram" class="img-responsive img-rounded center-block"/>
 </div>
-
+<br/>
+<br/>
 Of particular importance at this step is representing the selected level of enablement for the processes and activities involved in the recommendations, as discussed in the following sections.
 
 ##### Delivery of contextualized narrative
 
-At this level of enablement, recommendation content is delivered as contextualized narrative, or informational messages. This is typically represented simply by the Send message activity. For example, if the intended delivery for Opioid Guideline recommendation 5 is just an alert statement, like a reminder or notification, then all that is needed is the _Send message_ activity.
+At this level of enablement, recommendation content is delivered as contextualized narrative, or informational messages. This is typically represented simply by the Send message activity. For example, if the intended delivery for Opioid Guideline recommendation 4 is just an alert statement, like a reminder or notification, then all that is needed is the _Send message_ activity.
 
 ##### Actionable intervention
 
-At this level of enablement, recommendation content is delivered as a structured activity that can be understood and acted upon by the consuming system. For example, the Opioid Guideline recommendation 5 at this level of enablement might be an updated order with a reduced dosage, or a recommendation to order an alternative non-opioid therapy. This level of enablement can use any of the available activity types, but only specifies integration at the _request_ level. In other words, the result of the decision support is a proposal for a recommended activity, but _whether_ and _how_ that proposal is accepted and fulfilled is not specified by the computable content, rather implementation sites determine how a _request_ becomes an _event_.
+At this level of enablement, recommendation content is delivered as a structured activity that can be understood and acted upon by the consuming system. For example, the Opioid Guideline recommendation 4 at this level of enablement might be an updated order with a reduced dosage, or a recommendation to order an alternative non-opioid therapy. This level of enablement can use any of the available activity types, but only specifies integration at the _request_ level. In other words, the result of the decision support is a proposal for a recommended activity, but _whether_ and _how_ that proposal is accepted and fulfilled is not specified by the computable content, rather implementation sites determine how a _request_ becomes an _event_.
 
 Note that even in the case that the decision support is only concerned with delivering actionable interventions, computable content can still communicate expectations for what a fulfilled request (or _event_) looks like, which still allows outcome and process metrics to be expressed.
 
 ##### Process integration
 
-At this level of enablement, recommendation content is delivered not only as structured activities using the _request_ resources, but the content also describes expected _fulfillment_ workflow to get from the _request_ to the actual _event_. For example, the content for recommendation 5 might include the process not only for prescribing the alternative non-opioid therapy, but for fulfilling that request by actually filling the prescription. Specifying recommendations to this level of enablement is significantly more involved because of the variability of fulfillment workflows across sites.
+At this level of enablement, recommendation content is delivered not only as structured activities using the _request_ resources, but the content also describes expected _fulfillment_ workflow to get from the _request_ to the actual _event_. For example, the content for recommendation 4 might include the process not only for prescribing the alternative non-opioid therapy, but for fulfilling that request by actually filling the prescription. Specifying recommendations to this level of enablement is significantly more involved because of the variability of fulfillment workflows across sites.
 
 ### Translate Step
 
