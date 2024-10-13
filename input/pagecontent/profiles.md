@@ -105,3 +105,12 @@ Note that for logic expressed in CQL, this information can be inferred by static
 Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG **SHOULD** use [International Patient Summary](http://hl7.org/fhir/uv/ips).
 
 In general, implementation of any given computable content is based on the intersection of the interoperability and computability profiles. As such, content authors must take care not to define computability profiles that conflict with interoperability profiles in their intended target scope.
+
+Clinical practice guidelines need to define the complete set of data elements required for the logic to function. This is the purpose of the computability profiles. Note that although selecting a base set of interoperability profiles (such as International Patient Summary) can provide a basis for sharing common data elements, experience has shown that even for relatively smaller CPGs, the set of computability profiles is never completely representable in any standard terminology or core data model. As such, mapping is required to support the use of a CPG in a given setting to demonstrate:
+
+1. How the data elements map to existing data elements where there is complete semantic alignment, and
+2. How the data elements are represented when there is incomplete semantic alignemnt.
+
+In particular, IPS as a summary model is an incomplete target for the representation of data. It should be used as a basis for sharing data elements, but must be augmented by the specific data elements and mappings required to support computable representation of the logic of a clinical guideline.
+
+As well, _how_ data is exchanged is an importantly different consideration than _what_ data is being exchanged, and the purpose of computability profiles in an IG is to specify _what_ data is to be exchanged, not _how_. In particular, although document sharing could be a solution for CPGs with very few and/or low volume data requirements, care should be taken to ensure that implementations are free to make appropriate decisions for their environments about how data exchange is occurring.
