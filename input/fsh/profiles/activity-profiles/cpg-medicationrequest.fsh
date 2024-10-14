@@ -5,7 +5,9 @@ Title: "CPG Medication Request"
 Description: "Recommendation for a specific medication as part of the delivery of a computable clinical practice guideline"
 * ^version = "2.0.0-ballot"
 * insert StructureDefinitionMetadata(cpg-medicationrequest)
-* extension contains CPGRationale named rationale 0..1 MS
+* extension contains 
+  CPGRationale named rationale 0..1 MS and
+  CPGRating named rating 0..1 MS
 * identifier MS
 * status MS
 * intent MS

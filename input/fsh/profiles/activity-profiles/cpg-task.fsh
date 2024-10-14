@@ -6,7 +6,8 @@ Description: "Defines the expectations common to tasks that represent activities
 * insert StructureDefinitionMetadata(cpg-task)
 * extension contains
   CPGRationale named rationale 0..1 MS and
-  CPGPertinent named pertinent 0..* MS
+  CPGPertinent named pertinent 0..* MS and
+  CPGRating named rating 0..1 MS
 * modifierExtension contains $request-doNotPerform named doNotPerform 0..1 MS
 * identifier MS
 * instantiatesCanonical MS

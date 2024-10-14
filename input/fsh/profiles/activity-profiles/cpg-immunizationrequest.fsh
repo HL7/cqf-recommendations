@@ -5,7 +5,8 @@ Title: "CPG Immunization Request"
 Description: "Recommendation for a particular immunization as part of the delivery of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-immunizationrequest)
 * extension contains
-  CPGRationale named rationale 0..1 MS
+  CPGRationale named rationale 0..1 MS and
+  CPGRating named rating 0..1 MS
 * identifier MS
 * status MS
 * intent MS
