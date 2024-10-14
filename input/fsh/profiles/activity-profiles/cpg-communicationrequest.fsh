@@ -5,13 +5,14 @@ Title: "CPG Communication Request"
 Description: "Recommendation for a specific communication with the patient or other participant as part of the delivery of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-communicationrequest)
 * extension contains
-  CPGCommunicationRequestIntent named intent 0..1 MS and
   $workflow-instantiatesCanonical named instantiatesCanonical 0..1 MS and
   CPGRationale named rationale 0..1 MS and
   CPGRating named rating 0..1 MS
 * extension[instantiatesCanonical]
   * ^short = "Source"
   * ^definition = "A link back to the definition that produced this recommendation. Typically a Plan or Activity Definition."
+* modifierExtension contains
+  $communicationrequest-intent named intent 0..1 MS
 * identifier MS
 * status MS
 * statusReason MS

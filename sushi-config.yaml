@@ -36,10 +36,7 @@ publisher:
 #
 
 dependencies:
-  hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions.r4: 
-    id: ext
-    version: 5.1.0
+  hl7.fhir.extensions.r5: 4.0.1
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can

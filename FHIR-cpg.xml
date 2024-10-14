@@ -149,7 +149,6 @@
 <artifact id="StructureDefinition/cpg-communicationactivity" key="StructureDefinition-cpg-communicationactivity" name="CPG Communication Activity"/>
 <artifact id="StructureDefinition/cpg-communicationrequest" key="StructureDefinition-cpg-communicationrequest" name="CPG Communication Request"/>
 <artifact id="ActivityDefinition/cpg-communicationrequest-activitydefinition" key="ActivityDefinition-cpg-communicationrequest-activitydefinition" name="CPG CommunicationRequest ActivityDefinition"/>
-<artifact id="StructureDefinition/cpg-communicationrequestIntent" key="StructureDefinition-cpg-communicationrequestIntent" name="CPG CommunicationRequest Intent Extension"/>
 <artifact id="StructureDefinition/cpg-computableactivity" key="StructureDefinition-cpg-computableactivity" name="CPG Computable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-computablegraphdefinition" key="StructureDefinition-cpg-computablegraphdefinition" name="CPG Computable Graph Definition"/>
 <artifact id="StructureDefinition/cpg-computableguideline" key="StructureDefinition-cpg-computableguideline" name="CPG Computable Guideline"/>
@@ -221,6 +220,7 @@
 <artifact id="StructureDefinition/cpg-proposediagnosistask" key="StructureDefinition-cpg-proposediagnosistask" name="CPG Propose Diagnosis Task"/>
 <artifact id="StructureDefinition/cpg-questionnaireresponse" key="StructureDefinition-cpg-questionnaireresponse" name="CPG Questionnaire Response"/>
 <artifact id="StructureDefinition/cpg-questionnairetask" key="StructureDefinition-cpg-questionnairetask" name="CPG Questionnaire Task"/>
+<artifact id="StructureDefinition/cpg-rating" key="StructureDefinition-cpg-rating" name="CPG Rating Extension"/>
 <artifact id="StructureDefinition/cpg-rationale" key="StructureDefinition-cpg-rationale" name="CPG Rationale Extension"/>
 <artifact id="StructureDefinition/cpg-recommendationdefinition" key="StructureDefinition-cpg-recommendationdefinition" name="CPG Recommendation Definition"/>
 <artifact id="CodeSystem/cpg-recommendation-direction-cs" key="CodeSystem-cpg-recommendation-direction-cs" name="CPG Recommendation Direction Code System"/>
@@ -558,7 +558,7 @@
 <page key="documentation-approach-05-06-agile-cpg-development-approach" name="Agile CPG Development Approach"/>
 <page key="documentation-approach-04-04-analysis-of-evidence-recommendations-reporting" name="Analysis of Evidence, Recommendations, and Reporting"/>
 <page key="approach" name="Approach"/>
-<page key="packaging" name="Artifact Packaging"/>
+<page deprecated="true" key="packaging" name="Artifact Packaging"/>
 <page key="artifacts" name="Artifacts"/>
 <page key="index" name="CPG Home"/>
 <page key="documentation-approach-12-conceptual-knowledge-architecture" name="CPG Knowledge Architecture-Conceptual Perspective"/>
