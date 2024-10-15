@@ -8,13 +8,16 @@ Description: "The apply operation applies a PlanDefinition to a given context"
 * name = "CPGPlanDefinitionApply"
 * code = #apply
 * comment = """
-The result of this operation is a RequestGroup resource.
+The result of this operation is a Bundle for each subject, where the Bundle 
+contains as its first entry a RequestGroup that is the direct result of applying 
+the PlanDefinition to that subject, and any subsequent entries in the Bundle are 
+resources that were created or updated as part of that process.
 
 The RequestGroup will have actions for each of the applicable actions in the
 plan based on evaluating the applicability condition in context. For each
 applicable action, the definition is applied as described in the `$apply`
 operation of the ActivityDefinition resource, and the resulting resource is
-added as an activity to the RequestGroup.
+added as an entry in the Bundle and referenced from the RequestGroup.
 
 If the ActivityDefinition includes library references, those
 libraries will be available to the evaluated expressions. If those libraries
@@ -26,11 +29,10 @@ the parameter, prefixed with a percent (%) symbol.
 For a more detailed description, refer to the PlanDefinition and
 ActivityDefinition resource documentation. Note that result of this operation is
 transient (i.e. none of the resources created by the operation are persisted in
-the server, they are all returned as contained resources in the result). The
+the server, they are all returned as entries in the result Bundle(s)). The
 result effectively represents a proposed set of activities, and it is up to the
 caller to determine whether and how those activities are actually carried out.
 """
-* base = $plandefinition-apply
 * resource = #PlanDefinition
 * system = false
 * type = true
@@ -131,7 +133,7 @@ caller to determine whether and how those activities are actually carried out.
   * documentation = "True if the result of any nested PlanDefinitions should be merged into the final care plan, false if they should be preserved as nested CarePlans in the output. If this parameter is not specified, the default behavior is to preserve nested care plans in the output."
   * type = #boolean
 * parameter[+]
-  * documentation = "Any input parameters defined in libraries referenced by the PlanDefinition.  Parameter types are mapped to CQL as specified in the Using CQL section of this implementation guide. If a parameter appears more than once in the input Parameters resource, it is represented with a List in the input CQL. If a parameter has parts, it is represented as a Tuple in the input CQL."
+  * documentation = "Any input parameters defined in libraries referenced by the PlanDefinition.  Parameter types are mapped to CQL as specified in the Using CQL With FHIR implementation guide. If a parameter appears more than once in the input Parameters resource, it is represented with a List in the input CQL. If a parameter has parts, it is represented as a Tuple in the input CQL."
   * max = "1"
   * min = 0
   * name = #parameters
@@ -247,7 +249,7 @@ OperationDefinition.
 * parameter[+]
   * name = #return
   * use = #out
-  * min = 1
-  * max = "1"
-  * documentation = "The RequestGroup that is the result of applying the PlanDefinition"
-  * type = #RequestGroup
+  * min = 0
+  * max = "*"
+  * documentation = "A Bundle for each input subject that is the result of applying the plan definition to that subject."
+  * type = #Bundle
