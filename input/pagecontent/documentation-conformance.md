@@ -23,8 +23,9 @@ Profiles in this implementation guide use the [must support](http://hl7.org/fhir
 
 In addition, because FHIR-based CPGs are themselves FHIR implementation guides, they SHALL include a statement describing how the _must support_ flag is to be interpreted for effective use of their content, and that statement SHALL be consistent with the general characterization of must support behavior described here. Examples of _must support_ declarations can be found in:
 
-* [US Core Must Support](http://hl7.org/fhir/us/core/general-guidance.html#must-support)
-* [QI Core Must Support](http://hl7.org/fhir/us/qicore/#111-mustsupport-flag)
+* [IPS Must Support](https://hl7.org/fhir/uv/ips/design.html#must-support)
+* [US Core Must Support](https://hl7.org/fhir/us/core/must-support.html)
+* [QI Core Must Support](https://hl7.org/fhir/us/qicore/#mustsupport-flag)
 
 ### Profiles
 
