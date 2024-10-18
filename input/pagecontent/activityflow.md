@@ -12,7 +12,7 @@ Down the left side of the diagram are the activity _phases_:
 * Proposal: Definitions are _applied_ to produce a proposal, or a suggestion or recommendation to perform (or not perform) a particular activity
 * Plan: The proposal is accepted or rejected by the user, resulting in a plan to perform (or not perform) the activity
 * Order: The plan is authorized by an appropriately qualified user, resulting in an order to perform (or not perform) the activity
-* Event: The order is fulfilled through actually performing the activity.
+* Event: The order is fulfilled through actually performing the activity (or indicating why the activity was not performed).
 
 The proposal, plan, and order phases are all represented using the request pattern ([Request State Machine](https://hl7.org/fhir/R4/request.html#statemachine)), while the event phase is represented using the event pattern ([Event Statement Machine](https://hl7.org/fhir/R4/event.html#statemachine)).
 
@@ -128,10 +128,10 @@ requestApi.resume(Event inputEvent)
 
 #### Plan
 
-Given an active proposal, plan the proposal
+Given an active proposal, plan the proposal:
 
 ```
-Request requestApi.beginPlan(Request inputProposal)
+Request requestApi.preparePlan(Request inputProposal)
     check inputProposal.intent = proposal
     check inputProposal.status = active
     var result = new Request(copy from inputProposal)
@@ -140,19 +140,23 @@ Request requestApi.beginPlan(Request inputProposal)
     set result.status = draft
     set result.basedOn = referenceTo(inputProposal)
 
-requestApi.endPlan(Request inputPlan)
-    check inputPlan.basedOn is not null
-    var basedOnProposal = engine.get(inputPlan.basedOn)
+requestApi.initiatePlan(Request preparedPlan)
+    check preparedPlan.basedOn is not null
+    var basedOnProposal = engine.get(preparedPlan.basedOn)
     check basedOnProposal.intent = proposal
     check basedOnProposal.status = active
-    check inputPlan.status in { draft | active }
-    check inputPlan.intent = plan
+    check preparedPlan.status in { draft | active }
+    check preparedPlan.intent = plan
     set basedOnProposal.status = completed
     try
-        engine.save(inputPlan)
+        engine.save(preparedPlan)
         engine.save(basedOnProposal)
     commit
 ```
+
+Note that this operation is performed in two steps in order to allow for application-level interation to occur. The _prepare_ step constructs a draft plan that can then be presented in an application, and the _initiate_ step then operates on that prepared draft plan to finalize the actual changes.
+
+Note also that this capability applies to both a proposal for an activity, as well as a proposal _not_ to perform. In the latter case, the creation of a request with plan intent means a plan to not perform the activity.
 
 #### Reject
 
@@ -171,7 +175,7 @@ requestApi.reject(Request inputRequest, String inputReason)
 Given an active proposal or plan, order the proposal
 
 ```
-Request requestApi.beginOrder(Request inputRequest)
+Request requestApi.prepareOrder(Request inputRequest)
     check inputRequest.intent in { proposal | plan }
     check inputRequest.status = active
     var result = new Request(copy from inputRequest)
@@ -180,19 +184,23 @@ Request requestApi.beginOrder(Request inputRequest)
     set result.status = draft
     set result.basedOn = referenceTo(inputRequest)
 
-requestApi.endOrder(Request inputOrder)
-    check inputOrder.basedOn is not null
-    var basedOn = engine.get(inputOrder.basedOn)
+requestApi.initiateOrder(Request preparedOrder)
+    check preparedOrder.basedOn is not null
+    var basedOn = engine.get(preparedOrder.basedOn)
     check basedOn.intent in { proposal | plan }
     check basedOn.status = active
-    check inputOrder.status in { draft | active }
-    check inputOrder.intent = order
+    check preparedOrder.status in { draft | active }
+    check preparedOrder.intent = order
     set basedOn.status = completed
     try
-        engine.save(inputOrder)
+        engine.save(preparedOrder)
         engine.save(basedOn)
     commit
 ```
+
+Note that this operation is performed in two steps in order to allow for application-level interation to occur. The _prepare_ step constructs a draft order that can then be presented in an application, and the _initiate_ step then operates on that prepared draft order to finalize the actual changes.
+
+Note also that this capability applies to both an order for an activity, as well as an order _not_ to perform. In the latter case, the creation of a request with order intent means an order not to perform the activity.
 
 #### Entered In Error
 
@@ -216,28 +224,34 @@ requestApi.enteredInError(Event inputEvent, String reason)
 
 #### Perform
 
-Given an active order, perform the event
+Given an active proposal, plan, or order, perform the event
 
 ```
-Event requestApi.beginPerform(Request inputRequest)
+Event requestApi.preparePerform(Request inputRequest)
     check inputRequest.intent in { proposal | plan | order }
     check inputRequest.status = active
     var result = new Event(copy from inputRequest)
     result.status = preparation
     result.basedOn = referenceTo(inputRequest)
 
-requestApi.endPerform(Event inputEvent)
-    check inputEvent.basedOn is not null
-    var basedOn = engine.get(inputEvent.basedOn)
+requestApi.initiatePerform(Event preparedEvent)
+    check preparedEvent.basedOn is not null
+    var basedOn = engine.get(preparedEvent.basedOn)
     check basedOn.intent in { proposal | plan | order }
     check basedOn.status = active
-    check inputEvent.status in { preparation | in-progress }
-    set basedOn.status = completed
+    check preparedEvent.status in { preparation | in-progress }
+    set basedOn.status = completed // see completion note
     try
       engine.save(basedOn)
-      engine.save(inputEvent)
+      engine.save(preparedEvent)
     commit
 ```
+
+Note that this operation is performed in two steps in order to allow for application-level interation to occur. The _prepare_ step constructs a draft event that can then be presented in an application, and the _initiate_ step then operates on that prepared draft event to finalize the actual changes.
+
+Whether this capability should set the status of the request to complete depends on whether the activity overall is complete. For example, if the activity is a medication prescription, whether the request should be marked complete depends on whether the dispense/administration/documentation represents a completion of the activity. Dispensing the initial fill, when there are multiple refills ordered, does not complete the overall order, so the status should remain active until all actions related to the completion of the order are done.
+
+Note that in general, this capability is not used for requests not to perform an activity; in those cases there is typically no event resource, since the activity should not be performed.
 
 #### Start
 
