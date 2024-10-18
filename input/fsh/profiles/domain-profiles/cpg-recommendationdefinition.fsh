@@ -17,5 +17,5 @@ Description: "Profile of PlanDefinition as a Recommendation Definition for use w
     * ^definition = "For recommendation definitions, the output element is used to specify what information should be included as patient-specific supporting evidence for the recommendation."
     * ^comment = "If output elements are specified, implementations SHOULD support attaching content matching the output data requirements to the recommendation instances as appropriate for the recommendation resource type, typically a supportingInformation element."
 * action
-  * definition[x] only Canonical(ActivityDefinition)
+  * definition[x] only Canonical(ActivityDefinition or CPGOrderSetDefinition)
   * definitionCanonical MS
