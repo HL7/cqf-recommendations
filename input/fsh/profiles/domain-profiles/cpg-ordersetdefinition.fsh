@@ -8,8 +8,6 @@ Description: "Profile of PlanDefinition as a Order Set for use with CPG Implemen
 * type MS
 * action MS
   * title 1..1 MS
-  * input 0..0
-  * output 0..0
   * groupingBehavior MS
   * selectionBehavior MS
   * requiredBehavior MS
