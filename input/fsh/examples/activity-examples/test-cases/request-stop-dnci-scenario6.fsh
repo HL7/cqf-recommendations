@@ -1,7 +1,7 @@
 Instance: request-stop-dnci-scenario6
 InstanceOf: cpg-questionnairetask
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Do Not Collect Infomration - Scenario 6 - Questionnaire Task"
 * meta.profile = Canonical(CPGTask)
 * modifierExtension[request-doNotPerform].valueBoolean = true
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)

@@ -1,7 +1,7 @@
 Instance: ci-scenario2-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Collect Information - Scenario 2 - Patient"
 * active = true
 * name
   * use = #usual

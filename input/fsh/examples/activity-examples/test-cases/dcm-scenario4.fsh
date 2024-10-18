@@ -1,7 +1,7 @@
 Instance: dcm-scenario4
 InstanceOf: CPGMedicationStatement
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Document Medication - Scenario 4 - MedicationStatement"
 * status = #active
 * category = $medication-statement-category#inpatient "Inpatient"
 * medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package)"

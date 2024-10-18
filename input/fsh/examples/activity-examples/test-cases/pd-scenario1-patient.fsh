@@ -1,7 +1,7 @@
 Instance: pd-scenario1-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Propose Diagnosis - Scenario 1 - Patient"
 * active = true
 * name
   * use = #usual

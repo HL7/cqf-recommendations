@@ -1,7 +1,7 @@
 Instance: dnci-scenario5-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Do Not Collect Information - Scenario 5 - Patient"
 * active = true
 * name
   * use = #usual

@@ -1,7 +1,7 @@
 Instance: dm-scenario6
 InstanceOf: CPGMedicationDispense
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Dispense Medication - Scenario 1 - MedicationDispense"
 * status = #cancelled
 * medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package)"
 * subject = Reference(dm-scenario6-patient)

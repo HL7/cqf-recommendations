@@ -1,7 +1,7 @@
 Instance: am-scenario7-bundle
 InstanceOf: Bundle
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Administer Medication - Scenario 7 - Bundle"
 * type = #collection
 * entry[+]
   * fullUrl = "http://hl7.org/fhir/uv/cpg/GuidanceResponse/am-scenario7-gr"

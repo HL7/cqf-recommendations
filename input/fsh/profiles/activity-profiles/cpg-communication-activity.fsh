@@ -12,6 +12,7 @@ Description: "Definition of a recommendation for a specific communication with t
 * profile = $cpg-communicationRequest (exactly)
   * ^short = "At least a CPG CommunicationRequest"
   * ^definition = "The profile that the resulting communication request must conform to; at least a CPGCommunicationRequest, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#send-message
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

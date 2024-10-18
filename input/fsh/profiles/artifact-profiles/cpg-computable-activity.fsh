@@ -9,6 +9,8 @@ Description: "Defines the minimum expectations and behavior for a computable act
 * kind 1..1 MS
 * profile 0..1 MS
 * code 0..1 MS
+* priority MS
+* doNotPerform MS
 * timing[x] MS
 * location MS
 * participant MS

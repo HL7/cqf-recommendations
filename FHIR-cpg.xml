@@ -30,6 +30,8 @@
 <artifact id="ActivityDefinition/activity-example-generatereport-ad" key="ActivityDefinition-activity-example-generatereport-ad" name="Activity Example Generate Report AD"/>
 <artifact id="Measure/activity-example-generatereport-measure" key="Measure-activity-example-generatereport-measure" name="Activity Example Generate Report Measure"/>
 <artifact id="PlanDefinition/activity-example-generatereport-pd" key="PlanDefinition-activity-example-generatereport-pd" name="Activity Example Generate Report PD"/>
+<artifact id="ActivityDefinition/activity-example-holdmedication-ad" key="ActivityDefinition-activity-example-holdmedication-ad" name="Activity Example Hold Medication AD"/>
+<artifact id="PlanDefinition/activity-example-holdmedication-pd" key="PlanDefinition-activity-example-holdmedication-pd" name="Activity Example Hold Medication PD"/>
 <artifact id="ActivityDefinition/activity-example-ordermedication-ad" key="ActivityDefinition-activity-example-ordermedication-ad" name="Activity Example Order Medication AD"/>
 <artifact id="PlanDefinition/activity-example-ordermedication-pd" key="PlanDefinition-activity-example-ordermedication-pd" name="Activity Example Order Medication PD"/>
 <artifact id="ActivityDefinition/activity-example-orderservice-ad" key="ActivityDefinition-activity-example-orderservice-ad" name="Activity Example Order Service AD"/>
@@ -45,8 +47,12 @@
 <artifact id="PlanDefinition/activity-example-recordinference-pd" key="PlanDefinition-activity-example-recordinference-pd" name="Activity Example Record Inference PD"/>
 <artifact id="ActivityDefinition/activity-example-reportflag-ad" key="ActivityDefinition-activity-example-reportflag-ad" name="Activity Example Report Flag AD"/>
 <artifact id="PlanDefinition/activity-example-reportflag-pd" key="PlanDefinition-activity-example-reportflag-pd" name="Activity Example Report Flag PD"/>
+<artifact id="ActivityDefinition/activity-example-resumemedication-ad" key="ActivityDefinition-activity-example-resumemedication-ad" name="Activity Example Resume Medication AD"/>
+<artifact id="PlanDefinition/activity-example-resumemedication-pd" key="PlanDefinition-activity-example-resumemedication-pd" name="Activity Example Resume Medication PD"/>
 <artifact id="ActivityDefinition/activity-example-sendmessage-ad" key="ActivityDefinition-activity-example-sendmessage-ad" name="Activity Example Send Message AD"/>
 <artifact id="PlanDefinition/activity-example-sendmessage-pd" key="PlanDefinition-activity-example-sendmessage-pd" name="Activity Example Send Message PD"/>
+<artifact id="ActivityDefinition/activity-example-stopmedication-ad" key="ActivityDefinition-activity-example-stopmedication-ad" name="Activity Example Stop Medication AD"/>
+<artifact id="PlanDefinition/activity-example-stopmedication-pd" key="PlanDefinition-activity-example-stopmedication-pd" name="Activity Example Stop Medication PD"/>
 <artifact id="Library/administermedication-library" key="Library-administermedication-library" name="Administer Medication Library"/>
 <artifact id="StructureDefinition/chf-bodyweight" key="StructureDefinition-chf-bodyweight" name="CHF Body Weight"/>
 <artifact id="ActivityDefinition/chf-bodyweight-ad" key="ActivityDefinition-chf-bodyweight-ad" name="CHF Body Weight Activity Defintion"/>
@@ -181,6 +187,8 @@
 <artifact id="StructureDefinition/cpg-goalFor" key="StructureDefinition-cpg-goalFor" name="CPG Goal For Extension"/>
 <artifact id="StructureDefinition/cpg-group" key="StructureDefinition-cpg-group" name="CPG Group"/>
 <artifact id="StructureDefinition/cpg-groupdefinition" key="StructureDefinition-cpg-groupdefinition" name="CPG Group Definition"/>
+<artifact id="StructureDefinition/cpg-holdactivity" key="StructureDefinition-cpg-holdactivity" name="CPG Hold Activity"/>
+<artifact id="StructureDefinition/cpg-holdtask" key="StructureDefinition-cpg-holdtask" name="CPG Hold Task"/>
 <artifact id="StructureDefinition/cpg-immunization" key="StructureDefinition-cpg-immunization" name="CPG Immunization"/>
 <artifact id="StructureDefinition/cpg-immunizationactivity" key="StructureDefinition-cpg-immunizationactivity" name="CPG Immunization Activity"/>
 <artifact id="StructureDefinition/cpg-immunizationrequest" key="StructureDefinition-cpg-immunizationrequest" name="CPG Immunization Request"/>
@@ -237,9 +245,13 @@
 <artifact id="StructureDefinition/cpg-reportflagtask" key="StructureDefinition-cpg-reportflagtask" name="CPG Report Flag Task"/>
 <artifact id="StructureDefinition/cpg-reportWith" key="StructureDefinition-cpg-reportWith" name="CPG Report With Extension"/>
 <artifact id="StructureDefinition/cpg-responseImage" key="StructureDefinition-cpg-responseImage" name="CPG Response Image Extension"/>
+<artifact id="StructureDefinition/cpg-resumeactivity" key="StructureDefinition-cpg-resumeactivity" name="CPG Resume Activity"/>
+<artifact id="StructureDefinition/cpg-resumetask" key="StructureDefinition-cpg-resumetask" name="CPG Resume Task"/>
 <artifact id="StructureDefinition/cpg-servicerequest" key="StructureDefinition-cpg-servicerequest" name="CPG Service Request"/>
 <artifact id="StructureDefinition/cpg-servicerequestactivity" key="StructureDefinition-cpg-servicerequestactivity" name="CPG Service Request Activity"/>
 <artifact id="ActivityDefinition/cpg-servicerequest-activitydefinition" key="ActivityDefinition-cpg-servicerequest-activitydefinition" name="CPG ServiceRequest ActivityDefinition"/>
+<artifact id="StructureDefinition/cpg-stopactivity" key="StructureDefinition-cpg-stopactivity" name="CPG Stop Activity"/>
+<artifact id="StructureDefinition/cpg-stoptask" key="StructureDefinition-cpg-stoptask" name="CPG Stop Task"/>
 <artifact id="StructureDefinition/cpg-strategy" key="StructureDefinition-cpg-strategy" name="CPG Strategy"/>
 <artifact id="StructureDefinition/cpg-strategydefinition" key="StructureDefinition-cpg-strategydefinition" name="CPG Strategy Definition"/>
 <artifact id="StructureDefinition/cpg-summaryDefinitionFor" key="StructureDefinition-cpg-summaryDefinitionFor" name="CPG Summary Definition For Extension"/>
@@ -260,6 +272,7 @@
 <artifact id="Library/enrollment-library" key="Library-enrollment-library" name="Enrollment Library"/>
 <artifact id="Library/generatereport-library" key="Library-generatereport-library" name="Generate Report Library"/>
 <artifact id="CarePlan/chf-scenario1-careplan" key="CarePlan-chf-scenario1-careplan" name="Heart Failure Care Pathway"/>
+<artifact id="Library/holdmedication-library" key="Library-holdmedication-library" name="Hold Medication Library"/>
 <artifact id="CodeSystem/knowledge-capability" key="CodeSystem-knowledge-capability" name="Knowledge Capability Codes"/>
 <artifact id="ValueSet/knowledge-capability" key="ValueSet-knowledge-capability" name="Knowledge Capability Values"/>
 <artifact id="CodeSystem/knowledge-representation-level" key="CodeSystem-knowledge-representation-level" name="Knowledge Representation Level Codes"/>
@@ -272,7 +285,9 @@
 <artifact id="Library/recorddetectedissue-library" key="Library-recorddetectedissue-library" name="Record Detected Issue Library"/>
 <artifact id="Library/recordinference-library" key="Library-recordinference-library" name="Record Inference"/>
 <artifact id="Library/reportflag-library" key="Library-reportflag-library" name="Report Flag"/>
+<artifact id="Library/resumemedication-library" key="Library-resumemedication-library" name="Resume Medication Library"/>
 <artifact id="Library/sendmessage-library" key="Library-sendmessage-library" name="Send Message Library"/>
+<artifact id="Library/stopmedication-library" key="Library-stopmedication-library" name="Stop Medication Library"/>
 <artifact id="Bundle/activity-example-administermedication-bundle" key="Bundle-activity-example-administermedication-bundle" name="activity-example-administermedication-bundle"/>
 <artifact id="MedicationRequest/am-scenario1" key="MedicationRequest-am-scenario1" name="am-scenario1"/>
 <artifact id="Patient/am-scenario1-patient" key="Patient-am-scenario1-patient" name="am-scenario1-patient"/>
@@ -466,6 +481,15 @@
 <artifact id="Patient/gr-scenario2-patient" key="Patient-gr-scenario2-patient" name="gr-scenario2-patient"/>
 <artifact id="MeasureReport/gr-scenario4" key="MeasureReport-gr-scenario4" name="gr-scenario4"/>
 <artifact id="Patient/gr-scenario4-patient" key="Patient-gr-scenario4-patient" name="gr-scenario4-patient"/>
+<artifact id="MedicationRequest/hol-scenario1" key="MedicationRequest-hol-scenario1" name="hol-scenario1"/>
+<artifact id="Patient/hol-scenario1-patient" key="Patient-hol-scenario1-patient" name="hol-scenario1-patient"/>
+<artifact id="MedicationRequest/hol-scenario2" key="MedicationRequest-hol-scenario2" name="hol-scenario2"/>
+<artifact id="Patient/hol-scenario2-patient" key="Patient-hol-scenario2-patient" name="hol-scenario2-patient"/>
+<artifact id="Task/hol-scenario2-request" key="Task-hol-scenario2-request" name="hol-scenario2-request"/>
+<artifact id="MedicationRequest/hol-scenario3" key="MedicationRequest-hol-scenario3" name="hol-scenario3"/>
+<artifact id="Patient/hol-scenario3-patient" key="Patient-hol-scenario3-patient" name="hol-scenario3-patient"/>
+<artifact id="Task/hol-scenario3-request" key="Task-hol-scenario3-request" name="hol-scenario3-request"/>
+<artifact id="Patient/hol-scenario4-patient" key="Patient-hol-scenario4-patient" name="hol-scenario4-patient"/>
 <artifact id="Practitioner/inf-practitioner" key="Practitioner-inf-practitioner" name="inf-practitioner"/>
 <artifact id="Patient/inf-scenario1-patient" key="Patient-inf-scenario1-patient" name="inf-scenario1-patient"/>
 <artifact id="Patient/inf-scenario2-patient" key="Patient-inf-scenario2-patient" name="inf-scenario2-patient"/>
@@ -524,6 +548,15 @@
 <artifact id="Task/request-rf-scenario2" key="Task-request-rf-scenario2" name="request-rf-scenario2"/>
 <artifact id="Task/request-stop-dnci-scenario5" key="Task-request-stop-dnci-scenario5" name="request-stop-dnci-scenario5"/>
 <artifact id="Task/request-stop-dnci-scenario6" key="Task-request-stop-dnci-scenario6" name="request-stop-dnci-scenario6"/>
+<artifact id="MedicationRequest/res-scenario1" key="MedicationRequest-res-scenario1" name="res-scenario1"/>
+<artifact id="Patient/res-scenario1-patient" key="Patient-res-scenario1-patient" name="res-scenario1-patient"/>
+<artifact id="MedicationRequest/res-scenario2" key="MedicationRequest-res-scenario2" name="res-scenario2"/>
+<artifact id="Patient/res-scenario2-patient" key="Patient-res-scenario2-patient" name="res-scenario2-patient"/>
+<artifact id="Task/res-scenario2-request" key="Task-res-scenario2-request" name="res-scenario2-request"/>
+<artifact id="MedicationRequest/res-scenario3" key="MedicationRequest-res-scenario3" name="res-scenario3"/>
+<artifact id="Patient/res-scenario3-patient" key="Patient-res-scenario3-patient" name="res-scenario3-patient"/>
+<artifact id="Task/res-scenario3-request" key="Task-res-scenario3-request" name="res-scenario3-request"/>
+<artifact id="Patient/res-scenario4-patient" key="Patient-res-scenario4-patient" name="res-scenario4-patient"/>
 <artifact id="Patient/rf-scenario1-patient" key="Patient-rf-scenario1-patient" name="rf-scenario1-patient"/>
 <artifact id="Patient/rf-scenario2-patient" key="Patient-rf-scenario2-patient" name="rf-scenario2-patient"/>
 <artifact id="Flag/rf-scenario4" key="Flag-rf-scenario4" name="rf-scenario4"/>
@@ -550,6 +583,15 @@
 <artifact id="Patient/sm-scenario7-patient" key="Patient-sm-scenario7-patient" name="sm-scenario7-patient"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario5" key="CommunicationRequest-stop-dnsm-scenario5" name="stop-dnsm-scenario5"/>
 <artifact id="CommunicationRequest/stop-dnsm-scenario6" key="CommunicationRequest-stop-dnsm-scenario6" name="stop-dnsm-scenario6"/>
+<artifact id="MedicationRequest/stp-scenario1" key="MedicationRequest-stp-scenario1" name="stp-scenario1"/>
+<artifact id="Patient/stp-scenario1-patient" key="Patient-stp-scenario1-patient" name="stp-scenario1-patient"/>
+<artifact id="MedicationRequest/stp-scenario2" key="MedicationRequest-stp-scenario2" name="stp-scenario2"/>
+<artifact id="Patient/stp-scenario2-patient" key="Patient-stp-scenario2-patient" name="stp-scenario2-patient"/>
+<artifact id="Task/stp-scenario2-request" key="Task-stp-scenario2-request" name="stp-scenario2-request"/>
+<artifact id="MedicationRequest/stp-scenario3" key="MedicationRequest-stp-scenario3" name="stp-scenario3"/>
+<artifact id="Patient/stp-scenario3-patient" key="Patient-stp-scenario3-patient" name="stp-scenario3-patient"/>
+<artifact id="Task/stp-scenario3-request" key="Task-stp-scenario3-request" name="stp-scenario3-request"/>
+<artifact id="Patient/stp-scenario4-patient" key="Patient-stp-scenario4-patient" name="stp-scenario4-patient"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>

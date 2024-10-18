@@ -1,7 +1,7 @@
 Instance: request-dcm-scenario5
 InstanceOf: cpg-documentmedicationtask
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Document Medication - Scenario 5 - Document Medication Task"
 * meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-documentmedication-ad)
 * status = #completed

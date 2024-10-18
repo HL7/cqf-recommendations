@@ -1,7 +1,7 @@
 Instance: ri-scenario1-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Recommend Immunization - Scenario 1 - Patient"
 * active = true
 * name
   * use = #usual

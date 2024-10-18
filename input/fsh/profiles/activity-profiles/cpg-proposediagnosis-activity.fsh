@@ -10,8 +10,9 @@ Description: "The definition of a recommendation to propose a specific diagnosis
 * profile 1..1 MS
 * profile only canonical
 * profile = $cpg-proposediagnosistask (exactly)
-  * ^short = "At least a CPG CommunicationRequest"
-  * ^definition = "The profile that the resulting communication request must conform to; at least a CPGCommunicationRequest, though the activity definition may introduce further constraints."
+  * ^short = "At least a CPG Propose Diagnosis Task"
+  * ^definition = "The profile that the resulting communication request must conform to; at least a CPGProposeDiagnosisTask, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#propose-diagnosis
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

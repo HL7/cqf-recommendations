@@ -1,7 +1,7 @@
 Instance: request-di-scenario2
 InstanceOf: cpg-recorddetectedissuetask
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Record Detected Issue - Scenario 2 - Record Detected Issue Task"
 * meta.profile = Canonical(CPGTask)
 * contained = Inline-Instance-for-request-di-scenario2
 * instantiatesCanonical = Canonical(activity-example-recorddetectedissue-ad)

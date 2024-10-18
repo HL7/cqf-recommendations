@@ -17,3 +17,6 @@ Description: "A type of activity that can be performed as part of the delivery o
 * #record-detected-issue "Record a detected issue" "The activity of reporting or recording a specific detected issue"
 * #record-inference "Record an inference" "The activity of making and reporting or recording a particular inference"
 * #report-flag "Report a flag" "The activity of reporting or recording a particular flag"
+* #stop-activity "Stop (discontinue) an activity in progress" "The activity of stopping (discontinuing) an activity that is currently in progress"
+* #hold-activity "Hold an activity in progress" "The activity of holding an activity that is currently in progress"
+* #resume-activity "Resume an activity currently on hold" "The activity of resuming an activity that is currently on hold"

@@ -1,7 +1,7 @@
 Instance: request-dnci-scenario3
 InstanceOf: cpg-questionnairetask
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Do Not Collect Information - Scenario 3 - Questionnaire Task"
 * meta.profile = Canonical(CPGTask)
 * modifierExtension
   * url = "http://hl7.org/fhir/StructureDefinition/request-doNotPerform"

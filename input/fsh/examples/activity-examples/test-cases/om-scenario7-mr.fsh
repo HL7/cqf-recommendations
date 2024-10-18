@@ -1,7 +1,7 @@
 Instance: om-scenario7-mr
 InstanceOf: CPGMedicationRequest
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Order Medication - Scenario 7 - MedicationRequest"
 * status = #active
 * intent = #proposal
 * priority = #routine

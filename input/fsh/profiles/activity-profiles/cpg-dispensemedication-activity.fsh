@@ -12,6 +12,7 @@ Description: "Definition of an activity to dispense a specific medication as par
 * profile = $cpg-dispensemedicationtask (exactly)
   * ^short = "At least a CPG Dispense Medication Task"
   * ^definition = "The profile that the resulting Task must conform to; at least a CPGDispenseMedicationTask, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#dispense-medication
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

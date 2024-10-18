@@ -1,7 +1,7 @@
 Instance: rf-scenario2-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Report Flag - Scenario 2 - Patient"
 * active = true
 * name
   * use = #usual

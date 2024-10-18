@@ -1,7 +1,7 @@
 Instance: os-scenario2
 InstanceOf: CPGServiceRequest
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Order Service - Scenario 2 - ServiceRequest"
 * instantiatesCanonical = Canonical(activity-example-orderservice-ad)
 * status = #active
 * intent = #proposal

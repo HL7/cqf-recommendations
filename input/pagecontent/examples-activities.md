@@ -17,9 +17,11 @@ These simplifications allow the example to focus exclusively on the pattern for
 recommending and for accepting/rejecting the proposal, as well as documenting
 the completion, or explicit non-performance of the activity.
 
+These examples make use of the activity processing semantics defined in the [Activity Flow](activityflow.html) topic.
+
 ### Send a message
 
-A positive recommendation to send a message
+This examples illustrates a recommendation to send a message.
 
 * [SendMessage Library](Library-sendmessage-library.html)
 * [SendMessage ActivityDefinition](ActivityDefinition-activity-example-sendmessage-ad.html)
@@ -43,7 +45,7 @@ A positive recommendation to send a message
 
 ### Do not send a message
 
-A negative recommendation not to send a message
+This example illustrates a recommendation not to send a message.
 
 * [DoNotSendMessage Library](Library-donotsendmessage-library.html)
 * [DoNotSendMessage ActivityDefinition](ActivityDefinition-activity-example-donotsendmessage-ad.html)
@@ -73,6 +75,8 @@ A negative recommendation not to send a message
 
 ### Collect information
 
+This example illustrates a recommendation to collect specific information using a questionnaire.
+
 * [CollectInformation Library](Library-collectinformation-library.html)
 * [CollectInformation ActivityDefinition](ActivityDefinition-activity-example-collectinformation-ad.html)
 * [CollectInformation PlanDefinition](PlanDefinition-activity-example-collectinformation-pd.html)
@@ -96,6 +100,8 @@ A negative recommendation not to send a message
 * ci-scenario7   * [Task-request-ci-scenario7](Task-request-ci-scenario7.html)
 
 ### Do not collect information
+
+This example illustrates a recommendation not to collect specific information using a questionnaire.
 
 * [Library](Library-donotcollectinformation-library.html)
 * [ActivityDefinition](ActivityDefinition-activity-example-donotcollectinformation-ad.html)
@@ -127,6 +133,8 @@ A negative recommendation not to send a message
 
 ### Order a medication
 
+This example illustrates a recommendation to order a medication.
+
 * [OrderMedication Library](Library-ordermedication-library.html)
 * [OrderMedication ActivityDefinition](ActivityDefinition-activity-example-ordermedication-ad.html)
 * [OrderMedication PlanDefinition](PlanDefinition-activity-example-ordermedication-pd.html)
@@ -148,6 +156,8 @@ A negative recommendation not to send a message
 * om-scenario7   * [Patient-om-scenario7](Patient-om-scenario7-patient.html)
 
 ### Dispense a medication
+
+This example illustrates a recommendation to dispense a en existing medication prescription.
 
 * [DispenseMedication Library](Library-dispensemedication-library.html)
 * [DispenseMedication ActivityDefinition](ActivityDefinition-activity-example-dispensemedication-ad.html)
@@ -178,6 +188,8 @@ A negative recommendation not to send a message
 
 ### Administer a medication
 
+This example illustrates a recommendation to administer an existing medication order.
+
 * [AdministerMedication Library](Library-administermedication-library.html)
 * [AdministerMedication ActivityDefinition](ActivityDefinition-activity-example-administermedication-ad.html)
 * [AdministerMedication PlanDefinition](PlanDefinition-activity-example-administermedication-pd.html)
@@ -207,6 +219,8 @@ A negative recommendation not to send a message
 
 ### Document a medication
 
+This example illustrates a recommendation to document an existing medication order.
+
 * [DocumentMedication Library](Library-documentmedication-library.html)
 * [DocumentMedication ActivityDefinition](ActivityDefinition-activity-example-documentmedication-ad.html)
 * [DocumentMedication PlanDefinition](PlanDefinition-activity-example-documentmedication-pd.html)
@@ -234,7 +248,21 @@ A negative recommendation not to send a message
 * dcm-scenario7  * [Patient-dcm-scenario7](Patient-dcm-scenario7-patient.html)
 * dcm-scenario7  * [Task-request-dcm-scenario7](Task-request-dcm-scenario7.html)
 
+### Stop a medication order
+
+This example illustrates a recommendation to stop an existing medication order
+
+### Hold a medication order
+
+This example illustrates a recommendation to hold an existing medication order
+
+### Resume a medication order
+
+This example illustrates a recommendation to resume a medication order on hold
+
 ### Recommend an immunization
+
+This example illustrates a recommendation to provide an immunization.
 
 * [RecommendImmunization Library](Library-recommendimmunization-library.html)
 * [RecommendImmunization ActivityDefinition](ActivityDefinition-activity-example-recommendimmunization-ad.html)
@@ -248,6 +276,8 @@ A negative recommendation not to send a message
 
 ### Order a service
 
+This example illustrates a recommendation to order a service.
+
 * [OrderService Library](Library-orderservice-library.html)
 * [OrderService ActivityDefinition](ActivityDefinition-activity-example-orderservice-ad.html)
 * [OrderService PlanDefinition](PlanDefinition-activity-example-orderservice-pd.html)
@@ -259,6 +289,8 @@ A negative recommendation not to send a message
 * os-scenario4   * [Procedure-os-scenario4](Procedure-os-scenario4.html)
 
 ### Enroll a patient
+
+This example illustrates a recommendation to enroll a patient.
 
 * [EnrollPatient Library](Library-enrollment-library.html)
 * [EnrollPatient ActivityDefinition](ActivityDefinition-activity-example-enrollment-ad.html)
@@ -275,6 +307,8 @@ A negative recommendation not to send a message
 
 ### Generate a report
 
+This example illustrates a recommendation to generate a report.
+
 * [GenerateReport Library](Library-generatereport-library.html)
 * [GenerateReport ActivityDefinition](ActivityDefinition-activity-example-generatereport-ad.html)
 * [GenerateReport PlanDefinition](PlanDefinition-activity-example-generatereport-pd.html)
@@ -287,6 +321,8 @@ A negative recommendation not to send a message
 * gr-scenario4   * [Task-event-gr-scenario4](Task-event-gr-scenario4.html)
 
 ### Propose a diagnosis
+
+This example illustrates a recommendation to propose a diagnosis.
 
 * [ProposeDiagnosis Library](Library-proposediagnosis-library.html)
 * [ProposeDiagnosis ActivityDefinition](ActivityDefinition-activity-example-proposediagnosis-ad.html)
@@ -301,6 +337,8 @@ A negative recommendation not to send a message
 
 ### Record a detected issue
 
+This example illustrates a recommendation to record a detected issue.
+
 * [RecordDetectedIssue Library](Library-recorddetectedissue-library.html)
 * [RecordDetectedIssue ActivityDefinition](ActivityDefinition-activity-example-recorddetectedissue-ad.html)
 * [RecordDetectedIssue PlanDefinition](PlanDefinition-activity-example-recorddetectedissue-pd.html)
@@ -314,6 +352,8 @@ A negative recommendation not to send a message
 
 ### Record an inference
 
+This example illustrates a recommendation to record an inference.
+
 * [RecordInference Library](Library-recordinference-library.html)
 * [RecordInference ActivityDefinition](ActivityDefinition-activity-example-recordinference-ad.html)
 * [RecordInference PlanDefinition](PlanDefinition-activity-example-recordinference-pd.html)
@@ -326,6 +366,8 @@ A negative recommendation not to send a message
 * inf-scenario4  * [Task-event-inf-scenario4](Task-event-inf-scenario4.html)
 
 ### Report a flag
+
+This example illustrates a recommendation to report a flag.
 
 * [ReportFlag Library](Library-reportflag-library.html)
 * [ReportFlag ActivityDefinition](ActivityDefinition-activity-example-reportflag-ad.html)

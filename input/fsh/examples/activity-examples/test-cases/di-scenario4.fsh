@@ -1,7 +1,7 @@
 Instance: di-scenario4
 InstanceOf: CPGDetectedIssue
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Record Detected Issue - Scenario 4 - DetectedIssue"
 * status = #final
 * code = $v3-ActCode#TIME "timing detected issue"
 * severity = #high

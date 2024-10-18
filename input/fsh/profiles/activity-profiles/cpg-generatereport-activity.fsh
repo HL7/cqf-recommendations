@@ -11,8 +11,9 @@ Description: "Definition of an activity to generate a metric, measure, or case r
 * profile 1..1 MS
 * profile only canonical
 * profile = $cpg-generatereporttask (exactly)
-  * ^short = "At least a CPG Questionnaire Task"
-  * ^definition = "The profile that the resulting task must conform to; at least a CPGQuestionnaireTask, though the activity definition may introduce further constraints."
+  * ^short = "At least a CPG Generate Report Task"
+  * ^definition = "The profile that the resulting task must conform to; at least a CPGGenerateReportTask, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#generate-report
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

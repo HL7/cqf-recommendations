@@ -1,7 +1,7 @@
 Instance: am-scenario5
 InstanceOf: CPGMedicationAdministration
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Administer Medication - Scenario 5 - MedicationAdministration"
 * status = #completed
 * medicationCodeableConcept = $sct#333919005 "Fentanyl 25micrograms/hour patch (product)"
 * subject = Reference(am-scenario5-patient)

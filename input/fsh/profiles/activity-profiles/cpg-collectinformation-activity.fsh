@@ -13,6 +13,7 @@ Description: "Definition of a recommendation to collect information using a spec
 * profile = "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-questionnairetask" (exactly)
   * ^short = "At least a CPG Questionnaire Task"
   * ^definition = "The profile that the resulting task must conform to; at least a CPGQuestionnaireTask, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#collect-information
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

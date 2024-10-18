@@ -1,7 +1,7 @@
 Instance: request-ep-scenario2
 InstanceOf: cpg-enrollmenttask
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Enroll Patient - Scenario 2 - Enrollment Task"
 * meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-enrollment-ad)
 * status = #draft

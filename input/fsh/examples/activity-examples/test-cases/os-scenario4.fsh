@@ -1,7 +1,7 @@
 Instance: os-scenario4
 InstanceOf: CPGProcedure
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Order Service - Scenario 4 - Procedure"
 * status = #completed
 * category = $sct#386053000 "Evaluation procedure (procedure)"
   * text = "Evaluation"

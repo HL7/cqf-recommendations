@@ -15,8 +15,9 @@ Description: "Definition of an activity to enroll or unenroll a patient in a str
 * profile 1..1 MS
 * profile only canonical
 * profile = $cpg-enrollmenttask (exactly)
-  * ^short = "At least a CPG Questionnaire Task"
-  * ^definition = "The profile that the resulting task must conform to; at least a CPGQuestionnaireTask, though the activity definition may introduce further constraints."
+  * ^short = "At least a CPG Enrollment Task"
+  * ^definition = "The profile that the resulting task must conform to; at least a CPGEnrollmentTask, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#enrollment
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

@@ -12,6 +12,7 @@ Description: "The definition of a recommendation for a particular procedure or r
 * profile = $cpg-servicerequest (exactly)
   * ^short = "At least a CPG ServiceRequest"
   * ^definition = "The profile that the resulting service request must conform to; at least a CPGServiceRequest, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#order-service
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

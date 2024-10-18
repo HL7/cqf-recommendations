@@ -1,7 +1,7 @@
 Instance: event-ci-scenario5
 InstanceOf: cpg-questionnairetask
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Collect Information - Scenario 5 - Questionnaire Task"
 * meta.profile = Canonical(CPGTask)
 * instantiatesCanonical = Canonical(activity-example-collectinformation-ad)
 * basedOn = Reference(request-ci-scenario5)

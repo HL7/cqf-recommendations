@@ -1,7 +1,7 @@
 Instance: event-pd-scenario4
 InstanceOf: cpg-proposediagnosistask
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Propose Diagnosis - Scenario 4 - Propose Diagnosis Task"
 * meta.profile = Canonical(CPGTask)
 * contained = proposed-diagnosis
 * instantiatesCanonical = Canonical(activity-example-proposediagnosis-ad)

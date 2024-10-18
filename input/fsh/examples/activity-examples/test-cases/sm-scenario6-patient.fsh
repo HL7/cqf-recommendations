@@ -1,7 +1,7 @@
 Instance: sm-scenario6-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Send Message - Scenario 6 - Patient"
 * active = true
 * name
   * use = #usual

@@ -69,6 +69,8 @@ Note that the intent of these profiles is not to establish the content of the ac
 
 See the [Activity Examples](examples-activities.html) for a complete example of each of the above activity types.
 
+See the [Activity Flow](activityflow.html) topic for a complete discussion of how activities move through the definition, request, and event phases.
+
 ### Content Profiles
 
 In addition to the profiles defined by this implementation guide, computable content generally deals with two broad categories of profiles:

@@ -1,7 +1,7 @@
 Instance: ri-scenario2
 InstanceOf: cpg-immunizationrequest
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Recommend Immunization - Scenario 2 - ImmunizationRequest"
 * status = #draft
 * intent = #proposal
 * category[immunization] = $cpg-activity-type-cs#recommend-immunization

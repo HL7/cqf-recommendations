@@ -1,7 +1,7 @@
 Instance: dm-scenario5-mr
 InstanceOf: CPGMedicationRequest
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Dispense Medication - Scenario 5 - MedicationRequest"
 * status = #active
 * intent = #order
 * priority = #routine

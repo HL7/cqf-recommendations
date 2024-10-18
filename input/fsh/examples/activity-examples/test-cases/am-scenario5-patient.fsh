@@ -1,7 +1,7 @@
 Instance: am-scenario5-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Administer Medication - Scenario 5 - Patient"
 * active = true
 * name
   * use = #usual

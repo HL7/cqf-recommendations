@@ -12,6 +12,7 @@ Description: "Definition of an activity to document a specific medication as par
 * profile = $cpg-documentmedicationtask (exactly)
   * ^short = "At least a CPG Document Medication Task"
   * ^definition = "The profile that the resulting Task must conform to; at least a CPGDocumentMedicationTask, though the activity definition may introduce further constraints."
+* code = $cpg-activity-type-cs#document-medication
 * intent 1..1 MS
 * intent only code
 * intent = #proposal (exactly)

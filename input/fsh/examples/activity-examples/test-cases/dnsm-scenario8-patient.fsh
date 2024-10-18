@@ -1,7 +1,7 @@
 Instance: dnsm-scenario8-patient
 InstanceOf: CPGPatient
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Do Not Send Message - Scenario 8 - Patient"
 * active = true
 * name
   * use = #usual

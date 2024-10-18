@@ -1,7 +1,7 @@
 Instance: sm-scenario7
 InstanceOf: CPGCommunicationRequest
 Usage: #example
-Description: "Example test case"
+Description: "Example test case - Send Message - Scenario 7 - CommunicationRequest"
 * extension[workflow-instantiatesCanonical].valueCanonical = Canonical(activity-example-sendmessage-ad)
 * status = #revoked
 * statusReason.text = "Patient refused"
