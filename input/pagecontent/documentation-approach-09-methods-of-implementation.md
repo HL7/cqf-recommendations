@@ -8,9 +8,9 @@ While all of these factors Have implications for the overall level of effort, th
 
 Methods of implementation refers to three (3) broad approaches to moving from the computable, structured representation (L3) of guideline content to the executable representation (L4):
 
-1. As a “Spec”
-2. Translation
-3. Native Execution
+1. **Manual**: i.e. Treating the L3 content as a specification
+2. **Translation**: Translating the content to another format suitable for execution in a given environment
+3. **Native Execution**: Directly executing the L3 content in a clinical reasoning engine that understand the representation
 
 <details open>
 
@@ -52,14 +52,14 @@ In general, activities within a computable practice guideline are modeled as req
 
 Note that although these elements are described by the base _request_ pattern within FHIR, the request resources do not necessarily follow these patterns exactly. Variability in use cases and scope of the request resources results in variability in how the request pattern is applied. This results in differences in the way the pattern is implemented, but in general, activities in the CPG move through the following basic steps:
 
-1. Activities are proposed as requests with a status of `draft` and an intent of `proposal`
+1. Activities are proposed as requests with a status of `active` and an intent of `proposal`
 2. Proposals that are accepted result in a new _request_, linked to the proposal and with a status of `active` and an intent of `plan`
-3. Proposals that are rejected move to a status of `cancelled`
+3. Proposals that are rejected have a Task with a `focus` that references the rejected proposal and a status of `rejected`
 4. Accepted proposals (plans) that are _authorized_ result in a new _request_, linked to the plan with an intent of `order`
 5. Orders that are _fulfilled_ move to a status of `completed`, and result in the creation of a corresponding _event_ resource
-6. Events are typically created with a status of `preparation` or `in-progress`, and the `basedOn` element is used to indicate the request the event is fulling
+6. Events are typically created with a status of `preparation` or `in-progress`, and the `basedOn` element is used to indicate the request the event is fulfilling
 7. In-progress events that are completed move to a status of `completed`
-8. In-progress events that are stopped or cancelled move to a status of `suspected` or `aborted`
+8. In-progress events that are stopped or cancelled move to a status of `suspended` or `aborted`
 
 Note that although this is the general pattern, because of the variability in request resources, the specific pattern for each activity varies slightly, depending on the actual `status` and `intent` values defined for use with each specific resource type.
 
@@ -79,11 +79,11 @@ The [Activity Flow](activityflow.html) topic provides a detailed description of 
 
 The knowledge architecture presented here uses the PlanDefinition in various ways to represent recommendations, strategies, and pathways. Recommendations are represented with a PlanDefinition playing the role of an _event-condition-action_ rule, while strategies and pathways are represented with a PlanDefinition playing the role of a _workflow-definition_ or _clinical-protocol_. In all these cases, the following execution semantics are used to ensure consistent and meaningful interpretation of knowledge artifacts.
 
-1. PlanDefinitions are hierarchies of _actions_, with each action have any number of children (including zero)
+1. PlanDefinitions are hierarchies of _actions_, where each action may have any number of children (including zero)
 2. PlanDefinition actions can be related to other actions in the same PlanDefinition using the _relatedAction_ element
 3. Although the action element may appear multiple times, there is no assumption of sequence of execution implied by the order of appearance of action elements in a PlanDefinition, consistent with FHIR methodology that order of elements cannot be meaningful unless stated as such in the base resource
 4. This means that if required, sequencing must be established by chaining related actions
-5. The only way an action can be initiated is by _trigger_, or by being _invoked_, either through a parent or related action
+5. The only way an action can be initiated is by _trigger_, or by being _invoked_ either through a parent or related action
 6. In particular, the _timing_ element of actions cannot be used as part of execution semantics (with the exception of pathways and schedules, that are allowed to use timings to establish schedules of expected activities)
 7. Related actions can only use the `before-start` relationship, with or without an `offset` to allow for delays
 8. Related actions can be cyclic, either directly, or indirectly. (NOTE: This means in particular that execution environments must take care to guard against runaway and infinite loops)
@@ -91,7 +91,7 @@ The knowledge architecture presented here uses the PlanDefinition in various way
 
 ##### Enabled vs Known Content
 
-When used as a knowledge artifact, a PlanDefinition only describes a specific expected process. The cpg-enabled extension is used to indicate that the PlanDefinition is not only registered (or _known_) but is active in the sense that it's behavior is active and will be applied by the system.
+When used as a knowledge artifact, a PlanDefinition only describes a specific expected process. The cpg-enabled extension is used to indicate that the PlanDefinition is not only registered (or _known_) but is active in the sense that its behavior is active and will be applied by the system.
 
 ##### Initiation
 
@@ -132,16 +132,7 @@ The **Pathway** specifies eligibility and enrollment, the **Strategy** specifies
 
 This pattern allows for a straightforward implementation that only needs to integrate with well-known triggers such as `encounter-start`. Initiation always occurs from that event, and enrollment is checked for any PlanDefinition that is a Pathway or Strategy, or that has a partOf that references a Pathway or Strategy.
 
-Applications can integrate with this by tracking and invoking known (and enabled) PlanDefinitions directly, or by using a system-level call that only communicates the event and any context information. The result of this call is the application of any known, enabled, PlanDefinitions with a matching triggering action. The result of all the PlanDefinitions being applied is merged to a single result and the output returned.
-
-NOTE: The type-level [$apply](OperationDefinition-cpg-plandefinition-apply.html) operation has specific requirements that would need to be relaxed in order to achieve this result. In particular, the planDefinition parameter should _not_ be required for the type-level $apply, which would result in the behavior described here. In addition, the cpg-customized $apply defines a mergedNestedCarePlans parameter to indicate that results of nested plan definitions should be merged.
-
-<!-- ### Evaluation
-
-In addition to the behaviors described by Activity and PlanDefinitions, libraries of reusable logic can be distributed and used to support calculations and other types of logic.This implementation guide defines two operations to support this use case:
-
-* [$cql](OperationDefinition-cpg-cql.html): A system-level operation that supports evaluation of arbitrary CQL expressions
-* [Library/$evaluate](OperationDefinition-cpg-library-evaluate.html): A type- and instance-level operation that supports evaluation of a specific Library of CQL, including specific expressions within the Library. -->
+Applications can then implement the guideline by tracking and invoking known (and enabled) PlanDefinitions directly. The result of these calls are a set of proposals for actions that should be considered or taken.
 
 ### Care Planning
 

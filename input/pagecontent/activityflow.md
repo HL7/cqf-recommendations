@@ -147,27 +147,38 @@ requestApi.initiatePlan(Request preparedPlan)
     check basedOnProposal.status = active
     check preparedPlan.status in { draft | active }
     check preparedPlan.intent = plan
-    set basedOnProposal.status = completed
-    try
-        engine.save(preparedPlan)
-        engine.save(basedOnProposal)
-    commit
+    engine.save(preparedPlan)
 ```
 
 Note that this operation is performed in two steps in order to allow for application-level interation to occur. The _prepare_ step constructs a draft plan that can then be presented in an application, and the _initiate_ step then operates on that prepared draft plan to finalize the actual changes.
 
 Note also that this capability applies to both a proposal for an activity, as well as a proposal _not_ to perform. In the latter case, the creation of a request with plan intent means a plan to not perform the activity.
 
+#### Revoke
+
+Given an active request, revoke the request, with or without a reason. Revoking a request indicates that the request is no longer applicable, and is typically done by the actor that originated the request. This is different than rejecting a request, which is done with the Reject operation.
+
+```
+requestApi.revoke(Request inputRequest, String inputReason)
+    check inputRequest.status = active
+    set inputRequest.status = revoked
+    set inputRequest.statusReason = inputReason
+    engine.save(inputProposal)
+```
+
 #### Reject
 
 Given an active request, reject the request, with or without a reason
 
 ```
-requestApi.reject(Request inputRequest, String inputReason)
+requestApi.reject(Request inputRequest, Task fulfillmentTask, String inputReason)
     check inputRequest.status = active
-    set inputRequest.status = revoked
-    set inputRequest.statusReason = inputReason
-    engine.save(inputProposal)
+    check fulfillmentTask.status = requested
+    check fulfillmentTask.focus = inputRequest
+    check fulfillmentTask.code = fulfill
+    set fulfillmentTask.status = rejected
+    set fulfillmentTask.statusReason = inputReason
+    engine.save(fulfillmentTask)
 ```
 
 #### Order
