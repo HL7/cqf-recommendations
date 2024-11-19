@@ -42,9 +42,9 @@ Only active plans can be transitioned to orders. Transitioning a plan to an orde
 
 Only active orders can be transitioned to events. Transitioning an order to an event is expected to produce an Event resource with a status of prepration or in-progress
 
-Note that with the appropriate authority, the plan and/or order steps in this flow can be skipped (i.e. a proposal can transition directly to an order or an event)
+With the appropriate authority, the plan and/or order steps in this flow can be skipped (i.e. a proposal can transition directly to an order or an event)
 
-Note that the draft status for requests can be used to indicate that the request is not yet complete enough to be moved to the next phase and that more information is needed to do so. This information (and the status change to active) can be provided with the Update operation.
+The draft status for requests can be used to indicate that the request is not yet complete enough to be moved to the next phase and that more information is needed to do so. This information (and the status change to active) can be provided with the Update operation.
 
 Valid state transitions for EventStatus:
 
