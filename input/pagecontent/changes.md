@@ -9,6 +9,7 @@ This page details changes made in each version of the Clinical Guidelines implem
 The following changes were applied as a result of comments received during the STU2 ballot:
 
 * [FHIR-46097](https://jira.hl7.org/browse/FHIR-46097): Allowed cpg-rationale to be used on PlanDefinition.action (recursively)
+* [FHIR-45999](https://jira.hl7.org/browse/FHIR-45999): Clarified behavior of requests within a RequestGroup and the option intent
 * [FHIR-45460](https://jira.hl7.org/browse/FHIR-45460): Provided additional guidance on computability vs interoperability profiles
 * [FHIR-44984](https://jira.hl7.org/browse/FHIR-44984): Reflected doNotPerform and notDone in the ActivityFlow
 * [FHIR-44983](https://jira.hl7.org/browse/FHIR-44983): Defined intent for communicationrequest

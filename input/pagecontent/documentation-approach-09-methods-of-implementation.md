@@ -89,6 +89,8 @@ The knowledge architecture presented here uses the PlanDefinition in various way
 8. Related actions can be cyclic, either directly, or indirectly. (NOTE: This means in particular that execution environments must take care to guard against runaway and infinite loops)
 9. Only one action can specify a `trigger`, all other action execution occurs through either child or related actions
 
+In addition, when a request is referenced by a RequestGroup, then its intent must be `option`, and it is treated as part of the overall RequestGroup, implying that the intent of the request is established by the intent of the RequestGroup. For PlanDefinition apply processing, this means the returned RequestGroup will have an intent of `proposal`, while all the referenced requests will have an intent of `option`, and when the "options" are selected by the user or application for processing into a Plan, Order, or Event, they will no longer be part of the RequestGroup, will have an intent of Plan or Order as appropriate, and will be independent requests at that point.
+
 ##### Enabled vs Known Content
 
 When used as a knowledge artifact, a PlanDefinition only describes a specific expected process. The cpg-enabled extension is used to indicate that the PlanDefinition is not only registered (or _known_) but is active in the sense that its behavior is active and will be applied by the system.
