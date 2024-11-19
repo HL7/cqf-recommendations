@@ -9,15 +9,21 @@ Description: "The apply operation applies a PlanDefinition to a given context"
 * code = #apply
 * comment = """
 The result of this operation is a Bundle for each subject, where the Bundle 
-contains as its first entry a RequestGroup that is the direct result of applying 
-the PlanDefinition to that subject, and any subsequent entries in the Bundle are 
-resources that were created or updated as part of that process.
+contains Request resources that are the direct result of applying 
+the PlanDefinition to that subject. The Bundle will have entries for 
+each of the applicable actions in the PlanDefinition based on evaluating 
+the applicability condition in context, and producing Request resources 
+based on the definition element for each applicable action.
 
-The RequestGroup will have actions for each of the applicable actions in the
-plan based on evaluating the applicability condition in context. For each
-applicable action, the definition is applied as described in the `$apply`
+For each applicable action, the definition is applied as described in the `$apply`
 operation of the ActivityDefinition resource, and the resulting resource is
-added as an entry in the Bundle and referenced from the RequestGroup.
+added as an entry in the Bundle. The resulting Bundle may be any combination of
+Request resources, including CarePlan, RequestGroup, and individual Request resources
+such as ServiceRequest and MedicationRequest.
+
+Note that to preserve the structure of the PlanDefinition, systems may choose to return
+the requests in a RequestGroup. In this case, the individual request resources will have
+an intent of `option`, meaning that their intent is governed by the RequestGroup.
 
 If the ActivityDefinition includes library references, those
 libraries will be available to the evaluated expressions. If those libraries

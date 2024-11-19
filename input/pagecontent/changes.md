@@ -8,6 +8,11 @@ This page details changes made in each version of the Clinical Guidelines implem
 
 The following changes were applied as a result of comments received during the STU2 ballot:
 
+* [FHIR-48658](https://jira.hl7.org/browse/FHIR-48658): Removed CarePlan/$apply operation
+* [FHIR-48634](https://jira.hl7.org/browse/FHIR-48634): Added support for ratings in recommendations
+* [FHIR-48388](https://jira.hl7.org/browse/FHIR-48388): Expanded CPGRecommendationDefinition to reference a CPGOrderSet
+* [FHIR-48019](https://jira.hl7.org/browse/FHIR-48019): Clarified pseudo-code for activity multi-step activity flows to use prepare/initiate language, rather than start/end language
+* [FHIR-46314](https://jira.hl7.org/browse/FHIR-46314): Clarified guidance in PlanDefinition/$apply related to the use of `option`
 * [FHIR-46097](https://jira.hl7.org/browse/FHIR-46097): Allowed cpg-rationale to be used on PlanDefinition.action (recursively)
 * [FHIR-45999](https://jira.hl7.org/browse/FHIR-45999): Clarified behavior of requests within a RequestGroup and the option intent
 * [FHIR-45460](https://jira.hl7.org/browse/FHIR-45460): Provided additional guidance on computability vs interoperability profiles
