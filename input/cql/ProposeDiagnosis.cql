@@ -66,7 +66,7 @@ define "Inclusion Criteria":
 define "Propose Diagnosis Task":
   [Task] C
     where C.code ~ "Propose diagnosis"
-      and not Coalesce(doNotPerform(C), false)
+      and doNotPerform(C) is not true
 
 define "Diagnosis":
   [Condition] C

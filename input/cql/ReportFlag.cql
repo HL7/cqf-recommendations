@@ -61,7 +61,7 @@ define "Inclusion Criteria":
 define "Report Flag Task":
   [Task] C
     where C.code ~ "Report flag"
-      and not Coalesce(doNotPerform(C), false)
+      and doNotPerform(C) is not true
 
 define "Reported Flag":
   [Flag] O

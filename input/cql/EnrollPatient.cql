@@ -67,8 +67,8 @@ define "Enrollment Task":
   [Task] C
     where C.code ~ "Enrollment"
       and enrollIn(C) = enrollInPathway
-      and not Coalesce(isUnenrollment(C), false)
-      and not Coalesce(doNotPerform(C), false)
+      and isUnenrollment(C) is not true
+      and doNotPerform(C) is not true
 
 define "Case":
   [EpisodeOfCare] E

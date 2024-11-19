@@ -61,7 +61,7 @@ define "Inclusion Criteria":
 define "Record Detected Issue Task":
   [Task] C
     where C.code ~ "Record detected issue"
-      and not Coalesce(doNotPerform(C), false)
+      and doNotPerform(C) is not true
 
 define "Detected Issue":
   [DetectedIssue] DI

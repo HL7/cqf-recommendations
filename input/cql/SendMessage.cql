@@ -30,7 +30,7 @@ the completion, or explicit non-performance of the communication.
 Positive recommendation:
 
 If the activity has not been performed
-  If the activity has not been planned or proposed
+  If the activity has not been requested
     Propose the activity
 
 Given a proposal, the user can:
@@ -39,11 +39,11 @@ Given a proposal, the user can:
   Reject the proposal without reason
   Reject the proposal with reason
 
-Scenario 1: No event, no plan or proposal, decision support should propose
-Scenario 2: No event, incomplete proposal, decision support should not propose
+Scenario 1: No event, no proposal, decision support should propose
+Scenario 2: No event, active proposal, decision support should not propose
 Scenario 3: No event, rejected proposal, decision support should not propose
 Scenario 4: Event, no proposal, decision support should not propose
-Scenario 5: Event, completed proposal, decision support should not propose
+Scenario 5: Event, active proposal, decision support should not propose
 Scenario 6: Event not done, no proposal, decision support should not propose
 Scenario 7: Event not done, proposal, decision support should not propose
 
@@ -60,15 +60,29 @@ define "Communication Not Done":
   [Communication] C
     where C.status in { 'not-done', 'stopped' }
 
+define "Rejected Task":
+  [Task] T
+    where T.code = 'fulfill'
+      and T.status = 'rejected'
+
 define "Communication Proposal":
   [CommunicationRequest] R
+    without "Rejected Task" T 
+      such that R.id = Last(Split(T.focus.reference, '/'))
     where R.status in { 'draft', 'active', 'on-hold' }
-      and not (Coalesce(R.doNotPerform, false))
+      and R.doNotPerform is not true
 
-define "Communication Not Proposed":
+define "Communication Rejected":
   [CommunicationRequest] R
-    where R.status in { 'revoked' }
-      and not (Coalesce(R.doNotPerform, false))
+    with "Rejected Task" T
+      such that R.id = Last(Split(T.focus.reference, '/'))
+    where R.status in { 'draft', 'active', 'on-hold' }
+      and R.doNotPerform is not true
+
+define "Communication Prohibited":
+  [CommunicationRequest] R
+    where R.status in { 'active' }
+      and R.doNotPerform is true
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
@@ -78,5 +92,6 @@ define "Is Recommendation Applicable":
     )
     and not exists (
       "Communication Proposal"
-        union "Communication Not Proposed"
+        union "Communication Prohibited"
+        union "Communication Rejected"
     )

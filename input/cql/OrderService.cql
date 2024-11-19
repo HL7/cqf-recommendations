@@ -60,15 +60,29 @@ define "Procedure Not Done":
   [Procedure] C
     where C.status in { 'not-done', 'stopped' }
 
+define "Rejected Task":
+  [Task] T
+    where T.code = 'fulfill'
+      and T.status = 'rejected'
+
 define "Procedure Proposal":
   [ServiceRequest] R
+    without "Rejected Task" T
+      such that R.id = Last(Split(T.focus.reference, '/'))
     where R.status in { 'draft', 'active', 'on-hold' }
-      and not (Coalesce(R.doNotPerform, false))
+      and R.doNotPerform is not true
 
-define "Procedure Not Proposed":
+define "Procedure Prohibited":
   [ServiceRequest] R
-    where R.status in { 'revoked' }
-      and not (Coalesce(R.doNotPerform, false))
+    where R.status in { 'active' }
+      and R.doNotPerform is true
+
+define "Procedure Rejected":
+  [ServiceRequest] R
+    with "Rejected Task" T
+      such that R.id = Last(Split(T.focus.reference, '/'))
+    where R.status in { 'draft', 'active', 'on-hold' }
+      and R.doNotPerform is not true
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
@@ -78,5 +92,6 @@ define "Is Recommendation Applicable":
     )
     and not exists (
       "Procedure Proposal"
-        union "Procedure Not Proposed"
+        union "Procedure Prohibited"
+        union "Procedure Rejected"
     )

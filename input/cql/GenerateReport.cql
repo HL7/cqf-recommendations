@@ -64,7 +64,7 @@ define "Generation Task":
   [Task] C
     where C.code ~ "Generate report"
       and reportWith(C) = reportWith
-      and not Coalesce(doNotPerform(C), false)
+      and doNotPerform(C) is not true
 
 define "Generated Report":
   [MeasureReport] R

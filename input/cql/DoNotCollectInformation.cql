@@ -57,13 +57,13 @@ define "Collect Information Task":
   [Task] C
     where C.code ~ "Collect information"
       and collectWith(C) = collectWithQuestionnaire
-      and not Coalesce(doNotPerform(C), false)
+      and doNotPerform(C) is not true
 
 define "Do Not Collect Information Task":
 [Task] C
   where C.code ~ "Collect information"
     and collectWith(C) = collectWithQuestionnaire
-    and doNotPerform(C)
+    and doNotPerform(C) is true
 
 define "Active or In-progress Activity":
   "Collect Information Task" C

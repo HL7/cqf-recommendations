@@ -64,13 +64,20 @@ define "Immunization Not Done":
   [Immunization] C
     where C.status in { 'not-done' }
 
+define "Rejected Task":
+  [Task] T
+    where T.code = 'fulfill'
+      and T.status = 'rejected'
+
 define "Immunization Proposal":
   [MedicationRequest] MR
+    without "Rejected Task" T
+      such that MR.id = Last(Split(T.focus.reference, '/'))
     where exists ( (MR.category) C where C ~ "Recommend Immunization" )
       and MR.status in { 'draft', 'active' }
       and MR.doNotPerform is not true
 
-define "Immunization Not Proposed":
+define "Immunization Prohibited":
   [MedicationRequest] MR
     where exists ( (MR.category) C where C ~ "Recommend Immunization" )
       and MR.status in { 'draft', 'active' }
@@ -78,8 +85,11 @@ define "Immunization Not Proposed":
 
 define "Immunization Proposal Rejected":
   [MedicationRequest] MR
+    with "Rejected Task" T
+      such that MR.id = Last(Split(T.focus.reference, '/'))
     where exists ( (MR.category) C where C ~ "Recommend Immunization" )
-      and MR.status = 'cancelled'
+      and MR.status = 'active'
+      and MR.doNotPerform is not true
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
@@ -89,6 +99,6 @@ define "Is Recommendation Applicable":
     )
     and not exists (
       "Immunization Proposal"
-        union "Immunization Not Proposed"
+        union "Immunization Prohibited"
         union "Immunization Proposal Rejected"
     )

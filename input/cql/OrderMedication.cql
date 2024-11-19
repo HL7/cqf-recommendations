@@ -58,13 +58,29 @@ define "Medication Dispense Not Done":
   [MedicationDispense] M
     where M.status in { 'cancelled', 'stopped', 'declined' } // TODO: Is 'stopped' appropriate here?
 
+define "Rejected Task":
+  [Task] T
+    where T.code = 'fulfill'
+      and T.status = 'rejected'
+
 define "Medication Proposal":
   [MedicationRequest] M
+    without "Rejected Task" T
+      such that M.id = Last(Split(T.focus.reference, '/'))
     where M.status in { 'draft', 'active', 'on-hold', 'completed' }
+      and M.doNotPerform is not true
 
-define "Medication Not Proposed":
+define "Medication Prohibited":
   [MedicationRequest] M
     where M.status in { 'cancelled', 'stopped' }
+      and M.doNotPerform is true
+
+define "Medication Rejected":
+  [MedicationRequest] M
+    with "Rejected Task" T
+      such that M.id = Last(Split(T.focus.reference, '/'))
+    where M.status = 'active'
+      and M.doNotPerform is not true
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
@@ -78,5 +94,6 @@ define "Is Recommendation Applicable":
     )
     and not exists (
       "Medication Proposal"
-        union "Medication Not Proposed"
+        union "Medication Prohibited"
+        union "Medication Rejected"
     )

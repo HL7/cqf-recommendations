@@ -61,7 +61,7 @@ define "Inclusion Criteria":
 define "Record Inference Task":
   [Task] C
     where C.code ~ "Record inference"
-      and not Coalesce(doNotPerform(C), false)
+      and doNotPerform(C) is not true
 
 define "Inference":
   [Observation] O

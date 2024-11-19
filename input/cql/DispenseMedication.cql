@@ -24,11 +24,11 @@ Given a proposal, the user can:
   Reject the proposal without reason
   Reject the proposal with reason
 
-Scenario 1: No event, no plan or proposal, decision support should propose
-Scenario 2: No event, incomplete proposal, decision support should not propose
+Scenario 1: No event, no request, decision support should propose
+Scenario 2: No event, active proposal, decision support should not propose
 Scenario 3: No event, rejected proposal, decision support should not propose
-Scenario 4: Event, no proposal, decision support should not propose
-Scenario 5: Event, proposal, decision support should not propose
+Scenario 4: Event, no request, decision support should not propose
+Scenario 5: Event, active proposal, decision support should not propose
 Scenario 6: Event not done, no proposal, decision support should not propose
 Scenario 7: Event not done, proposal, decision support should not propose
 
@@ -36,8 +36,7 @@ Scenario 7: Event not done, proposal, decision support should not propose
 
 define "Inclusion Criteria":
   Patient.active
-    and exists ("Medication Proposal")
-    and not exists ("Medication Not Proposed")
+    and exists ("Medication Order")
 
 define "Active or Completed Medication Dispense":
   [MedicationDispense] M
@@ -47,25 +46,23 @@ define "Medication Dispense Not Done":
   [MedicationDispense] M
     where M.status in { 'cancelled', 'stopped', 'declined' } // TODO: Is 'stopped' appropriate here?
 
-define "Medication Proposal":
+define "Medication Order":
   [MedicationRequest] M
-    where M.status in { 'draft', 'active', 'on-hold', 'completed' }
-
-define "Medication Not Proposed":
-  [MedicationRequest] M
-    where M.status in { 'cancelled', 'stopped' }
+    where M.status in { 'active' }
+      and M.intent = 'order'
+      and M.doNotPerform is not true
 
 define "Dispense Proposal":
   [Task] R
     where R.code ~ "Dispense medication"
       and R.status in { 'draft', 'requested', 'received', 'accepted', 'ready' }
-      and not Coalesce(doNotPerform(R), false)
+      and doNotPerform(R) is not true
 
 define "Dispense Proposal Rejected":
   [Task] R
     where R.code ~ "Dispense medication"
       and R.status in { 'rejected' }
-      and not Coalesce(doNotPerform(R), false)
+      and doNotPerform(R) is not true
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"

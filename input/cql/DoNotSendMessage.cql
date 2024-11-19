@@ -55,20 +55,31 @@ define "Communication Not Done":
   [Communication] C
     where C.status in { 'not-done', 'stopped' }
 
+define "Rejected Task":
+  [Task] T
+    where T.code = 'fulfill'
+      and T.status = 'rejected'
+
 define "Communication Proposal":
   [CommunicationRequest] R
+    without "Rejected Task" T
+      such that R.id = Last(Split(T.focus.reference, '/'))
     where R.status in { 'draft', 'active', 'on-hold' }
-      and not (Coalesce(R.doNotPerform, false))
+      and R.doNotPerform is not true
 
-define "Do Not Communicate Proposal":
+define "Communication Prohibited":
   [CommunicationRequest] R
+    without "Rejected Task" T
+      such that R.id = Last(Split(T.focus.reference, '/'))
     where R.status in { 'draft', 'active', 'on-hold' }
-      and R.doNotPerform
+      and R.doNotPerform is true
 
-define "Rejected Do Not Communicate Proposal":
+define "Communication Prohibited Rejected":
   [CommunicationRequest] R
-    where R.status in { 'revoked' }
-      and R.doNotPerform
+    with "Rejected Task" T
+      such that R.id = Last(Split(T.focus.reference, '/'))
+    where R.status in { 'active' }
+      and R.doNotPerform is true
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
@@ -80,6 +91,6 @@ define "Is Recommendation Applicable":
       "Communication Not Done"
     )
     and not exists (
-      "Do Not Communicate Proposal"
-        union "Rejected Do Not Communicate Proposal"
+      "Communication Prohibited"
+        union "Communication Prohibited Rejected"
     )

@@ -31,19 +31,27 @@ Scenario 4: No active medication order, decision support should not propose
 
 */
 
-define "Medication Proposal":
+define "Medication Order On Hold":
   [MedicationRequest] M
     where M.intent = 'order'
       and M.status = 'on-hold'
+      and M.doNotPerform is not true
 
 define "Inclusion Criteria":
   Patient.active
-    and exists "Medication Proposal"
+    and exists "Medication Order On Hold"
 
 define "Resume Medication Proposal":
   [Task] T
-    where R.code ~ "Resume Activity"
+    where T.code ~ "Resume Activity"
+      and doNotPerform(T) is not true
 
 define "Is Recommendation Applicable":
   "Inclusion Criteria"
     and not exists "Resume Medication Proposal"
+
+define function doNotPerform(task Task):
+  singleton from (
+    task.extension E
+      where E.url = 'http://hl7.org/fhir/StructureDefinition/request-doNotPerform'
+  ).value as boolean
