@@ -19,7 +19,7 @@ Description: "This profile defines how to represent jugular venous pressure obse
   * coding[JVPCode]
     * system 1..1
     * system only uri
-    * system = Canonical(chf-codes) (exactly)
+    * system = Canonical(chf-example-codes) (exactly)
     * code 1..1
     * code only code
     * code = #jvp (exactly)

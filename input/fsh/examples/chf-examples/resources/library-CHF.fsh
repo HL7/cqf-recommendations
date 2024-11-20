@@ -15,7 +15,7 @@ Title: "Congestive Heart Failure Logic"
   * resource = $loinc
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = Canonical(chf-codes)
+  * resource = Canonical(chf-example-codes)
 * relatedArtifact[+]
   * type = #depends-on
   * resource = Canonical(condition-clinical)

@@ -7,7 +7,7 @@ Usage: #example
 * name = "ActivityExampleHoldMedicationAD"
 * kind = #Task
 * profile = Canonical(CPGHoldTask)
-* code = $cpg-activity-type-cs#hold-activity "Hold activity"
+* code = $cpg-activity-type-cs#hold-activity "Hold an activity in progress"
 * intent = #proposal
 * doNotPerform = false
 * dynamicValue[+]

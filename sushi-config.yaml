@@ -12,10 +12,10 @@ status: active # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
     valueCode: cds  # <<< The value must be the code for the workgroup
-version: 2.0.0-draft
+version: 2.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 publisher:
@@ -180,7 +180,7 @@ parameters:
   path-resource: 
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
-  special-url-base: http://hl7.org/fhir
+  auto-oid-root: 2.16.840.1.113883.4.642.40.48
 
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

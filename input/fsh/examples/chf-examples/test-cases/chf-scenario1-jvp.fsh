@@ -2,16 +2,19 @@ Instance: chf-scenario1-jvp
 InstanceOf: chf-jvp-request
 Usage: #example
 Description: "CHF Scenario One"
-* extension
+* extension[+]
   * url = Canonical(cpg-rationale)
-  * valueMarkdown = "TODO: ACC recommends measuring jugular venous pressure as part of management of hypervolemia?"
+  * valueMarkdown = "ACC recommends measuring jugular venous pressure as part of management of hypervolemia"
+* extension[+]
+  * url = Canonical(cpg-rating)
+  * valueQuantity = 1.0 '1'
 * instantiatesCanonical = Canonical(chf-jvp-ad)
 * status = #completed
 * intent = #order
 * category = $sct#386053000 "Evaluation procedure (procedure)"
   * text = "Evaluation"
 * doNotPerform = false
-* code = $chf-codes#measure-jvp "Measure jugular venous pressure"
+* code = $chf-example-codes#measure-jvp "Measure jugular venous pressure"
   * text = "Measure jugular venous pressure"
 * subject = Reference(chf-scenario1-patient)
 * encounter = Reference(chf-scenario1-encounter)

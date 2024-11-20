@@ -19,7 +19,7 @@ Description: "This profile defines how to represent net intake/output observatio
   * coding[NetIOCode]
     * system 1..1
     * system only uri
-    * system = Canonical(chf-codes) (exactly)
+    * system = Canonical(chf-example-codes) (exactly)
     * code 1..1
     * code only code
     * code = #net-intake-output (exactly)

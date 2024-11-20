@@ -1,1 +1,0 @@
-This is an [executable artifact profile](profiles.html#artifact-profiles)

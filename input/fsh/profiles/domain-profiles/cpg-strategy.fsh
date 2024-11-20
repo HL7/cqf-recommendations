@@ -5,7 +5,7 @@ Title: "CPG Strategy"
 Description: "Profile of RequestGroup as a Strategy for use with the CPG Implementation Guide. Strategies are patient-specific realiziations of strategy definitions and are used to represent aspects of a care plan that still contain optionality among related patient-specific recommendations, typically focused on a particular condition or state within the overall guideline or pathway"
 * insert StructureDefinitionMetadata(cpg-strategy)
 * instantiatesCanonical 1..1
-* instantiatesCanonical only Canonical(PlanDefinition)
+* instantiatesCanonical only Canonical(CPGStrategyDefinition)
 * priority MS
 * subject 1..1
 * subject only Reference(Patient)

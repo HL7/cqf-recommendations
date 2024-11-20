@@ -61,7 +61,7 @@ Description: "CHF Scenario One"
   * section[+]
     * title = "Net IO's"
     * code.text = "Net IO's"
-    * entry = Reference(chf-scenario1-netio3)
+    * entry = Reference(chf-scenario1-net-io)
   * section[+]
     * title = "JVP"
     * code.text = "JVP"

@@ -5,7 +5,7 @@ Description: "CHF Scenario One"
 * status = #draft
 * intent = #proposal
 * priority = #routine
-* medicationCodeableConcept = $chf-codes#lasix-po "LASIX PO"
+* medicationCodeableConcept = $chf-example-codes#lasix-po "LASIX PO"
 * subject = Reference(chf-scenario1-patient)
 * instantiatesCanonical = Canonical(chf-lasix-po)
 * dosageInstruction

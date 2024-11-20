@@ -139,7 +139,3 @@ Applications can then implement the guideline by tracking and invoking known (an
 ### Care Planning
 
 The [Care Planning](documentation-careplanning.html) topic describes expectations for the use of dynamic care planning with computable guideline content.
-
-In addition, to support the ability to resolve optional logic as part of request groups within a care plan, this implementation defines a CarePlan apply operation:
-
-* [$apply](OperationDefinition-cpg-careplan-apply.html): An instance-level operation that supports resolution of optional logic within any RequestGroups contained in an existing CarePlan.

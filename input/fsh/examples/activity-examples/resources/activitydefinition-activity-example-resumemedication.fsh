@@ -7,7 +7,7 @@ Usage: #example
 * name = "ActivityExampleResumeMedicationAD"
 * kind = #Task
 * profile = Canonical(CPGResumeTask)
-* code = $cpg-activity-type-cs#resume-activity "Resume activity"
+* code = $cpg-activity-type-cs#resume-activity "Resume an activity currently on hold"
 * intent = #proposal
 * doNotPerform = false
 * dynamicValue[+]

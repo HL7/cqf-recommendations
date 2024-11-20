@@ -10,7 +10,7 @@ Description: "CHF Scenario One"
   * valueCode = #inferred
 * status = #final
 * category = $observation-category#vital-signs
-* code = $chf-codes#body-weight-change
+* code = $chf-example-codes#body-weight-change
 * effectiveDateTime = "2019-02-01T07:00:00Z"
 * issued = "2019-02-01T07:00:00Z"
 * subject = Reference(chf-scenario1-patient)

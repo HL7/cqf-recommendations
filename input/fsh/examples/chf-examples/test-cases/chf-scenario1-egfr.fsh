@@ -10,6 +10,6 @@ Description: "CHF Scenario One"
 * description.text = "eGFR > 60 mol/mm/m2"
 * subject = Reference(chf-scenario1-patient)
 * target
-  * measure = $chf-codes#egfr
+  * measure = $chf-example-codes#egfr
   * detailQuantity = 60 'mol/mm/m2' "mol/mm/m2"
     * comparator = #>

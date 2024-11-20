@@ -9,4 +9,4 @@ Description: "CHF Scenario One"
 * achievementStatus = $goal-achievement#improving
 * description.text = "Cardiology Consultation Within 24 Hours"
 * subject = Reference(chf-scenario1-patient)
-* target.measure = $chf-codes#cardiology-consultation
+* target.measure = $chf-example-codes#cardiology-consultation

@@ -23,7 +23,7 @@ Description: "CHF Scenario One"
 * basedOn = Reference(chf-scenario1-jvp)
 * status = #final
 * category = $observation-category#vital-signs
-* code = $chf-codes#jvp
+* code = $chf-example-codes#jvp
 * effectiveDateTime = "2019-02-03T07:00:00Z"
 * issued = "2019-02-03T07:00:00Z"
 * subject = Reference(chf-scenario1-patient)

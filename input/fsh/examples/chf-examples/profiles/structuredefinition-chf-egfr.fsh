@@ -19,7 +19,7 @@ Description: "This profile defines how to represent eGFR in FHIR using a CHF cod
   * coding[eGFRCode]
     * system 1..1
     * system only uri
-    * system = Canonical(chf-codes) (exactly)
+    * system = Canonical(chf-example-codes) (exactly)
     * code 1..1
     * code only code
     * code = #egfr (exactly)

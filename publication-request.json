@@ -1,11 +1,12 @@
 {
     "package-id" : "hl7.fhir.uv.cpg",
-    "version" : "2.0.0-ballot",
-    "path" : "http://hl7.org/fhir/uv/cpg/2024Jan",
-    "mode": "working",
-    "status" : "ballot",
+    "version" : "2.0.0",
+    "path" : "http://hl7.org/fhir/uv/cpg/STU2",
+    "mode": "milestone",
+    "status" : "trial-use",
     "sequence" : "STU2",
-    "desc" : "STU2 Ballot (v2.0.0)",
-    "descmd" : "This is the first STU2 ballot of the Clinical Guidelines IG",
+    "desc" : "STU2 (v2.0.0)",
+    "descmd" : "This is the STU2 Release of the FHIR Clinical Guidelines IG",
+    "changes": "changes.html",
     "first" : false
   }

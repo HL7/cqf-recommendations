@@ -4,6 +4,10 @@ using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
 
+codesystem "Task Codes": 'http://hl7.org/fhir/CodeSystem/task-code'
+
+code "fulfill": 'fulfill' from "Task Codes" display 'Fulfill'
+
 context Patient
 
 /* Recommendation to order a service */
@@ -62,7 +66,7 @@ define "Procedure Not Done":
 
 define "Rejected Task":
   [Task] T
-    where T.code = 'fulfill'
+    where T.code ~ "fulfill"
       and T.status = 'rejected'
 
 define "Procedure Proposal":

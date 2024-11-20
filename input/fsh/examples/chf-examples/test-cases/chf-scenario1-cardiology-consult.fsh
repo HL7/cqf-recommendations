@@ -9,7 +9,7 @@ Description: "CHF Scenario One"
 * status = #preparation
 * category = $sct#386053000 "Evaluation procedure (procedure)"
   * text = "Evaluation"
-* code = $chf-codes#cardiology-consultation "Cardiology Consultation"
+* code = $chf-example-codes#cardiology-consultation "Cardiology Consultation"
   * text = "Cardiology Consultation"
 * subject = Reference(chf-scenario1-patient)
 * encounter = Reference(chf-scenario1-encounter)

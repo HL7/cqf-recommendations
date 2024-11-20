@@ -6,7 +6,7 @@ include FHIRHelpers version '4.0.1'
 
 codesystem "SNOMED-CT": 'http://snomed.info/sct'
 codesystem "LOINC": 'http://loinc.org'
-codesystem "CHFCodes": 'http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes'
+codesystem "CHFCodes": 'http://hl7.org/fhir/uv/cpg/CodeSystem/chf-example-codes'
 codesystem "Condition Clinical Status Code": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "Condition Verification Status Code": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
@@ -59,7 +59,7 @@ define "Body Weight Change":
       code: CodeableConcept {
         coding: {
           Coding {
-            system: uri { value: 'http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes' },
+            system: uri { value: 'http://hl7.org/fhir/uv/cpg/CodeSystem/chf-example-codes' },
             code: code { value: 'body-weight-change' }
           }
         }

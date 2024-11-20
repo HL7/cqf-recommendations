@@ -7,7 +7,7 @@ Usage: #example
 * name = "ActivityExampleStopMedicationAD"
 * kind = #Task
 * profile = Canonical(CPGStopTask)
-* code = $cpg-activity-type-cs#stop-activity "Stop activity"
+* code = $cpg-activity-type-cs#stop-activity "Stop (discontinue) an activity in progress"
 * intent = #proposal
 * doNotPerform = false
 * dynamicValue[+]

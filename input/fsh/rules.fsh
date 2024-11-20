@@ -7,8 +7,6 @@ RuleSet: KnowledgeArtifactExtensionsMeta
 * ^extension[=].valueCode = #computable
 * ^extension[+].url = Canonical(cqf-knowledgeCapability)
 * ^extension[=].valueCode = #publishable
-* ^extension[+].url = Canonical(cqf-knowledgeRepresentationLevel)
-* ^extension[=].valueCode = #structured
 
 RuleSet: KnowledgeArtifactExtensions
 * extension[+]
@@ -20,9 +18,6 @@ RuleSet: KnowledgeArtifactExtensions
 * extension[+]
   * url = Canonical(cqf-knowledgeCapability)
   * valueCode = #publishable
-* extension[+]
-  * url = Canonical(cqf-knowledgeRepresentationLevel)
-  * valueCode = #structured
 
 RuleSet: CaseFeatureOfExtension(plan-id)
 * ^extension[+].url = Canonical(cpg-caseFeatureOf)

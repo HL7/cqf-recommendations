@@ -22,10 +22,6 @@
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
     "valueCode" : "publishable"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
-    "valueCode" : "structured"
   }],
   "url" : "http://hl7.org/fhir/uv/cpg/ImplementationGuide/chf-ig",
   "version" : "1.0.0",
@@ -439,10 +435,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/chf-codes"
+        "reference" : "CodeSystem/chf-example-codes"
       },
       "name" : "CHF Codes",
-      "description" : "Codes used in the congestive heart failure pathway. Ideally these shouldn't exist, but where I couldn't find an appropriate code in a standard terminology, I defined codes here.",
+      "description" : "Codes used in the congestive heart failure pathway example. Ideally these shouldn't exist, but where an appropriate code in a standard terminology couldn't be identified, codes are defined here.",
       "exampleBoolean" : false
     },
     {

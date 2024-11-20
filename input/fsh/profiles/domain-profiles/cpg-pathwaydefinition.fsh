@@ -22,7 +22,7 @@ Description: "Profile of PlanDefinition as a Clinical Pathway for use with CPG I
   * requiredBehavior 0..0
   * precheckBehavior 0..0
   * cardinalityBehavior 0..0
-  * definition[x] only Canonical(PlanDefinition)
+  * definition[x] only Canonical(CPGStrategyDefinition or CPGWorkflowDefinition)
   * definitionCanonical MS
   * transform 0..0 MS
   * dynamicValue 0..0 MS

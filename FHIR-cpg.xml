@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cpg/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/cqf-recommendations" defaultVersion="1.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cqf-recommendations" url="http://hl7.org/fhir/uv/cpg">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/cpg/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/cqf-recommendations" defaultVersion="2.0.0" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/cqf-recommendations" url="http://hl7.org/fhir/uv/cpg">
 <version code="current" url="http://build.fhir.org/ig/HL7/cqf-recommendations"/>
+<version code="2.0.0" url="http://hl7.org/fhir/uv/cpg/STU2"/>
 <version code="2.0.0-ballot" url="http://hl7.org/fhir/uv/cpg/2024Jan"/>
 <version code="1.0.0" url="http://hl7.org/fhir/uv/cpg/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/cpg/2019Sep"/>
@@ -273,10 +274,10 @@
 <artifact id="Library/generatereport-library" key="Library-generatereport-library" name="Generate Report Library"/>
 <artifact id="CarePlan/chf-scenario1-careplan" key="CarePlan-chf-scenario1-careplan" name="Heart Failure Care Pathway"/>
 <artifact id="Library/holdmedication-library" key="Library-holdmedication-library" name="Hold Medication Library"/>
-<artifact id="CodeSystem/knowledge-capability" key="CodeSystem-knowledge-capability" name="Knowledge Capability Codes"/>
-<artifact id="ValueSet/knowledge-capability" key="ValueSet-knowledge-capability" name="Knowledge Capability Values"/>
-<artifact id="CodeSystem/knowledge-representation-level" key="CodeSystem-knowledge-representation-level" name="Knowledge Representation Level Codes"/>
-<artifact id="ValueSet/knowledge-representation-level" key="ValueSet-knowledge-representation-level" name="Knowledge Representation Level Values"/>
+<artifact deprecated="true" id="CodeSystem/knowledge-capability" key="CodeSystem-knowledge-capability" name="Knowledge Capability Codes"/>
+<artifact deprecated="true" id="ValueSet/knowledge-capability" key="ValueSet-knowledge-capability" name="Knowledge Capability Values"/>
+<artifact deprecated="true" id="CodeSystem/knowledge-representation-level" key="CodeSystem-knowledge-representation-level" name="Knowledge Representation Level Codes"/>
+<artifact deprecated="true" id="ValueSet/knowledge-representation-level" key="ValueSet-knowledge-representation-level" name="Knowledge Representation Level Values"/>
 <artifact id="Library/ordermedication-library" key="Library-ordermedication-library" name="Order Medication Library"/>
 <artifact id="Library/orderservice-library" key="Library-orderservice-library" name="Order Service Library"/>
 <artifact id="PlanDefinition/cpg-common-registration" key="PlanDefinition-cpg-common-registration" name="PlanDefinition - CPG Common Registration"/>

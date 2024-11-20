@@ -9,4 +9,4 @@ Description: "CHF Scenario One"
 * achievementStatus = $goal-achievement#improving
 * description.text = "PO 24 hr Prior to Discharge"
 * subject = Reference(chf-scenario1-patient)
-* target.measure = $chf-codes#lasix-po
+* target.measure = $chf-example-codes#lasix-po

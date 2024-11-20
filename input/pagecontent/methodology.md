@@ -50,7 +50,7 @@ The middle row on the right of the Figure 3.1 shows the Specification Implementa
 * [**Quality Measure IG (QM)**](http://hl7.org/fhir/us/cqfmeasures) provides guidance on and conformance requirements for the use of the FHIR Reasoning resources, Measure and Library, to create and share clinical quality measures.
 * [**Data Exchange for Quality Measures (DEQM)**](http://hl7.org/fhir/us/davinci-deqm) provides guidance for reporting quality measures.
 * [**Structured Data Capture (SDC)**](http://hl7.org/fhir/uv/sdc) provides guidance for building and capturing structured data using questionnaires
-* [**Clinical Practice Guidelines IG (CPG-on-FHIR)**](http://hl7.org/fhir/uv/cpg) (this implementation guide) demonstrates how to build shareable computable guideline content.
+* [**Clinical Practice Guidelines IG (CPG-on-FHIR) (This IG)**](index.html) (this implementation guide) demonstrates how to build shareable computable guideline content.
 * [**Evidence-Based Medicine on FHIR (EBM-on-FHIR)**](http://build.fhir.org/clinicalreasoning-evidence-and-statistics.html) provides interoperability (standards for data exchange) for those producing, analyzing, synthesizing, disseminating and implementing clinical research (evidence) and recommendations for clinical care (clinical practice guidelines). It specifies resources and patterns for the exchange of data involved in evidence-based medicine including study results, quality of evidence and strength of recommendation and relevant context, environmental surveys, and systematic reviews.
 
 #### Content Implementation Guides
@@ -305,7 +305,7 @@ A complete walkthrough of this process using freely available open source tools 
 
 #### Computable Clinical Practice Guideline
 
-As discussed in the [content implementation guides](methodology.html#content-igs) section, a computable Clinical Practice Guideline (CPG) following this methodology is delivered as a FHIR Implementation Guide, and the first step to developing the content is to establish the content IG. This typically takes the form of a Github repository, similar to the [Sample Content IG](https://github.com/cqframework/sample-content-ig).
+As discussed in the [content implementation guides](methodology.html#content-implementation-guides) section, a computable Clinical Practice Guideline (CPG) following this methodology is delivered as a FHIR Implementation Guide, and the first step to developing the content is to establish the content IG. This typically takes the form of a Github repository, similar to the [Sample Content IG](https://github.com/cqframework/sample-content-ig).
 
 Pay particular attention at this step to the selection of the canonical URL for the computable guideline, as it will determine the base of the URLs for all the artifacts published by the IG, as well as enable resolution of artifacts when the IG is published at its canonical URL.
 
@@ -554,7 +554,7 @@ See the [Validation with CQF Ruler and CDS Hooks](https://github.com/cqframework
 
 ### Packaging
 
-Because the artifacts defined in this implementation guide are _canonical resources_, they follow the artifact lifecycle established in the Canonical Resource Management Infrastructure implementation guide. Packaging artifacts is accomplished directly as part of publishing the content as a Content Implementation Guide, or can be published through an Artifact Repository and packaged for use using the CRMIManifestLibrary profile. See the [Packaging]({{site.data.fhir.ver.crmi}}/packaging.html) discussion in the CRMI IG for more information.
+Because the artifacts defined in this implementation guide are _canonical resources_, they follow the artifact lifecycle established in the Canonical Resource Management Infrastructure implementation guide. Packaging artifacts is accomplished directly as part of publishing the content as a Content Implementation Guide, or can be published through an Artifact Repository and packaged for use using the CRMIManifestLibrary profile. See the [Packaging](http://hl7.org/fhir/uv/crmi/packaging.html) discussion in the CRMI IG for more information.
 
 ### Mapping and Other Formalisms
 

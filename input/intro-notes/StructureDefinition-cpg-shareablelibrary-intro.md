@@ -1,1 +1,0 @@
-This is a [shareable artifact profile](profiles.html#artifact-profiles)

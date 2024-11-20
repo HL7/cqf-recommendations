@@ -20,8 +20,8 @@ The following changes were applied as a result of comments received during the S
 * [FHIR-44983](https://jira.hl7.org/browse/FHIR-44983): Defined intent for communicationrequest
 * [FHIR-44913](https://jira.hl7.org/browse/FHIR-44913): Enhanced testing description in the methodology page
 * [FHIR-44911](https://jira.hl7.org/browse/FHIR-44911): Improved definition and explanation of content implementation guides
-* [FHIR-44240](https://jira.hl7.org/browse/FHIR-44240): Removed cpg-indicator value set in favor of THO cds-hooks-indicator
-* [FHIR-44234](https://jira.hl7.org/browse/FHIR-44234): Removed cpg-indicator code system in favor of THO cds-hooks-indicator
+* [FHIR-44240](https://jira.hl7.org/browse/FHIR-44240): Removed cpg-indicator value set, should be in a Using CDS Hooks IG
+* [FHIR-44234](https://jira.hl7.org/browse/FHIR-44234): Removed cpg-indicator code system in favor of THO cdshooks-indicator
 * [FHIR-44160](https://jira.hl7.org/browse/FHIR-44160): Reconciled overlaps with the EBMonFHIR IG
 * [FHIR-44143](https://jira.hl7.org/browse/FHIR-44143): Minor grammar and formatting fixes throughout IG
 * [FHIR-44067](https://jira.hl7.org/browse/FHIR-44067): Fixed activity profiles page numbering

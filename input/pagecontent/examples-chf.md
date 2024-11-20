@@ -267,7 +267,7 @@ The following index lists all the artifacts (case-independent) in this example:
 |ActivityDefinition|[chf-report-urine-out](ActivityDefinition-chf-report-urine-out.html)|
 |ActivityDefinition|[chf-urine-out](ActivityDefinition-chf-urine-out-ad.html)|
 |CareTeam|[chf-careteamdefinition](CareTeam-chf-careteamdefinition.html)|
-|CodeSystem|[chf-codes](CodeSystem-chf-codes.html)|
+|CodeSystem|[chf-example-codes](CodeSystem-chf-example-codes.html)|
 |GraphDefinition|[chf-caseplansummarydefinition](GraphDefinition-chf-caseplansummarydefinition.html)|
 |GraphDefinition|[chf-casesummarydefinition](GraphDefinition-chf-casesummarydefinition.html)|
 |Group|[chf-groupdefinition](Group-chf-groupdefinition.html)|

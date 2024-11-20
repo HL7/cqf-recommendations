@@ -39,7 +39,7 @@ define "Medication Order":
 
 define "Inclusion Criteria":
   Patient.active
-    and exists "Medication Proposal"
+    and exists "Medication Order"
 
 define "Stop Medication Proposal":
   [Task] T

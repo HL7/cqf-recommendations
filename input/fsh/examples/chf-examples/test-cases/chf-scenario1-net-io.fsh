@@ -10,7 +10,7 @@ Description: "CHF Scenario One"
   * valueCode = #asserted
 * status = #final
 * category = $observation-category#vital-signs
-* code = $chf-codes#net-intake-output
+* code = $chf-example-codes#net-intake-output
 * effectivePeriod
   * start = "2019-02-02T07:00:00Z"
   * end = "2019-02-03T07:00:00Z"

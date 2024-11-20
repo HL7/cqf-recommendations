@@ -3,7 +3,7 @@ InstanceOf: chf-lasix-iv-administration
 Usage: #example
 Description: "CHF Scenario One"
 * status = #completed
-* medicationCodeableConcept = $chf-codes#lasix-iv "LASIX IV"
+* medicationCodeableConcept = $chf-example-codes#lasix-iv "LASIX IV"
 * subject = Reference(chf-scenario1-patient)
 * effectiveDateTime = "2019-02-03T07:08:00Z"
 * dosage

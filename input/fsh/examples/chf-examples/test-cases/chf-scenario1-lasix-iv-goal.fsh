@@ -9,4 +9,4 @@ Description: "CHF Scenario One"
 * achievementStatus = $goal-achievement#improving
 * description.text = "Transition to PO"
 * subject = Reference(chf-scenario1-patient)
-* target.measure = $chf-codes#lasix-iv
+* target.measure = $chf-example-codes#lasix-iv

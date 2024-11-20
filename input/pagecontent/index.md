@@ -46,7 +46,7 @@ _Figure 1.2_ Clinical Quality Lifecycle with situated standards to address each 
 </div>
 
 * [Evidence-Based Medicine-on-FHIR (EBM-on-FHIR)](http://hl7.org/fhir/clinicalreasoning-evidence-and-statistics.html))
-* [Clinical Practice Guidelines-on-FHIR (CPG-on-FHIR)](http://hl7.org/fhir/uv/cpg)
+* [Clinical Practice Guidelines-on-FHIR (CPG-on-FHIR) (This IG)](index.html)
 * [CDS Hooks](http://cds-hooks.hl7.org)
 * [SMART App Launch](http://hl7.org/fhir/smart-app-launch/)
 * [Quality Measures (QM)](http://hl7.org/fhir/us/cqfmeasures)

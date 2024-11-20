@@ -28,6 +28,7 @@ Alias: $cpg-dispensemedicationtask = http://hl7.org/fhir/uv/cpg/StructureDefinit
 Alias: $cpg-documentmedicationtask = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-documentmedicationtask
 Alias: $artifact-editor = http://hl7.org/fhir/StructureDefinition/artifact-editor
 Alias: $cpg-enabled = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enabled
+Alias: $cpg-rating = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-rating
 Alias: $artifact-endorser = http://hl7.org/fhir/StructureDefinition/artifact-endorser
 Alias: $cpg-enrolledIn = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn
 Alias: $cpg-enrollIn = http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrollIn
@@ -152,7 +153,7 @@ Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
 Alias: $goal-achievement = http://terminology.hl7.org/CodeSystem/goal-achievement
-Alias: $chf-codes = http://hl7.org/fhir/uv/cpg/CodeSystem/chf-codes
+Alias: $chf-example-codes = http://hl7.org/fhir/uv/cpg/CodeSystem/chf-example-codes
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
 Alias: $ckd-clinical-overview-1 = http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75E10232E05352E3610A5325

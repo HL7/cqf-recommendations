@@ -9,7 +9,7 @@ Description: "Profile of PlanDefinition as a Workflow Definition for use with CP
 * action MS
   * title 1..1 MS
   * description 1..1 MS
-  * code 1..1 MS
+  * code 0..1 MS
   * code from $cpg-common-process-valueset (extensible)
     * ^binding.description = "High-level processes identified in guideline-based care"
   * input MS

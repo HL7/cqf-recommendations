@@ -10,7 +10,7 @@ Description: "CHF Scenario One"
 * description.text = "Body weight change 0.5-1.5 kg/day"
 * subject = Reference(chf-scenario1-patient)
 * target
-  * measure = $chf-codes#body-weight-change
+  * measure = $chf-example-codes#body-weight-change
   * detailRange
     * low = 0.5 'kg/d' "kg/d"
     * high = 1.5 'kg/d' "kg/d"

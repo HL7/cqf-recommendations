@@ -10,5 +10,5 @@ Description: "CHF Scenario One"
 * description.text = "Net intake/output -1.5 L/day"
 * subject = Reference(chf-scenario1-patient)
 * target
-  * measure = $chf-codes#net-intake-output
+  * measure = $chf-example-codes#net-intake-output
   * detailQuantity = -1.5 'L/d' "L/day"

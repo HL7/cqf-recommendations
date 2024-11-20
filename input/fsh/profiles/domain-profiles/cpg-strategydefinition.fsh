@@ -22,7 +22,7 @@ Description: "Profile of PlanDefinition as a Strategy Definition for use with CP
   * requiredBehavior 0..0
   * precheckBehavior 0..0
   * cardinalityBehavior 0..0
-  * definition[x] only Canonical(PlanDefinition)
+  * definition[x] only Canonical(CPGRecommendationDefinition)
   * definitionCanonical MS
   * transform 0..0
   * dynamicValue 0..0 MS

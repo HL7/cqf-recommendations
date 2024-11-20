@@ -15,7 +15,8 @@ Description: "Defines the minimum expectations and behavior for a computable pla
   * extension contains
     $cqf-strengthOfRecommendation named strengthOfRecommendation 0..1 MS and
     $cpg-directionOfRecommendation named directionOfRecommendation 0..1 MS and
-    $cqf-qualityOfEvidence named qualityOfEvidence 0..1 MS
+    $cqf-qualityOfEvidence named qualityOfEvidence 0..1 MS and
+    $cpg-rating named rating 0..1 MS
   * prefix MS
   * title MS
   * description MS

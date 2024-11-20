@@ -10,6 +10,6 @@ Description: "CHF Scenario One"
 * description.text = "Jugular venous pressure < 8.0 cmH2O"
 * subject = Reference(chf-scenario1-patient)
 * target
-  * measure = $chf-codes#jvp
+  * measure = $chf-example-codes#jvp
   * detailQuantity = 8 'cm[H2O]' "cmH2O"
     * comparator = #<

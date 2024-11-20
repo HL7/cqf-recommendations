@@ -10,7 +10,7 @@ Description: "CHF Scenario One"
   * valueCode = #asserted
 * status = #final
 * category = $observation-category#vital-signs
-* code = $chf-codes#egfr
+* code = $chf-example-codes#egfr
 * effectiveDateTime = "2019-02-03T09:40:00Z"
 * issued = "2019-02-03T09:40:00Z"
 * subject = Reference(chf-scenario1-patient)

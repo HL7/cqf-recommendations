@@ -6,6 +6,6 @@ Description: "Example test case - Resume Medication - Scenario 2 - Resume Task"
 * instantiatesCanonical = Canonical(activity-example-resumemedication-ad)
 * status = #draft
 * intent = #proposal
-* code = $cpg-activity-type-cs#resume-activity "Resume activity"
+* code = $cpg-activity-type-cs#resume-activity "Resume an activity currently on hold"
 * for = Reference(res-scenario2-patient)
 * focus = Reference(res-scenario2)

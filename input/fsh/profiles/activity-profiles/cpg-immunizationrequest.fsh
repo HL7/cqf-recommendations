@@ -11,7 +11,7 @@ Description: "Recommendation for a particular immunization as part of the delive
 * status MS
 * intent MS
 * category MS
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #type
 * category ^slicing.discriminator.path = coding
 * category ^slicing.rules = #open
 * category ^slicing.description = "Slice based on the coding pattern"
