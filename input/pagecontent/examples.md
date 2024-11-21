@@ -1,14 +1,14 @@
 This page lists examples of various clinical guidelines expressed as computable content conforming to this implementation guide:
 
 *   [Activity Examples](examples-activities.html)
-*   [Antenatal Care Guidelines](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/index.html)
-*   [Anthrax Post-Exposure Prophylaxis](https://build.fhir.org/ig/cqframework/cpg-example-anthrax/branches/main/index.html)
-*   [Chronic Disease Management - Chronic Kidney Disease](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/index.html)
+*   [Antenatal Care Guidelines](http://cqframework.org/cpg-example-anc/)
+*   [Anthrax Post-Exposure Prophylaxis](http://cqframework.org/cpg-example-anthrax/)
+*   [Chronic Disease Management - Chronic Kidney Disease](http://cqframework.org/cpg-example-ckd/)
 *   [Congestive Heart Failure](examples-chf.html)
 *   [COVID-19 CPG Methodology Case Study](methodology-case-study.html)
-*   [Opioid Prescribing Guideline 2016](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/index.html)
+*   [Opioid Prescribing Guideline 2016](http://cqframework.org/cpg-example-opioids/)
 *   [HIV Screening, Immunization, and Follow-up](examples-hiv-guideline.html)
-*   [Hepatitis B Adult Immunization Forecasting](https://build.fhir.org/ig/cqframework/cpg-example-hepb/branches/main/index.html)
+*   [Hepatitis B Adult Immunization Forecasting](http://cqframework.org/cpg-example-hepb/)
 
 The following sections provide listings of resources defined in these examples, indexed by resource type.
 
