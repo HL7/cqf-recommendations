@@ -1,8 +1,5 @@
 == Suppressed Messages ==
 
-# Verified the CommunicationRequest.intent element does have a modifierReason defined, but it is not coming through in the cross-version extension https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/eld-18.20in.20snapshot
-ERROR: StructureDefinition/cpg-communicationrequest: StructureDefinition.snapshot.element[12]: Constraint failed: eld-18: 'Must have a modifier reason if isModifier = true'
-
 # Error in the RequestGroup constraint definition in R4, technical correction logged: https://jira.hl7.org/browse/FHIR-48868
 ERROR: RequestGroup/chf-scenario1-hypervolemia: RequestGroup.action[2].action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both'
 ERROR: RequestGroup/chf-scenario1-hypervolemia: RequestGroup.action[3].action[0]: Constraint failed: rqg-1: 'Must have resource or action but not both'
@@ -13,7 +10,7 @@ WARNING: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/GraphDefinition
 WARNING: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/GraphDefinition/chf-casesummarydefinition'): The resource needed to modified during loading to apply common headers version=2.0.0, contact, copyright=null, jurisdiction, publisher=HL7 International / Clinical Decision Support, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
 
 # This is an example URL for the CHF example content
-WARNING: Group-chf-groupdefinition.html#/html/body/div/div/div/div/div/div/p/a at Line 213, column 267: The link 'http://hl7.org/fhir/uv/cpg/Library/CHF' for "Eligibility Criteria" is a canonical link and is therefore unsafe with regard to versions
+WARNING: output\Group-chf-groupdefinition.html#/html/body/div/div/div/div/div/div/p/a at Line 213, column 267: The link 'http://hl7.org/fhir/uv/cpg/Library/CHF' for "Eligibility Criteria" is a canonical link and is therefore unsafe with regard to versions
 WARNING: Group.text.div: Hyperlink 'http://hl7.org/fhir/uv/cpg/Library/CHF' at 'div/p/a' for 'Eligibility Criteria ' is a canonical reference, and is unsafe because of version handling (points to the current version, not this version)
 
 # This example is illustrating a decision support response where resource size is a factor in performance and narratives are intentionally excluded, so ignoring 'A resource should have narrative for robust management' for example use
@@ -472,12 +469,12 @@ INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3
 INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-testcasebundle|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These are inherited from the base service request
-ERROR: C:\Users\Bryn\Documents\Src\CDC\cqf-recommendations\output\StructureDefinition-cpg-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 377, column 1181: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: C:\Users\Bryn\Documents\Src\CDC\cqf-recommendations\output\StructureDefinition-cpg-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 497, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: C:\Users\Bryn\Documents\Src\CDC\cqf-recommendations\output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 558, column 903: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: C:\Users\Bryn\Documents\Src\CDC\cqf-recommendations\output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 802, column 901: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: C:\Users\Bryn\Documents\Src\CDC\cqf-recommendations\output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1374, column 903: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: C:\Users\Bryn\Documents\Src\CDC\cqf-recommendations\output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1618, column 901: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: output\StructureDefinition-cpg-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 377, column 1181: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: output\StructureDefinition-cpg-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 497, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 558, column 903: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 802, column 901: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1374, column 903: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: output\StructureDefinition-cpg-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1618, column 901: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 
 # Publisher attempts to generate conformance resources instead of example StructureDefinition instances
 ERROR: output/StructureDefinition-chf-bodyweight-change-definitions.html#/html/body/div/div/div/div/div/ul/li/a at Line 211, column 8: The link 'StructureDefinition-chf-bodyweight-change.profile.xml.html' for "XML" cannot be resolved
@@ -761,6 +758,7 @@ INFORMATION: CodeSystem/cpg-recommendation-direction-cs: CodeSystem: Most code s
 
 # This is an example code system, not appropriate for THO
 INFORMATION: CodeSystem/chf-example-codes: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+INFORMATION: CodeSystem/anc-example-reason-for-visit-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 # Accepted reference to experimental code system, the code system is example
 INFORMATION: ActivityDefinition/chf-cardiology-consultation: ActivityDefinition.product.ofType(CodeableConcept): Reference to experimental CodeSystem http://hl7.org/fhir/uv/cpg/CodeSystem/chf-example-codes|2.0.0
