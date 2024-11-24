@@ -11,4 +11,4 @@ Usage: #example
 * intent = #proposal
 * priority = #routine
 * doNotPerform = false
-* productCodeableConcept = $sct#14745005 "Hepatitis A vaccine"
+* productCodeableConcept = $sct#871751006 "Vaccine product containing only Hepatitis A virus antigen (medicinal product)"

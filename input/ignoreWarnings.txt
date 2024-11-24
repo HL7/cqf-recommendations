@@ -16,34 +16,12 @@ WARNING: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/GraphDefinition
 WARNING: Group-chf-groupdefinition.html#/html/body/div/div/div/div/div/div/p/a at Line 213, column 267: The link 'http://hl7.org/fhir/uv/cpg/Library/CHF' for "Eligibility Criteria" is a canonical link and is therefore unsafe with regard to versions
 WARNING: Group.text.div: Hyperlink 'http://hl7.org/fhir/uv/cpg/Library/CHF' at 'div/p/a' for 'Eligibility Criteria ' is a canonical reference, and is unsafe because of version handling (points to the current version, not this version)
 
-# Ignore 'A resource should have narrative for robust management' for example use
+# This example is illustrating a decision support response where resource size is a factor in performance and narratives are intentionally excluded, so ignoring 'A resource should have narrative for robust management' for example use
 WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[0].resource/*GuidanceResponse/am-scenario7-gr*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[1].resource/*MedicationAdministration/am-scenario7*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[2].resource/*MedicationRequest/am-scenario7-mr*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[3].resource/*Patient/am-scenario7-patient*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[4].resource/*Task/request-am-scenario7*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-
-# Code '333919005' is used for example purposes only
-INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[1].resource/*MedicationAdministration/am-scenario7*/.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: Bundle/activity-example-administermedication-bundle: Bundle.entry[3].resource/*Bundle/am-scenario7-bundle*/.entry[2].resource/*MedicationRequest/am-scenario7-mr*/.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[1].resource/*MedicationAdministration/am-scenario7*/.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: Bundle/am-scenario7-bundle: Bundle.entry[2].resource/*MedicationRequest/am-scenario7-mr*/.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationAdministration/am-scenario4: MedicationAdministration.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationAdministration/am-scenario5: MedicationAdministration.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationAdministration/am-scenario6: MedicationAdministration.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationAdministration/am-scenario7: MedicationAdministration.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationRequest/am-scenario1: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationRequest/am-scenario2: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationRequest/am-scenario3: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationRequest/am-scenario4-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationRequest/am-scenario5-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationRequest/am-scenario6-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-INFORMATION: MedicationRequest/am-scenario7-mr: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '333919005' is valid but is not active
-
-# Code '14745005' is used for example purposes only
-INFORMATION: ActivityDefinition/activity-example-recommendimmunization-ad: ActivityDefinition.product.ofType(CodeableConcept).coding[0].code: The code '14745005' is valid but is not active
-INFORMATION: Immunization/ri-scenario4: Immunization.vaccineCode.coding[0].code: The code '14745005' is valid but is not active
-INFORMATION: MedicationRequest/ri-scenario2: MedicationRequest.medication.ofType(CodeableConcept).coding[0].code: The code '14745005' is valid but is not active
 
 # The slice is valid in a derived profile
 INFORMATION: PlanDefinition/activity-example-pathway-pd: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-computableplandefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)

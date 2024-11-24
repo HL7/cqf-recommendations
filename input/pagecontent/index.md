@@ -54,7 +54,7 @@ _Figure 1.2_ Clinical Quality Lifecycle with situated standards to address each 
 * [Electronic Case Reporting (eCR)](http://hl7.org/fhir/us/ecr)
 * [United States (US) Core](http://hl7.org/fhir/us/core)
 * [Quality Improvement (QI) Core](http://hl7.org/fhir/us/qicore)
-* [US Publich Health Profiles Library (USPHPL)](http://hl7.org/fhir/us/ph-library)
+* [US Public Health Profiles Library (USPHPL)](http://hl7.org/fhir/us/ph-library)
 * [International Patient Summary (IPS)](http://hl7.org/fhir/uv/ips)
 * [Clinical Quality Language (CQL)](http://cql.hl7.org)
 * [Clinical Reasoning (CR) Module](http://hl7.org/fhir/clinicalreasoning-module.html)

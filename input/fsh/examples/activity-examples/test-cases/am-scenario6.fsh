@@ -3,7 +3,7 @@ InstanceOf: CPGMedicationAdministration
 Usage: #example
 Description: "Example test case - Administer Medication - Scenario 6 - MedicationAdministration"
 * status = #not-done
-* medicationCodeableConcept = $sct#333919005 "Fentanyl 25micrograms/hour patch (product)"
+* medicationCodeableConcept = $sct#769510009 "Product containing precisely fentanyl 25 microgram/1 hour prolonged-release transdermal patch (clinical drug)"
 * subject = Reference(am-scenario6-patient)
 * effectivePeriod
   * start = "2015-01-15T22:03:00+01:00"

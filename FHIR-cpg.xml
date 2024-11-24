@@ -9,8 +9,8 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="CodeSystem/anc-example-reason-for-visit-cs" key="CodeSystem-anc-example-reason-for-visit-cs" name="ANC Example Reason for Visit Codesystem"/>
 <artifact id="Questionnaire/anc-quick-check" key="Questionnaire-anc-quick-check" name="ANC Quick Check Questionnaire"/>
-<artifact id="CodeSystem/anc-reason-for-visit-cs" key="CodeSystem-anc-reason-for-visit-cs" name="ANC Reason for Visit Codesystem"/>
 <artifact id="ValueSet/anc-reason-for-visit-vs" key="ValueSet-anc-reason-for-visit-vs" name="ANC Reason for Visit ValueSet"/>
 <artifact id="Library/administermedication-asset-collection" key="Library-activity-example-administermedication-library" name="Activity Example - Administer Medication Library Collection"/>
 <artifact id="ActivityDefinition/activity-example-administermedication-ad" key="ActivityDefinition-activity-example-administermedication-ad" name="Activity Example Administer Medication AD"/>
@@ -67,11 +67,12 @@
 <artifact id="StructureDefinition/chf-cardiology-consult-request" key="StructureDefinition-chf-cardiology-consult-request" name="CHF Cardiology Consult Request"/>
 <artifact id="ActivityDefinition/chf-cardiology-consultation" key="ActivityDefinition-chf-cardiology-consultation" name="CHF Cardiology Consultation Activity Defintion"/>
 <artifact id="PlanDefinition/chf-cardiology-consultation-pd" key="PlanDefinition-chf-cardiology-consultation-pd" name="CHF Cardiology Consultation Recommendation"/>
-<artifact id="CodeSystem/chf-codes" key="CodeSystem-chf-codes" name="CHF Codes"/>
+<artifact deprecated="true" id="CodeSystem/chf-codes" key="CodeSystem-chf-codes" name="CHF Codes"/>
 <artifact id="StructureDefinition/chf-creatinine" key="StructureDefinition-chf-creatinine" name="CHF Creatinine"/>
 <artifact id="ActivityDefinition/chf-creatinine-ad" key="ActivityDefinition-chf-creatinine-ad" name="CHF Creatinine Activity Defintion"/>
 <artifact id="PlanDefinition/chf-creatinine-pd" key="PlanDefinition-chf-creatinine-pd" name="CHF Creatinine Recommendation"/>
 <artifact id="PlanDefinition/chf-daily-management" key="PlanDefinition-chf-daily-management" name="CHF Daily Management Strategy"/>
+<artifact id="CodeSystem/chf-example-codes" key="CodeSystem-chf-example-codes" name="CHF Example Codes"/>
 <artifact id="ImplementationGuide/chf-ig" key="ImplementationGuide-chf-ig" name="CHF Example Implementation Guide"/>
 <artifact id="PlanDefinition/chf-hypervolemia" key="PlanDefinition-chf-hypervolemia" name="CHF Hypervolemia Strategy"/>
 <artifact id="StructureDefinition/chf-jvp" key="StructureDefinition-chf-jvp" name="CHF Jugular Venous Pressure"/>
@@ -260,6 +261,7 @@
 <artifact id="StructureDefinition/cpg-task" key="StructureDefinition-cpg-task" name="CPG Task"/>
 <artifact deprecated="true" id="StructureDefinition/cpg-testcasebundle" key="StructureDefinition-cpg-testcasebundle" name="CPG Test Case Bundle"/>
 <artifact id="StructureDefinition/cpg-workflowdefinition" key="StructureDefinition-cpg-workflowdefinition" name="CPG Workflow Definition"/>
+<artifact deprecated="true" id="CodeSystem/anc-reason-for-visit-cs" key="CodeSystem-anc-reason-for-visit-cs" name="CodeSystem - ANC Reason for Visit"/>
 <artifact id="Library/collectinformation-library" key="Library-collectinformation-library" name="Collect Information Library"/>
 <artifact id="PlanDefinition/chf-pathway" key="PlanDefinition-chf-pathway" name="Congestive Heart Failure Care Pathway"/>
 <artifact id="Composition/chf-scenario1-casesummary" key="Composition-chf-scenario1-casesummary" name="Congestive Heart Failure Case Summary"/>

@@ -5,7 +5,7 @@ Description: "Example test case - Administer Medication - Scenario 4 - Medicatio
 * status = #active
 * intent = #order
 * priority = #routine
-* medicationCodeableConcept = $sct#333919005 "Fentanyl 25micrograms/hour patch (product)"
+* medicationCodeableConcept = $sct#769510009 "Product containing precisely fentanyl 25 microgram/1 hour prolonged-release transdermal patch (clinical drug)"
 * subject = Reference(am-scenario4-patient)
 * dosageInstruction
   * sequence = 1
