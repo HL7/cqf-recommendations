@@ -10,7 +10,7 @@ WARNING: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/GraphDefinition
 WARNING: GraphDefinition.where(url = 'http://hl7.org/fhir/uv/cpg/GraphDefinition/chf-casesummarydefinition'): The resource needed to modified during loading to apply common headers version=2.0.0, contact, copyright=null, jurisdiction, publisher=HL7 International / Clinical Decision Support, date but this isn't possible for the type GraphDefinition because version conversion isn't working completely
 
 # This is an example URL for the CHF example content
-WARNING: output\Group-chf-groupdefinition.html#/html/body/div/div/div/div/div/div/p/a at Line 213, column 267: The link 'http://hl7.org/fhir/uv/cpg/Library/CHF' for "Eligibility Criteria" is a canonical link and is therefore unsafe with regard to versions
+WARNING: output/Group-chf-groupdefinition.html#/html/body/div/div/div/div/div/div/p/a at Line 213, column 267: The link 'http://hl7.org/fhir/uv/cpg/Library/CHF' for "Eligibility Criteria" is a canonical link and is therefore unsafe with regard to versions
 WARNING: Group.text.div: Hyperlink 'http://hl7.org/fhir/uv/cpg/Library/CHF' at 'div/p/a' for 'Eligibility Criteria ' is a canonical reference, and is unsafe because of version handling (points to the current version, not this version)
 
 # This example is illustrating a decision support response where resource size is a factor in performance and narratives are intentionally excluded, so ignoring 'A resource should have narrative for robust management' for example use
