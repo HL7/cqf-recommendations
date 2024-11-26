@@ -254,7 +254,76 @@ menu:
 # The following are simple examples to demonstrate what this might
 # look like:
 #
-# resources:
+# NOTE: Added these as overrides because the default SUSHI compiler does not mark them as examples
+resources:
+  StructureDefinition/chf-bodyweight:
+    name: CHF Body Weight
+    description: This profile defines how to represent body weight observations in FHIR using a standard LOINC code and UCUM units of measure (in kg).
+    exampleBoolean: true
+  StructureDefinition/chf-bodyweight-change:
+    name: CHF Body Weight Change
+    description: This profile defines how to represent body weight change observations in FHIR using a CHF code and UCUM units of measure (in kg).
+    exampleBoolean: true
+  StructureDefinition/chf-cardiology-consult:
+    name: CHF Cardiology Consult
+    description: Documents a procedure as an activity within the context of a computable clinical practice guideline
+    exampleBoolean: true
+  StructureDefinition/chf-cardiology-consult-request:
+    name: CHF Cardiology Consult Request
+    description: Request for a cardiology consultation as part of a congestive heart failure pathway
+    exampleBoolean: true
+  StructureDefinition/chf-creatinine:
+    name: CHF Creatinine
+    description: This profile defines how to represent creatinine observations in FHIR using a LOINC code and UCUM units of measure (in mg/dL).
+    exampleBoolean: true
+  StructureDefinition/chf-egfr:
+    name: CHF eGFR
+    description: This profile defines how to represent eGFR in FHIR using a CHF code and UCUM units of measure (in mol/mm/m2).
+    exampleBoolean: true
+  StructureDefinition/chf-jvp:
+    name: CHF Jugular Venous Pressure
+    description: This profile defines how to represent jugular venous pressure observations in FHIR using a CHF code and UCUM units of measure (in cmH2O).
+    exampleBoolean: true
+  StructureDefinition/chf-jvp-request:
+    name: CHF Jugular Venous Pressure Request
+    description: Request to measure jugular venous pressure as part of a congestive heart failure pathway
+    exampleBoolean: true
+  StructureDefinition/chf-lasix-iv-administration:
+    name: CHF LASIX IV Administration
+    description: Documents the administration of LASIX IV as a pathway event within a congestive heart failure pathway
+    exampleBoolean: true
+  StructureDefinition/chf-lasix-iv-request:
+    name: CHF LASIX IV Request
+    description: Request to administer LASIX IV as part of a congestive heart failure pathway
+    exampleBoolean: true
+  StructureDefinition/chf-lasix-po-administration:
+    name: CHF LASIX PO Administration
+    description: Documents the administration of LASIX PO as a pathway event within a congestive heart failure pathway
+    exampleBoolean: true
+  StructureDefinition/chf-lasix-po-request:
+    name: CHF LASIX PO Request
+    description: Request to administer LASIX PO as part of a congestive heart failure pathway
+    exampleBoolean: true
+  StructureDefinition/chf-net-io:
+    name: CHF Net Intake/Output
+    description: This profile defines how to represent net intake/output observations in FHIR using a CHF code and UCUM units of measure (in L/day).
+    exampleBoolean: true
+  StructureDefinition/chf-o2-sat:
+    name: CHF Oxygen Saturation
+    description: This profile defines how to represent oxygen saturation observations in FHIR using a standard LOINC code and UCUM units of measure.
+    exampleBoolean: true
+  StructureDefinition/chf-o2-sat-request:
+    name: CHF Oxygen Saturation Request
+    description: Request to measure oxygen saturation as part of a congestive heart failure pathway
+    exampleBoolean: true
+  StructureDefinition/chf-potassium:
+    name: CHF Potassium
+    description: This profile defines how to represent potassium observations in FHIR using a standard LOINC code and UCUM units of measure (in meq/L).
+    exampleBoolean: true
+  StructureDefinition/chf-urine-out:
+    name: CHF Urine Out
+    description: This profile defines how to represent urine output observations in FHIR using a LOINC code and UCUM units of measure (in L/day).
+    exampleBoolean: true
   # ImplementationGuide/hl7.fhir.uv.cpg.chf: omit #omit this because this template does not generate HTML for IG, so the link from TOC fails
 #   Patient/my-example-patient:
 #     name: My Example Patient

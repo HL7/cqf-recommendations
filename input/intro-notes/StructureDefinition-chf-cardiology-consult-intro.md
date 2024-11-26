@@ -2,4 +2,4 @@ This profile is a \_case feature definition\_ as part of the [Congestive Heart F
 
 **Instances of this Profile:**
 
-*   [ServiceRequest/chf-scenario1-cardiology-consultation](ServiceRequest-chf-scenario1-cardiology-consultation.html) ServiceRequest/chf-scenario1-cardiology-consultation
+*   [ServiceRequest/chf-scenario1-cardiology-consult](ServiceRequest-chf-scenario1-cardiology-consult.html) ServiceRequest/chf-scenario1-cardiology-consult
