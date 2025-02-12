@@ -19,6 +19,7 @@ Description: "Example test case - Record Inference - Scenario 4 - Record Inferen
 Instance: inference
 InstanceOf: Observation
 Usage: #inline
+* extension[cpg-caseFeatureType].valueCode = #inferred
 * status = #final
 * code.text = "Inference"
 * issued = "2020-01-15T10:30:00Z"
