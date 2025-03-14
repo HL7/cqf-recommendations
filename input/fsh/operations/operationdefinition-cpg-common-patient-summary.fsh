@@ -4,7 +4,7 @@ Usage: #definition
 Title: "CPG Common Patient Summary"
 Description: "The summary operation generates a patient summary for a patient"
 * insert OperationDefinitionMetadata(cpg-common-patient-summary)
-* insert OperationExtensions
+* insert OperationExtensions(2)
 * name = "CPGCommonPatientSummary"
 * code = #summary
 * comment = "The result of this operation is a patient summary document, constructed according to agreed conventions such as the International Patient Summary."

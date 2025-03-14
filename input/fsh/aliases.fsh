@@ -171,3 +171,4 @@ Alias: $anc-reason-for-visit-include-family-member-image = http://example.org/im
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $usage-context-type = http://terminology.hl7.org/CodeSystem/usage-context-type
 Alias: $sct = http://snomed.info/sct
+Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm

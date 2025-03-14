@@ -4,7 +4,7 @@ Usage: #definition
 Title: "CPG ActivityDefinition Apply"
 Description: "The apply operation applies a activityDefinition to a given context"
 * insert OperationDefinitionMetadata(cpg-activitydefinition-apply)
-* insert OperationExtensions
+* insert OperationExtensions(2)
 * name = "CPGActivityDefinitionApply"
 * code = #apply
 * comment = """
