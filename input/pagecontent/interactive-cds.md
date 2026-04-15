@@ -53,7 +53,7 @@ The \$questionnaire operation is used to generate a questionnaire when running \
 See [CPG $questionnaire operation](OperationDefinition-cpg-structureDefinition-questionnaire.html). The core operation is extended in CPG to support the parameter "minimalOnly". If true, elements from the structure definition should be processed if:
 
 1. The element is a part of the differential; or
-2. The element is a part of the snapshot and has a cardinality of at least 1..\* (min >1). Nested child elements with min > 1 should also be included if parent is min > 1; and
+2. The element is a part of the snapshot and has a cardinality of at least 1..\* (min > 0). Nested child elements with min > 0 should also be included if parent is min > 0; and
 3. The element is not constrained by fixed[x] or pattern[x]
 
 In this way, minimal only mode restricts questionnaire item generation to only those relevant to form data extraction.
@@ -66,7 +66,7 @@ In this way, minimal only mode restricts questionnaire item generation to only t
 
 | Element Definition                                                                                                                          | Questionnaire Item                                                                                                                                                    | notes                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDC definitionExtractValue Extension](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire-definitionExtractValue.html) | sets [SDC definitionExtractValue Extension](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire-definitionExtractValue.html) on parent group item | see [Conformance with expression based population and definition based extraction](#conformance-with-expression-based-population-and-definition-based-extraction) |
+| [SDC definitionExtractValue Extension](https://hl7.org/fhir/uv/sdc/en/StructureDefinition-sdc-questionnaire-definitionExtractValue.html) | sets [SDC definitionExtractValue Extension](https://hl7.org/fhir/uv/sdc/en/StructureDefinition-sdc-questionnaire-definitionExtractValue.html) on parent group item | see [Conformance with expression based population and definition based extraction](#conformance-with-expression-based-population-and-definition-based-extraction) |
 | [CPG featureExpression Extension](https://hl7.org/fhir/uv/cpg/StructureDefinition-cpg-featureExpression.html)                               | [sets SDC initialExpression Extension](https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-initialExpression.html)                                      | see [Conformance with expression based population and definition based extraction](#conformance-with-expression-based-population-and-definition-based-extraction) |
 | defaultValue[x]                                                                                                                             | initial[x]                                                                                                                                                            |                                                                                                                                                                   |
 | {structureDefinition.url}#{element.path}                                                                                                    | definition                                                                                                                                                            | for choice type paths, replace [x] with element type.code[0]; for sliced elements, append :{sliceName}                                                            |
@@ -82,7 +82,7 @@ In this way, minimal only mode restricts questionnaire item generation to only t
 
 Process elements from the structure definition resource. For each element to process:
 
-- If the element includes the [SDC definition extract value extension](https://build.fhir.org/ig/HL7/sdc/StructureDefinition/sdc-questionnaire-definitionExtractValue), it is not necessary to create a questionnaire item. Instead, carry the extension over to the root item with type 'group'. See [details on populate and extract conformance below](#conformance-with-expression-based-population-and-definition-based-extraction).
+- If the element includes the [SDC definition extract value extension](https://hl7.org/fhir/uv/sdc/en/StructureDefinition-sdc-questionnaire-definitionExtractValue.html), it is not necessary to create a questionnaire item. Instead, carry the extension over to the root item with type 'group'. See [details on populate and extract conformance below](#conformance-with-expression-based-population-and-definition-based-extraction).
 
 - Otherwise, process a new child item as follows
 
@@ -135,7 +135,7 @@ To support pre-population and data extraction:
 
   - Include the [SDC definition extract extension](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire-definitionExtract.html). Set extension[definition].valueCanonical to the canonical of the SD.
 
-  - Carry over any [SDC definition extract value extensions](https://build.fhir.org/ig/HL7/sdc/StructureDefinition-sdc-questionnaire-definitionExtractValue.html) from elements in the structure definition.
+  - Carry over any [SDC definition extract value extensions](https://hl7.org/fhir/uv/sdc/en/StructureDefinition-sdc-questionnaire-definitionExtractValue.html) from elements in the structure definition.
 
   - If CPG featureExpression is present on the SD
 

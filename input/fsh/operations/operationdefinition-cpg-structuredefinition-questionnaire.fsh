@@ -1,4 +1,4 @@
-Instance: cpg-structureDefinition-questionnaire
+Instance: cpg-structuredefinition-questionnaire
 InstanceOf: OperationDefinition
 Usage: #definition
 Title: "CPG StructureDefinition Questionnaire"
@@ -13,7 +13,7 @@ Generates a Questionnaire instance based on a specified StructureDefinition, cre
 * comment = """
  If the operation is not called at the instance level, one of the *identifier*, *profile* or *url* 'in' parameters must be provided. If more than one is specified, servers may raise an error or may resolve with the parameter of their choice. If called at the instance level, these parameters will be ignored. The response will contain a [Questionnaire](https://hl7.org/fhir/R4/questionnaire.html) instance based on the specified [StructureDefinition](https://hl7.org/fhir/R4/structuredefinition.html) and/or an [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) resource with errors or warnings.  Nested groups are used to handle complex structures and data types. If the 'minimalOnly' parameter is set to true, only minimal elements from the structure definition will be included. These are defined as:
   1. The element is a part of the differential; or
-  2. The element is a part of the snapshot and has a cardinality of at least 1..\* (min >1). Nested child elements with min > 1 should also be included if parent has min > 1; and
+  2. The element is a part of the snapshot and has a cardinality of at least 1..\* (min > 0). Nested child elements with min > 0 should also be included if parent has min > 0; and
   3. The element is not constrained by fixed[x] or pattern[x]
   \n\nOf note, supportedOnly is not recommended for use with minimalOnly within CPG. See [Questionnaire Processing Semantics](interactive-cds.html#questionnaire-generation-processing-semantics) for further details.
 """
@@ -26,7 +26,7 @@ Generates a Questionnaire instance based on a specified StructureDefinition, cre
   * use = #in
   * min = 0
   * max = "1"
-  * documentation = "A logical identifier (i.e. 'StructureDefinition.identifier''). The server must know the StructureDefinition or be able to retrieve it from other known repositories."
+  * documentation = "A logical identifier (i.e. 'StructureDefinition.identifier'). The server must know the StructureDefinition or be able to retrieve it from other known repositories."
   * type = #Identifier
 * parameter[+]
   * name = #profile
