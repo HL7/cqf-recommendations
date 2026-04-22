@@ -17,6 +17,7 @@ Instance: Inline-Instance-for-request-inf-scenario2
 InstanceOf: Observation
 Usage: #inline
 * id = "inference"
+* extension[cpg-caseFeatureType].valueCode = #inferred
 * status = #final
 * code.text = "Inference"
 * issued = "2020-01-15T10:30:00Z"
