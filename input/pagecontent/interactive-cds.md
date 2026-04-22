@@ -78,8 +78,6 @@ In this way, minimal only mode restricts questionnaire item generation to only t
 | binding.valueSet                                                                                                                            | expanded valueSet sets answerOption; set type as 'choice'                                                                                                             |                                                                                                                                                                   |
 | ??                                                                                                                                          | readOnly                                                                                                                                                              |                                                                                                                                                                   |
 
-> To Do: Will readOnly apply in any case?
-
 Process elements from the structure definition resource. For each element to process:
 
 - If the element includes the [SDC definition extract value extension](https://hl7.org/fhir/uv/sdc/en/StructureDefinition-sdc-questionnaire-definitionExtractValue.html), it is not necessary to create a questionnaire item. Instead, carry the extension over to the root item with type 'group'. See [details on populate and extract conformance below](#conformance-with-expression-based-population-and-definition-based-extraction).
