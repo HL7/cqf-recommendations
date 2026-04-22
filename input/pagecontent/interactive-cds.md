@@ -188,7 +188,7 @@ For non-primitive, complex data types, $questionnaire should be applied to the S
   "item": [
     {
       "linkId": "Range.low",
-      "definition": "http://example.org/StructureDefinition/ExamleObservation#Observation.value[x]:valueRange.low",
+      "definition": "http://example.org/StructureDefinition/ExampleObservation#Observation.value[x]:valueRange.low",
       "text": "Low limit",
       "type": "quantity"
     },
@@ -212,7 +212,7 @@ The PlanDefinition is processed as follows:
 
 1. Find all planDefinition.action.input elements where a case feature is referenced. If the plan definition includes action.definitionCanonical with a reference to another plan definition, recurse over the nested planDefinition.action.input elements.
 
-2. Using the processing semantics for structureDefinition/\$apply, for each case feature identified from the PlanDefinition:
+2. Using the processing semantics for structureDefinition/\$questionnaire, for each case feature identified from the PlanDefinition:
 
    1. Generate a group of questionnaire items on the target questionnaire; or
 
