@@ -96,6 +96,6 @@ FIG. 40. **Knowledge Implementation concurrent with Agile CPG Development** has 
 
 
 
-Concurrent development and implementation of CPG’s has significant alignment and synergy with the Agile CPG Development Approach, <!-- Link to 05.06 !--> though it provides further opportunities and capabilities to make the approach even more Agile as described above.
+Concurrent development and implementation of CPG’s has significant alignment and synergy with the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html), though it provides further opportunities and capabilities to make the approach even more Agile as described above.
 
-Further details of knowledge implementation are beyond the scope of this document at this time, but have implications partially addressed in the section on “Methods of Implementation.” <!-- Link to 09 !-->
+Further details of knowledge implementation are beyond the scope of this document at this time, but have implications partially addressed in the section on [Methods of Implementation](documentation-approach-09-methods-of-implementation.html).

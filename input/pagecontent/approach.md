@@ -26,7 +26,6 @@ This section further describes how these separations interact with one another a
 This section provides a basic description of the Guideline Development Process, its participants, the processes, tools, and frameworks which they use. It further describes the role of the (computable) Clinical Practice Guideline (CPG) in the “Evidence Ecosystem” and Learning Health System. Lastly, it covers the various computable CPG artifacts that express the guideline and its derivatives (e.g., Measures) as well as their value to various stakeholders impacted by the development of computable Clinical Practice Guidelines (CPGs).
 
 *   [Overview of the Guideline Development process](documentation-approach-04-guideline-development.html)
-*   [Description of the Guideline Development Group (GDG) and Scoping](documentation-approach-04-01-guideline-development-group.html)
 *   [Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html)
 *   [6S Evidence Pyramid and Learning Health System(s)](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html)
 *   [Analysis of Evidence, Recommendations, and Reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html)

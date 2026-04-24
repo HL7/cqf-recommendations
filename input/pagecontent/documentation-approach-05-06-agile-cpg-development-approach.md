@@ -9,7 +9,7 @@ This section will provide the following:
     *   Test-driven Knowledge Engineering
     *   Iteration, rapid-cycle feedback
     *   Leverage Knowledge Base (in an ‘intelligent’ Knowledge Content Management System)
-*   Also refer to the prior section on [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html) <!-- Link to 05.05 !--> for details on cross-functional integration with Local Implementation teams and the benefits thereof.
+*   Also refer to the prior section on [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html) for details on cross-functional integration with Local Implementation teams and the benefits thereof.
 
 Characteristics of Agile include:
 
