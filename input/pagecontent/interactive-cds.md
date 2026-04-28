@@ -40,7 +40,7 @@ Two questionnaire generation patterns are possible:
 
 2. StructureDefinition/$questionnaire during apply (adaptive): As PlanDefinition/$apply evaluates logic and determines relevant branches, call StructureDefinition/$questionnaire for the currently relevant case feature definition(s). This returns only questions relevant to the current state and supports a truly adaptive process.
 
-Conceptually this is similar to the [SDC Adaptive Forms $next-question operation](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-next-question), where questions are dynamic based on prior user input. In Interactive CDS, PlanDefinition/$apply drives that adaptivity by determining which structure definitions should be questioned next.
+Conceptually this is similar to the [SDC Adaptive Forms $next-question operation](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-next-question), where questions are dynamic based on prior user input. In Interactive CDS, PlanDefinition/$apply drives that adaptivity by determining which structure definitions should be used to generate the next set of questions.
 
 #### Extracted Resource Conformance
 
