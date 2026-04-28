@@ -11,7 +11,8 @@ Familiarity with the [\$apply operation](OperationDefinition-cpg-plandefinition-
 
 Questionnaire generation, population, and extraction is enabled for CPG Apply based on the presence of case feature definition as action.input. The plan definition is processed as follows:
 
-1. When calling planDefinition/\$apply, if the plan includes action.input where the profile is a case feature definition (StructureDefinition), use [planDefinition/\$questionnaire](#plandefinitionquestionnaire) to generate a single Questionnaire. This process involves recursing over nested plan definitions to capture all case features in the questionnaire.
+
+1. When calling planDefinition/\$apply, if the plan includes action.input where the profile is a case feature definition (StructureDefinition), choose the questionnaire generation approach based on the desired behavior: use [planDefinition/\$questionnaire](#plandefinitionquestionnaire) to generate a single non-adaptive Questionnaire (including case features across nested plan definitions), or call StructureDefinition/\$questionnaire for relevant case feature definitions as apply logic is evaluated to support an adaptive process.
 
 2. Build a pre-populated QuestionnaireResponse containing the Questionnaire from Step 1 by calling [questionnaire/$populate](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate) using [SDC expression based population](https://hl7.org/fhir/uv/sdc/populate.html#exp-pop).
 
@@ -31,7 +32,15 @@ Questionnaire generation, population, and extraction is enabled for CPG Apply ba
 
 #### Interactive CDS as an Adaptive Process
 
-As outlined, the apply with questionnaire cycle is intended to repeat anytime new data is extracted from a QuestionnaireResponse. As new data is obtained, new questions may be displayed depending on applicable branches (as PlanDefinition.action) of the pathway. Conceptually this is similar to the [SDC Adaptive Forms $next-question operation](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-next-question) where a questionnaire is dynamic depending on prior user input. However, in Interactive CDS, the $apply operation is called to determine appropriate questions.
+As outlined, the apply with questionnaire cycle is intended to repeat anytime new data is extracted from a QuestionnaireResponse. As new data is obtained, new questions may be displayed depending on applicable branches (as PlanDefinition.action) of the pathway.
+
+Two questionnaire generation patterns are possible:
+
+1. PlanDefinition/$questionnaire (non-adaptive): A full questionnaire can be generated from all referenced case feature definitions, including those in nested plan definitions. This is useful when collecting a comprehensive data set up front.
+
+2. StructureDefinition/$questionnaire during apply (adaptive): As PlanDefinition/$apply evaluates logic and determines relevant branches, call StructureDefinition/$questionnaire for the currently relevant case feature definition(s). This returns only questions relevant to the current state and supports a truly adaptive process.
+
+Conceptually this is similar to the [SDC Adaptive Forms $next-question operation](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-next-question), where questions are dynamic based on prior user input. In Interactive CDS, PlanDefinition/$apply drives that adaptivity by determining which structure definitions should be questioned next.
 
 #### Extracted Resource Conformance
 
