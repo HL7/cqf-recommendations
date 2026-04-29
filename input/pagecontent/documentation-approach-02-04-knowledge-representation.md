@@ -26,7 +26,7 @@ This implementation guide utilizes a previously established clinical decision su
 FIG. 45. Knowledge Levels
 
 
-As will be discussed further in the Agile CPG development approach (see section on [Knowledge Engineering](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-05-knowledge-engineering-overview.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation. Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels. This will become more evident and described in more detail in the section on the Agile CPG development approach.
+As will be discussed further in the Agile CPG development approach (see section on [Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation. Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels. This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
 <div>
 <img src="CPG-05.06-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="287"/>
@@ -34,7 +34,7 @@ As will be discussed further in the Agile CPG development approach (see section 
 
 FIG. 46. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
 
-#### [Tiers of Functionality](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-07-tiers-of-functionality.html)
+#### [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html)
 
 This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering
 
@@ -42,11 +42,11 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 *   **Logic**
 *   **User Interface (UI)**
 
-#### [Levels of Representation by Tiers of Functionality](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)
+#### [Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)
 
 The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (i.e., UI) (T3).
 
-### [Knowledge Assets](http://build.fhir.org/ig/HL7/cqf-recommendations/documentation-approach-06-02-knowledge-assets.html)
+### [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html)
 
 Knowledge assets or artifacts as they are often referred to in FHIR, where an artifact is an instance of an asset. Assets provide the ability to keep domain logic separated and distinct from other system logic in complex systems. In this implementation guide we often refer to knowledge assets and knowledge artifacts interchangeably, though the distinction is very relevant the knowledge engineer.
 
