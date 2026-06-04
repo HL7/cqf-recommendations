@@ -1,4 +1,4 @@
-Instance: cpg-structuredefinition-questionnaire
+Instance: cpg-structureDefinition-questionnaire
 InstanceOf: OperationDefinition
 Usage: #definition
 Title: "CPG StructureDefinition Questionnaire"

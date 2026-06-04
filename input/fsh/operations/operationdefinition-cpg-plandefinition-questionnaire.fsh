@@ -1,4 +1,4 @@
-Instance: cpg-plandefinition-questionnaire
+Instance: cpg-planDefinition-questionnaire
 InstanceOf: OperationDefinition
 Usage: #definition
 Title: "CPG PlanDefinition Questionnaire"
