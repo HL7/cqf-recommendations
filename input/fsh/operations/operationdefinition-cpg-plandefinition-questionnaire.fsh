@@ -28,11 +28,11 @@ Description: """
   * documentation = "A logical identifier (i.e. 'PlanDefinition.identifier'). The server must know the PlanDefinition or be able to retrieve it from other known repositories."
   * type = #Identifier
 * parameter[+]
-  * name = #profile
+  * name = #resource
   * use = #in
   * min = 0
   * max = "1"
-  * documentation = "The PlanDefinition is provided directly as part of the request. Servers may choose not to accept profiles in this fashion"
+  * documentation = "The PlanDefinition is provided directly as part of the request. Servers may choose not to accept resources in this fashion"
   * type = #PlanDefinition
 * parameter[+]
   * name = #url
@@ -71,7 +71,7 @@ Create a canonical-like reference (e.g.
 
 * Given a single `artifactEndpointConfiguration`
   * When `artifactRoute` is present
-    * And `artifactRoute` *starts with* canonical or artifact reference
+    * And the canonical or artifact reference starts with the `artifactRoute` (up to and including the entire uri)
     * Then attempt to resolve with `endpointUri` or `endpoint`
   * When `artifactRoute` is not present
     * Then attempt to resolve with `endpointUri` or `endpoint`
@@ -107,13 +107,6 @@ OperationDefinition.
     * use = #in
     * type = #Endpoint
     * documentation = "An Endpoint resource describing the endpoint, exclusive with the `endpointUri` parameter"
-* parameter[+]
-  * documentation = "An endpoint to use to access terminology (i.e. valuesets, codesystems, and membership testing) referenced by the PlanDefinition. If no terminology endpoint is supplied, the evaluation will attempt to use the server on which the operation is being performed as the terminology server."
-  * max = "1"
-  * min = 0
-  * name = #terminologyEndpoint
-  * type = #Endpoint
-  * use = #in
 * parameter[+]
   * name = #return
   * use = #out

@@ -209,7 +209,7 @@ Create a canonical-like reference (e.g.
 
 * Given a single `artifactEndpointConfiguration`
   * When `artifactRoute` is present
-    * And `artifactRoute` *starts with* canonical or artifact reference
+    * And the canonical or artifact reference starts with the `artifactRoute` (up to and including the entire uri)
     * Then attempt to resolve with `endpointUri` or `endpoint`
   * When `artifactRoute` is not present
     * Then attempt to resolve with `endpointUri` or `endpoint`
