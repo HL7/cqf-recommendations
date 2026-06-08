@@ -29,11 +29,11 @@ Generates a Questionnaire instance based on a specified StructureDefinition, cre
   * documentation = "A logical identifier (i.e. 'StructureDefinition.identifier'). The server must know the StructureDefinition or be able to retrieve it from other known repositories."
   * type = #Identifier
 * parameter[+]
-  * name = #profile
+  * name = #resource
   * use = #in
   * min = 0
   * max = "1"
-  * documentation = "The StructureDefinition is provided directly as part of the request. Servers may choose not to accept profiles in this fashion"
+  * documentation = "The StructureDefinition is provided directly as part of the request. Servers may choose not to accept resources in this fashion"
   * type = #StructureDefinition
 * parameter[+]
   * name = #url
