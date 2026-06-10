@@ -136,6 +136,8 @@ This pattern allows for a straightforward implementation that only needs to inte
 
 Applications can then implement the guideline by tracking and invoking known (and enabled) PlanDefinitions directly. The result of these calls are a set of proposals for actions that should be considered or taken.
 
+In addition, the interactive process of gathering information based on the input data requirements for PlanDefinition actions is supported by use of the StructureDefinition/$questionnaire and PlanDefinition/$questionnaire operations, as described in the [Interactive CDS](interactive-cds.html) topic.
+
 ### Care Planning
 
 The [Care Planning](documentation-careplanning.html) topic describes expectations for the use of dynamic care planning with computable guideline content.
