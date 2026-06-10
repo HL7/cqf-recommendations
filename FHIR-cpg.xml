@@ -221,6 +221,7 @@
 <artifact id="StructureDefinition/cpg-pertinent" key="StructureDefinition-cpg-pertinent" name="CPG Pertinent Extension"/>
 <artifact id="StructureDefinition/cpg-planFor" key="StructureDefinition-cpg-planFor" name="CPG Plan For Extension"/>
 <artifact id="OperationDefinition/cpg-plandefinition-apply" key="OperationDefinition-cpg-plandefinition-apply" name="CPG PlanDefinition Apply"/>
+<artifact id="OperationDefinition/cpg-planDefinition-questionnaire" key="OperationDefinition-cpg-planDefinition-questionnaire" name="CPG PlanDefinition Questionnaire"/>
 <artifact id="StructureDefinition/cpg-practitioner" key="StructureDefinition-cpg-practitioner" name="CPG Practitioner"/>
 <artifact id="StructureDefinition/cpg-practitionerrole" key="StructureDefinition-cpg-practitionerrole" name="CPG Practitioner Role"/>
 <artifact id="StructureDefinition/cpg-practitionerroledefinition" key="StructureDefinition-cpg-practitionerroledefinition" name="CPG Practitioner Role Definition"/>
@@ -256,6 +257,7 @@
 <artifact id="StructureDefinition/cpg-stoptask" key="StructureDefinition-cpg-stoptask" name="CPG Stop Task"/>
 <artifact id="StructureDefinition/cpg-strategy" key="StructureDefinition-cpg-strategy" name="CPG Strategy"/>
 <artifact id="StructureDefinition/cpg-strategydefinition" key="StructureDefinition-cpg-strategydefinition" name="CPG Strategy Definition"/>
+<artifact id="OperationDefinition/cpg-structureDefinition-questionnaire" key="OperationDefinition-cpg-structureDefinition-questionnaire" name="CPG StructureDefinition Questionnaire"/>
 <artifact id="StructureDefinition/cpg-summaryDefinitionFor" key="StructureDefinition-cpg-summaryDefinitionFor" name="CPG Summary Definition For Extension"/>
 <artifact id="StructureDefinition/cpg-summaryFor" key="StructureDefinition-cpg-summaryFor" name="CPG Summary For Extension"/>
 <artifact id="StructureDefinition/cpg-task" key="StructureDefinition-cpg-task" name="CPG Task"/>
@@ -625,6 +627,7 @@
 <page key="documentation-approach-04-01-guideline-development-group" name="Guideline Development Group"/>
 <page key="examples-hiv-guideline" name="HIV Screening Guideline Recommendations"/>
 <page key="documentation-approach-02-05-knowledge-implementation" name="Implementation Computable Knowledge"/>
+<page key="interactive-cds" name="Interactive Clinical Decision Support"/>
 <page key="documentation-approach-05-01-knowledge-acquisition" name="Knowledge Acquisition"/>
 <page key="documentation-approach-06-03-knowledge-architecture" name="Knowledge Architecture"/>
 <page key="documentation-approach-06-02-knowledge-assets" name="Knowledge Assets"/>

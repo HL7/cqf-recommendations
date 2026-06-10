@@ -37,10 +37,10 @@ RuleSet: CPGExpressionExtensions(inference, assertion, feature)
 * ^extension[=].valueExpression.expression = "{feature}"
 * ^extension[=].valueExpression.reference = Canonical(CHF)
 
-RuleSet: OperationExtensions
+RuleSet: OperationExtensions(fmm)
 * extension[+]
   * url = $structuredefinition-fmm
-  * valueInteger = 2
+  * valueInteger = {fmm}
 * extension[+]
   * url = $structuredefinition-standards-status
   * valueCode = #trial-use

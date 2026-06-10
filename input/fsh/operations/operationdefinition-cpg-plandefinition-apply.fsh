@@ -4,15 +4,15 @@ Usage: #definition
 Title: "CPG PlanDefinition Apply"
 Description: "The apply operation applies a PlanDefinition to a given context"
 * insert OperationDefinitionMetadata(cpg-plandefinition-apply)
-* insert OperationExtensions
+* insert OperationExtensions(2)
 * name = "CPGPlanDefinitionApply"
 * code = #apply
 * comment = """
-The result of this operation is a Bundle for each subject, where the Bundle 
-contains Request resources that are the direct result of applying 
-the PlanDefinition to that subject. The Bundle will have entries for 
-each of the applicable actions in the PlanDefinition based on evaluating 
-the applicability condition in context, and producing Request resources 
+The result of this operation is a Bundle for each subject, where the Bundle
+contains Request resources that are the direct result of applying
+the PlanDefinition to that subject. The Bundle will have entries for
+each of the applicable actions in the PlanDefinition based on evaluating
+the applicability condition in context, and producing Request resources
 based on the definition element for each applicable action.
 
 For each applicable action, the definition is applied as described in the `$apply`
@@ -209,7 +209,7 @@ Create a canonical-like reference (e.g.
 
 * Given a single `artifactEndpointConfiguration`
   * When `artifactRoute` is present
-    * And `artifactRoute` *starts with* canonical or artifact reference
+    * And the canonical or artifact reference starts with the `artifactRoute` (up to and including the entire uri)
     * Then attempt to resolve with `endpointUri` or `endpoint`
   * When `artifactRoute` is not present
     * Then attempt to resolve with `endpointUri` or `endpoint`
@@ -218,7 +218,7 @@ Create a canonical-like reference (e.g.
   * And attempt to resolve with `endpointUri` or `endpoint` in order until resolved
 
 Rank each `artifactEndpointConfiguration` such that:
-* if `artifactRoute` is present *and* `artifactRoute` *starts with* canonical or artifact reference: rank based on number of matching characters 
+* if `artifactRoute` is present *and* `artifactRoute` *starts with* canonical or artifact reference: rank based on number of matching characters
 * if `artifactRoute` is *not* present: include but rank lower
 
 NOTE: For evenly ranked `artifactEndpointConfiguration`s, order as defined in the

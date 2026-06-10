@@ -116,6 +116,8 @@ pages:
           title: Activity Flow
         documentation-careplanning.md:
           title: Evidence-Based Care Planning
+        interactive-cds.md:
+          title: Interactive Clinical Decision Support
       documentation-approach-10-mechanisms-of-integration.md:
         title: Mechanisms of Integration
       documentation-approach-03-conformance-levels.md:
@@ -175,7 +177,7 @@ parameters:
   apply-wg: true
   path-history: http://hl7.org/fhir/uv/cpg/history.html
   path-binary: ./input/cql
-  path-resource: 
+  path-resource:
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
   auto-oid-root: 2.16.840.1.113883.4.642.40.48
