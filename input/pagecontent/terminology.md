@@ -21,7 +21,7 @@ Standard and established code systems should be used whenever possible. Only in 
 *   CRMIShareableCodeSystem
 *   CRMIPublishableCodeSystem
 
-Code systems defined by content conforming to this IG SHALL conform to the CRMIShareableCodeSystem profile, and SHALL conform to the CRMIPublishableCodeSystem profile if the artifact status is active.
+§term-1^^terminology:Code systems defined by content conforming to this IG **SHOULD** conform to the CRMIShareableCodeSystem profile, and **SHOULD** conform to the CRMIPublishableCodeSystem profile if the artifact status is active.§ This implementation guide does not take a dependency on CRMI, so these profiles are strongly recommended rather than required (see [Use of CRMI](documentation-conformance.html#use-of-crmi)).
 
 Note that this does not mean that _any_ code system referenced by computable content must use these profiles. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to these profiles.
 
@@ -34,36 +34,38 @@ Refer to the [HL7 Terminology](https://terminology.hl7.org/) site for a list of 
 The CRMI implementation guide defines four value set profiles:
 
 *   CRMIShareableValueSet
-*   CPGComputableValueSet
-*   CPGPublishableValueSet
-*   CPGExpandedValueSet
+*   CRMIComputableValueSet
+*   CRMIPublishableValueSet
+*   CRMIExpandedValueSet
 
 The ComputableValueSet profile describes the requirements for computable representation of value set membership criteria, ensuring that value sets using this profile selectively support only one technique for defining the content of expansions.
 
-The ExpandedValueSet profile provides support for including a persisted point-in-time expansion that SHALL conform to the chosen compositional style for the value set. The included point-in-time expansion can then be used by FHIR implementations that do not have a FHIR terminology service capable of evaluating the value set in real-time with an `$expand` operation. It also provides all the concepts needed in the expansion so that a complete code system resource is not required.
+The ExpandedValueSet profile provides support for including a persisted point-in-time expansion that is consistent with the chosen compositional style for the value set. The included point-in-time expansion can then be used by FHIR implementations that do not have a FHIR terminology service capable of evaluating the value set in real-time with an `$expand` operation. It also provides all the concepts needed in the expansion so that a complete code system resource is not required.
 
 The PublishableValueSet profile establishes expectations for use of the artifact in a content management lifecycle including publishing and indexing metadata, usage guidance and licensing information, and provenance and governance for the artifact. In addition, to follow vocabulary best-practices, publishable value sets must also be either Computable, Executable, or both.
 
-Whenever possible, value sets SHOULD be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships. In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
+§term-2^^terminology:Whenever possible, value sets **SHOULD** be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships.§ In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
 
-Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. For these cases, the description of the construction of the value set SHOULD be represented with non-FHIR expressions using a computable expression in some terminology grammar. For value sets expressed in this way, the language must be sufficiently open and accessible that a user could construct the value set following the semantics without needing to use a proprietary implementation.
+Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. §term-3?^^terminology:For these cases, the description of the construction of the value set **SHOULD** be represented with non-FHIR expressions using a computable expression in some terminology grammar.§ For value sets expressed in this way, the language must be sufficiently open and accessible that a user could construct the value set following the semantics without needing to use a proprietary implementation.
 
 As a last resort, for cases where the value set construction cannot be expressed using `compose` or the `expression` extension, use the `rules-text` extension to provide a narrative description of the process to be followed.
 
-Value sets defined by content conforming to this IG SHALL use the CRMIComputableValueSet profile to define value set member content in one of three ways. This profile requires that one and only one of the following three approaches can be used for an instance of the value set, in order of preference:
+§term-4^^terminology:Value sets defined by content conforming to this IG **SHOULD** use the CRMIComputableValueSet profile to define value set member content in one of three ways.§ This profile requires that one and only one of the following three approaches can be used for an instance of the value set, in order of preference:
 
 1.  **Compose**: This supports using standard FHIR compose structure to define value set membership.
 2.  **Expression**: This extension supports including a specific alternative expression where the syntax is explicitly defined outside of FHIR (such as TSQL)
 3.  **Rules Text**: This extension supports entering a text block that describes a script or some other textual description of how to determine value set members.
 
-The CRMIExpandedValueSet profile supports providing a point-in-time expansion of the value set members using the `ValueSet.expansion` element containing specific individual concept codes obtained as a result of the computed expansion of the value set at the time of publication. The expansion element can be used to support environments where the actual definition cannot be evaluated. As new versions of the value set, and/or as new versions of the code systems used by the value set are released, the expansion content will need to be updated to incorporate newly defined codes that meet the value set intent. Before and periodically during production use, value set expansions SHOULD be updated.
+The CRMIExpandedValueSet profile supports providing a point-in-time expansion of the value set members using the `ValueSet.expansion` element containing specific individual concept codes obtained as a result of the computed expansion of the value set at the time of publication. The expansion element can be used to support environments where the actual definition cannot be evaluated. As new versions of the value set, and/or as new versions of the code systems used by the value set are released, the expansion content will need to be updated to incorporate newly defined codes that meet the value set intent. §term-5^^terminology:Before and periodically during production use, value set expansions **SHOULD** be updated.§ §term-6^^terminology,documentation:Content implementation guides that include executable value sets **SHALL** document the expected maintenance path for those value sets.§
 
-Value sets defined by content conforming to this IG SHOULD include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated. The parameters element SHOULD be used to convey information about the parameters used to expand the value set.
+§term-7^^terminology:Value sets defined by content conforming to this IG **SHOULD** include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated.§ §term-8^^terminology:The parameters element **SHOULD** be used to convey information about the parameters used to expand the value set.§
 
-Value sets defined by content conforming to this IG SHALL conform to:
+§§term-9^^terminology:Value sets defined by content conforming to this IG **SHOULD** conform to the CRMI Shareable, Computable or Expanded, and (if active) Publishable value set profiles^Value sets defined by content conforming to this IG SHOULD conform to:
 
 *   The CRMIShareableValueSet profile
 *   Either or both of the CRMIComputableValueSet and CRMIExpandedValueSet profiles
 *   and the CRMIPublishableValueSet profile if the artifact status is active
+
+§§
 
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use these profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.

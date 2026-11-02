@@ -79,6 +79,11 @@ RuleSet: ActivityDefinitionMetadata(id, name)
 * status = #active
 * priority = #routine
 
+RuleSet: ActorDefinitionMetadata(id)
+* url = "http://hl7.org/fhir/uv/cpg/ActorDefinition/{id}"
+* experimental = false
+* status = #active
+
 RuleSet: CapabilityStatementMetadata(id)
 * url = "http://hl7.org/fhir/uv/cpg/CapabilityStatement/{id}"
 * experimental = true

@@ -25,7 +25,7 @@ FIG. 77.  The Case, Plan, Workflow separations and further separations within wo
 
 </details>
 
-Note that the Case and its associated data as defined by case feature groups and/or case features can be used to generate a case report at the end of the pathway. This approach SHOULD be aligned with the eCaseReporting implementation guide.
+Note that the Case and its associated data as defined by case feature groups and/or case features can be used to generate a case report at the end of the pathway. §path-1^^data:This approach **SHOULD** be aligned with the eCaseReporting implementation guide.§
 
 Such a case report could potentially include elements from the pathway view, such as things that have been ordered but not necessarily done, and recommendations that have not necessarily been followed. Although most of what a case report would be interested in would be case feature data, the ability to communicate items from the pathway view may have value in terms of understanding why recommendations are not being followed.
 
@@ -37,7 +37,7 @@ The common pathway provides an abstract or generalized description of the overal
 
 The result is the definition of a [Common Pathway](common-care-pathway.html) that is intended to be applicable in any guideline-based care content, but not a specific localization or implementation thereof.  Using this common pathway, content can indicate where in the overall process of care delivery a given recommendation or intervention should occur.
 
-Content conforming to this implementation guide SHALL identify processes using the [Common Processes code system](CodeSystem-cpg-common-process-cs.html).
+§path-2^^recommendation:Content conforming to this implementation guide **SHALL** identify processes using the [Common Processes code system](CodeSystem-cpg-common-process-cs.html).§
 
 #### Use of Common Pathway in Localization
 

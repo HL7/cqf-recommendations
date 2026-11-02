@@ -19,7 +19,7 @@ For definitional artifacts, this implementation guide builds on the capability p
 
 {% include profile-tables/artifact-profiles.html %}
 
-In addition, content claiming conformance to this implementation guide SHALL use the Shareable profile and SHOULD use the Publishable profile for the following artifact types:
+§§prof-1^^artifact:Knowledge artifacts of the listed types **SHOULD** conform to the CRMI Shareable profile, and **SHOULD** conform to the CRMI Publishable profile^In addition, content claiming conformance to this implementation guide SHOULD use the CRMI Shareable profile and SHOULD use the CRMI Publishable profile for the following artifact types:
 
 * ActivityDefinition
 * CapabilityStatement
@@ -40,6 +40,10 @@ In addition, content claiming conformance to this implementation guide SHALL use
 * StructureMap
 * TerminologyCapabilities
 * ValueSet
+
+§§
+
+This implementation guide does not take a dependency on CRMI, so these profiles are strongly recommended rather than required. See [Use of CRMI](documentation-conformance.html#use-of-crmi).
 
 ### Domain Profiles
 
@@ -104,7 +108,7 @@ Note that for logic expressed in CQL, this information can be inferred by static
 
 #### Implementation Considerations
 
-Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG **SHOULD** use [International Patient Summary](http://hl7.org/fhir/uv/ips).
+§prof-2^^data:Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target.§ §prof-3?^^data:For international usage, implementation guides conforming to this IG **SHOULD** use [International Patient Summary](http://hl7.org/fhir/uv/ips).§
 
 In general, implementation of any given computable content is based on the intersection of the interoperability and computability profiles. As such, content authors must take care not to define computability profiles that conflict with interoperability profiles in their intended target scope.
 
