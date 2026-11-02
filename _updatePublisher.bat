@@ -5,9 +5,16 @@ SETLOCAL
 SET dlurl=https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
 SET publisher_jar=publisher.jar
 SET input_cache_path=%CD%\input-cache\
+IF DEFINED FHIR_PUBLISHER_HOME (
+	SET "publisher_home=%FHIR_PUBLISHER_HOME%"
+) ELSE (
+	SET "publisher_home=%USERPROFILE%\.fhir\tools\publisher"
+)
 SET skipPrompts=false
 
 SET scriptdlroot=https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main
+SET build_bat_url=%scriptdlroot%/_build.bat
+SET build_sh_url=%scriptdlroot%/_build.sh
 SET update_bat_url=%scriptdlroot%/_updatePublisher.bat
 SET gen_bat_url=%scriptdlroot%/_genonce.bat
 SET gencont_bat_url=%scriptdlroot%/_gencontinuous.bat
@@ -20,7 +27,8 @@ IF "%~1"=="/f" SET skipPrompts=y
 
 ECHO.
 ECHO Checking internet connection...
-PING tx.fhir.org -4 -n 1 -w 1000 | FINDSTR TTL && GOTO isonline
+powershell -Command "try { $r=[System.Net.WebRequest]::Create('https://tx.fhir.org/r4/metadata'); $r.Timeout=4000; $r.GetResponse().Close(); exit 0 } catch { exit 1 }"
+IF %ERRORLEVEL% EQU 0 GOTO isonline
 ECHO We're offline, nothing to do...
 GOTO end
 
@@ -37,43 +45,37 @@ IF DEFINED ARG (
 	GOTO processflags
 )
 
-FOR %%x IN ("%CD%") DO SET upper_path=%%~dpx
-
 ECHO.
-IF NOT EXIST "%input_cache_path%%publisher_jar%" (
-	IF NOT EXIST "%upper_path%%publisher_jar%" (
-		SET jarlocation="%input_cache_path%%publisher_jar%"
-		SET jarlocationname=Input Cache
-		ECHO IG Publisher is not yet in input-cache or parent folder.
-		REM we don't use jarlocation below because it will be empty because we're in a bracketed if statement
-		GOTO create
-	) ELSE (
-		ECHO IG Publisher FOUND in parent folder
-		SET jarlocation="%upper_path%%publisher_jar%"
-		SET jarlocationname=Parent folder
-		GOTO upgrade
-	)
-) ELSE (
+IF EXIST "%input_cache_path%%publisher_jar%" (
 	ECHO IG Publisher FOUND in input-cache
-	SET jarlocation="%input_cache_path%%publisher_jar%"
-	SET jarlocationname=Input Cache
+	SET "jarlocation=%input_cache_path%%publisher_jar%"
+	SET "jarlocationname=Input Cache"
 	GOTO upgrade
 )
+SET "jarlocation=%publisher_home%\%publisher_jar%"
+SET "jarlocationname=FHIR Publisher Home"
+IF EXIST "%publisher_home%\%publisher_jar%" (
+	ECHO IG Publisher FOUND in FHIR publisher home
+	GOTO upgrade
+)
+ECHO IG Publisher is not yet in input-cache or FHIR publisher home.
+GOTO create
 
 :create
 IF DEFINED FORCE (
-	MKDIR "%input_cache_path%" 2> NUL
+	MKDIR "%publisher_home%" 2> NUL
 	GOTO download
 )
 
 IF "%skipPrompts%"=="y" (
 	SET create=Y
 ) ELSE (
+	ECHO Will place publisher jar here: %jarlocation%
 	SET /p create="Ok? (Y/N) "
 )
 IF /I "%create%"=="Y" (
-	ECHO Will place publisher jar here: %input_cache_path%%publisher_jar%
-	MKDIR "%input_cache_path%" 2> NUL
+	ECHO Will place publisher jar here: %jarlocation%
+	MKDIR "%publisher_home%" 2> NUL
 	GOTO download
 )
 GOTO done
@@ -209,6 +211,16 @@ echo "Errors encountered during download: %errorlevel%"
 goto end
 :upd_script_6
 start copy /y "_updatePublisher.new.bat" "_updatePublisher.bat" ^&^& del "_updatePublisher.new.bat" ^&^& exit
+
+
+:dl_script_7
+ECHO Updating _build.bat
+call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%build_bat_url%\",\"_build.new.bat\") } else { Invoke-WebRequest -Uri "%update_bat_url%" -Outfile "_build.new.bat" }
+if %ERRORLEVEL% == 0 goto upd_script_6
+echo "Errors encountered during download: %errorlevel%"
+goto end
+:upd_script_6
+start copy /y "_build.new.bat" "_build.bat" ^&^& del "_build.new.bat" ^&^& exit
 
 
 :end

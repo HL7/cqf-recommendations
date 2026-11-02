@@ -34,18 +34,18 @@ Usage: #example
   * min = 0
   * max = "*"
   * type = #Immunization
-* parameter[+]
-  * name = #"Immunization Proposal"
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #ImmunizationRecommendation
-* parameter[+]
-  * name = #"Immunization Not Proposed"
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #ImmunizationRecommendation
+//* parameter[+]
+//  * name = #"Immunization Proposal"
+//  * use = #out
+//  * min = 0
+//  * max = "*"
+//  * type = #ImmunizationRecommendation
+//* parameter[+]
+//  * name = #"Immunization Not Proposed"
+//  * use = #out
+//  * min = 0
+//  * max = "*"
+//  * type = #ImmunizationRecommendation
 * parameter[+]
   * name = #"Is Recommendation Applicable"
   * use = #out
@@ -58,11 +58,11 @@ Usage: #example
 * dataRequirement[+]
   * type = #Immunization
   * profile = Canonical(Immunization)
-* dataRequirement[+]
-  * type = #ImmunizationRecommendation
-  * profile = Canonical(ImmunizationRecommendation)
-* dataRequirement[+]
-  * type = #ImmunizationRecommendation
-  * profile = Canonical(ImmunizationRecommendation)
+//* dataRequirement[+]
+//  * type = #ImmunizationRecommendation
+//  * profile = Canonical(ImmunizationRecommendation)
+//* dataRequirement[+]
+//  * type = #ImmunizationRecommendation
+//  * profile = Canonical(ImmunizationRecommendation)
 * content
   * id = "ig-loader-RecommendImmunization.cql"
