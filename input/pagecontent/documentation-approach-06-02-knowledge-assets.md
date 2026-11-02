@@ -47,36 +47,36 @@ A declaration is an expression of the structural elements of computable logic (e
 
 ### Composite Assets
 
-No single representation or expression can sufficiently and/or appropriately describe the nature and behavior of many domain concepts using computable formalism.  Furthermore, many domain concepts build on and/or reference one another.  To address these issues as well as some issues related to scalability and reusability or shareability, many knowledge assets are actually comprised of or composed using other knowledge assets.  A CPGPathway, CPGStrategy, and CPGRecommendation are examples of composite asset in this implementation guide.
+No single representation or expression can sufficiently and/or appropriately describe the nature and behavior of many domain concepts using computable formalism.  Furthermore, many domain concepts build on and/or reference one another.  To address these issues as well as some issues related to scalability and reusability or shareability, many knowledge assets are actually comprised of or composed using other knowledge assets.  A Pathway, [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy), and [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) are examples of composite asset in this implementation guide.
 
 ### Derived Assets
 
-Furthermore, many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived.  For example, a CPGMetric may derive much of its content from a CPGRecommendation.  Derived knowledge assets may be wholly or partially derived from other assets.
+Furthermore, many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived.  For example, a [Metric](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric) may derive much of its content from a Recommendation.  Derived knowledge assets may be wholly or partially derived from other assets.
 
 <details open>
 
 <summary>
 
-FIG. 49.  Derived Assets from a CPGPathway
+Figure 1. Derived Assets from a Pathway
 
 </summary>
 
-<img src="CPG-06.02-00.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+<img src="CPG-06.02-00.png" alt="Derived Assets from a Pathway" class="img-responsive img-rounded center-block"/>
 
 </details>
 
 ### Translation Within and Between Knowledge Representations
 
-Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements).  This equivalence in computational intent and behavior is known as isopragmatism.  This affords the ability to transform (and/or translate) between different formalisms of the same knowledge content.  Isopragmatic transformations between such knowledge representations is the knowledge equivalent of iso-semantic transformations between different combinations of information model + terminologies.  Reasons to use alternative, isopragmatic representations of knowledge assets include ease-of-use of tooling (e.g. one representation has more capable authoring and/or validation tools) as well as the capabilities that exist within alternative delivery mechanisms and/or implementation environments.  For more on isopragmatic knowledge representations see the BPM+ section in [Methodology](documentation-approach-09-methods-of-implementation.html). <!-- add link !-->
+Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements).  This equivalence in computational intent and behavior is known as isopragmatism.  This affords the ability to transform (and/or translate) between different formalisms of the same knowledge content.  Isopragmatic transformations between such knowledge representations is the knowledge equivalent of iso-semantic transformations between different combinations of information model + terminologies.  Reasons to use alternative, isopragmatic representations of knowledge assets include ease-of-use of tooling (e.g. one representation has more capable authoring and/or validation tools) as well as the capabilities that exist within alternative delivery mechanisms and/or implementation environments.  For more on isopragmatic knowledge representations see [Mapping and Other Formalisms](documentation-methodology.html).
 
 <details open>
 
 <summary>
 
-FIG. 50. Isopragmatic Representations of the Same Asset
+Figure 2. Isopragmatic Representations of the Same Asset
 
 </summary>
 
-<img src="CPG-06.02-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+<img src="CPG-06.02-01.png" alt="Derived knowledge assets" class="img-responsive img-rounded center-block"/>
 
 </details>

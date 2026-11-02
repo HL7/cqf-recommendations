@@ -8,7 +8,7 @@ Covered in this section:
     *   Tasks
 *   Workflow Enablements and Interventions (Cognitive and Decision Support)
 
-The workflow separation, as discussed in the section on Separations of Concerns in the CPG <!-- link to - 12.01 !-->, is critical to address as a separation from the Case and the Plan as well as have means to relate to from the Plan and patient-specific Care Plan without conflating what is done for the patient with how it gets done (in local implementations).  Workflow directly relates to the Case in that influences what is known about the patient (i.e., Events) and done for the patient (i.e., Requests) as well as when, by whom, where, and through what means.  Thus, some aspects of local workflow can be inferred from information in the Case (e.g., CPGCaseFeatures).
+The workflow separation, as discussed in [Separations of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html), is critical to address as a separation from the [Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case) and the [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan) as well as have means to relate to from the Plan and patient-specific [Care Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-care-plan) without conflating what is done for the patient with how it gets done (in local implementations).  Workflow directly relates to the Case in that influences what is known about the patient (i.e., [Events](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-event)) and done for the patient (i.e., [Requests](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request)) as well as when, by whom, where, and through what means.  Thus, some aspects of local workflow can be inferred from information in the Case (e.g., [Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)).
 
 Workflow itself may be further separated into generalized abstractions of workflow across settings and the real-world care delivery activities in those activities that are carried out in the context of clinical information systems (e.g., EHRs).  The Common Pathway addresses higher level abstractions on care settings, clinical activities, and healthcare professional roles.  Many implications of localized, real-world workflow are reflected in the information carried in FHIR Resources and related modules and patterns that are addressed in the [FHIR Workflow Module](https://www.hl7.org/fhir/workflow-module.html) including the [FHIR Workflow Description](http://hl7.org/fhir/workflow.html#12.5), and its workflow resource patterns for Definitions, Requests, and Events.  The [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-module.html) addresses the type of workflow interventions and/or enablements through which guidance is delivered into the care delivery process, such as the cardinal types of CDS[<sup>1</sup>](#1), described in part in its [Common Use Cases](https://www.hl7.org/fhir/clinicalreasoning-module.html#uses).
 
@@ -17,7 +17,7 @@ Workflow itself may be further separated into generalized abstractions of workfl
 
 <summary>
 
-FIG. 77.  The Case, Plan, Workflow separations and further separations within workflow and how each relates to the Case and/or Plan.  The Common Pathway provides generalized abstractions of settings, activities, and healthcare professional roles can be referenced from within the Plan.  Requests and Events, and in their various statuses represent information about the Plan (including the patient-specific Care Plan) and Case, carry information about the clinical information system workflow and into the clinical information system workflow.  The clinical information systems (EHR and Enablements) convey information into the workflow from the Case and Plan (including the patient-specific Care Plan) as well as afford a means for interactions with end-users (e.g., healthcare professionals, patients, caregivers, quality professionals, researchers).
+Figure 1. The Case, Plan, Workflow separations and further separations within workflow and how each relates to the Case and/or Plan.  The Common Pathway provides generalized abstractions of settings, activities, and healthcare professional roles can be referenced from within the Plan.  Requests and Events, and in their various statuses represent information about the Plan (including the patient-specific Care Plan) and Case, carry information about the clinical information system workflow and into the clinical information system workflow.  The clinical information systems (EHR and Enablements) convey information into the workflow from the Case and Plan (including the patient-specific Care Plan) as well as afford a means for interactions with end-users (e.g., healthcare professionals, patients, caregivers, quality professionals, researchers).
 
 </summary>
 
@@ -31,7 +31,7 @@ Such a case report could potentially include elements from the pathway view, suc
 
 Note also that the case report could potentially include contextual elements such as local settings and configurations that were used when following guideline-based care.
 
-### Common Pathway <!-- Needs some work. Conflates Settings and Activities; only addresses Ambulatory !-->
+### Common Pathway
 
 The common pathway provides an abstract or generalized description of the overall process of care delivery that relates to care settings and high-level care activities.  The common processes identified in this implementation guide are based on surveys of guideline content, both in the examples used in this guide, as well as other guideline content from various clinical domains and guideline authors.
 
@@ -41,9 +41,9 @@ Content conforming to this implementation guide SHALL identify processes using t
 
 #### Use of Common Pathway in Localization
 
-Some local implementations of Pathways have used a similar approach using a work domain ontology to create a separation between the high-level descriptions of clinical workflow and the details of numerous, varying distinct interventions or enablements of specific workflows across clinical information systems, roles, and specific settings (e.g., units within the same hospital).  A work domain ontology is a ‘shareable conceptualization’ of a setting where actual work occurs such that it can be discussed, described, analyzed, modelled, governed, and supported (e.g. with information and knowledge management tools) effectively- in part, through use of consistent, common, and sufficiently detailed vocabulary.  Where available, publicly available standard vocabularies and ontologies were used to describe settings, roles, activities, and information system components (including user interface and data elements).
+Some local implementations of [Pathways](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) have used a similar approach using a work domain ontology to create a separation between the high-level descriptions of clinical workflow and the details of numerous, varying distinct interventions or enablements of specific workflows across clinical information systems, roles, and specific settings (e.g., units within the same hospital).  A work domain ontology is a ‘shareable conceptualization’ of a setting where actual work occurs such that it can be discussed, described, analyzed, modelled, governed, and supported (e.g. with information and knowledge management tools) effectively- in part, through use of consistent, common, and sufficiently detailed vocabulary.  Where available, publicly available standard vocabularies and ontologies were used to describe settings, roles, activities, and information system components (including user interface and data elements).
 
-In these contexts, a work domain ontology was used as a means to normalize the various distinct findings from the numerous task or workflow elicitation and analysis methods and efforts (ref <!-- MAyo SSS and ROOT !-->), that can then be used to related to guideline-directed cognitive and decision support enablements (ref).  Generalizations can be further specified or localized using site-specific logic including for specific triggering events and interventions.  Further details of localization are site, vendor, and mechanism of integration specific and are currently beyond the scope of this implementation guide.
+In these contexts, a work domain ontology was used as a means to normalize the various distinct findings from the numerous task or workflow elicitation and analysis methods and efforts (ref), that can then be used to related to guideline-directed cognitive and decision support enablements (ref).  Generalizations can be further specified or localized using site-specific logic including for specific triggering events and interventions.  Further details of localization are site, vendor, and mechanism of integration specific and are currently beyond the scope of this implementation guide.
 
 ### Clinical Information System (EHR) Workflow
 
@@ -55,7 +55,7 @@ The things being done in the clinical information system are called activities a
 
 <summary>
 
-FIG. 78. Description of the Resource patterns and their interrelationships from [Workflow Resource Relationships](https://www.hl7.org/fhir/workflow.html#relationships) in the [FHIR Workflow Description](https://www.hl7.org/fhir/workflow.html).
+Figure 2. Description of the Resource patterns and their interrelationships from [Workflow Resource Relationships](https://www.hl7.org/fhir/workflow.html#relationships) in the [FHIR Workflow Description](https://www.hl7.org/fhir/workflow.html).
 
 </summary>
 
@@ -67,7 +67,7 @@ FIG. 78. Description of the Resource patterns and their interrelationships from 
 
 <summary>
 
-FIG. 79. Depiction of the FHIR Request status as a [state machine](https://www.hl7.org/fhir/request.html#statemachine) from the FHIR Request pattern.
+Figure 3. Depiction of the FHIR Request status as a [state machine](https://www.hl7.org/fhir/request.html#statemachine) from the FHIR Request pattern.
 
 </summary>
 
@@ -79,7 +79,7 @@ FIG. 79. Depiction of the FHIR Request status as a [state machine](https://www.h
 
 <summary>
 
-FIG. 80. Depiction of the FHIR Event status as a [state machine](https://www.hl7.org/fhir/event.html#statemachine) from the FHIR Event pattern.
+Figure 4. Depiction of the FHIR Event status as a [state machine](https://www.hl7.org/fhir/event.html#statemachine) from the FHIR Event pattern.
 
 </summary>
 
@@ -102,7 +102,7 @@ The [FHIR ](https://www.hl7.org/fhir/event.html)Task resource also has its own [
 
 <summary>
 
-FIG. 81. Depiction of the FHIR Task status as a [state machine](https://www.hl7.org/fhir/task.html#statemachine) from the FHIR Task resource.
+Figure 5. Depiction of the FHIR Task status as a [state machine](https://www.hl7.org/fhir/task.html#statemachine) from the FHIR Task resource.
 
 </summary>
 
@@ -116,7 +116,7 @@ As described above, much information about clinical information system workflow 
 
 The [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-module.html) addresses the type of workflow interventions and/or enablements through which guidance is delivered into the care delivery process, such as the cardinal types of CDS (ref) (e.g., alerts and reminders, order sets, documentation templates, smart forms, information summaries- often problem or intervention oriented), quality or performance measurement or patient-level metrics or indicators, or more advanced forms of workflow or cognitive support delivered via apps adjacent or supplemental to clinical information systems (e.g., SMART-on-FHIR Apps).  Further considerations for these interventions or enablement may include the “CDS five rights”: the right information; to the right person; in the right intervention format; through the right channel; and at the right time in the workflow[<sup>2</sup>](#2).
 
-In the CPG implementation guide, these interventions and enablement are recognized to be downstream consumers of the knowledge content within the CPG with considerations being made for critical content or information requirements thereof. Many of these interventions or enablements have their own standard and/or implementation guides ([CDS-Hooks](https://cds-hooks.hl7.org/), [SMART-on-FHIR](http://www.hl7.org/fhir/smart-app-launch/), [Measure IG](http://hl7.org/fhir/us/cqfmeasures/2019May/index.html), [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html)).  While the CPG-IG intentionally does not directly address details of localized clinical workflow, it must and does provide affordances conveying critical content for downstream consumers including “the Common Pathway” (i.e., an abstraction of high-level clinical workflows), shared information (e.g., Requests and Events as CPGCaseFeatures), and reuse of the same standards for clinical information system activities (e.g., requests, events, and their lifecycle including their status and tasks) as well as interventions (e.g., forms, CDS Hooks, etc.).
+In the CPG implementation guide, these interventions and enablement are recognized to be downstream consumers of the knowledge content within the CPG with considerations being made for critical content or information requirements thereof. Many of these interventions or enablements have their own standard and/or implementation guides ([CDS-Hooks](https://cds-hooks.hl7.org/), [SMART-on-FHIR](http://www.hl7.org/fhir/smart-app-launch/), [Measure IG](http://hl7.org/fhir/us/cqfmeasures/2019May/index.html), [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html)).  While the CPG-IG intentionally does not directly address details of localized clinical workflow, it must and does provide affordances conveying critical content for downstream consumers including “the Common Pathway” (i.e., an abstraction of high-level clinical workflows), shared information (e.g., Requests and Events as Case Features), and reuse of the same standards for clinical information system activities (e.g., requests, events, and their lifecycle including their status and tasks) as well as interventions (e.g., forms, CDS Hooks, etc.).
 
 ---
 

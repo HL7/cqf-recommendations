@@ -9,46 +9,42 @@ In this section we will cover:
     *   [Asset Metadata (information about the assets and knowledge base)](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata)
 *   [Knowledge Architecture (designing and defining the types and nature of assets)](documentation-approach-06-03-knowledge-architecture.html)
 
-### [Levels of Knowledge Representation Framing:](documentation-approach-06-01-levels-of-knowledge-representation.html)
+### Levels of Knowledge Representation
 
-#### Approach
-
-The approach taken by this implementation guide is to consider three broad challenges of clinical guideline implementation:
-
-Note that the levels of knowledge representation are a continuum, with discrete categories introduced in the methodology to help inform discussions and communicate the concepts involved. Typically, the initial guideline content is published in narrative form (L1), but guidelines will often contain diagrams, charts, and other depictions that lean towards semi-structured (L2) representation.
+Note that the levels of knowledge representation are a continuum, with discrete categories introduced in the methodology to help inform discussions and communicate the concepts involved. Typically, the initial guideline content is published in narrative form (L1), but guidelines will often contain diagrams, charts, and other depictions that lean towards semi-structured (L2) representation. See [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html).
 
 This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
 
 <div>
-<img src="knowledge-levels.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="334"/>
+<img src="knowledge-levels.png" alt="Knowledge Levels" class="img-responsive img-rounded center-block" width="750" height="334"/>
 </div>
 
-FIG. 45. Knowledge Levels
+Figure 1. Knowledge Levels
 
 
 As will be discussed further in the Agile CPG development approach (see section on [Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation. Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels. This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
 <div>
-<img src="CPG-05.06-01.png" alt="image_tooltip" class="img-responsive img-rounded center-block" width="750" hight="287"/>
+<img src="CPG-05.06-01.png" alt="Knowledge Levels" class="img-responsive img-rounded center-block" width="750" height="287"/>
 </div>
 
-FIG. 46. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
+Figure 2. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
 
-#### [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html)
+#### Tiers of Functionality
 
-This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering
+This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering See [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html).
 
 *   **Data**
 *   **Logic**
 *   **User Interface (UI)**
 
-#### [Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)
+#### Levels of Representation by Tiers of Functionality
 
-The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (i.e., UI) (T3).
+The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (i.e., UI) (T3). See [Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html).
 
-### [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html)
+### Knowledge Assets
 
-Knowledge assets or artifacts as they are often referred to in FHIR, where an artifact is an instance of an asset. Assets provide the ability to keep domain logic separated and distinct from other system logic in complex systems. In this implementation guide we often refer to knowledge assets and knowledge artifacts interchangeably, though the distinction is very relevant the knowledge engineer.
+Knowledge assets or artifacts as they are often referred to in FHIR, where an artifact is an instance of an asset. Assets provide the ability to keep domain logic separated and distinct from other system logic in complex systems. In this implementation guide we often refer to knowledge assets and knowledge artifacts interchangeably, though the distinction is very relevant the knowledge engineer. See [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html).
 
 *   Asset Metamodel- its structure- requirements and constraints
 *   Content- what goes into the asset “container”
@@ -78,11 +74,11 @@ A declaration is an expression of the structural elements of computable logic (e
 
 #### Composite Assets
 
-No single representation or expression can sufficiently and/or appropriately describe the nature and behavior of many domain concepts using computable formalism. A CPGPathway, CPGStrategy, and CPGRecommendation are examples of composite assets in this implementation guide.
+No single representation or expression can sufficiently and/or appropriately describe the nature and behavior of many domain concepts using computable formalism. A Pathway, [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy), and [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) are examples of composite assets in this implementation guide.
 
 #### Derived Assets
 
-Many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived. For example, a CPGMetric may derive much of its content from a CPGRecommendation. Derived knowledge assets may be wholly or partially derived from other assets.
+Many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived. For example, a [Metric](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric) may derive much of its content from a Recommendation. Derived knowledge assets may be wholly or partially derived from other assets.
 
 #### Translation Within and Between Knowledge Representations
 
@@ -92,9 +88,9 @@ Some knowledge assets may be represented using multiple alternative formalisms (
 
 For more on Curating and Managing Knowledge Assets (and their respective knowledge architecture), see sections on Knowledge Representation in [Knowledge Engineering](documentation-approach-05-03-knowledge-representation.html), and Leveraging a Knowledge Base (Knowledge Content Management System) in the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html).
 
-### [Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html)
+### Knowledge Architecture
 
-This section addresses the principles and best practices of knowledge architecture as well as the approach through which the CPG Knowledge Architecture was and continues to be developed including an overview of the Conceptual Perspective on the CPG Knowledge Architecture and the means through which it is realized and concretized in FHIR Profiles elsewhere in this implementation guide. This implementation guide includes this approach to knowledge architecture as its through it, direct interactions with various stakeholders, and through real-world use cases that it will continue to evolve.
+This section addresses the principles and best practices of knowledge architecture as well as the approach through which the CPG Knowledge Architecture was and continues to be developed including an overview of the Conceptual Perspective on the CPG Knowledge Architecture and the means through which it is realized and concretized in FHIR Profiles elsewhere in this implementation guide. This implementation guide includes this approach to knowledge architecture as its through it, direct interactions with various stakeholders, and through real-world use cases that it will continue to evolve. See [Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html).
 
 Covered in this section:
 

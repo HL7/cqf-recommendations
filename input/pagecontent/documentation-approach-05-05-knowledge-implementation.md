@@ -12,7 +12,7 @@ Local practice governance and quality functions use their own local clinical reg
 
 <summary>
 
-FIG. 38. Just as the guideline development group and knowledge engineering team can work collaboratively on the CPG, the local practice governance and informatics (EHR build) functions can work collaboratively using the CPG as a consistent, holistic specification that can then be localized taking various organizational factors including workflow, enablements, methods of implementation, and mechanisms of integration into consideration.
+Figure 1. Just as the guideline development group and knowledge engineering team can work collaboratively on the CPG, the local practice governance and informatics (EHR build) functions can work collaboratively using the CPG as a consistent, holistic specification that can then be localized taking various organizational factors including workflow, enablements, methods of implementation, and mechanisms of integration into consideration.
 
 </summary>
 
@@ -28,9 +28,9 @@ Local implementation of standardized best practices includes workflow and decisi
 
 However, many of the activities that the informatics team performs quite analogous to the knowledge engineering function including: identifying and or defining local data definitions, terminologies, and their respective sources; helping to elicit and specify clinical business logic; eliciting and specifying critical performance metrics (may be clinical, operational, and/or financial); translating all business logic specifications (into local application build environments or similar vendor capabilities); validating business logic (as implemented in local systems, often considered ‘clinical validation’ as done to check for clinical validity); as well as maintaining and improving the above as needed.
 
-Much of the business logic, as specified, is nearly identical, or otherwise substantially related (could be derived from the standard CPG).  This often holds true for the clinical business logic (clinical decision-logic for recommendations), abstract key considerations for workflow insertions (e.g. EHR “chart events”, see CDS Hooks).  Furthermore, many of the clinical and/or operational performance metrics are analogous or very related to many of the CPGMetrics and CPGMeasures.
+Much of the business logic, as specified, is nearly identical, or otherwise substantially related (could be derived from the standard CPG).  This often holds true for the clinical business logic (clinical decision-logic for recommendations), abstract key considerations for workflow insertions (e.g. EHR “chart events”, see CDS Hooks).  Furthermore, many of the clinical and/or operational performance metrics are analogous or very related to many of the [Metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric) and [Measures](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure).
 
-Similarly, many of the data definitions and terminologies are the same or very related, and could be significantly informed by those in the standard CPG.  This includes primitive (data requirements) and inferred data elements for local clinical registries or data marks are very similar to the CPGCaseFeatures.
+Similarly, many of the data definitions and terminologies are the same or very related, and could be significantly informed by those in the standard CPG.  This includes primitive (data requirements) and inferred data elements for local clinical registries or data marks are very similar to the [Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature).
 
 Some activities unique to local informatics and implementation includes: capturing, analyzing, and optimizing local clinical workflows; redesigning and integrating new end-user application capabilities together with local clinical workflows and business processes; performing end-user or workflow validation (may be in a simulation environment, limited release- only specified users, or pilot release); issues related to periodic upgrades of vendor software.
 
@@ -44,11 +44,11 @@ One of the opportunities with the CPG-IG is to move as much work as possible ups
 
 <summary>
 
-FIG. 39. The similarities in roles, functions, and activities as well as complementary needs and goals in guideline development and implementation together with the mutual benefits of working collaboratively not only afford the means to do concurrent development and implementation, it can provide benefits in the speed, cost, and quality of end-user consumables.  This concurrency may be part of more traditional knowledge engineering approaches, but may further benefit from and provide benefit to the Agile CPG Development Approach described below.
+Figure 2. The similarities in roles, functions, and activities as well as complementary needs and goals in guideline development and implementation together with the mutual benefits of working collaboratively not only afford the means to do concurrent development and implementation, it can provide benefits in the speed, cost, and quality of end-user consumables.  This concurrency may be part of more traditional knowledge engineering approaches, but may further benefit from and provide benefit to the Agile CPG Development Approach described below.
 
 </summary>
 
-<img src="CPG-05-05.png" alt="image_tooltip" class="img-responsive img-rounded center-block"/>
+<img src="CPG-05-05.png" alt="Concurrent development and implementation" class="img-responsive img-rounded center-block"/>
 
 </details>
 
@@ -86,11 +86,11 @@ Obviously, having more than one local implementation affords many benefits inclu
 
 <summary>
 
-FIG. 40. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
+Figure 3. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
 
 </summary>
 
-<img src="CPG-05.05-Agile.png" alt="Agile CPG" class="img-responsive img-rounded center-block"/>
+<img src="CPG-05.05-Agile.png" alt="Knowledge Implementation concurrent with Agile CPG Development" class="img-responsive img-rounded center-block"/>
 
 </details>
 

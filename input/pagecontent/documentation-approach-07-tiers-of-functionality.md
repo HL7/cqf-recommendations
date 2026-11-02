@@ -8,7 +8,7 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 
 <summary>
 
-FIG. 57. Tiers of Functionality
+Figure 1. Tiers of Functionality
 
 </summary>
 
@@ -36,7 +36,7 @@ The data elements provide a computable representation of the concepts and inform
 * CodeSystem
 * ValueSet
 
-Expressing the data elements in a clinical guideline enables the description and exchange of the within the guideline; roughly, the data tier in a traditional 3-tier architecture.  While much logic at the data level is abstracted away behind interfaces (a key benefit of FHIR), one much be careful not to conflate data transformation and clinical business logic, particularly in the case of inferred and/or enriched data elements (e.g. inferred CPGCaseFeatures).  The inference belongs in the Clinical Logic layer.
+Expressing the data elements in a clinical guideline enables the description and exchange of the within the guideline; roughly, the data tier in a traditional 3-tier architecture.  While much logic at the data level is abstracted away behind interfaces (a key benefit of FHIR), one much be careful not to conflate data transformation and clinical business logic, particularly in the case of inferred and/or enriched data elements (e.g. inferred [Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)).  The inference belongs in the Clinical Logic layer.
 
 ### Clinical Logic
 
@@ -49,7 +49,7 @@ The clinical logic in a computable guideline provides a formal representation of
 
 Expressing the clinical logic for a guideline enables application functionality; roughly, the application tier in a traditional 3-tier architecture.
 
-Note to the Knowledge Engineer not to conflate Clinical (business) Logic with either Data (transformation) logic or Forms (user interaction) logic.  Business logic should only be about describing the things that occur in the domain- describing patients (CPGCaseFeatures), formalizing clinician decision logic (CPGRecommendations), orchestrating either of the two, etc. (see Table above).  These are critical separations of concerns to keep in mind as their conflation can cause significant challenges, particularly in a knowledge-based approach- though all Tiers can take advantage of knowledge-based approaches.
+Note to the Knowledge Engineer not to conflate Clinical (business) Logic with either Data (transformation) logic or Forms (user interaction) logic.  Business logic should only be about describing the things that occur in the domain- describing patients (Case Features), formalizing clinician decision logic ([Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)), orchestrating either of the two, etc. (see Table above).  These are critical separations of concerns to keep in mind as their conflation can cause significant challenges, particularly in a knowledge-based approach- though all Tiers can take advantage of knowledge-based approaches.
 
 ### Forms Description
 
