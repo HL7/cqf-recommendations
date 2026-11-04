@@ -8,7 +8,7 @@ The [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.
 
 ### Recommendations
 
-A [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) uses [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html), a PlanDefinition profile with type `eca-rule`. It expresses an event-condition-action pattern: an invocation or trigger establishes context; applicability logic evaluates that context; the applicable action describes an activity to propose.
+A [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) uses [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html), a PlanDefinition profile with type `eca-rule`. An invocation or trigger establishes context for the event-condition-action rule. The applicability logic evaluates that context to identify the activity to propose.
 
 #### Separating Clinical Decision Logic from Patient Descriptive Logic
 
@@ -36,7 +36,7 @@ Evidence descriptions can help identify the relevant population, intervention, c
 
 ### Strategies
 
-A [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy) groups related recommendations for a clinical concern or context. Its reusable definition uses [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html), a PlanDefinition profile with type `workflow-definition`. Its actions can describe relationships among those recommendations. The patient-specific [CPGStrategy](StructureDefinition-cpg-strategy.html) is instead a RequestGroup.
+A [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy) groups related recommendations for a clinical concern or context. Its reusable definition uses [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html), a PlanDefinition profile with type `workflow-definition`. Its actions can describe relationships among those recommendations. A patient-specific [CPGStrategy](StructureDefinition-cpg-strategy.html) uses RequestGroup to represent related requests and their options.
 
 <a id="cpgstrategies-as-a-profiled-fhir-eca-rule"></a>
 <a id="strategies-as-a-profiled-fhir-eca-rule"></a>

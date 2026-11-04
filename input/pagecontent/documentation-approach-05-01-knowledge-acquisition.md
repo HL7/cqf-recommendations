@@ -2,7 +2,7 @@ Acquire the meaning needed to implement a scoped clinical decision. Start with a
 
 ### Knowledge Elicitation
 
-Ask clinical experts to explain the recommendation's population, timing, action, exceptions, rationale, and relevant workflow. Use patient stories or concrete cases to uncover assumptions that are absent from the text. Distinguish what the source states from an expert interpretation and from a proposed local adaptation.
+Ask clinical experts to explain the [recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)'s population, timing, action, exceptions, rationale, and relevant workflow. Use patient stories or concrete cases to uncover assumptions that are absent from the text. Distinguish what the source states from an expert interpretation and from a proposed local adaptation.
 
 ### Knowledge Authoring
 

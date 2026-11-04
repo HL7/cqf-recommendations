@@ -1,6 +1,6 @@
 ### Analysis of Evidence
 
-Keep the evidence, the guideline group's recommendation, and the computable expression linked but distinct. Evidence reviewers assess what research supports; the guideline group decides what to recommend; clinical and informatics reviewers determine whether the formal expression preserves that decision.
+Keep the evidence, the guideline group's [recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation), and the computable expression linked but distinct. Evidence reviewers assess what research supports; the guideline group decides what to recommend; clinical and informatics reviewers determine whether the formal expression preserves that decision.
 
 #### Information from the Evidence
 

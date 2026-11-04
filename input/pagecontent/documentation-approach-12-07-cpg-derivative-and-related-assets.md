@@ -1,4 +1,4 @@
-A [Guideline](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-guideline) package can support several uses beyond proposing care: summaries, patient-level indicators, population measures, documentation and reporting. Reuse the same clinical definitions where appropriate, but give each derivative an explicit purpose, data scope, time basis and validation plan. Similar inputs do not make two outputs clinically equivalent.
+A [Guideline](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-guideline) package can support summaries, patient-level indicators, population measures, documentation and reporting. Reuse the same clinical definitions where appropriate, but give each derivative an explicit purpose, data scope, time basis and validation plan. Similar inputs do not make two outputs clinically equivalent.
 
 <a id="cpgguideline"></a>
 

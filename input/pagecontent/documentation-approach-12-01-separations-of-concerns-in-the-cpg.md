@@ -30,6 +30,8 @@ A change to a questionnaire label may be editorial. A change to a feature's defi
 
 ### Context
 
+Dijkstra described separation of concerns as examining one aspect of a problem at a time.[<sup>3</sup>](#3) In a guideline, those aspects can include a condition, intervention or care setting as well as Case, Plan and Workflow.
+
 The separation echoes the distinction between assessment and plan in problem-oriented clinical documentation. That analogy is useful for explanation; it does not mean every guideline artifact is a SOAP note or that a note supplies executable workflow.[<sup>1</sup>](#1)
 
 Local workflow also includes work outside the EHR, including patients, caregivers and between-visit review. [Sittig et al.](https://doi.org/10.1093/jamia/ocae138) use workflow models to identify such responsibilities; their study is modeling evidence rather than a demonstration of improved clinical outcomes.[<sup>2</sup>](#2)
@@ -37,3 +39,5 @@ Local workflow also includes work outside the EHR, including patients, caregiver
 <a id="1"></a>1. Weed LL. Medical records that guide and teach. *N Engl J Med.* 1968;278:593–600. [doi:10.1056/NEJM196803142781105](https://doi.org/10.1056/NEJM196803142781105).
 
 <a id="2"></a>2. Sittig DF, Boxwala A, Wright A, et al. Patient-centered clinical decision support challenges and opportunities identified from workflow execution models. *J Am Med Inform Assoc.* 2024;31:1682–1692. [doi:10.1093/jamia/ocae138](https://doi.org/10.1093/jamia/ocae138).
+
+<a id="3"></a>3. Dijkstra EW. On the role of scientific thought. In: *Selected Writings on Computing: A Personal Perspective*. Springer-Verlag, 1982. pp. 60–66.

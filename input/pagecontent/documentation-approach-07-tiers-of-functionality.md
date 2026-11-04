@@ -16,7 +16,7 @@ Keep data transformation separate from clinical inference. Converting a local co
 
 Describe patient state and proposed care using those data definitions. Libraries can contain descriptive calculations, inclusion/exclusion criteria and clinical decision expressions; PlanDefinition and ActivityDefinition relate conditions to activities, and Measure describes measurement structure. These resources collaborate rather than belonging exclusively to one software layer.
 
-Separate patient descriptive logic from the decision to propose care. For example, a calculation produces a named patient feature; a recommendation uses that feature, other applicable conditions and an action definition. This keeps calculations reusable across recommendations, summaries and measures.
+Separate patient descriptive logic from the decision to propose care. For example, a calculation produces a named patient feature; a [recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) uses that feature, other applicable conditions and an action definition. This keeps calculations reusable across recommendations, summaries and measures.
 
 CQL and associated Libraries do not define the complete clinical workflow or user experience. Local invocation, data access, authorization and handling of the proposed result remain implementation responsibilities.
 

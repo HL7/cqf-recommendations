@@ -1,6 +1,6 @@
 ### Evidence
 
-Begin with the reviewed recommendation and supporting evidence described in [analysis and reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html). Keep its identity and version linked to every derived representation. The evidence synthesis and the executable decision serve different purposes and can change for different reasons.
+Begin with the reviewed [recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) and supporting evidence described in [analysis and reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html). Keep its identity and version linked to every derived representation. The evidence synthesis and the executable decision serve different purposes and can change for different reasons.
 
 ### Co-Development of Guidelines and Computable Clinical Guideline Artifacts
 
@@ -24,9 +24,9 @@ Clinical authors, informaticians, implementors, communicators, and evaluators wo
 
 ### CPG Content and Related Derivatives
 
-Use [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html), [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html), and [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html) for the respective PlanDefinition roles. Patient-specific requests and records are separate from these definitions.
+Use [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html), [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html), and [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html) for the respective PlanDefinition roles. Patient-specific [requests](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request) and records are separate from these definitions.
 
-Potential downstream products include CDS, forms, patient metrics, population measures, and reporting. Each has its own information and validation needs. Reusing concepts or expressions does not make a recommendation and a population measure equivalent. See [knowledge assets](documentation-approach-06-02-knowledge-assets.html) and [derivative and related assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) for their owning definitions.
+Potential downstream products include CDS, forms, patient [metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric), population [measures](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure), and reporting. Each has its own information and validation needs. Reusing concepts or expressions does not make a recommendation and a population measure equivalent. See [knowledge assets](documentation-approach-06-02-knowledge-assets.html) and [derivative and related assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) for their owning definitions.
 
 ### Value of Computable Guideline Artifacts to Stakeholders
 

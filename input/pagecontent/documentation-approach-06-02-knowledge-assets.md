@@ -38,7 +38,7 @@ A declaration states structure or relationships without prescribing every execut
 
 ### Composite Assets
 
-A composite assembles other artifacts through supported references and dependencies. A recommendation can combine clinical logic and an activity definition; a strategy can group recommendations. The [CPG profile relationships](documentation-approach-12-03-cpg-plan.html) constrain which targets are valid. Composition of knowledge artifacts is distinct from the FHIR Composition resource used for clinical documents/summaries.
+A composite assembles other artifacts through supported references and dependencies. A [recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) can combine clinical logic and an activity definition; a [strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy) can group recommendations. The [CPG profile relationships](documentation-approach-12-03-cpg-plan.html) constrain which targets are valid. Composition of knowledge artifacts is distinct from the FHIR Composition resource used for clinical documents/summaries.
 
 ### Derived Assets
 

@@ -60,7 +60,7 @@ An implementation calling CPG $apply resolves the intended definition and depend
 The orchestration model uses these rules:
 
 - Actions form a hierarchy. Their order in the resource does not imply execution order.
-- Triggers or invocation through parent/related actions initiate processing. The guide's recommendation and strategy pattern uses one triggering action; pathways can have multiple triggers.
+- Triggers or invocation through parent/related actions initiate processing. The guide's recommendation and [strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy) pattern uses one triggering action; [pathways](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) can have multiple triggers.
 - Where the profile permits related actions, the pattern uses `before-start`, optionally with an offset, to express ordering. Guard against cyclic related-action chains.
 - Timing is not a general substitute for triggering or ordering. Pathways and schedules can use it to express expected activity schedules.
 - Apply the constraints of the selected profile. Base PlanDefinition features are not automatically available in every CPG profile.

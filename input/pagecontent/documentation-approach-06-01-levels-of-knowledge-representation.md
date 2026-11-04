@@ -10,7 +10,7 @@ Use knowledge levels to describe the representation you are producing and the ha
 
 ### Narrative
 
-**L1** communicates the clinical recommendation to people: purpose, population, interventions, exclusions, evidence, recommendation strength, timing and setting. It can include prose, tables, figures, case examples and policy considerations. Its main review question is whether the clinical intent and evidence are clear.
+**L1** communicates the clinical [recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) to people: purpose, population, interventions, exclusions, [evidence](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-evidence), recommendation strength, timing and setting. It can include prose, tables, figures, case examples and policy considerations. Its main review question is whether the clinical intent and evidence are clear.
 
 Before translation, identify the authoritative source, version/date, recommendation citation and responsible clinical reviewers. Preserve uncertainty or conditional wording rather than strengthening a recommendation while making it computable.
 
@@ -22,7 +22,7 @@ Use L2 review to resolve ambiguity: which observation is current, what counts as
 
 ### Structured
 
-**L3** is the computable, shareable representation that is this guide's main focus. It can include case-feature profiles, terminology, Libraries, recommendation/strategy/pathway definitions, activity definitions and Questionnaires. Exact contents depend on the intended capabilities.
+**L3** is the computable, shareable representation that is this guide's main focus. It can include [case-feature](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature) profiles, terminology, Libraries, [recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)/[strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy)/[pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) definitions, activity definitions and Questionnaires. Exact contents depend on the intended capabilities.
 
 At this level, define data and logic contracts independently of a particular EHR interface. Validate artifact conformance and compare logic results with clinically reviewed examples. “Computable” does not mean every consumer can execute every artifact unchanged.
 

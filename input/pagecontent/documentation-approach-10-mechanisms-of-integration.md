@@ -43,7 +43,7 @@ For FHIR operations, use the [CPG $apply contract](OperationDefinition-cpg-pland
 <a id="via-data-enrichment-real-time-data-ingest-and-insightinference-delivery"></a>
 ### Data Enrichment
 
-An implementation can transfer calculated facts, recommendations, summaries, or reports into another system through supported data-exchange interfaces. Decide whether the receiving record is a derived result, a proposal, an authorized request, or a record of performed care. These meanings affect its resource type and lifecycle.
+An implementation can transfer calculated facts, [recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation), summaries, or reports into another system through supported data-exchange interfaces. Decide whether the receiving record is a derived result, a [proposal](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal), an authorized request, or a record of performed care. These meanings affect its resource type and lifecycle.
 
 Identify the source patient data, content and terminology versions, calculation time, and system responsible for a result. Define how a later evaluation updates or supersedes the result, how corrections propagate, and how repeated delivery is recognized. A receiving system needs a clear distinction between an inferred value and a directly observed fact.
 

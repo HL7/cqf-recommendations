@@ -2,7 +2,7 @@
 
 ### Evidence Organization and Learning Health Systems
 
-Use evidence frameworks to locate and appraise knowledge, then evaluate how a guideline is implemented. These are related tasks with different evidence needs. A guideline's clinical evidence does not establish that a particular CDS delivery mechanism works, and a technically successful CDS implementation does not establish clinical benefit.
+Use [evidence](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-evidence) frameworks to locate and appraise knowledge, then evaluate how a guideline is implemented. These are related tasks with different evidence needs. A guideline's clinical evidence does not establish that a particular CDS delivery mechanism works, and a technically successful CDS implementation does not establish clinical benefit.
 
 ### The 6S Model
 
