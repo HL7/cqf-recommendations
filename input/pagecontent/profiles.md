@@ -83,4 +83,4 @@ Implementation depends on the intersection of exchange and computability require
 
 IPS is a summary model; content-specific data requirements may extend beyond it. Identify all inputs the guideline needs rather than assuming that selecting a core data guide makes every expression executable. The transport mechanism is a further decision: specifying what data is needed does not prescribe how it must be retrieved.
 
-Use [Must Support](documentation-conformance.html#must-support) to interpret element support, [terminology](terminology.html) for coding and value-set requirements, and [validation](methodology.html#validate-step) to test the actual mappings.
+Use [Must Support](documentation-conformance.html#must-support) to interpret element support, [terminology](terminology.html) for coding and value-set requirements, and [validation](methodology-validate.html#validate-step) to test the actual mappings.

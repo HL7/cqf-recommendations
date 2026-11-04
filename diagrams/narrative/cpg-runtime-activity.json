@@ -1,8 +1,8 @@
 {
-  "title": "From activity definition to recorded care",
-  "description": "A definition is applied to propose an activity. Acceptance produces a plan, authorization an order, and fulfillment an event. These are conceptual phases with separate resource states.",
+  "title": "Activity Flow from definition to event",
+  "description": "Applying a definition can yield a proposal. Acceptance and authorization are separate decisions. A plan may express an accepted intention and an order authorizes work. The clinical event records what occurred or was explicitly not done. Orders and events can originate independently in local care.",
   "width": 1000,
-  "height": 560,
+  "height": 570,
   "nodes": [
     {
       "id": "definition",
@@ -11,7 +11,10 @@
       "w": 270,
       "h": 130,
       "label": "Definition",
-      "body": "Reusable activity specification",
+      "body": [
+        "Reusable description",
+        "of the activity"
+      ],
       "kind": "knowledge"
     },
     {
@@ -21,7 +24,10 @@
       "w": 270,
       "h": 130,
       "label": "Proposal",
-      "body": "Suggested patient activity",
+      "body": [
+        "Suggestion for this patient",
+        "when guidance applies"
+      ],
       "kind": "logic"
     },
     {
@@ -30,28 +36,37 @@
       "y": 110,
       "w": 270,
       "h": 130,
-      "label": "Plan",
-      "body": "Accepted intention",
+      "label": "Plan intent",
+      "body": [
+        "Intention for this patient",
+        "if a proposal is accepted"
+      ],
       "kind": "workflow"
     },
     {
       "id": "event",
       "x": 365,
-      "y": 340,
+      "y": 305,
       "w": 270,
       "h": 130,
       "label": "Event",
-      "body": "Performance or non-performance",
+      "body": [
+        "Underway, performed or",
+        "explicitly not done"
+      ],
       "kind": "result"
     },
     {
       "id": "order",
       "x": 700,
-      "y": 340,
+      "y": 305,
       "w": 270,
       "h": 130,
       "label": "Order",
-      "body": "Authorized request",
+      "body": [
+        "Request to perform or avoid",
+        "the activity if authorized"
+      ],
       "kind": "workflow"
     }
   ],
@@ -66,33 +81,46 @@
       "from": "proposal",
       "to": "plan",
       "fromPort": "right",
-      "toPort": "left"
+      "toPort": "left",
+      "dashed": true
     },
     {
       "from": "plan",
       "to": "order",
       "fromPort": "bottom",
-      "toPort": "top"
+      "toPort": "top",
+      "dashed": true
     },
     {
       "from": "order",
       "to": "event",
       "fromPort": "left",
-      "toPort": "right"
+      "toPort": "right",
+      "dashed": true
     }
   ],
   "notes": [
     {
       "x": 28,
-      "y": 510,
+      "y": 478,
       "w": 944,
-      "text": "Intent, request status, Task status, and event status have different meanings."
+      "text": "Dashed arrows show conditional steps. Acceptance and authorization are separate decisions.",
+      "size": 16
     },
     {
       "x": 28,
-      "y": 540,
+      "y": 511,
       "w": 944,
-      "text": "Intermediate phases can be omitted only with the appropriate authority."
+      "text": "Local care can initiate orders directly and record events without a preceding request.",
+      "size": 16
+    },
+    {
+      "x": 28,
+      "y": 544,
+      "w": 944,
+      "text": "Track request intent and status, Task progress, and event status separately.",
+      "size": 16
     }
-  ]
+  ],
+  "subtitle": "One possible route when each phase applies"
 }

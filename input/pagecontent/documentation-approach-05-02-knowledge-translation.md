@@ -27,4 +27,4 @@ WHO DAK terminology work found inexact matches and composite concepts that neede
 
 Walk through the same cases using the recommendation text, data dictionary, decision description, and workflow. Resolve discrepancies before authoring, or record a bounded unresolved item and prevent unsupported use. If local practice differs from the source, record it as an adaptation with its own approval and version implications.
 
-Continue to [knowledge representation](documentation-approach-05-03-knowledge-representation.html). The [Represent step](methodology.html#represent-step) contains the recipe and retained worked data-dictionary example.
+Continue to [knowledge representation](documentation-approach-05-03-knowledge-representation.html). The [Represent step](methodology-represent.html#represent-step) contains the recipe and retained worked data-dictionary example.

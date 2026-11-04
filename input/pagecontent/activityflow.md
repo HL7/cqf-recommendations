@@ -9,10 +9,10 @@ Clinical teams also place orders and document care independently of guideline ev
 Use this topic to connect a reusable activity definition to the requests and events produced for a patient. It follows the [FHIR R4 workflow patterns](https://hl7.org/fhir/R4/workflow.html), with concrete profiles supplied by this guide.
 
 <div>
-  <img src="cpg-runtime-activity.svg" alt="Definition leads to a proposal, acceptance to a plan, authorization to an order, and fulfillment to an event. These phases have separate status and authority." class="img-responsive" width="1000"/>
+  <img src="cpg-runtime-activity.svg" alt="One possible route connects an activity definition, proposal, plan intent, authorized order, and event. Acceptance and authorization are separate. Local care can initiate orders or record events independently." class="img-responsive" width="1000"/>
 </div>
 
-*Figure 1. Conceptual activity phases. Proposal, plan, and order are request intents; the event records care or explicit non-performance. Exact states and transitions depend on the resource type.*
+*Figure 1. One route through Activity Flow. Proposal, plan, and order are request intents. An event can record ongoing care, completed care, or explicit non-performance. The implementation applies the states and transitions supported by the resource type.*
 
 | Phase | Meaning | Boundary to preserve |
 | --- | --- | --- |
@@ -29,63 +29,21 @@ A request's `intent`, its `status`, and the status of a fulfillment Task answer 
 
 ### Activity Flow State Transition Capabilities
 
-The following capabilities describe application behavior at the **pattern level**. They are not additional FHIR operations defined by this IG. Map each behavior to the actual resource's elements and allowed codes, and apply the local authorization and persistence rules.
+[Activity Flow Transitions](activityflow-transitions.html) describes application behavior for requests and events. The page distinguishes preparation from commitment and explains how each transition depends on the resource and the actor's authority.
 
-For transitions that create a new resource, separate preparation from commitment. Preparation constructs a candidate for review. At commitment, re-read the source, check its current state and the actor's authority, assign the new resource's identity, and preserve the relationship to its source. Persist related changes consistently. A preview created earlier may no longer describe the current patient or request.
-
-#### Update
-
-Update an incomplete or active request, or an event that can still be amended under its resource-specific rules. Moving a request from draft to active indicates it is ready for the next workflow step, not that the activity was performed.
-
-#### Suspend
-
-Pause an active request or an in-progress activity where the resource supports an on-hold state. Record the reason in the applicable element. Do not invent an on-hold code for a resource that has none.
-
-#### Resume
-
-Return a paused request or event to its applicable active/in-progress state after checking that resumption is appropriate. Update the current reason while retaining the history of why it was paused.
-
-#### Plan
-
-Prepare a new plan-intent request from an active proposal and link it to that proposal, typically using `basedOn`. Before saving the plan, verify that the proposal remains active and the prepared request has the intended draft or active state. The same distinction applies to a plan not to perform an activity.
-
-#### Revoke
-
-Withdraw a request that is no longer applicable, generally by the originating actor. Use the resource-specific state and reason for withdrawal. This is different from a receiving actor rejecting its fulfillment.
-
-#### Reject
-
-Record refusal to fulfill a request using the appropriate Task. In the pattern described here, the Task is requested, its `focus` identifies the active request, and its fulfillment code describes the task; rejection changes the Task to `rejected` and can record a reason. Rejection does not mean the requested activity happened.
-
-#### Order
-
-Prepare a new order-intent request from an active proposal or plan, preserving the source link. At commitment, verify the source and prepared states and the authority to order. In this pattern, mark the source proposal or plan completed as the authorized order replaces it, using the resource-specific completion state. Record the new order and source-state change together. Ordering an activity not to be performed retains that negative intent.
-
-#### Entered In Error
-
-Mark a record as entered in error when the record itself should not be treated as valid. This is different from a valid request being revoked or a valid event being stopped. Use the resource's actual error/correction semantics and retain traceability to related records.
-
-#### Perform
-
-Prepare the appropriate event from an active request and link it to the request where the resource supports that relationship. Recheck the source before saving the event. Complete the request only when its overall fulfillment is complete: an initial dispense does not complete an order with remaining refills.
-
-A request not to perform an activity normally does not produce a performance event. Where the record explicitly documents non-performance, use the resource-specific representation and reason.
-
-#### Start
-
-Move a prepared event to in-progress when work begins, if those states exist for the event type.
-
-#### Not Done
-
-Record that the activity was not performed, using the resource-specific status and reason. Absence of an event is not the same as an explicit not-done record.
-
-#### Stop
-
-Record that an activity ended before completion. Choose the actual event code and preserve its reason and source relationships.
-
-#### Complete
-
-Record completed performance using the event's actual status vocabulary. Evaluate separately whether the originating request is fully satisfied.
+- <a id="update"></a>[Update](activityflow-transitions.html#update)
+- <a id="suspend"></a>[Suspend](activityflow-transitions.html#suspend)
+- <a id="resume"></a>[Resume](activityflow-transitions.html#resume)
+- <a id="plan"></a>[Plan](activityflow-transitions.html#plan)
+- <a id="revoke"></a>[Revoke](activityflow-transitions.html#revoke)
+- <a id="reject"></a>[Reject](activityflow-transitions.html#reject)
+- <a id="order"></a>[Order](activityflow-transitions.html#order)
+- <a id="entered-in-error"></a>[Entered In Error](activityflow-transitions.html#entered-in-error)
+- <a id="perform"></a>[Perform](activityflow-transitions.html#perform)
+- <a id="start"></a>[Start](activityflow-transitions.html#start)
+- <a id="not-done"></a>[Not Done](activityflow-transitions.html#not-done)
+- <a id="stop"></a>[Stop](activityflow-transitions.html#stop)
+- <a id="complete"></a>[Complete](activityflow-transitions.html#complete)
 
 ### Activity Lifecycle - Request Phases (Proposal, Plan, Order)
 

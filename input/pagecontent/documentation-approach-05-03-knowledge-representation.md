@@ -4,7 +4,7 @@ Author the formal artifacts from a reviewed decision specification. The [Knowled
 
 Map concepts to appropriate patient-data profiles; decisions to Library/CQL expressions and PlanDefinition conditions; activities to ActivityDefinition; and recommendation, strategy, and pathway definitions to their exact CPG profiles. A conceptual CPGPlan is not a FHIR resource type. Patient-specific requests and events remain separate from these definitions.
 
-Use the [Translate step](methodology.html#translate-step), [Profiles](profiles.html), [Terminology](terminology.html), and [Libraries](libraries.html) for the owning technical requirements.
+Use the [Translate step](methodology-translate.html#translate-step), [Profiles](profiles.html), [Terminology](terminology.html), and [Libraries](libraries.html) for the owning technical requirements.
 
 ### Knowledge Curation
 

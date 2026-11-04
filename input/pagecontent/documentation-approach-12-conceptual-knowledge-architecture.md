@@ -3,7 +3,7 @@ Use this model to decide where a piece of guideline content belongs before selec
 ### Separation of Concerns
 
 <div style="clear: both;">
-  <img src="cpg-model-boundaries.svg" alt="Patient information informs guideline evaluation; proposed care is delivered through local workflow, which produces new patient information" class="img-responsive" width="1000"/>
+  <img src="cpg-model-boundaries.svg" alt="Case describes the patient. The reusable Plan uses Case information to propose care. Local Workflow reviews, authorizes, and documents care for later evaluation." class="img-responsive" width="1000"/>
 </div>
 
 *Conceptual boundaries. Original illustration for this guide; arrows show information use and feedback, not automatic authorization or execution.*

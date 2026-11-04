@@ -47,7 +47,7 @@ These links identify the responsibilities of related specifications. Implementat
 
 The goals are to preserve guideline intent, reduce repeated translation work, make implementation decisions reviewable, and support reuse of computable knowledge. The same artifacts can help connect guidance, care delivery, and evaluation when the local implementation establishes those connections.
 
-Published implementation experience shows that shared content still requires local mapping, vendor integration, staffing, and maintenance. General CDS research reports variable effects across settings and interventions. A valid artifact, a working service, clinician use, and improved patient outcomes are different results to evaluate. See [CDS Connect implementation lessons](https://pmc.ncbi.nlm.nih.gov/articles/PMC10371399/) and the [CDS evidence review](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html#cds-implementation-evidence).
+Published implementation experience shows that shared content still requires local mapping, vendor integration, staffing, and maintenance. General CDS research reports variable effects across settings and interventions. A valid artifact, a working service, clinician use, and improved patient outcomes are different results to evaluate. See [CDS Connect implementation lessons](https://pmc.ncbi.nlm.nih.gov/articles/PMC10371399/) and the [CDS evidence review](documentation-approach-cds-implementation-evidence.html).
 
 ### Audience
 
@@ -69,7 +69,7 @@ This guide builds on work on layered knowledge representation, the CDC's integra
 
 ### References
 
-Use the [evidence and further reading](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html#cds-implementation-evidence) topic for public CDS literature, including PubMed/PMC papers on effectiveness, workflow, alert burden, operational failures, and standards-based implementations. The [methodology](methodology.html) connects those lessons to authoring and validation work.
+Use the [evidence and further reading](documentation-approach-cds-implementation-evidence.html) topic for public CDS literature, including PubMed/PMC papers on effectiveness, workflow, alert burden, operational failures, and standards-based implementations. The [methodology](methodology.html) connects those lessons to authoring and validation work.
 
 ### Acknowledgements
 

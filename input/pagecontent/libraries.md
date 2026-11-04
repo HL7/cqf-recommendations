@@ -27,4 +27,4 @@ Resolve the library and its included libraries, model information, terminology d
 
 Test the source and executable representation together with positive, negative, boundary, temporal, and missing-data cases. If translating logic to another language, compare results for the supported constructs. Keep the test inputs and expected results with the content's version history so that dependency changes can be assessed.
 
-Continue to [methodology](methodology.html#translate-step) for authoring, [execution methods](documentation-approach-09-methods-of-implementation.html) for runtime choices, and the [example libraries](examples.html#example-library) for resources already supplied by this guide.
+Continue to [methodology](methodology-translate.html#translate-step) for authoring, [execution methods](documentation-approach-09-methods-of-implementation.html) for runtime choices, and the [example libraries](examples.html#example-library) for resources already supplied by this guide.

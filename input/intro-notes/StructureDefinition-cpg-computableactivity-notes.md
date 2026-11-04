@@ -4,4 +4,4 @@
 - Each included `dynamicValue` has a path and expression. Review the target element and the expression result together when producing a request.
 - Use the activity-specific profile when its constraints apply; generating a request does not authorize or fulfill it.
 
-Related guidance: [Activity definitions and requests](methodology.html#activities-1); [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html).
+Related guidance: [Activity definitions and requests](methodology-translate.html#activities-1); [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html).

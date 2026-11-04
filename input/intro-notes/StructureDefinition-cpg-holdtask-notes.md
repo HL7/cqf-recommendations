@@ -6,4 +6,4 @@
 
 - When carrying out the recommendation, pause the focused activity using its resource-specific allowed states and authority. Some permitted focus types have no on-hold state; the reference constraint does not create one.
 
-Related: [activity definition](StructureDefinition-cpg-holdactivity.html); [common Task profile](StructureDefinition-cpg-task.html); [Activity Flow](activityflow.html#suspend).
+Related: [activity definition](StructureDefinition-cpg-holdactivity.html); [common Task profile](StructureDefinition-cpg-task.html); [Activity Flow](activityflow-transitions.html#suspend).

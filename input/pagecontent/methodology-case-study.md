@@ -40,7 +40,7 @@ The historical tool combined an initial clinical assessment with subsequent diag
 
 #### Structuring and Making Explicit Content from Guideline Development Process
 
-Subject-matter knowledge engineers attended clinical discussions and captured information in a structured template: recommendation narrative; PICOTS; rationale and evidence; data and clinical concepts; decision/orchestration logic; interventions; workflow; candidate metrics; and clinical cases/user stories. The source account says the team elected **not to use recommendation-strength and evidence-quality ratings** for this emergency guidance. That historical choice is not an exemption from this IG's current [rating requirements](methodology.html#guideline-supporting-information).
+Subject-matter knowledge engineers attended clinical discussions and captured information in a structured template: recommendation narrative; PICOTS; rationale and evidence; data and clinical concepts; decision/orchestration logic; interventions; workflow; candidate metrics; and clinical cases/user stories. The source account says the team elected **not to use recommendation-strength and evidence-quality ratings** for this emergency guidance. That historical choice is not an exemption from this IG's current [rating requirements](methodology-select.html#guideline-supporting-information).
 
 Some candidate concepts were collected for potential registry/research feedback even when not required by the recommendation logic. Required decision inputs and potential secondary-use data therefore needed separate scope and justification.
 

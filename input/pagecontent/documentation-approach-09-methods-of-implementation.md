@@ -19,7 +19,7 @@ There are three ways to move from a computable representation (L3) to a locally 
 
 #### Manual
 
-A local developer can use L3 artifacts and their documentation as precise requirements, even when the target system cannot load them. Record the relationship between source expressions and local rules so that later changes can be assessed. Reimplementation still requires the [translation and validation work](methodology.html#validate-step) needed to preserve clinical intent.
+A local developer can use L3 artifacts and their documentation as precise requirements, even when the target system cannot load them. Record the relationship between source expressions and local rules so that later changes can be assessed. Reimplementation still requires the [translation and validation work](methodology-validate.html#validate-step) needed to preserve clinical intent.
 
 #### Automatic
 

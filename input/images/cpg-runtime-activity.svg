@@ -1,28 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title description">
-<title id="title">From activity definition to recorded care</title><desc id="description">A definition is applied to propose an activity. Acceptance produces a plan, authorization an order, and fulfillment an event. These are conceptual phases with separate resource states.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title description">
+<title id="title">Activity Flow from definition to event</title><desc id="description">Applying a definition can yield a proposal. Acceptance and authorization are separate decisions. A plan may express an accepted intention and an order authorizes work. The clinical event records what occurred or was explicitly not done. Orders and events can originate independently in local care.</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
 <rect width="100%" height="100%" fill="#fff"/>
 <g font-family="Arial, Helvetica, sans-serif">
-<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">From activity definition to recorded care</tspan></text>
+<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Activity Flow from definition to event</tspan></text>
+<text x="28" y="65" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">One possible route when each phase applies</tspan></text>
 <polyline points="300,175.0 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="635,175.0 700,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="835.0,240 835.0,340" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="700,405.0 635,405.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="635,175.0 700,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<polyline points="835.0,240 835.0,305" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<polyline points="700,370.0 635,370.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
 <rect x="30" y="110" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
 <text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Definition</tspan></text>
-<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Reusable activity</tspan><tspan x="165.0" dy="21.6">specification</tspan></text>
+<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Reusable description</tspan><tspan x="165.0" dy="21.6">of the activity</tspan></text>
 <rect x="365" y="110" width="270" height="130" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
 <text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Proposal</tspan></text>
-<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Suggested patient activity</tspan></text>
+<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Suggestion for this patient</tspan><tspan x="500.0" dy="21.6">when guidance applies</tspan></text>
 <rect x="700" y="110" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Plan</tspan></text>
-<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Accepted intention</tspan></text>
-<rect x="365" y="340" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
-<text x="500.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Event</tspan></text>
-<text x="500.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Performance or non-</tspan><tspan x="500.0" dy="21.6">performance</tspan></text>
-<rect x="700" y="340" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="835.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Order</tspan></text>
-<text x="835.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Authorized request</tspan></text>
-<text x="28" y="510" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Intent, request status, Task status, and event status have different meanings.</tspan></text>
-<text x="28" y="540" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Intermediate phases can be omitted only with the appropriate authority.</tspan></text>
+<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Plan intent</tspan></text>
+<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Intention for this patient</tspan><tspan x="835.0" dy="21.6">if a proposal is accepted</tspan></text>
+<rect x="365" y="305" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="500.0" y="333" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Event</tspan></text>
+<text x="500.0" y="366.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Underway, performed or</tspan><tspan x="500.0" dy="21.6">explicitly not done</tspan></text>
+<rect x="700" y="305" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="835.0" y="333" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Order</tspan></text>
+<text x="835.0" y="366.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Request to perform or avoid</tspan><tspan x="835.0" dy="21.6">the activity if authorized</tspan></text>
+<text x="28" y="478" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Dashed arrows show conditional steps. Acceptance and authorization are separate decisions.</tspan></text>
+<text x="28" y="511" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Local care can initiate orders directly and record events without a preceding request.</tspan></text>
+<text x="28" y="544" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Track request intent and status, Task progress, and event status separately.</tspan></text>
 </g></svg>

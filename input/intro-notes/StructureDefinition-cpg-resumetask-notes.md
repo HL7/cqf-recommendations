@@ -6,4 +6,4 @@
 
 - When carrying out the recommendation, resume the focused activity using its resource-specific allowed states and authority. Confirm that the focused activity can resume; the reference constraint does not guarantee a reversible paused state.
 
-Related: [activity definition](StructureDefinition-cpg-resumeactivity.html); [common Task profile](StructureDefinition-cpg-task.html); [Activity Flow](activityflow.html#resume).
+Related: [activity definition](StructureDefinition-cpg-resumeactivity.html); [common Task profile](StructureDefinition-cpg-task.html); [Activity Flow](activityflow-transitions.html#resume).

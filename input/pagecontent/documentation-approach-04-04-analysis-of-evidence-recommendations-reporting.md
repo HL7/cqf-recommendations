@@ -10,7 +10,7 @@ Record the source/version, clinical question, population, intervention/comparato
 
 FHIR R4 includes [Evidence](https://hl7.org/fhir/R4/evidence.html) and [EvidenceVariable](https://hl7.org/fhir/R4/evidencevariable.html) resources for evidence-related representation. This CPG IG does not require a complete computable evidence-synthesis dataset or define an automatic transformation from study results into recommendations. Check the version-specific evidence specifications when exchanging such content; later FHIR releases have different models.
 
-For this guide's recommendation definitions, supporting citations use `relatedArtifact`, and rating extensions communicate recommendation strength, evidence quality, and optionally direction. See the exact requirements in [Methodology: supporting information](methodology.html#guideline-supporting-information). [CPGComputablePlanDefinition](StructureDefinition-cpg-computableplandefinition.html) places the rating extensions on `PlanDefinition.action`; the underlying profile does not replace the narrative obligation to provide the required information.
+For this guide's recommendation definitions, supporting citations use `relatedArtifact`, and rating extensions communicate recommendation strength, evidence quality, and optionally direction. See the exact requirements in [Methodology: supporting information](methodology-select.html#guideline-supporting-information). [CPGComputablePlanDefinition](StructureDefinition-cpg-computableplandefinition.html) places the rating extensions on `PlanDefinition.action`; the underlying profile does not replace the narrative obligation to provide the required information.
 
 ### Recommendations
 
@@ -30,4 +30,4 @@ The [GRADE Working Group](https://www.gradeworkinggroup.org/) describes certaint
 
 Publish the narrative recommendation, evidence/rationale, rating method, computable artifacts, review record, and known limits together or through stable links. Identify intended audiences, distribution targets, update responsibility, and how implementors can report problems.
 
-The output is a traceable handoff to [co-development and artifact authoring](documentation-approach-04-05-computable-guideline-artifacts.html). Technical publication alone does not establish uptake or patient benefit; see the [CDS implementation evidence](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html#cds-implementation-evidence).
+The output is a traceable handoff to [co-development and artifact authoring](documentation-approach-04-05-computable-guideline-artifacts.html). Technical publication alone does not establish uptake or patient benefit; see the [CDS implementation evidence](documentation-approach-cds-implementation-evidence.html).

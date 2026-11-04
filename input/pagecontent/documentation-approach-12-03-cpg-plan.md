@@ -24,7 +24,7 @@ For each recommendation, identify the trigger or invocation, data requirements, 
 
 #### Directionality and Strength of a Recommendation
 
-Preserve the source guideline's direction and strength. Direction describes whether care is recommended for or against; strength qualifies the recommendation. These are not the request's authorization or completion state. The [methodology's supporting-information requirements](methodology.html#guideline-supporting-information) specify the extensions and documentation used to communicate the chosen rating system.
+Preserve the source guideline's direction and strength. Direction describes whether care is recommended for or against; strength qualifies the recommendation. These are not the request's authorization or completion state. The [methodology's supporting-information requirements](methodology-select.html#guideline-supporting-information) specify the extensions and documentation used to communicate the chosen rating system.
 
 #### Quality of Evidence and Evidence for Recommendations
 

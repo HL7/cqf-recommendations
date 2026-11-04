@@ -73,4 +73,4 @@ Feature-level conformance declarations and testing remain under development. Thi
 | Workflow and outcome evaluation | Can intended users act on the guidance, and what effects or burdens result? | Usability findings, usage/appropriateness review, and relevant outcome measures |
 {:.grid}
 
-These checks answer different questions. Validator success does not establish clinical correctness, and a successful service call does not establish clinical benefit. The [methodology](methodology.html#validate-step), [checklists](checklists.html), and [CDS evidence topic](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html#cds-implementation-evidence) explain the broader review work.
+These checks answer different questions. Validator success does not establish clinical correctness, and a successful service call does not establish clinical benefit. The [methodology](methodology-validate.html#validate-step), [checklists](checklists.html), and [CDS evidence topic](documentation-approach-cds-implementation-evidence.html) explain the broader review work.

@@ -1,7 +1,7 @@
 {
-  "height": 395,
-  "title": "Separate patient state, guidance and delivery",
-  "description": "Patient information is evaluated with guideline knowledge to propose care. Local workflow reviews and delivers care, producing new patient information.",
+  "height": 409,
+  "title": "Case, Plan and Workflow",
+  "description": "Case Features describe the patient. Evaluation applies the reusable Plan to those features. The local Workflow reviews proposals, authorizes and delivers care, and documents what happened for later evaluation.",
   "nodes": [
     {
       "id": "case",
@@ -10,11 +10,11 @@
       "w": 284,
       "h": 170,
       "kind": "knowledge",
-      "label": "Patient information",
+      "label": "Case",
       "body": [
-        "Recorded facts",
-        "Clinical assessments",
-        "Derived features"
+        "Patient information",
+        "Records and assessments",
+        "Inferred Case Features"
       ]
     },
     {
@@ -24,11 +24,11 @@
       "w": 284,
       "h": 170,
       "kind": "logic",
-      "label": "Guideline evaluation",
+      "label": "Plan",
       "body": [
-        "Reusable definitions",
-        "Applicability logic",
-        "Proposed patient care"
+        "Reusable clinical guidance",
+        "Recommendations",
+        "Strategies and pathways"
       ]
     },
     {
@@ -38,10 +38,10 @@
       "w": 284,
       "h": 170,
       "kind": "workflow",
-      "label": "Local workflow",
+      "label": "Workflow",
       "body": [
         "Review and authorize",
-        "Deliver and document",
+        "Deliver and document care",
         "Track responsibility"
       ]
     }
@@ -78,7 +78,14 @@
       "x": 32,
       "y": 350,
       "w": 936,
-      "text": "Solid arrows: information used for care. Dashed return: documented care informs later evaluation.",
+      "text": "Evaluate the Plan using Case Features. The local Workflow reviews any resulting proposals.",
+      "size": 16
+    },
+    {
+      "x": 32,
+      "y": 378,
+      "w": 936,
+      "text": "The dashed arrow shows how documented care can inform a later evaluation.",
       "size": 16
     }
   ]

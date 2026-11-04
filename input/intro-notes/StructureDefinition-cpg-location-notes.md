@@ -4,4 +4,4 @@
 - The managing organization, when present, references CPGOrganization. Other permitted Location information continues to describe the actual site.
 - Mapping a guideline setting to a local location is an implementation decision, not an implication of matching display text.
 
-Related guidance: [CPGLocationDefinition](StructureDefinition-cpg-locationdefinition.html); [CPGEncounter](StructureDefinition-cpg-encounter.html); [settings](methodology.html#settings).
+Related guidance: [CPGLocationDefinition](StructureDefinition-cpg-locationdefinition.html); [CPGEncounter](StructureDefinition-cpg-encounter.html); [settings](methodology-select.html#settings).

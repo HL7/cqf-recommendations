@@ -6,4 +6,4 @@
 
 - When carrying out the recommendation, stop the focused activity using its resource-specific allowed states and authority. Stopping is distinct from rejecting the control Task or marking the original record entered in error.
 
-Related: [activity definition](StructureDefinition-cpg-stopactivity.html); [common Task profile](StructureDefinition-cpg-task.html); [Activity Flow](activityflow.html#stop).
+Related: [activity definition](StructureDefinition-cpg-stopactivity.html); [common Task profile](StructureDefinition-cpg-task.html); [Activity Flow](activityflow-transitions.html#stop).

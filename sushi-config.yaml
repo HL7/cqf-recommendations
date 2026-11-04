@@ -79,6 +79,8 @@ pages:
         title: Guideline Development Frameworks
       documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md:
         title: 6S Evidence Pyramid and Learning Health Systems
+        documentation-approach-cds-implementation-evidence.md:
+          title: CDS Implementation Evidence
       documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md:
         title: Analysis of Evidence, Recommendations, and Reporting
       documentation-approach-04-05-computable-guideline-artifacts.md:
@@ -115,6 +117,8 @@ pages:
         title: Methods of Implementation
         activityflow.md:
           title: Activity Flow
+          activityflow-transitions.md:
+            title: Activity Flow Transitions
         documentation-careplanning.md:
           title: Evidence-Based Care Planning
         interactive-cds.md:
@@ -126,6 +130,14 @@ pages:
       documentation-conformance.md:
         title: Conformance
   methodology.md:
+    methodology-select.md:
+      title: Select
+    methodology-represent.md:
+      title: Represent
+    methodology-translate.md:
+      title: Translate
+    methodology-validate.md:
+      title: Validate
   profiles.md:
     title: Profile Definitions and Documentation
   terminology.md:

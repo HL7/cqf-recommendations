@@ -22,6 +22,6 @@ A guideline can support several capabilities at once, and a local implementation
 
 Record which capabilities are supported, which data and artifact versions they use, how they are delivered, and which local behavior remains outside the implementation. Include the tests and reviews used to assess each capability. For example, rendering a CDS Hooks card is different from accepting its suggested action, and neither establishes that the action was completed.
 
-General CDS evidence supports evaluating workflow fit and actionable support; it does not prescribe one universal delivery method. See the [CDS evidence topic](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html#cds-implementation-evidence).
+General CDS evidence supports evaluating workflow fit and actionable support; it does not prescribe one universal delivery method. See the [CDS evidence topic](documentation-approach-cds-implementation-evidence.html).
 
 Continue with [execution choices](documentation-approach-09-methods-of-implementation.html), [integration choices](documentation-approach-10-mechanisms-of-integration.html), and the [L4 checklist](clinical-guidelines-development-L4-checklist.html). Keep enablement choices distinct from representation levels, functional tiers, and the formal profiles against which conformance is assessed.
