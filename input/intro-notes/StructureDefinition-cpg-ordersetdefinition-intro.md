@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGOrderSetDefinition organizes selectable activities as a reusable order-set specification. Use it when a recommendation refers to a set of potential orders and their selection behavior. It is a PlanDefinition derived from the common computable-plan profile; it is not an already authorized set of patient orders.

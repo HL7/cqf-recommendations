@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to propose producing a patient-context report from a selected definition. It can request a metric, a graph-based summary or an instance defined by a case-feature profile. The selected definition determines how to interpret the optional report output; the Task is not the report itself.

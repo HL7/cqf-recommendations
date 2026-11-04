@@ -1,3 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
-
-NOTE: This profile is \_abstract\_ in the sense that instances are not \_only\_ this profile; it represents the common expectations for all the task profiles.
+Use this base Task profile for patient-specific work proposed or tracked in the context of a computable guideline. Specialized CPG Task profiles add the particular activity code and input, output or focus constraints. Task intent and execution status describe the work; linked requests and clinical events keep their own lifecycles.

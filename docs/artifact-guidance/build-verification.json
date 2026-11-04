@@ -1,0 +1,39 @@
+{
+  "created_at": "2026-10-28T16:44:30.660838+00:00",
+  "baseline": "/var/folders/w_/1kxcn0r925ng0ml6mwd78z5m0000gp/T/cpg-narrative-final-reviewed-5xdtazmp",
+  "candidate": "/var/folders/w_/1kxcn0r925ng0ml6mwd78z5m0000gp/T/cpg-artifact-guidance-final-q39e3nrb",
+  "scope": "All copied source files except docs/; excludes generated build/cache directories and .git",
+  "digest": "05ffb0ede4baee6ab7acd98ddaa5439a9c5112909f60c4c5b46520cb8a938344",
+  "source_files": 1163,
+  "workspace_source_changes": [],
+  "build_runtime_changes": [
+    "FHIR-cpg.xml"
+  ],
+  "runtime_changed_files_match_baseline_build": {
+    "FHIR-cpg.xml": true
+  },
+  "publisher_jar_sha256": "60f8bb09a2da292d9b5979d8908a47353b65090a57d385ca8390e209ebc09f0c",
+  "sushi_generated_resource_comparison": {
+    "baseline_count": 575,
+    "candidate_count": 575,
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "runtime_versions": {
+    "java": "17.0.6",
+    "publisher": "2.3.1",
+    "sushi": "3.19.0",
+    "jekyll": "4.3.3",
+    "node": "25.6.0",
+    "ruby": "3.2.0"
+  },
+  "command": "java -Xmx5g -jar input-cache/publisher.jar -ig .",
+  "runtime_note": "Explicit ASDF Java/Node/Ruby versions supplied to the subprocess because the isolated /var build directory does not inherit versions from /Users/bkaney/.tool-versions. No source/configuration change was needed.",
+  "ordered_template_slots": {
+    "checked": 87,
+    "failures": []
+  },
+  "publisher_exit_code": 0,
+  "publisher_elapsed": "00:06:00.290"
+}

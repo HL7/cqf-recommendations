@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="title description">
+<title id="title">Collect information and reevaluate</title><desc id="description">Current data feeds CPG apply. The user reviews proposals and questions. Changed answers are extracted and reconciled into updated context for reevaluation; selected proposals enter the action workflow.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Collect information and reevaluate</tspan></text>
+<polyline points="300,180.0 365,180.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="635,180.0 700,180.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="835.0,250 835.0,350" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="835.0,250 835,290 500,290 500.0,350" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="535.0" y="265" width="130" height="23" fill="#fff"/>
+<text x="600" y="282" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="600" dy="0">answers changed</tspan></text>
+<polyline points="365,415.0 165,415 165.0,250" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="30" y="110" width="270" height="140" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Patient context</tspan></text>
+<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Available data and</tspan><tspan x="165.0" dy="21.6">parameters</tspan></text>
+<rect x="365" y="110" width="270" height="140" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Evaluate and prepare</tspan></text>
+<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">CPG $apply / $questionnaire</tspan><tspan x="500.0" dy="21.6">SDC $populate</tspan></text>
+<rect x="700" y="110" width="270" height="140" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Review and confirm</tspan></text>
+<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Questions, answers,</tspan><tspan x="835.0" dy="21.6">proposals</tspan></text>
+<rect x="365" y="350" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="500.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Extract and reconcile</tspan></text>
+<text x="500.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Validate changed answers</tspan></text>
+<rect x="700" y="350" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="835.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Selected proposals</tspan></text>
+<text x="835.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Continue the action</tspan><tspan x="835.0" dy="21.6">workflow</tspan></text>
+<text x="28" y="525" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Changed answers return through extraction and context reconciliation before reevaluation.</tspan></text>
+<text x="28" y="552" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Generation, extraction, persistence, and clinical action remain separate responsibilities.</tspan></text>
+</g></svg>

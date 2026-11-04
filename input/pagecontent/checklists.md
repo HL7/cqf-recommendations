@@ -1,9 +1,9 @@
-The following checklists can be used to assess content at various stages of the translation from L1 to L4.
+Choose a checklist by the work product under review: L1 covers narrative guidance; L2 records the content and decisions needed for computable translation; L3 reviews computable content prepared for implementation; L4 covers local adoption and use. Carry unresolved decisions forward as work moves between these levels. The checklists support planning and review; they do not by themselves establish conformance or clinical validity.
 
 |Checklist|Description|
 |--------------|----|
-|[L1 Checklist](clinical-guidelines-development-L1-checklist.html)|Used as a tool to help guideline developers develop L1 in clearer, consistent, and more structured approach|
-|[L2 Checklist](clinical-guidelines-development-L2-checklist.html)|Used to ensure that informaticists and knowledge engineers have what they need from L1 content in order to successfully produce L3 content|
-|[L3 Checklist](clinical-guidelines-development-L3-checklist.html)|Used to ensure that L3 content meets the requirements to ensure that implementers have what they need in order to successfully implement computable content in a specific setting|
-|[L4 Checklist](clinical-guidelines-development-L4-checklist.html)|Used by implementers to help support the process of implementing in a specific setting, helping to ensure successful and faithful implementation of guideline content|
+|[L1 Checklist](clinical-guidelines-development-L1-checklist.html)|Structure narrative recommendations and supporting evidence and metadata for later translation|
+|[L2 Checklist](clinical-guidelines-development-L2-checklist.html)|Capture recommendation context and decisions needed to express computable content|
+|[L3 Checklist](clinical-guidelines-development-L3-checklist.html)|Review computable artifacts, documentation, and test information for local implementers|
+|[L4 Checklist](clinical-guidelines-development-L4-checklist.html)|Plan local feasibility, workflow design, build, testing, training, deployment, and evaluation|
 {:.grid}

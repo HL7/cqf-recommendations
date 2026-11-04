@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to propose enrollment or unenrollment in a patient’s pathway or strategy. Its canonical input identifies the reusable computable plan; an optional case output identifies the patient’s EpisodeOfCare-based enrollment record. The Task’s existence or completion does not itself supply that enrollment record’s lifecycle state.

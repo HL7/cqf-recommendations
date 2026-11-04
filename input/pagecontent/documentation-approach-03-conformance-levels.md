@@ -1,36 +1,27 @@
-This section discusses trade-offs between effort, time to develop, and capabilities enabled (and value that can be derived) when developing a CPG. From very basic context for narrative snippets searchable in a library (or Infobutton from EHR) to full clinical workflow enablement, cognitive support, and pathway tracking (likely via SMART-on-FHIR App or deep EHR integration). CPGs also enable feedback loops with real-world evidence of actual guideline usage and outcomes, and provide a substrate for the evidence ecosystem and a feedforward loop for evidence updates. To support description of, and allow declaration of conformance to, these various capabilities enabled by CPGs, the CPG-IG defines levels of enablement that correlate to work effort, time to delivery, and capabilities enabled.
+Use this topic to choose the clinical capabilities an implementation will deliver. Start with the people, decisions, and workflow being supported; select the data, logic, and integration needed for those capabilities.
 
 ### Levels of Enablement
 
-Levels of enablement are successively more feature-rich implementations of the capabilities and features described by this implementation guide, specifically as related to:
+The guide uses *levels of enablement* to describe increasingly extensive implementation capabilities. They are a planning vocabulary. Feature-level conformance and its validation remain under development, as described in [Conformance](documentation-conformance.html#conformance-testing).
 
-*   CPG features and capabilities implemented
-*   Intended delivery and dissemination mechanisms
-*   [Levels of knowledge representation](documentation-approach-06-01-levels-of-knowledge-representation.html) formalized across CPG features (as described in the [CPG knowledge architecture](documentation-approach-12-conceptual-knowledge-architecture.html))
-*   [Tiers of functionality](documentation-approach-07-tiers-of-functionality.html)
-*   [Methods of implementation](documentation-approach-09-methods-of-implementation.html)
-*   [Mechanisms of integration](documentation-approach-10-mechanisms-of-integration.html)
+| Capability | What the user receives | Implementation work to plan |
+| --- | --- | --- |
+| Searchable contextual narrative | Relevant guideline text found in a library or search | Content indexing, source and version visibility |
+| Narrative delivered in context | Guidance at an appropriate workflow point | Context matching and a delivery mechanism |
+| Narrative with patient information | Guidance alongside a patient summary | Data retrieval, mapping, and presentation |
+| Actionable intervention | A proposed activity the user can consider | Logic execution, supporting information, acceptance and authorization workflow |
+| Actionable summary view | Data, recommendations, and interaction in one view | Application or form behavior, missing-data handling, and state refresh |
+| EHR import of content | Capabilities implemented in the receiving EHR | Supported artifact subset, translation or native execution, and local tests |
+| Deep EHR integration with a CDS service | Guidance connected to local tasks and clinical processes | Trigger support, service behavior, action handling, and operational ownership |
+| Derived capabilities | Metrics, reports, case summaries, or progress notes | Additional definitions, data flows, permissions, and evaluation |
+{:.grid}
 
-This implementation guide defines the following levels of enablement:
+A guideline can support several capabilities at once, and a local implementation can deliver a useful subset. A higher row count is not evidence of better care. Select capabilities that fit the clinical task, and evaluate the resulting intervention.
 
-1.  Contextualized narrative (searchable)
-2.  Contextualized narrative (delivered in context)
-3.  Contextualized narrative with patient-level information (basic summary view)
-4.  Actionable intervention (with or without narrative and summary view; for example, using CDS Hooks)
-5.  Actionable summary view (for example, using CDS Hooks cards, adaptive forms, or an embedded application, depending on the implementation and integration)
-6.  EHR import of the CPG (with the features supported determined by the EHR)
-7.  Deep EHR integration with a CDS service
+### Describe the chosen scope
 
-Derived capabilities, such as metrics and measures, eCase reports, and case plan summaries and progressing notes, add incremental effort at any of these levels. Some capabilities and enablements build on others.
+Record which capabilities are supported, which data and artifact versions they use, how they are delivered, and which local behavior remains outside the implementation. Include the tests and reviews used to assess each capability. For example, rendering a CDS Hooks card is different from accepting its suggested action, and neither establishes that the action was completed.
 
-<details open>
+General CDS evidence supports evaluating workflow fit and actionable support; it does not prescribe one universal delivery method. See the [CDS evidence topic](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html#cds-implementation-evidence).
 
-<summary>
-
-Figure 1. A given CPG may provide a distinct set of enablements, at singular or multiple Levels of Enablement, or may go through successive versions in its development lifecycle with increasing Levels of Enablement, particularly as the impact of its recommendations and interventions prove to be correlated (or even causal) to key outcomes and thus justify the effort.  Lower Levels of Enablement may largely serve to collect guideline-related patient information to inform guideline development in certain situations such as where evidence is scarce, but needed very urgently such as an emergency response to a pandemic with a novel contagion.
-
-</summary>
-
-<img src="CPG-03-CPGEnablements.png" alt="CPG Levels of Enablement" class="img-responsive img-rounded center-block" width="600"/>
-
-</details>
+Continue with [execution choices](documentation-approach-09-methods-of-implementation.html), [integration choices](documentation-approach-10-mechanisms-of-integration.html), and the [L4 checklist](clinical-guidelines-development-L4-checklist.html). Keep enablement choices distinct from representation levels, functional tiers, and the formal profiles against which conformance is assessed.

@@ -1,107 +1,97 @@
-Knowledge representation is a surrogate, a substitute for the thing itself, that allows for reasoning (human and computational) about the “thing”. A knowledge representation may be thought of on a continuum of successive degrees of readability, of ability to reason over, and formalism (e.g., to compute).
+Knowledge representation makes a guideline's clinical intent explicit enough to review, share and implement. Begin by identifying the required work products and their relationships; do not choose a notation or engine before agreeing on meaning.
 
-In this section we will cover:
+<a id="levels-of-knowledge-representation-framingdocumentation-approach-06-01-levels-of-knowledge-representationhtml"></a>
 
-*   [Levels of Representation Framework (degrees of formalism/ computability)](documentation-approach-06-01-levels-of-knowledge-representation.html)
-*   [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html)
-*   [Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)
-*   [Knowledge Assets (discrete representations with a purpose)](documentation-approach-06-02-knowledge-assets.html)
-    *   [Asset Metadata (information about the assets and knowledge base)](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata)
-*   [Knowledge Architecture (designing and defining the types and nature of assets)](documentation-approach-06-03-knowledge-architecture.html)
+### Levels of Knowledge Representation Framing
 
-### Levels of Knowledge Representation
+[Four representation levels](documentation-approach-06-01-levels-of-knowledge-representation.html) help describe the handoff: L1 narrative, L2 semi-structured models, L3 computable artifacts and L4 local executable implementation. They are a continuum, not certification grades. The same recommendation can have several representations under review at once.
 
-Note that the levels of knowledge representation are a continuum, with discrete categories introduced in the methodology to help inform discussions and communicate the concepts involved. Typically, the initial guideline content is published in narrative form (L1), but guidelines will often contain diagrams, charts, and other depictions that lean towards semi-structured (L2) representation. See [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html).
+#### Approach
 
-This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
+Choose the next page by the question you need to answer:
 
-<div>
-<img src="knowledge-levels.png" alt="Knowledge Levels" class="img-responsive img-rounded center-block" width="750" height="334"/>
-</div>
+| Question | Reference | Useful output |
+|---|---|---|
+| What is human-readable versus computable versus locally running? | [Levels](documentation-approach-06-01-levels-of-knowledge-representation.html) | An explicit representation and handoff |
+| What belongs in data, logic or forms? | [Functional tiers](documentation-approach-07-tiers-of-functionality.html) | A responsibility boundary |
+| What work products span both dimensions? | [Levels by tiers](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html) | A scoped artifact inventory |
+| How are artifacts identified, related and maintained? | [Knowledge assets](documentation-approach-06-02-knowledge-assets.html) | Versioned content and dependency records |
+| Which exact FHIR resources/profiles express the model? | [Knowledge architecture](documentation-approach-06-03-knowledge-architecture.html) | A resource and reference map |
+| How do we produce and validate those artifacts? | [Methodology](methodology.html) | A reviewed content package |
 
-Figure 1. Knowledge Levels
-
-
-As will be discussed further in the Agile CPG development approach (see section on [Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation. Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels. This will become more evident and described in more detail in the section on the Agile CPG development approach.
-
-<div>
-<img src="CPG-05.06-01.png" alt="Knowledge Levels" class="img-responsive img-rounded center-block" width="750" height="287"/>
-</div>
-
-Figure 2. Levels of Representation in historical CDS sense and as may be adapted for Agile approaches.
+<a id="tiers-of-functionalitydocumentation-approach-07-tiers-of-functionalityhtml"></a>
 
 #### Tiers of Functionality
 
-This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering See [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html).
+[Data, clinical logic and forms](documentation-approach-07-tiers-of-functionality.html) are responsibilities at each representation level. They are separate from the [Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case), [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan), and [Workflow](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-workflow) concepts, which distinguish patient description, recommended care and care delivery.
 
-*   **Data**
-*   **Logic**
-*   **User Interface (UI)**
+<a id="levels-of-representation-by-tiers-of-functionalitydocumentation-approach-08-levels-of-representation-by-tiers-of-functionalityhtml"></a>
 
 #### Levels of Representation by Tiers of Functionality
 
-The levels of knowledge representation (L1-L4) can each be broken down into three tiers of functionality: data tier (T1), logic tier (T2), and forms tier (i.e., UI) (T3). See [Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html).
+The [matrix](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html) uses concrete work products rather than treating every guideline as an identical pipeline. A service that evaluates recorded data may not need a form; an interactive implementation may need form generation and extraction as well as the same clinical logic.
+
+<a id="knowledge-assetsdocumentation-approach-06-02-knowledge-assetshtml"></a>
 
 ### Knowledge Assets
 
-Knowledge assets or artifacts as they are often referred to in FHIR, where an artifact is an instance of an asset. Assets provide the ability to keep domain logic separated and distinct from other system logic in complex systems. In this implementation guide we often refer to knowledge assets and knowledge artifacts interchangeably, though the distinction is very relevant the knowledge engineer. See [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html).
-
-*   Asset Metamodel- its structure- requirements and constraints
-*   Content- what goes into the asset “container”
-*   Metadata- for detailed section on Knowledge Assets
-*   Composite and Derived- see section on Knowledge Assets
+A [knowledge asset](documentation-approach-06-02-knowledge-assets.html) is a managed piece of guideline content, such as a profile, value set, logic library or recommendation definition. Its clinical content, identity, version, dependencies and intended usage travel together.
 
 #### Asset Metamodel
 
-The asset meta-model is a model that essentially describes what is required and/or allowed for a given class of knowledge assets. In FHIR, the means of defining asset metamodels is the FHIR [StructureDefinition Resource](https://www.hl7.org/fhir/structuredefinition.html) (though it is also used for definitions of resources other than knowledge assets including all request (e.g. orders) and event (e.g. clinical data element) resources). Furthermore, the [PlanDefinition Resource](https://www.hl7.org/fhir/plandefinition.html) (based on the HL-7 Knowledge Artifact Specification) is a base, or more generic, asset meta-model definition that may be profiled using StructureDefinition to further define additional asset metamodels. The [Knowledge Artifact Representation in FHIR](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html), from the FHIR Clinical Reasoning Module, describes how the asset metamodels are realized as FHIR Profiles, but details of its applications to the CPG are described in further detail in this section of the implementation guide.
-
+Use the applicable FHIR resource and profile to determine the structure and constraints. A profile and an instance conforming to it have different roles.
 
 #### Content
 
-Knowledge asset content refers to that which is contained within a specific knowledge asset. This includes the scoped values or expressions for a specific asset’s metadata, attributes, and other formalisms used to express the knowledge contained within the asset.
+State the clinical definitions, expressions and activities the artifact conveys. Review content meaning independently of structural validation.
 
 #### Asset Metadata
 
-Metadata is data that provides information about the knowledge asset. This may include disk active metadata, structural metadata, administrative metadata, and situating or relational metadata. The section on [Metadata](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata) of the Clinical Reasoning Module on Knowledge Artifact Representation provides a description of how metadata is routinely addressed in FHIR Knowledge Artifact Representations, but details of its applications to the CPG are described in further detail in this section of the implementation guide.
+Identify the source, publisher/steward, status, version, usage context, rights and relationships. Metadata supports discovery and review; it is not authorization to execute clinical actions.
 
 #### Expressions (and/or Languages)
 
-An expression is a computable language for creating a computer-interpretable representation of specific knowledge. In HL-7 and for the scope of this implementation guide, the expression language used (where it’s able to sufficiently express the intended logic behavior) is the Clinical Quality Language (CQL).
+Use expressions for computations and conditions, with their model, parameters and dependencies explicit. See [Libraries](libraries.html) for CQL-related expectations.
 
 #### Declarations
 
-A declaration is an expression of the structural elements of computable logic (e.g. values for attributes and parameters of a knowledge asset) that does not describe how to compute the logic, rather what the logic is. These are often expressed as static values on the definitional assets as opposed to be buried deep in the expressions. Expressions (or languages) can then evaluate and/or set these declarations.
+Use resource structure to declare activities and relationships, then connect expressions where computation is required.
 
 #### Composite Assets
 
-No single representation or expression can sufficiently and/or appropriately describe the nature and behavior of many domain concepts using computable formalism. A Pathway, [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy), and [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) are examples of composite assets in this implementation guide.
+Assemble reusable components through supported references and package dependencies rather than assuming all content is nested in a single resource.
 
 #### Derived Assets
 
-Many knowledge assets may be derived from other knowledge assets (in part or in whole) as a means to reuse and repurpose the content of the knowledge asset from which they were derived. For example, a [Metric](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric) may derive much of its content from a Recommendation. Derived knowledge assets may be wholly or partially derived from other assets.
+Trace a measure, summary or other derivative to its source while validating its own purpose and interpretation.
 
 #### Translation Within and Between Knowledge Representations
 
-Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements). This equivalence in computational intent and behavior is known as isopragmatism.
+Check that meaning and evaluated behavior survive translation. A changed notation is not proof of equivalent semantics.
 
 #### Curating and Managing Knowledge Assets in a Large Corpus (Knowledge Base)
 
-For more on Curating and Managing Knowledge Assets (and their respective knowledge architecture), see sections on Knowledge Representation in [Knowledge Engineering](documentation-approach-05-03-knowledge-representation.html), and Leveraging a Knowledge Base (Knowledge Content Management System) in the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html).
+Keep reviewed releases, dependency versions and retirement/update decisions traceable. Shared dependencies require impact review when they change.
+
+<a id="knowledge-architecturedocumentation-approach-06-03-knowledge-architecturehtml"></a>
 
 ### Knowledge Architecture
 
-This section addresses the principles and best practices of knowledge architecture as well as the approach through which the CPG Knowledge Architecture was and continues to be developed including an overview of the Conceptual Perspective on the CPG Knowledge Architecture and the means through which it is realized and concretized in FHIR Profiles elsewhere in this implementation guide. This implementation guide includes this approach to knowledge architecture as its through it, direct interactions with various stakeholders, and through real-world use cases that it will continue to evolve. See [Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html).
+The [FHIR architecture](documentation-approach-06-03-knowledge-architecture.html) maps these work products to resource types and formal profiles. The [conceptual architecture](documentation-approach-12-conceptual-knowledge-architecture.html) explains the domain distinctions behind those mappings.
 
-Covered in this section:
+### Choose artifact representations {#choose-artifacts}
 
-*   Key Challenges for Knowledge Architecture
-*   Best Practices and Needs to be addressed
-*   Key Principles and consideration
-*   Knowledge Architecture Principles as applied to the CPG
-*   Developing the CPG Knowledge Architecture
-*   **Conceptual Perspective on the CPG Knowledge Architecture**
-*   **Knowledge Architecture in FHIR for the CPG-IG**
-*   Boundary Issues at the Separations of Concerns
-*   Knowledge Architecture and Knowledge Content Management System
+Start with the clinical capability and identify the data, logic, and proposed activities it needs. Add workflow, forms, summaries, and measurement as the scope requires.
 
-Knowledge architecture is the discipline of information system architecture (Industry, Enterprise, Solution) with a focus on the principles, best practices, means, and mechanisms by which the knowledge assets for the architecture’s given domain are managed including: acquiring, representing, stored, and organized. Knowledge architecture includes defining the types and scopes of the various assets, their metadata, as well as their relations. In FHIR, this is done through profiling of definitional resources (e.g. plan definition, activity definition) using the StructureDefinition Resource to define metamodels and is enforced largely through a compliance framework and a common approach in tooling to creating these asset type profiles.
+| Work product | Typical FHIR representation | Review question |
+|---|---|---|
+| Clinical feature definition | StructureDefinition profiled as CPGCaseFeatureDefinition | Does it convey the intended meaning, time and terminology? |
+| Terminology | CodeSystem, ValueSet, mappings where appropriate | Are definitions and versions suitable for the intended setting? |
+| Computation | Library containing/referencing expressions | Are model, inputs, dependencies and unknown values handled explicitly? |
+| Proposed activity template | ActivityDefinition | Can evaluation construct the intended request? |
+| Recommendation/strategy/pathway | PlanDefinition using the appropriate CPG profile | Are conditions, references and relationships allowed and meaningful? |
+| Interaction | Questionnaire and supported expressions | Can information be collected/confirmed without redefining clinical logic? |
+| Summary/measurement | GraphDefinition/Composition or Measure/MeasureReport as appropriate | Are scope, time and interpretation stated? |
+{:.grid}
+
+Use [Profiles](profiles.html), [Terminology](terminology.html), and [Libraries](libraries.html) to check the formal contracts.

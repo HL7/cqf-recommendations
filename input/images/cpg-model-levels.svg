@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="565" viewBox="0 0 1000 565" role="img" aria-labelledby="title description">
+<title id="title">Follow one clinical intent across four representations</title><desc id="description">L1 narrative and L2 explicit models lead to L3 computable artifacts and an L4 local executable implementation. Review can revise any representation.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Follow one clinical intent across four representations</tspan></text>
+<polyline points="450,180.0 550,180.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="750.0,260 750,295 250,295 250.0,330" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="450,410.0 550,410.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="50" y="100" width="400" height="160" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="250.0" y="128" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="250.0" dy="0">L1 · Narrative</tspan></text>
+<text x="250.0" y="161.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="250.0" dy="0">Clinical scope and guidance</tspan><tspan x="250.0" dy="21.6">Evidence and recommendation strength</tspan></text>
+<rect x="550" y="100" width="400" height="160" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="750.0" y="128" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="750.0" dy="0">L2 · Semi-structured</tspan></text>
+<text x="750.0" y="161.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="750.0" dy="0">Explicit concepts and decisions</tspan><tspan x="750.0" dy="21.6">Reviewed examples and process models</tspan></text>
+<rect x="50" y="330" width="400" height="160" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="250.0" y="358" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="250.0" dy="0">L3 · Computable</tspan></text>
+<text x="250.0" y="391.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="250.0" dy="0">Profiles, terminology and libraries</tspan><tspan x="250.0" dy="21.6">Recommendation and activity definitions</tspan></text>
+<rect x="550" y="330" width="400" height="160" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="750.0" y="358" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="750.0" dy="0">L4 · Local implementation</tspan></text>
+<text x="750.0" y="391.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="750.0" dy="0">Data mappings, engine and workflow</tspan><tspan x="750.0" dy="21.6">Permissions, testing and monitoring</tspan></text>
+<text x="32" y="535" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="32" dy="0">The levels are a continuum. Clinical review and local feedback can change any work product.</tspan></text>
+</g></svg>

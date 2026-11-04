@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGWorkflowDefinition specifies reusable workflow activities within a guideline implementation. Use it when coordination needs the workflow profile's broader action-definition support and participant capabilities, rather than the narrower recommendation-only targets of a strategy definition. It remains a PlanDefinition describing expected work, not an active patient workflow or proof of task completion.

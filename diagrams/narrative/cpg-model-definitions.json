@@ -1,0 +1,102 @@
+{
+  "height": 555,
+  "title": "Use the supported definition relationships",
+  "description": "CPGPathwayDefinition references strategy or workflow definitions. CPGStrategyDefinition references recommendation definitions. Recommendation definitions reference activity or order-set definitions.",
+  "nodes": [
+    {
+      "id": "path",
+      "x": 32,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "knowledge",
+      "label": "Pathway definition",
+      "body": [
+        "PlanDefinition",
+        "clinical-protocol",
+        "Longitudinal grouping"
+      ]
+    },
+    {
+      "id": "strategy",
+      "x": 358,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "knowledge",
+      "label": "Strategy definition",
+      "body": [
+        "PlanDefinition",
+        "workflow-definition",
+        "Related recommendations"
+      ]
+    },
+    {
+      "id": "rec",
+      "x": 684,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "logic",
+      "label": "Recommendation definition",
+      "body": [
+        "PlanDefinition",
+        "eca-rule",
+        "Applicability and activity"
+      ]
+    },
+    {
+      "id": "activity",
+      "x": 684,
+      "y": 355,
+      "w": 284,
+      "h": 160,
+      "kind": "knowledge",
+      "label": "Activity or order set",
+      "body": [
+        "ActivityDefinition or",
+        "CPGOrderSetDefinition",
+        "Content for the request"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "path",
+      "to": "strategy"
+    },
+    {
+      "from": "strategy",
+      "to": "rec"
+    },
+    {
+      "from": "rec",
+      "to": "activity",
+      "fromPort": "bottom",
+      "toPort": "top"
+    }
+  ],
+  "notes": [
+    {
+      "x": 32,
+      "y": 335,
+      "w": 600,
+      "text": "The pathway can alternatively reference CPGWorkflowDefinition.",
+      "size": 16
+    },
+    {
+      "x": 32,
+      "y": 385,
+      "w": 580,
+      "text": "See the profile table for exact names and allowed targets.",
+      "size": 16
+    },
+    {
+      "x": 32,
+      "y": 445,
+      "w": 580,
+      "text": "These are knowledge references, not patient actions.",
+      "size": 16
+    }
+  ]
+}

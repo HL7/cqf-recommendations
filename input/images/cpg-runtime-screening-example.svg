@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="565" viewBox="0 0 1000 565" role="img" aria-labelledby="title description">
+<title id="title">Historical screening example: decisions to model</title><desc id="description">Identify the clinical recommendation and version, establish eligibility and context, offer testing, interpret results using the selected source, and plan follow-up. This is a modeling overview, not a diagnostic algorithm.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Historical screening example: decisions to model</tspan></text>
+<polyline points="300,175.0 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="635,175.0 700,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="835.0,240 835.0,340" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="700,405.0 635,405.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="30" y="110" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Select the source</tspan></text>
+<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Recommendation and version</tspan></text>
+<rect x="365" y="110" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Establish context</tspan></text>
+<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Population, risk, prior</tspan><tspan x="500.0" dy="21.6">testing</tspan></text>
+<rect x="700" y="110" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Offer and authorize</tspan></text>
+<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Patient decision and</tspan><tspan x="835.0" dy="21.6">request</tspan></text>
+<rect x="365" y="340" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="500.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Arrange follow-up</tspan></text>
+<text x="500.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Counseling, referral,</tspan><tspan x="500.0" dy="21.6">repeat review</tspan></text>
+<rect x="700" y="340" width="270" height="130" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="835.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Interpret results</tspan></text>
+<text x="835.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Source-specific testing</tspan><tspan x="835.0" dy="21.6">sequence</tspan></text>
+<text x="28" y="520" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Keep missing data, declined testing, test results, and completed care distinct.</tspan></text>
+</g></svg>

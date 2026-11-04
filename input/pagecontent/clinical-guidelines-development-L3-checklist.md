@@ -1,5 +1,7 @@
 ### L3 Checklist
 
+Use this checklist to review computable content and the information an implementer needs to apply it in a specific setting. It covers publication, recommendation content, formal artifacts, and supporting details such as decision points, references, and CQL source. Keep each item label, status, and notes together. The checklist status is not a separate declaration of implementation-guide conformance.
+
 | Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
 |-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 1.        | **Publishing Information**                       | Publishing metadata for the L2 and L3 content                                                                                                                |             | Platform Specific vs Independent                                                                                  |

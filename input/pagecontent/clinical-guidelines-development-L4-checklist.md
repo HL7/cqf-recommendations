@@ -1,5 +1,7 @@
 ### L4 Checklist
 
+Use this checklist to plan and review local adoption of computable content: prioritization, workflow and technical fit, local design, testing, training, deployment, clinical use, and evaluation. It complements the L3 content review by focusing on the organization and setting where the content will be used.
+
 | Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
 |--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 1.     | **Publishing Information**           | Publishing metadata for the content                                                                                                              |             |       |

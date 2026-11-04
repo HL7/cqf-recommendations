@@ -1,25 +1,29 @@
-HL7 Patient Care Work Group has developed and continue to improve on Care Plan and Care Coordination standards that can be used in evidence-based care planning and delivery of evidence-based care.
+Evidence-based care planning connects guideline recommendations to an individual's concerns, goals, preferences, and circumstances. Use [CPGCarePlan](StructureDefinition-cpg-careplan.html) for the patient-specific plan, and the [conceptual care-plan topic](documentation-approach-12-05-cpg-careplan.html) to understand its relationship to reusable definitions and recorded care.
 
-The HL7 standards include Care Plan Domain Analysis Model, Care Coordination Functional Model, and a number of FHIR resources such as Care Plan, Goals, Care Team.
+### Connect concerns, goals, interventions, and outcomes
 
-Within the Care Plan standards, there are four cornerstone building blocks that are essential for evidence-based care planning and care delivery:
+| Building block | Implementation question | FHIR connection |
+| --- | --- | --- |
+| Health concern | What problem, risk, or concern is the care team addressing? | Relevant clinical resources and the concerns addressed by the CarePlan |
+| Goal | What outcome matters to the patient and care team, and how will progress be assessed? | [CPGGoal](StructureDefinition-cpg-goal.html) and CarePlan goal references |
+| Intervention | What activity is proposed, agreed, authorized, or underway? | The request resources associated with the plan and their fulfillment events |
+| Outcome | What was observed, and how does it relate to the goal? | Clinical observations, goal assessment, and relevant summaries or reports |
+{:.grid}
 
-* **Health Concern (which incorporates health risks, concerns and problems)** - this building block supports the identification of an individual's health risks, concerns and/or problems based on clinical/health evidences. The gravity and/or prioritization of the risks, concerns/problems are determined by clinical/health evidences and also balancing patient and provider perspectives
-* **Goals** - it is designed to identify the health goals and their associated incremental milestones that are to be attained within the context of the individual's health concern. It is determined by the individual and the provider in accordance to targets set in accordance with best practice clinical/health evidence, taking into consideration an individual's constraints
-* **Intervention** - this key building block supports the identification of evidence-based care activities that can be optimized according to patient's constraints and preferences to best address the health concerns and attain the health goals/milestone targets. The intervention building block includes recommendations to the patient, family and other healthcare providers who are part of and/or outside the patient's care team. It also includes orders and orderset that are derived from or based on best practice guidelines (e.g. diabetes guideline, asthma management guidelines, etc.).
-* **Outcome** - this key building block is designed to capture evaluation findings, which are used to determine whether the agreed/set health goals and associated milestone have been met.
+These are the four building blocks used in the HL7 care-planning approach. They help keep the clinical reason for an action visible throughout planning and delivery. The [FHIR R4 CarePlan](https://hl7.org/fhir/R4/careplan.html), [Goal](https://hl7.org/fhir/R4/goal.html), and [CareTeam](https://hl7.org/fhir/R4/careteam.html) resources provide the underlying structures.
 
 ### Using Goals
 
-A goal is a defined outcome or condition to be achieved in the process of patient care. Goals include patient-defined over-arching goals (e.g., alleviation of health concerns, desired/intended positive outcomes from interventions, longevity, function, symptom management, comfort) and health concern-specific or intervention-specific goals to achieve desired outcomes.
+Document the desired outcome, any target or milestone, and whose goal it is. Guideline targets inform the discussion; patient priorities and constraints affect the agreed plan. Retain the information needed to interpret progress over time rather than treating the presence of a goal as evidence it was achieved.
 
 ### Using Recommendations
 
-Recommendations informs what can or should be done in specific situations to achieve the best health outcomes possible, individually or collectively. It offers a choice among different interventions or measures having an anticipated positive impact on health and implications for the use of resources.
-
-Recommendations assist in informing decisions on whether to undertake specific interventions, clinical tests or public health measures, and on where and when to do so. Recommendations also help in the selection and prioritization across a range of potential interventions.
+Evaluate a recommendation in the patient's context and present the relevant supporting information. Selection, clinical authorization, and fulfillment are separate steps. A proposal to perform an activity and a proposal not to perform it both need a clear interpretation in the receiving workflow. See [activity flow](activityflow.html).
 
 ### Using Order Sets
 
-Order set - a standardized set of evidence-based orders for a certain medical condition. Well-designed standardized order sets assist in communicating best practices by integrating and coordinating care and services across levels of care and through multiple disciplines. Order sets provide evidence-based care and reduce variations and un-intentional oversight by enhancing workflow. They reduce human error and improve patient outcomes through adherence to evidence-based guidelines.
+An order set groups potential orders for a defined clinical situation. The receiving workflow determines which items are appropriate, selected, and authorized. Keep optional items and grouping behavior visible. An order set's existence or conformance does not establish its clinical effect; that depends on the content and implementation being evaluated.
 
+### Review the local workflow
+
+Identify who reviews goals, who can authorize activities, and who responds to new results or changes between encounters. Patient-centered CDS research highlights these responsibilities beyond the point of a single alert or visit ([Sittig et al., 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11258405/)). Continue with the [CHF example](examples-chf.html) for the relationship between definitions, case features, and a patient-specific plan.

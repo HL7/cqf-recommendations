@@ -1,29 +1,39 @@
-Separation of concerns is a design principle that creates a distinct and focused attention on each aspect of the domain or topic. This means that, from each aspect's point of view, the other aspect(s) are irrelevant; but it does not mean that the other aspects are ignored. It is “being one- and multiple-track minded simultaneously.”[<sup>3</sup>](#3).  This concept has been used to address efficient and effective approaches in software engineering, particularly as they pertain to developing larger, more complex information systems. (ref)  The most common application of this principle is to a three-tiered architecture (i.e. data, logic, UI) and corresponds to the tiers of functionality discussed earlier.
+Separate the clinical meaning of a guideline from the software and [Workflow](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-workflow) used to deliver it. This makes review more precise: a clinician can review a [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation), a terminology specialist can review a mapping, and an implementor can review a trigger without silently changing the other two.
 
-<details open>
+### Separate the questions
 
-<summary>
+| Concern | Example question | Keep separate from |
+|---|---|---|
+| Patient description | What is the patient's most recent documented weight? | Whether a treatment should change |
+| Clinical inference | What change in weight follows from the selected measurements? | How a question is displayed |
+| Clinical decision | Given the relevant state, should an activity be proposed? | Local order-entry permissions |
+| Forms | Which information should the user enter or confirm next? | The clinical definition of the derived feature |
+| Workflow | Who reviews the proposal, and when can it become an order? | The recommendation's evidence and strength |
 
-Figure 1. Illustrating the separation of the Case (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the Plan (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities.
+The first three concerns distinguish patient descriptive logic in the [Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case) from decision logic in the [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan). The [Data/Logic/Forms tiers](documentation-approach-07-tiers-of-functionality.html) separate implementation responsibilities. They overlap in use but answer different design questions.
 
-</summary>
+### Keep the links explicit
 
-<img src="CPG-12-01.png" alt="Separation of concerns" class="img-responsive img-rounded center-block"/>
+A guideline can refer to a named patient feature without reproducing its calculation in every recommendation. A form can call that calculation without defining a competing clinical rule. A local workflow can display or route the result while preserving the originating recommendation and its supporting information.
 
-</details>
+For each link, record what is passed and what the receiver may infer. An order is evidence of an intention; it is not proof of an administration. An inferred result is not a clinician's assessment unless that assessment is separately documented. These boundaries are developed in [Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html).
 
+### Apply the separation during review
 
-In medicine, a very similar principal led Dr. Larry Weed to describe the problem-oriented approach to the medical record and reasoning about patients’ concerns, including the well-known and commonly used approach to the SOAP note (Subjective, Objective, Assessment, and Plan).[<sup>1</sup>](#1) Dr. Weed proposed that physicians were essentially scientists, except that as many scientist pursue a singular (or few) hypotheses throughout there careers, a physician must formulate and assess/test hypotheses for a given patient and often throughout the day and therefore must break each issue down into a concern or problem.  Problem-orientedness and the SOAP note have further been shown to be an effective cognitive framework for assessing and addressing patient concerns.[<sup>2</sup>](#2)  Interestingly, Dr. Weed’s problem-oriented approach and SOAP note do play into the CPG knowledge architecture, though not exclusively.  In healthcare activities, there are at least several related but orthogonal axes on which to separate concerns.
+1. Trace a recommendation back to its clinical source and intended population.
+2. Identify the data and descriptive inferences used by its applicability logic.
+3. Identify the activity proposed when the condition is met.
+4. Identify the local actor, trigger, interaction and authorization needed to carry it out.
+5. Test each boundary as well as the complete interaction.
 
-One major axis of separation is by each disease or condition, intervention (e.g., procedure, therapy), and/or diagnostic (e.g., imaging, tests), though these concerns often intersect or interact significantly. Similarly, care setting (e.g., ambulatory, home, inpatient, ED, ICU) and generalized type of care activity (e.g., surveillance, prevention, diagnostic workup, treatment planning, disease and therapeutic response surveillance, recovery/convalescence, survivorship) can be conceptualized further as  separations of concerns.  Many of these separations are addressed through the scoping exercise of the guideline development group and a given guideline intentionally focuses on a singular topic or area of concern. This separation of concerns may be addressed by entirely distinct CPG’s or by [Strategies](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy) within individual CPG’s.  Relationships or interactions between separate CPG’s (or Strategies) may be addressed at the level of each separation (e.g., Plan-to-Plan, Case-to-Case) across CPG’s or by explicitly referencing features within a given separation of one CPG and following the same patterns of interactions between separations.  The latter should be done explicitly (e.g., by referencing and including the requisite [Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature) within all CPG’s whose [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan)’s need to reason over them).
+A change to a questionnaire label may be editorial. A change to a feature's definition, time window or terminology can change clinical meaning and requires corresponding clinical review. The [knowledge engineering process](documentation-approach-05-knowledge-engineering-overview.html) provides the iterative setting for those decisions.
 
-Another major axis of separation is by kind of process, including: 1) patient clinicopathological (i.e., pathophysiological and correlated clinical manifestations) processes, inclusive of normal physiology ([Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case)); 2) clinical decision-making and corresponding care processes as abstract from specific care settings (Plan); and 3) care delivery process or clinical workflow by which the care processes are carried out in the context of a specific care setting where multiple patients and healthcare professionals undergo, situational activities, which may be inclusive of clinical information system or EHRs.  The CPG-IG knowledge architecture is designed to respect the separation of these concerns as discussed below.
+### Context
 
-A third major axis of separation of importance to the CPG implementation guide is significantly related to the clinical workflow separation mentioned above, which itself may be separated into the real-world care delivery activities, those activities that are carried out in the context of clinical information systems (e.g., EHRs), and the means of interacting and relating to the Case and Plan.  This separation is covered in further detail in the section on [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html) in this implementation guide.
+The separation echoes the distinction between assessment and plan in problem-oriented clinical documentation. That analogy is useful for explanation; it does not mean every guideline artifact is a SOAP note or that a note supplies executable workflow.[<sup>1</sup>](#1)
 
----
-<a id="1">1</a>: Jaroudi, Sarah; Payne, J. Drew DO Remembering Lawrence Weed: A Pioneer of the SOAP Note, Academic Medicine: January 2019 - Volume 94 - Issue 1 - p 11 doi: 10.1097/ACM.0000000000002483
+Local workflow also includes work outside the EHR, including patients, caregivers and between-visit review. [Sittig et al.](https://doi.org/10.1093/jamia/ocae138) use workflow models to identify such responsibilities; their study is modeling evidence rather than a demonstration of improved clinical outcomes.[<sup>2</sup>](#2)
 
-<a id="2">2</a>: Am Med Inform Assoc. 2014 Nov; 21(6): 964–968. Published online 2014 May 28. doi: 10.1136/amiajnl-2014-002776
+<a id="1"></a>1. Weed LL. Medical records that guide and teach. *N Engl J Med.* 1968;278:593–600. [doi:10.1056/NEJM196803142781105](https://doi.org/10.1056/NEJM196803142781105).
 
-<a id="3">3</a>: Dijkstra, Edsger W (1982). "On the role of scientific thought". Selected Writings on Computing: A Personal Perspective. New York, NY, USA: Springer-Verlag. pp. 60–66. ISBN 0-387-90652-5.
+<a id="2"></a>2. Sittig DF, Boxwala A, Wright A, et al. Patient-centered clinical decision support challenges and opportunities identified from workflow execution models. *J Am Med Inform Assoc.* 2024;31:1682–1692. [doi:10.1093/jamia/ocae138](https://doi.org/10.1093/jamia/ocae138).

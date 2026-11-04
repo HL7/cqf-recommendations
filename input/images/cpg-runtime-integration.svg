@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title description">
+<title id="title">Connect evaluation to the clinical workflow</title><desc id="description">The client calls a CDS service with workflow context. Versioned knowledge and authorized patient data support evaluation. The response is guidance; the receiving workflow owns selected actions.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Connect evaluation to the clinical workflow</tspan></text>
+<polyline points="300,175.0 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="300.5" y="143" width="63" height="23" fill="#fff"/>
+<text x="332" y="160" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="332" dy="0">invoke</tspan></text>
+<polyline points="635,175.0 700,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="635.5" y="143" width="63" height="23" fill="#fff"/>
+<text x="667" y="160" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="667" dy="0">return</tspan></text>
+<polyline points="165.0,350 165,285 332,285 332,175 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="500.0,350 500.0,240" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="835.0,240 835.0,350" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="30" y="110" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Clinical client</tspan></text>
+<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Hook and patient context</tspan></text>
+<rect x="365" y="110" width="270" height="130" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">CDS service</tspan></text>
+<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Evaluate and format a</tspan><tspan x="500.0" dy="21.6">response</tspan></text>
+<rect x="700" y="110" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Receiving workflow</tspan></text>
+<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Present and handle guidance</tspan></text>
+<rect x="30" y="350" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="165.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Clinical data</tspan></text>
+<text x="165.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Authorized access and</tspan><tspan x="165.0" dy="21.6">mappings</tspan></text>
+<rect x="365" y="350" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="500.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Versioned knowledge</tspan></text>
+<text x="500.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">PlanDefinition, Library,</tspan><tspan x="500.0" dy="21.6">terminology</tspan></text>
+<rect x="700" y="350" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="835.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Selected actions</tspan></text>
+<text x="835.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Authorize, persist, and</tspan><tspan x="835.0" dy="21.6">fulfill</tspan></text>
+<text x="28" y="545" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">A SMART application may use the same reasoning service; write-back has its own contract.</tspan></text>
+</g></svg>

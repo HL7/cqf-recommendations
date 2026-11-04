@@ -1,0 +1,95 @@
+{
+  "width": 1000,
+  "height": 510,
+  "title": "A reviewed increment supports learning",
+  "description": "One bounded clinical question links explicit meaning, computable content, and evaluated local use. Findings can return to clinical, artifact, or implementation owners; the loop does not automatically create new evidence or approve a change.",
+  "nodes": [
+    {
+      "id": "question",
+      "label": "Clinical question",
+      "body": "Source, scope, intended action and examples",
+      "x": 35,
+      "y": 110,
+      "w": 215,
+      "h": 190,
+      "kind": "knowledge"
+    },
+    {
+      "id": "spec",
+      "label": "Explicit meaning",
+      "body": "Reviewed concepts, criteria and workflow",
+      "x": 275,
+      "y": 110,
+      "w": 215,
+      "h": 190,
+      "kind": "knowledge"
+    },
+    {
+      "id": "artifacts",
+      "label": "Computable content",
+      "body": "FHIR/CQL artifacts, dependencies and tests",
+      "x": 515,
+      "y": 110,
+      "w": 215,
+      "h": 190,
+      "kind": "logic"
+    },
+    {
+      "id": "use",
+      "label": "Evaluated use",
+      "body": "Local integration, monitoring, effects and limits",
+      "x": 755,
+      "y": 110,
+      "w": 215,
+      "h": 190,
+      "kind": "workflow"
+    }
+  ],
+  "edges": [
+    {
+      "from": "question",
+      "to": "spec"
+    },
+    {
+      "from": "spec",
+      "to": "artifacts"
+    },
+    {
+      "from": "artifacts",
+      "to": "use"
+    },
+    {
+      "from": "use",
+      "to": "question",
+      "fromPort": "bottom",
+      "toPort": "bottom",
+      "via": [
+        [
+          862.5,
+          370
+        ],
+        [
+          142.5,
+          370
+        ]
+      ],
+      "dashed": true
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 425,
+      "w": 944,
+      "text": "Return findings to the responsible reviewer. Revalidate affected products when meaning or dependencies change.",
+      "size": 16
+    },
+    {
+      "x": 28,
+      "y": 465,
+      "w": 944,
+      "text": "Conceptual cycle: solid arrows = work products; dashed arrow = review and revision, not automatic learning.",
+      "size": 16
+    }
+  ]
+}

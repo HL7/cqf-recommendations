@@ -1,0 +1,98 @@
+{
+  "title": "From activity definition to recorded care",
+  "description": "A definition is applied to propose an activity. Acceptance produces a plan, authorization an order, and fulfillment an event. These are conceptual phases with separate resource states.",
+  "width": 1000,
+  "height": 560,
+  "nodes": [
+    {
+      "id": "definition",
+      "x": 30,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Definition",
+      "body": "Reusable activity specification",
+      "kind": "knowledge"
+    },
+    {
+      "id": "proposal",
+      "x": 365,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Proposal",
+      "body": "Suggested patient activity",
+      "kind": "logic"
+    },
+    {
+      "id": "plan",
+      "x": 700,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Plan",
+      "body": "Accepted intention",
+      "kind": "workflow"
+    },
+    {
+      "id": "event",
+      "x": 365,
+      "y": 340,
+      "w": 270,
+      "h": 130,
+      "label": "Event",
+      "body": "Performance or non-performance",
+      "kind": "result"
+    },
+    {
+      "id": "order",
+      "x": 700,
+      "y": 340,
+      "w": 270,
+      "h": 130,
+      "label": "Order",
+      "body": "Authorized request",
+      "kind": "workflow"
+    }
+  ],
+  "edges": [
+    {
+      "from": "definition",
+      "to": "proposal",
+      "fromPort": "right",
+      "toPort": "left"
+    },
+    {
+      "from": "proposal",
+      "to": "plan",
+      "fromPort": "right",
+      "toPort": "left"
+    },
+    {
+      "from": "plan",
+      "to": "order",
+      "fromPort": "bottom",
+      "toPort": "top"
+    },
+    {
+      "from": "order",
+      "to": "event",
+      "fromPort": "left",
+      "toPort": "right"
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 510,
+      "w": 944,
+      "text": "Intent, request status, Task status, and event status have different meanings."
+    },
+    {
+      "x": 28,
+      "y": 540,
+      "w": 944,
+      "text": "Intermediate phases can be omitted only with the appropriate authority."
+    }
+  ]
+}

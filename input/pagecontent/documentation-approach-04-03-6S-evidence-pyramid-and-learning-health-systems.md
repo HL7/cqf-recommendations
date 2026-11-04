@@ -1,93 +1,116 @@
-### The CPG Enables the Systems Level of the 6S Pyramid and Learning Health Systems
+<a id="the-cpg-enables-the-system-level-of-the-6s-pyramid-and-learning-health-systems"></a>
 
-Covered in this section:
+### Evidence Organization and Learning Health Systems
 
-* 6S Evidence Pyramid and Enabling Systems Level Evidence
-* The Learning Health System
-* Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
+Use evidence frameworks to locate and appraise knowledge, then evaluate how a guideline is implemented. These are related tasks with different evidence needs. A guideline's clinical evidence does not establish that a particular CDS delivery mechanism works, and a technically successful CDS implementation does not establish clinical benefit.
 
-The 6S Evidence Pyramid is another framing on the quality or validity of the evidence that may be of particular interest to the CPG-IG (implementation guide)[<sup>1</sup>](#1). A detailed explanation of the 6S Pyramid is beyond the scope of this document, however we will explain a few key points as they pertain to the guideline development process, in particular the quality of evidence as well as how the CPG actually enables the ascent to the peak.
+### The 6S Model
 
-1. **Single Studies-** represent unique research conducted to answer specific clinical questions
-2. **Synopses of Single Studies-** summarizing evidence from high-quality studies
-3. **Syntheses-** a comprehensive summary of all the evidence surrounding a specific research question (e.g., systematic review, meta-analysis)
-4. **Synopses of Syntheses-** summarizing the information found in syntheses (e.g., evidence summaries, rapid reviews)[<sup>2</sup>](#2)
-5. **Summaries-** guidelines or texts that integrate and evaluate evidence-based information about specific clinical problems to inform clinical decisions
-6. **Systems-** integrating information from the lower levels of the hierarchy with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
+The 6S model organizes access to preappraised evidence: studies, synopses of studies, syntheses, synopses of syntheses, summaries, and systems. At the systems level, knowledge is connected with individual patient information to support a decision. This is an information-service model, not a rule that every “system” or review has higher certainty than its underlying evidence. [DiCenso, Bayley, and Haynes, 2009](https://doi.org/10.7326/0003-4819-151-6-200909150-02002).
 
-<details open>
+| Evidence product | Useful question |
+| --- | --- |
+| Study or study synopsis | What was observed in this population, comparison, and context? |
+| Synthesis or synthesis synopsis | What does the relevant body of evidence show, with what uncertainty? |
+| Summary | How is that evidence organized for a clinical question or condition? |
+| Patient-linked system | How is applicable knowledge delivered in this person's care, and does the intervention help? |
+{:.grid}
 
-<summary>
+<a id="rapid-cycle-closed-loop-knowledge-to-delivery-to-discovery-with-feedback-loops"></a>
 
-Figure 1. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak. NOTE: An updated version of this Evidence Pyramid [ref](http://dx.doi.org/10.1136/ebmed-2016-110447) will be included in the next update of the CPG-IG.
+### Learning from Implementation
 
-</summary>
+A learning health system links evidence, clinical guidance, care delivery, and evaluation. It needs governance, suitable data, explicit measures, and interpretation of findings; a computable guideline is one possible component. Observed use or association does not automatically become new causal evidence or an approved recommendation.
 
-<img src="CPG-04-02.png" alt="6S Evidence Pyramid" class="img-responsive img-rounded center-block" height="500" width="500"/>
+<div style="clear: both;">
+  <img src="cpg-method-iteration.svg" alt="Reviewed guidance, computable artifacts, local use, and evaluated findings form a conceptual learning cycle." class="img-responsive center-block" width="1000"/>
+</div>
 
-</details>
+<a id="evidence-guidance-and-rapid-ascent-to-the-peak-during-an-emergency-response-to-a-novel-contagion-pandemic"></a>
+<a id="rapid-discovery-of-best-practice"></a>
+<a id="rapid-dissemination-of-practice-guidance"></a>
 
-The CPG has the potential to address the "systems" level (i.e., peak of the pyramid), which is described as: “Integrating information from the lower levels of the hierarchy with individual patient records, systems represent the ideal source of evidence for clinical decision-making.” ([ref](https://hslmcmaster.libguides.com/ebm)).  The CPG affords the ability to directly insert guideline recommendations into electronic health records (EHRs) and clinical information systems based on reasoning over real-world, patient-specific clinical data to be considered directly in the context of clinical and shared decision-making.
+### Historical Pandemic Example
 
+The [COVID-19 methodology case study](methodology-case-study.html) records a November 2020 development experience in which urgent guidance, knowledge engineering, and review proceeded together. It illustrates rapid co-development under uncertain evidence, not current COVID-19 clinical advice or a demonstrated reduction in time to effective care. Rapid reviews also need explicit methods and limitations. [Khangura et al., 2012](https://doi.org/10.1186/2046-4053-1-10).
 
-Furthermore, profiles like the [eCase Report](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-ecase-report), inclusive of all guideline-scoped patient information ([Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)), patient-specific recommendations ([Proposals](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal)) and their respective responses (as Case Features), patient-level quality measures ([Metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric)), and the corpus of evidence available and used at the time of recommendation ([Evidence](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-evidence)), allows the informational means to further provide real-world evidence of the usage and effectiveness of such recommendations.   This response and timing from recommendation to when the clinician takes action on the recommendation (e.g., order, prescribe, schedule) and their fulfillments (e.g., administrations, results, performances) as well as the patient-specific context for each key event providing a view into critically valuable information about guideline usage that itself may become evidence for various research studies that yield their own high quality evidence.
+### CDS Implementation Evidence {#cds-implementation-evidence}
 
+The following is a selected narrative reading list, refreshed in October 2026. It includes PubMed/PMC-indexed papers, publisher full text, and official reports. It is not an exhaustive systematic review. Distinguish **general CDS evidence** from **standards-specific implementation evidence**: results for CDS generally do not prove a benefit caused by FHIR, CQL, CDS Hooks, SMART App Launch, or this IG.
 
-Intermediate and ultimate outcomes at the patient-level, including those reported by the patient, could be collected by the eCase Report.  Lastly, Case Features may include ‘snippets’ of narrative from clinical impressions related to the response and/or other contextualization of a patient-specific guideline recommendation or decision.  This kind of narrative explanation for the clinicians' decision-making process or assessment may provide significant insight into the impact and effectiveness of various characteristics of the recommendation and/or CPG-derived decision-support interventions.
+#### General CDS: Effects, Workflow, and Safety
 
+| Reading | Evidence and useful lesson | Limit when applying it |
+| --- | --- | --- |
+| [Garg et al., 2005](https://doi.org/10.1001/jama.293.10.1223) | Review of 100 controlled studies: performance improved in 62/97 studies assessing it; patient outcomes in 7/52. Keep these endpoints distinct. | Historical counts, not a pooled effect magnitude or a current success probability. |
+| [Kawamoto et al., 2005](https://doi.org/10.1136/bmj.38398.500764.8F) | Review of 70 randomized trials associated timely, actionable, workflow-integrated support with successful interventions. | Cross-study associations do not guarantee success or mandate one UI. |
+| [Kucher et al., 2005](https://doi.org/10.1056/NEJMoa041533) | Randomized VTE-alert trial found 90-day events in 4.9% versus 8.2% of patients. A clinically scoped endpoint can show patient benefit. | One high-risk inpatient intervention; do not transfer its effect to other alerts. |
+| [Strom et al., 2010](https://doi.org/10.1001/archinternmed.2010.324) | A nearly hard-stop drug alert changed prescribing but the trial stopped after four important treatment delays. Assess unintended effects. | Does not establish that all interruptive alerts are harmful; intended behavior alone was insufficient evidence of net benefit. |
+| [Kwan et al., 2020](https://doi.org/10.1136/bmj.m3216) | Meta-analysis of 122 controlled trials found an average **5.8 percentage-point** improvement in desired care. | Substantial heterogeneity (I² 76%); clinical endpoints showed smaller typical improvements. Not a standards-specific estimate. |
+| [Poly et al., 2020](https://doi.org/10.2196/15653) | Review of 23 studies found widely varying override rates and appropriateness. Evaluate clinical context and reasons. | An override is not inherently an error, and acceptance is not inherently success. |
+| [Wright et al., 2018](https://doi.org/10.1093/jamia/ocx106) | 68 malfunction cases across 14 sites identify build, meaning, terminology, migration, and dependency failures. | Case collection establishes failure modes, not population incidence. |
+| [Thayer et al., 2024](https://doi.org/10.1093/jamia/ocae187) | Scoping review categorizes 130 malfunctions in 28 papers. Monitor missed as well as excess firings. | Search ended April 2022; modern distributed architectures were sparsely represented. |
+| [AHRQ rapid review, 2024](https://doi.org/10.23970/AHRQEPC_MHS4MEDERROR) | Medication-related CDS/CPOE evidence supports reduced medication errors with moderate certainty and adverse drug events with low certainty. | Benefits and harms were often studied in different contexts; the certainty does not apply to every CDS use case. |
+{:.grid}
 
-Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (Proposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”[<sup>3</sup>](#3)
+#### Standards-based CDS and Computable Guidelines
 
-<details open>
+| Reading | Evidence and useful lesson | Limit when applying it |
+| --- | --- | --- |
+| [Boxwala et al., 2011](https://doi.org/10.1136/amiajnl-2011-000334) | Layered knowledge framework and preliminary implementation experience support linked representations for different users. | Framework/preliminary evaluation, not universal portability evidence. |
+| [Mandel et al., 2016](https://doi.org/10.1093/jamia/ocv189) | SMART on FHIR platform development demonstrates distinct data, authorization, authentication, and app-integration responsibilities. | Prototype-era paper; use version-appropriate current specifications for technical contracts. |
+| [Lomotan et al., 2020](https://doi.org/10.1055/s-0040-1701253) | CDS Connect describes sharing artifacts with evidence links, implementation guidance, and tests. | Repository availability is not local adoption or clinical effectiveness. |
+| [Thiess et al., 2022](https://doi.org/10.1016/j.ijmedinf.2022.104749) | DDInteract coordinates FHIR, CQL, CDS Hooks, SMART, and terminology/evidence services. | Architectural case study, not isolated patient-benefit or cross-vendor cost evidence. |
+| [Morgan et al., 2022](https://doi.org/10.1093/jamia/ocac085) | A 70-provider randomized study increased recommended SMART calculator use from 2.6% to 6.0% with contextual CDS Hooks prompts. | One ED/EHR and a utilization endpoint; not powered for clinical outcomes. |
+| [Jung et al., 2022](https://doi.org/10.2196/40338) | Shared FHIR/CDS Hooks drug-allergy service reports over a million checks across 67 providers. | Scale/use evidence does not establish prevented patient harm. |
+| [Dhopeshwarkar et al., 2023](https://doi.org/10.1055/s-0043-1769911) | National evaluation documents trust, vendor capability, staffing, and maintenance barriers to shared CDS. | Program/qualitative evidence rather than a controlled cost-effect estimate. |
+| [Matson-Koffman et al., 2023](https://doi.org/10.1097/JMQ.0000000000000137); [Tailor et al., 2023](https://doi.org/10.1097/JMQ.0000000000000140) | Integrated development and evaluation frameworks connect teams and distinguish process, product, and outcome evaluation. | Frameworks and an illustrative case do not establish accelerated implementation or better outcomes. |
+| [Pretty et al., 2023](https://doi.org/10.1136/bmjhci-2022-100691) | WHO DAK terminology work exposes ambiguous concepts and qualified mappings requiring clinical review. | A best-fit code is not proof of semantic equivalence. |
+| [Sittig et al., 2024](https://doi.org/10.1093/jamia/ocae138) | Workflow modeling identifies patient-generated-data review, after-hours responsibility, and device-data issues. | Model/expert evidence, not a clinical outcome trial. |
+| [Isabelle et al., 2025](https://doi.org/10.1093/jamiaopen/ooaf085) | Three CQL/FHIR/CDS Hooks tools achieved reported 96–100% accuracy in retrospective samples. | Small, single-center evaluation; not prospective effectiveness or demonstrated equivalence. |
+| [Jing et al., 2025](https://doi.org/10.3390/vaccines13050437) | Intermediate vaccination representations and **12 developed/tested CQL rules/files** illustrate partial translation and hypothetical FHIR testing; further CQL conversion was ongoing. | Encodes the 2022 schedules, not current vaccine advice or demonstrated production benefit. |
+| [Tamrat et al., 2025](https://doi.org/10.1186/s12961-025-01397-7) | GUIDE specifies implementation research for WHO DAKs in Ethiopia/Ghana. | A protocol's planned impact measures are not achieved outcomes. |
+| [Shenvi et al., 2026](https://doi.org/10.1002/lrh2.70104) | A cloud-hosted FHIR/CQL/CDS Hooks STI service used progressive testing and local order/data adaptations. | Two same-vendor institutions; live clinical testing at one. Update/adoption governance and clinical benefit were not established. |
+{:.grid}
 
-<summary>
+#### Put the Evidence to Work
 
-Figure 2. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence[<sup>4</sup>](#4)
+Define the clinical decision, actors, action, workflow, and local capabilities before choosing a delivery interface. Evaluate technical conformance, clinical fidelity, use, care processes, patient effects, and unintended consequences separately. Keep local data/terminology dependencies and post-release monitoring visible. See [Methodology](methodology.html), [execution and validation](documentation-approach-05-04-knowledge-execution-and-validation.html), and [local implementation](documentation-approach-05-05-knowledge-implementation.html).
 
-</summary>
+#### Selected Bibliography and Public Reading Paths
 
-<img src="CPG-04-03.png" alt="Learning Health System" class="img-responsive img-rounded center-block" height="500" width="500"/>
+The following records provide citation details and public reading paths for the selected literature above. Source dates and evaluation limits matter when applying an older implementation report.
 
-</details>
+- Kawamoto K, Houlihan CA, Balas EA, Lobach DF. Improving clinical practice using clinical decision support systems: a systematic review of trials to identify features critical to success. *BMJ.* 2005;330:765. [doi:10.1136/bmj.38398.500764.8F](https://doi.org/10.1136/bmj.38398.500764.8F).
+- Garg AX, Adhikari NKJ, McDonald H, et al. Effects of computerized clinical decision support systems on practitioner performance and patient outcomes: a systematic review. *JAMA.* 2005;293(10):1223–1238. [doi:10.1001/jama.293.10.1223](https://doi.org/10.1001/jama.293.10.1223). [Public abstract](https://pubmed.ncbi.nlm.nih.gov/15755945/).
+- Kucher N, Koo S, Quiroz R, et al. Electronic alerts to prevent venous thromboembolism among hospitalized patients. *N Engl J Med.* 2005;352(10):969–977. [doi:10.1056/NEJMoa041533](https://doi.org/10.1056/NEJMoa041533).
+- Strom BL, Schinnar R, Aberra F, et al. Unintended effects of a computerized physician order entry nearly hard-stop alert to prevent a drug interaction: a randomized controlled trial. *Arch Intern Med.* 2010;170(17):1578–1583. [doi:10.1001/archinternmed.2010.324](https://doi.org/10.1001/archinternmed.2010.324). [Publisher full text](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/226004).
+- Kwan JL, Lo L, Ferguson J, et al. Computerised clinical decision support systems and absolute improvements in care: meta-analysis of controlled clinical trials. *BMJ.* 2020;370:m3216. [doi:10.1136/bmj.m3216](https://doi.org/10.1136/bmj.m3216). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC7495041/).
+- Wright A, Ai A, Ash JS, et al. Clinical decision support alert malfunctions: analysis and empirically derived taxonomy. *J Am Med Inform Assoc.* 2018;25(5):496–506; first published online 2017. [doi:10.1093/jamia/ocx106](https://doi.org/10.1093/jamia/ocx106). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6019061/).
+- Poly TN, Islam MM, Yang HC, Li YCJ. Appropriateness of Overridden Alerts in Computerized Physician Order Entry: Systematic Review. *JMIR Med Inform.* 2020;8(7):e15653. [doi:10.2196/15653](https://doi.org/10.2196/15653). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC7400042/).
+- Thayer JG, Franklin A, Miller JM, Grundmeier RW, Rogith D, Wright A. A scoping review of rule-based clinical decision support malfunctions. *J Am Med Inform Assoc.* 2024;31(10):2405–2413. [doi:10.1093/jamia/ocae187](https://doi.org/10.1093/jamia/ocae187). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11413449/).
+- Syrowatka A, Motala A, Lawson E, Shekelle P. *Computerized Clinical Decision Support To Prevent Medication Errors and Adverse Drug Events: Rapid Review.* Making Healthcare Safer IV. Rockville, MD: Agency for Healthcare Research and Quality; February 2024. [doi:10.23970/AHRQEPC_MHS4MEDERROR](https://doi.org/10.23970/AHRQEPC_MHS4MEDERROR). [Official public report](https://www.ncbi.nlm.nih.gov/books/NBK600580/).
+- Boxwala AA, Rocha BH, Maviglia S, et al. A multi-layered framework for disseminating knowledge for computer-based decision support. *J Am Med Inform Assoc.* 2011;18(Suppl 1):i132–i139. [doi:10.1136/amiajnl-2011-000334](https://doi.org/10.1136/amiajnl-2011-000334). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC3241169/).
+- Mandel JC, Kreda DA, Mandl KD, Kohane IS, Ramoni RB. SMART on FHIR: a standards-based, interoperable apps platform for electronic health records. *J Am Med Inform Assoc.* 2016;23(5):899–908. [doi:10.1093/jamia/ocv189](https://doi.org/10.1093/jamia/ocv189). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC4997036/).
+- Lomotan EA, Meadows G, Michaels M, Michel JJ. To Share is Human! Advancing Evidence into Practice through a National Repository of Interoperable Clinical Decision Support. *Appl Clin Inform.* 2020;11(1):112–121. [doi:10.1055/s-0040-1701253](https://doi.org/10.1055/s-0040-1701253). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC7015815/).
+- Thiess H, Del Fiol G, Malone DC, et al. Coordinated use of Health Level 7 standards to support clinical decision support: Case study with shared decision making and drug-drug interactions. *Int J Med Inform.* 2022;162:104749. [doi:10.1016/j.ijmedinf.2022.104749](https://doi.org/10.1016/j.ijmedinf.2022.104749). [Public manuscript](https://pmc.ncbi.nlm.nih.gov/articles/PMC9703934/).
+- Morgan KL, Kukhareva PV, Warner PB, et al. Using CDS Hooks to increase SMART on FHIR app utilization: a cluster-randomized trial. *J Am Med Inform Assoc.* 2022;29(9):1461–1470. [doi:10.1093/jamia/ocac085](https://doi.org/10.1093/jamia/ocac085). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC9382378/).
+- Jung S, Bae S, Seong D, Oh OH, Kim Y, Yi BK. Shared Interoperable Clinical Decision Support Service for Drug-Allergy Interaction Checks: Implementation Study. *JMIR Med Inform.* 2022;10(11):e40338. [doi:10.2196/40338](https://doi.org/10.2196/40338). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC9693697/).
+- Dhopeshwarkar RV, Freij M, Callaham M, et al. Lessons Learned from a National Initiative Promoting Publicly Available Standards-Based Clinical Decision Support. *Appl Clin Inform.* 2023;14(3):566–574. [doi:10.1055/s-0043-1769911](https://doi.org/10.1055/s-0043-1769911). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC10371399/).
+- Matson-Koffman DM, Robinson SJ, Jakhmola P, et al. An Integrated Process for Co-Developing and Implementing Written and Computable Clinical Practice Guidelines. *Am J Med Qual.* 2023;38(5S):S12–S34. [doi:10.1097/JMQ.0000000000000137](https://doi.org/10.1097/JMQ.0000000000000137). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/).
+- Tailor A, Robinson SJ, Matson-Koffman DM, Michaels M, Burton MM, Lubin IM. An Evaluation Framework for a Novel Process to Codevelop Written and Computable Guidelines. *Am J Med Qual.* 2023;38(5S):S35–S45. [doi:10.1097/JMQ.0000000000000140](https://doi.org/10.1097/JMQ.0000000000000140). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476596/).
+- Pretty F, Tamrat T, Ratanaprayul N, et al. Experiences in aligning WHO SMART guidelines to classification and terminology standards. *BMJ Health Care Inform.* 2023;30:e100691. [doi:10.1136/bmjhci-2022-100691](https://doi.org/10.1136/bmjhci-2022-100691). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC10439311/).
+- Sittig DF, Boxwala A, Wright A, et al. Patient-centered clinical decision support challenges and opportunities identified from workflow execution models. *J Am Med Inform Assoc.* 2024;31(8):1682–1692. [doi:10.1093/jamia/ocae138](https://doi.org/10.1093/jamia/ocae138). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC11258405/).
+- Isabelle M, Ip IK, Bakhtin M, et al. Assessment of 3 standards-based clinical decision support (CDS) tools in an academic electronic health record using Clinical Quality Language, CDS Hooks, and Fast Healthcare Interoperability Resources: a retrospective evaluation. *JAMIA Open.* 2025;8(4):ooaf085. [doi:10.1093/jamiaopen/ooaf085](https://doi.org/10.1093/jamiaopen/ooaf085). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC12309839/).
+- Jing X, Min H, Gong Y, et al. Vaccination Schedules Recommended by the Centers for Disease Control and Prevention: From Human-Readable to Machine-Processable. *Vaccines.* 2025;13(5):437. [doi:10.3390/vaccines13050437](https://doi.org/10.3390/vaccines13050437). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC12116024/).
+- Tamrat T, Muliokela RK, Hussen AM, et al. The Guideline Uptake in Digital Ecosystems (GUIDE) study: protocol for implementation research on the impact of WHO SMART guidelines digital adaptation kits to improve quality of care. *Health Res Policy Syst.* 2025;23:122. [doi:10.1186/s12961-025-01397-7](https://doi.org/10.1186/s12961-025-01397-7).
+- Shenvi E, Boxwala A, Shaw S, et al. A Standards-Based, Cloud-Hosted CDS System for Gonorrhea Treatment and HIV Screening. *Learn Health Syst.* 2026;10(4):e70104. First published July 30, 2026. [doi:10.1002/lrh2.70104](https://doi.org/10.1002/lrh2.70104). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC13421373/).
+- ASTP/ONC. *SAFER Self-Assessment: Computerized Provider Order Entry with Decision Support.* 2025 SAFER Guides release; document footers dated August 2024. Primary guide authors: Flanagan T, Singh H, Sittig DF; additional contributors listed in the document. [Official PDF](https://www.healthit.gov/sites/default/files/topiclanding/2025-01/3.%20CPOE%20Final.pdf).
 
-### Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
+<a id="1"></a>**6S reference:** DiCenso A, Bayley L, Haynes RB. Accessing preappraised evidence: fine-tuning the 5S model into a 6S model. *Ann Intern Med*. 2009;151:JC3–2. [Publication](https://doi.org/10.7326/0003-4819-151-6-200909150-02002).
 
-Clearly there are many benefits to enable such a “peak of the pyramid” approach to tightly integrating guideline-directed care and cycling the “Learning Health System” for any condition and at any point in time.  However, perhaps none more so than a situation where there is a public health emergency with significant mortality and where there is poor quality or low level of evidence for how to best address the novel contagion as well as the clinicopathophysiological  (disease processes and manifestations) that it causes.  There are several clear benefits and advantages to such an approach including the use of other techniques, disciplines, and approaches described elsewhere in this implementation guide.  We will address a few of them here and provide references to where else in this document related content can be found.  Many of the approaches, capabilities, best practices, tools, and techniques described in this implementation guide are certainly as, if not even more, relevant to these situations.
+<a id="2"></a>**Rapid-review reference:** Khangura S et al. Evidence summaries: the evolution of a rapid review approach. *Syst Rev*. 2012;1:10. [Publication](https://doi.org/10.1186/2046-4053-1-10).
 
-#### Rapid Discovery of Best Practice
+<a id="3"></a>**Learning-system context:** [AHRQ Learning Health Systems](https://www.ahrq.gov/learning-health-systems/about.html).
 
-One of the first priorities in a situation where evidence and best practice is significantly lacking is to establish a means to start discovering evidence for best practices.  In addition to typical public health incident case report information (confirmatory labs and demographics), patient and population-level information about the clinicopathophysiological nature of the human body’s disease or disordered response to the contagion as is critical to have early on. Likewise, information around the likely interventions for this disease or disordered responses to the contagion together with information on response to treatment as well as intermediate- and end-outcomes is critically important to discover the effectiveness, timing, and contextualizing factors (e.g. other patient-level information) for these interventions.  One of the earliest components of a CPG to be identified and mature, and the set of required data elements (Case Features) and key inferences (derived or inferred Case Features) that are inclusive of requests (orders, prescriptions, scheduled procedures, etc.) and various clinical data elements.  A CPG with few or even no recommendations may be developed using the approaches in this implementation guide with the primary purpose of collecting relevant data (see section on eCaseReport).
-
-Evidence of and for best practice may begin to emerge through such data using various means including approaches described briefly and a high level and other sections of this implementation guide (see section on Knowledge Acquisition and in particular: Knowledge Discovery; Hybrid Approaches; and In Collaboration with Knowledge Implementers)
-
-#### Rapid dissemination of Practice Guidance
-
-As evidence begins to emerge through such data through various means including using approaches described briefly and a high level and other sections of this implementation guide (see section on Knowledge Acquisition and in particular: Knowledge Discovery; Hybrid Approaches; and In Collaboration with Knowledge Implementers), best practice guidance (and/or guidelines) can then be rapidly developed, delivered, and implemented using other approaches described in this document (see sections on Agile CPG Development Process and on Knowledge Implementation).
-
-Alternatively, with a lack of high quality evidence and available evidence-based best practice guidance, some of the earliest (though low quality) best practices may be actively discovered firsthand on the front lines and reported as case studies or series studies (though low in evidence quality).  However, such guidance in certain situations may be at least informative to frontline providers, and inform additional relevant data collection on related clinicopathological processes, interventions, and response (including outcomes) thereto as described above (see [eCase Report](documentation-approach-12-07-cpg-derivative-and-related-assets.html#ecase-report)).
-
-#### Rapid-cycle, closed loop Knowledge-to-Delivery-to-Discovery with feedback loops
-
-In either scenario described above- rapid discovery of best practice, or rapid dissemination of practice guidance, the ascent to the peak of the pyramid through a rapid-cycle Learning Health System can be initiated.  Whether it be data-to-evidence, or practice-to-data, the full closed loop knowledge discovery-to-delivery lifecycle need not be dependent on evidence-to-practice as is the usual case in the guideline development process and the supporting Agile CPG development process.  There are numerous feedback, and feedforward, loops described in this implementation guide that can facilitate continuous learning as well as evidence updates. (see Agile CPG Development Process and eCaseReport).  This cycle may be thought of as either: Data-to-Evidence-to-Knowledge-to-Practice; or Guidance-to-Practice-to-Data-to-Evidence-to-Knowledge-to-Practice
-
-<details open>
-
-<summary>
-
-Figure 3. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
-
-</summary>
-
-<img src="CPG-05.05-Agile.png" alt="Knowledge Implementation concurrent with Agile CPG Development" class="img-responsive img-rounded center-block" height="500" width="500"/>
-
-</details>
-
----
-
-<a id="1">1</a>: DiCenso A, Bayley L, Haynes RB. Accessing preappraised evidence: fine-tuning the 5S model into a 6S model. Ann Intern Med. 2009;151:JC3–2. doi: https://doi.org/10.7326/0003-4819-151-6-200909150-02002
-
-<a id="2">2</a>: Khangura, S., Konnyu, K., Cushman, R., Grimshaw, J., & Moher, D. (2012). Evidence summaries: the evolution of a rapid review approach. Systematic reviews, 1, 10. https://doi.org/10.1186/2046-4053-1-10
-
-<a id="3">3</a>: https://www.ahrq.gov/learning-health-systems/about.html
-
-<a id="4">4</a>: Flynn, Allen & Friedman, Charles & Boisvert, Peter & Landis‐Lewis, Zachary & Lagoze, Carl. (2018). The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learning Health Systems. 2. 10.1002/lrh2.10054.
+<a id="4"></a>**Knowledge-management context:** Flynn AJ et al. The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. *Learn Health Syst*. 2018;2:e10054. [Publication](https://doi.org/10.1002/lrh2.10054).

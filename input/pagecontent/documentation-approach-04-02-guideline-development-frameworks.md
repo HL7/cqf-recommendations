@@ -1,51 +1,37 @@
-The following frameworks are used in guideline development and across the evidence ecosystem:
+Choose a framework for the clinical question and document how it was used. Computability adds explicit data and decision requirements; it does not replace evidence appraisal or the guideline group's judgment.
 
 ### Knowledge Synthesis and the Evidence Pyramid
 
-Knowledge synthesis is the process in the professional community of practice that applies and develops methodologies for systematically evaluating a corpus of evidence related to a particular condition or intervention.  This includes deciding what evidence from across the evidence ecosystem to evaluate[<sup>1</sup>](#1) as well as various methods for performing this evaluation[<sup>2</sup>](#2). One factor that is taken into consideration is the validity and/or quality of evidence.  In evaluating the validity of evidence, one factor that is taken into consideration is the Evidence Pyramid, discussed below.  The quality of evidence may be systematically evaluated, often through knowledge synthesis methodologies such as meta-analyses, systematic reviews, evidence summaries, or rapid reviews, and applying frameworks such as GRADE, discussed further below.
+A clinical question normally begins with PICOTS: population, intervention, comparator, outcomes, timing, and setting. Preserve these meanings in the review and the recommendation; they inform eligibility and applicability but do not automatically become executable criteria. An evidence hierarchy helps organize study designs, while certainty depends on the actual body of evidence and its limitations. See the [evidence and implementation literature hub](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html).
 
 ### Meta-Analyses and Systematic Reviews (Syntheses)
 
-A meta-analysis is a statistical analysis that combines the results of multiple quantitative studies (e.g. Randomized Controlled Trials (RCT’s), cohort studies) that address the same question, with each individual study reporting individual study results that are expected to have some degree of error. The objective is to use statistical approaches to derive a pooled estimate closest to the ‘unknown truth’. Meta-analyses yield a weighted average of the results of the individual studies and have the capacity to contrast the results from different studies, identify patterns among study results or potential sources of disagreement among those results, or other relationships that become evident in the context of multiple studies. This approach of aggregating information leads to a higher statistical power and more robust point estimate than is possible from any individual study. (ref)
+A systematic review uses explicit methods to identify, appraise, and synthesize evidence for a defined question. A meta-analysis statistically combines compatible quantitative results. A pooled result still needs interpretation of heterogeneity, bias, applicability, and uncertainty. A rapid review adapts methods to a decision timescale and reports the resulting limits.
 
-A systematic review is a summary of the literature that uses a systematic approach to identify and critically appraise publications or evidence from the literature on a given topic.  Systematic reviews are intended to provide a comprehensive and exhaustive summary of current evidence that is ”methodical, comprehensive, transparent, and replicable.” (ref) systematic reviews may relate to interventions (benefits and harms), use of diagnostic testing to detect a particular disease, prognosis or probable course for future outcomes, risks of developing a given condition, or even a systematic review of systematic reviews to consolidate holistic evidence about a given topic (e.g. disease, procedure).
+| Framework or work product | Purpose | Input to computable guideline development |
+| --- | --- | --- |
+| [GIN–McMaster guideline checklist](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html) | Organize guideline-development activities and reporting. | Scope, contributors, evidence methods, recommendations, review, dissemination and update plan. |
+| PICOTS | Make the clinical question and context explicit. | Population and setting definitions, outcomes, timing, candidate data elements and exclusions. |
+| Systematic review / meta-analysis | Synthesize and appraise a defined body of research. | Source evidence and limitations; not automatically an implementable recommendation. |
+| [GRADE](https://www.gradeworkinggroup.org/) | Assess certainty of evidence and strength of recommendations using distinct judgments. | Named rating method, outcome-specific certainty, direction, strength, and decision rationale. This IG does not mandate GRADE. |
+| [WHO Digital Adaptation Kits](https://www.who.int/publications/i/item/9789240089907) | Express guideline content as software-neutral operational requirements. | Personas, workflows, data dictionaries, decision logic, indicators, and functional requirements. |
+| [Integrated development process](https://doi.org/10.1097/JMQ.0000000000000137) | Coordinate guideline, informatics, implementation, communication, and evaluation work. | Reviewed intermediate products and feedback across disciplines; not a proven effectiveness claim. |
+{:.grid}
 
-<details open>
+The [GRADE Working Group](https://www.gradeworkinggroup.org/) distinguishes certainty of evidence from recommendation strength and asks for explicit evidence-to-decision judgments. Preserve the selected method and its source definitions rather than treating a high-level label as a universal scale. For FHIR representation and this IG's rating requirements, continue to [analysis and reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html).
 
-<summary>
+### Earlier reference links
 
-Figure 1. The Evidence Pyramid refers to a means to evaluate the quality or validity of evidence (higher toward the top) as well as provide a visual depiction of the amount of evidence (width)[^3].  The evaluation of the evidence not only informs the guideline development process and resulting recommendations but is further communicated together with the recommendations themselves using the GRADE framework, described below.
+These anchors preserve references from previous versions of this page; links retain their historical purpose.
 
-</summary>
-
-<img src="CPG-04-01.png" alt="Evidence Pyramid" class="img-responsive img-rounded center-block" height="500" width="500"/>
-
-</details>
-
-**PICOTS Typology** - **P**atient population, **I**ntervention, **C**omparator, **O**utcomes, **T**iming, **S**etting. The **PICOTS** Typology may be used for scoping the guideline and individual recommendations and the analysis of the supporting evidence or studies (e.g., meta-analyses, systematic reviews, and the individual studies that serve as their body of evidence).  There are implications to guideline eligibility, applicability criteria for individual recommendations (the “condition” portion of ECA rules), and various data element and terminology semantics across the CPG.[<sup>4</sup>](#4);[<sup>5</sup>](#5)  For more on using PICOTS within HL7 Standards, see the EBM-on-FHIR initiative.[<sup>6</sup>](#6)
-
-**GRADE** (**G**rades of **R**ecommendation **A**ssessment, **D**evelopment and **E**valuation) **GRADE** describes a process and a structured framework for conveying information to develop a common, transparent, and sensible system for grading the **quality** of evidence and the **strength** of recommendations. Quality of evidence and strength of recommendations have implications for not only recommendation metadata and implementation approaches.  GRADE distinctly separates the evaluation of the quality of evidence from the evaluation of strength of recommendations.[<sup>7</sup>](#7);[<sup>8</sup>](#8);[<sup>9</sup>](#9);[<sup>10</sup>](#10);[<sup>11</sup>](#11)
-
----
-
-<a id="1">1</a>: https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Deciding
-
-<a id="2">2</a>:  https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Summarizingtable
-
-<a id="3">3</a>: http://dx.doi.org/10.1136/ebmed-2016-110401
-
-<a id="4">4</a>: https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#PICOtable
-
-<a id="5">5</a>: https://www.ncbi.nlm.nih.gov/books/NBK98234/table/ch
-
-<a id="6">6</a>: http://hl7.org/fhir/clinicalreasoning-evidence-and-statistics.html
-
-<a id="7">7</a>: https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Judgingtabl
-
-<a id="8">8</a>: https://www.ncbi.nlm.nih.gov/pubmed/23312392
-
-<a id="9">9</a>: https://www.ncbi.nlm.nih.gov/pubmed/21208779
-
-<a id="10">10</a>: https://www.cdc.gov/vaccines/acip/recs/grade/downloads/guide-dev-grade.pdf
-
-<a id="11">11</a>: https://gdt.gradepro.org/app/handbook/handbook.html
+- <a id="1"></a>[Choosing evidence](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Deciding).
+- <a id="2"></a>[Summarizing evidence](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Summarizingtable).
+- <a id="3"></a>[Evidence-pyramid discussion](https://doi.org/10.1136/ebmed-2016-110401).
+- <a id="4"></a>[PICO questions](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#PICOtable).
+- <a id="5"></a>[AHRQ comparative-effectiveness methods](https://www.ncbi.nlm.nih.gov/books/NBK98234/).
+- <a id="6"></a>[FHIR R4 evidence resources](https://hl7.org/fhir/R4/evidence.html).
+- <a id="7"></a>[Judging evidence](https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Judgingtabl).
+- <a id="8"></a>[GRADE guideline-development publication](https://pubmed.ncbi.nlm.nih.gov/23312392/).
+- <a id="9"></a>[GRADE introduction publication](https://pubmed.ncbi.nlm.nih.gov/21208779/).
+- <a id="10"></a>[CDC ACIP GRADE guidance](https://www.cdc.gov/acip-grade-handbook/).
+- <a id="11"></a>[GRADE handbook](https://gdt.gradepro.org/app/handbook/handbook.html).

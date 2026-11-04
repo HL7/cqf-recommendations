@@ -1,0 +1,85 @@
+{
+  "height": 395,
+  "title": "Separate patient state, guidance and delivery",
+  "description": "Patient information is evaluated with guideline knowledge to propose care. Local workflow reviews and delivers care, producing new patient information.",
+  "nodes": [
+    {
+      "id": "case",
+      "x": 32,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "knowledge",
+      "label": "Patient information",
+      "body": [
+        "Recorded facts",
+        "Clinical assessments",
+        "Derived features"
+      ]
+    },
+    {
+      "id": "plan",
+      "x": 358,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "logic",
+      "label": "Guideline evaluation",
+      "body": [
+        "Reusable definitions",
+        "Applicability logic",
+        "Proposed patient care"
+      ]
+    },
+    {
+      "id": "work",
+      "x": 684,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "workflow",
+      "label": "Local workflow",
+      "body": [
+        "Review and authorize",
+        "Deliver and document",
+        "Track responsibility"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "case",
+      "to": "plan"
+    },
+    {
+      "from": "plan",
+      "to": "work"
+    },
+    {
+      "from": "work",
+      "to": "case",
+      "fromPort": "bottom",
+      "toPort": "bottom",
+      "via": [
+        [
+          826,
+          305
+        ],
+        [
+          174,
+          305
+        ]
+      ],
+      "dashed": true
+    }
+  ],
+  "notes": [
+    {
+      "x": 32,
+      "y": 350,
+      "w": 936,
+      "text": "Solid arrows: information used for care. Dashed return: documented care informs later evaluation.",
+      "size": 16
+    }
+  ]
+}

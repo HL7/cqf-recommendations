@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to recommend documenting a patient’s medication use. The required input identifies the relevant medication request, and an optional output identifies the MedicationStatement produced by the work. That statement conveys documented use and its source; it is not itself a record that a dose was administered.

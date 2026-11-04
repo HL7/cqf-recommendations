@@ -1,0 +1,11 @@
+{
+  "base_commit": "320b164065d795dd0b7ab9ab313a67f129e06dc7",
+  "build_exit_code": 0,
+  "publisher_version": "2.3.1",
+  "publisher_jar_sha256": "60f8bb09a2da292d9b5979d8908a47353b65090a57d385ca8390e209ebc09f0c",
+  "inputs_verified": 1010,
+  "input_manifest_sha256": "29e2e09b9bd9b071f6c87988e88a4992ece1921de3db4f4007839f9145bdc150",
+  "workspace_and_candidate_input_hashes_match": true,
+  "baseline_build_directory": "/var/folders/w_/1kxcn0r925ng0ml6mwd78z5m0000gp/T/cpg-narrative-baseline-rb7j7dpr",
+  "candidate_build_directory": "/var/folders/w_/1kxcn0r925ng0ml6mwd78z5m0000gp/T/cpg-narrative-final-reviewed-5xdtazmp"
+}

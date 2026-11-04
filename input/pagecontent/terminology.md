@@ -1,18 +1,19 @@
-Terminologies are a critical aspect of supporting interoperable computable content. This implementation guide defines profiles for the CodeSystem and ValueSet resources to identify key elements that must be supported. The profiles described here ensure that different use case needs for value set artifacts are met in a manner that meets criteria deemed important for clinical guideline, decision support, and quality measure artifact creation, testing, use, maintenance, and distribution.
+Terminology connects clinical concepts to the codes used by guideline logic and patient data. Use established code systems where possible, define the intended membership of each value set, and record the versions and mappings needed to reproduce an evaluation.
 
-The approach taken here is based on and aligns with the core FHIR specification, readers of this implementation guide should be familiar with the [Using Codes](http://hl7.org/fhir/R4/terminologies.html) topic in the base FHIR specification.
+This page describes requirements for terminology **defined by** a content implementation guide. Referencing an external code system or value set does not, by itself, make its publisher subject to these requirements. Start with [Using Codes in FHIR R4](https://hl7.org/fhir/R4/terminologies.html).
 
-This page provides overview documentation for the use of code systems and value sets:
+| Work item | What to record |
+| --- | --- |
+| Clinical concept | Intended meaning, source guidance, and any ambiguity requiring review |
+| Code mapping | Code system, code/version, semantic match or qualification, and reviewer |
+| Value-set definition | Canonical identity, version, membership method, and dependencies |
+| Expansion | Expansion time, parameters, code-system versions, and refresh responsibility |
+| Local use | How actual patient data is coded and what happens when mapping or membership is unavailable |
+{:.grid}
 
-*   Using Code Systems
-*   Using Value Sets
+WHO SMART Guidelines [terminology-alignment experience](https://pmc.ncbi.nlm.nih.gov/articles/PMC10439311/) shows why a plausible code match still needs clinical review. A mapping can be incomplete or approximate; preserve that qualification for downstream implementors.
 
-For indexes of terminologies defined in this implementation guide, see the following:
-
-*   **[Code System Index](artifacts.html#codesystem-index)**
-*   **[Value Set Index](artifacts.html#valueset-index)**
-*   **[Example Code System Index](examples.html#codesystem-index)**
-*   **[Example Value Set Index](examples.html#valueset-index)**
+Use the [code system index](artifacts.html#codesystem-index), [value set index](artifacts.html#valueset-index), and corresponding [example code systems](examples.html#codesystem-index) and [example value sets](examples.html#valueset-index) to find artifacts.
 
 ### Using Code Systems
 
@@ -31,12 +32,7 @@ Refer to the [HL7 Terminology](https://terminology.hl7.org/) site for a list of 
 
 ### Using Value Sets
 
-The CRMI implementation guide defines four value set profiles:
-
-*   CRMIShareableValueSet
-*   CPGComputableValueSet
-*   CPGPublishableValueSet
-*   CPGExpandedValueSet
+The value-set guidance uses four profile roles: shareable metadata, computable membership, publishable lifecycle information, and a persisted expansion. Resolve the corresponding profiles in the [CRMI](https://hl7.org/fhir/uv/crmi/) edition adopted by the content package. The requirements below use the CRMI profile names referenced by this guide.
 
 The ComputableValueSet profile describes the requirements for computable representation of value set membership criteria, ensuring that value sets using this profile selectively support only one technique for defining the content of expansions.
 
@@ -67,3 +63,11 @@ Value sets defined by content conforming to this IG SHALL conform to:
 *   and the CRMIPublishableValueSet profile if the artifact status is active
 
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use these profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
+
+### Validate and maintain terminology
+
+Test membership with the actual terminology and data versions used by the implementation. Include representative codes, exclusions, retired or unmapped concepts, and cases in which a service cannot resolve the requested version. Record whether evaluation used the computable definition or a published expansion.
+
+The membership-definition requirement above and the closing computable/expanded profile list both apply to defined value sets. An expansion supplies a point-in-time result; it does not by itself describe how membership was chosen or remove the earlier definition requirement. Check the selected CRMI edition's profile definitions when packaging content, and document any unresolved conformance question for review.
+
+Terminology changes can alter behavior even when the CQL source stays the same. Reassess dependent logic and local mappings when code systems, value sets, expansions, or data feeds change. [Reported CDS malfunctions](https://pmc.ncbi.nlm.nih.gov/articles/PMC6019061/) include failures associated with these dependencies. Continue to [libraries](libraries.html) and [validation](methodology.html#validate-step).

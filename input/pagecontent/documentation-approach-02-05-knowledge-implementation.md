@@ -1,10 +1,31 @@
-Once computable representations and expressions of any clinical practice guideline have been developed (as a CPG-IG) they must be implemented and integrated with various clinical and operational information systems (e.g., EHRs, Workflow Apps, Quality and Practice Analytics tools, Quality and Registry Reporting tools, etc.)  Three main factors come into play. The first consideration is where and how these computable expressions and artifacts will be executed- natively withing systems of record, in an external reasoning engine, or translated and reimplemented in target system native logic languages (e.g. rules engines).  The second consideration, which is related to the first, Is how the inferences or insights (e.g. CaseFeatures, [Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)/Proposals, [Metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric)) are to be integrated into existing clinical application ecosystems and/or the same or similar workflows supported by these applications.  The third consideration, which further relates to the first two, Is where and how these insights will be manifested in such a way to enable guideline-informed clinical workflows and related healthcare activities.  Partially orthogonal to, but just as important as these three considerations, is the ability to assess and ensure conformance of specific implementations of computable clinical practice guidelines using the specifications and requirements outlined in this implementation guide.
+Implementing a computable guideline means making its definitions and logic work with local patient data and clinical workflow. Begin with a specific content package and intended use, then make three separate decisions.
 
-While all of these factors Have implications for the overall level of effort, the methods of implementing knowledge and mechanisms of integration are directly reflected in the overall selection of workflow enablements in a given setting. The last two sections further discuss trade-offs between effort, time to develop, and capabilities enabled (and value that can be derived) when developing a CPG. From very basic context for narrative snippets searchable in a library (or Infobutton from EHR) to full clinical workflow enablement, cognitive support, and pathway tracking (likely via SMART-on-FHIR App or deep EHR integration). CPGs also enable feedback loops with real-world evidence of actual guideline usage and outcomes, and provide a substrate for the evidence ecosystem and a feedforward loop for evidence updates. To support description of, and allow declaration of conformance to, these various capabilities enabled by CPGs, the CPG-IG defines levels of enablement that correlate to work effort, time to delivery, and capabilities enabled.
+### Choose the execution, integration, and user experience
 
-<ul>
-  <li><a href="documentation-approach-09-methods-of-implementation.html">Methods of Implementing Knowledge</a> (expressions and artifacts)</li>
-  <li><a href="documentation-approach-10-mechanisms-of-integration.html">Mechanisms of Integration with Clinical Information Systems</a></li>
-  <li><a href="documentation-approach-03-conformance-levels.html">Levels of Workflow Enablement</a></li>
-  <li><a href="documentation-conformance.html">Levels of Conformance</a></li>
-</ul>
+| Decision | Questions to answer | Owning topic |
+| --- | --- | --- |
+| Execute the knowledge | Will the system execute the supplied representation, translate it, or use it as a specification for a local implementation? | [Methods of implementation](documentation-approach-09-methods-of-implementation.html) |
+| Connect the systems | Where are data retrieved, logic evaluated, results presented, and accepted actions persisted? | [Mechanisms of integration](documentation-approach-10-mechanisms-of-integration.html) |
+| Select useful capabilities | Does the use case need narrative guidance, a patient summary, actionable suggestions, or longer-running care coordination? | [Levels of enablement](documentation-approach-03-conformance-levels.html) |
+
+These choices interact, but they are independent of the [L1–L4 representation levels](documentation-approach-06-01-levels-of-knowledge-representation.html) and [Data/Logic/Forms tiers](documentation-approach-07-tiers-of-functionality.html). A native CQL engine, for example, can serve either a CDS Hooks interface or a standalone application.
+
+### Gather the inputs
+
+Before integration, identify the guideline's clinical source and version, the FHIR artifacts and their canonical dependencies, the applicable data profiles and terminology, and the expected test results. Establish the local patient and encounter context, available data, supported workflow triggers, authorized users, and the team responsible for clinical review and maintenance.
+
+The resulting implementation record should explain local mappings and gaps, the chosen execution and delivery mechanisms, and the evidence supporting release. The [L4 checklist](clinical-guidelines-development-L4-checklist.html) provides a place to track that work.
+
+### Follow the patient-specific flow
+
+1. Resolve the content and evaluate it with the intended patient context.
+2. Inspect the proposed activities and any missing-data or evaluation messages.
+3. Gather additional data where appropriate using [interactive CDS](interactive-cds.html).
+4. Let the responsible workflow accept, authorize, and carry out selected activities, following [activity flow](activityflow.html).
+5. Track execution failures, clinical use, and effects; revisit local mappings and content when dependencies change.
+
+The [CPG PlanDefinition $apply operation](OperationDefinition-cpg-plandefinition-apply.html) returns transient results. Its invocation alone neither persists those results nor completes a clinical activity.
+
+### Verify the implementation
+
+Keep [formal conformance](documentation-conformance.html), logic tests, clinical review, local integration tests, usability, and outcome evaluation visible as separate evidence. Experience with [standards-based CDS implementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC13421373/) illustrates why shared logic still needs local data and order mappings. For a concrete artifact walkthrough, continue to the [congestive heart failure example](examples-chf.html).

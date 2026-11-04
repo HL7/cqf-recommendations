@@ -1,54 +1,37 @@
 ### Evidence
 
-Evidence and information from the evidence used and referenced in the guideline recommendations may be formalized as FHIR Evidence Resources with their respective Evidence Variables using the EBM-on-FHIR IG.  Similarly, the published guideline narrative may be formalized through the same approach using this CPG-on-FHIR IG as discussed in the [Analysis of Evidence](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html) section.
+Begin with the reviewed recommendation and supporting evidence described in [analysis and reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html). Keep its identity and version linked to every derived representation. The evidence synthesis and the executable decision serve different purposes and can change for different reasons.
 
 ### Co-Development of Guidelines and Computable Clinical Guideline Artifacts
 
-The integrated process describes co-development of the narrative and computable guidelines that brings together a number of desirable elements that include:
-*	An approach that includes guideline and artifact development, implementation, consideration for updating and discontinuation, and evaluation
-*	Promotes active collaboration (integration) of key subject matter experts thought the process.  These include:
-    *	Guideline developers
-    * Informaticians
-    * Implementers
-    * Communicators
-    * Evaluators
-* Provides for active iteration of key steps of the guideline development and implementation processes to assure that intermediate and final products are optimized and fit for purpose.
-* Includes robust process, product, and outcomes/impact evaluation frameworks to assure guideline development and implementation is efficient, cost-effective, and impactful (this element in development)
+Clinical authors, informaticians, implementors, communicators, and evaluators work on connected products. An implementor's data-availability finding may require clarification of a term; a clinical review may change an expression; neither change is silently accepted merely because a tool can process it.
 
 #### The Integrated Process Cycle
 
-Figure 1 represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support.[<sup>2</sup>](#2) See explanation below diagram for additional details.
+<a id="1"></a>The [integrated process](https://doi.org/10.1097/JMQ.0000000000000137) describes 12 phases of co-developing written and computable guidelines, with communication and evaluation throughout. The simplified diagram below is an original implementation-oriented summary, not a reproduction of the published 12-phase model. [Boxwala et al.](https://doi.org/10.1136/amiajnl-2011-000334) provide the foundational layered-representation approach.
 
-<details open>
+<div style="clear: both;">
+  <img src="cpg-method-handoff.svg" alt="Clinical authors and knowledge engineers exchange reviewed work products with local implementors and evaluators." class="img-responsive center-block" width="1000"/>
+</div>
 
-<summary>
-Figure 1. The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.[<sup>1</sup>](#1)
-</summary>
-
-<img src="CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block" height="600"/>
-
-</details>
-
-The outer circle shows 12 phases of formal guidelines development that result in published narrative recommendations. The middle circle represents the integration of informatics and clinical implementation activities into the guideline development 12 phase process. This circle adds iterative steps within and between the phases and that 1) inform written guidelines, and 2) result in a computable version of  guidelines that can be more rapidly implemented in clinical settings. The inner circle represents the evaluation activities that should be conducted throughout guideline development, with constant attention to meeting the needs of users. This integration is designed to facilitate use of guidelines in clinical practice and timely updates to guidelines based on clinical impact. Finally, at the center of the process are the guideline users, who should be engaged through human-centered design processes in all phases (shown by spiral connections).
-
-<a id="2">2</a>: Boxwala, Aziz A., et al. "A multi-layered framework for disseminating knowledge for computer-based decision support." Journal of the American Medical Informatics Association 18.Supplement_1 (2011): i132-i139.
+| Review handoff | Sender provides | Receiver checks |
+| --- | --- | --- |
+| Guideline → semi-structured specification | Recommendation, source, ratings, rationale, scope | Concepts, applicability, timing, exceptions, actions, and unanswered questions |
+| Specification → computable artifacts | Reviewed data dictionary, criteria, example cases | Appropriate FHIR profiles, terminology, expressions, dependencies, and behavior |
+| Artifacts → local implementation | Versioned package, tests, capabilities and known limits | Data mappings, supported interfaces, workflow, authorization, and operational ownership |
+| Implementation → revision | Observed defects, workload, usage, outcomes and context | Whether to change clinical guidance, formal artifacts, local mapping, or workflow |
+{:.grid}
 
 ### CPG Content and Related Derivatives
 
-1. **Recommendations:** In the CPG context, recommendations are represented and expressed through a profile on the FHIR Plan Definition ([Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)) largely derived from the ECA Rule profile.  The recommended intervention corresponds to the “action” portion of an ECA rule and is largely expressed as a [Request](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request) through an Activity Definition.  The applicability criteria and/or decision logic for a recommendation largely corresponds to the “condition” portion of an ECA rule and is largely expressed using a combination of scoped CQL (population criteria, decision logic, inferred data elements) and FHIR Plan Definition (e.g., as a Decision Table). “Events” of the ECA rule, correspond to either the state of or changes to the patient’s clinical condition (data change event) as described in the recommendation (e.g., new diagnosis of, risk score exceeds limit, blood pressure drops below threshold), or an (abstract) patient or clinician workflow activity, the passage of time with respect to some anchoring event, or some combination thereof.  See [Plan](documentation-approach-12-03-cpg-plan.html) in Conceptual CPG Knowledge Architecture section for more details on Recommendations.
-2. **Guideline & Strategies:**  The broader guideline includes strategies for relating, sequencing, or orchestrating individual (or groups of) recommendations and is represented and expressed through separate profiles on the  FHIR Plan Definition ([Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) and [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy)).  A Strategy is used to correlate, orchestrate, and/or provide decision logic between a set of related recommendations often scoped to a particular clinical issue (e.g., diuresis in inpatient heart failure management). A Pathway serves a similar function across Strategies and scopes the entire guideline.  See [Plan](documentation-approach-12-03-cpg-plan.html) in Conceptual CPG Knowledge Architecture section for more details on Strategies, Pathways, and [Guidelines](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-guideline).
-3. **Metrics and Measures:**  A Metric is a patient level measurement or indicator of recommendation compliance and/or guideline adherence (corresponding to a process measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity.  A Measure is a population level measurement typically corresponding to an aggregate of patient level [Metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric) and/or other parts of the CPG.  For a [Measure](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure), the initial patient population often corresponds to the CPG eligibility criteria, while the denominator is often constrained by individual recommendation applicability criteria (including exclusion or contraindication criteria), and the numerator may correspond to satisfaction criteria (order placed or activity performed)  for guideline recommendation or proposal compliance in the case of process measures, or goal or threshold attainment in the case of outcome measures.  Measure Initial Patient Populations definitions and [Pathway Eligibility Criteria](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway-eligibility-criteria) will likely have significant overlap in many cases.  Recommendation logic (applicability criteria) similarly will overlap with denominator, denominator exclusion, risk stratifications, and numerator criteria.  See [CPG Derivative & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) in Conceptual CPG Knowledge Architecture section for more details on Metrics and Measures.
-4. **eCaseReport:**  A eCase Report is intended to convey the set of data elements required to provide for more detailed outcomes research on the guideline topic itself as well as for a feedback loop for continuous improvement of the specified  guideline.  The data elements for an [eCase Report](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-ecase-report) come from the data requirements ([Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)), key inferences thereof (inferred Case Features), patient specific recommendations ([Proposals](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal)), and the corresponding orders and resulting clinical activities (requests and resultant events from Case Features).  Additional or supplemental data elements (data requirements and inferences) for informing identified guideline gaps or feedback loops may be further specified for inclusion in the eCase Report. See [CPG Derivative & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) in Conceptual CPG Knowledge Architecture section for more details on eCase Reports.
+Use [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html), [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html), and [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html) for the respective PlanDefinition roles. Patient-specific requests and records are separate from these definitions.
+
+Potential downstream products include CDS, forms, patient metrics, population measures, and reporting. Each has its own information and validation needs. Reusing concepts or expressions does not make a recommendation and a population measure equivalent. See [knowledge assets](documentation-approach-06-02-knowledge-assets.html) and [derivative and related assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) for their owning definitions.
 
 ### Value of Computable Guideline Artifacts to Stakeholders
 
-**For Guideline Development Group, especially Medical Specialty Societies**- Actionable and meaningful usage of and feedback on guideline recommendations; (automated) data collection of data elements relevant to the scope of the guideline (registries); significant number of process of care level and intermediate- and end-outcome metrics and quality measures scoped to the guideline; active and highly relevant participation in the Learning Health System.
+The intended value is reduced repeated interpretation and clearer reuse, implementation, and feedback. Evaluate those objectives rather than assuming them. CDS Connect experience documents the need for trust, evidence transparency, and local technical/staff support even when artifacts are publicly shared. [Dhopeshwarkar et al., 2023](https://doi.org/10.1055/s-0043-1769911).
 
+Define evaluation of the development process, product quality, and implementation outcomes separately, following the [evaluation framework](https://doi.org/10.1097/JMQ.0000000000000140). Continue to the [engineering lifecycle](documentation-approach-05-knowledge-engineering-overview.html) or the [implementation recipe](methodology.html).
 
-**For Providers and Health Care Organizations**- Nearly automated data collection for clinical registries (internal, professional societies, and accreditation); a significant number of process of care level and intermediate- and end-outcome metrics and quality measures; readily available means to implement, monitor, and measure guideline-directed care; benefits derived from participation in the Learning Health System.
-
-
-**For the Evidence Ecosystem**- Utility of evidence and new high-value, patient and process of care level evidence to “climb the pyramid”.
-
-
-**For modern and emerging methods of Knowledge Discovery**- numerous opportunities to leverage value of methods and data assets (data-to-knowledge); new high-value evidence substrate to reason over (enriched data, guideline usage, knowledge artifacts created across the value-chain).  (see section on [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html))
+<a id="2"></a>**Foundational reference:** Boxwala AA, Rocha BH, Maviglia S, et al. A multi-layered framework for disseminating knowledge for computer-based decision support. *JAMIA*. 2011;18(Suppl 1):i132–i139. [Publication](https://doi.org/10.1136/amiajnl-2011-000334).

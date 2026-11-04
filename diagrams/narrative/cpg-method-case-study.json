@@ -1,0 +1,92 @@
+{
+  "width": 1000,
+  "height": 410,
+  "title": "Historical 2020 COVID-19 development example",
+  "description": "Read left to right. Each box identifies a work product to review; arrows show the handoff, not automatic clinical approval.",
+  "nodes": [
+    {
+      "id": "0",
+      "label": "Scope",
+      "body": "Rapid review and provisional narrative",
+      "x": 25,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "knowledge"
+    },
+    {
+      "id": "1",
+      "label": "Specify",
+      "body": "Clinical concepts, decisions and cases",
+      "x": 220,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "knowledge"
+    },
+    {
+      "id": "2",
+      "label": "Formalize",
+      "body": "Terminology, ontology, DMN / CMMN",
+      "x": 415,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "logic"
+    },
+    {
+      "id": "3",
+      "label": "Translate",
+      "body": "Candidate FHIR/CQL artifacts",
+      "x": 610,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "logic"
+    },
+    {
+      "id": "4",
+      "label": "Test / package",
+      "body": "Test Bundles and linked work products",
+      "x": 805,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "result"
+    }
+  ],
+  "edges": [
+    {
+      "from": "0",
+      "to": "1"
+    },
+    {
+      "from": "1",
+      "to": "2"
+    },
+    {
+      "from": "2",
+      "to": "3"
+    },
+    {
+      "from": "3",
+      "to": "4"
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 330,
+      "w": 944,
+      "text": "Historical methodology account, November 2020. No current clinical advice or patient-benefit claim.",
+      "size": 16
+    },
+    {
+      "x": 28,
+      "y": 370,
+      "w": 944,
+      "text": "Legend: blue = knowledge; green = logic/testing; amber = local workflow; purple = release/result.",
+      "size": 16
+    }
+  ]
+}

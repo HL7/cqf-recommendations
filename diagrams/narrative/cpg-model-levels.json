@@ -1,0 +1,94 @@
+{
+  "height": 565,
+  "title": "Follow one clinical intent across four representations",
+  "description": "L1 narrative and L2 explicit models lead to L3 computable artifacts and an L4 local executable implementation. Review can revise any representation.",
+  "nodes": [
+    {
+      "id": "l1",
+      "x": 50,
+      "y": 100,
+      "w": 400,
+      "h": 160,
+      "kind": "knowledge",
+      "label": "L1 · Narrative",
+      "body": [
+        "Clinical scope and guidance",
+        "Evidence and recommendation strength"
+      ]
+    },
+    {
+      "id": "l2",
+      "x": 550,
+      "y": 100,
+      "w": 400,
+      "h": 160,
+      "kind": "knowledge",
+      "label": "L2 · Semi-structured",
+      "body": [
+        "Explicit concepts and decisions",
+        "Reviewed examples and process models"
+      ]
+    },
+    {
+      "id": "l3",
+      "x": 50,
+      "y": 330,
+      "w": 400,
+      "h": 160,
+      "kind": "logic",
+      "label": "L3 · Computable",
+      "body": [
+        "Profiles, terminology and libraries",
+        "Recommendation and activity definitions"
+      ]
+    },
+    {
+      "id": "l4",
+      "x": 550,
+      "y": 330,
+      "w": 400,
+      "h": 160,
+      "kind": "workflow",
+      "label": "L4 · Local implementation",
+      "body": [
+        "Data mappings, engine and workflow",
+        "Permissions, testing and monitoring"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "l1",
+      "to": "l2"
+    },
+    {
+      "from": "l2",
+      "to": "l3",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          750,
+          295
+        ],
+        [
+          250,
+          295
+        ]
+      ]
+    },
+    {
+      "from": "l3",
+      "to": "l4"
+    }
+  ],
+  "notes": [
+    {
+      "x": 32,
+      "y": 535,
+      "w": 936,
+      "text": "The levels are a continuum. Clinical review and local feedback can change any work product.",
+      "size": 16
+    }
+  ]
+}

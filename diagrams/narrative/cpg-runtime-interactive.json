@@ -1,0 +1,125 @@
+{
+  "title": "Collect information and reevaluate",
+  "description": "Current data feeds CPG apply. The user reviews proposals and questions. Changed answers are extracted and reconciled into updated context for reevaluation; selected proposals enter the action workflow.",
+  "width": 1000,
+  "height": 580,
+  "nodes": [
+    {
+      "id": "context",
+      "x": 30,
+      "y": 110,
+      "w": 270,
+      "h": 140,
+      "label": "Patient context",
+      "body": "Available data and parameters",
+      "kind": "knowledge"
+    },
+    {
+      "id": "apply",
+      "x": 365,
+      "y": 110,
+      "w": 270,
+      "h": 140,
+      "label": "Evaluate and prepare",
+      "body": [
+        "CPG $apply / $questionnaire",
+        "SDC $populate"
+      ],
+      "kind": "logic"
+    },
+    {
+      "id": "review",
+      "x": 700,
+      "y": 110,
+      "w": 270,
+      "h": 140,
+      "label": "Review and confirm",
+      "body": "Questions, answers, proposals",
+      "kind": "workflow"
+    },
+    {
+      "id": "extract",
+      "x": 365,
+      "y": 350,
+      "w": 270,
+      "h": 130,
+      "label": "Extract and reconcile",
+      "body": "Validate changed answers",
+      "kind": "knowledge"
+    },
+    {
+      "id": "action",
+      "x": 700,
+      "y": 350,
+      "w": 270,
+      "h": 130,
+      "label": "Selected proposals",
+      "body": "Continue the action workflow",
+      "kind": "result"
+    }
+  ],
+  "edges": [
+    {
+      "from": "context",
+      "to": "apply"
+    },
+    {
+      "from": "apply",
+      "to": "review"
+    },
+    {
+      "from": "review",
+      "to": "action",
+      "fromPort": "bottom",
+      "toPort": "top"
+    },
+    {
+      "from": "review",
+      "to": "extract",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          835,
+          290
+        ],
+        [
+          500,
+          290
+        ]
+      ],
+      "label": "answers changed",
+      "labelAt": [
+        600,
+        282
+      ],
+      "labelWidth": 130
+    },
+    {
+      "from": "extract",
+      "to": "context",
+      "fromPort": "left",
+      "toPort": "bottom",
+      "via": [
+        [
+          165,
+          415
+        ]
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 525,
+      "w": 944,
+      "text": "Changed answers return through extraction and context reconciliation before reevaluation."
+    },
+    {
+      "x": 28,
+      "y": 552,
+      "w": 944,
+      "text": "Generation, extraction, persistence, and clinical action remain separate responsibilities."
+    }
+  ]
+}

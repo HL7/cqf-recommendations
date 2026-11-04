@@ -1,54 +1,84 @@
-The conceptual knowledge architecture for the CPG describes how the concepts from a guideline and its recommendations described in [Guideline Development](documentation-approach-04-guideline-development.html) are realized as computable knowledge assets. The CPG knowledge architecture provides the framework through which the knowledge engineering team realizes the guideline, its recommendations, and their various features through explicit formalisms and ultimately as information. The CPG conceptual knowledge architecture together with the implementation instructions and examples in the [Methodology](methodology.html) section provide the means to develop and concretize a CPG representation that can be consumed through various mechanisms in end-user workflows.
-
-This section covers:
-
-*   [Separations of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html)
-*   [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)
-*   [Plan](documentation-approach-12-03-cpg-plan.html)
-*   [Case](documentation-approach-12-04-cpg-case.html)
-*   [Care Plan](documentation-approach-12-05-cpg-careplan.html)
-*   [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html)
-*   [Guideline, Derivative, and Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html)
-*   [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html)
-
-Figure 1. The CPG Pathway Definition that contains all the CPG-specific knowledge content and assets including the [Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) (and [Strategies](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy)); The Case that scopes all the required data elements ([Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)) including many of the patient-specific inferences thereon (inferred Case Features); and the CPGCarePlan that includes the patient-specific recommendations ([Proposals](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal)) and any resulting or relevant orders, prescriptions, scheduling ([Requests](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request)) and the data elements representing the events that fulfill these requests (a subset of the Case Features)
-
-<img src="CPG-12-00.png" alt="CPG Pathway Definition" class="img-responsive img-rounded center-block"/>
+Use this model to decide where a piece of guideline content belongs before selecting a FHIR resource. It separates reusable clinical knowledge from patient-specific information and local workflow. The [FHIR architecture](documentation-approach-06-03-knowledge-architecture.html) gives the corresponding resource contracts.
 
 ### Separation of Concerns
 
-Separation of concerns is a design principle that gives distinct, focused attention to each aspect of a domain. In healthcare, a critical axis of separation is by kind of process:
+<div style="clear: both;">
+  <img src="cpg-model-boundaries.svg" alt="Patient information informs guideline evaluation; proposed care is delivered through local workflow, which produces new patient information" class="img-responsive" width="1000"/>
+</div>
 
-1. **Case**: the patient's clinicopathological processes (pathophysiology and its clinical manifestations, including normal physiology)
-2. **Plan**: clinical decision-making and the corresponding care process, abstracted from the specifics of a care setting
-3. **Workflow**: the care delivery process by which care is carried out in a specific setting, including the clinical information systems used
+*Conceptual boundaries. Original illustration for this guide; arrows show information use and feedback, not automatic authorization or execution.*
 
-The CPG knowledge architecture is designed to respect these separations. See [Separations of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html) for other axes of separation (for example, by condition, intervention, or care setting), and [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html) for the definitions and the boundary issues between them.
+<a id="separating-and-defining-case-plan-and-workflowdocumentation-approach-12-02-separating-and-defining-case-plan-and-workflowhtml"></a>
 
-Figure 2. Illustrating the separation of the [Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case) (patient clinicopathophysiological processes and their manifestations and qualifications thereof), the [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan) (the approach to the patient’s current, historical, and potential future state of disease and well-being including medical decision-making), and the Workflow (how the Plan is implemented either through interactions with clinical information systems or through real-world human tasks and activities).
+### Separating and Defining Case, Plan, and Workflow
 
-<img src="CPG-12-01.png" alt="Separation of Concerns" class="img-responsive img-rounded center-block" width=300/>
+| Concept | Question | Representation in this guide |
+|---|---|---|
+| [Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case) | What is known or inferred about this patient? | Case-feature definitions describe data expectations; patient resources carry the values. CPGCase is an EpisodeOfCare recording enrollment. |
+| [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan) | What care is recommended for a class of patients? | Recommendation, strategy and pathway **definitions** use PlanDefinition profiles. |
+| [Care Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-care-plan) | What care is proposed or planned for this patient? | CPGCarePlan uses CarePlan; CPGStrategy uses RequestGroup; individual activities use request profiles. |
+| [Workflow](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-workflow) | Who does the work, when and through which system? | Abstract processes guide placement; requests, Tasks and events convey local execution state. |
 
-### Plan
+<a id="casedocumentation-approach-12-04-cpg-casehtml"></a>
 
-The Plan describes how a class of patients should be managed given a set of clinical parameters, constrained to the interventions scoped by the guideline's recommendations. It is definitional and consists of Recommendations, Strategies that coordinate related recommendations, and a [Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) that coordinates strategies and recommendations across the whole guideline. If logic describes what to do for a patient, it very likely belongs in the Plan. See [Plan](documentation-approach-12-03-cpg-plan.html).
+#### Case
 
-### Case
+Begin with [Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature): their clinical meaning, source, time, terminology and whether they are asserted or inferred. A clinical record can contain unknown, contradictory or outdated information; the model does not make those distinctions disappear.
 
-The Case is the information that describes an individual patient's current and historical state of health, disease, and risks: patient descriptors, exposures, assessments, clinical presentation and progression, diagnostic findings, diagnoses, risk and severity scores, and outcomes. These descriptors are referred to as Case Features, which may be recorded directly or inferred. See [Case](documentation-approach-12-04-cpg-case.html).
+<a id="plandocumentation-approach-12-03-cpg-planhtml"></a>
 
-### Care Plan
+#### Plan
 
-The Care Plan is the Plan applied to an individual Case. It contains the patient-specific recommendations (Proposals), the Requests that correspond to them, and the [Events](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-event) that fulfill those Requests, scoped to a specific CPG. See [Care Plan](documentation-approach-12-05-cpg-careplan.html).
+Use [definitions](documentation-approach-12-03-cpg-plan.html) to express recommendation applicability, activity templates and relationships. A definition is reusable knowledge. It does not assert that any patient has accepted or received the recommended care.
+
+#### Workflow
+
+Use the [common-pathway discussion](documentation-approach-12-06-cpg-common-pathway.html) to relate a recommendation to a recognizable care process. Specify the actual local trigger, responsible actor and follow-up separately.
+
+<a id="boundary-issues-at-the-separation-of-domain-concernsdocumentation-approach-12-02-separating-and-defining-case-plan-and-workflowhtml"></a>
+
+### Boundary Issues at the Separation of Domain Concerns
+
+#### Examples of Boundary Issues in the CPG covered in detail
+
+An order can be relevant both to the care plan and to a later assessment of patient state. A completed event can fulfill an order and become an input to another recommendation. A metric can describe the relationship between a proposed action and documented care. Reuse the same linked facts; do not duplicate them merely because they serve two roles.
+
+The [boundary examples](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html) explain these cases. Keep the difference between intent, authorization, execution and observation visible in every derived view.
+
+<a id="cpg-formalizations-of-domain-concerns--concepts"></a>
+
+### Formal profiles
+
+<a id="cpgcase-cpgplan-and-cpgcareplan"></a>
+
+#### Case, Plan, and Care Plan profiles
+
+The names in the conceptual model are not all profile names. Use these exact implementation entry points:
+
+- <a id="plan-1"></a>**Plan:** [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html), [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html), [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html).
+- <a id="case-1"></a>**Case:** [CPGCaseFeatureDefinition](StructureDefinition-cpg-casefeaturedefinition.html) for a definition; [CPGCase](StructureDefinition-cpg-case.html) for enrollment; the relevant clinical resource for a feature value.
+- <a id="care-plan"></a>**Care Plan:** [CPGCarePlan](StructureDefinition-cpg-careplan.html) and [CPGStrategy](StructureDefinition-cpg-strategy.html) for patient-specific planning and optionality.
+
+<a id="workflow-and-common-pathwaydocumentation-approach-12-06-cpg-common-pathwayhtml"></a>
 
 ### Workflow and Common Pathway
 
-This implementation guide does not specify local workflows. Instead it uses a "common pathway" (an abstraction of high-level clinical workflow), shared information (Case Features), and the standard FHIR request, event, and task patterns to connect guideline content to clinical information systems. See [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html). See also the [Activity Flow](activityflow.html), which carries an activity from definition to event in parallel with the EHR's own order lifecycle.
+The [workflow page](documentation-approach-12-06-cpg-common-pathway.html) connects abstract care processes to requests, Tasks, events and delivery interfaces. The [activity lifecycle](activityflow.html#purpose-and-rationale) supplies resource-specific status mappings. A conceptual diagram does not override those mappings.
+
+<a id="care-plandocumentation-approach-12-05-cpg-careplanhtml"></a>
+
+<a id="cpgguideline"></a>
+
+### Guideline
+
+A content implementation guide packages the relevant definitions, profiles, terminology, libraries, examples and documentation. The package is broader than a single pathway. See [guideline packaging](documentation-approach-12-07-cpg-derivative-and-related-assets.html#guideline).
+
+<a id="derivative--related-assets"></a>
 
 ### Guideline, Derivative, and Related Assets
 
-All of the knowledge assets produced by CPG development are packaged in a guideline container asset. Because the CPG formally expresses the intent of the guideline, other assets that have historically been developed by hand from the narrative (such as metrics, measures, case summaries, and case reports) can be derived from or related to it. See [Guideline, Derivative, and Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html).
+[Metrics, summaries, measures and reports](documentation-approach-12-07-cpg-derivative-and-related-assets.html) can reuse guideline concepts and logic. Each derivative still needs its own purpose, scope and validation. A computable representation supports reuse; it does not establish clinical benefit or complete local interoperability.
 
 ### Conceptual Knowledge Architecture Index
 
-The [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html) lists each concept used in these pages, such as Recommendation, Case Feature, and Proposal. For each one it links to where the concept is defined and shows how it is represented by the profiles in this implementation guide.
+The [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html) maps each concept to its explanation, legacy names and formal profiles.

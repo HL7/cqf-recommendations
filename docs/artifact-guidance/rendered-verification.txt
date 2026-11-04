@@ -1,0 +1,8 @@
+Rendered site checks used /private/var/folders/w_/1kxcn0r925ng0ml6mwd78z5m0000gp/T/cpg-artifact-guidance-final-q39e3nrb/output/en; target pages checked: 87
+Fragment injection checks requested for 174 fragments
+Inventory: 82 profiles {'artifact': 7, 'domain': 32, 'activity': 43}, 5 operations, 87 artifacts
+Narrative fragments: 174/174 nonempty
+Formal source hashes checked: 896; protected pagecontent/SVG hashes checked: 79
+Preserved out-of-scope intro-note hashes checked: 24
+Historical guard: 75 authorized paths skipped; 705 files verified
+Verification passed.

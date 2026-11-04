@@ -1,0 +1,134 @@
+{
+  "title": "Connect evaluation to the clinical workflow",
+  "description": "The client calls a CDS service with workflow context. Versioned knowledge and authorized patient data support evaluation. The response is guidance; the receiving workflow owns selected actions.",
+  "width": 1000,
+  "height": 600,
+  "nodes": [
+    {
+      "id": "client",
+      "x": 30,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Clinical client",
+      "body": "Hook and patient context",
+      "kind": "workflow"
+    },
+    {
+      "id": "service",
+      "x": 365,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "CDS service",
+      "body": "Evaluate and format a response",
+      "kind": "logic"
+    },
+    {
+      "id": "receiver",
+      "x": 700,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Receiving workflow",
+      "body": "Present and handle guidance",
+      "kind": "workflow"
+    },
+    {
+      "id": "data",
+      "x": 30,
+      "y": 350,
+      "w": 270,
+      "h": 130,
+      "label": "Clinical data",
+      "body": "Authorized access and mappings",
+      "kind": "knowledge"
+    },
+    {
+      "id": "knowledge",
+      "x": 365,
+      "y": 350,
+      "w": 270,
+      "h": 130,
+      "label": "Versioned knowledge",
+      "body": "PlanDefinition, Library, terminology",
+      "kind": "knowledge"
+    },
+    {
+      "id": "actions",
+      "x": 700,
+      "y": 350,
+      "w": 270,
+      "h": 130,
+      "label": "Selected actions",
+      "body": "Authorize, persist, and fulfill",
+      "kind": "result"
+    }
+  ],
+  "edges": [
+    {
+      "from": "client",
+      "to": "service",
+      "fromPort": "right",
+      "toPort": "left",
+      "label": "invoke",
+      "labelAt": [
+        332,
+        160
+      ],
+      "labelWidth": 63
+    },
+    {
+      "from": "service",
+      "to": "receiver",
+      "fromPort": "right",
+      "toPort": "left",
+      "label": "return",
+      "labelAt": [
+        667,
+        160
+      ],
+      "labelWidth": 63
+    },
+    {
+      "from": "data",
+      "to": "service",
+      "fromPort": "top",
+      "toPort": "left",
+      "via": [
+        [
+          165,
+          285
+        ],
+        [
+          332,
+          285
+        ],
+        [
+          332,
+          175
+        ]
+      ]
+    },
+    {
+      "from": "knowledge",
+      "to": "service",
+      "fromPort": "top",
+      "toPort": "bottom"
+    },
+    {
+      "from": "receiver",
+      "to": "actions",
+      "fromPort": "bottom",
+      "toPort": "top"
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 545,
+      "w": 944,
+      "text": "A SMART application may use the same reasoning service; write-back has its own contract."
+    }
+  ]
+}

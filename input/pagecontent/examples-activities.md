@@ -1,9 +1,6 @@
-These examples illustrate general implementation patterns for activity processing
-and recommendations related to performing activities.
+Use these examples to trace how recommendations to perform or not perform activities are represented and processed, from the proposal through acceptance or rejection to completion or explicit non-performance. Each section links to the related resources and scenario instances; the patterns are explained in [Activity Flow](activityflow.html).
 
-NOTE: The recommendations here are dramatically simplified to illustrate the general
-pattern for positive and negative recommendations, with the ability for users to reject
-the recommendation, and flexibility in how the recommendation is achieved.
+These examples are deliberately simplified technical demonstrations, not complete or production-ready clinical guidance. They show positive and negative recommendations, rejection, and flexibility in how an activity may be achieved.
 
 Specifically:
 * There is no terminology, any request/event on any topic will do

@@ -1,17 +1,11 @@
-A basic approach that may help with addressing appropriate separations of concerns is to consider where certain knowledge engineering artifacts may be situated when considering both tiers of functionality and levels of representation as shown in the table below.
+Use this matrix to plan the work products for one guideline capability. **Levels** describe the degree and setting of formalization. **Tiers** describe the responsibility being expressed. A project can iterate across the matrix rather than complete it cell by cell.
 
-<details open>
+| Functional tier | L1: narrative | L2: semi-structured | L3: computable | L4: local executable implementation |
+|---|---|---|---|---|
+| Data | Clinical concepts and relevant patient information | Data dictionary, terminology choices and time/source definitions | Profiles, CodeSystems, ValueSets and data requirements | Validated local mappings and data access |
+| Clinical logic | Recommendation and its clinical conditions | Decision tables, process models and reviewed examples | Libraries, activity and plan definitions; measures where needed | Configured engine or translated logic, local triggers and evaluated results |
+| Forms | Information clinicians/patients need to provide or review | User stories, interaction sketches and branching rules | Questionnaire and relevant population/extraction expressions | Rendered interactions, permissions and local workflow |
 
-<summary>
+For an illustrative recommendation involving a measured patient feature, L2 review might settle which measurement and time window to use. L3 then expresses that data contract, applicability condition and proposed activity. L4 verifies that the local data, trigger and presentation preserve those decisions. A form is only needed if the intended capability includes an interaction; a service may consume already-recorded information.
 
-Figure 1. Levels of Representation by Tiers of Functionality with Examples (Rhodes,B, Database Consulting Group, 2019).
-
-</summary>
-
-<img src="CPG-Main-LevelsAndTiers.png" alt="Levels by Tiers" class="img-responsive img-rounded center-block" width="750" height="300"/>
-
-</details>
-
-Across the top are the knowledge levels, from narrative text (Level 1) on the left through successively more structured representations that end with running, executable software at the right (Level 4). At the bottom of the diagram, the data tier (T1) represents the concepts and data elements involved in the guideline. Above that, the logic tier (T2) represents the business and process rules of the guideline, and at the top, the forms or user-interface tier (T3) represents the user interactions with the guideline content  Refer to [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html) and [Levels of Representation](documentation-approach-06-01-levels-of-knowledge-representation.html).
-
-Note that the levels of knowledge representation are a continuum, with discrete categories introduced in the methodology to help inform discussions and communicate the concepts involved. Typically, the initial guideline content is published in narrative form (L1), but guidelines will often contain diagrams, charts, and other depictions that lean towards semi-structured (L2) representation.
+This matrix is an explanatory planning aid, not a new conformance profile. It follows the levels-by-tiers distinction previously illustrated in this guide by B. Rhodes, Database Consulting Group (2019); the table is a new textual presentation. See [levels of representation](documentation-approach-06-01-levels-of-knowledge-representation.html), [functional tiers](documentation-approach-07-tiers-of-functionality.html) and the [L1–L4 checklists](checklists.html) for definitions and review questions.

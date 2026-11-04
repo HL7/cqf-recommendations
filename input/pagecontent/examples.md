@@ -1,16 +1,16 @@
-This page lists examples of various clinical guidelines expressed as computable content conforming to this implementation guide:
+Use these examples to see how guideline content is represented as FHIR resources. The linked guides are illustrative snapshots, not current clinical recommendations. Use [Activity Examples](examples-activities.html) for request, proposal, and event patterns; [Congestive Heart Failure](examples-chf.html) for a worked in-guide example; and the external guides below for broader examples.
 
 *   [Activity Examples](examples-activities.html)
-*   [Antenatal Care Guidelines](http://cqframework.org/cpg-example-anc/)
-*   [Anthrax Post-Exposure Prophylaxis](http://cqframework.org/cpg-example-anthrax/)
-*   [Chronic Disease Management - Chronic Kidney Disease](http://cqframework.org/cpg-example-ckd/)
+*   [Antenatal Care Guidelines](https://www.cqframework.org/cpg-example-anc/)
+*   [Anthrax Post-Exposure Prophylaxis](https://www.cqframework.org/cpg-example-anthrax/)
+*   [Chronic Disease Management - Chronic Kidney Disease](https://www.cqframework.org/cpg-example-ckd/)
 *   [Congestive Heart Failure](examples-chf.html)
 *   [COVID-19 CPG Methodology Case Study](methodology-case-study.html)
-*   [Opioid Prescribing Guideline 2016](http://cqframework.org/cpg-example-opioids/)
+*   [Opioid Prescribing Guideline 2016](https://www.cqframework.org/cpg-example-opioids/)
 *   [HIV Screening, Immunization, and Follow-up](examples-hiv-guideline.html)
-*   [Hepatitis B Adult Immunization Forecasting](http://cqframework.org/cpg-example-hepb/)
+*   [Hepatitis B Adult Immunization Forecasting](https://www.cqframework.org/cpg-example-hepb/)
 
-The following sections provide listings of resources defined in these examples, indexed by resource type.
+The resource indexes below are grouped by FHIR resource type. Use them to locate an example artifact after choosing a guide; they are not a complete description of each guide's clinical or implementation context.
 
 ### Example ActivityDefinition
 
@@ -74,43 +74,43 @@ The following sections provide listings of resources defined in these examples, 
 
     Measure urine output
 
-*   [Patient education: Managing Your High Blood Pressure (Hypertension)](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-edu-hypertension.html)
+*   [Patient education: Managing Your High Blood Pressure (Hypertension)](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-edu-hypertension.html)
 
     Patient education: Managing Your High Blood Pressure (Hypertension)
 
-*   [Patient education: Renal diet](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-edu-renal-diet.html)
+*   [Patient education: Renal diet](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-edu-renal-diet.html)
 
     Patient education: Renal diet
 
-*   [Lab: Creatinine, Urine Random, Once](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-lab-creatinine.html)
+*   [Lab: Creatinine, Urine Random, Once](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-lab-creatinine.html)
 
     Lab: Creatinine, Urine Random, Once
 
-*   [Lab: Comprehensive Metabolic Panel, Once](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-lab-metabolic.html)
+*   [Lab: Comprehensive Metabolic Panel, Once](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-lab-metabolic.html)
 
     Lab: Comprehensive Metabolic Panel, Once
 
-*   [Referral: Dietitian; History: chronic kidney disease; Question: \[add reason for referral\]](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-referral-dietition.html)
+*   [Referral: Dietitian; History: chronic kidney disease; Question: \[add reason for referral\]](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-referral-dietition.html)
 
     Referral: Dietitian; History: chronic kidney disease; Question: \[add reason for referral\]
 
-*   [Referral: Nephrology; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for referral\]](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-referral-nephrology.html)
+*   [Referral: Nephrology; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for referral\]](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-referral-nephrology.html)
 
     Referral: Nephrology; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for referral\]
 
-*   [Ultrasound, Renal; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for exam\]](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-cc-cpg-activity-ultrasound-renal.html)
+*   [Ultrasound, Renal; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for exam\]](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-ultrasound-renal.html)
 
     Ultrasound, Renal; History: \[add diagnosis, symptom(s)\]; Question: \[add reason for exam\]
 
-*   [Referral to Nephrologist](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-ckd-risk-referral-nephrology.html)
+*   [Referral to Nephrologist](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-ckd-risk-referral-nephrology.html)
 
     Create ServiceRequest to order Referral for nephrology.
 
-*   [Order Renal Lab Panel](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ActivityDefinition-ckd-risk-renal-lab-order.html)
+*   [Order Renal Lab Panel](https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-ckd-risk-renal-lab-order.html)
 
     Create ServiceRequest to order Renal lab panel.
 
-*   [CDC Opioid Prescribing Guideline Recommendation #7 - Risk Assessment ProcedureRequest](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/ActivityDefinition-opioidcds-riskassessment-request.html)
+*   [CDC Opioid Prescribing Guideline Recommendation #7 - Risk Assessment ProcedureRequest](https://www.cqframework.org/cpg-example-opioids/ActivityDefinition-opioidcds-riskassessment-request.html)
 
     As part of the workflow for recommendation 7, it is recommended that a risk assessment be conducted if the inclusion criteria is met.
 
@@ -306,9 +306,9 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example PlanDefinition
 
-*   [PlanDefinition - WHO ANC Guideline Contact Schedule](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/PlanDefinition-anc-contact-schedule.html) ANC\_Contact\_Schedule
-*   [PlanDefinition - WHO ANC Guideline Contact](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/PlanDefinition-anc-contact.html) ANC\_Contact
-*   [PlanDefinition - WHO ANC Guideline Recommendation #A2](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/PlanDefinition-anc-recommendation-a2.html) Recommendation\_A2
+*   [PlanDefinition - WHO ANC Guideline Contact Schedule](https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-contact-schedule.html) ANC\_Contact\_Schedule
+*   [PlanDefinition - WHO ANC Guideline Contact](https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-contact.html) ANC\_Contact
+*   [PlanDefinition - WHO ANC Guideline Recommendation #A2](https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-recommendation-a2.html) Recommendation\_A2
 *   [CHF Body Weight](PlanDefinition-chf-bodyweight-pd.html)
 
     Measure body weight daily
@@ -365,27 +365,27 @@ The following sections provide listings of resources defined in these examples, 
 
     Measure urine output daily
 
-*   [Chronic Kidney Disease - Ambulatory](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-cc-cpg-plan-ckd.html)
+*   [Chronic Kidney Disease - Ambulatory](https://www.cqframework.org/cpg-example-ckd/PlanDefinition-cc-cpg-plan-ckd.html)
 
     Chronic Kidney Disease - Ambulatory
 
-*   [Chronic Kidney Disease (CKD) risk screening](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-ckd-risk-screening.html)
+*   [Chronic Kidney Disease (CKD) risk screening](https://www.cqframework.org/cpg-example-ckd/PlanDefinition-ckd-risk-screening.html)
 
     Chronic Kidney Disease (CKD) risk screening
 
-*   [VA CKD Protocol](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-va-ckd-protocol.html)
+*   [VA CKD Protocol](https://www.cqframework.org/cpg-example-ckd/PlanDefinition-va-ckd-protocol.html)
 
     VA CKD Protocol
 
-*   [VA CKD Recommendations](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/PlanDefinition-va-ckd-recommendations.html)
+*   [VA CKD Recommendations](https://www.cqframework.org/cpg-example-ckd/PlanDefinition-va-ckd-recommendations.html)
 
     VA CKD Recommendations
 
-*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](https://build.fhir.org/ig/cqframework/cpg-example-hepb/branches/main/PlanDefinition-HepBAdultForecastingPD.html)
+*   [Immunization Forecasting of Hepatitis B Vaccine for Adults >= 18 Years of Age](https://www.cqframework.org/cpg-example-hepb/PlanDefinition-HepBAdultForecastingPD.html)
 
     If an adult patient has not been immunized for Hep B and is indicated for a Hep B vaccine, providers should administer according to this forecast.
 
-*   [CDC Opioid Prescribing Guideline Recommendation #5](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/PlanDefinition-opioidcds-r4-recommendation-05.html)
+*   [CDC Opioid Prescribing Guideline Recommendation #5](https://www.cqframework.org/cpg-example-opioids/PlanDefinition-opioidcds-r4-recommendation-05.html)
 
     When opioids are started, providers should prescribe the lowest effective dosage.
 
@@ -543,9 +543,9 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example Questionnaire
 
-*   [Questionnaire - ANC Every Contact](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/Questionnaire-anc-every-contact.html) ANC\_Every\_Contact
-*   [Questionnaire - ANC First Contact](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/Questionnaire-anc-first-contact.html) ANC\_First\_Contact
-*   [Questionnaire - ANC Quick Check](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/Questionnaire-anc-quick-check.html) ANC\_Quick\_Check
+*   [Questionnaire - ANC Every Contact](https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-every-contact.html) ANC\_Every\_Contact
+*   [Questionnaire - ANC First Contact](https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-first-contact.html) ANC\_First\_Contact
+*   [Questionnaire - ANC Quick Check](https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-quick-check.html) ANC\_Quick\_Check
 *   [Activity Example Collect Information Questionnaire](Questionnaire-activity-example-collectinformation-questionnaire.html)
 
     Example Questionnaire for use in collect information activity examples
@@ -573,30 +573,30 @@ The following sections provide listings of resources defined in these examples, 
 
 ### Example ValueSet {#valueset-index}
 
-*   [ANC Reason for Visit](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/ValueSet-anc-reason-for-visit-vs.html)
+*   [ANC Reason for Visit](https://www.cqframework.org/cpg-example-anc/ValueSet-anc-reason-for-visit-vs.html)
 
     Codes that identify the reason for an antenatal care visit
 
-*   [Chronic renal disease finding](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-ckd.html)
+*   [Chronic renal disease finding](https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-ckd.html)
 
     Chronic renal disease finding
 
-*   [Creatinine Lab Results](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-creatinine.html)
+*   [Creatinine Lab Results](https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-creatinine.html)
 
     Creatinine Lab Results
 
-*   [Diabetes Finding Codes](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-diabetes.html)
+*   [Diabetes Finding Codes](https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-diabetes.html)
 
     Diabetes Finding Codes
 
-*   [eGFR Lab Results](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-egfr.html)
+*   [eGFR Lab Results](https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-egfr.html)
 
     eGFR Lab Results
 
-*   [UACR Lab Results](https://build.fhir.org/ig/cqframework/cpg-example-ckd/branches/main/ValueSet-ckd-valueset-uacr.html)
+*   [UACR Lab Results](https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-uacr.html)
 
     UACR Lab Results
 
-*   [Opioids with Ambulatory Abuse Potential](https://build.fhir.org/ig/cqframework/cpg-example-opioids/branches/main/ValueSet-opioids-with-ambulatory-abuse-potential.html)
+*   [Opioids with Ambulatory Abuse Potential](https://www.cqframework.org/cpg-example-opioids/ValueSet-opioids-with-ambulatory-abuse-potential.html)
 
     ValueSet containing an example subset of opioid medication formulations used in ambulatory settings that have the potential for misuse or abuse. Includes opioid drugs not restricted to surgical use that can be used in ambulatory setting. Excludes formulations with dose form Topical Cream(RXCUI 316982) or Topical Solution(RXCUI 316986) and ingredients available in surgery. NOTE: This is a deliberately reduced value set for example purposes.

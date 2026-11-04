@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this CommunicationRequest profile for a patient-specific recommendation or request to communicate with a patient or another participant. It carries the message’s clinical context and supporting information while preserving the source guidance. The resulting Communication, if documented, is a separate record of the communication rather than this request’s intent.

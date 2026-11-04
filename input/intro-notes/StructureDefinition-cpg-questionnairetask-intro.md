@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to recommend collecting information with a specified questionnaire. Its canonical input identifies the reusable form, and its optional output points to the patient-specific answers. The Task tracks the collection work, while QuestionnaireResponse separately records the response’s content, author, source and completion state.

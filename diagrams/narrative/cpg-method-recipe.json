@@ -1,0 +1,92 @@
+{
+  "width": 1000,
+  "height": 410,
+  "title": "From recommendation to content package",
+  "description": "Read left to right. Each box identifies a work product to review; arrows show the handoff, not automatic clinical approval.",
+  "nodes": [
+    {
+      "id": "0",
+      "label": "Select",
+      "body": "Source, scope, actors, intended delivery",
+      "x": 25,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "knowledge"
+    },
+    {
+      "id": "1",
+      "label": "Represent",
+      "body": "Data dictionary, decisions, example cases",
+      "x": 220,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "knowledge"
+    },
+    {
+      "id": "2",
+      "label": "Translate",
+      "body": "FHIR/CQL artifacts and dependencies",
+      "x": 415,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "logic"
+    },
+    {
+      "id": "3",
+      "label": "Validate",
+      "body": "Separate clinical and technical findings",
+      "x": 610,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "logic"
+    },
+    {
+      "id": "4",
+      "label": "Package",
+      "body": "Approved version, tests, implementation notes",
+      "x": 805,
+      "y": 105,
+      "w": 170,
+      "h": 185,
+      "kind": "result"
+    }
+  ],
+  "edges": [
+    {
+      "from": "0",
+      "to": "1"
+    },
+    {
+      "from": "1",
+      "to": "2"
+    },
+    {
+      "from": "2",
+      "to": "3"
+    },
+    {
+      "from": "3",
+      "to": "4"
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 330,
+      "w": 944,
+      "text": "Review clinical meaning throughout. A failed check can return work to an earlier step.",
+      "size": 16
+    },
+    {
+      "x": 28,
+      "y": 370,
+      "w": 944,
+      "text": "Legend: blue = knowledge; green = logic/testing; amber = local workflow; purple = release/result.",
+      "size": 16
+    }
+  ]
+}

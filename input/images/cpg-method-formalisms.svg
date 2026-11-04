@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="435" viewBox="0 0 1000 435" role="img" aria-labelledby="title description">
+<title id="title">Compare behavior across optional representations</title><desc id="description">BPM+ models and FHIR/CQL artifacts are tested against common clinically reviewed cases. This comparison does not imply complete, lossless or bidirectional translation.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Compare behavior across optional representations</tspan></text>
+<polyline points="320,205.0 357,205.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="679,205.0 642,205.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="35" y="110" width="285" height="190" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="177.5" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="177.5" dy="0">Optional BPM+ models</tspan></text>
+<text x="177.5" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="177.5" dy="0">BPMN process; DMN decisions;</tspan><tspan x="177.5" dy="21.6">CMMN case management</tspan></text>
+<rect x="357" y="110" width="285" height="190" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="499.5" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="499.5" dy="0">Shared reviewed cases</tspan></text>
+<text x="499.5" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="499.5" dy="0">Same inputs, expected</tspan><tspan x="499.5" dy="21.6">behavior and clinical meaning</tspan></text>
+<rect x="679" y="110" width="285" height="190" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="821.5" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="821.5" dy="0">FHIR/CQL artifacts</tspan></text>
+<text x="821.5" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="821.5" dy="0">PlanDefinition /</tspan><tspan x="821.5" dy="21.6">ActivityDefinition,</tspan><tspan x="821.5" dy="21.6">Library/CQL and data profiles</tspan></text>
+<text x="28" y="350" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Check data retrieval, null/unknown behavior, time, conditions, concurrency and execution support.</tspan></text>
+<text x="28" y="390" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Legend: arrows = comparison against shared cases. No general semantic-equivalence guarantee.</tspan></text>
+</g></svg>
