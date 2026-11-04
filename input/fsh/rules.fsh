@@ -216,3 +216,11 @@ RuleSet: CHFGraphDefinitionMetadata(id)
     """Representation primitives, process models and patient data in computer-interpretable clinical practice guidelines: A literature review of guideline representation models. Dongwen Wang, Mor Peleg, Samson W Tu, Aziz A Boxwala, Robert A Greenes, Vimla L Patel, Edward H Shortliffe. International Journal of Medical Informatics, Volume 68, Issues 1–3, 2002, Pages 59-70, ISSN 1386-5056, https://doi.org/10.1016/S1386-5056(02)00065-5."""
 * experimental = true
 * status = #active
+
+RuleSet: MetricResultOperationalStates
+* CPGMetricResultCS#pending
+* CPGMetricResultCS#on-hold
+* CPGMetricResultCS#exempted
+* CPGMetricResultCS#not-applicable
+* CPGMetricResultCS#not-yet-evaluated
+* CPGMetricResultCS#unknown

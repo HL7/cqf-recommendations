@@ -504,6 +504,60 @@ Also note that depending on the guideline, there may be aspects of the pathway t
 
 Content conforming to this implementation guide SHALL use the [cpg-pathwaydefinition](StructureDefinition-cpg-pathwaydefinition.html) profile to represent pathway definitions.
 
+#### Metrics
+
+This implementation guide uses the Measure resource to represent [metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#cpgmetrics), patient-level indicators of how care delivered compares with the guideline. Content conforming to this implementation guide SHALL use the [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html) profile to represent metrics, and the [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile to record the result of evaluating a metric for a patient.
+
+The type of a metric is identified by `Measure.type`, using the [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set. In addition to the base measure types (such as process, outcome, and composite), this value set includes two measure types defined by this implementation guide, each of which reports a coded result:
+
+* A **compliance metric** (type _compliance_, a kind of process metric) is scoped to a [recommendation](#recommendations) and reports whether the care delivered conforms to it. Compliance metrics SHOULD report results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set.
+* An **adherence metric** (type _adherence_, a kind of composite metric) is scoped to a [strategy](#strategies) and reports whether the strategy's requirements, taken together, are met. Adherence metrics SHOULD report results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set.
+
+<div class="stu-note" markdown="1">
+
+Result codes for metrics scoped to pathways and goals are not yet defined, and are expected in a future version of this implementation guide. This project is actively seeking feedback on the compliance and adherence result codes below.
+
+</div>
+
+##### Metric Results
+
+Both value sets draw their codes from the [CPG Metric Result](CodeSystem-cpg-metric-result-cs.html) code system. The code system is hierarchical (is-a), so a query for a parent code also returns its children. For example, _compliant-with-prior-non-compliance_ is a kind of _compliant_.
+
+|Compliance result|Adherence result|Meaning|
+|----|----|----|
+|compliant|adherent|The expectation is met|
+|compliant-with-prior-non-compliance|adherent-with-prior-non-adherence|The expectation is met, but a prior evaluation within the metric's lookback was not|
+|&nbsp;|partially-adherent|Some, but not all, of the strategy's requirements are met|
+|non-compliant|non-adherent|The expectation is not met|
+|at-risk-for-non-compliance|at-risk-for-non-adherence|The expectation is not yet failed, but the metric predicts it will fail without intervention|
+{:.grid}
+
+Both value sets also include six shared operational states, which describe why no success or failure result is reported:
+
+|Code|Meaning|
+|----|----|
+|pending|The expectation applies and its fulfillment window is still open|
+|on-hold|The expectation is temporarily suspended under the metric's policy|
+|exempted|The recommendation or strategy applies, but an exemption accepted by the metric's policy removes the expectation|
+|not-applicable|The recommendation or strategy does not apply to the patient|
+|not-yet-evaluated|The metric has not yet been evaluated for the patient|
+|unknown|The metric was evaluated, but the result cannot be determined from the available data|
+{:.grid}
+
+See the code system for the full definition of each code. A metric reports one code per evaluation, chosen as follows:
+
+1. When the metric's predictive criterion holds, report the _at-risk_ code instead of the met, pending, or "with prior" result.
+2. When the expectation is met and the lookback shows a prior failure, report the "with prior" code instead of its parent.
+3. Report a failure of the evaluation engine itself through `MeasureReport.status`, not with the _unknown_ code.
+
+Several codes depend on the metric's policy. A metric that reports these codes SHOULD document, in its definition:
+
+* **Lookback**: the period searched for prior failures, for the "with prior" codes
+* **Predictive criterion and horizon**: the criterion that indicates a failure is likely, and the time within which it is expected, for the _at-risk_ codes
+* **Exemptions**: the exemptions the metric accepts (for example, contraindication, clinical judgment, or patient refusal), for the _exempted_ code
+* **Holds**: the evidence the metric accepts for a temporary suspension (for example, a [CPGHoldTask](StructureDefinition-cpg-holdtask.html) or a request with a status of on-hold), for the _on-hold_ code
+* **Acceptance and intermediate-attainment criteria** (adherence metrics only): the criteria for _adherent_ and _partially-adherent_. By default, a strategy is adherent when every applicable, non-exempted component is met, partially adherent when at least one is met and at least one has failed, and non-adherent when every one has failed
+
 ### Validate Step {#validate-step}
 
 The _validate_ step involves ensuring that the structured (L3) content produced matches the intent of the (L1) and (L2) content for the guideline. This implementation guide provides several approaches for validation, including conformance requirements, L2, L3, and L4 checklists, as well as supporting several layers of testing.
