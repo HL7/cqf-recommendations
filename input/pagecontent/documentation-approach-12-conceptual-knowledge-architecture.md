@@ -43,7 +43,7 @@ The Care Plan is the Plan applied to an individual Case. It contains the patient
 
 ### Workflow and Common Pathway
 
-This implementation guide does not specify local workflows. Instead it uses a "common pathway" (an abstraction of high-level clinical workflow), shared information (Case Features), and the standard FHIR request, event, and task patterns to connect guideline content to clinical information systems. See [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html).
+This implementation guide does not specify local workflows. Instead it uses a "common pathway" (an abstraction of high-level clinical workflow), shared information (Case Features), and the standard FHIR request, event, and task patterns to connect guideline content to clinical information systems. See [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html). See also the [Activity Flow](activityflow.html), which carries an activity from definition to event in parallel with the EHR's own order lifecycle.
 
 ### Guideline, Derivative, and Related Assets
 
