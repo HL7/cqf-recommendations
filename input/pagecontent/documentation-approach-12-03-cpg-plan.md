@@ -62,7 +62,7 @@ A Recommendation's recommended activity is the Definition phase of the [Activity
 
 #### Directionality and Strength of a Recommendation
 
-Guideline recommendations contain attributes or properties for the directionality and strength of recommendation (see GRADES discussion in the “Guideline Development Process” section).  A Recommendation addresses directionality in the semantics of the action or activity and in the expression of the Recommendation decision logic as part of the ECA Rule.  The strength of recommendation is an attribute of the Recommendation profile and carries forward its resulting Proposal.
+Guideline recommendations contain attributes or properties for the directionality and strength of recommendation (see GRADES discussion in the “Guideline Development Process” section).  A Recommendation addresses directionality in the semantics of the action or activity and in the expression of the Recommendation decision logic as part of the ECA Rule.  The strength of recommendation is an attribute of the Recommendation profile and carries forward its resulting Proposal.  These attributes remain separate from where an activity is in the [Activity Flow](activityflow.html#purpose-and-rationale).
 
 #### Quality of Evidence and Evidence for Recommendations
 
