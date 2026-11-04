@@ -33,6 +33,11 @@ This section describes how guideline concepts become computable knowledge artifa
 
 Keeping these concerns apart lets each be expressed at the right level of detail, without mixing logic that belongs to different concerns or adding complexity that has no value. The separation is the basis for the CPG profiles, such as [CPGCase](StructureDefinition-cpg-case.html), [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html), and [CPGCarePlan](StructureDefinition-cpg-careplan.html).
 
+Two ideas build on this separation and recur across this guide:
+
+* **Activity Flow** describes how a recommendation moves from a definition through proposal, plan, and order to an event, so that what was recommended can be traced to what was done. It runs alongside the EHR's own order lifecycle, not inside it. See [Activity Flow](activityflow.html#purpose-and-rationale).
+* **Metrics** evaluate where a patient stands relative to the guideline, such as compliance with a recommendation or adherence to a strategy. The same patient-level results can support care, roll up into population measures, and inform the evidence ecosystem. See [Metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics).
+
 * [Knowledge Architecture - Conceptual Perspective](documentation-approach-12-conceptual-knowledge-architecture.html)
     * [Separations of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html)
     * [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)
