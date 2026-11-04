@@ -2,7 +2,7 @@ The Approach section describes how guideline developers, knowledge engineers (an
 
 The approach has three parts:
 
-1. A **conceptual knowledge architecture** that names the key domain concepts in clinical guidance and separates them into distinct concerns ([Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case), [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan), and Workflow).
+1. A **conceptual knowledge architecture** that names the key domain concepts in clinical guidance and separates them into distinct concerns ([Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case), [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan), and [Workflow](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-workflow)).
 2. A **framework for describing knowledge artifacts**: how formal they are (levels of representation), what they do (tiers of functionality), and how they are implemented and integrated.
 3. An **agile, cross-functional development process** in which guideline development, knowledge engineering, and implementation happen together and repeat, not one after another (see [Figure 1.1](index.html#introduction)).
 
