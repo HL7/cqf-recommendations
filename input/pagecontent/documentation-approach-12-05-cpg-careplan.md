@@ -41,6 +41,8 @@ Figure 2. The Care Plan consists of the patient-specific recommendations as [Pro
 
 
 
+The Proposals, Requests, and Events of the Care Plan correspond to the patient-specific phases of the [Activity Flow](activityflow.html#purpose-and-rationale): a Proposal is the proposal phase, Requests cover the plan and order phases, and Events cover the event phase.
+
 ### Proposal
 
 A patient-specific recommendation that has taken into account all the criteria in the computable decision logic, and that gives a care team member what is needed to make a [Request](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request) (order, prescription, schedule), is known as a Proposal. A Proposal is the first patient-specific phase of the [Activity Flow](activityflow.html#purpose-and-rationale): if accepted it leads to a plan, if authorized to an order, and if fulfilled to an event. In FHIR, the phase is conveyed by the Request's [intent](http://hl7.org/fhir/codesystem-request-intent.html#4.3.14.226), and the state within that phase by its status. Proposals carry sufficient information to initiate a Request.
