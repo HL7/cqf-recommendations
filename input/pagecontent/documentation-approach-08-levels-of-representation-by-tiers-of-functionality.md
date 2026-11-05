@@ -4,11 +4,11 @@ A basic approach that may help with addressing appropriate separations of concer
 
 <summary>
 
-FIG. 58. Levels of Representation by Tiers of Functionality with Examples (Rhodes,B, Database Consulting Group, 2019).
+Figure 1. Levels of Representation by Tiers of Functionality with Examples (Rhodes,B, Database Consulting Group, 2019).
 
 </summary>
 
-<img src="CPG-Main-LevelsAndTiers.png" alt="Levels by Tiers" class="img-responsive img-rounded center-block" width="750" hight="300"/>
+<img src="CPG-Main-LevelsAndTiers.png" alt="Levels by Tiers" class="img-responsive img-rounded center-block" width="750" height="300"/>
 
 </details>
 

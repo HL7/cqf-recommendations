@@ -54,22 +54,25 @@ pages:
   index.md:
     title: CPG Home
   approach.md:
+    title: Approach
     documentation-approach-12-conceptual-knowledge-architecture.md:
-      title: CPG Knowledge Architecture-Conceptual Perspective
+      title: Knowledge Architecture - Conceptual Perspective
       documentation-approach-12-01-separations-of-concerns-in-the-cpg.md:
         title: Separations of Concerns
       documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.md:
         title: Separating and Defining Case, Plan, and Workflow
       documentation-approach-12-03-cpg-plan.md:
-        title: CPGPlan
+        title: Plan
       documentation-approach-12-04-cpg-case.md:
-        title: CPGCase
+        title: Case
       documentation-approach-12-05-cpg-careplan.md:
-        title: CPGCarePlan
+        title: Care Plan
       documentation-approach-12-06-cpg-common-pathway.md:
         title: Workflow and Common Pathway
       documentation-approach-12-07-cpg-derivative-and-related-assets.md:
-        title: CPGGuideline and Derivative & Related Assets
+        title: Guideline, Derivative, and Related Assets
+      documentation-approach-12-08-conceptual-knowledge-architecture-index.md:
+        title: Conceptual Knowledge Architecture Index
     documentation-approach-04-guideline-development.md:
       title: Guideline Development
       documentation-approach-04-02-guideline-development-frameworks.md:
@@ -87,7 +90,7 @@ pages:
       documentation-approach-05-02-knowledge-translation.md:
         title: Knowledge Translation
       documentation-approach-05-03-knowledge-representation.md:
-        title: Knowledge Representation/Expression
+        title: Knowledge Representation and Expression
       documentation-approach-05-04-knowledge-execution-and-validation.md:
         title: Knowledge Execution and Validation
       documentation-approach-05-05-knowledge-implementation.md:
@@ -96,10 +99,8 @@ pages:
         title: Agile CPG Development Approach
     documentation-approach-02-04-knowledge-representation.md:
       title: Knowledge Representation Overview
-      documentation-approach-06-knowledge-representation.md:
-        title: Knowledge Representation
       documentation-approach-06-01-levels-of-knowledge-representation.md:
-        title: “Levels” of Knowledge Representation Framing
+        title: Levels of Knowledge Representation
       documentation-approach-07-tiers-of-functionality.md:
         title: Tiers of Functionality
       documentation-approach-08-levels-of-representation-by-tiers-of-functionality.md:
@@ -109,7 +110,7 @@ pages:
       documentation-approach-06-03-knowledge-architecture.md:
         title: Knowledge Architecture
     documentation-approach-02-05-knowledge-implementation.md:
-      title: Implementation Computable Knowledge
+      title: Implementing Computable Knowledge
       documentation-approach-09-methods-of-implementation.md:
         title: Methods of Implementation
         activityflow.md:
