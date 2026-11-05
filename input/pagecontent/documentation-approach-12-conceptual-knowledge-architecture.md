@@ -31,7 +31,7 @@ Figure 2. Illustrating the separation of the [Case](documentation-approach-12-08
 
 ### Plan
 
-The Plan describes how a class of patients should be managed given a set of clinical parameters, constrained to the interventions scoped by the guideline's recommendations. It is definitional and consists of Recommendations, Strategies that coordinate related recommendations, and a [Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) that coordinates strategies and recommendations across the whole guideline. If logic describes what to do for a patient, it very likely belongs in the Plan. See [Plan](documentation-approach-12-03-cpg-plan.html).
+The Plan describes how a class of patients should be managed given a set of clinical parameters, constrained to the interventions scoped by the guideline's recommendations. It is definitional and consists of Recommendations, Strategies that coordinate related recommendations, and a [Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) that coordinates strategies and recommendations across the whole guideline. If logic describes what to do for a patient, it very likely belongs in the Plan. A Recommendation's activity is the Definition phase of the [Activity Flow](activityflow.html#purpose-and-rationale). See [Plan](documentation-approach-12-03-cpg-plan.html).
 
 ### Case
 
