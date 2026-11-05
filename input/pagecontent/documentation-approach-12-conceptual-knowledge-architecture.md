@@ -39,7 +39,7 @@ The Case is the information that describes an individual patient's current and h
 
 ### Care Plan
 
-The Care Plan is the Plan applied to an individual Case. It contains the patient-specific recommendations (Proposals), the Requests that correspond to them, and the [Events](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-event) that fulfill those Requests, scoped to a specific CPG. See [Care Plan](documentation-approach-12-05-cpg-careplan.html).
+The Care Plan is the Plan applied to an individual Case. It contains the patient-specific recommendations (Proposals), the Requests that correspond to them, and the [Events](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-event) that fulfill those Requests, scoped to a specific CPG. These are the patient-specific phases of the [Activity Flow](activityflow.html#purpose-and-rationale). See [Care Plan](documentation-approach-12-05-cpg-careplan.html).
 
 ### Workflow and Common Pathway
 
