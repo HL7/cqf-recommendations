@@ -124,6 +124,8 @@ pages:
         title: Levels of Enablement
       documentation-conformance.md:
         title: Conformance
+      actors.md:
+        title: Actors
   methodology.md:
   profiles.md:
     title: Profile Definitions and Documentation
@@ -181,6 +183,7 @@ parameters:
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
   auto-oid-root: 2.16.840.1.113883.4.642.40.48
+  requirements-category-vs: http://hl7.org/fhir/uv/cpg/ValueSet/cpg-conformance-category-vs
 
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

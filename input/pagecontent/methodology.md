@@ -214,13 +214,13 @@ Clinical guideline content typically assigns ratings for aspects of guidance suc
 * [**Strength of recommendation**](http://hl7.org/fhir/extension-cqf-strengthofrecommendation.html): The strength of the recommendation
 * [**Direction of recommendation**](StructureDefinition-cpg-directionOfRecommendation.html): The direction (positive or negative) of the recommendation
 
-Content conforming to this implementation guide SHALL provide references to supporting documentation for a recommendation in the form of a `relatedArtifact` element specifying a citation to the guideline.
+§rec-1^^recommendation:Content conforming to this implementation guide **SHALL** provide references to supporting documentation for a recommendation in the form of a `relatedArtifact` element specifying a citation to the guideline.§
 
-Due to the variability in rating systems among guideline content, this implementation is not prescriptive about what grading system should be used, and the example bindings from the base specification apply. However, content conforming to this implementation guide SHALL identify a rating system and use that to provide rating information for recommendations and guidance, and provide documentation on what rating system was selected and how it is communicated through the content.
+Due to the variability in rating systems among guideline content, this implementation is not prescriptive about what grading system should be used, and the example bindings from the base specification apply. However, §rec-2^^recommendation,documentation:content conforming to this implementation guide **SHALL** identify a rating system and use that to provide rating information for recommendations and guidance, and provide documentation on what rating system was selected and how it is communicated through the content.§
 
-Content conforming to this implementation guide SHALL provide the strength of a recommendation using the [strengthOfRecommendation](http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html) extension.
+§rec-3^^recommendation:Content conforming to this implementation guide **SHALL** provide the strength of a recommendation using the [strengthOfRecommendation](http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html) extension.§
 
-Content conforming to this implementation guide SHALL provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.
+§rec-4^^recommendation:Content conforming to this implementation guide **SHALL** provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.§
 
 Content conforming to this implementation guide MAY provide the directionality of a recommendation using the [directionOfRecommendation](StructureDefinition-cpg-directionOfRecommendation.html) extension.
 
@@ -328,9 +328,9 @@ Note that an _inferred_ case feature may be recorded as part of the patient reco
 
 Because case features are aspects of the patient's record (or typically events that _have occurred_, as opposed to _are planned_), case features will typically be [_event_](http://hl7.org/fhir/event.html) resources.
 
-Content conforming to this implementation guide SHOULD use the [CPG Event Activity Profiles](profiles.html#activity-profiles) as the basis for case feature definitions.
+§data-1^^data:Content conforming to this implementation guide **SHOULD** use the [CPG Event Activity Profiles](profiles.html#activity-profiles) as the basis for case feature definitions.§
 
-In addition, content implementation guides will typically select a target realm for deployment, and SHOULD select a set of [Interoperability Profiles](profiles.html#content-profiles) appropriate for that realm.
+In addition, content implementation guides will typically select a target realm for deployment, and a set of [Interoperability Profiles](profiles.html#content-profiles) appropriate for that realm (see statement prof-2 in [Implementation Considerations](profiles.html#implementation-considerations)).
 
 #### Terminology
 
@@ -420,7 +420,7 @@ This implementation guide defines profiles for each of the request resources to 
 
 These profiles are intended to be used for proposals, and so are modeled with the [proposal](http://hl7.org/fhir/codesystem-request-intent.html#request-intent-proposal) intent. Note that some implementations may go further and use the `plan` or even `order` intents of a request, depending on the capabilities of the systems involved.
 
-Content conforming to this implementation guide SHALL use one of the recommendation instance profiles described above to ensure supporting information related to the recommendation is preserved through the recommendation instance.
+§act-1^^activity:Content conforming to this implementation guide **SHALL** use one of the recommendation instance profiles described above to ensure supporting information related to the recommendation is preserved through the recommendation instance.§
 
 Specific guideline content MAY define derived profiles for recommendation instances establishing additional constraints.
 
@@ -458,7 +458,7 @@ The following table details the _event_ profiles for each activity type. Note th
 |Report a flag|[CPGFlag](StructureDefinition-cpg-flag.html)|
 {:.grid}
 
-Content conforming to this implementation guide SHALL use the event profiles defined above to ensure guideline supporting and tracking information is available for activities delivered in the context of a computable guideline.
+§act-2^^activity:Content conforming to this implementation guide **SHALL** use the event profiles defined above to ensure guideline supporting and tracking information is available for activities delivered in the context of a computable guideline.§
 
 #### Recommendations
 
@@ -470,7 +470,7 @@ This implementation guide uses the PlanDefinition resource to represent the reco
 
 Readers of this implementation guide should refer to the [Applying a PlanDefinition](http://hl7.org/fhir/R4/plandefinition.html#12.18.3.3) topic for details on how an event-condition-action rule can be applied to a particular patient to produce guidance appropriate to that patient.
 
-Content conforming to this implementation guide SHALL use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.
+§rec-5^^recommendation:Content conforming to this implementation guide **SHALL** use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.§
 
 #### Strategies
 
@@ -483,7 +483,7 @@ This implementation guide uses the PlanDefinition resource to represent specific
 
 Within these strategies, recommendations for guideline-based care are attached via triggers at the appropriate point in the workflow. In other words, rather than having a strategy directly refer to a particular recommendation, the recommendation logic is attached to the event and triggered at the appropriate point. This event-driven approach allows implementations to separate workflow processing from guidance evaluation.
 
-Content conforming to this implementation guide SHALL use the [cpg-strategydefinition](StructureDefinition-cpg-strategydefinition.html) profile to represent strategy definitions.
+§rec-6^^recommendation:Content conforming to this implementation guide **SHALL** use the [cpg-strategydefinition](StructureDefinition-cpg-strategydefinition.html) profile to represent strategy definitions.§
 
 #### Pathways
 
@@ -502,7 +502,7 @@ We use the term pathway in this methodology for a more flexible representation o
 
 Also note that depending on the guideline, there may be aspects of the pathway that are expected to be more rigid (i.e. closer to protocols), depending on the clinical specification.
 
-Content conforming to this implementation guide SHALL use the [cpg-pathwaydefinition](StructureDefinition-cpg-pathwaydefinition.html) profile to represent pathway definitions.
+§rec-7^^recommendation:Content conforming to this implementation guide **SHALL** use the [cpg-pathwaydefinition](StructureDefinition-cpg-pathwaydefinition.html) profile to represent pathway definitions.§
 
 #### Metrics
 

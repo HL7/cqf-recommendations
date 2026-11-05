@@ -1,4 +1,4 @@
-This implementation guide uses the Library resource to represent libraries of computable content (such as Clinical Quality Language libraries). See the [Using CQL With FHIR](http://build.fhir.org/ig/HL7/cql-ig) for conformance expectations and guidance on the use of CQL with FHIR. Computable content using CQL SHALL conform to the profiles defined in the Using CQL With FHIR IG:
+This implementation guide uses the Library resource to represent libraries of computable content (such as Clinical Quality Language libraries). See the [Using CQL With FHIR](http://hl7.org/fhir/uv/cql) implementation guide for conformance expectations and guidance on the use of CQL with FHIR. This implementation guide does not take a dependency on the Using CQL With FHIR IG, because content is not required to use CQL. However, content that does use CQL is required to conform to that IG (see [Use of CQL](documentation-conformance.html#use-of-cql)):
 
-* CQL Library - SHALL use CQLLibrary (for Computable content), ELMLibrary (for Executable content), and CQLModule (to provide structured representation of dependencies and data requirements)
-* CQL ModelInfo - SHALL use CQLModelInfo
+* §lib-1?^^logic:Content that uses CQL **SHALL** use CQLLibrary (for Computable content), ELMLibrary (for Executable content), and CQLModule (to provide structured representation of dependencies and data requirements)§
+* §lib-2?^^logic:Content that uses CQL **SHALL** use CQLModelInfo for model information§
