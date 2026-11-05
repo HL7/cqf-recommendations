@@ -61,6 +61,9 @@ Three things about a metric vary independently: its type (what kind of metric it
 Two metric types carry coded results in this guide. A compliance metric asks whether the care delivered conforms to a single recommendation. An adherence metric asks whether the requirements of a strategy, taken together, are met. Both evaluate the process of care, by the care team and patient together, and not patient behavior alone.
 
 Coded results also state when no verdict exists yet, because the absence of success is not failure. A fulfillment window may still be open (pending), an expectation may be temporarily suspended (on hold) or removed by an accepted exemption (exempted), a recommendation may not apply (not applicable), or the data may not settle the question (unknown). Because several of these depend on policy, a metric declares its own criteria, such as its exemptions and lookback. See [Metrics](methodology.html#metrics) in the Methodology section for the codes and how a result is chosen.
+#### Pathway Status Terms
+
+Local implementations often describe where a patient stands with respect to a pathway as a whole, using terms that this guide treats separately from compliance and adherence. The colloquial terms “on path” and “off path” (as well as on with a history off) describe the patient's current status with respect to the pathway. A “happy path” means the care plan follows the recommendations or strategies that subject matter experts designate as critical, and may allow periods of non-compliance, or lapses, as well as exemptions or scoped-out activities among the rest. A “perfect path” means all were followed on time, with no periods of non-compliance, or lapses. This guide does not yet define coded results for these terms.
 
 ### Measure (eCQMs)
 
