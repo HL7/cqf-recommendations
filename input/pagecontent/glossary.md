@@ -6,7 +6,7 @@ An [activity](documentation-approach-09-methods-of-implementation.html#activity-
 
 Adherence is where the patient is with respect to the pathway and strategies, and can be thought of (and implemented as) a special case of a composite metric. Adherence is often used in localized implementations of clinical practice guidelines (or pathways).
 
-The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” (as well as on with a history off) refer to the current status of the patient with respect to the compilation of guideline recommendations. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to the pathway and/or strategies within the overall pathway.
+The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” (as well as on with a history off) refer to the current status of the patient with respect to the compilation of guideline recommendations. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to the pathway and/or strategies within the overall pathway. Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
 
 ### Assertion
 
@@ -26,7 +26,7 @@ The [features](documentation-approach-12-04-cpg-case.html#case-features) of the 
 
 ### Compliance
 
-Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects). Compliance is often determined (and tracked) using metrics, which often correspond with, or are aggregated into, public health indicators or other population-level health analytics.
+Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects). Compliance is often determined (and tracked) using metrics, which often correspond with, or are aggregated into, public health indicators or other population-level health analytics. Compliance metrics scoped to a recommendation report their results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
 
 ### Definition
 
