@@ -7,6 +7,8 @@ Alias: $cpg-plandefinition-apply-operation = http://hl7.org/fhir/uv/cpg/Operatio
 Alias: $cpg-plandefinition-questionnaire-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-planDefinition-questionnaire
 Alias: $cpg-structuredefinition-questionnaire-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-structureDefinition-questionnaire
 Alias: $cpg-graphdefinition-apply-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-graphdefinition-apply
+Alias: $sdc-questionnaire-populate-operation = http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate
+Alias: $sdc-questionnaireresponse-extract-operation = http://hl7.org/fhir/uv/sdc/OperationDefinition/QuestionnaireResponse-extract
 Alias: $measure-evaluate-measure = http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure
 
 RuleSet: ActorCapabilityStatementMetadata(id)
@@ -175,11 +177,19 @@ RuleSet: InteractiveInteractions(mode)
   * resource[+]
     * insert Expectation(SHALL)
     * type = #Questionnaire
-    * documentation = "SHALL support the [SDC Questionnaire $populate](http://hl7.org/fhir/uv/sdc/OperationDefinition/Questionnaire-populate) operation, using expression-based population."
+    * operation[+]
+      * insert Expectation(SHALL)
+      * name = "populate"
+      * definition = $sdc-questionnaire-populate-operation
+      * documentation = "Populates the questionnaire using expression-based population."
   * resource[+]
     * insert Expectation(SHALL)
     * type = #QuestionnaireResponse
-    * documentation = "SHALL support the [SDC QuestionnaireResponse $extract](http://hl7.org/fhir/uv/sdc/OperationDefinition/QuestionnaireResponse-extract) operation, using definition-based extraction."
+    * operation[+]
+      * insert Expectation(SHALL)
+      * name = "extract"
+      * definition = $sdc-questionnaireresponse-extract-operation
+      * documentation = "Extracts resources from the completed questionnaire response using definition-based extraction."
 
 Instance: cpg-interactive-service-capabilities
 InstanceOf: CapabilityStatement

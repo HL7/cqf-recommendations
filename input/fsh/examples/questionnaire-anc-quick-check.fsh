@@ -11,33 +11,33 @@ Title: "ANC Quick Check Questionnaire"
     * url = Canonical(cpg-answerValueSetSource)
     * valueCanonical = Canonical(anc-reason-for-visit-vs)
   * extension[+]
-    * url = Canonical(cpg-itemImage)
+    * url = $sdc-questionnaire-itemMedia
     * valueAttachment.url = $anc-reason-for-visit-image
   * linkId = "reason-for-visit"
   * text = "Why did you come?"
   * type = #choice
   * answerOption[+]
     * extension
-      * url = Canonical(cpg-responseImage)
+      * url = $sdc-questionnaire-itemAnswerMedia
       * valueAttachment.url = $anc-reason-for-visit-routine-image
     * valueString = "For a scheduled (routine) visit"
   * answerOption[+]
     * extension
-      * url = Canonical(cpg-responseImage)
+      * url = $sdc-questionnaire-itemAnswerMedia
       * valueAttachment.url = $anc-reason-for-visit-specific-complaint-image
     * valueString = "For specific complaints about you or your baby"
   * answerOption[+]
     * extension
-      * url = Canonical(cpg-responseImage)
+      * url = $sdc-questionnaire-itemAnswerMedia
       * valueAttachment.url = $anc-reason-for-visit-first-image
     * valueString = "First visit"
   * answerOption[+]
     * extension
-      * url = Canonical(cpg-responseImage)
+      * url = $sdc-questionnaire-itemAnswerMedia
       * valueAttachment.url = $anc-reason-for-visit-follow-up-image
     * valueString = "Follow-up visit"
   * answerOption[+]
     * extension
-      * url = Canonical(cpg-responseImage)
+      * url = $sdc-questionnaire-itemAnswerMedia
       * valueAttachment.url = $anc-reason-for-visit-include-family-member-image
     * valueString = "Do you want to include your companion or other family member (parent if adolescent) in the examination and discussion?"
