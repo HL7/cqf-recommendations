@@ -4,9 +4,11 @@ An [activity](documentation-approach-09-methods-of-implementation.html#activity-
 
 ### Adherence
 
-Adherence is where the patient is with respect to the pathway and strategies, and can be thought of (and implemented as) a special case of a composite metric. Adherence is often used in localized implementations of clinical practice guidelines (or pathways).
+Adherence is where the patient is with respect to a strategy, taken as a whole, and is a special case of a composite metric. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to a strategy.
 
-The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” (as well as on with a history off) refer to the current status of the patient with respect to the compilation of guideline recommendations. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to the pathway and/or strategies within the overall pathway. Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
+The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](documentation-approach-12-07-cpg-derivative-and-related-assets.html#pathway-status-terms)).
+
+Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
 
 ### Assertion
 
@@ -56,7 +58,7 @@ More details on how to use and implement a quality measure can be found in the Q
 
 ### Metric
 
-A [metric](documentation-approach-12-07-cpg-derivative-and-related-assets.html#cpgmetrics) is a patient-level measurement or indicator of recommendation compliance and/or guideline adherence (corresponding to a process measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity. It is often related to a patient-specific recommendation (i.e. a proposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).
+A [metric](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics) is a patient-level measurement or indicator of recommendation compliance (corresponding to a process measure), strategy or guideline adherence (corresponding to a composite measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity. It is often related to a patient-specific recommendation (i.e. a proposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).
 
 ### Pathway
 

@@ -506,7 +506,7 @@ Also note that depending on the guideline, there may be aspects of the pathway t
 
 #### Metrics
 
-This implementation guide uses the Measure resource to represent [metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#cpgmetrics), patient-level indicators of how care delivered compares with the guideline. Content conforming to this implementation guide SHALL use the [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html) profile to represent metrics, and the [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile to record the result of evaluating a metric for a patient.
+This implementation guide uses the Measure resource to represent [metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics), patient-level indicators of how care delivered compares with the guideline. Content conforming to this implementation guide SHALL use the [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html) profile to represent metrics, and the [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile to record the result of evaluating a metric for a patient.
 
 The type of a metric is identified by `Measure.type`, using the [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set. In addition to the base measure types (such as process, outcome, and composite), this value set includes two measure types defined by this implementation guide, each of which reports a coded result:
 
