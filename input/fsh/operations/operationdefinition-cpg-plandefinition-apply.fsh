@@ -15,6 +15,18 @@ each of the applicable actions in the PlanDefinition based on evaluating
 the applicability condition in context, and producing Request resources
 based on the definition element for each applicable action.
 
+When an action has child actions, the [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html)
+extension on that action determines how the applicability conditions of the child actions are evaluated:
+
+* `all`: each child action is evaluated independently, and every applicable child action is included in the result.
+* `any`: the child actions are evaluated in order, and only the first applicable child action is included in the
+result. The remaining child actions are not evaluated.
+
+If the extension is not present, child actions are evaluated as `all`. Applicability behavior determines which
+child actions are included in the result. The `selectionBehavior` of the action then describes how the user may
+select among the included actions. When the result is returned as a RequestGroup, the corresponding RequestGroup
+action carries the same `cqf-applicabilityBehavior` value.
+
 For each applicable action, the definition is applied as described in the `$apply`
 operation of the ActivityDefinition resource, and the resulting resource is
 added as an entry in the Bundle. The resulting Bundle may be any combination of
