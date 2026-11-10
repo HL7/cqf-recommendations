@@ -130,7 +130,7 @@ O2 Sat:
 CaseFeatureDefinition:
 Observation: 87% @2019-02-03T05:00 (Critical Low)
 Observation: 93% @2019-02-03T09:41
-Goal: < 8.0cmH2O
+Goal: > 94%
 Proposed: @2019-02-03T13:00
 
 Potassium:
