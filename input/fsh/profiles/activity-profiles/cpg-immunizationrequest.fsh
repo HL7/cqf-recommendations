@@ -4,6 +4,7 @@ Id: cpg-immunizationrequest
 Title: "CPG Immunization Request"
 Description: "Recommendation for a particular immunization as part of the delivery of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-immunizationrequest)
+* insert LogicEvaluationMessages
 * extension contains
   CPGRationale named rationale 0..1 MS and
   CPGRating named rating 0..1 MS

@@ -4,6 +4,7 @@ Id: cpg-careplan
 Title: "CPG Care Plan"
 Description: "CPG care plan represents the care plan for a specific patient. The care plan may be associated with management of a specific condition, and instantiated based on a particular pathway or strategy, or it may be a combined care plan, focused on the patient, and managing treatment for multiple conditions, instantiated based on multiple pathways and strategies"
 * insert StructureDefinitionMetadata(cpg-careplan)
+* insert LogicEvaluationMessages
 * extension contains $cpg-planFor named planFor 0..* MS
 * identifier MS
 * instantiatesCanonical MS

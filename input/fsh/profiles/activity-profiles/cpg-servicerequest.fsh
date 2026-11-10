@@ -4,6 +4,7 @@ Id: cpg-servicerequest
 Title: "CPG Service Request"
 Description: "Recommendation for a particular procedure or referral to a specialist or instructions for self-care such as smoking cessation counseling or exercise"
 * insert StructureDefinitionMetadata(cpg-servicerequest)
+* insert LogicEvaluationMessages
 * extension contains 
   CPGRationale named rationale 0..1 MS and
   CPGRating named rating 0..1 MS

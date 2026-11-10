@@ -4,6 +4,7 @@ Id: cpg-communicationrequest
 Title: "CPG Communication Request"
 Description: "Recommendation for a specific communication with the patient or other participant as part of the delivery of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-communicationrequest)
+* insert LogicEvaluationMessages
 * extension contains
   $workflow-instantiatesCanonical named instantiatesCanonical 0..1 MS and
   CPGRationale named rationale 0..1 MS and

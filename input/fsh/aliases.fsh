@@ -72,6 +72,7 @@ Alias: $cqf-expression = http://hl7.org/fhir/StructureDefinition/cqf-expression
 Alias: $cqf-qualityOfEvidence = http://hl7.org/fhir/StructureDefinition/cqf-qualityOfEvidence
 Alias: $cqf-strengthOfRecommendation = http://hl7.org/fhir/StructureDefinition/cqf-strengthOfRecommendation
 Alias: $cqf-applicabilityBehavior = http://hl7.org/fhir/StructureDefinition/cqf-applicabilityBehavior
+Alias: $cqf-messages = http://hl7.org/fhir/StructureDefinition/cqf-messages
 Alias: $definition-topic = http://hl7.org/fhir/ValueSet/definition-topic
 Alias: $definition-topic-cs = http://terminology.hl7.org/CodeSystem/definition-topic
 Alias: $episodeofcare-type = http://hl7.org/fhir/ValueSet/episodeofcare-type
