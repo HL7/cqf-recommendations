@@ -1,4 +1,3 @@
-<!-- All of section 4.02 is already included in section 4 document !-->
 The following frameworks are used in guideline development and across the evidence ecosystem:
 
 ### Knowledge Synthesis and the Evidence Pyramid
@@ -15,7 +14,7 @@ A systematic review is a summary of the literature that uses a systematic approa
 
 <summary>
 
-FIG. 21. The Evidence Pyramid refers to a means to evaluate the quality or validity of evidence (higher toward the top) as well as provide a visual depiction of the amount of evidence (width)[^3].  The evaluation of the evidence not only informs the guideline development process and resulting recommendations but is further communicated together with the recommendations themselves using the GRADE framework, described below.
+Figure 1. The Evidence Pyramid refers to a means to evaluate the quality or validity of evidence (higher toward the top) as well as provide a visual depiction of the amount of evidence (width)[^3].  The evaluation of the evidence not only informs the guideline development process and resulting recommendations but is further communicated together with the recommendations themselves using the GRADE framework, described below.
 
 </summary>
 

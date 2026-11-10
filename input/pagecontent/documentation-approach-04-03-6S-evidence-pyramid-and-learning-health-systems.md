@@ -1,4 +1,4 @@
-# The CPG enables the System Level of the 6S Pyramid and Learning Health Systems <!-- Not sure that it's clear if the use of the term "CPG" is meant to encapsulate any clinical practice guideline or specifically a clinical practice guideline that applies CPG-on-FHIR. This could be helpful to clarify early on and make sure it remains clear throughout the document. !-->
+### The CPG Enables the Systems Level of the 6S Pyramid and Learning Health Systems
 
 Covered in this section:
 
@@ -19,7 +19,7 @@ The 6S Evidence Pyramid is another framing on the quality or validity of the evi
 
 <summary>
 
-FIG. 22. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak. NOTE: An updated version of this Evidence Pyramid [ref](http://dx.doi.org/10.1136/ebmed-2016-110447) will be included in the next update of the CPG-IG.
+Figure 1. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak. NOTE: An updated version of this Evidence Pyramid [ref](http://dx.doi.org/10.1136/ebmed-2016-110447) will be included in the next update of the CPG-IG.
 
 </summary>
 
@@ -30,33 +30,33 @@ FIG. 22. The 6S Evidence Pyramid with Systems Level (integration of lower levels
 The CPG has the potential to address the "systems" level (i.e., peak of the pyramid), which is described as: “Integrating information from the lower levels of the hierarchy with individual patient records, systems represent the ideal source of evidence for clinical decision-making.” ([ref](https://hslmcmaster.libguides.com/ebm)).  The CPG affords the ability to directly insert guideline recommendations into electronic health records (EHRs) and clinical information systems based on reasoning over real-world, patient-specific clinical data to be considered directly in the context of clinical and shared decision-making.
 
 
-Furthermore, profiles like the CPGeCaseReport, inclusive of all guideline-scoped patient information (CPGCaseFeatures), patient-specific recommendations (CPGProposals) and their respective responses (as CPGCaseFeatures), patient-level quality measures (CPGMetrics), and the corpus of evidence available and used at the time of recommendation (CPGEvidence), allows the informational means to further provide real-world evidence of the usage and effectiveness of such recommendations.   This response and timing from recommendation to when the clinician takes action on the recommendation (e.g., order, prescribe, schedule) and their fulfillments (e.g., administrations, results, performances) as well as the patient-specific context for each key event providing a view into critically valuable information about guideline usage that itself may become evidence for various research studies that yield their own high quality evidence.
+Furthermore, profiles like the [eCase Report](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-ecase-report), inclusive of all guideline-scoped patient information ([Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)), patient-specific recommendations ([Proposals](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal)) and their respective responses (as Case Features), patient-level quality measures ([Metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric)), and the corpus of evidence available and used at the time of recommendation ([Evidence](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-evidence)), allows the informational means to further provide real-world evidence of the usage and effectiveness of such recommendations.   This response and timing from recommendation to when the clinician takes action on the recommendation (e.g., order, prescribe, schedule) and their fulfillments (e.g., administrations, results, performances) as well as the patient-specific context for each key event providing a view into critically valuable information about guideline usage that itself may become evidence for various research studies that yield their own high quality evidence.
 
 
-Intermediate and ultimate outcomes at the patient-level, including those reported by the patient, could be collected by the CPGeCaseReport.  Lastly, CPGCaseFeatures may include ‘snippets’ of narrative from clinical impressions related to the response and/or other contextualization of a patient-specific guideline recommendation or decision.  This kind of narrative explanation for the clinicians' decision-making process or assessment may provide significant insight into the impact and effectiveness of various characteristics of the recommendation and/or CPG-derived decision-support interventions.
+Intermediate and ultimate outcomes at the patient-level, including those reported by the patient, could be collected by the eCase Report.  Lastly, Case Features may include ‘snippets’ of narrative from clinical impressions related to the response and/or other contextualization of a patient-specific guideline recommendation or decision.  This kind of narrative explanation for the clinicians' decision-making process or assessment may provide significant insight into the impact and effectiveness of various characteristics of the recommendation and/or CPG-derived decision-support interventions.
 
 
-Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (CPGProposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”[<sup>3</sup>](#3)
+Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (Proposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”[<sup>3</sup>](#3)
 
 <details open>
 
 <summary>
 
-FIG. 23. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence[<sup>4</sup>](#4)
+Figure 2. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence[<sup>4</sup>](#4)
 
 </summary>
 
-<img src="CPG-04-03.png" alt="image_tooltip" class="img-responsive img-rounded center-block" height="500" width="500"/>
+<img src="CPG-04-03.png" alt="Learning Health System" class="img-responsive img-rounded center-block" height="500" width="500"/>
 
 </details>
 
-### Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic:
+### Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
 
 Clearly there are many benefits to enable such a “peak of the pyramid” approach to tightly integrating guideline-directed care and cycling the “Learning Health System” for any condition and at any point in time.  However, perhaps none more so than a situation where there is a public health emergency with significant mortality and where there is poor quality or low level of evidence for how to best address the novel contagion as well as the clinicopathophysiological  (disease processes and manifestations) that it causes.  There are several clear benefits and advantages to such an approach including the use of other techniques, disciplines, and approaches described elsewhere in this implementation guide.  We will address a few of them here and provide references to where else in this document related content can be found.  Many of the approaches, capabilities, best practices, tools, and techniques described in this implementation guide are certainly as, if not even more, relevant to these situations.
 
 #### Rapid Discovery of Best Practice
 
-One of the first priorities in a situation where evidence and best practice is significantly lacking is to establish a means to start discovering evidence for best practices.  In addition to typical public health incident case report information (confirmatory labs and demographics), patient and population-level information about the clinicopathophysiological nature of the human body’s disease or disordered response to the contagion as is critical to have early on. Likewise, information around the likely interventions for this disease or disordered responses to the contagion together with information on response to treatment as well as intermediate- and end-outcomes is critically important to discover the effectiveness, timing, and contextualizing factors (e.g. other patient-level information) for these interventions.  One of the earliest components of a CPG to be identified and mature, and the set of required data elements (CPGCaseFeatures) and key inferences (derived or inferred CPGCaseFeatures) that are inclusive of requests (orders, prescriptions, scheduled procedures, etc.) and various clinical data elements.  A CPG with few or even no recommendations may be developed using the approaches in this implementation guide with the primary purpose of collecting relevant data (see section on eCaseReport).
+One of the first priorities in a situation where evidence and best practice is significantly lacking is to establish a means to start discovering evidence for best practices.  In addition to typical public health incident case report information (confirmatory labs and demographics), patient and population-level information about the clinicopathophysiological nature of the human body’s disease or disordered response to the contagion as is critical to have early on. Likewise, information around the likely interventions for this disease or disordered responses to the contagion together with information on response to treatment as well as intermediate- and end-outcomes is critically important to discover the effectiveness, timing, and contextualizing factors (e.g. other patient-level information) for these interventions.  One of the earliest components of a CPG to be identified and mature, and the set of required data elements (Case Features) and key inferences (derived or inferred Case Features) that are inclusive of requests (orders, prescriptions, scheduled procedures, etc.) and various clinical data elements.  A CPG with few or even no recommendations may be developed using the approaches in this implementation guide with the primary purpose of collecting relevant data (see section on eCaseReport).
 
 Evidence of and for best practice may begin to emerge through such data using various means including approaches described briefly and a high level and other sections of this implementation guide (see section on Knowledge Acquisition and in particular: Knowledge Discovery; Hybrid Approaches; and In Collaboration with Knowledge Implementers)
 
@@ -64,7 +64,7 @@ Evidence of and for best practice may begin to emerge through such data using va
 
 As evidence begins to emerge through such data through various means including using approaches described briefly and a high level and other sections of this implementation guide (see section on Knowledge Acquisition and in particular: Knowledge Discovery; Hybrid Approaches; and In Collaboration with Knowledge Implementers), best practice guidance (and/or guidelines) can then be rapidly developed, delivered, and implemented using other approaches described in this document (see sections on Agile CPG Development Process and on Knowledge Implementation).
 
-Alternatively, with a lack of high quality evidence and available evidence-based best practice guidance, some of the earliest (though low quality) best practices may be actively discovered firsthand on the front lines and reported as case studies or series studies (though low in evidence quality).  However, such guidance in certain situations may be at least informative to frontline providers, and inform additional relevant data collection on related clinicopathological processes, interventions, and response (including outcomes) thereto as described above (see section on eCaseReport). <!-- WIll need link ## in Conceptual Knowledge Architecture for eCaseReport !-->
+Alternatively, with a lack of high quality evidence and available evidence-based best practice guidance, some of the earliest (though low quality) best practices may be actively discovered firsthand on the front lines and reported as case studies or series studies (though low in evidence quality).  However, such guidance in certain situations may be at least informative to frontline providers, and inform additional relevant data collection on related clinicopathological processes, interventions, and response (including outcomes) thereto as described above (see [eCase Report](documentation-approach-12-07-cpg-derivative-and-related-assets.html#ecase-report)).
 
 #### Rapid-cycle, closed loop Knowledge-to-Delivery-to-Discovery with feedback loops
 
@@ -74,11 +74,11 @@ In either scenario described above- rapid discovery of best practice, or rapid d
 
 <summary>
 
-FIG 24. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
+Figure 3. **Knowledge Implementation concurrent with Agile CPG Development** has the potential to eliminate much waste, increase time-to-use/utility, create more feedback loops earlier in the process, improve the overall value of the guideline, and close the loop in forming a Learning Health System.  Such an approach may be even more critical in the case of a pandemic with a novel contagion with an atypical pathophysiological response where best practices and evidence are unknown or yet to be discovered.
 
 </summary>
 
-<img src="CPG-05.05-Agile.png" alt="image_tooltip" class="img-responsive img-rounded center-block" height="500" width="500"/>
+<img src="CPG-05.05-Agile.png" alt="Knowledge Implementation concurrent with Agile CPG Development" class="img-responsive img-rounded center-block" height="500" width="500"/>
 
 </details>
 
@@ -88,6 +88,6 @@ FIG 24. **Knowledge Implementation concurrent with Agile CPG Development** has t
 
 <a id="2">2</a>: Khangura, S., Konnyu, K., Cushman, R., Grimshaw, J., & Moher, D. (2012). Evidence summaries: the evolution of a rapid review approach. Systematic reviews, 1, 10. https://doi.org/10.1186/2046-4053-1-10
 
-<a id="3">3</a>: https://www.ahrq.gov/learning-health-systems/about.html <!-- Make Endnote !-->
+<a id="3">3</a>: https://www.ahrq.gov/learning-health-systems/about.html
 
 <a id="4">4</a>: Flynn, Allen & Friedman, Charles & Boisvert, Peter & Landis‐Lewis, Zachary & Lagoze, Carl. (2018). The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learning Health Systems. 2. 10.1002/lrh2.10054.

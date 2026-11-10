@@ -1,9 +1,5 @@
 This section discusses methods of implementation, as well as conceptual execution semantics for computable artifacts described by this implementation guide.
 
-Once computable representations and expressions of any clinical practice guideline have been developed (as a CPG-IG) they must be implemented and integrated with various clinical and operational information systems (e.g., EHRs, Workflow Apps, Quality and Practice Analytics tools, Quality and Registry Reporting tools, etc.)  Three main factors come into play. The first consideration is where and how these computable expressions and artifacts will be executed- natively withing systems of record, in an external reasoning engine, or translated and reimplemented in target system native logic languages (e.g. rules engines).  The second consideration, which is related to the first, Is how the inferences or insights (e.g. CaseFeatures, Recommendations/Proposals, Metrics) are to be integrated into existing clinical application ecosystems and/or the same or similar workflows supported by these applications.  The third consideration, which further relates to the first two, Is where and how these insights will be manifested in such a way to enable guideline-informed clinical workflows and related healthcare activities.  Partially orthogonal to, but just as important as these three considerations, is the ability to assess and ensure conformance of specific implementations of computable clinical practice guidelines using the specifications and requirements outlined in this implementation guide.
-
-While all of these factors Have implications for the overall level of effort, the methods of implementing knowledge and mechanisms of integration are directly reflected in the overall selection of workflow enablements in a given setting. The last two sections further discuss trade-offs between effort, time to develop, and capabilities enabled (and value that can be derived) when developing a CPG. From very basic context for narrative snippets searchable in a library (or Infobutton from EHR) to full clinical workflow enablement, cognitive support, and pathway tracking (likely via SMART-on-FHIR App or deep EHR integration). CPGs also enable feedback loops with real-world evidence of actual guideline usage and outcomes, and provide a substrate for the evidence ecosystem and a feedforward loop for evidence updates. To support description of, and allow declaration of conformance to, these various capabilities enabled by CPGs, the CPG-IG defines levels of enablement that correlate to work effort, time to delivery, and capabilities enabled.
-
 ### Methods of Implementation
 
 Methods of implementation refers to three (3) broad approaches to moving from the computable, structured representation (L3) of guideline content to the executable representation (L4):
@@ -16,7 +12,7 @@ Methods of implementation refers to three (3) broad approaches to moving from th
 
 <summary>
 
-FIG. 58. Methods of Implementation
+Figure 1. Methods of Implementation
 
 </summary>
 
@@ -105,11 +101,11 @@ Recommendations are represented as _event-condition-action_ PlanDefinitions, mea
 
 Strategies are represented as _workflow-definition_ PlanDefinitions, meaning in particular that they can have at most one triggering action (the _start_ action), and that they can reference other PlanDefinitions, but typically do _not_ reference ActivityDefinitions directly.
 
-And finally, Pathways are represented as _clinical-protocol_ PlanDefinitions, meaning that they may have multiple triggering actions, and that they can reference other PlanDefinitions (typically other pathways, strategies, and, less often, recommendations), and they typically do _not_ reference ActivityDefinitions directly.
+And finally, [Pathways](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) are represented as _clinical-protocol_ PlanDefinitions, meaning that they may have multiple triggering actions, and that they can reference other PlanDefinitions (typically other pathways, strategies, and, less often, recommendations), and they typically do _not_ reference ActivityDefinitions directly.
 
 In addition, pathways (and to a lesser extent, strategies) may have _eligibility_ and _enrollment_. When a pathway or strategy is _invoked_, enrollment is checked.
 
-* Enrollment is _true_ if the Patient has an active episodeOfCare (CPGCase) for this Pathway or Strategy, or with the `partOf` PlanDefinition (an extension on PlanDefinitions to indicate that the Pathway or Strategy is part of another, higher-level Strategy or Pathway).
+* Enrollment is _true_ if the Patient has an active episodeOfCare ([Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case)) for this Pathway or [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy), or with the `partOf` PlanDefinition (an extension on PlanDefinitions to indicate that the Pathway or Strategy is part of another, higher-level Strategy or Pathway).
 * Eligibility criteria are evaluated as part of the enrollment process described in the next section.
 
 Note that for Recommendations, "eligibility criteria" is typically expressed as part of the recommendation logic, as inclusion criteria directly.
@@ -120,7 +116,7 @@ These capabilities support the description of enrollment in various ways, includ
 
 * Automatic: An _enrollment_ ECA rule configured for a pathway can be used to establish enrollment automatically
 * Prompted: An _enrollment_ ECA rule with user feedback can be used to establish prompted enrollment
-* Manual: The creation of a specific EpisodeOfCare (CPGCase) referencing a Pathway or Strategy can establish enrollment manually
+* Manual: The creation of a specific EpisodeOfCare (Case) referencing a Pathway or Strategy can establish enrollment manually
 
 ### Orchestration
 
