@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 This section discusses methods of implementation, as well as conceptual execution semantics for computable artifacts described by this implementation guide.
 
 ### Methods of Implementation
@@ -124,6 +127,7 @@ This pattern allows for a straightforward implementation that only needs to inte
 Applications can then implement the guideline by tracking and invoking known (and enabled) PlanDefinitions directly. The result of these calls are a set of proposals for actions that should be considered or taken.
 
 In addition, the interactive process of gathering information based on the input data requirements for PlanDefinition actions is supported by use of the StructureDefinition/$questionnaire and PlanDefinition/$questionnaire operations, as described in the [Interactive CDS](interactive-cds.html) topic.
+{:.new-content}
 
 ### Care Planning
 

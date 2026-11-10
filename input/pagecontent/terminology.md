@@ -6,7 +6,7 @@ This page provides overview documentation for the use of code systems and value 
 
 *   Using Code Systems
 *   Using Value Sets
-*   Developing and Maintaining Terminology
+*   {:.new-content} Developing and Maintaining Terminology
 
 For indexes of terminologies defined in this implementation guide, see the following:
 
@@ -23,6 +23,7 @@ Standard and established code systems should be used whenever possible. Only in 
 *   CRMIPublishableCodeSystem
 
 §term-1^^terminology:Code systems defined by content conforming to this IG **SHOULD** conform to the CRMIShareableCodeSystem profile, and **SHOULD** conform to the CRMIPublishableCodeSystem profile if the artifact status is active.§ This implementation guide does not take a dependency on CRMI, so these profiles are strongly recommended rather than required (see [Use of CRMI](documentation-conformance.html#use-of-crmi)).
+{:.modified-content}
 
 Note that this does not mean that _any_ code system referenced by computable content must use these profiles. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to these profiles.
 
@@ -35,13 +36,14 @@ Refer to the [HL7 Terminology](https://terminology.hl7.org/) site for a list of 
 The CRMI implementation guide defines four value set profiles:
 
 *   CRMIShareableValueSet
-*   CRMIComputableValueSet
-*   CRMIPublishableValueSet
-*   CRMIExpandedValueSet
+*   {:.modified-content} CRMIComputableValueSet
+*   {:.modified-content} CRMIPublishableValueSet
+*   {:.modified-content} CRMIExpandedValueSet
 
 The ComputableValueSet profile describes the requirements for computable representation of value set membership criteria, ensuring that value sets using this profile selectively support only one technique for defining the content of expansions.
 
 The ExpandedValueSet profile provides support for including a persisted point-in-time expansion that is consistent with the chosen compositional style for the value set. The included point-in-time expansion can then be used by FHIR implementations that do not have a FHIR terminology service capable of evaluating the value set in real-time with an `$expand` operation. It also provides all the concepts needed in the expansion so that a complete code system resource is not required.
+{:.modified-content}
 
 The PublishableValueSet profile establishes expectations for use of the artifact in a content management lifecycle including publishing and indexing metadata, usage guidance and licensing information, and provenance and governance for the artifact. In addition, to follow vocabulary best-practices, publishable value sets must also be either Computable, Executable, or both.
 
@@ -52,6 +54,7 @@ Some value sets cannot be defined using the standard FHIR compose structure with
 As a last resort, for cases where the value set construction cannot be expressed using `compose` or the `expression` extension, use the `rules-text` extension to provide a narrative description of the process to be followed.
 
 §term-4^^terminology:Value sets defined by content conforming to this IG **SHOULD** use the CRMIComputableValueSet profile to define value set member content in one of three ways.§ This profile requires that one and only one of the following three approaches can be used for an instance of the value set, in order of preference:
+{:.modified-content}
 
 1.  **Compose**: This supports using standard FHIR compose structure to define value set membership.
 2.  **Expression**: This extension supports including a specific alternative expression where the syntax is explicitly defined outside of FHIR (such as TSQL)
@@ -61,6 +64,8 @@ The CRMIExpandedValueSet profile supports providing a point-in-time expansion of
 
 §term-7^^terminology:Value sets defined by content conforming to this IG **SHOULD** include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated.§ §term-8^^terminology:The parameters element **SHOULD** be used to convey information about the parameters used to expand the value set.§
 
+<div class="modified-content" markdown="1">
+
 §§term-9^^terminology:Value sets defined by content conforming to this IG **SHOULD** conform to the CRMI Shareable, Computable or Expanded, and (if active) Publishable value set profiles^Value sets defined by content conforming to this IG SHOULD conform to:
 
 *   The CRMIShareableValueSet profile
@@ -69,7 +74,11 @@ The CRMIExpandedValueSet profile supports providing a point-in-time expansion of
 
 §§
 
+</div>
+
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use these profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
+
+<div class="new-content" markdown="1">
 
 ### Developing and Maintaining Terminology
 
@@ -103,3 +112,5 @@ Some methodologies define two kinds of value sets:
 * **Grouping** value sets, which bring leaf value sets together (using `compose.include.valueSet`) when a concept needs codes from more than one code system
 
 This structure is not necessary, and may not be desirable from a purely terminological perspective, but it has advantages when maintenance is spread across people with different expertise. For example, a terminologist with SNOMED CT expertise can be assigned all of the SNOMED CT leaf value sets. This is the same reasoning as splitting mappings by code system, described above.
+
+</div>

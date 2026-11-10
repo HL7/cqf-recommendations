@@ -1,3 +1,5 @@
+<div class="new-content" markdown="1">
+
 This page describes the systems, or _actors_, involved in implementing a computable guideline, and how they work together at each [level of enablement](documentation-approach-03-conformance-levels.html). Conformance statements that apply to a particular actor identify that actor in the [conformance statements](documentation-conformance.html#conformance-statements) table.
 
 ### Actors
@@ -47,3 +49,5 @@ Derived capabilities, such as metrics, case reporting, and case plan progress no
 ### Declaring Conformance
 
 A system declares which actors it implements, and at which levels of enablement, through its CapabilityStatement. A CPG Knowledge Repository declares conformance to the appropriate CRMI Artifact Repository capability statement. A CPG Service or CPG Client declares conformance to the CapabilityStatement of each actor it implements, listed in the tables above. The CPG Case Reporting actors do not define CapabilityStatements, because case reporting is expected to align with the [Electronic Case Reporting](http://hl7.org/fhir/us/ecr) implementation guide.
+
+</div>

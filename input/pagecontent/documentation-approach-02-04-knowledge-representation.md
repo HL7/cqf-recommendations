@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 Knowledge representation is a surrogate, a substitute for the thing itself, that allows for reasoning (human and computational) about the “thing”. A knowledge representation may be thought of on a continuum of successive degrees of readability, of ability to reason over, and formalism (e.g., to compute).
 
 In this section we will cover:

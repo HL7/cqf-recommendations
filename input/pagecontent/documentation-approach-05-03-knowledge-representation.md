@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 Knowledge representation pertains to the process of progressively structuring and formalizing content for computer interpretation and enablement and details of representing and expressing knowledge is discussed in an entire section dedicated to [Knowledge Representation](documentation-approach-02-04-knowledge-representation.html).  Here, we will discuss several major implications of knowledge representation to the knowledge engineering lifecycle process(-es) as they go hand-in-hand.
 
 ### Knowledge Curation

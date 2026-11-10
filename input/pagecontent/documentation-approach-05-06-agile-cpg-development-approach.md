@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 As implied by its name, Agile process and initiatives are able to move quickly and easily as has been demonstrated and accepted best practice in the software development industry.  Agile development is characterized by the division of tasks into short phases of work and frequent reassessment and adaptation of plans.  Furthermore, as implied in its name, Agile CPG Development takes a broader perspective on the knowledge engineering processes as applied to developing a CPG that is inclusive of the broader CPG value-stream as it pertains the guideline development group and knowledge implementers as “customers” (and/or suppliers in some contexts).  A key tenant of Agile is early and frequent engagement with customers and other domain experts.
 
 This section will provide the following:

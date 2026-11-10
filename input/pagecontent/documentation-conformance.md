@@ -1,6 +1,7 @@
 Conformance from the perspective of this Implementation Guide (IG) refers to statements that prescribe expected characteristics and behaviors of systems involved in the authoring, testing, validation, distribution, integration, and delivery of the knowledge artifacts and associated documentation that make up a computable Clinical Practice Guideline (CPG). As described in the [Content Implementation Guides](methodology.html#content-implementation-guides) section of this IG, a FHIR-based CPG is delivered as a FHIR [Implementation Guide](http://hl7.org/fhir/implementationguide.html), and therefore follows the rules for establishing conformance requirements as defined by the FHIR specification.
 
 This page explains how conformance requirements are expressed in this implementation guide, and lists all of the conformance statements it makes.
+{:.modified-content}
 
 ### Clinical Safety
 
@@ -17,6 +18,8 @@ This specification uses the conformance verbs SHALL, SHOULD, and MAY as defined 
 3. **SHOULD/SHOULD NOT**: a best practice or recommendation to be considered by implementers within the context of their particular implementation; there may be valid reasons to ignore an item, but the full implications must be understood and carefully weighed before choosing a different course
 4. **MAY**: truly optional language for an implementation; can be included or omitted as the implementer decides with no implications
 
+<div class="new-content" markdown="1">
+
 ### Conformance Targets
 
 Conformance statements in this implementation guide apply to one of two kinds of target:
@@ -26,15 +29,20 @@ Conformance statements in this implementation guide apply to one of two kinds of
 
 Statements that apply to a particular system list that actor in the table below. Statements that apply to content list no actor.
 
+</div>
+
 ### Must Support
 
 Profiles in this implementation guide use the [must support](http://hl7.org/fhir/conformance-rules.html#mustSupport) flag to indicate that the elements play a meaningful role in the description of an artifact (for artifact profiles), or that the element is relevant for effective support of an expected behavior (for domain profiles). Note carefully that _must support_ does not indicate a _required_ element, that aspect is governed by the _cardinality_ of the element; but it does indicate that systems involved in exchanging knowledge artifacts, or implementation systems involved in exchanging data during implementation of knowledge artifacts, must understand the element and be able to provide meaningful data if and when it is available.
 
 §conf-1^^documentation:Because FHIR-based CPGs are themselves FHIR implementation guides, content implementation guides **SHALL** include a statement describing how the _must support_ flag is to be interpreted for effective use of their content, and that statement **SHALL** be consistent with the general characterization of must support behavior described here.§ Examples of _must support_ declarations can be found in:
+{:.modified-content}
 
 * [IPS Must Support](https://hl7.org/fhir/uv/ips/design.html#must-support)
 * [US Core Must Support](https://hl7.org/fhir/us/core/must-support.html)
 * [QI Core Must Support](https://hl7.org/fhir/us/qicore/#mustsupport-flag)
+
+<div class="new-content" markdown="1">
 
 ### Use of CRMI
 
@@ -79,6 +87,8 @@ A few other notes:
 
 §§§
 
+</div>
+
 ### Levels of Conformance
 
 One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG)[<sup>1</sup>](#1) profile of the HL7 CPG.[<sup>2</sup>](#2) The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as CPGCaseFeatures), logic to be triggered based on data collected (CPGRecommendations), and reportable health system management indicators (CPGMetrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
@@ -86,6 +96,7 @@ One major effort on compliance is the WHO and Integrated Health Enterprise (IHE)
 ### Conformance Testing
 
 Levels of conformance will be based on alternative conformance profiles such as the CCG above, and on the actors and levels of enablement described on the [Actors](actors.html) page. Conformance with Features of the CPG are still under development.
+{:.modified-content}
 
 > NOTE: This project is actively seeking feedback on how to characterize levels of enablement as capabilities, and how to support declaration and validation of conformance to these capabilities.
 

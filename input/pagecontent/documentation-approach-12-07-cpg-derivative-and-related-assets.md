@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 Another key feature of the FHIR CPG is that since it explicitly and formally expresses the intent of the guideline, numerous additional features that have been historically developed manually using the guideline narrative, can be derived directly from the CPG and/or reuse significant portions of the CPG, or at least express relations to the CPG and/or its component assets (e.g. Recommendation).
 
 
@@ -51,8 +54,11 @@ Another pattern for Metrics is patient-level intermediate and ultimate outcomes 
 Another pattern for Metrics is composite measurements that combine individual metrics to yield insight into the care process with respect to the scope of guideline recommendations.  A separate pattern correlates patient-level intermediate and ultimate outcomes with patient-level process measurements and/or patient-specific guideline recommendations, which has implications for direct patient care and the evidence ecosystem, including clinical research and guideline development.  Such a pattern may be described as a “correlative” metric.
 
 Guideline adherence is a special case of composite metric.  Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers.  The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well.  Of note to the knowledge engineer, adherence metrics are often scoped to a [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy).
+{:.modified-content}
 
 A Metric is defined using [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html), a profile of the [FHIR Measure Resource](https://www.hl7.org/fhir/measure.html), and its result for a patient is recorded using [CPGMetricReport](StructureDefinition-cpg-metricreport.html), a profile of MeasureReport.  The result may also be persisted as an inferred Case Feature ([FHIR Observation Resource](https://www.hl7.org/fhir/observation.html)), so a Metric may be thought of as a special case of a Case Feature.  These detailed patient-level and guideline-directed metrics can be used directly within the clinical workflow, rolled up across cohorts of patients as a more traditional quality measure ([Measure](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure)), and/or included as part of a CPGCaseSummary, Case Plan Summary, CPGCasePlanProgressingNote, or eCase Report.
+
+<div class="new-content" markdown="1">
 
 #### Metric Types and Results
 
@@ -65,6 +71,8 @@ Coded results also state when no verdict exists yet, because the absence of succ
 #### Pathway Status Terms
 
 Local implementations often describe where a patient stands with respect to a pathway as a whole, using terms that this guide treats separately from compliance and adherence. The colloquial terms “on path” and “off path” (as well as on with a history off) describe the patient's current status with respect to the pathway. A “happy path” means the care plan follows the recommendations or strategies that subject matter experts designate as critical, and may allow periods of non-compliance, or lapses, as well as exemptions or scoped-out activities among the rest. A “perfect path” means all were followed on time, with no periods of non-compliance, or lapses. This guide does not yet define coded results for these terms.
+
+</div>
 
 ### Measure (eCQMs)
 
@@ -141,7 +149,7 @@ Figure 6. The Case Plan Summary may further be scoped to the entirety of the Pat
 
 ### CPGCasePlanProgressingNote
 
-A Case Plan Summary can be further be combined with an [Adaptive Form](http://hl7.org/fhir/uv/sdc/2019May/adaptive.html) and their related [Clinical Impressions](https://www.hl7.org/fhir/clinicalimpression.html) to provide a means to document patient progression with respect to the Pathway.  This capability would further provide the means for feedback directly from the care team on both the patient and their condition as well as the usage and utiliy of guideline components.  The knowledgen egineer need be careful to keep the forms logic (UI) separated from the description logic (for case features) and decision logic (for recommendations) as well as any logic used for patient-level uindicators (Metrics) used in the Form.
+A Case Plan Summary can be further be combined with an [Adaptive Form](http://hl7.org/fhir/uv/sdc/adaptive.html) and their related [Clinical Impressions](https://www.hl7.org/fhir/clinicalimpression.html) to provide a means to document patient progression with respect to the Pathway.  This capability would further provide the means for feedback directly from the care team on both the patient and their condition as well as the usage and utiliy of guideline components.  The knowledgen egineer need be careful to keep the forms logic (UI) separated from the description logic (for case features) and decision logic (for recommendations) as well as any logic used for patient-level uindicators (Metrics) used in the Form.
 
 ### eCase Report
 

@@ -67,6 +67,7 @@ A parallel split is separating the sequence flow in parallel branches that are e
 
 | BPMN | ParallelGateway |
 | PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior, [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) (all) |
+{:.modified-content}
 
 **Remarks**
 A merge element is created implicitly
@@ -90,6 +91,7 @@ A synchronization element is created implicitly
 
 | BPMN | EclusiveGateway, ExtensionElement, TaskListener |
 | PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior, [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) (any) |
+{:.modified-content}
 
 **BPMN Representation**
 {% highlight xml %}{% include process-patterns/bpmn-exclusiveSplit.xml %}{% endhighlight %}

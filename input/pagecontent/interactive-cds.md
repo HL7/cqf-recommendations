@@ -1,3 +1,5 @@
+<div class="new-content" markdown="1">
+
 In many cases, the data required to assess applicability logic within clinical practice guidelines may be missing or incomplete. In Interactive Clinical Decision Support (CDS), the \$questionnaire operation is used with PlanDefinition \$apply and existing Structured Data Capture (SDC) operations to:
 
 1. Prompt users for required data;
@@ -225,4 +227,4 @@ The PlanDefinition is processed as follows:
 
 The questionnaire should conform to [SDC Populatable Questionnaire - Expression](http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-pop-exp) and [SDC Extractable Questionnaire - Definition](http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-defn) and should align with the expected output of [Questionnaire/$assemble](https://hl7.org/fhir/uv/sdc/OperationDefinition-Questionnaire-assemble.html), although the assembly process may differ.
 
-
+</div>

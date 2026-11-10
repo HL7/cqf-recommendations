@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 This section provides an overview of the specific separations of concerns in the CPG implementation guide as well as some details of their respective boundary issues.  An overview of each separation is covered here and in more detail in individual sections that include:
 
 

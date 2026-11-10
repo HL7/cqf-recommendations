@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 The Approach section describes how guideline developers, knowledge engineers (and other informaticists), and implementers can work together across the lifecycle of a computable Clinical Practice Guideline (CPG). That lifecycle covers more than the guideline itself. It includes the activities that follow from it, such as clinical decision support, quality measurement, case reporting, and continuous improvement, all built on existing standards.
 
 The approach has three parts:

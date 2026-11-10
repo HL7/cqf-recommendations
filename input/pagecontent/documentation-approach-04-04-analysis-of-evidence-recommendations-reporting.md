@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 ### Analysis of Evidence
 
 Analysis of evidence includes systematic approaches for evaluating the evidence to inform the guideline and individual recommendations. Expertise, tooling, and methodology largely reside in the knowledge synthesis and evidence-based practice community.  This is largely an approach that follows systematic review and meta-analyses, but in certain situations may also include a rapid review of the evidence.  The outputs from these analyses inform much of the content as well as metadata for the CPG. ([https://www.ahrq.gov/research/findings/evidence-based-reports/centers/index.html](https://www.ahrq.gov/research/findings/evidence-based-reports/centers/index.html)).

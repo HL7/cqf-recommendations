@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 ### The CPG Enables the Systems Level of the 6S Pyramid and Learning Health Systems
 
 Covered in this section:

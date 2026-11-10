@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 In this section, the implementation guide covers:
 
 
@@ -68,7 +71,7 @@ Case features in the CPG-IG are formalized and concretized as Case Features that
 
 #### Case Features from Clinician Assessments
 
-Many case features may require clinical judgment and/or assessment (including impression) and therefore require real-time extraction or interaction with the clinician user.  Such case features often necessitate clinician prompting and/or documentation requirements to resolve and thus may be modeled as their own ECA Rules (as part of the triggering, decision, or orchestration logic within individual [Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation), [Strategies](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy), and/or the Pathway) or as adaptive forms (see [Adaptive Questionnaire](http://hl7.org/fhir/uv/sdc/2019May/adaptive.html)) scoped to the guideline element where they are used.  Scoping of such required information must be done carefully as to consider all guideline triggering, decision, and orchestration logic that may depend on such information.
+Many case features may require clinical judgment and/or assessment (including impression) and therefore require real-time extraction or interaction with the clinician user.  Such case features often necessitate clinician prompting and/or documentation requirements to resolve and thus may be modeled as their own ECA Rules (as part of the triggering, decision, or orchestration logic within individual [Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation), [Strategies](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy), and/or the Pathway) or as adaptive forms (see [Adaptive Questionnaire](http://hl7.org/fhir/uv/sdc/adaptive.html)) scoped to the guideline element where they are used.  Scoping of such required information must be done carefully as to consider all guideline triggering, decision, and orchestration logic that may depend on such information.
 
 ##### Separation of Form Logic from Patient Descriptive Logic and Clinical Decision Logic
 
@@ -95,7 +98,7 @@ Figure 3. This figure illustrates Hemodynamic Status used to assess and plan tre
 
 
 
-It is not uncommon for inferred case features and events to be used to provide a decision aid to a clinician who then assesses this information and documents their clinical impression (i.e., FHIR Resource ClinicalImpression) recorded as an event and Case Feature itself.  In fact, this is the case in the example above where the clinician makes the ultimate assessment of these critical clinicopathophysiological processes that inform key decision-making in the clinical care scoped to such a CPG.  This pattern combining primitive clinical information (i.e., events), inferences made upon them (i.e., inferred case features), and requests for clinician documentation manifested as a clinical impression often addressed using an Adaptive Form (see [FHIR Adaptive form](http://hl7.org/fhir/uv/sdc/2019May/adaptive.html),  the FHIR Questionnaire,  and QuestionnaireResponse Resources).  These patterns are commonly used as part of the CPG.
+It is not uncommon for inferred case features and events to be used to provide a decision aid to a clinician who then assesses this information and documents their clinical impression (i.e., FHIR Resource ClinicalImpression) recorded as an event and Case Feature itself.  In fact, this is the case in the example above where the clinician makes the ultimate assessment of these critical clinicopathophysiological processes that inform key decision-making in the clinical care scoped to such a CPG.  This pattern combining primitive clinical information (i.e., events), inferences made upon them (i.e., inferred case features), and requests for clinician documentation manifested as a clinical impression often addressed using an Adaptive Form (see [FHIR Adaptive form](http://hl7.org/fhir/uv/sdc/adaptive.html),  the FHIR Questionnaire,  and QuestionnaireResponse Resources).  These patterns are commonly used as part of the CPG.
 
 ##### Separating Patient Descriptive Logic from Clinical Decision Logic
 

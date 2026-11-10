@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 Separation of concerns is a design principle that creates a distinct and focused attention on each aspect of the domain or topic. This means that, from each aspect's point of view, the other aspect(s) are irrelevant; but it does not mean that the other aspects are ignored. It is “being one- and multiple-track minded simultaneously.”[<sup>3</sup>](#3).  This concept has been used to address efficient and effective approaches in software engineering, particularly as they pertain to developing larger, more complex information systems. (ref)  The most common application of this principle is to a three-tiered architecture (i.e. data, logic, UI) and corresponds to the tiers of functionality discussed earlier.
 
 <details open>

@@ -1,3 +1,5 @@
+<div class="modified-content" markdown="1">
+
 **GIN McMaster Guideline Development Checklist Extension for Computable Guidelines**
 
 **Guidelines Knowledge Level 1 (L1) Checklist**
@@ -26,3 +28,5 @@ GDC: GIN-McMaster Guideline Development Checklist. Numbered references (for exam
 The material on this page was developed by the GIN-NA working group and presented to the CPG-on-FHIR project team for inclusion in the CPG-on-FHIR implementation guide in support of the shared goals of creating computable clinical guideline content. The checklist is reproduced from Appendix 1 (Supporting Information) of the following article, published under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license:
 
 Chehab C, Lathrop S, Harrod CG, Kariuki J, Ritz D, Michaels M. Development of Computable Guidelines: GIN McMaster Guideline Development Checklist Extension for Computable Guidelines. _Clinical and Public Health Guidelines_. 2025;2(3):e70023. [https://doi.org/10.1002/gin2.70023](https://doi.org/10.1002/gin2.70023)
+
+</div>

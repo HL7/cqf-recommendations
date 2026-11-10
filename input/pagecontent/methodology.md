@@ -331,6 +331,7 @@ Because case features are aspects of the patient's record (or typically events t
 §data-1^^data:Content conforming to this implementation guide **SHOULD** use the [CPG Event Activity Profiles](profiles.html#activity-profiles) as the basis for case feature definitions.§
 
 In addition, content implementation guides will typically select a target realm for deployment, and a set of [Interoperability Profiles](profiles.html#content-profiles) appropriate for that realm (see statement prof-2 in [Implementation Considerations](profiles.html#implementation-considerations)).
+{:.modified-content}
 
 #### Terminology
 
@@ -339,6 +340,7 @@ For terminology, the _translate_ step involves identifying and/or constructing a
 <!-- Specifically, terminology that is included as part of content implementation guides SHALL be at least [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html), and SHOULD be Computable, Publishable, and/or Executable, depending on the target. -->
 
 For more discussion on the creation and distribution of value sets, see the [Terminology](terminology.html) page. For best practices on developing and maintaining guideline terminology over time, including guideline-specific code systems, mappings, and update cadence, see [Developing and Maintaining Terminology](terminology.html#developing-and-maintaining-terminology).
+{:.modified-content}
 
 #### Criteria
 
@@ -438,6 +440,8 @@ Note that because _event_ resources are part of the patient's _case_, it is ofte
 * [**case feature type**](StructureDefinition-cpg-caseFeatureType.html): Whether the case feature is _asserted_ or _inferred_
 * [**case feature pertinence**](StructureDefinition-cpg-caseFeaturePertinence.html): The pertinence, positive, negative, or pathognomonic, of the case feature
 
+<div class="new-content" markdown="1">
+
 Requests can also be case features (for example, a current order may be the first or only signal of an intervention), so the request profiles support the same case feature extensions.
 
 Request and event profiles, as well as the case feature profiles such as [CPGCondition](StructureDefinition-cpg-condition.html), also support describing _pertinence relationships_: how facts such as signs, symptoms, and lab values contribute to inferring a higher-level clinical finding, such as a condition or physiological state:
@@ -447,6 +451,8 @@ Request and event profiles, as well as the case feature profiles such as [CPGCon
 * [**pertinence rating**](StructureDefinition-cpg-pertinenceRating.html): The weight, from 0 to 10, given to the fact for inferring the finding. It may be used alone, or alongside case feature pertinence, in which case it establishes the weight of that pertinence relationship
 
 Both directions are supported because the information on either side of the relationship may be outside the control of the system describing it. The case feature pertinence and pertinence rating extensions may also be used on the `pertinent` and `pertinentTo` references themselves, to describe the direction and weight of that specific relationship. These extensions apply to instance resources (requests and events), and are also supported on the [CPGCaseSummary](StructureDefinition-cpg-casesummary.html) and [CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html) profiles.
+
+</div>
 
 The following table details the _event_ profiles for each activity type. Note that some activities have multiple event profiles.
 
@@ -514,6 +520,8 @@ Also note that depending on the guideline, there may be aspects of the pathway t
 
 §rec-7^^recommendation:Content conforming to this implementation guide **SHALL** use the [cpg-pathwaydefinition](StructureDefinition-cpg-pathwaydefinition.html) profile to represent pathway definitions.§
 
+<div class="new-content" markdown="1">
+
 #### Metrics
 
 This implementation guide uses the Measure resource to represent [metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics), patient-level indicators of how care delivered compares with the guideline. Content conforming to this implementation guide SHALL use the [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html) profile to represent metrics, and the [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile to record the result of evaluating a metric for a patient.
@@ -567,6 +575,8 @@ Several codes depend on the metric's policy. A metric that reports these codes S
 * **Exemptions**: the exemptions the metric accepts (for example, contraindication, clinical judgment, or patient refusal), for the _exempted_ code
 * **Holds**: the evidence the metric accepts for a temporary suspension (for example, a [CPGHoldTask](StructureDefinition-cpg-holdtask.html) or a request with a status of on-hold), for the _on-hold_ code
 * **Acceptance and intermediate-attainment criteria** (adherence metrics only): the criteria for _adherent_ and _partially-adherent_. By default, a strategy is adherent when every applicable, non-exempted component is met, partially adherent when at least one is met and at least one has failed, and non-adherent when every one has failed
+
+</div>
 
 ### Validate Step {#validate-step}
 

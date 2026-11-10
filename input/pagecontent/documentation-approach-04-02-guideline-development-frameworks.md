@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 The following frameworks are used in guideline development and across the evidence ecosystem:
 
 ### Knowledge Synthesis and the Evidence Pyramid

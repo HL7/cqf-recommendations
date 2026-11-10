@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 Knowledge translation has specific meaning within the knowledge engineering lifecycle process for knowledge engineers.  However, there are at least three perspectives on knowledge translation that must be considered in the context of co-developing a clinical guideline together with its formal representation as a CPG.  These include:
 
 1. The “activities involved in moving research from the laboratory, the research journal, and the academic conference into the hands of people and organizations who can put it to practical use” ([ref](https://ncats.nih.gov/translation/spectrum))

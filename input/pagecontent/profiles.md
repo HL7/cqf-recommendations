@@ -19,6 +19,8 @@ For definitional artifacts, this implementation guide builds on the capability p
 
 {% include profile-tables/artifact-profiles.html %}
 
+<div class="modified-content" markdown="1">
+
 §§prof-1^^artifact:Knowledge artifacts of the listed types **SHOULD** conform to the CRMI Shareable profile, and **SHOULD** conform to the CRMI Publishable profile^In addition, content claiming conformance to this implementation guide SHOULD use the CRMI Shareable profile and SHOULD use the CRMI Publishable profile for the following artifact types:
 
 * ActivityDefinition
@@ -43,7 +45,10 @@ For definitional artifacts, this implementation guide builds on the capability p
 
 §§
 
+</div>
+
 This implementation guide does not take a dependency on CRMI, so these profiles are strongly recommended rather than required. See [Use of CRMI](documentation-conformance.html#use-of-crmi).
+{:.new-content}
 
 ### Domain Profiles
 

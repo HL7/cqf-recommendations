@@ -1,3 +1,5 @@
+<div class="new-content" markdown="1">
+
 This index lists the concepts of the [conceptual knowledge architecture](documentation-approach-12-conceptual-knowledge-architecture.html) in alphabetical order. For each concept it links to where the concept is defined in the Approach section and shows how the concept is represented by the profiles in this implementation guide.
 
 The Approach pages use conceptual names (for example, "Recommendation") to describe the architecture separately from any particular representation. Earlier versions of these pages used "CPG"-prefixed names for the same concepts (for example, "CPGRecommendation"). Those earlier names are listed under each concept so readers who know them can find the current term. Some earlier names are not profile names. Others, such as CPGCase and CPGStrategy, match a profile whose scope differs from the concept, as noted in the table.
@@ -31,3 +33,5 @@ The Approach pages use conceptual names (for example, "Recommendation") to descr
 | <a id="concept-strategy"></a>**Strategy**<br/>Formerly: CPGStrategy | The coordination of a set of related recommendations, often for a particular clinical issue | [Strategies](documentation-approach-12-03-cpg-plan.html#strategies) | [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html) (PlanDefinition). Note that the [CPGStrategy](StructureDefinition-cpg-strategy.html) profile (RequestGroup) is the patient-specific realization of a strategy, not the strategy definition |
 | <a id="concept-workflow"></a>**Workflow** | How care is delivered in a particular setting. This guide does not specify local workflow | [Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html#workflow); [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html) | No dedicated profile. See the [Common Processes code system](CodeSystem-cpg-common-process-cs.html) and the FHIR request, event, and task patterns |
 {: .grid}
+
+</div>

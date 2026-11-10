@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 This section discusses trade-offs between effort, time to develop, and capabilities enabled (and value that can be derived) when developing a CPG.
 
 ### Levels of Enablement

@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 Knowledge assets or artifacts as they are often referred to in FHIR, where an artifact is an instance of an asset.  Assets provide the ability to keep domain logic separated and distinct from other system logic in complex systems.  In this implementation guide we often refer to knowledge assets and knowledge artifacts interchangeably, though the distinction is very relevant to the knowledge engineer.
 
 *   Asset Metamodel- its structure- requirements and constraints

@@ -35,11 +35,15 @@ _Figure 1.1_ High-level current state (siloed and sequential) and proposed futur
 
 ### Scope
 
+<div class="modified-content" markdown="1">
+
 <div>
   <img src="CPG-Main-06.png" alt="Clinical quality lifecycle" class="img-responsive img-rounded center-block" width="700"/>
 </div>
 
 _Figure 1.2_ Clinical Quality Lifecycle with situated standards to address each respective phase. The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback and feedforward loop(s).
+
+</div>
 
 <div>
   <img src="CPG-Main-06-Legend.png" alt="Clinical quality lifecycle legend" class="img-responsive img-rounded center-block" width="70" />

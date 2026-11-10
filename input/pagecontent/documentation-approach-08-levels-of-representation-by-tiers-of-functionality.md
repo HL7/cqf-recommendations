@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 A basic approach that may help with addressing appropriate separations of concerns is to consider where certain knowledge engineering artifacts may be situated when considering both tiers of functionality and levels of representation as shown in the table below.
 
 <details open>

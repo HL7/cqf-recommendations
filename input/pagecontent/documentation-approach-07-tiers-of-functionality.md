@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 This implementation guide defines three (3) tiers of functionality, very roughly analogous to the tiers of architecture in software engineering:
 
 *   **Data**  (Data Elements)

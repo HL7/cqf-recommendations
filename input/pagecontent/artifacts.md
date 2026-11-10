@@ -395,14 +395,14 @@ This page provides indexes of the various artifacts (i.e. profiles, extensions, 
 
     Common processes used to describe the high-level, conceptual activities that occur as part of the delivery of guideline-based care
 
-*   [CPG Measure Type](ValueSet-cpg-measure-type-vs.html)
+*   {:.new-content} [CPG Measure Type](ValueSet-cpg-measure-type-vs.html)
 
     The type of a metric, including the compliance and adherence types defined by this implementation guide
 
-*   [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html)
+*   {:.new-content} [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html)
 
     The result of evaluating a compliance metric scoped to a recommendation
 
-*   [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html)
+*   {:.new-content} [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html)
 
     The result of evaluating an adherence metric scoped to a strategy

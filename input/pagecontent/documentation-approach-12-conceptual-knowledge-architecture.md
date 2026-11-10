@@ -1,3 +1,6 @@
+This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
+{:.modified-content}
+
 The conceptual knowledge architecture for the CPG describes how the concepts from a guideline and its recommendations described in [Guideline Development](documentation-approach-04-guideline-development.html) are realized as computable knowledge assets. The CPG knowledge architecture provides the framework through which the knowledge engineering team realizes the guideline, its recommendations, and their various features through explicit formalisms and ultimately as information. The CPG conceptual knowledge architecture together with the implementation instructions and examples in the [Methodology](methodology.html) section provide the means to develop and concretize a CPG representation that can be consumed through various mechanisms in end-user workflows.
 
 This section covers:
