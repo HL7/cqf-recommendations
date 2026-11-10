@@ -20,6 +20,9 @@
 
     <action>
         <id value="xor_group"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/cqf-applicabilityBehavior">
+            <valueCode value="any"/>
+        </extension>
         <title value="Xor_group"/>
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="exactly-one"/>

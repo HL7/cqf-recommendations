@@ -66,7 +66,7 @@ A sequence flow is a directed arc from one source node to exactly one target nod
 A parallel split is separating the sequence flow in parallel branches that are executed concurrently.
 
 | BPMN | ParallelGateway |
-| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior |
+| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior, [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) (all) |
 
 **Remarks**
 A merge element is created implicitly
@@ -89,7 +89,7 @@ An exclusive choice is an element where the sequence flow is split into two or m
 A synchronization element is created implicitly
 
 | BPMN | EclusiveGateway, ExtensionElement, TaskListener |
-| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior |
+| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior, [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) (any) |
 
 **BPMN Representation**
 {% highlight xml %}{% include process-patterns/bpmn-exclusiveSplit.xml %}{% endhighlight %}

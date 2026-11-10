@@ -20,6 +20,7 @@ Title: "CKD Ambulatory Plan Definition"
 * action[+]
   * id = "cc-cpg-activity-referral-nephrology"
   * title = "Referrals"
+  * extension[applicabilityBehavior].valueCode = #all
   * groupingBehavior = #visual-group
   * action[+]
     * id = "34387224"
