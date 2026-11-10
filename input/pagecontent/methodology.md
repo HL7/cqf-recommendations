@@ -338,7 +338,7 @@ For terminology, the _translate_ step involves identifying and/or constructing a
 
 <!-- Specifically, terminology that is included as part of content implementation guides SHALL be at least [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html), and SHOULD be Computable, Publishable, and/or Executable, depending on the target. -->
 
-For more discussion on the creation and distribution of value sets, see the [Terminology](terminology.html) page.
+For more discussion on the creation and distribution of value sets, see the [Terminology](terminology.html) page. For best practices on developing and maintaining guideline terminology over time, including guideline-specific code systems, mappings, and update cadence, see [Developing and Maintaining Terminology](terminology.html#developing-and-maintaining-terminology).
 
 #### Criteria
 

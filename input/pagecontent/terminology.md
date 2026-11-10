@@ -6,6 +6,7 @@ This page provides overview documentation for the use of code systems and value 
 
 *   Using Code Systems
 *   Using Value Sets
+*   Developing and Maintaining Terminology
 
 For indexes of terminologies defined in this implementation guide, see the following:
 
@@ -69,3 +70,36 @@ The CRMIExpandedValueSet profile supports providing a point-in-time expansion of
 §§
 
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use these profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
+
+### Developing and Maintaining Terminology
+
+Standard terminologies change continuously: codes are added and retired, and categories are restructured. Computable guidelines need to remain valid as these terminologies evolve, and evaluating a guideline often requires comparing data coded with different versions, or different code systems, such as outcomes before and after the guideline was published. This section describes best practices for developing and maintaining the terminology used by computable guidelines, informed by questions from implementers and discussion by the CPG-on-FHIR project team.
+
+#### Guideline-Specific Concepts and Mappings
+
+The recommended approach is to define a single guideline-specific (local) code system that identifies exactly the concepts used in the guideline, and then map those concepts to the standard terminologies used in implementation:
+
+* The guideline-specific code system defines each concept as the guideline intends it, independent of how any particular standard terminology categorizes it. The guideline's logic and value sets refer to these concepts.
+* Mappings from the guideline concepts to each standard terminology are represented using ConceptMap resources, with one ConceptMap for each target code system (for example, one for SNOMED CT, one for ICD-10-CM, and one for ICD-9-CM).
+* When a standard terminology changes, the mappings are updated, and the guideline concepts, and the logic that uses them, remain stable.
+
+Splitting the mappings by code system is intentional. It aligns maintenance of the mappings with the expertise needed to maintain them: for example, the SNOMED CT mappings can be assigned to a terminologist with SNOMED CT expertise, which makes it easier to assign and manage the maintenance work.
+
+For example, a guideline whose recommendations apply only to non-pulsatile tinnitus can define a concept for non-pulsatile tinnitus. ICD-10-CM distinguishes tinnitus (H93.1) from pulsatile tinnitus (H93.A), so the ICD-10-CM mapping can be precise. ICD-9-CM instead distinguishes unspecified (388.30), subjective (388.31), and objective (388.32) tinnitus, and does not make the same distinction, so the ICD-9-CM mapping records how closely each code corresponds to the guideline concept, using the ConceptMap `equivalence` element. Comparisons of outcomes across data coded with each code system can then account for the difference explicitly.
+
+The [WHO SMART Guidelines antenatal care (ANC) implementation guide](https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/) illustrates this approach, with a [guideline-specific code system](https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/CodeSystem-anc-custom-codes.html) and [a concept map for each target code system](https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/artifacts.html#terminology-concept-maps).
+
+#### Update Cadence
+
+Standard terminologies are released on different schedules. For example, the US Edition of SNOMED CT is released twice a year, and RxNorm has monthly releases, with more frequent weekly updates. Updating the terminology used by a guideline with every release of every code system is a significant maintenance burden.
+
+To keep that burden low, guideline terminology (code system versions, mappings, and value set expansions) should be reviewed and updated no more than twice a year, and at least once a year. An annual update aligns with established practice: the Value Set Authority Center (VSAC) expects value sets to be updated yearly, and the terminology used in electronic clinical quality measures (eCQMs) is updated annually, along with the measures themselves. Content implementation guides document their chosen maintenance path for executable value sets, as described in [Using Value Sets](#using-value-sets).
+
+#### Organizing Value Sets by Code System
+
+Some methodologies define two kinds of value sets:
+
+* **Leaf** value sets, each of which includes codes from one and only one code system
+* **Grouping** value sets, which bring leaf value sets together (using `compose.include.valueSet`) when a concept needs codes from more than one code system
+
+This structure is not necessary, and may not be desirable from a purely terminological perspective, but it has advantages when maintenance is spread across people with different expertise. For example, a terminologist with SNOMED CT expertise can be assigned all of the SNOMED CT leaf value sets. This is the same reasoning as splitting mappings by code system, described above.
