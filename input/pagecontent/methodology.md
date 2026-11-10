@@ -438,6 +438,16 @@ Note that because _event_ resources are part of the patient's _case_, it is ofte
 * [**case feature type**](StructureDefinition-cpg-caseFeatureType.html): Whether the case feature is _asserted_ or _inferred_
 * [**case feature pertinence**](StructureDefinition-cpg-caseFeaturePertinence.html): The pertinence, positive, negative, or pathognomonic, of the case feature
 
+Requests can also be case features (for example, a current order may be the first or only signal of an intervention), so the request profiles support the same case feature extensions.
+
+Request and event profiles, as well as the case feature profiles such as [CPGCondition](StructureDefinition-cpg-condition.html), also support describing _pertinence relationships_: how facts such as signs, symptoms, and lab values contribute to inferring a higher-level clinical finding, such as a condition or physiological state:
+
+* [**pertinent**](StructureDefinition-cpg-pertinent.html): References the pertinent information supporting the finding (from the finding to the supporting facts)
+* [**pertinent to**](StructureDefinition-cpg-pertinentTo.html): References the finding this resource is pertinent to (from a supporting fact to the finding)
+* [**pertinence rating**](StructureDefinition-cpg-pertinenceRating.html): The weight, from 0 to 10, given to the fact for inferring the finding. It may be used alone, or alongside case feature pertinence, in which case it establishes the weight of that pertinence relationship
+
+Both directions are supported because the information on either side of the relationship may be outside the control of the system describing it. The case feature pertinence and pertinence rating extensions may also be used on the `pertinent` and `pertinentTo` references themselves, to describe the direction and weight of that specific relationship. These extensions apply to instance resources (requests and events), and are also supported on the [CPGCaseSummary](StructureDefinition-cpg-casesummary.html) and [CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html) profiles.
+
 The following table details the _event_ profiles for each activity type. Note that some activities have multiple event profiles.
 
 |Activity|Event|

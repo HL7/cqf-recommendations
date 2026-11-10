@@ -4,6 +4,7 @@ Id: cpg-medicationstatement
 Title: "CPG Medication Statement"
 Description: "Documentation of the use of a particular medication as an activity within the context of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-medicationstatement)
+* insert PertinenceExtensions
 * extension contains
   CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
   CPGCaseFeatureType named caseFeatureType 0..1 MS and

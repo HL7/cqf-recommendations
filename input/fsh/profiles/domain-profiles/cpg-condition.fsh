@@ -4,6 +4,7 @@ Id: cpg-condition
 Title: "CPG Condition"
 Description: "CPG condition represents the minimum expectations for communicating condition/problem information as part of a CPG case"
 * insert StructureDefinitionMetadata(cpg-condition)
+* insert PertinenceExtensions
 * extension contains
   CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
   CPGCaseFeatureType named caseFeatureType 0..1 MS and

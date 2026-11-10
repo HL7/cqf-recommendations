@@ -4,6 +4,10 @@ Id: cpg-casesummary
 Title: "CPG Case Summary"
 Description: "CPG Case Summary is the set of case features and feature groups that completely represent the case data scoped by the clinical practice guideline. This expresses the complete patient state at any given point in time."
 * insert StructureDefinitionMetadata(cpg-casesummary)
+* insert PertinenceExtensions
+* extension contains
+    CPGCaseFeaturePertinence named caseFeaturePertinence 0..1 and
+    CPGPertinent named pertinent 0..*
 * extension contains
   $cpg-generatedFrom named generatedFrom 0..1 MS and
   $cpg-summaryFor named summaryFor 0..1 MS
