@@ -152,13 +152,6 @@ caller to determine whether and how those activities are actually carried out.
   * documentation = "Additional detail about the setting of the request, if any"
   * type = #CodeableConcept
 * parameter[+]
-  * name = #mergeNestedCarePlans
-  * use = #in
-  * min = 0
-  * max = "1"
-  * documentation = "True if the result of any nested PlanDefinitions should be merged into the final care plan, false if they should be preserved as nested CarePlans in the output. If this parameter is not specified, the default behavior is to preserve nested care plans in the output."
-  * type = #boolean
-* parameter[+]
   * documentation = "Any input parameters defined in libraries referenced by the PlanDefinition.  Parameter types are mapped to CQL as specified in the Using CQL With FHIR implementation guide. If a parameter appears more than once in the input Parameters resource, it is represented with a List in the input CQL. If a parameter has parts, it is represented as a Tuple in the input CQL."
   * max = "1"
   * min = 0
@@ -265,13 +258,6 @@ OperationDefinition.
     * use = #in
     * type = #Endpoint
     * documentation = "An Endpoint resource describing the endpoint, exclusive with the `endpointUri` parameter"
-* parameter[+]
-  * documentation = "An endpoint to use to access terminology (i.e. valuesets, codesystems, and membership testing) referenced by the PlanDefinition. If no terminology endpoint is supplied, the evaluation will attempt to use the server on which the operation is being performed as the terminology server."
-  * max = "1"
-  * min = 0
-  * name = #terminologyEndpoint
-  * type = #Endpoint
-  * use = #in
 * parameter[+]
   * name = #return
   * use = #out

@@ -215,13 +215,6 @@ OperationDefinition.
     * type = #Endpoint
     * documentation = "An Endpoint resource describing the endpoint, exclusive with the `endpointUri` parameter"
 * parameter[+]
-  * documentation = "An endpoint to use to access terminology (i.e. valuesets, codesystems, and membership testing) referenced by the ActivityDefinition. If no terminology endpoint is supplied, the evaluation will attempt to use the server on which the operation is being performed as the terminology server."
-  * max = "1"
-  * min = 0
-  * name = #terminologyEndpoint
-  * type = #Endpoint
-  * use = #in
-* parameter[+]
   * name = #return
   * use = #out
   * min = 1
