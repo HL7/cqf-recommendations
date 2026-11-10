@@ -1,7 +1,7 @@
 CodeSystem: CPGMeasureTypeCS
 Id: cpg-measure-type-cs
 Title: "CPG Measure Type Code System"
-Description: "Additional measure types for metrics defined as part of a computable clinical practice guideline. Each code specializes one of the base measure types, identified by the measure-type property."
+Description: "Additional measure types for metrics defined as part of a computable clinical practice guideline. Where a code specializes one of the base measure types, the measure-type property identifies it."
 * insert KnowledgeArtifactExtensionsMeta
 * ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-measure-type-cs"
 * ^experimental = false
@@ -15,5 +15,3 @@ Description: "Additional measure types for metrics defined as part of a computab
   * ^property[+].code = #measure-type
   * ^property[=].valueCoding = $measure-type#process
 * #adherence "Adherence" "A composite metric that evaluates where a patient is with respect to a CPGStrategy or CPGPathway as a whole, typically by rolling up the compliance and/or intermediate-outcome metrics scoped to the recommendations within that strategy or pathway, using logic defined by the guideline development group or the local implementation. Pathway adherence (colloquially 'on path' or 'off path') is a special case."
-  * ^property[+].code = #measure-type
-  * ^property[=].valueCoding = $measure-type#composite
