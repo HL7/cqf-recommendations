@@ -10,8 +10,8 @@ Description: "CPG care plan represents the care plan for a specific patient. The
 * instantiatesCanonical MS
 * status MS
 * intent MS
-* category 1..* MS
-* title 1..1 MS
+* category MS
+* title MS
 * description MS
 * subject only Reference(CPGPatient)
 * subject MS
@@ -42,4 +42,4 @@ Description: "CPG care plan represents the care plan for a specific patient. The
     * location MS
     * performer only Reference(CPGPractitioner or CPGPractitionerRole or CPGOrganization or CPGRelatedPerson or CPGPatient or CPGCareTeam)
     * performer MS
-    * description 1..1 MS
+    * description MS

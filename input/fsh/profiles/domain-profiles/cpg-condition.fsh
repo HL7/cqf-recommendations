@@ -10,7 +10,6 @@ Description: "CPG condition represents the minimum expectations for communicatin
   CPGCaseFeaturePertinence named caseFeaturePertinence 0..1 MS
 * clinicalStatus MS
 * verificationStatus MS
-* category 1..*
 * code 1..1
 * subject only Reference(CPGPatient)
 * subject MS

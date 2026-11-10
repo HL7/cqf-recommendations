@@ -11,7 +11,7 @@ Description: "Represents a flag on a patient record within the context of a comp
   CPGPertinent named pertinent 0..* MS
 * identifier MS
 * status MS
-* category 1..1 MS
+* category MS
 * code MS
 * subject only Reference(CPGPatient)
 * subject MS
