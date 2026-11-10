@@ -114,6 +114,7 @@
 <artifact id="CodeSystem/cpg-activity-type-cs" key="CodeSystem-cpg-activity-type-cs" name="CPG Activity Type Code System"/>
 <artifact id="ValueSet/cpg-activity-type-vs" key="ValueSet-cpg-activity-type-vs" name="CPG Activity Type Value Set"/>
 <artifact id="OperationDefinition/cpg-activitydefinition-apply" key="OperationDefinition-cpg-activitydefinition-apply" name="CPG ActivityDefinition Apply"/>
+<artifact id="ValueSet/cpg-adherence-result-vs" key="ValueSet-cpg-adherence-result-vs" name="CPG Adherence Result Value Set"/>
 <artifact id="StructureDefinition/cpg-administermedicationactivity" key="StructureDefinition-cpg-administermedicationactivity" name="CPG Administer Medication Activity"/>
 <artifact id="ActivityDefinition/cpg-administermedication-activitydefinition" key="ActivityDefinition-cpg-administermedication-activitydefinition" name="CPG Administer Medication ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-administermedicationtask" key="StructureDefinition-cpg-administermedicationtask" name="CPG Administer Medication Task"/>
@@ -157,6 +158,7 @@
 <artifact id="StructureDefinition/cpg-communicationactivity" key="StructureDefinition-cpg-communicationactivity" name="CPG Communication Activity"/>
 <artifact id="StructureDefinition/cpg-communicationrequest" key="StructureDefinition-cpg-communicationrequest" name="CPG Communication Request"/>
 <artifact id="ActivityDefinition/cpg-communicationrequest-activitydefinition" key="ActivityDefinition-cpg-communicationrequest-activitydefinition" name="CPG CommunicationRequest ActivityDefinition"/>
+<artifact id="ValueSet/cpg-compliance-result-vs" key="ValueSet-cpg-compliance-result-vs" name="CPG Compliance Result Value Set"/>
 <artifact id="StructureDefinition/cpg-computableactivity" key="StructureDefinition-cpg-computableactivity" name="CPG Computable Activity Definition"/>
 <artifact id="StructureDefinition/cpg-computablegraphdefinition" key="StructureDefinition-cpg-computablegraphdefinition" name="CPG Computable Graph Definition"/>
 <artifact id="StructureDefinition/cpg-computableguideline" key="StructureDefinition-cpg-computableguideline" name="CPG Computable Guideline"/>
@@ -204,6 +206,8 @@
 <artifact id="StructureDefinition/cpg-itemImage" key="StructureDefinition-cpg-itemImage" name="CPG Item Image Extension"/>
 <artifact id="StructureDefinition/cpg-location" key="StructureDefinition-cpg-location" name="CPG Location"/>
 <artifact id="StructureDefinition/cpg-locationdefinition" key="StructureDefinition-cpg-locationdefinition" name="CPG Location Definition"/>
+<artifact id="CodeSystem/cpg-measure-type-cs" key="CodeSystem-cpg-measure-type-cs" name="CPG Measure Type Code System"/>
+<artifact id="ValueSet/cpg-measure-type-vs" key="ValueSet-cpg-measure-type-vs" name="CPG Measure Type Value Set"/>
 <artifact id="StructureDefinition/cpg-medicationadministration" key="StructureDefinition-cpg-medicationadministration" name="CPG Medication Administration"/>
 <artifact id="StructureDefinition/cpg-medicationdispense" key="StructureDefinition-cpg-medicationdispense" name="CPG Medication Dispense"/>
 <artifact id="StructureDefinition/cpg-medicationrequest" key="StructureDefinition-cpg-medicationrequest" name="CPG Medication Request"/>
@@ -211,6 +215,7 @@
 <artifact id="StructureDefinition/cpg-medicationstatement" key="StructureDefinition-cpg-medicationstatement" name="CPG Medication Statement"/>
 <artifact id="ActivityDefinition/cpg-medicationrequest-activitydefinition" key="ActivityDefinition-cpg-medicationrequest-activitydefinition" name="CPG MedicationRequest ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-metricreport" key="StructureDefinition-cpg-metricreport" name="CPG Metric Report"/>
+<artifact id="CodeSystem/cpg-metric-result-cs" key="CodeSystem-cpg-metric-result-cs" name="CPG Metric Result Code System"/>
 <artifact id="StructureDefinition/cpg-observation" key="StructureDefinition-cpg-observation" name="CPG Observation"/>
 <artifact id="StructureDefinition/cpg-ordersetdefinition" key="StructureDefinition-cpg-ordersetdefinition" name="CPG Order Set Definition"/>
 <artifact id="StructureDefinition/cpg-organization" key="StructureDefinition-cpg-organization" name="CPG Organization"/>

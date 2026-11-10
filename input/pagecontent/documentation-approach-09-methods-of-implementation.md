@@ -46,18 +46,9 @@ The knowledge architecture described here builds on the overall workflow pattern
 
 In general, activities within a computable practice guideline are modeled as requests that either have not yet occurred, but are proposed or planned, or events that have occurred. Requests have a `status`, typically indicating the level of completeness of the request; an `intent`, representing the level of authorization or certainty with which the request should be taken; and a `doNotPerform`, indicating whether the request is _to perform_ or _not to perform_ the action.
 
-Note that although these elements are described by the base _request_ pattern within FHIR, the request resources do not necessarily follow these patterns exactly. Variability in use cases and scope of the request resources results in variability in how the request pattern is applied. This results in differences in the way the pattern is implemented, but in general, activities in the CPG move through the following basic steps:
+Note that although these elements are described by the base _request_ pattern within FHIR, the request resources do not necessarily follow these patterns exactly. Variability in use cases and scope of the request resources results in variability in how the request pattern is applied. In general, activities in the CPG move through the proposal plan, order, and event phases. See the [Activity Flow](activityflow.html) page for the rationale and for the states and transitions of each resource.
 
-1. Activities are proposed as requests with a status of `active` and an intent of `proposal`
-2. Proposals that are accepted result in a new _request_, linked to the proposal and with a status of `active` and an intent of `plan`
-3. Proposals that are rejected have a Task with a `focus` that references the rejected proposal and a status of `rejected`
-4. Accepted proposals (plans) that are _authorized_ result in a new _request_, linked to the plan with an intent of `order`
-5. Orders that are _fulfilled_ move to a status of `completed`, and result in the creation of a corresponding _event_ resource
-6. Events are typically created with a status of `preparation` or `in-progress`, and the `basedOn` element is used to indicate the request the event is fulfilling
-7. In-progress events that are completed move to a status of `completed`
-8. In-progress events that are stopped or cancelled move to a status of `suspended` or `aborted`
-
-Note that although this is the general pattern, because of the variability in request resources, the specific pattern for each activity varies slightly, depending on the actual `status` and `intent` values defined for use with each specific resource type.
+In addition, because of differences in the specific elements in each of the various request resources, the pattern for each activity varies slightly, depending on the actual `status` and `intent` values defined for use with each specific resource type.
 
 Note also that an _event_ may be documented directly without a corresponding request, and that with or without a request, the _event_ may be documented as `not-done`, meaning explicitly that the event was not performed for some reason, typically provided via the `statusReason` element.
 

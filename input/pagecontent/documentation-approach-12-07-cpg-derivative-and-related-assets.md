@@ -3,14 +3,14 @@ Another key feature of the FHIR CPG is that since it explicitly and formally exp
 
 Covered in this section:
 
-*   Guideline
-*   Metrics
-*   Measures using the [FHIR Measure IG ](http://hl7.org/fhir/us/cqfmeasures/2019May/index.html)
+*   CPGGuideline
+*   CPGMetrics
+*   CPGMeasures using the [FHIR Quality Measure IG](http://hl7.org/fhir/uv/cqm)
 *   CPGCaseSummary
 *   [Case Plan Summary](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-plan-summary)
 *   CPGCasePlanProgressingNote
-*   [eCase Report](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-ecase-report) using the [eCaseReport IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html)
-*   Infobutton for CPG’s
+*   CPGeCaseReport using the [eCaseReport IG](http://hl7.org/fhir/uv/ecr/index.html)
+*   Infobutton for CPG's
 
 ### Guideline
 
