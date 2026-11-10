@@ -11,6 +11,7 @@ Description: "CPG Case Plan Summary addresses information from the plan portion 
 * extension[generatedFrom]
   * ^short = "Definition"
   * ^definition = "A link back to the definition that produced this summary. Typically a CPGCasePlanSummaryDefinition."
+  * ^comment = "When this summary is the result of realizing a graph definition (for example, using GraphDefinition/$apply), this extension SHOULD be used to identify the source definition."
 * identifier MS
 * status MS
 * type MS

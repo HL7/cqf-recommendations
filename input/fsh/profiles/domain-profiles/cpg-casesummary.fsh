@@ -10,6 +10,7 @@ Description: "CPG Case Summary is the set of case features and feature groups th
 * extension[generatedFrom]
   * ^short = "Definition"
   * ^definition = "A link back to the definition that produced this summary. Typically a CPGCaseSummaryDefinition."
+  * ^comment = "When this summary is the result of realizing a graph definition (for example, using GraphDefinition/$apply), this extension SHOULD be used to identify the source definition."
 * extension[summaryFor]
   * ^short = "Which case?"
   * ^definition = "Specifies which case (episode of care) this summary is for."

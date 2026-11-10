@@ -6,6 +6,7 @@ Alias: $cpg-activitydefinition-apply-operation = http://hl7.org/fhir/uv/cpg/Oper
 Alias: $cpg-plandefinition-apply-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-plandefinition-apply
 Alias: $cpg-plandefinition-questionnaire-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-planDefinition-questionnaire
 Alias: $cpg-structuredefinition-questionnaire-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-structureDefinition-questionnaire
+Alias: $cpg-graphdefinition-apply-operation = http://hl7.org/fhir/uv/cpg/OperationDefinition/cpg-graphdefinition-apply
 Alias: $measure-evaluate-measure = http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure
 
 RuleSet: ActorCapabilityStatementMetadata(id)
@@ -77,6 +78,14 @@ RuleSet: SummaryInteractions(mode)
       * name = "summary"
       * definition = $cpg-common-patient-summary-operation
       * documentation = "Returns a summary of the patient's case features relevant to the guideline, conforming to the CPGCaseSummary profile."
+  * resource[+]
+    * type = #GraphDefinition
+    * insert ReadSearch
+    * operation[+]
+      * insert Expectation(SHALL)
+      * name = "apply"
+      * definition = $cpg-graphdefinition-apply-operation
+      * documentation = "Realizes a case summary or case plan summary definition for the subject, returning a Composition (such as a CPGCaseSummary or CPGCasePlanSummary) that identifies the source definition using the cpg-generatedFrom extension."
 
 Instance: cpg-summary-service-capabilities
 InstanceOf: CapabilityStatement

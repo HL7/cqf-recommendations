@@ -17,3 +17,5 @@ Description: "Profile of GraphDefinition to establish computable expectations fo
     * extension contains
       CPGTargetExpression named targetExpression 0..1 MS
     * extension[targetExpression] ^short = "Resources for this target"
+    * extension[targetExpression] ^comment = "When the profile of the target is a CPGCaseFeatureDefinition, the target expression is typically the feature expression (cpg-featureExpression) of that case feature."
+    * profile ^comment = "The profile is typically a CPGCaseFeatureDefinition, identifying the case feature represented by this target."
