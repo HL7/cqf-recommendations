@@ -1,5 +1,11 @@
 {% include cpg-toc-layout.html %}
 
+<style>
+  .cpg-model-concerns tr > :first-child {
+    white-space: nowrap;
+  }
+</style>
+
 Start with three questions: What do we know about this patient? What care does the guideline recommend? How will people and systems deliver that care? The answers define the Case, Plan, and Workflow. Keeping them separate lets a clinical reviewer assess a recommendation, a terminology specialist review its inputs, and an implementer change how it is delivered without silently changing its meaning.
 
 ### The model at a glance {#model-at-a-glance}
@@ -12,7 +18,7 @@ Start with three questions: What do we know about this patient? What care does t
 | [Plan](#plan) | What care should be considered for patients in scope? | A pathway definition groups Daily Management and Hypervolemia strategies. |
 | [Care plan](#care-plan) | What is proposed or intended for this patient? | A patient-specific CarePlan links goals and activities, including realizations of the two strategies. |
 | [Workflow](#workflow) | Who reviews and carries out the work, when, and where? | To implement the example, the local site would decide how to obtain and review measurements and make them available for later evaluation. |
-{:.grid}
+{:.grid.cpg-model-concerns}
 
 The [congestive heart failure (CHF) example](examples-chf.html) illustrates the model with a pathway and a patient case. Dijkstra described separation of concerns as examining one aspect of a problem at a time (*On the Role of Scientific Thought*, 1982). In [problem-oriented clinical documentation](https://doi.org/10.1056/NEJM196803142781105), separating assessment from plan serves a similar purpose. The [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html) connects the guide's terms to their formal profiles.
 

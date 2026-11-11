@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="742" viewBox="0 0 1200 742" role="img" aria-labelledby="title description">
+  <title id="title">Illustrative scope survey for the CHF case</title>
+  <desc id="description">Five scope questions with filled-in answers for the daily body weight change recommendation. A text version follows the figure.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; font-size: 19px; fill: #183e59; }
+    .title { font-size: 29px; font-weight: 700; }
+    .question { font-size: 23px; font-weight: 700; }
+    .answer-field { fill: #f7f9fb; stroke: #aab9c6; }
+    .code { font-family: monospace; font-weight: 700; }
+  </style>
+  <rect width="1200" height="742" fill="white"/>
+  <text x="30" y="42" class="title">Illustrative scope survey for the CHF case</text>
+  <text x="30" y="65">Track and report daily body weight change.</text>
+
+  <g>
+    <text x="30" y="114" class="question">Who is involved?</text>
+    <rect x="30" y="126" width="1140" height="80" rx="5" class="answer-field"/>
+    <text x="46" y="159">
+      <tspan x="46">Patient admitted with CHF.</tspan>
+      <tspan x="46" dy="26">Common Personas · <tspan class="code">2212</tspan> — Specialist medical practitioner</tspan>
+    </text>
+  </g>
+  <g transform="translate(0 122)">
+    <text x="30" y="114" class="question">What is proposed?</text>
+    <rect x="30" y="126" width="1140" height="102" rx="5" class="answer-field"/>
+    <text x="46" y="155">
+      <tspan x="46">Record the calculated change in body weight and report it.</tspan>
+      <tspan x="46" dy="26">Activity Type · <tspan class="code">record-inference</tspan> — Record an inference</tspan>
+      <tspan x="46" dy="26">Activity Type · <tspan class="code">generate-report</tspan> — Generate a metric or case report</tspan>
+    </text>
+  </g>
+  <g transform="translate(0 266)">
+    <text x="30" y="114" class="question">When does it matter?</text>
+    <rect x="30" y="126" width="1140" height="80" rx="5" class="answer-field"/>
+    <text x="46" y="159">
+      <tspan x="46">Evaluate daily during the admission and report after recording the change.</tspan>
+      <tspan x="46" dy="26">Common Processes · <tspan class="code">diagnostic-testing</tspan> — Conduct Diagnostic Tests</tspan>
+    </text>
+  </g>
+  <g transform="translate(0 388)">
+    <text x="30" y="114" class="question">Where will it be used?</text>
+    <rect x="30" y="126" width="1140" height="80" rx="5" class="answer-field"/>
+    <text x="46" y="159">
+      <tspan x="46">Unit 3 East. Use recorded weights with units and timestamps.</tspan>
+      <tspan x="46" dy="26">HL7 v3 RoleCode · <tspan class="code">CVDX</tspan> — Cardiovascular diagnostics or therapeutics unit</tspan>
+    </text>
+  </g>
+  <g transform="translate(0 510)">
+    <text x="30" y="114" class="question">What supports the recommendation?</text>
+    <rect x="30" y="126" width="1140" height="80" rx="5" class="answer-field"/>
+    <text x="46" y="159">
+      <tspan x="46">The case records 96.9 kg and 95.7 kg on consecutive days.</tspan>
+      <tspan x="46" dy="26">Guideline citation and evidence ratings are pending confirmation.</tspan>
+    </text>
+  </g>
+</svg>

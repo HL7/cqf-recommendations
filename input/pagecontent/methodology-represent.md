@@ -18,32 +18,55 @@ Write the inclusion and exclusion criteria, timing, exceptions, and expected res
 
 This historical example shows one way to express the decision criteria and response options for review. The When/Then block is illustrative pseudocode.
 
-```text
-When
-  Provider is prescribing an opioid analgesic with ambulatory misuse potential
-    in the outpatient setting
-  Opioid review is useful for this patient:
-    Patient is 18 or over
-    Patient does not have evidence of sickle cell disease
-    Patient does not have findings indicating limited life expectancy
-    Patient does not have orders for therapies indicating end of life care
-    Patient is not undergoing active cancer treatment:
-      Patient has had at least 2 office visits within the past 12 months
-        with an oncology specialist present, or
-      Patient has had at least 2 office visits within the past 12 months
-        with a CDC malignant cancer condition diagnosis
-    Patient does not have conditions likely terminal for opioid prescribing present
-  Patient Morphine Milligram Equivalent (MME) greater than or equal to 50
+<style>
+  .cpg-criteria-example {
+    margin-block: 1em;
+    padding: 1em 1.25em;
+    border: 1px solid #c3cdd7;
+    border-radius: 4px;
+    background: #f7f9fb;
+    font-family: monospace;
+  }
+  .cpg-criteria-example > p {
+    color: #183e59;
+  }
+  .cpg-criteria-example ul {
+    padding-inline-start: 1.5em;
+  }
+  .cpg-criteria-example li + li {
+    margin-top: 0.25em;
+  }
+  .cpg-criteria-example > ul:last-child {
+    margin-bottom: 0;
+  }
+</style>
 
-Then
-  Calibrate to lowest opioid dose needed for expected results and exercise care
-    when changing opioid dosages:
-    Document - Will prescribe a lower dose
-    Document - Will calibrate a gradual change in dosage
-    Snooze - Benefits outweigh risks, snooze 3 months
-    Snooze - Short term benefits outweigh risks, snooze 1 month
-    Snooze - N/A add comment, snooze 3 months
-```
+<div class="cpg-criteria-example" markdown="1">
+
+**When**
+
+- Provider is prescribing an opioid analgesic with ambulatory misuse potential in the outpatient setting
+- Opioid review is useful for this patient:
+  - Patient is 18 or over
+  - Patient does not have evidence of sickle cell disease
+  - Patient does not have findings indicating limited life expectancy
+  - Patient does not have orders for therapies indicating end of life care
+  - Patient is not undergoing active cancer treatment:
+    - Patient has had at least 2 office visits within the past 12 months with an oncology specialist present, or
+    - Patient has had at least 2 office visits within the past 12 months with a CDC malignant cancer condition diagnosis
+  - Patient does not have conditions likely terminal for opioid prescribing present
+- Patient Morphine Milligram Equivalent (MME) greater than or equal to 50
+
+**Then**
+
+- Calibrate to lowest opioid dose needed for expected results and exercise care when changing opioid dosages:
+  - Document - Will prescribe a lower dose
+  - Document - Will calibrate a gradual change in dosage
+  - Snooze - Benefits outweigh risks, snooze 3 months
+  - Snooze - Short term benefits outweigh risks, snooze 1 month
+  - Snooze - N/A add comment, snooze 3 months
+
+</div>
 
 #### Describe delivery in the care process {#processes-1}
 

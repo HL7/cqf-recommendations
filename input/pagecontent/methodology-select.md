@@ -16,18 +16,23 @@ Start with the authoritative guideline and its version. Identify a specific reco
 {% capture survey_text %}
 <dl>
   <dt>Who is involved?</dt>
-  <dd>The patient was admitted with CHF. A specialist medical practitioner participates in the encounter.</dd>
+  <dd>Patient admitted with CHF.<br />
+    Common Personas · <a href="CodeSystem-cpg-common-persona-cs.html#cpg-common-persona-cs-2212"><code>2212</code></a> — Specialist medical practitioner</dd>
   <dt>What is proposed?</dt>
-  <dd>Record the calculated change in body weight and report it.</dd>
+  <dd>Record the calculated change in body weight and report it.<br />
+    Activity Type · <a href="CodeSystem-cpg-activity-type-cs.html#cpg-activity-type-cs-record-inference"><code>record-inference</code></a> — Record an inference<br />
+    Activity Type · <a href="CodeSystem-cpg-activity-type-cs.html#cpg-activity-type-cs-generate-report"><code>generate-report</code></a> — Generate a metric or case report</dd>
   <dt>When does it matter?</dt>
-  <dd>Evaluate daily during the admission and report after recording the change.</dd>
+  <dd>Evaluate daily during the admission and report after recording the change.<br />
+    Common Processes · <a href="CodeSystem-cpg-common-process-cs.html#cpg-common-process-cs-diagnostic-testing"><code>diagnostic-testing</code></a> — Conduct Diagnostic Tests</dd>
   <dt>Where will it be used?</dt>
-  <dd>In an inpatient setting, using recorded weights with units and timestamps.</dd>
+  <dd>Unit 3 East. Use recorded weights with units and timestamps.<br />
+    HL7 v3 RoleCode · <a href="https://hl7.org/fhir/R4/v3/RoleCode/cs.html#v3-RoleCode-CVDX"><code>CVDX</code></a> — Cardiovascular diagnostics or therapeutics unit</dd>
   <dt>What supports the recommendation?</dt>
-  <dd>The case records 96.9 kg and 95.7 kg on consecutive days. Confirm the guideline citation and evidence ratings during selection.</dd>
+  <dd>The case records 96.9 kg and 95.7 kg on consecutive days. Guideline citation and evidence ratings are pending confirmation.</dd>
 </dl>
 {% endcapture %}
-{% include cpg-diagram.html src="cpg-method-select-survey.svg" alt="Illustrative CHF scope survey. Each of the five scope questions is paired with a capture hint and an answer based on the example case. The answers are available in the text version below." caption="Illustrative responses for a team selecting the [daily weight-change recommendation](PlanDefinition-chf-bodyweight-change-pd.html) from the [CHF example](examples-chf.html#example-case)." text_version=survey_text %}
+{% include cpg-diagram.html src="cpg-method-select-survey.svg" alt="Illustrative CHF scope survey with filled-in answers to five questions. The answers are available in the text version below." caption="Illustrative responses for a team selecting the [daily weight-change recommendation](PlanDefinition-chf-bodyweight-change-pd.html) from the [CHF example](examples-chf.html#example-case)." text_version=survey_text %}
 
 #### Identify who receives and acts {#personas}
 

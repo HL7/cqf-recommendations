@@ -2,7 +2,7 @@
 
 ## Select and Translate illustrations
 
-The Select survey pairs each scope question with a capture hint and an illustrative answer from the CHF case. Translate shows a recommendation splitting into multiple L3 artifacts and two recommendations sharing a data profile. Represent presents the historical When/Then example as pseudocode. The artifact matrix and Select survey offer expandable text versions, and the Case, Plan, and Workflow and Guideline Artifacts contents blocks sit above the narrative so the first figures follow their headings.
+The Select scope table provides capture hints, and the illustrative CHF survey shows answers and their codes in bordered fields. The persona, activity, process, and setting codes match the CHF example resources and link to their definitions in the expandable text version. Translate shows many-to-many and one-to-one paths from journal articles and guideline text through Represent to FHIR and CQL artifacts. Represent formats the historical When/Then pseudocode with bold labels and nested lists. The artifact matrix also offers an expandable text version. The Case, Plan, and Workflow and Guideline Artifacts contents blocks sit above the narrative, right-aligned in two or three columns. The model table keeps each Concern label on one line.
 
 IG Publisher 3.0.3 reported zero errors, broken links, or invalid XHTML pages, with 34 warnings and 521 informational messages. The comparison against the previous build found identical Publisher findings. Chromium checked all 21 displayed figures and 12 captions at desktop, tablet, and phone widths. All 46 specification and operation links in diagrams opened in a new tab. The conformance index matched the previous build's 29 statements.
 
