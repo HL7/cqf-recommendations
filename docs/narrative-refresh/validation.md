@@ -1,5 +1,21 @@
 # Narrative refresh validation
 
+## Publisher validation and CHF Library
+
+The 11 November 2026 rebuild with IG Publisher 3.0.3 resolved all 22 errors from the regenerated link-repair baseline. Publisher reported zero errors, zero broken links, zero invalid XHTML pages, and 177 warnings. The warning count was 179 before these fixes. Warnings include version selection messages for canonicals present in multiple loaded packages.
+
+| Errors resolved | Correction |
+| ---: | --- |
+| 9 | The activity examples reference the published FHIRHelpers and FHIR ModelInfo canonicals. The CHF CQL names the published FHIRHelpers library, so Publisher also emits its canonical in the three CHF measures. |
+| 6 | Publisher loads CRMI as an internal validation dependency and can resolve the effective-data-requirements extensions it generates. The pinned CQL and CRMI packages are declared through the [internal dependency extension](https://hl7.org/fhir/tools/1.3.0/StructureDefinition-ig-internal-dependency.html). |
+| 3 | The CHF hypervolemia RequestGroup's potassium, creatinine, and eGFR monitoring actions link to patient-specific ServiceRequests with intent `option`. |
+| 3 | The main guide declares trial-use standards status. The CHF example guide declares informative status and the Clinical Decision Support workgroup. |
+| 1 | The Generate Report Measure references a dedicated CQL Library whose canonical matches its compiled identifier. Its example score remains 100, and Publisher generates its effective-data-requirements metadata. |
+
+The CHF Library generation failure was separate from the 22 errors. The two intermediate weight calculations produce tuples used inside the library. Marking them private lets Publisher generate the public Library parameter metadata without mapping tuple results to FHIR `Any`. The generated Library contains CQL, JSON and XML ELM, 18 public parameters with the original types and cardinalities, and 11 data requirements.
+
+The rendered checker passed for 39 narrative pages and 31 redirects, and the 29 conformance statements matched the pre-fix build. Chromium checked 435 navigation routes and followed all 21 links from the prior repair. The verifier compares protected formal resources with correction commit `4ecd195` and checks legacy narrative anchors against the STU 3 ballot.
+
 ## Rendered link repair
 
 The 11 November 2026 follow-up compared two IG Publisher 3.0.3 builds of the integrated ballot, before and after the link repair. The build now reports zero broken links, down from 21, and 22 Publisher errors, down from 51. No new errors or warnings appeared. The 616 SUSHI-generated resources and all 29 rendered conformance statements matched the pre-fix build.

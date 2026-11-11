@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PAGES = ROOT / "input/pagecontent"
 REDIRECTS = ROOT / "input/redirects"
 BASELINE = "e2fb41324f63f4af4b687121f7ead14cf5a1c1a0"
+FORMAL_BASELINE = "4ecd1951c0ba2dd06d6f38e83f6632ef7993fe07"
 FORMAL_PATHS = (
     "input/fsh", "input/cql", "input/data", "input/examples", "_unused-fsh",
     "input/includes/process-patterns", "FHIR-cpg.xml", "oids.ini", "publication-request.json",
@@ -204,7 +205,8 @@ def check_diagrams() -> set[str]:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--baseline-commit", default=BASELINE)
+    parser.add_argument("--baseline-commit", help="Compare with a different narrative and formal baseline")
+    parser.add_argument("--formal-baseline-commit", help="Compare protected formal resources with a separate commit")
     parser.add_argument("--site", type=Path)
     parser.add_argument("--baseline-site", type=Path)
     args = parser.parse_args()
@@ -214,10 +216,14 @@ def main():
         if site and not site.is_dir():
             parser.error(f"Publisher site directory does not exist: {site}")
 
-    try:
-        baseline = git("rev-parse", "--verify", f"{args.baseline_commit}^{{commit}}").strip()
-    except subprocess.CalledProcessError:
-        parser.error(f"Baseline commit is unavailable locally: {args.baseline_commit}")
+    def resolve_commit(ref):
+        try:
+            return git("rev-parse", "--verify", f"{ref}^{{commit}}").strip()
+        except subprocess.CalledProcessError:
+            parser.error(f"Baseline commit is unavailable locally: {ref}")
+
+    baseline = resolve_commit(args.baseline_commit or BASELINE)
+    formal_baseline = resolve_commit(args.formal_baseline_commit or args.baseline_commit or FORMAL_BASELINE)
     old = {Path(path).with_suffix(".html").name: git("show", f"{baseline}:{path}")
            for path in git("ls-tree", "-r", "--name-only", baseline, "--", "input/pagecontent").splitlines()
            if Path(path).suffix == ".md"}
@@ -225,9 +231,9 @@ def main():
     redirects = {path.name: path.read_text() for path in sorted(REDIRECTS.glob("*.html"))}
     errors = {f"Redirect overlaps current narrative: {name}" for name in new.keys() & redirects.keys()}
 
-    changed = git("diff", "--no-ext-diff", "--name-only", baseline, "--", *FORMAL_PATHS).splitlines()
+    changed = git("diff", "--no-ext-diff", "--name-only", formal_baseline, "--", *FORMAL_PATHS).splitlines()
     untracked = git("ls-files", "--others", "--exclude-standard", "--", *FORMAL_PATHS).splitlines()
-    errors.update(f"Protected ballot file differs: {name}" for name in changed + untracked)
+    errors.update(f"Protected formal file differs: {name}" for name in changed + untracked)
 
     old_by_page = {name: REQUIREMENT.findall(re.sub(r"<!--.*?-->", "", source, flags=re.S))
                    for name, source in old.items()}
@@ -279,6 +285,7 @@ def main():
 
     result = {
         "base_commit": baseline,
+        "formal_base_commit": formal_baseline,
         "ballot_requirements": len(old_requirements),
         "narrative_pages": len(new),
         "legacy_redirects": len(redirects),
