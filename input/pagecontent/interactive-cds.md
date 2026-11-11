@@ -16,9 +16,7 @@ Case-feature definitions referenced in `PlanDefinition.action.input` describe th
 4. When answers change, use [SDC QuestionnaireResponse $extract](https://hl7.org/fhir/uv/sdc/OperationDefinition-QuestionnaireResponse-extract.html) and [definition-based extraction](https://hl7.org/fhir/uv/sdc/extraction.html#definition-extract) to produce resources.
 5. Inspect extraction results and messages, reconcile them with the evaluation context, and call CPG $apply again with the updated data. Repeat as needed.
 
-<div>
-  <img src="cpg-runtime-interactive.svg" alt="Patient context feeds parallel questionnaire preparation and guideline evaluation. The application shows answers and proposals. Changed answers are extracted, validated, and reconciled before reevaluation; selected proposals go to the receiving workflow." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-linked-diagram.html src="cpg-runtime-interactive.svg" ratio="1200 / 706" alt="Patient context feeds parallel questionnaire preparation and guideline evaluation. The application shows answers and proposals. Changed answers are extracted, validated, and reconciled before reevaluation; selected proposals go to the receiving workflow." %}
 
 *Figure 1. The application coordinates collection and reevaluation. Extracted data and returned proposals require their own validation and persistence decisions.*
 

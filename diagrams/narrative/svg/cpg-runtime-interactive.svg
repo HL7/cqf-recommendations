@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="706" viewBox="0 0 1200 706" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="706" viewBox="0 0 1200 706" role="group" aria-labelledby="title" aria-describedby="desc" font-family="Arial, Helvetica, sans-serif">
   <title id="title">Collect information and reevaluate guidance</title>
   <desc id="desc">Patient context feeds questionnaire preparation and CPG PlanDefinition apply in parallel. The application shows questions, answers, and proposals. Changed answers go through SDC extraction, validation, and reconciliation before reevaluation. The receiving workflow handles any selected proposals.</desc>
   <!-- Original source: input/images/interactive-cds.png. The original fork, join, and decision are retained. The apply result and extraction checks follow the current CPG operation and interactive CDS guidance. -->
@@ -6,6 +6,10 @@
     <marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 Z" fill="#28567e"/>
     </marker>
+    <style>
+      .spec-link:hover rect, .spec-link:focus rect { stroke: #18354d; stroke-width: 3; }
+      .spec-link:hover text:first-of-type, .spec-link:focus text:first-of-type { text-decoration: underline; }
+    </style>
   </defs>
   <rect width="1200" height="706" fill="#fff"/>
   <text x="600" y="48" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Collect information and reevaluate guidance</text>
@@ -38,25 +42,28 @@
   <g id="questionnaire-preparation" fill="#18354d" text-anchor="middle">
     <rect x="328" y="93" width="404" height="160" rx="14" fill="#fff" stroke="#698eab" stroke-width="2"/>
     <text x="530" y="125" font-size="22" font-weight="700">Prepare a QuestionnaireResponse</text>
-    <g id="cpg-questionnaire-generation">
+    <a id="cpg-questionnaire-generation" class="spec-link" href="interactive-cds.html#questionnaire-generation-processing-semantics" target="_blank" rel="noopener" aria-label="CPG questionnaire generation operations (opens in a new tab)">
+      <title>CPG questionnaire generation operations (opens in a new tab)</title>
       <rect x="346" y="139" width="169" height="93" rx="10" fill="#f3f8fc" stroke="#698eab" stroke-width="2"/>
       <text x="430" y="162" font-size="18" font-weight="700"><tspan x="430">CPG</tspan><tspan x="430" dy="22">$questionnaire</tspan></text>
       <text x="430" y="211" font-size="18">From case features</text>
-    </g>
+    </a>
     <path d="M 515 186 H 545" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#flow-arrow)"/>
-    <g id="sdc-questionnaire-population">
+    <a id="sdc-questionnaire-population" class="spec-link" href="https://hl7.org/fhir/uv/sdc/OperationDefinition-Questionnaire-populate.html" target="_blank" rel="noopener" aria-label="SDC Questionnaire $populate (opens in a new tab)">
+      <title>SDC Questionnaire $populate (opens in a new tab)</title>
       <rect x="547" y="139" width="167" height="93" rx="10" fill="#f3f8fc" stroke="#698eab" stroke-width="2"/>
       <text x="630" y="175" font-size="18" font-weight="700">SDC $populate</text>
       <text x="630" y="203" font-size="18">Use available data</text>
-    </g>
+    </a>
   </g>
 
-  <g id="cpg-plan-evaluation" fill="#18354d" text-anchor="middle">
+  <a id="cpg-plan-evaluation" class="spec-link" href="OperationDefinition-cpg-plandefinition-apply.html" target="_blank" rel="noopener" aria-label="CPG PlanDefinition $apply (opens in a new tab)" fill="#18354d" text-anchor="middle">
+    <title>CPG PlanDefinition $apply (opens in a new tab)</title>
     <rect x="328" y="322" width="404" height="128" rx="14" fill="#edf5fb" stroke="#698eab" stroke-width="2"/>
     <text x="530" y="355" font-size="22" font-weight="700">CPG PlanDefinition $apply</text>
     <text x="530" y="382" font-size="19">Transient Bundle per subject</text>
     <text x="530" y="408" font-size="18"><tspan x="530">May include CarePlan, RequestGroup,</tspan><tspan x="530" dy="22">or individual requests</tspan></text>
-  </g>
+  </a>
 
   <g id="parallel-join" stroke="#28567e" stroke-width="2" stroke-linejoin="round">
     <path d="M 802 250 L 832 280 L 802 310 L 772 280 Z" fill="#fff"/>
@@ -76,11 +83,12 @@
     <text x="1022" y="536">No</text>
   </g>
 
-  <g id="extract-changed-answers" fill="#18354d" text-anchor="middle">
+  <a id="extract-changed-answers" class="spec-link" href="https://hl7.org/fhir/uv/sdc/OperationDefinition-QuestionnaireResponse-extract.html" target="_blank" rel="noopener" aria-label="SDC QuestionnaireResponse $extract (opens in a new tab)" fill="#18354d" text-anchor="middle">
+    <title>SDC QuestionnaireResponse $extract (opens in a new tab)</title>
     <rect x="545" y="503" width="197" height="98" rx="12" fill="#edf5fb" stroke="#698eab" stroke-width="2"/>
     <text x="643" y="535" font-size="20" font-weight="700">SDC $extract</text>
     <text x="643" y="560" font-size="18"><tspan x="643">Inspect resources</tspan><tspan x="643" dy="22">and messages</tspan></text>
-  </g>
+  </a>
   <g id="validate-and-reconcile-context" fill="#18354d" text-anchor="middle">
     <rect x="314" y="503" width="197" height="98" rx="12" fill="#edf5fb" stroke="#698eab" stroke-width="2"/>
     <text x="412" y="535" font-size="20" font-weight="700">Validate resources</text>

@@ -1,3 +1,5 @@
+{% include cpg-horizontal-table-style.html %}
+
 A computable clinical practice guideline connects reviewed recommendations with patient information and the work of delivering care. Its reusable definitions, logic, and terminology can support decision support, care planning, measurement, and reporting. A local implementation connects those artifacts to the data, people, and systems in a particular setting.
 
 Approach explains how these parts fit together and the choices involved in using them. The chapters follow one thread from the clinical model through its artifacts and implementation, then development, maintenance, and evaluation. The existing heart failure example provides a concrete point of reference throughout.
@@ -15,7 +17,7 @@ Open a chapter below. Read in order for the full approach, or go directly to the
 | <a id="implementing-computable-knowledge"></a>**[3. Implementation and Integration](approach-implementation.html)** | Choose an integration method and connect evaluation results to clinical workflow. |
 | <a id="guideline-development"></a><a id="knowledge-engineering"></a>**[4. Development and Maintenance](approach-development.html)** | Develop, review, release, and maintain the guideline and its computable artifacts. |
 | **[5. Measurement and Evidence](approach-evaluation.html)** | Use metrics and reports, evaluate an implementation, and interpret CDS evidence. |
-{:.grid}
+{:.cpg-horizontal-table}
 
 For the step-by-step authoring procedure, use [Methodology](methodology.html).
 
@@ -33,13 +35,11 @@ One person may fill several roles. The [Concept and Profile Index](documentation
 | Metric or measure developer or evaluator | [Measurement and Evidence](approach-evaluation.html) → [Plan](approach-model.html#plan) → [Activity Flow](activityflow.html) → [Validation](approach-development.html#validation) | [Metric authoring](methodology-translate.html#metrics), [Terminology](terminology.html), and [Profiles](profiles.html) |
 | EHR, CDS service, or application implementer | [Execution methods](approach-implementation.html#execution-methods) → [Activity Flow](activityflow.html) → [Integration](approach-implementation.html#integration-mechanisms) → [Enablement](approach-implementation.html#levels-of-enablement) → [Conformance](documentation-conformance.html) | [Care planning](approach-implementation.html#care-planning), [Interactive CDS](interactive-cds.html), and the [L4 checklist](clinical-guidelines-development-L4-checklist.html) |
 | Local informatics or practice governance | [Local governance](approach-development.html#local-governance) → [Common Pathway and localization](approach-implementation.html#common-pathway) → [Enablement](approach-implementation.html#levels-of-enablement) → [Integration](approach-implementation.html#integration-mechanisms) | [Common Care Pathway](common-care-pathway.html) and the [L4 checklist](clinical-guidelines-development-L4-checklist.html) |
-{:.grid}
+{:.cpg-horizontal-table}
 
 </details>
 
-<div style="clear: both;">
-  <img src="cpg-runtime-lifecycle.svg" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-linked-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." %}
 
 *The work continues after a package is released. Clinical and technical findings can lead to changes in the guideline, its computable representation, or the local implementation.*
 
