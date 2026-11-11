@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="578" viewBox="0 0 1200 578" role="img" aria-labelledby="title description">
+<title id="title">Illustrative scope survey for the CHF case</title><desc id="description">A filled-in scoping survey for the guide’s CHF example. The text version below the figure gives the example answers.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="30.0" y="42.0" font-size="29.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="30.0" dy="0">Illustrative scope survey for the CHF case</tspan></text>
+<text x="30.0" y="65" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="30.0" dy="0">Selected recommendation: track and report daily body weight change.</tspan></text>
+<rect x="24" y="124" width="1152" height="80" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>
+<text x="40" y="150" font-size="19.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">Who is involved?</tspan></text>
+<rect x="24" y="210" width="1152" height="80" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>
+<text x="40" y="236" font-size="19.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">What is proposed?</tspan></text>
+<rect x="24" y="296" width="1152" height="80" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>
+<text x="40" y="322" font-size="19.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">When does it matter?</tspan></text>
+<rect x="24" y="382" width="1152" height="80" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>
+<text x="40" y="408" font-size="19.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">Where will it be used?</tspan></text>
+<rect x="24" y="468" width="1152" height="86" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>
+<text x="40" y="494" font-size="19.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">What supports the recommendation?</tspan></text>
+<text x="40" y="106" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">Question</tspan></text>
+<text x="396" y="106" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="396" dy="0">Hint · What to capture</tspan></text>
+<text x="724" y="106" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="724" dy="0">Example answer</tspan></text>
+<text x="396" y="150" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="396" dy="0">Patient group and people</tspan><tspan x="396" dy="25.65">involved in care.</tspan></text>
+<text x="724" y="150" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="724" dy="0">Patient admitted with CHF and their</tspan><tspan x="724" dy="25.65">specialist medical practitioner.</tspan></text>
+<text x="396" y="236" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="396" dy="0">Proposed activity and any</tspan><tspan x="396" dy="25.65">guideline exceptions.</tspan></text>
+<text x="724" y="236" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="724" dy="0">Record the calculated change in</tspan><tspan x="724" dy="25.65">body weight and report it.</tspan></text>
+<text x="396" y="322" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="396" dy="0">Timing and when to</tspan><tspan x="396" dy="25.65">reevaluate.</tspan></text>
+<text x="724" y="322" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="724" dy="0">Evaluate daily during the admission.</tspan><tspan x="724" dy="25.65">Report after recording the change.</tspan></text>
+<text x="396" y="408" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="396" dy="0">Care setting and the data or</tspan><tspan x="396" dy="25.65">actions it needs to support.</tspan></text>
+<text x="724" y="408" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="724" dy="0">Inpatient setting with recorded weights,</tspan><tspan x="724" dy="25.65">units, and timestamps.</tspan></text>
+<text x="396" y="494" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="396" dy="0">Guideline citation, evidence</tspan><tspan x="396" dy="25.65">ratings, and relevant patient</tspan><tspan x="396" dy="25.65">facts.</tspan></text>
+<text x="724" y="494" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="724" dy="0">Weights: 96.9 kg and 95.7 kg on</tspan><tspan x="724" dy="25.65">consecutive days. Confirm the guideline</tspan><tspan x="724" dy="25.65">citation and evidence ratings.</tspan></text>
+</g></svg>

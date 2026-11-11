@@ -1,0 +1,40 @@
+{
+  "width": 1200,
+  "height": 495,
+  "title": "How source guidance maps to computable artifacts",
+  "subtitle": "Follow the links from narrative guidance through reviewed specifications to computable artifacts.",
+  "description": "One-to-many: one narrative recommendation yields separate specifications for data and decision criteria and for workflow. The criteria specification informs a data profile and a logic library, and the workflow specification informs an activity definition. Many-to-one: two narrative recommendations and their respective reviewed specifications both inform a shared data profile.",
+  "lanes": [
+    {"x": 24, "y": 122, "w": 1152, "h": 177, "label": "One-to-many"},
+    {"x": 24, "y": 313, "w": 1152, "h": 158, "label": "Many-to-one"}
+  ],
+  "nodes": [
+    {"id": "recommendation", "x": 56, "y": 202, "w": 296, "h": 44, "label": "One recommendation", "kind": "knowledge"},
+    {"id": "criteria", "x": 452, "y": 176, "w": 296, "h": 44, "label": "Data and criteria", "kind": "workflow"},
+    {"id": "workflow", "x": 452, "y": 241, "w": 296, "h": 44, "label": "Proposed workflow", "kind": "workflow"},
+    {"id": "profile", "x": 848, "y": 137, "w": 296, "h": 44, "label": "Data profile", "kind": "logic"},
+    {"id": "library", "x": 848, "y": 189, "w": 296, "h": 44, "label": "Logic library", "kind": "logic"},
+    {"id": "activity", "x": 848, "y": 241, "w": 296, "h": 44, "label": "Activity definition", "kind": "logic"},
+    {"id": "recommendation-a", "x": 56, "y": 353, "w": 296, "h": 44, "label": "Recommendation A", "kind": "knowledge"},
+    {"id": "recommendation-b", "x": 56, "y": 411, "w": 296, "h": 44, "label": "Recommendation B", "kind": "knowledge"},
+    {"id": "spec-a", "x": 452, "y": 353, "w": 296, "h": 44, "label": "Specification A", "kind": "workflow"},
+    {"id": "spec-b", "x": 452, "y": 411, "w": 296, "h": 44, "label": "Specification B", "kind": "workflow"},
+    {"id": "shared-profile", "x": 848, "y": 382, "w": 296, "h": 44, "label": "Shared data profile", "kind": "logic"}
+  ],
+  "edges": [
+    {"from": "recommendation", "to": "criteria"},
+    {"from": "recommendation", "to": "workflow"},
+    {"from": "criteria", "to": "profile"},
+    {"from": "criteria", "to": "library"},
+    {"from": "workflow", "to": "activity"},
+    {"from": "recommendation-a", "to": "spec-a"},
+    {"from": "recommendation-b", "to": "spec-b"},
+    {"from": "spec-a", "to": "shared-profile", "via": [[798, 375], [798, 404]], "arrow": false},
+    {"from": "spec-b", "to": "shared-profile"}
+  ],
+  "notes": [
+    {"x": 204, "y": 102, "text": "L1 · Narrative guidance", "anchor": "middle"},
+    {"x": 600, "y": 102, "text": "L2 · Structured specification", "anchor": "middle"},
+    {"x": 996, "y": 102, "text": "L3 · Computable artifacts", "anchor": "middle"}
+  ]
+}

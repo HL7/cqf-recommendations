@@ -1,6 +1,6 @@
 {:toc}
 
-{% include cpg-home-layout.html %}
+{% include cpg-toc-layout.html sidebar=true %}
 
 {% include cpg-horizontal-table-style.html %}
 
@@ -30,7 +30,7 @@ A narrative recommendation often leaves implementation questions open: which pat
 
 The main work products are FHIR definitions, libraries of logic, terminology, and documentation that can be reviewed and exchanged. Local implementation then supplies the data mappings, execution environment, user interaction, and operational responsibilities needed to use them. This distinction is central to the [four levels of knowledge representation](approach-artifacts.html#representation-levels).
 
-{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." caption="Figure 1. Guidelines connect evidence to decision support and clinical care. Measurement, reporting, and reviewed findings connect care back to evidence. Related standards illustrate the roles in this ecosystem; they are not a required dependency set. The [integrated process publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/) describes this collaborative approach." %}
+{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 961" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." caption="Figure 1. Guidelines connect evidence to decision support and clinical care. Measurement, reporting, and reviewed findings connect care back to evidence. Related standards illustrate the roles in this ecosystem; they are not a required dependency set. The [integrated process publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/) describes this collaborative approach." %}
 
 ### Scope
 

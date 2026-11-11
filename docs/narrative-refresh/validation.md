@@ -1,5 +1,11 @@
 # Narrative refresh validation
 
+## Select and Translate illustrations
+
+The Select survey pairs each scope question with a capture hint and an illustrative answer from the CHF case. Translate shows a recommendation splitting into multiple L3 artifacts and two recommendations sharing a data profile. Represent presents the historical When/Then example as pseudocode. The artifact matrix and Select survey offer expandable text versions, and the Case, Plan, and Workflow and Guideline Artifacts contents blocks sit above the narrative so the first figures follow their headings.
+
+IG Publisher 3.0.3 reported zero errors, broken links, or invalid XHTML pages, with 34 warnings and 521 informational messages. The comparison against the previous build found identical Publisher findings. Chromium checked all 21 displayed figures and 12 captions at desktop, tablet, and phone widths. All 46 specification and operation links in diagrams opened in a new tab. The conformance index matched the previous build's 29 statements.
+
 ## Final upstream review
 
 Compared the branch with the STU 3 ballot on official `master`. The review aligned Select with the Common Processes requirement, clarified action sequencing and metric result encoding, and identified the generic ActivityDefinition expressions as examples that need validation before reuse. It also documented how to provision FHIRHelpers when running the worked examples.

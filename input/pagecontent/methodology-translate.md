@@ -4,6 +4,12 @@
 
 Use the reviewed L1/L2 specification to author the FHIR R4 content and its computable logic. The knowledge engineer carries each criterion, input, and proposed response into the artifacts. The terminology owner reviews the coded meaning, and the clinical reviewer decides questions about interpretation that surface during authoring. The [Content IG Walkthrough](https://github.com/cqframework/content-ig-walkthrough) illustrates tooling for authoring a package. Check its compatibility with the project's selected versions.
 
+#### Trace guidance to computable artifacts {#artifact-mapping}
+
+Map the narrative recommendations (L1) and their reviewed, structured specifications (L2) to the computable artifacts (L3). A recommendation can lead to several specifications and artifacts, and several recommendations can reuse an artifact when they need the same definition. Record which source passages and specifications inform each artifact so reviewers can trace the logic back to the guidance.
+
+{% include cpg-diagram.html src="cpg-method-translation-mapping.svg" alt="One-to-many: one narrative recommendation yields two reviewed specifications for data and decision criteria and for workflow. These inform a data profile, logic library, and activity definition. Many-to-one: two narrative recommendations and their respective reviewed specifications both inform the same data profile." caption="Illustrative mappings from source guidance to computable artifacts. A single recommendation can produce several artifacts, and several recommendations can share an artifact when its meaning fits each use." %}
+
 Start with [content identity and dependencies](#computable-clinical-practice-guideline), then define the [data profiles](#profiles), [terminology](#terminology), and [logic](#criteria-1). Describe the [activities](#activities-1) and assemble them into [recommendations](#recommendations), [strategies](#strategies), and [pathways](#pathways). Define any [patient-level metrics](#metrics) needed to evaluate progress.
 
 #### Establish content identity and dependencies {#computable-clinical-practice-guideline}

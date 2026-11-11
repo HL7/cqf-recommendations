@@ -5,7 +5,7 @@
     margin: 0 0 1em;
   }
   #markdown-toc {
-    columns: 2 10em;
+    columns: {% if include.sidebar %}2 10em{% else %}4 13em{% endif %};
     column-gap: 1.25em;
     margin: 0;
     padding-inline-start: 1.5em;
@@ -13,6 +13,7 @@
   #markdown-toc li {
     break-inside: avoid;
   }
+  {% if include.sidebar %}
   .cpg-home-task {
     clear: both;
   }
@@ -23,4 +24,5 @@
       margin: 0 0 0.65em 1em;
     }
   }
+  {% endif %}
 </style>

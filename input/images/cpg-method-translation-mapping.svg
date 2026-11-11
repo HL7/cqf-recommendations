@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="495" viewBox="0 0 1200 495" role="img" aria-labelledby="title description">
+<title id="title">How source guidance maps to computable artifacts</title><desc id="description">One-to-many: one narrative recommendation yields separate specifications for data and decision criteria and for workflow. The criteria specification informs a data profile and a logic library, and the workflow specification informs an activity definition. Many-to-one: two narrative recommendations and their respective reviewed specifications both inform a shared data profile.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="30.0" y="42.0" font-size="29.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="30.0" dy="0">How source guidance maps to computable artifacts</tspan></text>
+<text x="30.0" y="65" font-size="19.0" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="30.0" dy="0">Follow the links from narrative guidance through reviewed specifications to computable artifacts.</tspan></text>
+<rect x="24" y="122" width="1152" height="177" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>
+<text x="40" y="148" font-size="19.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">One-to-many</tspan></text>
+<rect x="24" y="313" width="1152" height="158" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>
+<text x="40" y="339" font-size="19.0" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="40" dy="0">Many-to-one</tspan></text>
+<polyline points="352,224.0 402.0,224.0 402.0,198.0 452,198.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="352,224.0 402.0,224.0 402.0,263.0 452,263.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="748,198.0 798.0,198.0 798.0,159.0 848,159.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="748,198.0 798.0,198.0 798.0,211.0 848,211.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="748,263.0 848,263.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="352,375.0 452,375.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="352,433.0 452,433.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="748,375.0 798,375 798,404 848,404.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="748,433.0 798.0,433.0 798.0,404.0 848,404.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="56" y="202" width="296" height="44" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="204.0" y="230" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="204.0" dy="0">One recommendation</tspan></text>
+<rect x="452" y="176" width="296" height="44" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="600.0" y="204" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="600.0" dy="0">Data and criteria</tspan></text>
+<rect x="452" y="241" width="296" height="44" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="600.0" y="269" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="600.0" dy="0">Proposed workflow</tspan></text>
+<rect x="848" y="137" width="296" height="44" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="996.0" y="165" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="996.0" dy="0">Data profile</tspan></text>
+<rect x="848" y="189" width="296" height="44" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="996.0" y="217" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="996.0" dy="0">Logic library</tspan></text>
+<rect x="848" y="241" width="296" height="44" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="996.0" y="269" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="996.0" dy="0">Activity definition</tspan></text>
+<rect x="56" y="353" width="296" height="44" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="204.0" y="381" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="204.0" dy="0">Recommendation A</tspan></text>
+<rect x="56" y="411" width="296" height="44" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="204.0" y="439" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="204.0" dy="0">Recommendation B</tspan></text>
+<rect x="452" y="353" width="296" height="44" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="600.0" y="381" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="600.0" dy="0">Specification A</tspan></text>
+<rect x="452" y="411" width="296" height="44" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="600.0" y="439" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="600.0" dy="0">Specification B</tspan></text>
+<rect x="848" y="382" width="296" height="44" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="996.0" y="410" font-size="23.0" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="996.0" dy="0">Shared data profile</tspan></text>
+<text x="204" y="102" font-size="19.0" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="204" dy="0">L1 · Narrative guidance</tspan></text>
+<text x="600" y="102" font-size="19.0" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="600" dy="0">L2 · Structured specification</tspan></text>
+<text x="996" y="102" font-size="19.0" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="996" dy="0">L3 · Computable artifacts</tspan></text>
+</g></svg>

@@ -1,0 +1,30 @@
+{
+  "width": 1200,
+  "height": 578,
+  "title": "Illustrative scope survey for the CHF case",
+  "subtitle": "Selected recommendation: track and report daily body weight change.",
+  "description": "A filled-in scoping survey for the guide’s CHF example. The text version below the figure gives the example answers.",
+  "lanes": [
+    {"x": 24, "y": 124, "w": 1152, "h": 80, "label": "Who is involved?"},
+    {"x": 24, "y": 210, "w": 1152, "h": 80, "label": "What is proposed?"},
+    {"x": 24, "y": 296, "w": 1152, "h": 80, "label": "When does it matter?"},
+    {"x": 24, "y": 382, "w": 1152, "h": 80, "label": "Where will it be used?"},
+    {"x": 24, "y": 468, "w": 1152, "h": 86, "label": "What supports the recommendation?"}
+  ],
+  "nodes": [],
+  "notes": [
+    {"x": 40, "y": 106, "text": "Question"},
+    {"x": 396, "y": 106, "text": "Hint · What to capture"},
+    {"x": 724, "y": 106, "text": "Example answer"},
+    {"x": 396, "y": 150, "w": 308, "text": ["Patient group and people", "involved in care."]},
+    {"x": 724, "y": 150, "w": 426, "text": ["Patient admitted with CHF and their", "specialist medical practitioner."]},
+    {"x": 396, "y": 236, "w": 308, "text": ["Proposed activity and any", "guideline exceptions."]},
+    {"x": 724, "y": 236, "w": 426, "text": ["Record the calculated change in", "body weight and report it."]},
+    {"x": 396, "y": 322, "w": 308, "text": ["Timing and when to", "reevaluate."]},
+    {"x": 724, "y": 322, "w": 426, "text": ["Evaluate daily during the admission.", "Report after recording the change."]},
+    {"x": 396, "y": 408, "w": 308, "text": ["Care setting and the data or", "actions it needs to support."]},
+    {"x": 724, "y": 408, "w": 426, "text": ["Inpatient setting with recorded weights,", "units, and timestamps."]},
+    {"x": 396, "y": 494, "w": 308, "text": ["Guideline citation, evidence", "ratings, and relevant patient facts."]},
+    {"x": 724, "y": 494, "w": 426, "text": ["Weights: 96.9 kg and 95.7 kg on", "consecutive days. Confirm the guideline", "citation and evidence ratings."]}
+  ]
+}

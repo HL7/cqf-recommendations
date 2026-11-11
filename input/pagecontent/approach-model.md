@@ -1,3 +1,5 @@
+{% include cpg-toc-layout.html %}
+
 Start with three questions: What do we know about this patient? What care does the guideline recommend? How will people and systems deliver that care? The answers define the Case, Plan, and Workflow. Keeping them separate lets a clinical reviewer assess a recommendation, a terminology specialist review its inputs, and an implementer change how it is delivered without silently changing its meaning.
 
 ### The model at a glance {#model-at-a-glance}

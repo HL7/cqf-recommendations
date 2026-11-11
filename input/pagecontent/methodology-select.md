@@ -13,6 +13,22 @@ Start with the authoritative guideline and its version. Identify a specific reco
 | [What supports the recommendation?](#support) | The guideline citation, rationale and ratings, and the patient facts that can explain a proposed action. |
 {:.grid}
 
+{% capture survey_text %}
+<dl>
+  <dt>Who is involved?</dt>
+  <dd>The patient was admitted with CHF. A specialist medical practitioner participates in the encounter.</dd>
+  <dt>What is proposed?</dt>
+  <dd>Record the calculated change in body weight and report it.</dd>
+  <dt>When does it matter?</dt>
+  <dd>Evaluate daily during the admission and report after recording the change.</dd>
+  <dt>Where will it be used?</dt>
+  <dd>In an inpatient setting, using recorded weights with units and timestamps.</dd>
+  <dt>What supports the recommendation?</dt>
+  <dd>The case records 96.9 kg and 95.7 kg on consecutive days. Confirm the guideline citation and evidence ratings during selection.</dd>
+</dl>
+{% endcapture %}
+{% include cpg-diagram.html src="cpg-method-select-survey.svg" alt="Illustrative CHF scope survey. Each of the five scope questions is paired with a capture hint and an answer based on the example case. The answers are available in the text version below." caption="Illustrative responses for a team selecting the [daily weight-change recommendation](PlanDefinition-chf-bodyweight-change-pd.html) from the [CHF example](examples-chf.html#example-case)." text_version=survey_text %}
+
 #### Identify who receives and acts {#personas}
 
 Describe what each person does before choosing role codes. Identify who sees the recommendation, who can act on it, and who follows up. Include patients and care partners when they receive information, provide it, or take part in the decision. The [Common Personas](CodeSystem-cpg-common-persona-cs.html) code system uses ISCO codes where available, WHO-derived categories prefixed with `W`, and IG-introduced categories prefixed with `C`.

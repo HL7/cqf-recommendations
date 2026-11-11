@@ -8,7 +8,19 @@
     <img src="{{ include.src }}" alt="{{ include.alt | escape }}" class="img-responsive" width="1000"/>
     {% endif %}
   </div>
-  {% if include.caption %}
-  <figcaption style="margin-top: 12px; font-style: italic;">{{ include.caption | markdownify | strip | remove_first: '<p>' | remove_first: '</p>' }}</figcaption>
+  {% if include.caption or include.text_version %}
+  <figcaption style="margin-top: 12px; font-style: italic;">
+    {% if include.caption %}
+    {{ include.caption | markdownify | strip | remove_first: '<p>' | remove_first: '</p>' }}
+    {% endif %}
+    {% if include.text_version %}
+    <details style="margin-top: 6px;">
+      <summary style="display: list-item; cursor: pointer;">Text version of this diagram</summary>
+      <div style="margin-top: 8px; font-style: normal;">
+        {{ include.text_version }}
+      </div>
+    </details>
+    {% endif %}
+  </figcaption>
   {% endif %}
 </figure>

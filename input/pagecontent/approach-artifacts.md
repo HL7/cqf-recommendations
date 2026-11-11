@@ -1,3 +1,5 @@
+{% include cpg-toc-layout.html %}
+
 Choose artifacts based on what the guideline needs to communicate, calculate, or deliver. A clinical recommendation may need a reviewed interpretation, a data contract, reusable logic, and a proposed activity. An interactive implementation may also need a form. Each artifact has a purpose, an identity, and dependencies that should travel with it.
 
 ### Representation levels {#representation-levels}
@@ -30,10 +32,7 @@ Data, logic, and forms are three responsibilities that may appear at any level. 
 
 Use this matrix to plan the work for a capability. For a measured case feature, settle the units, source, and time window with clinical reviewers; represent the contract in shareable definitions; then verify that local data actually satisfy it. A service that consumes existing records may need no form.
 
-{% include cpg-diagram.html src="cpg-model-artifact-matrix.svg" alt="Work products across four representation levels, with rows for Data, Clinical logic, and Forms. The complete cell contents are also available in the text version below." %}
-
-<details>
-  <summary>Read the matrix as text</summary>
+{% capture matrix_text %}
   <p><strong>Data</strong></p>
   <ul>
     <li><strong>L1: Narrative.</strong> Clinical concepts and relevant patient information.</li>
@@ -55,9 +54,9 @@ Use this matrix to plan the work for a capability. For a measured case feature, 
     <li><strong>L3: Computable.</strong> Questionnaire and supported population and extraction expressions.</li>
     <li><strong>L4: Local implementation.</strong> Rendered interactions, permissions, and routing.</li>
   </ul>
-</details>
+{% endcapture %}
 
-This planning matrix follows the levels-by-tiers distinction previously illustrated in this guide by B. Rhodes, Database Consulting Group (2019). Use the [L1–L4 checklists](checklists.html) to review the artifacts in scope.
+{% include cpg-diagram.html src="cpg-model-artifact-matrix.svg" alt="Work products across four representation levels, with rows for Data, Clinical logic, and Forms. The complete cell contents are also available in the text version below." caption="Use the [L1–L4 checklists](checklists.html) to review the work products at each level. This matrix follows the levels and tiers previously illustrated in this guide by B. Rhodes, Database Consulting Group (2019)." text_version=matrix_text %}
 
 ### Design the knowledge architecture {#knowledge-architecture}
 

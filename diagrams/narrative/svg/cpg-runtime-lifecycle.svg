@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="915" viewBox="0 0 1200 915" role="group" aria-labelledby="title" aria-describedby="description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="961" viewBox="0 0 1200 961" role="group" aria-labelledby="title" aria-describedby="description">
 <title id="title">From evidence to care and learning</title>
 <desc id="description">Research and public-health surveillance inform clinical practice guidelines and decision support. Clinical care supplies data for measurement, analytics, reporting, and further evidence review. Shared FHIR data and knowledge sit at the center. Standards labels illustrate related roles, not a required dependency set or mandatory sequence. Reviewers decide how findings change guidance and local implementation.</desc>
 <!-- Editable reconstruction of CPG-Main-06.png and CPG-Main-06-Legend.png. -->
@@ -7,7 +7,7 @@
 <marker id="flow-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 11 6 L 1 11 Z" fill="#143f63"/></marker>
 <g id="person-icon" fill="none" stroke="#24678c" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="9"/><path d="M -18 35 V 24 Q -18 12 0 12 Q 18 12 18 24 V 35 M -10 24 V 35 M 10 24 V 35"/></g>
 <style>text{font-family:Arial,Helvetica,sans-serif;fill:#183e59;text-anchor:middle}.stage{font-size:23px;font-weight:700}.intent{font-size:19px;fill:#46727b;font-style:italic}.badge{font-size:18px;font-weight:700;fill:white}.arrow-label{font-size:18px;fill:#435e72}.flow{fill:none;stroke:#143f63;stroke-width:4.5;stroke-linecap:round;marker-end:url(#flow-arrow)}.spec-link:hover rect,.spec-link:focus rect{stroke:#183e59;stroke-width:3}.spec-link:hover text,.spec-link:focus text{text-decoration:underline}</style>
-</defs><rect width="1200" height="915" fill="white"/>
+</defs><rect width="1200" height="961" fill="white"/>
 <text x="30" y="42" font-size="29" style="text-anchor:start" font-weight="700">From evidence to care and learning</text>
 <g id="research-and-evidence" >
 <g id="research-icon" transform="translate(158 95)" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
@@ -51,7 +51,7 @@
 <text x="396.0" y="168" font-size="18" class="arrow-label">Evidence</text>
 <path d="M 765 198 H 853" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
 <text x="810.0" y="168" font-size="18" class="arrow-label">Knowledge</text>
-<path d="M 990 276 V 436" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<path d="M 990 276 V 482" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
 <a id="cds-hooks-badge" class="spec-link" href="https://cds-hooks.hl7.org/" target="_blank" rel="noopener" aria-label="CDS Hooks (opens in a new tab)">
 <title>CDS Hooks (opens in a new tab)</title>
 <rect x="1020" y="301" width="160" height="32" rx="5" fill="#03a9d9"/>
@@ -64,7 +64,7 @@
 <text x="1100" y="389" font-size="18" class="badge">App Launch</text>
 </a>
 </g>
-<g id="shared-fhir-data-and-knowledge" transform="translate(0 24)">
+<g id="shared-fhir-data-and-knowledge" transform="translate(0 47)">
 <text x="600" y="354" font-size="21" font-weight="700">Shared FHIR data and knowledge</text>
 <rect x="384" y="366" width="432" height="110" rx="7" fill="#f1f4f6"/>
 <g id="people" aria-hidden="true">
@@ -105,7 +105,7 @@
 <text x="678.0" y="315" font-size="18" class="badge">Clinical Reasoning</text>
 </a>
 </g>
-<g id="clinical-care" transform="translate(0 45)">
+<g id="clinical-care" transform="translate(0 91)">
 <path d="M 1022 413 A 124 124 0 0 1 1071 637" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
 <path d="M 1032 655 A 124 124 0 1 1 978 413" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
 <g id="clinician-and-patient-icon" transform="translate(963 479)" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
@@ -118,7 +118,7 @@
 <text x="1000" y="593" font-size="19" class="intent">Clinician and patient</text>
 <text x="1000" y="617" font-size="19" class="intent">workflow</text>
 </g>
-<g id="measurement-and-analytics" transform="translate(0 45)">
+<g id="measurement-and-analytics" transform="translate(0 91)">
 <g id="measurement-icon" transform="translate(551 532)" aria-hidden="true">
 <rect x="0" y="11" width="19" height="46" rx="0" fill="#7bcac8"/>
 <rect x="27" y="-5" width="19" height="62" rx="0" fill="#53b9b8"/>
@@ -142,7 +142,7 @@
 <text x="642.0" y="686" font-size="18" class="badge">DEQM</text>
 </a>
 </g>
-<g id="reporting" transform="translate(0 45)">
+<g id="reporting" transform="translate(0 91)">
 <g id="reporting-icon" transform="translate(171 528)" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
 <rect x="0" y="0" width="51" height="66" rx="4" fill="#c7d15b"/>
 <path d="M 8 10 H 15 V 17 H 8 Z M 8 28 H 15 V 35 H 8 Z M 8 46 H 15 V 53 H 8 Z M 22 12 L 27 17 L 36 7 M 22 30 L 27 35 L 36 25 M 22 48 L 27 53 L 36 43" fill="none" stroke="white" stroke-width="2.5"/>
@@ -157,15 +157,15 @@
 </a>
 </g>
 <g id="feedback-connections" >
-<path d="M 859 609 H 761" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
-<text x="810" y="580" font-size="18" class="arrow-label">Care data</text>
-<path d="M 448 609 H 338" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
-<text x="393" y="580" font-size="18" class="arrow-label">Results</text>
-<path d="M 160 545 C 77 476 79 369 151 312" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
-<text x="200" y="407" font-size="18" class="arrow-label">Review</text>
-<text x="200" y="431" font-size="18" class="arrow-label">findings</text>
+<path d="M 859 655 H 761" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="810" y="626" font-size="18" class="arrow-label">Care data</text>
+<path d="M 448 655 H 338" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="393" y="626" font-size="18" class="arrow-label">Results</text>
+<path d="M 160 591 C 77 508 79 382 151 312" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="200" y="430" font-size="18" class="arrow-label">Review</text>
+<text x="200" y="454" font-size="18" class="arrow-label">findings</text>
 </g>
-<g id="original-workgroup-color-key" transform="translate(0 60)">
+<g id="original-workgroup-color-key" transform="translate(0 106)">
 <path d="M 30 715 H 1170" stroke="#d9e2e8"/>
 <text x="30" y="741" font-size="18" font-weight="700" style="text-anchor:start">Original workgroup color key</text>
 <rect x="36" y="758" width="16" height="16" rx="2" fill="#03a9d9"/>
@@ -181,7 +181,7 @@
 <rect x="805" y="787" width="16" height="16" rx="2" fill="#259eab"/>
 <text x="831" y="801" font-size="18" style="text-anchor:start">FHIR Infrastructure</text>
 </g>
-<g id="scope-note" transform="translate(0 60)">
+<g id="scope-note" transform="translate(0 106)">
 <text x="600" y="839" font-size="18">Related standards illustrate roles. Reviewed findings inform guidance and local implementation.</text>
 </g>
 </svg>
