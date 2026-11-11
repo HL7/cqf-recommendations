@@ -12,6 +12,8 @@ status: active # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
     valueCode: cds  # <<< The value must be the code for the workgroup
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
 version: 3.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
@@ -39,6 +41,14 @@ dependencies:
   hl7.fhir.extensions.r5: 4.0.1
   hl7.fhir.uv.extensions.r4: 5.4.0
   hl7.fhir.uv.sdc: 4.0.0
+
+# Publisher uses these packages to validate the examples and their generated metadata.
+definition:
+  extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency
+      valueCode: "hl7.fhir.uv.cql#2.0.0"
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency
+      valueCode: "hl7.fhir.uv.crmi#2.0.0"
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can

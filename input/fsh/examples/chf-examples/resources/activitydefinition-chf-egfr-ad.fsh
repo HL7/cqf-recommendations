@@ -14,7 +14,7 @@ Title: "CHF eGFR Activity Defintion"
 * participant
   * type = #practitioner
   * role = $practitioner-role#nurse "Nurse"
-* productCodeableConcept = $sct#63061008 "Measuring intake and output (procedure)"
+* productCodeableConcept = $chf-example-codes#measure-egfr "Measure eGFR"
 * dynamicValue
   * path = "status"
   * expression
