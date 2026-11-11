@@ -1,12 +1,29 @@
 # Narrative refresh validation
 
+## Upstream narrative integration audit
+
+Fetched official `master` at `e2fb41324f63f4af4b687121f7ead14cf5a1c1a0` and verified that it is an ancestor of the branch. The audit compared the upstream additions with their current locations in the reorganized narrative, rather than treating Git ancestry or preserved resource definitions as proof that their explanations survived.
+
+| Upstream change | Finding and disposition |
+| --- | --- |
+| FHIR-51810, `19ffdb4`: pertinence relationships | The new extensions, profile support, and upstream relationship paragraph survived. The rewrite had compressed adjacent case-feature extension links and the explanation of coded relevance. Restored them, distinguished coded relevance from the integer 0–10 weight, explained inverse links and resource/reference placement, and linked the existing synthetic CHF JVP example. Approach and the Concept Index now lead directly to a dedicated pertinence subsection in Translate. |
+| FHIR-57699, `4fb0c57` and `ddac33f`: compliance and adherence metrics | The result codes, hierarchy, operational states, selection rules, policy criteria, and deferral of goal/pathway result codes survived. Approach now gives compliance and adherence a comparison table with direct result-value-set links. The text distinguishes the broader metric types from the recommendation/strategy scopes for which coded result sets are currently defined. The existing result-placement limitation in CPGMetricReport is also visible from Approach. |
+| FHIR-52833, `4ca235a`: terminology development | The terminology lifecycle, separate mappings by code system, review cadence, and leaf/grouping value-set guidance are retained in Terminology. No restoration was needed. |
+| FHIR-59768, `ac4af6e`: actors and conformance | Repository/service/client roles, enablement interactions, capability declarations, conformance explanations, and the numbered requirements are retained in Actors and Conformance. No restoration was needed. |
+
+The pertinence and metric artifact definitions were not changed by this follow-up. Existing section anchors and the five-chapter navigation remain; the Concept Index link is more specific, and new pertinence anchors supplement the existing Case Summary and Activity Events entry points. Source preservation checks against upstream pass with the current approved formal-artifact baseline.
+
+IG Publisher 3.0.3 completed with zero errors, broken links, or invalid XHTML pages, 34 warnings, and 521 informational messages. The QA comparison found no new errors or warnings; two existing informational messages quote the revised wording around the unchanged metric SHOULD statements. All 620 SUSHI-generated FHIR resources match the preceding rationale build byte for byte. Their published counterparts differ only in Publisher-generated build timestamps. The publication inputs match the build snapshot.
+
+Source and rendered checks passed for 39 narrative pages, 31 redirect pages, and 29 formal requirements. Chromium checked all 437 navigation and anchor routes, the five chapters, seven role paths, and the fallback with JavaScript disabled. The new pertinence sections and three-column metric table were visually checked at desktop and phone widths. Translate's existing Activity/Parameters table retains its 401-pixel page width at a 390-pixel viewport; the new pertinence section fits within the viewport. The three inherited duplicate named anchors in the conformance index remain unchanged.
+
 ## Approach rationale restoration
 
 The overview again explains the reasons for the clinical model, shared knowledge representations, and iterative, cross-functional development. The five chapters restore the motivations for preserving clinical distinctions, supporting patient-specific planning, sharing reviewed interpretation across outputs and sites, choosing execution and integration routes, testing during development, and connecting care to evaluation. Four diagram captions explain the purpose of the boundaries and feedback paths. Methodology remains the procedural reference.
 
 Compared with `5f603b856979f771d37fad9bfe3f5dd503b137d4`, all six Approach pages retain their headings, explicit anchors, existing link destinations, and chapter-navigation includes. The five-chapter menu, legacy redirects, formal artifact sources, templates, and diagram sources are unchanged. Source and rendered verification passed for 39 narrative pages, 31 legacy redirect pages, and the 29 formal requirements. The three inherited duplicate named anchors in the conformance index remain unchanged.
 
-IG Publisher 3.0.3 completed successfully with zero errors, broken links, or invalid XHTML pages, 34 warnings, and 521 informational messages. The normalized QA comparison found no added or removed findings. All 620 generated FHIR resource JSON files matched the previous build byte for byte, including the ImplementationGuide. The publication inputs in the build snapshot matched the working tree.
+IG Publisher 3.0.3 completed successfully with zero errors, broken links, or invalid XHTML pages, 34 warnings, and 521 informational messages. The normalized QA comparison found no added or removed findings. All 620 SUSHI-generated FHIR resource JSON files matched the previous build byte for byte, including the ImplementationGuide. The publication inputs in the build snapshot matched the working tree.
 
 Chromium checked the five chapters, seven role paths, all 435 navigation and legacy routes, and the redirect fallback with JavaScript disabled. The overview fits a 390-pixel viewport. Desktop and phone screenshots were captured for each chapter; the overview and revised chapter openings were visually inspected in the existing template. This is narrative and publication verification, not clinical outcome or runtime-interoperability validation.
 

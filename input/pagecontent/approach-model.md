@@ -48,6 +48,10 @@ Group related features for a purpose, such as showing the inputs to a calculatio
 
 The CHF [case plan summary](Composition-chf-scenario1-caseplansummary.html) brings features, goals, planned items, and events together. Give such a view a scope and time. Show which items are suggested, authorized, or documented as having occurred, and make gaps visible when the information is unavailable.
 
+#### Pertinence relationships {#pertinence-relationships}
+
+Pertinence describes how a patient fact bears on a particular finding or recommendation. A fact can support or weigh against a finding, and an optional rating can express how much weight the fact carries in that context. The system can record the link from the record it manages. See [how to represent pertinence relationships](methodology-translate.html#pertinence-relationships).
+
 ### Plan {#plan}
 
 The Plan is reusable guidance: which activities to consider, under which conditions, and how they relate. Its recommendation, strategy, workflow, and pathway definitions use different PlanDefinition profiles. A pathway can reference both strategies, which group clinical recommendations, and workflow definitions, which describe how activities are coordinated. The [artifact map](approach-artifacts.html#resource-map) places these definitions alongside the data, logic, and activity definitions they use.

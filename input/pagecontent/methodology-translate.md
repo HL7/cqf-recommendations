@@ -96,21 +96,7 @@ Specific guideline content MAY define derived profiles for recommendation instan
 
 ##### Activity events {#activity-events}
 
-Use the elements supported by the event's profile to link it to its definition, request, and pertinent patient information. Case-feature metadata can identify the feature definition, whether the fact is asserted or inferred, and its pertinence. The event resource describes the evidence actually recorded. For example, a dispense, administration, and medication statement each tell a reviewer something different about a medication order.
-
-<div class="new-content" markdown="1">
-
-Requests can also be case features (for example, a current order may be the first or only signal of an intervention), so the request profiles support the same case feature extensions.
-
-Request and event profiles, as well as the case feature profiles such as [CPGCondition](StructureDefinition-cpg-condition.html), also support describing _pertinence relationships_: how facts such as signs, symptoms, and lab values contribute to inferring a higher-level clinical finding, such as a condition or physiological state:
-
-* [**pertinent**](StructureDefinition-cpg-pertinent.html): References the pertinent information supporting the finding (from the finding to the supporting facts)
-* [**pertinent to**](StructureDefinition-cpg-pertinentTo.html): References the finding this resource is pertinent to (from a supporting fact to the finding)
-* [**pertinence rating**](StructureDefinition-cpg-pertinenceRating.html): The weight, from 0 to 10, given to the fact for inferring the finding. It may be used alone, or alongside case feature pertinence, in which case it establishes the weight of that pertinence relationship
-
-Both directions are supported because the information on either side of the relationship may be outside the control of the system describing it. The case feature pertinence and pertinence rating extensions may also be used on the `pertinent` and `pertinentTo` references themselves, to describe the direction and weight of that specific relationship. These extensions apply to instance resources (requests and events), and are also supported on the [CPGCaseSummary](StructureDefinition-cpg-casesummary.html) and [CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html) profiles.
-
-</div>
+Use the elements supported by the event's profile to link it to its definition, request, and pertinent patient information. The event resource describes the evidence actually recorded. For example, a dispense, administration, and medication statement each tell a reviewer something different about a medication order. When an event is also a case feature, [`instantiatesCaseFeature`](StructureDefinition-cpg-instantiatesCaseFeature.html) identifies the feature definition and [`caseFeatureType`](StructureDefinition-cpg-caseFeatureType.html) records whether the fact is asserted or inferred.
 
 |Activity|Event|
 |----|----|
@@ -131,6 +117,25 @@ Both directions are supported because the information on either side of the rela
 {:.grid}
 
 §act-2^^activity:Content conforming to this implementation guide **SHALL** use the event profiles defined above to ensure guideline supporting and tracking information is available for activities delivered in the context of a computable guideline.§
+
+<div class="new-content" markdown="1">
+
+Requests can also be case features. A current order may be the first or only recorded signal of an intervention, so the request profiles support the same case-feature extensions.
+
+###### Pertinence relationships {#pertinence-relationships}
+
+Pertinence describes how facts such as signs, symptoms, and lab values contribute to a specific clinical finding, such as a condition or physiological state. Check the applicable instance profile for extension support. Examples include request and event profiles, case-feature profiles such as [CPGCondition](StructureDefinition-cpg-condition.html), and the [CPGCaseSummary](StructureDefinition-cpg-casesummary.html) and [CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html) profiles.
+
+* [`pertinent`](StructureDefinition-cpg-pertinent.html) links a finding or recommendation to the patient information relevant to it.
+* [`pertinentTo`](StructureDefinition-cpg-pertinentTo.html) links a patient fact to the higher-level finding it is pertinent to.
+* [`caseFeaturePertinence`](StructureDefinition-cpg-caseFeaturePertinence.html) qualifies how a fact bears on the particular finding. The [pertinence value set](ValueSet-cpg-casefeature-pertinence-vs.html) includes weakly positive, strongly positive, weakly negative, strongly negative, and pathognomonic codes.
+* [`pertinenceRating`](StructureDefinition-cpg-pertinenceRating.html) expresses the weight of a fact for inferring the finding as an integer from 0 (no weight) to 10 (greatest weight). Use it alone or alongside the coded pertinence.
+
+The two link directions let a system document the relationship when it manages only one of the records. To qualify the fact on a supported instance resource, use the resource's `extension` element. To qualify a specific `pertinent` or `pertinentTo` link, put the coded pertinence or rating on that link's `Reference` using `valueReference.extension`.
+
+In the synthetic CHF case, [jugular venous pressure observation 4](Observation-chf-scenario1-jvp4.html) uses `pertinentTo` to link to [observation 5](Observation-chf-scenario1-jvp5.html) and gives that reference an illustrative weight of 8. Observation 5 uses `pertinent` to link back to observation 4 and records `strongly-positive` on the Observation itself.
+
+</div>
 
 #### Define individual recommendations {#recommendations}
 
@@ -156,10 +161,10 @@ Use a pathway definition to organize strategies and describe the scope of the gu
 
 This implementation guide uses the Measure resource to represent [metrics](approach-evaluation.html#metrics), patient-level indicators of how care delivered compares with the guideline. Content conforming to this implementation guide SHALL use the [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html) profile to represent metrics, and the [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile to record the result of evaluating a metric for a patient.
 
-The type of a metric is identified by `Measure.type`, using the [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set. In addition to the base measure types (such as process, outcome, and composite), this value set includes two measure types defined by this implementation guide, each of which reports a coded result:
+The type of a metric is identified by `Measure.type`, using the [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set. In addition to the base measure types (such as process, outcome, and composite), this value set includes compliance and adherence. Their type descriptions also discuss goal and pathway scopes. The coded result sets currently defined by this guide cover two combinations of type and scope:
 
-* A **compliance metric** (type _compliance_, a kind of process metric) is scoped to a [recommendation](#recommendations) and reports whether the care delivered conforms to it. Compliance metrics SHOULD report results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set.
-* An **adherence metric** (type _adherence_, a kind of composite metric) is scoped to a [strategy](#strategies) and reports whether the strategy's requirements, taken together, are met. Adherence metrics SHOULD report results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set.
+* A **compliance metric** (type _compliance_, a kind of process metric) scoped to a [recommendation](#recommendations) reports whether the care delivered conforms to it. Compliance metrics SHOULD report results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set.
+* An **adherence metric** (type _adherence_, a kind of composite metric) scoped to a [strategy](#strategies) reports whether the strategy's requirements, taken together, are met. Adherence metrics SHOULD report results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set.
 
 <div class="stu-note" markdown="1">
 

@@ -18,9 +18,19 @@ An elapsed-time metric can start with a proposal or another Case Feature used in
 
 Three things about a metric vary independently. Its type describes what kind of metric it is, its scope identifies the guideline element it evaluates, and its result describes where the patient stands. Keeping them separate lets the same result be shown in the workflow, reused as a Case Feature, or used in a population measure.
 
-The [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set identifies two types with coded results. A compliance metric asks whether the care delivered conforms to a single recommendation. An adherence metric, a kind of composite metric, asks whether the requirements of a strategy are met together. Both evaluate the process of care by the care team and patient together.
+The [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set includes compliance and adherence. Both evaluate the process of care by the care team and patient together. The coded result sets currently defined by this guide cover these scopes:
+
+| Metric type | Scope and interpretation | Coded results |
+| --- | --- | --- |
+| Compliance, a process metric | **One recommendation:** Does the care delivered meet the recommendation's expectation? | [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) |
+| Adherence, a composite metric | **One strategy:** Are the strategy's requirements met together? | [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) |
+{:.grid}
+
+For example, a recommendation-level compliance result can contribute to a strategy's adherence result alongside other compliance or intermediate-outcome metrics. The metric definition specifies which components count and how their results are combined. The broader metric type descriptions also discuss goals and pathways; this guide has not yet defined coded result sets for those scopes. [Metric definitions and result policy](methodology-translate.html#metrics)
 
 A result can record a fulfillment window that is still open (pending), an expectation that is temporarily suspended (on hold) or removed by an accepted exemption (exempted), a recommendation that does not apply (not applicable), or insufficient data to decide (unknown). The metric declares criteria such as its exemptions and lookback. See [Metrics](methodology-translate.html#metrics) for the definition rules and [Metric Results](methodology-translate.html#metric-results) for the codes and how to choose a result.
+
+The result code sets define meaning, but the CPGMetricReport profile does not yet specify where to carry these codes. Implementers need to agree on the exchange representation, as described in [Metric Results](methodology-translate.html#metric-results).
 
 #### Pathway status terms {#pathway-status-terms}
 
