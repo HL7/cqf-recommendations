@@ -2,17 +2,7 @@ Use these examples to trace how recommendations to perform or not perform activi
 
 These examples are deliberately simplified technical demonstrations, not complete or production-ready clinical guidance. They show positive and negative recommendations, rejection, and flexibility in how an activity may be achieved.
 
-Specifically:
-* There is no terminology, any request/event on any topic will do
-* There is no timing, any request/event will do at any time
-* There is no reference to participants other than the patient
-* There is no relationship to a setting
-* There is no relationship to an encounter or episode
-* There is no relationship to a care plan
-
-These simplifications allow the example to focus exclusively on the pattern for
-recommending and for accepting/rejecting the proposal, as well as documenting
-the completion, or explicit non-performance of the activity.
+Each scenario supplies enough codes, timing, and patient context to illustrate the activity pattern. An implementation needs criteria and terminology appropriate to the intended activity and must determine which participants, care settings, encounters, and plans are relevant.
 
 These examples make use of the activity processing semantics defined in the [Activity Flow](activityflow.html) topic.
 

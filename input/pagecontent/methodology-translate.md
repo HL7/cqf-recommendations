@@ -43,7 +43,7 @@ An ActivityDefinition is a patient-independent template. Applying it in context 
 |Encounter|The Encounter in progress, if one is currently in progress|
 {:.grid}
 
-This IG provides the following parameterized ActivityDefinition examples.
+These generic ActivityDefinitions illustrate inputs and target fields. Their `dynamicValue` expressions require review and testing before reuse. See [Activity Examples](examples-activities.html) for worked definitions, libraries, and scenario resources.
 
 |Activity|Parameters|
 |--------|--------|
@@ -55,10 +55,10 @@ This IG provides the following parameterized ActivityDefinition examples.
 |[**Enrollment**](ActivityDefinition-cpg-enrollment-activitydefinition.html)|**PathwayCanonical**: The canonical URL of the pathway or strategy in which the patient is enrolled/unenrolled|
 |[**GenerateReport**](ActivityDefinition-cpg-generatereport-activitydefinition.html)|**DefinitionCanonical**: The canonical URL of the metric, case report, or profile to use to generate the report|
 |[**ImmunizationRequest**](ActivityDefinition-cpg-immunizationrequest-activitydefinition.html)|**VaccineCodeableConcept**: The vaccine being recommended|
-|[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>DoseQuantity: The quantity of medication<br/>DosesPerDay: The number of doses per day, as a decimal|
-|[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConept**: The diagnosis being proposed|
+|[**MedicationRequest**](ActivityDefinition-cpg-medicationrequest-activitydefinition.html)|**MedicationCodeableConcept**: The medication being proposed, as a CodeableConcept<br/>**DoseQuantity**: The quantity of medication<br/>**DosesPerDay**: The intended number of doses per day. The generic timing expression uses this value as the period and needs correction before use.|
+|[**ProposeDiagnosisTask**](ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html)|**DiagnosisCodeableConcept**: The diagnosis being proposed|
 |[**RecordDetectedIssueTask**](ActivityDefinition-cpg-recorddetectedissue-activity.html)|**IssueCodeableConcept**: The issue being recorded|
-|[**RecordInferenceTask**](ActivityDefinition-cpg-recordinference-activity.html)|**InferenceCodeableConcept**: The type of inference being recorded<br/>InferenceValue: The value of the inference being recorded|
+|[**RecordInferenceTask**](ActivityDefinition-cpg-recordinference-activity.html)|**InferenceCodeableConcept**: The type of inference being recorded<br/>**InferenceValue**: The value of the inference being recorded. Construct the result according to the selected inference profile.|
 |[**ReportFlagTask**](ActivityDefinition-cpg-reportflagtask-activitydefinition.html)|**IssueCodeableConcept**: The issue being flagged|
 |[**ServiceRequest**](ActivityDefinition-cpg-servicerequest-activitydefinition.html)|**ServiceCodeableConcept**: The type of service being proposed|
 {:.grid}
@@ -165,7 +165,7 @@ Result codes for metrics scoped to pathways and goals are not yet defined, and a
 
 ##### Metric Results {#metric-results}
 
-Both value sets draw their codes from the [CPG Metric Result](CodeSystem-cpg-metric-result-cs.html) code system. The code system is hierarchical (is-a), so a query for a parent code also returns its children. For example, _compliant-with-prior-non-compliance_ is a kind of _compliant_.
+Both value sets draw their codes from the hierarchical [CPG Metric Result](CodeSystem-cpg-metric-result-cs.html) code system. For example, _compliant-with-prior-non-compliance_ is a kind of _compliant_. Use a terminology operation that supports hierarchy when querying for a parent and its descendants. The ballot defines the result codes and their meanings. The [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile does not specify an element or extension for those codes, so agree on the exchange representation before sharing coded results.
 
 |Compliance result|Adherence result|Meaning|
 |----|----|----|

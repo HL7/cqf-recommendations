@@ -1,4 +1,4 @@
-library GenerateReportMeasure version '1.0.0'
+library GenerateReportMeasure version '3.0.0-ballot'
 
 using FHIR version '4.0.1'
 

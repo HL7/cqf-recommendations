@@ -12,7 +12,7 @@ An elapsed-time metric can start with a proposal or another Case Feature used in
 
 #### Metric types and results {#metric-types-and-results}
 
-Three things about a metric vary independently. Its type describes what kind of metric it is, its scope identifies the guideline element it evaluates, and its result describes where the patient stands. Keeping them separate lets the same result be shown in the workflow, reused as a Case Feature, and counted by a population measure.
+Three things about a metric vary independently. Its type describes what kind of metric it is, its scope identifies the guideline element it evaluates, and its result describes where the patient stands. Keeping them separate lets the same result be shown in the workflow, reused as a Case Feature, or used in a population measure.
 
 The [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set identifies two types with coded results. A compliance metric asks whether the care delivered conforms to a single recommendation. An adherence metric, a kind of composite metric, asks whether the requirements of a strategy are met together. Both evaluate the process of care by the care team and patient together.
 
@@ -26,7 +26,7 @@ Local implementations may use “on path,” “off path,” and “on with a hi
 
 ### Define population measures {#measures}
 
-A population quality measure defines whose care contributes to an assessment of a process or outcome. FHIR Measure defines the population criteria and references the Library that supplies the expression logic. MeasureReport represents the results. A quality measure can reuse guideline expressions, reference a calculated metric or a metric stored as a Case Feature, or relate to a guideline through metadata. Its measurement population, time window, exclusions, and scoring have their own definitions. A population measure counts patient-level results under its own eligibility and scoring criteria. Test those rules with representative patient-level cases before interpreting results for a care team, facility, or research cohort. [FHIR R4 Measure](https://hl7.org/fhir/R4/measure.html) · [FHIR R4 MeasureReport](https://hl7.org/fhir/R4/measurereport.html) · [Quality Measure Implementation Guide](https://hl7.org/fhir/uv/cqm/index.html)
+A population quality measure defines whose care contributes to an assessment of a process or outcome. FHIR Measure defines the population criteria and references the Library that supplies the expression logic. MeasureReport represents the results. A quality measure can reuse guideline expressions, reference a calculated metric or a metric stored as a Case Feature, or relate to a guideline through metadata. Its measurement population, time window, exclusions, and scoring have their own definitions. A population measure can aggregate patient-level results according to those criteria. Test those rules with representative patient-level cases before interpreting results for a care team, facility, or research cohort. [FHIR R4 Measure](https://hl7.org/fhir/R4/measure.html) · [FHIR R4 MeasureReport](https://hl7.org/fhir/R4/measurereport.html) · [Quality Measure Implementation Guide](https://hl7.org/fhir/uv/cqm/index.html)
 
 ### Summarize the case, plan, and progress {#summaries}
 

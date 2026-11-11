@@ -2,7 +2,7 @@
 
 ### Represent Step {#represent-step}
 
-Use the selected recommendation, source rationale, and delivery assumptions to write a decision specification that clinicians can review before CQL and FHIR authoring begins. The specification connects [clinical concepts](#concepts) to [criteria and example cases](#criteria) and shows how the recommendation reaches people in the [care process](#processes-1).
+Use the selected recommendation, source rationale, and delivery assumptions to write a decision specification that clinicians can review before authoring FHIR artifacts and logic. The specification connects [clinical concepts](#concepts) to [criteria and example cases](#criteria) and shows how the recommendation reaches people in the [care process](#processes-1).
 
 #### Describe the clinical concepts {#concepts}
 

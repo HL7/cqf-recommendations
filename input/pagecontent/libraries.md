@@ -21,6 +21,8 @@ Content that uses CQL must conform to the [Using CQL With FHIR](https://hl7.org/
 
 ### Prepare for evaluation
 
+To execute the [activity](examples-activities.html) and [CHF](examples-chf.html) examples, make the published FHIRHelpers Library version 4.0.1 available from the [Using CQL With FHIR](https://hl7.org/fhir/uv/cql/STU2/) package `hl7.fhir.uv.cql#2.0.0`. The CPG package declares it for Publisher validation. An example runtime must provision the dependency separately or resolve the versioned Library canonical recorded in the example.
+
 Resolve the library and its included libraries, model information, terminology dependencies, and parameters. Review `dataRequirement` against the local data available for the patient and evaluation time. Preserve distinctions among missing data, an explicit negative, and a failed retrieval. CQL's null and temporal semantics are part of the logic being implemented, not presentation choices.
 
 Test the source and executable representation together with positive, negative, boundary, temporal, and missing-data cases. If translating logic to another language, compare results for the supported constructs. Keep the test inputs and expected results with the content's version history so that dependency changes can be assessed.

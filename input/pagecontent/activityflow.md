@@ -58,7 +58,7 @@ Use the activity-specific request profile. Definition links such as `instantiate
 | Recommend an immunization | [CPGImmunizationRequest](StructureDefinition-cpg-immunizationrequest.html), a MedicationRequest profile | [CPGImmunization](StructureDefinition-cpg-immunization.html) |
 | Order a service | [CPGServiceRequest](StructureDefinition-cpg-servicerequest.html) | [CPGProcedure](StructureDefinition-cpg-procedure.html) |
 | Enroll a patient | [CPGEnrollmentTask](StructureDefinition-cpg-enrollmenttask.html) | [CPGCase](StructureDefinition-cpg-case.html), an EpisodeOfCare profile |
-| Generate a report | [CPGGenerateReportTask](StructureDefinition-cpg-generatereporttask.html) | [CPGMetricReport](StructureDefinition-cpg-metricreport.html) or a case/plan summary |
+| Generate a report | [CPGGenerateReportTask](StructureDefinition-cpg-generatereporttask.html) | [CPGMetricReport](StructureDefinition-cpg-metricreport.html), a case or plan summary, or a resource conforming to the referenced Case Feature profile |
 | Propose a diagnosis | [CPGProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html) | [CPGCondition](StructureDefinition-cpg-condition.html) |
 | Record a detected issue | [CPGRecordDetectedIssueTask](StructureDefinition-cpg-recorddetectedissuetask.html) | [CPGDetectedIssue](StructureDefinition-cpg-detectedissue.html) |
 | Record an inference | [CPGRecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html) | [CPGObservation](StructureDefinition-cpg-observation.html) |
@@ -81,7 +81,7 @@ Events have resource-specific semantics. Use [FHIR event guidance](https://hl7.o
 | QuestionnaireResponse | R4 codes are `in-progress`, `completed`, `amended`, `entered-in-error`, and `stopped`. There is no `cancelled`, `on-hold`, or `failed` code. |
 | EpisodeOfCare / CPGCase | Status describes the episode's lifecycle, including `planned`, `active`, `onhold`, and `finished`; it does not establish that an individual intervention occurred. |
 | MeasureReport / CPGMetricReport | Status is `complete`, `pending`, or `error`. |
-| Composition / case summaries and progress notes | Status is `preliminary`, `final`, `amended`, or `entered-in-error`; use `summaryFor` to associate the summary with its case. |
+| Composition / case summaries and progress notes | Status is `preliminary`, `final`, `amended`, or `entered-in-error`. Use `summaryFor` to associate the summary with the applicable case, care plan, strategy, or supported request. |
 | Condition | Clinical and verification status describe the condition; neither is a generic event-progress status. |
 | DetectedIssue | Status concerns the issue's assessment/verification. Do not equate a preliminary result with an intervention waiting to start. |
 | Flag | `active` and `inactive` concern the flag's relevance, not whether an activity has started or stopped. |

@@ -27,7 +27,7 @@ Describe the intended action and what would count as carrying it out. For exampl
 
 Use the [common care pathway](common-care-pathway.html) to identify where the recommendation fits. Then ask the local workflow and integration owners what can trigger evaluation, whether the necessary information is available at that point, and how the proposed action would be fulfilled. Record the clinical timing alongside the actual system event. Some clinical decision points have no corresponding CDS Hooks event in a given system.
 
-Content conforming to this implementation guide MAY identify processes using the [Common Processes](CodeSystem-cpg-common-process-cs.html) code system.
+Identify processes using the [Common Processes](CodeSystem-cpg-common-process-cs.html) code system as required by [path-2](approach-implementation.html#common-pathway).
 
 #### Check what the setting supports {#settings}
 

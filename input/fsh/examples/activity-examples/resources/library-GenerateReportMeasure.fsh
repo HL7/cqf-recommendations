@@ -3,7 +3,7 @@ InstanceOf: Library
 Usage: #example
 Title: "Generate Report Example Measure Logic"
 * insert ExampleLibraryMetadata(GenerateReportMeasure)
-* version = "1.0.0"
+* version = "3.0.0-ballot"
 * name = "GenerateReportMeasure"
 * type = $library-type#logic-library
 * description = "Scoring logic for the Generate Report example measure"

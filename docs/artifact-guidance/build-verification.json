@@ -29,7 +29,7 @@
     "ruby": "3.2.0"
   },
   "command": "java -Xmx5g -jar input-cache/publisher.jar -ig .",
-  "runtime_note": "Explicit ASDF Java/Node/Ruby versions supplied to the subprocess because the isolated /var build directory does not inherit versions from /Users/bkaney/.tool-versions. No source/configuration change was needed.",
+  "runtime_note": "The isolated build used explicitly selected ASDF Java, Node, and Ruby versions.",
   "ordered_template_slots": {
     "checked": 87,
     "failures": []

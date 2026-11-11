@@ -69,9 +69,6 @@ results in the creation of a [CarePlan](CarePlan-chf-scenario1-careplan.html), w
 [Hypervolemia](RequestGroup-chf-scenario1-hypervolemia.html) strategies. Each of these
 strategies establish actions and goals for each of the recommendations.
 
-The diagram above is a snapshot of the Case/Plan Summary View at 9:41 AM on February 3rd, 2019, the
-4th day of the encounter.
-
 Weight
 CaseFeatureDefinition: Weight in kg
 Observation: 96.9kg @2019-02-02T07:00
