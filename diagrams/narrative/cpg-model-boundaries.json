@@ -1,92 +1,11 @@
 {
-  "height": 409,
-  "title": "Case, Plan and Workflow",
-  "description": "Case Features describe the patient. Evaluation applies the reusable Plan to those features. The local Workflow reviews proposals, authorizes and delivers care, and documents what happened for later evaluation.",
-  "nodes": [
-    {
-      "id": "case",
-      "x": 32,
-      "y": 105,
-      "w": 284,
-      "h": 170,
-      "kind": "knowledge",
-      "label": "Case",
-      "body": [
-        "Patient information",
-        "Records and assessments",
-        "Inferred Case Features"
-      ]
-    },
-    {
-      "id": "plan",
-      "x": 358,
-      "y": 105,
-      "w": 284,
-      "h": 170,
-      "kind": "logic",
-      "label": "Plan",
-      "body": [
-        "Reusable clinical guidance",
-        "Recommendations",
-        "Strategies and pathways"
-      ]
-    },
-    {
-      "id": "work",
-      "x": 684,
-      "y": 105,
-      "w": 284,
-      "h": 170,
-      "kind": "workflow",
-      "label": "Workflow",
-      "body": [
-        "Review and authorize",
-        "Deliver and document care",
-        "Track responsibility"
-      ]
-    }
-  ],
-  "edges": [
-    {
-      "from": "case",
-      "to": "plan"
-    },
-    {
-      "from": "plan",
-      "to": "work"
-    },
-    {
-      "from": "work",
-      "to": "case",
-      "fromPort": "bottom",
-      "toPort": "bottom",
-      "via": [
-        [
-          826,
-          305
-        ],
-        [
-          174,
-          305
-        ]
-      ],
-      "dashed": true
-    }
-  ],
-  "notes": [
-    {
-      "x": 32,
-      "y": 350,
-      "w": 936,
-      "text": "Evaluate the Plan using Case Features. The local Workflow reviews any resulting proposals.",
-      "size": 16
-    },
-    {
-      "x": 32,
-      "y": 378,
-      "w": 936,
-      "text": "The dashed arrow shows how documented care can inform a later evaluation.",
-      "size": 16
-    }
+  "title": "Case, Plan and Workflow over time",
+  "description": "The orange Plan lane includes a reusable pathway, strategies, recommendations, and a workflow definition describing activities and coordination. A dashed connection marks local implementation of that workflow definition, with roles, triggers, and services bound locally. The blue lane separates local workflow from its patient proposals, authorized requests, and documented events. The green Case lane shows recorded and derived patient facts, including events reused as case features. Positions illustrate relative timing.",
+  "svgSource": "svg/cpg-model-boundaries.svg",
+  "originals": [
+    "CPG-12-00.png",
+    "CPG-12-01.png",
+    "CPG-Main-Case.png",
+    "CPG-Main-Plan.png"
   ]
 }

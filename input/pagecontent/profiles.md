@@ -42,7 +42,7 @@ In addition, content claiming conformance to this implementation guide SHALL use
 
 {% include profile-tables/domain-profiles.html %}
 
-Use these profiles to distinguish reusable definitions from patient-specific instances. For example, recommendation and strategy definitions use PlanDefinition; CPGStrategy uses RequestGroup, CPGCarePlan uses CarePlan, and CPGCase uses EpisodeOfCare. The [conceptual model](documentation-approach-12-conceptual-knowledge-architecture.html) explains the relationships; the [CHF example](examples-chf.html) shows their use together.
+Use these profiles to distinguish reusable definitions from patient-specific instances. For example, recommendation and strategy definitions use PlanDefinition; CPGStrategy uses RequestGroup, CPGCarePlan uses CarePlan, and CPGCase uses EpisodeOfCare. The [conceptual model](approach-model.html) explains the relationships; the [CHF example](examples-chf.html) shows their use together.
 
 ### Activity Profiles
 

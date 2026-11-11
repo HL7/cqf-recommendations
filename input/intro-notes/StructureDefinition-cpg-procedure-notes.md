@@ -6,4 +6,4 @@
 
 - `reasonReference` carries pertinent supporting information. Case-feature definition, asserted/inferred type and pertinence extensions relate the procedure to the guideline’s patient view.
 
-Related: [service request](StructureDefinition-cpg-servicerequest.html); [Activity Flow](activityflow.html); [case features](documentation-approach-12-04-cpg-case.html).
+Related: [service request](StructureDefinition-cpg-servicerequest.html); [Activity Flow](activityflow.html); [case features](approach-model.html#case).

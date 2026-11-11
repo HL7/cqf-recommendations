@@ -2,6 +2,10 @@
 
 **Historical worked example: ACEP COVID-19 emergency-department severity classification and disposition guidance.** This account records the team's work as described in **November 2020**, including the September 2020 narrative tool. It demonstrates knowledge-engineering work products and review. It is not current COVID-19 advice, a clinical update, or evidence that an implementation improved patient outcomes.
 
+Read this example alongside the [Methodology steps](methodology.html). The sections below show how the team made clinical meaning explicit, explored formal models, and connected those models to candidate artifacts. The modeling tools and project choices are examples, not prerequisites for using this IG.
+
+**Read by work product:** [Scope and draft](#scope-guideline-and-review-evidence) · [Structured decisions and data](#structured-information) · [Decision and process models](#initial-draft-of-computable-decision-logic-decision-tables-in-dmn) · [FHIR/CQL artifacts and tests](#informing-cpg-ig-knowledge-architecture-and-expression-using-cpg-profiles) · [Packaging](#package-all-cpg-work-products-in-composite-cpg-asset-profiled-ig-resource).
+
 #### Problem Statement
 
 During 2020, a coalition of nearly fifty private-sector organizations organized work on rapidly disseminating computable COVID-19 guidance. The use case concerned classifying patients presenting to emergency departments and supporting disposition decisions. The team used a rapid evidence review in a novel-disease context where evidence was limited.
@@ -13,7 +17,7 @@ The COVID-19 Digital Guideline Working Group drew on CDC's Adapting Clinical Gui
 #### Process Overview
 
 <div style="clear: both;">
-  <img src="cpg-method-case-study.svg" alt="The historical 2020 project connected a narrative draft, explicit decisions and concepts, optional formal models, FHIR/CQL artifacts, and test/package work." class="img-responsive center-block" width="1000"/>
+  <img src="cpg-method-case-study.svg" alt="The historical 2020 project connected clinical source material, structured concepts and decisions, formal decision and workflow models, candidate FHIR/CQL artifacts, and test cases through review." class="img-responsive center-block" width="1000"/>
 </div>
 
 
@@ -144,14 +148,16 @@ FHIR test Bundles and suitable engines/sandboxes could exercise data extraction,
 
 #### Package all CPG Work Products
 
-Preserve the narrative, semi-structured decisions, artifacts, terminology, dependencies, cases, and review findings together. This IG's [current packaging guidance](methodology.html#packaging) uses content IG publication or artifact-repository packaging, including CRMIManifestLibrary as appropriate. Present-day packaging guidance is separate from the historical team's completed work.
+Preserve the narrative, semi-structured decisions, artifacts, terminology, dependencies, cases, and review findings together. This IG's [current packaging guidance](methodology-package.html) uses content IG publication or artifact-repository packaging, including CRMIManifestLibrary as appropriate. Present-day packaging guidance is separate from the historical team's completed work.
 
 ### Lessons for Implementors
 
-Use linked work products to expose clinical ambiguities early, compare representations against the same approved cases, and distinguish proposed derivations from implemented capabilities. Preserve the source date and the evidence limits. For a current project, follow [Methodology](methodology.html) and retain the separate [validation tracks](documentation-approach-05-04-knowledge-execution-and-validation.html).
+Use linked work products to expose clinical ambiguities early, compare representations against the same approved cases, and distinguish proposed derivations from implemented capabilities. Preserve the source date and the evidence limits. For a current project, follow [Methodology](methodology.html) and retain the separate [validation tracks](approach-development.html#validation).
 
 ### Historical Source Locations
 
 - [ACEP tool page, original linked location](https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&sa=D&ust=1606246815901000&usg=AOvVaw2uMkX1wZE0o4UGESgNYFp4).
 - [ACEP September 2020 tool PDF, original linked location](https://www.google.com/url?q=https://www.acep.org/globalassets/sites/acep/media/covid-19-main/acep_evidencecare_covid19severitytool.pdf&sa=D&ust=1606246815901000&usg=AOvVaw3ZqRn2_41xoIThVUtDt2kJ).
 - [ACEP tool page, later source link retained](https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&sa=D&ust=1606246815936000&usg=AOvVaw1M69Qy2HOG1O8RaXAN1tiY).
+
+{% include chapter-navigation.html section="Methodology" overview="methodology.html" %}

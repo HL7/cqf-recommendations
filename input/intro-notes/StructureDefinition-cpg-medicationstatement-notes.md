@@ -6,4 +6,4 @@
 
 - `medication[x]`, `subject` and `context` identify its clinical meaning. Case-feature and pertinent-information extensions support reuse without making a reported statement proof of a particular administered dose.
 
-Related: [documentation Task](StructureDefinition-cpg-documentmedicationtask.html); [administration record](StructureDefinition-cpg-medicationadministration.html); [case features](documentation-approach-12-04-cpg-case.html).
+Related: [documentation Task](StructureDefinition-cpg-documentmedicationtask.html); [administration record](StructureDefinition-cpg-medicationadministration.html); [case features](approach-model.html#case).

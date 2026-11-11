@@ -1,3 +1,3 @@
-Use this operation to evaluate a guideline definition in a subject's context and obtain proposed activities. It connects reusable [recommendation, strategy, and pathway definitions](documentation-approach-06-03-knowledge-architecture.html) to patient-specific requests.
+Use this operation to evaluate a guideline definition in a subject's context and obtain proposed activities. It connects reusable [recommendation, strategy, and pathway definitions](approach-artifacts.html#resource-map) to patient-specific requests.
 
 This CPG operation returns subject-specific Bundles. Its result differs from the CarePlan return of base FHIR R4 PlanDefinition `$apply`; agree which operation contract the client and service implement. The returned proposals are transient, and the receiving application decides how to present, authorize, and persist selected activities.

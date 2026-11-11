@@ -132,7 +132,8 @@ STDOUT.write(JSON.generate(result))
     for source in sorted((ROOT / "diagrams/narrative").glob("*.json")):
         diagram = json.loads(source.read_text())
         target = ROOT / "input/images" / (source.stem + ".svg")
-        if not target.is_file() or target.read_text() != renderer.render(diagram):
+        expected = renderer.native_svg(source, diagram) if "svgSource" in diagram else renderer.render(diagram)
+        if not target.is_file() or target.read_text() != expected:
             errors.append(f"SVG differs from source: {source.name}")
         else:
             svg = ET.fromstring(target.read_text())

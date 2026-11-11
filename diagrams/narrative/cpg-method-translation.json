@@ -1,64 +1,8 @@
 {
-  "width": 1000,
-  "height": 450,
-  "title": "Resolve meaning before formal authoring",
-  "description": "A clinical source and examples are refined into an explicit specification reviewed by clinical and terminology experts before formal FHIR/CQL authoring.",
-  "nodes": [
-    {
-      "id": "source",
-      "label": "Source meaning",
-      "body": "Recommendation, evidence, clinical examples and data assumptions",
-      "x": 35,
-      "y": 110,
-      "w": 285,
-      "h": 210,
-      "kind": "knowledge"
-    },
-    {
-      "id": "spec",
-      "label": "Explicit specification",
-      "body": "Concepts, criteria, timing, exceptions and expected results; clinical review",
-      "x": 357,
-      "y": 110,
-      "w": 285,
-      "h": 210,
-      "kind": "knowledge"
-    },
-    {
-      "id": "artifacts",
-      "label": "Formal artifacts",
-      "body": "FHIR profiles and terminology; Library/CQL; PlanDefinition / ActivityDefinition",
-      "x": 679,
-      "y": 110,
-      "w": 285,
-      "h": 210,
-      "kind": "logic"
-    }
-  ],
-  "edges": [
-    {
-      "from": "source",
-      "to": "spec"
-    },
-    {
-      "from": "spec",
-      "to": "artifacts"
-    }
-  ],
-  "notes": [
-    {
-      "x": 28,
-      "y": 365,
-      "w": 944,
-      "text": "Record unresolved questions and mapping qualifications. Tools do not decide clinical meaning.",
-      "size": 16
-    },
-    {
-      "x": 28,
-      "y": 405,
-      "w": 944,
-      "text": "Legend: blue = clinical/specification work; green = formal artifacts. Arrows = reviewed handoffs.",
-      "size": 16
-    }
+  "title": "Historical recommendation workflow structure",
+  "description": "In a historical opioid prescribing example, signing an order triggers context and review checks, a calculation, and a configured decision. A failed check or unavailable calculation follows the no-message path. When the message criterion is met, decision support displays a message and the clinician can respond. Clinical rule details are in the versioned example.",
+  "svgSource": "svg/cpg-method-translation.svg",
+  "originals": [
+    "Recommendation04-05-flow.png"
   ]
 }

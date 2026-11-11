@@ -5,4 +5,4 @@
 - The declared return cardinality is `0..*` Bundles, with a Bundle described for each evaluated subject. A result can contain individual requests, CarePlans, or RequestGroups. When a RequestGroup preserves the action structure, its child requests use `option` intent. `mergeNestedCarePlans` concerns nested CarePlans; it does not change the Bundle return contract.
 - Inspect the proposed resources and evaluation messages before committing actions. Invoking `$apply` does not persist its results or establish that care occurred.
 
-Continue with [execution methods](documentation-approach-09-methods-of-implementation.html), [interactive CDS](interactive-cds.html), and [activity flow](activityflow.html).
+Continue with [execution methods](approach-implementation.html#execution-methods), [interactive CDS](interactive-cds.html), and [activity flow](activityflow.html).

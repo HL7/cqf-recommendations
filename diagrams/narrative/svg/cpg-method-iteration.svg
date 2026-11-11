@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="935" viewBox="0 0 1200 935" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">Learning from practice, data, and knowledge</title>
+  <desc id="desc">A circular learning cycle starts with a problem of interest. Eight activities connect practice to data, data to knowledge, and knowledge to practice. Review findings and proposed changes before revising approved guidance.</desc>
+  <!-- Original source: input/images/CPG-04-03.png. Eight steps and the original three color-coded flows are retained. -->
+  <defs>
+    <marker id="green-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#376a49"/>
+    </marker>
+    <marker id="blue-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#3d5791"/>
+    </marker>
+    <marker id="red-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#a3474b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="935" fill="#fff"/>
+  <text x="600" y="48" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Learning from practice, data, and knowledge</text>
+
+  <g id="learning-flows" stroke-width="2">
+    <path id="practice-to-data" d="M 880 664 A 355 355 0 0 1 278 595 L 376 549 A 247 247 0 0 0 795 597 Z" fill="#e5efe3" stroke="#93b197"/>
+    <path id="data-to-knowledge" d="M 278 595 A 355 355 0 0 1 631 91 L 622 199 A 247 247 0 0 0 376 549 Z" fill="#e5eaf6" stroke="#94a5c7"/>
+    <path id="knowledge-to-practice" d="M 631 91 A 355 355 0 0 1 880 664 L 795 597 A 247 247 0 0 0 622 199 Z" fill="#f5e5e3" stroke="#c9928e"/>
+  </g>
+  <g id="clockwise-direction" fill="none" stroke-width="7" stroke-linecap="round">
+    <path d="M 755 600 A 219 219 0 0 1 418 567" stroke="#376a49" marker-end="url(#green-arrow)"/>
+    <path d="M 393 516 A 219 219 0 0 1 589 226" stroke="#3d5791" marker-end="url(#blue-arrow)"/>
+    <path d="M 646 231 A 219 219 0 0 1 793 548" stroke="#a3474b" marker-end="url(#red-arrow)"/>
+  </g>
+
+  <g id="flow-labels" font-size="26" font-weight="700">
+    <text x="44" y="278" fill="#314b85"><tspan x="44">Data to</tspan><tspan x="44" dy="32">knowledge</tspan></text>
+    <text x="1156" y="278" fill="#963c41" text-anchor="end"><tspan x="1156">Knowledge</tspan><tspan x="1156" dy="32">to practice</tspan></text>
+    <text x="600" y="847" fill="#2e6040" text-anchor="middle">Practice to data</text>
+  </g>
+
+  <g id="numbered-learning-activities" text-anchor="middle" fill="#233344" font-weight="700" font-size="21">
+    <g id="collect-data">
+      <circle cx="397" cy="615" r="19" fill="#376a49"/>
+      <text x="397" y="622" fill="#fff">1</text>
+      <text x="359" y="660"><tspan x="359">Collect</tspan><tspan x="359" dy="24">data</tspan></text>
+    </g>
+    <g id="assemble-data">
+      <circle cx="335" cy="431" r="19" fill="#3d5791"/>
+      <text x="335" y="438" fill="#fff">2</text>
+      <text x="313" y="479"><tspan x="313">Assemble</tspan><tspan x="313" dy="24">data</tspan></text>
+    </g>
+    <g id="analyze-data">
+      <circle cx="406" cy="264" r="19" fill="#3d5791"/>
+      <text x="406" y="271" fill="#fff">3</text>
+      <text x="404" y="214"><tspan x="404">Analyze</tspan><tspan x="404" dy="23">data</tspan></text>
+    </g>
+    <g id="interpret-results">
+      <circle cx="554" cy="184" r="19" fill="#3d5791"/>
+      <text x="554" y="191" fill="#fff">4</text>
+      <text x="537" y="126"><tspan x="537">Interpret</tspan><tspan x="537" dy="24">results</tspan></text>
+    </g>
+    <g id="represent-knowledge">
+      <circle cx="720" cy="209" r="19" fill="#a3474b"/>
+      <text x="720" y="216" fill="#fff">5</text>
+      <text x="724" y="151"><tspan x="724">Represent</tspan><tspan x="724" dy="24">knowledge</tspan></text>
+    </g>
+    <g id="manage-knowledge">
+      <circle cx="829" cy="312" r="19" fill="#a3474b"/>
+      <text x="829" y="319" fill="#fff">6</text>
+      <text x="850" y="257"><tspan x="850">Manage</tspan><tspan x="850" dy="24">knowledge</tspan></text>
+    </g>
+    <g id="apply-knowledge">
+      <circle cx="865" cy="459" r="19" fill="#a3474b"/>
+      <text x="865" y="466" fill="#fff">7</text>
+      <text x="884" y="506"><tspan x="884">Apply</tspan><tspan x="884" dy="24">knowledge</tspan></text>
+    </g>
+    <g id="change-practice">
+      <circle cx="767" cy="651" r="19" fill="#376a49"/>
+      <text x="767" y="658" fill="#fff">8</text>
+      <text x="745" y="697"><tspan x="745">Take action to</tspan><tspan x="745" dy="24">change practice</tspan></text>
+    </g>
+  </g>
+
+  <g id="problem-of-interest" text-anchor="middle" fill="#17304b">
+    <text x="600" y="426" font-size="38" font-weight="700"><tspan x="600">A problem</tspan><tspan x="600" dy="44">of interest</tspan></text>
+    <text x="600" y="518" font-size="21">Decide what to study</text>
+  </g>
+
+  <text id="reviewed-feedback" x="600" y="900" text-anchor="middle" font-size="19" fill="#233747">Review findings with accountable teams before changing approved guidance or local practice.</text>
+</svg>

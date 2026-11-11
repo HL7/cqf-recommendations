@@ -1,66 +1,12 @@
 {
-  "width": 1000,
-  "height": 435,
-  "title": "Compare behavior across optional representations",
-  "description": "BPM+ models and FHIR/CQL artifacts are tested against common clinically reviewed cases. This comparison does not imply complete, lossless or bidirectional translation.",
-  "nodes": [
-    {
-      "id": "bpm",
-      "label": "Optional BPM+ models",
-      "body": "BPMN process; DMN decisions; CMMN case management",
-      "x": 35,
-      "y": 110,
-      "w": 285,
-      "h": 190,
-      "kind": "knowledge"
-    },
-    {
-      "id": "cases",
-      "label": "Shared reviewed cases",
-      "body": "Same inputs, expected behavior and clinical meaning",
-      "x": 357,
-      "y": 110,
-      "w": 285,
-      "h": 190,
-      "kind": "result"
-    },
-    {
-      "id": "fhir",
-      "label": "FHIR/CQL artifacts",
-      "body": "PlanDefinition / ActivityDefinition, Library/CQL and data profiles",
-      "x": 679,
-      "y": 110,
-      "w": 285,
-      "h": 190,
-      "kind": "logic"
-    }
-  ],
-  "edges": [
-    {
-      "from": "bpm",
-      "to": "cases"
-    },
-    {
-      "from": "fhir",
-      "to": "cases",
-      "fromPort": "left",
-      "toPort": "right"
-    }
-  ],
-  "notes": [
-    {
-      "x": 28,
-      "y": 350,
-      "w": 944,
-      "text": "Check data retrieval, null/unknown behavior, time, conditions, concurrency and execution support.",
-      "size": 16
-    },
-    {
-      "x": 28,
-      "y": 390,
-      "w": 944,
-      "text": "Legend: arrows = comparison against shared cases. No general semantic-equivalence guarantee.",
-      "size": 16
-    }
+  "title": "Compare workflow patterns across representations",
+  "description": "A historical prototype mapped selected PlanDefinition source patterns to BPMN and a workflow drawing for review. Four rows pair BPMN diagrams for sequence flow, parallel split and join, exclusive split and merge, and timed start with the constructs used by the PlanDefinition examples. Compare behavior using the same reviewed cases and verify runtime support.",
+  "svgSource": "svg/cpg-method-formalisms.svg",
+  "originals": [
+    "transformation-process.png",
+    "process-pattern-sequenceFlow.png",
+    "process-pattern-parallelSplit.png",
+    "process-pattern-exclusiveSplit.png",
+    "process-pattern-timedStart.png"
   ]
 }

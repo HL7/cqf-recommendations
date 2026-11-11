@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 832" role="img" aria-labelledby="title description">
+  <!-- Sources: CPG-12-00.png supplies the three timeline lanes; CPG-12-01.png supplies the conceptual boundaries; CPG-Main-Case.png and CPG-Main-Plan.png supply the symbol and color conventions. -->
+  <title id="title">Case, Plan and Workflow over time</title>
+  <desc id="description">The orange Plan lane includes a reusable pathway, strategies, recommendations, and a workflow definition describing activities and coordination. A dashed connection marks local implementation of that workflow definition, with roles, triggers, and services bound locally. The blue lane separates local workflow from its patient proposals, authorized requests, and documented events. The green Case lane shows recorded and derived patient facts, including events reused as case features. Positions illustrate relative timing.</desc>
+  <defs>
+    <marker id="time-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4 0 8Z" fill="#586773"/>
+    </marker>
+    <marker id="case-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4 0 8Z" fill="#246542"/>
+    </marker>
+    <marker id="implementation-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4 0 8Z" fill="#a45c23"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="832" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+    <g id="heading">
+      <text x="36" y="43" font-size="30" font-weight="700">Case, Plan and Workflow over time</text>
+      <text x="36" y="74" font-size="21">Reusable guidance, patient care records, and the patient facts that inform evaluation</text>
+    </g>
+
+    <g id="reusable-plan">
+      <rect x="36" y="102" width="1128" height="272" rx="10" fill="#fff0d8" stroke="#e5bd87"/>
+      <path d="M266 103V373" stroke="#e5bd87"/>
+      <path d="M412 103V373M542 103V373M672 103V373M802 103V373M932 103V373M1062 103V373" stroke="#f2dbb6"/>
+      <g id="plan-legend" fill="#733c16">
+        <text x="55" y="139" font-size="25" font-weight="700">Plan</text>
+        <text x="55" y="167" font-size="18">Reusable pathway</text>
+        <rect x="57" y="187" width="22" height="19" rx="3" fill="#a54d19"/>
+        <text x="91" y="203" font-size="18">Strategy</text>
+        <rect x="59" y="219" width="18" height="18" rx="3" fill="#fff0d8" stroke="#a54d19" stroke-width="2"/>
+        <text x="91" y="234" font-size="18">Recommendation</text>
+        <rect x="57" y="270" width="22" height="19" rx="3" fill="#f6cd8c" stroke="#a45c23"/>
+        <text x="91" y="286" font-size="18">Workflow definition</text>
+      </g>
+      <g id="pathway-strategies" font-size="20" font-weight="700">
+        <rect x="285" y="120" width="129" height="137" rx="7" fill="#a54d19"/>
+        <text x="301" y="152" fill="#fff">Strategy A</text>
+        <path d="M438 120H1137V257H1115V169H947V257H925V169H723V257H701V169H460V257H438Z" fill="#a54d19"/>
+        <text x="455" y="152" fill="#fff">Strategy B · periodic</text>
+        <path d="M562 184H1046V257H1022V221H815V257H791V221H586V257H562Z" fill="#e99a3c"/>
+        <text x="579" y="209" fill="#4b280d">Strategy C · conditional</text>
+        <g id="recommendation-symbols" fill="#fff1d4" stroke="#783d16" stroke-width="1.5">
+          <rect x="302" y="233" width="18" height="18" rx="3"/>
+          <rect x="328" y="233" width="18" height="18" rx="3"/>
+          <rect x="354" y="233" width="18" height="18" rx="3"/>
+          <rect x="440" y="233" width="18" height="18" rx="3"/>
+          <rect x="565" y="233" width="18" height="18" rx="3"/>
+          <rect x="703" y="233" width="18" height="18" rx="3"/>
+          <rect x="794" y="233" width="18" height="18" rx="3"/>
+          <rect x="927" y="233" width="18" height="18" rx="3"/>
+          <rect x="1025" y="233" width="18" height="18" rx="3"/>
+          <rect x="1117" y="233" width="18" height="18" rx="3"/>
+        </g>
+      </g>
+      <g id="reusable-workflow-definition" fill="#572e0f">
+        <rect x="285" y="276" width="852" height="80" rx="7" fill="#f6cd8c" stroke="#a45c23" stroke-width="1.5"/>
+        <text x="302" y="307" font-size="22" font-weight="700">Workflow definition</text>
+        <text x="302" y="337" font-size="20">Defines activities, participants, inputs, outputs, and action relationships</text>
+      </g>
+    </g>
+
+    <g id="patient-care-plan" transform="translate(0 122)">
+      <rect x="36" y="288" width="1128" height="185" rx="10" fill="#e0f3f9" stroke="#94c9dc"/>
+      <path d="M266 289V472" stroke="#94c9dc"/>
+      <path d="M412 289V472M542 289V472M672 289V472M802 289V472M932 289V472M1062 289V472" stroke="#c7e6f0"/>
+      <g id="care-plan-legend" fill="#115574">
+        <text x="55" y="324" font-size="25" font-weight="700">Patient care plan</text>
+        <path d="M68 339l10 10-10 10-10-10Z" fill="#d5f3fe" stroke="#14759c" stroke-width="2"/>
+        <text x="91" y="355" font-size="18">Proposal</text>
+        <circle cx="68" cy="379" r="9" fill="#e0f3f9" stroke="#14759c" stroke-width="2"/>
+        <path d="M64 379l3 3 6-8" fill="none" stroke="#14759c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="91" y="385" font-size="18">Authorized request</text>
+        <circle cx="68" cy="409" r="9" fill="#14759c"/>
+        <text x="91" y="415" font-size="18">Documented event</text>
+      </g>
+      <g id="local-workflow" fill="#115574">
+        <g id="local-workflow-coordination">
+          <rect x="285" y="304" width="852" height="55" rx="6" fill="#c7e6f0" stroke="#68abc3"/>
+          <text x="302" y="327" font-size="21" font-weight="700">Local workflow</text>
+          <text x="302" y="348" font-size="19">Reviews proposals · authorizes requests · documents care</text>
+        </g>
+        <path d="M328 384H589M699 440H1047" stroke="#247b9c" stroke-width="2"/>
+        <g id="patient-proposals" fill="#d5f3fe" stroke="#14759c" stroke-width="2.5">
+          <path d="M328 371l13 13-13 13-13-13Z"/>
+          <path d="M699 427l13 13-13 13-13-13Z"/>
+        </g>
+        <g id="patient-requests" fill="#e0f3f9" stroke="#14759c" stroke-width="2.5">
+          <circle cx="451" cy="384" r="11"/>
+          <circle cx="831" cy="440" r="11"/>
+          <path d="M446 384l4 4 7-9M826 440l4 4 7-9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g id="patient-events" fill="#14759c">
+          <circle cx="589" cy="384" r="11"/>
+          <rect x="1008" y="429" width="78" height="22" rx="11"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="workflow-local-implementation">
+      <path d="M1105 356V424" fill="none" stroke="#a45c23" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#implementation-arrow)"/>
+      <text x="1090" y="399" text-anchor="end" font-size="19" fill="#733c16">Local implementation: bind roles, triggers, and services</text>
+    </g>
+
+    <g id="patient-case" transform="translate(0 144)">
+      <rect x="36" y="461" width="1128" height="130" rx="10" fill="#e4f4e9" stroke="#a3ccb2"/>
+      <path d="M266 462V590" stroke="#a3ccb2"/>
+      <path d="M412 462V590M542 462V590M672 462V590M802 462V590M932 462V590M1062 462V590" stroke="#cde6d6"/>
+      <g id="case-legend" fill="#205d3c">
+        <text x="55" y="496" font-size="25" font-weight="700">Case</text>
+        <circle cx="68" cy="522" r="8" fill="#2d8050"/>
+        <text x="91" y="528" font-size="18">Recorded feature</text>
+        <circle cx="68" cy="554" r="8" fill="#e4f4e9" stroke="#2d8050" stroke-width="2"/>
+        <text x="91" y="560" font-size="18">Derived feature</text>
+      </g>
+      <g id="patient-features">
+        <text x="286" y="496" font-size="21" font-weight="700" fill="#205d3c">Patient facts used in evaluation</text>
+        <g fill="#2d8050">
+          <circle cx="306" cy="528" r="9"/>
+          <circle cx="328" cy="555" r="9"/>
+          <circle cx="357" cy="528" r="9"/>
+          <circle cx="581" cy="550" r="9"/>
+          <circle cx="703" cy="522" r="9"/>
+          <circle cx="839" cy="545" r="9"/>
+        </g>
+        <g fill="#e4f4e9" stroke="#2d8050" stroke-width="2">
+          <circle cx="402" cy="555" r="9"/>
+          <circle cx="487" cy="527" r="9"/>
+          <circle cx="745" cy="555" r="9"/>
+        </g>
+        <path id="event-as-case-feature-link" d="M1047 428V507" fill="none" stroke="#246542" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#case-arrow)"/>
+        <rect x="1008" y="517" width="78" height="28" rx="14" fill="#e4f4e9" stroke="#2d8050" stroke-width="2"/>
+        <rect x="1013" y="522" width="68" height="18" rx="9" fill="#14759c"/>
+        <text x="989" y="574" text-anchor="middle" font-size="18" fill="#205d3c">Event reused as a case feature</text>
+      </g>
+    </g>
+
+    <g id="relative-time" transform="translate(0 144)">
+      <text x="55" y="625" font-size="19" font-weight="700">Relative time</text>
+      <path d="M266 619H1148" fill="none" stroke="#586773" stroke-width="2" marker-end="url(#time-arrow)"/>
+      <text x="55" y="660" font-size="19">Positions show illustrative timing. Moving from proposal to request requires the applicable local authorization.</text>
+    </g>
+  </g>
+</svg>

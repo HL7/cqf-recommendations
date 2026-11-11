@@ -1,31 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="title description">
-<title id="title">Collect information and reevaluate</title><desc id="description">Current data feeds CPG apply. The user reviews proposals and questions. Changed answers are extracted and reconciled into updated context for reevaluation; selected proposals enter the action workflow.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
-<rect width="100%" height="100%" fill="#fff"/>
-<g font-family="Arial, Helvetica, sans-serif">
-<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Collect information and reevaluate</tspan></text>
-<polyline points="300,180.0 365,180.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="635,180.0 700,180.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="835.0,250 835.0,350" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="835.0,250 835,290 500,290 500.0,350" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="535.0" y="265" width="130" height="23" fill="#fff"/>
-<text x="600" y="282" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="600" dy="0">answers changed</tspan></text>
-<polyline points="365,415.0 165,415 165.0,250" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="30" y="110" width="270" height="140" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Patient context</tspan></text>
-<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Available data and</tspan><tspan x="165.0" dy="21.6">parameters</tspan></text>
-<rect x="365" y="110" width="270" height="140" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
-<text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Evaluate and prepare</tspan></text>
-<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">CPG $apply / $questionnaire</tspan><tspan x="500.0" dy="21.6">SDC $populate</tspan></text>
-<rect x="700" y="110" width="270" height="140" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Review and confirm</tspan></text>
-<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Questions, answers,</tspan><tspan x="835.0" dy="21.6">proposals</tspan></text>
-<rect x="365" y="350" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="500.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Extract and reconcile</tspan></text>
-<text x="500.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Validate changed answers</tspan></text>
-<rect x="700" y="350" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
-<text x="835.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Selected proposals</tspan></text>
-<text x="835.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Continue the action</tspan><tspan x="835.0" dy="21.6">workflow</tspan></text>
-<text x="28" y="525" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Changed answers return through extraction and context reconciliation before reevaluation.</tspan></text>
-<text x="28" y="552" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Generation, extraction, persistence, and clinical action remain separate responsibilities.</tspan></text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="706" viewBox="0 0 1200 706" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">Collect information and reevaluate guidance</title>
+  <desc id="desc">Patient context feeds questionnaire preparation and CPG PlanDefinition apply in parallel. The application shows questions, answers, and proposals. Changed answers go through SDC extraction, validation, and reconciliation before reevaluation. The receiving workflow handles any selected proposals.</desc>
+  <!-- Original source: input/images/interactive-cds.png. The original fork, join, and decision are retained. The apply result and extraction checks follow the current CPG operation and interactive CDS guidance. -->
+  <defs>
+    <marker id="flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#28567e"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="706" fill="#fff"/>
+  <text x="600" y="48" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Collect information and reevaluate guidance</text>
+
+  <g id="application-flow" stroke="#28567e" stroke-width="3" stroke-linejoin="round" fill="none">
+    <path d="M 205 280 H 220" marker-end="url(#flow-arrow)"/>
+    <path d="M 280 280 H 302 V 186 H 325" marker-end="url(#flow-arrow)"/>
+    <path d="M 302 280 V 385 H 325" marker-end="url(#flow-arrow)"/>
+    <path d="M 732 186 H 752 V 280 H 771" marker-end="url(#flow-arrow)"/>
+    <path d="M 732 385 H 752 V 280"/>
+    <path d="M 832 280 H 847" marker-end="url(#flow-arrow)"/>
+    <path d="M 1008 339 V 380" marker-end="url(#flow-arrow)"/>
+    <path d="M 912 446 H 805 V 552 H 744" marker-end="url(#flow-arrow)"/>
+    <path d="M 545 552 H 513" marker-end="url(#flow-arrow)"/>
+    <path d="M 314 552 H 250 V 312" marker-end="url(#flow-arrow)"/>
+    <path d="M 1008 511 V 548" marker-end="url(#flow-arrow)"/>
+  </g>
+
+  <g id="patient-context" text-anchor="middle" fill="#18354d">
+    <path d="M 27 243 H 153 V 224 L 205 280 L 153 336 V 317 H 27 Z" fill="#edf5fb" stroke="#28567e" stroke-width="2"/>
+    <text x="106" y="274" font-size="20" font-weight="700">Patient context</text>
+    <text x="106" y="300" font-size="18">From the workflow</text>
+  </g>
+
+  <g id="parallel-fork" stroke="#28567e" stroke-width="2" stroke-linejoin="round">
+    <path d="M 250 250 L 280 280 L 250 310 L 220 280 Z" fill="#fff"/>
+    <path d="M 239 280 H 261 M 250 269 V 291" fill="none" stroke-width="4"/>
+  </g>
+
+  <g id="questionnaire-preparation" fill="#18354d" text-anchor="middle">
+    <rect x="328" y="93" width="404" height="160" rx="14" fill="#fff" stroke="#698eab" stroke-width="2"/>
+    <text x="530" y="125" font-size="22" font-weight="700">Prepare a QuestionnaireResponse</text>
+    <g id="cpg-questionnaire-generation">
+      <rect x="346" y="139" width="169" height="93" rx="10" fill="#f3f8fc" stroke="#698eab" stroke-width="2"/>
+      <text x="430" y="162" font-size="18" font-weight="700"><tspan x="430">CPG</tspan><tspan x="430" dy="22">$questionnaire</tspan></text>
+      <text x="430" y="211" font-size="18">From case features</text>
+    </g>
+    <path d="M 515 186 H 545" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#flow-arrow)"/>
+    <g id="sdc-questionnaire-population">
+      <rect x="547" y="139" width="167" height="93" rx="10" fill="#f3f8fc" stroke="#698eab" stroke-width="2"/>
+      <text x="630" y="175" font-size="18" font-weight="700">SDC $populate</text>
+      <text x="630" y="203" font-size="18">Use available data</text>
+    </g>
+  </g>
+
+  <g id="cpg-plan-evaluation" fill="#18354d" text-anchor="middle">
+    <rect x="328" y="322" width="404" height="128" rx="14" fill="#edf5fb" stroke="#698eab" stroke-width="2"/>
+    <text x="530" y="355" font-size="22" font-weight="700">CPG PlanDefinition $apply</text>
+    <text x="530" y="382" font-size="19">Transient Bundle per subject</text>
+    <text x="530" y="408" font-size="18"><tspan x="530">May include CarePlan, RequestGroup,</tspan><tspan x="530" dy="22">or individual requests</tspan></text>
+  </g>
+
+  <g id="parallel-join" stroke="#28567e" stroke-width="2" stroke-linejoin="round">
+    <path d="M 802 250 L 832 280 L 802 310 L 772 280 Z" fill="#fff"/>
+    <path d="M 791 280 H 813 M 802 269 V 291" fill="none" stroke-width="4"/>
+  </g>
+
+  <g id="interactive-review" fill="#18354d" text-anchor="middle">
+    <rect x="850" y="220" width="316" height="119" rx="14" fill="#edf5fb" stroke="#28567e" stroke-width="2"/>
+    <text x="1008" y="257" font-size="22" font-weight="700">Review in the application</text>
+    <text x="1008" y="286" font-size="19"><tspan x="1008">Show questions, available answers,</tspan><tspan x="1008" dy="23">and proposed activities</tspan></text>
+  </g>
+
+  <g id="changed-answers-decision" fill="#18354d" font-size="19" font-weight="700">
+    <path d="M 1008 381 L 1104 446 L 1008 511 L 912 446 Z" fill="#fff8e8" stroke="#997038" stroke-width="2" stroke-linejoin="round"/>
+    <text x="1008" y="440" text-anchor="middle"><tspan x="1008">Answers</tspan><tspan x="1008" dy="23">changed?</tspan></text>
+    <text x="856" y="432">Yes</text>
+    <text x="1022" y="536">No</text>
+  </g>
+
+  <g id="extract-changed-answers" fill="#18354d" text-anchor="middle">
+    <rect x="545" y="503" width="197" height="98" rx="12" fill="#edf5fb" stroke="#698eab" stroke-width="2"/>
+    <text x="643" y="535" font-size="20" font-weight="700">SDC $extract</text>
+    <text x="643" y="560" font-size="18"><tspan x="643">Inspect resources</tspan><tspan x="643" dy="22">and messages</tspan></text>
+  </g>
+  <g id="validate-and-reconcile-context" fill="#18354d" text-anchor="middle">
+    <rect x="314" y="503" width="197" height="98" rx="12" fill="#edf5fb" stroke="#698eab" stroke-width="2"/>
+    <text x="412" y="535" font-size="20" font-weight="700">Validate resources</text>
+    <text x="412" y="560" font-size="18"><tspan x="412">Reconcile with</tspan><tspan x="412" dy="22">patient context</tspan></text>
+  </g>
+  <text id="reevaluation-loop" x="232" y="466" text-anchor="end" fill="#18354d" font-size="18"><tspan x="232">Reevaluate with</tspan><tspan x="232" dy="23">updated context</tspan></text>
+
+  <g id="receiving-workflow" fill="#18354d" text-anchor="middle">
+    <rect x="850" y="550" width="316" height="80" rx="12" fill="#edf4e9" stroke="#61836a" stroke-width="2"/>
+    <text x="1008" y="582" font-size="21" font-weight="700">Receiving workflow</text>
+    <text x="1008" y="608" font-size="18">Handle any user-selected proposals</text>
+  </g>
+
+  <g id="persistence-and-action-boundaries" fill="#17304b" text-anchor="middle" font-size="19">
+    <path d="M 28 651 H 1172" fill="none" stroke="#9baebe"/>
+    <text x="600" y="682">Evaluation, data persistence, and clinical authorization are separate responsibilities.</text>
+  </g>
+</svg>

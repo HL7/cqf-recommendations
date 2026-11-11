@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 604" role="img" aria-labelledby="title description">
+  <!-- Sources: CPG-Main-Plan.png and CPG-12-02.png supply the nested amber pathway, orange strategy, and light recommendation shapes. The CPG profiles define the allowed reference targets. -->
+  <title id="title">How pathway definitions organize guidance</title>
+  <desc id="description">A pale orange pathway can reference both strategy and workflow definitions. The dark orange strategy branch groups recommendations, which may reference a computable activity definition or an order set definition. The amber workflow branch describes activities, their relationships, participants, inputs, and outputs. Nested shapes show references among separate reusable definitions, not patient records.</desc>
+  <rect width="1200" height="604" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+    <g id="heading">
+      <text x="36" y="43" font-size="30" font-weight="700">How pathway definitions organize guidance</text>
+      <text x="36" y="74" font-size="21">A pathway can reference both strategies and workflows.</text>
+    </g>
+    <g id="pathway-definition">
+      <rect x="36" y="102" width="1128" height="429" rx="12" fill="#fff0d8" stroke="#c68338" stroke-width="2"/>
+      <text x="60" y="141" font-size="25" font-weight="700" fill="#683510">Pathway definition</text>
+      <text x="60" y="169" font-size="19" fill="#683510">CPGPathwayDefinition · clinical-protocol</text>
+      <text x="1138" y="169" text-anchor="end" font-size="18" fill="#683510">Groups guidance over time</text>
+
+      <g id="strategy-definition">
+        <rect x="60" y="193" width="711" height="311" rx="8" fill="#a54d19"/>
+        <text x="83" y="224" font-size="23" font-weight="700" fill="#fff">Strategy definition</text>
+        <text x="83" y="249" font-size="18" fill="#fff">CPGStrategyDefinition · workflow-definition</text>
+        <g id="recommendation-definitions">
+          <rect x="83" y="266" width="329" height="71" rx="6" fill="#fff0d8" stroke="#6c3615" stroke-width="2"/>
+          <rect x="98" y="282" width="17" height="17" rx="3" fill="#f9dba4" stroke="#824013" stroke-width="1.5"/>
+          <text x="125" y="296" font-size="20" font-weight="700" fill="#683510">Recommendation</text>
+          <text x="397" y="296" text-anchor="end" font-size="17" fill="#683510">eca-rule</text>
+          <text x="99" y="319" font-size="17" fill="#683510">CPGRecommendationDefinition</text>
+          <rect x="433" y="266" width="315" height="71" rx="6" fill="#fff0d8" stroke="#6c3615" stroke-width="2"/>
+          <rect x="450" y="282" width="17" height="17" rx="3" fill="#f9dba4" stroke="#824013" stroke-width="1.5"/>
+          <text x="477" y="296" font-size="20" font-weight="700" fill="#683510">Recommendation</text>
+          <text x="449" y="319" font-size="17" fill="#683510">Other guidance in the same strategy</text>
+        </g>
+
+        <g id="recommendation-action-targets">
+          <path d="M247 337V349" fill="none" stroke="#fff0d8" stroke-width="2"/>
+          <rect x="83" y="349" width="665" height="96" rx="6" fill="#fff7e9" stroke="#6c3615" stroke-width="2"/>
+          <text x="100" y="377" font-size="18" font-weight="700" fill="#683510">A recommendation action can reference either definition</text>
+          <rect x="100" y="390" width="320" height="38" rx="5" fill="#f9e3bc"/>
+          <text x="260" y="414" text-anchor="middle" font-size="17" fill="#522d13">CPGComputableActivityDefinition</text>
+          <text x="440" y="415" text-anchor="middle" font-size="18" fill="#683510">or</text>
+          <rect x="460" y="390" width="272" height="38" rx="5" fill="#f9e3bc"/>
+          <text x="596" y="414" text-anchor="middle" font-size="17" fill="#522d13">CPGOrderSetDefinition</text>
+        </g>
+        <text x="83" y="480" font-size="19" fill="#fff">Groups recommendations for a clinical concern.</text>
+      </g>
+
+      <g id="workflow-definition">
+        <rect x="794" y="193" width="344" height="311" rx="8" fill="#f6cd8c" stroke="#a45c23" stroke-width="1.5"/>
+        <text x="816" y="224" font-size="23" font-weight="700" fill="#572e0f">Workflow definition</text>
+        <text x="816" y="249" font-size="18" fill="#572e0f">CPGWorkflowDefinition</text>
+        <text x="816" y="272" font-size="18" fill="#572e0f">workflow-definition</text>
+        <g id="defined-workflow-actions" fill="#572e0f">
+          <text x="816" y="310" font-size="19" font-weight="700">Activities and relationships</text>
+          <rect x="816" y="329" width="124" height="45" rx="6" fill="#fff7e9" stroke="#a45c23"/>
+          <rect x="992" y="329" width="124" height="45" rx="6" fill="#fff7e9" stroke="#a45c23"/>
+          <path d="M940 351H992" fill="none" stroke="#a45c23" stroke-width="2"/>
+          <text x="878" y="358" text-anchor="middle" font-size="19">Action</text>
+          <text x="1054" y="358" text-anchor="middle" font-size="19">Action</text>
+          <text x="816" y="411" font-size="19">Participants and capabilities</text>
+          <text x="816" y="439" font-size="19">Inputs and outputs</text>
+          <text x="816" y="480" font-size="17">Action references: canonical or URI</text>
+        </g>
+      </g>
+    </g>
+    <g id="reference-key">
+      <text x="36" y="570" font-size="19">Nested shapes show references among separate definitions. Local implementation puts this guidance into practice.</text>
+    </g>
+  </g>
+</svg>

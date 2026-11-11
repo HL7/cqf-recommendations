@@ -46,4 +46,4 @@ The guideline can propose an activity. Agreement, authorization, and fulfillment
 
 ### Apply the example
 
-Identify the actor, inputs, outputs, and system of record for each activity used locally. Check where the pathway resumes when results arrive or the patient's state changes. The [workflow and common-pathway topic](documentation-approach-12-06-cpg-common-pathway.html) explains the modeling boundaries, and the [Common Processes code system](CodeSystem-cpg-common-process-cs.html) provides the process vocabulary used by this guide.
+Identify the actor, inputs, outputs, and system of record for each activity used locally. Check where the pathway resumes when results arrive or the patient's state changes. The [workflow and common-pathway topic](approach-implementation.html#patient-flow) explains the modeling boundaries, and the [Common Processes code system](CodeSystem-cpg-common-process-cs.html) provides the process vocabulary used by this guide.

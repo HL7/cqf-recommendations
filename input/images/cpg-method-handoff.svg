@@ -1,25 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="615" viewBox="0 0 1000 615" role="img" aria-labelledby="title description">
-<title id="title">Review the handoffs, keep the responsibilities</title><desc id="description">A simplified conceptual handoff connects clinical authors, knowledge engineers, and local implementors. Findings return to the responsible reviewers; this is not a reproduction of the published twelve-phase integrated process.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
-<rect width="100%" height="100%" fill="#fff"/>
-<g font-family="Arial, Helvetica, sans-serif">
-<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Review the handoffs, keep the responsibilities</tspan></text>
-<polyline points="320,190.0 357,190.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="642,190.0 679,190.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="821.5,275 821.5,330 870,330 870,430 820,430.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="180,430.0 100,430 100,325 177.5,325 177.5,275" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
-<rect x="35" y="105" width="285" height="170" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="177.5" y="133" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="177.5" dy="0">Clinical authors</tspan></text>
-<text x="177.5" y="166.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="177.5" dy="0">Source, scope, evidence,</tspan><tspan x="177.5" dy="21.6">recommendation and examples</tspan></text>
-<rect x="357" y="105" width="285" height="170" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
-<text x="499.5" y="133" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="499.5" dy="0">Knowledge engineers</tspan></text>
-<text x="499.5" y="166.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="499.5" dy="0">Explicit concepts, decisions,</tspan><tspan x="499.5" dy="21.6">artifacts and tests</tspan></text>
-<rect x="679" y="105" width="285" height="170" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="821.5" y="133" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="821.5" dy="0">Local implementors</tspan></text>
-<text x="821.5" y="166.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="821.5" dy="0">Data, workflow, capabilities</tspan><tspan x="821.5" dy="21.6">and evaluation</tspan></text>
-<rect x="180" y="370" width="640" height="120" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
-<text x="500.0" y="398" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Reviewed feedback</tspan></text>
-<text x="500.0" y="431.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Resolve findings with the clinical, artifact, or local owner; revise</tspan><tspan x="500.0" dy="21.6">linked products.</tspan></text>
-<text x="28" y="535" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Conceptual summary informed by the integrated process (Matson-Koffman et al., 2023).</tspan></text>
-<text x="28" y="575" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Legend: solid arrows = work-product handoffs; dashed arrow = reviewed revisions.</tspan></text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">Co-development of clinical and computable guidelines</title>
+  <desc id="desc">Four phases run clockwise around a user-centered process. The outer green ring contains twelve clinical guideline activities, the blue ring contains related informatics activities, and the gray ring represents evaluation. Findings return to accountable reviewers.</desc>
+  <!-- Original source: input/images/CPG-04.05-01.png, based on Matson-Koffman et al. (2023). Activities are grouped and shortened for this guide. -->
+  <defs>
+    <marker id="cycle-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#376745"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="1040" fill="#fff"/>
+  <text x="600" y="45" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Co-development of clinical and computable guidelines</text>
+
+  <g id="concentric-activity-bands" stroke-width="2">
+    <circle cx="600" cy="500" r="414" fill="#e4eed8" stroke="#89a77b"/>
+    <circle cx="600" cy="500" r="266" fill="#dbe6f3" stroke="#7d9bbc"/>
+    <circle cx="600" cy="500" r="151" fill="#ebedef" stroke="#a2aab2"/>
+    <path d="M 600 86 V 427 M 600 573 V 914 M 186 500 H 527 M 673 500 H 1014" fill="none" stroke="#718092"/>
+    <path d="M 733 270 L 807 141 M 830 367 L 959 293 M 830 633 L 959 707 M 733 730 L 807 859 M 467 730 L 393 859 M 370 633 L 241 707 M 370 367 L 241 293 M 467 270 L 393 141" fill="none" stroke="#8ba484" stroke-dasharray="6 6"/>
+  </g>
+
+  <g id="clockwise-phase-direction" fill="none" stroke="#376745" stroke-width="4" marker-end="url(#cycle-arrow)">
+    <path d="M 543 76 A 428 428 0 0 1 656 76"/>
+    <path d="M 1024 443 A 428 428 0 0 1 1024 556"/>
+    <path d="M 657 924 A 428 428 0 0 1 544 924"/>
+    <path d="M 176 557 A 428 428 0 0 1 176 444"/>
+  </g>
+
+  <g id="phase-labels" fill="#24486d" font-size="22" font-weight="700">
+    <text x="1168" y="130" text-anchor="end"><tspan x="1168">Concept and</tspan><tspan x="1168" dy="26">planning</tspan></text>
+    <text x="1168" y="841" text-anchor="end"><tspan x="1168">Narrative and</tspan><tspan x="1168" dy="26">semi-structured</tspan><tspan x="1168" dy="26">development</tspan></text>
+    <text x="32" y="841"><tspan x="32">Structured</tspan><tspan x="32" dy="26">development</tspan></text>
+    <text x="32" y="130"><tspan x="32">Executable</tspan><tspan x="32" dy="26">implementation</tspan></text>
+  </g>
+
+  <g id="clinical-guideline-activities" fill="#24432a" font-size="20" font-weight="700" text-anchor="middle">
+    <g id="clinical-concept-and-planning">
+      <text x="688" y="160"><tspan x="688">1. Define the</tspan><tspan x="688" dy="23">clinical question</tspan></text>
+      <text x="839" y="252"><tspan x="839">2. Convene the</tspan><tspan x="839" dy="23">steering group</tspan></text>
+      <text x="925" y="402"><tspan x="925">3. Form the</tspan><tspan x="925" dy="23">review team</tspan></text>
+    </g>
+    <g id="clinical-narrative-development">
+      <text x="925" y="578"><tspan x="925">4. Scope the</tspan><tspan x="925" dy="23">guideline</tspan></text>
+      <text x="839" y="727"><tspan x="839">5. Synthesize</tspan><tspan x="839" dy="23">evidence</tspan></text>
+      <text x="688" y="819"><tspan x="688">6. Form</tspan><tspan x="688" dy="23">recommendations</tspan></text>
+    </g>
+    <g id="clinical-structured-development">
+      <text x="512" y="819"><tspan x="512">7. Draft the</tspan><tspan x="512" dy="23">guideline</tspan></text>
+      <text x="361" y="727"><tspan x="361">8. Peer and</tspan><tspan x="361" dy="23">public review</tspan></text>
+      <text x="270" y="578"><tspan x="270">9. Publish and</tspan><tspan x="270" dy="23">disseminate</tspan></text>
+    </g>
+    <g id="clinical-executable-implementation">
+      <text x="275" y="402"><tspan x="275">10. Implement</tspan><tspan x="275" dy="23">in care</tspan></text>
+      <text x="361" y="252"><tspan x="361">11. Measure</tspan><tspan x="361" dy="23">and improve</tspan></text>
+      <text x="512" y="160"><tspan x="512">12. Update</tspan><tspan x="512" dy="23">or retire</tspan></text>
+    </g>
+  </g>
+
+  <g id="informatics-activities" fill="#213f60" font-size="20" text-anchor="middle">
+    <text x="725" y="336"><tspan x="725">Collect evidence</tspan><tspan x="742" dy="23">Form team</tspan><tspan x="752" dy="23">Set up tools</tspan></text>
+    <text x="749" y="617"><tspan x="749">Formalize</tspan><tspan x="749" dy="23">concepts</tspan><tspan x="736" dy="23">Logic and tests</tspan></text>
+    <text x="451" y="617"><tspan x="451">Finalize</tspan><tspan x="451" dy="23">artifacts</tspan><tspan x="465" dy="23">Release content</tspan></text>
+    <text x="461" y="336"><tspan x="461">Integrate and</tspan><tspan x="457" dy="23">validate CDS</tspan><tspan x="447" dy="23">Use measures</tspan></text>
+  </g>
+
+  <g id="evaluation-activities" fill="#3e4853" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="670" y="424">Process</text>
+    <text x="669" y="584"><tspan x="669">Process and</tspan><tspan x="669" dy="20">product</tspan></text>
+    <text x="531" y="584"><tspan x="531">Process and</tspan><tspan x="531" dy="20">product</tspan></text>
+    <text x="532" y="406"><tspan x="532">Product and</tspan><tspan x="532" dy="21">outcomes</tspan></text>
+  </g>
+
+  <g id="users-at-the-center" text-anchor="middle" fill="#59331a">
+    <circle cx="600" cy="500" r="72" fill="#ffdab9" stroke="#bf7c47" stroke-width="2"/>
+    <text x="600" y="493" font-size="25" font-weight="700">Users</text>
+    <text x="600" y="518" font-size="18"><tspan x="600">Human-centered</tspan><tspan x="600" dy="20">design</tspan></text>
+  </g>
+
+  <g id="legend-and-review" fill="#233747" font-size="18">
+    <rect x="245" y="955" width="22" height="18" fill="#e4eed8" stroke="#89a77b"/>
+    <text x="276" y="970">Guideline development</text>
+    <rect x="523" y="955" width="22" height="18" fill="#dbe6f3" stroke="#7d9bbc"/>
+    <text x="554" y="970">Informatics activities</text>
+    <rect x="797" y="955" width="22" height="18" fill="#ebedef" stroke="#a2aab2"/>
+    <text x="828" y="970">Evaluation</text>
+    <text x="600" y="1010" text-anchor="middle">Review findings with the responsible teams and revise affected work products.</text>
+  </g>
+</svg>

@@ -2,6 +2,10 @@
 
 BPM+ provides optional ways to model decisions and processes alongside FHIR/CQL. BPMN describes process flow, DMN describes decisions, and CMMN describes case-management behavior. A diagram can support L2 clinical review; an executable model may support L3/L4 processing only in an environment implementing its semantics.
 
+Use this reference when an authoring project already uses these formalisms or needs to compare a model with FHIR/CQL artifacts. The [Represent](methodology-represent.html) and [Translate](methodology-translate.html) steps describe the shared work regardless of the modeling tool.
+
+**Patterns on this page:** [Sequence](#sequence-flow) · [Parallel split](#parallel-split) · [Exclusive split](#exclusive-split) · [Timed start](#timed-start).
+
 These correspondences are useful starting points, not equivalence guarantees:
 
 | Clinical modeling concern | Possible BPM+ model | FHIR/CQL target to consider |
@@ -11,7 +15,7 @@ These correspondences are useful starting points, not equivalence guarantees:
 | Pathway/process organization | BPMN or CMMN | CPGPathwayDefinition and referenced definitions |
 {:.grid}
 
-The target definition profiles are PlanDefinition profiles. A patient-specific CPGStrategy is a RequestGroup, and a clinical case is not automatically a CMMN execution instance. Use [CPG plans](documentation-approach-12-03-cpg-plan.html) and [activity flow](activityflow.html) for the formal resource distinctions.
+The target definition profiles are PlanDefinition profiles. A patient-specific CPGStrategy is a RequestGroup, and a clinical case is not automatically a CMMN execution instance. Use [CPG plans](approach-model.html#plan) and [activity flow](activityflow.html) for the formal resource distinctions.
 
 ### BPMN and FHIR
 
@@ -19,8 +23,10 @@ The examples below come from exploratory workflow-pattern mapping work by FH Hag
 
 ### Workflow Pattern Transformations
 
+The retained prototype illustrates a transformation from a PlanDefinition into a BPMN model and graphical representation. The paired patterns below help reviewers inspect which relationships each representation expresses.
+
 <div style="clear: both;">
-  <img src="cpg-method-formalisms.svg" alt="Optional BPMN, DMN, or CMMN models and FHIR/CQL artifacts are compared against the same reviewed clinical cases." class="img-responsive center-block" width="1000"/>
+  <img src="cpg-method-formalisms.svg" alt="A historical transformation starts with PlanDefinition and produces a BPMN representation for review. Paired sequence, parallel split, exclusive split, and timed start patterns show the relationships to inspect." class="img-responsive center-block" width="1000"/>
 </div>
 
 
@@ -74,4 +80,6 @@ A timed start adds a scheduling condition. The retained FHIR example uses `actio
 
 {% highlight xml %}{% include process-patterns/plandefinition-timedStart.xml %}{% endhighlight %}
 
-For a historical use of DMN/CMMN during knowledge engineering, see the [COVID-19 case study](methodology-case-study.html). Validate any transformation through the [execution and validation tracks](documentation-approach-05-04-knowledge-execution-and-validation.html).
+For a historical use of DMN/CMMN during knowledge engineering, see the [COVID-19 case study](methodology-case-study.html). Validate any transformation through the [execution and validation tracks](approach-development.html#validation).
+
+{% include chapter-navigation.html section="Methodology" overview="methodology.html" %}

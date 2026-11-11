@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 789" role="img" aria-labelledby="title description">
+  <!-- Sources: image14.png and image2.png supply the role lanes and handoffs; image3.png supplies the decision-flow sketch; image1.png the class hierarchy; image12.png the DMN/CMMN and concept review; image25.png the CMMN stage sketch; image31.png the model-to-artifact mapping; image29.png the case-to-test pairing. -->
+  <title id="title">Work products from the historical 2020 case study</title>
+  <desc id="description">The 2020 emergency-department COVID-19 project used four roles to develop and review work products. Clinical authors drafted and revised the narrative. Subject-matter engineers made concepts and decisions explicit and turned case presentations into examples. Terminology specialists defined classes and codes. Technical engineers explored DMN decisions and CMMN stages, candidate FHIR and CQL artifacts, and case-based checks. Review findings went back to the clinical authors.</desc>
+  <defs>
+    <marker id="handoff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#52697d"/>
+    </marker>
+    <marker id="case-input" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#674986"/>
+    </marker>
+    <marker id="review" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#9b5d23"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="789" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+    <g id="heading">
+      <text x="36" y="44" font-size="30" font-weight="700">Work products from the historical 2020 case study</text>
+      <text x="36" y="75" font-size="21">COVID-19 emergency-department guideline development and review</text>
+    </g>
+    <g id="role-lanes">
+      <rect x="36" y="103" width="1128" height="104" rx="8" fill="#eef4fb" stroke="#9eb4cc" stroke-width="1.5"/>
+      <rect x="36" y="227" width="1128" height="130" rx="8" fill="#eef4fb" stroke="#9eb4cc" stroke-width="1.5"/>
+      <rect x="36" y="377" width="1128" height="106" rx="8" fill="#eaf5f1" stroke="#92b8ac" stroke-width="1.5"/>
+      <rect x="36" y="503" width="1128" height="220" rx="8" fill="#f7f6fb" stroke="#a899ba" stroke-width="1.5"/>
+      <path d="M237 103V207M237 227V357M237 377V483M237 503V723" fill="none" stroke="#a3b2bf" stroke-width="1.5"/>
+      <g font-size="20" font-weight="700">
+        <text x="54" y="144">Clinical authors</text>
+        <text x="54" y="258"><tspan x="54">Subject-matter</tspan><tspan x="54" dy="23">knowledge</tspan><tspan x="54" dy="23">engineers</tspan></text>
+        <text x="54" y="411"><tspan x="54">Terminology</tspan><tspan x="54" dy="24">and ontology</tspan></text>
+        <text x="54" y="552"><tspan x="54">Technical</tspan><tspan x="54" dy="23">knowledge</tspan><tspan x="54" dy="23">engineers</tspan></text>
+      </g>
+      <g font-size="18">
+        <text x="54" y="172">Scope and clarify</text>
+        <text x="54" y="334">Specify decisions</text>
+        <text x="54" y="461">Define concepts</text>
+        <text x="54" y="628">Model and test</text>
+      </g>
+    </g>
+    <g id="handoff-connectors" fill="none" stroke="#52697d" stroke-width="2.3" stroke-linejoin="round">
+      <path d="M397 189V244" marker-end="url(#handoff)"/>
+      <path d="M397 338V389" marker-end="url(#handoff)"/>
+      <path d="M532 289H558" marker-end="url(#handoff)"/>
+      <path d="M352 469V542" marker-end="url(#handoff)"/>
+      <path d="M466 610H446" marker-end="url(#handoff)"/>
+      <path d="M352 684V704H782V687" marker-end="url(#handoff)"/>
+      <path d="M564 684V704"/>
+      <path d="M881 614H910" marker-end="url(#handoff)"/>
+    </g>
+    <g id="cases-to-tests">
+      <path d="M1108 290H1127V532H1014V542" fill="none" stroke="#674986" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#case-input)"/>
+    </g>
+    <g id="review-feedback">
+      <path d="M1108 614H1145V156H1111" fill="none" stroke="#9b5d23" stroke-width="2.5" stroke-dasharray="6 5" stroke-linejoin="round" marker-end="url(#review)"/>
+      <text x="585" y="148" font-size="20" font-weight="700" fill="#743c12">Cross-functional review</text>
+      <text x="585" y="174" font-size="18" fill="#743c12">Return open questions to authors</text>
+    </g>
+    <g id="clinical-work-products">
+      <g id="narrative-draft">
+        <path d="M260 121H510L530 141V189H260Z" fill="#fff" stroke="#6384a8" stroke-width="1.7"/>
+        <path d="M510 121V141H530" fill="none" stroke="#6384a8" stroke-width="1.7"/>
+        <text x="278" y="150" font-size="20" font-weight="700">Draft narrative</text>
+        <text x="278" y="176" font-size="18">Rapid review and ED scope</text>
+      </g>
+      <g id="revised-guidance">
+        <path d="M860 121H1088L1108 141V189H860Z" fill="#fff" stroke="#6384a8" stroke-width="1.7"/>
+        <path d="M1088 121V141H1108" fill="none" stroke="#6384a8" stroke-width="1.7"/>
+        <text x="878" y="150" font-size="20" font-weight="700">Revised narrative</text>
+        <text x="878" y="176" font-size="18">Clinical clarifications</text>
+      </g>
+    </g>
+    <g id="specification-work-products">
+      <g id="structured-template">
+        <rect x="260" y="246" width="272" height="92" rx="7" fill="#fff" stroke="#6384a8" stroke-width="1.7"/>
+        <g transform="translate(273 263)" fill="none" stroke="#345c84" stroke-width="1.6">
+          <rect width="30" height="42" rx="3"/>
+          <path d="M0 12H30M0 22H30M0 32H30M12 12V42"/>
+        </g>
+        <text x="314" y="272" font-size="20" font-weight="700">Structured template</text>
+        <text x="314" y="298" font-size="18">Recommendation, data</text>
+        <text x="314" y="320" font-size="18">dictionary, and logic</text>
+      </g>
+      <g id="decision-flow">
+        <rect x="560" y="246" width="251" height="92" rx="7" fill="#fff" stroke="#6384a8" stroke-width="1.7"/>
+        <g transform="translate(574 264)" fill="#eaf2fa" stroke="#345c84" stroke-width="1.6">
+          <path d="M16 0L31 13L16 26L1 13Z"/>
+          <path d="M16 26V35M7 35H25" fill="none"/>
+          <rect x="1" y="36" width="11" height="10" rx="1"/>
+          <rect x="20" y="36" width="11" height="10" rx="1"/>
+        </g>
+        <text x="615" y="272" font-size="20" font-weight="700">Decision flow</text>
+        <text x="615" y="298" font-size="18">Data, decisions, and</text>
+        <text x="615" y="320" font-size="18">possible interventions</text>
+      </g>
+      <g id="case-presentations">
+        <rect x="837" y="246" width="271" height="92" rx="7" fill="#fff" stroke="#9578b0" stroke-width="1.7"/>
+        <g transform="translate(850 262)" fill="none" stroke="#674986" stroke-width="1.6">
+          <path d="M5 0H24L33 9V44H5Z M24 0V9H33 M11 17H27 M11 24H27 M11 31H27"/>
+          <path d="M0 6V49H29"/>
+        </g>
+        <text x="893" y="272" font-size="20" font-weight="700" fill="#674986">Case presentations</text>
+        <text x="893" y="298" font-size="18">Sample patient inputs</text>
+        <text x="893" y="320" font-size="18">and expected results</text>
+      </g>
+    </g>
+    <g id="terminology-work-products">
+      <g id="clinical-class-hierarchy">
+        <rect x="260" y="391" width="558" height="78" rx="7" fill="#fff" stroke="#548d7e" stroke-width="1.7"/>
+        <text x="275" y="424" font-size="20" font-weight="700" fill="#286e5d">Health care process</text>
+        <text x="275" y="449" font-size="18">Ontology class</text>
+        <path d="M465 430H478V412H492M478 430V447H492" fill="none" stroke="#548d7e" stroke-width="1.8"/>
+        <circle cx="496" cy="412" r="4" fill="#286e5d"/>
+        <circle cx="496" cy="447" r="4" fill="#286e5d"/>
+        <text x="509" y="418" font-size="18">Clinical evaluation process</text>
+        <text x="509" y="453" font-size="18">Health care encounter</text>
+        <path d="M688 447H701" fill="none" stroke="#548d7e" stroke-width="1.8"/>
+        <text x="708" y="453" font-size="17">ED encounter</text>
+      </g>
+      <g id="codes-and-value-sets">
+        <rect x="837" y="391" width="271" height="78" rx="7" fill="#fff" stroke="#548d7e" stroke-width="1.7"/>
+        <text x="855" y="422" font-size="20" font-weight="700" fill="#286e5d">Codes and value sets</text>
+        <text x="855" y="449" font-size="18">Candidate mappings</text>
+      </g>
+    </g>
+    <g id="engineering-work-products">
+      <text x="424" y="528" font-size="18" font-weight="700" fill="#674986">Models, candidate artifacts, and case-based checks</text>
+      <g id="dmn-model">
+        <rect x="260" y="545" width="185" height="139" rx="7" fill="#fff" stroke="#9578b0" stroke-width="1.7"/>
+        <text x="274" y="574" font-size="20" font-weight="700" fill="#674986">DMN decisions</text>
+        <g transform="translate(273 586)" fill="#f3eef9" stroke="#80639b" stroke-width="1.6">
+          <rect width="158" height="51" rx="3"/>
+          <path d="M0 15H158M0 33H158M53 0V51M106 0V51" fill="none"/>
+        </g>
+        <text x="274" y="663" font-size="18">Inference and logic</text>
+      </g>
+      <g id="cmmn-model">
+        <rect x="467" y="545" width="194" height="139" rx="7" fill="#fff" stroke="#9578b0" stroke-width="1.7"/>
+        <text x="481" y="574" font-size="20" font-weight="700" fill="#674986">CMMN stages</text>
+        <path d="M487 586H640L647 593V630L640 637H487L481 630V593Z" fill="#f3eef9" stroke="#80639b" stroke-width="1.6"/>
+        <g fill="#fff" stroke="#80639b" stroke-width="1.6">
+          <rect x="493" y="601" width="48" height="22" rx="4"/>
+          <rect x="588" y="601" width="48" height="22" rx="4"/>
+          <path d="M554 612L565 601L576 612L565 623Z"/>
+          <path d="M541 612H554M576 612H588" fill="none"/>
+        </g>
+        <text x="481" y="663" font-size="18">Event-driven tasks</text>
+      </g>
+      <g id="candidate-artifacts">
+        <rect x="684" y="545" width="197" height="139" rx="7" fill="#fff" stroke="#548d7e" stroke-width="1.7"/>
+        <text x="699" y="574" font-size="20" font-weight="700" fill="#286e5d">FHIR and CQL</text>
+        <g transform="translate(700 589)" fill="none" stroke="#286e5d" stroke-width="1.6">
+          <path d="M0 0H28L38 10V47H0Z M28 0V10H38 M8 17H30 M8 24H30 M8 31H26"/>
+        </g>
+        <text x="747" y="607" font-size="18">PlanDefinition</text>
+        <text x="747" y="631" font-size="18">Library</text>
+        <text x="699" y="663" font-size="18">Candidate artifacts</text>
+      </g>
+      <g id="test-bundles">
+        <rect x="913" y="545" width="195" height="139" rx="7" fill="#fff" stroke="#9578b0" stroke-width="1.7"/>
+        <text x="928" y="574" font-size="20" font-weight="700" fill="#674986">Test Bundles</text>
+        <g transform="translate(929 592)" fill="none" stroke="#674986" stroke-width="2">
+          <rect width="30" height="40" rx="3"/>
+          <path d="M7 13L12 17L23 7M7 28L12 32L23 22"/>
+        </g>
+        <text x="970" y="606" font-size="18">Compare with</text>
+        <text x="970" y="630" font-size="18">expected results</text>
+        <text x="928" y="663" font-size="18">Validation findings</text>
+      </g>
+    </g>
+    <g id="historical-scope-and-legend">
+      <path d="M37 748H81" fill="none" stroke="#674986" stroke-width="2.5" marker-end="url(#case-input)"/>
+      <text x="93" y="754" font-size="18">Cases inform tests</text>
+      <path d="M284 748H328" fill="none" stroke="#9b5d23" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#review)"/>
+      <text x="340" y="754" font-size="18">Review feedback</text>
+      <text x="1164" y="754" font-size="18" text-anchor="end">Historical methodology account, November 2020</text>
+    </g>
+  </g>
+</svg>

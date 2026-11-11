@@ -1,40 +1,40 @@
-**Methodology:** [Overview](methodology.html) · [Previous: Represent](methodology-represent.html) · [Next: Validate](methodology-validate.html)
-
 <a id="translate"></a>
 
 ### Translate Step {#translate-step}
 
-Author the formal artifacts from reviewed L1/L2 work products. Use the [Content IG Walkthrough](https://github.com/cqframework/content-ig-walkthrough) as a tooling example, checking compatibility with the chosen versions. Informatics, knowledge engineering, clinical authorship, and terminology responsibilities can be held by several people or combined roles.
+Use the reviewed L1/L2 specification to author the FHIR R4 content and CQL. The knowledge engineer carries each criterion, input, and proposed response into the artifacts. The terminology owner reviews the coded meaning, and the clinical reviewer decides questions about interpretation that surface during authoring. The [Content IG Walkthrough](https://github.com/cqframework/content-ig-walkthrough) illustrates tooling for authoring a package. Check its compatibility with the project's selected versions.
 
-#### Computable Clinical Practice Guideline
+Start with [content identity and dependencies](#computable-clinical-practice-guideline), then define the [data profiles](#profiles), [terminology](#terminology), and [logic](#criteria-1). Describe the [activities](#activities-1) and assemble them into [recommendations](#recommendations), [strategies](#strategies), and [pathways](#pathways).
 
-Establish the content repository, steward, canonical base URL, intended realm, publication route, and dependency versions. Use a canonical base controlled by the steward. The [Sample Content IG](https://github.com/cqframework/sample-content-ig) and [FHIR Community Process](http://fhir.org/community/process/) illustrate possible starting points; they are not required hosting arrangements.
+#### Establish content identity and dependencies {#computable-clinical-practice-guideline}
 
-#### Profiles
+The content steward establishes the repository, canonical base URL, intended realm, publication route, and dependency versions. Use a canonical base controlled by the steward so the identities used in definitions and dependencies can persist across releases. [Sample Content IG](https://github.com/cqframework/sample-content-ig) · [FHIR Community Process](http://fhir.org/community/process/)
 
-Use the data dictionary to decide which constraints need formal profiles. Two observations distinguished only by code may share an interoperability profile; separate profiles can support more specific validation. [CPGCaseFeatureDefinition](StructureDefinition-cpg-casefeaturedefinition.html) describes a feature definition, not a patient observation itself. Keep asserted data, calculated inferences, provenance, and time distinguishable even when an inferred result is persisted.
+#### Choose profiles for the clinical data {#profiles}
+
+Map each data dictionary entry to the FHIR data the logic will read. Two observations distinguished only by code may share an interoperability profile. Use a separate profile when a distinct set of constraints needs to be validated. A CPGCaseFeatureDefinition describes a reusable feature. A corresponding patient observation can carry the patient-specific value and timing. Preserve the provenance of each result and distinguish asserted facts from calculated inferences when persisting them. [CPGCaseFeatureDefinition](StructureDefinition-cpg-casefeaturedefinition.html)
 
 Content conforming to this implementation guide SHOULD use the [CPG Event Activity Profiles](profiles.html#activity-profiles) as the basis for case feature definitions.
 
 In addition, content implementation guides will typically select a target realm for deployment, and SHOULD select a set of [Interoperability Profiles](profiles.html#content-profiles) appropriate for that realm.
 
-#### Terminology
+#### Identify the terminology dependencies {#terminology}
 
-Identify or author the code systems, value sets, and mappings needed by the decisions. Record dependency versions, mapping qualifications, and expansion maintenance. See [Terminology](terminology.html) for the owning conformance requirements.
+Identify or author the code systems, value sets, and mappings needed by each decision. Carry over the mapping qualifications agreed during representation and record versions and responsibility for maintaining expansions. Take meaning that cannot be expressed with the selected codes back to the clinical and terminology reviewers. [Terminology requirements](terminology.html)
 
 <!-- Specifically, terminology that is included as part of content implementation guides SHALL be at least [CPGShareableValueSet](StructureDefinition-cpg-shareablevalueset.html), and SHOULD be Computable, Publishable, and/or Executable, depending on the target. -->
 
-#### Criteria {#criteria-1}
+#### Author the decision logic {#criteria-1}
 
-Express criteria and related calculations in CQL and publish them through Library resources with their dependencies and data requirements. See [Libraries](libraries.html) and [Using CQL With FHIR](http://hl7.org/fhir/uv/cql). Engine/tool availability does not prove agreement with the reviewed clinical cases.
+Express the reviewed criteria and calculations in CQL. Publish the logic through Library resources with its dependencies and data requirements. Connect the expressions to the source criteria and expected cases so reviewers can test how the logic handles timing, missing information, and exceptions. [Libraries](libraries.html) · [Using CQL With FHIR](http://hl7.org/fhir/uv/cql)
 
-#### Activities {#activities-1}
+#### Choose activity definitions, requests, and events {#activities-1}
 
-Use the FHIR R4 [definition, request, and event patterns](https://hl7.org/fhir/R4/workflow.html): a definition describes what can occur, a request describes what is proposed or intended, and an event records what is occurring or has occurred.
+Choose resources based on what each artifact represents. A definition describes what can occur. A request describes what is proposed or intended for a patient. An event records what is occurring or has occurred. For example, a medication proposal and a later record of dispensing describe different stages of care. [FHIR R4 definition, request, and event patterns](https://hl7.org/fhir/R4/workflow.html) · [Activity flow](activityflow.html)
 
-##### Activity Definitions
+##### Activity definitions {#activity-definitions}
 
-An ActivityDefinition is a patient-independent activity template. Applying it in context can produce patient-specific values and requests; it does not authorize or perform the action. The following context and parameterized examples are retained for navigation. Consult each artifact for its exact parameters.
+An ActivityDefinition is a patient-independent template. Applying it in context can produce patient-specific values and requests. Acceptance, authorization, and fulfillment occur through the receiving workflow. Consult each artifact for the exact context and parameters it accepts.
 
 |Name|Description|
 |----|----|
@@ -43,7 +43,7 @@ An ActivityDefinition is a patient-independent activity template. Applying it in
 |Encounter|The Encounter in progress, if one is currently in progress|
 {:.grid}
 
-For convenience, this IG provides pre-built parameterizable ActivityDefinition instances for each of the activity types:
+This IG provides the following parameterized ActivityDefinition examples.
 
 |Activity|Parameters|
 |--------|--------|
@@ -65,9 +65,9 @@ For convenience, this IG provides pre-built parameterizable ActivityDefinition i
 
 <!-- Content conforming to this implementation guide SHALL use at least the [CPG Shareable Activity Definition](StructureDefinition-cpg-shareableactivitydefinition.html) profile, and SHOULD use the Computable and Publishable profiles when specifying activity definitions. -->
 
-##### Activity Requests (Proposals)
+##### Activity requests (proposals) {#activity-requests-proposals}
 
-Choose the recommendation instance profile appropriate to the proposed activity:
+Choose the recommendation instance profile that represents the action proposed.
 
 * [AdministerMedicationTask](StructureDefinition-cpg-administermedicationtask.html): Recommendation to administer a specific medication
 * [CommunicationRequest](StructureDefinition-cpg-communicationrequest.html): Recommendation for a specific communication
@@ -84,17 +84,18 @@ Choose the recommendation instance profile appropriate to the proposed activity:
 * [ReportFlagTask](StructureDefinition-cpg-reportflagtask.html): Recommendation to report a particular flag
 * [ServiceRequest](StructureDefinition-cpg-servicerequest.html): Recommendation for a particular procedure or referral to a specialist or instructions for self-care such as smoking cessation counseling or exercise
 
-These profiles support proposal instances; `plan` or `order` use depends on the applicable profile and the local authorized workflow. See [recommendation instances and care plans](documentation-approach-12-05-cpg-careplan.html).
+The applicable profile and the local authorized workflow determine whether the activity can also be represented with `plan` or `order` intent. [Recommendation instances and care plans](approach-model.html#care-plan)
 
 Content conforming to this implementation guide SHALL use one of the recommendation instance profiles described above to ensure supporting information related to the recommendation is preserved through the recommendation instance.
 
 Specific guideline content MAY define derived profiles for recommendation instances establishing additional constraints.
 
-##### Activity Events
+##### Activity events {#activity-events}
 
-Preserve links from the event to its definition, request, and pertinent patient information using the elements supported by its resource/profile. Case-feature metadata can additionally identify the feature definition, asserted/inferred origin, and pertinence. The table identifies event types; a dispense, administration, and medication statement are different evidence and do not each prove that an entire medication order is fulfilled.
+Use the elements supported by the event's profile to link it to its definition, request, and pertinent patient information. Case-feature metadata can identify the feature definition, whether the fact is asserted or inferred, and its pertinence. The event resource describes the evidence actually recorded. For example, a dispense, administration, and medication statement each tell a reviewer something different about a medication order.
 
-|Activity|Event||----|----|
+|Activity|Event|
+|----|----|
 |Send a message|[CPGCommunication](StructureDefinition-cpg-communication.html)|
 |Administer medication|[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)|
 |Collect information|[CPGQuestionnaireResponse](StructureDefinition-cpg-questionnaireresponse.html)|
@@ -113,22 +114,26 @@ Preserve links from the event to its definition, request, and pertinent patient 
 
 Content conforming to this implementation guide SHALL use the event profiles defined above to ensure guideline supporting and tracking information is available for activities delivered in the context of a computable guideline.
 
-#### Recommendations
+#### Define individual recommendations {#recommendations}
 
-Represent a recommendation as a PlanDefinition event-condition-action rule: a trigger identifies when evaluation is relevant, a condition expresses applicability, and an action describes the proposed response. Use ActivityDefinition references and CQL expressions where appropriate.
+Represent a recommendation as a PlanDefinition event-condition-action rule. The trigger identifies when evaluation is relevant, the condition expresses applicability, and the action describes the proposed response. Use CQL expressions for the authored logic and ActivityDefinition references where appropriate. Carry the citation and recommendation ratings from Select into the definition. [Guideline supporting information](methodology-select.html#guideline-supporting-information)
 
 Content conforming to this implementation guide SHALL use the [cpg-recommendationdefinition](StructureDefinition-cpg-recommendationdefinition.html) profile to represent recommendation definitions.
 
-#### Strategies
+#### Group recommendations into strategies {#strategies}
 
-Group related recommendation definitions for a clinical issue using a strategy definition. The definition is a PlanDefinition; [CPGStrategy](StructureDefinition-cpg-strategy.html) is a distinct RequestGroup profile for a patient-specific strategy.
+Use a strategy definition to group related recommendation definitions for a clinical issue. The reusable strategy definition is a PlanDefinition. A patient-specific strategy can be represented as a [CPGStrategy](StructureDefinition-cpg-strategy.html) RequestGroup.
 
 Content conforming to this implementation guide SHALL use the [cpg-strategydefinition](StructureDefinition-cpg-strategydefinition.html) profile to represent strategy definitions.
 
-#### Pathways
+#### Organize strategies into pathways {#pathways}
 
-Use a pathway definition to organize strategies and scope the guideline. Distinguish clinical eligibility from local enrollment or activation. Decisions may be re-evaluated as information changes; any fixed sequence needs explicit clinical justification and implementation support. See [CPG plans](documentation-approach-12-03-cpg-plan.html).
+Use a pathway definition to organize strategies and describe the scope of the guideline. Specify clinical eligibility separately from local enrollment or activation. Decisions can be reevaluated as information changes. If a pathway calls for a fixed sequence, have clinical reviewers confirm the rationale and local implementers confirm that the workflow can support it. [CPG plans](approach-model.html#plan)
 
 Content conforming to this implementation guide SHALL use the [cpg-pathwaydefinition](StructureDefinition-cpg-pathwaydefinition.html) profile to represent pathway definitions.
 
-**Methodology:** [Overview](methodology.html) · [Previous: Represent](methodology-represent.html) · [Next: Validate](methodology-validate.html)
+#### Hand off artifacts for validation {#artifact-handoff}
+
+Take the authored definitions, profiles, terminology, libraries, and their dependency versions into Validate with the reviewed cases. Keep the source-to-artifact links and any unresolved decisions with the work so reviewers can trace a discrepancy to the relevant criterion, mapping, or activity.
+
+{% include chapter-navigation.html section="Methodology" unit="step" overview="methodology.html" previous="methodology-represent.html" previous_title="Represent" next="methodology-validate.html" next_title="Validate" %}

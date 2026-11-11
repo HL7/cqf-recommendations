@@ -54,7 +54,7 @@ The [Libraries](libraries.html) page provides an overview of the usage of Librar
 <a id="2"></a>
 ### Levels of Conformance
 
-The [levels of enablement](documentation-approach-03-conformance-levels.html) describe capabilities an implementation can choose to deliver. The [IHE Computable Care Guidelines initiative](https://wiki.ihe.net/index.php/Computable_Care_Guidelines) is related work on data collection, decision logic, and indicators for guideline-based care. Such implementation approaches can define a narrower capability scope, but do not replace the artifact requirements above.
+The [levels of enablement](approach-implementation.html#capabilities) describe capabilities an implementation can choose to deliver. The [IHE Computable Care Guidelines initiative](https://wiki.ihe.net/index.php/Computable_Care_Guidelines) is related work on data collection, decision logic, and indicators for guideline-based care. Such implementation approaches can define a narrower capability scope, but do not replace the artifact requirements above.
 
 ### Conformance Testing
 

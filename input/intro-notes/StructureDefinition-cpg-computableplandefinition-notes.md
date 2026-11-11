@@ -5,4 +5,4 @@
 - Action-level extensions support recommendation ratings; their cardinalities remain separate from the methodology requirements for authored content.
 - Participants can identify roles using the preferred common-persona binding. A PlanDefinition reference or action does not by itself perform clinical work.
 
-Related guidance: [Plan hierarchy](documentation-approach-12-03-cpg-plan.html); [supporting information](methodology-select.html#guideline-supporting-information); [processing semantics](documentation-approach-09-methods-of-implementation.html).
+Related guidance: [Plan hierarchy](approach-model.html#plan); [supporting information](methodology-select.html#guideline-supporting-information); [processing semantics](approach-implementation.html#execution-methods).

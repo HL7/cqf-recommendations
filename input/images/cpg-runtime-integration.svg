@@ -1,35 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title description">
-<title id="title">Connect evaluation to the clinical workflow</title><desc id="description">The client calls a CDS service with workflow context. Versioned knowledge and authorized patient data support evaluation. The response is guidance; the receiving workflow owns selected actions.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
-<rect width="100%" height="100%" fill="#fff"/>
-<g font-family="Arial, Helvetica, sans-serif">
-<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Connect evaluation to the clinical workflow</tspan></text>
-<polyline points="300,175.0 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="300.5" y="143" width="63" height="23" fill="#fff"/>
-<text x="332" y="160" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="332" dy="0">invoke</tspan></text>
-<polyline points="635,175.0 700,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="635.5" y="143" width="63" height="23" fill="#fff"/>
-<text x="667" y="160" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="667" dy="0">return</tspan></text>
-<polyline points="165.0,350 165,285 332,285 332,175 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="500.0,350 500.0,240" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="835.0,240 835.0,350" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="30" y="110" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Clinical client</tspan></text>
-<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Hook and patient context</tspan></text>
-<rect x="365" y="110" width="270" height="130" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
-<text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">CDS service</tspan></text>
-<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Evaluate and format a</tspan><tspan x="500.0" dy="21.6">response</tspan></text>
-<rect x="700" y="110" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Receiving workflow</tspan></text>
-<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Present and handle guidance</tspan></text>
-<rect x="30" y="350" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="165.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Clinical data</tspan></text>
-<text x="165.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Authorized access and</tspan><tspan x="165.0" dy="21.6">mappings</tspan></text>
-<rect x="365" y="350" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="500.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Versioned knowledge</tspan></text>
-<text x="500.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">PlanDefinition, Library,</tspan><tspan x="500.0" dy="21.6">terminology</tspan></text>
-<rect x="700" y="350" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
-<text x="835.0" y="378" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Selected actions</tspan></text>
-<text x="835.0" y="411.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Authorize, persist, and</tspan><tspan x="835.0" dy="21.6">fulfill</tspan></text>
-<text x="28" y="545" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">A SMART application may use the same reasoning service; write-back has its own contract.</tspan></text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="878" viewBox="0 0 1200 878" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">Four ways to integrate computable guidelines</title>
+  <desc id="desc">Four panels compare direct content ingestion, a CDS Hooks service, a SMART application, and data enrichment. Arrows distinguish artifact imports, calls and responses, authorized patient data, and exchanges of derived information. CPG apply returns a transient Bundle per subject when used.</desc>
+  <!-- Original sources: input/images/integration-content-ingestion.png, integration-content-service.png, integration-content-application.png, and integration-content-enrichment.png. Current CPG $apply and workflow contracts supersede the originals' return labels. -->
+  <defs>
+    <marker id="exchange-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#28567e"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="878" fill="#fff"/>
+  <text x="600" y="47" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Four ways to integrate computable guidelines</text>
+
+  <g id="direct-content-ingestion" transform="translate(30 80)" fill="#18354d">
+    <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
+    <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
+    <text x="31" y="39" font-size="25" font-weight="700">Direct content ingestion</text>
+    <text x="31" y="67" font-size="18">Bring the content into the receiving system.</text>
+
+    <g id="versioned-knowledge-files" text-anchor="middle">
+      <path d="M 73 114 H 116 L 129 127 V 173 H 73 Z" fill="#dce9f4" stroke="#28567e" stroke-width="2"/>
+      <path d="M 62 123 H 104 L 118 137 V 182 H 62 Z M 104 123 V 137 H 118" fill="#f8fbfe" stroke="#28567e" stroke-width="2"/>
+      <path d="M 73 149 H 106 M 73 159 H 106 M 73 169 H 94" stroke="#28567e" stroke-width="2"/>
+      <text x="95" y="209" font-size="18" font-weight="700"><tspan x="95">PlanDefinition</tspan><tspan x="95" dy="24">CQL libraries</tspan></text>
+    </g>
+    <g id="import-content" text-anchor="middle">
+      <text x="270" y="159" font-size="18" font-weight="700">Import or translate</text>
+      <path d="M 163 180 H 375" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#exchange-arrow)"/>
+    </g>
+    <g id="local-evaluation" text-anchor="middle">
+      <rect x="392" y="109" width="145" height="140" rx="12" fill="#f3f8fc" stroke="#28567e" stroke-width="2"/>
+      <text x="464" y="138" font-size="19" font-weight="700">Receiving EHR</text>
+      <text x="464" y="172" font-size="18">Evaluate locally</text>
+      <path d="M 406 186 H 523" stroke="#92adbf"/>
+      <text x="464" y="213" font-size="18">Clinical workflow</text>
+    </g>
+    <text x="31" y="283" font-size="18"><tspan x="31">The receiving system evaluates the content with local</tspan><tspan x="31" dy="24">data and delivers guidance in its own workflow.</tspan></text>
+  </g>
+
+  <g id="service-based-cds" transform="translate(612 80)" fill="#18354d">
+    <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
+    <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
+    <text x="31" y="39" font-size="25" font-weight="700">Service-based CDS</text>
+    <text x="31" y="67" font-size="18">Call a reasoning service from a clinical workflow.</text>
+
+    <g id="ehr-service-client" text-anchor="middle">
+      <rect x="21" y="109" width="145" height="140" rx="12" fill="#f3f8fc" stroke="#28567e" stroke-width="2"/>
+      <text x="93" y="138" font-size="19" font-weight="700">EHR client</text>
+      <text x="93" y="172" font-size="18"><tspan x="93">Workflow event</tspan><tspan x="93" dy="24">and context</tspan></text>
+    </g>
+    <g id="cds-hooks-exchange" text-anchor="middle" font-size="18" font-weight="700">
+      <text x="279" y="135">CDS Hooks request</text>
+      <path d="M 179 154 H 374" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#exchange-arrow)"/>
+      <path d="M 374 202 H 179" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#exchange-arrow)"/>
+      <text x="279" y="228">Cards and actions</text>
+    </g>
+    <g id="cds-service-reasoning" text-anchor="middle">
+      <rect x="392" y="109" width="145" height="140" rx="12" fill="#f3f8fc" stroke="#28567e" stroke-width="2"/>
+      <text x="464" y="138" font-size="19" font-weight="700">CDS service</text>
+      <text x="464" y="172" font-size="18"><tspan x="464">Evaluate with</tspan><tspan x="464" dy="24">patient context</tspan></text>
+    </g>
+    <text x="31" y="283" font-size="18"><tspan x="31">The client presents the guidance and handles supported</tspan><tspan x="31" dy="24">actions in the receiving workflow.</tspan></text>
+  </g>
+
+  <g id="smart-application" transform="translate(30 432)" fill="#18354d">
+    <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
+    <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
+    <text x="31" y="39" font-size="25" font-weight="700">SMART application</text>
+    <text x="31" y="67" font-size="18">Present guidance through a dedicated application.</text>
+
+    <g id="ehr-system-of-record" text-anchor="middle">
+      <path d="M 35 128 V 184 C 35 207 145 207 145 184 V 128 Z" fill="#e8f2f9" stroke="#28567e" stroke-width="2"/>
+      <ellipse cx="90" cy="128" rx="55" ry="13" fill="#f8fbfe" stroke="#28567e" stroke-width="2"/>
+      <text x="90" y="165" font-size="19" font-weight="700">EHR data</text>
+      <text x="90" y="231" font-size="18">System of record</text>
+    </g>
+    <g id="smart-launch-and-fhir-exchange" text-anchor="middle" font-size="18" font-weight="700">
+      <text x="272" y="122"><tspan x="272">SMART launch</tspan><tspan x="272" dy="23">Authorized FHIR data</tspan></text>
+      <path d="M 160 165 H 375" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#exchange-arrow)"/>
+      <path d="M 375 205 H 160" fill="none" stroke="#28567e" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#exchange-arrow)"/>
+      <text x="272" y="230">Agreed write-back</text>
+    </g>
+    <g id="application-reasoning" text-anchor="middle">
+      <rect x="392" y="109" width="145" height="140" rx="12" fill="#f3f8fc" stroke="#28567e" stroke-width="2"/>
+      <text x="464" y="138" font-size="19" font-weight="700">Application</text>
+      <text x="464" y="172" font-size="18"><tspan x="464">Evaluate here</tspan><tspan x="464" dy="24">or use a service</tspan></text>
+    </g>
+    <text x="31" y="283" font-size="18"><tspan x="31">The app reads data within granted scopes. Write-back</tspan><tspan x="31" dy="24">depends on the agreed deployment contract.</tspan></text>
+  </g>
+
+  <g id="data-enrichment" transform="translate(612 432)" fill="#18354d">
+    <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
+    <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
+    <text x="31" y="39" font-size="25" font-weight="700">Data enrichment</text>
+    <text x="31" y="67" font-size="18">Exchange data and return derived information.</text>
+
+    <g id="enrichment-ehr-data" text-anchor="middle">
+      <path d="M 35 128 V 184 C 35 207 145 207 145 184 V 128 Z" fill="#e8f2f9" stroke="#28567e" stroke-width="2"/>
+      <ellipse cx="90" cy="128" rx="55" ry="13" fill="#f8fbfe" stroke="#28567e" stroke-width="2"/>
+      <text x="90" y="165" font-size="19" font-weight="700">EHR data</text>
+      <text x="90" y="231" font-size="18">Receiving system</text>
+    </g>
+    <g id="data-exchange-and-results" text-anchor="middle" font-size="18" font-weight="700">
+      <text x="273" y="135">Patient data exchange</text>
+      <path d="M 169 154 H 374" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#exchange-arrow)"/>
+      <path d="M 374 202 H 169" fill="none" stroke="#28567e" stroke-width="3" marker-end="url(#exchange-arrow)"/>
+      <text x="273" y="228">Derived results</text>
+    </g>
+    <g id="enrichment-reasoning-system" text-anchor="middle">
+      <rect x="392" y="109" width="145" height="140" rx="12" fill="#f3f8fc" stroke="#28567e" stroke-width="2"/>
+      <text x="464" y="137" font-size="19" font-weight="700"><tspan x="464">Reasoning</tspan><tspan x="464" dy="22">system</tspan></text>
+      <text x="464" y="194" font-size="18"><tspan x="464">Evaluate and</tspan><tspan x="464" dy="23">derive results</tspan></text>
+    </g>
+    <text x="31" y="283" font-size="18"><tspan x="31">FHIR APIs, messages, events, or bulk transfers carry</tspan><tspan x="31" dy="24">data under the agreed exchange and storage contract.</tspan></text>
+  </g>
+
+  <g id="cpg-apply-and-receiving-workflow" text-anchor="middle" fill="#17304b" font-size="19">
+    <path d="M 30 794 H 1170" fill="none" stroke="#9baebe"/>
+    <text x="600" y="823" font-weight="700">When used, CPG PlanDefinition $apply returns a transient Bundle per subject.</text>
+    <text x="600" y="850">The receiving workflow handles presentation, authorization, and persistence.</text>
+  </g>
+</svg>

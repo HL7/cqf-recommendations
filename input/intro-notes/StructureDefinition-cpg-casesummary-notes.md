@@ -4,4 +4,4 @@
 - Subject and encounter, when present, reference CPGPatient and CPGEncounter; authors reference CPGPractitioner or CPGPractitionerRole. The base Composition requirements still apply.
 - No section inventory enforces completeness. The implementation determines the content needed for the stated scope and retains its source/time context.
 
-Related guidance: [CPGCaseSummaryDefinition](StructureDefinition-cpg-casesummarydefinition.html); [case features and summaries](documentation-approach-12-04-cpg-case.html).
+Related guidance: [CPGCaseSummaryDefinition](StructureDefinition-cpg-casesummarydefinition.html); [case features and summaries](approach-model.html#case).

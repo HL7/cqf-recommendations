@@ -39,7 +39,7 @@ The following is a selected narrative reading list, refreshed in October 2026. I
 
 ### Put the Evidence to Work
 
-Define the clinical decision, actors, action, workflow, and local capabilities before choosing a delivery interface. Evaluate technical conformance, clinical fidelity, use, care processes, patient effects, and unintended consequences separately. Keep local data/terminology dependencies and post-release monitoring visible. See [Methodology](methodology.html), [execution and validation](documentation-approach-05-04-knowledge-execution-and-validation.html), and [local implementation](documentation-approach-05-05-knowledge-implementation.html).
+Define the clinical decision, actors, action, workflow, and local capabilities before choosing a delivery interface. Evaluate technical conformance, clinical fidelity, use, care processes, patient effects, and unintended consequences separately. Keep local data/terminology dependencies and post-release monitoring visible. See [Methodology](methodology.html), [execution and validation](approach-development.html#validation), and [local implementation](approach-development.html#release-and-maintenance).
 
 ### Selected Bibliography and Public Reading Paths
 
@@ -71,4 +71,4 @@ The following records provide citation details and public reading paths for the 
 - Shenvi E, Boxwala A, Shaw S, et al. A Standards-Based, Cloud-Hosted CDS System for Gonorrhea Treatment and HIV Screening. *Learn Health Syst.* 2026;10(4):e70104. First published July 30, 2026. [doi:10.1002/lrh2.70104](https://doi.org/10.1002/lrh2.70104). [Public full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC13421373/).
 - ASTP/ONC. *SAFER Self-Assessment: Computerized Provider Order Entry with Decision Support.* 2025 SAFER Guides release; document footers dated August 2024. Primary guide authors: Flanagan T, Singh H, Sittig DF; additional contributors listed in the document. [Official PDF](https://www.healthit.gov/sites/default/files/topiclanding/2025-01/3.%20CPOE%20Final.pdf).
 
-Return to [6S Evidence Pyramid and Learning Health Systems](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html).
+Return to [6S Evidence Pyramid and Learning Health Systems](approach-evaluation.html#learning-and-feedback).

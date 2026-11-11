@@ -15,7 +15,7 @@ Case-feature definitions referenced in `PlanDefinition.action.input` describe th
 5. Inspect extraction results and messages, reconcile them with the evaluation context, and call CPG $apply again with the updated data. Repeat as needed.
 
 <div>
-  <img src="cpg-runtime-interactive.svg" alt="Evaluate patient context and prepare questions, review answers and proposals, then either act on selected proposals or extract changed answers and reevaluate." class="img-responsive" width="1000"/>
+  <img src="cpg-runtime-interactive.svg" alt="Patient context feeds parallel questionnaire preparation and guideline evaluation. The application shows answers and proposals. Changed answers are extracted, validated, and reconciled before reevaluation; selected proposals go to the receiving workflow." class="img-responsive" width="1000"/>
 </div>
 
 *Figure 1. The application coordinates collection and reevaluation. Extracted data and returned proposals require their own validation and persistence decisions.*

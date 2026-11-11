@@ -1,97 +1,41 @@
-The Approach section describes how guideline developers, knowledge engineers (and other informaticists), and implementers can work together across the lifecycle of a computable Clinical Practice Guideline (CPG). That lifecycle covers more than the guideline itself. It includes the activities that follow from it, such as clinical decision support, quality measurement, case reporting, and continuous improvement, all built on existing standards.
+A computable clinical practice guideline connects reviewed recommendations with patient information and the work of delivering care. Its reusable definitions, logic, and terminology can support decision support, care planning, measurement, and reporting. A local implementation connects those artifacts to the data, people, and systems in a particular setting.
 
-The approach has three parts:
+Approach explains how these parts fit together and the choices involved in using them. The chapters follow one thread from the clinical model through its artifacts and implementation, then development, maintenance, and evaluation. The existing heart failure example provides a concrete point of reference throughout.
 
-1. A **conceptual knowledge architecture** that names the key domain concepts in clinical guidance and separates them into distinct concerns ([Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case), [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan), and [Workflow](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-workflow)).
-2. A **framework for describing knowledge artifacts**: how formal they are (levels of representation), what they do (tiers of functionality), and how they are implemented and integrated.
-3. An **agile, cross-functional development process** in which guideline development, knowledge engineering, and implementation inform each other across repeated cycles (see the [Home page illustration](index.html#introduction)).
+### Where to start {#where-to-start}
 
-This section explains how each role contributes to computable guideline development and how the work products fit together. It also explains the reasoning behind the [Profiles](profiles.html) and [Conformance](documentation-conformance.html) requirements in this guide. The [Methodology](methodology.html) page applies this approach in a concrete process (Select, Represent, Translate, Validate).
+Open a chapter below. Read in order for the full approach, or go directly to the topic you need.
 
-### Where to Start
+<a id="chapters"></a>
 
-The CPG development team is [cross-functional](documentation-approach-05-06-agile-cpg-development-approach.html#cross-functional-integrated-cpg-development-team), and one person may hold several of these roles. Each path lists Approach pages in reading order, followed by where to apply them. The [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html) is a reference for every role.
+| Chapter | What this page helps you do |
+| --- | --- |
+| <a id="conceptual-knowledge-architecture"></a>**[1. Case, Plan, and Workflow](approach-model.html)** | Understand how patient facts, reusable guidance, care plans, and local work relate. |
+| <a id="knowledge-representation"></a>**[2. Guideline Artifacts](approach-artifacts.html)** | Identify the FHIR resources, CQL, terminology, and forms in a guideline package. |
+| <a id="implementing-computable-knowledge"></a>**[3. Implementation and Integration](approach-implementation.html)** | Choose an integration method and connect evaluation results to clinical workflow. |
+| <a id="guideline-development"></a><a id="knowledge-engineering"></a>**[4. Development and Maintenance](approach-development.html)** | Develop, review, release, and maintain the guideline and its computable artifacts. |
+| **[5. Measurement and Evidence](approach-evaluation.html)** | Use metrics and reports, evaluate an implementation, and interpret CDS evidence. |
+{:.grid}
 
-| If you are a... | Read, in order | Then apply |
-|---|---|---|
-| Guideline developer, clinical subject matter expert, or evidence methodologist | [Guideline Development](documentation-approach-04-guideline-development.html) → [Development of Computable Clinical Guideline Artifacts](documentation-approach-04-05-computable-guideline-artifacts.html) → [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html) → [Plan](documentation-approach-12-03-cpg-plan.html) → [Metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics) | [Select](methodology-select.html#select-step) and [Represent](methodology-represent.html#represent-step) steps; [L1](clinical-guidelines-development-L1-checklist.html) and [L2](clinical-guidelines-development-L2-checklist.html) checklists |
-| Knowledge engineer: acquisition and translation | [Knowledge Engineering Overview](documentation-approach-05-knowledge-engineering-overview.html) → [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html) → [Knowledge Translation](documentation-approach-05-02-knowledge-translation.html) → [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html) → [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html) → [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html) | [Select](methodology-select.html#select-step) and [Represent](methodology-represent.html#represent-step) steps; [L2](clinical-guidelines-development-L2-checklist.html) checklist |
-| Knowledge engineer: formal representation (logic, terminology, data modeling) | [Knowledge Architecture - Conceptual Perspective](documentation-approach-12-conceptual-knowledge-architecture.html) → [Plan](documentation-approach-12-03-cpg-plan.html) → [Case](documentation-approach-12-04-cpg-case.html) → [Care Plan](documentation-approach-12-05-cpg-careplan.html) → [Activity Flow](activityflow.html) → [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html) → [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html) | [Translate](methodology-translate.html#translate-step) and [Validate](methodology-validate.html#validate-step) steps; [Profiles](profiles.html); [Terminology](terminology.html); [L3](clinical-guidelines-development-L3-checklist.html) checklist |
-| Knowledge architect or team lead | [Separations of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html) → [Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html) → [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html) → [Levels of Enablement](documentation-approach-03-conformance-levels.html) → [Conformance](documentation-conformance.html) | [Methodology](methodology.html), all steps |
-| Metric or measure developer, or evaluator | [Guideline, Derivative, and Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) → [Plan](documentation-approach-12-03-cpg-plan.html) → [Activity Flow](activityflow.html) → [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html) | [Metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics); [Terminology](terminology.html); [Profiles](profiles.html) |
-| Implementer (EHR, CDS service, or application developer) | [Implementing Computable Knowledge](documentation-approach-02-05-knowledge-implementation.html) → [Methods of Implementation](documentation-approach-09-methods-of-implementation.html) → [Activity Flow](activityflow.html) → [Mechanisms of Integration](documentation-approach-10-mechanisms-of-integration.html) → [Levels of Enablement](documentation-approach-03-conformance-levels.html) → [Conformance](documentation-conformance.html) | [Evidence-Based Care Planning](documentation-careplanning.html); [Interactive Clinical Decision Support](interactive-cds.html); [L4](clinical-guidelines-development-L4-checklist.html) checklist |
-| Local informatics or practice governance | [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html) → [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html) → [Levels of Enablement](documentation-approach-03-conformance-levels.html) → [Mechanisms of Integration](documentation-approach-10-mechanisms-of-integration.html) | [Common Care Pathway](common-care-pathway.html); [L4](clinical-guidelines-development-L4-checklist.html) checklist |
-{: .grid}
+For the step-by-step authoring procedure, use [Methodology](methodology.html).
 
-### Conceptual Knowledge Architecture
+<div style="clear: both;">
+  <img src="cpg-runtime-lifecycle.svg" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." class="img-responsive" width="1000"/>
+</div>
 
-This section describes how guideline concepts become computable knowledge artifacts. Its core idea is to keep three concerns apart:
+*The work continues after a package is released. Clinical and technical findings can lead to changes in the guideline, its computable representation, or the local implementation.*
 
-* **Case** describes the patient information relevant to a guideline, including current and historical facts.
-* **Plan** expresses reusable recommendations and how they are coordinated for a class of patients.
-* **Workflow** describes how people and systems deliver care in a particular setting.
+### Look up a detail {#references}
 
-The [architecture overview](documentation-approach-12-conceptual-knowledge-architecture.html) maps these concerns to FHIR. For example, the [CPGCase](StructureDefinition-cpg-case.html) EpisodeOfCare profile represents enrollment. Clinical resources carry the patient information the guideline evaluates.
+These references are also linked from the chapters where their detail is needed.
 
-Two ideas build on this separation and recur across this guide:
+- [Activity lifecycle](activityflow.html) maps definitions, requests, and events to resource-specific states.
+- [Activity transitions](activityflow-transitions.html) describes planning, ordering, rejection, fulfillment, and correction behaviors.
+- [Interactive CDS](interactive-cds.html) specifies questionnaire generation, population, extraction, and reevaluation.
+- [Conformance](documentation-conformance.html) indexes the formal requirements and their assessment.
+- [Concept and profile index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html) maps current and earlier conceptual names to their explanations and profiles.
+- [CDS literature and bibliography](documentation-approach-cds-implementation-evidence.html) provides the public research sources and their implementation implications.
 
-* **Activity Flow** connects a reusable definition to a patient-specific proposal, plan, authorized order, or documented event as applicable. The implementation uses the EHR’s workflow and preserves the relationships it can establish. See [Activity Flow](activityflow.html#purpose-and-rationale).
-* **Metrics** evaluate where a patient stands relative to the guideline, such as compliance with a recommendation or adherence to a strategy. The same patient-level results can support care, roll up into population measures, and inform the evidence ecosystem. See [Metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics).
+The [CHF example](examples-chf.html) connects the model to existing artifacts and patient data. [Profiles](profiles.html), [Terminology](terminology.html), and [Libraries](libraries.html) provide the formal resource and logic entry points.
 
-* [Knowledge Architecture - Conceptual Perspective](documentation-approach-12-conceptual-knowledge-architecture.html)
-    * [Separations of Concerns](documentation-approach-12-01-separations-of-concerns-in-the-cpg.html)
-    * [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)
-    * [Plan](documentation-approach-12-03-cpg-plan.html)
-    * [Case](documentation-approach-12-04-cpg-case.html)
-    * [Care Plan](documentation-approach-12-05-cpg-careplan.html)
-    * [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html)
-    * [Guideline, Derivative, and Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html)
-    * [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html)
-
-### Guideline Development
-
-This section describes how guidelines are developed: who takes part, and the processes, tools, and frameworks they use. It explains where a computable CPG fits in the evidence ecosystem and in a Learning Health System. It also covers the computable artifacts that express a guideline and the artifacts derived from it (for example, quality measures), along with their value to stakeholders.
-
-* [Guideline Development](documentation-approach-04-guideline-development.html)
-    * [Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html)
-    * [6S Evidence Pyramid and Learning Health Systems](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html)
-        * [CDS Implementation Evidence](documentation-approach-cds-implementation-evidence.html)
-    * [Analysis of Evidence, Recommendations, and Reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html)
-    * [Development of Computable Clinical Guideline Artifacts](documentation-approach-04-05-computable-guideline-artifacts.html)
-
-### Knowledge Engineering
-
-This section describes the activities, techniques, and tools that knowledge engineers use to turn a guideline's narrative content into a faithful computable representation. That representation uses the [conceptual knowledge architecture](#conceptual-knowledge-architecture) and the [CPG profiles](profiles.html). The section also describes an agile approach to CPG development, in which an integrated, cross-functional team uses composite artifacts and test-driven techniques to produce high-quality artifacts quickly.
-
-* [Knowledge Engineering Overview](documentation-approach-05-knowledge-engineering-overview.html)
-    * [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html)
-    * [Knowledge Translation](documentation-approach-05-02-knowledge-translation.html)
-    * [Knowledge Representation and Expression](documentation-approach-05-03-knowledge-representation.html)
-    * [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html)
-    * [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html)
-    * [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)
-
-### Knowledge Representation
-
-This section describes the levels of representation a guideline passes through: narrative (L1), semi-structured (L2), structured and computable (L3), and executable in a real-world system (L4). It also describes the tiers of functionality (data, logic, and forms) found at each level. Representations at the intermediate levels are useful work products in their own right. Clinical experts and knowledge engineers use them to check each other's understanding, and they give downstream implementers guidance. The section also covers knowledge assets, their metadata, and the architecture that defines how assets relate to one another.
-
-* [Knowledge Representation Overview](documentation-approach-02-04-knowledge-representation.html)
-    * [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html)
-    * [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html)
-    * [Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)
-    * [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html)
-    * [Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html)
-
-### Implementing Computable Knowledge
-
-This section describes three ways to implement computable knowledge: as a specification that is built by hand, by automatic translation, or by native execution. It also describes how the resulting inferences can be integrated with clinical information systems, and how they can support guideline-informed workflows. The section closes with the levels of enablement and the conformance requirements for implementations of this guide.
-
-* [Implementing Computable Knowledge](documentation-approach-02-05-knowledge-implementation.html)
-    * [Methods of Implementation](documentation-approach-09-methods-of-implementation.html)
-        * [Activity Flow](activityflow.html)
-            * [Activity Flow Transitions](activityflow-transitions.html)
-        * [Evidence-Based Care Planning](documentation-careplanning.html)
-        * [Interactive Clinical Decision Support](interactive-cds.html)
-    * [Mechanisms of Integration](documentation-approach-10-mechanisms-of-integration.html)
-    * [Levels of Enablement](documentation-approach-03-conformance-levels.html)
-    * [Conformance](documentation-conformance.html)
+{% include chapter-navigation.html section="Approach" unit="chapter" next="approach-model.html" next_title="Case, Plan, and Workflow" %}

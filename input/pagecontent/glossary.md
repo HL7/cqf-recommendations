@@ -1,4 +1,4 @@
-These definitions distinguish clinical concepts, reusable knowledge and patient-specific resources. Capitalized profile names refer to formal artifacts; shorter conceptual names do not imply additional FHIR resource types. See the [conceptual architecture](documentation-approach-12-conceptual-knowledge-architecture.html) and [FHIR resource map](documentation-approach-06-03-knowledge-architecture.html) for relationships.
+These definitions distinguish clinical concepts, reusable knowledge and patient-specific resources. Capitalized profile names refer to formal artifacts; shorter conceptual names do not imply additional FHIR resource types. See the [conceptual architecture](approach-model.html) and [FHIR resource map](approach-artifacts.html#resource-map) for relationships.
 
 ### Activity
 
@@ -22,7 +22,7 @@ The patient information relevant to a guideline, including recorded and inferred
 
 ### Case Feature
 
-A clinically meaningful item of patient information, such as an observation, condition, request or derived state. **CPGCaseFeatureDefinition** profiles StructureDefinition to define its representation. A patient-specific clinical resource carries its value. See [Case](documentation-approach-12-04-cpg-case.html).
+A clinically meaningful item of patient information, such as an observation, condition, request or derived state. **CPGCaseFeatureDefinition** profiles StructureDefinition to define its representation. A patient-specific clinical resource carries its value. See [Case](approach-model.html#case).
 
 ### Compliance
 
@@ -50,7 +50,7 @@ An activity intended to affect care or health, or the means of delivering suppor
 
 ### Measure
 
-A defined quantitative assessment, often of a care process or outcome across a population. FHIR Measure represents its structure and expression references; MeasureReport represents evaluated results. See [derivative assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html).
+A defined quantitative assessment, often of a care process or outcome across a population. FHIR Measure represents its structure and expression references; MeasureReport represents evaluated results. See [derivative assets](approach-evaluation.html).
 
 ### Metric
 
@@ -62,7 +62,7 @@ Longitudinal grouping of guidance and expected activities. **CPGPathwayDefinitio
 
 ### Plan
 
-Qualify this term in implementation discussions. **CPGPlan** is a conceptual grouping of reusable guidance. **CPGCarePlan** is a patient-specific CarePlan profile. The request intent `plan` expresses an intention distinct from an authorized order. See [plan boundaries](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html#plan).
+Qualify this term in implementation discussions. **CPGPlan** is a conceptual grouping of reusable guidance. **CPGCarePlan** is a patient-specific CarePlan profile. The request intent `plan` expresses an intention distinct from an authorized order. See [plan boundaries](approach-model.html#plan).
 
 ### Proposal
 

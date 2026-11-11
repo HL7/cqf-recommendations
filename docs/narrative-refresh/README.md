@@ -1,12 +1,14 @@
 # CPG narrative refresh
 
-This change reorganizes the guide around implementor tasks while preserving the existing IGPublisher configuration, templates, artifact definitions, dependencies, page URLs, and historical change log. Work is based on commit `320b164065d795dd0b7ab9ab313a67f129e06dc7`; research was refreshed on 28 October 2026.
+This change reorganizes the guide around implementor tasks while retaining IGPublisher, its templates, artifact definitions, dependencies, existing page URLs, and the historical change log. Narrative page and menu configuration evolves with the organization of the guide. Work began from commit `320b164065d795dd0b7ab9ab313a67f129e06dc7`; research was refreshed on 28 October 2026.
 
 ## Review the result
 
 A [local Publisher preview](http://127.0.0.1:49483/en/index.html) is available while the preview server is running.
 
-Start with the [home page](../../input/pagecontent/index.md), then follow either the [implementation path](../../input/pagecontent/documentation-approach-02-05-knowledge-implementation.md) or the [authoring methodology](../../input/pagecontent/methodology.md). The [approach](../../input/pagecontent/approach.md) explains the model and links to the topic that owns each concept. Existing navigation and page titles remain controlled by the unchanged Publisher configuration.
+Start with the [home page](../../input/pagecontent/index.md), then follow either [Implementation and Integration](../../input/pagecontent/approach-implementation.md) or the [authoring methodology](../../input/pagecontent/methodology.md). [Approach](../../input/pagecontent/approach.md) explains the model and links to the topic that owns each concept. Navigation and page titles use the normal Publisher/SUSHI page and menu configuration.
+
+Methodology now follows the same flat navigation and complete-chapter approach: Overview, Select, Represent, Translate, Validate, and Package. Its overview retains legacy section anchors beside the corresponding step links. The case study and mapping reference remain directly available from the overview and relevant steps. The existing conformance statements, code includes, artifact inventories, and historical examples remain intact.
 
 The rewrite covers 56 active narrative pages. It makes inputs, outputs, responsibilities, resource mappings, and review decisions explicit; reduces repeated explanations; and retains old heading anchors for inbound links. The four checklist pages retain their checklist obligations. Generated indexes, profile tables, code includes, and artifact examples remain in place.
 
@@ -24,15 +26,15 @@ Historical COVID-19 and HIV examples now emphasize modeling and source-version l
 
 The [publication review](publications.md) records 30 selected sources: 19 on standards and computable guidelines, and 11 on CDS effectiveness, workflow, alert burden, failures, or operational safety. It covers PubMed/PMC, publicly available publisher manuscripts, and official WHO, CDC, AHRQ, and ASTP/ONC publications. It documents search methods, access limits, evidence types, and what each source can support. This is a purposive narrative review, not a systematic review.
 
-The guide's [CDS evidence topic](../../input/pagecontent/documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md#cds-implementation-evidence) brings the selected literature into the narrative. Sources also appear beside relevant implementation advice. Updated standards references do not change the guide's FHIR R4 version or package dependencies.
+The guide's [CDS evidence topic](../../input/pagecontent/documentation-approach-cds-implementation-evidence.md) brings the selected literature into the narrative. Sources also appear beside relevant implementation advice. Updated standards references do not change the guide's FHIR R4 version or package dependencies.
 
 The [final external-link check](final-link-checks.json) distinguishes reachable endpoints, redirects, access blocks, timeouts, and not-found responses. The [reference ledger](reference-rewrite.md) explains replacement decisions. HTTP reachability alone does not establish a citation's meaning or currency.
 
 ## Diagrams
 
-The 137 original figure placements (106 distinct image references) are consolidated into 22 original SVG diagrams and accessible prose/tables. All active narrative figures use the same visual vocabulary, with explicit labels and alternative text. Old image files remain available; none of the stable artifact resources was changed.
+The initial narrative refresh consolidated 137 figure placements (106 distinct image references) into 22 SVG diagrams and accessible prose/tables. The Home and Approach redraws now restore more of the original compositions, symbols, and color meanings. Labels remain editable text, and each placement has alternative text. Old image files remain available; none of the stable artifact resources was changed.
 
-Each SVG has an editable JSON specification in [diagrams/narrative](../../diagrams/narrative), generated by [render_narrative.py](../../diagrams/render_narrative.py). Regenerate from the repository root:
+Each SVG has a manifest in [diagrams/narrative](../../diagrams/narrative). The ten Home and Approach figures and five Methodology figures now use native editable SVG sources. Their manifests distinguish original-image references from new explanatory synthesis. The Methodology update restores the separate implementation-guide dependency diagram; the Approach artifact matrix adds the Data/Logic/Forms by L1–L4 graphic, bringing the source inventory to 24 diagrams. The matrix retains a collapsible text equivalent. Other figures retain positioned JSON specifications. See the [diagram editing guide](../../diagrams/README.md). Both formats use [render_narrative.py](../../diagrams/render_narrative.py). Regenerate from the repository root:
 
 ```sh
 python3 diagrams/render_narrative.py

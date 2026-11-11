@@ -6,4 +6,4 @@
 
 - `authored` and `item` retain response timing and answers. Population and extraction need their own validation; completing a response does not authorize its suggested clinical actions.
 
-Related: [collection Task](StructureDefinition-cpg-questionnairetask.html); [Interactive CDS](interactive-cds.html); [case features](documentation-approach-12-04-cpg-case.html).
+Related: [collection Task](StructureDefinition-cpg-questionnairetask.html); [Interactive CDS](interactive-cds.html); [case features](approach-model.html#case).

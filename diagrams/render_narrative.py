@@ -4,6 +4,7 @@
 Usage: python3 diagrams/render_narrative.py [diagram.json ...]
 With no arguments, render all diagrams/narrative/*.json to input/images/*.svg.
 Coordinates are explicit so reviewing a source diff does not depend on a layout engine.
+Specifications with svgSource use a hand-authored, editable SVG from the same source tree.
 """
 
 from __future__ import annotations
@@ -123,6 +124,29 @@ def render(spec: dict) -> str:
     return result
 
 
+def native_svg(source: Path, spec: dict) -> str:
+    """Keep the richer original layouts editable as native SVG, without raster content."""
+    path = (source.parent / spec["svgSource"]).resolve()
+    if not path.is_relative_to(source.parent.resolve()):
+        raise ValueError(f"SVG source must be within {source.parent}: {path}")
+    result = path.read_text()
+    root = ET.fromstring(result)
+    ns = "{http://www.w3.org/2000/svg}"
+    if root.tag != ns + "svg" or not root.get("viewBox"):
+        raise ValueError(f"SVG source needs an SVG root and viewBox: {path}")
+    if root.find(ns + "title") is None or root.find(ns + "desc") is None:
+        raise ValueError(f"SVG source needs an accessible title and description: {path}")
+    ids = set()
+    for element in root.iter():
+        if element.tag in {ns + tag for tag in ("image", "foreignObject", "script")}:
+            raise ValueError(f"Native diagrams must use editable SVG primitives: {path}")
+        if element.get("id"):
+            if element.get("id") in ids:
+                raise ValueError(f"Duplicate SVG ID {element.get('id')}: {path}")
+            ids.add(element.get("id"))
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("specs", nargs="*", type=Path)
@@ -131,7 +155,7 @@ def main() -> None:
     for source in sources:
         spec = json.loads(source.read_text())
         output = ROOT / "input/images" / (source.stem + ".svg")
-        output.write_text(render(spec))
+        output.write_text(native_svg(source, spec) if "svgSource" in spec else render(spec))
         print(output.relative_to(ROOT))
 
 

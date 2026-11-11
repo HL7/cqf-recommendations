@@ -4,4 +4,4 @@
 - `enrolledIn` is optional and repeatable (`0..*`); its values are canonicals. The formal profile does not require exactly one enrollment even though its description discusses a particular pathway.
 - Episode status and period describe this care context. Enrollment eligibility, authorization, and recording remain distinct implementation decisions.
 
-Related guidance: [Case model](documentation-approach-12-04-cpg-case.html); [enrollment processing](documentation-approach-09-methods-of-implementation.html#enrollment); [CPGCarePlan](StructureDefinition-cpg-careplan.html).
+Related guidance: [Case model](approach-model.html#case); [enrollment processing](approach-implementation.html#enrollment); [CPGCarePlan](StructureDefinition-cpg-careplan.html).

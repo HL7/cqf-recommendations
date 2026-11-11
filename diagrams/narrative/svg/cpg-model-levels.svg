@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 686" role="img" aria-labelledby="title description">
+  <!-- Sources: knowledge-levels.png supplies the ordered rows and knowledge-level distinctions. CPG-05.06-01.png supplies the green, orange, blue, and red palette and the overlapping development bars. -->
+  <title id="title">One guideline across four representation levels</title>
+  <desc id="description">Four rows show L1 narrative, L2 semi-structured models, L3 shareable computable artifacts, and L4 local executable implementation. An inset of overlapping colored bars shows that development can proceed in parallel and feedback can revise any level. The levels describe representations. Implementation conformance is assessed separately.</desc>
+  <defs>
+    <marker id="feedback-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4 0 8Z" fill="#596977"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="686" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+    <g id="heading">
+      <text x="36" y="43" font-size="30" font-weight="700">One guideline across four representation levels</text>
+      <text x="36" y="74" font-size="21">From human-readable guidance to computable artifacts and local execution</text>
+      <text x="124" y="115" font-size="18" font-weight="700" fill="#425666">Representation</text>
+      <text x="545" y="115" font-size="18" font-weight="700" fill="#425666">Example work products</text>
+    </g>
+
+    <g id="l1-narrative">
+      <rect x="36" y="130" width="1128" height="72" rx="8" fill="#edf5e7"/>
+      <rect x="36" y="130" width="68" height="72" rx="8" fill="#416e2d"/>
+      <text x="70" y="174" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L1</text>
+      <text x="124" y="160" font-size="22" font-weight="700">Narrative</text>
+      <text x="124" y="185" font-size="19">Communicates clinical intent</text>
+      <path d="M515 142V190" stroke="#c4d8b7"/>
+      <text x="545" y="160" font-size="20">Clinical scope and recommendations</text>
+      <text x="545" y="185" font-size="19">Supporting evidence and recommendation strength</text>
+    </g>
+
+    <g id="l2-semi-structured">
+      <rect x="36" y="210" width="1128" height="72" rx="8" fill="#fdf0e1"/>
+      <rect x="36" y="210" width="68" height="72" rx="8" fill="#a34e17"/>
+      <text x="70" y="254" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L2</text>
+      <text x="124" y="240" font-size="22" font-weight="700">Semi-structured</text>
+      <text x="124" y="265" font-size="19">Makes interpretation explicit for review</text>
+      <path d="M515 222V270" stroke="#eacaa9"/>
+      <text x="545" y="240" font-size="20">Data dictionaries and decision tables</text>
+      <text x="545" y="265" font-size="19">Process diagrams and worked cases</text>
+    </g>
+
+    <g id="l3-computable">
+      <rect x="36" y="290" width="1128" height="72" rx="8" fill="#e9f2fb"/>
+      <rect x="36" y="290" width="68" height="72" rx="8" fill="#2f618d"/>
+      <text x="70" y="334" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L3</text>
+      <text x="124" y="320" font-size="22" font-weight="700">Computable</text>
+      <text x="124" y="345" font-size="19">Expresses intent in shareable artifacts</text>
+      <path d="M515 302V350" stroke="#b8cfe5"/>
+      <text x="545" y="320" font-size="20">Profiles, terminology, and logic libraries</text>
+      <text x="545" y="345" font-size="19">Activity and plan definitions</text>
+    </g>
+
+    <g id="l4-local-implementation">
+      <rect x="36" y="370" width="1128" height="72" rx="8" fill="#fcebec"/>
+      <rect x="36" y="370" width="68" height="72" rx="8" fill="#a8393e"/>
+      <text x="70" y="414" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L4</text>
+      <text x="124" y="400" font-size="22" font-weight="700">Local executable implementation</text>
+      <text x="124" y="425" font-size="19">Puts the artifacts to work in a setting</text>
+      <path d="M515 382V430" stroke="#eac1c4"/>
+      <text x="545" y="400" font-size="20">Local mappings, execution engine, and workflow</text>
+      <text x="545" y="425" font-size="19">Permissions, tests, and monitoring</text>
+    </g>
+
+    <g id="overlapping-development">
+      <rect x="36" y="466" width="1128" height="163" rx="8" fill="#f7f9fb" stroke="#cdd8e1"/>
+      <text x="57" y="505" font-size="22" font-weight="700">Work across levels</text>
+      <text x="57" y="533" font-size="19">Development can overlap.</text>
+      <text x="57" y="560" font-size="19">Review and feedback can</text>
+      <text x="57" y="584" font-size="19">revise any level.</text>
+      <g id="overlapping-representations" font-size="18" font-weight="700" fill="#fff">
+        <rect x="388" y="481" width="218" height="39" rx="4" fill="#416e2d" stroke="#fff" stroke-width="2"/>
+        <text x="410" y="507">L1</text>
+        <rect x="519" y="503" width="218" height="39" rx="4" fill="#a34e17" stroke="#fff" stroke-width="2"/>
+        <text x="541" y="529">L2</text>
+        <rect x="650" y="525" width="218" height="39" rx="4" fill="#2f618d" stroke="#fff" stroke-width="2"/>
+        <text x="672" y="551">L3</text>
+        <rect x="781" y="547" width="218" height="39" rx="4" fill="#a8393e" stroke="#fff" stroke-width="2"/>
+        <text x="803" y="573">L4</text>
+      </g>
+      <path d="M999 570H1050V604H390" fill="none" stroke="#596977" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#feedback-arrow)"/>
+    </g>
+
+    <text x="36" y="660" font-size="19">The levels describe representations. Assess artifact and implementation conformance separately.</text>
+  </g>
+</svg>

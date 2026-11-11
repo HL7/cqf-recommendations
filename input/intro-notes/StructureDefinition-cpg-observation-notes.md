@@ -6,4 +6,4 @@
 
 - `status` follows Observation’s vocabulary; a final result is not a generic “activity completed” state. Keep the source and timing of inferred results interpretable.
 
-Related: [record-inference Task](StructureDefinition-cpg-recordinferencetask.html); [case features](documentation-approach-12-04-cpg-case.html); [Interactive CDS](interactive-cds.html).
+Related: [record-inference Task](StructureDefinition-cpg-recordinferencetask.html); [case features](approach-model.html#case); [Interactive CDS](interactive-cds.html).

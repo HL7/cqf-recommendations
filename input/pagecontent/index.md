@@ -9,7 +9,7 @@ This guide is for guideline authors, knowledge engineers, software implementors,
 
 | Your task | Read first | Result to work toward |
 | --- | --- | --- |
-| Implement an existing guideline package | [Implementation overview](documentation-approach-02-05-knowledge-implementation.html) | A tested local data, execution, and workflow integration |
+| Implement an existing guideline package | [Implementation overview](approach-implementation.html) | A tested local data, execution, and workflow integration |
 | Author a computable guideline | [Methodology](methodology.html) | A versioned package of definitions, logic, terminology, evidence, and tests |
 | Understand the model | [Approach](approach.html) | A clear separation of patient facts, reusable recommendations, and local workflow |
 | Review content or an implementation | [Conformance](documentation-conformance.html) and [checklists](checklists.html) | Evidence for the requirements and review activities that apply |
@@ -19,13 +19,13 @@ This guide is for guideline authors, knowledge engineers, software implementors,
 
 A narrative recommendation often leaves implementation questions open: which patients it applies to, which data establishes eligibility, how missing information is handled, and what action to propose. This guide provides a shared way to make those decisions explicit and preserve their relationship to the source guideline.
 
-The main work products are FHIR definitions, libraries of logic, terminology, and documentation that can be reviewed and exchanged. Local implementation then supplies the data mappings, execution environment, user interaction, and operational responsibilities needed to use them. This distinction is central to the [four levels of knowledge representation](documentation-approach-06-01-levels-of-knowledge-representation.html).
+The main work products are FHIR definitions, libraries of logic, terminology, and documentation that can be reviewed and exchanged. Local implementation then supplies the data mappings, execution environment, user interaction, and operational responsibilities needed to use them. This distinction is central to the [four levels of knowledge representation](approach-artifacts.html#representation-levels).
 
 <div>
-  <img src="cpg-runtime-lifecycle.svg" alt="Develop guideline intent, represent and validate computable content, integrate it locally, then evaluate use and feed findings back into development." class="img-responsive" width="1000"/>
+  <img src="cpg-runtime-lifecycle.svg" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." class="img-responsive" width="1000"/>
 </div>
 
-*Figure 1. Guideline development, computable content, and local implementation form an iterative process. Clinical, technical, and implementation reviewers contribute throughout.* The [integrated process publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/) describes this collaborative approach.
+*Figure 1. Guidelines connect evidence to decision support and clinical care. Measurement, reporting, and reviewed findings connect care back to evidence. Related standards illustrate the roles in this ecosystem; they are not a required dependency set.* The [integrated process publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/) describes this collaborative approach.
 
 ### Scope
 

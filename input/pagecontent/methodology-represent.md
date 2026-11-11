@@ -1,44 +1,49 @@
-**Methodology:** [Overview](methodology.html) · [Previous: Select](methodology-select.html) · [Next: Translate](methodology-translate.html)
-
 <a id="represent"></a>
 
 ### Represent Step {#represent-step}
 
-Create semi-structured content that clinicians can inspect without reading CQL. Review it with clinical, informatics, and terminology experts before using it as the specification for translation.
+Use the selected recommendation, source rationale, and delivery assumptions to write a decision specification that clinicians can review before CQL and FHIR authoring begins. The specification connects [clinical concepts](#concepts) to [criteria and example cases](#criteria) and shows how the recommendation reaches people in the [care process](#processes-1).
 
-#### Concepts
+#### Describe the clinical concepts {#concepts}
 
-For each data element, record its clinical description, context, collection/source, datatype, units, time, and candidate representation. Record inexact terminology mappings and unresolved meaning. Coding WHO operational specifications exposed ambiguous and composite concepts; mapping required clinical review rather than label matching. [Pretty et al., 2023](https://doi.org/10.1136/bmjhci-2022-100691).
+Build a data dictionary that explains each input's clinical meaning, context, source or collection method, datatype, units, timing, and candidate code or representation. The terminologist proposes mappings and records where they cover only part of the intended meaning. Clinical reviewers resolve ambiguities about what counts for the decision, and the local data owner confirms how the facts are captured. Work on WHO operational specifications surfaced ambiguous and composite concepts that required clinical review during mapping. [Pretty et al., 2023](https://doi.org/10.1136/bmjhci-2022-100691)
 
-The following historical Opioid Prescribing Guideline excerpt illustrates a data dictionary; it is an implementation example, not updated clinical advice.
+This historical Opioid Prescribing Guideline excerpt illustrates the structure of a data dictionary. Read its clinical content in the context of the source guideline and version.
 
 {% include opg-recommendation-4/opg-recommendation-04-05-data-dictionary.html %}
 
-#### Criteria {#criteria}
+#### Specify the decision criteria {#criteria}
 
-Write inclusion, exclusion, timing, exceptions, and expected results in precise clinical language. Link each decision to its source and add example cases. The existing example's functional description is retained below; interpret it with its source guideline and version.
+Write the inclusion and exclusion criteria, timing, exceptions, and expected result in terms of the dictionary. Tie each criterion to the source passage or to a documented interpretation. If a criterion depends on a result within a time window, have the clinical reviewer specify what happens at the boundary and when the result is absent or conflicts with another result. Record any open question with the person who can resolve it. Agree on the rationale and expected output for example cases before testing implementation behavior.
+
+The functional description from the same historical example shows how the criteria can be expressed for review.
 
 {% include opg-recommendation-4/recommendation-04-05-functional-description.html %}
 
-#### Processes {#processes-1}
+#### Describe delivery in the care process {#processes-1}
 
-Draw only the actors, decisions, information needs, and actions needed to review the recommendation. Accompany the diagram with the explicit criteria; a flowchart is not an executable specification.
+Sketch who supplies the inputs, when the decision arises, who sees the result, and what they can do with it. Link each decision in the sketch to the written criteria so reviewers can check both its clinical meaning and its place in the workflow. Work with the local workflow owner to establish which parts of the process the implementation can support.
 
 <div style="clear: both;">
-  <img src="cpg-method-translation.svg" alt="A clinical recommendation is refined into explicit concepts and criteria, then reviewed before FHIR and CQL authoring." class="img-responsive center-block" width="1000"/>
+  <img src="cpg-method-translation.svg" alt="Historical opioid prescribing workflow. An order-sign event leads through criteria and a calculation to either no alert or a message with clinician response options." class="img-responsive center-block" width="1000"/>
 </div>
 
+*Use this historical example to review the branches from the trigger to the clinician's response. The [functional description](#criteria) gives the criteria for the version shown.*
 
-##### Delivery of contextualized narrative
+##### Deliver a contextualized message {#delivery-of-contextualized-narrative}
 
-Specify the message, intended recipient, timing, and relevant patient context. A notification can be the complete intended intervention.
+When the intended intervention is a notification, specify the message, recipient, timing, and patient context that helps the recipient interpret it.
 
-##### Actionable intervention
+##### Propose an actionable intervention {#actionable-intervention}
 
-Specify a proposed activity as a request resource. The local system and authorized people determine acceptance and fulfillment. Even a request-only implementation can describe the expected event for later assessment.
+If the intervention proposes an action, describe the proposed request, who can accept it, and what resulting event would indicate fulfillment. A delivery that ends at the request can still describe the expected event for later assessment.
 
-##### Process integration
+##### Integrate with the local process {#process-integration}
 
-Document how requests are fulfilled and tracked, including responsible actors and relevant events. This adds local workflow obligations; it does not make proposal generation equivalent to care delivery. See [activity flow](activityflow.html).
+If the implementation also tracks fulfillment, describe who acts, what event is recorded, and how it is linked to the request. The local workflow owner confirms what the system and authorized users can do. [Activity flow](activityflow.html)
 
-**Methodology:** [Overview](methodology.html) · [Previous: Select](methodology-select.html) · [Next: Translate](methodology-translate.html)
+#### Hand off the reviewed specification {#reviewed-specification}
+
+Clinical reviewers confirm the interpretation and expected cases. The knowledge engineer carries the reviewed data dictionary, criteria, workflow sketch, and cases into Translate, with unresolved questions and their owners visible alongside them.
+
+{% include chapter-navigation.html section="Methodology" unit="step" overview="methodology.html" previous="methodology-select.html" previous_title="Select" next="methodology-translate.html" next_title="Translate" %}

@@ -1,32 +1,174 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title description">
-<title id="title">From guideline intent to evaluated use</title><desc id="description">Develop and represent guideline intent, validate the content, implement it locally, and evaluate use. Findings feed back into development and implementation.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
-<rect width="100%" height="100%" fill="#fff"/>
-<g font-family="Arial, Helvetica, sans-serif">
-<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">From guideline intent to evaluated use</tspan></text>
-<polyline points="300,175.0 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="635,175.0 700,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="835.0,240 835.0,340" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="700,405.0 635,405.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="365,405.0 300,405.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<polyline points="165.0,340 165.0,240" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
-<rect x="30" y="110" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Develop guidance</tspan></text>
-<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Evidence and clinical</tspan><tspan x="165.0" dy="21.6">intent</tspan></text>
-<rect x="365" y="110" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Represent knowledge</tspan></text>
-<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">FHIR definitions and CQL</tspan></text>
-<rect x="700" y="110" width="270" height="130" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
-<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Validate content</tspan></text>
-<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Logic tests and clinical</tspan><tspan x="835.0" dy="21.6">review</tspan></text>
-<rect x="30" y="340" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="165.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Revise and maintain</tspan></text>
-<text x="165.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Content and local mappings</tspan></text>
-<rect x="365" y="340" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
-<text x="500.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Evaluate use</tspan></text>
-<text x="500.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Workflow, effects, and</tspan><tspan x="500.0" dy="21.6">burden</tspan></text>
-<rect x="700" y="340" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="835.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Implement locally</tspan></text>
-<text x="835.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Data, runtime, and workflow</tspan></text>
-<text x="28" y="525" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Clinical, technical, and implementation reviewers contribute throughout the cycle.</tspan></text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="855" viewBox="0 0 1200 855" role="img" aria-labelledby="title description">
+<title id="title">From evidence to care and learning</title>
+<desc id="description">Research and public-health surveillance inform clinical practice guidelines and decision support. Clinical care supplies data for measurement, analytics, reporting, and further evidence review. Shared FHIR data and knowledge sit at the center. Standards labels illustrate related roles, not a required dependency set or mandatory sequence. Reviewers decide how findings change guidance and local implementation.</desc>
+<!-- Editable reconstruction of CPG-Main-06.png and CPG-Main-06-Legend.png. -->
+<!-- Preserve the six-stage ecosystem, shared-data center, standards badges, and local care loop. -->
+<defs>
+<marker id="flow-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 11 6 L 1 11 Z" fill="#143f63"/></marker>
+<g id="person-icon" fill="none" stroke="#24678c" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="0" cy="0" r="9"/><path d="M -18 35 V 24 Q -18 12 0 12 Q 18 12 18 24 V 35 M -10 24 V 35 M 10 24 V 35"/></g>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#183e59;text-anchor:middle}.stage{font-size:23px;font-weight:700}.intent{font-size:19px;fill:#46727b;font-style:italic}.badge{font-size:18px;font-weight:700;fill:white}.arrow-label{font-size:18px;fill:#435e72}.flow{fill:none;stroke:#143f63;stroke-width:4;marker-end:url(#flow-arrow)}</style>
+</defs><rect width="1200" height="855" fill="white"/>
+<text x="30" y="42" font-size="29" style="text-anchor:start" font-weight="700">From evidence to care and learning</text>
+<g id="research-and-evidence" >
+<g id="research-icon" transform="translate(158 95)" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
+<path d="M 10 65 H 76 M 20 65 V 58 Q 20 49 32 49 H 54 M 48 48 Q 79 41 63 22 M 48 17 L 34 37 L 44 44 L 58 24 Z M 46 13 L 53 3 L 66 12 L 59 22 M 28 44 H 51" fill="none" stroke="#a4457d" stroke-width="3"/>
+<circle cx="15" cy="18" r="18" fill="#47bdd8"/>
+<path d="M 15 5 L 18 14 L 28 14 L 20 20 L 23 29 L 15 23 L 7 29 L 10 20 L 2 14 L 12 14 Z" fill="white" stroke="none" stroke-width="0"/>
+</g>
+<text x="200" y="206" font-size="23" class="stage">Research and evidence</text>
+<text x="200" y="237" font-size="19" class="intent">Analyze what is happening</text>
+<g id="ebm-badge" >
+<rect x="160" y="253" width="80" height="32" rx="5" fill="#03a9d9"/>
+<text x="200.0" y="275" font-size="18" class="badge">EBM</text>
+</g>
+</g>
+<g id="guideline-development" >
+<g id="guideline-icon" transform="translate(557 95)" aria-hidden="true" stroke-linejoin="round">
+<path d="M 8 12 Q 28 8 43 20 Q 58 8 78 12 V 65 Q 58 61 43 73 Q 28 61 8 65 Z" fill="white" stroke="#31809c" stroke-width="3"/>
+<path d="M 43 20 V 73 M 16 25 Q 27 23 35 30 M 16 37 Q 27 35 35 42 M 16 49 Q 27 47 35 54 M 51 30 Q 62 23 70 25 M 51 42 Q 62 35 70 37 M 51 54 Q 62 47 70 49" fill="none" stroke="#31809c" stroke-width="2.5"/>
+<path d="M 1 5 L 16 20 M 2 19 L 16 5" fill="none" stroke="#1c9d9d" stroke-width="7"/>
+</g>
+<text x="600" y="206" font-size="23" class="stage">Clinical practice guidelines</text>
+<text x="600" y="237" font-size="19" class="intent">Define what should happen</text>
+<g id="cpg-badge" >
+<rect x="560" y="253" width="80" height="32" rx="5" fill="#03a9d9"/>
+<text x="600.0" y="275" font-size="18" class="badge">CPG</text>
+</g>
+</g>
+<g id="clinical-decision-support" >
+<g id="decision-support-icon" transform="translate(950 95)" aria-hidden="true" stroke-linejoin="round">
+<path d="M 13 0 H 31 V 19 H 50 V 37 H 31 V 56 H 13 V 37 H -6 V 19 H 13 Z" fill="#c1ca49" stroke="none" stroke-width="0"/>
+<rect x="39" y="20" width="49" height="58" rx="4" fill="white" stroke="#2697a0" stroke-width="2.5"/><rect x="51" y="15" width="25" height="10" rx="3" fill="white" stroke="#2697a0" stroke-width="2.5"/>
+<path d="M 46 36 L 50 40 L 57 31 M 62 36 H 80 M 46 51 L 50 55 L 57 46 M 62 51 H 80 M 46 66 L 50 70 L 57 61 M 62 66 H 80" fill="none" stroke="#7c9b4d" stroke-width="2.5"/>
+</g>
+<text x="1000" y="206" font-size="23" class="stage">Clinical decision support</text>
+<text x="1000" y="237" font-size="19" class="intent">Make guidance actionable</text>
+</g>
+<g id="evidence-to-guidance-connections" >
+<path d="M 354 198 H 438" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="396.0" y="179" font-size="18" class="arrow-label">Evidence</text>
+<path d="M 765 198 H 855" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="810.0" y="179" font-size="18" class="arrow-label">Knowledge</text>
+<path d="M 990 273 V 399" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<g id="cds-hooks-badge" >
+<rect x="1020" y="301" width="160" height="32" rx="5" fill="#03a9d9"/>
+<text x="1100.0" y="323" font-size="18" class="badge">CDS Hooks</text>
+</g>
+<g id="smart-badge" >
+<rect x="1020" y="345" width="160" height="53" rx="5" fill="#259eab"/>
+<text x="1100" y="367" font-size="18" class="badge">SMART</text>
+<text x="1100" y="389" font-size="18" class="badge">App Launch</text>
+</g>
+</g>
+<g id="shared-fhir-data-and-knowledge" >
+<text x="600" y="354" font-size="21" font-weight="700">Shared FHIR data and knowledge</text>
+<rect x="384" y="366" width="432" height="110" rx="7" fill="#f1f4f6"/>
+<g id="people" aria-hidden="true">
+<use href="#person-icon" x="547" y="387"/>
+<use href="#person-icon" x="600" y="387"/>
+<use href="#person-icon" x="653" y="387"/>
+</g>
+<text x="600" y="439" font-size="20" >Patients, providers and populations</text>
+<text x="600" y="463" font-size="18" >Public health</text>
+<g id="us-core-badge" >
+<rect x="395" y="486" width="110" height="32" rx="5" fill="#568b36"/>
+<text x="450.0" y="508" font-size="18" class="badge">US Core</text>
+</g>
+<g id="qi-core-badge" >
+<rect x="517" y="486" width="110" height="32" rx="5" fill="#6c388f"/>
+<text x="572.0" y="508" font-size="18" class="badge">QI-Core</text>
+</g>
+<g id="us-phpl-badge" >
+<rect x="639" y="486" width="155" height="32" rx="5" fill="#a82936"/>
+<text x="716.5" y="508" font-size="18" class="badge">US PHPL</text>
+</g>
+<g id="ips-badge" >
+<rect x="423" y="293" width="65" height="32" rx="5" fill="#183c75"/>
+<text x="455.5" y="315" font-size="18" class="badge">IPS</text>
+</g>
+<g id="cql-badge" >
+<rect x="500" y="293" width="65" height="32" rx="5" fill="#03a9d9"/>
+<text x="532.5" y="315" font-size="18" class="badge">CQL</text>
+</g>
+<g id="clinical-reasoning-badge" >
+<rect x="577" y="293" width="202" height="32" rx="5" fill="#03a9d9"/>
+<text x="678.0" y="315" font-size="18" class="badge">Clinical Reasoning</text>
+</g>
+</g>
+<g id="clinical-care" >
+<path d="M 1022 413 A 124 124 0 0 1 1071 637" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<path d="M 1032 655 A 124 124 0 1 1 978 413" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<g id="clinician-and-patient-icon" transform="translate(963 479)" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
+<rect x="-5" y="-2" width="30" height="44" rx="3" fill="#51bed8"/>
+<path d="M 1 8 H 19 M 1 17 H 19 M 1 26 H 15" fill="none" stroke="white" stroke-width="2.8"/>
+<circle cx="52" cy="8" r="13" fill="none" stroke="#b64f80" stroke-width="2.7"/>
+<path d="M 27 63 V 45 Q 27 27 52 27 Q 77 27 77 45 V 63 M 42 31 V 48 Q 42 56 51 56 Q 60 56 60 48 V 31 M 35 48 V 63 M 69 48 V 63" fill="none" stroke="#b64f80" stroke-width="2.7"/>
+</g>
+<text x="1000" y="566" font-size="23" class="stage">Clinical care</text>
+<text x="1000" y="593" font-size="19" class="intent">Clinician and patient</text>
+<text x="1000" y="617" font-size="19" class="intent">workflow</text>
+</g>
+<g id="measurement-and-analytics" >
+<g id="measurement-icon" transform="translate(551 532)" aria-hidden="true">
+<rect x="0" y="11" width="19" height="46" rx="0" fill="#7bcac8"/>
+<rect x="27" y="-5" width="19" height="62" rx="0" fill="#53b9b8"/>
+<rect x="54" y="24" width="19" height="33" rx="0" fill="#7bcac8"/>
+<path d="M 6 53 L 36 25 L 64 45 L 94 4" fill="none" stroke="#db914e" stroke-width="3"/>
+<circle cx="6" cy="53" r="4" fill="white" stroke="#db914e" stroke-width="2.5"/>
+<circle cx="36" cy="25" r="4" fill="white" stroke="#db914e" stroke-width="2.5"/>
+<circle cx="64" cy="45" r="4" fill="white" stroke="#db914e" stroke-width="2.5"/>
+<circle cx="94" cy="4" r="4" fill="white" stroke="#db914e" stroke-width="2.5"/>
+</g>
+<text x="600" y="620" font-size="23" class="stage">Measurement and analytics</text>
+<text x="600" y="651" font-size="19" class="intent">Measure what happened</text>
+<g id="qm-badge" >
+<rect x="510" y="664" width="70" height="32" rx="5" fill="#70359b"/>
+<text x="545.0" y="686" font-size="18" class="badge">QM</text>
+</g>
+<g id="deqm-badge" >
+<rect x="592" y="664" width="100" height="32" rx="5" fill="#70359b"/>
+<text x="642.0" y="686" font-size="18" class="badge">DEQM</text>
+</g>
+</g>
+<g id="reporting" >
+<g id="reporting-icon" transform="translate(171 528)" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round">
+<rect x="0" y="0" width="51" height="66" rx="4" fill="#c7d15b"/>
+<path d="M 8 10 H 15 V 17 H 8 Z M 8 28 H 15 V 35 H 8 Z M 8 46 H 15 V 53 H 8 Z M 22 12 L 27 17 L 36 7 M 22 30 L 27 35 L 36 25 M 22 48 L 27 53 L 36 43" fill="none" stroke="white" stroke-width="2.5"/>
+<path d="M 40 60 L 43 46 L 70 13 Q 76 8 80 14 L 53 50 Z M 43 46 L 53 50" fill="white" stroke="#b9be48" stroke-width="2.5"/>
+</g>
+<text x="200" y="620" font-size="23" class="stage">Reporting</text>
+<text x="200" y="651" font-size="19" class="intent">Report what happened</text>
+<g id="ecr-badge" >
+<rect x="160" y="664" width="80" height="32" rx="5" fill="#b72432"/>
+<text x="200.0" y="686" font-size="18" class="badge">eCR</text>
+</g>
+</g>
+<g id="feedback-connections" >
+<path d="M 872 563 H 761" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="816.5" y="544" font-size="18" class="arrow-label">Care data</text>
+<path d="M 448 563 H 338" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="393.0" y="544" font-size="18" class="arrow-label">Results</text>
+<path d="M 174 505 C 102 453 102 354 161 303" fill="none" stroke="#143f63" stroke-width="3" class="flow"/>
+<text x="207" y="391" font-size="18" class="arrow-label">Review</text>
+<text x="207" y="415" font-size="18" class="arrow-label">findings</text>
+</g>
+<g id="original-workgroup-color-key">
+<path d="M 30 715 H 1170" stroke="#d9e2e8"/>
+<text x="30" y="741" font-size="18" font-weight="700" style="text-anchor:start">Original workgroup color key</text>
+<rect x="36" y="758" width="16" height="16" rx="2" fill="#03a9d9"/>
+<text x="62" y="772" font-size="18" style="text-anchor:start">Clinical Decision Support</text>
+<rect x="415" y="758" width="16" height="16" rx="2" fill="#70359b"/>
+<text x="441" y="772" font-size="18" style="text-anchor:start">Clinical Quality Information</text>
+<rect x="805" y="758" width="16" height="16" rx="2" fill="#b72432"/>
+<text x="831" y="772" font-size="18" style="text-anchor:start">Public Health</text>
+<rect x="36" y="787" width="16" height="16" rx="2" fill="#568b36"/>
+<text x="62" y="801" font-size="18" style="text-anchor:start">Cross-Group Projects</text>
+<rect x="415" y="787" width="16" height="16" rx="2" fill="#183c75"/>
+<text x="441" y="801" font-size="18" style="text-anchor:start">Patient Care</text>
+<rect x="805" y="787" width="16" height="16" rx="2" fill="#259eab"/>
+<text x="831" y="801" font-size="18" style="text-anchor:start">FHIR Infrastructure</text>
+</g>
+<g id="scope-note">
+<text x="600" y="839" font-size="18">Related standards illustrate roles. Reviewed findings inform guidance and local implementation.</text>
+</g>
+</svg>

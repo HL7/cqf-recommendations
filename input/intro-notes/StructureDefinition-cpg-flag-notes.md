@@ -4,4 +4,4 @@
 - Case-feature definition, type, and pertinence extensions are optional. The repeatable `pertinent` extension can identify relevant supporting information.
 - A flag's status and period describe the notice; they do not establish that a recommended intervention was accepted or performed.
 
-Related guidance: [CPGReportFlagTask](StructureDefinition-cpg-reportflagtask.html); [case features](documentation-approach-12-04-cpg-case.html); [activity flow](activityflow.html).
+Related guidance: [CPGReportFlagTask](StructureDefinition-cpg-reportflagtask.html); [case features](approach-model.html#case); [activity flow](activityflow.html).
