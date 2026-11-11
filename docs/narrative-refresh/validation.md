@@ -1,5 +1,15 @@
 # Narrative refresh validation
 
+## Final upstream review
+
+Compared the branch with the STU 3 ballot on official `master`. The review aligned Select with the Common Processes requirement, clarified action sequencing and metric result encoding, and identified the generic ActivityDefinition expressions as examples that need validation before reuse. It also documented how to provision FHIRHelpers when running the worked examples.
+
+CHF and GenerateReportMeasure declare `3.0.0-ballot` in CQL to match the published Libraries and embedded ELM. The three CHF monitoring ActivityDefinitions now carry the same service codes as their linked example ServiceRequests. Consumers with an explicit CHF CQL import at `1.0.0` should select the ballot library version for this release.
+
+The fresh IG Publisher 3.0.3 build reported zero errors, broken links, or invalid XHTML pages, with 34 warnings and 521 informational messages. The rendered checks found all 174 introductory and usage fragments across 87 artifact pages. The 29 formal conformance statements matched the previous build. Browser checks covered 435 navigation routes and the 21 previously repaired links. The generated conformance index retains three duplicate named anchors from the ballot baseline.
+
+## Review page layout
+
 The review page layout update preserved all 226 checklist rows, including the published L1 content and attribution. Chromium checked the full-width home table, shadows on 19 diagrams, checklist navigation and horizontal scrolling, and all 29 conformance IDs at desktop and phone widths. The Publisher reported zero errors, broken links, or invalid XHTML pages and 34 warnings.
 
 ## Publisher warning review and navigation layout
