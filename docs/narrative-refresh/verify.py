@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PAGES = ROOT / "input/pagecontent"
 REDIRECTS = ROOT / "input/redirects"
 BASELINE = "e2fb41324f63f4af4b687121f7ead14cf5a1c1a0"
-FORMAL_BASELINE = "88b9929dae07a8aa444170e91c9eb36bbdb7d156"
+FORMAL_BASELINE = "8aa133d52040056859c6f29786ff8d300956f679"
 FORMAL_PATHS = (
     "input/fsh", "input/cql", "input/data", "input/examples", "_unused-fsh",
     "input/includes/process-patterns", "FHIR-cpg.xml", "oids.ini", "publication-request.json",

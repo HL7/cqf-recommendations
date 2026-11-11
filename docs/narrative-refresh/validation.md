@@ -1,5 +1,7 @@
 # Narrative refresh validation
 
+The review page layout update preserved all 226 checklist rows, including the published L1 content and attribution. Chromium checked the full-width home table, shadows on 19 diagrams, checklist navigation and horizontal scrolling, and all 29 conformance IDs at desktop and phone widths. The Publisher reported zero errors, broken links, or invalid XHTML pages and 34 warnings.
+
 ## Publisher warning review and navigation layout
 
 Fetched the official `HL7/cqf-recommendations` mainline (`master`, `e2fb413`). The branch already contained it. IG Publisher 3.0.3 reported 34 warnings, down from 177, with zero errors, broken links, or invalid XHTML pages. The 73 additional informational messages record the canonical versions selected during pinning.
