@@ -3,29 +3,29 @@
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
 <rect width="100%" height="100%" fill="#fff"/>
 <g font-family="Arial, Helvetica, sans-serif">
-<text x="28" y="38" font-size="25" font-weight="700" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">A common care pathway</tspan></text>
+<text x="25.0" y="35.0" font-size="24.2" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="25.0" dy="0">A common care pathway</tspan></text>
 <polyline points="300,175.0 365,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="635,175.0 700,175.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="835.0,240 835.0,340" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="700,405.0 635,405.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <polyline points="365,405.0 300,405.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
 <rect x="30" y="110" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="165.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Establish context</tspan></text>
-<text x="165.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Identity, summary, urgency</tspan></text>
+<text x="165.0" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="165.0" dy="0">Establish context</tspan></text>
+<text x="165.0" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="165.0" dy="0">Identity, summary, urgency</tspan></text>
 <rect x="365" y="110" width="270" height="130" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
-<text x="500.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Assess the patient</tspan></text>
-<text x="500.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">History, findings, tests</tspan></text>
+<text x="500.0" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Assess the patient</tspan></text>
+<text x="500.0" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">History, findings, tests</tspan></text>
 <rect x="700" y="110" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="835.0" y="138" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Agree on care</tspan></text>
-<text x="835.0" y="171.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Interpretation, goals,</tspan><tspan x="835.0" dy="21.6">consent</tspan></text>
+<text x="835.0" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="835.0" dy="0">Agree on care</tspan></text>
+<text x="835.0" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="835.0" dy="0">Interpretation, goals,</tspan><tspan x="835.0" dy="21.33">consent</tspan></text>
 <rect x="30" y="340" width="270" height="130" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
-<text x="165.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Monitor and report</tspan></text>
-<text x="165.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="165.0" dy="0">Follow-up, records,</tspan><tspan x="165.0" dy="21.6">indicators</tspan></text>
+<text x="165.0" y="368" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="165.0" dy="0">Monitor and report</tspan></text>
+<text x="165.0" y="401.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="165.0" dy="0">Follow-up, records,</tspan><tspan x="165.0" dy="21.33">indicators</tspan></text>
 <rect x="365" y="340" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="500.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Deliver care</tspan></text>
-<text x="500.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="500.0" dy="0">Interventions and</tspan><tspan x="500.0" dy="21.6">medications</tspan></text>
+<text x="500.0" y="368" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Deliver care</tspan></text>
+<text x="500.0" y="401.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Interventions and</tspan><tspan x="500.0" dy="21.33">medications</tspan></text>
 <rect x="700" y="340" width="270" height="130" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
-<text x="835.0" y="368" font-size="19" font-weight="700" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Request activities</tspan></text>
-<text x="835.0" y="401.65" font-size="16" font-weight="400" text-anchor="middle" fill="#22384b"><tspan x="835.0" dy="0">Authorized orders and</tspan><tspan x="835.0" dy="21.6">referrals</tspan></text>
-<text x="28" y="520" font-size="16" font-weight="400" text-anchor="start" fill="#22384b"><tspan x="28" dy="0">Reassess as information changes; escalate urgent care whenever indicated.</tspan></text>
+<text x="835.0" y="368" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="835.0" dy="0">Request activities</tspan></text>
+<text x="835.0" y="401.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="835.0" dy="0">Authorized orders and</tspan><tspan x="835.0" dy="21.33">referrals</tspan></text>
+<text x="28" y="520" font-size="15.8" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="28" dy="0">Reassess as information changes; escalate urgent care whenever indicated.</tspan></text>
 </g></svg>

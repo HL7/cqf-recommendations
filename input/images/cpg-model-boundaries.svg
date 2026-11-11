@@ -14,10 +14,10 @@
     </marker>
   </defs>
   <rect width="1200" height="832" fill="#fff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
-      <text x="36" y="43" font-size="30" font-weight="700">Case, Plan and Workflow over time</text>
-      <text x="36" y="74" font-size="21">Reusable guidance, patient care records, and the patient facts that inform evaluation</text>
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Case, Plan and Workflow over time</text>
+      <text x="30" y="74" font-size="19">Reusable guidance, patient care records, and the patient facts that inform evaluation</text>
     </g>
 
     <g id="reusable-plan">
@@ -25,7 +25,7 @@
       <path d="M266 103V373" stroke="#e5bd87"/>
       <path d="M412 103V373M542 103V373M672 103V373M802 103V373M932 103V373M1062 103V373" stroke="#f2dbb6"/>
       <g id="plan-legend" fill="#733c16">
-        <text x="55" y="139" font-size="25" font-weight="700">Plan</text>
+        <text x="55" y="139" font-size="23" font-weight="700">Plan</text>
         <text x="55" y="167" font-size="18">Reusable pathway</text>
         <rect x="57" y="187" width="22" height="19" rx="3" fill="#a54d19"/>
         <text x="91" y="203" font-size="18">Strategy</text>
@@ -66,7 +66,7 @@
       <path d="M266 289V472" stroke="#94c9dc"/>
       <path d="M412 289V472M542 289V472M672 289V472M802 289V472M932 289V472M1062 289V472" stroke="#c7e6f0"/>
       <g id="care-plan-legend" fill="#115574">
-        <text x="55" y="324" font-size="25" font-weight="700">Patient care plan</text>
+        <text x="55" y="324" font-size="23" font-weight="700">Patient care plan</text>
         <path d="M68 339l10 10-10 10-10-10Z" fill="#d5f3fe" stroke="#14759c" stroke-width="2"/>
         <text x="91" y="355" font-size="18">Proposal</text>
         <circle cx="68" cy="379" r="9" fill="#e0f3f9" stroke="#14759c" stroke-width="2"/>
@@ -108,7 +108,7 @@
       <path d="M266 462V590" stroke="#a3ccb2"/>
       <path d="M412 462V590M542 462V590M672 462V590M802 462V590M932 462V590M1062 462V590" stroke="#cde6d6"/>
       <g id="case-legend" fill="#205d3c">
-        <text x="55" y="496" font-size="25" font-weight="700">Case</text>
+        <text x="55" y="496" font-size="23" font-weight="700">Case</text>
         <circle cx="68" cy="522" r="8" fill="#2d8050"/>
         <text x="91" y="528" font-size="18">Recorded feature</text>
         <circle cx="68" cy="554" r="8" fill="#e4f4e9" stroke="#2d8050" stroke-width="2"/>

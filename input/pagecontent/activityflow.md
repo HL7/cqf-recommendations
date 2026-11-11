@@ -8,9 +8,7 @@ Clinical teams also place orders and document care independently of guideline ev
 
 Use this topic to connect a reusable activity definition to the requests and events produced for a patient. It follows the [FHIR R4 workflow patterns](https://hl7.org/fhir/R4/workflow.html), with concrete profiles supplied by this guide.
 
-{% include cpg-diagram.html src="cpg-runtime-activity.svg" alt="Cumulative rows distinguish Definition, Proposal, Plan, Order, and Event while retaining linked earlier records. Backward arrows identify source definitions, predecessor requests, and fulfillment references. Local authority and resource-specific statuses govern the workflow." %}
-
-*Figure 1. Phase rows retain the definition and earlier requests as new records appear. Proposal, plan, and order are request intents. An event can record ongoing care, completed care, or explicit non-performance. The implementation applies the states and transitions supported by the resource type.*
+{% include cpg-diagram.html src="cpg-runtime-activity.svg" alt="Cumulative rows distinguish Definition, Proposal, Plan, Order, and Event while retaining linked earlier records. Backward arrows identify source definitions, predecessor requests, and fulfillment references. Local authority and resource-specific statuses govern the workflow." caption="Figure 1. Phase rows retain the definition and earlier requests as new records appear. Proposal, plan, and order are request intents. An event can record ongoing care, completed care, or explicit non-performance. The implementation applies the states and transitions supported by the resource type." %}
 
 | Phase | Meaning | Boundary to preserve |
 | --- | --- | --- |

@@ -8,7 +8,7 @@
     </marker>
   </defs>
   <rect width="1200" height="1040" fill="#fff"/>
-  <text x="600" y="45" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Co-development of clinical and computable guidelines</text>
+  <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Co-development of clinical and computable guidelines</text>
 
   <g id="concentric-activity-bands" stroke-width="2">
     <circle cx="600" cy="500" r="414" fill="#e4eed8" stroke="#89a77b"/>
@@ -71,7 +71,7 @@
 
   <g id="users-at-the-center" text-anchor="middle" fill="#59331a">
     <circle cx="600" cy="500" r="72" fill="#ffdab9" stroke="#bf7c47" stroke-width="2"/>
-    <text x="600" y="493" font-size="25" font-weight="700">Users</text>
+    <text x="600" y="493" font-size="23" font-weight="700">Users</text>
     <text x="600" y="518" font-size="18"><tspan x="600">Human-centered</tspan><tspan x="600" dy="20">design</tspan></text>
   </g>
 

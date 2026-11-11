@@ -16,7 +16,7 @@ The COVID-19 Digital Guideline Working Group drew on CDC's Adapting Clinical Gui
 
 #### Process Overview
 
-{% include cpg-diagram.html src="cpg-method-case-study.svg" alt="The historical 2020 project connected clinical source material, structured concepts and decisions, formal decision and workflow models, candidate FHIR/CQL artifacts, and test cases through review." center="true" %}
+{% include cpg-diagram.html src="cpg-method-case-study.svg" alt="The historical 2020 project connected clinical source material, structured concepts and decisions, formal decision and workflow models, candidate FHIR/CQL artifacts, and test cases through review." %}
 
 
 | Stage | Historical work product | Purpose of review |

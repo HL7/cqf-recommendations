@@ -17,6 +17,12 @@ import textwrap
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
+REFERENCE_WIDTH = 1200
+TITLE_SIZE = 29
+LABEL_SIZE = 23
+BODY_SIZE = 19
+DETAIL_SIZE = 18
+TEXT_COLOR = "#183e59"
 PALETTE = {
     "knowledge": ("#eaf2fb", "#35618e"),
     "logic": ("#e6f4f1", "#247268"),
@@ -30,16 +36,17 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def lines(value: str | list[str], width: float, size: int) -> list[str]:
+def lines(value: str | list[str], width: float, size: float) -> list[str]:
     paragraphs = value if isinstance(value, list) else value.split("\n")
     count = max(9, int(width / (size * 0.54)))
     return [line for paragraph in paragraphs for line in (textwrap.wrap(paragraph, count) or [""])]
 
 
-def text(x: float, y: float, value: str | list[str], width: float, size: int = 17,
-         weight: int = 400, anchor: str = "middle", color: str = "#22384b") -> str:
+def text(x: float, y: float, value: str | list[str], width: float, size: float,
+         weight: int = 400, anchor: str = "middle", color: str = TEXT_COLOR) -> str:
     content = lines(value, width, size)
-    spans = "".join(f'<tspan x="{x}" dy="{0 if i == 0 else size * 1.35}">{esc(line)}</tspan>'
+    line_height = round(size * 1.35, 2)
+    spans = "".join(f'<tspan x="{x}" dy="{0 if i == 0 else line_height}">{esc(line)}</tspan>'
                     for i, line in enumerate(content))
     return (f'<text x="{x}" y="{y}" font-size="{size}" font-weight="{weight}" '
             f'text-anchor="{anchor}" fill="{color}">{spans}</text>')
@@ -54,6 +61,11 @@ def port(node: dict, name: str) -> tuple[float, float]:
 def render(spec: dict) -> str:
     width, height = spec.get("width", 1000), spec["height"]
     title, desc = spec["title"], spec["description"]
+    scale = width / REFERENCE_WIDTH
+    title_size, label_size, body_size, detail_size = (
+        round(size * scale, 1) for size in (TITLE_SIZE, LABEL_SIZE, BODY_SIZE, DETAIL_SIZE)
+    )
+    heading_x = 30 * scale
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
              f'viewBox="0 0 {width} {height}" role="img" aria-labelledby="title description">',
              f'<title id="title">{esc(title)}</title><desc id="description">{esc(desc)}</desc>',
@@ -62,20 +74,20 @@ def render(spec: dict) -> str:
              '<path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>',
              '<rect width="100%" height="100%" fill="#fff"/>',
              '<g font-family="Arial, Helvetica, sans-serif">',
-             text(28, 38, title, width - 56, 25, 700, "start")]
+             text(heading_x, 42 * scale, title, width - 2 * heading_x, title_size, 700, "start")]
     if spec.get("subtitle"):
-        parts.append(text(28, 65, spec["subtitle"], width - 56, 16, anchor="start"))
+        parts.append(text(heading_x, 65, spec["subtitle"], width - 2 * heading_x, body_size, anchor="start"))
     for lane in spec.get("lanes", []):
         parts.append(f'<rect x="{lane["x"]}" y="{lane["y"]}" width="{lane["w"]}" '
                      f'height="{lane["h"]}" rx="10" fill="#fafbfd" stroke="#d6dfe6"/>')
         parts.append(text(lane["x"] + 16, lane["y"] + 26, lane["label"], lane["w"] - 32,
-                          16, 700, "start"))
+                          body_size, 700, "start"))
     nodes = {}
     for original in spec["nodes"]:
         node = dict(original)
         node.setdefault("w", 250)
-        label_lines = lines(node["label"], node["w"] - 32, node.get("size", 19))
-        body_lines = lines(node.get("body", ""), node["w"] - 32, 16) if node.get("body") else []
+        label_lines = lines(node["label"], node["w"] - 32, node.get("size", label_size))
+        body_lines = lines(node.get("body", ""), node["w"] - 32, body_size) if node.get("body") else []
         node.setdefault("h", 36 + len(label_lines) * 26 + len(body_lines) * 22 + (8 if body_lines else 0))
         nodes[node["id"]] = node
     for edge in spec.get("edges", []):
@@ -100,7 +112,7 @@ def render(spec: dict) -> str:
             label_width = edge.get("labelWidth", max(90, len(edge["label"]) * 8))
             parts.append(f'<rect x="{lx - label_width / 2}" y="{ly - 17}" '
                          f'width="{label_width}" height="23" fill="#fff"/>')
-            parts.append(text(lx, ly, edge["label"], label_width, 16))
+            parts.append(text(lx, ly, edge["label"], label_width, detail_size, color="#435e72"))
     for node in nodes.values():
         x, y, w, h = (node[k] for k in ("x", "y", "w", "h"))
         fill, stroke = PALETTE[node.get("kind", "neutral")]
@@ -110,14 +122,15 @@ def render(spec: dict) -> str:
         else:
             parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" '
                          f'rx="9" fill="{fill}" stroke="{stroke}" stroke-width="2"/>')
-        size = node.get("size", 19)
+        size = node.get("size", label_size)
         nlines = len(lines(node["label"], w - 32, size))
         parts.append(text(x + w / 2, y + 28, node["label"], w - 32, size, 700))
         if node.get("body"):
-            parts.append(text(x + w / 2, y + 36 + nlines * size * 1.35, node["body"], w - 32, 16))
+            body_y = round(y + 36 + nlines * size * 1.35, 2)
+            parts.append(text(x + w / 2, body_y, node["body"], w - 32, body_size))
     for note in spec.get("notes", []):
         parts.append(text(note["x"], note["y"], note["text"], note.get("w", width - 56),
-                          note.get("size", 16), anchor=note.get("anchor", "start")))
+                          note.get("size", body_size), anchor=note.get("anchor", "start")))
     parts.append("</g></svg>\n")
     result = "\n".join(parts)
     ET.fromstring(result)

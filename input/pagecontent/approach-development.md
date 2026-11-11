@@ -41,7 +41,7 @@ The guideline development group draws on clinical specialists and frontline clin
 
 #### Work through one reviewed increment {#reviewed-increment}
 
-{% include cpg-diagram.html src="cpg-method-handoff.svg" alt="Twelve clinical guideline activities and related informatics activities surround ongoing evaluation and users, grouped into four phases of co-development." center="true" %}
+{% include cpg-diagram.html src="cpg-method-handoff.svg" alt="Twelve clinical guideline activities and related informatics activities surround ongoing evaluation and users, grouped into four phases of co-development." %}
 
 | Handoff | What changes hands |
 | --- | --- |

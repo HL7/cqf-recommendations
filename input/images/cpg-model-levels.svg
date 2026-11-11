@@ -8,10 +8,10 @@
     </marker>
   </defs>
   <rect width="1200" height="686" fill="#fff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
-      <text x="36" y="43" font-size="30" font-weight="700">One guideline across four representation levels</text>
-      <text x="36" y="74" font-size="21">From human-readable guidance to computable artifacts and local execution</text>
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">One guideline across four representation levels</text>
+      <text x="30" y="74" font-size="19">From human-readable guidance to computable artifacts and local execution</text>
       <text x="124" y="115" font-size="18" font-weight="700" fill="#425666">Representation</text>
       <text x="545" y="115" font-size="18" font-weight="700" fill="#425666">Example work products</text>
     </g>
@@ -19,7 +19,7 @@
     <g id="l1-narrative">
       <rect x="36" y="130" width="1128" height="72" rx="8" fill="#edf5e7"/>
       <rect x="36" y="130" width="68" height="72" rx="8" fill="#416e2d"/>
-      <text x="70" y="174" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L1</text>
+      <text x="70" y="174" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">L1</text>
       <text x="124" y="160" font-size="22" font-weight="700">Narrative</text>
       <text x="124" y="185" font-size="19">Communicates clinical intent</text>
       <path d="M515 142V190" stroke="#c4d8b7"/>
@@ -30,7 +30,7 @@
     <g id="l2-semi-structured">
       <rect x="36" y="210" width="1128" height="72" rx="8" fill="#fdf0e1"/>
       <rect x="36" y="210" width="68" height="72" rx="8" fill="#a34e17"/>
-      <text x="70" y="254" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L2</text>
+      <text x="70" y="254" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">L2</text>
       <text x="124" y="240" font-size="22" font-weight="700">Semi-structured</text>
       <text x="124" y="265" font-size="19">Makes interpretation explicit for review</text>
       <path d="M515 222V270" stroke="#eacaa9"/>
@@ -41,7 +41,7 @@
     <g id="l3-computable">
       <rect x="36" y="290" width="1128" height="72" rx="8" fill="#e9f2fb"/>
       <rect x="36" y="290" width="68" height="72" rx="8" fill="#2f618d"/>
-      <text x="70" y="334" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L3</text>
+      <text x="70" y="334" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">L3</text>
       <text x="124" y="320" font-size="22" font-weight="700">Computable</text>
       <text x="124" y="345" font-size="19">Expresses intent in shareable artifacts</text>
       <path d="M515 302V350" stroke="#b8cfe5"/>
@@ -52,7 +52,7 @@
     <g id="l4-local-implementation">
       <rect x="36" y="370" width="1128" height="72" rx="8" fill="#fcebec"/>
       <rect x="36" y="370" width="68" height="72" rx="8" fill="#a8393e"/>
-      <text x="70" y="414" text-anchor="middle" font-size="26" font-weight="700" fill="#fff">L4</text>
+      <text x="70" y="414" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">L4</text>
       <text x="124" y="400" font-size="22" font-weight="700">Local executable implementation</text>
       <text x="124" y="425" font-size="19">Puts the artifacts to work in a setting</text>
       <path d="M515 382V430" stroke="#eac1c4"/>

@@ -1,45 +1,45 @@
 {
-  "title": "Choose how the knowledge will run",
+  "title": "Execution routes",
   "description": "Shared computable content can be reimplemented manually, translated, or executed natively. Each route needs local verification.",
   "width": 1000,
-  "height": 595,
+  "height": 326,
   "nodes": [
     {
       "id": "content",
-      "x": 365,
-      "y": 100,
-      "w": 270,
-      "h": 130,
+      "x": 340,
+      "y": 68,
+      "w": 320,
+      "h": 88,
       "label": "Computable content",
       "body": "Definitions, logic, terminology",
       "kind": "knowledge"
     },
     {
       "id": "manual",
-      "x": 30,
-      "y": 300,
-      "w": 270,
-      "h": 130,
-      "label": "Manual",
+      "x": 32,
+      "y": 204,
+      "w": 288,
+      "h": 96,
+      "label": "Manual implementation",
       "body": "Implement from the specification",
       "kind": "workflow"
     },
     {
       "id": "translate",
-      "x": 365,
-      "y": 300,
-      "w": 270,
-      "h": 130,
+      "x": 356,
+      "y": 204,
+      "w": 288,
+      "h": 96,
       "label": "Translation",
       "body": "Convert to a supported language",
       "kind": "logic"
     },
     {
       "id": "native",
-      "x": 700,
-      "y": 300,
-      "w": 270,
-      "h": 130,
+      "x": 680,
+      "y": 204,
+      "w": 288,
+      "h": 96,
       "label": "Native execution",
       "body": "Evaluate in a compatible engine",
       "kind": "logic"
@@ -54,11 +54,11 @@
       "via": [
         [
           500,
-          260
+          178
         ],
         [
-          165,
-          260
+          176,
+          178
         ]
       ]
     },
@@ -76,29 +76,13 @@
       "via": [
         [
           500,
-          260
+          178
         ],
         [
-          835,
-          260
+          824,
+          178
         ]
       ]
-    }
-  ],
-  "notes": [
-    {
-      "x": 500,
-      "y": 490,
-      "w": 920,
-      "anchor": "middle",
-      "text": "For every route: verify meaning, data mappings, dependencies, and expected results."
-    },
-    {
-      "x": 500,
-      "y": 535,
-      "w": 920,
-      "anchor": "middle",
-      "text": "The delivery interface is a separate choice: service, application, or local workflow."
     }
   ]
 }

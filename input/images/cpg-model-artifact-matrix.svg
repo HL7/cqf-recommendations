@@ -3,31 +3,31 @@
   <title id="title">Work products by level and responsibility</title>
   <desc id="description">A matrix crosses L1 narrative, L2 semi-structured, L3 computable, and L4 local implementation with Data, Clinical logic, and Forms. Each cell preserves the planning work products described in Guideline Artifacts. The level colors match the adjacent representation-level diagram. The page provides the full matrix as accessible text. Representation levels are not conformance grades, and a capability may not need a form.</desc>
   <rect width="1200" height="792" fill="#fff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
-      <text x="36" y="43" font-size="30" font-weight="700">Work products by level and responsibility</text>
-      <text x="36" y="76" font-size="21">Read across each row to connect clinical intent with local delivery.</text>
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Work products by level and responsibility</text>
+      <text x="30" y="76" font-size="19">Read across each row to connect clinical intent with local delivery.</text>
       <text x="36" y="211" font-size="18" font-weight="700" fill="#425666">Responsibility</text>
     </g>
     <g id="level-headings" fill="#fff">
       <g id="l1-heading">
         <rect x="200" y="108" width="232" height="112" rx="8" fill="#416e2d"/>
-        <text x="220" y="147" font-size="29" font-weight="700">L1</text>
+        <text x="220" y="147" font-size="23" font-weight="700">L1</text>
         <text x="220" y="184" font-size="23" font-weight="700">Narrative</text>
       </g>
       <g id="l2-heading">
         <rect x="444" y="108" width="232" height="112" rx="8" fill="#a34e17"/>
-        <text x="464" y="147" font-size="29" font-weight="700">L2</text>
+        <text x="464" y="147" font-size="23" font-weight="700">L2</text>
         <text x="464" y="184" font-size="23" font-weight="700">Semi-structured</text>
       </g>
       <g id="l3-heading">
         <rect x="688" y="108" width="232" height="112" rx="8" fill="#2f618d"/>
-        <text x="708" y="147" font-size="29" font-weight="700">L3</text>
+        <text x="708" y="147" font-size="23" font-weight="700">L3</text>
         <text x="708" y="184" font-size="23" font-weight="700">Computable</text>
       </g>
       <g id="l4-heading">
         <rect x="932" y="108" width="232" height="112" rx="8" fill="#a8393e"/>
-        <text x="952" y="147" font-size="29" font-weight="700">L4</text>
+        <text x="952" y="147" font-size="23" font-weight="700">L4</text>
         <text x="952" y="180" font-size="23" font-weight="700"><tspan x="952">Local</tspan><tspan x="952" dy="27">implementation</tspan></text>
       </g>
     </g>

@@ -3,14 +3,14 @@
   <title id="title">How pathway definitions organize guidance</title>
   <desc id="description">A pale orange pathway can reference both strategy and workflow definitions. The dark orange strategy branch groups recommendations, which may reference a computable activity definition or an order set definition. The amber workflow branch describes activities, their relationships, participants, inputs, and outputs. Nested shapes show references among separate reusable definitions, not patient records.</desc>
   <rect width="1200" height="604" fill="#fff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
-      <text x="36" y="43" font-size="30" font-weight="700">How pathway definitions organize guidance</text>
-      <text x="36" y="74" font-size="21">A pathway can reference both strategies and workflows.</text>
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">How pathway definitions organize guidance</text>
+      <text x="30" y="74" font-size="19">A pathway can reference both strategies and workflows.</text>
     </g>
     <g id="pathway-definition">
       <rect x="36" y="102" width="1128" height="429" rx="12" fill="#fff0d8" stroke="#c68338" stroke-width="2"/>
-      <text x="60" y="141" font-size="25" font-weight="700" fill="#683510">Pathway definition</text>
+      <text x="60" y="141" font-size="23" font-weight="700" fill="#683510">Pathway definition</text>
       <text x="60" y="169" font-size="19" fill="#683510">CPGPathwayDefinition · clinical-protocol</text>
       <text x="1138" y="169" text-anchor="end" font-size="18" fill="#683510">Groups guidance over time</text>
 

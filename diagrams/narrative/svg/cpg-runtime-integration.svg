@@ -8,12 +8,12 @@
     </marker>
   </defs>
   <rect width="1200" height="878" fill="#fff"/>
-  <text x="600" y="47" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Four ways to integrate computable guidelines</text>
+  <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Four ways to integrate computable guidelines</text>
 
   <g id="direct-content-ingestion" transform="translate(30 80)" fill="#18354d">
     <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
     <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
-    <text x="31" y="39" font-size="25" font-weight="700">Direct content ingestion</text>
+    <text x="31" y="39" font-size="23" font-weight="700">Direct content ingestion</text>
     <text x="31" y="67" font-size="18">Bring the content into the receiving system.</text>
 
     <g id="versioned-knowledge-files" text-anchor="middle">
@@ -39,7 +39,7 @@
   <g id="service-based-cds" transform="translate(612 80)" fill="#18354d">
     <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
     <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
-    <text x="31" y="39" font-size="25" font-weight="700">Service-based CDS</text>
+    <text x="31" y="39" font-size="23" font-weight="700">Service-based CDS</text>
     <text x="31" y="67" font-size="18">Call a reasoning service from a clinical workflow.</text>
 
     <g id="ehr-service-client" text-anchor="middle">
@@ -64,7 +64,7 @@
   <g id="smart-application" transform="translate(30 432)" fill="#18354d">
     <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
     <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
-    <text x="31" y="39" font-size="25" font-weight="700">SMART application</text>
+    <text x="31" y="39" font-size="23" font-weight="700">SMART application</text>
     <text x="31" y="67" font-size="18">Present guidance through a dedicated application.</text>
 
     <g id="ehr-system-of-record" text-anchor="middle">
@@ -90,7 +90,7 @@
   <g id="data-enrichment" transform="translate(612 432)" fill="#18354d">
     <rect width="558" height="332" rx="14" fill="#fff" stroke="#9baebe" stroke-width="2"/>
     <path d="M 16 15 V 75" fill="none" stroke="#28567e" stroke-width="5"/>
-    <text x="31" y="39" font-size="25" font-weight="700">Data enrichment</text>
+    <text x="31" y="39" font-size="23" font-weight="700">Data enrichment</text>
     <text x="31" y="67" font-size="18">Exchange data and return derived information.</text>
 
     <g id="enrichment-ehr-data" text-anchor="middle">

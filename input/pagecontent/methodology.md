@@ -23,7 +23,7 @@ Use the [development checklists](checklists.html) at each handoff. Review the so
 
 Carry the reviewed work forward, and return to an earlier step when a finding changes the scope, specification, or artifacts.
 
-{% include cpg-diagram.html src="cpg-method-recipe.svg" alt="Select, Represent, Translate, Validate, and Package produce connected work products. Review findings can return work to an earlier step." center="true" %}
+{% include cpg-diagram.html src="cpg-method-recipe.svg" alt="Select, Represent, Translate, Validate, and Package produce connected work products. Review findings can return work to an earlier step." %}
 
 Keep decisions and their rationale with the work products. Record who resolves each open question and which artifact or interpretation changes as a result. Published implementation experience shows that shared artifacts can still require substantial local implementation and maintenance effort. [Dhopeshwarkar et al., 2023](https://doi.org/10.1055/s-0043-1769911).
 

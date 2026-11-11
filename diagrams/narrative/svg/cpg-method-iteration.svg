@@ -14,7 +14,7 @@
     </marker>
   </defs>
   <rect width="1200" height="935" fill="#fff"/>
-  <text x="600" y="48" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Learning from practice, data, and knowledge</text>
+  <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Learning from practice, data, and knowledge</text>
 
   <g id="learning-flows" stroke-width="2">
     <path id="practice-to-data" d="M 880 664 A 355 355 0 0 1 278 595 L 376 549 A 247 247 0 0 0 795 597 Z" fill="#e5efe3" stroke="#93b197"/>
@@ -27,7 +27,7 @@
     <path d="M 646 231 A 219 219 0 0 1 793 548" stroke="#a3474b" marker-end="url(#red-arrow)"/>
   </g>
 
-  <g id="flow-labels" font-size="26" font-weight="700">
+  <g id="flow-labels" font-size="23" font-weight="700">
     <text x="44" y="278" fill="#314b85"><tspan x="44">Data to</tspan><tspan x="44" dy="32">knowledge</tspan></text>
     <text x="1156" y="278" fill="#963c41" text-anchor="end"><tspan x="1156">Knowledge</tspan><tspan x="1156" dy="32">to practice</tspan></text>
     <text x="600" y="847" fill="#2e6040" text-anchor="middle">Practice to data</text>
@@ -77,7 +77,7 @@
   </g>
 
   <g id="problem-of-interest" text-anchor="middle" fill="#17304b">
-    <text x="600" y="426" font-size="38" font-weight="700"><tspan x="600">A problem</tspan><tspan x="600" dy="44">of interest</tspan></text>
+    <text x="600" y="434" font-size="23" font-weight="700"><tspan x="600">A problem</tspan><tspan x="600" dy="30">of interest</tspan></text>
     <text x="600" y="518" font-size="21">Decide what to study</text>
   </g>
 

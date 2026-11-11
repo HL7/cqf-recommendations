@@ -1,8 +1,6 @@
 This proposed ambulatory pathway is an example for organizing guideline-supported care. Adapt it to the care setting, participants, and service capabilities. Care may span several encounters and organizations; the diagram is not a required visit sequence.
 
-{% include cpg-diagram.html src="cpg-runtime-common-pathway.svg" alt="Establish identity and assess urgency, gather information, agree on care, request and deliver activities, then monitor and report. Repeat assessment as information changes." %}
-
-*Figure 1. A simplified common care pathway. Urgent escalation and reassessment can occur whenever indicated; local workflow determines the actual sequence.*
+{% include cpg-diagram.html src="cpg-runtime-common-pathway.svg" alt="Establish identity and assess urgency, gather information, agree on care, request and deliver activities, then monitor and report. Repeat assessment as information changes." caption="Figure 1. A simplified common care pathway. Urgent escalation and reassessment can occur whenever indicated; local workflow determines the actual sequence." %}
 
 ### Establish the context
 

@@ -40,9 +40,7 @@ The original example included a population-prevalence exception attributed speci
 
 ### HIV Screening Protocol
 
-{% include cpg-diagram.html src="cpg-runtime-screening-example.svg" alt="For the historical screening example, select the recommendation version, establish eligibility and context, offer and authorize testing, interpret results using the selected source, and arrange follow-up." %}
-
-*Figure 1. Information and action boundaries to represent in the historical screening example. This is a modeling overview, not a diagnostic algorithm.*
+{% include cpg-diagram.html src="cpg-runtime-screening-example.svg" alt="For the historical screening example, select the recommendation version, establish eligibility and context, offer and authorize testing, interpret results using the selected source, and arrange follow-up." caption="Figure 1. Information and action boundaries to represent in the historical screening example. This is a modeling overview, not a diagnostic algorithm." %}
 
 | Work product | Questions for review |
 | --- | --- |

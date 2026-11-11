@@ -15,10 +15,10 @@
     </marker>
   </defs>
   <rect width="1200" height="660" fill="#fff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
-      <text x="36" y="44" font-size="30" font-weight="700">How FHIR implementation guide categories fit together</text>
-      <text x="36" y="75" font-size="21">Lower layers support the guides above them.</text>
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">How FHIR implementation guide categories fit together</text>
+      <text x="30" y="75" font-size="19">Lower layers support the guides above them.</text>
     </g>
     <g id="support-relationships" fill="none" stroke="#416993" stroke-width="3.2" marker-end="url(#support-arrow)">
       <path d="M265 260V205"/>
@@ -28,7 +28,7 @@
     </g>
     <g id="content-guides">
       <rect x="36" y="105" width="1128" height="97" rx="9" fill="#315b87"/>
-      <text x="59" y="144" font-size="24" font-weight="700" fill="#fff">Content IGs</text>
+      <text x="59" y="144" font-size="23" font-weight="700" fill="#fff">Content IGs</text>
       <text x="59" y="173" font-size="19" fill="#fff">Publish clinical knowledge</text>
       <g font-size="20" font-weight="700" text-anchor="middle" fill="#23466a">
         <a class="guide-link" href="https://github.com/cqframework/sample-content-ig" target="_blank" rel="noopener" tabindex="0" aria-label="Sample Content Implementation Guide (opens in a new tab)">
@@ -47,7 +47,7 @@
     </g>
     <g id="model-guides">
       <rect x="36" y="261" width="457" height="136" rx="9" fill="#eef2f5" stroke="#748493" stroke-width="2"/>
-      <text x="59" y="295" font-size="24" font-weight="700">Model IGs</text>
+      <text x="59" y="295" font-size="23" font-weight="700">Model IGs</text>
       <text x="59" y="323" font-size="19">Profile data for a domain or jurisdiction</text>
       <path d="M285 360H323" stroke="#416993" stroke-width="2.5" marker-end="url(#support-arrow)"/>
       <g font-size="19" font-weight="700" text-anchor="middle">
@@ -67,7 +67,7 @@
     </g>
     <g id="specification-guides">
       <rect x="517" y="261" width="647" height="136" rx="9" fill="#eef2f5" stroke="#748493" stroke-width="2"/>
-      <text x="540" y="295" font-size="24" font-weight="700">Specification IGs</text>
+      <text x="540" y="295" font-size="23" font-weight="700">Specification IGs</text>
       <text x="540" y="323" font-size="19">Define patterns and conformance requirements</text>
       <g font-size="19" font-weight="700" text-anchor="middle">
         <a class="guide-link" href="https://hl7.org/fhir/uv/cpg/" target="_blank" rel="noopener" tabindex="0" aria-label="Clinical Practice Guidelines Implementation Guide (opens in a new tab)">

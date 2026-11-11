@@ -39,9 +39,7 @@ One person may fill several roles. The [Concept and Profile Index](documentation
 
 </details>
 
-{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." %}
-
-*The work continues after a package is released. Clinical and technical findings can lead to changes in the guideline, its computable representation, or the local implementation.*
+{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." caption="The work continues after a package is released. Clinical and technical findings can lead to changes in the guideline, its computable representation, or the local implementation." %}
 
 ### Look up a detail {#references}
 

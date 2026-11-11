@@ -25,6 +25,10 @@ python3 diagrams/render_narrative.py diagrams/narrative/cpg-runtime-lifecycle.js
 The renderer validates native SVG structure, accessibility descriptions, unique
 IDs, and the absence of embedded images, scripts, or foreign objects. Visually
 check labels and connectors at the guide's 1000-pixel display width after edits.
+The home page lifecycle figure is the typography reference. At a 1200-unit
+viewBox width it uses a left-aligned 29-unit bold navy title, 23-unit stage
+labels, and 18–19-unit supporting text in Arial. The renderer scales those
+sizes for narrower viewBoxes. Preserve monospace for literal code labels.
 
 ## Home and Approach redraws
 

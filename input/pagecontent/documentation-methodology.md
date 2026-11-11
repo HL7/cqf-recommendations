@@ -25,7 +25,7 @@ The examples below come from exploratory workflow-pattern mapping work by FH Hag
 
 The retained prototype illustrates a transformation from a PlanDefinition into a BPMN model and graphical representation. The paired patterns below help reviewers inspect which relationships each representation expresses.
 
-{% include cpg-diagram.html src="cpg-method-formalisms.svg" alt="A historical transformation starts with PlanDefinition and produces a BPMN representation for review. Paired sequence, parallel split, exclusive split, and timed start patterns show the relationships to inspect." center="true" %}
+{% include cpg-diagram.html src="cpg-method-formalisms.svg" alt="A historical transformation starts with PlanDefinition and produces a BPMN representation for review. Paired sequence, parallel split, exclusive split, and timed start patterns show the relationships to inspect." %}
 
 
 Review condition languages, data retrieval, null/unknown behavior, timing, concurrency, joins, and local task execution. Compare source and target behavior using the same approved cases. Do not infer runtime scheduling or synchronization guarantees from a visually similar graph. The retained XML snippets are historical pattern examples, including placeholder expressions; they are not a production-ready CQL translation.

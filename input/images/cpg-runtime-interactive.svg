@@ -12,7 +12,7 @@
     </style>
   </defs>
   <rect width="1200" height="706" fill="#fff"/>
-  <text x="600" y="48" text-anchor="middle" font-size="34" font-weight="700" fill="#17304b">Collect information and reevaluate guidance</text>
+  <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Collect information and reevaluate guidance</text>
 
   <g id="application-flow" stroke="#28567e" stroke-width="3" stroke-linejoin="round" fill="none">
     <path d="M 205 280 H 220" marker-end="url(#flow-arrow)"/>

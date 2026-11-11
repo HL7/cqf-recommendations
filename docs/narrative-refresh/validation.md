@@ -12,6 +12,8 @@ The fresh IG Publisher 3.0.3 build reported zero errors, broken links, or invali
 
 The review page layout update preserved all 226 checklist rows, including the published L1 content and attribution. Chromium checked the full-width home table, shadows on 19 diagrams, checklist navigation and horizontal scrolling, and all 29 conformance IDs at desktop and phone widths. The Publisher reported zero errors, broken links, or invalid XHTML pages and 34 warnings.
 
+The figure follow-up aligned all 24 SVGs to the home lifecycle figure's typography. Chromium checked the centering and spacing of the 19 displayed figures, the nine italic captions, and the L1 applicability headers at desktop, tablet, and phone widths. The execution routes diagram uses a shorter canvas, with the verification and delivery notes directly below it.
+
 ## Publisher warning review and navigation layout
 
 Fetched the official `HL7/cqf-recommendations` mainline (`master`, `e2fb413`). The branch already contained it. IG Publisher 3.0.3 reported 34 warnings, down from 177, with zero errors, broken links, or invalid XHTML pages. The 73 additional informational messages record the canonical versions selected during pinning.

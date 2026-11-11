@@ -11,10 +11,10 @@
     </marker>
   </defs>
   <rect width="1200" height="587" fill="#fff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
-      <text x="36" y="44" font-size="30" font-weight="700">Historical recommendation workflow structure</text>
-      <text x="36" y="75" font-size="21">Opioid prescribing example with its clinical logic abstracted for review</text>
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Historical recommendation workflow structure</text>
+      <text x="30" y="75" font-size="19">Opioid prescribing example with its clinical logic abstracted for review</text>
     </g>
     <g id="applicable-flow" fill="none" stroke="#52697d" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#flow)">
       <path d="M193 184H222"/>

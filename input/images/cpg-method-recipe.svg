@@ -11,10 +11,10 @@
     </marker>
   </defs>
   <rect width="1200" height="459" fill="#fff"/>
-  <g font-family="Arial, Helvetica, sans-serif" fill="#21313c">
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
-      <text x="36" y="44" font-size="30" font-weight="700">From a recommendation to a reviewed package</text>
-      <text x="36" y="75" font-size="21">Each step produces work the team can review before moving on.</text>
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">From a recommendation to a reviewed package</text>
+      <text x="30" y="75" font-size="19">Each step produces work the team can review before moving on.</text>
     </g>
     <g id="work-product-handoffs" fill="none" stroke="#52697d" stroke-width="2.6" marker-end="url(#next)">
       <path d="M228 211H266"/>
@@ -27,7 +27,7 @@
       <path d="M45 116H219Q227 116 227 124V181H37V124Q37 116 45 116Z" fill="#345c84"/>
       <circle cx="61" cy="149" r="13" fill="#fff"/>
       <text x="61" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#345c84">1</text>
-      <text x="83" y="157" font-size="24" font-weight="700" fill="#fff">Select</text>
+      <text x="83" y="157" font-size="23" font-weight="700" fill="#fff">Select</text>
       <text x="52" y="216" font-size="20" font-weight="700">Scoped source</text>
       <text x="52" y="247" font-size="19"><tspan x="52">Recommendation</tspan><tspan x="52" dy="25">Evidence and scope</tspan><tspan x="52" dy="25">Users and setting</tspan></text>
     </g>
@@ -36,7 +36,7 @@
       <path d="M279 116H453Q461 116 461 124V181H271V124Q271 116 279 116Z" fill="#345c84"/>
       <circle cx="295" cy="149" r="13" fill="#fff"/>
       <text x="295" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#345c84">2</text>
-      <text x="317" y="157" font-size="24" font-weight="700" fill="#fff">Represent</text>
+      <text x="317" y="157" font-size="23" font-weight="700" fill="#fff">Represent</text>
       <text x="286" y="216" font-size="20" font-weight="700">Specification</text>
       <text x="286" y="247" font-size="19"><tspan x="286">Data and criteria</tspan><tspan x="286" dy="25">Workflow and timing</tspan><tspan x="286" dy="25">Worked cases</tspan></text>
     </g>
@@ -45,7 +45,7 @@
       <path d="M513 116H687Q695 116 695 124V181H505V124Q505 116 513 116Z" fill="#286e5d"/>
       <circle cx="529" cy="149" r="13" fill="#fff"/>
       <text x="529" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#286e5d">3</text>
-      <text x="551" y="157" font-size="24" font-weight="700" fill="#fff">Translate</text>
+      <text x="551" y="157" font-size="23" font-weight="700" fill="#fff">Translate</text>
       <text x="520" y="216" font-size="20" font-weight="700">Formal artifacts</text>
       <text x="520" y="247" font-size="19"><tspan x="520">FHIR definitions</tspan><tspan x="520" dy="25">CQL and terminology</tspan><tspan x="520" dy="25">Dependencies</tspan></text>
     </g>
@@ -54,7 +54,7 @@
       <path d="M747 116H921Q929 116 929 124V181H739V124Q739 116 747 116Z" fill="#8b521d"/>
       <circle cx="763" cy="149" r="13" fill="#fff"/>
       <text x="763" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#8b521d">4</text>
-      <text x="785" y="157" font-size="24" font-weight="700" fill="#fff">Validate</text>
+      <text x="785" y="157" font-size="23" font-weight="700" fill="#fff">Validate</text>
       <text x="754" y="216" font-size="20" font-weight="700">Review findings</text>
       <text x="754" y="247" font-size="19"><tspan x="754">Clinical review</tspan><tspan x="754" dy="25">Technical tests</tspan><tspan x="754" dy="25">Open issues</tspan></text>
     </g>
@@ -63,7 +63,7 @@
       <path d="M981 116H1155Q1163 116 1163 124V181H973V124Q973 116 981 116Z" fill="#674986"/>
       <circle cx="997" cy="149" r="13" fill="#fff"/>
       <text x="997" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#674986">5</text>
-      <text x="1019" y="157" font-size="24" font-weight="700" fill="#fff">Package</text>
+      <text x="1019" y="157" font-size="23" font-weight="700" fill="#fff">Package</text>
       <text x="988" y="216" font-size="20" font-weight="700">Versioned release</text>
       <text x="988" y="247" font-size="19"><tspan x="988">Linked artifacts</tspan><tspan x="988" dy="25">Tests and notes</tspan><tspan x="988" dy="25">Known limitations</tspan></text>
     </g>
