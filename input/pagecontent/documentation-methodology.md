@@ -46,7 +46,7 @@ A sequence connects a source action to a following action. The FHIR example uses
 
 ### Parallel Split
 
-Parallel branches can be represented as grouped child actions. The retained example uses `action.groupingBehavior=logical-group` and `action.selectionBehavior=all`, with related actions. Selection of all actions does not by itself define a runtime join, transaction, or concurrent execution policy.
+Parallel branches can be represented as grouped child actions. The retained example uses `action.groupingBehavior=logical-group` and `action.selectionBehavior=all`, with related actions. Selection of all actions does not by itself define a runtime join, transaction, or concurrent execution policy. The ballot example uses [`cqf-applicabilityBehavior`](https://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) with `all` for the grouped actions.
 
 **BPMN example**
 
@@ -58,7 +58,7 @@ Parallel branches can be represented as grouped child actions. The retained exam
 
 ### Exclusive Split
 
-An exclusive choice selects one branch according to conditions. The example uses `action.selectionBehavior=exactly-one` with child applicability conditions. Verify mutually exclusive and complete cases, including unknown inputs and no matching branch; implicit synchronization in a transformation tool is not a general FHIR guarantee.
+An exclusive choice selects one branch according to conditions. The example uses `action.selectionBehavior=exactly-one` with child applicability conditions. Verify mutually exclusive and complete cases, including unknown inputs and no matching branch; implicit synchronization in a transformation tool is not a general FHIR guarantee. The ballot example uses [`cqf-applicabilityBehavior`](https://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) with `any` for the grouped actions.
 
 **BPMN example**
 

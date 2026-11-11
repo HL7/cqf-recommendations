@@ -4,6 +4,7 @@ Id: cpg-goal
 Title: "CPG Goal"
 Description: "Defines the expectations for the representation of goals used in computable guidelines"
 * insert StructureDefinitionMetadata(cpg-goal)
+* insert PertinenceExtensions
 * extension contains $cpg-goalFor named goalFor 0..* MS
 * identifier MS
 * lifecycleStatus MS

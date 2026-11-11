@@ -4,6 +4,9 @@ Id: cpg-task
 Title: "CPG Task"
 Description: "Defines the expectations common to tasks that represent activities used in computable guidelines"
 * insert StructureDefinitionMetadata(cpg-task)
+* insert CaseFeatureExtensions
+* insert PertinenceExtensions
+* insert LogicEvaluationMessages
 * extension contains
   CPGRationale named rationale 0..1 MS and
   CPGPertinent named pertinent 0..* MS and

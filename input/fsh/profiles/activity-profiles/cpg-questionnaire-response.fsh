@@ -4,6 +4,7 @@ Id: cpg-questionnaireresponse
 Title: "CPG Questionnaire Response"
 Description: "The response to a particular questionnaire as an activity within the context of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-questionnaireresponse)
+* insert PertinenceExtensions
 * identifier MS
 * questionnaire MS
 * status MS

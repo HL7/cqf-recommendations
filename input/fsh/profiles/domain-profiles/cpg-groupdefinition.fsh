@@ -7,6 +7,7 @@ Description: "Represents the definition of a group of subjects, suitable for use
 * obeys gdf-1
 * extension contains $cqf-expression named expression 0..1 MS
 * extension[expression] ^condition = "gdf-1"
+* extension[expression] ^comment = "For questionnaires, see additional guidance and examples in the [SDC implementation guide](http://hl7.org/fhir/uv/sdc/behavior.html)."
 * identifier MS
 * active MS
 * type only code

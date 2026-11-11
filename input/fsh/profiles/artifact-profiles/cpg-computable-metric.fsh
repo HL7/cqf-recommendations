@@ -9,6 +9,7 @@ Description: "Defines the minimum expectations and behavior for a computable met
 * scoring 1..1 MS
 * compositeScoring 0..1 MS
 * type MS
+* type from CPGMeasureTypeVS (extensible)
 * improvementNotation 1..1 MS
 * group 1..* MS
   * population 1..* MS

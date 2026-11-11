@@ -6,7 +6,7 @@ Description: "CPG encounter represents the minimum expectations for communicatin
 * insert StructureDefinitionMetadata(cpg-encounter)
 * status MS
 * class MS
-* type 1..* MS
+* type MS
 * subject only Reference(CPGPatient)
 * subject MS
 * episodeOfCare only Reference(CPGCase)

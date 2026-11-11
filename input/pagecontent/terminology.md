@@ -1,19 +1,19 @@
-Terminology connects clinical concepts to the codes used by guideline logic and patient data. Use established code systems where possible, define the intended membership of each value set, and record the versions and mappings needed to reproduce an evaluation.
+Terminologies are a critical aspect of supporting interoperable computable content. This implementation guide defines profiles for the CodeSystem and ValueSet resources to identify key elements that must be supported. The profiles described here ensure that different use case needs for value set artifacts are met in a manner that meets criteria deemed important for clinical guideline, decision support, and quality measure artifact creation, testing, use, maintenance, and distribution.
 
-This page describes requirements for terminology **defined by** a content implementation guide. Referencing an external code system or value set does not, by itself, make its publisher subject to these requirements. Start with [Using Codes in FHIR R4](https://hl7.org/fhir/R4/terminologies.html).
+The approach taken here is based on and aligns with the core FHIR specification, readers of this implementation guide should be familiar with the [Using Codes](http://hl7.org/fhir/R4/terminologies.html) topic in the base FHIR specification.
 
-| Work item | What to record |
-| --- | --- |
-| Clinical concept | Intended meaning, source guidance, and any ambiguity requiring review |
-| Code mapping | Code system, code/version, semantic match or qualification, and reviewer |
-| Value-set definition | Canonical identity, version, membership method, and dependencies |
-| Expansion | Expansion time, parameters, code-system versions, and refresh responsibility |
-| Local use | How actual patient data is coded and what happens when mapping or membership is unavailable |
-{:.grid}
+This page provides overview documentation for the use of code systems and value sets:
 
-WHO SMART Guidelines [terminology-alignment experience](https://pmc.ncbi.nlm.nih.gov/articles/PMC10439311/) shows why a plausible code match still needs clinical review. A mapping can be incomplete or approximate; preserve that qualification for downstream implementors.
+*   Using Code Systems
+*   Using Value Sets
+*   {:.new-content} Developing and Maintaining Terminology
 
-Use the [code system index](artifacts.html#codesystem-index), [value set index](artifacts.html#valueset-index), and corresponding [example code systems](examples.html#codesystem-index) and [example value sets](examples.html#valueset-index) to find artifacts.
+For indexes of terminologies defined in this implementation guide, see the following:
+
+*   **[Code System Index](artifacts.html#codesystem-index)**
+*   **[Value Set Index](artifacts.html#valueset-index)**
+*   **[Example Code System Index](examples.html#codesystem-index)**
+*   **[Example Value Set Index](examples.html#valueset-index)**
 
 ### Using Code Systems
 
@@ -22,7 +22,8 @@ Standard and established code systems should be used whenever possible. Only in 
 *   CRMIShareableCodeSystem
 *   CRMIPublishableCodeSystem
 
-Code systems defined by content conforming to this IG SHALL conform to the CRMIShareableCodeSystem profile, and SHALL conform to the CRMIPublishableCodeSystem profile if the artifact status is active.
+§term-1^^terminology:Code systems defined by content conforming to this IG **SHOULD** conform to the CRMIShareableCodeSystem profile, and **SHOULD** conform to the CRMIPublishableCodeSystem profile if the artifact status is active.§ This implementation guide does not take a dependency on CRMI, so these profiles are strongly recommended rather than required (see [Use of CRMI](documentation-conformance.html#use-of-crmi)).
+{:.modified-content}
 
 Note that this does not mean that _any_ code system referenced by computable content must use these profiles. The conformance requirement only applies to code systems _defined_ as part of computable content. For example, the SNOMED CT code system would not be expected to conform to these profiles.
 
@@ -32,42 +33,88 @@ Refer to the [HL7 Terminology](https://terminology.hl7.org/) site for a list of 
 
 ### Using Value Sets
 
-The value-set guidance uses four profile roles: shareable metadata, computable membership, publishable lifecycle information, and a persisted expansion. Resolve the corresponding profiles in the [CRMI](https://hl7.org/fhir/uv/crmi/) edition adopted by the content package. The requirements below use the CRMI profile names referenced by this guide.
+The CRMI implementation guide defines four value set profiles:
+
+*   CRMIShareableValueSet
+*   {:.modified-content} CRMIComputableValueSet
+*   {:.modified-content} CRMIPublishableValueSet
+*   {:.modified-content} CRMIExpandedValueSet
 
 The ComputableValueSet profile describes the requirements for computable representation of value set membership criteria, ensuring that value sets using this profile selectively support only one technique for defining the content of expansions.
 
-The ExpandedValueSet profile provides support for including a persisted point-in-time expansion that SHALL conform to the chosen compositional style for the value set. The included point-in-time expansion can then be used by FHIR implementations that do not have a FHIR terminology service capable of evaluating the value set in real-time with an `$expand` operation. It also provides all the concepts needed in the expansion so that a complete code system resource is not required.
+The ExpandedValueSet profile provides support for including a persisted point-in-time expansion that is consistent with the chosen compositional style for the value set. The included point-in-time expansion can then be used by FHIR implementations that do not have a FHIR terminology service capable of evaluating the value set in real-time with an `$expand` operation. It also provides all the concepts needed in the expansion so that a complete code system resource is not required.
+{:.modified-content}
 
 The PublishableValueSet profile establishes expectations for use of the artifact in a content management lifecycle including publishing and indexing metadata, usage guidance and licensing information, and provenance and governance for the artifact. In addition, to follow vocabulary best-practices, publishable value sets must also be either Computable, Executable, or both.
 
-Whenever possible, value sets SHOULD be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships. In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
+§term-2^^terminology:Whenever possible, value sets **SHOULD** be defined by crafting one or more inclusion and exclusion criteria that use code system properties, attributes, and relationships.§ In this way, the resulting definition can be used to find potential new value set members with each new code system version update. When this is not possible, value sets may be wholly or partially defined by enumerating single concept codes.
 
-Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. For these cases, the description of the construction of the value set SHOULD be represented with non-FHIR expressions using a computable expression in some terminology grammar. For value sets expressed in this way, the language must be sufficiently open and accessible that a user could construct the value set following the semantics without needing to use a proprietary implementation.
+Some value sets cannot be defined using the standard FHIR compose structure with include and exclude elements. §term-3?^^terminology:For these cases, the description of the construction of the value set **SHOULD** be represented with non-FHIR expressions using a computable expression in some terminology grammar.§ For value sets expressed in this way, the language must be sufficiently open and accessible that a user could construct the value set following the semantics without needing to use a proprietary implementation.
 
 As a last resort, for cases where the value set construction cannot be expressed using `compose` or the `expression` extension, use the `rules-text` extension to provide a narrative description of the process to be followed.
 
-Value sets defined by content conforming to this IG SHALL use the CRMIComputableValueSet profile to define value set member content in one of three ways. This profile requires that one and only one of the following three approaches can be used for an instance of the value set, in order of preference:
+§term-4^^terminology:Value sets defined by content conforming to this IG **SHOULD** use the CRMIComputableValueSet profile to define value set member content in one of three ways.§ This profile requires that one and only one of the following three approaches can be used for an instance of the value set, in order of preference:
+{:.modified-content}
 
 1.  **Compose**: This supports using standard FHIR compose structure to define value set membership.
 2.  **Expression**: This extension supports including a specific alternative expression where the syntax is explicitly defined outside of FHIR (such as TSQL)
 3.  **Rules Text**: This extension supports entering a text block that describes a script or some other textual description of how to determine value set members.
 
-The CRMIExpandedValueSet profile supports providing a point-in-time expansion of the value set members using the `ValueSet.expansion` element containing specific individual concept codes obtained as a result of the computed expansion of the value set at the time of publication. The expansion element can be used to support environments where the actual definition cannot be evaluated. As new versions of the value set, and/or as new versions of the code systems used by the value set are released, the expansion content will need to be updated to incorporate newly defined codes that meet the value set intent. Before and periodically during production use, value set expansions SHOULD be updated.
+The CRMIExpandedValueSet profile supports providing a point-in-time expansion of the value set members using the `ValueSet.expansion` element containing specific individual concept codes obtained as a result of the computed expansion of the value set at the time of publication. The expansion element can be used to support environments where the actual definition cannot be evaluated. As new versions of the value set, and/or as new versions of the code systems used by the value set are released, the expansion content will need to be updated to incorporate newly defined codes that meet the value set intent. §term-5^^terminology:Before and periodically during production use, value set expansions **SHOULD** be updated.§ §term-6^^terminology,documentation:Content implementation guides that include executable value sets **SHALL** document the expected maintenance path for those value sets.§
 
-Value sets defined by content conforming to this IG SHOULD include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated. The parameters element SHOULD be used to convey information about the parameters used to expand the value set.
+§term-7^^terminology:Value sets defined by content conforming to this IG **SHOULD** include an expansion element with a timestamp and enough information to determine whether the computed expansion is current, or needs to be updated.§ §term-8^^terminology:The parameters element **SHOULD** be used to convey information about the parameters used to expand the value set.§
 
-Value sets defined by content conforming to this IG SHALL conform to:
+<div class="modified-content" markdown="1">
+
+§§term-9^^terminology:Value sets defined by content conforming to this IG **SHOULD** conform to the CRMI Shareable, Computable or Expanded, and (if active) Publishable value set profiles^Value sets defined by content conforming to this IG SHOULD conform to:
 
 *   The CRMIShareableValueSet profile
 *   Either or both of the CRMIComputableValueSet and CRMIExpandedValueSet profiles
 *   and the CRMIPublishableValueSet profile if the artifact status is active
 
+§§
+
+</div>
+
 Note that as with code systems, this does not mean that _any_ value set referenced by computable content must use these profiles. The conformance requirements only apply to value sets _defined_ as part of computable content.
 
-### Validate and maintain terminology
+<div class="new-content" markdown="1">
 
-Test membership with the actual terminology and data versions used by the implementation. Include representative codes, exclusions, retired or unmapped concepts, and cases in which a service cannot resolve the requested version. Record whether evaluation used the computable definition or a published expansion.
+### Developing and Maintaining Terminology
 
-The membership-definition requirement above and the closing computable/expanded profile list both apply to defined value sets. An expansion supplies a point-in-time result; it does not by itself describe how membership was chosen or remove the earlier definition requirement. Check the selected CRMI edition's profile definitions when packaging content, and document any unresolved conformance question for review.
+Standard terminologies change continuously: codes are added and retired, and categories are restructured. Computable guidelines need to remain valid as these terminologies evolve, and evaluating a guideline often requires comparing data coded with different versions, or different code systems, such as outcomes before and after the guideline was published. This section describes best practices for developing and maintaining the terminology used by computable guidelines, informed by questions from implementers and discussion by the CPG-on-FHIR project team.
 
-Terminology changes can alter behavior even when the CQL source stays the same. Reassess dependent logic and local mappings when code systems, value sets, expansions, or data feeds change. [Reported CDS malfunctions](https://pmc.ncbi.nlm.nih.gov/articles/PMC6019061/) include failures associated with these dependencies. Continue to [libraries](libraries.html) and [validation](methodology-validate.html#validate-step).
+#### Guideline-Specific Concepts and Mappings
+
+The recommended approach is to define a single guideline-specific (local) code system that identifies exactly the concepts used in the guideline, and then map those concepts to the standard terminologies used in implementation:
+
+* The guideline-specific code system defines each concept as the guideline intends it, independent of how any particular standard terminology categorizes it. The guideline's logic and value sets refer to these concepts.
+* Mappings from the guideline concepts to each standard terminology are represented using ConceptMap resources, with one ConceptMap for each target code system (for example, one for SNOMED CT, one for ICD-10-CM, and one for ICD-9-CM).
+* When a standard terminology changes, the mappings are updated, and the guideline concepts, and the logic that uses them, remain stable.
+
+Splitting the mappings by code system is intentional. It aligns maintenance of the mappings with the expertise needed to maintain them: for example, the SNOMED CT mappings can be assigned to a terminologist with SNOMED CT expertise, which makes it easier to assign and manage the maintenance work.
+
+For example, a guideline whose recommendations apply only to non-pulsatile tinnitus can define a concept for non-pulsatile tinnitus. ICD-10-CM distinguishes tinnitus (H93.1) from pulsatile tinnitus (H93.A), so the ICD-10-CM mapping can be precise. ICD-9-CM instead distinguishes unspecified (388.30), subjective (388.31), and objective (388.32) tinnitus, and does not make the same distinction, so the ICD-9-CM mapping records how closely each code corresponds to the guideline concept, using the ConceptMap `equivalence` element. Comparisons of outcomes across data coded with each code system can then account for the difference explicitly.
+
+The [WHO SMART Guidelines antenatal care (ANC) implementation guide](https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/) illustrates this approach, with a [guideline-specific code system](https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/CodeSystem-anc-custom-codes.html) and [a concept map for each target code system](https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/artifacts.html#terminology-concept-maps).
+
+#### Update Cadence
+
+Standard terminologies are released on different schedules. For example, the US Edition of SNOMED CT is released twice a year, and RxNorm has monthly releases, with more frequent weekly updates. Updating the terminology used by a guideline with every release of every code system is a significant maintenance burden.
+
+To keep that burden low, guideline terminology (code system versions, mappings, and value set expansions) should be reviewed and updated no more than twice a year, and at least once a year. An annual update aligns with established practice: the Value Set Authority Center (VSAC) expects value sets to be updated yearly, and the terminology used in electronic clinical quality measures (eCQMs) is updated annually, along with the measures themselves. Content implementation guides document their chosen maintenance path for executable value sets, as described in [Using Value Sets](#using-value-sets).
+
+#### Organizing Value Sets by Code System
+
+Some methodologies define two kinds of value sets:
+
+* **Leaf** value sets, each of which includes codes from one and only one code system
+* **Grouping** value sets, which bring leaf value sets together (using `compose.include.valueSet`) when a concept needs codes from more than one code system
+
+This structure is not necessary, and may not be desirable from a purely terminological perspective, but it has advantages when maintenance is spread across people with different expertise. For example, a terminologist with SNOMED CT expertise can be assigned all of the SNOMED CT leaf value sets. This is the same reasoning as splitting mappings by code system, described above.
+
+</div>
+
+#### Validate terminology in use {#validate-and-maintain-terminology}
+
+Test membership against the terminology and data versions used by the implementation. Include representative codes, exclusions, retired or unmapped concepts, and cases in which the terminology service cannot resolve the requested version. Record whether evaluation used the computable definition or a published expansion. Reassess dependent logic when code systems, mappings, or data feeds change. [Methodology validation](methodology-validate.html#validate-step)

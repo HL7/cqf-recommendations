@@ -1,6 +1,6 @@
 # CPG narrative refresh
 
-This change reorganizes the guide around implementor tasks while retaining IGPublisher, its templates, artifact definitions, dependencies, existing page URLs, and the historical change log. Narrative page and menu configuration evolves with the organization of the guide. Work began from commit `320b164065d795dd0b7ab9ab313a67f129e06dc7`; research was refreshed on 28 October 2026.
+This change reorganizes the guide around implementor tasks using the existing IG Publisher template. It incorporates the STU 3 ballot artifact definitions, dependencies, conformance statements, and change log. Retired narrative pages and moved sections have redirects. The original rewrite began at commit `320b164065d795dd0b7ab9ab313a67f129e06dc7`.
 
 ## Review the result
 
@@ -10,7 +10,7 @@ Start with the [home page](../../input/pagecontent/index.md), then follow either
 
 Methodology now follows the same flat navigation and complete-chapter approach: Overview, Select, Represent, Translate, Validate, and Package. Its overview retains legacy section anchors beside the corresponding step links. The case study and mapping reference remain directly available from the overview and relevant steps. The existing conformance statements, code includes, artifact inventories, and historical examples remain intact.
 
-The rewrite covers 56 active narrative pages. It makes inputs, outputs, responsibilities, resource mappings, and review decisions explicit; reduces repeated explanations; and retains old heading anchors for inbound links. The four checklist pages retain their checklist obligations. Generated indexes, profile tables, code includes, and artifact examples remain in place.
+The rewrite makes inputs, outputs, responsibilities, resource mappings, and review decisions explicit. The five Approach chapters include optional reading paths by role. The L1 checklist uses the published text incorporated in the ballot. Generated indexes, profile tables, code includes, and artifact examples remain in place.
 
 Key distinctions are explained consistently:
 
@@ -48,7 +48,9 @@ See [validation.md](validation.md) for build results, baseline comparison, rende
 
 ```sh
 python3 docs/narrative-refresh/verify.py
-python3 docs/narrative-refresh/verify.py --site /path/to/publisher/output/en
+python3 docs/narrative-refresh/verify.py \
+  --site /path/to/candidate/output/en \
+  --baseline-site /path/to/ballot/output/en
 ```
 
 The work followed the [editorial plan](editorial-plan.md), with bounded contributions from Sol and Luna agents. Detailed ledgers cover the [conceptual model](model-rewrite.md), [methodology](methodology-rewrite.md), [reference pages](reference-rewrite.md), [implementation semantics](runtime-review.md), and [independently checked citations](citation-review.md). The coordinating agent integrated the changes and resolved the review findings.

@@ -16,7 +16,9 @@ Description: "Defines the minimum expectations and behavior for a computable pla
     $cqf-strengthOfRecommendation named strengthOfRecommendation 0..1 MS and
     $cpg-directionOfRecommendation named directionOfRecommendation 0..1 MS and
     $cqf-qualityOfEvidence named qualityOfEvidence 0..1 MS and
-    $cpg-rating named rating 0..1 MS
+    $cpg-rating named rating 0..1 MS and
+    $cqf-applicabilityBehavior named applicabilityBehavior 0..1 MS
+  * extension[applicabilityBehavior] ^comment = "For an action with child actions, indicates whether the child actions are evaluated independently (all), or evaluated in order with the first applicable action being performed (any)."
   * prefix MS
   * title MS
   * description MS

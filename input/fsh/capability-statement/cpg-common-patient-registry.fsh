@@ -6,7 +6,7 @@ Description: "Describes the expected set of functionality required for a patient
 * insert CapabilityStatementMetadata(cpg-common-patient-registry)
 * name = "CPGCommonPatientRegistry"
 * kind = #requirements
-* fhirVersion = #4.0.0
+* fhirVersion = #4.0.1
 * format[+] = #xml
 * format[+] = #json
 * rest

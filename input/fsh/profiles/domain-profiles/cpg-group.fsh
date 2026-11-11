@@ -13,7 +13,7 @@ Description: "Defines an actual group of subjects, suitable for use in various c
 * actual = true (exactly)
 * actual MS
 * code MS
-* name 1..1 MS
+* name MS
 * characteristic 0..0
 * member MS
   * entity only Reference(CPGPatient)

@@ -20,6 +20,9 @@
 
     <action>
         <id value="par_group"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/cqf-applicabilityBehavior">
+            <valueCode value="all"/>
+        </extension>
         <title value="par_group"/>
         <groupingBehavior value="logical-group"/>
         <selectionBehavior value="all"/>

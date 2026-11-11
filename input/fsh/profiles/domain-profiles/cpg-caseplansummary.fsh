@@ -4,6 +4,10 @@ Id: cpg-caseplansummary
 Title: "CPG Case Plan Summary"
 Description: "CPG Case Plan Summary addresses information from the plan portion of the CPG, including patient-specific recommendations (i.e., proposals) along with their respective pertinent patient information and guideline recommendations that are either not applicable or not yet applicable to a specific patient"
 * insert StructureDefinitionMetadata(cpg-caseplansummary)
+* insert PertinenceExtensions
+* extension contains
+    CPGCaseFeaturePertinence named caseFeaturePertinence 0..1 and
+    CPGPertinent named pertinent 0..*
 * . ^comment = "The case/plan summary view provides the ability to address information from the plan portion of the CPG, including patient-specific recommendations (i.e., proposals) along with their respective evidence (i.e., Evidence Resources used in the CPGRecommendation) and guideline recommendations that are either not applicable or not yet applicable to a specific patient, together with patient-level information (i.e., CPGCaseFeatures). Furthermore, the case/plan summary view may be scoped to a given context, such as a given recommendation or set of recommendations, a point in time or anchoring event, or all the information related to a particular case feature, particularly features can represent higher order clinical concepts such as disease or pathophysiological process states."
 * extension contains
   $cpg-generatedFrom named generatedFrom 0..1 MS and
@@ -11,6 +15,7 @@ Description: "CPG Case Plan Summary addresses information from the plan portion 
 * extension[generatedFrom]
   * ^short = "Definition"
   * ^definition = "A link back to the definition that produced this summary. Typically a CPGCasePlanSummaryDefinition."
+  * ^comment = "When this summary is the result of realizing a graph definition (for example, using GraphDefinition/$apply), this extension SHOULD be used to identify the source definition."
 * identifier MS
 * status MS
 * type MS

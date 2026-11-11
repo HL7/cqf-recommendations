@@ -37,6 +37,8 @@ publisher:
 
 dependencies:
   hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.extensions.r4: 5.4.0
+  hl7.fhir.uv.sdc: 4.0.0
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -73,6 +75,8 @@ pages:
       title: Interactive CDS Reference
     documentation-conformance.md:
       title: Conformance
+    actors.md:
+      title: Actors
     documentation-approach-12-08-conceptual-knowledge-architecture-index.md:
       title: Concept and Profile Index
     documentation-approach-cds-implementation-evidence.md:
@@ -145,6 +149,7 @@ parameters:
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
   auto-oid-root: 2.16.840.1.113883.4.642.40.48
+  requirements-category-vs: http://hl7.org/fhir/uv/cpg/ValueSet/cpg-conformance-category-vs
 
 #
 # The Approach and Methodology dropdowns link to their overviews and main sections.

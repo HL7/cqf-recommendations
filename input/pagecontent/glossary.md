@@ -6,7 +6,14 @@ An action relevant to care, such as collecting information, requesting a service
 
 ### Adherence
 
-A defined assessment of how care relates to guideline recommendations over time. Its population, time window, exceptions and missing-data rules need to be explicit. An undocumented action is not automatically nonadherence.
+Adherence is where the patient is with respect to a strategy, taken as a whole, and is a special case of a composite metric. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to a strategy.
+{:.modified-content}
+
+The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](approach-evaluation.html#pathway-status-terms)).
+{:.modified-content}
+
+Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
+{:.new-content}
 
 ### Assertion
 
@@ -26,7 +33,8 @@ A clinically meaningful item of patient information, such as an observation, con
 
 ### Compliance
 
-Satisfaction of a stated rule or expectation. Specify whether it concerns technical conformance, a care-process indicator or another obligation. Technical conformance is not equivalent to clinically appropriate care or clinical effectiveness.
+Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects). Compliance is often determined (and tracked) using metrics, which often correspond with, or are aggregated into, public health indicators or other population-level health analytics. Compliance metrics scoped to a recommendation report their results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
+{:.modified-content}
 
 ### Definition
 
@@ -54,7 +62,8 @@ A defined quantitative assessment, often of a care process or outcome across a p
 
 ### Metric
 
-A patient-level indicator defined for a stated purpose and time context. **CPGComputableMetric** profiles Measure; **CPGMetricReport** profiles MeasureReport. A metric can inform a summary, care review or population measure without proving care quality by itself.
+A [metric](approach-evaluation.html#metrics) is a patient-level measurement or indicator of recommendation compliance (corresponding to a process measure), strategy or guideline adherence (corresponding to a composite measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity. It is often related to a patient-specific recommendation (i.e. a proposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).
+{:.modified-content}
 
 ### Pathway
 

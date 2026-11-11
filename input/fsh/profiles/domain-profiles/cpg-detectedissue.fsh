@@ -4,6 +4,7 @@ Id: cpg-detectedissue
 Title: "CPG Detected Issue"
 Description: "Documents a detected issue within the context of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-detectedissue)
+* insert PertinenceExtensions
 * extension contains
   CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
   CPGCaseFeatureType named caseFeatureType 0..1 MS and

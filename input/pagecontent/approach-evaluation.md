@@ -6,33 +6,67 @@ A metric is a patient-level indicator. It can express progress toward a goal or 
 
 `CPGComputableMetric` profiles Measure for the definition. `CPGMetricReport` profiles MeasureReport for a patient-specific result. A result can also be exposed as an inferred Case Feature when that representation fits its clinical use. Retain its time and source so the receiving workflow can distinguish the inference from a clinician's assessment. [Metric definition profile](StructureDefinition-cpg-computablemetric.html) · [Metric result profile](StructureDefinition-cpg-metricreport.html)
 
+An elapsed-time metric can start with a proposal or another Case Feature used in the guideline logic, such as the event that triggered evaluation. A patient outcome metric can compare an observation with a goal or a Case Feature threshold. Composite metrics can bring together several process or intermediate-outcome results. A correlative metric can relate those process results to patient outcomes. Results can inform care directly, appear in summaries and progress notes, or be reused for cohort measurement and reporting.
+
+<div class="new-content" markdown="1">
+
+#### Metric types and results {#metric-types-and-results}
+
+Three things about a metric vary independently. Its type describes what kind of metric it is, its scope identifies the guideline element it evaluates, and its result describes where the patient stands. Keeping them separate lets the same result be shown in the workflow, reused as a Case Feature, and counted by a population measure.
+
+The [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set identifies two types with coded results. A compliance metric asks whether the care delivered conforms to a single recommendation. An adherence metric, a kind of composite metric, asks whether the requirements of a strategy are met together. Both evaluate the process of care by the care team and patient together.
+
+A result can record a fulfillment window that is still open (pending), an expectation that is temporarily suspended (on hold) or removed by an accepted exemption (exempted), a recommendation that does not apply (not applicable), or insufficient data to decide (unknown). The metric declares criteria such as its exemptions and lookback. See [Metrics](methodology-translate.html#metrics) for the definition rules and [Metric Results](methodology-translate.html#metric-results) for the codes and how to choose a result.
+
+#### Pathway status terms {#pathway-status-terms}
+
+Local implementations may use “on path,” “off path,” and “on with a history off” to describe a patient's status for the pathway as a whole. A “happy path” follows recommendations or strategies that subject matter experts designate as critical. The other activities may have lapses or periods of non-compliance, or may be exempted or out of scope. A “perfect path” means that all were followed on time, with no lapses or periods of non-compliance. The CPG coded results are for compliance and adherence metrics. This guide does not define codes for these pathway terms.
+
+</div>
+
 ### Define population measures {#measures}
 
-A population quality measure defines whose care contributes to an assessment of a process or outcome. FHIR Measure expresses the populations and references their logic, often supplied by Libraries. MeasureReport represents the results. A population measure can reuse logic from a guideline, but its measurement population, time window, exclusions, and aggregation can differ from the guideline's applicability criteria. Test the scoring rules with representative patient-level cases before interpreting the rollup. [FHIR R4 Measure](https://hl7.org/fhir/R4/measure.html) · [FHIR R4 MeasureReport](https://hl7.org/fhir/R4/measurereport.html) · [Quality Measure Implementation Guide](https://hl7.org/fhir/us/cqfmeasures/)
+A population quality measure defines whose care contributes to an assessment of a process or outcome. FHIR Measure defines the population criteria and references the Library that supplies the expression logic. MeasureReport represents the results. A quality measure can reuse guideline expressions, reference a calculated metric or a metric stored as a Case Feature, or relate to a guideline through metadata. Its measurement population, time window, exclusions, and scoring have their own definitions. A population measure counts patient-level results under its own eligibility and scoring criteria. Test those rules with representative patient-level cases before interpreting results for a care team, facility, or research cohort. [FHIR R4 Measure](https://hl7.org/fhir/R4/measure.html) · [FHIR R4 MeasureReport](https://hl7.org/fhir/R4/measurereport.html) · [Quality Measure Implementation Guide](https://hl7.org/fhir/uv/cqm/index.html)
 
 ### Summarize the case, plan, and progress {#summaries}
 
 State whose care the view covers, which recommendation, strategy, or pathway defines its scope, and whether it describes the current state or a prior point in time. Show the source and time of important facts. Readers need to see which activities were proposed, authorized, or documented as performed, and where information is unavailable.
 
+[GraphDefinition $apply](OperationDefinition-cpg-graphdefinition-apply.html) can realize the summary definition for a subject. It evaluates any applicability expression on a link to determine whether to follow it, and uses the target expression or link path to identify the referenced resources. The returned Bundle starts with the Composition and includes the resources it references. Preserve the source definition when presenting or storing a generated summary so it can be reproduced or reviewed.
+
 #### Case Summary {#case-summary}
 
-A Case Summary presents selected Case Features. A GraphDefinition defines the relevant feature graph, and a Composition presents a patient-specific selection of those features. [CPGCaseSummaryDefinition](StructureDefinition-cpg-casesummarydefinition.html) · [CPGCaseSummary](StructureDefinition-cpg-casesummary.html)
+A Case Summary represents the Case Features and feature groups in scope at a point in time. The features can include events, requests, and metrics, as defined by the guideline. A GraphDefinition defines the feature graph and a Composition presents the patient-specific results. The summary can support clinical review, registries, quality and safety review, or guideline development. [CPGCaseSummaryDefinition](StructureDefinition-cpg-casesummarydefinition.html) · [CPGCaseSummary](StructureDefinition-cpg-casesummary.html)
 
 #### Case Plan Summary {#case-plan-summary}
 
-A Case Plan Summary adds pertinent proposals, requests, and events to the patient features. The same definition can support a document or an application view. [CPGCasePlanSummaryDefinition](StructureDefinition-cpg-caseplansummarydefinition.html) · [CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html)
+A Case Plan Summary adds pertinent proposals, requests, and events to the patient features. It can include evidence supporting proposals and distinguish guidance that is inapplicable, guidance whose criteria have yet to be met, and guidance that has yet to be evaluated. A summary scoped to a prior event can show which strategies the team used to address a recurring concern. The same definition can support a document or an application view. [CPGCasePlanSummaryDefinition](StructureDefinition-cpg-caseplansummarydefinition.html) · [CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html)
 
 #### Case Plan Progressing Note {#case-plan-progressing-note}
 
-A Case Plan Progressing Note documents progress and can include clinical impressions. A form can collect information for the note and reuse descriptive or decision logic. Keep the form's interaction rules separate from the definitions of features and the logic that proposes care. [CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html)
+A Case Plan Progressing Note documents progress and can combine a Case Plan Summary with clinical impressions collected through an adaptive form. The note can capture feedback from the care team on the patient's condition and the use of guideline recommendations. Keep the form's interaction rules separate from the definitions of features, the logic that proposes care, and metric calculations. [CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html) · [SDC Adaptive Forms](https://hl7.org/fhir/uv/sdc/adaptive.html)
 
 ### Report to a defined recipient {#reporting}
 
-Case data defined by case-feature groups or features can also support a report at the end of a pathway. This approach SHOULD be aligned with the eCaseReporting implementation guide. A case or case-plan summary can supply information for an eCase Report, subject to the recipient's scope, required terminology, disclosure authorization, and applicable reporting contract. A public-health eCR report, a registry submission, and feedback to a guideline developer serve different purposes. Confirm the applicable jurisdiction and specification for each. [Electronic Case Reporting Implementation Guide](https://hl7.org/fhir/us/ecr/)
+Case data defined by case-feature groups or features can also support a report at the end of a pathway. §path-1^^data:This approach **SHOULD** be aligned with the eCaseReporting implementation guide.§
+
+A Case Summary can supply patient data for a report. A Case Plan Summary can add pertinent proposals, evidence, or metrics when the reporting contract calls for them. For example, requests awaiting fulfillment and recommendations that were declined can help explain the reported course of care. Relevant site configurations can help recipients interpret those findings when the contract provides for that context.
+
+A public health eCR report, a registry submission, and feedback to a guideline developer serve different purposes. Confirm the recipient's scope, required terminology, disclosure authorization, and applicable reporting contract. Validate the report against that contract and test that a representative patient record yields the expected report, including the distinction between proposals, orders, and documented events. [Electronic Case Reporting Implementation Guide](https://hl7.org/fhir/us/ecr/)
 
 ### Connect to supporting knowledge {#infobutton}
 
 A contextual link to knowledge can use the guideline's metadata and recommendation citations. An Infobutton uses clinical or user context to help the user discover relevant information. [HL7 Infobutton](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=208) · [OpenInfobutton](https://www.openinfobutton.org/)
+
+### Validate each derivative {#validate-each-derivative}
+
+| Output | What to check with representative cases |
+| --- | --- |
+| Patient metric | The clinical meaning, time anchor, scoring rules, and behavior when data are missing or late. |
+| Population measure | The population criteria and exclusions, how patient results contribute to the score, and how aggregation is verified. |
+| Summary or note | The patient and time scope, source of included facts, and presentation of proposals, authorized care, and documented events. |
+| External report | The recipient's contract, required content and terminology, and what data the recipient is authorized to receive. |
+{:.grid}
 
 ### Evaluate the implementation {#evaluate-implementation}
 

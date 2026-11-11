@@ -11,8 +11,11 @@
   }
 
   const section = fragment ? document.getElementById(fragment) : null;
-  const link = section && sections.contains(section) ? section : fallback;
-  const destination = new URL(link.getAttribute("href"), window.location.href);
+  const link = section && sections?.contains(section) ? section : fallback;
+  const target = section?.dataset.redirect || link?.getAttribute("href");
+  if (!target) return;
+
+  const destination = new URL(target, window.location.href);
   destination.search = window.location.search;
   window.location.replace(destination.href);
 })();

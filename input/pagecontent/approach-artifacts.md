@@ -63,6 +63,12 @@ Use this matrix to plan the work for a capability. For a measured case feature, 
 
 This planning matrix follows the levels-by-tiers distinction previously illustrated in this guide by B. Rhodes, Database Consulting Group (2019). Use the [L1–L4 checklists](checklists.html) to review the artifacts in scope.
 
+### Design the knowledge architecture {#knowledge-architecture}
+
+Identify the clinical concepts, their relationships, and the boundaries between patient description, recommended care, and local delivery. For each boundary, agree on the information that crosses it and how its meaning and provenance are preserved. Then choose the representations that fit those responsibilities. In the CHF example, a case feature defines weight change, a library calculates it, and a recommendation specifies what to do with the result. The same feature and calculation can serve a summary or metric while each consumer defines its own decision or measurement criteria. [Case, Plan, and Workflow](approach-model.html#boundary-cases)
+
+Use common profiles, terminology, and interfaces where they express the clinical meaning. Define the constraints that keep related artifacts interoperable, including allowed references, expected data, and how to resolve dependencies. Give reusable clinical logic a versioned source so each recommendation, form, or implementation can reference the same expression where its meaning fits. [FHIR R4 Clinical Reasoning](https://hl7.org/fhir/R4/clinicalreasoning-knowledge-artifact-representation.html)
+
 ### FHIR resource map {#resource-map}
 
 FHIR resources carry the artifacts and the relationships among them. A StructureDefinition establishes the constraints for a profile; a conforming resource carries particular content. For example, the CHF pathway is a PlanDefinition instance conforming to CPGPathwayDefinition. A patient's enrollment in that pathway is a separate EpisodeOfCare.
@@ -87,7 +93,7 @@ Check the exact profile for cardinalities, terminology bindings, extensions, and
 
 Where supported, use the canonical `url`, business `version`, and artifact type to identify the knowledge artifact. A resource's `id`, server location, and `meta.versionId` identify a server record and its revision history. Track the identity of the guideline package separately from the versions of artifacts it contains or references.
 
-Record who maintains the artifact, where it is intended for use, its status, evidence and derivation, and applicable rights. Use the metadata and relationship fields supported by the resource. Publication status supports review and discovery; local enablement and authorization are separate decisions. For a patient result, retain the relevant source inputs, effective time, and expression or artifact version so that reviewers can explain how it was produced.
+Record who maintains the artifact, its intended use, topic, lifecycle status, evidence and derivation, and applicable rights. Use supported metadata fields consistently across artifact types so a consumer can find related content and distinguish artifacts it depends on from those it was derived from. Publication status supports review and discovery. Local enablement and authorization are separate decisions. For a patient result, retain the relevant source inputs, effective time, and expression or artifact version so that reviewers can explain how it was produced.
 
 ### Expressions and declarations {#expressions-and-declarations}
 
@@ -100,6 +106,10 @@ Make the expression's inputs, model, and dependencies explicit. [Libraries](libr
 Build larger artifacts using allowed references. A recommendation can use a Library and an activity definition; a strategy can group recommendations; a package can identify the definitions, terminology, logic, examples, and documentation it assembles. That assembly has a different purpose from the FHIR Composition resource used for clinical summaries. If implementing a subset, identify the capabilities in scope and resolve all dependencies needed to support them.
 
 Record the exact versions used in a release, including shared libraries, profiles, terminology, and dependencies on other packages. When a dependency changes, trace which recommendations and local implementations use it. [Wright et al.](https://doi.org/10.1093/jamia/ocx106) describe CDS malfunctions involving dependency and terminology changes; their cases illustrate why changes need impact review. [Development and Maintenance](approach-development.html) covers review, release, and stewardship.
+
+#### Manage content in a repository {#knowledge-content-management}
+
+A repository can register definitions, content, and their metadata, support canonical lookup and topic discovery, and resolve dependencies for versioned releases. Track derivation and use relationships so a change to a shared profile, value set, or expression reveals the artifacts and implementations that need review. Record registration, publication, and local enablement separately so that availability for discovery does not activate clinical behavior.
 
 ### Derived artifacts {#derived-artifacts}
 

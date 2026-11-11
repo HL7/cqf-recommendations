@@ -8,6 +8,6 @@ Description: "Profile of Patient for use with CPG Implementation Guide"
   * use MS
   * value MS
 * active MS
-* name 1..* MS
+* name MS
   * use MS
   * text

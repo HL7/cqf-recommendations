@@ -1,5 +1,33 @@
 # Narrative refresh validation
 
+## STU 3 ballot integration
+
+The 11 November 2026 validation compared the branch with STU 3 ballot commit `e2fb41324f63f4af4b687121f7ead14cf5a1c1a0`. Both builds used IG Publisher 3.0.3, SUSHI 3.19.0, and the same local package cache. Both builds completed successfully.
+
+The 615 generated FHIR resource files other than the ImplementationGuide matched byte for byte. The ImplementationGuide reflects the new chapter and menu configuration. All 29 statements in the rendered conformance index matched the ballot's text, expectation, category, and conditionality.
+
+`verify.py` passed the source and rendered checks for 39 narrative pages and 31 legacy redirect pages. Chromium checked all 42 links from the ballot's §2.0.1 table within 435 route checks, including old section bookmarks, query preservation, and a redirect page with JavaScript disabled. The five-chapter sequence and seven expandable reading paths were checked in the desktop and narrow Approach layouts. Each chapter's navigation and figures loaded.
+
+| Publisher finding | STU 3 ballot | Integrated branch |
+| --- | ---: | ---: |
+| Errors | 51 | 51 |
+| Warnings | 180 | 179 |
+| Hints | 440 | 440 |
+| Broken HTML links | 39 | 21 |
+| Invalid XHTML pages | 1 | 1 |
+
+The comparison found no new Publisher errors, warnings, or broken HTML links. The narrative checker reports three inherited duplicate named anchors in the generated conformance index separately. The baseline also reports a CHF ELM generation error. This verification covers the source and rendered publication.
+
+Build the pinned ballot and candidate in separate directories, then run the verifier against both completed builds.
+
+```sh
+python3 docs/narrative-refresh/verify.py \
+  --site /path/to/candidate/output/en \
+  --baseline-site /path/to/ballot/output/en
+```
+
+## Original narrative refresh
+
 Validation date: 28 October 2026. Baseline: `320b164065d795dd0b7ab9ab313a67f129e06dc7`.
 
 ## Source preservation and editorial checks

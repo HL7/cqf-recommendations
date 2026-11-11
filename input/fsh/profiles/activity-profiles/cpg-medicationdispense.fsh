@@ -4,6 +4,7 @@ Id: cpg-medicationdispense
 Title: "CPG Medication Dispense"
 Description: "Documents the dispensing of a particular medication as an activity within the context of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-medicationdispense)
+* insert PertinenceExtensions
 * extension contains
   CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
   CPGCaseFeatureType named caseFeatureType 0..1 MS and

@@ -7,7 +7,6 @@ Description: "Profile of PractitionerRole for use with CPG Implementation Guide"
 * identifier MS
   * use MS
   * value MS
-* practitioner 1..1
 * practitioner only Reference(CPGPractitioner)
 * code 0..* MS
 * code from CPGCommonPersonaVS (preferred)

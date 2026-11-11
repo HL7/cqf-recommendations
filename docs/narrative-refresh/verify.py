@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""Check the narrative refresh against its recorded baseline.
+"""Verify narrative migration and editable figures against the STU3 ballot.
 
-Requires the existing Ruby Kramdown/GFM gems used by Jekyll. Optionally pass
---site PATH to the IGPublisher HTML directory for rendered link verification.
-This is an editorial check, not FHIR or clinical validation.
+Source checks use Ruby Kramdown/GFM. Pass --site for Publisher output checks
+and --baseline-site for exact published anchors and baseline link comparison.
+Both site paths should point to the Publisher's en/ directory.
 """
 from __future__ import annotations
 
 import argparse
 from collections import Counter
-import hashlib
 from html.parser import HTMLParser
 import importlib.util
 import json
@@ -22,109 +21,169 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[2]
 PAGES = ROOT / "input/pagecontent"
+REDIRECTS = ROOT / "input/redirects"
+BASELINE = "e2fb41324f63f4af4b687121f7ead14cf5a1c1a0"
+FORMAL_PATHS = (
+    "input/fsh", "input/cql", "input/data", "input/examples", "_unused-fsh",
+    "input/includes/process-patterns", "FHIR-cpg.xml", "oids.ini", "publication-request.json",
+    "fsh.ini", "ig.ini",
+    "input/pagecontent/clinical-guidelines-development-L1-checklist.md",
+)
+REQUIREMENT = re.compile(r"§{1,2}([\w-]+)\??\^\^")
 
 
 class Document(HTMLParser):
     def __init__(self, content: str):
         super().__init__(convert_charrefs=True)
-        self.ids: list[str] = []
-        self.links: list[str] = []
-        self.images: list[dict] = []
+        self.ids = Counter()
+        self.generated_ids = set()
+        self.links = []
+        self.named_links = {}
+        self.fragment_redirects = {}
+        self.images = []
+        self.scripts = []
         self.feed(content)
 
     def handle_starttag(self, tag, attributes):
         attrs = dict(attributes)
-        if attrs.get("id"):
-            self.ids.append(attrs["id"])
-        if tag == "a" and attrs.get("name"):
-            self.ids.append(attrs["name"])
-        if tag == "a" and attrs.get("href"):
-            self.links.append(attrs["href"])
+        anchor = attrs.get("id")
+        if anchor:
+            self.ids[anchor] += 1
+            if attrs.get("data-fhir") or (tag == "span" and re.fullmatch(r"ips2?_\d+", anchor)):
+                self.generated_ids.add(anchor)
+        if tag == "a":
+            name = attrs.get("name")
+            if name and name != anchor:
+                self.ids[name] += 1
+                if re.fullmatch(r"l\d+", name):
+                    self.generated_ids.add(name)
+            if attrs.get("href"):
+                self.links.append(attrs["href"])
+                if anchor:
+                    self.named_links[anchor] = attrs["href"]
+            if anchor and attrs.get("data-redirect"):
+                self.fragment_redirects[anchor] = attrs["data-redirect"]
+                self.links.append(attrs["data-redirect"])
         if tag == "img":
             self.images.append(attrs)
+        if tag == "script" and attrs.get("src"):
+            self.scripts.append(attrs["src"])
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--site", type=Path)
-    args = parser.parse_args()
-    manifest = json.loads((Path(__file__).parent / "protected-files.json").read_text())
-    errors = []
-    for filename, expected in manifest["files"].items():
-        path = ROOT / filename
-        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
-            errors.append(f"Protected file changed: {filename}")
-    old = {}
-    new = {}
-    expected_pages = set(json.loads((Path(__file__).parent / "original-anchors.json").read_text()))
-    if {path.name for path in PAGES.glob("*.md")} != expected_pages:
-        errors.append("Narrative page inventory changed")
-    for path in sorted(PAGES.glob("*.md")):
-        relative = str(path.relative_to(ROOT))
-        old[path.name] = subprocess.check_output(
-            ["git", "show", f'{manifest["base_commit"]}:{relative}'], cwd=ROOT, text=True)
-        new[path.name] = path.read_text()
-        include_pattern = r"\{%\s*(?:include|highlight|endhighlight)\b.*?%\}"
-        before = Counter(re.findall(include_pattern, old[path.name]))
-        after = Counter(re.findall(include_pattern, new[path.name]))
-        if before != after:
-            errors.append(f"Include/highlight directives changed: {path.name}")
-        def normative_counts(source):
-            active = re.sub(r"<!--.*?-->", "", source, flags=re.S)
-            return Counter(re.findall(r"\b(?:SHALL|SHOULD|MAY|MUST|REQUIRED)\b", active))
-        if normative_counts(old[path.name]) != normative_counts(new[path.name]):
-            errors.append(f"Active normative verb counts changed: {path.name}")
-    if new["changes.md"] != old["changes.md"]:
-        errors.append("Historical version log changed")
-    for level in ("L2", "L3", "L4"):
-        filename = f"clinical-guidelines-development-{level}-checklist.md"
-        rows = lambda source: [line for line in source.splitlines() if line.startswith("|")]
-        if rows(old[filename]) != rows(new[filename]):
-            errors.append(f"Checklist rows changed: {filename}")
+def git(*args: str) -> str:
+    return subprocess.check_output(["git", *args], cwd=ROOT, text=True)
 
+
+def render_markdown(pages: dict[str, str]) -> dict[str, str]:
     ruby = r'''
 require 'json'; require 'kramdown'; require 'kramdown-parser-gfm'
-data=JSON.parse(STDIN.read); result={}
-data.each do |side,pages|
-  result[side]={}
-  pages.each do |name,source|
-    source=source.gsub(/<!--.*?-->/m,'').gsub(/\{%.*?%\}/m,'')
-    result[side][name]=Kramdown::Document.new(source,input:'GFM',auto_ids:true).to_html
-  end
+data=JSON.parse(STDIN.read).transform_values do |source|
+  source=source.gsub(/<!--.*?-->/m,'').gsub(/\{%.*?%\}/m,'')
+  Kramdown::Document.new(source,input:'GFM',auto_ids:true).to_html
 end
-STDOUT.write(JSON.generate(result))
+STDOUT.write(JSON.generate(data))
 '''
-    rendered = json.loads(subprocess.check_output(
-        ["ruby", "-e", ruby], input=json.dumps({"old": old, "new": new}), text=True))
-    old_docs = {n: Document(t) for n, t in rendered["old"].items()}
-    docs = {n: Document(t) for n, t in rendered["new"].items()}
-    images = set()
+    return json.loads(subprocess.check_output(
+        ["ruby", "-e", ruby], input=json.dumps(pages), text=True))
+
+
+def section_ids(doc: Document) -> set[str]:
+    return {anchor for anchor in doc.ids.keys() - doc.generated_ids
+            if anchor not in {"segment-content", "publish-box", "markdown-toc", "bottom"}
+            and not anchor.startswith("markdown-toc-")}
+
+
+def check_legacy(old: dict, new: dict) -> set[str]:
+    errors = set()
+    for name, doc in old.items():
+        if name not in new:
+            errors.add(f"Legacy narrative page missing: {name}")
+        else:
+            for anchor in section_ids(doc) - section_ids(new[name]):
+                errors.add(f"Legacy narrative anchor missing: {name}#{anchor}")
+    return errors
+
+
+def relative_reference(link: str):
+    parts = urlsplit(link)
+    if parts.scheme or parts.netloc or parts.path.startswith("/"):
+        return None
+    return unquote(parts.path), unquote(parts.fragment).split(":~:", 1)[0]
+
+
+def source_issues(docs: dict, redirects: set[str], requirements: dict[str, list[str]]) -> set[str]:
+    issues = set()
     for name, doc in docs.items():
-        if re.search(r'<p\b[^>]*>\s*<img\b[^>]*\bsrc="cpg-', rendered["new"][name]):
-            errors.append(f"Diagram subject to the template's paragraph-image float: {name}")
-        missing = set(old_docs[name].ids) - set(doc.ids)
-        if missing:
-            errors.append(f"Old anchors missing in {name}: {sorted(missing)}")
-        duplicates = [i for i, count in Counter(doc.ids).items() if count > 1]
-        if duplicates:
-            errors.append(f"Duplicate anchors in {name}: {duplicates}")
+        for anchor, count in doc.ids.items():
+            if count > 1:
+                issues.add(f"Duplicate source anchor: {name}#{anchor}")
         for link in doc.links:
-            parts = urlsplit(link)
-            if parts.scheme or parts.netloc:
+            ref = relative_reference(link)
+            if ref is None:
                 continue
-            target = Path(unquote(parts.path)).name
-            target = target.removesuffix(".html") + ".md" if target else name
-            if target in docs and parts.fragment and unquote(parts.fragment) not in docs[target].ids:
-                errors.append(f"Narrative fragment missing: {name} -> {link}")
+            path, anchor = ref
+            target = path or name
+            if (target in docs and anchor
+                    and anchor not in docs[target].ids and anchor not in requirements.get(target, [])):
+                issues.add(f"Narrative fragment missing: {name} -> {link}")
         for img in doc.images:
             src = img.get("src", "")
-            images.add(src)
             if not img.get("alt", "").strip():
-                errors.append(f"Missing figure alt text in {name}: {src}")
-            if not src.endswith(".svg") or not (ROOT / "input/images" / src).is_file():
-                errors.append(f"Missing or legacy narrative figure in {name}: {src}")
+                issues.add(f"Missing figure alt text: {name} -> {src}")
+        if name in redirects:
+            if "approach-redirect" not in doc.named_links:
+                issues.add(f"Redirect fallback missing: {name}")
+            if "approach-redirect.js" not in doc.scripts or not (REDIRECTS / "approach-redirect.js").is_file():
+                issues.add(f"Redirect script missing: {name}")
+            for link in doc.named_links.values():
+                ref = relative_reference(link)
+                if ref is None or ref[0] not in docs or ref[0] in redirects:
+                    issues.add(f"Redirect must target a current narrative page: {name} -> {link}")
+    return issues
 
-    # Verify that checked-in SVGs are reproducible from their editable source.
+
+def narrative_content(html: str) -> str:
+    # Publisher adds template navigation and TOC IDs around the narrative.
+    content = re.search(r'<div\b[^>]*\bid="segment-content"', html)
+    footer = re.search(r'<div\b[^>]*\bid="segment-footer"', html)
+    return html[content.start() if content else 0:footer.start() if footer else len(html)]
+
+
+def check_site(site: Path, names: set[str]) -> tuple[dict, set[str], set[str]]:
+    docs, missing, issues = {}, set(), set()
+    anchor_cache = {}
+    for name in sorted(names):
+        file = site / name
+        if not file.is_file():
+            missing.add(f"Rendered narrative page missing: {name}")
+            continue
+        doc = Document(narrative_content(file.read_text()))
+        docs[name] = doc
+        for anchor in section_ids(doc):
+            if doc.ids[anchor] > 1:
+                issues.add(f"Duplicate rendered anchor: {name}#{anchor}")
+        links = doc.links + doc.scripts + [img.get("src", "") for img in doc.images]
+        for link in links:
+            ref = relative_reference(link)
+            if not link or ref is None:
+                continue
+            path, anchor = ref
+            target = (file.parent / path).resolve() if path else file
+            if not target.exists():
+                issues.add(f"Rendered target missing: {name} -> {link}")
+                continue
+            if target.is_dir() and (target / "index.html").is_file():
+                target = target / "index.html"
+            if anchor and target.suffix == ".html":
+                if target not in anchor_cache:
+                    anchor_cache[target] = Document(target.read_text()).ids
+                if anchor not in anchor_cache[target]:
+                    issues.add(f"Rendered anchor missing: {name} -> {link}")
+    return docs, missing, issues
+
+
+def check_diagrams() -> set[str]:
+    errors = set()
     sys.dont_write_bytecode = True
     spec = importlib.util.spec_from_file_location("diagram_renderer", ROOT / "diagrams/render_narrative.py")
     renderer = importlib.util.module_from_spec(spec)
@@ -134,39 +193,99 @@ STDOUT.write(JSON.generate(result))
         target = ROOT / "input/images" / (source.stem + ".svg")
         expected = renderer.native_svg(source, diagram) if "svgSource" in diagram else renderer.render(diagram)
         if not target.is_file() or target.read_text() != expected:
-            errors.append(f"SVG differs from source: {source.name}")
+            errors.add(f"SVG differs from source: {source.name}")
         else:
             svg = ET.fromstring(target.read_text())
             ns = {"s": "http://www.w3.org/2000/svg"}
             if svg.find("s:title", ns) is None or svg.find("s:desc", ns) is None:
-                errors.append(f"SVG accessibility text missing: {target.name}")
+                errors.add(f"SVG accessibility text missing: {target.name}")
+    return errors
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--baseline-commit", default=BASELINE)
+    parser.add_argument("--site", type=Path)
+    parser.add_argument("--baseline-site", type=Path)
+    args = parser.parse_args()
+    if args.baseline_site and not args.site:
+        parser.error("--baseline-site requires --site")
+    for site in (args.site, args.baseline_site):
+        if site and not site.is_dir():
+            parser.error(f"Publisher site directory does not exist: {site}")
+
+    try:
+        baseline = git("rev-parse", "--verify", f"{args.baseline_commit}^{{commit}}").strip()
+    except subprocess.CalledProcessError:
+        parser.error(f"Baseline commit is unavailable locally: {args.baseline_commit}")
+    old = {Path(path).with_suffix(".html").name: git("show", f"{baseline}:{path}")
+           for path in git("ls-tree", "-r", "--name-only", baseline, "--", "input/pagecontent").splitlines()
+           if Path(path).suffix == ".md"}
+    new = {path.with_suffix(".html").name: path.read_text() for path in sorted(PAGES.glob("*.md"))}
+    redirects = {path.name: path.read_text() for path in sorted(REDIRECTS.glob("*.html"))}
+    errors = {f"Redirect overlaps current narrative: {name}" for name in new.keys() & redirects.keys()}
+
+    changed = git("diff", "--no-ext-diff", "--name-only", baseline, "--", *FORMAL_PATHS).splitlines()
+    untracked = git("ls-files", "--others", "--exclude-standard", "--", *FORMAL_PATHS).splitlines()
+    errors.update(f"Protected ballot file differs: {name}" for name in changed + untracked)
+
+    old_by_page = {name: REQUIREMENT.findall(re.sub(r"<!--.*?-->", "", source, flags=re.S))
+                   for name, source in old.items()}
+    new_by_page = {name: REQUIREMENT.findall(re.sub(r"<!--.*?-->", "", source, flags=re.S))
+                   for name, source in new.items()}
+    old_requirements = Counter(anchor for anchors in old_by_page.values() for anchor in anchors)
+    requirements = Counter(anchor for anchors in new_by_page.values() for anchor in anchors)
+    errors.update(f"Ballot requirement missing: {anchor}" for anchor in old_requirements.keys() - requirements.keys())
+    errors.update(f"Duplicate requirement ID: {anchor}" for anchor, count in requirements.items() if count > 1)
+
+    old_docs = {name: Document(html) for name, html in render_markdown(old).items()}
+    rendered = render_markdown(new)
+    new_docs = {name: Document(html) for name, html in (rendered | redirects).items()}
+    baseline_issues = source_issues(old_docs, set(), old_by_page)
+    issues = source_issues(new_docs, set(redirects), new_by_page)
+    errors.update(issues - baseline_issues)
+    for name, html in rendered.items():
+        if re.search(r'<p\b[^>]*>\s*<img\b[^>]*\bsrc="cpg-', html):
+            errors.add(f"Diagram subject to the template's paragraph-image float: {name}")
+        for img in new_docs[name].images:
+            src = img.get("src", "")
+            ref = relative_reference(src)
+            if ref is not None and not (ROOT / "input/images" / ref[0]).is_file():
+                errors.add(f"Narrative figure missing: {name} -> {src}")
+    errors.update(check_diagrams())
 
     if args.site:
-        site = args.site.resolve()
-        cache = {}
-        for name in docs:
-            file = site / name.replace(".md", ".html")
-            if not file.is_file():
-                errors.append(f"Rendered narrative page missing: {file.name}")
-                continue
-            doc = Document(file.read_text())
-            for link in doc.links + [i.get("src", "") for i in doc.images]:
-                parts = urlsplit(link)
-                if not link or parts.scheme or parts.netloc or parts.path.startswith("/"):
-                    continue
-                target = (file.parent / unquote(parts.path)).resolve() if parts.path else file
-                if not target.exists():
-                    errors.append(f"Rendered target missing: {name} -> {link}")
-                elif parts.fragment and target.suffix == ".html":
-                    if target not in cache:
-                        cache[target] = set(Document(target.read_text()).ids)
-                    if unquote(parts.fragment) not in cache[target]:
-                        errors.append(f"Rendered anchor missing: {name} -> {link}")
+        rendered_docs, missing, rendered_issues = check_site(args.site.resolve(), set(new_docs) | set(old_docs))
+        errors.update(missing)
+        for name in redirects.keys() & rendered_docs.keys():
+            for anchor, target in new_docs[name].named_links.items():
+                if rendered_docs[name].named_links.get(anchor) != target:
+                    errors.add(f"Rendered redirect differs from source: {name}#{anchor} -> {target}")
+        for name, doc in rendered_docs.items():
+            if name in new_docs and doc.fragment_redirects != new_docs[name].fragment_redirects:
+                errors.add(f"Rendered fragment redirects differ from source: {name}")
+            for anchor in new_by_page.get(name, []):
+                if anchor not in doc.ids and f"{anchor}?" not in doc.ids:
+                    errors.add(f"Publisher did not render ballot requirement: {name}#{anchor}")
+        if args.baseline_site:
+            rendered_old, baseline_missing, rendered_baseline_issues = check_site(args.baseline_site.resolve(), set(old_docs))
+            errors.update(f"Baseline check incomplete: {issue}" for issue in baseline_missing)
+            errors.update(check_legacy(rendered_old, rendered_docs))
+            baseline_issues.update(rendered_baseline_issues)
+        issues.update(rendered_issues)
+        errors.update(rendered_issues - baseline_issues)
+    if not args.baseline_site:
+        errors.update(check_legacy(old_docs, new_docs))
 
-    result = {"base_commit": manifest["base_commit"], "protected_files": len(manifest["files"]),
-              "pages": len(docs), "unique_narrative_diagrams": len(images),
-              "words_before": sum(len(t.split()) for t in old.values()),
-              "words_after": sum(len(t.split()) for t in new.values()), "errors": errors}
+    result = {
+        "base_commit": baseline,
+        "ballot_requirements": len(old_requirements),
+        "narrative_pages": len(new),
+        "legacy_redirects": len(redirects),
+        "baseline_only_issues": sorted(baseline_issues - issues),
+        "retained_baseline_issues": sorted(baseline_issues & issues),
+        "errors": sorted(errors),
+    }
     print(json.dumps(result, indent=2))
     raise SystemExit(bool(errors))
 

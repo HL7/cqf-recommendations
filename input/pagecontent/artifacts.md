@@ -394,3 +394,15 @@ Use these indexes to find artifacts defined by this implementation guide, groupe
 *   [CPG Common Process](ValueSet-cpg-common-process-vs.html)
 
     Common processes used to describe the high-level, conceptual activities that occur as part of the delivery of guideline-based care
+
+*   {:.new-content} [CPG Measure Type](ValueSet-cpg-measure-type-vs.html)
+
+    The type of a metric, including the compliance and adherence types defined by this implementation guide
+
+*   {:.new-content} [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html)
+
+    The result of evaluating a compliance metric scoped to a recommendation
+
+*   {:.new-content} [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html)
+
+    The result of evaluating an adherence metric scoped to a strategy

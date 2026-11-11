@@ -41,13 +41,13 @@ Content conforming to this implementation guide MAY identify settings using the 
 
 Capture the source version, citation, and the rating system used by the guideline authors. Ask clinical and evidence reviewers to confirm which ratings belong to the selected recommendation. Record evidence certainty, recommendation strength, and recommendation direction separately.
 
-Content conforming to this implementation guide SHALL provide references to supporting documentation for a recommendation in the form of a `relatedArtifact` element specifying a citation to the guideline.
+§rec-1^^recommendation:Content conforming to this implementation guide **SHALL** provide references to supporting documentation for a recommendation in the form of a `relatedArtifact` element specifying a citation to the guideline.§
 
-Due to the variability in rating systems among guideline content, this implementation is not prescriptive about what grading system should be used, and the example bindings from the base specification apply. However, content conforming to this implementation guide SHALL identify a rating system and use that to provide rating information for recommendations and guidance, and provide documentation on what rating system was selected and how it is communicated through the content.
+Due to the variability in rating systems among guideline content, this implementation is not prescriptive about what grading system should be used, and the example bindings from the base specification apply. However, §rec-2^^recommendation,documentation:content conforming to this implementation guide **SHALL** identify a rating system and use that to provide rating information for recommendations and guidance, and provide documentation on what rating system was selected and how it is communicated through the content.§
 
-Content conforming to this implementation guide SHALL provide the strength of a recommendation using the [strengthOfRecommendation](http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html) extension.
+§rec-3^^recommendation:Content conforming to this implementation guide **SHALL** provide the strength of a recommendation using the [strengthOfRecommendation](http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html) extension.§
 
-Content conforming to this implementation guide SHALL provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.
+§rec-4^^recommendation:Content conforming to this implementation guide **SHALL** provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.§
 
 Content conforming to this implementation guide MAY provide the directionality of a recommendation using the [directionOfRecommendation](StructureDefinition-cpg-directionOfRecommendation.html) extension.
 

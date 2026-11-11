@@ -4,6 +4,7 @@ Id: cpg-immunization
 Title: "CPG Immunization"
 Description: "Documents a particular immunization as an activity within the context of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-immunization)
+* insert PertinenceExtensions
 * extension contains
   CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
   CPGCaseFeatureType named caseFeatureType 0..1 MS and

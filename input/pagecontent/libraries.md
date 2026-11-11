@@ -14,12 +14,10 @@ The [CQL specification](https://cql.hl7.org/) defines language behavior. [Using 
 
 ### Conformance requirements
 
-Computable content using CQL SHALL conform to the profiles defined in the Using CQL With FHIR IG:
+Content that uses CQL must conform to the [Using CQL With FHIR](https://hl7.org/fhir/uv/cql/) implementation guide. See [Use of CQL](documentation-conformance.html#use-of-cql) for when this applies.
 
-* CQL Library - SHALL use CQLLibrary (for Computable content), ELMLibrary (for Executable content), and CQLModule (to provide structured representation of dependencies and data requirements)
-* CQL ModelInfo - SHALL use CQLModelInfo
-
-See [Conformance](documentation-conformance.html#libraries) for the shareable baseline and packaging/distribution obligations. Resolve the profile editions and dependencies used by the content package; a link to current guidance does not upgrade an existing library.
+* {:.modified-content} §lib-1?^^logic:Content that uses CQL **SHALL** use CQLLibrary (for Computable content), ELMLibrary (for Executable content), and CQLModule (to provide structured representation of dependencies and data requirements)§
+* {:.modified-content} §lib-2?^^logic:Content that uses CQL **SHALL** use CQLModelInfo for model information§
 
 ### Prepare for evaluation
 

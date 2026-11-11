@@ -8,6 +8,7 @@ Usage: #definition
 * type = $plan-definition-type#workflow-definition "Workflow Definition"
 * copyright = "© WHO 2019+."
 * action
+  * extension[applicabilityBehavior].valueCode = #all
   * description = "Registration"
   * title = "Registration"
   * code = $cpg-common-process-codesystem#registration
@@ -54,6 +55,8 @@ Usage: #definition
       // * fhir_comments = "TODO: Use SDC post processing to establish the output as the specific patient selected"
     // * fhir_comments = "Resolve patient match results"
   * action[+]
+    * extension[+].url = $cqf-applicabilityBehavior
+    * extension[=].valueCode = #all
     * description = "New patient"
     * title = "New patient"
     * condition
@@ -93,6 +96,8 @@ Usage: #definition
       // * fhir_comments = "Record patient data"
     // * fhir_comments = "New patient"
   * action[+]
+    * extension[+].url = $cqf-applicabilityBehavior
+    * extension[=].valueCode = #all
     * description = "Existing patient"
     * title = "Existing patient"
     * condition

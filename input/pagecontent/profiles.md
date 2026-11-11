@@ -16,7 +16,9 @@ This guide builds on the artifact capabilities described in [CRMI](https://hl7.o
 
 {% include profile-tables/artifact-profiles.html %}
 
-In addition, content claiming conformance to this implementation guide SHALL use the Shareable profile and SHOULD use the Publishable profile for the following artifact types:
+<div class="modified-content" markdown="1">
+
+§§prof-1^^artifact:Knowledge artifacts of the listed types **SHOULD** conform to the CRMI Shareable profile, and **SHOULD** conform to the CRMI Publishable profile^In addition, content claiming conformance to this implementation guide SHOULD use the CRMI Shareable profile and SHOULD use the CRMI Publishable profile for the following artifact types:
 
 * ActivityDefinition
 * CapabilityStatement
@@ -37,6 +39,13 @@ In addition, content claiming conformance to this implementation guide SHALL use
 * StructureMap
 * TerminologyCapabilities
 * ValueSet
+
+§§
+
+</div>
+
+This implementation guide does not take a dependency on CRMI, so these profiles are strongly recommended rather than required. See [Use of CRMI](documentation-conformance.html#use-of-crmi).
+{:.new-content}
 
 ### Domain Profiles
 
@@ -77,7 +86,7 @@ CQL data requirements can be exposed in `Library.dataRequirement`; the [Library 
 
 #### Implementation Considerations
 
-Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target. For international usage, implementation guides conforming to this IG **SHOULD** use [International Patient Summary](https://hl7.org/fhir/uv/ips/).
+§prof-2^^data:Content conforming to this IG **SHOULD** select a set of base interoperability profiles appropriate for the intended target.§ §prof-3?^^data:For international usage, implementation guides conforming to this IG **SHOULD** use [International Patient Summary](http://hl7.org/fhir/uv/ips).§
 
 Implementation depends on the intersection of exchange and computability requirements. Avoid defining constraints that conflict with the intended exchange profiles. Document both complete semantic mappings and gaps requiring additional data, a qualified mapping, or clinical review.
 

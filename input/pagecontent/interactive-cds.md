@@ -1,3 +1,5 @@
+<div class="new-content" markdown="1">
+
 Interactive clinical decision support collects information needed to evaluate a guideline and reevaluates when that information changes. Use this pattern when existing patient data is incomplete or needs confirmation.
 
 The inputs are a PlanDefinition, its referenced [case-feature definitions](StructureDefinition-cpg-casefeaturedefinition.html), and the patient context. The outputs are a questionnaire interaction, any extracted resources, and revised proposed activities. Evaluation, data persistence, and clinical action remain separate responsibilities.
@@ -144,3 +146,5 @@ The result should conform to [SDC Populatable Questionnaire — Expression](http
 ### Verify the cycle
 
 Test initial population, changed and cleared answers, repeated evaluation, unavailable data, extraction messages, and user selection of proposals. Check that extracted facts retain their source and patient context and that stale proposals are not committed after the context changes. Use [Conformance](documentation-conformance.html) for the formal requirements and [Activity Flow](activityflow.html) for what happens after a proposal is selected.
+
+</div>

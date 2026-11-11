@@ -4,6 +4,7 @@ Id: cpg-flag
 Title: "CPG Flag"
 Description: "Represents a flag on a patient record within the context of a computable clinical practice guideline"
 * insert StructureDefinitionMetadata(cpg-flag)
+* insert PertinenceExtensions
 * extension contains
   CPGInstantiatesCaseFeature named instantiatesCaseFeature 0..1 MS and
   CPGCaseFeatureType named caseFeatureType 0..1 MS and
@@ -11,7 +12,7 @@ Description: "Represents a flag on a patient record within the context of a comp
   CPGPertinent named pertinent 0..* MS
 * identifier MS
 * status MS
-* category 1..1 MS
+* category MS
 * code MS
 * subject only Reference(CPGPatient)
 * subject MS

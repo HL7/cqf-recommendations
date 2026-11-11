@@ -30,3 +30,5 @@ The Approach uses names such as Recommendation and Case Feature for concepts. Th
 | <a id="concept-strategy"></a>**Strategy**<br/>Formerly: CPGStrategy | A grouping of related recommendations for a clinical concern or context. | [Strategies](approach-model.html#strategies) | Definition: [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html) (PlanDefinition with type `workflow-definition`). Patient-specific options: [CPGStrategy](StructureDefinition-cpg-strategy.html) (RequestGroup). |
 | <a id="concept-workflow"></a>**Workflow** | The actors, timing, dependencies and interactions through which care is delivered | [Workflow and Common Pathway](approach-implementation.html#patient-flow) | The Common Care Pathway provides an abstract process model. Local work can use the FHIR Request, Task and Event patterns. |
 {: .grid}
+
+</div>

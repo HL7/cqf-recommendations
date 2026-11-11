@@ -5,8 +5,8 @@ Title: "CPG Care Team"
 Description: "CPG care team represents a care team for a specific patient"
 * insert StructureDefinitionMetadata(cpg-careteam)
 * identifier MS
-* status 1..1 MS
-* name 1..1 MS
+* status MS
+* name MS
 * subject 1..1 MS
 * subject only Reference(CPGPatient)
 * encounter only Reference(CPGEncounter)
