@@ -2,6 +2,22 @@
 
 Use this checklist to review computable content and the information an implementer needs to apply it in a specific setting. It covers publication, recommendation content, formal artifacts, and supporting details such as decision points, references, and CQL source. Keep each item label, status, and notes together. The checklist status is not a separate declaration of implementation-guide conformance.
 
+Use the [Validate step](methodology-validate.html#validate-step) to check the artifacts and document the results.
+
+{% include cpg-checklist-navigation.html level="L3" %}
+
+<nav class="cpg-checklist-toc" aria-label="On this page" markdown="1">
+
+**On this page**
+
+[Publishing Information](#publishing-information) · [Documentation](#documentation) · [Artifacts](#artifacts) · [Testing](#testing) · [Review](#review) · [Publish](#publish) · [Case Reporting (may belong in 3.e.)](#case-reporting-may-belong-in-3-e)
+
+</nav>
+
+#### 1. Publishing Information {#publishing-information}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="publishing-information" tabindex="0" markdown="1">
+
 | Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
 |-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 1.        | **Publishing Information**                       | Publishing metadata for the L2 and L3 content                                                                                                                |             | Platform Specific vs Independent                                                                                  |
@@ -10,6 +26,16 @@ Use this checklist to review computable content and the information an implement
 | 1.c       | **License**                                      | What are the licensing terms for the content?                                                                                                                | Required    |                                                                                                                   |
 | 1.c.i     | License Page                                     | The IG includes a license page                                                                                                                               |             |                                                                                                                   |
 | 1.c.ii    | External Content Licenses                        | Any referenced/included content contains appropriate licensing statements                                                                                    |             |                                                                                                                   |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 2. Documentation {#documentation}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="documentation" tabindex="0" markdown="1">
+
+| Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
+|-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 2.        | **Documentation**                                | Overall documentation for the IG                                                                                                                             |             |                                                                                                                   |
 | 2.a       | Overview                                         | Clear description of the project, purpose, and content                                                                                                       | Required    |                                                                                                                   |
 | 2.b       | Scope                                            | Clear delineation of what is included and excluded                                                                                                           | Required    |                                                                                                                   |
@@ -26,6 +52,16 @@ Use this checklist to review computable content and the information an implement
 | 2.f.vii   | Decision Points                                  | Documentation of any decision points that impacted the L3 content                                                                                            |             |                                                                                                                   |
 | 2.f.viii  | Referenced Artifacts                             | References to the implementation guide artifacts that formally describe the recommendation                                                                   |             |                                                                                                                   |
 | 2.f.ix    | Test Cases                                       | Description of test cases for the recommendation and any associated test data                                                                                |             |                                                                                                                   |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 3. Artifacts {#artifacts}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="artifacts" tabindex="0" markdown="1">
+
+| Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
+|-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 3.a       | **Artifacts**                                    | For each artifact, ensure the following information is present (ValueSet/CodeSystem/Profile/Library/ActivityDefinition/PlanDefinition/Measure/Questionnaire) |             |                                                                                                                   |
 | 3.a.i     | id                                               | Unique within the IG, somewhat friendly                                                                                                                      |             |                                                                                                                   |
 | 3.a.ii    | url                                              | Globally unique, somewhat friendly, canonical identifier for the artifact                                                                                    |             |                                                                                                                   |
@@ -69,17 +105,57 @@ Use this checklist to review computable content and the information an implement
 | 3.e.iii   | action                                           | The action(s) to be performed                                                                                                                                |             |                                                                                                                   |
 | 3.e.iv    | qualityOfEvidence                                | The qualityOfEvidence for the recommendation                                                                                                                 |             |                                                                                                                   |
 | 3.e.v     | strengthOfRecommendation                         | The strengthOfRecommendation for the recommendation                                                                                                          |             |                                                                                                                   |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 4. Testing {#testing}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="testing" tabindex="0" markdown="1">
+
+| Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
+|-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 4.        | **Testing**                                      | Ensure adequate testing of the IG content                                                                                                                    |             |                                                                                                                   |
 | 4.i       | Build                                            | The IG builds successfully                                                                                                                                   |             |                                                                                                                   |
 | 4.ii      | Resources Load                                   | All resources load without issues into a Clinical Reasoning knowledge repository                                                                             |             |                                                                                                                   |
 | 4.iii     | Test Cases Pass                                  | All test cases pass without issues in a Clinical Reasoning reference implementation                                                                          |             |                                                                                                                   |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 5. Review {#review}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="review" tabindex="0" markdown="1">
+
+| Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
+|-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 5.        | **Review**                                       | Content is reviewed and approved by                                                                                                                          |             |                                                                                                                   |
 | 5.i       | Guideline developer                              | The initial guideline developer                                                                                                                              |             |                                                                                                                   |
 | 5.ii      | Terminologist                                    | A clinical terminologist                                                                                                                                     |             |                                                                                                                   |
 | 5.iii     | Clinician                                        | A clinician, preferably with expertise in the area of focus of the IG                                                                                        |             |                                                                                                                   |
 | 5.iv      | Informaticist                                    | An informaticist with expertise in the relevant specification standards                                                                                      |             |                                                                                                                   |
 | 5.v       | Engineer                                         | An engineer from the alpha pilot site, ideally from multiple beta sites as well                                                                              |             |                                                                                                                   |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 6. Publish {#publish}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="publish" tabindex="0" markdown="1">
+
+| Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
+|-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 6.        | **Publish**                                      | Publish the content in the target content repository (FHIR Registry, Simplifier, CDS Connect)                                                                |             |                                                                                                                   |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 7. Case Reporting (may belong in 3.e.) {#case-reporting-may-belong-in-3-e}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="case-reporting-may-belong-in-3-e" tabindex="0" markdown="1">
+
+| Label     | Item                                             | Description                                                                                                                                                  | Item Status | Notes                                                                                                             |
+|-----------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------|
 | 7.        | **Case Reporting (may belong in 3.e.)**          | Is there a potential need for monitoring disease trends or outbreak management?                                                                              |             | Required by law for clinicians to report certain conditions to the appropriate public health agency/jurisdiction  |
 | 7.a       | Sending case to public health                    |                                                                                                                                                              |             |                                                                                                                   |
 | 7.b       | **Triggering**                                   |                                                                                                                                                              |             |                                                                                                                   |
@@ -88,4 +164,6 @@ Use this checklist to review computable content and the information an implement
 | 7.b.iii   | Timing                                           |                                                                                                                                                              |             |                                                                                                                   |
 | 7.c       | Reporting Rules                                  |                                                                                                                                                              |             |                                                                                                                   |
 | 7.d       | Feedback to providers/reporters in clinical care |                                                                                                                                                              |             |                                                                                                                   |
-{:.grid}
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>

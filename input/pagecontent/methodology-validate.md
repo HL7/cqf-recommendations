@@ -38,6 +38,6 @@ For each discrepancy, retain the tested versions, case, expected and actual beha
 
 ##### Checklists {#checklists}
 
-Use the [L1](clinical-guidelines-development-L1-checklist.html), [L2](clinical-guidelines-development-L2-checklist.html), [L3](clinical-guidelines-development-L3-checklist.html), and [L4](clinical-guidelines-development-L4-checklist.html) checklists to communicate readiness and remaining work across roles.
+Use the [L3 checklist](clinical-guidelines-development-L3-checklist.html) to review computable content and test evidence for release. Use the [L4 checklist](clinical-guidelines-development-L4-checklist.html) for findings about local integration and rollout. The [checklist overview](checklists.html) also covers reviews of the narrative source and structured specification.
 
 {% include chapter-navigation.html section="Methodology" unit="step" overview="methodology.html" previous="methodology-translate.html" previous_title="Translate" next="methodology-package.html" next_title="Package" %}

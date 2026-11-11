@@ -206,6 +206,6 @@ Several codes depend on the metric's policy. A metric that reports these codes S
 
 #### Hand off artifacts for validation {#artifact-handoff}
 
-Take the authored definitions, profiles, terminology, libraries, and their dependency versions into Validate with the reviewed cases. Keep the source-to-artifact links and any unresolved decisions with the work so reviewers can trace a discrepancy to the relevant criterion, mapping, or activity.
+Take the authored definitions, profiles, terminology, libraries, and their dependency versions into Validate with the reviewed cases. Keep the source-to-artifact links and any unresolved decisions with the work so reviewers can trace a discrepancy to the relevant criterion, mapping, or activity. Use the [L3 checklist](clinical-guidelines-development-L3-checklist.html) to review the artifacts and documentation you hand off.
 
 {% include chapter-navigation.html section="Methodology" unit="step" overview="methodology.html" previous="methodology-represent.html" previous_title="Represent" next="methodology-validate.html" next_title="Validate" %}

@@ -37,9 +37,7 @@ Keep the relationship between the source release and local implementation explic
 
 Translation can, for example, convert CQL to SQL or a PlanDefinition to production rules. For manual implementation or translation, use the content package's test cases to compare application-native logic and configuration with the intended behavior. Native evaluation can use the same tests to check the behavior of the reasoning engine against local data and mappings.
 
-<div style="clear: both;">
-  <img src="cpg-runtime-execution.svg" alt="Manual implementation, translation, and native execution are three routes from shared computable content to a locally tested implementation." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-runtime-execution.svg" alt="Manual implementation, translation, and native execution are three routes from shared computable content to a locally tested implementation." %}
 
 ### Connect evaluation to the clinical system {#integration-mechanisms}
 
@@ -54,9 +52,7 @@ Decide where data are retrieved, content is evaluated, results are presented, an
 | Hybrid | Several components share these responsibilities. | Consistent patient and content context, authoritative records, and ownership of each interaction. |
 {:.grid}
 
-<div style="clear: both;">
-  <img src="cpg-runtime-integration.svg" alt="Four panels compare content ingestion, CDS Hooks services, SMART applications, and data enrichment. They distinguish artifact imports, patient data exchange, evaluation, and receiving workflow responsibilities." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-runtime-integration.svg" alt="Four panels compare content ingestion, CDS Hooks services, SMART applications, and data enrichment. They distinguish artifact imports, patient data exchange, evaluation, and receiving workflow responsibilities." %}
 
 *The original integration patterns place content, evaluation, data exchange, and user interaction in different components. An implementation can combine patterns; the receiving workflow retains responsibility for authorization and persistence.*
 

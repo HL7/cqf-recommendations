@@ -4,9 +4,7 @@ Choose artifacts based on what the guideline needs to communicate, calculate, or
 
 The four levels describe how guideline knowledge is represented and where it is used. They follow the multilayer approach of [Boxwala et al.](https://doi.org/10.1136/amiajnl-2011-000334). Teams can revise several levels together as clinical and technical review reveals ambiguities.
 
-<div style="clear: both;">
-  <img src="cpg-model-levels.svg" alt="Four ordered rows distinguish L1 narrative, L2 semi-structured, L3 computable, and L4 local executable representations. Overlapping bars show concurrent work and review across levels." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-model-levels.svg" alt="Four ordered rows distinguish L1 narrative, L2 semi-structured, L3 computable, and L4 local executable representations. Overlapping bars show concurrent work and review across levels." %}
 
 **L1, narrative**, communicates the clinical intent to people. Capture the source and date, population, recommended care, exclusions, timing, setting, supporting evidence, and recommendation strength. Tables and figures can communicate this information alongside prose. Preserve qualifying language and uncertainty as the team interprets the recommendation.
 
@@ -32,9 +30,7 @@ Data, logic, and forms are three responsibilities that may appear at any level. 
 
 Use this matrix to plan the work for a capability. For a measured case feature, settle the units, source, and time window with clinical reviewers; represent the contract in shareable definitions; then verify that local data actually satisfy it. A service that consumes existing records may need no form.
 
-<div style="clear: both;">
-  <img src="cpg-model-artifact-matrix.svg" alt="Work products across four representation levels, with rows for Data, Clinical logic, and Forms. The complete cell contents are also available in the text version below." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-model-artifact-matrix.svg" alt="Work products across four representation levels, with rows for Data, Clinical logic, and Forms. The complete cell contents are also available in the text version below." %}
 
 <details>
   <summary>Read the matrix as text</summary>

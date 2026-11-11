@@ -85,7 +85,20 @@ A few other notes:
 * It is possible for the text of a given rule to change somewhat from one release to another so long as the intention of the rule is the same. If the intent has a significant change, the old rule will be removed and a new one added in its place (with a new id).
 * Categories are drawn from the [CPG Conformance Category](CodeSystem-cpg-conformance-category-cs.html) code system. They are provided as a general aid to filtering, and are not a definitive classification.
 
+<style>
+  .cpg-conformance-table {
+    overflow-x: auto;
+  }
+  .cpg-conformance-table .fhir-conformance-list tr > :first-child {
+    white-space: nowrap;
+  }
+</style>
+
+<div class="cpg-conformance-table" role="region" aria-labelledby="conformance-statements" tabindex="0" markdown="1">
+
 §§§
+
+</div>
 
 </div>
 

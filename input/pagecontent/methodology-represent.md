@@ -24,9 +24,7 @@ The functional description from the same historical example shows how the criter
 
 Sketch who supplies the inputs, when the decision arises, who sees the result, and what they can do with it. Link each decision in the sketch to the written criteria so reviewers can check both its clinical meaning and its place in the workflow. Work with the local workflow owner to establish which parts of the process the implementation can support.
 
-<div style="clear: both;">
-  <img src="cpg-method-translation.svg" alt="Historical opioid prescribing workflow. An order-sign event leads through criteria and a calculation to either no alert or a message with clinician response options." class="img-responsive center-block" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-method-translation.svg" alt="Historical opioid prescribing workflow. An order-sign event leads through criteria and a calculation to either no alert or a message with clinician response options." center="true" %}
 
 *Use this historical example to review the branches from the trigger to the clinician's response. The [functional description](#criteria) gives the criteria for the version shown.*
 
@@ -44,6 +42,6 @@ If the implementation also tracks fulfillment, describe who acts, what event is 
 
 #### Hand off the reviewed specification {#reviewed-specification}
 
-Clinical reviewers confirm the interpretation and expected cases. The knowledge engineer carries the reviewed data dictionary, criteria, workflow sketch, and cases into Translate, with unresolved questions and their owners visible alongside them.
+Clinical reviewers confirm the interpretation and expected cases. The knowledge engineer carries the reviewed data dictionary, criteria, workflow sketch, and cases into Translate, with unresolved questions and their owners visible alongside them. Use the [L2 checklist](clinical-guidelines-development-L2-checklist.html) to review the structured specification.
 
 {% include chapter-navigation.html section="Methodology" unit="step" overview="methodology.html" previous="methodology-select.html" previous_title="Select" next="methodology-translate.html" next_title="Translate" %}

@@ -1,0 +1,9 @@
+<div class="cpg-diagram" style="clear: both; max-width: 1000px; {% if include.center %}margin-inline: auto; {% endif %}box-shadow: 0 1px 6px rgba(24, 62, 89, 0.12);">
+  {% if include.ratio %}
+  <object data="{{ include.src }}" type="image/svg+xml" aria-label="{{ include.alt | escape }}" style="display: block; width: 100%; aspect-ratio: {{ include.ratio }};">
+    <img src="{{ include.src }}" alt="{{ include.alt | escape }}" width="1000" style="max-width: 100%; height: auto;"/>
+  </object>
+  {% else %}
+  <img src="{{ include.src }}" alt="{{ include.alt | escape }}" class="img-responsive" width="1000"/>
+  {% endif %}
+</div>

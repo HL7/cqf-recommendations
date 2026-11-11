@@ -1,12 +1,16 @@
 {:toc}
 
+{% include cpg-home-layout.html %}
+
 {% include cpg-horizontal-table-style.html %}
 
 The Clinical Practice Guidelines (CPG) Implementation Guide explains how to represent a clinical guideline as reusable FHIR knowledge artifacts and use those artifacts in clinical systems. Start with the recommendation's clinical intent, express its data and decision logic, and validate how the resulting guidance works in a particular care setting.
 
 This guide is for guideline authors, knowledge engineers, software implementors, clinical reviewers, and the tools and agents assisting them. It uses **FHIR R4 (4.0.1)**. The [profiles](profiles.html), [operations](artifacts.html#operationdefinition-index), and [conformance statements](documentation-conformance.html) provide the formal contracts; the narrative explains how to apply them.
 
+<div class="cpg-home-task" markdown="1">
 <a id="clinical-guidelines-implementation-guide"></a>
+
 ### Start with your task
 
 | Your task | Read first | Result to work toward |
@@ -18,13 +22,15 @@ This guide is for guideline authors, knowledge engineers, software implementors,
 | Find a worked example or resource | [Examples](examples.html) and [artifact index](artifacts.html) | A trace from a definition to patient-specific requests and events |
 {:.cpg-horizontal-table}
 
+</div>
+
 ### Introduction
 
 A narrative recommendation often leaves implementation questions open: which patients it applies to, which data establishes eligibility, how missing information is handled, and what action to propose. This guide provides a shared way to make those decisions explicit and preserve their relationship to the source guideline.
 
 The main work products are FHIR definitions, libraries of logic, terminology, and documentation that can be reviewed and exchanged. Local implementation then supplies the data mappings, execution environment, user interaction, and operational responsibilities needed to use them. This distinction is central to the [four levels of knowledge representation](approach-artifacts.html#representation-levels).
 
-{% include cpg-linked-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." %}
+{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." %}
 
 *Figure 1. Guidelines connect evidence to decision support and clinical care. Measurement, reporting, and reviewed findings connect care back to evidence. Related standards illustrate the roles in this ecosystem; they are not a required dependency set.* The [integrated process publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/) describes this collaborative approach.
 

@@ -2,9 +2,7 @@ Start with three questions: What do we know about this patient? What care does t
 
 ### The model at a glance {#model-at-a-glance}
 
-<div style="clear: both;">
-  <img src="cpg-model-boundaries.svg" alt="The orange Plan lane includes strategies, recommendations, and a reusable workflow definition. Local implementation connects the workflow definition to the blue lane's patient care processes and records. The green Case lane holds recorded and derived patient facts." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-model-boundaries.svg" alt="The orange Plan lane includes strategies, recommendations, and a reusable workflow definition. Local implementation connects the workflow definition to the blue lane's patient care processes and records. The green Case lane holds recorded and derived patient facts." %}
 
 | Concern | Question it answers | In the CHF example |
 |---|---|---|
@@ -46,9 +44,7 @@ The CHF [case plan summary](Composition-chf-scenario1-caseplansummary.html) brin
 
 The Plan is reusable guidance: which activities to consider, under which conditions, and how they relate. Its recommendation, strategy, workflow, and pathway definitions use different PlanDefinition profiles. A pathway can reference both strategies, which group clinical recommendations, and workflow definitions, which describe how activities are coordinated. The [artifact map](approach-artifacts.html#resource-map) places these definitions alongside the data, logic, and activity definitions they use.
 
-<div style="clear: both;">
-  <img src="cpg-model-definitions.svg" alt="A pathway can reference both strategy and workflow definitions. Strategies group recommendations that reference activity or order set definitions. Workflow definitions describe activities, their relationships, participants, inputs, and outputs. All are reusable guidance." class="img-responsive" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-model-definitions.svg" alt="A pathway can reference both strategy and workflow definitions. Strategies group recommendations that reference activity or order set definitions. Workflow definitions describe activities, their relationships, participants, inputs, and outputs. All are reusable guidance." %}
 
 ### Recommendations {#recommendations}
 

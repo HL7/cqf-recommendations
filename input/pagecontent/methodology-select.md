@@ -59,6 +59,6 @@ Identify the patient facts that explain why a recommendation applies or support 
 
 #### Hand off the selected scope {#selected-scope}
 
-Take the source passage, selected decision, proposed activity, intended audience and setting, and delivery assumptions into Represent. Record any unresolved clinical or workflow question with the person responsible for deciding it.
+Take the source passage, selected decision, proposed activity, intended audience and setting, and delivery assumptions into Represent. Record any unresolved clinical or workflow question with the person responsible for deciding it. Use the [L1 checklist](clinical-guidelines-development-L1-checklist.html) to review the narrative guidance and supporting evidence before the handoff.
 
 {% include chapter-navigation.html section="Methodology" unit="step" overview="methodology.html" next="methodology-represent.html" next_title="Represent" %}

@@ -19,7 +19,7 @@ Open a chapter below. Read in order for the full approach, or go directly to the
 | **[5. Measurement and Evidence](approach-evaluation.html)** | Use metrics and reports, evaluate an implementation, and interpret CDS evidence. |
 {:.cpg-horizontal-table}
 
-For the step-by-step authoring procedure, use [Methodology](methodology.html).
+For the step-by-step authoring procedure, use [Methodology](methodology.html). When reviewing a work product or a local implementation, start with the [checklist for its representation level](checklists.html).
 
 <details markdown="1">
 <summary>Reading paths by role</summary>
@@ -39,7 +39,7 @@ One person may fill several roles. The [Concept and Profile Index](documentation
 
 </details>
 
-{% include cpg-linked-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." %}
+{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 915" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." %}
 
 *The work continues after a package is released. Clinical and technical findings can lead to changes in the guideline, its computable representation, or the local implementation.*
 

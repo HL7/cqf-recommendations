@@ -1,0 +1,65 @@
+{% include cpg-horizontal-table-style.html %}
+<style>
+  .cpg-checklist-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35em 0.6em;
+    padding: 0;
+    margin: 0 0 1.25em;
+    list-style: none;
+  }
+  .cpg-checklist-nav a {
+    display: inline-block;
+    padding: 0.4em 0.65em;
+    border: 1px solid #d2dce4;
+    border-radius: 4px;
+  }
+  .cpg-checklist-nav [aria-current="page"] {
+    background: #eef5f9;
+    color: #173f56;
+    font-weight: bold;
+  }
+  .cpg-checklist-scroll {
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+  }
+  .cpg-checklist-scroll:focus-visible {
+    outline: 2px solid #2b6384;
+    outline-offset: 2px;
+  }
+  .cpg-checklist-scroll table.cpg-checklist-table {
+    min-width: 610px;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+  }
+  .cpg-checklist-scroll.cpg-checklist-wide table.cpg-checklist-table {
+    min-width: 880px;
+  }
+  .cpg-checklist-toc ~ h4::before {
+    content: none;
+  }
+  .cpg-checklist-scroll:not(.cpg-checklist-wide) table.cpg-checklist-table {
+    table-layout: fixed;
+  }
+  .cpg-checklist-scroll:not(.cpg-checklist-wide) th:nth-child(1) {
+    width: 72px;
+  }
+  .cpg-checklist-scroll:not(.cpg-checklist-wide) th:nth-child(2) {
+    width: 21%;
+  }
+  .cpg-checklist-scroll:not(.cpg-checklist-wide) th:nth-child(4) {
+    width: 11%;
+  }
+  .cpg-checklist-scroll:not(.cpg-checklist-wide) th:nth-child(5) {
+    width: 17%;
+  }
+</style>
+<nav class="cpg-checklist-nav" aria-label="Development checklists">
+  <ul>
+    <li><a href="checklists.html">All checklists</a></li>
+    <li><a href="clinical-guidelines-development-L1-checklist.html"{% if include.level == "L1" %} aria-current="page"{% endif %}>L1 Narrative</a></li>
+    <li><a href="clinical-guidelines-development-L2-checklist.html"{% if include.level == "L2" %} aria-current="page"{% endif %}>L2 Structured</a></li>
+    <li><a href="clinical-guidelines-development-L3-checklist.html"{% if include.level == "L3" %} aria-current="page"{% endif %}>L3 Computable</a></li>
+    <li><a href="clinical-guidelines-development-L4-checklist.html"{% if include.level == "L4" %} aria-current="page"{% endif %}>L4 Local implementation</a></li>
+  </ul>
+</nav>

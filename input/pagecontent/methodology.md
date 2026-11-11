@@ -17,15 +17,13 @@ Open a step below. For new content, start with **Select** and follow the sequenc
 | <a id="packaging" data-redirect="methodology-package.html"></a>**[5. Package](methodology-package.html)** | Prepare a versioned release with dependencies, tests, implementation notes, and maintenance ownership. |
 {:.cpg-horizontal-table}
 
-For local deployment of an existing package, see [Implementation and Integration](approach-implementation.html).
+Use the [development checklists](checklists.html) at each handoff. Review the source and evidence with [L1](clinical-guidelines-development-L1-checklist.html) during Select, the structured specification with [L2](clinical-guidelines-development-L2-checklist.html) during Represent, and the computable artifacts and release evidence with [L3](clinical-guidelines-development-L3-checklist.html) during Translate, Validate, and Package. Use [L4](clinical-guidelines-development-L4-checklist.html) to review local deployment and use. [Implementation and Integration](approach-implementation.html)
 
 ### Follow the methodology {#overview}
 
 Carry the reviewed work forward, and return to an earlier step when a finding changes the scope, specification, or artifacts.
 
-<div style="clear: both;">
-  <img src="cpg-method-recipe.svg" alt="Select, Represent, Translate, Validate, and Package produce connected work products. Review findings can return work to an earlier step." class="img-responsive center-block" width="1000"/>
-</div>
+{% include cpg-diagram.html src="cpg-method-recipe.svg" alt="Select, Represent, Translate, Validate, and Package produce connected work products. Review findings can return work to an earlier step." center="true" %}
 
 Keep decisions and their rationale with the work products. Record who resolves each open question and which artifact or interpretation changes as a result. Published implementation experience shows that shared artifacts can still require substantial local implementation and maintenance effort. [Dhopeshwarkar et al., 2023](https://doi.org/10.1055/s-0043-1769911).
 
@@ -33,7 +31,7 @@ Keep decisions and their rationale with the work products. Record who resolves e
 
 A computable guideline is delivered as a **content implementation guide**: clinical knowledge artifacts that use foundational standards, conform to specification guides, and select appropriate patient-data profiles. The content steward remains responsible for clinical scope, approval, publication, and maintenance.
 
-{% include cpg-linked-diagram.html src="cpg-method-ig-layers.svg" ratio="1200 / 660" alt="Content implementation guides build on model and specification implementation guides, which use foundational standards. The layers describe dependencies and responsibilities." %}
+{% include cpg-diagram.html src="cpg-method-ig-layers.svg" ratio="1200 / 660" alt="Content implementation guides build on model and specification implementation guides, which use foundational standards. The layers describe dependencies and responsibilities." %}
 
 | Category | Purpose | Examples |
 | --- | --- | --- |
@@ -50,7 +48,7 @@ Choose and record the dependency versions for the content package. The categorie
 - The [historical COVID-19 worked example](methodology-case-study.html) follows clinical and knowledge-engineering work products through the team's 2020 project.
 - <a id="mapping-and-other-formalisms"></a>[Mapping and other formalisms](documentation-methodology.html) explains optional BPMN, DMN, and CMMN representations, with transformation examples and their limits.
 - <a id="metrics" data-redirect="methodology-translate.html#metrics"></a>[Metrics](methodology-translate.html#metrics) and <a id="metric-results" data-redirect="methodology-translate.html#metric-results"></a>[Metric Results](methodology-translate.html#metric-results) explain the patient-level profiles, types, and coded results.
-- [Conformance](documentation-conformance.html) and the [development checklists](checklists.html) help reviewers locate the requirements relevant to their work.
+- [Conformance](documentation-conformance.html) lists the formal requirements reviewers should assess.
 - [Development and Maintenance](approach-development.html) explains the roles, handoffs, and continuing review behind these steps.
 
 {% include chapter-navigation.html section="Methodology" unit="step" next="methodology-select.html" next_title="Select" %}
