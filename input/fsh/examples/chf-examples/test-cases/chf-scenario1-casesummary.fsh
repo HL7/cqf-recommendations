@@ -25,7 +25,7 @@ Description: "CHF Scenario One"
   * code = $sct#42343007 "Congestive heart failure (disorder)"
   * period.start = "2019-01-31T05:03:00Z"
   * detail = Reference(chf-scenario1-eoc)
-* section
+* section[0]
   * title = "Pathway Events"
   * code.text = "Pathway Events"
   * entry = Reference(chf-scenario1-encounter)
@@ -87,3 +87,7 @@ Description: "CHF Scenario One"
     * title = "LASIX IV"
     * code.text = "LASIX IV"
     * entry = Reference(chf-scenario1-lasix-iv)
+* section[+]
+  * title = "Pathway diagnoses"
+  * code.text = "Pathway diagnoses"
+  * entry = Reference(chf-scenario1-condition)

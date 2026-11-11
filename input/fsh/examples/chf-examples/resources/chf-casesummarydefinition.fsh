@@ -15,7 +15,7 @@ Usage: #example
 * description = "Definition of the case summary document for a congestive heart failure pathway"
 * start = #EpisodeOfCare
 * profile = Canonical(cpg-case)
-* link
+* link[0]
   * path = "encounter"
   * description = "Pathway Events"
   * target
@@ -81,3 +81,13 @@ Usage: #example
       * target
         * type = #Procedure
         * profile = Canonical(chf-cardiology-consult)
+* link[+]
+  * description = "Pathway diagnoses"
+  * extension[applicabilityExpression].valueExpression
+    * language = #text/fhirpath
+    * expression = "diagnosis.condition.exists()"
+  * target
+    * type = #Condition
+    * extension[targetExpression].valueExpression
+      * language = #text/fhirpath
+      * expression = "diagnosis.condition.resolve().ofType(Condition)"
