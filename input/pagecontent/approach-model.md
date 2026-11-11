@@ -66,7 +66,7 @@ Keep the calculation that describes the patient separate from the rule that deci
 
 #### Coordinate related recommendations {#strategy-coordination}
 
-Specify when each recommendation can be evaluated and whether it depends on a Case Feature, a prior proposal, an authorized request, or a documented event. For example, if guidance calls for reassessment after an intervention, establish which event starts the interval and what happens if fulfillment is partial or unknown. A source recommendation, decision table, or flow diagram may describe the relationships. When the source leaves sequencing or a conflict unresolved, record the interpretation with the guideline team before encoding it. Use the [processing rules](approach-implementation.html#processing-rules) to express the agreed dependencies.
+A strategy can express how related recommendations are intended to work together, so the team can review their sequencing and dependencies. Specify when each recommendation can be evaluated and whether it depends on a Case Feature, a prior proposal, an authorized request, or a documented event. For example, if guidance calls for reassessment after an intervention, establish which event starts the interval and what happens if fulfillment is partial or unknown. A source recommendation, decision table, or flow diagram may describe the relationships. When the source leaves sequencing or a conflict unresolved, record the interpretation with the guideline team before encoding it. Use the [processing rules](approach-implementation.html#processing-rules) to express the agreed dependencies.
 
 ### Pathways {#pathways}
 
@@ -81,6 +81,8 @@ The [CHF example](examples-chf.html#example-case) describes a patient whose admi
 Local policy can enroll eligible patients automatically under defined criteria, prompt the care team to review eligibility and context, or allow a team member to initiate enrollment without a prompt. A site can use more than one of these routes. Consider patient preferences and clinical factors that can affect participation, and specify who may authorize and record it. Use the relevant rule and [CPGEnrollmentActivity](StructureDefinition-cpg-enrollmentactivity.html) for a proposed enrollment activity.
 
 ### Patient care plan {#care-plan}
+
+A patient-specific proposal is one input to care planning. The care team reviews the response to treatment and reconciles proposed activities with active orders, other conditions, and the patient's goals and preferences when agreeing on intended care.
 
 [CPGCarePlan](StructureDefinition-cpg-careplan.html) connects the patient's concerns, goals, and activities. The [example CarePlan](CarePlan-chf-scenario1-careplan.html) has Daily Management and Hypervolemia RequestGroups for the patient. Proposals, planned or authorized requests, and the events that fulfill those requests correspond to the patient-specific phases of [Activity Flow](activityflow.html#purpose-and-rationale).
 
@@ -98,11 +100,13 @@ Applying a recommendation may construct a proposal using a patient-specific requ
 
 #### Show the patient information supporting a proposal {#proposal-support}
 
-Keep the proposal's originating definition, supporting evidence, and relevant patient information traceable. A Case Feature Group or Case Plan Summary can bring together applicable indications, contraindications, and prior requests or events for review. Recommendation `action.input` describes information relevant to applicability. When `action.output` specifies information to include with the proposal, the profile recommends attaching matching information using the appropriate element, such as `ServiceRequest.supportingInfo` or `MedicationRequest.supportingInformation`. [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html)
+Show which patient facts explain why the proposal was generated and which additional facts help a clinician decide whether to act. A Case Feature Group or Case Plan Summary can bring together indications, contraindications, and prior requests or events. For example, a relative contraindication outside the rule's inputs may still matter to the clinician. Keep the proposal's originating definition, supporting evidence, and relevant patient information traceable.
+
+Recommendation `action.input` describes information relevant to applicability. When `action.output` specifies information to include with the proposal, the profile recommends attaching matching information using the appropriate element, such as `ServiceRequest.supportingInfo` or `MedicationRequest.supportingInformation`. [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html)
 
 #### Coordinate a shared care plan {#shared-care-plan}
 
-A shared care plan can span conditions, pathways, teams, and settings. Review active orders and related events alongside new proposals. Preserve the patient's goals and preferences, the source of each activity, and who is responsible for reconciling or following up on care. The [Multiple Chronic Conditions eCare Plan IG](https://hl7.org/fhir/us/mcc/) describes a US approach to representing and exchanging shared care-plan information.
+A shared care plan can span conditions, pathways, teams, and settings. Review related events alongside active orders and new proposals. Preserve the patient's goals and preferences and the source of each activity across handoffs. Identify who is responsible for reconciling conflicts and following up. The [Multiple Chronic Conditions eCare Plan IG](https://hl7.org/fhir/us/mcc/) describes a US approach to representing and exchanging shared care-plan information.
 
 ### Workflow {#workflow}
 

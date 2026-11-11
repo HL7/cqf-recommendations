@@ -1,4 +1,6 @@
-An implementation connects a versioned guideline package to patient data and the people who deliver care. The package supplies reusable definitions, logic, and terminology. The local system supplies data mappings, invocation points, user interaction, and responsibility for acting on the results.
+Clinical guidance can be shared across organizations whose data, systems, and care processes differ. Separating reusable knowledge from its delivery lets each organization use the reviewed clinical interpretation while fitting it to the people and systems that will act on it. The package supplies definitions, logic, and terminology; the local implementation supplies data mappings, invocation points, user interaction, and responsibility for acting on the results.
+
+Execution and delivery are separate choices. An organization may implement the content in its existing rules, translate it, or evaluate it in a compatible engine. The resulting guidance still needs a suitable place in care, whether through a service, an application, or the clinical system's own interface. Keeping these choices separate can let a team change the delivery channel while retaining the clinical decision logic. The new channel still needs to supply the expected inputs and support the intended actions.
 
 In the [CHF example](examples-chf.html), bodyweight observations inform a derived weight-change feature. The guideline connects those patient features with recommended activities. Evaluating guidance is one step in a longer interaction. The care team reviews the result, decides what to do, and records care. This chapter follows that interaction from choosing an implementation approach through release and follow-up.
 
@@ -35,13 +37,15 @@ A system can use a computable representation in three ways. The chosen route det
 
 Keep the relationship between the source release and local implementation explicit so that changes can be assessed. A native engine may serve several delivery interfaces. The [Using CQL With FHIR guide](https://hl7.org/fhir/uv/cql/) provides related execution guidance, and [Libraries](libraries.html) identifies this guide's logic representations.
 
+The routes involve different investments. Manual implementation can use existing local tooling but leaves the site responsible for translating and maintaining the specification in that environment. Translation and native execution require compatible tooling and integration work up front; that investment may be reused across guidelines and releases. The choice depends on the receiving system's capabilities and the content it must support, as well as the expected scale of reuse.
+
 Translation can, for example, convert CQL to SQL or a PlanDefinition to production rules. For manual implementation or translation, use the content package's test cases to compare application-native logic and configuration with the intended behavior. Native evaluation can use the same tests to check the behavior of the reasoning engine against local data and mappings.
 
 {% include cpg-diagram.html src="cpg-runtime-execution.svg" alt="Manual implementation, translation, and native execution are three routes from shared computable content to a locally tested implementation." caption="For each route, verify clinical meaning, data mappings, dependencies, and expected results. Choose the delivery interface separately, such as a service, application, or local workflow." %}
 
 ### Connect evaluation to the clinical system {#integration-mechanisms}
 
-Decide where data are retrieved, content is evaluated, results are presented, and accepted actions are stored. That division of responsibility determines the integration contract.
+Local applications differ in where they can evaluate logic, display guidance, and accept actions. Several integration patterns may therefore be needed for one guideline: for example, a service can evaluate shared logic while a native order interface handles an accepted proposal. Decide where data are retrieved, content is evaluated, results are presented, and accepted actions are stored. That division of responsibility determines the integration contract.
 
 | Mechanism | Where work happens | Contract to establish |
 | --- | --- | --- |

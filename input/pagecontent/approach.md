@@ -1,8 +1,14 @@
 {% include cpg-horizontal-table-style.html %}
 
-A computable clinical practice guideline connects reviewed recommendations with patient information and the work of delivering care. Its reusable definitions, logic, and terminology can support decision support, care planning, measurement, and reporting. A local implementation connects those artifacts to the data, people, and systems in a particular setting.
+Putting a clinical guideline into practice requires teams to interpret its recommendations, identify relevant patient information, and connect decisions to care delivery. When each site or application repeats that interpretation independently, differences can arise in clinical meaning, data assumptions, and behavior. Updates also require teams to find and review the implementations that depend on the guidance.
 
-Approach explains how these parts fit together and the choices involved in using them. The chapters follow one thread from the clinical model through its artifacts and implementation, then development, maintenance, and evaluation. The existing heart failure example provides a concrete point of reference throughout.
+The CPG approach makes that interpretation explicit, reviewable, and reusable. It brings together three complementary ideas:
+
+1. **A clinical model that separates Case, Plan, and Workflow.** Patient state, recommended care, and local delivery have different responsibilities. Keeping them distinct allows each to be reviewed and changed while preserving its relationship to the others.
+2. **A framework for representing knowledge.** Narrative, reviewable specifications, computable artifacts, and local implementations serve different audiences and purposes. Shared definitions and expressions let those audiences work from the same clinical interpretation.
+3. **An iterative, cross-functional development process.** Guideline developers, knowledge engineers, and implementers work together so that clinical questions, data limitations, and workflow constraints can inform the content while it is being developed.
+
+These choices provide the rationale for the guide's profiles and conformance requirements. They support reuse across decision support, care planning, measurement, and reporting, with clinical judgment and local adaptation remaining part of implementation. Approach explains the choices and their tradeoffs; Methodology describes how to apply them. The five chapters develop this argument using the existing heart failure example.
 
 ### Where to start {#where-to-start}
 
@@ -10,13 +16,13 @@ Open a chapter below. Read in order for the full approach, or go directly to the
 
 <a id="chapters"></a>
 
-| Chapter | What this page helps you do |
+| Chapter | What this chapter explains |
 | --- | --- |
-| <a id="conceptual-knowledge-architecture"></a>**[1. Case, Plan, and Workflow](approach-model.html)** | Understand how patient facts, reusable guidance, care plans, and local work relate. |
-| <a id="knowledge-representation"></a>**[2. Guideline Artifacts](approach-artifacts.html)** | Identify the FHIR resources, CQL, terminology, and forms in a guideline package. |
-| <a id="implementing-computable-knowledge"></a>**[3. Implementation and Integration](approach-implementation.html)** | Choose an integration method and connect evaluation results to clinical workflow. |
-| <a id="guideline-development"></a><a id="knowledge-engineering"></a>**[4. Development and Maintenance](approach-development.html)** | Develop, review, release, and maintain the guideline and its computable artifacts. |
-| **[5. Measurement and Evidence](approach-evaluation.html)** | Use metrics and reports, evaluate an implementation, and interpret CDS evidence. |
+| <a id="conceptual-knowledge-architecture"></a>**[1. Case, Plan, and Workflow](approach-model.html)** | Why patient facts, reusable guidance, and local care delivery need distinct, connected representations. |
+| <a id="knowledge-representation"></a>**[2. Guideline Artifacts](approach-artifacts.html)** | How representation levels, FHIR resources, CQL, terminology, and forms support shared interpretation and reuse. |
+| <a id="implementing-computable-knowledge"></a>**[3. Implementation and Integration](approach-implementation.html)** | Why shared guidance supports several execution and integration choices, and what remains local. |
+| <a id="guideline-development"></a><a id="knowledge-engineering"></a>**[4. Development and Maintenance](approach-development.html)** | Why clinical, knowledge engineering, and implementation work inform one another throughout development and maintenance. |
+| **[5. Measurement and Evidence](approach-evaluation.html)** | Why recommendations, delivered care, and outcomes need to be connected for evaluation and learning. |
 {:.cpg-horizontal-table}
 
 For the step-by-step authoring procedure, use [Methodology](methodology.html). When reviewing a work product or a local implementation, start with the [checklist for its representation level](checklists.html).
@@ -39,7 +45,7 @@ One person may fill several roles. The [Concept and Profile Index](documentation
 
 </details>
 
-{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 961" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." caption="The work continues after a package is released. Clinical and technical findings can lead to changes in the guideline, its computable representation, or the local implementation." %}
+{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 961" alt="Evidence, guideline development, decision support, clinical care, measurement, and reporting form a learning cycle around shared FHIR data and knowledge." caption="Shared definitions connect guidance, care, and evaluation. The return paths allow clinical and technical findings to inform reviewed changes to the guideline, its computable representation, or the local implementation." %}
 
 ### Look up a detail {#references}
 

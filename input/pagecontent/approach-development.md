@@ -1,4 +1,8 @@
-Computable guideline development turns a clinical recommendation into a versioned set of artifacts that others can review, test, and adapt to local care. Start with a specific clinical decision and carry its source, rationale, and approved interpretation through every handoff. The team can work on these products together as data constraints or test cases expose questions for clinical review. [Methodology](methodology.html) gives the detailed Select, Represent, Translate, Validate, and Package steps.
+Computable guideline development brings clinical interpretation, knowledge engineering, and implementation into the same review process. A recommendation may leave a time window open to interpretation, assume information that a site does not record, or depend on a care activity that is delivered differently across settings. Discovering these questions while the guideline and its artifacts are being developed gives the responsible experts an opportunity to resolve them together.
+
+The aim is to do shared interpretation and formalization upstream, so each site can build on reviewed definitions and cases. That can reduce repeated work and divergent interpretations while leaving local teams responsible for their data, workflow, and approved adaptations. Versioned artifacts and their rationale also make it possible to identify which implementations need review when the guidance changes.
+
+This chapter explains why collaboration, short feedback cycles, and continuing stewardship matter. [Methodology](methodology.html) gives the detailed Select, Represent, Translate, Validate, and Package steps for producing and reviewing the work products.
 
 ### Establish the source and scope {#source-and-scope}
 
@@ -41,7 +45,11 @@ The guideline development group draws on clinical specialists and frontline clin
 
 #### Work through one reviewed increment {#reviewed-increment}
 
-{% include cpg-diagram.html src="cpg-method-handoff.svg" alt="Twelve clinical guideline activities and related informatics activities surround ongoing evaluation and users, grouped into four phases of co-development." %}
+A bounded clinical decision gives the team something concrete to review across disciplines. Its inputs, expected results, and place in care can expose an ambiguous recommendation or an unavailable data element before those assumptions spread through a whole pathway. Reusable parts allow the work to grow incrementally; testing their composition checks that the parts still mean and do what reviewers intended when used together.
+
+{% include cpg-diagram.html src="cpg-method-handoff.svg" alt="Twelve clinical guideline activities and related informatics activities surround ongoing evaluation and users, grouped into four phases of co-development." caption="Clinical, informatics, and implementation activities inform one another throughout development. Evaluation and user involvement provide feedback while decisions can still be revised." %}
+
+The exchanges below describe responsibilities within that collaboration. Teams can revisit them as a clinical example, test, or local constraint changes an assumption.
 
 | Handoff | What changes hands |
 | --- | --- |
@@ -94,6 +102,8 @@ Compare the authored artifacts with the approved cases. Record enough about the 
 Use the [Validate step](methodology-validate.html#validate-step) to record findings and the [Conformance reference](documentation-conformance.html) for applicable requirements. [Measurement and Evidence](approach-evaluation.html#evaluate-implementation) explains how to assess use and effects.
 
 #### Test while developing and validate independently {#test-driven-development}
+
+Testing during development makes assumptions visible while the team can still revise them. If all implementation questions wait until the logic is finished, a missing or differently recorded clinical fact may require changes to the specification, expressions, and expected cases. Early work with representative data can expose those differences; independently reviewed cases help check assumptions shared by the authors and their initial tests.
 
 Pair a clinical reviewer who can define and explain expected results with an author who can implement and test the expressions. Use short build-and-test cycles. When an unexpected result suggests a better test case, have the reviewer confirm its expected behavior before adding it. Supplement those cases with an independent review and, where feasible, a separate validation dataset that the authors did not use to refine the logic. Check local data quality and mappings before interpreting discrepancies as logic defects.
 

@@ -1,6 +1,6 @@
 # CPG narrative refresh
 
-This change reorganizes the guide around implementor tasks using the existing IG Publisher template. It incorporates the STU 3 ballot artifact definitions, dependencies, conformance statements, and change log. Retired narrative pages and moved sections have redirects. The original rewrite began at commit `320b164065d795dd0b7ab9ab313a67f129e06dc7`.
+This change organizes the guide into five Approach chapters explaining the rationale for the clinical model, shared knowledge representations, and collaborative development, with Methodology providing the authoring steps. It uses the existing IG Publisher template and incorporates the STU 3 ballot artifact definitions, dependencies, conformance statements, and change log. Retired narrative pages and moved sections have redirects. The original rewrite began at commit `320b164065d795dd0b7ab9ab313a67f129e06dc7`.
 
 ## Review the result
 

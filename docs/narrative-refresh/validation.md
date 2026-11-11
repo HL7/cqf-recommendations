@@ -1,5 +1,26 @@
 # Narrative refresh validation
 
+## Approach rationale restoration
+
+The overview again explains the reasons for the clinical model, shared knowledge representations, and iterative, cross-functional development. The five chapters restore the motivations for preserving clinical distinctions, supporting patient-specific planning, sharing reviewed interpretation across outputs and sites, choosing execution and integration routes, testing during development, and connecting care to evaluation. Four diagram captions explain the purpose of the boundaries and feedback paths. Methodology remains the procedural reference.
+
+Compared with `5f603b856979f771d37fad9bfe3f5dd503b137d4`, all six Approach pages retain their headings, explicit anchors, existing link destinations, and chapter-navigation includes. The five-chapter menu, legacy redirects, formal artifact sources, templates, and diagram sources are unchanged. Source and rendered verification passed for 39 narrative pages, 31 legacy redirect pages, and the 29 formal requirements. The three inherited duplicate named anchors in the conformance index remain unchanged.
+
+IG Publisher 3.0.3 completed successfully with zero errors, broken links, or invalid XHTML pages, 34 warnings, and 521 informational messages. The normalized QA comparison found no added or removed findings. All 620 generated FHIR resource JSON files matched the previous build byte for byte, including the ImplementationGuide. The publication inputs in the build snapshot matched the working tree.
+
+Chromium checked the five chapters, seven role paths, all 435 navigation and legacy routes, and the redirect fallback with JavaScript disabled. The overview fits a 390-pixel viewport. Desktop and phone screenshots were captured for each chapter; the overview and revised chapter openings were visually inspected in the existing template. This is narrative and publication verification, not clinical outcome or runtime-interoperability validation.
+
+```sh
+python3 docs/narrative-refresh/verify.py --baseline-commit 5f603b8
+python3 docs/narrative-refresh/verify.py --baseline-commit 5f603b8 \
+  --site /path/to/rebuilt/output/en \
+  --baseline-site /path/to/previous/output/en
+python3 docs/narrative-refresh/compare_publisher.py \
+  --baseline /path/to/previous/output \
+  --candidate /path/to/rebuilt/output \
+  --output /path/to/qa-comparison.json
+```
+
 ## Authoring examples and chapter layout
 
 The Select scope table provides capture hints, and the illustrative CHF survey shows answers and their codes in bordered fields. The persona, activity, process, and setting codes match the CHF example resources and link to their definitions in the expandable text version. Translate explains how to trace FHIR and CQL artifacts through Represent to their narrative sources. Represent formats the historical When/Then pseudocode with bold labels and nested lists. The artifact matrix also offers an expandable text version. The Case, Plan, and Workflow and Guideline Artifacts contents blocks sit above the narrative, right-aligned in two or three columns. The model table keeps each Concern label on one line.
