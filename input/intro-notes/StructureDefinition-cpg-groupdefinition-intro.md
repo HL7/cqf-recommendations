@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGGroupDefinition describes a population through criteria rather than an enumerated patient list. Use it for reusable cohort definitions or guideline inclusion and exclusion criteria. It remains a Group resource with definitional membership semantics; executing its criteria and producing an actual patient group are separate implementation steps.

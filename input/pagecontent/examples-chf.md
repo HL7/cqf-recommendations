@@ -1,34 +1,11 @@
-This is an example computable clinical practice guideline (CPG) illustrating a congestive
-heart failure (CHF) care pathway.
+This example illustrates a congestive heart failure (CHF) care pathway and a patient-centric Case/Plan Summary View. The view organizes case features, goals, planned items, and patient events around progress through the pathway. The table summarizes the example view; it is illustrative, not a separate computable artifact.
 
-The following diagram illustrates a Case/Plan Summary View for the guideline, showing the
-major components and how they fit together:
-
-<div>
-    <img src="CHFCasePlanSummaryView.png" alt="CHF Case Plan Summary View" width="450"/>
-</div>
-
-Overall, this is a patient-centric view, from the perspective of the congestive heart
-failure pathway, showing how the patient is progressing along the pathway, and providing
-the most relevant information and indicators.
-
-The pathway has two strategies, CHF Daily Management, and CHF Hypervolemia. These
-strategies are then made up of recommendations. The Daily Management strategy is
-made up of the Weight, Weight Change, Urine Out, and Net IO's recommendations, and
-the Hypervolemia strategy is made up of the JVP, O2 Sat, Potassium, Creatinine, eGFR,
-LASIX, and Cardiology Consultation recommendations.
-
-The timeline view in the center depicts patient events, proposals, and planned items as
-determined by the overall care pathway. Along the left-side of the timeline, the
-pathway event (or _case feature_) is named, and along the right-side of the timeline,
-a _goal_ is provided for that case feature. The goal is defined by the pathway as part
-of the _recommendation_ associated with that case feature.
-
-Within the timeline view, events in green indicate _metrics_ that are on-pathway,
-while events in grey indicate case features that aren't reported as metrics. Items
-in yellow are cautions that indicate actions should be considered, (such as measuring
-Jugular Venous Pressure), while events in red indicate values that are off-pathway
-or indicate immediate attention is needed.
+| View element | Case/plan summary |
+|---|---|
+| Pathway structure | CHF Daily Management and CHF Hypervolemia strategies, each organized into the recommendations listed below. |
+| Timeline | Patient events, proposals, and planned items; each row names a pathway event or case feature and its associated goal. |
+| Status meaning | The view distinguishes on-pathway metrics, cautions, off-pathway values or items needing immediate attention, and case features that are not reported as metrics. |
+| Snapshot | The example view is dated 9:41 AM on February 3, 2019, the fourth day of the encounter. |
 
 The example CPG artifacts are organized as follows:
 
@@ -91,9 +68,6 @@ results in the creation of a [CarePlan](CarePlan-chf-scenario1-careplan.html), w
 [Daily Management](RequestGroup-chf-scenario1-daily-management.html) and
 [Hypervolemia](RequestGroup-chf-scenario1-hypervolemia.html) strategies. Each of these
 strategies establish actions and goals for each of the recommendations.
-
-The diagram above is a snapshot of the Case/Plan Summary View at 9:41 AM on February 3rd, 2019, the
-4th day of the encounter.
 
 Weight
 CaseFeatureDefinition: Weight in kg

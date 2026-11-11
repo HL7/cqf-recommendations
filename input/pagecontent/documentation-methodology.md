@@ -1,120 +1,83 @@
 ### Knowledge Representation Formalisms
 
-In addition to the FHIR-based L3 representation formalisms that are the focus of this implementation guide,
-the BPM+ family of knowledge representation standards from Object Modeling Group (OMG) are being used to
-represent clinical guideline and pathway content. This section describes potential approaches for using
-the BPM+ standards in coordination with this implementation guide. Readers of this section are expected to
-have some level of familiarity with the BPM+ standards, specifically BPMN, CMMN, and DMN.
+BPM+ provides optional ways to model decisions and processes alongside FHIR/CQL. BPMN describes process flow, DMN describes decisions, and CMMN describes case-management behavior. A diagram can support L2 clinical review; an executable model may support L3/L4 processing only in an environment implementing its semantics.
 
-Within the overall framework of levels of knowledge, the visual representation aspects of the BPM+ family of
-standards fit within L2, diagrams, workflows, and process models, while the executable aspects of these
-standards range into L3 and even L4, given systems that are capable of executing BPMN, CMMN, and DMN content.
+Use this reference when an authoring project already uses these formalisms or needs to compare a model with FHIR/CQL artifacts. The [Represent](methodology-represent.html) and [Translate](methodology-translate.html) steps describe the shared work regardless of the modeling tool.
 
-TODO: Diagram depicting placement of BPMN, CMMN, DMN along-side the FHIR-based specifications
+**Patterns on this page:** [Sequence](#sequence-flow) · [Parallel split](#parallel-split) · [Exclusive split](#exclusive-split) · [Timed start](#timed-start).
 
-In particular, this implementation guide defines 3 layers of process-modeling structures:
+These correspondences are useful starting points, not equivalence guarantees:
 
-1. Pathway - BPMN/CMMN (Leaning towards BPMN)
-2. Strategy - BPMN/CMMN (Leaning towards CMMN)
-3. Recommendation - BPMN/DMN (Leaning towards DMN)
+| Clinical modeling concern | Possible BPM+ model | FHIR/CQL target to consider |
+| --- | --- | --- |
+| Recommendation decision | DMN | CQL expressions with CPGRecommendationDefinition conditions/actions |
+| Strategy/case coordination | CMMN or BPMN | CPGStrategyDefinition, related actions, and supported execution behavior |
+| Pathway/process organization | BPMN or CMMN | CPGPathwayDefinition and referenced definitions |
+{:.grid}
 
-Of course, this correspondence is a rough equivalence, there are aspects of process- and decision-modeling throughout
-each of the layers, but this provides a starting point for approaching integrated use of these standards.
+The target definition profiles are PlanDefinition profiles. A patient-specific CPGStrategy is a RequestGroup, and a clinical case is not automatically a CMMN execution instance. Use [CPG plans](approach-model.html#plan) and [activity flow](activityflow.html) for the formal resource distinctions.
 
 ### BPMN and FHIR
 
-Focusing on process semantics, this section provides mappings between BPMN and PlanDefinition, informed by the
-[workflow patterns](http://workflowpatterns.com/) work done at the Eindhoven University of Technology and Queensland
-University of Technology, and applied to FHIR by a joint project between the University of Applied Sciences Upper Austria ("FH Hagenberg") and CGM Clinical Austria for a prototype for medical boards (project "KIMBo").
-
-The definition of a Process is specified using either BPMN or a FHIR PlanDefinition, then the Atlas Transformation Language (ATL)
-can be used to transform between the two, using the [Control Flow and Data Flow patterns](http://workflowpatterns.com/evaluations/standard/) as a metamodel.
+The examples below come from exploratory workflow-pattern mapping work by FH Hagenberg and CGM Clinical Austria's KIMBo prototype, informed by the [Workflow Patterns initiative](http://workflowpatterns.com/). They illustrate selected constructs rather than a normative bidirectional mapping or a complete executable clinical implementation.
 
 ### Workflow Pattern Transformations
 
-The following sections consider specific patterns and the BPMN and PlanDefinition representations of each.
+The retained prototype illustrates a transformation from a PlanDefinition into a BPMN model and graphical representation. The paired patterns below help reviewers inspect which relationships each representation expresses.
 
-<div>
-  <img style="width:100%" src="transformation-process.png" alt="Business process is manually created as plan defintion. The patterns explain how an automated transformation towards BPMN and a graphical representation can be solved."/>
-</div>
+{% include cpg-diagram.html src="cpg-method-formalisms.svg" alt="A historical transformation starts with PlanDefinition and produces a BPMN representation for review. Paired sequence, parallel split, exclusive split, and timed start patterns show the relationships to inspect." %}
 
+
+Review condition languages, data retrieval, null/unknown behavior, timing, concurrency, joins, and local task execution. Compare source and target behavior using the same approved cases. Do not infer runtime scheduling or synchronization guarantees from a visually similar graph. The retained XML snippets are historical pattern examples, including placeholder expressions; they are not a production-ready CQL translation.
 
 #### Sequence Flow
 
-<div>
-    <img src="process-pattern-sequenceFlow.png" alt="Sequence Flow"/>
-</div>
+A sequence connects a source action to a following action. The FHIR example uses `PlanDefinition.action.relatedAction` with `relationship=before-start`. This encodes a relationship; the consuming implementation still needs appropriate execution support.
 
-**Definition**
-A sequence flow is a directed arc from one source node to exactly one target node.
+**BPMN example**
 
-| BPMN | Start-Event, End-Event, Sequence |
-| PlanDefinition | PlanDefinition.relatedAction, Before-Start |
-
-**BPMN Representation**
 {% highlight xml %}{% include process-patterns/bpmn-sequenceFlow.xml %}{% endhighlight %}
 
-**PlanDefinition Representation**
+**PlanDefinition example**
+
 {% highlight xml %}{% include process-patterns/plandefinition-sequenceFlow.xml %}{% endhighlight %}
+
 ### Parallel Split
 
-<div>
-    <img src="process-pattern-parallelSplit.png" alt="Parallel Split"/>
-</div>
+Parallel branches can be represented as grouped child actions. The retained example uses `action.groupingBehavior=logical-group` and `action.selectionBehavior=all`, with related actions. Selection of all actions does not by itself define a runtime join, transaction, or concurrent execution policy. The ballot example uses [`cqf-applicabilityBehavior`](https://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) with `all` for the grouped actions.
 
-**Definition**
-A parallel split is separating the sequence flow in parallel branches that are executed concurrently.
+**BPMN example**
 
-| BPMN | ParallelGateway |
-| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior, [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) (all) |
-{:.modified-content}
-
-**Remarks**
-A merge element is created implicitly
-
-**BPMN Representation**
 {% highlight xml %}{% include process-patterns/bpmn-parallelSplit.xml %}{% endhighlight %}
 
-**PlanDefinition Representation**
+**PlanDefinition example**
+
 {% highlight xml %}{% include process-patterns/plandefinition-parallelSplit.xml %}{% endhighlight %}
+
 ### Exclusive Split
 
-<div>
-    <img src="process-pattern-exclusiveSplit.png" alt="Exclusive Split"/>
-</div>
+An exclusive choice selects one branch according to conditions. The example uses `action.selectionBehavior=exactly-one` with child applicability conditions. Verify mutually exclusive and complete cases, including unknown inputs and no matching branch; implicit synchronization in a transformation tool is not a general FHIR guarantee. The ballot example uses [`cqf-applicabilityBehavior`](https://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) with `any` for the grouped actions.
 
-**Definition**
-An exclusive choice is an element where the sequence flow is split into two or more branches, whereas only one of the branches can be activated with respect to a specified condition on the exclusive choice element.
+**BPMN example**
 
-**Remarks**
-A synchronization element is created implicitly
-
-| BPMN | EclusiveGateway, ExtensionElement, TaskListener |
-| PlanDefinition | PlanDefinition.groupingBehavior, PlanDefinition.selectionBehavior, [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) (any) |
-{:.modified-content}
-
-**BPMN Representation**
 {% highlight xml %}{% include process-patterns/bpmn-exclusiveSplit.xml %}{% endhighlight %}
 
-**PlanDefinition Representation**
+**PlanDefinition example**
+
 {% highlight xml %}{% include process-patterns/plandefinition-exclusiveSplit.xml %}{% endhighlight %}
+
 ### Timed Start
 
-<div>
-    <img src="process-pattern-timedStart.png" alt="Timed Start"/>
-</div>
+A timed start adds a scheduling condition. The retained FHIR example uses `action.trigger` with `type=periodic` and `timingTiming`, plus related-action sequencing. A related-action relationship alone does not establish a timer. The target environment determines how scheduling is supported.
 
-**Definition**
-A TimedStartEvent is a special StartEvent that has a TimerEvent associated with it, which defines when the process has to be executed.
+**BPMN example**
 
-| BPMN | Start-Event, End-Event, Sequence |
-| PlanDefinition | PlanDefinition.relatedAction, Before-Start |
-
-**Remarks**
-As PlanDefinition does not offer a specific action for either start or end, these BPMN-Elements are to be created implicitly. Whilst the start Event is based on the Elements in the first action in the list of actions in the PlanDefinition
-
-**BPMN Representation**
 {% highlight xml %}{% include process-patterns/bpmn-timedStart.xml %}{% endhighlight %}
 
-**PlanDefinition Representation**
+**PlanDefinition example**
+
 {% highlight xml %}{% include process-patterns/plandefinition-timedStart.xml %}{% endhighlight %}
+
+For a historical use of DMN/CMMN during knowledge engineering, see the [COVID-19 case study](methodology-case-study.html). Validate any transformation through the [execution and validation tracks](approach-development.html#validation).
+
+{% include chapter-navigation.html section="Methodology" overview="methodology.html" %}

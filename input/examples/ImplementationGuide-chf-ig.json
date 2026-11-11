@@ -12,6 +12,14 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CPGCongestiveHeartFailureExamples</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/cpg/chf/ImplementationGuide/chf-ig</pre><div><p>Examples of CPG computable content representing a congestive heart failure pathway</p>\n</div></div>"
   },
   "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cds"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "informative"
+  },
+  {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
     "valueCode" : "shareable"
   },
@@ -55,7 +63,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.3.0"
+    "version" : "7.5.0"
   },
   {
     "id" : "hl7ext",
@@ -65,7 +73,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.4.0"
   },
   {
     "id" : "hl7_fhir_uv_cpg",

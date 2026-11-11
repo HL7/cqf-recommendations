@@ -1,0 +1,108 @@
+{
+  "title": "A common care pathway",
+  "description": "Identify the patient and urgency, gather information, agree on care, request and deliver activities, and monitor progress. Local care can revisit these stages or escalate urgently.",
+  "width": 1000,
+  "height": 565,
+  "nodes": [
+    {
+      "id": "identify",
+      "x": 30,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Establish context",
+      "body": "Identity, summary, urgency",
+      "kind": "knowledge"
+    },
+    {
+      "id": "assess",
+      "x": 365,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Assess the patient",
+      "body": "History, findings, tests",
+      "kind": "knowledge"
+    },
+    {
+      "id": "agree",
+      "x": 700,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Agree on care",
+      "body": "Interpretation, goals, consent",
+      "kind": "workflow"
+    },
+    {
+      "id": "follow",
+      "x": 30,
+      "y": 340,
+      "w": 270,
+      "h": 130,
+      "label": "Monitor and report",
+      "body": "Follow-up, records, indicators",
+      "kind": "result"
+    },
+    {
+      "id": "deliver",
+      "x": 365,
+      "y": 340,
+      "w": 270,
+      "h": 130,
+      "label": "Deliver care",
+      "body": "Interventions and medications",
+      "kind": "workflow"
+    },
+    {
+      "id": "request",
+      "x": 700,
+      "y": 340,
+      "w": 270,
+      "h": 130,
+      "label": "Request activities",
+      "body": "Authorized orders and referrals",
+      "kind": "workflow"
+    }
+  ],
+  "edges": [
+    {
+      "from": "identify",
+      "to": "assess",
+      "fromPort": "right",
+      "toPort": "left"
+    },
+    {
+      "from": "assess",
+      "to": "agree",
+      "fromPort": "right",
+      "toPort": "left"
+    },
+    {
+      "from": "agree",
+      "to": "request",
+      "fromPort": "bottom",
+      "toPort": "top"
+    },
+    {
+      "from": "request",
+      "to": "deliver",
+      "fromPort": "left",
+      "toPort": "right"
+    },
+    {
+      "from": "deliver",
+      "to": "follow",
+      "fromPort": "left",
+      "toPort": "right"
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 520,
+      "w": 944,
+      "text": "Reassess as information changes; escalate urgent care whenever indicated."
+    }
+  ]
+}

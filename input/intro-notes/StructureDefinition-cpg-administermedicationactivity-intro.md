@@ -1,1 +1,1 @@
-This is an [activity definition](profiles.html#activity-profiles) profile
+Use this ActivityDefinition profile to administer a medication in reusable guideline content. It specifies the request type and profile to construct for a patient, together with the proposed activity’s intent. A recommendation definition can reference it; the patient-specific request and any documented clinical event are separate resources.

@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGGroup represents an actual collection of patient members, such as a cohort used in a guideline-related activity. Use it when the identified membership is the content being exchanged. It differs from CPGGroupDefinition, which specifies membership criteria without listing actual members; neither representation by itself records each member's pathway enrollment.

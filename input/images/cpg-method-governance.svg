@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="665" viewBox="0 0 1000 665" role="img" aria-labelledby="title description">
+<title id="title">Assign local decisions before deployment</title><desc id="description">Clinical, technical, and operational owners contribute distinct readiness evidence to a local release and change decision. Publication approval and local deployment approval remain separate.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="25.0" y="35.0" font-size="24.2" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="25.0" dy="0">Assign local decisions before deployment</tspan></text>
+<polyline points="177.5,295 177.5,345 500,345 500.0,400" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="499.5,295 499.5,345 500,345 500.0,400" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="821.5,295 821.5,345 500,345 500.0,400" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="35" y="110" width="285" height="185" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="177.5" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="177.5" dy="0">Clinical owner</tspan></text>
+<text x="177.5" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="177.5" dy="0">Scope, source currency,</tspan><tspan x="177.5" dy="21.33">exceptions and adaptations</tspan></text>
+<rect x="357" y="110" width="285" height="185" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="499.5" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="499.5" dy="0">Technical owner</tspan></text>
+<text x="499.5" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="499.5" dy="0">Data mappings, dependencies,</tspan><tspan x="499.5" dy="21.33">interfaces and tests</tspan></text>
+<rect x="679" y="110" width="285" height="185" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="821.5" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="821.5" dy="0">Operational owner</tspan></text>
+<text x="821.5" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="821.5" dy="0">Workflow, authorization,</tspan><tspan x="821.5" dy="21.33">follow-up and monitoring</tspan></text>
+<rect x="180" y="400" width="640" height="140" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="500.0" y="428" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Local release and change decision</tspan></text>
+<text x="500.0" y="461.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Review readiness and unresolved findings. Record approval, rollback,</tspan><tspan x="500.0" dy="21.33">update responsibility, and feedback route.</tspan></text>
+<text x="28" y="585" font-size="16" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="28" dy="0">A publisher approval, profile-valid package, or successful execution does not authorize patient care.</tspan></text>
+<text x="28" y="625" font-size="16" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="28" dy="0">Legend: boxes identify responsibilities; arrows identify inputs to a reviewed local decision.</tspan></text>
+</g></svg>

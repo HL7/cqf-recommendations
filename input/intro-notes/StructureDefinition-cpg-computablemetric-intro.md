@@ -1,1 +1,1 @@
-This is a [computable artifact profile](profiles.html#artifact-profiles)
+This Measure profile defines a guideline-related metric using computable populations and scoring information. Use it to publish what is to be evaluated, rather than a calculated result for a particular context. The corresponding CPGMetricReport links its result back to this definition; the intended subject and evaluation mode remain explicit design choices.

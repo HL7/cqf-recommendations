@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to recommend recording an inferred patient feature as an Observation. The referenced observation carries the proposed clinical result; the Task represents the work of recording it. Preserve the distinction between the calculation, its supporting data and the decision to add the result to the record.

@@ -1,0 +1,1 @@
+This Questionnaire profile supports forms used with computable guideline content. Use it to describe the questions and answer options through which information is collected or displayed. It adds optional sources for answer value sets and image presentation; it represents the form definition, while completed or partial answers belong in a QuestionnaireResponse.

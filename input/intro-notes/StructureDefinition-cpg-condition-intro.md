@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGCondition represents a condition or problem used in a guideline-related patient case. Use it for the clinical record of that condition, including its status, onset, and supporting evidence. Optional case-feature extensions can connect it to a reusable feature definition and distinguish asserted from inferred information without replacing the Condition's own clinical meaning.

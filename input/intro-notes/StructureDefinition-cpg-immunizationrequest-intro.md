@@ -1,1 +1,1 @@
-This is an [activity request profile](profiles.html#activity-profiles)
+Use this MedicationRequest profile to represent a patient-specific immunization recommendation or request. Despite its name, it profiles MedicationRequest rather than ImmunizationRecommendation. It connects the proposed vaccine to the patient, encounter and supporting information; a later Immunization resource documents administration or explicit non-performance.

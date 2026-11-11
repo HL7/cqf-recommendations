@@ -114,3 +114,7 @@ Some methodologies define two kinds of value sets:
 This structure is not necessary, and may not be desirable from a purely terminological perspective, but it has advantages when maintenance is spread across people with different expertise. For example, a terminologist with SNOMED CT expertise can be assigned all of the SNOMED CT leaf value sets. This is the same reasoning as splitting mappings by code system, described above.
 
 </div>
+
+#### Validate terminology in use {#validate-and-maintain-terminology}
+
+Test membership against the terminology and data versions used by the implementation. Include representative codes, exclusions, retired or unmapped concepts, and cases in which the terminology service cannot resolve the requested version. Record whether evaluation used the computable definition or a published expansion. Reassess dependent logic when code systems, mappings, or data feeds change. [Methodology validation](methodology-validate.html#validate-step)

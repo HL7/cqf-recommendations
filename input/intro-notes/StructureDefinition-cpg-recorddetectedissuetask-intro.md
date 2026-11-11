@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to recommend recording a detected issue in the patient’s context. The input identifies the issue to be recorded, while the Task carries the work’s intent and progress. The detected issue’s assessment, evidence and status remain properties of the referenced issue rather than the Task.

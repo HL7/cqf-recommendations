@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this ServiceRequest profile for a patient-specific recommendation or request for a procedure, referral or self-care service. It represents desired care in its clinical context, with supporting patient information and a link to the originating guideline. A resulting procedure or observation is recorded separately from the service request and its authorization.

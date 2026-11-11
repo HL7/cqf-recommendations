@@ -3,6 +3,7 @@ InstanceOf: CPGRecommendationDefinition
 Usage: #example
 * title = "Activity Example Administer Medication PD"
 * insert ExamplePlanDefinitionMetadata(activity-example-administermedication-pd)
+* insert AdministerMedicationExampleVersion
 * description = "Example Plan Definition for a recommendation to administer a medication"
 * name = "ActivityExampleAdministerMedicationPD"
 * type = $plan-definition-type#eca-rule

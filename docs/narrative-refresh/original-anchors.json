@@ -1,0 +1,813 @@
+{
+  "activityflow.md": {
+    "explicit": [],
+    "headings": [
+      "General Activity Flow",
+      "Activity Flow State Transition Capabilities",
+      "Update",
+      "Suspend",
+      "Resume",
+      "Plan",
+      "Revoke",
+      "Reject",
+      "Order",
+      "Entered In Error",
+      "Perform",
+      "Start",
+      "Not Done",
+      "Stop",
+      "Complete",
+      "Activity Lifecycle - Request Phases (Proposal, Plan, Order)",
+      "Activity Lifecycle - Event Phase"
+    ]
+  },
+  "approach.md": {
+    "explicit": [],
+    "headings": [
+      "Conceptual Knowledge Architecture",
+      "Guideline Development",
+      "Knowledge Engineering",
+      "Knowledge Representation",
+      "Implementing Computable Knowledge"
+    ]
+  },
+  "artifacts.md": {
+    "explicit": [
+      "codesystem-index",
+      "extension-index",
+      "profile-index",
+      "valueset-index"
+    ],
+    "headings": [
+      "ActivityDefinition Index",
+      "CapabilityStatement Index",
+      "CodeSystem Index {#codesystem-index}",
+      "Extension Index {#extension-index}",
+      "OperationDefinition Index",
+      "PlanDefinition Index",
+      "Profile Index {#profile-index}",
+      "Questionnaire Index",
+      "ValueSet Index {#valueset-index}"
+    ]
+  },
+  "changes.md": {
+    "explicit": [
+      "changes"
+    ],
+    "headings": [
+      "STU2 Release (version 2.0.0)",
+      "STU2 Ballot (version 2.0.0-ballot)",
+      "STU1 Publication (version 1.0.0)",
+      "STU1 Ballot (version 0.1.0)"
+    ]
+  },
+  "checklists.md": {
+    "explicit": [],
+    "headings": []
+  },
+  "clinical-guidelines-development-L1-checklist.md": {
+    "explicit": [],
+    "headings": []
+  },
+  "clinical-guidelines-development-L2-checklist.md": {
+    "explicit": [],
+    "headings": [
+      "L2 Checklist"
+    ]
+  },
+  "clinical-guidelines-development-L3-checklist.md": {
+    "explicit": [],
+    "headings": [
+      "L3 Checklist"
+    ]
+  },
+  "clinical-guidelines-development-L4-checklist.md": {
+    "explicit": [],
+    "headings": [
+      "L4 Checklist"
+    ]
+  },
+  "common-care-pathway.md": {
+    "explicit": [],
+    "headings": []
+  },
+  "documentation-approach-02-04-knowledge-representation.md": {
+    "explicit": [],
+    "headings": [
+      "[Levels of Knowledge Representation Framing:](documentation-approach-06-01-levels-of-knowledge-representation.html)",
+      "Approach",
+      "[Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html)",
+      "[Levels of Representation by Tiers of Functionality](documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html)",
+      "[Knowledge Assets](documentation-approach-06-02-knowledge-assets.html)",
+      "Asset Metamodel",
+      "Content",
+      "Asset Metadata",
+      "Expressions (and/or Languages)",
+      "Declarations",
+      "Composite Assets",
+      "Derived Assets",
+      "Translation Within and Between Knowledge Representations",
+      "Curating and Managing Knowledge Assets in a Large Corpus (Knowledge Base)",
+      "[Knowledge Architecture](documentation-approach-06-03-knowledge-architecture.html)"
+    ]
+  },
+  "documentation-approach-02-05-knowledge-implementation.md": {
+    "explicit": [],
+    "headings": []
+  },
+  "documentation-approach-03-conformance-levels.md": {
+    "explicit": [],
+    "headings": [
+      "Levels of Enablement"
+    ]
+  },
+  "documentation-approach-04-02-guideline-development-frameworks.md": {
+    "explicit": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "headings": [
+      "Knowledge Synthesis and the Evidence Pyramid",
+      "Meta-Analyses and Systematic Reviews (Syntheses)"
+    ]
+  },
+  "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md": {
+    "explicit": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "headings": [
+      "The CPG enables the System Level of the 6S Pyramid and Learning Health Systems <!-- Not sure that it's clear if the use of the term \"CPG\" is meant to encapsulate any clinical practice guideline or specifically a clinical practice guideline that applies CPG-on-FHIR. This could be helpful to clarify early on and make sure it remains clear throughout the document. !-->",
+      "Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic:",
+      "Rapid Discovery of Best Practice",
+      "Rapid dissemination of Practice Guidance",
+      "Rapid-cycle, closed loop Knowledge-to-Delivery-to-Discovery with feedback loops"
+    ]
+  },
+  "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md": {
+    "explicit": [],
+    "headings": [
+      "Analysis of Evidence",
+      "Information from the Evidence",
+      "EBM-on-FHIR for Information from the Evidence",
+      "Recommendations",
+      "Reporting and Dissemination"
+    ]
+  },
+  "documentation-approach-04-05-computable-guideline-artifacts.md": {
+    "explicit": [
+      "2"
+    ],
+    "headings": [
+      "Evidence",
+      "Co-Development of Guidelines and Computable Clinical Guideline Artifacts",
+      "The Integrated Process Cycle",
+      "CPG Content and Related Derivatives",
+      "Value of Computable Guideline Artifacts to Stakeholders"
+    ]
+  },
+  "documentation-approach-04-guideline-development.md": {
+    "explicit": [],
+    "headings": [
+      "Guideline Development Group",
+      "Scoping",
+      "[Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html)",
+      "Knowledge Synthesis and the Evidence Pyramid",
+      "The CPG enables the System Level of the 6S Pyramid and Learning Health Systems",
+      "Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic",
+      "Analysis of Evidence",
+      "Information from the Evidence",
+      "EBM-on-FHIR for Information from the Evidence",
+      "Recommendations",
+      "Reporting and Dissemination",
+      "Development of Computable Clinical Guideline Artifacts",
+      "Evidence",
+      "CPG Content and Related Derivatives",
+      "Value to Stakeholders"
+    ]
+  },
+  "documentation-approach-05-01-knowledge-acquisition.md": {
+    "explicit": [],
+    "headings": [
+      "Knowledge Elicitation",
+      "Knowledge Authoring",
+      "Knowledge Synthesis",
+      "Knowledge Discovery",
+      "Hybrid Approaches",
+      "In Collaboration with the Guideline Development Group",
+      "In Collaboration with Knowledge Implementers"
+    ]
+  },
+  "documentation-approach-05-02-knowledge-translation.md": {
+    "explicit": [],
+    "headings": []
+  },
+  "documentation-approach-05-03-knowledge-representation.md": {
+    "explicit": [],
+    "headings": [
+      "Knowledge Curation",
+      "Knowledge Management"
+    ]
+  },
+  "documentation-approach-05-04-knowledge-execution-and-validation.md": {
+    "explicit": [],
+    "headings": [
+      "Knowledge Execution",
+      "Knowledge Validation"
+    ]
+  },
+  "documentation-approach-05-05-knowledge-implementation.md": {
+    "explicit": [],
+    "headings": [
+      "Local Content and Practice Governance",
+      "Local informatics (knowledge engineering) and implementation",
+      "Concurrent Development and Implementation",
+      "Analogs and Collaboration across CPG Development and Implementation",
+      "Feedback- early, often, actionable",
+      "Real-world Data to Develop CPGs"
+    ]
+  },
+  "documentation-approach-05-06-agile-cpg-development-approach.md": {
+    "explicit": [],
+    "headings": [
+      "Agile approach to Knowledge Engineering and CPG Development",
+      "Cross-functional, Integrated CPG Development Team",
+      "Integration with Knowledge Engineering with Guideline Development Process",
+      "Integration/Collaboration of CPG Development and Implementation",
+      "\u201cChunking\u201d",
+      "Constrained, yet \u201ccontextualized\u201d parts",
+      "Building by composition/ restriction",
+      "Incremental",
+      "Iterative",
+      "Test-driven Knowledge Engineering",
+      "Specification by example",
+      "Test-driven knowledge formalism and/or expression",
+      "Agile Validation enabled by Test-driven Knowledge Engineering",
+      "Iteration, rapid-cycle feedback",
+      "Leveraging a Knowledge Base (Knowledge Content Management System)",
+      "Use of Ontologies and Terminologies",
+      "Knowledge Engineering Workflow Support",
+      "KE Tooling Leveraging the Knowledge Content Management System",
+      "Advanced Knowledge Content Management Capabilities"
+    ]
+  },
+  "documentation-approach-05-knowledge-engineering-overview.md": {
+    "explicit": [],
+    "headings": [
+      "Knowledge Engineering Lifecycle Process",
+      "Knowledge Acquisition",
+      "Knowledge Elicitation",
+      "Knowledge Authoring",
+      "Knowledge Synthesis",
+      "Knowledge Discovery",
+      "Hybrid Approaches",
+      "In Collaboration with the Guideline Development Group",
+      "In Collaboration with Knowledge Implementers",
+      "Knowledge Translation",
+      "Knowledge Representation/Expression",
+      "Knowledge Curation",
+      "Knowledge Management",
+      "Knowledge Execution",
+      "Knowledge Validation",
+      "Knowledge Implementation",
+      "Local Content and Practice Governance",
+      "Local informatics (knowledge engineering) and implementation",
+      "Concurrent Development and Implementation",
+      "Analogs and Collaboration across CPG Development and Implementation",
+      "Feedback- early, often, actionable",
+      "Real-world Data to Develop CPGs",
+      "Agile CPG Development Approach"
+    ]
+  },
+  "documentation-approach-06-01-levels-of-knowledge-representation.md": {
+    "explicit": [],
+    "headings": [
+      "Approach",
+      "Narrative",
+      "Semi-structured",
+      "Structured",
+      "Executable"
+    ]
+  },
+  "documentation-approach-06-02-knowledge-assets.md": {
+    "explicit": [],
+    "headings": [
+      "Asset Metamodel",
+      "Content",
+      "Asset Metadata",
+      "Expressions (and/or Languages)",
+      "Declarations",
+      "Composite Assets",
+      "Derived Assets",
+      "Translation Within and Between Knowledge Representations"
+    ]
+  },
+  "documentation-approach-06-03-knowledge-architecture.md": {
+    "explicit": [],
+    "headings": [
+      "Conceptual Perspective on the CPG Knowledge Architecture",
+      "Knowledge Architecture in FHIR for the CPG-IG",
+      "Boundary Issues at the Separations of Concerns",
+      "Knowledge Architecture and Knowledge Content Management System"
+    ]
+  },
+  "documentation-approach-06-knowledge-representation.md": {
+    "explicit": [],
+    "headings": [
+      "Approach",
+      "Asset Metamodel",
+      "Content",
+      "Asset Metadata",
+      "Expressions (and/or Languages)",
+      "Declarations",
+      "Composite Assets",
+      "Derived Assets",
+      "Translation Within and Between Knowledge Representations",
+      "Curating and Managing Knowledge Assets in a Large Corpus (Knowledge Base)"
+    ]
+  },
+  "documentation-approach-07-tiers-of-functionality.md": {
+    "explicit": [],
+    "headings": [
+      "Data Elements",
+      "Clinical Logic",
+      "Forms Description"
+    ]
+  },
+  "documentation-approach-08-levels-of-representation-by-tiers-of-functionality.md": {
+    "explicit": [],
+    "headings": []
+  },
+  "documentation-approach-09-methods-of-implementation.md": {
+    "explicit": [],
+    "headings": [
+      "Methods of Implementation",
+      "Manual",
+      "Automatic",
+      "Native",
+      "Execution Semantics",
+      "Activity Processing Semantics",
+      "PlanDefinition Processing Semantics",
+      "Enabled vs Known Content",
+      "Initiation",
+      "Recommendations, Strategies, and Pathways",
+      "Enrollment",
+      "Orchestration",
+      "Care Planning"
+    ]
+  },
+  "documentation-approach-10-mechanisms-of-integration.md": {
+    "explicit": [],
+    "headings": [
+      "Direct (Ingestion or Translation of Computable Artifacts)",
+      "Reasoning-as-a-Service (on-demand data ingest and insight/inference delivery)",
+      "Via Data Enrichment (real-time data ingest and insight/inference delivery)",
+      "As an Application (data ingest with external reasoning and results presentation)",
+      "Hybrid (combination of approaches (most likely for CPGs))"
+    ]
+  },
+  "documentation-approach-12-01-separations-of-concerns-in-the-cpg.md": {
+    "explicit": [
+      "1",
+      "2"
+    ],
+    "headings": []
+  },
+  "documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.md": {
+    "explicit": [],
+    "headings": [
+      "[Case](documentation-approach-12-04-cpg-case.html) <!-- link to 12.04 !-->",
+      "Plan <!-- link to 12.03 !-->",
+      "Plan, Planning, and Care Plan",
+      "Workflow",
+      "Boundary Issues at the Separation of Domain Concerns",
+      "Examples of Boundary Issues in the CPG"
+    ]
+  },
+  "documentation-approach-12-03-cpg-plan.md": {
+    "explicit": [],
+    "headings": [
+      "Recommendations",
+      "Separating Clinical Decision Logic from Patient Descriptive Logic",
+      "CPGRecommendation as a profiled FHIR ECA Rule",
+      "Directionality and Strength of a Recommendation",
+      "Quality of Evidence and Evidence for Recommendations",
+      "Evidence Resource Variables Informing CPG Formalization (Logic and Semantics)",
+      "Strategies",
+      "CPGStrategies as a profiled FHIR ECA Rule",
+      "Pathways",
+      "CPGPathway as a profiled FHIR PlanDefinition",
+      "Pathway Eligibility",
+      "Pathway Enrollment",
+      "Auto-Enrollment, Prompted-Enrollment, and Opt-in Enrollment",
+      "Multi-stage \u201cFiltering\u201d for Appropriateness of Guideline-Directed Care",
+      "CPGPathwayEnrollmentCriteria as a Profiled ECA Rule",
+      "CPGPathway as a \u201cComposite\u201d Asset"
+    ]
+  },
+  "documentation-approach-12-04-cpg-case.md": {
+    "explicit": [],
+    "headings": [
+      "Case Features",
+      "Case Features from Clinician Assessments",
+      "Separation of Form Logic from Patient Descriptive Logic and Clinical Decision Logic",
+      "Derived or Inferred Case Features",
+      "Separating Patient Descriptive Logic from Clinical Decision Logic",
+      "Case Feature Groups",
+      "Case Feature Relationships",
+      "Case Summary"
+    ]
+  },
+  "documentation-approach-12-05-cpg-careplan.md": {
+    "explicit": [],
+    "headings": [
+      "Proposal",
+      "CPGProposal as a Patient-specific CPGRecommendation",
+      "Patient Information Supporting the Proposal",
+      "Request (as part of the CPGCarePlan)",
+      "Event (as part of the CPGCarePlan)",
+      "Shared Care Plan"
+    ]
+  },
+  "documentation-approach-12-06-cpg-common-pathway.md": {
+    "explicit": [
+      "1",
+      "2"
+    ],
+    "headings": [
+      "Common Pathway <!-- Needs some work. Conflates Settings and Activities; only addresses Ambulatory !-->",
+      "Use of Common Pathway in Localization",
+      "Clinical Information System (EHR) Workflow",
+      "Using FHIR Tasks with Requests and Events",
+      "Workflow Enablements and Interventions (Cognitive and Decision Support)"
+    ]
+  },
+  "documentation-approach-12-07-cpg-derivative-and-related-assets.md": {
+    "explicit": [],
+    "headings": [
+      "CPGGuideline",
+      "CPGMetrics",
+      "CPGMeasure (eCQMs) <!-- Rename \"Item\" in eCQM to \"Population\" and \"Feature\". Make clear an eCQM points to multiple \"cases\" (use 1-many |---< ) !-->",
+      "CPGCaseSummary",
+      "CPGCasePlanSummaryView",
+      "CPGCasePlanProgressingNote",
+      "CPGeCaseReport",
+      "Infobutton"
+    ]
+  },
+  "documentation-approach-12-conceptual-knowledge-architecture.md": {
+    "explicit": [],
+    "headings": [
+      "Separation of Concerns",
+      "[Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)",
+      "Case",
+      "Plan",
+      "Workflow",
+      "[Boundary Issues at the Separation of Domain Concerns](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html)",
+      "Examples of Boundary Issues in the CPG covered in detail",
+      "CPG Formalizations of Domain Concerns & Concepts",
+      "CPGCase, CPGPlan, and CPGCarePlan",
+      "[Plan](documentation-approach-12-03-cpg-plan.html)",
+      "[Case](documentation-approach-12-04-cpg-case.html)",
+      "[Care Plan](documentation-approach-12-05-cpg-careplan.html)",
+      "[Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html)",
+      "CPGGuideline",
+      "Derivative & Related Assets"
+    ]
+  },
+  "documentation-careplanning.md": {
+    "explicit": [],
+    "headings": [
+      "Using Goals",
+      "Using Recommendations",
+      "Using Order Sets"
+    ]
+  },
+  "documentation-conformance.md": {
+    "explicit": [
+      "1",
+      "2"
+    ],
+    "headings": [
+      "Clinical Safety",
+      "Conformance Language",
+      "Must Support",
+      "Profiles",
+      "Terminology",
+      "Libraries",
+      "Levels of Conformance",
+      "Conformance Testing"
+    ]
+  },
+  "documentation-methodology.md": {
+    "explicit": [],
+    "headings": [
+      "Knowledge Representation Formalisms",
+      "BPMN and FHIR",
+      "Workflow Pattern Transformations",
+      "Sequence Flow",
+      "Parallel Split",
+      "Exclusive Split",
+      "Timed Start"
+    ]
+  },
+  "downloads.md": {
+    "explicit": [],
+    "headings": [
+      "Definitions",
+      "Examples",
+      "Full Implementation Guide"
+    ]
+  },
+  "examples-activities.md": {
+    "explicit": [],
+    "headings": [
+      "Send a message",
+      "Do not send a message",
+      "Collect information",
+      "Do not collect information",
+      "Order a medication",
+      "Dispense a medication",
+      "Administer a medication",
+      "Document a medication",
+      "Stop a medication order",
+      "Hold a medication order",
+      "Resume a medication order",
+      "Recommend an immunization",
+      "Order a service",
+      "Enroll a patient",
+      "Generate a report",
+      "Propose a diagnosis",
+      "Record a detected issue",
+      "Record an inference",
+      "Report a flag",
+      "Packaging"
+    ]
+  },
+  "examples-chf.md": {
+    "explicit": [],
+    "headings": [
+      "Pathway",
+      "Case Features",
+      "Logic",
+      "Metrics",
+      "Example Case",
+      "Example Case Index",
+      "Artifact Index"
+    ]
+  },
+  "examples-hiv-guideline.md": {
+    "explicit": [],
+    "headings": [
+      "Factors Conferring \"High Risk\" Category Membership",
+      "Indication for immediate screening:",
+      "Screening in pregnancy:",
+      "Consent:",
+      "Testing:",
+      "Rescreening:",
+      "Exceptions to screening* (2006 guideline only):",
+      "HIV Screening Protocol"
+    ]
+  },
+  "examples.md": {
+    "explicit": [
+      "codesystem-index",
+      "profile-index",
+      "valueset-index"
+    ],
+    "headings": [
+      "Example ActivityDefinition",
+      "Example Bundle Index",
+      "Example CarePlan",
+      "Example CareTeam",
+      "Example ClinicalImpression",
+      "Example CodeSystem {#codesystem-index}",
+      "Example Communication",
+      "Example CommunicationRequest",
+      "Example Composition",
+      "Example Condition",
+      "Example DetectedIssue",
+      "Example Encounter",
+      "Example EpisodeOfCare",
+      "Example Flag",
+      "Example Goal",
+      "Example GraphDefinition",
+      "Example Group",
+      "Example Immunization",
+      "Example ImmunizationRecommendation",
+      "Example ImplementationGuide",
+      "Example Library",
+      "Example Location",
+      "Example Measure",
+      "Example MeasureReport",
+      "Example MedicationAdministration",
+      "Example MedicationDispense",
+      "Example MedicationRequest",
+      "Example MedicationStatement",
+      "Example Observation",
+      "Example Organization",
+      "Example Patient",
+      "Example PlanDefinition",
+      "Example Practitioner",
+      "Example PractitionerRole",
+      "Example Procedure",
+      "Example Profile {#profile-index}",
+      "Example Questionnaire",
+      "Example QuestionnaireResponse",
+      "Example RelatedPerson",
+      "Example RequestGroup",
+      "Example ServiceRequest",
+      "Example Task",
+      "Example ValueSet {#valueset-index}"
+    ]
+  },
+  "glossary.md": {
+    "explicit": [],
+    "headings": [
+      "Activity",
+      "Adherence",
+      "Assertion",
+      "Assessment",
+      "Case",
+      "Case Feature",
+      "Compliance",
+      "Definition",
+      "Event",
+      "Guideline",
+      "Inference",
+      "Intervention",
+      "Measure",
+      "Metric",
+      "Pathway",
+      "Plan",
+      "Proposal",
+      "Recommendation",
+      "Request",
+      "Strategy",
+      "Workflow"
+    ]
+  },
+  "index.md": {
+    "explicit": [
+      "clinical-guidelines-implementation-guide"
+    ],
+    "headings": [
+      "Introduction",
+      "Scope",
+      "Goals",
+      "Audience",
+      "Background",
+      "References",
+      "Acknowledgements",
+      "Cross Version Analysis",
+      "Dependency Table",
+      "Globals Table",
+      "IP Statements"
+    ]
+  },
+  "interactive-cds.md": {
+    "explicit": [],
+    "headings": [
+      "PlanDefinition $apply with questionnaire",
+      "Interactive CDS as an Adaptive Process",
+      "Extracted Resource Conformance",
+      "Questionnaire Generation Processing Semantics",
+      "StructureDefinition/$questionnaire",
+      "Conformance with expression based population and definition based extraction",
+      "Mapping ElementDefinition data types to Questionnaire Items",
+      "PlanDefinition/$questionnaire"
+    ]
+  },
+  "libraries.md": {
+    "explicit": [],
+    "headings": []
+  },
+  "methodology-case-study.md": {
+    "explicit": [],
+    "headings": [
+      "Introduction",
+      "Problem Statement",
+      "Team",
+      "Process Overview",
+      "Process In-Depth",
+      "Scope Guideline and Review Evidence",
+      "Initial Draft of Guidance and Recommendations",
+      "Structuring and Making Explicit Content from Guideline Development Process",
+      "**Structured Information**",
+      "**Pathway and Strategies**",
+      "**Concepts and data elements for structured information**",
+      "**Informing CPG-IG knowledge architecture and expression using CPG Profiles**",
+      "Identification and Description of Initial Clinical Concepts and Data Elements used in the Guideline",
+      "Concepts from Template and Draft Guideline",
+      "Concept Maps (as needed)",
+      "Create Decision Flow Diagram(s)",
+      "Review and cross-reference: template, concept definitions, and flow diagram",
+      "Formalize Terminologies \u00a0(Codes, Value Sets, Mappings)",
+      "Iterate, Update Draft of Guideline",
+      "Initial Draft of Computable Decision Logic (Decision Tables in DMN)",
+      "Term Enrichment",
+      "Cross-Functional Team Review, Open Questions, and Resolution of Ambiguities",
+      "Iterate, Update Draft of Guideline based on Feedback from Community & KE Team",
+      "Translate Case Presentations into Case Examples/ Test Cases",
+      "Finalize Clinical Ontology",
+      "Common Clinical Care Process Ontology (C3PO)",
+      "Overall Translation Approach from L1/L2 Work-Products to L3 Artifacts",
+      "Refine Decision Logic/ Tables and Inferred Clinical Concepts (DMN)",
+      "Draft Pathway and Strategy Logic/ Orchestration (CMMN)",
+      "Cross-Functional Team Reviews Draft Computable Expressions/ Models",
+      "Final Narrative Guideline",
+      "Finalize Expressions/ Models",
+      "Translate Models into CPG Profiles (BPM+ \u2192 CPG profiled Plan Defs+CQL++)",
+      "Derive additional CPG Assets",
+      "Validate CPG Assets against Test Cases (FHIR Bundles)",
+      "Package all CPG Work Products in Composite CPG Asset (profiled IG resource)"
+    ]
+  },
+  "methodology.md": {
+    "explicit": [
+      "implementation-guide-categories",
+      "select-step",
+      "represent-step",
+      "validate-step"
+    ],
+    "headings": [
+      "Implementation Guide Categories {#implementation-guide-categories}",
+      "Foundational Standards",
+      "Model Implementation Guides",
+      "Specification Implementation Guides",
+      "Content Implementation Guides",
+      "Overview",
+      "Select",
+      "Represent",
+      "Translate",
+      "Validate",
+      "Select Step {#select-step}",
+      "Personas",
+      "Activities",
+      "Processes",
+      "Settings",
+      "Support",
+      "Guideline Supporting Information",
+      "Pertinent Information",
+      "Represent Step {#represent-step}",
+      "Concepts",
+      "Criteria",
+      "Processes",
+      "Delivery of contextualized narrative",
+      "Actionable intervention",
+      "Process integration",
+      "Translate Step",
+      "Computable Clinical Practice Guideline",
+      "Profiles",
+      "Terminology",
+      "Criteria",
+      "Activities",
+      "Activity Definitions",
+      "Activity Requests (Proposals)",
+      "Activity Events",
+      "Recommendations",
+      "Strategies",
+      "Pathways",
+      "Validate Step {#validate-step}",
+      "Conformance",
+      "Checklists",
+      "Expert Review",
+      "Testing Scenarios",
+      "Unit Testing",
+      "Component Testing",
+      "Integration Testing",
+      "Packaging",
+      "Mapping and Other Formalisms"
+    ]
+  },
+  "profiles.md": {
+    "explicit": [],
+    "headings": [
+      "Artifact profiles",
+      "Domain Profiles",
+      "Activity Profiles",
+      "Content Profiles",
+      "Interoperability Profiles",
+      "Computability Profiles",
+      "Implementation Considerations"
+    ]
+  },
+  "terminology.md": {
+    "explicit": [],
+    "headings": [
+      "Using Code Systems",
+      "Using Value Sets"
+    ]
+  }
+}

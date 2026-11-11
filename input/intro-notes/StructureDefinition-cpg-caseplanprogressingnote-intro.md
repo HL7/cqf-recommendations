@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+This Composition profile specializes a case-plan summary as a progress note, bringing clinician impressions into the view of the patient's guideline-related care. Use it to document progression and reasoning at a point in time. It inherits the summary's subject, author, and contextual links; it is a clinical document, not a new pathway definition.
