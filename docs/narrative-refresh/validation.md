@@ -1,5 +1,26 @@
 # Narrative refresh validation
 
+## Rendered link repair
+
+The 11 November 2026 follow-up compared two IG Publisher 3.0.3 builds of the integrated ballot, before and after the link repair. The build now reports zero broken links, down from 21, and 22 Publisher errors, down from 51. No new errors or warnings appeared. The 616 SUSHI-generated resources and all 29 rendered conformance statements matched the pre-fix build.
+
+The shared PlanDefinition template generated links to local CQL anchors even when no matching definition was rendered. The [local condition template](../../input/liquid/plandefinition-condition.html) displays the expression and uses Publisher's resolved Library link when the plan supplies a single Library and the expression has no separate reference. The cardiology consult profile now links to its [Procedure example](../../input/intro-notes/StructureDefinition-chf-cardiology-consult-intro.md). That broken link appeared in the HTML link count only. [HL7 template guidance](https://build.fhir.org/ig/FHIR/ig-guidance/template.html) · [Shared condition template](https://github.com/HL7/ig-template-base2/blob/main/liquid/plandefinition-condition.html)
+
+| Original errors | Cause | Result |
+| ---: | --- | --- |
+| 20 | Generated CQL links in 19 activity PlanDefinitions and one embedded Bundle entry pointed to missing anchors. | Resolved by the condition template. |
+| 8 | Five CQL conditions in the CHF Lasix, common registration, and VA CKD PlanDefinitions had empty links. Publisher also reported one invalid URL per PlanDefinition. | Resolved by the condition template. |
+| 1 | Activity Examples skipped from heading level 2 to level 4. | Resolved by promoting the activity headings one level. Existing section IDs still resolve. |
+| 9 | Six references in the Administer Medication collection and Bundle use legacy FHIRHelpers or FHIR ModelInfo canonicals from [RelatedFHIRLibraries](../../input/fsh/rules.fsh). Three references to FHIRHelpers come from generated data requirements on CHF measures. | Remain. Publisher cannot resolve these canonicals. |
+| 6 | Publisher generates the CRMI `effectiveDataRequirements` extension on three CHF measures. The guide has no CRMI dependency, so the validator reports both the unrecognized extension and its unresolved URL on each measure. | Remain. |
+| 3 | The potassium, creatinine, and eGFR leaf actions in the [CHF Hypervolemia example](../../input/fsh/examples/chf-examples/test-cases/chf-scenario1-hypervolemia.fsh) violate `rqg-1`. Each has neither a resource nor child actions. | Remain. |
+| 3 | The main guide and CHF example guide lack the standards-status extension. The CHF example guide also lacks the workgroup extension. | Remain. |
+| 1 | The [generate-report example Measure](../../input/fsh/examples/activity-examples/resources/measure-activity-example-generatereport.fsh) uses CQL criteria without declaring a Library. | Remains. |
+
+Separately, both build logs report that CHF CQL translation succeeds and Publisher then encounters `Unknown FHIRTypes code 'Any'` while generating the Library output. This message is outside the 51 counted errors.
+
+The rendered checker passed for 39 narrative pages and 31 legacy redirect pages. Chromium checked all 435 legacy and current navigation routes and followed all 21 repaired links.
+
 ## STU 3 ballot integration
 
 The 11 November 2026 validation compared the branch with STU 3 ballot commit `e2fb41324f63f4af4b687121f7ead14cf5a1c1a0`. Both builds used IG Publisher 3.0.3, SUSHI 3.19.0, and the same local package cache. Both builds completed successfully.

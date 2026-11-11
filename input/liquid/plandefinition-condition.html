@@ -1,0 +1,15 @@
+{% for condition in include.condition %}
+<tr>
+  <th scope="row" class="row-header">Condition</th>
+  <td class="content-container">
+    <em>Kind</em>: {{ condition.kind }}
+    {% if condition.expression.expression.exists() and condition.expression.language.startsWith('text/cql') %}
+      <br />
+      <em>Logic Definition</em>: <code>{{ condition.expression.expression.escape('html') }}</code>
+      {% if condition.expression.reference.empty() and include.library.count() = 1 %}
+        ({{ include.library.first() }})
+      {% endif %}
+    {% endif %}
+  </td>
+</tr>
+{% endfor %}
