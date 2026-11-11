@@ -1,5 +1,32 @@
 # Narrative refresh validation
 
+## Publisher warning review and navigation layout
+
+Fetched the official `HL7/cqf-recommendations` mainline (`master`, `e2fb413`). The branch already contained it. IG Publisher 3.0.3 reported 34 warnings, down from 177, with zero errors, broken links, or invalid XHTML pages. The 73 additional informational messages record the canonical versions selected during pinning.
+
+| Warnings resolved | Change |
+| ---: | --- |
+| 93 | Applied [canonical version pinning](https://build.fhir.org/ig/FHIR/ig-guidance/pinning.html) without changing the selected dependency versions. The bundled and standalone Administer Medication definitions now use the same ballot version. |
+| 21 | Qualified the published FHIRHelpers include in 19 activity libraries and renamed two local variables. Compiled ELM retained the same calculations and public inputs. |
+| 12 | Replaced an inactive NDC with the equivalent active RxNorm tablet code in the medication examples. |
+| 5 | Supplied narratives for the Administer Medication example entries that were missing them. |
+| 4 | Added CHF examples for the pertinence and graph expression extensions. |
+| 2 | Updated the CHF example guide's R4 terminology and extensions package versions to match the packages used by this build. |
+| 6 | Kept one anchor per CQL library and definition name in generated narratives. Both overloads remain visible; the duplicate warnings had been counted in the resource narratives and the HTML. |
+
+The remaining warnings are tracked here without suppressions:
+
+| Warnings remaining | Cause |
+| ---: | --- |
+| 19 | The [Publisher inference step](https://github.com/HL7/fhir-ig-publisher/blob/3.0.3/org.hl7.fhir.publisher.core/src/main/java/org/hl7/fhir/igtools/publisher/CqlSubSystem.java#L1374-L1447) uses the end of the Library canonical as the CQL identifier. These examples' valid Library canonicals and CQL identifiers differ; changing either would change an artifact identity. The CQL still compiles. |
+| 9 | Publisher tries to resolve external evidence or provenance URLs as FHIR definitions. Updated the references that had verifiable destinations and retained the original AeHIN citation; its old URL no longer resolves and no verified replacement was found. |
+| 2 | Publisher cannot write the common header changes back through its R4 GraphDefinition conversion. |
+| 2 | The main guide and the example have no assigned maturity level in source. A maturity designation needs a supported publication decision. |
+| 1 | The shared narrative template repeats section anchors across different resources embedded in the same example Bundle. |
+| 1 | The specification listing needs to be reconciled in the separate [HL7 JIRA specification registry](https://github.com/HL7/JIRA-Spec-Artifacts). |
+
+The same four navigation tables in §§1.1, 2.0.1, and 3.0.1 use muted horizontal rules. The lifecycle diagram has more space around its arrows. Chromium checked the tables at 1440 and 390 pixels, loaded the diagrams as interactive SVGs, and verified that their specification and operation links open in new tabs. The five Approach chapters, 435 navigation routes, and all 21 previously repaired links passed the browser check. All 29 conformance statements match the previous build, and the CHF Library still includes both ELM formats, 18 public parameters, and 11 data requirements.
+
 ## Publisher validation and CHF Library
 
 The 11 November 2026 rebuild with IG Publisher 3.0.3 resolved all 22 errors from the regenerated link-repair baseline. Publisher reported zero errors, zero broken links, zero invalid XHTML pages, and 177 warnings. The warning count was 179 before these fixes. Warnings include version selection messages for canonicals present in multiple loaded packages.

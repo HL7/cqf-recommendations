@@ -7,6 +7,7 @@
     a:hover, a:focus { text-decoration: underline; }
     .guide-link:hover rect, .guide-link:focus rect { stroke: #153a66; stroke-width: 3px; }
     #content-guides .guide-link:hover rect, #content-guides .guide-link:focus rect { stroke: #fff; }
+    #fhir-core .guide-link:hover rect, #fhir-core .guide-link:focus rect { stroke: #fff; }
   </style>
   <defs>
     <marker id="support-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
@@ -73,7 +74,7 @@
           <rect x="540" y="342" width="90" height="37" rx="5" fill="#dae3ea"/>
           <text x="585" y="367">CPG</text>
         </a>
-        <a class="guide-link" href="https://hl7.org/fhir/uv/crmi/" target="_blank" rel="noopener" tabindex="0" aria-label="Clinical Reasoning Module Implementation Guide (opens in a new tab)">
+        <a class="guide-link" href="https://hl7.org/fhir/uv/crmi/" target="_blank" rel="noopener" tabindex="0" aria-label="Canonical Resource Management Infrastructure Implementation Guide (opens in a new tab)">
           <rect x="642" y="342" width="89" height="37" rx="5" fill="#dae3ea"/>
           <text x="686.5" y="367">CRMI</text>
         </a>
@@ -100,7 +101,10 @@
       <text x="58" y="488" font-size="23" font-weight="700">Foundational standards</text>
       <g id="fhir-core">
         <rect x="58" y="504" width="635" height="82" rx="6" fill="#40556b"/>
-        <text x="78" y="536" font-size="23" font-weight="700" fill="#fff"><a href="https://hl7.org/fhir/R4/" target="_blank" rel="noopener" tabindex="0" aria-label="FHIR R4 specification (opens in a new tab)">FHIR core</a></text>
+        <a class="guide-link" href="https://hl7.org/fhir/R4/" target="_blank" rel="noopener" tabindex="0" aria-label="FHIR R4 specification (opens in a new tab)">
+          <rect x="73" y="513" width="116" height="31" rx="4" fill="transparent"/>
+          <text x="78" y="536" font-size="23" font-weight="700" fill="#fff">FHIR core</text>
+        </a>
         <text x="78" y="566" font-size="19" fill="#fff">Foundation · Conformance · Administration · Clinical · Reasoning</text>
       </g>
       <g id="companion-standards">
