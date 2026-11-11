@@ -8,8 +8,6 @@ Use the reviewed specification from the [Represent step](methodology-represent.h
 
 Record which guideline passages and journal articles (L1) inform the reviewed data, criteria, and activities from Represent (L2), and which FHIR and CQL artifacts (L3) implement them. These relationships can be one-to-one or many-to-many.
 
-{% include cpg-diagram.html src="cpg-method-translation-mapping.svg" alt="Journal article A informs the data dictionary and decision criteria. Article B also informs the criteria. The data dictionary informs a FHIR data profile and a CQL library, and the criteria also inform the library. A guideline passage leads to one proposed activity and its FHIR ActivityDefinition." caption="The journal articles illustrate overlapping sources and outputs. The guideline passage illustrates a one-to-one path through the proposed activity to its FHIR definition." %}
-
 Start with [content identity and dependencies](#computable-clinical-practice-guideline), then define the [data profiles](#profiles), [terminology](#terminology), and [logic](#criteria-1). Describe the [activities](#activities-1) and assemble them into [recommendations](#recommendations), [strategies](#strategies), and [pathways](#pathways). Define any [patient-level metrics](#metrics) needed to evaluate progress.
 
 #### Establish content identity and dependencies {#computable-clinical-practice-guideline}
