@@ -1,0 +1,9 @@
+{
+  "title": "Activity Flow from definition to event",
+  "description": "Five phase rows show the records available in one example, from a reusable definition through a proposal, plan, order, and event. Backward arrows show optional definition, predecessor, and fulfillment references. The phases can be omitted where appropriate. Request and event status examples are specific to ServiceRequest and Procedure.",
+  "svgSource": "svg/cpg-runtime-activity.svg",
+  "originals": [
+    "unified-activity-flow.png",
+    "Unified State Diagram for Activity Workflow.svg"
+  ]
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title description">
+<title id="title">Maintain the content and the local implementation</title><desc id="description">A versioned content package is adapted into a reviewed local release and evaluated during operation. Observations and changes require impact review across content and dependencies.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="25.0" y="35.0" font-size="24.2" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="25.0" dy="0">Maintain the content and the local implementation</tspan></text>
+<polyline points="316,190.0 358,190.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="642,190.0 684,190.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="826.0,275 826,305 174,305 174.0,275" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="32" y="105" width="284" height="170" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="174.0" y="133" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="174.0" dy="0">Content package</tspan></text>
+<text x="174.0" y="166.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="174.0" dy="0">Canonical identities</tspan><tspan x="174.0" dy="21.33">Versions and dependencies</tspan><tspan x="174.0" dy="21.33">Clinical sources and tests</tspan></text>
+<rect x="358" y="105" width="284" height="170" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="500.0" y="133" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Reviewed local release</tspan></text>
+<text x="500.0" y="166.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Selected content</tspan><tspan x="500.0" dy="21.33">Data and workflow adaptations</tspan><tspan x="500.0" dy="21.33">Local validation evidence</tspan></text>
+<rect x="684" y="105" width="284" height="170" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="826.0" y="133" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="826.0" dy="0">Operation and review</tspan></text>
+<text x="826.0" y="166.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="826.0" dy="0">Monitor expected behavior</tspan><tspan x="826.0" dy="21.33">Investigate changed results</tspan><tspan x="826.0" dy="21.33">Review updates and impact</tspan></text>
+<text x="32" y="350" font-size="16" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="32" dy="0">The local release retains its source links. Feedback does not automatically revise approved guidance.</tspan></text>
+</g></svg>

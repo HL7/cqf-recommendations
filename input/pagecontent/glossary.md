@@ -1,96 +1,94 @@
+These definitions distinguish clinical concepts, reusable knowledge and patient-specific resources. Capitalized profile names refer to formal artifacts; shorter conceptual names do not imply additional FHIR resource types. See the [conceptual architecture](approach-model.html) and [FHIR resource map](approach-artifacts.html#resource-map) for relationships.
+
 ### Activity
 
-An [activity](documentation-approach-09-methods-of-implementation.html#activity-processing-semantics) refers generally to actions or processes taken as part of the delivery of guideline-directed care. This implementation guide defines specific activity types and provides FHIR profiles for each activity in the _definition_, _request_, and _event_ categories, and activities generally follow a lifecycle from _proposed_ to _planned_, to _ordered_, to _progressing_ to _completed_.
+An action relevant to care, such as collecting information, requesting a service or administering medication. A definition describes an activity that can occur; a request describes desired care; an event documents an occurrence. See [Activity Flow](activityflow.html).
 
 ### Adherence
 
 Adherence is where the patient is with respect to a strategy, taken as a whole, and is a special case of a composite metric. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to a strategy.
 {:.modified-content}
 
-The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](documentation-approach-12-07-cpg-derivative-and-related-assets.html#pathway-status-terms)).
+The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](approach-evaluation.html#pathway-status-terms)).
 {:.modified-content}
 
-Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
+Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
 {:.new-content}
 
 ### Assertion
 
-An assertion refers to a case feature that is documented as part of the patient's medical record. Note that even case features that are defined with inference expressions may be recorded as assertions if they are documented directly by the clinician user, rather than calculated as specified by the inference expression.
+A documented statement or value about a patient. It can be directly observed, clinically assessed or a previously inferred value that has been recorded. Preserve its source and time.
 
 ### Assessment
 
-A case feature that requires clinical judgment and/or [assessment](documentation-approach-12-04-cpg-case.html#case-features-from-clinician-assessments) (including impression) and therefore requires real-time extraction or interaction with the clinician user. Such case features often necessitate clinician prompting and/or documentation requirements to resolve and thus may be modeled as their own rules (as part of the triggering, decision, or orchestration logic within individual recommendations, strategies, and/or the pathway) or as adaptive forms (see Adaptive Questionnaire) scoped to the guideline element where they are used.
+A clinical evaluation of the patient's state, potentially using observations and computational support. It is distinct from an automatically calculated value and from the decision about which care to propose.
 
 ### Case
 
-A [Case](documentation-approach-12-04-cpg-case.html) consists of patient descriptors including: clinical presentation and progression, physical exam findings, diagnostic evaluations, physiological and pathophysiological assessments, past and current diagnoses, exposures, genetic markers and family history, risk and severity scores, response to treatment, and end and intermediate outcomes. The Case, through its Case Features, is the comprehensive, detailed, and contextually relevant information about the patient with respect to a the full scope of the guideline and its recommendations using clinically meaningful descriptions of individual patient’s current and historical state of health, disease, treatment, and risks.
+The patient information relevant to a guideline, including recorded and inferred features. The exact **CPGCase** profile uses EpisodeOfCare to represent enrollment; it is narrower than this conceptual meaning of case.
 
 ### Case Feature
 
-The [features](documentation-approach-12-04-cpg-case.html#case-features) of the case are the clinically meaningful and relevant data elements or information that describe the current and relevant past state of the patient that is pertinent to the scope of the guideline recommendations and related decisions to be considered. These typically describe the clinicopathophysiology pertaining to the condition(s) and state of disease, potential intervention(s), and contraindications related to guideline recommendations. These may include patient presentation (e.g., symptoms), clinical assessments and observations (e.g., physical findings, labs, vitals, diagnostic results, -omic profiles), diagnoses (e.g., problems or conditions) including temporally related risk and severity scores, exposures (e.g., various current and prior interventions such as medications/substances and procedures), family and travel history, as well as goals and preferences that may be relevant to the scope of the guideline and information needs for related clinical decision making and care processes. Furthermore, case features that correlate to complications of the known or suspected disease(s) as well as suspected or potential side effects of the various interventions scoped to the guideline should be considered. Lastly, current and prior orders and prescriptions may be considered as case features since they convey timing and intent of interventions and may be the initial or only signal thereof.
+A clinically meaningful item of patient information, such as an observation, condition, request or derived state. **CPGCaseFeatureDefinition** profiles StructureDefinition to define its representation. A patient-specific clinical resource carries its value. See [Case](approach-model.html#case).
 
 ### Compliance
 
-Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects). Compliance is often determined (and tracked) using metrics, which often correspond with, or are aggregated into, public health indicators or other population-level health analytics. Compliance metrics scoped to a recommendation report their results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
+Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects). Compliance is often determined (and tracked) using metrics, which often correspond with, or are aggregated into, public health indicators or other population-level health analytics. Compliance metrics scoped to a recommendation report their results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
 {:.modified-content}
 
 ### Definition
 
-A definition refers to the general pattern of definitional resources used to describe guideline elements in a patient-independent way. These definitions are _instantiated_ as _requests_ and then local workflow is performed to move the activity from a _request_ to an _event_.
+Reusable knowledge describing an activity or process independently of a particular patient's decision or occurrence. PlanDefinition and ActivityDefinition are examples. Applying a definition can construct patient-specific requests; the definition is not itself such a request.
 
 ### Event
 
-An _event_ is the basic pattern used in FHIR workflow to represent in-progress and completed activities. Event resources are used in this implementation guide to capture the _in-progress_ and _completed_ stages of activities.
+A record of a clinical/administrative occurrence, including activity in progress or explicitly documented as not done where the resource supports it. Event resource types have different status vocabularies and links to requests.
 
 ### Guideline
 
-Clinical practice [guidelines](documentation-approach-04-guideline-development.html) are systematically developed statements to assist clinical practitioner and patient decisions about appropriate care for specific clinical conditions, procedures, and/or similarly scoped activities. Guidelines consist of recommendations for patient care, which are based on scientific research and data (evidence), vetted through rigorous processes of a review and synthesis by recognized domain and methodological experts and other key stakeholders (e.g. patient and caregiver advocates) to guide healthcare decisions and activities for defined scope. A guideline may consist of one or more recommendations, contextualizing information, the possible means or strategies for bringing together or orchestrating recommendations, and other relevant considerations.
+Recommendations and supporting information intended to guide care for a defined scope. A computable guideline package can include narrative, models, terminology, logic, definitions, profiles and tests. **CPGComputableGuideline** profiles ImplementationGuide for package description.
 
 ### Inference
 
-An [inference](documentation-approach-12-04-cpg-case.html#derived-or-inferred-case-features) refers to a case feature that is inferred or derived from other case features such as medical calculations (e.g., BMI, eGFR, Anion Gap, hours since intervention, post-op hemoglobin drop), risk and severity scores (MELD Score, Seattle Heart Failure Model, CHA2DS2-VASc score), and case features requiring contextualization (e.g., pre-op hemoglobin, discharge weight, admission oxygen saturation, most recent blood pressure).
+A value or statement derived from other information using a defined expression or reasoning process. It can remain transient or be recorded. Preserve the inputs, time context and relevant computational definition when explaining its origin.
 
 ### Intervention
 
-An [intervention](documentation-approach-12-conceptual-knowledge-architecture.html) is a particular implementation strategy and represents a method for the delivery of a recommendation, often corresponding to a specific order or request, and fulfilled by an event.
+An activity intended to affect care or health, or the means of delivering support for such an activity. Clarify whether the term means a clinical action or a CDS interaction such as an alert or form.
 
 ### Measure
 
-In this implementation guide, we refer to a quality measure when discussing a clinical quality measure, public health indicator, or population analytics measure. A [quality measure](documentation-approach-12-07-cpg-derivative-and-related-assets.html#cpgmeasure-ecqms-) is a quantitative tool to assess the performance of an individual or organization with respect to a specified process or outcome via the measurement of actions, processes, or outcomes of clinical care. Quality measures are often derived from clinical guidelines and are designed to determine whether the appropriate care has been provided given a set of clinical criteria and an evidence base. A FHIR Measure Resource represents a structured, computable definition of such a quality measure.
-
-More details on how to use and implement a quality measure can be found in the Quality Measure Implementation Guide ([Measure IG](http://hl7.org/fhir/us/cqfmeasures)). The Quality Measure Implementation Guide describes an approach to representing electronic Clinical Quality Measures (eCQMs) using the FHIR Clinical Reasoning Module and Clinical Quality Language (CQL) using the FHIR Measure Resource.
+A defined quantitative assessment, often of a care process or outcome across a population. FHIR Measure represents its structure and expression references; MeasureReport represents evaluated results. See [derivative assets](approach-evaluation.html).
 
 ### Metric
 
-A [metric](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics) is a patient-level measurement or indicator of recommendation compliance (corresponding to a process measure), strategy or guideline adherence (corresponding to a composite measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity. It is often related to a patient-specific recommendation (i.e. a proposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).
+A [metric](approach-evaluation.html#metrics) is a patient-level measurement or indicator of recommendation compliance (corresponding to a process measure), strategy or guideline adherence (corresponding to a composite measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity. It is often related to a patient-specific recommendation (i.e. a proposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).
 {:.modified-content}
 
 ### Pathway
 
-[Pathways](documentation-approach-12-03-cpg-plan.html#pathways) convey the full scope of guideline recommendations in a manner that can be implemented for the purpose of guiding patient care within a singular CPG. In part, pathways serve a similar yet higher order function as strategies, and serve the function of addressing interdependencies such as decision and orchestration logic across multiple concerns.
+Longitudinal grouping of guidance and expected activities. **CPGPathwayDefinition** is the PlanDefinition profile with type `clinical-protocol`; the patient-specific course of care is separate from that reusable definition.
 
 ### Plan
 
-The [Plan](documentation-approach-12-03-cpg-plan.html) describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications).
+Qualify this term in implementation discussions. **CPGPlan** is a conceptual grouping of reusable guidance. **CPGCarePlan** is a patient-specific CarePlan profile. The request intent `plan` expresses an intention distinct from an authorized order. See [plan boundaries](approach-model.html#plan).
 
 ### Proposal
 
-A _proposal_ is a patient-specific, contextualized instantiation of a _definition_ of some _activity_ to be performed. From the perspective of the clinician user, proposals are typically provided as part of cognitive or decision support integrations, and may be accepted, ignored, rejected, or rejected with rationale.
+A patient-specific suggestion for an activity, represented by the applicable request resource. **CPGProposal** is a conceptual label, not a separate profile. Grouped optional requests can use intent `option` under a RequestGroup; selection and authorization remain separate decisions.
 
 ### Recommendation
 
-[Recommendations](documentation-approach-12-03-cpg-plan.html#recommendations) are proposals pertaining to the best course of action put forth by an authoritative source or body related to a condition, procedure, clinical decision, or activity. They are often expressed as summary tables with a column for succinct, clear, and specific narrative descriptions of the recommendation as well as additional columns for the directionality of the recommendation (to do or not do an activity), strength, and quality of evidence for each recommendation. They may further include additional visual aids such as decision trees and/or flow diagrams. Often, they also call out portions of a recommendation and/or how the recommendations hang together that lack evidence and may have relied on expert consensus.
+Guidance about an activity to consider or avoid in stated circumstances. **CPGRecommendationDefinition** is the reusable PlanDefinition profile for its event-condition-action representation. A patient-specific recommendation result is a proposal/request, not another definition.
 
 ### Request
 
-A _request_ is the basic pattern used in FHIR workflow to represent proposed, planned, or ordered activities. Request resources are used in this implementation guide to capture the _proposal_, _plan_, and _order_ stages of activities.
+A patient/context-specific representation of desired care, including proposal, plan or order where supported. Its intent conveys the nature of that request; its status concerns its lifecycle. It does not establish that the activity occurred.
 
 ### Strategy
 
-[Strategies](documentation-approach-12-03-cpg-plan.html#strategies) are approaches for combining, orchestrating, or associating related guideline recommendations and typically scope to a particular concern addressed within the guideline. Strategies may be longitudinal, require temporal orchestration, and reuse or repurpose data elements (CPGCaseFeatures) and other components (e.g., the attributes and status of requests and events) of the CPGRecommendations it scopes.
+A grouping of related recommendations, usually for a concern or context. **CPGStrategyDefinition** profiles PlanDefinition for the reusable structure. **CPGStrategy** profiles RequestGroup for patient-specific choices. These exact names identify different artifacts.
 
 ### Workflow
 
-[Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html#workflow), refers to the activities in real-world healthcare delivery settings, the human-computer interaction activities which are carried out in the context of clinical information systems (e.g., EHRs), and even some of the interaction within and between those systems. This often refers to human task flow, information flow, and patient flow. Clinical workflow is the description, abstraction, or depiction of clinical work that includes the physical, cognitive, coordination, and computational tasks or activities carried out by individual and teams of clinicians along with other staff and various resources using specialized knowledge, vast amounts and varieties of information, and numerous tools or artifacts collectively to achieve the goal of delivering the safest and highest quality care to individual patients as well as populations of patients or the broader public. Clinical work occurs in a broader system, social, legal, regulatory, and professional context that can greatly influence how this work is carried out.
-
-The CPG-IG explicitly does not address local workflows due to their significant variation, complexity, and need for consideration for local factors (e.g., specific resources and resource type, policies, customized or localized tooling), as well as to avoid conflating detailed clinical workflow descriptions/definitions with the flow of abstract clinical activities often necessary to describe as part of the care process in guideline recommendations.
+The actors, timing, dependencies and interactions by which work is performed. The guideline can identify abstract care processes; local implementation supplies concrete routing, triggers, permissions and interfaces. Task can track execution, while requests and events retain their own meanings.

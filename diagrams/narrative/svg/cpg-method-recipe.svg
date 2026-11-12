@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 459" role="img" aria-labelledby="title description">
+  <!-- Original synthesis of the Methodology steps and their reviewable outputs. -->
+  <title id="title">From a recommendation to a reviewed package</title>
+  <desc id="description">Five connected stages produce a scoped source recommendation, an explicit clinical specification, FHIR and CQL artifacts, validation findings, and a versioned package. Validation findings can send work back to Select, Represent, or Translate.</desc>
+  <defs>
+    <marker id="next" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#52697d"/>
+    </marker>
+    <marker id="revise" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#9b5d23"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="459" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
+    <g id="heading">
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">From a recommendation to a reviewed package</text>
+      <text x="30" y="75" font-size="19">Each step produces work the team can review before moving on.</text>
+    </g>
+    <g id="work-product-handoffs" fill="none" stroke="#52697d" stroke-width="2.6" marker-end="url(#next)">
+      <path d="M228 211H266"/>
+      <path d="M462 211H500"/>
+      <path d="M696 211H734"/>
+      <path d="M930 211H968"/>
+    </g>
+    <g id="select">
+      <rect x="36" y="115" width="192" height="221" rx="9" fill="#eef4fb" stroke="#6384a8" stroke-width="2"/>
+      <path d="M45 116H219Q227 116 227 124V181H37V124Q37 116 45 116Z" fill="#345c84"/>
+      <circle cx="61" cy="149" r="13" fill="#fff"/>
+      <text x="61" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#345c84">1</text>
+      <text x="83" y="157" font-size="23" font-weight="700" fill="#fff">Select</text>
+      <text x="52" y="216" font-size="20" font-weight="700">Scoped source</text>
+      <text x="52" y="247" font-size="19"><tspan x="52">Recommendation</tspan><tspan x="52" dy="25">Evidence and scope</tspan><tspan x="52" dy="25">Users and setting</tspan></text>
+    </g>
+    <g id="represent">
+      <rect x="270" y="115" width="192" height="221" rx="9" fill="#eef4fb" stroke="#6384a8" stroke-width="2"/>
+      <path d="M279 116H453Q461 116 461 124V181H271V124Q271 116 279 116Z" fill="#345c84"/>
+      <circle cx="295" cy="149" r="13" fill="#fff"/>
+      <text x="295" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#345c84">2</text>
+      <text x="317" y="157" font-size="23" font-weight="700" fill="#fff">Represent</text>
+      <text x="286" y="216" font-size="20" font-weight="700">Specification</text>
+      <text x="286" y="247" font-size="19"><tspan x="286">Data and criteria</tspan><tspan x="286" dy="25">Workflow and timing</tspan><tspan x="286" dy="25">Worked cases</tspan></text>
+    </g>
+    <g id="translate">
+      <rect x="504" y="115" width="192" height="221" rx="9" fill="#eaf5f1" stroke="#548d7e" stroke-width="2"/>
+      <path d="M513 116H687Q695 116 695 124V181H505V124Q505 116 513 116Z" fill="#286e5d"/>
+      <circle cx="529" cy="149" r="13" fill="#fff"/>
+      <text x="529" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#286e5d">3</text>
+      <text x="551" y="157" font-size="23" font-weight="700" fill="#fff">Translate</text>
+      <text x="520" y="216" font-size="20" font-weight="700">Formal artifacts</text>
+      <text x="520" y="247" font-size="19"><tspan x="520">FHIR definitions</tspan><tspan x="520" dy="25">CQL and terminology</tspan><tspan x="520" dy="25">Dependencies</tspan></text>
+    </g>
+    <g id="validate">
+      <rect x="738" y="115" width="192" height="221" rx="9" fill="#fff3e1" stroke="#b88041" stroke-width="2"/>
+      <path d="M747 116H921Q929 116 929 124V181H739V124Q739 116 747 116Z" fill="#8b521d"/>
+      <circle cx="763" cy="149" r="13" fill="#fff"/>
+      <text x="763" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#8b521d">4</text>
+      <text x="785" y="157" font-size="23" font-weight="700" fill="#fff">Validate</text>
+      <text x="754" y="216" font-size="20" font-weight="700">Review findings</text>
+      <text x="754" y="247" font-size="19"><tspan x="754">Clinical review</tspan><tspan x="754" dy="25">Technical tests</tspan><tspan x="754" dy="25">Open issues</tspan></text>
+    </g>
+    <g id="package">
+      <rect x="972" y="115" width="192" height="221" rx="9" fill="#f3eef9" stroke="#9578b0" stroke-width="2"/>
+      <path d="M981 116H1155Q1163 116 1163 124V181H973V124Q973 116 981 116Z" fill="#674986"/>
+      <circle cx="997" cy="149" r="13" fill="#fff"/>
+      <text x="997" y="155" text-anchor="middle" font-size="17" font-weight="700" fill="#674986">5</text>
+      <text x="1019" y="157" font-size="23" font-weight="700" fill="#fff">Package</text>
+      <text x="988" y="216" font-size="20" font-weight="700">Versioned release</text>
+      <text x="988" y="247" font-size="19"><tspan x="988">Linked artifacts</tspan><tspan x="988" dy="25">Tests and notes</tspan><tspan x="988" dy="25">Known limitations</tspan></text>
+    </g>
+    <g id="validation-feedback">
+      <g fill="none" stroke="#9b5d23" stroke-width="2.6" stroke-dasharray="6 5">
+        <path d="M834 337V382H132V341" marker-end="url(#revise)"/>
+        <path d="M366 382V341" marker-end="url(#revise)"/>
+        <path d="M600 382V341" marker-end="url(#revise)"/>
+      </g>
+      <text x="483" y="421" text-anchor="middle" font-size="20" fill="#743c12">Use validation findings to revise the scope, specification, or artifacts.</text>
+    </g>
+  </g>
+</svg>

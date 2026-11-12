@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 587" role="img" aria-labelledby="title description">
+  <!-- Source: Recommendation04-05-flow.png supplies the order-sign trigger, applicability gates, calculation and configurable decision, no-alert path, message, and response options. -->
+  <title id="title">Historical recommendation workflow structure</title>
+  <desc id="description">In a historical opioid prescribing example, signing an order triggers context and review checks, a calculation, and a configured decision. A failed check or unavailable calculation follows the no-message path. When the message criterion is met, decision support displays a message and the clinician can respond. Clinical rule details are in the versioned example.</desc>
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#52697d"/>
+    </marker>
+    <marker id="quiet-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#416993"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="587" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
+    <g id="heading">
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Historical recommendation workflow structure</text>
+      <text x="30" y="75" font-size="19">Opioid prescribing example with its clinical logic abstracted for review</text>
+    </g>
+    <g id="applicable-flow" fill="none" stroke="#52697d" stroke-width="2.6" stroke-linejoin="round" marker-end="url(#flow)">
+      <path d="M193 184H222"/>
+      <path d="M409 184H442"/>
+      <path d="M630 184H657"/>
+      <path d="M855 184H888"/>
+      <path d="M1105 184H1144V390"/>
+      <path d="M854 446H809"/>
+    </g>
+    <g id="no-message-flow" fill="none" stroke="#416993" stroke-width="2.6" stroke-linejoin="round">
+      <path d="M316 258V320M536 258V320M757 227V320"/>
+      <path d="M997 258V320H206" marker-end="url(#quiet-flow)"/>
+      <circle cx="316" cy="320" r="3.5" fill="#416993"/>
+      <circle cx="536" cy="320" r="3.5" fill="#416993"/>
+      <circle cx="757" cy="320" r="3.5" fill="#416993"/>
+    </g>
+    <g id="trigger">
+      <rect x="36" y="148" width="157" height="72" rx="36" fill="#a9442a"/>
+      <text x="114.5" y="178" font-size="21" font-weight="700" text-anchor="middle" fill="#fff">Order signed</text>
+      <text x="114.5" y="203" font-size="18" text-anchor="middle" fill="#fff">EHR trigger</text>
+    </g>
+    <g id="context-check">
+      <path d="M316 110L409 184L316 258L223 184Z" fill="#e7f1e0" stroke="#547d3a" stroke-width="2"/>
+      <text x="316" y="180" font-size="21" font-weight="700" text-anchor="middle" fill="#2f5221">
+        <tspan x="316">In scope?</tspan><tspan x="316" dy="24" font-weight="400" font-size="18">Order context</tspan>
+      </text>
+    </g>
+    <g id="review-criteria">
+      <path d="M536 110L630 184L536 258L442 184Z" fill="#ffead5" stroke="#ad6332" stroke-width="2"/>
+      <text x="536" y="180" font-size="20" font-weight="700" text-anchor="middle" fill="#743915">
+        <tspan x="536">Review</tspan><tspan x="536" dy="23">applicable?</tspan>
+      </text>
+    </g>
+    <g id="calculation">
+      <rect x="658" y="141" width="197" height="86" rx="8" fill="#416a31"/>
+      <text x="756.5" y="175" font-size="21" font-weight="700" text-anchor="middle" fill="#fff">Apply calculation</text>
+      <text x="756.5" y="202" font-size="18" text-anchor="middle" fill="#fff">Using reviewed inputs</text>
+    </g>
+    <g id="configured-decision">
+      <path d="M997 110L1105 184L997 258L889 184Z" fill="#e5edce" stroke="#68823a" stroke-width="2"/>
+      <text x="997" y="178" font-size="20" font-weight="700" text-anchor="middle" fill="#364b23">
+        <tspan x="997">Message</tspan><tspan x="997" dy="23">criterion met?</tspan>
+      </text>
+    </g>
+    <g id="branch-labels" font-size="18" fill="#395368">
+      <text x="425" y="127" text-anchor="middle">Yes</text>
+      <text x="645" y="127" text-anchor="middle">Yes</text>
+      <text x="1125" y="170" text-anchor="middle">Yes</text>
+      <text x="329" y="291">No</text>
+      <text x="549" y="291">No</text>
+      <text x="770" y="275">No result</text>
+      <text x="1010" y="291">No</text>
+    </g>
+    <g id="no-message">
+      <rect x="36" y="292" width="169" height="56" rx="28" fill="#315b87"/>
+      <text x="120.5" y="327" text-anchor="middle" font-size="21" font-weight="700" fill="#fff">No message</text>
+    </g>
+    <g id="decision-support-message">
+      <path d="M855 394H1164V490Q1087 475 1009 490T855 490Z" fill="#fff0d8" stroke="#ae7333" stroke-width="2"/>
+      <text x="875" y="426" font-size="22" font-weight="700" fill="#6e431a">Decision support message</text>
+      <text x="875" y="455" font-size="19" fill="#6e431a">Summary and supporting detail</text>
+    </g>
+    <g id="clinician-response">
+      <rect x="466" y="394" width="339" height="99" rx="9" fill="#f9e9e7" stroke="#a65349" stroke-width="2"/>
+      <text x="486" y="426" font-size="22" font-weight="700" fill="#793b34">Clinician response</text>
+      <text x="486" y="453" font-size="19" fill="#793b34">Document a decision or defer</text>
+      <text x="486" y="476" font-size="19" fill="#793b34">with a reason, as configured</text>
+    </g>
+    <g id="historical-context">
+      <text x="36" y="531" font-size="19">See the versioned example for the original rule details. This drawing is a historical illustration.</text>
+      <text x="36" y="556" font-size="19">Use the current clinical source for advice.</text>
+    </g>
+  </g>
+</svg>

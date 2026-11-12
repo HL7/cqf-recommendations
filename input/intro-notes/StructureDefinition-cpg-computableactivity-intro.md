@@ -1,1 +1,1 @@
-This is a [computable artifact profile](profiles.html#artifact-profiles)
+This ActivityDefinition profile describes a reusable clinical activity before it is proposed for a particular patient. Use it as the activity template referenced by a recommendation definition, or as the parent for a more specific activity profile. Applying the definition supplies patient-context values; the resulting request is a separate resource.

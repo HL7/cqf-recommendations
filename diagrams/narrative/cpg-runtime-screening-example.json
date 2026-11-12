@@ -1,0 +1,92 @@
+{
+  "title": "Historical screening example: decisions to model",
+  "description": "Identify the clinical recommendation and version, establish eligibility and context, offer testing, interpret results using the selected source, and plan follow-up. This is a modeling overview, not a diagnostic algorithm.",
+  "width": 1000,
+  "height": 565,
+  "nodes": [
+    {
+      "id": "source",
+      "x": 30,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Select the source",
+      "body": "Recommendation and version",
+      "kind": "knowledge"
+    },
+    {
+      "id": "context",
+      "x": 365,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Establish context",
+      "body": "Population, risk, prior testing",
+      "kind": "knowledge"
+    },
+    {
+      "id": "offer",
+      "x": 700,
+      "y": 110,
+      "w": 270,
+      "h": 130,
+      "label": "Offer and authorize",
+      "body": "Patient decision and request",
+      "kind": "workflow"
+    },
+    {
+      "id": "follow",
+      "x": 365,
+      "y": 340,
+      "w": 270,
+      "h": 130,
+      "label": "Arrange follow-up",
+      "body": "Counseling, referral, repeat review",
+      "kind": "workflow"
+    },
+    {
+      "id": "results",
+      "x": 700,
+      "y": 340,
+      "w": 270,
+      "h": 130,
+      "label": "Interpret results",
+      "body": "Source-specific testing sequence",
+      "kind": "logic"
+    }
+  ],
+  "edges": [
+    {
+      "from": "source",
+      "to": "context",
+      "fromPort": "right",
+      "toPort": "left"
+    },
+    {
+      "from": "context",
+      "to": "offer",
+      "fromPort": "right",
+      "toPort": "left"
+    },
+    {
+      "from": "offer",
+      "to": "results",
+      "fromPort": "bottom",
+      "toPort": "top"
+    },
+    {
+      "from": "results",
+      "to": "follow",
+      "fromPort": "left",
+      "toPort": "right"
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 520,
+      "w": 944,
+      "text": "Keep missing data, declined testing, test results, and completed care distinct."
+    }
+  ]
+}

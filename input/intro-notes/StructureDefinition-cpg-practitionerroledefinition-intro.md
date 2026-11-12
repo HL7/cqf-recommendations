@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGPractitionerRoleDefinition describes the kind of professional role needed by reusable guideline content. Use it for a persona, specialty, or setting requirement before assigning a real practitioner. Although represented with PractitionerRole, it excludes the person-specific and operational availability fields that belong to an actual role assignment.

@@ -6,6 +6,7 @@ Usage: #example
 * description = "Example measure for the activity example to generate a report"
 * title = "Activity Example Generate Report Measure"
 * name = "ActivityExampleGenerateReportMeasure"
+* library = Canonical(GenerateReportMeasure)
 * scoring = $measure-scoring#continuous-variable
 * improvementNotation = $measure-improvement-notation#increase
 * date = "2023-10-19"
@@ -13,6 +14,6 @@ Usage: #example
   * population
     * code = $measure-population#measure-observation
     * criteria
-      * language = #text/cql
+      * language = #text/cql-identifier
       * description = "Example expression returns 100"
-      * expression = "100"
+      * expression = "Report Score"

@@ -1,23 +1,25 @@
+Download the definitions for machine-readable profile rules, the example resources for sample instances, or the complete IG for offline reference. These downloads complement the narrative pages; select the representation that fits your tooling.
+
 ### Definitions
 
 Format-specific _definitions_:
 
-*   [XML](definitions.xml.zip)
-*   [JSON](definitions.json.zip)
-*   [TTL](definitions.ttl.zip)
+*   [XML]({% if page.path contains "/" %}../{% endif %}definitions.xml.zip)
+*   [JSON]({% if page.path contains "/" %}../{% endif %}definitions.json.zip)
+*   [TTL]({% if page.path contains "/" %}../{% endif %}definitions.ttl.zip)
 
-These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on [validating FHIR profiles and resources](http://hl7.org/fhir/validation.html) for more information about validating profiles and how to use these artifacts.
+These files should be the first choice when generating implementation artifacts because they contain the rules that define profile validity. Implementers also need to understand the relevant specification and profiles to produce a conformant implementation. See [FHIR R4 resource validation](https://hl7.org/fhir/R4/validation.html) for an overview of validation and these artifacts.
 
 ### Examples
 
 All examples used in this Implementation Guide:
 
-*   [XML](examples.xml.zip)
-*   [JSON](examples.json.zip)
-*   [TTl](examples.ttl.zip)
+*   [XML]({% if page.path contains "/" %}../{% endif %}examples.xml.zip)
+*   [JSON]({% if page.path contains "/" %}../{% endif %}examples.json.zip)
+*   [TTL]({% if page.path contains "/" %}../{% endif %}examples.ttl.zip)
 
 ### Full Implementation Guide
 
 The full implementation guide can be downloaded here:
 
-*   [Full IG](full-ig.zip)
+*   [Full IG]({% if page.path contains "/" %}../{% endif %}full-ig.zip)

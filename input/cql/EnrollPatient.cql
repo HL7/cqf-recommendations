@@ -2,7 +2,7 @@ library EnrollPatient
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
+include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem "Activity Type": 'http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs'
 
@@ -122,6 +122,6 @@ define function enrollIn(task Task):
 
 define function enrolledIn(episodeOfCare EpisodeOfCare):
   singleton from (
-    episodeOfCare.extension E
-      where E.url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn'
+    episodeOfCare.extension EnrollmentExtension
+      where EnrollmentExtension.url = 'http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-enrolledIn'
   ).value as canonical

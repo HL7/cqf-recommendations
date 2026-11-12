@@ -12,6 +12,8 @@ status: active # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
     valueCode: cds  # <<< The value must be the code for the workgroup
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
 version: 3.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
@@ -36,9 +38,17 @@ publisher:
 #
 
 dependencies:
-  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
   hl7.fhir.uv.extensions.r4: 5.4.0
   hl7.fhir.uv.sdc: 4.0.0
+
+# Publisher uses these packages to validate the examples and their generated metadata.
+definition:
+  extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency
+      valueCode: "hl7.fhir.uv.cql#2.0.0"
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency
+      valueCode: "hl7.fhir.uv.crmi#2.0.0"
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -57,79 +67,41 @@ pages:
     title: CPG Home
   approach.md:
     title: Approach
-    documentation-approach-12-conceptual-knowledge-architecture.md:
-      title: Knowledge Architecture - Conceptual Perspective
-      documentation-approach-12-01-separations-of-concerns-in-the-cpg.md:
-        title: Separations of Concerns
-      documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.md:
-        title: Separating and Defining Case, Plan, and Workflow
-      documentation-approach-12-03-cpg-plan.md:
-        title: Plan
-      documentation-approach-12-04-cpg-case.md:
-        title: Case
-      documentation-approach-12-05-cpg-careplan.md:
-        title: Care Plan
-      documentation-approach-12-06-cpg-common-pathway.md:
-        title: Workflow and Common Pathway
-      documentation-approach-12-07-cpg-derivative-and-related-assets.md:
-        title: Guideline, Derivative, and Related Assets
-      documentation-approach-12-08-conceptual-knowledge-architecture-index.md:
-        title: Conceptual Knowledge Architecture Index
-    documentation-approach-04-guideline-development.md:
-      title: Guideline Development
-      documentation-approach-04-02-guideline-development-frameworks.md:
-        title: Guideline Development Frameworks
-      documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md:
-        title: 6S Evidence Pyramid and Learning Health Systems
-      documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md:
-        title: Analysis of Evidence, Recommendations, and Reporting
-      documentation-approach-04-05-computable-guideline-artifacts.md:
-        title: Development of Computable Clinical Guideline Artifacts
-    documentation-approach-05-knowledge-engineering-overview.md:
-      title: Knowledge Engineering Overview
-      documentation-approach-05-01-knowledge-acquisition.md:
-        title: Knowledge Acquisition
-      documentation-approach-05-02-knowledge-translation.md:
-        title: Knowledge Translation
-      documentation-approach-05-03-knowledge-representation.md:
-        title: Knowledge Representation and Expression
-      documentation-approach-05-04-knowledge-execution-and-validation.md:
-        title: Knowledge Execution and Validation
-      documentation-approach-05-05-knowledge-implementation.md:
-        title: Knowledge Implementation
-      documentation-approach-05-06-agile-cpg-development-approach.md:
-        title: Agile CPG Development Approach
-    documentation-approach-02-04-knowledge-representation.md:
-      title: Knowledge Representation Overview
-      documentation-approach-06-01-levels-of-knowledge-representation.md:
-        title: Levels of Knowledge Representation
-      documentation-approach-07-tiers-of-functionality.md:
-        title: Tiers of Functionality
-      documentation-approach-08-levels-of-representation-by-tiers-of-functionality.md:
-        title: Levels of Representation by Tiers of Functionality
-      documentation-approach-06-02-knowledge-assets.md:
-        title: Knowledge Assets
-      documentation-approach-06-03-knowledge-architecture.md:
-        title: Knowledge Architecture
-    documentation-approach-02-05-knowledge-implementation.md:
-      title: Implementing Computable Knowledge
-      documentation-approach-09-methods-of-implementation.md:
-        title: Methods of Implementation
-        activityflow.md:
-          title: Activity Flow
-        documentation-careplanning.md:
-          title: Evidence-Based Care Planning
-        interactive-cds.md:
-          title: Interactive Clinical Decision Support
-      documentation-approach-10-mechanisms-of-integration.md:
-        title: Mechanisms of Integration
-      documentation-approach-03-conformance-levels.md:
-        title: Levels of Enablement
-      documentation-conformance.md:
-        title: Conformance
-      actors.md:
-        title: Actors
+    approach-model.md:
+      title: Case, Plan, and Workflow
+    approach-artifacts.md:
+      title: Guideline Artifacts
+    approach-implementation.md:
+      title: Implementation and Integration
+    approach-development.md:
+      title: Development and Maintenance
+    approach-evaluation.md:
+      title: Measurement and Evidence
+    activityflow.md:
+      title: Activity Lifecycle Reference
+    activityflow-transitions.md:
+      title: Activity Transition Reference
+    interactive-cds.md:
+      title: Interactive CDS Reference
+    documentation-conformance.md:
+      title: Conformance
+    actors.md:
+      title: Actors
+    documentation-approach-12-08-conceptual-knowledge-architecture-index.md:
+      title: Concept and Profile Index
+    documentation-approach-cds-implementation-evidence.md:
+      title: CDS Literature and Bibliography
   methodology.md:
+    methodology-select.md:
+      title: Select
+    methodology-represent.md:
+      title: Represent
+    methodology-translate.md:
+      title: Translate
+    methodology-validate.md:
+      title: Validate
+    methodology-package.md:
+      title: Package
   profiles.md:
     title: Profile Definitions and Documentation
   terminology.md:
@@ -182,25 +154,32 @@ parameters:
   apply-wg: true
   path-history: http://hl7.org/fhir/uv/cpg/history.html
   path-binary: ./input/cql
+  path-pages: ./input/redirects
   path-resource:
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
   auto-oid-root: 2.16.840.1.113883.4.642.40.48
+  pin-canonicals: pin-multiples
   requirements-category-vs: http://hl7.org/fhir/uv/cpg/ValueSet/cpg-conformance-category-vs
 
 #
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
-# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
-# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
-# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
-# │ property below.                                                                                │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# The Approach and Methodology dropdowns link to their overviews and main sections.
 menu:
   Home: index.html
-  Approach: approach.html
-  Methodology: methodology.html
+  Approach:
+    Overview: approach.html
+    Case, Plan, and Workflow: approach-model.html
+    Guideline Artifacts: approach-artifacts.html
+    Implementation and Integration: approach-implementation.html
+    Development and Maintenance: approach-development.html
+    Measurement and Evidence: approach-evaluation.html
+  Methodology:
+    Overview: methodology.html
+    Select: methodology-select.html
+    Represent: methodology-represent.html
+    Translate: methodology-translate.html
+    Validate: methodology-validate.html
+    Package: methodology-package.html
   Profiles: profiles.html
   Terminology: terminology.html
   Libraries: libraries.html
@@ -210,6 +189,7 @@ menu:
   Glossary: glossary.html
   Version History: changes.html
 
+#
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │

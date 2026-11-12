@@ -1,0 +1,11 @@
+{
+  "title": "Four ways to integrate computable guidelines",
+  "description": "Four panels compare direct content ingestion, a CDS Hooks service, a SMART application, and data enrichment. Arrows distinguish artifact imports, calls and responses, authorized patient data, and exchanges of derived information. CPG apply returns a transient Bundle per subject when used.",
+  "svgSource": "svg/cpg-runtime-integration.svg",
+  "originals": [
+    "integration-content-ingestion.png",
+    "integration-content-service.png",
+    "integration-content-application.png",
+    "integration-content-enrichment.png"
+  ]
+}

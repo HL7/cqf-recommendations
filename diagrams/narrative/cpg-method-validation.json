@@ -1,0 +1,140 @@
+{
+  "width": 1000,
+  "height": 650,
+  "title": "Different questions need different validation evidence",
+  "description": "Clinical fidelity, structural conformance, logic behavior, and local integration generate separate findings. Combined reporting is not a certificate of safety or clinical effectiveness.",
+  "nodes": [
+    {
+      "id": "clinical",
+      "label": "Clinical fidelity",
+      "body": "Source meaning, exceptions and approved cases",
+      "x": 25,
+      "y": 110,
+      "w": 215,
+      "h": 175,
+      "kind": "knowledge"
+    },
+    {
+      "id": "structure",
+      "label": "Conformance",
+      "body": "Profiles, references, terminology and dependencies",
+      "x": 270,
+      "y": 110,
+      "w": 215,
+      "h": 175,
+      "kind": "logic"
+    },
+    {
+      "id": "logic",
+      "label": "Logic behavior",
+      "body": "Positive, negative, temporal and missing-data tests",
+      "x": 515,
+      "y": 110,
+      "w": 215,
+      "h": 175,
+      "kind": "logic"
+    },
+    {
+      "id": "integration",
+      "label": "Local integration",
+      "body": "Data, access, timing, rendering and actions",
+      "x": 760,
+      "y": 110,
+      "w": 215,
+      "h": 175,
+      "kind": "workflow"
+    },
+    {
+      "id": "findings",
+      "label": "Separate findings and remaining limits",
+      "body": "Retain expected/actual results, reviewers, versions, defects, and scope. Passing one track does not prove another.",
+      "x": 100,
+      "y": 395,
+      "w": 800,
+      "h": 125,
+      "kind": "result"
+    }
+  ],
+  "edges": [
+    {
+      "from": "clinical",
+      "to": "findings",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          132.5,
+          340
+        ],
+        [
+          500,
+          340
+        ]
+      ]
+    },
+    {
+      "from": "structure",
+      "to": "findings",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          377.5,
+          340
+        ],
+        [
+          500,
+          340
+        ]
+      ]
+    },
+    {
+      "from": "logic",
+      "to": "findings",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          622.5,
+          340
+        ],
+        [
+          500,
+          340
+        ]
+      ]
+    },
+    {
+      "from": "integration",
+      "to": "findings",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          867.5,
+          340
+        ],
+        [
+          500,
+          340
+        ]
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 570,
+      "w": 944,
+      "text": "Continue with monitoring and outcome evaluation after release; assess unintended effects.",
+      "size": 16
+    },
+    {
+      "x": 28,
+      "y": 610,
+      "w": 944,
+      "text": "Legend: blue = clinical review; green = technical checks; amber = local use; purple = evidence record.",
+      "size": 16
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "baseline_summary": {
+    "errs": 49,
+    "warnings": 137,
+    "hints": 14,
+    "suppressed-hints": 378,
+    "suppressed-warnings": 2
+  },
+  "candidate_summary": {
+    "errs": 49,
+    "warnings": 135,
+    "hints": 14,
+    "suppressed-hints": 378,
+    "suppressed-warnings": 2
+  },
+  "method": "Compare qa.xml issue multisets by severity, code, text, and expression. Normalize only absolute build roots and HTML line/column locations. Compare ERROR lines for en/ HTML pages separately using qa.compare.txt. Summary counts come from qa.json; Publisher does not serialize every summary warning or HTML link error in qa.xml.",
+  "added": [
+    {
+      "severity": "information",
+      "code": "business-rule",
+      "message": "The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'Computable content using CQL SHALL conform to the profiles defined in the Using CQL With FHIR IG:'",
+      "locations": [
+        "en/libraries.html"
+      ],
+      "count": 1
+    },
+    {
+      "severity": "information",
+      "code": "business-rule",
+      "message": "The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'Content conforming to this implementation guide SHALL identify processes using the Common Processes code system.'",
+      "locations": [
+        "en/documentation-approach-12-06-cpg-common-pathway.html"
+      ],
+      "count": 1
+    }
+  ],
+  "removed": [
+    {
+      "severity": "information",
+      "code": "business-rule",
+      "message": "The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'This implementation guide uses the Library resource to represent libraries of computable content (such as Clinical Quality Language libraries). See the Using CQL With FHIR for conformance expectations and guidance on the use of CQL with FHIR. Computable content using CQL SHALL conform to the profiles defined in the Using CQL With FHIR IG:'",
+      "locations": [
+        "en/libraries.html"
+      ],
+      "count": 1
+    },
+    {
+      "severity": "information",
+      "code": "business-rule",
+      "message": "The html source contains the word 'SHOULD' but it is not in a text phrase marked as a conformance clause: 'Note that the Case and its associated data as defined by case feature groups and/or case features can be used to generate a case report at the end of the pathway. This approach SHOULD be aligned with the eCaseReporting implementation guide.'",
+      "locations": [
+        "en/documentation-approach-12-06-cpg-common-pathway.html"
+      ],
+      "count": 1
+    },
+    {
+      "severity": "warning",
+      "code": "business-rule",
+      "message": "The ImplementationGuide uses package hl7.fhir.uv.cpg#dev released on 2026-06-10, but the most recent appropriate version is 2.0.0. This reference is getting old and the more recent version should be considered",
+      "locations": [
+        "ImplementationGuide/chf-ig: ImplementationGuide.dependsOn[2]"
+      ],
+      "count": 1
+    },
+    {
+      "severity": "warning",
+      "code": "invalid",
+      "message": "Illegal HTML: illegal html element: unknown ()",
+      "locations": [
+        "<build>/output/en/activityflow.html"
+      ],
+      "count": 1
+    }
+  ],
+  "html_errors_before": 32,
+  "html_errors_after": 26,
+  "html_errors_added": [],
+  "html_errors_removed": [
+    "ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a: The link 'definitions.xml.zip' for \"XML\" cannot be resolved",
+    "ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a: The link 'definitions.json.zip' for \"JSON\" cannot be resolved",
+    "ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a: The link 'definitions.ttl.zip' for \"TTL\" cannot be resolved",
+    "ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a: The link 'examples.xml.zip' for \"XML\" cannot be resolved",
+    "ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a: The link 'examples.json.zip' for \"JSON\" cannot be resolved",
+    "ERROR: en/downloads.html#/html/body/div/div/div/div/div/ul/li/a: The link 'examples.ttl.zip' for \"TTl\" cannot be resolved"
+  ]
+}

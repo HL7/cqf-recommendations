@@ -1,0 +1,114 @@
+{
+  "width": 1000,
+  "height": 665,
+  "title": "Assign local decisions before deployment",
+  "description": "Clinical, technical, and operational owners contribute distinct readiness evidence to a local release and change decision. Publication approval and local deployment approval remain separate.",
+  "nodes": [
+    {
+      "id": "clinical",
+      "label": "Clinical owner",
+      "body": "Scope, source currency, exceptions and adaptations",
+      "x": 35,
+      "y": 110,
+      "w": 285,
+      "h": 185,
+      "kind": "knowledge"
+    },
+    {
+      "id": "technical",
+      "label": "Technical owner",
+      "body": "Data mappings, dependencies, interfaces and tests",
+      "x": 357,
+      "y": 110,
+      "w": 285,
+      "h": 185,
+      "kind": "logic"
+    },
+    {
+      "id": "operations",
+      "label": "Operational owner",
+      "body": "Workflow, authorization, follow-up and monitoring",
+      "x": 679,
+      "y": 110,
+      "w": 285,
+      "h": 185,
+      "kind": "workflow"
+    },
+    {
+      "id": "release",
+      "label": "Local release and change decision",
+      "body": "Review readiness and unresolved findings. Record approval, rollback, update responsibility, and feedback route.",
+      "x": 180,
+      "y": 400,
+      "w": 640,
+      "h": 140,
+      "kind": "result"
+    }
+  ],
+  "edges": [
+    {
+      "from": "clinical",
+      "to": "release",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          177.5,
+          345
+        ],
+        [
+          500,
+          345
+        ]
+      ]
+    },
+    {
+      "from": "technical",
+      "to": "release",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          499.5,
+          345
+        ],
+        [
+          500,
+          345
+        ]
+      ]
+    },
+    {
+      "from": "operations",
+      "to": "release",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          821.5,
+          345
+        ],
+        [
+          500,
+          345
+        ]
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "x": 28,
+      "y": 585,
+      "w": 944,
+      "text": "A publisher approval, profile-valid package, or successful execution does not authorize patient care.",
+      "size": 16
+    },
+    {
+      "x": 28,
+      "y": 625,
+      "w": 944,
+      "text": "Legend: boxes identify responsibilities; arrows identify inputs to a reviewed local decision.",
+      "size": 16
+    }
+  ]
+}

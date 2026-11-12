@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile for a patient-specific recommendation to administer medication. It connects the proposed work to the relevant prescription or dispensed supply and can identify the resulting administration record. It tracks the recommendation’s execution separately from the clinical status of the MedicationAdministration.

@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGPractitioner identifies an actual professional involved in guideline-related care, assessment, or document authorship. Use it for the person, while representing the role in which that person participates with CPGPractitionerRole where appropriate. The resource supplies identity context; it does not describe the reusable persona requirements of a guideline.

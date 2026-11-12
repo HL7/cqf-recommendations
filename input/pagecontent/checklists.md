@@ -1,9 +1,13 @@
-The following checklists can be used to assess content at various stages of the translation from L1 to L4.
+{% include cpg-horizontal-table-style.html %}
 
-|Checklist|Description|
-|--------------|----|
-|[L1 Checklist](clinical-guidelines-development-L1-checklist.html)|Used as a tool to help guideline developers develop L1 in clearer, consistent, and more structured approach|
-|[L2 Checklist](clinical-guidelines-development-L2-checklist.html)|Used to ensure that informaticists and knowledge engineers have what they need from L1 content in order to successfully produce L3 content|
-|[L3 Checklist](clinical-guidelines-development-L3-checklist.html)|Used to ensure that L3 content meets the requirements to ensure that implementers have what they need in order to successfully implement computable content in a specific setting|
-|[L4 Checklist](clinical-guidelines-development-L4-checklist.html)|Used by implementers to help support the process of implementing in a specific setting, helping to ensure successful and faithful implementation of guideline content|
-{:.grid}
+Choose the checklist for the work product you’re reviewing. Record what still needs a decision and carry it forward to the next review.
+
+| Checklist | Use it when you need to |
+| --- | --- |
+| **[L1 · Narrative guidance](clinical-guidelines-development-L1-checklist.html)** | Review the recommendation, evidence, and metadata before selecting content for translation. [Select](methodology-select.html) |
+| **[L2 · Structured specification](clinical-guidelines-development-L2-checklist.html)** | Record the recommendation’s context, criteria, and workflow before translating it. [Represent](methodology-represent.html) |
+| **[L3 · Computable content](clinical-guidelines-development-L3-checklist.html)** | Review the artifacts, documentation, and test evidence for a release. [Translate](methodology-translate.html) · [Validate](methodology-validate.html) · [Package](methodology-package.html) |
+| **[L4 · Local implementation](clinical-guidelines-development-L4-checklist.html)** | Assess local fit, design and test the workflow, then plan deployment and evaluation. [Implementation and Integration](approach-implementation.html) · [Measurement and Evidence](approach-evaluation.html) |
+{:.cpg-horizontal-table}
+
+See [Guideline Artifacts](approach-artifacts.html#representation-levels) for examples of the work products at each level and [Conformance](documentation-conformance.html) for the formal requirements.

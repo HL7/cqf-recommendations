@@ -1,0 +1,1 @@
+Use this Task profile to recommend that a patient-specific activity currently in progress be put on hold. The required focus identifies the request, event or Task being controlled. This control Task tracks the proposed work; the focused resource retains its own clinical meaning and lifecycle.

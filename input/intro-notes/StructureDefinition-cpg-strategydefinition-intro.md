@@ -1,5 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
-
-**External Examples:**
-
-*   [PlanDefinition - WHO ANC Guideline Contact](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/PlanDefinition-anc-contact.html) ANC\_Contact
+CPGStrategyDefinition groups reusable recommendation definitions for a particular clinical condition or state. Use it to specify the strategy's applicability and coordination before evaluating it for a patient. It is a PlanDefinition; the corresponding patient-specific CPGStrategy is a RequestGroup and is governed by a separate instance profile.

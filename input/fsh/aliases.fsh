@@ -159,11 +159,10 @@ Alias: $goal-achievement = http://terminology.hl7.org/CodeSystem/goal-achievemen
 Alias: $chf-example-codes = http://hl7.org/fhir/uv/cpg/CodeSystem/chf-example-codes
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
-Alias: $ckd-clinical-overview-1 = http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75E10232E05352E3610A5325
-Alias: $ckd-clinical-overview-11 = http://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325
+Alias: $ckd-clinical-overview-1 = https://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75E10232E05352E3610A5325
+Alias: $ckd-clinical-overview-11 = https://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325
 Alias: $recommendation-strength = http://terminology.hl7.org/CodeSystem/recommendation-strength
 Alias: $cpg-recommendation-direction-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-recommendation-direction-cs
-Alias: $va-clinical-practice-guidelines = http://www.healthquality.va.gov
 
 Alias: $anc-reason-for-visit-image = http://example.org/images/reason-for-visit.png
 Alias: $anc-reason-for-visit-routine-image = http://example.org/images/reason-for-visit-routine.png

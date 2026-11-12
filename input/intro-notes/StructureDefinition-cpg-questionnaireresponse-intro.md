@@ -1,1 +1,1 @@
-This is an [activity event profile](profiles.html#activity-profiles)
+Use this QuestionnaireResponse profile to record answers collected in guideline-directed care. It relates the patient-specific response to its questionnaire, participant context and collection time. The response is distinct from the Task requesting collection and from any clinical resources subsequently extracted from the answers for evaluation or persistence.
