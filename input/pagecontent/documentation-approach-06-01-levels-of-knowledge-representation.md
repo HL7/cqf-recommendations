@@ -7,17 +7,11 @@ Note that the levels of knowledge representation are a continuum, with discrete 
 
 This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-model-levels.svg" ratio="1200 / 686" alt="Four ordered rows distinguish L1 narrative, L2 semi-structured, L3 structured, and L4 executable representations. Overlapping bars show concurrent work and review across levels." caption="Figure 1. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139). An ambiguity found during local testing can send clinical and technical reviewers back to the source recommendation. Carry their agreed interpretation through the affected definitions and tests." %}
 
-Figure 1. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139).
-
-</summary>
-
-<img src="knowledge-levels.png" alt="Knowledge Levels" class="img-responsive img-rounded center-block"/>
-
-</details>
+</div>
 
 
 ### Narrative
@@ -113,8 +107,6 @@ Figure 2. Levels of Representation in historical CDS sense and as may be adapted
 <div class="new-content" markdown="1">
 
 These levels describe representations, not conformance grades. [Artifact capability profiles](profiles.html#artifact-profiles), such as Shareable or Executable, specify expectations for individual artifacts. [Conformance](documentation-conformance.html) explains requirements for implementation.
-
-{% include cpg-diagram.html src="cpg-model-levels.svg" alt="Four ordered rows distinguish L1 narrative, L2 semi-structured, L3 computable, and L4 local executable representations. Overlapping bars show concurrent work and review across levels." caption="An ambiguity found during local testing can send clinical and technical reviewers back to the source recommendation. Carry their agreed interpretation through the affected definitions and tests." %}
 
 </div>
 

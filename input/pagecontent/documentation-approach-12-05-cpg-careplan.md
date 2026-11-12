@@ -34,6 +34,8 @@ The CPGCarePlan is constrained to the set of proposals (i.e., patient-specific r
 
 [CPGCarePlan](StructureDefinition-cpg-careplan.html) connects the patient's concerns, goals, and activities. The [example CarePlan](CarePlan-chf-scenario1-careplan.html) has Daily Management and Hypervolemia RequestGroups for the patient.
 
+{% include cpg-diagram.html src="cpg-model-care-flow.svg" ratio="1000 / 355" alt="A patient-specific proposal can lead to planned or authorized requests and then documented events; each transition requires the appropriate local decision." %}
+
 </div>
 
 

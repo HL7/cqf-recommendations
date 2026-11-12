@@ -106,6 +106,8 @@ Many case features must be derived or inferred computationally from other data e
 
 The [CHF body weight change feature](StructureDefinition-chf-bodyweight-change.html) shows how a calculation can become a reusable description of patient state. Feature definitions can use the `inferenceExpression`, `assertionExpression`, and `featureExpression` extensions for their respective roles. Trace the selected measurements, time context, expression version, and any other inferred features the calculation depends on. If an inference is stored in an Observation, retain its computational origin.
 
+{% include cpg-diagram.html src="cpg-model-case-features.svg" ratio="1000 / 355" alt="Recorded patient facts feed descriptive logic, producing a derived patient feature that can support a recommendation." %}
+
 </div>
 
 

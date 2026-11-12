@@ -72,6 +72,8 @@ Name the steward for updates and retirement. Identify which artifacts and tests 
 
 A useful report from use after release names the content version and local environment, relevant inputs, expected and actual behavior, and clinical or workflow consequence. Limit shared reports to the patient information needed and authorized for the purpose. Route local mapping and workflow defects to the implementation owner, reusable logic or terminology defects to the artifact steward, and unresolved recommendation meaning to clinical reviewers. Link the resulting decision to affected artifacts and expected cases. See [Feedback](documentation-approach-05-05-knowledge-implementation.html) and the [CDS Connect evaluation](https://doi.org/10.1055/s-0043-1769911).
 
+{% include cpg-diagram.html src="cpg-model-release.svg" ratio="1000 / 390" alt="A versioned content package is adapted into a reviewed local release, then evaluated during operation; changes trigger impact review." %}
+
 </div>
 
 

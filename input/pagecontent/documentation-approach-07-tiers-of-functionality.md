@@ -14,17 +14,11 @@ Data, logic, and forms are three responsibilities that may appear at any level. 
 </div>
 
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-model-tiers.svg" ratio="1000 / 355" alt="Data definitions describe the information, clinical logic interprets it, and forms collect or display it while reusing the clinical meaning." caption="Figure 1. Tiers of Functionality. Data definitions describe clinical information, clinical logic interprets that information and proposes care, and forms collect or display information while reusing those definitions and logic." %}
 
-Figure 1. Tiers of Functionality
-
-</summary>
-
-<img src="functionality-tiers.png" alt="Tiers of Functionality" class="img-responsive img-rounded center-block" width="750" height="237"/>
-
-</details>
+</div>
 
 To illustrate these tiers of functionality, consider the following excerpt from a recommendation statement in the CDC Opioid Prescribing Guideline:
 

@@ -16,7 +16,11 @@ This section covers:
 
 Figure 1. The CPG Pathway Definition that contains all the CPG-specific knowledge content and assets including the [Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) (and [Strategies](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy)); The Case that scopes all the required data elements ([Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)) including many of the patient-specific inferences thereon (inferred Case Features); and the CPGCarePlan that includes the patient-specific recommendations ([Proposals](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal)) and any resulting or relevant orders, prescriptions, scheduling ([Requests](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request)) and the data elements representing the events that fulfill these requests (a subset of the Case Features)
 
-<img src="CPG-12-00.png" alt="CPG Pathway Definition" class="img-responsive img-rounded center-block"/>
+<div class="modified-content" markdown="1">
+
+{% include cpg-diagram.html src="cpg-model-boundaries.svg" ratio="1200 / 832" alt="The orange Plan lane includes strategies, recommendations, and a reusable workflow definition. Local implementation connects the workflow definition to the blue lane's patient care processes and records. The green Case lane holds recorded and derived patient facts." %}
+
+</div>
 
 ### Separation of Concerns
 

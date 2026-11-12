@@ -41,23 +41,15 @@ Intermediate and ultimate outcomes at the patient-level, including those reporte
 
 Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (Proposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”[<sup>3</sup>](#3)
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-method-iteration.svg" ratio="1200 / 935" alt="Eight activities connect practice to data, data to knowledge, and knowledge to practice around a problem of interest. Findings require review before guidance changes." caption="Figure 2. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence[<sup>4</sup>](#4) The feedback cycle connects observations from care to questions for evidence review and guideline development. Traceable data and explicit measures allow reviewers to investigate a finding before deciding what to change." %}
 
-Figure 2. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence[<sup>4</sup>](#4)
-
-</summary>
-
-<img src="CPG-04-03.png" alt="Learning Health System" class="img-responsive img-rounded center-block" height="500" width="500"/>
-
-</details>
+</div>
 
 <div class="new-content" markdown="1">
 
 Use the model to locate relevant evidence and appraise certainty from the evidence itself. A learning health system can connect that delivery back to evaluation and evidence review. It needs governed data, explicit measures, and accountable reviewers to interpret findings. Observed patterns can identify data problems or suggest new research and revision questions. They require further review before they support a change in clinical guidance.
-
-{% include cpg-diagram.html src="cpg-method-iteration.svg" alt="Eight activities connect practice to data, data to knowledge, and knowledge to practice around a problem of interest. Findings require review before guidance changes." caption="The feedback cycle connects observations from care to questions for evidence review and guideline development. Traceable data and explicit measures allow reviewers to investigate a finding before deciding what to change." %}
 
 #### Evidence for Clinical Decision Support
 

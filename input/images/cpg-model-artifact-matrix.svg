@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 792" role="img" aria-labelledby="title description">
   <!-- CPG-Main-LevelsAndTiers.png supplies the matrix structure. Cell content follows approach-artifacts.md; colors match cpg-model-levels.svg. -->
   <title id="title">Work products by level and responsibility</title>
-  <desc id="description">A matrix crosses L1 narrative, L2 semi-structured, L3 computable, and L4 local implementation with Data, Clinical logic, and Forms. Each cell preserves the planning work products described in Guideline Artifacts. The level colors match the adjacent representation-level diagram. The page provides the full matrix as accessible text. Representation levels are not conformance grades, and a capability may not need a form.</desc>
+  <desc id="description">A matrix crosses L1 narrative, L2 semi-structured, L3 structured, and L4 executable with Data, Clinical logic, and Forms. Each cell preserves the planning work products described in Guideline Artifacts. The level colors match the adjacent representation-level diagram. The page provides the full matrix as accessible text. Representation levels are not conformance grades, and a capability may not need a form.</desc>
   <rect width="1200" height="792" fill="#fff"/>
   <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
     <g id="heading">
@@ -23,12 +23,12 @@
       <g id="l3-heading">
         <rect x="688" y="108" width="232" height="112" rx="8" fill="#2f618d"/>
         <text x="708" y="147" font-size="23" font-weight="700">L3</text>
-        <text x="708" y="184" font-size="23" font-weight="700">Computable</text>
+        <text x="708" y="184" font-size="23" font-weight="700">Structured</text>
       </g>
       <g id="l4-heading">
         <rect x="932" y="108" width="232" height="112" rx="8" fill="#a8393e"/>
         <text x="952" y="147" font-size="23" font-weight="700">L4</text>
-        <text x="952" y="180" font-size="23" font-weight="700"><tspan x="952">Local</tspan><tspan x="952" dy="27">implementation</tspan></text>
+        <text x="952" y="184" font-size="23" font-weight="700">Executable</text>
       </g>
     </g>
     <g id="data-row">

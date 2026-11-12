@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 829" role="img" aria-labelledby="title description">
   <!-- Sources: transformation-process.png and the retained sequence, parallel, exclusive, and timed-start patterns. The paired XML snippets define the constructs summarized here. -->
   <title id="title">Compare workflow patterns across representations</title>
-  <desc id="description">A historical prototype mapped selected PlanDefinition source patterns to BPMN and a workflow drawing for review. Four rows pair BPMN diagrams for sequence flow, parallel split and join, exclusive split and merge, and timed start with the constructs used by the PlanDefinition examples. Compare behavior using the same reviewed cases and verify runtime support.</desc>
+  <desc id="description">A historical prototype mapped selected PlanDefinition source patterns to BPMN and a workflow drawing for review. Four rows pair BPMN diagrams for sequence flow, parallel split and join, exclusive split and merge, and timed start with the constructs used by the PlanDefinition examples. The exclusive split uses the cqf-applicabilityBehavior extension with the value any, so the first applicable child action is included. Compare behavior using the same reviewed cases and verify runtime support.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
       <path d="M0 0L10 5L0 10Z" fill="#52697d"/>
@@ -121,8 +121,9 @@
           <text x="444" y="607">Task 3</text>
           <text x="609" y="579">Task 4</text>
         </g>
-        <text x="694" y="563" font-size="19">Choose one child using applicability conditions.</text>
-        <text x="694" y="589" font-size="19" font-family="monospace">selectionBehavior = exactly-one</text>
+        <text x="694" y="550" font-size="19">Choose one child using applicability conditions.</text>
+        <text x="694" y="576" font-size="19" font-family="monospace">applicabilityBehavior = any</text>
+        <text x="694" y="602" font-size="19" font-family="monospace">selectionBehavior = exactly-one</text>
       </g>
       <g id="timed-start">
         <text x="57" y="687" font-size="21" font-weight="700">Timed start</text>

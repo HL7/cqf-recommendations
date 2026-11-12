@@ -40,21 +40,9 @@ Figure 1. The top third illustrates the conceptualization of the Plan consisting
 
 The plan, in the CPG context, as described above in “Separation of Concerns,” addresses how the care team intends to address the active clinical concerns of a class of patients, given a set of clinical parameters (described further in  the case features and decision logic discussed below).  However, the [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan) is constrained to the set of clinical interventions (e.g., orders/requests) scoped by a specific CPG.  This includes the guideline recommendations, the strategies for combining guideline recommendations, and the decision logic for each recommendation, for the strategies for combining recommendations, and for how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies.  As described in the “Methodology” section, one might consider separating the expression logic from the decision logic solely scoped for each Recommendation and [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy) in separate libraries as well as maintaining a separate library for decision and orchestration logic that is employed across various parts of the [Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway).
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
-
-Figure 2. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similar coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it very likely belongs in the Plan.
-
-</summary>
-
-<img src="CPG-Main-Plan.png" alt="Plan" class="img-responsive img-rounded center-block"/>
-
-</details>
-
-<div class="new-content" markdown="1">
-
-{% include cpg-diagram.html src="cpg-model-definitions.svg" alt="A pathway can reference both strategy and workflow definitions. Strategies group recommendations that reference activity or order set definitions. Workflow definitions describe activities, their relationships, participants, inputs, and outputs. All are reusable guidance." %}
+{% include cpg-diagram.html src="cpg-model-definitions.svg" ratio="1200 / 604" alt="A pathway can reference both strategy and workflow definitions. Strategies group recommendations that reference activity or order set definitions. Workflow definitions describe activities, their relationships, participants, inputs, and outputs. All are reusable guidance." caption="Figure 2. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similar coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it very likely belongs in the Plan." %}
 
 </div>
 

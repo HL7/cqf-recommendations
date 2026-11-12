@@ -11,17 +11,11 @@ Methods of implementation refers to three (3) broad approaches to moving from th
 2. **Translation**: Translating the content to another format suitable for execution in a given environment
 3. **Native Execution**: Directly executing the L3 content in a clinical reasoning engine that understand the representation
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-runtime-execution.svg" ratio="1000 / 326" alt="Manual implementation, translation, and native execution are three routes from shared computable content to a locally tested implementation." caption="Figure 1. Methods of Implementation. Shared computable content can be implemented manually from the specification, translated to a supported language, or evaluated natively in a compatible engine. Each route needs local verification." %}
 
-Figure 1. Methods of Implementation
-
-</summary>
-
-<img src="methods-of-implementation.png" alt="Methods of Implementation" class="img-responsive img-rounded center-block" width="750" height="385"/>
-
-</details>
+</div>
 
 <div class="new-content" markdown="1">
 

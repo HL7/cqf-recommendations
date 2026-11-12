@@ -23,6 +23,14 @@ Figure 1. Just as the guideline development group and knowledge engineering team
 
 </details>
 
+<div class="new-content" markdown="1">
+
+Before deployment, identify who approves clinical content, data mappings, workflow, deployment, and subsequent changes. The local decision to use an artifact remains separate from its publisher's approval of the content.
+
+{% include cpg-diagram.html src="cpg-method-governance.svg" ratio="1000 / 665" alt="Local clinical, technical, and operational owners review readiness before an approved local release." %}
+
+</div>
+
 ### Local informatics (knowledge engineering) and implementation
 
 Just as many of the functions and methods of the guideline development group have their local analogues, so does the knowledge engineering and guideline formalization and implementation.

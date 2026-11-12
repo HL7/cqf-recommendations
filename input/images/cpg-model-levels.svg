@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 686" role="img" aria-labelledby="title description">
   <!-- Sources: knowledge-levels.png supplies the ordered rows and knowledge-level distinctions. CPG-05.06-01.png supplies the green, orange, blue, and red palette and the overlapping development bars. -->
   <title id="title">One guideline across four representation levels</title>
-  <desc id="description">Four rows show L1 narrative, L2 semi-structured models, L3 shareable computable artifacts, and L4 local executable implementation. An inset of overlapping colored bars shows that development can proceed in parallel and feedback can revise any level. The levels describe representations. Implementation conformance is assessed separately.</desc>
+  <desc id="description">Four rows show L1 narrative, L2 semi-structured models, L3 structured (computable) artifacts, and L4 executable local implementation. An inset of overlapping colored bars shows that development can proceed in parallel and feedback can revise any level. The levels describe representations. Implementation conformance is assessed separately.</desc>
   <defs>
     <marker id="feedback-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
       <path d="M0 0L8 4 0 8Z" fill="#596977"/>
@@ -42,7 +42,7 @@
       <rect x="36" y="290" width="1128" height="72" rx="8" fill="#e9f2fb"/>
       <rect x="36" y="290" width="68" height="72" rx="8" fill="#2f618d"/>
       <text x="70" y="334" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">L3</text>
-      <text x="124" y="320" font-size="22" font-weight="700">Computable</text>
+      <text x="124" y="320" font-size="22" font-weight="700">Structured</text>
       <text x="124" y="345" font-size="19">Expresses intent in shareable artifacts</text>
       <path d="M515 302V350" stroke="#b8cfe5"/>
       <text x="545" y="320" font-size="20">Profiles, terminology, and logic libraries</text>
@@ -53,7 +53,7 @@
       <rect x="36" y="370" width="1128" height="72" rx="8" fill="#fcebec"/>
       <rect x="36" y="370" width="68" height="72" rx="8" fill="#a8393e"/>
       <text x="70" y="414" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">L4</text>
-      <text x="124" y="400" font-size="22" font-weight="700">Local executable implementation</text>
+      <text x="124" y="400" font-size="22" font-weight="700">Executable</text>
       <text x="124" y="425" font-size="19">Puts the artifacts to work in a setting</text>
       <path d="M515 382V430" stroke="#eac1c4"/>
       <text x="545" y="400" font-size="20">Local mappings, execution engine, and workflow</text>
