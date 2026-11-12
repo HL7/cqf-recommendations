@@ -76,7 +76,7 @@ Another very relevant mechanism of integration for computable clinical practice 
 
 <div class="new-content" markdown="1">
 
-[SMART App Launch](https://hl7.org/fhir/smart-app-launch/) supplies application launch and authorization conventions. Establish the available patient context, data scopes, and write-back behavior for the actual deployment. A service and an application may work together, as illustrated by the [coordinated standards implementation](https://pmc.ncbi.nlm.nih.gov/articles/PMC9703934/). Published [SMART implementation experience](https://pmc.ncbi.nlm.nih.gov/articles/PMC7153075/) also describes the local interfaces sometimes needed to deliver the intended functionality.
+[SMART App Launch](https://hl7.org/fhir/smart-app-launch/) supplies application launch and authorization conventions. Establish the available patient context, data scopes, and write-back behavior for the actual deployment. A service and an application may work together, as illustrated by the [coordinated standards implementation](documentation-approach-cds-implementation-evidence.html#ref-thiess-2022). Published [SMART implementation experience](documentation-approach-cds-implementation-evidence.html#ref-kukhareva-2019) also describes the local interfaces sometimes needed to deliver the intended functionality.
 
 </div>
 

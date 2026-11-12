@@ -20,7 +20,7 @@ The integrated process describes co-development of the narrative and computable 
 
 <div class="new-content" markdown="1">
 
-Clinical and evidence reviewers, knowledge engineers, terminologists, implementers, and evaluators work on the same decision from different perspectives. Include patients, caregivers, and representative users when their circumstances or actions shape the proposed care. A missing data field, inexact terminology mapping, or unsupported local action can change what the team can safely offer and may send an interpretation back to clinical review. [Integrated development process](https://doi.org/10.1097/JMQ.0000000000000137)
+Clinical and evidence reviewers, knowledge engineers, terminologists, implementers, and evaluators work on the same decision from different perspectives. Include patients, caregivers, and representative users when their circumstances or actions shape the proposed care. A missing data field, inexact terminology mapping, or unsupported local action can change what the team can safely offer and may send an interpretation back to clinical review. [Integrated development process](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023)
 
 The exchanges below describe responsibilities within that collaboration. Teams can revisit them as a clinical example, test, or local constraint changes an assumption.
 
@@ -34,15 +34,14 @@ The exchanges below describe responsibilities within that collaboration. Teams c
 
 </div>
 
-
 #### The Integrated Process Cycle
 
-Figure 1 represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support.[<sup>2</sup>](#2) See explanation below diagram for additional details.
+Figure 1 represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support ([Boxwala et al., 2011](documentation-approach-cds-implementation-evidence.html#ref-boxwala-2011)). See explanation below diagram for additional details.
 
 <details open>
 
 <summary>
-Figure 1. The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.[<sup>1</sup>](#1)
+Figure 1. The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones ([Tailor et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023)).
 </summary>
 
 <img src="CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block" height="600"/>
@@ -50,11 +49,6 @@ Figure 1. The Integrated Process Cycle for Guideline Development and Implementat
 </details>
 
 The outer circle shows 12 phases of formal guidelines development that result in published narrative recommendations. The middle circle represents the integration of informatics and clinical implementation activities into the guideline development 12 phase process. This circle adds iterative steps within and between the phases and that 1) inform written guidelines, and 2) result in a computable version of  guidelines that can be more rapidly implemented in clinical settings. The inner circle represents the evaluation activities that should be conducted throughout guideline development, with constant attention to meeting the needs of users. This integration is designed to facilitate use of guidelines in clinical practice and timely updates to guidelines based on clinical impact. Finally, at the center of the process are the guideline users, who should be engaged through human-centered design processes in all phases (shown by spiral connections).
-
-<a id="1">1</a>: Tailor, Amrita MPH; Robinson, Susan J. PhD, MS-HCI (Ret.); Matson-Koffman, Dyann M. DrPH, MPH, CHES; Michaels, Maria MBA; Burton, Matthew M. MD; Lubin, Ira M. PhD; on behalf of the Workgroup on Evaluation of the Integrated Process. An Evaluation Framework for a Novel Process to Codevelop Written and Computable Guidelines. American Journal of Medical Quality 38(5S) S35-S45, September/October 2023. DOI: [10.1097/JMQ.0000000000000140](https://doi.org/10.1097/JMQ.0000000000000140)
-{:.new-content}
-
-<a id="2">2</a>: Boxwala, Aziz A., et al. "A multi-layered framework for disseminating knowledge for computer-based decision support." Journal of the American Medical Informatics Association 18.Supplement_1 (2011): i132-i139.
 
 <div class="new-content" markdown="1">
 
@@ -64,10 +58,9 @@ Plan evaluation around the decision the guideline supports. Review results at th
 
 The [Package step](methodology-package.html#evaluation) lists the evaluation questions and the evidence to collect for each.
 
-Keep the strength of the evidence visible. An application log can show that guidance was presented or a suggestion was accepted. Clinical records and outcome evaluation answer what care occurred and what effects followed. See the [Tailor et al. evaluation framework](https://doi.org/10.1097/JMQ.0000000000000140) and [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html).
+Keep the strength of the evidence visible. An application log can show that guidance was presented or a suggestion was accepted. Clinical records and outcome evaluation answer what care occurred and what effects followed. See the [Tailor et al. evaluation framework](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023) and [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html).
 
 </div>
-
 
 ### CPG Content and Related Derivatives
 
@@ -80,11 +73,8 @@ Keep the strength of the evidence visible. An application log can show that guid
 
 **For Guideline Development Group, especially Medical Specialty Societies**- Actionable and meaningful usage of and feedback on guideline recommendations; (automated) data collection of data elements relevant to the scope of the guideline (registries); significant number of process of care level and intermediate- and end-outcome metrics and quality measures scoped to the guideline; active and highly relevant participation in the Learning Health System.
 
-
 **For Providers and Health Care Organizations**- Nearly automated data collection for clinical registries (internal, professional societies, and accreditation); a significant number of process of care level and intermediate- and end-outcome metrics and quality measures; readily available means to implement, monitor, and measure guideline-directed care; benefits derived from participation in the Learning Health System.
 
-
 **For the Evidence Ecosystem**- Utility of evidence and new high-value, patient and process of care level evidence to “climb the pyramid”.
-
 
 **For modern and emerging methods of Knowledge Discovery**- numerous opportunities to leverage value of methods and data assets (data-to-knowledge); new high-value evidence substrate to reason over (enriched data, guideline usage, knowledge artifacts created across the value-chain).  (see section on [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html))

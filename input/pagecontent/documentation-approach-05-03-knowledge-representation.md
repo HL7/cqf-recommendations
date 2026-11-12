@@ -30,7 +30,7 @@ Further details on how to leverage a knowledge content management system in the 
 
 <div class="new-content" markdown="1">
 
-Record the exact versions used in a release, including shared libraries, profiles, terminology, and dependencies on other packages. When a dependency changes, trace which recommendations and local implementations use it. [Wright et al.](https://doi.org/10.1093/jamia/ocx106) describe CDS malfunctions involving dependency and terminology changes; their cases illustrate why changes need impact review.
+Record the exact versions used in a release, including shared libraries, profiles, terminology, and dependencies on other packages. When a dependency changes, trace which recommendations and local implementations use it. [Wright et al.](documentation-approach-cds-implementation-evidence.html#ref-wright-2018) describe CDS malfunctions involving dependency and terminology changes; their cases illustrate why changes need impact review.
 
 </div>
 

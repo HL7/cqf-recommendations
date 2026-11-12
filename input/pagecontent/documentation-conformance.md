@@ -104,7 +104,7 @@ A few other notes:
 
 ### Levels of Conformance
 
-One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG)[<sup>1</sup>](#1) profile of the HL7 CPG.[<sup>2</sup>](#2) The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as CPGCaseFeatures), logic to be triggered based on data collected (CPGRecommendations), and reportable health system management indicators (CPGMetrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
+One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG) ([IHE CCG](documentation-approach-cds-implementation-evidence.html#ref-ihe-ccg)) profile of the HL7 CPG ([IHE Canada](documentation-approach-cds-implementation-evidence.html#ref-ihe-canada-headache)). The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as CPGCaseFeatures), logic to be triggered based on data collected (CPGRecommendations), and reportable health system management indicators (CPGMetrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
 
 ### Conformance Testing
 
@@ -129,9 +129,3 @@ Levels of conformance will be based on alternative conformance profiles such as 
 These checks answer different questions. Validator success does not establish clinical correctness, and a successful service call does not establish clinical benefit. The [methodology](methodology-validate.html#validate-step), [checklists](checklists.html), and [CDS evidence topic](documentation-approach-cds-implementation-evidence.html) explain the broader review work.
 
 </div>
-
----
-
-<a id="1">1</a>: https://wiki.ihe.net/index.php/Computable_Care_Guidelines Computable Care Guidelines (CCG) profile
-
-<a id="2">2</a>: 'http://www.ihe.ca/download/ambassador_headache_final_100_pager.pdf'

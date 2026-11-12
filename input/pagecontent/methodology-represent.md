@@ -24,7 +24,7 @@ At this step, concepts referred to by the narrative are identified and represent
 * **Modeling**: The conceptual type of data, including how it might be represented in potential target environments
 
 
-Build a data dictionary that explains each input's clinical meaning, context, source or collection method, datatype, units, timing, and candidate code or representation. The terminologist proposes mappings and records where they cover only part of the intended meaning. Clinical reviewers resolve ambiguities about what counts for the decision, and the local data owner confirms how the facts are captured. Work on WHO operational specifications surfaced ambiguous and composite concepts that required clinical review during mapping. [Pretty et al., 2023](https://doi.org/10.1136/bmjhci-2022-100691)
+Build a data dictionary that explains each input's clinical meaning, context, source or collection method, datatype, units, timing, and candidate code or representation. The terminologist proposes mappings and records where they cover only part of the intended meaning. Clinical reviewers resolve ambiguities about what counts for the decision, and the local data owner confirms how the facts are captured. Work on WHO operational specifications surfaced ambiguous and composite concepts that required clinical review during mapping. [Pretty et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-pretty-2023)
 
 This historical Opioid Prescribing Guideline excerpt illustrates the structure of a data dictionary. Read its clinical content in the context of the source guideline and version.
 

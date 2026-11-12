@@ -61,7 +61,7 @@ Component testing involves ensuring that the components of a system work as expe
 
 Work with the local implementation and workflow owners to test the client and service together. Check the trigger and timing, authorization, data retrieval, rendering, proposed actions, and behavior when data or services are unavailable. Record the environment and limits of the exercise. A sandbox result covers the simulated interaction. The local organization decides whether the integration and workflow evidence supports use in its setting. [CDS Hooks walkthrough](https://github.com/cqframework/content-ig-walkthrough#validation-with-cqf-ruler-and-cds-hooks)
 
-A standards-based pilot used local data and order mappings and progressive testing. Its two integrations used the same vendor, which limits what the study can show about portability. [Shenvi et al., 2026](https://doi.org/10.1002/lrh2.70104)
+A standards-based pilot used local data and order mappings and progressive testing. Its two integrations used the same vendor, which limits what the study can show about portability. [Shenvi et al., 2026](documentation-approach-cds-implementation-evidence.html#ref-shenvi-2026)
 
 Integration testing involves ensuring that systems work together as expected, for example by testing a CDS Hooks service with a sandbox that simulates a clinical system acting as a CDS Hooks client.
 

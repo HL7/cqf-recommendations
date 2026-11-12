@@ -83,7 +83,7 @@ For instance, as data elements and terminologies start could be defined relative
 
 <div class="new-content" markdown="1">
 
-Monitor both guidance that appears inappropriately and guidance that should have appeared. Route findings to the people who own the source recommendation, computable logic, terminology, local data, or workflow. Review changes against affected cases and monitor the revised implementation. See [CDS malfunction review](https://doi.org/10.1093/jamia/ocae187) and the historical [COVID-19 case study](methodology-case-study.html), which illustrates co-development and review under time pressure.
+Monitor both guidance that appears inappropriately and guidance that should have appeared. Route findings to the people who own the source recommendation, computable logic, terminology, local data, or workflow. Review changes against affected cases and monitor the revised implementation. See [CDS malfunction review](documentation-approach-cds-implementation-evidence.html#ref-thayer-2024) and the historical [COVID-19 case study](methodology-case-study.html), which illustrates co-development and review under time pressure.
 
 </div>
 

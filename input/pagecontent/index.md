@@ -32,7 +32,7 @@ The main work products are FHIR definitions, libraries of logic, terminology, an
 
 <div class="modified-content" markdown="1">
 
-{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 961" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." caption="Figure 1. Guidelines connect evidence to decision support and clinical care. Measurement, reporting, and reviewed findings connect care back to evidence. Related standards illustrate the roles in this ecosystem; they are not a required dependency set. The [integrated process publication](https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/) describes this collaborative approach." %}
+{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 961" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." caption="Figure 1. Guidelines connect evidence to decision support and clinical care. Measurement, reporting, and reviewed findings connect care back to evidence. Related standards illustrate the roles in this ecosystem; they are not a required dependency set. The [integrated process publication](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023) describes this collaborative approach." %}
 
 </div>
 
@@ -54,7 +54,7 @@ These links identify the responsibilities of related specifications. Implementat
 
 Translating guideline recommendations and other types of guidance into practice has historically been a site-by-site exercise that has been disconnected from guideline/guidance development, creating unnecessary redundancies and introducing potential errors in translation that can lead to inconsistencies in how the guideline or guidance is executed. This clinical practice guidelines implementation guide (CPG-IG) consists of standards and a standardized, scalable approach to help make the effort of translating and implementing clinical practice guidelines and other types of guidance more efficient and effective. Key aspects include:
 
-1. An integrated guideline/guidance development and implementation process, referred to as "the integrated process" [Source](https://journals.lww.com/ajmqonline/fulltext/2023/09002/an_integrated_process_for_co_developing_and.3.aspx)
+1. An integrated guideline/guidance development and implementation process, referred to as "the integrated process" [Matson-Koffman et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023)
 2. Common standards that can work across the entire clinical quality ecosystem (Figure 1) and different electronic health record (EHR) platforms
 3. Closed-loop guideline content and information flow inclusive of feedback and feedforward processes (Figure 2)
 {:.modified-content}
@@ -63,7 +63,7 @@ Translating guideline recommendations and other types of guidance into practice 
   <img src="CPG-04.05-01.png" alt="Integrated process" class="img-responsive img-rounded center-block" width="700"/>
 </div>
 
-_Figure 2._ The integrated process with integrated evaluation in guideline development and implementation, showing a human-centered design approach to co-develop narrative and computable guidelines and build in evaluation, with feedback and feedforward loops throughout the process. ([Source](https://journals.lww.com/ajmqonline/fulltext/2023/09002/an_integrated_process_for_co_developing_and.3.aspx) and [Source](https://journals.lww.com/ajmqonline/fulltext/2023/09002/an_evaluation_framework_for_a_novel_process_to.4.aspx)).
+_Figure 2._ The integrated process with integrated evaluation in guideline development and implementation, showing a human-centered design approach to co-develop narrative and computable guidelines and build in evaluation, with feedback and feedforward loops throughout the process. ([Matson-Koffman et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023) and [Tailor et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023)).
 {:.modified-content}
 
 This IG is focused on the development of computable representations of clinical guideline content as FHIR knowledge artifacts. Since the initial publication, much of the guidance around the content management lifecycle (Shareable, Publishable, Computable, and Executable profile categories) has been generalized to apply across similar content management use cases in other FHIR IGs and is now available in the [Canonical Resource Management Infrastructure (CRMI)](http://hl7.org/fhir/uv/crmi) IG. Content conforming to this CPG IG should make use of the content development approach supported by the CRMI IG.
@@ -105,7 +105,7 @@ Secondarily, we describe how these activities interact with adjacent and related
 
 The goals are to preserve guideline intent, reduce repeated translation work, make implementation decisions reviewable, and support reuse of computable knowledge. The same artifacts can help connect guidance, care delivery, and evaluation when the local implementation establishes those connections.
 
-Published implementation experience shows that shared content still requires local mapping, vendor integration, staffing, and maintenance. General CDS research reports variable effects across settings and interventions. A valid artifact, a working service, clinician use, and improved patient outcomes are different results to evaluate. See [CDS Connect implementation lessons](https://pmc.ncbi.nlm.nih.gov/articles/PMC10371399/) and the [CDS evidence review](documentation-approach-cds-implementation-evidence.html).
+Published implementation experience shows that shared content still requires local mapping, vendor integration, staffing, and maintenance. General CDS research reports variable effects across settings and interventions. A valid artifact, a working service, clinician use, and improved patient outcomes are different results to evaluate. See [CDS Connect implementation lessons](documentation-approach-cds-implementation-evidence.html#ref-dhopeshwarkar-2023) and the [CDS evidence review](documentation-approach-cds-implementation-evidence.html).
 
 </div>
 
@@ -119,7 +119,7 @@ The CPG Approach section highlights:
 * How the HL7 CPG-IG recognizes the technical participants' distinct and valuable work and provides numerous opportunities to reuse domain standards (e.g., FHIR and other HL7 IG's); and
 * A reconceptualization of work processes that share and reuse essential information and content.
 
-Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative ([ref](https://journals.lww.com/ajmqonline/toc/2023/09002)), the World Health Organization’s (WHO’s) Antenatal Care Guidelines ([ref](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)), the HL7 Clinical Decision Support and Clinical Quality Information Working Groups, and numerous other publicly funded and private sector initiatives, including local health system implementations of guidelines and in-workflow pathways.
+Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative ([Am J Med Qual, 2023](documentation-approach-cds-implementation-evidence.html#ref-ajmq-2023)), the World Health Organization’s (WHO’s) Antenatal Care Guidelines ([WHO, 2016](documentation-approach-cds-implementation-evidence.html#ref-who-anc-2016)), the HL7 Clinical Decision Support and Clinical Quality Information Working Groups, and numerous other publicly funded and private sector initiatives, including local health system implementations of guidelines and in-workflow pathways.
 
 **Notes to Target Audiences:**
 
@@ -169,7 +169,8 @@ This guide builds on work on layered knowledge representation, the CDC's integra
 
 ### References
 
-Use the [evidence and further reading](documentation-approach-cds-implementation-evidence.html) topic for public CDS literature, including PubMed/PMC papers on effectiveness, workflow, alert burden, operational failures, and standards-based implementations. The [methodology](methodology.html) connects those lessons to authoring and validation work.
+The [CDS Literature and Bibliography](documentation-approach-cds-implementation-evidence.html) lists the references cited throughout this guide, including the [references previously listed on this page](documentation-approach-cds-implementation-evidence.html#additional-references), and a selected reading list of public CDS literature, including PubMed/PMC papers on effectiveness, workflow, alert burden, operational failures, and standards-based implementations. The [methodology](methodology.html) connects those lessons to authoring and validation work.
+{:.modified-content}
 
 ### Acknowledgements
 

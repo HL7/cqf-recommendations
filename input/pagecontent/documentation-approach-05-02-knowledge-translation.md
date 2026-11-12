@@ -3,7 +3,7 @@ This page was reorganized and editorially revised in this version of the guide (
 
 Knowledge translation has specific meaning within the knowledge engineering lifecycle process for knowledge engineers.  However, there are at least three perspectives on knowledge translation that must be considered in the context of co-developing a clinical guideline together with its formal representation as a CPG.  These include:
 
-1. The “activities involved in moving research from the laboratory, the research journal, and the academic conference into the hands of people and organizations who can put it to practical use” ([ref](https://ncats.nih.gov/translation/spectrum))
+1. The “activities involved in moving research from the laboratory, the research journal, and the academic conference into the hands of people and organizations who can put it to practical use” ([NCATS](documentation-approach-cds-implementation-evidence.html#ref-ncats-spectrum))
 2. The translation between and across various levels of knowledge representation,  from narrative to semi-structured to structured to executable (described in detail below and in the section on [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html)).
 3. The translation between equivalent or iso-pragmatic knowledge formalisms (i.e., representations, expressions) such as is done with concept maps between terminologies or as will be discussed further in the “Methodology” section (see BPM+ -to- CPG)
 

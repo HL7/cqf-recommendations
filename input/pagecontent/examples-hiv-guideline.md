@@ -4,7 +4,7 @@ This historical example illustrates how screening recommendations can be decompo
 | --- | --- |
 | [CDC: Revised Recommendations for HIV Testing of Adults, Adolescents, and Pregnant Women in Health-Care Settings (2006)](https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5514a1.htm) | Routine testing, risk-related repeat testing, pregnancy, and the testing interaction |
 | [USPSTF: HIV Infection Screening (2019)](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/human-immunodeficiency-virus-hiv-infection-screening) | Screening populations and evidence supporting the recommendation |
-| [USPSTF recommendation statement in JAMA (2019)](https://doi.org/10.1001/jama.2019.6587) | Published recommendation and its supporting rationale |
+| [USPSTF recommendation statement in JAMA (2019)](documentation-approach-cds-implementation-evidence.html#ref-uspstf-2019) | Published recommendation and its supporting rationale |
 {:.grid}
 
 The sources have different population and implementation details. Keep them identifiable rather than blending their criteria into an unattributed rule. This page explains the modeling work; the linked publications supply the clinical details.
