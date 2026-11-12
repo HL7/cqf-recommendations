@@ -40,7 +40,11 @@ Throughout the process of applying this methodology, the various teams will nece
 
 A computable guideline is delivered as a **content implementation guide**: clinical knowledge artifacts that use foundational standards, conform to specification guides, and select appropriate patient-data profiles. The content steward remains responsible for clinical scope, approval, publication, and maintenance.
 
-{% include cpg-diagram.html src="cpg-method-ig-layers.svg" ratio="1200 / 660" alt="Content implementation guides build on model and specification implementation guides, which use foundational standards. The layers describe dependencies and responsibilities." %}
+<div class="modified-content" markdown="1">
+
+{% include cpg-diagram.html src="cpg-method-ig-layers.svg" ratio="1200 / 660" alt="Content implementation guides build on model and specification implementation guides, which use foundational standards. The layers describe dependencies and responsibilities." caption="Figure 3.1. Types of implementation guides: content implementation guides (top row) build on model implementation guides (middle row, left) and specification implementation guides (middle row, right), which use foundational standards." %}
+
+</div>
 
 | Category | Purpose | Examples |
 | --- | --- | --- |
