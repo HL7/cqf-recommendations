@@ -1,8 +1,12 @@
 {% include cpg-horizontal-table-style.html %}
 
+This page was reorganized from the single Methodology page of the previous version of this guide, and its guidance was expanded (see the [change log](changes.html)).
+{:.modified-content}
+
+
 Methodology describes how a team turns a selected recommendation into a reviewed, reusable FHIR R4 content package. Follow **Select → Represent → Translate → Validate → Package**, carrying the source, clinical interpretation, and example cases through each step. Clinical authors, knowledge engineers, terminologists, and local implementers resolve questions together; a test or implementation finding can reopen an earlier decision.
 
-Use [Approach](approach.html) to understand the clinical model and artifact choices. Use the steps below to produce and review the work. The [representation levels](approach-artifacts.html#representation-levels) describe the resulting forms of knowledge, from narrative to local executable content.
+Use [Approach](approach.html) to understand the clinical model and artifact choices. Use the steps below to produce and review the work. The [representation levels](documentation-approach-06-01-levels-of-knowledge-representation.html) describe the resulting forms of knowledge, from narrative to local executable content.
 
 ### Where to start {#where-to-start}
 
@@ -17,7 +21,7 @@ Open a step below. For new content, start with **Select** and follow the sequenc
 | <a id="packaging" data-redirect="methodology-package.html"></a>**[5. Package](methodology-package.html)** | Prepare a versioned release with dependencies, tests, implementation notes, and maintenance ownership. |
 {:.cpg-horizontal-table}
 
-Use the [development checklists](checklists.html) at each handoff. Review the source and evidence with [L1](clinical-guidelines-development-L1-checklist.html) during Select, the structured specification with [L2](clinical-guidelines-development-L2-checklist.html) during Represent, and the computable artifacts and release evidence with [L3](clinical-guidelines-development-L3-checklist.html) during Translate, Validate, and Package. Use [L4](clinical-guidelines-development-L4-checklist.html) to review local deployment and use. [Implementation and Integration](approach-implementation.html)
+Use the [development checklists](checklists.html) at each handoff. Review the source and evidence with [L1](clinical-guidelines-development-L1-checklist.html) during Select, the structured specification with [L2](clinical-guidelines-development-L2-checklist.html) during Represent, and the computable artifacts and release evidence with [L3](clinical-guidelines-development-L3-checklist.html) during Translate, Validate, and Package. Use [L4](clinical-guidelines-development-L4-checklist.html) to review local deployment and use. [Implementation and Integration](documentation-approach-02-05-knowledge-implementation.html)
 
 ### Follow the methodology {#overview}
 
@@ -26,6 +30,11 @@ Carry the reviewed work forward, and return to an earlier step when a finding ch
 {% include cpg-diagram.html src="cpg-method-recipe.svg" alt="Select, Represent, Translate, Validate, and Package produce connected work products. Review findings can return work to an earlier step." %}
 
 Keep decisions and their rationale with the work products. Record who resolves each open question and which artifact or interpretation changes as a result. Published implementation experience shows that shared artifacts can still require substantial local implementation and maintenance effort. [Dhopeshwarkar et al., 2023](https://doi.org/10.1055/s-0043-1769911).
+
+Throughout the process of applying this methodology, the various teams will necessarily make decisions, balancing trade-offs between effort, feasibility, and value. The decisions, and especially the rationale for how they were made, are in and of themselves important products of this process, and should at the very least be captured as supplemental documentation within the content implementation guide. Often, these decision points will surface as configuration capabilities in the resulting knowledge artifacts, enabling implementation sites to understand the trade-offs, and make informed decisions about appropriate configuration. Surfacing these capabilities and decisions with appropriate documentation is critical to fully enabling reusable, shareable knowledge artifacts.
+
+> NOTE: The methodology documented here is a general framework for applying the [approach](approach.html) to produce standards-based, computable guideline content. The knowledge levels are a continuum of knowledge representation; they are not intended to be rigidly interpreted discrete categories, rather they serve as a framework for discussing successively more structured and formal representations of knowledge content (see [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html)). For a detailed illustration of following the approach and methodology described in this implementation guide, refer to the [COVID-19 CPG Methodology Case Study](methodology-case-study.html).
+
 
 ### Understand the guide's dependencies {#implementation-guide-categories}
 
@@ -43,13 +52,67 @@ A computable guideline is delivered as a **content implementation guide**: clini
 
 Choose and record the dependency versions for the content package. The categories describe responsibilities rather than a build sequence. The WHO link is its official publication catalogue; its antenatal-care FHIR guide is a working draft, not an added dependency of this IG.
 
+Following this model, a computable guideline is a FHIR Content Implementation Guide, and specifically, a content IG that _conforms_ to the profiles and conformance requirements established by the CPG-on-FHIR IG.
+
+<details markdown="1">
+<summary>Specification categories in detail</summary>
+
+**Foundational Standards**
+
+<p>The foundational standards on the bottom row of the diagram include the layers of FHIR, as well as expression language and integration standards including FHIRPath, Clinical Quality Language (CQL), CDS Hooks, and SMART.</p>
+
+* [**FHIR**](http://hl7.org/fhir) includes five layers of concepts, each shown as an icon on the bottom row of the diagram.
+    * **Foundation** layer – defines the core data exchange protocol.
+    * **Conformance** layer – defines how resources, profiles, and terminologies are represented and used.
+    * **Administration** layer – defines individuals, locations, organizations, and encounters.
+    * **Clinical** layer – defines clinical information such as observations, medications, procedures, and orders.
+    * **Reasoning** layer – provides definitional artifacts like plan and activity definitions, libraries, and measures.
+* [**FHIRPath**](http://hl7.org/fhirpath) is a simple, yet powerful, model-independent expression language that is used extensively throughout FHIR to describe paths to elements on resources, and to define invariants on profiles.
+* [**Clinical Quality Language (CQL)**](http://cql.hl7.org) is a superset of FHIRPath that provides an author-friendly format for the description of clinical logic, as well as a machine-friendly format for processing the logic.
+* [**CDS Hooks**](http://cds-hooks.hl7.org) is an HL7 standard specification for integrating decision support services with clinical systems. It is primarily focused on clinician-facing remote decision support within an EHR.
+* [**SMART-on-FHIR (SMART)**](http://hl7.org/fhir/smart-app-launch.html) is an HL7 standard specification for integrating clinical applications into EMRs using FHIR.
+
+**Model Implementation Guides**
+
+The middle row on the left of the Figure 3.1 shows the Model Implementation Guides (IGs), typically derived from FHIR Administration and Clinical resources such as Patient, Encounter, and MedicationRequest. These Model IGs are typically built to address a broad range of use cases, focused on a particular target realm or domain.
+
+* [**International Patient Summary (IPS)**](http://hl7.org/fhir/uv/ips) is a set of internationally applicable FHIR profiles used to share an extract of essential patient healthcare information across international boundaries. As a result, it forms an excellent foundation for expressing universally applicable content guidelines such as the WHO Antenatal Care (WHO ANC).
+* [**US Core**](http://hl7.org/fhir/us/core) is a set of profiles focused on enabling exchange of the US Clinical Data for Interoperability (USCDI) and is supported by a broad range of EMR vendors within the US.
+* [**QI-Core**](http://hl7.org/fhir/us/qicore) is a set of profiles that derives from US Core to enable quality improvement use cases such as quality measurement and decision support within the US.
+
+**Specification Implementation Guides**
+
+The middle row on the right of the Figure 3.1 shows the Specification Implementation Guides, which derive from the FHIR Clinical Reasoning resources to provide implementation guidance and conformance requirements for the creation, distribution, evaluation, and maintenance of shareable clinical knowledge. These include the Quality Measure IG (QM), Data Exchange for Quality Measures (DEQM), the Clinical Practice Guidelines IG (CPG-on-FHIR), and Evidence-based Medicine on FHIR (EBM-on-FHIR).
+
+* [**Quality Measure IG (QM)**](http://hl7.org/fhir/us/cqfmeasures) provides guidance on and conformance requirements for the use of the FHIR Reasoning resources, Measure and Library, to create and share clinical quality measures.
+* [**Data Exchange for Quality Measures (DEQM)**](http://hl7.org/fhir/us/davinci-deqm) provides guidance for reporting quality measures.
+* [**Structured Data Capture (SDC)**](http://hl7.org/fhir/uv/sdc) provides guidance for building and capturing structured data using questionnaires
+* [**Clinical Practice Guidelines IG (CPG-on-FHIR) (This IG)**](index.html) (this implementation guide) demonstrates how to build shareable computable guideline content.
+* [**Evidence-Based Medicine on FHIR (EBM-on-FHIR)**](http://build.fhir.org/clinicalreasoning-evidence-and-statistics.html) provides interoperability (standards for data exchange) for those producing, analyzing, synthesizing, disseminating and implementing clinical research (evidence) and recommendations for clinical care (clinical practice guidelines). It specifies resources and patterns for the exchange of data involved in evidence-based medicine including study results, quality of evidence and strength of recommendation and relevant context, environmental surveys, and systematic reviews.
+
+**Content Implementation Guides**
+The Content Implementation Guides in the top row of Figure 3.1 include computable representations of clinical knowledge artifacts and definitional resources as FHIR Resources, specifically:
+* **Library**
+* **ActivityDefinition**
+* **PlanDefinition**
+* **Measure**
+
+These IGs are not necessarily balloted as HL7 standards; rather, they use the FHIR publication toolchain to support authoring and distribution as depicted in the rest of the diagram. The content is stewarded by separate authorities such as quality agencies, specialty societies, and guideline developers; groups that have their own governance and maintenance policies. The content IGs conform to the specification IGs on the right of row 2, and typically make use of the model IGs on the left of row 2 to define content focused on a particular realm.
+
+* [**HEDIS IG**](http://build.fhir.org/ig/cqframework/hedis-ig) contains Healthcare and Effectiveness Data and Information Set (HEDIS) quality measures expressed using FHIR Reasoning Measure and Library resources and conforming to the Quality Measure IG (QM) profiles.
+* [**CDC Opioid Prescribing IG**](http://build.fhir.org/ig/cqframework/opioid-cds-r4) contains decision support content to streamline guideline implementation regarding the use of opioids for chronic pain in clinical settings.
+* [**World Health Organization Antenatal Care (WHO ANC)**](http://build.fhir.org/ig/who-int/anc-cds) IG contains decision support content to streamline guideline implementation of the World Health Organization's recommendations on antenatal care for a positive pregnancy experience.
+
+</details>
+
+
 ### Examples and detailed references {#references}
 
 - The [historical COVID-19 worked example](methodology-case-study.html) follows clinical and knowledge-engineering work products through the team's 2020 project.
 - <a id="mapping-and-other-formalisms"></a>[Mapping and other formalisms](documentation-methodology.html) explains optional BPMN, DMN, and CMMN representations, with transformation examples and their limits.
 - <a id="metrics" data-redirect="methodology-translate.html#metrics"></a>[Metrics](methodology-translate.html#metrics) and <a id="metric-results" data-redirect="methodology-translate.html#metric-results"></a>[Metric Results](methodology-translate.html#metric-results) explain the patient-level profiles, types, and coded results.
 - [Conformance](documentation-conformance.html) lists the formal requirements reviewers should assess.
-- [Development and Maintenance](approach-development.html) explains the roles, handoffs, and continuing review behind these steps.
+- [Development and Maintenance](documentation-approach-05-knowledge-engineering-overview.html) explains the roles, handoffs, and continuing review behind these steps.
 
 {% include chapter-navigation.html section="Methodology" unit="step" next="methodology-select.html" next_title="Select" %}
 

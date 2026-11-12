@@ -1,4 +1,4 @@
-These definitions distinguish clinical concepts, reusable knowledge and patient-specific resources. Capitalized profile names refer to formal artifacts; shorter conceptual names do not imply additional FHIR resource types. See the [conceptual architecture](approach-model.html) and [FHIR resource map](approach-artifacts.html#resource-map) for relationships.
+These definitions distinguish clinical concepts, reusable knowledge and patient-specific resources. Capitalized profile names refer to formal artifacts; shorter conceptual names do not imply additional FHIR resource types. See the [conceptual architecture](documentation-approach-12-conceptual-knowledge-architecture.html) and [FHIR resource map](documentation-approach-05-03-knowledge-representation.html) for relationships.
 
 ### Activity
 
@@ -9,7 +9,7 @@ An action relevant to care, such as collecting information, requesting a service
 Adherence is where the patient is with respect to a strategy, taken as a whole, and is a special case of a composite metric. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to a strategy.
 {:.modified-content}
 
-The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](approach-evaluation.html#pathway-status-terms)).
+The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](documentation-approach-12-07-cpg-derivative-and-related-assets.html#pathway-status-terms)).
 {:.modified-content}
 
 Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
@@ -29,7 +29,7 @@ The patient information relevant to a guideline, including recorded and inferred
 
 ### Case Feature
 
-A clinically meaningful item of patient information, such as an observation, condition, request or derived state. **CPGCaseFeatureDefinition** profiles StructureDefinition to define its representation. A patient-specific clinical resource carries its value. See [Case](approach-model.html#case).
+A clinically meaningful item of patient information, such as an observation, condition, request or derived state. **CPGCaseFeatureDefinition** profiles StructureDefinition to define its representation. A patient-specific clinical resource carries its value. See [Case](documentation-approach-12-04-cpg-case.html).
 
 ### Compliance
 
@@ -58,11 +58,11 @@ An activity intended to affect care or health, or the means of delivering suppor
 
 ### Measure
 
-A defined quantitative assessment, often of a care process or outcome across a population. FHIR Measure represents its structure and expression references; MeasureReport represents evaluated results. See [derivative assets](approach-evaluation.html).
+A defined quantitative assessment, often of a care process or outcome across a population. FHIR Measure represents its structure and expression references; MeasureReport represents evaluated results. See [derivative assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html).
 
 ### Metric
 
-A [metric](approach-evaluation.html#metrics) is a patient-level measurement or indicator of recommendation compliance (corresponding to a process measure), strategy or guideline adherence (corresponding to a composite measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity. It is often related to a patient-specific recommendation (i.e. a proposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).
+A [metric](documentation-approach-04-05-computable-guideline-artifacts.html#cpg-content-and-related-derivatives) is a patient-level measurement or indicator of recommendation compliance (corresponding to a process measure), strategy or guideline adherence (corresponding to a composite measure), reaching a stated goal or objective (corresponding to an end or intermediate outcome), or current status of a clinical activity. It is often related to a patient-specific recommendation (i.e. a proposal), usually as a process measurement, evaluating compliance (i.e., that a request and/or event fulfilled the proposal) and/or qualifying the timing between the proposal, its resulting request, and/or the fulfilling event(s).
 {:.modified-content}
 
 ### Pathway
@@ -71,7 +71,7 @@ Longitudinal grouping of guidance and expected activities. **CPGPathwayDefinitio
 
 ### Plan
 
-Qualify this term in implementation discussions. **CPGPlan** is a conceptual grouping of reusable guidance. **CPGCarePlan** is a patient-specific CarePlan profile. The request intent `plan` expresses an intention distinct from an authorized order. See [plan boundaries](approach-model.html#plan).
+Qualify this term in implementation discussions. **CPGPlan** is a conceptual grouping of reusable guidance. **CPGCarePlan** is a patient-specific CarePlan profile. The request intent `plan` expresses an intention distinct from an authorized order. See [plan boundaries](documentation-approach-12-03-cpg-plan.html).
 
 ### Proposal
 

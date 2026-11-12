@@ -4,4 +4,4 @@
 - Inputs, outputs, related actions, and definition references are supported. Action participants can include a participantCapabilityStatement extension.
 - Unlike CPGStrategyDefinition, this profile retains base definition[x] choices. Action type, grouping/selection/required/precheck/cardinality behaviors, transform, and dynamicValue are prohibited.
 
-Related guidance: [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html); [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html); [workflow model](approach-implementation.html#patient-flow).
+Related guidance: [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html); [CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html); [workflow model](documentation-approach-09-methods-of-implementation.html#execution-semantics).

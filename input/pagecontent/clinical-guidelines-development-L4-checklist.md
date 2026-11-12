@@ -2,7 +2,7 @@
 
 Use this checklist to plan and review local adoption of computable content: prioritization, workflow and technical fit, local design, testing, training, deployment, clinical use, and evaluation. It complements the L3 content review by focusing on the organization and setting where the content will be used.
 
-See [Implementation and Integration](approach-implementation.html) for guidance on adapting and testing content in a local workflow.
+See [Implementation and Integration](documentation-approach-02-05-knowledge-implementation.html) for guidance on adapting and testing content in a local workflow.
 
 {% include cpg-checklist-navigation.html level="L4" %}
 

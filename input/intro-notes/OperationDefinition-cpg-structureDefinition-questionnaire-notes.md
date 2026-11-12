@@ -5,4 +5,4 @@
 - Review the generated item definitions, types, cardinalities, terminology choices, and population/extraction expressions. Nested groups represent complex data. Preserve the source profile relationship so answers can be interpreted and extracted correctly.
 - The declared result is one Questionnaire. Inspect reported errors and warnings, then validate the form's behavior with representative answers before using it in the collection workflow.
 
-See [questionnaire generation processing](interactive-cds.html#structuredefinitionquestionnaire) and the [case-feature model](approach-model.html#case).
+See [questionnaire generation processing](interactive-cds.html#structuredefinitionquestionnaire) and the [case-feature model](documentation-approach-12-04-cpg-case.html).

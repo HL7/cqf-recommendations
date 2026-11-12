@@ -4,4 +4,4 @@
 - `library` is limited to one reference. Subject, type, and composite scoring are supported without fixing every metric to one scoring or report mode.
 - Defining populations and expressions does not provide the data or prove that the metric measures the intended clinical outcome.
 
-Related guidance: [CPGMetricReport](StructureDefinition-cpg-metricreport.html); [metrics and measures](approach-evaluation.html).
+Related guidance: [CPGMetricReport](StructureDefinition-cpg-metricreport.html); [metrics and measures](documentation-approach-12-07-cpg-derivative-and-related-assets.html).

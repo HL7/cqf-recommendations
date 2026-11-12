@@ -4,4 +4,4 @@
 - `impressionFor` provides an optional link to the case context. Effective time, date, protocol, code, and description are supported for describing the assessment.
 - A progress note can reference this assessment through its impression section without turning the assessment into an order.
 
-Related guidance: [CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html); [clinician assessments](approach-model.html#case-features).
+Related guidance: [CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html); [clinician assessments](documentation-approach-12-03-cpg-plan.html#separating-clinical-decision-logic-from-patient-descriptive-logic).

@@ -1,6 +1,6 @@
 <div class="new-content" markdown="1">
 
-This page describes the systems, or _actors_, involved in implementing a computable guideline, and how they work together at each [level of enablement](approach-implementation.html#capabilities). Conformance statements that apply to a particular actor identify that actor in the [conformance statements](documentation-conformance.html#conformance-statements) table.
+This page describes the systems, or _actors_, involved in implementing a computable guideline, and how they work together at each [level of enablement](documentation-approach-03-conformance-levels.html#levels-of-enablement). Conformance statements that apply to a particular actor identify that actor in the [conformance statements](documentation-conformance.html#conformance-statements) table.
 
 ### Actors
 
@@ -43,7 +43,7 @@ Derived capabilities, such as metrics, case reporting, and case plan progress no
 | Derived capability | CPG Service | CPG Client | Key interactions |
 |---|---|---|---|
 | Metrics | **[CPG Metric Service](ActorDefinition-cpg-metric-service.html)** ([capabilities](CapabilityStatement-cpg-metric-service.html)): evaluates computable metrics for a patient or population. | **[CPG Metric Client](ActorDefinition-cpg-metric-client.html)** ([capabilities](CapabilityStatement-cpg-metric-client.html)): requests and displays metric results, or submits them for reporting. | Measure/$evaluate-measure using [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html), returning a [CPGMetricReport](StructureDefinition-cpg-metricreport.html) |
-| Case Reporting | **[CPG Case Reporting Service](ActorDefinition-cpg-casereporting-service.html)**: produces a case report from the patient's case features and pathway. | **[CPG Case Reporting Client](ActorDefinition-cpg-casereporting-client.html)**: triggers and submits case reports. | Aligned with the [Electronic Case Reporting](http://hl7.org/fhir/us/ecr) implementation guide (see statement path-1 in [Reporting](approach-evaluation.html#reporting)) |
+| Case Reporting | **[CPG Case Reporting Service](ActorDefinition-cpg-casereporting-service.html)**: produces a case report from the patient's case features and pathway. | **[CPG Case Reporting Client](ActorDefinition-cpg-casereporting-client.html)**: triggers and submits case reports. | Aligned with the [Electronic Case Reporting](http://hl7.org/fhir/us/ecr) implementation guide (see statement path-1 in [Reporting](documentation-approach-12-07-cpg-derivative-and-related-assets.html#ecase-report)) |
 {: .grid}
 
 ### Declaring Conformance

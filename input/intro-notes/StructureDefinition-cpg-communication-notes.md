@@ -6,4 +6,4 @@
 
 - `about` supplies pertinent patient information. Case-feature definition, asserted/inferred type and pertinence extensions describe how this record contributes to the guideline’s patient view.
 
-Related: [communication request](StructureDefinition-cpg-communicationrequest.html); [case features](approach-model.html#case); [Activity Flow](activityflow.html).
+Related: [communication request](StructureDefinition-cpg-communicationrequest.html); [case features](documentation-approach-12-04-cpg-case.html); [Activity Flow](activityflow.html).
