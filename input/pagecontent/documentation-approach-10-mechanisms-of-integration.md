@@ -20,6 +20,8 @@ Local applications differ in where they can evaluate logic, display guidance, an
 | Hybrid | Several components share these responsibilities. | Consistent patient and content context, authoritative records, and ownership of each interaction. |
 {:.grid}
 
+{% include cpg-diagram.html src="cpg-runtime-integration.svg" ratio="1200 / 878" alt="Four panels compare content ingestion, CDS Hooks services, SMART applications, and data enrichment. They distinguish artifact imports, patient data exchange, evaluation, and receiving workflow responsibilities." caption="Integration patterns place content, evaluation, data exchange, and user interaction in different components. An implementation can combine patterns; the receiving workflow retains responsibility for authorization and persistence." %}
+
 </div>
 
 ### Direct (Ingestion or Translation of Computable Artifacts)
