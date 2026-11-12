@@ -210,6 +210,28 @@ The recommendation used in this way specifies:
 Readers of this implementation guide should refer to the [Applying a PlanDefinition](http://hl7.org/fhir/R4/plandefinition.html#12.18.3.3) topic for details on how an event-condition-action rule can be applied to a particular patient to produce guidance appropriate to that patient.
 
 
+<div class="new-content" markdown="1">
+
+#### Express preference among options {#preference-behavior}
+
+When the guideline expresses how it regards alternative options, author that stance on each `PlanDefinition.action` using the [cpg-preferenceBehavior](StructureDefinition-cpg-preferenceBehavior.html) extension, with a code from the [CPG Preference Behavior](ValueSet-cpg-preference-behavior-vs.html) value set: `preferred`, `recommended`, `neutral`, or `not-recommended`. See [Preference among Options](documentation-approach-12-03-cpg-plan.html#preference-among-options) for the meaning of each code and how preference differs from applicability, direction, and strength. [CPGComputablePlanDefinition](StructureDefinition-cpg-computableplandefinition.html) supports the extension on its actions, and [CPGStrategy](StructureDefinition-cpg-strategy.html) supports it on the actions of a patient-specific strategy.
+
+The extension conveys the guideline's intended stance for an action at design time. When `$apply` produces a RequestGroup, the value is realized on the corresponding `RequestGroup.action`, so that a client can present the options with the guideline's stance on each.
+
+For example, the illustrative [CKD Hypertension Therapy Options](PlanDefinition-ckd-hypertension-options-pd.html) recommendation offers three alternative initial therapies under a single action with a `selectionBehavior` of `at-most-one`. The ACE inhibitor option is `preferred`, the angiotensin receptor blocker is `recommended`, and the dihydropyridine calcium channel blocker is `not-recommended`. The ACE inhibitor option also has its own applicability condition, so for a patient with a history of ACE inhibitor angioedema it is excluded by applicability, not marked down by preference. The [result of applying it](RequestGroup-ckd-hypertension-options-rg.html) to a patient without that history is a RequestGroup whose actions carry the copied preference values, with child requests of intent `option`.
+
+§rec-8^^recommendation:Content conforming to this implementation guide **SHALL** express applicability through action conditions of kind `applicability`, and **SHALL NOT** express applicability through the preference behavior extension.§
+
+§rec-9^^recommendation:Content conforming to this implementation guide **SHALL NOT** use the preference behavior extension to override applicability.§
+
+§rec-10^^behavior:The [`$apply`](OperationDefinition-cpg-plandefinition-apply.html) operation **SHOULD** copy the preference behavior extension from each `PlanDefinition.action` to the corresponding `RequestGroup.action`.§
+
+§rec-11^^behavior:Implementations **SHOULD** treat any conflict between applicability and preference behavior as a modeling error.§
+
+§rec-12^^recommendation:Content conforming to this implementation guide **MAY** use a `dynamicValue` to compute or override preference behavior at runtime, for example for patient-specific ranking, payer-specific preferences, or guideline branching.§
+
+</div>
+
 #### Group recommendations into strategies {#strategies}
 
 Use a strategy definition to group related recommendation definitions for a clinical issue. The reusable strategy definition is a PlanDefinition. A patient-specific strategy can be represented as a [CPGStrategy](StructureDefinition-cpg-strategy.html) RequestGroup.

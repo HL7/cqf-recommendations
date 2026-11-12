@@ -94,6 +94,36 @@ Evidence quality qualifies the guideline's evidence; a recommendation's applicab
 </div>
 
 
+<div class="new-content" markdown="1">
+
+#### Preference among Options {#preference-among-options}
+
+Where a guideline offers alternatives, it often also says how it regards each of them: one option may be preferred, others recommended or simply allowable, and some not favored for a particular patient. This preference is supplemental information that helps the clinician interpret a recommendation and weigh it against the alternatives. It does not explain why the option was surfaced, which is the concern of rationale and provenance. It conveys how the guideline regards the option once it has been surfaced.
+
+The [cpg-preferenceBehavior](StructureDefinition-cpg-preferenceBehavior.html) extension carries this stance on an action, using the [CPG Preference Behavior](ValueSet-cpg-preference-behavior-vs.html) value set:
+
+| Code | Meaning |
+| --- | --- |
+| `preferred` | The guideline's best choice among recommended options, given patient-specific considerations. Typically at most one option in a grouping is preferred |
+| `recommended` | The guideline positively recommends the option without singling it out as the best among alternatives |
+| `neutral` | The guideline takes no position; the option is allowable and presented without endorsement |
+| `not-recommended` | The guideline does not favor the option for this patient among the available alternatives |
+{:.grid}
+
+Preference is a separate attribute from the direction and strength of a recommendation and from the quality of evidence. A `not-recommended` preference says that the guideline does not favor an option among the alternatives for this patient. It is not a recommendation against the activity, which is expressed through the [direction of recommendation](StructureDefinition-cpg-directionOfRecommendation.html), nor a safety negation, which is a proposal not to perform the activity (`doNotPerform`). Likewise, a GRADE "conditional" recommendation describes the strength of the recommendation, not a preference, and an activity can be the preferred option while the recommendation for it is conditional.
+
+Preference is also distinct from applicability:
+
+| Concept | Role |
+| --- | --- |
+| Action condition of kind `applicability` | Determines whether the action is included at all for this patient (execution logic) |
+| Preference behavior | Describes how the guideline regards the action once it is included (interpretation) |
+{:.grid}
+
+Applicability controls execution; preference controls interpretation. For this reason, the value set has no "not applicable" code: an action whose applicability condition evaluates to true could otherwise be marked as not applicable, which is incoherent. The [Translate step](methodology-translate.html#preference-behavior) describes how preference is authored and carried into patient-specific results, with a worked example.
+
+</div>
+
 #### Quality of Evidence and Evidence for Recommendations
 
 Just as the recommendations from the guideline development group reference the body of evidence which supports the recommendation, a Recommendation similarly references the evidence sources from which they were derived.  In the CPG-IG, the supporting evidence for a Recommendation is referenced through the [Evidence Resource](https://www.hl7.org/fhir/evidence.html) as described in the EBM-on-FHIR IG.  Moreover, just as a guideline recommendation contextualizes the quality of the evidence (using GRADES as discussed in the “Guideline Development Process” section), a Recommendation and its resultant proposal (Proposal) may carry forward the guideline development group’s assessment of the quality of the evidence as an attribute of the Recommendation profile qualifying the references to its respective Evidence Resource(s).   These evidence references provide a provenance for each recommendation and may provide a means to notify guideline developers, downstream consumers (e.g., measure developers), and end users of the CPG when there is an update to relevant evidence that should be considered.

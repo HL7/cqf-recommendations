@@ -25,7 +25,7 @@ Changing an existing order follows the same logic. Hold, stop, and resume are ac
 
 #### What the Phases Do Not Convey
 
-A phase says where an activity is. It does not say what position the guideline takes on the activity, how strong the recommendation is, or whether anyone has chosen it. These are separate questions, carried separately. For example, an activity can be the preferred option among alternatives while the recommendation for it is conditional. Recommendation strength, direction, and rationale remain attributes of the guidance.
+A phase says where an activity is. It does not say what position the guideline takes on the activity, how strong the recommendation is, or whether anyone has chosen it. These are separate questions, carried separately. For example, an activity can be the preferred option among alternatives while the recommendation for it is conditional. The guideline's position on an option is carried by the [preference behavior](methodology-translate.html#preference-behavior) extension. Recommendation strength, direction, and rationale remain attributes of the guidance.
 
 The sections below give the valid state transitions, the capabilities that perform them, and the elements and values for each resource.
 

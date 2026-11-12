@@ -67,7 +67,7 @@ The following pages establish the detailed conformance requirements for each top
 * <a id="profiles"></a>[Profiles](profiles.html): Knowledge artifacts and the selection of interoperability profiles. Statements prof-1 through prof-3.
 * <a id="terminology"></a>[Terminology](terminology.html): Code systems and value sets defined by content. Statements term-1 through term-9.
 * <a id="libraries"></a>[Libraries](libraries.html): Libraries of computable logic. Statements lib-1 and lib-2.
-* [Select](methodology-select.html#guideline-supporting-information) and [Translate](methodology-translate.html): Representation of recommendations, strategies, pathways, case features, and activities. Statements rec-1 through rec-7, data-1, act-1, and act-2.
+* [Select](methodology-select.html#guideline-supporting-information) and [Translate](methodology-translate.html): Representation of recommendations, strategies, pathways, case features, and activities. Statements rec-1 through rec-12, data-1, act-1, and act-2.
 * [Reporting](documentation-approach-12-07-cpg-derivative-and-related-assets.html#ecase-report) and [Common Processes](documentation-approach-12-06-cpg-common-pathway.html): Statements path-1 and path-2.
 
 ### Conformance Statements

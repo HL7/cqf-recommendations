@@ -133,6 +133,9 @@ Clinical guideline content typically assigns ratings for aspects of guidance suc
 
 Capture the source version, citation, and the rating system used by the guideline authors. Ask clinical and evidence reviewers to confirm which ratings belong to the selected recommendation. Record evidence certainty, recommendation strength, and recommendation direction separately.
 
+Where the guideline singles out preferred options among alternatives, record that preference separately as well. It is represented with the [preference behavior](methodology-translate.html#preference-behavior) extension, not with the strength or direction of the recommendation.
+{:.new-content}
+
 §rec-1^^recommendation:Content conforming to this implementation guide **SHALL** provide references to supporting documentation for a recommendation in the form of a `relatedArtifact` element specifying a citation to the guideline.§
 
 Due to the variability in rating systems among guideline content, this implementation is not prescriptive about what grading system should be used, and the example bindings from the base specification apply. However, §rec-2^^recommendation,documentation:content conforming to this implementation guide **SHALL** identify a rating system and use that to provide rating information for recommendations and guidance, and provide documentation on what rating system was selected and how it is communicated through the content.§

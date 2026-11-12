@@ -179,6 +179,22 @@ The resource indexes below are grouped by FHIR resource type. Use them to locate
     Example Activity Definition for a recommendation to send a message
 
 
+<div class="new-content" markdown="1">
+
+*   [CKD Hypertension ACE Inhibitor](ActivityDefinition-ckd-hypertension-ace-inhibitor-ad.html)
+
+    Propose an ACE inhibitor (preference behavior example)
+
+*   [CKD Hypertension Angiotensin Receptor Blocker](ActivityDefinition-ckd-hypertension-arb-ad.html)
+
+    Propose an angiotensin receptor blocker (preference behavior example)
+
+*   [CKD Hypertension Calcium Channel Blocker](ActivityDefinition-ckd-hypertension-ccb-ad.html)
+
+    Propose a dihydropyridine calcium channel blocker (preference behavior example)
+
+</div>
+
 ### Example Bundle Index
 
 {% include list-bundles.xhtml %}
@@ -457,6 +473,14 @@ The resource indexes below are grouped by FHIR resource type. Use them to locate
 
     Example Plan Definition for a recommendation to send a message
 
+
+<div class="new-content" markdown="1">
+
+*   [CKD Hypertension Therapy Options](PlanDefinition-ckd-hypertension-options-pd.html)
+
+    Alternative therapy options with the guideline's preference for each, illustrating the cpg-preferenceBehavior extension
+
+</div>
 
 ### Example Practitioner
 
