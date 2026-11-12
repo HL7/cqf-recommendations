@@ -10,10 +10,10 @@ An [activity](documentation-approach-09-methods-of-implementation.html#activity-
 
 ### Adherence
 
-Adherence is where the patient is with respect to a strategy, taken as a whole, and is a special case of a composite metric. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to a strategy.
+Adherence is where the patient is with respect to the pathway and strategies, taken as a whole, and is a special case of a composite metric. Adherence is often used in localized implementations of clinical practice guidelines (or pathways). Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to the pathway and/or strategies within the overall pathway. This version defines coded results for compliance and for strategy adherence; coded results for pathway adherence and for goals are planned.
 {:.modified-content}
 
-The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](documentation-approach-12-07-cpg-derivative-and-related-assets.html#pathway-status-terms)).
+The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole: pathway adherence, described informally. This guide does not yet define coded results for them (see [Pathway Status Terms](documentation-approach-12-07-cpg-derivative-and-related-assets.html#pathway-status-terms)).
 {:.modified-content}
 
 Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
