@@ -239,13 +239,67 @@ This example illustrates a recommendation to document an existing medication ord
 
 This example illustrates a recommendation to stop an existing medication order
 
+<div class="new-content" markdown="1">
+
+* [StopMedication Library](Library-stopmedication-library.html)
+* [StopMedication ActivityDefinition](ActivityDefinition-activity-example-stopmedication-ad.html)
+* [StopMedication PlanDefinition](PlanDefinition-activity-example-stopmedication-pd.html)
+
+* stp-scenario1  * [MedicationRequest-stp-scenario1](MedicationRequest-stp-scenario1.html)
+* stp-scenario1  * [Patient-stp-scenario1](Patient-stp-scenario1-patient.html)
+* stp-scenario2  * [MedicationRequest-stp-scenario2](MedicationRequest-stp-scenario2.html)
+* stp-scenario2  * [Patient-stp-scenario2](Patient-stp-scenario2-patient.html)
+* stp-scenario2  * [Task-request-stp-scenario2](Task-stp-scenario2-request.html)
+* stp-scenario3  * [MedicationRequest-stp-scenario3](MedicationRequest-stp-scenario3.html)
+* stp-scenario3  * [Patient-stp-scenario3](Patient-stp-scenario3-patient.html)
+* stp-scenario3  * [Task-request-stp-scenario3](Task-stp-scenario3-request.html)
+* stp-scenario4  * [Patient-stp-scenario4](Patient-stp-scenario4-patient.html)
+
+</div>
+
 ## Hold a medication order
 
 This example illustrates a recommendation to hold an existing medication order
 
+<div class="new-content" markdown="1">
+
+* [HoldMedication Library](Library-holdmedication-library.html)
+* [HoldMedication ActivityDefinition](ActivityDefinition-activity-example-holdmedication-ad.html)
+* [HoldMedication PlanDefinition](PlanDefinition-activity-example-holdmedication-pd.html)
+
+* hol-scenario1  * [MedicationRequest-hol-scenario1](MedicationRequest-hol-scenario1.html)
+* hol-scenario1  * [Patient-hol-scenario1](Patient-hol-scenario1-patient.html)
+* hol-scenario2  * [MedicationRequest-hol-scenario2](MedicationRequest-hol-scenario2.html)
+* hol-scenario2  * [Patient-hol-scenario2](Patient-hol-scenario2-patient.html)
+* hol-scenario2  * [Task-request-hol-scenario2](Task-hol-scenario2-request.html)
+* hol-scenario3  * [MedicationRequest-hol-scenario3](MedicationRequest-hol-scenario3.html)
+* hol-scenario3  * [Patient-hol-scenario3](Patient-hol-scenario3-patient.html)
+* hol-scenario3  * [Task-request-hol-scenario3](Task-hol-scenario3-request.html)
+* hol-scenario4  * [Patient-hol-scenario4](Patient-hol-scenario4-patient.html)
+
+</div>
+
 ## Resume a medication order
 
 This example illustrates a recommendation to resume a medication order on hold
+
+<div class="new-content" markdown="1">
+
+* [ResumeMedication Library](Library-resumemedication-library.html)
+* [ResumeMedication ActivityDefinition](ActivityDefinition-activity-example-resumemedication-ad.html)
+* [ResumeMedication PlanDefinition](PlanDefinition-activity-example-resumemedication-pd.html)
+
+* res-scenario1  * [MedicationRequest-res-scenario1](MedicationRequest-res-scenario1.html)
+* res-scenario1  * [Patient-res-scenario1](Patient-res-scenario1-patient.html)
+* res-scenario2  * [MedicationRequest-res-scenario2](MedicationRequest-res-scenario2.html)
+* res-scenario2  * [Patient-res-scenario2](Patient-res-scenario2-patient.html)
+* res-scenario2  * [Task-request-res-scenario2](Task-res-scenario2-request.html)
+* res-scenario3  * [MedicationRequest-res-scenario3](MedicationRequest-res-scenario3.html)
+* res-scenario3  * [Patient-res-scenario3](Patient-res-scenario3-patient.html)
+* res-scenario3  * [Task-request-res-scenario3](Task-res-scenario3-request.html)
+* res-scenario4  * [Patient-res-scenario4](Patient-res-scenario4-patient.html)
+
+</div>
 
 ## Recommend an immunization
 

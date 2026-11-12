@@ -4,6 +4,9 @@ The following capabilities describe application behavior at the **pattern level*
 
 For transitions that create a new resource, separate preparation from commitment. Preparation constructs a candidate for review. At commitment, re-read the source, check its current state and the actor's authority, assign the new resource's identity, and preserve the relationship to its source. Persist related changes consistently. A preview created earlier may no longer describe the current patient or request.
 
+These transitions apply to records the acting system owns. A change to an order held in another system, such as an EHR order, is itself an activity: see Hold, stop, and resume in [Activity Flow and the EHR Order Lifecycle](activityflow.html#activity-flow-and-the-ehr-order-lifecycle).
+{:.new-content}
+
 ### Update {#update}
 
 Update an incomplete or active request, or an event that can still be amended under its resource-specific rules. Moving a request from draft to active indicates it is ready for the next workflow step, not that the activity was performed.

@@ -11,7 +11,7 @@ Covered in this section:
     *   Directionality and Strength of a [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)
     *   Quality of Evidence and Evidence for Recommendations
 *   **Strategies**
-    *   As a profiled FHIR ECA Rule
+    *   As a profiled FHIR PlanDefinition
 *   **Pathways**
     *   As a profiled FHIR PlanDefinition
     *   Eligibility
@@ -111,6 +111,7 @@ Strategies are approaches for combining, orchestrating, or associating related g
 Strategies may or may not arise from explicit or strong recommendations from the guideline on the relationships and/or interdependencies between individual recommendations since the evidence base may not have addressed these issues explicitly; however, the guideline development group may recognize the importance of such interdependencies when formulating the guideline.  Strategies may be communicated in the guideline either explicitly as separate recommendations or may be conveyed through supplemental information such as flow diagrams, decision trees, and/or decision tables.  Strategies are the formalization and compilation of explicit strategies as recommendations or as a requisite means to formalize the relationships, interactions, and potential conflicts between individual recommendations in order to address the requirement of making this set of recommendations implementable.
 
 #### Strategies as a profiled FHIR PlanDefinition
+{:.modified-content}
 
 A Strategy is represented as a [FHIR PlanDefinition](https://www.hl7.org/fhir/R4/plandefinition.html) of type `workflow-definition` that groups related recommendations, rather than as an event-condition-action rule. The triggering, decision, and orchestration logic in a Strategy often not only applies to a requisite set of data elements (Case Features) but also the status and attributes of an instantiated Recommendation as a patient-specific recommendation or proposal (Proposal)and/or its resultant clinical activities (e.g., requests) and/or their resultant fulfillments (e.g., events).
 {:.modified-content}
