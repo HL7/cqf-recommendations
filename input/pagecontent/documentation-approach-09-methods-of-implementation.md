@@ -25,14 +25,7 @@ Figure 1. Methods of Implementation
 
 <div class="new-content" markdown="1">
 
-The chosen method determines what must be compared with the source guideline and its test cases:
-
-| Execution method | Implementation work | Evidence to collect |
-| --- | --- | --- |
-| Manual implementation | Use the artifacts as a specification for local rules and interfaces. | Trace local behavior to the source, including exceptions, timing, missing data, and expected results. |
-| Translation | Transform supported content into another executable representation. | Compare source and target behavior, including null handling, temporal logic, terminology, units, and unsupported constructs. |
-| Native execution | Evaluate the supplied logic and definitions in a compatible engine. | Check model and engine versions, expression features, terminology services, artifact resolution, and local data behavior. |
-{:.grid}
+The chosen method determines what must be compared with the source guideline and its test cases. The [Validate step](methodology-validate.html#execution-methods) describes the implementation work and the evidence to collect for each method.
 
 Keep the relationship between the source release and local implementation explicit so that changes can be assessed. A native engine may serve several delivery interfaces. The [Using CQL With FHIR](https://hl7.org/fhir/uv/cql/) implementation guide provides related execution guidance, and [Libraries](libraries.html) identifies this guide's logic representations.
 
@@ -86,12 +79,12 @@ The knowledge architecture presented here uses the PlanDefinition in various way
 
 1. PlanDefinitions are hierarchies of _actions_, where each action may have any number of children (including zero)
 2. {:.modified-content} PlanDefinition actions can be related to other actions in the same PlanDefinition using the _relatedAction_ element, where the profile permits it (the [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html) profile prohibits `action.relatedAction`)
-3. Although the action element may appear multiple times, there is no assumption of sequence of execution implied by the order of appearance of action elements in a PlanDefinition, consistent with FHIR methodology that order of elements cannot be meaningful unless stated as such in the base resource
-4. This means that if required, sequencing must be established by chaining related actions
+3. {:.modified-content} Although the action element may appear multiple times, the order of appearance of action elements in a PlanDefinition does not by itself imply a sequence of execution, consistent with FHIR methodology that order of elements cannot be meaningful unless stated as such. The exception is the [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) extension: when a parent action specifies `any`, its child actions are evaluated in order, and only the first applicable child action is included
+4. {:.modified-content} This means that the order in which alternatives are evaluated, and which of them are included, is established with `cqf-applicabilityBehavior` and the applicability conditions of the child actions, and how the user may select among the included actions is established with `selectionBehavior`, rather than by chaining related actions
 5. The only way an action can be initiated is by _trigger_, or by being _invoked_ either through a parent or related action
 6. In particular, the _timing_ element of actions cannot be used as part of execution semantics (with the exception of pathways and schedules, that are allowed to use timings to establish schedules of expected activities)
-7. {:.modified-content} Related actions can use any of the relationships defined by the base specification, with or without an `offset` to allow for delays. The relationship describes the action relative to the target action; for example, the [CHF body weight change recommendation](PlanDefinition-chf-bodyweight-change-pd.html) uses `after-end` to report after recording the weight change
-8. {:.modified-content} Related actions can be cyclic, either directly, or indirectly. Authors should check for cycles and distinguish timing and schedules from triggers and dependencies. (NOTE: This means in particular that execution environments must take care to guard against runaway and infinite loops)
+7. {:.modified-content} Related actions can use any of the relationships defined by the base specification, with or without an `offset` to allow for delays. The relationship describes the timing of the action relative to the target action; for example, the [CHF body weight change recommendation](PlanDefinition-chf-bodyweight-change-pd.html) uses `after-end` to report after recording the weight change. Related actions describe dependencies and timing between activities; they are not used to choose among alternatives (see rule 4)
+8. {:.modified-content} Related actions can be cyclic, either directly, or indirectly. A cycle is not necessarily an infinite loop, because the applicability conditions of each action are still evaluated, so a review of cycles needs to take that logic into account. (NOTE: Execution environments must nevertheless take care to guard against runaway and infinite loops)
 9. {:.modified-content} Recommendations and strategies can have only one action that specifies a `trigger`, with all other action execution occurring through either child or related actions; pathways can have multiple triggering actions
 
 In addition, when a request is referenced by a RequestGroup, then its intent must be `option`, and it is treated as part of the overall RequestGroup, implying that the intent of the request is established by the intent of the RequestGroup. For PlanDefinition apply processing, this means the returned RequestGroup will have an intent of `proposal`, while all the referenced requests will have an intent of `option`, and when the "options" are selected by the user or application for processing into a Plan, Order, or Event, they will no longer be part of the RequestGroup, will have an intent of Plan or Order as appropriate, and will be independent requests at that point.

@@ -151,6 +151,21 @@ Content conforming to this implementation guide MAY provide the directionality o
 <blockquote>NOTE: The CPG-on-FHIR project is seeking feedback on whether this implementation guide should nominate a specific grading system and require conforming content to provide mappings when they use other grading systems.</blockquote>
 
 
+<div class="new-content" markdown="1">
+
+##### Trace evidence to the computable interpretation {#evidence-traceability}
+
+Keep the evidence review, the recommendation decision, and the computable interpretation traceable to each other (see [Traceability from Evidence to Computable Interpretation](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html#traceability-from-evidence-to-computable-interpretation)). For each, record what the next reviewer needs:
+
+| Record | What the next reviewer needs |
+| --- | --- |
+| Evidence and certainty | Relevant findings and limitations, citations, outcome-specific certainty, and the method used to judge it. |
+| Recommendation and rationale | Direction, strength, applicability, and the tradeoffs or consensus judgments behind the decision. |
+| Computable interpretation | Explicit criteria, timing, exceptions, proposed actions, data assumptions, and examples tied to the source. |
+{:.grid}
+
+</div>
+
 ##### Pertinent information {#pertinent-information}
 
 Documenting pertinent information related to a recommendation is critical to helping the intended recipient determine why the recommendation applies in each particular case. For definitional content, pertinent information can typically be inferred from the content referenced by the logic involved. To support cases where pertinent information cannot be inferred from the content, as well as to allow content developers to highlight particular aspects, the `input` and `output` elements of the PlanDefinition can be used to identify pertinent information for the recommendation.

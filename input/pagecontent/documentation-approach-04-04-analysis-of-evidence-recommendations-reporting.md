@@ -29,12 +29,7 @@ Furthermore, the guideline development group may identify pertinent clinical or 
 
 Evidence reviewers assess findings. The guideline group weighs those findings and decides what to recommend. The computable specification records how to recognize the relevant situation and which activity to propose. Keep those three judgments traceable to each other.
 
-| Record | What the next reviewer needs |
-| --- | --- |
-| Evidence and certainty | Relevant findings and limitations, citations, outcome-specific certainty, and the method used to judge it. |
-| Recommendation and rationale | Direction, strength, applicability, and the tradeoffs or consensus judgments behind the decision. |
-| Computable interpretation | Explicit criteria, timing, exceptions, proposed actions, data assumptions, and examples tied to the source. |
-{:.grid}
+The [Select step](methodology-select.html#evidence-traceability) lists what to record for each of these judgments so that the next reviewer can follow them.
 
 </div>
 

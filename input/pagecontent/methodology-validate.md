@@ -69,6 +69,21 @@ Integration testing involves ensuring that systems work together as expected, fo
 
 Test the expected results and the behavior when prefetch is missing, patient data are incomplete, a service times out, or the context changes during an interaction. Define how repeated deliveries are recognized and how stored results are updated or superseded. Clinical review, logic tests, structural conformance, integration tests, usability, and outcome evaluation contribute different evidence to the release decision.
 
+<div class="new-content" markdown="1">
+
+##### Compare local behavior with the source {#execution-methods}
+
+The [method of implementation](documentation-approach-09-methods-of-implementation.html) determines what must be compared with the source guideline and its test cases:
+
+| Execution method | Implementation work | Evidence to collect |
+| --- | --- | --- |
+| Manual implementation | Use the artifacts as a specification for local rules and interfaces. | Trace local behavior to the source, including exceptions, timing, missing data, and expected results. |
+| Translation | Transform supported content into another executable representation. | Compare source and target behavior, including null handling, temporal logic, terminology, units, and unsupported constructs. |
+| Native execution | Evaluate the supplied logic and definitions in a compatible engine. | Check model and engine versions, expression features, terminology services, artifact resolution, and local data behavior. |
+{:.grid}
+
+</div>
+
 #### Validate derived outputs and reports {#derived-outputs}
 
 A public health eCR report, a registry submission, and feedback to a guideline developer serve different purposes. Confirm the recipient's scope, required terminology, disclosure authorization, and applicable reporting contract. Validate the report against that contract and test that a representative patient record yields the expected report, including the distinction between proposals, orders, and documented events. Test population measure rules with representative patient-level cases before interpreting results for a care team, facility, or research cohort. See the [Electronic Case Reporting Implementation Guide](https://hl7.org/fhir/us/ecr/) and the [Quality Measure Implementation Guide](https://hl7.org/fhir/uv/cqm/index.html).

@@ -45,6 +45,23 @@ Record who approved any local change to a threshold, goal, included recommendati
 </div>
 
 
+<div class="new-content" markdown="1">
+
+#### Establish the integration contract {#integration-contract}
+
+Agree the [mechanisms of integration](documentation-approach-10-mechanisms-of-integration.html) with the local implementation team, and record the contract that each requires:
+
+| Mechanism | Where work happens | Contract to establish |
+| --- | --- | --- |
+| Direct ingestion or translation | The receiving application imports content or implements it locally. | Supported artifact subset, dependencies, source-to-local mappings, and equivalent behavior. |
+| Service | A service evaluates guidance for a clinical client. | Invocation context, authorized data access, response format, timing, and failure handling. |
+| Data enrichment | Derived results are transferred to another system. | Clinical meaning, provenance, record identity, updates, corrections, and responsibility for stored data. |
+| Application | A dedicated application presents guidance and may evaluate locally or call a service. | Launch context, access scopes, user interaction, and any write-back agreement. |
+| Hybrid | Several components share these responsibilities. | Consistent patient and content context, authoritative records, and ownership of each interaction. |
+{:.grid}
+
+</div>
+
 ### Maintain the release {#maintenance}
 
 Give implementers a way to report discrepancies against a specific artifact version and test case. When the source recommendation, terminology, logic, or local assumptions change, identify the affected work products and repeat the relevant reviews. Publish the changes and remaining limitations so consumers can decide when and how to adopt the next release. [Development and Maintenance](documentation-approach-05-knowledge-engineering-overview.html) describes this continuing work.
@@ -57,5 +74,21 @@ A useful report from use after release names the content version and local envir
 
 </div>
 
+
+<div class="new-content" markdown="1">
+
+### Evaluate the guideline in use {#evaluation}
+
+Plan evaluation around the decision the guideline supports, and review results at the level where a change can be made (see [Evaluating Guideline Development and Implementation](documentation-approach-04-05-computable-guideline-artifacts.html#evaluating-guideline-development-and-implementation)). Collect evidence for each question separately:
+
+| Evaluation question | Evidence to collect |
+| --- | --- |
+| Did the team follow its development and review process? | Decisions, their owners, reviewed changes, and disposition of open issues. |
+| Does the content preserve its intended meaning and run correctly? | Clinical review, formal conformance, logic tests, and results against representative local data. |
+| Can people act on it in the intended setting? | Timeliness, reach, workload, appropriate use and overrides, missed guidance, and failure behavior. |
+| What changed in care? | Separately defined care-process and patient-outcome measures, including unintended effects. |
+{:.grid}
+
+</div>
 
 {% include chapter-navigation.html section="Methodology" unit="step" overview="methodology.html" previous="methodology-validate.html" previous_title="Validate" %}

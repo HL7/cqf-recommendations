@@ -113,6 +113,8 @@ Levels of conformance will be based on alternative conformance profiles such as 
 
 > NOTE: This project is actively seeking feedback on how to characterize levels of enablement as capabilities, and how to support declaration and validation of conformance to these capabilities.
 
+<div class="new-content" markdown="1">
+
 ### Build a reviewable validation record
 
 | Check | Question answered | Useful evidence |
@@ -125,6 +127,8 @@ Levels of conformance will be based on alternative conformance profiles such as 
 {:.grid}
 
 These checks answer different questions. Validator success does not establish clinical correctness, and a successful service call does not establish clinical benefit. The [methodology](methodology-validate.html#validate-step), [checklists](checklists.html), and [CDS evidence topic](documentation-approach-cds-implementation-evidence.html) explain the broader review work.
+
+</div>
 
 ---
 

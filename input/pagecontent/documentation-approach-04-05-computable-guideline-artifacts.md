@@ -62,13 +62,7 @@ The outer circle shows 12 phases of formal guidelines development that result in
 
 Plan evaluation around the decision the guideline supports. Review results at the level where a change can be made. An apparently low rate of completed activities can reflect eligibility logic, unavailable data, routing, a decision to decline care, or incomplete documentation. Inspect individual examples before attributing the pattern to the guideline or workflow.
 
-| Evaluation question | Evidence to collect |
-| --- | --- |
-| Did the team follow its development and review process? | Decisions, their owners, reviewed changes, and disposition of open issues. |
-| Does the content preserve its intended meaning and run correctly? | Clinical review, formal conformance, logic tests, and results against representative local data. |
-| Can people act on it in the intended setting? | Timeliness, reach, workload, appropriate use and overrides, missed guidance, and failure behavior. |
-| What changed in care? | Separately defined care-process and patient-outcome measures, including unintended effects. |
-{:.grid}
+The [Package step](methodology-package.html#evaluation) lists the evaluation questions and the evidence to collect for each.
 
 Keep the strength of the evidence visible. An application log can show that guidance was presented or a suggestion was accepted. Clinical records and outcome evaluation answer what care occurred and what effects followed. See the [Tailor et al. evaluation framework](https://doi.org/10.1097/JMQ.0000000000000140) and [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html).
 

@@ -11,14 +11,7 @@ Of note, a hybrid of external and internal reasoning (methods of integration) as
 
 Local applications differ in where they can evaluate logic, display guidance, and accept actions. Several integration patterns may therefore be needed for one guideline: for example, a service can evaluate shared logic while a native order interface handles an accepted proposal. Decide where data are retrieved, content is evaluated, results are presented, and accepted actions are stored. That division of responsibility determines the integration contract.
 
-| Mechanism | Where work happens | Contract to establish |
-| --- | --- | --- |
-| Direct ingestion or translation | The receiving application imports content or implements it locally. | Supported artifact subset, dependencies, source-to-local mappings, and equivalent behavior. |
-| Service | A service evaluates guidance for a clinical client. | Invocation context, authorized data access, response format, timing, and failure handling. |
-| Data enrichment | Derived results are transferred to another system. | Clinical meaning, provenance, record identity, updates, corrections, and responsibility for stored data. |
-| Application | A dedicated application presents guidance and may evaluate locally or call a service. | Launch context, access scopes, user interaction, and any write-back agreement. |
-| Hybrid | Several components share these responsibilities. | Consistent patient and content context, authoritative records, and ownership of each interaction. |
-{:.grid}
+The [Package step](methodology-package.html#integration-contract) lists the contract to establish for each mechanism.
 
 {% include cpg-diagram.html src="cpg-runtime-integration.svg" ratio="1200 / 878" alt="Four panels compare content ingestion, CDS Hooks services, SMART applications, and data enrichment. They distinguish artifact imports, patient data exchange, evaluation, and receiving workflow responsibilities." caption="Integration patterns place content, evaluation, data exchange, and user interaction in different components. An implementation can combine patterns; the receiving workflow retains responsibility for authorization and persistence." %}
 
