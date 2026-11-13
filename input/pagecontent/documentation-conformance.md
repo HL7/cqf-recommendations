@@ -104,7 +104,7 @@ A few other notes:
 
 ### Levels of Conformance
 
-One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG) ([IHE CCG](documentation-approach-cds-implementation-evidence.html#ref-ihe-ccg)) profile of the HL7 CPG ([IHE Canada](documentation-approach-cds-implementation-evidence.html#ref-ihe-canada-headache)). The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as CPGCaseFeatures), logic to be triggered based on data collected (CPGRecommendations), and reportable health system management indicators (CPGMetrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
+One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG) ([IHE CCG](documentation-approach-cds-implementation-evidence.html#ref-ihe-ccg)) profile of the HL7 CPG ([IHE Canada](documentation-approach-cds-implementation-evidence.html#ref-ihe-canada-headache)). The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as Case Features), logic to be triggered based on data collected (Recommendations), and reportable health system management indicators (Metrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
 
 ### Conformance Testing
 

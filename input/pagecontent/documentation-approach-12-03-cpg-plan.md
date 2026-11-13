@@ -1,7 +1,7 @@
 This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
 {:.modified-content}
 
-The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a [Care Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-care-plan) as discussed in detail in another section on the [CPGCarePlan](documentation-approach-12-05-cpg-careplan.html).
+The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a [Care Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-care-plan) as discussed in detail in another section on the [Care Plan](documentation-approach-12-05-cpg-careplan.html).
 
 Covered in this section:
 

@@ -36,7 +36,7 @@ These changes add new capabilities or relax existing requirements, without inval
 
 These changes correct or clarify the guide without changing its requirements:
 
-* [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639): Reorganized and editorially revised the [Approach](approach.html) section, including a new [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html). The Knowledge Engineering Overview, Guideline Development Group, and Knowledge Representation pages were removed, and their content consolidated into the remaining Approach pages
+* [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639): Reorganized and editorially revised the [Approach](approach.html) section, including a new [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html). The Knowledge Engineering Overview, Guideline Development Group, and Knowledge Representation pages were removed, and their content consolidated into the remaining Approach pages. The Approach pages now use concept names (for example, Care Plan and Case Summary) for the concepts of the architecture, and reserve "CPG"-prefixed names for the profiles that represent them
 * [FHIR-53488](https://jira.hl7.org/browse/FHIR-53488): Updated the [L1 Checklist](clinical-guidelines-development-L1-checklist.html) to the published version, and referenced the published article
 * [FHIR-50999](https://jira.hl7.org/browse/FHIR-50999): Added the missing reference for Figure 1 on [Computable Guideline Artifacts](documentation-approach-04-05-computable-guideline-artifacts.html)
 * [FHIR-59638](https://jira.hl7.org/browse/FHIR-59638): Updated the learning health system diagram on the [home page](index.html)

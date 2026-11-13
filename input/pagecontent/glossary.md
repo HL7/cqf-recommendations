@@ -93,7 +93,7 @@ A _request_ is the basic pattern used in FHIR workflow to represent proposed, pl
 
 ### Strategy
 
-[Strategies](documentation-approach-12-03-cpg-plan.html#strategies) are approaches for combining, orchestrating, or associating related guideline recommendations and typically scope to a particular concern addressed within the guideline. Strategies may be longitudinal, require temporal orchestration, and reuse or repurpose data elements (CPGCaseFeatures) and other components (e.g., the attributes and status of requests and events) of the CPGRecommendations it scopes.
+[Strategies](documentation-approach-12-03-cpg-plan.html#strategies) are approaches for combining, orchestrating, or associating related guideline recommendations and typically scope to a particular concern addressed within the guideline. Strategies may be longitudinal, require temporal orchestration, and reuse or repurpose data elements (Case Features) and other components (e.g., the attributes and status of requests and events) of the Recommendations it scopes.
 
 ### Workflow
 

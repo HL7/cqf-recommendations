@@ -153,4 +153,4 @@ Many case features have special meaning when taken in the context of other case 
 
 ### Case Summary
 
-A summary of all the case features can provide a collection of all the clinically meaningful data elements, both primitive and inferred, pertaining to the full scope of a given CPG.  The CPGCaseSummary affords this collection and is a specialization of a Case Feature Group. It may be composed by referencing one or more Case Feature Groups and one or more Case Features.
+A summary of all the case features can provide a collection of all the clinically meaningful data elements, both primitive and inferred, pertaining to the full scope of a given CPG.  The Case Summary affords this collection and is a specialization of a Case Feature Group. It may be composed by referencing one or more Case Feature Groups and one or more Case Features.
