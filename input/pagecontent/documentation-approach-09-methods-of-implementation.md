@@ -11,17 +11,19 @@ Methods of implementation refers to three (3) broad approaches to moving from th
 2. **Translation**: Translating the content to another format suitable for execution in a given environment
 3. **Native Execution**: Directly executing the L3 content in a clinical reasoning engine that understand the representation
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-runtime-execution.svg" ratio="1000 / 326" alt="Manual implementation, translation, and native execution are three routes from shared computable content to a locally tested implementation." caption="Figure 1. Methods of Implementation. Shared computable content can be implemented manually from the specification, translated to a supported language, or evaluated natively in a compatible engine. Each route needs local verification." %}
 
-Figure 1. Methods of Implementation
+</div>
 
-</summary>
+<div class="new-content" markdown="1">
 
-<img src="methods-of-implementation.png" alt="Methods of Implementation" class="img-responsive img-rounded center-block" width="750" height="385"/>
+The chosen method determines what must be compared with the source guideline and its test cases. The [Validate step](methodology-validate.html#execution-methods) describes the implementation work and the evidence to collect for each method.
 
-</details>
+Keep the relationship between the source release and local implementation explicit so that changes can be assessed. A native engine may serve several delivery interfaces. The [Using CQL With FHIR](https://hl7.org/fhir/uv/cql/) implementation guide provides related execution guidance, and [Libraries](libraries.html) identifies this guide's logic representations.
+
+</div>
 
 Note that there are numerous factors that must be considered as part of the local implementation of guideline content. The intent of the L3 artifacts described in this implementation guide is to ensure that these factors can be appropriately considered and addressed as part of implementation while still providing useful content that can accelerate the process.
 
@@ -70,20 +72,34 @@ The [Activity Flow](activityflow.html) topic provides a detailed description of 
 The knowledge architecture presented here uses the PlanDefinition in various ways to represent recommendations, strategies, and pathways. Recommendations are represented with a PlanDefinition playing the role of an _event-condition-action_ rule, while strategies and pathways are represented with a PlanDefinition playing the role of a _workflow-definition_ or _clinical-protocol_. In all these cases, the following execution semantics are used to ensure consistent and meaningful interpretation of knowledge artifacts.
 
 1. PlanDefinitions are hierarchies of _actions_, where each action may have any number of children (including zero)
-2. PlanDefinition actions can be related to other actions in the same PlanDefinition using the _relatedAction_ element
-3. Although the action element may appear multiple times, there is no assumption of sequence of execution implied by the order of appearance of action elements in a PlanDefinition, consistent with FHIR methodology that order of elements cannot be meaningful unless stated as such in the base resource
-4. This means that if required, sequencing must be established by chaining related actions
+2. {:.modified-content} PlanDefinition actions can be related to other actions in the same PlanDefinition using the _relatedAction_ element, where the profile permits it (the [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html) profile prohibits `action.relatedAction`)
+3. {:.modified-content} Although the action element may appear multiple times, the order of appearance of action elements in a PlanDefinition does not by itself imply a sequence of execution, consistent with FHIR methodology that order of elements cannot be meaningful unless stated as such. The exception is the [cqf-applicabilityBehavior](http://hl7.org/fhir/extensions/StructureDefinition-cqf-applicabilityBehavior.html) extension: when a parent action specifies `any`, its child actions are evaluated in order, and only the first applicable child action is included
+4. {:.modified-content} This means that the order in which alternatives are evaluated, and which of them are included, is established with `cqf-applicabilityBehavior` and the applicability conditions of the child actions, and how the user may select among the included actions is established with `selectionBehavior`, rather than by chaining related actions
 5. The only way an action can be initiated is by _trigger_, or by being _invoked_ either through a parent or related action
 6. In particular, the _timing_ element of actions cannot be used as part of execution semantics (with the exception of pathways and schedules, that are allowed to use timings to establish schedules of expected activities)
-7. Related actions can only use the `before-start` relationship, with or without an `offset` to allow for delays
-8. Related actions can be cyclic, either directly, or indirectly. (NOTE: This means in particular that execution environments must take care to guard against runaway and infinite loops)
-9. Only one action can specify a `trigger`, all other action execution occurs through either child or related actions
+7. {:.modified-content} Related actions can use any of the relationships defined by the base specification, with or without an `offset` to allow for delays. The relationship describes the timing of the action relative to the target action; for example, the [CHF body weight change recommendation](PlanDefinition-chf-bodyweight-change-pd.html) uses `after-end` to report after recording the weight change. Related actions describe dependencies and timing between activities; they are not used to choose among alternatives (see rule 4)
+8. {:.modified-content} Related actions can be cyclic, either directly, or indirectly. A cycle is not necessarily an infinite loop, because the applicability conditions of each action are still evaluated, so a review of cycles needs to take that logic into account. (NOTE: Execution environments must nevertheless take care to guard against runaway and infinite loops)
+9. {:.modified-content} Recommendations and strategies can have only one action that specifies a `trigger`, with all other action execution occurring through either child or related actions; pathways can have multiple triggering actions
 
 In addition, when a request is referenced by a RequestGroup, then its intent must be `option`, and it is treated as part of the overall RequestGroup, implying that the intent of the request is established by the intent of the RequestGroup. For PlanDefinition apply processing, this means the returned RequestGroup will have an intent of `proposal`, while all the referenced requests will have an intent of `option`, and when the "options" are selected by the user or application for processing into a Plan, Order, or Event, they will no longer be part of the RequestGroup, will have an intent of Plan or Order as appropriate, and will be independent requests at that point.
+
+<div class="new-content" markdown="1">
+
+For a parent action, the `cqf-applicabilityBehavior` extension controls which child actions are evaluated and included. With `all` (the default), evaluate each child independently and include each applicable child. With `any`, evaluate in order and stop at the first applicable child. The corresponding RequestGroup action carries the same extension value when the result uses a RequestGroup. The parent's `selectionBehavior` describes how a user may select among the included actions. See [Mapping and Other Formalisms](documentation-methodology.html) for parallel and exclusive splits.
+
+</div>
+
 
 ##### Enabled vs Known Content
 
 When used as a knowledge artifact, a PlanDefinition only describes a specific expected process. The cpg-enabled extension is used to indicate that the PlanDefinition is not only registered (or _known_) but is active in the sense that its behavior is active and will be applied by the system.
+
+<div class="new-content" markdown="1">
+
+Record the local activation decision and handle repeated or stale invocations in the implementation.
+
+</div>
+
 
 ##### Initiation
 
@@ -91,11 +107,14 @@ Initiation of a PlanDefinition can only occur by _trigger_, as in the conditions
 
 ##### Recommendations, Strategies, and Pathways
 
-Recommendations are represented as _event-condition-action_ PlanDefinitions, meaning in particular that they can have at most one triggering action, and that they cannot reference other PlanDefinitions.
+Recommendations are represented as _event-condition-action_ PlanDefinitions, meaning in particular that they can have at most one triggering action. Their action definitions reference a [CPGComputableActivityDefinition](StructureDefinition-cpg-computableactivity.html) or a [CPGOrderSetDefinition](StructureDefinition-cpg-ordersetdefinition.html), but not recommendation, strategy, or pathway definitions.
+{:.modified-content}
 
-Strategies are represented as _workflow-definition_ PlanDefinitions, meaning in particular that they can have at most one triggering action (the _start_ action), and that they can reference other PlanDefinitions, but typically do _not_ reference ActivityDefinitions directly.
+Strategies are represented as _workflow-definition_ PlanDefinitions, meaning in particular that they can have at most one triggering action (the _start_ action). Their action definitions reference recommendation definitions ([CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html)), and do _not_ reference ActivityDefinitions directly.
+{:.modified-content}
 
-And finally, [Pathways](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) are represented as _clinical-protocol_ PlanDefinitions, meaning that they may have multiple triggering actions, and that they can reference other PlanDefinitions (typically other pathways, strategies, and, less often, recommendations), and they typically do _not_ reference ActivityDefinitions directly.
+And finally, [Pathways](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) are represented as _clinical-protocol_ PlanDefinitions, meaning that they may have multiple triggering actions. Their action definitions reference strategy definitions or workflow definitions ([CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html) or [CPGWorkflowDefinition](StructureDefinition-cpg-workflowdefinition.html)), and the [CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html) profile prohibits `action.relatedAction`, `action.input`, and `action.output`.
+{:.modified-content}
 
 In addition, pathways (and to a lesser extent, strategies) may have _eligibility_ and _enrollment_. When a pathway or strategy is _invoked_, enrollment is checked.
 
@@ -123,6 +142,13 @@ By applying these execution semantics to the creation of recommendations, strate
 The **Pathway** specifies eligibility and enrollment, the **Strategy** specifies the triggering event, and incorporates all the **Recommendation** artifacts as children.
 
 This pattern allows for a straightforward implementation that only needs to integrate with well-known triggers such as `encounter-start`. Initiation always occurs from that event, and enrollment is checked for any PlanDefinition that is a Pathway or Strategy, or that has a partOf that references a Pathway or Strategy.
+
+<div class="new-content" markdown="1">
+
+For example, a follow-up pathway may schedule a visit after discharge. When the patient arrives, the `encounter-start` integration invokes the enabled follow-up strategy. The service checks the patient's active case for the strategy or its containing pathway, then evaluates the visit recommendations, such as reviewing a weight trend or considering a follow-up test. The resulting proposals are available for review in the encounter. The pathway schedule describes when visits are expected, and the encounter trigger starts evaluation when a visit occurs.
+
+</div>
+
 
 Applications can then implement the guideline by tracking and invoking known (and enabled) PlanDefinitions directly. The result of these calls are a set of proposals for actions that should be considered or taken.
 

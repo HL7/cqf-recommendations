@@ -1,7 +1,7 @@
 This page was reorganized and editorially revised in this version of the guide (see [FHIR-59639](https://jira.hl7.org/browse/FHIR-59639) in the [change log](changes.html)).
 {:.modified-content}
 
-The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a [Care Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-care-plan) as discussed in detail in another section on the [CPGCarePlan](documentation-approach-12-05-cpg-careplan.html).
+The Plan describes what treatments, test, consults and other interventions need done to address a particular clinical concern (e.g., a disease or condition, recovery from a procedure, prevention including secondary and tertiary prevention, contingencies for possible complications), in the case of the CPG, the concerns as scoped by the guideline and its recommendations.  The Plan in the CPG context, is scoped to all patients in a cohort as defined by the eligibility criteria and the patient-specific plan is manifested as a [Care Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-care-plan) as discussed in detail in another section on the [Care Plan](documentation-approach-12-05-cpg-careplan.html).
 
 Covered in this section:
 
@@ -11,13 +11,19 @@ Covered in this section:
     *   Directionality and Strength of a [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)
     *   Quality of Evidence and Evidence for Recommendations
 *   **Strategies**
-    *   As a profiled FHIR ECA Rule
+    *   As a profiled FHIR PlanDefinition
 *   **Pathways**
     *   As a profiled FHIR PlanDefinition
     *   Eligibility
     *   Enrollment
         *   [Pathway Enrollment Criteria](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway-enrollment-criteria) as a Profiled ECA Rule
     *   As a “Composite” Asset
+
+<div class="new-content" markdown="1">
+
+The Plan is reusable guidance: which activities to consider, under which conditions, and how they relate. Its recommendation, strategy, workflow, and pathway definitions use different PlanDefinition profiles. A pathway can reference both strategies, which group clinical recommendations, and workflow definitions, which describe how activities are coordinated. The [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html) relates these definitions to their profiles.
+
+</div>
 
 <details open>
 
@@ -34,17 +40,12 @@ Figure 1. The top third illustrates the conceptualization of the Plan consisting
 
 The plan, in the CPG context, as described above in “Separation of Concerns,” addresses how the care team intends to address the active clinical concerns of a class of patients, given a set of clinical parameters (described further in  the case features and decision logic discussed below).  However, the [Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-plan) is constrained to the set of clinical interventions (e.g., orders/requests) scoped by a specific CPG.  This includes the guideline recommendations, the strategies for combining guideline recommendations, and the decision logic for each recommendation, for the strategies for combining recommendations, and for how the overall guideline or pathway combines or orchestrates all of the recommendations and strategies.  As described in the “Methodology” section, one might consider separating the expression logic from the decision logic solely scoped for each Recommendation and [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy) in separate libraries as well as maintaining a separate library for decision and orchestration logic that is employed across various parts of the [Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway).
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-model-definitions.svg" ratio="1200 / 604" alt="A pathway can reference both strategy and workflow definitions. Strategies group recommendations that reference activity or order set definitions. Workflow definitions describe activities, their relationships, participants, inputs, and outputs. All are reusable guidance." caption="Figure 2. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similar coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it very likely belongs in the Plan." %}
 
-Figure 2. The Plan describes Recommendations for best practice care including many aspects of the clinical decision-making processes in the context of patients’ current and historical state (i.e., Case, and scoped Case Features); Strategies for addressing key clinical issues that may require decisions, planning, and orchestration across multiple recommendations; and an overall Pathway that similar coordinates across Strategies and Recommendations to be applied to individual patients in the broader collective of the Case and its Case Features resulting in a patient-specific Care Plan.  The Plan is “definitional” and is represented by [FHIR Resources that follow the Definition](http://hl7.org/fhir/definition.html) pattern.  If logic describes what to do for a patient, it very likely belongs in the Plan.
+</div>
 
-</summary>
-
-<img src="CPG-Main-Plan.png" alt="Plan" class="img-responsive img-rounded center-block"/>
-
-</details>
 
 
 ### Recommendations
@@ -63,9 +64,53 @@ A Recommendation is a specialization of a FHIR [Event-Condition-Action (ECA) Rul
 
 A Recommendation's recommended activity is the Definition phase of the [Activity Flow](activityflow.html#purpose-and-rationale): a patient-independent description of what could be done. Applying the Recommendation to a patient's Case produces a Proposal in the [Care Plan](documentation-approach-12-05-cpg-careplan.html), which can then move through the later phases. The Recommendation defines the activity but not its lifecycle, so the Plan stays independent of how a given setting accepts, orders, or performs it.
 
+<div class="new-content" markdown="1">
+
+[CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html) uses type `eca-rule` for an event, condition, and action. Its `action.definitionCanonical` can reference a [CPGComputableActivityDefinition](StructureDefinition-cpg-computableactivity.html) or [CPGOrderSetDefinition](StructureDefinition-cpg-ordersetdefinition.html) for the Definition phase of [Activity Flow](activityflow.html). The [CHF Body Weight Change recommendation](PlanDefinition-chf-bodyweight-change-pd.html) specifies a periodic activity to record inferred weight change, followed by a reporting activity.
+
+</div>
+
+
 #### Directionality and Strength of a Recommendation
 
 Guideline recommendations contain attributes or properties for the directionality and strength of recommendation (see GRADES discussion in the “Guideline Development Process” section).  A Recommendation addresses directionality in the semantics of the action or activity and in the expression of the Recommendation decision logic as part of the ECA Rule.  The strength of recommendation is an attribute of the Recommendation profile and carries forward its resulting Proposal.  These attributes remain separate from where an activity is in the [Activity Flow](activityflow.html#purpose-and-rationale).
+
+<div class="new-content" markdown="1">
+
+Evidence quality qualifies the guideline's evidence; a recommendation's applicability also depends on the information available for this patient. A proposal against an activity expresses guidance against performing it. Evidence about whether it occurred comes from the patient record.
+
+</div>
+
+
+<div class="new-content" markdown="1">
+
+#### Preference among Options {#preference-among-options}
+
+Where a guideline offers alternatives, it often also says how it regards each of them: one option may be preferred, others recommended or simply allowable, and some not favored for a particular patient. This preference is supplemental information that helps the clinician interpret a recommendation and weigh it against the alternatives. It does not explain why the option was surfaced, which is the concern of rationale and provenance. It conveys how the guideline regards the option once it has been surfaced.
+
+The [cpg-preferenceBehavior](StructureDefinition-cpg-preferenceBehavior.html) extension carries this stance on an action, using the [CPG Preference Behavior](ValueSet-cpg-preference-behavior-vs.html) value set:
+
+| Code | Meaning |
+| --- | --- |
+| `preferred` | The guideline's best choice among recommended options, given patient-specific considerations. Typically at most one option in a grouping is preferred |
+| `recommended` | The guideline positively recommends the option without singling it out as the best among alternatives |
+| `neutral` | The guideline takes no position; the option is allowable and presented without endorsement |
+| `not-recommended` | The guideline does not favor the option for this patient among the available alternatives |
+{:.grid}
+
+Preference is a separate attribute from the direction and strength of a recommendation and from the quality of evidence. A `not-recommended` preference says that the guideline does not favor an option among the alternatives for this patient. It is not a recommendation against the activity, which is expressed through the [direction of recommendation](StructureDefinition-cpg-directionOfRecommendation.html), nor a safety negation, which is a proposal not to perform the activity (`doNotPerform`). Likewise, a GRADE "conditional" recommendation describes the strength of the recommendation, not a preference, and an activity can be the preferred option while the recommendation for it is conditional.
+
+Preference is also distinct from applicability:
+
+| Concept | Role |
+| --- | --- |
+| Action condition of kind `applicability` | Determines whether the action is included at all for this patient (execution logic) |
+| Preference behavior | Describes how the guideline regards the action once it is included (interpretation) |
+{:.grid}
+
+Applicability controls execution; preference controls interpretation. For this reason, the value set has no "not applicable" code: an action whose applicability condition evaluates to true could otherwise be marked as not applicable, which is incoherent. The [Translate step](methodology-translate.html#preference-behavior) describes how preference is authored and carried into patient-specific results, with a worked example.
+
+</div>
 
 #### Quality of Evidence and Evidence for Recommendations
 
@@ -83,9 +128,18 @@ Strategies are approaches for combining, orchestrating, or associating related g
 
 Strategies may or may not arise from explicit or strong recommendations from the guideline on the relationships and/or interdependencies between individual recommendations since the evidence base may not have addressed these issues explicitly; however, the guideline development group may recognize the importance of such interdependencies when formulating the guideline.  Strategies may be communicated in the guideline either explicitly as separate recommendations or may be conveyed through supplemental information such as flow diagrams, decision trees, and/or decision tables.  Strategies are the formalization and compilation of explicit strategies as recommendations or as a requisite means to formalize the relationships, interactions, and potential conflicts between individual recommendations in order to address the requirement of making this set of recommendations implementable.
 
-#### Strategies as a profiled FHIR ECA Rule
+#### Strategies as a profiled FHIR PlanDefinition
+{:.modified-content}
 
-A Strategy is also a specialization of a [FHIR ECA Rule](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#event-condition-action-rule) as described above in Recommendation.  The triggering, decision, and orchestration logic in a Strategy often not only applies to a requisite set of data elements (Case Features) but also the status and attributes of an instantiated Recommendation as a patient-specific recommendation or proposal (Proposal)and/or its resultant clinical activities (e.g., requests) and/or their resultant fulfillments (e.g., events).
+A Strategy is represented as a [FHIR PlanDefinition](https://www.hl7.org/fhir/R4/plandefinition.html) of type `workflow-definition` that groups related recommendations, rather than as an event-condition-action rule. The triggering, decision, and orchestration logic in a Strategy often not only applies to a requisite set of data elements (Case Features) but also the status and attributes of an instantiated Recommendation as a patient-specific recommendation or proposal (Proposal)and/or its resultant clinical activities (e.g., requests) and/or their resultant fulfillments (e.g., events).
+{:.modified-content}
+
+<div class="new-content" markdown="1">
+
+[CPGStrategyDefinition](StructureDefinition-cpg-strategydefinition.html) groups recommendations for a clinical concern or context. It uses type `workflow-definition`, and its `action.definitionCanonical` targets recommendation definitions. The [CHF Daily Management definition](PlanDefinition-chf-daily-management.html) groups recommendations for body weight, weight change, urine output, and net intake and output. Its patient-specific counterpart, [CPGStrategy](StructureDefinition-cpg-strategy.html), uses RequestGroup to organize activities and their options.
+
+</div>
+
 
 ### Pathways
 
@@ -95,17 +149,38 @@ Pathways convey the full scope of guideline recommendations in a manner that can
 
 The Pathway is a specialization of a FHIR PlanDefinition which contains in its own specialized (sets of) ECA Rules to serve the function of formalizing such logic.  The FHIR PlanDefinition is intentionally fractal by nature and often contains (by reference) numerous other PlanDefinition as well as other definitional resources (e.g., Activity Definitions, Questionnaires, [Measures](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure)) and libraries for formalizations of logic (FHIR Library Resource).  As such, the Pathway furthermore contains and/or references key component assets scoped to the CPG, including all Recommendations, Strategies, and required and scoped Case Features, are dependent upon the respective Library Resources.
 
+<div class="new-content" markdown="1">
+
+[CPGPathwayDefinition](StructureDefinition-cpg-pathwaydefinition.html) uses type `clinical-protocol` to group guidance over time. Its actions reference strategy or [workflow definitions](StructureDefinition-cpg-workflowdefinition.html), and the profile prohibits `action.relatedAction` on the pathway. Use the appropriate definition to express more detailed relationships. The [CHF pathway definition](PlanDefinition-chf-pathway.html) references the Daily Management and Hypervolemia strategies; the full guideline package can contain artifacts beyond those referenced by the pathway.
+
+</div>
+
+
 #### Pathway Eligibility
 
 Eligibility criteria are the benchmarks that should be met for guideline recommendations to apply for a patient. In order for a patient to quality for the guideline’s scope (see “Guideline Development Process”), they must satisfy appropriate conditions such as the guideline’s population definition (e.g., in its Evidence Resource).  Evidence Resource’s evidence variable for population (from PICOTS) may include formalization of the expression logic for the population and/or the appropriate starting point for the semantics (e.g., data types and terminologies) of the variables necessary for such logic.  Similarly, the eligibility criteria may come from or be the superset of individual recommendation applicability criteria available in their Evidence Resource’s evidence variables for populations.  The Pathway Eligibility Criteria contains the expression logic for eligibility criteria and may create a Case Feature scoped specifically for the purpose of conveying a time stamped data element expressing the patient’s eligibility status for the specific CPG.
 
 #### Pathway Enrollment
 
+<div class="new-content" markdown="1">
+
+Eligibility asks whether a patient meets the pathway's population, exclusion, and timing criteria. Enrollment records participation. Individual recommendation applicability is a further decision based on the patient's context at evaluation time. Keep the decisions separate and record whether each could be determined from available data.
+
+</div>
+
+
 Even though a patient may be eligible for a given guideline, due to patient preferences or mitigating clinical factors, a patient may not necessarily need or want the recommendations of the guideline applied to them (at least at a given point in time).  For a patient to be registered as participating in the full scope of guideline recommendations they must be enrolled as such.  The process of being denoted as participating in guideline-directed care is called pathway enrollment.
 
 ##### Auto-Enrollment, Prompted-Enrollment, and Opt-in Enrollment
 
 There are several means and/or combinations of ways by which a patient may be enrolled.  This includes auto-enrollment, prompted-enrollment, and opt-in enrollment.  Auto-enrollment refers to all patients who meet the eligibility criteria, which may or may not be further constrained by additional criteria, automatically being enrolled in the pathway (or guidelines-directed care).  Prompted-enrollment refers to a process through which a care team member is notified that the patient is eligible, often with supplemental data (not limited to that which met the eligibility criteria), in the care team member subsequently taking an action to enroll the patient.  Opt-in enrollment refers to a care team member actively taking the step of enrolling the patient without being prompted.
+
+<div class="new-content" markdown="1">
+
+A site can use more than one of these enrollment routes. Specify who may authorize and record enrollment, and use the relevant rule and [CPGEnrollmentActivity](StructureDefinition-cpg-enrollmentactivity.html) for a proposed enrollment activity.
+
+</div>
+
 
 ##### Multi-stage “Filtering” for Appropriateness of Guideline-Directed Care
 
@@ -114,6 +189,13 @@ Often, eligibility and enrollment may be considered a two-step filter, analogous
 ##### Pathway Enrollment Criteria as a Profiled ECA Rule
 
 Due to the nature of enrollment and to enable a multistep approach, pathway enrollment is modeled as a profile of an ECA Rule (Pathway Enrollment Criteria).  As described above, since ECA rules may contain other ECA rules, this readily affords a multistep approach.  The Pathway Enrollment Criteria may create a Case Feature scoped specifically for the purpose of conveying a time stamped data element expressing the patient’s enrollment status for the specific CPG ([Pathway Enrollment Status](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway-enrollment-status)).  The current and historical status of a patient’s enrollment is of critical importance for medical decision-making and may be used in other Pathway logic.
+
+<div class="new-content" markdown="1">
+
+The [CHF example](examples-chf.html) describes a patient whose admitting diagnosis meets the group criteria. Its [active EpisodeOfCare](EpisodeOfCare-chf-scenario1-eoc.html) uses the `enrolledIn` extension to point to the CHF pathway. The episode's status and period convey participation over time.
+
+</div>
+
 
 #### Pathway as a “Composite” Asset
 

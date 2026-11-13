@@ -34,11 +34,20 @@ Metadata is data that provides information about the knowledge asset.  This may 
 *   **Relatedness**- what other assets Use or are usedBy 'this' asset (may be derived and/or asserted), what assets Contain or are containedBy another asset, what assets are in lineage (derivedFrom: parent and hasDerivative: copies/ clones), what assets share lineage or dependencies (isRelatedto: "siblings" or "cousins"), what assets have shared usage context (usedLike: ), what assets might be same/ similar (this is a more advanced use case for an advance KM system that evaluates content/ expression, objective, results;  relationships look like: equalTo, equivalentTo, expresses)
 *   ***Note:*** Provenance not only pertains to the linage and pedigree of knowledge assets, but likewise to the data used by these assets in the inferred information that results from the combination of the two.  This data provenance is of critical value in knowledge driven systems and can be leveraged for numerous features across the data and knowledge life cycles.  Some of these capabilities are described further in the Knowledge Engineering section.
 
-In FHIR, asset metadata is addressed in several ways.  First, the FHIR Resources, particularly those that are definitional(e.g., plan definition, activity definition, measure definition, questionnaire) to be used as asset “containers” have their own metadata attributes as defined with each resource.  Furthermore, shared metadata elements in FHIR Resources are described [https://www.hl7.org/fhir/resource.html](https://www.hl7.org/fhir/resource.html) and more detailed information about FHIR Metadata may be found ([ref](http://www.hl7.org/fhir/metadatatypes.html)), or here ([ref](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=391)).  The section on [Metadata](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata) of the Clinical Reasoning Module on Knowledge Artifact Representation provides a description of how metadata is routinely addressed in FHIR Knowledge Artifact Representations.
+In FHIR, asset metadata is addressed in several ways.  First, the FHIR Resources, particularly those that are definitional(e.g., plan definition, activity definition, measure definition, questionnaire) to be used as asset “containers” have their own metadata attributes as defined with each resource.  Furthermore, shared metadata elements in FHIR Resources are described [https://www.hl7.org/fhir/resource.html](https://www.hl7.org/fhir/resource.html) and more detailed information about FHIR Metadata may be found ([FHIR Metadata Types](documentation-approach-cds-implementation-evidence.html#ref-hl7-metadatatypes)), or here ([HL7 product brief](documentation-approach-cds-implementation-evidence.html#ref-hl7-product-391)).  The section on [Metadata](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html#metadata) of the Clinical Reasoning Module on Knowledge Artifact Representation provides a description of how metadata is routinely addressed in FHIR Knowledge Artifact Representations.
 
 Metadata may be semantic, using coded concepts in terminologies and ontologies in order to facilitate numerous functions across the knowledge engineering lifecycle and within a knowledge content management system.  Similarly values for metadata may be references to other knowledge assets and or their attributes (including their metadata).
 
-To ensure integrity across all knowledge assets in a knowledge content management system, an asset’s definition (metamodel) often references a common, shared asset metadata meta-model (definition of the metadata that may or must be used across all assets in a common knowledge base).  Additional information about and approaches to metadata are described by the Mobilizing Computable Biomedical Knowledge (MCBK) ([ref](https://precisionmedicine.duke.edu/sites/precisionmedicine.duke.edu/files/field/attachments/GPMF_Richesson.09.27.2018.pdf), [ref](https://deepblue.lib.umich.edu/handle/2027.42/140743)) and OMG (ref)
+To ensure integrity across all knowledge assets in a knowledge content management system, an asset’s definition (metamodel) often references a common, shared asset metadata meta-model (definition of the metadata that may or must be used across all assets in a common knowledge base).  Additional information about and approaches to metadata are described by the Mobilizing Computable Biomedical Knowledge (MCBK) ([Richesson, 2018](documentation-approach-cds-implementation-evidence.html#ref-richesson-2018), [MCBK](documentation-approach-cds-implementation-evidence.html#ref-mcbk-deepblue)) and OMG (ref)
+
+<div class="new-content" markdown="1">
+
+Where supported, use the canonical `url`, business `version`, and artifact type to identify the knowledge artifact. A resource's `id`, server location, and `meta.versionId` identify a server record and its revision history. Track the identity of the guideline package separately from the versions of artifacts it contains or references.
+
+Publication status supports review and discovery; local enablement and authorization are separate decisions. For a patient result, retain the relevant source inputs, effective time, and expression or artifact version so that reviewers can explain how it was produced.
+
+</div>
+
 
 ### Expressions (and/or Languages)
 
@@ -47,6 +56,13 @@ An expression is a computable language for creating a computer-interpretable rep
 ### Declarations
 
 A declaration is an expression of the structural elements of computable logic (e.g. values for attributes and parameters of a knowledge asset) that does not describe how to compute the logic, rather what the logic is.  Declarations express the logic of a computation without describing its control flow (ref).  These declarations may then reference and/or be referenced by expressions as described above.  The PlanDefinition Resource is a declarative knowledge asset definition in HL-7 FHIR whose meta-model affords the means to reference and or be referenced by CQL or other expression languages.  A specific PlanDefinition is a declarative knowledge asset.
+
+<div class="new-content" markdown="1">
+
+An expression can supply patient-dependent values while the definition establishes how the values are used.
+
+</div>
+
 
 ### Composite Assets
 
@@ -68,6 +84,13 @@ Figure 1. Derived Assets from a Pathway
 
 </details>
 
+<div class="new-content" markdown="1">
+
+Reuse keeps shared criteria traceable to the same reviewed interpretation and reduces the need to interpret guideline prose separately for each output. For example, the [CHF Body Weight Change metric](Measure-chf-bodyweight-change-measure.html) uses an expression from the CHF Library to define a patient indicator. Reuse data and logic where their meaning fits, and record the derived output's scope, time window, treatment of missing data, and how to interpret the result.
+
+</div>
+
+
 ### Translation Within and Between Knowledge Representations
 
 Some knowledge assets may be represented using multiple alternative formalisms (expressions and declarations), yet express the same meaning and intent resulting in identical behavior when reasoning over identical inputs (data elements).  This equivalence in computational intent and behavior is known as isopragmatism.  This affords the ability to transform (and/or translate) between different formalisms of the same knowledge content.  Isopragmatic transformations between such knowledge representations is the knowledge equivalent of iso-semantic transformations between different combinations of information model + terminologies.  Reasons to use alternative, isopragmatic representations of knowledge assets include ease-of-use of tooling (e.g. one representation has more capable authoring and/or validation tools) as well as the capabilities that exist within alternative delivery mechanisms and/or implementation environments.  For more on isopragmatic knowledge representations see [Mapping and Other Formalisms](documentation-methodology.html).
@@ -83,3 +106,10 @@ Figure 2. Isopragmatic Representations of the Same Asset
 <img src="CPG-06.02-01.png" alt="Derived knowledge assets" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+<div class="new-content" markdown="1">
+
+Make an expression's inputs, model, and dependencies explicit. [Libraries](libraries.html) describes the supported representations. External functions or other languages require support from the target runtime.
+
+</div>
+

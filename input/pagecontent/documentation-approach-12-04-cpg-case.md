@@ -17,6 +17,13 @@ In this section, the implementation guide covers:
 
 The data that expresses a Case consists of patient descriptors including: clinical presentation and progression, physical exam findings, diagnostic evaluations, physiological and pathophysiological assessments, past and current diagnoses, exposures, genetic markers and family history, risk and severity scores, response to treatment, and end and intermediate outcomes.  The Case, through its Case Features, is the comprehensive, detailed, and contextually relevant information about the patient with respect to a the full scope of the guideline and its recommendations using clinically meaningful descriptions of individual patient’s current and historical state of health, disease, treatment, and risks.
 
+<div class="new-content" markdown="1">
+
+The formal [CPGCase](StructureDefinition-cpg-case.html) profile has a narrower role than the Case concept: it represents the patient's [enrollment](documentation-approach-12-03-cpg-plan.html#pathway-enrollment) as an EpisodeOfCare. Patient data remain in the resources that express the recorded facts, clinical assessments, and inferences. In the CHF example, the case includes a condition, an encounter, and observations.
+
+</div>
+
+
 Examples of types of Case Features from the healthcare domain perspective:
 
 
@@ -69,9 +76,23 @@ Almost all primitive key features come from a subset of the FHIR Resources and f
 
 Case features in the CPG-IG are formalized and concretized as Case Features that reference and/or profile numerous FHIR Resources from the healthcare process domain (e.g., [Clinical](http://hl7.org/fhir/clinicalsummary-module.html), [Diagnostics](http://hl7.org/fhir/diagnostics-module.html), [Medications](http://hl7.org/fhir/medications-module.html)). The Case Feature definitions and expressions are often scoped to the overall [Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) and organized as their own, specialized library as they are some of the most reused components across various CPG assets and their expressions.  However, as many Case Features may be used across multiple CPG’s, these expressions and/or the assets containing them may be resolved by reference to a common, shared, and well-controlled library of components (e.g., a knowledge base or “registry” of features).
 
+<div class="new-content" markdown="1">
+
+[CPGCaseFeatureDefinition](StructureDefinition-cpg-casefeaturedefinition.html) profiles StructureDefinition to specify how to represent a feature. In the CHF example, the [CHF body weight profile](StructureDefinition-chf-bodyweight.html) defines the representation; a patient Observation supplies a value, units, and time.
+
+</div>
+
+
 #### Case Features from Clinician Assessments
 
 Many case features may require clinical judgment and/or assessment (including impression) and therefore require real-time extraction or interaction with the clinician user.  Such case features often necessitate clinician prompting and/or documentation requirements to resolve and thus may be modeled as their own ECA Rules (as part of the triggering, decision, or orchestration logic within individual [Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation), [Strategies](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy), and/or the Pathway) or as adaptive forms (see [Adaptive Questionnaire](http://hl7.org/fhir/uv/sdc/adaptive.html)) scoped to the guideline element where they are used.  Scoping of such required information must be done carefully as to consider all guideline triggering, decision, and orchestration logic that may depend on such information.
+
+<div class="new-content" markdown="1">
+
+Present the relevant facts and inferences, then capture the clinician's assessment with its own author, time, and supporting information in an appropriate resource such as [CPGClinicalImpression](StructureDefinition-cpg-clinicalimpression.html). Scope the prompt or form to the recommendation, strategy, or pathway that uses the assessment. Identify other guidance that depends on the feature and what happens when the assessment is unavailable. See [Interactive Clinical Decision Support](interactive-cds.html).
+
+</div>
+
 
 ##### Separation of Form Logic from Patient Descriptive Logic and Clinical Decision Logic
 
@@ -80,6 +101,15 @@ The knowledge engineer must be careful not to conflate descriptive or evaluation
 #### Derived or Inferred Case Features
 
 Many case features must be derived or inferred computationally from other data elements (i.e., case features) such as medical calculations (e.g., BMI, eGFR, Anion Gap, hours since intervention, post-op hemoglobin drop), risk and severity scores (MELD Score, Seattle Heart Failure Model, CHA2DS2-VASc score), and case features requiring contextualization (e.g., pre-op hemoglobin, discharge weight, admission oxygen saturation, most recent blood pressure).  In the CPG implementation guide, these are referred to as derived or inferred Case Features and their definitions and inferencing logic expressions are typically contained within the same library as the rest of the Case Features scoped to the specific CPG (i.e., guideline).  Of note, there is often a “chaining” of inference where many derived case features (inferred Case Features) are actually dependent on other derived or inferred Case Features.   For the knowledge engineer as well as for resolvability (i.e., computability), it is important to have a means to denote, retain, and trace these dependencies- ideally in both the expressions as well as in the data provenance.
+
+<div class="new-content" markdown="1">
+
+The [CHF body weight change feature](StructureDefinition-chf-bodyweight-change.html) shows how a calculation can become a reusable description of patient state. Feature definitions can use the `inferenceExpression`, `assertionExpression`, and `featureExpression` extensions for their respective roles. Trace the selected measurements, time context, expression version, and any other inferred features the calculation depends on. If an inference is stored in an Observation, retain its computational origin.
+
+{% include cpg-diagram.html src="cpg-model-case-features.svg" ratio="1000 / 355" alt="Recorded patient facts feed descriptive logic, producing a derived patient feature that can support a recommendation." %}
+
+</div>
+
 
 Some case features are descriptions of physiological and/or pathophysiological states of the patient that may need to be inferred from primitive case features such as the various events described above and/or may require further clinician assessment depending on which data elements are available on a given patient.  For instance, there may be a number of case features (i.e., events including clinical impressions) that are required to assess a key physiological and/or clinicopathological process and other forms of clinician assessment respective to guideline recommendations. An example of this is volume status, perfusion status, and hemodynamic status for various guideline recommendations for inpatient chronic congestive heart failure shown in the figure below.
 
@@ -110,10 +140,17 @@ Several questions the knowledge engineer may ask themselves are: “describe som
 
 For numerous reasons, sets or groups of case features often need to be considered together, including to present the dependencies (i.e., set of case features) of derived case features or to denote case features that are relevant or pertinent to a given recommendation or decision (i.e., supporting information).  Case Feature Groups are defined using the FHIR GraphDefinition Resource and realized as a FHIR Composition Resource.  Furthermore, a case feature group may have a particular semantic relevance within the guideline such as a case feature or recommendation and may use the ?scoping_relationship of the Case Feature Group profile to denote so.
 
+<div class="new-content" markdown="1">
+
+Group related features for a purpose, such as showing the inputs to a calculation or explaining why a recommendation applies. A [CPGCaseSummaryDefinition](StructureDefinition-cpg-casesummarydefinition.html) uses GraphDefinition to describe relevant relationships; a [CPGCaseSummary](StructureDefinition-cpg-casesummary.html) uses Composition to present a patient-specific selection. Distinguish relationships such as "derived from," "supports this proposal," and "fulfills this request." A shared code alone cannot establish any of these relationships.
+
+</div>
+
+
 ### Case Feature Relationships
 
 Many case features have special meaning when taken in the context of other case features and/or other CPG semantics (e.g., recommendations).  This contextual meaning may be conveyed through a semantic relationship between the case feature and its contextualizing semantic (i.e., another case feature(s) or recommendation(s)).  The Case Feature profile addresses this through an attribute that includes both the reference to the other semantic(s) and the explicit nature of the relationship (i.e., coded value).  As described above, certain case features have particular relevance in the context of some medical decision-making process or recommendation that is known in the healthcare domain as pertinence.  In the CPG-IG, pertinence is an additional optional qualifier on a given Case Feature Relationship.  Pertinence may be positive or negative, strong or weak, and/or pathognomonic.  Furthermore, pertinence may be static or inferred through an expression.
 
 ### Case Summary
 
-A summary of all the case features can provide a collection of all the clinically meaningful data elements, both primitive and inferred, pertaining to the full scope of a given CPG.  The CPGCaseSummary affords this collection and is a specialization of a Case Feature Group. It may be composed by referencing one or more Case Feature Groups and one or more Case Features.
+A summary of all the case features can provide a collection of all the clinically meaningful data elements, both primitive and inferred, pertaining to the full scope of a given CPG.  The Case Summary affords this collection and is a specialization of a Case Feature Group. It may be composed by referencing one or more Case Feature Groups and one or more Case Features.

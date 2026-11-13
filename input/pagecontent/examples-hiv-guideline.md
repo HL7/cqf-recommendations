@@ -1,79 +1,53 @@
-[Revised Recommendations for HIV Testing of Adults, Adolescents, and Pregnant Women in Health-Care Settings](https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5514a1.htm)
+This historical example illustrates how screening recommendations can be decomposed into data requirements, decisions, and follow-up activities. Its source material is the CDC's **2006** testing recommendations and the USPSTF's **2019** screening recommendation. It is not a maintained clinical screening protocol; select and review the intended clinical source and version before implementation.
 
-Recommends screening all individuals **13-65**, including all pregnant women presenting from initial diagnosis through those presenting in labor. Recommends more frequent screening for individuals at high risk.
+| Source | Role in the original example |
+| --- | --- |
+| [CDC: Revised Recommendations for HIV Testing of Adults, Adolescents, and Pregnant Women in Health-Care Settings (2006)](https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5514a1.htm) | Routine testing, risk-related repeat testing, pregnancy, and the testing interaction |
+| [USPSTF: HIV Infection Screening (2019)](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/human-immunodeficiency-virus-hiv-infection-screening) | Screening populations and evidence supporting the recommendation |
+| [USPSTF recommendation statement in JAMA (2019)](documentation-approach-cds-implementation-evidence.html#ref-uspstf-2019) | Published recommendation and its supporting rationale |
+{:.grid}
 
-[Supplemental Content USPTF June 2019 HIV Screening](https://www.uspreventiveservicestaskforce.org/Page/Document/UpdateSummaryFinal/human-immunodeficiency-virus-hiv-infection-screening1)
-[Screening for HIV Infection - US Preventive Services Task Force Recommendation Statement](https://jamanetwork.com/journals/jama/fullarticle/2735345)
-
-Recommends screening all individuals **15-65**, including all pregnant women presenting from initial diagnosis through those presenting in labor. Recommends screening for younger or older individuals who are determined to be at high risk. Recommends more frequent screening for individuals at high risk.
+The sources have different population and implementation details. Keep them identifiable rather than blending their criteria into an unattributed rule. This page explains the modeling work; the linked publications supply the clinical details.
 
 ### Factors Conferring "High Risk" Category Membership
 
-* Male-to-male sexual contact
-* IV drug use
-* Heterosexual or other contact with:
-    * Anal intercourse without condom
-		* Vaginal intercourse without a condom and with more than 1 partner whose HIV status is unknown
-		* Individuals who exchange sex for drugs or money
-		* Having STI
-		* Partner with STI
-		* Partner with HIV
-		* Partner in other high-risk category above
-* People requesting STI testing
-* Patients with TB
+Represent the risk factors relevant to the selected recommendation as explicit case features, with their source definitions and time context. The original example considered exposure history, injection drug use, sexual exposure, sexually transmitted infections, and related clinical history. Review sensitive data collection and availability with the clinical team. Missing documentation is not evidence that a risk factor is absent.
 
-### Indication for immediate screening:
+### Indication for immediate screening
 
-* Healthcare exposure to blood or other infectious bodily fluid
-* Request for pre-exposure screening prior to new partner
+Keep an exposure-related assessment distinct from routine screening and repeat-screening logic. Identify the source recommendation, trigger, required patient information, and action for each scenario. If the source does not resolve a decision, record the ambiguity for clinical review.
 
-### Screening in pregnancy:
+### Screening in pregnancy
 
-[Screening for HIV Infection in Pregnant Women](https://jamanetwork.com/journals/jama/fullarticle/2735344?appid=scweb)
+Pregnancy, the point in prenatal care or labor, prior testing, and relevant risk information can change the decision context. Model those inputs explicitly and keep source-specific conditions visible. Use [interactive CDS](interactive-cds.html) when information needed for a recommendation is missing or needs confirmation.
 
-* All women should be screened for HIV as part of early or initial prenatal screening
-* Women in high risk category or in area with high prevalence of HIV should be rescreened in the third trimester
+#### Consent
 
-#### Consent:
-*	Patient will be notified that testing is being ordered either in person verbally or in writing
-*	Patient may opt out of testing at this time—if patient opts out this should be documented
-*	Patient does not require counseling to be tested
-*	Educational material should be offered to patient in appropriate health literacy level, modality and language
+Model the information offered to the patient, the applicable consent or opt-out workflow, and documentation of the patient's decision. A screening proposal, a declined offer, and a completed test are distinct records. Language, literacy, and the available communication channel affect the local interaction.
 
-#### Testing:
+#### Testing
 
-Pregnant women in labor, recommend Rapid HIV test—otherwise routine HIV testing
-*	Rapid testing: Rapid HIV test IF POSITIVE then:
-    * also order HIV-1 and HIV-2 with HIV-1 p24 antigen IF POSITIVE then use routine testing pathway
-* IF NEGATIVE:
-* OR
-*	Routine testing: HIV-1 and HIV-2 antibodies with HIV-1 p24 antigen with reflex (automatic) supplemental testing if positive
-* IF NEGATIVE: STOP
-* AND: If supplemental testing indeterminate:
-*	HIV-1 RNA
+Represent the requested test separately from its result and any supplemental testing. A reactive screening result, a confirmed result, an indeterminate result, and unavailable data have different meanings. Use the selected source's diagnostic sequence and locally available testing workflow; do not infer the next action from a generic positive/negative flag alone.
 
-* After all NEGATIVE testing:
-    *	Routine safe sex counseling
+### Rescreening
 
-* After all POSITIVE testing:
-    * Optimally there would be an HIV treatment CDS pathway triggered
-    * At a minimum:
-        * Counseling
-        * Referral for HIV specialty treatment
-        * HIV viral load test
+Repeat-screening logic needs prior test dates, relevant results, the current clinical context, and the interval specified by the chosen recommendation. Include boundary dates and unavailable prior results in the test cases. A recurring recommendation also needs duplicate-proposal and existing-order handling.
 
-### Rescreening:
-*	All individuals should have at least one lifetime HIV test
-*	Individuals at high risk should be screened at LEAST annually:
-    *	Selected individuals at highest risk should be screened more frequently up to every 3-6 months
-    *	Individuals seeking STI testing should be screened at every visit
+<a id="exceptions-to-screening-2006-guideline-only"></a>
+### Exceptions to screening
 
-### Exceptions to screening* (2006 guideline only):
-*	If prevalence in practice is <0.1%, routine screening can be omitted in patients who do not have any high risk factors and who are not pregnant
+The original example included a population-prevalence exception attributed specifically to the 2006 CDC source. Any retained exception belongs to that source and version. Review its applicability separately when selecting content for implementation.
 
 ### HIV Screening Protocol
 
-<div>
-  <img src="hiv-screening-protocol.png" alt="HIV Screening Protocol"/>
-</div>
+{% include cpg-diagram.html src="cpg-runtime-screening-example.svg" alt="For the historical screening example, select the recommendation version, establish eligibility and context, offer and authorize testing, interpret results using the selected source, and arrange follow-up." caption="Figure 1. Information and action boundaries to represent in the historical screening example. This is a modeling overview, not a diagnostic algorithm." %}
 
+| Work product | Questions for review |
+| --- | --- |
+| Case features | Are population, risk, pregnancy, prior testing, and current results represented with clear meaning and time context? |
+| Applicability logic | Are inclusion criteria, exceptions, missing data, and intervals explicit and source-linked? |
+| Activity definitions | Are the offered test, authorized request, result interpretation, counseling, and referral represented as distinct activities? |
+| Test scenarios | Do cases cover source-specific boundaries, declined testing, uncertain results, repeat testing, and existing requests? |
+{:.grid}
+
+Continue to [methodology](methodology.html) for the translation steps and [activity examples](examples-activities.html) for the definition/request/event pattern. Use the supplied artifacts to study representation, then review and validate the selected clinical content for local use.

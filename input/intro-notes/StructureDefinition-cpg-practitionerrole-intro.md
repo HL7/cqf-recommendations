@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGPractitionerRole connects an actual practitioner with a role used in guideline-supported care. Use it when a care-team member, encounter participant, assessor, or author needs that role context. It differs from CPGPractitionerRoleDefinition, which describes a reusable role without an assigned person or operational organization.

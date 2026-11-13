@@ -1,8 +1,14 @@
+// The example Bundle embeds these definitions before Publisher applies the guide
+// version to their standalone copies. Keep both copies on the ballot version.
+RuleSet: AdministerMedicationExampleVersion
+* version = "3.0.0-ballot"
+
 Instance: administermedication-library
 InstanceOf: Library
 Usage: #example
 * title = "Administer Medication Library"
 * insert ExampleLibraryMetadata(administermedication-library)
+* insert AdministerMedicationExampleVersion
 * insert RelatedFHIRLibraries
 * description = "Logic for an example recommendation to administer a medication"
 * name = "AdministerMedicationLibrary"

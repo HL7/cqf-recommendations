@@ -1,0 +1,6 @@
+{
+  "title": "From a recommendation to a reviewed package",
+  "description": "Five connected stages produce a scoped source recommendation, an explicit clinical specification, FHIR and CQL artifacts, validation findings, and a versioned package. Validation findings can send work back to Select, Represent, or Translate.",
+  "svgSource": "svg/cpg-method-recipe.svg",
+  "originals": []
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title description">
+<title id="title">Different questions need different validation evidence</title><desc id="description">Clinical fidelity, structural conformance, logic behavior, and local integration generate separate findings. Combined reporting is not a certificate of safety or clinical effectiveness.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="25.0" y="35.0" font-size="24.2" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="25.0" dy="0">Different questions need different validation evidence</tspan></text>
+<polyline points="132.5,285 132.5,340 500,340 500.0,395" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="377.5,285 377.5,340 500,340 500.0,395" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="622.5,285 622.5,340 500,340 500.0,395" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="867.5,285 867.5,340 500,340 500.0,395" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="25" y="110" width="215" height="175" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="132.5" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="132.5" dy="0">Clinical fidelity</tspan></text>
+<text x="132.5" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="132.5" dy="0">Source meaning,</tspan><tspan x="132.5" dy="21.33">exceptions and</tspan><tspan x="132.5" dy="21.33">approved cases</tspan></text>
+<rect x="270" y="110" width="215" height="175" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="377.5" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="377.5" dy="0">Conformance</tspan></text>
+<text x="377.5" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="377.5" dy="0">Profiles, references,</tspan><tspan x="377.5" dy="21.33">terminology and</tspan><tspan x="377.5" dy="21.33">dependencies</tspan></text>
+<rect x="515" y="110" width="215" height="175" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="622.5" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="622.5" dy="0">Logic behavior</tspan></text>
+<text x="622.5" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="622.5" dy="0">Positive, negative,</tspan><tspan x="622.5" dy="21.33">temporal and missing-</tspan><tspan x="622.5" dy="21.33">data tests</tspan></text>
+<rect x="760" y="110" width="215" height="175" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="867.5" y="138" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="867.5" dy="0">Local integration</tspan></text>
+<text x="867.5" y="171.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="867.5" dy="0">Data, access, timing,</tspan><tspan x="867.5" dy="21.33">rendering and actions</tspan></text>
+<rect x="100" y="395" width="800" height="125" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="500.0" y="423" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Separate findings and remaining limits</tspan></text>
+<text x="500.0" y="456.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Retain expected/actual results, reviewers, versions, defects, and scope. Passing one track</tspan><tspan x="500.0" dy="21.33">does not prove another.</tspan></text>
+<text x="28" y="570" font-size="16" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="28" dy="0">Continue with monitoring and outcome evaluation after release; assess unintended effects.</tspan></text>
+<text x="28" y="610" font-size="16" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="28" dy="0">Legend: blue = clinical review; green = technical checks; amber = local use; purple = evidence record.</tspan></text>
+</g></svg>

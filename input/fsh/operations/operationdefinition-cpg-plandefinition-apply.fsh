@@ -27,6 +27,13 @@ child actions are included in the result. The `selectionBehavior` of the action 
 select among the included actions. When the result is returned as a RequestGroup, the corresponding RequestGroup
 action carries the same `cqf-applicabilityBehavior` value.
 
+An action may also carry the [cpg-preferenceBehavior](StructureDefinition-cpg-preferenceBehavior.html)
+extension, which conveys how the guideline regards the action once it is included (preferred, recommended,
+neutral, or not recommended). Preference does not affect which actions are included: applicability is
+determined only by the action conditions of kind `applicability`. When the result is returned as a
+RequestGroup, the operation SHOULD copy the `cpg-preferenceBehavior` value from each PlanDefinition action to
+the corresponding RequestGroup action. A `dynamicValue` may compute or override the value at runtime.
+
 For each applicable action, the definition is applied as described in the `$apply`
 operation of the ActivityDefinition resource, and the resulting resource is
 added as an entry in the Bundle. The resulting Bundle may be any combination of

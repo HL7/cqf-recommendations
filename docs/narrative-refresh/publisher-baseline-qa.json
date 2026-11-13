@@ -1,0 +1,19 @@
+{
+  "url" : "http://hl7.org/fhir/uv/cpg/ImplementationGuide/hl7.fhir.uv.cpg",
+  "name" : "CPG",
+  "title" : "Clinical Practice Guidelines",
+  "description" : "Implementation guidance for creating Clinical Practice Guidelines with formal artifacts to facilitate sharing and implementation of the guideline",
+  "status" : "active",
+  "package-id" : "hl7.fhir.uv.cpg",
+  "ig-ver" : "2.0.0",
+  "date" : "Wed, 28 Oct, 2026 09:49:13 -0400",
+  "dateISO8601" : "2026-10-28T09:49:13-04:00",
+  "errs" : 49,
+  "warnings" : 137,
+  "hints" : 14,
+  "suppressed-hints" : 378,
+  "suppressed-warnings" : 2,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 2605371392
+}

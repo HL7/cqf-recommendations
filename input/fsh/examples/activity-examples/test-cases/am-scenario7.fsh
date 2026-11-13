@@ -1,7 +1,9 @@
 Instance: am-scenario7
 InstanceOf: CPGMedicationAdministration
 Usage: #example
-Description: "Example test case - Administer Medication - Scenario 2 - MedicationAdministration"
+Description: "Example test case - Administer Medication - Scenario 7 - MedicationAdministration"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Administration of the fentanyl 25 microgram/hour prolonged-release patch was recorded as not done for the example patient.</p></div>"
 * status = #not-done
 * medicationCodeableConcept = $sct#769510009 "Product containing precisely fentanyl 25 microgram/1 hour prolonged-release transdermal patch (clinical drug)"
 * subject = Reference(am-scenario7-patient)

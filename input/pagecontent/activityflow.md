@@ -1,30 +1,65 @@
-### General Activity Flow
+<div class="new-content" markdown="1">
 
-Building on the [Workflow](https://hl7.org/fhir/R4/workflow.html) module in FHIR, this topic describes in detail how each type of activity in a computable Clinical Guideline transitions through the overall phases of the activity lifecycle, as depicted in the following diagram:
+### Purpose and Rationale {#purpose-and-rationale}
 
-<div>
-  <img src="unified-activity-flow.png" alt="Unified State Diagram for Activity Workflow" height="400" width="700"/>
+A guideline recommendation does not become care at the moment a reasoning engine evaluates it. A clinician considers it for a particular patient, may accept or reject it, and may adapt its details, and someone with the necessary authority authorizes it before anything is done. The Activity Flow makes each of those steps explicit, so that what was recommended can be traced to what was decided and to what was done, and so that decision support can act at each step.
+
+Activities move through five phases, each answering a different question: Definition, Proposal, Plan, Order, and Event (see [Phases, intent, and status](#phases)). The Definition phase belongs to the [Plan](documentation-approach-12-03-cpg-plan.html) concern. The patient-specific phases are the proposals, requests, and events of the [Care Plan](documentation-approach-12-05-cpg-careplan.html), and from the Plan phase onward they are also part of the [Case](documentation-approach-12-04-cpg-case.html).
+
+Note that the Plan phase (a request with an intent of `plan`) is not the Plan concern, which is the patient-independent logic of recommendations, strategies, and pathways.
+
+Each patient-specific phase is a separate, linked resource, not a state change on a single resource. The `intent` element conveys the level of authorization, and the `status` element conveys the state within that phase (for example, `draft` when more information is needed and `active` when it is ready to act on). This preserves what was proposed even after it is accepted, changed, or rejected, and it is what makes [Metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics) possible: a compliance metric compares a proposal with the requests and events that followed it. With the appropriate authority, the plan and/or order phases can be skipped.
+
+#### Activity Flow and the EHR Order Lifecycle {#activity-flow-and-the-ehr-order-lifecycle}
+
+The Activity Flow runs in parallel to the order lifecycle in an EHR or other system of record; it is not part of that lifecycle. The Activity Flow governs activities in the clinical reasoning capability and the applications that consume it, while the EHR manages its own orders and events independently. These are separate state machines that interact at defined boundaries. Each system manages its own state and communicates it to the other:
+
+* EHR requests and events are available to clinical reasoning as [Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)
+* Actions in an application affect the EHR through [integration patterns](documentation-approach-10-mechanisms-of-integration.html) and user actions, not by directly changing EHR state. For example, a planned activity may become a draft order that the user signs, or derived results may be returned to the system of record for it to manage
+
+Because both flows use the same FHIR request and event patterns, the status vocabulary cannot tell them apart; ownership does. On the guideline side, the Order and Event phases record awareness and tracking of orders and events owned by the EHR, received as Case Features. They do not manipulate those records. Clinical teams also place orders and document care independently of guideline evaluation. Those records follow the EHR's own lifecycle and reach clinical reasoning as Case Features.
+
+The same clinical activity may therefore appear in both flows, in different states. A proposal may exist with no EHR order, a plan may coexist with a draft EHR order, and an active EHR order may exist with no proposal behind it. A proposal may also target an existing EHR order that the guideline did not originate.
+
+Changing an existing order follows the same logic. Hold, stop, and resume are activities in their own right ([CPGHoldTask](StructureDefinition-cpg-holdtask.html), [CPGStopTask](StructureDefinition-cpg-stoptask.html), and [CPGResumeTask](StructureDefinition-cpg-resumetask.html)). Each moves through its own proposal, plan, and order phases, so decision support and documentation can occur before the order changes, and the EHR order remains as it is until the change is executed. For example, a hold proposal may coexist with the active order until the hold is executed.
+
+#### What the Phases Do Not Convey
+
+A phase says where an activity is. It does not say what position the guideline takes on the activity, how strong the recommendation is, or whether anyone has chosen it. These are separate questions, carried separately. For example, an activity can be the preferred option among alternatives while the recommendation for it is conditional. The guideline's position on an option is carried by the [preference behavior](methodology-translate.html#preference-behavior) extension. Recommendation strength, direction, and rationale remain attributes of the guidance.
+
+The sections below give the valid state transitions, the capabilities that perform them, and the elements and values for each resource.
+
 </div>
 
-Down the left side of the diagram are the activity _phases_:
+### General Activity Flow
 
-* Definition: Activities are specified as definitions using one of the ActivityDefinition profiles
-* Proposal: Definitions are _applied_ to produce a proposal, or a suggestion or recommendation to perform (or not perform) a particular activity
-* Plan: The proposal is accepted or rejected by the user, resulting in a plan to perform (or not perform) the activity
-* Order: The plan is authorized by an appropriately qualified user, resulting in an order to perform (or not perform) the activity
-* Event: The order is fulfilled through actually performing the activity (or indicating why the activity was not performed).
+Use this topic to connect a reusable activity definition to the requests and events produced for a patient. It follows the [FHIR R4 workflow patterns](https://hl7.org/fhir/R4/workflow.html), with concrete profiles supplied by this guide.
 
-The proposal, plan, and order phases are all represented using the request pattern ([Request State Machine](https://hl7.org/fhir/R4/request.html#statemachine)), while the event phase is represented using the event pattern ([Event Statement Machine](https://hl7.org/fhir/R4/event.html#statemachine)).
+{% include cpg-diagram.html src="cpg-runtime-activity.svg" alt="Cumulative rows distinguish Definition, Proposal, Plan, Order, and Event while retaining linked earlier records. Backward arrows identify source definitions, predecessor requests, and fulfillment references. Local authority and resource-specific statuses govern the workflow." caption="Figure 1. Phase rows retain the definition and earlier requests as new records appear. Proposal, plan, and order are request intents. An event can record ongoing care, completed care, or explicit non-performance. The implementation applies the states and transitions supported by the resource type." %}
 
-<!--
-Phase -> Definition -> Proposal -> Plan -> Order -> Event
+#### Phases, intent, and status {#phases}
 
-RequestStatus -> draft | active | on-hold | revoked | completed | entered-in-error | unknown
+Intent and status together give the phase and the state within it. The states listed under each phase are the guideline-side states an application typically distinguishes; on the guideline side, the Order rows record an order that is authorized, or awaiting authorization, in the system of record, tracked through Case Features.
 
-EventStatus -> preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown
--->
+| Phase | State | Intent | Status | Question it answers | Boundary to preserve |
+| --- | --- | --- | --- | --- | --- |
+| Definition | | (definitional) | (not applicable) | What could be done for patients like this under the guideline? A reusable specification of an activity, such as an ActivityDefinition or an order set | No patient-specific action has occurred |
+| Proposal | Pre-proposal | `proposal` | `draft` | What is being considered for this patient? Criteria may not yet be met, or more information is needed; may support "what-if" exploration | |
+| | Proposal | `proposal` | `active` | What is recommended for this patient now? Includes a suggestion not to perform an activity | Evaluation is separate from acceptance |
+| Plan | Planning | `plan` | `draft` | What has the clinician accepted and is still adjusting, such as dose, frequency, or timing? | |
+| | Planned | `plan` | `active` | What has the care team accepted and decided to do? All details are confirmed and the activity is ready to be ordered | Acceptance is separate from authorization to execute |
+| Order | Tasked to order | `order` | `draft` | What has been submitted for authorization? A draft order in the system of record, not yet placed | |
+| | Order | `order` | `active` | What has been authorized? The order is placed in the system of record and tracked as a Case Feature | Authorization is separate from fulfillment |
+| Event | | (event) | `preparation`, `in-progress`, `completed`, or `not-done`, as the resource supports | What was done, or not done, and why? | A recorded event is distinct from the request that led to it |
+{:.grid .modified-content}
 
-In general, decision support services will typically produce Request resources in proposal intent with a status of draft, indicating the proposal is in need of additional information, or active, indicating the proposal is a complete recommendation, ready to be accepted or rejected.
+The [CPG $apply operation](OperationDefinition-cpg-plandefinition-apply.html) returns transient proposed resources. A receiving application decides whether and how to persist and process them. It may omit intermediate phases when the acting person or system has the appropriate authority. An event can also be recorded without a prior request.
+
+A request's `intent`, its `status`, and the status of a fulfillment Task answer different questions. A draft proposal needs more information; an active proposal is ready for consideration. Where a RequestGroup governs the choice, its child requests use intent `option`. Rejected, revoked, not performed, and entered in error are distinct meanings.
+
+#### State transitions {#state-transitions}
+
+The proposal, plan, and order phases are all represented using the request pattern ([Request State Machine](https://hl7.org/fhir/R4/request.html#statemachine)), while the event phase is represented using the event pattern ([Event State Machine](https://hl7.org/fhir/R4/event.html#statemachine)). Individual resources refine these patterns with their own status vocabularies, described in the sections below.
 
 Valid state transitions for RequestStatus:
 
@@ -40,11 +75,11 @@ Only active proposals can be transitioned to plans. Transitioning a proposal to 
 
 Only active plans can be transitioned to orders. Transitioning a plan to an order is expected to produce a Request resource in order intent with a status of draft or active
 
-Only active orders can be transitioned to events. Transitioning an order to an event is expected to produce an Event resource with a status of prepration or in-progress
+Only active orders can be transitioned to events. Transitioning an order to an event is expected to produce an Event resource with a status of preparation or in-progress
 
 With the appropriate authority, the plan and/or order steps in this flow can be skipped (i.e. a proposal can transition directly to an order or an event)
 
-The draft status for requests can be used to indicate that the request is not yet complete enough to be moved to the next phase and that more information is needed to do so. This information (and the status change to active) can be provided with the Update operation.
+The draft status for requests can be used to indicate that the request is not yet complete enough to be moved to the next phase and that more information is needed to do so. This information (and the status change to active) can be provided with the [Update](activityflow-transitions.html#update) capability.
 
 Valid state transitions for EventStatus:
 
@@ -57,311 +92,76 @@ Valid state transitions for EventStatus:
 
 In addition, any state can be transitioned to entered-in-error
 
-Accounting for these general state transitions, the following sections detail a proposed set of capabilities for transitioning activities
-through the various phases of proposal, plan, order, and event. Each capability provides a snippet of pseudo-code that describes what
-changes are made to resource elements by that transition. These capabilities are described in terms of the Request and Event patterns,
-so this is only a pattern-level description of the capability. Following the description of each capability is a set of tables that describe exactly what elements and values need to be used in these capabilities to apply each transition to the concrete resources used to represent each type of activity.
-
 ### Activity Flow State Transition Capabilities
 
-#### Update
+[Activity Flow Transitions](activityflow-transitions.html) describes application behavior for requests and events. The page distinguishes preparation from commitment and explains how each transition depends on the resource and the actor's authority.
 
-Given a draft or active request, update the request. This includes transitioning a request from draft to active status.
-
-```
-requestApi.update(Request inputRequest)
-    check inputRequest.status in { draft | active }
-    engine.save(inputRequest)
-```
-
-Given a preparation or in-progress event, update the event
-
-```
-requestApi.update(Event inputEvent)
-    check inputEvent.status in { preparation | in-progress }
-    engine.save(inputEvent)
-```
-
-#### Suspend
-
-Given an active request, suspend the request, with or without a reason
-
-```
-requestApi.suspend(Request inputRequest, String reason)
-    check inputRequest.status = active
-    set inputRequest.status = on-hold
-    set inputRequest.statusReason = reason
-    engine.save(inputRequest)
-```
-
-Given an in-progress event, suspend the event, with or without a reason
-
-```
-requestApi.suspend(Event inputEvent, String Reason)
-    check inputEvent.status = in-progress
-    set inputEvent.status = on-hold
-    set inputEvent.statusReason = reason
-    engine.save(inputEvent)
-```
-
-#### Resume
-
-Given a suspended request, resume the request
-
-```
-requestApi.resume(Request inputRequest)
-    check inputRequest.status = on-hold
-    set inputRequest.status = active
-    set inputRequest.statusReason = null
-    engine.save(inputRequest)
-```
-
-Given a suspended event, resume the event
-
-```
-requestApi.resume(Event inputEvent)
-    check inputEvent.status = on-hold
-    set inputEvent.status = in-progress
-    set inputEvent.statusReason = null
-    engine.save(inputEvent)
-```
-
-#### Plan
-
-Given an active proposal, plan the proposal:
-
-```
-Request requestApi.preparePlan(Request inputProposal)
-    check inputProposal.intent = proposal
-    check inputProposal.status = active
-    var result = new Request(copy from inputProposal)
-    set result.id = null
-    set result.intent = plan
-    set result.status = draft
-    set result.basedOn = referenceTo(inputProposal)
-
-requestApi.initiatePlan(Request preparedPlan)
-    check preparedPlan.basedOn is not null
-    var basedOnProposal = engine.get(preparedPlan.basedOn)
-    check basedOnProposal.intent = proposal
-    check basedOnProposal.status = active
-    check preparedPlan.status in { draft | active }
-    check preparedPlan.intent = plan
-    engine.save(preparedPlan)
-```
-
-Note that this operation is performed in two steps in order to allow for application-level interation to occur. The _prepare_ step constructs a draft plan that can then be presented in an application, and the _initiate_ step then operates on that prepared draft plan to finalize the actual changes.
-
-Note also that this capability applies to both a proposal for an activity, as well as a proposal _not_ to perform. In the latter case, the creation of a request with plan intent means a plan to not perform the activity.
-
-#### Revoke
-
-Given an active request, revoke the request, with or without a reason. Revoking a request indicates that the request is no longer applicable, and is typically done by the actor that originated the request. This is different than rejecting a request, which is done with the Reject operation.
-
-```
-requestApi.revoke(Request inputRequest, String inputReason)
-    check inputRequest.status = active
-    set inputRequest.status = revoked
-    set inputRequest.statusReason = inputReason
-    engine.save(inputProposal)
-```
-
-#### Reject
-
-Given an active request, reject the request, with or without a reason
-
-```
-requestApi.reject(Request inputRequest, Task fulfillmentTask, String inputReason)
-    check inputRequest.status = active
-    check fulfillmentTask.status = requested
-    check fulfillmentTask.focus = inputRequest
-    check fulfillmentTask.code = fulfill
-    set fulfillmentTask.status = rejected
-    set fulfillmentTask.statusReason = inputReason
-    engine.save(fulfillmentTask)
-```
-
-#### Order
-
-Given an active proposal or plan, order the proposal
-
-```
-Request requestApi.prepareOrder(Request inputRequest)
-    check inputRequest.intent in { proposal | plan }
-    check inputRequest.status = active
-    var result = new Request(copy from inputRequest)
-    set result.id = null
-    set result.intent = order
-    set result.status = draft
-    set result.basedOn = referenceTo(inputRequest)
-
-requestApi.initiateOrder(Request preparedOrder)
-    check preparedOrder.basedOn is not null
-    var basedOn = engine.get(preparedOrder.basedOn)
-    check basedOn.intent in { proposal | plan }
-    check basedOn.status = active
-    check preparedOrder.status in { draft | active }
-    check preparedOrder.intent = order
-    set basedOn.status = completed
-    try
-        engine.save(preparedOrder)
-        engine.save(basedOn)
-    commit
-```
-
-Note that this operation is performed in two steps in order to allow for application-level interation to occur. The _prepare_ step constructs a draft order that can then be presented in an application, and the _initiate_ step then operates on that prepared draft order to finalize the actual changes.
-
-Note also that this capability applies to both an order for an activity, as well as an order _not_ to perform. In the latter case, the creation of a request with order intent means an order not to perform the activity.
-
-#### Entered In Error
-
-Given a request, mark the proposal entered-in-error, with or without a reason
-
-```
-requestApi.enteredInError(Request inputRequest, String reason)
-    set inputRequest.status = entered-in-error
-    set inputRequest.statusReason = reason
-    engine.save(inputRequest)
-```
-
-Given an event, mark the event entered-in-error, with or without a reason
-
-```
-requestApi.enteredInError(Event inputEvent, String reason)
-    set inputEvent.status = entered-in-error
-    set inputEvent.statusReason = reason
-    engine.save(inputEvent)
-```
-
-#### Perform
-
-Given an active proposal, plan, or order, perform the event
-
-```
-Event requestApi.preparePerform(Request inputRequest)
-    check inputRequest.intent in { proposal | plan | order }
-    check inputRequest.status = active
-    var result = new Event(copy from inputRequest)
-    result.status = preparation
-    result.basedOn = referenceTo(inputRequest)
-
-requestApi.initiatePerform(Event preparedEvent)
-    check preparedEvent.basedOn is not null
-    var basedOn = engine.get(preparedEvent.basedOn)
-    check basedOn.intent in { proposal | plan | order }
-    check basedOn.status = active
-    check preparedEvent.status in { preparation | in-progress }
-    set basedOn.status = completed // see completion note
-    try
-      engine.save(basedOn)
-      engine.save(preparedEvent)
-    commit
-```
-
-Note that this operation is performed in two steps in order to allow for application-level interation to occur. The _prepare_ step constructs a draft event that can then be presented in an application, and the _initiate_ step then operates on that prepared draft event to finalize the actual changes.
-
-Whether this capability should set the status of the request to complete depends on whether the activity overall is complete. For example, if the activity is a medication prescription, whether the request should be marked complete depends on whether the dispense/administration/documentation represents a completion of the activity. Dispensing the initial fill, when there are multiple refills ordered, does not complete the overall order, so the status should remain active until all actions related to the completion of the order are done.
-
-Note that in general, this capability is not used for requests not to perform an activity; in those cases there is typically no event resource, since the activity should not be performed.
-
-#### Start
-
-Given a preparation event, start the event
-
-```
-requestApi.start(Event inputEvent)
-    check inputEvent.status = preparation
-    set inputEvent.status = in-progress
-    engine.save(inputEvent)
-```
-
-#### Not Done
-
-Given a preparation event, mark the event not-done  (with or without a reason)
-
-```
-requestApi.notDone(Event inputEvent, String reason)
-    check inputEvent.status = preparation
-    set inputEvent.status = not-done
-    set inputEvent.statusReason = reason
-    engine.save(inputEvent)
-```
-
-#### Stop
-
-Given an in-progress event, stop the event, with or without a reason
-
-```
-requestApi.stop(Event inputEvent, String reason)
-    check inputEvent.status = in-progress
-    set inputEvent.status = stopped
-    set inputEvent.statusReason = reason
-    engine.save(inputEvent)
-```
-
-#### Complete
-
-Given an in-progress event, complete the event
-
-```
-requestApi.complete(Event inputEvent)
-    check inputEvent.status = in-progress
-    set inputEvent.status = completed
-    engine.save(inputEvent)
-```
+- <a id="update"></a>[Update](activityflow-transitions.html#update)
+- <a id="suspend"></a>[Suspend](activityflow-transitions.html#suspend)
+- <a id="resume"></a>[Resume](activityflow-transitions.html#resume)
+- <a id="plan"></a>[Plan](activityflow-transitions.html#plan)
+- <a id="revoke"></a>[Revoke](activityflow-transitions.html#revoke)
+- <a id="reject"></a>[Reject](activityflow-transitions.html#reject)
+- <a id="order"></a>[Order](activityflow-transitions.html#order)
+- <a id="entered-in-error"></a>[Entered In Error](activityflow-transitions.html#entered-in-error)
+- <a id="perform"></a>[Perform](activityflow-transitions.html#perform)
+- <a id="start"></a>[Start](activityflow-transitions.html#start)
+- <a id="not-done"></a>[Not Done](activityflow-transitions.html#not-done)
+- <a id="stop"></a>[Stop](activityflow-transitions.html#stop)
+- <a id="complete"></a>[Complete](activityflow-transitions.html#complete)
 
 ### Activity Lifecycle - Request Phases (Proposal, Plan, Order)
 
-The following table summarizes the request resource types and the `instantiates`, `basedOn`, and `status` elements and values for each activity as it moves through the activity flow.
+Use the activity-specific request profile. Definition links such as `instantiatesCanonical` identify the source knowledge; `basedOn` links a request to its predecessor where applicable. Some resources use extensions for these relationships. The profile definitions are the authority for the exact path.
 
-* The `instantiates` Element column is the name of the element in the resource type that provides the link from the proposal to the definition
-* The `basedOn` Element column is the name of the element in the resource type that provides the link from the plan to the proposal, and from the order to the plan
-* The `status` Element column is the name of the status element in the resource type
-* Each of the status value columns (Draft, Active, etc.) give the status values for each request resource (i.e. proposal, plan, order)
+| Activity | Request profile | Event or result profile |
+| --- | --- | --- |
+| Send a message | [CPGCommunicationRequest](StructureDefinition-cpg-communicationrequest.html) | [CPGCommunication](StructureDefinition-cpg-communication.html) |
+| Collect information | [CPGQuestionnaireTask](StructureDefinition-cpg-questionnairetask.html) | [CPGQuestionnaireResponse](StructureDefinition-cpg-questionnaireresponse.html) |
+| Order a medication | [CPGMedicationRequest](StructureDefinition-cpg-medicationrequest.html) | Dispense, administration, or medication statement as applicable |
+| Dispense a medication | [CPGDispenseMedicationTask](StructureDefinition-cpg-dispensemedicationtask.html) | [CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html) |
+| Administer a medication | [CPGAdministerMedicationTask](StructureDefinition-cpg-administermedicationtask.html) | [CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html) |
+| Document a medication | [CPGDocumentMedicationTask](StructureDefinition-cpg-documentmedicationtask.html) | [CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html) |
+| Recommend an immunization | [CPGImmunizationRequest](StructureDefinition-cpg-immunizationrequest.html), a MedicationRequest profile | [CPGImmunization](StructureDefinition-cpg-immunization.html) |
+| Order a service | [CPGServiceRequest](StructureDefinition-cpg-servicerequest.html) | [CPGProcedure](StructureDefinition-cpg-procedure.html) |
+| Enroll a patient | [CPGEnrollmentTask](StructureDefinition-cpg-enrollmenttask.html) | [CPGCase](StructureDefinition-cpg-case.html), an EpisodeOfCare profile |
+| Generate a report | [CPGGenerateReportTask](StructureDefinition-cpg-generatereporttask.html) | [CPGMetricReport](StructureDefinition-cpg-metricreport.html), a case or plan summary, or a resource conforming to the referenced Case Feature profile |
+| Propose a diagnosis | [CPGProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html) | [CPGCondition](StructureDefinition-cpg-condition.html) |
+| Record a detected issue | [CPGRecordDetectedIssueTask](StructureDefinition-cpg-recorddetectedissuetask.html) | [CPGDetectedIssue](StructureDefinition-cpg-detectedissue.html) |
+| Record an inference | [CPGRecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html) | [CPGObservation](StructureDefinition-cpg-observation.html) |
+| Report a flag | [CPGReportFlagTask](StructureDefinition-cpg-reportflagtask.html) | [CPGFlag](StructureDefinition-cpg-flag.html) |
+| Hold an activity | [CPGHoldTask](StructureDefinition-cpg-holdtask.html) | The owning system places the `focus` request or event on hold, for example a MedicationRequest with status `on-hold` |
+| Stop an activity | [CPGStopTask](StructureDefinition-cpg-stoptask.html) | The owning system stops the `focus` request or event, for example a MedicationRequest with status `stopped` |
+| Resume an activity | [CPGResumeTask](StructureDefinition-cpg-resumetask.html) | The owning system returns the `focus` request or event to its active or in-progress state |
+{:.grid .modified-content}
 
-|Activity|Resource Type|`instantiates` Element |`basedOn` Element |`status` Element |Draft |Active |On-hold |Revoked |Completed |Entered-in-error |
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
-|[Send Message](examples-activities.html#send-a-message)|[CPGCommunicationRequest](StructureDefinition-cpg-communicationrequest.html)|[instantiatesCanonical](StructureDefinition-cpg-communicationrequest-definitions.html#diff_CommunicationRequest.extension:instantiatesCanonical)|[basedOn](StructureDefinition-cpg-communicationrequest-definitions.html#CommunicationRequest.basedOn)|[status](StructureDefinition-cpg-communicationrequest-definitions.html#diff_CommunicationRequest.status)|draft|active|on-hold|revoked|completed|entered-in-error|
-|[Collect information](examples-activities.html#collect-information)|[CPGQuestionnaireTask](StructureDefinition-cpg-questionnairetask.html)|[instantiatesCanonical](StructureDefinition-cpg-questionnairetask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-questionnairetask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-questionnairetask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Order a medication](examples-activities.html#order-a-medication)|[CPGMedicationRequest](StructureDefinition-cpg-medicationrequest.html)|[instantiatesCanonical](StructureDefinition-cpg-medicationrequest-definitions.html#key_MedicationRequest.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-medicationrequest-definitions.html#MedicationRequest.basedOn)|[status](StructureDefinition-cpg-medicationrequest-definitions.html#key_MedicationRequest.status)|draft|active|on-hold|stopped|completed|entered-in-error|
-|[Dispense a medication](examples-activities.html#dispense-a-medication)|[CPGDispenseMedicationTask](StructureDefinition-cpg-dispensemedicationtask.html)|[instantiatesCanonical](StructureDefinition-cpg-dispensemedicationtask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-dispensemedicationtask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-dispensemedicationtask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Administer a medication](examples-activities.html#administer-a-medication)|[CPGAdministerMedicationTask](StructureDefinition-cpg-administermedicationtask.html)|[instantiatesCanonical](StructureDefinition-cpg-administermedicationtask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-administermedicationtask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-administermedicationtask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Document a medication](examples-activities.html#document-a-medication)|[CPGDocumentMedicationTask](StructureDefinition-cpg-documentmedicationtask.html)|[instantiatesCanonical](StructureDefinition-cpg-documentmedicationtask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-documentmedicationtask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-documentmedicationtask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Recommend an immunization](examples-activities.html#recommend-an-immunization)|[CPGImmunizationRequest](StructureDefinition-cpg-immunizationrequest.html)|[instantiatesCanonical](StructureDefinition-cpg-immunizationrequest-definitions.html#key_MedicationRequest.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-immunizationrequest-definitions.html#MedicationRequest.basedOn)|[status](StructureDefinition-cpg-immunizationrequest-definitions.html#key_MedicationRequest.status)|draft|active|on-hold|stopped|completed|entered-in-error|
-|[Order a service](examples-activities.html#order-a-service)|[CPGServiceRequest](StructureDefinition-cpg-servicerequest.html)|[instantiatesCanonical](StructureDefinition-cpg-servicerequest-definitions.html#key_ServiceRequest.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-servicerequest-definitions.html#ServiceRequest.basedOn)|[status](StructureDefinition-cpg-servicerequest-definitions.html#key_ServiceRequest.status)|draft|active|on-hold|revoked|completed|entered-in-error|
-|[Enroll a patient](examples-activities.html#enroll-a-patient)|[CPGEnrollmentTask](StructureDefinition-cpg-enrollmenttask.html)|[instantiatesCanonical](StructureDefinition-cpg-enrollmenttask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-enrollmenttask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-enrollmenttask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Generate a report](examples-activities.html#generate-a-report)|[CPGGenerateReportTask](StructureDefinition-cpg-generatereporttask.html)|[instantiatesCanonical](StructureDefinition-cpg-generatereporttask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-generatereporttask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-generatereporttask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Propose a diagnosis](examples-activities.html#propose-a-diagnosis)|[CPGProposeDiagnosisTask](StructureDefinition-cpg-proposediagnosistask.html)|[instantiatesCanonical](StructureDefinition-cpg-proposediagnosistask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-proposediagnosistask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-proposediagnosistask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Record a detected issue](examples-activities.html#record-a-detected-issue)|[CPGRecordDetectedIssueTask](StructureDefinition-cpg-recorddetectedissuetask.html)|[instantiatesCanonical](StructureDefinition-cpg-recorddetectedissuetask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-recorddetectedissuetask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-recorddetectedissuetask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Record an inference](examples-activities.html#record-an-inference)|[CPGRecordInferenceTask](StructureDefinition-cpg-recordinferencetask.html)|[instantiatesCanonical](StructureDefinition-cpg-recordinferencetask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-recordinferencetask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-recordinferencetask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
-|[Report a flag](examples-activities.html#report-a-flag)|[CPGReportFlagTask](StructureDefinition-cpg-reportflagtask.html)|[instantiatesCanonical](StructureDefinition-cpg-reportflagtask-definitions.html#key_Task.instantiatesCanonical)|[basedOn](StructureDefinition-cpg-reportflagtask-definitions.html#key_Task.basedOn)|[status](StructureDefinition-cpg-reportflagtask-definitions.html#key_Task.status)|draft|in-progress|on-hold|failed|completed|entered-in-error|
+Hold, stop, and resume tasks reference the existing request or event through `focus`. The task is the guideline-side activity and moves through its own proposal, plan, and order phases. The system that owns the focus record executes the change (see [Activity Flow and the EHR Order Lifecycle](#activity-flow-and-the-ehr-order-lifecycle) and the [hold, stop, and resume examples](examples-activities.html#stop-a-medication-order)).
+{:.new-content}
 
+CommunicationRequest and ServiceRequest use the request-status vocabulary. MedicationRequest has medication-specific states, including `cancelled` and `stopped`. Task has its own lifecycle, including `requested`, `accepted`, `rejected`, `in-progress`, `cancelled`, and `failed`. In particular, `failed` is not a universal synonym for a revoked request. Follow the [request pattern](https://hl7.org/fhir/R4/request.html#statemachine) and the selected resource's definitions.
 
 ### Activity Lifecycle - Event Phase
 
-The following table summarizes the event reosurce types for each activity type, and the `basedOn` and `status` elements and values for each activity as it moves through the activity flow.
+Events have resource-specific semantics. Use [FHIR event guidance](https://hl7.org/fhir/R4/event.html#statemachine) as an overview, then inspect the actual profile and status binding.
 
-* The `basedOn` Element column is the name of the element in the resource type that represents the link from the event resource back to the request that it is based on
-* The `status` Element column is the name of the status element in the resource type
-* Each of the status value columns (Preparation, In-progress, etc) give the value of the status element for that status
+| Event/resource | Relationship or status consideration |
+| --- | --- |
+| Communication, Procedure, Observation | `basedOn` can connect the event to the request. Observation status describes result availability and correction, not the progress of performing an intervention. |
+| MedicationDispense | `authorizingPrescription` references the medication request; dispensing and administration are different events. |
+| MedicationAdministration | `request` identifies the request being fulfilled. |
+| MedicationStatement | `basedOn` can connect the statement to a request; the statement reports medication use rather than proving an administration event. |
+| Immunization | The CPG profile provides the relevant request relationship; its status vocabulary is `completed`, `not-done`, or `entered-in-error`. |
+| QuestionnaireResponse | R4 codes are `in-progress`, `completed`, `amended`, `entered-in-error`, and `stopped`. There is no `cancelled`, `on-hold`, or `failed` code. |
+| EpisodeOfCare / CPGCase | Status describes the episode's lifecycle, including `planned`, `active`, `onhold`, and `finished`; it does not establish that an individual intervention occurred. |
+| MeasureReport / CPGMetricReport | Status is `complete`, `pending`, or `error`. |
+| Composition / case summaries and progress notes | Status is `preliminary`, `final`, `amended`, or `entered-in-error`. Use `summaryFor` to associate the summary with the applicable case, care plan, strategy, or supported request. |
+| Condition | Clinical and verification status describe the condition; neither is a generic event-progress status. |
+| DetectedIssue | Status concerns the issue's assessment/verification. Do not equate a preliminary result with an intervention waiting to start. |
+| Flag | `active` and `inactive` concern the flag's relevance, not whether an activity has started or stopped. |
+{:.grid}
 
-|Activity |Resource Type |`basedOn` Element |`status` element|Preparation|In-progress|Not-Done|On Hold|Stopped|Completed|Entered-in-error|
-|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
-|[Send Message](examples-activities.html#send-a-message)|[CPGCommunication](StructureDefinition-cpg-communication.html)|[basedOn](StructureDefinition-cpg-communication-definitions.html#key_Communication.basedOn)|[status](StructureDefinition-cpg-communication-definitions.html#key_Communication.status)|preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|
-|[Collect information](examples-activities.html#collect-information)|[CPGQuestionnaireResponse](StructureDefinition-cpg-questionnaireresponse.html)|[basedOn](StructureDefinition-cpg-questionnaireresponse-definitions.html#QuestionnaireResponse.basedOn)|[status](StructureDefinition-cpg-questionnaireresponse-definitions.html#QuestionnaireResponse.status)|<unknown>|in-progress|cancelled|on-hold|failed|completed|entered-in-error|
-|[Order a medication](examples-activities.html#order-a-medication)|See "Dispense a medication" \n"Administer a Medication" \n"Document a Medication"|-|-|-|-|-|-|-|-|-|
-|[Dispense a medication](examples-activities.html#dispense-a-medication)|[CPGMedicationDispense](StructureDefinition-cpg-medicationdispense.html)|[authorizingPrescription](StructureDefinition-cpg-medicationdispense-definitions.html#key_MedicationDispense.authorizingPrescription)|[status](StructureDefinition-cpg-medicationdispense-definitions.html#key_MedicationDispense.status)|preparation|in-progress|cancelled|on-hold|stopped|completed|entered-in-error|
-|[Administer a medication](examples-activities.html#administer-a-medication)|[CPGMedicationAdministration](StructureDefinition-cpg-medicationadministration.html)|[request](StructureDefinition-cpg-medicationadministration-definitions.html#key_MedicationAdministration.request)|[status](StructureDefinition-cpg-medicationadministration-definitions.html#key_MedicationAdministration.status)|<none>|in-progress|not-done|on-hold|stopped|completed|entered-in-error|
-|[Document a medication](examples-activities.html#document-a-medication)|[CPGMedicationStatement](StructureDefinition-cpg-medicationstatement.html)|[basedOn](StructureDefinition-cpg-medicationstatement-definitions.html#key_MedicationStatement.basedOn)|[status](StructureDefinition-cpg-medicationstatement-definitions.html#key_MedicationStatement.status)|intended|active|not-taken|on-hold|stopped|completed|entered-in-error|
-|[Recommend an immunization](examples-activities.html#recommend-an-immunization)|[CPGImmunization](StructureDefinition-cpg-immunization.html)|[](StructureDefinition-cpg-immunization-definitions.html#key_Immunization.extension:basedOn)|[status](StructureDefinition-cpg-immunization-definitions.html#key_Immunization.status)|<none>|<none>|not-done|<none>|<none>|completed|entered-in-error|
-|[Order a service](examples-activities.html#order-a-service)|[CPGProcedure](StructureDefinition-cpg-procedure.html)|[basedOn](StructureDefinition-cpg-procedure-definitions.html#key_Procedure.basedOn)|[status](StructureDefinition-cpg-procedure-definitions.html#key_Procedure.status)|preparation|in-progress|not-done|on-hold|stopped|completed|entered-in-error|
-|[Enroll a patient](examples-activities.html#enroll-a-patient)|[CPGCase](StructureDefinition-cpg-case.html)|<none>|[status](StructureDefinition-cpg-case-definitions.html#key_EpisodeOfCare.status)|planned|active|cancelled|onhold|<unknown>|finished|entered-in-error|
-|[Generate a report](examples-activities.html#generate-a-report)|[CPGMetricReport](StructureDefinition-cpg-metricreport.html)|<none>|[status](StructureDefinition-cpg-metricreport-definitions.html#key_MeasureReport.status)|<none>|pending|<none>|<none>|<none>|complete|error|
-|^|[CPGCaseSummary](StructureDefinition-cpg-casesummary.html)|[summaryFor](StructureDefinition-cpg-casesummary-definitions.html#key_Composition.extension:summaryFor)|[status](StructureDefinition-cpg-casesummary-definitions.html#key_Composition.status)|<none>|pending|<none>|<none>|<none>|complete|error|
-|^|[CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html)|[summaryFor](StructureDefinition-cpg-caseplansummary-definitions.html#key_Composition.extension:summaryFor)|[status](StructureDefinition-cpg-caseplansummary-definitions.html#key_Composition.status)|<none>|pending|<none>|<none>|<none>|complete|error|
-|^|[CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html)|[summaryFor](StructureDefinition-cpg-caseplanprogressingnote-definitions.html#key_Composition.extension:summaryFor)|[status](StructureDefinition-cpg-caseplanprogressingnote-definitions.html#key_Composition.status)|<none>|pending|<none>|<none>|<none>|complete|error|
-|[Propose a diagnosis](examples-activities.html#propose-a-diagnosis)|[CPGCondition](StructureDefinition-cpg-condition.html)|<none>|clinicalStatus and verificationStatus are present but neither map to event status|-|-|-|-|-|-|-|
-|[Record a detected issue](examples-activities.html#record-a-detected-issue)|[CPGDetectedIssue](StructureDefinition-cpg-detectedissue.html)|<none>|[status](StructureDefinition-cpg-detectedissue-definitions.html#key_DetectedIssue.status)|preliminary?|<none>|cancelled|<none>|<none>|final|entered-in-error|
-|[Record an inference](examples-activities.html#record-an-inference)|[CPGObservation](StructureDefinition-cpg-observation.html)|[basedOn](StructureDefinition-cpg-observation-definitions.html#key_Observation.basedOn)|[status](StructureDefinition-cpg-observation-definitions.html#key_Observation.status)|preliminary?|<none>|cancelled|<none>|<none>|final|entered-in-error|
-|[Report a flag](examples-activities.html#report-a-flag)|[CPGFlag](StructureDefinition-cpg-flag.html)|<none>|[status](StructureDefinition-cpg-flag-definitions.html#key_Flag.status)|<none>|active|<none>|<none>|inactive?|<none>|entered-in-error|
+The corrected distinctions above follow the R4 bindings for [QuestionnaireResponse](https://hl7.org/fhir/R4/valueset-questionnaire-answers-status.html), [Composition](https://hl7.org/fhir/R4/valueset-composition-status.html), and [MeasureReport](https://hl7.org/fhir/R4/valueset-measure-report-status.html). Case/plan reports use [CPGCaseSummary](StructureDefinition-cpg-casesummary.html), [CPGCasePlanSummary](StructureDefinition-cpg-caseplansummary.html), or [CPGCasePlanProgressingNote](StructureDefinition-cpg-caseplanprogressingnote.html).
 
+### Validate the lifecycle
+
+Test acceptance and rejection, withdrawal and stopping, incomplete data, corrections, repeated evaluation, and actions partially fulfilled over time. Check that a refreshed recommendation does not duplicate an existing plan or order, and that stale source state is detected before commitment. Use the [activity scenarios](examples-activities.html) to understand the patterns and the [formal profiles](profiles.html#activity-profiles) to validate resources.

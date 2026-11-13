@@ -9,12 +9,12 @@ Covered in this section:
 * The Learning Health System
 * Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
 
-The 6S Evidence Pyramid is another framing on the quality or validity of the evidence that may be of particular interest to the CPG-IG (implementation guide)[<sup>1</sup>](#1). A detailed explanation of the 6S Pyramid is beyond the scope of this document, however we will explain a few key points as they pertain to the guideline development process, in particular the quality of evidence as well as how the CPG actually enables the ascent to the peak.
+The 6S Evidence Pyramid is another framing on the quality or validity of the evidence that may be of particular interest to the CPG-IG (implementation guide) ([DiCenso et al., 2009](documentation-approach-cds-implementation-evidence.html#ref-dicenso-2009)). A detailed explanation of the 6S Pyramid is beyond the scope of this document, however we will explain a few key points as they pertain to the guideline development process, in particular the quality of evidence as well as how the CPG actually enables the ascent to the peak.
 
 1. **Single Studies-** represent unique research conducted to answer specific clinical questions
 2. **Synopses of Single Studies-** summarizing evidence from high-quality studies
 3. **Syntheses-** a comprehensive summary of all the evidence surrounding a specific research question (e.g., systematic review, meta-analysis)
-4. **Synopses of Syntheses-** summarizing the information found in syntheses (e.g., evidence summaries, rapid reviews)[<sup>2</sup>](#2)
+4. **Synopses of Syntheses-** summarizing the information found in syntheses (e.g., evidence summaries, rapid reviews) ([Khangura et al., 2012](documentation-approach-cds-implementation-evidence.html#ref-khangura-2012))
 5. **Summaries-** guidelines or texts that integrate and evaluate evidence-based information about specific clinical problems to inform clinical decisions
 6. **Systems-** integrating information from the lower levels of the hierarchy with individual patient records (e.g., CPG content delivered into clinical workflow using real-world evidence with patient data)
 
@@ -22,7 +22,7 @@ The 6S Evidence Pyramid is another framing on the quality or validity of the evi
 
 <summary>
 
-Figure 1. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak. NOTE: An updated version of this Evidence Pyramid [ref](http://dx.doi.org/10.1136/ebmed-2016-110447) will be included in the next update of the CPG-IG.
+Figure 1. The 6S Evidence Pyramid with Systems Level (integration of lower levels of evidence into direct patient care) at the peak. NOTE: An updated version of this Evidence Pyramid [Alper and Haynes, 2016](documentation-approach-cds-implementation-evidence.html#ref-alper-2016) will be included in the next update of the CPG-IG.
 
 </summary>
 
@@ -30,28 +30,31 @@ Figure 1. The 6S Evidence Pyramid with Systems Level (integration of lower level
 
 </details>
 
-The CPG has the potential to address the "systems" level (i.e., peak of the pyramid), which is described as: “Integrating information from the lower levels of the hierarchy with individual patient records, systems represent the ideal source of evidence for clinical decision-making.” ([ref](https://hslmcmaster.libguides.com/ebm)).  The CPG affords the ability to directly insert guideline recommendations into electronic health records (EHRs) and clinical information systems based on reasoning over real-world, patient-specific clinical data to be considered directly in the context of clinical and shared decision-making.
-
+The CPG has the potential to address the "systems" level (i.e., peak of the pyramid), which is described as: “Integrating information from the lower levels of the hierarchy with individual patient records, systems represent the ideal source of evidence for clinical decision-making.” ([McMaster University Health Sciences Library](documentation-approach-cds-implementation-evidence.html#ref-mcmaster-6s)).  The CPG affords the ability to directly insert guideline recommendations into electronic health records (EHRs) and clinical information systems based on reasoning over real-world, patient-specific clinical data to be considered directly in the context of clinical and shared decision-making.
 
 Furthermore, profiles like the [eCase Report](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-ecase-report), inclusive of all guideline-scoped patient information ([Case Features](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-feature)), patient-specific recommendations ([Proposals](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal)) and their respective responses (as Case Features), patient-level quality measures ([Metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric)), and the corpus of evidence available and used at the time of recommendation ([Evidence](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-evidence)), allows the informational means to further provide real-world evidence of the usage and effectiveness of such recommendations.   This response and timing from recommendation to when the clinician takes action on the recommendation (e.g., order, prescribe, schedule) and their fulfillments (e.g., administrations, results, performances) as well as the patient-specific context for each key event providing a view into critically valuable information about guideline usage that itself may become evidence for various research studies that yield their own high quality evidence.
 
-
 Intermediate and ultimate outcomes at the patient-level, including those reported by the patient, could be collected by the eCase Report.  Lastly, Case Features may include ‘snippets’ of narrative from clinical impressions related to the response and/or other contextualization of a patient-specific guideline recommendation or decision.  This kind of narrative explanation for the clinicians' decision-making process or assessment may provide significant insight into the impact and effectiveness of various characteristics of the recommendation and/or CPG-derived decision-support interventions.
 
+Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (Proposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System” ([AHRQ](documentation-approach-cds-implementation-evidence.html#ref-ahrq-lhs))
 
-Altogether, the CPG’s have the ability to deliver the lower levels of evidence through the guideline development process and its referenced evidence directly into patient care and related healthcare delivery processes as well as provide individual, aggregated, and potentially continuous feedback loops on both the patient specific recommendations (Proposals) and the resulting care delivered and numerous relevant real-world data elements scoped to or by the CPG.  This continuous feedback loop is often referred to as the “Learning Health System”[<sup>3</sup>](#3)
+<div class="modified-content" markdown="1">
 
-<details open>
+{% include cpg-diagram.html src="cpg-method-iteration.svg" ratio="1200 / 935" alt="Eight activities connect practice to data, data to knowledge, and knowledge to practice around a problem of interest. Findings require review before guidance changes." caption="Figure 2. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence ([Flynn et al., 2018](documentation-approach-cds-implementation-evidence.html#ref-flynn-2018)) The feedback cycle connects observations from care to questions for evidence review and guideline development. Traceable data and explicit measures allow reviewers to investigate a finding before deciding what to change." %}
 
-<summary>
+</div>
 
-Figure 2. The Learning Health System is another perspective on integrating evidence directly into practice and then using practice-level data to further inform evidence[<sup>4</sup>](#4)
+<div class="new-content" markdown="1">
 
-</summary>
+Use the model to locate relevant evidence and appraise certainty from the evidence itself. A learning health system can connect that delivery back to evaluation and evidence review. It needs governed data, explicit measures, and accountable reviewers to interpret findings. Observed patterns can identify data problems or suggest new research and revision questions. They require further review before they support a change in clinical guidance.
 
-<img src="CPG-04-03.png" alt="Learning Health System" class="img-responsive img-rounded center-block" height="500" width="500"/>
+#### Evidence for Clinical Decision Support
 
-</details>
+General CDS studies help frame questions about workflow fit, timely support, care processes, and patient effects. The studies in the selected bibliography report varied results. Some report improvements in desired care, while others document harms such as treatment delays. Choose local measures for both the intended action and unintended effects. [General CDS effects, workflow, and safety](documentation-approach-cds-implementation-evidence.html#general-cds-effects-workflow-and-safety)
+
+Studies of implementations using FHIR, CQL, CDS Hooks, or SMART App Launch can show how teams shared logic, tested behavior, and handled local data or order mappings. Interpret their conclusions in light of the study design and setting. A retrospective accuracy study answers a different question from a prospective evaluation of care. [Standards-based CDS and computable guidelines](documentation-approach-cds-implementation-evidence.html#standards-based-cds-and-computable-guidelines) · [Selected bibliography](documentation-approach-cds-implementation-evidence.html#selected-bibliography-and-public-reading-paths)
+
+</div>
 
 ### Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
 
@@ -84,13 +87,3 @@ Figure 3. **Knowledge Implementation concurrent with Agile CPG Development** has
 <img src="CPG-05.05-Agile.png" alt="Knowledge Implementation concurrent with Agile CPG Development" class="img-responsive img-rounded center-block" height="500" width="500"/>
 
 </details>
-
----
-
-<a id="1">1</a>: DiCenso A, Bayley L, Haynes RB. Accessing preappraised evidence: fine-tuning the 5S model into a 6S model. Ann Intern Med. 2009;151:JC3–2. doi: https://doi.org/10.7326/0003-4819-151-6-200909150-02002
-
-<a id="2">2</a>: Khangura, S., Konnyu, K., Cushman, R., Grimshaw, J., & Moher, D. (2012). Evidence summaries: the evolution of a rapid review approach. Systematic reviews, 1, 10. https://doi.org/10.1186/2046-4053-1-10
-
-<a id="3">3</a>: https://www.ahrq.gov/learning-health-systems/about.html
-
-<a id="4">4</a>: Flynn, Allen & Friedman, Charles & Boisvert, Peter & Landis‐Lewis, Zachary & Lagoze, Carl. (2018). The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learning Health Systems. 2. 10.1002/lrh2.10054.

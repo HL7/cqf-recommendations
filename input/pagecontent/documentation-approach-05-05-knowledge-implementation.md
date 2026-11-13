@@ -23,6 +23,14 @@ Figure 1. Just as the guideline development group and knowledge engineering team
 
 </details>
 
+<div class="new-content" markdown="1">
+
+Before deployment, identify who approves clinical content, data mappings, workflow, deployment, and subsequent changes. The local decision to use an artifact remains separate from its publisher's approval of the content.
+
+{% include cpg-diagram.html src="cpg-method-governance.svg" ratio="1000 / 665" alt="Local clinical, technical, and operational owners review readiness before an approved local release." %}
+
+</div>
+
 ### Local informatics (knowledge engineering) and implementation
 
 Just as many of the functions and methods of the guideline development group have their local analogues, so does the knowledge engineering and guideline formalization and implementation.
@@ -55,6 +63,13 @@ Figure 2. The similarities in roles, functions, and activities as well as comple
 
 </details>
 
+<div class="new-content" markdown="1">
+
+The aim is to do shared interpretation and formalization upstream, so each site can build on reviewed definitions and cases. That can reduce repeated work and divergent interpretations while leaving local teams responsible for their data, workflow, and approved adaptations. Versioned artifacts and their rationale also make it possible to identify which implementations need review when the guidance changes.
+
+</div>
+
+
 
 ### Analogs and Collaboration across CPG Development and Implementation
 
@@ -65,6 +80,13 @@ As described in the section on Knowledge Implementation, there are numerous anal
 Furthermore, such a collaboration provides an opportunity to engage and address critical implementation concerns further upstream as well as afford earlier, shorter, and actionable feedback loops into the overall best practice to daily practice endeavor.  These feedback loops may be through direct interaction between the various functions, through the use of real-world data early in the CPG development process, and through constrained, limited-scope, and focused full lifecycle iterations.
 
 For instance, as data elements and terminologies start could be defined relatively early in the collaborative CPG development process, they may be assessed or even obtained (e.g de-identified data sets from data marts or local clinical registries).  In part, this enables a feasibility assessment on required data elements, and may further provide a real-world data substrate for the knowledge engineering lifecycle process for a CPG.
+
+<div class="new-content" markdown="1">
+
+Monitor both guidance that appears inappropriately and guidance that should have appeared. Route findings to the people who own the source recommendation, computable logic, terminology, local data, or workflow. Review changes against affected cases and monitor the revised implementation. See [CDS malfunction review](documentation-approach-cds-implementation-evidence.html#ref-thayer-2024) and the historical [COVID-19 case study](methodology-case-study.html), which illustrates co-development and review under time pressure.
+
+</div>
+
 
 ### Real-world Data to Develop CPGs
 

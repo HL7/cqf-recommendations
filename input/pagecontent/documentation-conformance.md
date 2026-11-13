@@ -54,21 +54,21 @@ This implementation guide does not require that content use Clinical Quality Lan
 
 ### Packaging and Distribution
 
-§conf-2^^documentation:Content implementation guides **SHALL** provide documentation describing the expected packaging and distribution targets for their knowledge artifacts, terminology, and logic.§ See the [Packaging](methodology.html#packaging) topic in the methodology for background.
+§conf-2^^documentation:Content implementation guides **SHALL** provide documentation describing the expected packaging and distribution targets for their knowledge artifacts, terminology, and logic.§ See the [Packaging](methodology-package.html) topic in the methodology for background.
 
 ### Case Features and Data
 
-§conf-3^^data:Content implementation guides **SHOULD** provide _case features_ describing the minimum data set appropriate for their content.§ See [Translate Step: Profiles](methodology.html#profiles) for how case features are defined.
+§conf-3^^data:Content implementation guides **SHOULD** provide _case features_ describing the minimum data set appropriate for their content.§ See [Translate Step: Profiles](methodology-translate.html#profiles) for how case features are defined.
 
 ### Summary of Requirements by Topic
 
 The following pages establish the detailed conformance requirements for each topic. Each of these statements is also listed in the table below.
 
-* [Profiles](profiles.html): Knowledge artifacts and the selection of interoperability profiles. Statements prof-1 through prof-3.
-* [Terminology](terminology.html): Code systems and value sets defined by content. Statements term-1 through term-9.
-* [Libraries](libraries.html): Libraries of computable logic. Statements lib-1 and lib-2.
-* [Methodology](methodology.html): Representation of recommendations, strategies, pathways, case features, and activities. Statements rec-1 through rec-7, data-1, and act-1 and act-2.
-* [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html): Case reporting and the identification of common processes. Statements path-1 and path-2.
+* <a id="profiles"></a>[Profiles](profiles.html): Knowledge artifacts and the selection of interoperability profiles. Statements prof-1 through prof-3.
+* <a id="terminology"></a>[Terminology](terminology.html): Code systems and value sets defined by content. Statements term-1 through term-9.
+* <a id="libraries"></a>[Libraries](libraries.html): Libraries of computable logic. Statements lib-1 and lib-2.
+* [Select](methodology-select.html#guideline-supporting-information) and [Translate](methodology-translate.html): Representation of recommendations, strategies, pathways, case features, and activities. Statements rec-1 through rec-12, data-1, act-1, and act-2.
+* [Reporting](documentation-approach-12-07-cpg-derivative-and-related-assets.html#ecase-report) and [Common Processes](documentation-approach-12-06-cpg-common-pathway.html): Statements path-1 and path-2.
 
 ### Conformance Statements
 
@@ -85,13 +85,26 @@ A few other notes:
 * It is possible for the text of a given rule to change somewhat from one release to another so long as the intention of the rule is the same. If the intent has a significant change, the old rule will be removed and a new one added in its place (with a new id).
 * Categories are drawn from the [CPG Conformance Category](CodeSystem-cpg-conformance-category-cs.html) code system. They are provided as a general aid to filtering, and are not a definitive classification.
 
+<style>
+  .cpg-conformance-table {
+    overflow-x: auto;
+  }
+  .cpg-conformance-table .fhir-conformance-list tr > :first-child {
+    white-space: nowrap;
+  }
+</style>
+
+<div class="cpg-conformance-table" role="region" aria-labelledby="conformance-statements" tabindex="0" markdown="1">
+
 §§§
+
+</div>
 
 </div>
 
 ### Levels of Conformance
 
-One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG)[<sup>1</sup>](#1) profile of the HL7 CPG.[<sup>2</sup>](#2) The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as CPGCaseFeatures), logic to be triggered based on data collected (CPGRecommendations), and reportable health system management indicators (CPGMetrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
+One major effort on compliance is the WHO and Integrated Health Enterprise (IHE) initiative on Computable Care Guidelines (CCG) ([IHE CCG](documentation-approach-cds-implementation-evidence.html#ref-ihe-ccg)) profile of the HL7 CPG ([IHE Canada](documentation-approach-cds-implementation-evidence.html#ref-ihe-canada-headache)). The IHE/WHO CCG includes a minimum data set to be collected during an encounter (i.e., required data elements as Case Features), logic to be triggered based on data collected (Recommendations), and reportable health system management indicators (Metrics).  It can track and monitor care delivery activities (e.g., what happened) as well as provide the ability to improve guideline adherence.
 
 ### Conformance Testing
 
@@ -100,8 +113,19 @@ Levels of conformance will be based on alternative conformance profiles such as 
 
 > NOTE: This project is actively seeking feedback on how to characterize levels of enablement as capabilities, and how to support declaration and validation of conformance to these capabilities.
 
----
+<div class="new-content" markdown="1">
 
-<a id="1">1</a>: https://wiki.ihe.net/index.php/Computable_Care_Guidelines Computable Care Guidelines (CCG) profile
+### Build a reviewable validation record
 
-<a id="2">2</a>: 'http://www.ihe.ca/download/ambassador_headache_final_100_pager.pdf'
+| Check | Question answered | Useful evidence |
+| --- | --- | --- |
+| Resource and package validation | Do artifacts satisfy their structures, profiles, terminology bindings, and dependencies? | Validator output, dependency versions, unresolved issues |
+| Logic testing | Do expressions return the expected results for the tested cases? | Inputs and expected/actual outputs, including missing data and boundaries |
+| Clinical review | Does the representation preserve the recommendation and its exceptions? | Reviewed mappings, decision tables, rationale, and reviewer decisions |
+| Local integration testing | Does the implementation use the actual data, triggers, operation contracts, and action workflow correctly? | Target-system tests and supported-capability record |
+| Workflow and outcome evaluation | Can intended users act on the guidance, and what effects or burdens result? | Usability findings, usage/appropriateness review, and relevant outcome measures |
+{:.grid}
+
+These checks answer different questions. Validator success does not establish clinical correctness, and a successful service call does not establish clinical benefit. The [methodology](methodology-validate.html#validate-step), [checklists](checklists.html), and [CDS evidence topic](documentation-approach-cds-implementation-evidence.html) explain the broader review work.
+
+</div>

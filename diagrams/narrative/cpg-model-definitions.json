@@ -1,0 +1,9 @@
+{
+  "title": "How pathway definitions organize guidance",
+  "description": "A pale orange pathway can reference both strategy and workflow definitions. The dark orange strategy branch groups recommendations, which may reference a computable activity definition or an order set definition. The amber workflow branch describes activities, their relationships, participants, inputs, and outputs. Nested shapes show references among separate reusable definitions, not patient records.",
+  "svgSource": "svg/cpg-model-definitions.svg",
+  "originals": [
+    "CPG-Main-Plan.png",
+    "CPG-12-02.png"
+  ]
+}

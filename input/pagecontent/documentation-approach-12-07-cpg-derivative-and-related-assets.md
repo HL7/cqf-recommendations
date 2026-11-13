@@ -4,15 +4,23 @@ This page was reorganized and editorially revised in this version of the guide (
 Another key feature of the FHIR CPG is that since it explicitly and formally expresses the intent of the guideline, numerous additional features that have been historically developed manually using the guideline narrative, can be derived directly from the CPG and/or reuse significant portions of the CPG, or at least express relations to the CPG and/or its component assets (e.g. Recommendation).
 
 
+<div class="new-content" markdown="1">
+
+Understanding a guideline's use requires connections between what it recommended, how the care team responded, what care was documented, and what happened to the patient. A recommendation displayed or accepted answers only part of that question. Linking the proposal, decision, and subsequent events helps reviewers investigate whether a finding concerns the guidance, its interpretation, local delivery, or incomplete information.
+
+Measurement and reporting belong in the CPG architecture because they can use the same reviewed clinical definitions as decision support and care planning. That gives teams a shared basis for examining care instead of independently reconstructing the guideline's criteria for each output. Each metric, summary, measure, or report still needs its own purpose, scope, time window, interpretation, and validation. These connections support evaluation and reviewed improvement; demonstrating an effect on patient outcomes requires evidence appropriate to that question.
+
+</div>
+
 Covered in this section:
 
-*   CPGGuideline
-*   CPGMetrics
-*   CPGMeasures using the [FHIR Quality Measure IG](http://hl7.org/fhir/uv/cqm)
-*   CPGCaseSummary
+*   Guideline
+*   Metrics
+*   Measures using the [FHIR Quality Measure IG](http://hl7.org/fhir/uv/cqm)
+*   Case Summary
 *   [Case Plan Summary](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case-plan-summary)
-*   CPGCasePlanProgressingNote
-*   CPGeCaseReport using the [eCaseReport IG](http://hl7.org/fhir/uv/ecr/index.html)
+*   Case Plan Progressing Note
+*   eCase Report using the [eCaseReport IG](http://hl7.org/fhir/uv/ecr/index.html)
 *   Infobutton for CPG's
 
 ### Guideline
@@ -30,6 +38,13 @@ Figure 1. Guideline based on the FHIR ImplementationGuide Resource the container
 <img src="CPG-12.07-GdlnDef.png" alt="Guideline Definition" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+<div class="new-content" markdown="1">
+
+If implementing a subset of the package, identify the capabilities in scope and resolve all dependencies needed to support them.
+
+</div>
+
 
 
 ### Metrics
@@ -53,12 +68,19 @@ Another pattern for Metrics is patient-level intermediate and ultimate outcomes 
 
 Another pattern for Metrics is composite measurements that combine individual metrics to yield insight into the care process with respect to the scope of guideline recommendations.  A separate pattern correlates patient-level intermediate and ultimate outcomes with patient-level process measurements and/or patient-specific guideline recommendations, which has implications for direct patient care and the evidence ecosystem, including clinical research and guideline development.  Such a pattern may be described as a “correlative” metric.
 
-Guideline adherence is a special case of composite metric.  Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers.  The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well.  Of note to the knowledge engineer, adherence metrics are often scoped to a [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy).
+Guideline or pathway adherence is a special case of composite metric.  Adherence is often used in localized implementations of clinical practice guidelines (or pathways).  Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers.  The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well.  Of note to the knowledge engineer, adherence metrics are often scoped to either the [Pathway](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-pathway) and/or [Strategy](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-strategy). This version defines coded results for compliance and for strategy adherence; coded results for pathway adherence and for goals are planned.
 {:.modified-content}
 
-A Metric is defined using [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html), a profile of the [FHIR Measure Resource](https://www.hl7.org/fhir/measure.html), and its result for a patient is recorded using [CPGMetricReport](StructureDefinition-cpg-metricreport.html), a profile of MeasureReport.  The result may also be persisted as an inferred Case Feature ([FHIR Observation Resource](https://www.hl7.org/fhir/observation.html)), so a Metric may be thought of as a special case of a Case Feature.  These detailed patient-level and guideline-directed metrics can be used directly within the clinical workflow, rolled up across cohorts of patients as a more traditional quality measure ([Measure](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure)), and/or included as part of a CPGCaseSummary, Case Plan Summary, CPGCasePlanProgressingNote, or eCase Report.
+A Metric is defined using [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html), a profile of the [FHIR Measure Resource](https://www.hl7.org/fhir/measure.html), and its result for a patient is recorded using [CPGMetricReport](StructureDefinition-cpg-metricreport.html), a profile of MeasureReport.  The result may also be persisted as an inferred Case Feature ([FHIR Observation Resource](https://www.hl7.org/fhir/observation.html)), so a Metric may be thought of as a special case of a Case Feature.  These detailed patient-level and guideline-directed metrics can be used directly within the clinical workflow, rolled up across cohorts of patients as a more traditional quality measure ([Measure](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure)), and/or included as part of a Case Summary, Case Plan Summary, Case Plan Progressing Note, or eCase Report.
 
 <div class="new-content" markdown="1">
+
+<div class="new-content" markdown="1">
+
+When a metric result is exposed as a Case Feature, retain its time and source so the receiving workflow can distinguish the inference from a clinician's assessment.
+
+</div>
+
 
 #### Metric Types and Results
 
@@ -66,11 +88,11 @@ Three things about a metric vary independently: its type (what kind of metric it
 
 Two metric types carry coded results in this guide, identified by the _compliance_ and _adherence_ codes in the [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set. A compliance metric asks whether the care delivered conforms to a single recommendation. An adherence metric, a kind of composite metric, asks whether the requirements of a strategy, taken together, are met. Both evaluate the process of care, by the care team and patient together, and not patient behavior alone.
 
-Coded results also state when no verdict exists yet, because the absence of success is not failure. A fulfillment window may still be open (pending), an expectation may be temporarily suspended (on hold) or removed by an accepted exemption (exempted), a recommendation may not apply (not applicable), or the data may not settle the question (unknown). Because several of these depend on policy, a metric declares its own criteria, such as its exemptions and lookback. See [Metrics](methodology.html#metrics) in the Methodology section for the codes and how a result is chosen.
+Coded results also state when no verdict exists yet, because the absence of success is not failure. A fulfillment window may still be open (pending), an expectation may be temporarily suspended (on hold) or removed by an accepted exemption (exempted), a recommendation may not apply (not applicable), or the data may not settle the question (unknown). Because several of these depend on policy, a metric declares its own criteria, such as its exemptions and lookback. See [Metrics](methodology-translate.html#metrics) in the Methodology section for the codes and how a result is chosen.
 
 #### Pathway Status Terms
 
-Local implementations often describe where a patient stands with respect to a pathway as a whole, using terms that this guide treats separately from compliance and adherence. The colloquial terms “on path” and “off path” (as well as on with a history off) describe the patient's current status with respect to the pathway. A “happy path” means the care plan follows the recommendations or strategies that subject matter experts designate as critical, and may allow periods of non-compliance, or lapses, as well as exemptions or scoped-out activities among the rest. A “perfect path” means all were followed on time, with no periods of non-compliance, or lapses. This guide does not yet define coded results for these terms.
+Local implementations often describe where a patient stands with respect to a pathway as a whole, using terms that describe pathway adherence informally. This guide keeps them separate from the coded compliance and adherence results. The colloquial terms “on path” and “off path” (as well as on with a history off) describe the patient's current status with respect to the pathway. A “happy path” means the care plan follows the recommendations or strategies that subject matter experts designate as critical, and may allow periods of non-compliance, or lapses, as well as exemptions or scoped-out activities among the rest. A “perfect path” means all were followed on time, with no periods of non-compliance, or lapses. This guide does not yet define coded results for these terms.
 
 </div>
 
@@ -99,13 +121,13 @@ A quality measure may not entirely fall out of the CPG. It may reuse some expres
 
 A Measure may also directly reference a Metric(s) (i.e., as Case Feature define in the CPG Library or the value for such a Metric once instantiated and persisted as data) to define inclusion and exclusion criteria for its various populations, thus using same patient-level process, intermediate- and ultimate outcome. Composite metrics are used directly within patient care, more closely correlating real-world performance with quality measurement.  As such, a Measure may follow similar patterns as the Metric described above (i.e., process, intermediate and ultimate outcome, composite, correlative, compliance, adherence).  Population-level measures based on such patient-level metrics may be aggregated to numerous systems levels (e.g., provider, unit, facility, care team) to inform more localized performance improvement.  Likewise, patient-level metrics may be aggregated to various cohorts for population-based quality reporting and various clinical and quality research activities.  The result codes described under [Metrics](#metrics) are patient-level: a Measure counts them, under its own eligibility and scoring criteria, and does not report them.
 
-### CPGCaseSummary
+### Case Summary
 
 <details open>
 
 <summary>
 
-Figure 4. The CPGCaseSummary the composition of all the patient level information (i.e., Case Features) used by the sum total of knowledge assets in the CPG.
+Figure 4. The Case Summary: the composition of all the patient level information (i.e., Case Features) used by the sum total of knowledge assets in the CPG.
 
 </summary>
 
@@ -116,7 +138,14 @@ Figure 4. The CPGCaseSummary the composition of all the patient level informatio
 
 A case summary or composition of all the patient-level information (i.e., case features and their values) has utility in a number of contexts including patient care (e.g., in providing summary views as CDS, composing a document), local quality and safety activities (e.g., clinical quality registries, mortality and morbidity reviews), professional society and clinical research activities (e.g., various types of registries), and into the guideline development group itself.  Recall that case features not only include events (e.g., observations, medication administrations, procedures, conditions, clinical impressions), but also requests (e.g., orders, prescriptions, schedules) as well as metrics that largely qualify a patient with respect to the care recommended in the guideline (e.g., answering questions such as “where is the patient with respect to the plan?”, “how well did the patient follow the path?”).
 
-A CPGCaseSummary is the set of case feature groups and/or features that completely represent the case data scoped by CPG. This expresses the patient state at any given point in time.  A CPGCaseSummary is modeled as a profile of a [FHIR Composition Resource](https://www.hl7.org/fhir/composition.html) and its definition is formalized as a [FHIRGraphDefinition](https://www.hl7.org/fhir/graphdefinition.html) and CQL.  The CPGCaseSummary may be used in an eCase Report as described below.
+A Case Summary is the set of case feature groups and/or features that completely represent the case data scoped by CPG. This expresses the patient state at any given point in time.  A Case Summary is represented by the [CPGCaseSummary](StructureDefinition-cpg-casesummary.html) profile of a [FHIR Composition Resource](https://www.hl7.org/fhir/composition.html) and its definition is formalized as a [FHIRGraphDefinition](https://www.hl7.org/fhir/graphdefinition.html) and CQL.  The Case Summary may be used in an eCase Report as described below.
+
+<div class="new-content" markdown="1">
+
+[GraphDefinition $apply](OperationDefinition-cpg-graphdefinition-apply.html) can realize the summary definition for a subject. It evaluates any applicability expression on a link to determine whether to follow it, and uses the target expression or link path to identify the referenced resources. The returned Bundle starts with the Composition and includes the resources it references. Preserve the source definition when presenting or storing a generated summary so it can be reproduced or reviewed.
+
+</div>
+
 
 ### Case Plan Summary
 
@@ -133,7 +162,7 @@ Figure 5. The Case Plan Summary contains patient-level information as well as pa
 </details>
 
 
-A case/plan summary view is similar to a summary as described above, with a few key distinctions.  The case/plan summary view provides the ability to address information from the plan portion of the CPG, including patient-specific recommendations (i.e., proposals) along with their respective evidence (i.e., Evidence Resources used in the Recommendation) and guideline recommendations that are either not applicable or not yet applicable to a specific patient, together with patient-level information (i.e., Case Features).  Furthermore, the case/plan summary view may be scoped to a given context, such as a given recommendation or set of recommendations, a point in time or anchoring event, or all the information related to a particular case feature, particularly features can represent higher order clinical concepts such as disease or pathophysiological process states.  The Case Plan Summary may be of particular clinical value as it can further provide historical perspective on how a patient’s clinical course has performed with respect to guideline recommendations in the past give insight to the team strategies that may have been employed to address key clinical concerns (e.g., prior strategies employed to diurese challenging case on a CHF pathway). The Case Plan Summary may be used by a number of delivery mechanisms (e.g., CDS Hooks, SMART-on-FHIR Apps) as well as the CPGCasePlanProgressingNote and eCase Report described below.
+A case/plan summary view is similar to a summary as described above, with a few key distinctions.  The case/plan summary view provides the ability to address information from the plan portion of the CPG, including patient-specific recommendations (i.e., proposals) along with their respective evidence (i.e., Evidence Resources used in the Recommendation) and guideline recommendations that are either not applicable or not yet applicable to a specific patient, together with patient-level information (i.e., Case Features).  Furthermore, the case/plan summary view may be scoped to a given context, such as a given recommendation or set of recommendations, a point in time or anchoring event, or all the information related to a particular case feature, particularly features can represent higher order clinical concepts such as disease or pathophysiological process states.  The Case Plan Summary may be of particular clinical value as it can further provide historical perspective on how a patient’s clinical course has performed with respect to guideline recommendations in the past give insight to the team strategies that may have been employed to address key clinical concerns (e.g., prior strategies employed to diurese challenging case on a CHF pathway). The Case Plan Summary may be used by a number of delivery mechanisms (e.g., CDS Hooks, SMART-on-FHIR Apps) as well as the Case Plan Progressing Note and eCase Report described below.
 
 <details open>
 
@@ -147,7 +176,14 @@ Figure 6. The Case Plan Summary may further be scoped to the entirety of the Pat
 
 </details>
 
-### CPGCasePlanProgressingNote
+<div class="new-content" markdown="1">
+
+In the heart failure example, the [case plan summary](Composition-chf-scenario1-caseplansummary.html) brings together observations, goals, planned activities, and events, and patient-level metrics for weight and weight change appear alongside those facts so the care team can interpret progress in context. Give such a view a scope and time. Show which items are suggested, authorized, or documented as having occurred, and make gaps visible when the information is unavailable. See the [Congestive heart failure example](examples-chf.html).
+
+</div>
+
+
+### Case Plan Progressing Note
 
 A Case Plan Summary can be further be combined with an [Adaptive Form](http://hl7.org/fhir/uv/sdc/adaptive.html) and their related [Clinical Impressions](https://www.hl7.org/fhir/clinicalimpression.html) to provide a means to document patient progression with respect to the Pathway.  This capability would further provide the means for feedback directly from the care team on both the patient and their condition as well as the usage and utiliy of guideline components.  The knowledgen egineer need be careful to keep the forms logic (UI) separated from the description logic (for case features) and decision logic (for recommendations) as well as any logic used for patient-level uindicators (Metrics) used in the Form.
 
@@ -155,7 +191,7 @@ A Case Plan Summary can be further be combined with an [Adaptive Form](http://hl
 
 An eCaseReport, as described in the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html), is a document used to exchange patient-level clinical information to a public health, regulatory,  quality, research,or guideline development entity (e.g., medical specialty professional society and/or their respective guideline development group).  An eCaseReport has particular utility to public health entities and was developed through the HL7 Public Health and Emergency Response Workgroup (WG).
 
-A eCase Report is a special case that utilizes the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) within the CPG-IG.  The eCase Report may use or map/translate a CPGCaseSummary or appropriately scoped Case Plan Summary to include more information around the recommendations and use thereof.
+A eCase Report is a special case that utilizes the [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html) within the CPG-IG.  The eCase Report may use or map/translate a Case Summary or appropriately scoped Case Plan Summary to include more information around the recommendations and use thereof.
 
 <details open>
 

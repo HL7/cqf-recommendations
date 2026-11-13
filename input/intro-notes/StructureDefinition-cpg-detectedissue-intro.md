@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGDetectedIssue records a clinical issue identified in the context of computable guideline use. Use it to represent the issue and its evidence, rather than the Task proposing that an issue be recorded. Optional case-feature metadata can connect the resulting record with the definition and interpretation used by guideline logic.

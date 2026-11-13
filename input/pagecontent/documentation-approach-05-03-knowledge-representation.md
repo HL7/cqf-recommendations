@@ -27,3 +27,10 @@ Knowledge management has substantive ties to  knowledge engineering, knowledge r
 Knowledge asset metadata includes structured information for identifying, classifying, and organizing assets including: versioning, information pertaining to the knowledge engineering lifecycle (status of an asset in its lifecycle), administrative information (e.g. governance), permissioning, information about the content of the asset, the asset’s provenance (derivation or from other representation levels), human readable descriptive information, and information about various kinds of relationships including dependencies, (re-)usage, and similarities/ equivalence (see [Knowledge Assets](documentation-approach-06-02-knowledge-assets.html) in Knowledge Representation).  More on the relationship between the Knowledge Architecture and Knowledge Management can be found in [Knowledge Architecture and Knowledge Content Management System](documentation-approach-06-03-knowledge-architecture.html#knowledge-architecture-and-knowledge-content-management-system).
 
 Further details on how to leverage a knowledge content management system in the Agile CPG Approach can be found in the section on [Leveraging a Knowledge Base](documentation-approach-05-06-agile-cpg-development-approach.html) (Knowledge Content Management System).
+
+<div class="new-content" markdown="1">
+
+Record the exact versions used in a release, including shared libraries, profiles, terminology, and dependencies on other packages. When a dependency changes, trace which recommendations and local implementations use it. [Wright et al.](documentation-approach-cds-implementation-evidence.html#ref-wright-2018) describe CDS malfunctions involving dependency and terminology changes; their cases illustrate why changes need impact review.
+
+</div>
+

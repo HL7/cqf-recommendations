@@ -12,6 +12,8 @@ status: active # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
     valueCode: cds  # <<< The value must be the code for the workgroup
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
 version: 3.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
@@ -36,9 +38,17 @@ publisher:
 #
 
 dependencies:
-  hl7.fhir.extensions.r5: 4.0.1
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
   hl7.fhir.uv.extensions.r4: 5.4.0
   hl7.fhir.uv.sdc: 4.0.0
+
+# Publisher uses these packages to validate the examples and their generated metadata.
+definition:
+  extension:
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency
+      valueCode: "hl7.fhir.uv.cql#2.0.0"
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency
+      valueCode: "hl7.fhir.uv.crmi#2.0.0"
 
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -117,12 +127,16 @@ pages:
         title: Methods of Implementation
         activityflow.md:
           title: Activity Flow
+        activityflow-transitions.md:
+          title: Activity Transitions
         documentation-careplanning.md:
           title: Evidence-Based Care Planning
         interactive-cds.md:
           title: Interactive Clinical Decision Support
       documentation-approach-10-mechanisms-of-integration.md:
         title: Mechanisms of Integration
+      documentation-approach-cds-implementation-evidence.md:
+        title: CDS Literature and Bibliography
       documentation-approach-03-conformance-levels.md:
         title: Levels of Enablement
       documentation-conformance.md:
@@ -130,6 +144,16 @@ pages:
       actors.md:
         title: Actors
   methodology.md:
+    methodology-select.md:
+      title: Select
+    methodology-represent.md:
+      title: Represent
+    methodology-translate.md:
+      title: Translate
+    methodology-validate.md:
+      title: Validate
+    methodology-package.md:
+      title: Package
   profiles.md:
     title: Profile Definitions and Documentation
   terminology.md:
@@ -182,25 +206,32 @@ parameters:
   apply-wg: true
   path-history: http://hl7.org/fhir/uv/cpg/history.html
   path-binary: ./input/cql
+  path-pages: ./input/redirects
   path-resource:
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
   auto-oid-root: 2.16.840.1.113883.4.642.40.48
+  pin-canonicals: pin-multiples
   requirements-category-vs: http://hl7.org/fhir/uv/cpg/ValueSet/cpg-conformance-category-vs
 
 #
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
-# │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │
-# │ The IG publisher currently only supports one level deep on sub-menus. To provide a             │
-# │ custom menu.xml file, do not include this property and include a `menu.xml` file in            │
-# │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
-# │ property below.                                                                                │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# The Approach and Methodology dropdowns link to their overviews and main sections.
 menu:
   Home: index.html
-  Approach: approach.html
-  Methodology: methodology.html
+  Approach:
+    Overview: approach.html
+    Conceptual Knowledge Architecture: documentation-approach-12-conceptual-knowledge-architecture.html
+    Guideline Development: documentation-approach-04-guideline-development.html
+    Knowledge Engineering: documentation-approach-05-knowledge-engineering-overview.html
+    Knowledge Representation: documentation-approach-02-04-knowledge-representation.html
+    Implementing Computable Knowledge: documentation-approach-02-05-knowledge-implementation.html
+  Methodology:
+    Overview: methodology.html
+    Select: methodology-select.html
+    Represent: methodology-represent.html
+    Translate: methodology-translate.html
+    Validate: methodology-validate.html
+    Package: methodology-package.html
   Profiles: profiles.html
   Terminology: terminology.html
   Libraries: libraries.html
@@ -210,6 +241,7 @@ menu:
   Glossary: glossary.html
   Version History: changes.html
 
+#
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │

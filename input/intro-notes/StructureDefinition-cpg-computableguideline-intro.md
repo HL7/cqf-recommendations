@@ -1,1 +1,1 @@
-This is a [computable artifact profile](profiles.html#artifact-profiles)
+This ImplementationGuide profile identifies a computable guideline as a governed collection of FHIR content. Use it to describe the guideline's publication, included resources, and dependencies. It organizes reusable knowledge artifacts and documentation; it is neither a patient care plan nor a declaration that a local system can execute every included artifact.

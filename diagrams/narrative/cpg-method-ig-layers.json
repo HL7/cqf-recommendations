@@ -1,0 +1,8 @@
+{
+  "title": "How FHIR implementation guide categories fit together",
+  "description": "Three horizontal tiers show foundational standards supporting model and specification implementation guides, which in turn support content implementation guides. Content uses applicable model profiles and conforms to applicable specifications. The arrows show support from lower layers toward dependent layers.",
+  "svgSource": "svg/cpg-method-ig-layers.svg",
+  "originals": [
+    "types-of-igs.png"
+  ]
+}

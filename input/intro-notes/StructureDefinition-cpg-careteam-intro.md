@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGCareTeam identifies the participants supporting care for one patient. Use it when a patient-specific plan or encounter refers to the actual team involved in that care context. It differs from CPGCareTeamDefinition, which describes reusable roles without a patient, encounter, or operational assignment.

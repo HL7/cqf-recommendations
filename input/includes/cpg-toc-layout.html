@@ -1,0 +1,41 @@
+<style>
+  #segment-content div.markdown-toc {
+    float: none;
+    width: auto;
+    margin: 0 0 1em;
+  }
+  #markdown-toc {
+    columns: {% if include.sidebar %}2 10em{% else %}2{% endif %};
+    column-gap: 1.25em;
+    margin: 0;
+    padding-inline-start: 1.5em;
+  }
+  #markdown-toc li {
+    break-inside: avoid;
+  }
+  {% if include.sidebar %}
+  .cpg-home-task {
+    clear: both;
+  }
+  @media (min-width: 992px) {
+    #segment-content div.markdown-toc {
+      float: var(--ig-right, right);
+      width: 34%;
+      margin: 0 0 0.65em 1em;
+    }
+  }
+  {% else %}
+  #segment-content div.markdown-toc {
+    max-width: 38em;
+    margin-inline-start: auto;
+  }
+  @media (min-width: 992px) {
+    #segment-content div.markdown-toc {
+      max-width: 54em;
+    }
+    #markdown-toc {
+      column-count: 3;
+    }
+  }
+  {% endif %}
+</style>

@@ -1,1 +1,1 @@
-This is an [activity event profile](profiles.html#activity-profiles)
+Use this Procedure profile to document a procedure in guideline-directed care, including relevant event progress or explicit non-performance. It connects the occurrence to the originating guidance and request and permits reuse as a case feature. The event record preserves what occurred; it does not replace the request’s authorization or execution Task.

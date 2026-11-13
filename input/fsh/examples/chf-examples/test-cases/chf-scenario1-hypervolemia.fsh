@@ -48,6 +48,7 @@ Description: "CHF Scenario One"
       * frequency = 1
       * period = 1
       * periodUnit = #d
+    * resource = Reference(chf-scenario1-potassium-request)
 * action[+]
   * title = "Creatinine"
   * description = "Monitor Creatinine"
@@ -61,6 +62,7 @@ Description: "CHF Scenario One"
       * frequency = 1
       * period = 1
       * periodUnit = #d
+    * resource = Reference(chf-scenario1-creatinine-request)
 * action[+]
   * title = "eGFR"
   * description = "Monitor eGFR"
@@ -74,6 +76,7 @@ Description: "CHF Scenario One"
       * frequency = 1
       * period = 1
       * periodUnit = #d
+    * resource = Reference(chf-scenario1-egfr-request)
 * action[+]
   * title = "LASIX"
   * description = "LASIX"

@@ -2,6 +2,13 @@ HL7 Patient Care Work Group has developed and continue to improve on Care Plan a
 
 The HL7 standards include Care Plan Domain Analysis Model, Care Coordination Functional Model, and a number of FHIR resources such as Care Plan, Goals, Care Team.
 
+<div class="new-content" markdown="1">
+
+[CPGCarePlan](StructureDefinition-cpg-careplan.html), [CPGGoal](StructureDefinition-cpg-goal.html), and the applicable request and event profiles provide the resource contracts. Record who will review each goal, authorize interventions, and follow up on new results.
+
+</div>
+
+
 Within the Care Plan standards, there are four cornerstone building blocks that are essential for evidence-based care planning and care delivery:
 
 * **Health Concern (which incorporates health risks, concerns and problems)** - this building block supports the identification of an individual's health risks, concerns and/or problems based on clinical/health evidences. The gravity and/or prioritization of the risks, concerns/problems are determined by clinical/health evidences and also balancing patient and provider perspectives
@@ -22,4 +29,11 @@ Recommendations assist in informing decisions on whether to undertake specific i
 ### Using Order Sets
 
 Order set - a standardized set of evidence-based orders for a certain medical condition. Well-designed standardized order sets assist in communicating best practices by integrating and coordinating care and services across levels of care and through multiple disciplines. Order sets provide evidence-based care and reduce variations and un-intentional oversight by enhancing workflow. They reduce human error and improve patient outcomes through adherence to evidence-based guidelines.
+
+<div class="new-content" markdown="1">
+
+An order set can group potential orders, with the receiving workflow preserving which items are optional, selected, and authorized.
+
+</div>
+
 

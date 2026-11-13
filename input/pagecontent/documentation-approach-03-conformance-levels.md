@@ -14,6 +14,12 @@ Levels of enablement are successively more feature-rich implementations of the c
 *   [Methods of implementation](documentation-approach-09-methods-of-implementation.html)
 *   [Mechanisms of integration](documentation-approach-10-mechanisms-of-integration.html)
 
+<div class="new-content" markdown="1">
+
+Start with the decision and the person making it. Some uses need contextual guideline text, perhaps alongside a patient summary. Others need actionable suggestions, an interactive form, or coordination across a longer care pathway. Metrics, summaries, and reports can support follow-up. Select the capabilities that fit the clinical task and describe the expected behavior for each.
+
+</div>
+
 This implementation guide defines the following levels of enablement:
 
 1.  Contextualized narrative (searchable)
@@ -37,3 +43,10 @@ Figure 1. A given CPG may provide a distinct set of enablements, at singular or 
 <img src="CPG-03-CPGEnablements.png" alt="CPG Levels of Enablement" class="img-responsive img-rounded center-block" width="600"/>
 
 </details>
+
+<div class="new-content" markdown="1">
+
+[Actors](actors.html) identifies the repository, service, and client roles, and maps them to CapabilityStatements by level. Feature-level conformance testing remains under development, as explained in [Conformance](documentation-conformance.html#conformance-testing).
+
+</div>
+

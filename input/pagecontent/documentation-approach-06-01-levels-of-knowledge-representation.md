@@ -7,17 +7,11 @@ Note that the levels of knowledge representation are a continuum, with discrete 
 
 This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-model-levels.svg" ratio="1200 / 686" alt="Four ordered rows distinguish L1 narrative, L2 semi-structured, L3 structured, and L4 executable representations. Overlapping bars show concurrent work and review across levels." caption="Figure 1. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139). An ambiguity found during local testing can send clinical and technical reviewers back to the source recommendation. Carry their agreed interpretation through the affected definitions and tests." %}
 
-Figure 1. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139).
-
-</summary>
-
-<img src="knowledge-levels.png" alt="Knowledge Levels" class="img-responsive img-rounded center-block"/>
-
-</details>
+</div>
 
 
 ### Narrative
@@ -38,6 +32,13 @@ Level 1 (L1) is the clinical guideline in narrative form often in Portable Docum
 *   Indicator descriptions
 *   Policy considerations (e.g., privacy, access, regulations)
 *   For example, one such guideline is the Guideline for Prescribing Opioids for Chronic Pain (2016) published by the Centers for Disease Control and Prevention (CDC).
+
+<div class="new-content" markdown="1">
+
+Preserve qualifying language and uncertainty as the team interprets the recommendation.
+
+</div>
+
 
 
 ### Semi-structured
@@ -82,6 +83,13 @@ Level 4 (L4) is executable software running in a clinical system (e.g., EHR, reg
 *   Adjustment of workflow for site-specific factors
 *   Interpretation of computable content in the site-specific environment (see [Methods of Implementation](documentation-approach-09-methods-of-implementation.html))
 
+<div class="new-content" markdown="1">
+
+An executable implementation includes the engine or translation, validated data mappings, invocation points, permissions, presentation, and operational controls. Review whether the implementation preserves the clinical intent when the local data, timing, or available actions differ from those assumed by the source.
+
+</div>
+
+
 As will be discussed further in the Agile CPG development approach (see [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
 <details open>
@@ -95,3 +103,10 @@ Figure 2. Levels of Representation in historical CDS sense and as may be adapted
 <img src="CPG-05.06-01.png" alt="Levels adapted for Agile" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+<div class="new-content" markdown="1">
+
+These levels describe representations, not conformance grades. [Artifact capability profiles](profiles.html#artifact-profiles), such as Shareable or Executable, specify expectations for individual artifacts. [Conformance](documentation-conformance.html) explains requirements for implementation.
+
+</div>
+

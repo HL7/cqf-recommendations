@@ -41,3 +41,11 @@ Figure 2. Example of case (patient) level validation of detailed results of Path
 <img src="CPG-PatientLevelValidation.png" alt="Population-level Validation" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+<div class="new-content" markdown="1">
+
+Validation tooling such as this supports several distinct questions. Validate each separately, and keep the findings for each:
+
+{% include cpg-diagram.html src="cpg-method-validation.svg" ratio="1000 / 650" alt="Clinical fidelity, structural conformance, logic behavior, and local integration each produce distinct validation evidence." caption="Clinical fidelity, conformance, logic behavior, and local integration need different validation evidence. The [Validate step](methodology-validate.html) describes each." %}
+
+</div>

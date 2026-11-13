@@ -1,0 +1,9 @@
+{
+  "title": "From evidence to care and learning",
+  "description": "Research and public-health surveillance inform clinical practice guidelines and decision support. Clinical care supplies data for measurement, analytics, reporting, and further evidence review. Shared FHIR data and knowledge sit at the center. Standards labels illustrate related roles, not a required dependency set or mandatory sequence. Reviewers decide how findings change guidance and local implementation.",
+  "svgSource": "svg/cpg-runtime-lifecycle.svg",
+  "originals": [
+    "CPG-Main-06.png",
+    "CPG-Main-06-Legend.png"
+  ]
+}

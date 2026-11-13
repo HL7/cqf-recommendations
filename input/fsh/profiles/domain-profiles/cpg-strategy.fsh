@@ -12,6 +12,9 @@ Description: "Profile of RequestGroup as a Strategy for use with the CPG Impleme
 * subject only Reference(Patient)
 * encounter MS
 * action
+  * extension contains
+    $cpg-preferenceBehavior named preferenceBehavior 0..1 MS
+  * extension[preferenceBehavior] ^comment = "How the CPG regards this action, copied from the corresponding PlanDefinition action by $apply or computed by a dynamicValue."
   * title 1..1
   * description 1..1
   * code 1..1
