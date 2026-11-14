@@ -7,12 +7,6 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 *   **Logic**  (Clinical Logic)
 *   **Forms**  (UI Description and Behavior)
 
-<div class="new-content" markdown="1">
-
-Data, logic, and forms are three responsibilities that may appear at any level. They complement the [Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html) separation, which distinguishes patient state, recommended care, and care delivery.
-
-</div>
-
 
 <div class="modified-content" markdown="1">
 
@@ -55,12 +49,6 @@ Expressing the clinical logic for a guideline enables application functionality;
 
 Note to the Knowledge Engineer not to conflate Clinical (business) Logic with either Data (transformation) logic or Forms (user interaction) logic.  Business logic should only be about describing the things that occur in the domain- describing patients (Case Features), formalizing clinician decision logic ([Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)), orchestrating either of the two, etc. (see Table above).  These are critical separations of concerns to keep in mind as their conflation can cause significant challenges, particularly in a knowledge-based approach- though all Tiers can take advantage of knowledge-based approaches.
 
-<div class="new-content" markdown="1">
-
-In the [CHF example](examples-chf.html), the [CHF Library](Library-CHF.html) supplies logic for body weight change, a named feature that can be reused across the guideline. Keep the calculation and the [recommendation](PlanDefinition-chf-bodyweight-change-pd.html) that specifies the activities distinct so the feature has the same meaning when reused.
-
-</div>
-
 
 ### Forms Description
 
@@ -71,9 +59,4 @@ The forms description in a computable guideline describes user interactions and 
 
 This level involves specifying a conceptual description of the processes involved, as well as the user-interfaces that capture the user’s interactions with the system. Expressing the forms description for a guideline provides a more complete description of the recommendations in a guideline; roughly, the presentation tier in a traditional 3-tier architecture.  Note to the Knowledge Engineer not to conflate Forms logic with Business Logic.  Forms logic should only be about the behavior of the user interaction, though it can and almost always does reuse Business Logic.  This is a critical separation of concerns to keep in mind.
 
-<div class="new-content" markdown="1">
-
-Questionnaire can specify the items, and expressions can populate or branch the form. A rule that controls whether a question appears belongs to the interaction; the calculation of a patient feature belongs in reusable logic. [Interactive Clinical Decision Support](interactive-cds.html) describes how generation, population, extraction, and re-evaluation fit together.
-
-</div>
 

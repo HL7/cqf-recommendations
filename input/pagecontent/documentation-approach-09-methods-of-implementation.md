@@ -17,13 +17,6 @@ Methods of implementation refers to three (3) broad approaches to moving from th
 
 </div>
 
-<div class="new-content" markdown="1">
-
-The chosen method determines what must be compared with the source guideline and its test cases. The [Validate step](methodology-validate.html#execution-methods) describes the implementation work and the evidence to collect for each method.
-
-Keep the relationship between the source release and local implementation explicit so that changes can be assessed. A native engine may serve several delivery interfaces. The [Using CQL With FHIR](https://hl7.org/fhir/uv/cql/) implementation guide provides related execution guidance, and [Libraries](libraries.html) identifies this guide's logic representations.
-
-</div>
 
 Note that there are numerous factors that must be considered as part of the local implementation of guideline content. The intent of the L3 artifacts described in this implementation guide is to ensure that these factors can be appropriately considered and addressed as part of implementation while still providing useful content that can accelerate the process.
 
@@ -94,12 +87,6 @@ For a parent action, the `cqf-applicabilityBehavior` extension controls which ch
 
 When used as a knowledge artifact, a PlanDefinition only describes a specific expected process. The cpg-enabled extension is used to indicate that the PlanDefinition is not only registered (or _known_) but is active in the sense that its behavior is active and will be applied by the system.
 
-<div class="new-content" markdown="1">
-
-Record the local activation decision and handle repeated or stale invocations in the implementation.
-
-</div>
-
 
 ##### Initiation
 
@@ -142,12 +129,6 @@ By applying these execution semantics to the creation of recommendations, strate
 The **Pathway** specifies eligibility and enrollment, the **Strategy** specifies the triggering event, and incorporates all the **Recommendation** artifacts as children.
 
 This pattern allows for a straightforward implementation that only needs to integrate with well-known triggers such as `encounter-start`. Initiation always occurs from that event, and enrollment is checked for any PlanDefinition that is a Pathway or Strategy, or that has a partOf that references a Pathway or Strategy.
-
-<div class="new-content" markdown="1">
-
-For example, a follow-up pathway may schedule a visit after discharge. When the patient arrives, the `encounter-start` integration invokes the enabled follow-up strategy. The service checks the patient's active case for the strategy or its containing pathway, then evaluates the visit recommendations, such as reviewing a weight trend or considering a follow-up test. The resulting proposals are available for review in the encounter. The pathway schedule describes when visits are expected, and the encounter trigger starts evaluation when a visit occurs.
-
-</div>
 
 
 Applications can then implement the guideline by tracking and invoking known (and enabled) PlanDefinitions directly. The result of these calls are a set of proposals for actions that should be considered or taken.

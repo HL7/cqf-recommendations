@@ -155,7 +155,7 @@ Content conforming to this implementation guide MAY provide the directionality o
 
 ##### Trace evidence to the computable interpretation {#evidence-traceability}
 
-Keep the evidence review, the recommendation decision, and the computable interpretation traceable to each other (see [Traceability from Evidence to Computable Interpretation](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html#traceability-from-evidence-to-computable-interpretation)). For each, record what the next reviewer needs:
+Keep the evidence review, the recommendation decision, and the computable interpretation traceable to each other (see [Document the Recommendation and Its Rationale](documentation-approach-04-guideline-development.html#recommendation-rationale)). For each, record what the next reviewer needs:
 
 | Record | What the next reviewer needs |
 | --- | --- |

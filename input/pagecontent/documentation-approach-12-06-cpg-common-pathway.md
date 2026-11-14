@@ -47,15 +47,6 @@ Some local implementations of [Pathways](documentation-approach-12-08-conceptual
 
 In these contexts, a work domain ontology was used as a means to normalize the various distinct findings from the numerous task or workflow elicitation and analysis methods and efforts (ref), that can then be used to related to guideline-directed cognitive and decision support enablements (ref).  Generalizations can be further specified or localized using site-specific logic including for specific triggering events and interventions.  Further details of localization are site, vendor, and mechanism of integration specific and are currently beyond the scope of this implementation guide.
 
-<div class="new-content" markdown="1">
-
-The [Common Care Pathway](common-care-pathway.html) supplies an abstract ambulatory process model for locating an intervention. A process such as evaluating test results still needs a concrete local trigger, responsible actor, and follow-up arrangement. A new result arriving and a clinician opening that result are different triggers; they can make different information available at the point of evaluation. Include patient and caregiver work and between-visit responsibilities when they affect the intervention, as illustrated by [Sittig et al.'s workflow models](documentation-approach-cds-implementation-evidence.html#ref-sittig-2024).
-
-#### Workflow Definitions
-
-[CPGWorkflowDefinition](StructureDefinition-cpg-workflowdefinition.html) captures reusable coordination: the activities, relationships between actions, participants and their capabilities, and declared inputs and outputs. It belongs to the Plan layer. The [Common Registration definition](PlanDefinition-cpg-common-registration.html), for example, describes gathering identifying information, matching a patient, and resolving match results, with roles for the patient, a clerical worker, and a system. A local implementation connects those defined roles and activities to actual people, services, and triggers; patient records capture the resulting work.
-
-</div>
 
 ### Clinical Information System (EHR) Workflow
 
@@ -131,8 +122,3 @@ The [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-modul
 
 In the CPG implementation guide, these interventions and enablement are recognized to be downstream consumers of the knowledge content within the CPG with considerations being made for critical content or information requirements thereof. Many of these interventions or enablements have their own standard and/or implementation guides ([CDS-Hooks](https://cds-hooks.hl7.org/), [SMART-on-FHIR](http://www.hl7.org/fhir/smart-app-launch/), [Measure IG](http://hl7.org/fhir/us/cqfmeasures/2019May/index.html), [eCaseReport-IG](http://hl7.org/fhir/uv/ecr/2018Jan/index.html)).  While the CPG-IG intentionally does not directly address details of localized clinical workflow, it must and does provide affordances conveying critical content for downstream consumers including “the Common Pathway” (i.e., an abstraction of high-level clinical workflows), shared information (e.g., Requests and Events as Case Features), and reuse of the same standards for clinical information system activities (e.g., requests, events, and their lifecycle including their status and tasks) as well as interventions (e.g., forms, CDS Hooks, etc.).
 
-<div class="new-content" markdown="1">
-
-For example, the same follow-up recommendation may appear in a results-review view for a clinician or in a care-plan summary for the person coordinating outreach. Match the format to what the recipient needs to do.
-
-</div>

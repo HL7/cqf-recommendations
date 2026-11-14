@@ -38,9 +38,4 @@ Across the top are the knowledge levels, from narrative text (Level 1) on the le
 
 Note that the levels of knowledge representation are a continuum, with discrete categories introduced in the methodology to help inform discussions and communicate the concepts involved. Typically, the initial guideline content is published in narrative form (L1), but guidelines will often contain diagrams, charts, and other depictions that lean towards semi-structured (L2) representation.
 
-<div class="new-content" markdown="1">
-
-Use this matrix to plan the work for a capability. For a measured case feature, settle the units, source, and time window with clinical reviewers; represent the contract in shareable definitions; then verify that local data actually satisfy it. A service that consumes existing records may need no form.
-
-</div>
 

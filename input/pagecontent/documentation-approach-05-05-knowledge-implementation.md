@@ -63,13 +63,6 @@ Figure 2. The similarities in roles, functions, and activities as well as comple
 
 </details>
 
-<div class="new-content" markdown="1">
-
-The aim is to do shared interpretation and formalization upstream, so each site can build on reviewed definitions and cases. That can reduce repeated work and divergent interpretations while leaving local teams responsible for their data, workflow, and approved adaptations. Versioned artifacts and their rationale also make it possible to identify which implementations need review when the guidance changes.
-
-</div>
-
-
 
 ### Analogs and Collaboration across CPG Development and Implementation
 
@@ -80,12 +73,6 @@ As described in the section on Knowledge Implementation, there are numerous anal
 Furthermore, such a collaboration provides an opportunity to engage and address critical implementation concerns further upstream as well as afford earlier, shorter, and actionable feedback loops into the overall best practice to daily practice endeavor.  These feedback loops may be through direct interaction between the various functions, through the use of real-world data early in the CPG development process, and through constrained, limited-scope, and focused full lifecycle iterations.
 
 For instance, as data elements and terminologies start could be defined relatively early in the collaborative CPG development process, they may be assessed or even obtained (e.g de-identified data sets from data marts or local clinical registries).  In part, this enables a feasibility assessment on required data elements, and may further provide a real-world data substrate for the knowledge engineering lifecycle process for a CPG.
-
-<div class="new-content" markdown="1">
-
-Monitor both guidance that appears inappropriately and guidance that should have appeared. Route findings to the people who own the source recommendation, computable logic, terminology, local data, or workflow. Review changes against affected cases and monitor the revised implementation. See [CDS malfunction review](documentation-approach-cds-implementation-evidence.html#ref-thayer-2024) and the historical [COVID-19 case study](methodology-case-study.html), which illustrates co-development and review under time pressure.
-
-</div>
 
 
 ### Real-world Data to Develop CPGs
@@ -118,7 +105,6 @@ Figure 3. **Knowledge Implementation concurrent with Agile CPG Development** has
 <img src="CPG-05.05-Agile.png" alt="Knowledge Implementation concurrent with Agile CPG Development" class="img-responsive img-rounded center-block"/>
 
 </details>
-
 
 
 Concurrent development and implementation of CPG’s has significant alignment and synergy with the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html), though it provides further opportunities and capabilities to make the approach even more Agile as described above.

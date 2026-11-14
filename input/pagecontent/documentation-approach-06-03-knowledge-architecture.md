@@ -154,14 +154,6 @@ As discussed in the [Knowledge Asset](documentation-approach-06-02-knowledge-ass
 
 Given the Conceptual Perspective on the CPG [Knowledge Architecture](documentation-approach-12-conceptual-knowledge-architecture.html), the principles, best practices, and development approaches described above together with the approach to [Knowledge Artifact Representation in FHIR](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html) (described in part in the section in this implementation guide on Knowledge Assets), the [CPG FHIR Profiles](profiles.html) as described and defined in this guide, are the concentration of the CPG Knowledge Architecture- the formal representations of the metamodels used to express the CPG Concepts described in the conceptual knowledge architecture.  The [Methodology](methodology.html) section of this guide describes how individual knowledge assets or artifacts are realized using these CPG Profiles.
 
-<div class="new-content" markdown="1">
-
-Shared FHIR profiles, terminology, and interfaces give systems a common contract for representing and exchanging clinical facts they collect in different ways. Give reusable clinical logic a versioned source so each recommendation, form, or implementation can reference the same reviewed expression where its meaning fits. In the CHF example, a case feature defines weight change, a library calculates it, and a recommendation specifies what to do with the result. The same feature and calculation can serve a summary or metric while each consumer defines its own decision or measurement criteria. See [FHIR R4 Clinical Reasoning](https://hl7.org/fhir/R4/clinicalreasoning-knowledge-artifact-representation.html).
-
-A StructureDefinition establishes the constraints for a profile; a conforming resource carries particular content. For example, the CHF pathway is a PlanDefinition instance conforming to CPGPathwayDefinition, and a patient's enrollment in that pathway is a separate EpisodeOfCare. Check the exact profile for cardinalities, terminology bindings, extensions, and reference targets: for example, a pathway's action can target a strategy or workflow definition, and a strategy's action target is a recommendation definition. These constraints apply even where base PlanDefinition allows more choices.
-
-</div>
-
 
 ### Boundary Issues at the Separations of Concerns
 
@@ -186,9 +178,4 @@ For more on the manifestation of the knowledge architecture in a content managem
 *   See section on [Knowledge Representation](documentation-approach-05-03-knowledge-representation.html) in Knowledge Engineering for more details on Knowledge Content Management Systems
 *   See subsection on Leveraging a Knowledge Base (Knowledge Content Management System) at the bottom of the section Agile CPG [Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)
 
-<div class="new-content" markdown="1">
-
-Record registration, publication, and local enablement separately so that availability for discovery does not activate clinical behavior.
-
-</div>
 

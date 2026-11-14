@@ -33,13 +33,6 @@ Level 1 (L1) is the clinical guideline in narrative form often in Portable Docum
 *   Policy considerations (e.g., privacy, access, regulations)
 *   For example, one such guideline is the Guideline for Prescribing Opioids for Chronic Pain (2016) published by the Centers for Disease Control and Prevention (CDC).
 
-<div class="new-content" markdown="1">
-
-Preserve qualifying language and uncertainty as the team interprets the recommendation.
-
-</div>
-
-
 
 ### Semi-structured
 
@@ -83,12 +76,6 @@ Level 4 (L4) is executable software running in a clinical system (e.g., EHR, reg
 *   Adjustment of workflow for site-specific factors
 *   Interpretation of computable content in the site-specific environment (see [Methods of Implementation](documentation-approach-09-methods-of-implementation.html))
 
-<div class="new-content" markdown="1">
-
-An executable implementation includes the engine or translation, validated data mappings, invocation points, permissions, presentation, and operational controls. Review whether the implementation preserves the clinical intent when the local data, timing, or available actions differ from those assumed by the source.
-
-</div>
-
 
 As will be discussed further in the Agile CPG development approach (see [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
@@ -104,9 +91,4 @@ Figure 2. Levels of Representation in historical CDS sense and as may be adapted
 
 </details>
 
-<div class="new-content" markdown="1">
-
-These levels describe representations, not conformance grades. [Artifact capability profiles](profiles.html#artifact-profiles), such as Shareable or Executable, specify expectations for individual artifacts. [Conformance](documentation-conformance.html) explains requirements for implementation.
-
-</div>
 

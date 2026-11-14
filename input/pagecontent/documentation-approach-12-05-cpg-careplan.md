@@ -6,7 +6,6 @@ A care plan can be conceptualized as the patient-specific or instantiated “pla
 Covered in this Section:
 
 
-
 *   Overview of the CPG Care Plan
 *   Proposals
     *   Proposal as a Patient-specific Recommendation
@@ -32,8 +31,6 @@ The Care Plan is constrained to the set of proposals (i.e., patient-specific rec
 
 <div class="new-content" markdown="1">
 
-[CPGCarePlan](StructureDefinition-cpg-careplan.html) connects the patient's concerns, goals, and activities. The [example CarePlan](CarePlan-chf-scenario1-careplan.html) has Daily Management and Hypervolemia RequestGroups for the patient.
-
 {% include cpg-diagram.html src="cpg-model-care-flow.svg" ratio="1000 / 355" alt="A patient-specific proposal can lead to planned or authorized requests and then documented events; each transition requires the appropriate local decision." %}
 
 </div>
@@ -52,7 +49,6 @@ Figure 2. The Care Plan consists of the patient-specific recommendations as [Pro
 </details>
 
 
-
 The Proposals, Requests, and Events of the Care Plan correspond to the patient-specific phases of the [Activity Flow](activityflow.html#purpose-and-rationale): a Proposal is the proposal phase, Requests cover the plan and order phases, and Events cover the event phase.
 
 ### Proposal
@@ -60,12 +56,6 @@ The Proposals, Requests, and Events of the Care Plan correspond to the patient-s
 A patient-specific recommendation that has taken into account all the criteria in the computable decision logic, and that gives a care team member what is needed to make a [Request](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request) (order, prescription, schedule), is known as a Proposal. A Proposal is the first patient-specific phase of the [Activity Flow](activityflow.html#purpose-and-rationale): if accepted it leads to a plan, if authorized to an order, and if fulfilled to an event. In FHIR, the phase is conveyed by the Request's [intent](http://hl7.org/fhir/codesystem-request-intent.html#4.3.14.226), and the state within that phase by its status. Proposals carry sufficient information to initiate a Request.
 
 Further tracking of the state of completion of an activity may be supported through the FHIR Task Resource. See [Using FHIR Tasks with Requests and Events](documentation-approach-12-06-cpg-common-pathway.html#using-fhir-tasks-with-requests-and-events).
-
-<div class="new-content" markdown="1">
-
-Applying a recommendation may construct a proposal using a patient-specific request profile, such as [CPGServiceRequest](StructureDefinition-cpg-servicerequest.html) or [CPGMedicationRequest](StructureDefinition-cpg-medicationrequest.html). [CPG PlanDefinition apply](OperationDefinition-cpg-plandefinition-apply.html) returns transient results in subject-specific Bundles. The caller decides what to persist and how to proceed. Where a RequestGroup preserves options, the child requests use intent `option`; selecting one for subsequent care requires the appropriate independent request and intent.
-
-</div>
 
 
 #### Proposal as a Patient-specific Recommendation
@@ -90,14 +80,6 @@ Figure 3. A CPG Recommendation with its scoped Case Plan Summary.
 
 </details>
 
-<div class="new-content" markdown="1">
-
-Recommendation `action.input` describes information relevant to applicability. When `action.output` specifies information to include with the proposal, the [CPGRecommendationDefinition](StructureDefinition-cpg-recommendationdefinition.html) profile recommends attaching matching information using the appropriate element, such as `ServiceRequest.supportingInfo` or `MedicationRequest.supportingInformation`.
-
-</div>
-
-
-
 
 ### Request (as part of the Care Plan)
 
@@ -112,12 +94,6 @@ Events are descriptions of activities that have taken place or that are currentl
 Similar to a request, an event also may be at the boundary between the care plan in the case (i.e., Care Plan, Case).  However, only events that correspond to the fulfillment of a request belong in the care plan.  These Events also serve as Case Features in the Case. Boundary issues for dealing with events that belong to both the Care Plan and Case are discussed in the section on [Separating and Defining Case, Plan, and Workflow](documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html).
 
 ### Shared Care Plan
-
-<div class="new-content" markdown="1">
-
-A shared care plan can span conditions, pathways, teams, and settings. Review related events alongside active orders and new proposals. Preserve the patient's goals and preferences and the source of each activity across handoffs. Identify who is responsible for reconciling conflicts and following up.
-
-</div>
 
 
 For more information on a “Shared Care Plan”, please refer to the [Multiple Chronic Conditions (MCC) eCare Plan Implementation Guide](http://hl7.org/fhir/us/mcc).  Shared Care Plans are but one means of interelating and interoperating between more than one CPG.

@@ -81,7 +81,7 @@ A useful report from use after release names the content version and local envir
 
 ### Evaluate the guideline in use {#evaluation}
 
-Plan evaluation around the decision the guideline supports, and review results at the level where a change can be made (see [Evaluating Guideline Development and Implementation](documentation-approach-04-05-computable-guideline-artifacts.html#evaluating-guideline-development-and-implementation)). Collect evidence for each question separately:
+Plan evaluation around the decision the guideline supports, and review results at the level where a change can be made (see [Evaluate the Implementation](documentation-approach-05-knowledge-engineering-overview.html#evaluate-implementation)). Collect evidence for each question separately:
 
 | Evaluation question | Evidence to collect |
 | --- | --- |

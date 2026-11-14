@@ -18,21 +18,6 @@ The integrated process describes co-development of the narrative and computable 
 * Provides for active iteration of key steps of the guideline development and implementation processes to assure that intermediate and final products are optimized and fit for purpose.
 * Includes robust process, product, and outcomes/impact evaluation frameworks to assure guideline development and implementation is efficient, cost-effective, and impactful (this element in development)
 
-<div class="new-content" markdown="1">
-
-Clinical and evidence reviewers, knowledge engineers, terminologists, implementers, and evaluators work on the same decision from different perspectives. Include patients, caregivers, and representative users when their circumstances or actions shape the proposed care. A missing data field, inexact terminology mapping, or unsupported local action can change what the team can safely offer and may send an interpretation back to clinical review. [Integrated development process](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023)
-
-The exchanges below describe responsibilities within that collaboration. Teams can revisit them as a clinical example, test, or local constraint changes an assumption.
-
-| Handoff | What changes hands |
-| --- | --- |
-| Guideline group to knowledge engineers | Source guidance, scope, evidence judgments, rationale, and approved interpretation. |
-| Knowledge engineers to artifact authors and reviewers | A reviewed decision specification, clinical examples, and open questions with named owners. |
-| Content steward to local implementers | A versioned package, expected test results, dependency versions, supported capabilities, and known limitations. |
-| Local team to content steward | Reproducible discrepancies, workflow observations, and evidence from actual use. |
-{:.grid}
-
-</div>
 
 #### The Integrated Process Cycle
 
@@ -50,17 +35,6 @@ Figure 1. The Integrated Process Cycle for Guideline Development and Implementat
 
 The outer circle shows 12 phases of formal guidelines development that result in published narrative recommendations. The middle circle represents the integration of informatics and clinical implementation activities into the guideline development 12 phase process. This circle adds iterative steps within and between the phases and that 1) inform written guidelines, and 2) result in a computable version of  guidelines that can be more rapidly implemented in clinical settings. The inner circle represents the evaluation activities that should be conducted throughout guideline development, with constant attention to meeting the needs of users. This integration is designed to facilitate use of guidelines in clinical practice and timely updates to guidelines based on clinical impact. Finally, at the center of the process are the guideline users, who should be engaged through human-centered design processes in all phases (shown by spiral connections).
 
-<div class="new-content" markdown="1">
-
-#### Evaluating Guideline Development and Implementation
-
-Plan evaluation around the decision the guideline supports. Review results at the level where a change can be made. An apparently low rate of completed activities can reflect eligibility logic, unavailable data, routing, a decision to decline care, or incomplete documentation. Inspect individual examples before attributing the pattern to the guideline or workflow.
-
-The [Package step](methodology-package.html#evaluation) lists the evaluation questions and the evidence to collect for each.
-
-Keep the strength of the evidence visible. An application log can show that guidance was presented or a suggestion was accepted. Clinical records and outcome evaluation answer what care occurred and what effects followed. See the [Tailor et al. evaluation framework](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023) and [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html).
-
-</div>
 
 ### CPG Content and Related Derivatives
 

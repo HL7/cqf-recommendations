@@ -22,15 +22,3 @@ One major axis of separation is by each disease or condition, intervention (e.g.
 Another major axis of separation is by kind of process, including: 1) patient clinicopathological (i.e., pathophysiological and correlated clinical manifestations) processes, inclusive of normal physiology ([Case](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-case)); 2) clinical decision-making and corresponding care processes as abstract from specific care settings (Plan); and 3) care delivery process or clinical workflow by which the care processes are carried out in the context of a specific care setting where multiple patients and healthcare professionals undergo, situational activities, which may be inclusive of clinical information system or EHRs.  The CPG-IG knowledge architecture is designed to respect the separation of these concerns as discussed below.
 
 A third major axis of separation of importance to the CPG implementation guide is significantly related to the clinical workflow separation mentioned above, which itself may be separated into the real-world care delivery activities, those activities that are carried out in the context of clinical information systems (e.g., EHRs), and the means of interacting and relating to the Case and Plan.  This separation is covered in further detail in the section on [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html) in this implementation guide.
-
----
-
-<div class="new-content" markdown="1">
-
-The [congestive heart failure (CHF) example](examples-chf.html) illustrates the model with a pathway and a patient case. In [problem-oriented clinical documentation](documentation-approach-cds-implementation-evidence.html#ref-weed-1968), separating assessment from plan serves a similar purpose.
-
-#### Scope Guidance across Clinical Concerns {#scope-and-shared-features}
-
-A guideline can be scoped by condition, intervention, care setting, or activity such as prevention or follow-up. A strategy can group recommendations that address one concern within that scope. Where two guidelines or strategies need the same clinical fact, identify the Case Feature definition in each consumer's data requirements and check that its meaning, time window, and source fit both uses. When guidance in one scope depends on care proposed or delivered in another, identify the request or event each rule uses and which team reconciles competing plans.
-
-</div>

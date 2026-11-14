@@ -9,10 +9,6 @@ Of note, a hybrid of external and internal reasoning (methods of integration) as
 
 <div class="new-content" markdown="1">
 
-Local applications differ in where they can evaluate logic, display guidance, and accept actions. Several integration patterns may therefore be needed for one guideline: for example, a service can evaluate shared logic while a native order interface handles an accepted proposal. Decide where data are retrieved, content is evaluated, results are presented, and accepted actions are stored. That division of responsibility determines the integration contract.
-
-The [Package step](methodology-package.html#integration-contract) lists the contract to establish for each mechanism.
-
 {% include cpg-diagram.html src="cpg-runtime-integration.svg" ratio="1200 / 878" alt="Four panels compare content ingestion, CDS Hooks services, SMART applications, and data enrichment. They distinguish artifact imports, patient data exchange, evaluation, and receiving workflow responsibilities." caption="Integration patterns place content, evaluation, data exchange, and user interaction in different components. An implementation can combine patterns; the receiving workflow retains responsibility for authorization and persistence." %}
 
 </div>
@@ -38,12 +34,6 @@ Integration of inferences or insights as a Service is similarly discussed in the
 </div>
 
 <p><em>Figure 2</em> An example and pattern of Clinical Reasoning-as-a-Service using CDS Hooks eventing, 'prefetch' of patient data, and response.</p>
-
-<div class="new-content" markdown="1">
-
-[CDS Hooks](https://cds-hooks.hl7.org/) defines service discovery, workflow-triggered calls, and responses with cards, suggestions, and application links. A service can evaluate CQL and CPG definitions behind that interface. When it does, the adapter translates evaluated results into the CDS Hooks response, and the client handles supported actions and interactions.
-
-</div>
 
 
 ### Via Data Enrichment (real-time data ingest and insight/inference delivery)
@@ -74,12 +64,6 @@ Another very relevant mechanism of integration for computable clinical practice 
 
 <p><em>Figure 4</em> Integration with systems of record/use via a distinct Application (e.g. SMART-on-FHIR App) where the required data elements are provided by the system of record/use, the user interaction (presentation layer) occurs within the App, and the clinical reasoning that executes the computable clinical practice guideline and provides inferences/insights on the patient and care plan may occur either directly within the app itself or the App may call an external clinical reasoning capability as a service as described above.</p>
 
-<div class="new-content" markdown="1">
-
-[SMART App Launch](https://hl7.org/fhir/smart-app-launch/) supplies application launch and authorization conventions. Establish the available patient context, data scopes, and write-back behavior for the actual deployment. A service and an application may work together, as illustrated by the [coordinated standards implementation](documentation-approach-cds-implementation-evidence.html#ref-thiess-2022). Published [SMART implementation experience](documentation-approach-cds-implementation-evidence.html#ref-kukhareva-2019) also describes the local interfaces sometimes needed to deliver the intended functionality.
-
-</div>
-
 
 ### Hybrid (combination of approaches (most likely for CPGs))
 
@@ -87,9 +71,4 @@ For many implementations of computable clinical practice guidelines that desire 
 
 Such a “hybrid” pattern certainly requires understanding the respective patterns chosen from above- where computable content execution or clinical reasoning occurs for respective pieces and parts, or aspects of the computable guideline, but also requires planning and consideration for how these various integration patterns interact with one another.  This may include identifying the sources of truth for required data elements and or specific inferences/insights (e.g. CaseFeatures, Proposals, Metrics) as well as orchestration if clinical reasoning/ knowledge execution occurs in distributed systems.  In many of these cases, one pattern of mechanisms of integration may serve as the principal pattern with others used to supplement and/or build upon.  For several reasons, data enrichment often becomes this principal pattern so that that systems of record/use retain a surrogate for the history of computable guideline execution and can serve as the source of truth. Services, Apps, and internal application capabilities can then leverage this ‘holistic’ data collectively.  It can further make inclusion of and integration with application-native capabilities such as Order Sets and broader decision-support and knowledge base capabilities (e.g. Drug Knowledge Bases) much more feasible.
 
-<div class="new-content" markdown="1">
-
-If several components reason over or store the same data, agree which system owns each input and each inference. Preserve links among source facts, proposals, and metrics, together with their effective times and content version. In a hybrid integration, these agreements allow an on-demand CDS service, an embedded application, and native order sets to use a consistent view of the case and its care plan.
-
-</div>
 

@@ -21,7 +21,6 @@ Knowledge asset content refers to that which is contained within a specific know
 Metadata is data that provides information about the knowledge asset.  This may include disk active metadata, structural metadata, administrative metadata, and situating or relational metadata.  Descriptive metadata provides information about the nature of the knowledge asset as well as information about the nature of the content of an individual knowledge asset.  Structural metadata provide information about the representation(s) and/or formalism(s) used in the knowledge asset (e.g. the metamodel used for the asset and how it was applied for this specific asset).  Administrative metadata is information that helps manage the knowledge asset and is inclusive of knowledge engineering lifecycle, governance, and authorization or rights metadata.  Situational or relational metadata describes an assets relationship to other assets as well as the totality of its relationships within the knowledge base.  Metadata may be further broken down to the following category:
 
 
-
 *   **Identity and Versioning** - used for distinct or unique existence (identity), currency, change control, tagging to business usage
 *   **Classification and Organization** - inferred and asserted descriptors (asset type and subtypes, nature of expression, content type/ subtype, or other classification by any set of attributes).  Classification may use and refer to both descriptive as well as structural metadata.
 *   **KM Lifecycle and Knowledge Engineering** - status in asset lifecycle (e.g., draft, final, deprecated), phase in knowledge engineering workflow (may be localized and asset-specific)
@@ -40,14 +39,6 @@ Metadata may be semantic, using coded concepts in terminologies and ontologies i
 
 To ensure integrity across all knowledge assets in a knowledge content management system, an asset’s definition (metamodel) often references a common, shared asset metadata meta-model (definition of the metadata that may or must be used across all assets in a common knowledge base).  Additional information about and approaches to metadata are described by the Mobilizing Computable Biomedical Knowledge (MCBK) ([Richesson, 2018](documentation-approach-cds-implementation-evidence.html#ref-richesson-2018), [MCBK](documentation-approach-cds-implementation-evidence.html#ref-mcbk-deepblue)) and OMG (ref)
 
-<div class="new-content" markdown="1">
-
-Where supported, use the canonical `url`, business `version`, and artifact type to identify the knowledge artifact. A resource's `id`, server location, and `meta.versionId` identify a server record and its revision history. Track the identity of the guideline package separately from the versions of artifacts it contains or references.
-
-Publication status supports review and discovery; local enablement and authorization are separate decisions. For a patient result, retain the relevant source inputs, effective time, and expression or artifact version so that reviewers can explain how it was produced.
-
-</div>
-
 
 ### Expressions (and/or Languages)
 
@@ -56,12 +47,6 @@ An expression is a computable language for creating a computer-interpretable rep
 ### Declarations
 
 A declaration is an expression of the structural elements of computable logic (e.g. values for attributes and parameters of a knowledge asset) that does not describe how to compute the logic, rather what the logic is.  Declarations express the logic of a computation without describing its control flow (ref).  These declarations may then reference and/or be referenced by expressions as described above.  The PlanDefinition Resource is a declarative knowledge asset definition in HL-7 FHIR whose meta-model affords the means to reference and or be referenced by CQL or other expression languages.  A specific PlanDefinition is a declarative knowledge asset.
-
-<div class="new-content" markdown="1">
-
-An expression can supply patient-dependent values while the definition establishes how the values are used.
-
-</div>
 
 
 ### Composite Assets
@@ -84,12 +69,6 @@ Figure 1. Derived Assets from a Pathway
 
 </details>
 
-<div class="new-content" markdown="1">
-
-Reuse keeps shared criteria traceable to the same reviewed interpretation and reduces the need to interpret guideline prose separately for each output. For example, the [CHF Body Weight Change metric](Measure-chf-bodyweight-change-measure.html) uses an expression from the CHF Library to define a patient indicator. Reuse data and logic where their meaning fits, and record the derived output's scope, time window, treatment of missing data, and how to interpret the result.
-
-</div>
-
 
 ### Translation Within and Between Knowledge Representations
 
@@ -107,9 +86,4 @@ Figure 2. Isopragmatic Representations of the Same Asset
 
 </details>
 
-<div class="new-content" markdown="1">
-
-Make an expression's inputs, model, and dependencies explicit. [Libraries](libraries.html) describes the supported representations. External functions or other languages require support from the target runtime.
-
-</div>
 

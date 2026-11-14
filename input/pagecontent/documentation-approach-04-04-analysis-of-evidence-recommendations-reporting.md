@@ -23,17 +23,6 @@ Additionally, if the guideline development group includes measure development ex
 
 Furthermore, the guideline development group may identify pertinent clinical or situational concepts (e.g., data elements, terminologies) pertaining to each recommendation or the guideline overall.  These may serve as metadata, inform data requirements and inferences in the CPG, and/or lay the foundation for the CPG eCaseReport.  Lastly, the guideline development group may identify gaps in evidence within the guideline development process. These gaps in evidence may further inform data requirements to be collected as part of a CPG eCaseReport.
 
-<div class="new-content" markdown="1">
-
-#### Traceability from Evidence to Computable Interpretation
-
-Evidence reviewers assess findings. The guideline group weighs those findings and decides what to recommend. The computable specification records how to recognize the relevant situation and which activity to propose. Keep those three judgments traceable to each other.
-
-The [Select step](methodology-select.html#evidence-traceability) lists what to record for each of these judgments so that the next reviewer can follow them.
-
-</div>
-
-
 
 ### Reporting and Dissemination
 

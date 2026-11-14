@@ -28,9 +28,4 @@ Knowledge asset metadata includes structured information for identifying, classi
 
 Further details on how to leverage a knowledge content management system in the Agile CPG Approach can be found in the section on [Leveraging a Knowledge Base](documentation-approach-05-06-agile-cpg-development-approach.html) (Knowledge Content Management System).
 
-<div class="new-content" markdown="1">
-
-Record the exact versions used in a release, including shared libraries, profiles, terminology, and dependencies on other packages. When a dependency changes, trace which recommendations and local implementations use it. [Wright et al.](documentation-approach-cds-implementation-evidence.html#ref-wright-2018) describe CDS malfunctions involving dependency and terminology changes; their cases illustrate why changes need impact review.
-
-</div>
 

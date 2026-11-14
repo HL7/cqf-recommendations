@@ -44,17 +44,6 @@ Altogether, the CPG’s have the ability to deliver the lower levels of evidence
 
 </div>
 
-<div class="new-content" markdown="1">
-
-Use the model to locate relevant evidence and appraise certainty from the evidence itself. A learning health system can connect that delivery back to evaluation and evidence review. It needs governed data, explicit measures, and accountable reviewers to interpret findings. Observed patterns can identify data problems or suggest new research and revision questions. They require further review before they support a change in clinical guidance.
-
-#### Evidence for Clinical Decision Support
-
-General CDS studies help frame questions about workflow fit, timely support, care processes, and patient effects. The studies in the selected bibliography report varied results. Some report improvements in desired care, while others document harms such as treatment delays. Choose local measures for both the intended action and unintended effects. [General CDS effects, workflow, and safety](documentation-approach-cds-implementation-evidence.html#general-cds-effects-workflow-and-safety)
-
-Studies of implementations using FHIR, CQL, CDS Hooks, or SMART App Launch can show how teams shared logic, tested behavior, and handled local data or order mappings. Interpret their conclusions in light of the study design and setting. A retrospective accuracy study answers a different question from a prospective evaluation of care. [Standards-based CDS and computable guidelines](documentation-approach-cds-implementation-evidence.html#standards-based-cds-and-computable-guidelines) · [Selected bibliography](documentation-approach-cds-implementation-evidence.html#selected-bibliography-and-public-reading-paths)
-
-</div>
 
 ### Evidence, Guidance, and Rapid Ascent to the Peak During an Emergency Response to a Novel Contagion Pandemic
 

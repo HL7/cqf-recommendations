@@ -4,7 +4,6 @@ This page was reorganized and editorially revised in this version of the guide (
 This section provides an overview of the specific separations of concerns in the CPG implementation guide as well as some details of their respective boundary issues.  An overview of each separation is covered here and in more detail in individual sections that include:
 
 
-
 *   Case
 *   Plan
 *   Workflow
@@ -21,22 +20,6 @@ Figure 1. Illustrating the separation of the Case (patient clinicopathophysiolog
 <img src="CPG-12-01.png" alt="Separation of Concerns" class="img-responsive img-rounded center-block" width=300/>
 
 </details>
-
-<div class="new-content" markdown="1">
-
-{% include cpg-diagram.html src="cpg-model-boundaries.svg" alt="The orange Plan lane includes strategies, recommendations, and a reusable workflow definition. Local implementation connects the workflow definition to the blue lane's patient care processes and records. The green Case lane holds recorded and derived patient facts." %}
-
-The following table summarizes each concern using the CHF example:
-
-| Concern | Question it answers | In the CHF example |
-|---|---|---|
-| [Case](#case) | What patient information matters to the guideline? | Recorded weights, derived weight change, and other relevant patient facts. |
-| [Plan](#plan) | What care should be considered for patients in scope? | A pathway definition groups Daily Management and Hypervolemia strategies. |
-| [Care plan](documentation-approach-12-05-cpg-careplan.html) | What is proposed or intended for this patient? | A patient-specific CarePlan links goals and activities, including realizations of the two strategies. |
-| [Workflow](#workflow) | Who reviews and carries out the work, when, and where? | To implement the example, the local site would decide how to obtain and review measurements and make them available for later evaluation. |
-{:.grid}
-
-</div>
 
 
 ### Case
@@ -58,21 +41,6 @@ The patient-specific plan (i.e., [Care Plan](documentation-approach-12-05-cpg-ca
 
 In the CPG,  the concept of a plan as a separated concern is further divided into the abstracted, more generalized reasoning and rationale for determining the best course of action for a patient (e.g., recommendations, strategies, pathways) formalized as logic in the [Plan](documentation-approach-12-03-cpg-plan.html) and the patient-specific past, current, and likely course of action (e.g., proposals, requests, and fulfillments of those requests) called a [Care Plan](documentation-approach-12-05-cpg-careplan.html) (described further below) formalized as data elements in the [Care Plan](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-care-plan). Though there are use cases where have both in context is of considerable value as is described in the [Case Plan Summary](documentation-approach-12-07-cpg-derivative-and-related-assets.html).
 
-<div class="new-content" markdown="1">
-
-The word *plan* can refer to several related things. Qualify it when describing a resource or a transition.
-
-| Meaning | Representation | What it conveys |
-| --- | --- | --- |
-| Reusable guidance | PlanDefinition and ActivityDefinition | Care to consider for patients in scope. |
-| A patient's care plan | CarePlan | The patient's concerns, goals, and intended care. |
-| A planned activity | A request with the applicable `plan` intent | An intention to pursue the activity, before an authorized order. |
-| Grouped choices | RequestGroup | Related requests and their optionality. |
-{:.grid}
-
-</div>
-
-
 
 ### Workflow
 
@@ -93,20 +61,4 @@ Separating concerns creates boundaries that have to be handled explicitly: ident
 *   **Plan or Workflow:** the Plan is focused on what to do for the patient, while issues of how to specifically implement that plan within local workflows and clinical information systems is outside the scope of this implementation guide though some implications are addressed in the section of [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html). However, as described above, some implications of clinical information system workflow and abstract workflow are addressed as described in the subsection on [Common Pathway](documentation-approach-12-06-cpg-common-pathway.html).
 *   **Case and Workflow:** while much patient-level information (i.e., Case Features) contains information or metadata about local clinical workflow (e.g. performer, timing) and some aspects of local clinical workflow impact certain aspects of patient-level [Requests](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request) and Events (e.g. timing and availability), for the scope of this implementation guide, such information is expressed within the data elements or resources as scoped by FHIR Resources, while relevant inferences about such information are addressed within their appropriate concerns.
 
-<div class="new-content" markdown="1">
-
-For example, a medication order records intent, while a documented administration can establish exposure. Collapsing both to a single medication flag loses information that a later rule may need to decide whether the patient received a dose. For each boundary, agree on the information that crosses it and how to preserve its meaning and provenance.
-
-One record can serve several purposes. Reuse it with its source, time, and lifecycle state intact:
-
-| When a record crosses a boundary | What to preserve |
-|---|---|
-| An existing medication order is an input to another recommendation. | An EHR order can be a Case Feature even when no guideline proposal preceded it. Use administration or other appropriate evidence when the logic requires an exposure. |
-| An administration fulfills an order and informs later care. | Link the event to the request using the event type's supported element. A partial fulfillment, such as an initial dispense on an order with refills, may leave work outstanding. |
-| A proposal is declined. | Record the decision in the applicable proposal or Task workflow. Distinguish it from an event expressly documented as not done and from missing documentation. |
-| A calculated value and a clinician assessment both inform care. | Preserve their respective provenance. Make disagreement visible and specify how it will be reconciled. |
-| A metric compares proposed and delivered care. | Define which events, time windows, and exceptions count, and how missing data affect interpretation. |
-{:.grid}
-
-</div>
 

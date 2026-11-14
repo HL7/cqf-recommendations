@@ -4,14 +4,6 @@ This page was reorganized and editorially revised in this version of the guide (
 Another key feature of the FHIR CPG is that since it explicitly and formally expresses the intent of the guideline, numerous additional features that have been historically developed manually using the guideline narrative, can be derived directly from the CPG and/or reuse significant portions of the CPG, or at least express relations to the CPG and/or its component assets (e.g. Recommendation).
 
 
-<div class="new-content" markdown="1">
-
-Understanding a guideline's use requires connections between what it recommended, how the care team responded, what care was documented, and what happened to the patient. A recommendation displayed or accepted answers only part of that question. Linking the proposal, decision, and subsequent events helps reviewers investigate whether a finding concerns the guidance, its interpretation, local delivery, or incomplete information.
-
-Measurement and reporting belong in the CPG architecture because they can use the same reviewed clinical definitions as decision support and care planning. That gives teams a shared basis for examining care instead of independently reconstructing the guideline's criteria for each output. Each metric, summary, measure, or report still needs its own purpose, scope, time window, interpretation, and validation. These connections support evaluation and reviewed improvement; demonstrating an effect on patient outcomes requires evidence appropriate to that question.
-
-</div>
-
 Covered in this section:
 
 *   Guideline
@@ -38,13 +30,6 @@ Figure 1. Guideline based on the FHIR ImplementationGuide Resource the container
 <img src="CPG-12.07-GdlnDef.png" alt="Guideline Definition" class="img-responsive img-rounded center-block"/>
 
 </details>
-
-<div class="new-content" markdown="1">
-
-If implementing a subset of the package, identify the capabilities in scope and resolve all dependencies needed to support them.
-
-</div>
-
 
 
 ### Metrics
@@ -74,12 +59,6 @@ Guideline or pathway adherence is a special case of composite metric.  Adherence
 A Metric is defined using [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html), a profile of the [FHIR Measure Resource](https://www.hl7.org/fhir/measure.html), and its result for a patient is recorded using [CPGMetricReport](StructureDefinition-cpg-metricreport.html), a profile of MeasureReport.  The result may also be persisted as an inferred Case Feature ([FHIR Observation Resource](https://www.hl7.org/fhir/observation.html)), so a Metric may be thought of as a special case of a Case Feature.  These detailed patient-level and guideline-directed metrics can be used directly within the clinical workflow, rolled up across cohorts of patients as a more traditional quality measure ([Measure](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-measure)), and/or included as part of a Case Summary, Case Plan Summary, Case Plan Progressing Note, or eCase Report.
 
 <div class="new-content" markdown="1">
-
-<div class="new-content" markdown="1">
-
-When a metric result is exposed as a Case Feature, retain its time and source so the receiving workflow can distinguish the inference from a clinician's assessment.
-
-</div>
 
 
 #### Metric Types and Results
@@ -140,12 +119,6 @@ A case summary or composition of all the patient-level information (i.e., case f
 
 A Case Summary is the set of case feature groups and/or features that completely represent the case data scoped by CPG. This expresses the patient state at any given point in time.  A Case Summary is represented by the [CPGCaseSummary](StructureDefinition-cpg-casesummary.html) profile of a [FHIR Composition Resource](https://www.hl7.org/fhir/composition.html) and its definition is formalized as a [FHIRGraphDefinition](https://www.hl7.org/fhir/graphdefinition.html) and CQL.  The Case Summary may be used in an eCase Report as described below.
 
-<div class="new-content" markdown="1">
-
-[GraphDefinition $apply](OperationDefinition-cpg-graphdefinition-apply.html) can realize the summary definition for a subject. It evaluates any applicability expression on a link to determine whether to follow it, and uses the target expression or link path to identify the referenced resources. The returned Bundle starts with the Composition and includes the resources it references. Preserve the source definition when presenting or storing a generated summary so it can be reproduced or reviewed.
-
-</div>
-
 
 ### Case Plan Summary
 
@@ -175,12 +148,6 @@ Figure 6. The Case Plan Summary may further be scoped to the entirety of the Pat
 <img src="CPG-CasePlanSummary.png" alt="Case Plan Summary" class="img-responsive img-rounded center-block"/>
 
 </details>
-
-<div class="new-content" markdown="1">
-
-In the heart failure example, the [case plan summary](Composition-chf-scenario1-caseplansummary.html) brings together observations, goals, planned activities, and events, and patient-level metrics for weight and weight change appear alongside those facts so the care team can interpret progress in context. Give such a view a scope and time. Show which items are suggested, authorized, or documented as having occurred, and make gaps visible when the information is unavailable. See the [Congestive heart failure example](examples-chf.html).
-
-</div>
 
 
 ### Case Plan Progressing Note
