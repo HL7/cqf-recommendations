@@ -110,4 +110,4 @@ Monitor both guidance that appears inappropriately and guidance that should have
 
 </div>
 
-{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" previous="documentation-approach-04-guideline-development.html" previous_title="Guideline Development" next="documentation-approach-02-04-knowledge-representation.html" next_title="Knowledge Representation" %}
+{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" previous="documentation-approach-04-guideline-development.html" previous_title="Guideline Development" %}

@@ -162,4 +162,4 @@ A useful report names the content version and local environment, relevant inputs
 
 </div>
 
-{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" previous="documentation-approach-12-conceptual-knowledge-architecture.html" previous_title="Conceptual Knowledge Architecture" next="documentation-approach-05-knowledge-engineering-overview.html" next_title="Knowledge Engineering" %}
+{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" previous="documentation-approach-02-05-knowledge-implementation.html" previous_title="Implementing Computable Knowledge" next="documentation-approach-05-knowledge-engineering-overview.html" next_title="Knowledge Engineering" %}

@@ -24,10 +24,10 @@ Each section of the Approach opens with a page that presents the approach for it
 | Section | What this section explains |
 | --- | --- |
 | <a id="conceptual-knowledge-architecture"></a>**[Conceptual Knowledge Architecture](documentation-approach-12-conceptual-knowledge-architecture.html)** | Why patient facts, reusable guidance, and local care delivery need distinct, connected representations: the Case, Plan, and Workflow. |
-| <a id="guideline-development"></a>**[Guideline Development](documentation-approach-04-guideline-development.html)** | Why clinical, knowledge engineering, and implementation work inform one another throughout development and maintenance. |
-| <a id="knowledge-engineering"></a>**[Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)** | The knowledge engineering lifecycle, and why recommendations, delivered care, and outcomes need to be connected for measurement, evaluation, and learning. |
 | <a id="knowledge-representation"></a>**[Knowledge Representation](documentation-approach-02-04-knowledge-representation.html)** | How representation levels, FHIR resources, CQL, terminology, and forms support shared interpretation and reuse. |
 | <a id="implementing-computable-knowledge"></a>**[Implementing Computable Knowledge](documentation-approach-02-05-knowledge-implementation.html)** | Why shared guidance supports several execution and integration choices, and what remains local. |
+| <a id="guideline-development"></a>**[Guideline Development](documentation-approach-04-guideline-development.html)** | Why clinical, knowledge engineering, and implementation work inform one another throughout development and maintenance. |
+| <a id="knowledge-engineering"></a>**[Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)** | The knowledge engineering lifecycle, and why recommendations, delivered care, and outcomes need to be connected for measurement, evaluation, and learning. |
 {:.cpg-horizontal-table}
 
 For the step-by-step authoring procedure, use [Methodology](methodology.html). When reviewing a work product or a local implementation, start with the [checklist for its representation level](checklists.html).
@@ -79,18 +79,6 @@ The [CHF example](examples-chf.html) connects the model to existing artifacts an
     * [Workflow and Common Pathway](documentation-approach-12-06-cpg-common-pathway.html)
     * [Guideline, Derivative, and Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html)
     * [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conceptual-knowledge-architecture-index.html)
-* [Guideline Development](documentation-approach-04-guideline-development.html)
-    * [Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html)
-    * [6S Evidence Pyramid and Learning Health Systems](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html)
-    * [Analysis of Evidence, Recommendations, and Reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html)
-    * [Development of Computable Clinical Guideline Artifacts](documentation-approach-04-05-computable-guideline-artifacts.html)
-* [Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)
-    * [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html)
-    * [Knowledge Translation](documentation-approach-05-02-knowledge-translation.html)
-    * [Knowledge Representation and Expression](documentation-approach-05-03-knowledge-representation.html)
-    * [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html)
-    * [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html)
-    * [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)
 * [Knowledge Representation](documentation-approach-02-04-knowledge-representation.html)
     * [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html)
     * [Tiers of Functionality](documentation-approach-07-tiers-of-functionality.html)
@@ -106,5 +94,17 @@ The [CHF example](examples-chf.html) connects the model to existing artifacts an
     * [CDS Literature and Bibliography](documentation-approach-cds-implementation-evidence.html)
     * [Levels of Enablement](documentation-approach-03-conformance-levels.html)
     * [Conformance](documentation-conformance.html)
+* [Guideline Development](documentation-approach-04-guideline-development.html)
+    * [Guideline Development Frameworks](documentation-approach-04-02-guideline-development-frameworks.html)
+    * [6S Evidence Pyramid and Learning Health Systems](documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html)
+    * [Analysis of Evidence, Recommendations, and Reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html)
+    * [Development of Computable Clinical Guideline Artifacts](documentation-approach-04-05-computable-guideline-artifacts.html)
+* [Knowledge Engineering](documentation-approach-05-knowledge-engineering-overview.html)
+    * [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html)
+    * [Knowledge Translation](documentation-approach-05-02-knowledge-translation.html)
+    * [Knowledge Representation and Expression](documentation-approach-05-03-knowledge-representation.html)
+    * [Knowledge Execution and Validation](documentation-approach-05-04-knowledge-execution-and-validation.html)
+    * [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html)
+    * [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)
 
 {% include chapter-navigation.html section="Approach" unit="section" next="documentation-approach-12-conceptual-knowledge-architecture.html" next_title="Conceptual Knowledge Architecture" %}

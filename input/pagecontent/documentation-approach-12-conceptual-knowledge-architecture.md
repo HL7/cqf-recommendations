@@ -181,4 +181,4 @@ The [Conceptual Knowledge Architecture Index](documentation-approach-12-08-conce
 
 </div>
 
-{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" next="documentation-approach-04-guideline-development.html" next_title="Guideline Development" %}
+{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" next="documentation-approach-02-04-knowledge-representation.html" next_title="Knowledge Representation" %}

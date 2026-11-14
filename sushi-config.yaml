@@ -85,30 +85,6 @@ pages:
         title: Guideline, Derivative, and Related Assets
       documentation-approach-12-08-conceptual-knowledge-architecture-index.md:
         title: Conceptual Knowledge Architecture Index
-    documentation-approach-04-guideline-development.md:
-      title: Guideline Development
-      documentation-approach-04-02-guideline-development-frameworks.md:
-        title: Guideline Development Frameworks
-      documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md:
-        title: 6S Evidence Pyramid and Learning Health Systems
-      documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md:
-        title: Analysis of Evidence, Recommendations, and Reporting
-      documentation-approach-04-05-computable-guideline-artifacts.md:
-        title: Development of Computable Clinical Guideline Artifacts
-    documentation-approach-05-knowledge-engineering-overview.md:
-      title: Knowledge Engineering Overview
-      documentation-approach-05-01-knowledge-acquisition.md:
-        title: Knowledge Acquisition
-      documentation-approach-05-02-knowledge-translation.md:
-        title: Knowledge Translation
-      documentation-approach-05-03-knowledge-representation.md:
-        title: Knowledge Representation and Expression
-      documentation-approach-05-04-knowledge-execution-and-validation.md:
-        title: Knowledge Execution and Validation
-      documentation-approach-05-05-knowledge-implementation.md:
-        title: Knowledge Implementation
-      documentation-approach-05-06-agile-cpg-development-approach.md:
-        title: Agile CPG Development Approach
     documentation-approach-02-04-knowledge-representation.md:
       title: Knowledge Representation Overview
       documentation-approach-06-01-levels-of-knowledge-representation.md:
@@ -143,6 +119,30 @@ pages:
         title: Conformance
       actors.md:
         title: Actors
+    documentation-approach-04-guideline-development.md:
+      title: Guideline Development
+      documentation-approach-04-02-guideline-development-frameworks.md:
+        title: Guideline Development Frameworks
+      documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md:
+        title: 6S Evidence Pyramid and Learning Health Systems
+      documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md:
+        title: Analysis of Evidence, Recommendations, and Reporting
+      documentation-approach-04-05-computable-guideline-artifacts.md:
+        title: Development of Computable Clinical Guideline Artifacts
+    documentation-approach-05-knowledge-engineering-overview.md:
+      title: Knowledge Engineering Overview
+      documentation-approach-05-01-knowledge-acquisition.md:
+        title: Knowledge Acquisition
+      documentation-approach-05-02-knowledge-translation.md:
+        title: Knowledge Translation
+      documentation-approach-05-03-knowledge-representation.md:
+        title: Knowledge Representation and Expression
+      documentation-approach-05-04-knowledge-execution-and-validation.md:
+        title: Knowledge Execution and Validation
+      documentation-approach-05-05-knowledge-implementation.md:
+        title: Knowledge Implementation
+      documentation-approach-05-06-agile-cpg-development-approach.md:
+        title: Agile CPG Development Approach
   methodology.md:
     methodology-select.md:
       title: Select
@@ -221,10 +221,10 @@ menu:
   Approach:
     Overview: approach.html
     Conceptual Knowledge Architecture: documentation-approach-12-conceptual-knowledge-architecture.html
-    Guideline Development: documentation-approach-04-guideline-development.html
-    Knowledge Engineering: documentation-approach-05-knowledge-engineering-overview.html
     Knowledge Representation: documentation-approach-02-04-knowledge-representation.html
     Implementing Computable Knowledge: documentation-approach-02-05-knowledge-implementation.html
+    Guideline Development: documentation-approach-04-guideline-development.html
+    Knowledge Engineering: documentation-approach-05-knowledge-engineering-overview.html
   Methodology:
     Overview: methodology.html
     Select: methodology-select.html

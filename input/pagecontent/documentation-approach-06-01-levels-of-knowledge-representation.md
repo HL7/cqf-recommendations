@@ -19,7 +19,7 @@ This implementation guide utilizes a previously established clinical decision su
 Level 1 (L1) is the clinical guideline in narrative form often in Portable Document Format (PDF), and includes:
 
 *   Clinical Focus
-*   Scope (population attributes from PICOTS, as well as interventions, comparators, outcomes, timing, and setting)
+*   Scope (the population, interventions, comparators, outcomes, timing, and setting, known as PICOTS)
 *   Recommendations (at least in part from PICOTS interventions)
 *   Strength of [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) and Quality of [Evidence](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-evidence)
 *   Evidence references (including analysis and evidence summaries)

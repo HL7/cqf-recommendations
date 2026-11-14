@@ -140,7 +140,7 @@ Figure 6. Lastly, the knowledge architecture team defines the relationships, rul
 
 ### Conceptual Perspective on the CPG Knowledge Architecture
 
-This brings us to the conceptual knowledge architecture for the CPG.  It is the product of the concepts from a guideline and its recommendations described in the section on the [Guideline Development](documentation-approach-04-guideline-development.html) Process together with the principles and best practices discussed previously in this section as well as the approach to developing the knowledge architecture described just above.
+The conceptual knowledge architecture for the CPG applies the principles, best practices, and development approach described in this section to the concepts of a guideline and its recommendations. The [Conceptual Knowledge Architecture](documentation-approach-12-conceptual-knowledge-architecture.html) section describes those concepts, and [Guideline Development](documentation-approach-04-guideline-development.html) describes how a guideline and its recommendations are developed.
 
 The conceptual perspective on the CPG knowledge architecture describes the domain- oriented descriptions of the knowledge assets or artifacts, together with their properties and relationships. In the [Methodology](methodology.html) Section, these knowledge assets are concretized and realized as explicit computable knowledge assets in [CPG Profiles](profiles.html) on FHIR Resources using an established approach from the HL-7 FHIR [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-module.html).
 

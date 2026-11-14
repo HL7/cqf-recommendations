@@ -126,4 +126,4 @@ A derived artifact reuses content for another purpose. Reuse keeps shared criter
 
 </div>
 
-{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" previous="documentation-approach-05-knowledge-engineering-overview.html" previous_title="Knowledge Engineering" next="documentation-approach-02-05-knowledge-implementation.html" next_title="Implementing Computable Knowledge" %}
+{% include chapter-navigation.html section="Approach" unit="section" overview="approach.html" previous="documentation-approach-12-conceptual-knowledge-architecture.html" previous_title="Conceptual Knowledge Architecture" next="documentation-approach-02-05-knowledge-implementation.html" next_title="Implementing Computable Knowledge" %}
