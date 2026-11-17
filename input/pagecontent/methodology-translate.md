@@ -143,7 +143,7 @@ The applicable profile and the local authorized workflow determine whether the a
 
 §act-1^^activity:Content conforming to this implementation guide **SHALL** use one of the recommendation instance profiles described above to ensure supporting information related to the recommendation is preserved through the recommendation instance.§
 
-Specific guideline content MAY define derived profiles for recommendation instances establishing additional constraints.
+§act-3^^activity:Specific guideline content **MAY** define derived profiles for recommendation instances establishing additional constraints.§
 
 ##### Activity events {#activity-events}
 
@@ -268,12 +268,12 @@ We use the term pathway in this methodology for a more flexible representation o
 
 #### Metrics {#metrics}
 
-This implementation guide uses the Measure resource to represent [metrics](documentation-approach-04-05-computable-guideline-artifacts.html#cpg-content-and-related-derivatives), patient-level indicators of how care delivered compares with the guideline. Content conforming to this implementation guide SHALL use the [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html) profile to represent metrics, and the [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile to record the result of evaluating a metric for a patient.
+This implementation guide uses the Measure resource to represent [metrics](documentation-approach-04-05-computable-guideline-artifacts.html#cpg-content-and-related-derivatives), patient-level indicators of how care delivered compares with the guideline. §metric-1^^artifact:Content conforming to this implementation guide **SHALL** use the [CPGComputableMetric](StructureDefinition-cpg-computablemetric.html) profile to represent metrics, and the [CPGMetricReport](StructureDefinition-cpg-metricreport.html) profile to record the result of evaluating a metric for a patient.§
 
 The type of a metric is identified by `Measure.type`, using the [CPG Measure Type](ValueSet-cpg-measure-type-vs.html) value set. In addition to the base measure types (such as process, outcome, and composite), this value set includes compliance and adherence. Their type descriptions also discuss goal and pathway scopes. The coded result sets currently defined by this guide cover two combinations of type and scope:
 
-* A **compliance metric** (type _compliance_, a kind of process metric) scoped to a [recommendation](#recommendations) reports whether the care delivered conforms to it. Compliance metrics SHOULD report results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set.
-* An **adherence metric** (type _adherence_, a kind of composite metric) scoped to a [strategy](#strategies) reports whether the strategy's requirements, taken together, are met. Adherence metrics SHOULD report results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set.
+* A **compliance metric** (type _compliance_, a kind of process metric) scoped to a [recommendation](#recommendations) reports whether the care delivered conforms to it. §metric-2^^data:Compliance metrics **SHOULD** report results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set.§
+* An **adherence metric** (type _adherence_, a kind of composite metric) scoped to a [strategy](#strategies) reports whether the strategy's requirements, taken together, are met. §metric-3^^data:Adherence metrics **SHOULD** report results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set.§
 
 <div class="stu-note" markdown="1">
 
@@ -319,7 +319,7 @@ See the code system for the full definition of each code. A metric reports one c
 2. When the expectation is met and the lookback shows a prior failure, report the "with prior" code instead of its parent.
 3. Report a failure of the evaluation engine itself through `MeasureReport.status`, not with the _unknown_ code.
 
-Several codes depend on the metric's policy. A metric that reports these codes SHOULD document, in its definition:
+Several codes depend on the metric's policy. §metric-4^^artifact:A metric that reports these codes **SHOULD** document, in its definition, the following policy elements.§
 
 * **Lookback**: the period searched for prior failures, for the "with prior" codes
 * **Predictive criterion and horizon**: the criterion that indicates a failure is likely, and the time within which it is expected, for the _at-risk_ codes

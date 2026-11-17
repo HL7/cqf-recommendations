@@ -4,7 +4,7 @@ Usage: #definition
 Title: "CPG PlanDefinition Apply"
 Description: "The apply operation applies a PlanDefinition to a given context"
 * insert OperationDefinitionMetadata(cpg-plandefinition-apply)
-* insert OperationExtensions(2)
+* insert OperationExtensions(4)
 * name = "CPGPlanDefinitionApply"
 * code = #apply
 * comment = """

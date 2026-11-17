@@ -65,7 +65,7 @@ The outcome of this step is typically in the form of narrative (L1 content) requ
 
 Describe what each person does before choosing role codes. Identify who sees the recommendation, who can act on it, and who follows up. Include patients and care partners when they receive information, provide it, or take part in the decision. The [Common Personas](CodeSystem-cpg-common-persona-cs.html) code system uses ISCO codes where available, WHO-derived categories prefixed with `W`, and IG-introduced categories prefixed with `C`.
 
-Content conforming to this implementation guide MAY identify personas using the [Common Personas](CodeSystem-cpg-common-persona-cs.html) code system.
+§rec-13^^recommendation:Content conforming to this implementation guide **MAY** identify personas using the [Common Personas](CodeSystem-cpg-common-persona-cs.html) code system.§
 
 Personas are narrative descriptions of the actors and roles, or the _who_, referred to by the guideline. For example, nurse midwife, community healthworker, and pregnant mother are all examples of personas.
 
@@ -106,7 +106,7 @@ Identify processes using the [Common Processes](CodeSystem-cpg-common-process-cs
 
 Record where the activity takes place and which systems and people can support it. If a key fact or action is unavailable, document the limitation and take any change to the intended scope back to the guideline group and local owner.
 
-Content conforming to this implementation guide MAY identify settings using the [HL7 V3 ServiceDeliveryLocationRoleType](https://hl7.org/fhir/R4/v3/ServiceDeliveryLocationRoleType/vs.html) value set.
+§rec-14^^recommendation:Content conforming to this implementation guide **MAY** identify settings using the [HL7 V3 ServiceDeliveryLocationRoleType](https://hl7.org/fhir/R4/v3/ServiceDeliveryLocationRoleType/vs.html) value set.§
 
 Settings identified as part of the select step are the narrative description of _where_ something needs to happen.
 
@@ -144,7 +144,7 @@ Due to the variability in rating systems among guideline content, this implement
 
 §rec-4^^recommendation:Content conforming to this implementation guide **SHALL** provide the quality of evidence for a recommendation using the [qualityOfEvidence](http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html) extension.§
 
-Content conforming to this implementation guide MAY provide the directionality of a recommendation using the [directionOfRecommendation](StructureDefinition-cpg-directionOfRecommendation.html) extension.
+§rec-15^^recommendation:Content conforming to this implementation guide **MAY** provide the directionality of a recommendation using the [directionOfRecommendation](StructureDefinition-cpg-directionOfRecommendation.html) extension.§
 
 [CPGComputablePlanDefinition](StructureDefinition-cpg-computableplandefinition.html) provides these rating extensions on `PlanDefinition.action`. See how the guideline group's judgments carry into the computable specification. [Evidence and recommendation reporting](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html)
 

@@ -4,7 +4,7 @@ Usage: #definition
 Title: "CPG GraphDefinition Apply"
 Description: "The apply operation realizes a GraphDefinition for a given subject"
 * insert OperationDefinitionMetadata(cpg-graphdefinition-apply)
-* insert OperationExtensions(1)
+* insert OperationExtensions(2)
 * name = "CPGGraphDefinitionApply"
 * code = #apply
 * comment = """

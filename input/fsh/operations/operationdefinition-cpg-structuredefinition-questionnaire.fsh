@@ -6,7 +6,7 @@ Description: """
 Generates a Questionnaire instance based on a specified StructureDefinition, creating questions for a minimal set of elements or extension elements found in the Structure Definition.
 """
 * insert OperationDefinitionMetadata(cpg-structureDefinition-questionnaire)
-* insert OperationExtensions(5)
+* insert OperationExtensions(3)
 * name = "CPGStructureDefinitionQuestionnaire"
 * experimental = false
 * code = #questionnaire
