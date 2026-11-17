@@ -15,6 +15,11 @@ The CPG approach makes that interpretation explicit, reviewable, and reusable. I
 
 These choices provide the rationale for the guide's [Profiles](profiles.html) and [Conformance](documentation-conformance.html) requirements. They support reuse across decision support, care planning, measurement, and reporting, with clinical judgment and local adaptation remaining part of implementation. Approach explains the choices and their tradeoffs; [Methodology](methodology.html) describes how to apply them.
 
+The separation of Case, Plan, and Workflow underlies two concepts used throughout this guide:
+
+* **Activity Flow** describes how a recommendation moves from a definition through proposal, plan, and order to an event, so that what was recommended can be traced to what was done. It typically runs alongside the EHR's own order lifecycle, not inside it. See [Activity Flow](activityflow.html#purpose-and-rationale).
+* **Metrics** evaluate where a patient stands relative to the guideline, such as compliance with a recommendation or adherence to a strategy. The same patient-level results can support care, roll up into population measures, and inform the evidence ecosystem. See [Metrics](documentation-approach-12-07-cpg-derivative-and-related-assets.html#metrics).
+
 ### Where to Start {#where-to-start}
 
 Each section of the Approach opens with a page that presents the approach for its topic, using the existing heart failure example, and links to detailed pages on each part. Read the section pages in order for the full approach, or go directly to the topic you need.

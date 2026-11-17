@@ -69,7 +69,7 @@
 <artifact id="PlanDefinition/chf-cardiology-consultation-pd" key="PlanDefinition-chf-cardiology-consultation-pd" name="CHF Cardiology Consultation Recommendation"/>
 <artifact deprecated="true" id="CodeSystem/chf-codes" key="CodeSystem-chf-codes" name="CHF Codes"/>
 <artifact id="StructureDefinition/chf-creatinine" key="StructureDefinition-chf-creatinine" name="CHF Creatinine"/>
-<artifact id="ActivityDefinition/chf-creatinine-ad" key="ActivityDefinition-chf-creatinine-ad" name="CHF Creatinine Activity Defintion"/>
+<artifact id="ActivityDefinition/chf-creatinine-ad" key="ActivityDefinition-chf-creatinine-ad" name="CHF Creatinine Activity Definition"/>
 <artifact id="PlanDefinition/chf-creatinine-pd" key="PlanDefinition-chf-creatinine-pd" name="CHF Creatinine Recommendation"/>
 <artifact id="PlanDefinition/chf-daily-management" key="PlanDefinition-chf-daily-management" name="CHF Daily Management Strategy"/>
 <artifact id="CodeSystem/chf-example-codes" key="CodeSystem-chf-example-codes" name="CHF Example Codes"/>
@@ -94,7 +94,7 @@
 <artifact id="PlanDefinition/chf-o2-sat-pd" key="PlanDefinition-chf-o2-sat-pd" name="CHF Oxygen Saturation Recommendation"/>
 <artifact id="StructureDefinition/chf-o2-sat-request" key="StructureDefinition-chf-o2-sat-request" name="CHF Oxygen Saturation Request"/>
 <artifact id="StructureDefinition/chf-potassium" key="StructureDefinition-chf-potassium" name="CHF Potassium"/>
-<artifact id="ActivityDefinition/chf-potassium-ad" key="ActivityDefinition-chf-potassium-ad" name="CHF Potassium Activity Defintion"/>
+<artifact id="ActivityDefinition/chf-potassium-ad" key="ActivityDefinition-chf-potassium-ad" name="CHF Potassium Activity Definition"/>
 <artifact id="PlanDefinition/chf-potassium-pd" key="PlanDefinition-chf-potassium-pd" name="CHF Potassium Recommendation"/>
 <artifact id="ActivityDefinition/chf-report-bodyweight" key="ActivityDefinition-chf-report-bodyweight" name="CHF Report Body Weight Activity Defintion"/>
 <artifact id="ActivityDefinition/chf-report-bodyweight-change" key="ActivityDefinition-chf-report-bodyweight-change" name="CHF Report Body Weight Change Activity Defintion"/>
@@ -104,9 +104,14 @@
 <artifact id="Measure/chf-urine-out-measure" key="Measure-chf-urine-out-measure" name="CHF Urine Out Metric"/>
 <artifact id="PlanDefinition/chf-urine-out-pd" key="PlanDefinition-chf-urine-out-pd" name="CHF Urine Out Recommendation"/>
 <artifact id="StructureDefinition/chf-egfr" key="StructureDefinition-chf-egfr" name="CHF eGFR"/>
-<artifact id="ActivityDefinition/chf-egfr-ad" key="ActivityDefinition-chf-egfr-ad" name="CHF eGFR Activity Defintion"/>
+<artifact id="ActivityDefinition/chf-egfr-ad" key="ActivityDefinition-chf-egfr-ad" name="CHF eGFR Activity Definition"/>
 <artifact id="PlanDefinition/chf-egfr-pd" key="PlanDefinition-chf-egfr-pd" name="CHF eGFR Recommendation"/>
 <artifact id="PlanDefinition/cc-cpg-plan-ckd" key="PlanDefinition-cc-cpg-plan-ckd" name="CKD Ambulatory Plan Definition"/>
+<artifact id="ActivityDefinition/ckd-hypertension-ace-inhibitor-ad" key="ActivityDefinition-ckd-hypertension-ace-inhibitor-ad" name="CKD Hypertension ACE Inhibitor"/>
+<artifact id="ActivityDefinition/ckd-hypertension-arb-ad" key="ActivityDefinition-ckd-hypertension-arb-ad" name="CKD Hypertension Angiotensin Receptor Blocker"/>
+<artifact id="ActivityDefinition/ckd-hypertension-ccb-ad" key="ActivityDefinition-ckd-hypertension-ccb-ad" name="CKD Hypertension Calcium Channel Blocker"/>
+<artifact id="PlanDefinition/ckd-hypertension-options-pd" key="PlanDefinition-ckd-hypertension-options-pd" name="CKD Hypertension Therapy Options"/>
+<artifact id="RequestGroup/ckd-hypertension-options-rg" key="RequestGroup-ckd-hypertension-options-rg" name="CKD Hypertension Therapy Options Result"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-referral-dietitian" key="ActivityDefinition-cc-cpg-activity-referral-dietitian" name="CKD Referral Dietitian"/>
 <artifact id="ActivityDefinition/cc-cpg-activity-referral-nephrology" key="ActivityDefinition-cc-cpg-activity-referral-nephrology" name="CKD Referral Nephrology"/>
 <artifact id="PlanDefinition/va-ckd-recommendations" key="PlanDefinition-va-ckd-recommendations" name="CKD VA Recommendations Plan Definition"/>
@@ -119,6 +124,7 @@
 <artifact id="ActivityDefinition/cpg-administermedication-activitydefinition" key="ActivityDefinition-cpg-administermedication-activitydefinition" name="CPG Administer Medication ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-administermedicationtask" key="StructureDefinition-cpg-administermedicationtask" name="CPG Administer Medication Task"/>
 <artifact id="StructureDefinition/cpg-answerValueSetSource" key="StructureDefinition-cpg-answerValueSetSource" name="CPG Answer Value Set Source Extension"/>
+<artifact id="StructureDefinition/cpg-applicabilityExpression" key="StructureDefinition-cpg-applicabilityExpression" name="CPG Applicability Expression Extension"/>
 <artifact deprecated="true" id="StructureDefinition/cpg-artifactbundle" key="StructureDefinition-cpg-artifactbundle" name="CPG Artifact Bundle"/>
 <artifact id="StructureDefinition/cpg-assertionExpression" key="StructureDefinition-cpg-assertionExpression" name="CPG Assertion Expression Extension"/>
 <artifact deprecated="true" id="StructureDefinition/cpg-assetcollection" key="StructureDefinition-cpg-assetcollection" name="CPG Asset Collection"/>
@@ -138,8 +144,11 @@
 <artifact id="StructureDefinition/cpg-caseplanprogressingnote" key="StructureDefinition-cpg-caseplanprogressingnote" name="CPG Case Plan Progressing Note"/>
 <artifact id="StructureDefinition/cpg-caseplansummary" key="StructureDefinition-cpg-caseplansummary" name="CPG Case Plan Summary"/>
 <artifact id="StructureDefinition/cpg-caseplansummarydefinition" key="StructureDefinition-cpg-caseplansummarydefinition" name="CPG Case Plan Summary Definition"/>
+<artifact id="ActorDefinition/cpg-casereporting-client" key="ActorDefinition-cpg-casereporting-client" name="CPG Case Reporting Client"/>
+<artifact id="ActorDefinition/cpg-casereporting-service" key="ActorDefinition-cpg-casereporting-service" name="CPG Case Reporting Service"/>
 <artifact id="StructureDefinition/cpg-casesummary" key="StructureDefinition-cpg-casesummary" name="CPG Case Summary"/>
 <artifact id="StructureDefinition/cpg-casesummarydefinition" key="StructureDefinition-cpg-casesummarydefinition" name="CPG Case Summary Definition"/>
+<artifact id="ActorDefinition/cpg-client" key="ActorDefinition-cpg-client" name="CPG Client"/>
 <artifact id="StructureDefinition/cpg-clinicalimpression" key="StructureDefinition-cpg-clinicalimpression" name="CPG Clinical Impression"/>
 <artifact id="StructureDefinition/cpg-collectinformationactivity" key="StructureDefinition-cpg-collectinformationactivity" name="CPG Collect Information Activity"/>
 <artifact id="StructureDefinition/cpg-collectWith" key="StructureDefinition-cpg-collectWith" name="CPG Collect With Extension"/>
@@ -166,6 +175,8 @@
 <artifact id="StructureDefinition/cpg-computableplandefinition" key="StructureDefinition-cpg-computableplandefinition" name="CPG Computable Plan Definition"/>
 <artifact id="StructureDefinition/cpg-computablequestionnaire" key="StructureDefinition-cpg-computablequestionnaire" name="CPG Computable Questionnaire"/>
 <artifact id="StructureDefinition/cpg-condition" key="StructureDefinition-cpg-condition" name="CPG Condition"/>
+<artifact id="CodeSystem/cpg-conformance-category-cs" key="CodeSystem-cpg-conformance-category-cs" name="CPG Conformance Category Code System"/>
+<artifact id="ValueSet/cpg-conformance-category-vs" key="ValueSet-cpg-conformance-category-vs" name="CPG Conformance Category Value Set"/>
 <artifact id="StructureDefinition/cpg-detectedissue" key="StructureDefinition-cpg-detectedissue" name="CPG Detected Issue"/>
 <artifact id="StructureDefinition/cpg-directionOfRecommendation" key="StructureDefinition-cpg-directionOfRecommendation" name="CPG Direction Of Recommendation Extension"/>
 <artifact id="StructureDefinition/cpg-dispensemedicationactivity" key="StructureDefinition-cpg-dispensemedicationactivity" name="CPG Dispense Medication Activity"/>
@@ -189,6 +200,7 @@
 <artifact id="StructureDefinition/cpg-generatedFrom" key="StructureDefinition-cpg-generatedFrom" name="CPG Generated From Extension"/>
 <artifact id="StructureDefinition/cpg-goal" key="StructureDefinition-cpg-goal" name="CPG Goal"/>
 <artifact id="StructureDefinition/cpg-goalFor" key="StructureDefinition-cpg-goalFor" name="CPG Goal For Extension"/>
+<artifact id="OperationDefinition/cpg-graphdefinition-apply" key="OperationDefinition-cpg-graphdefinition-apply" name="CPG GraphDefinition Apply"/>
 <artifact id="StructureDefinition/cpg-group" key="StructureDefinition-cpg-group" name="CPG Group"/>
 <artifact id="StructureDefinition/cpg-groupdefinition" key="StructureDefinition-cpg-groupdefinition" name="CPG Group Definition"/>
 <artifact id="StructureDefinition/cpg-holdactivity" key="StructureDefinition-cpg-holdactivity" name="CPG Hold Activity"/>
@@ -197,13 +209,20 @@
 <artifact id="StructureDefinition/cpg-immunizationactivity" key="StructureDefinition-cpg-immunizationactivity" name="CPG Immunization Activity"/>
 <artifact id="StructureDefinition/cpg-immunizationrequest" key="StructureDefinition-cpg-immunizationrequest" name="CPG Immunization Request"/>
 <artifact id="ActivityDefinition/cpg-immunizationrequest-activitydefinition" key="ActivityDefinition-cpg-immunizationrequest-activitydefinition" name="CPG ImmunizationRequest ActivityDefinition"/>
+<artifact id="ActorDefinition/cpg-importing-client" key="ActorDefinition-cpg-importing-client" name="CPG Importing Client"/>
+<artifact id="CapabilityStatement/cpg-importing-client" key="CapabilityStatement-cpg-importing-client" name="CPG Importing Client Capabilities"/>
 <artifact id="StructureDefinition/cpg-impressionFor" key="StructureDefinition-cpg-impressionFor" name="CPG Impression For Extension"/>
 <artifact deprecated="true" id="CodeSystem/cpg-indicator-cs" key="CodeSystem-cpg-indicator-cs" name="CPG Indicator Code System"/>
 <artifact deprecated="true" id="ValueSet/cpg-indicator-vs" key="ValueSet-cpg-indicator-vs" name="CPG Indicator Value Set"/>
 <artifact id="StructureDefinition/cpg-inferenceExpression" key="StructureDefinition-cpg-inferenceExpression" name="CPG Inference Expression Extension"/>
 <artifact id="StructureDefinition/cpg-instantiatesCaseFeature" key="StructureDefinition-cpg-instantiatesCaseFeature" name="CPG Instantiates Case Feature Extension"/>
+<artifact id="ActorDefinition/cpg-interactive-client" key="ActorDefinition-cpg-interactive-client" name="CPG Interactive Client"/>
+<artifact id="CapabilityStatement/cpg-interactive-client" key="CapabilityStatement-cpg-interactive-client" name="CPG Interactive Client Capabilities"/>
+<artifact id="ActorDefinition/cpg-interactive-service" key="ActorDefinition-cpg-interactive-service" name="CPG Interactive Service"/>
+<artifact id="CapabilityStatement/cpg-interactive-service" key="CapabilityStatement-cpg-interactive-service" name="CPG Interactive Service Capabilities"/>
 <artifact id="StructureDefinition/cpg-isUnenrollment" key="StructureDefinition-cpg-isUnenrollment" name="CPG Is Unenrollment Extension"/>
-<artifact id="StructureDefinition/cpg-itemImage" key="StructureDefinition-cpg-itemImage" name="CPG Item Image Extension"/>
+<artifact deprecated="true" id="StructureDefinition/cpg-itemImage" key="StructureDefinition-cpg-itemImage" name="CPG Item Image Extension"/>
+<artifact id="ActorDefinition/cpg-knowledge-repository" key="ActorDefinition-cpg-knowledge-repository" name="CPG Knowledge Repository"/>
 <artifact id="StructureDefinition/cpg-location" key="StructureDefinition-cpg-location" name="CPG Location"/>
 <artifact id="StructureDefinition/cpg-locationdefinition" key="StructureDefinition-cpg-locationdefinition" name="CPG Location Definition"/>
 <artifact id="CodeSystem/cpg-measure-type-cs" key="CodeSystem-cpg-measure-type-cs" name="CPG Measure Type Code System"/>
@@ -214,22 +233,39 @@
 <artifact id="StructureDefinition/cpg-medicationrequestactivity" key="StructureDefinition-cpg-medicationrequestactivity" name="CPG Medication Request Activity"/>
 <artifact id="StructureDefinition/cpg-medicationstatement" key="StructureDefinition-cpg-medicationstatement" name="CPG Medication Statement"/>
 <artifact id="ActivityDefinition/cpg-medicationrequest-activitydefinition" key="ActivityDefinition-cpg-medicationrequest-activitydefinition" name="CPG MedicationRequest ActivityDefinition"/>
+<artifact id="ActorDefinition/cpg-metric-client" key="ActorDefinition-cpg-metric-client" name="CPG Metric Client"/>
+<artifact id="CapabilityStatement/cpg-metric-client" key="CapabilityStatement-cpg-metric-client" name="CPG Metric Client Capabilities"/>
 <artifact id="StructureDefinition/cpg-metricreport" key="StructureDefinition-cpg-metricreport" name="CPG Metric Report"/>
 <artifact id="CodeSystem/cpg-metric-result-cs" key="CodeSystem-cpg-metric-result-cs" name="CPG Metric Result Code System"/>
+<artifact id="ActorDefinition/cpg-metric-service" key="ActorDefinition-cpg-metric-service" name="CPG Metric Service"/>
+<artifact id="CapabilityStatement/cpg-metric-service" key="CapabilityStatement-cpg-metric-service" name="CPG Metric Service Capabilities"/>
+<artifact id="ActorDefinition/cpg-narrative-client" key="ActorDefinition-cpg-narrative-client" name="CPG Narrative Client"/>
+<artifact id="CapabilityStatement/cpg-narrative-client" key="CapabilityStatement-cpg-narrative-client" name="CPG Narrative Client Capabilities"/>
+<artifact id="ActorDefinition/cpg-narrative-service" key="ActorDefinition-cpg-narrative-service" name="CPG Narrative Service"/>
+<artifact id="CapabilityStatement/cpg-narrative-service" key="CapabilityStatement-cpg-narrative-service" name="CPG Narrative Service Capabilities"/>
 <artifact id="StructureDefinition/cpg-observation" key="StructureDefinition-cpg-observation" name="CPG Observation"/>
 <artifact id="StructureDefinition/cpg-ordersetdefinition" key="StructureDefinition-cpg-ordersetdefinition" name="CPG Order Set Definition"/>
 <artifact id="StructureDefinition/cpg-organization" key="StructureDefinition-cpg-organization" name="CPG Organization"/>
 <artifact id="StructureDefinition/cpg-partOf" key="StructureDefinition-cpg-partOf" name="CPG Part Of Extension"/>
 <artifact id="StructureDefinition/cpg-participantCapabilityStatement" key="StructureDefinition-cpg-participantCapabilityStatement" name="CPG Participant Capability Statement Extension"/>
+<artifact id="ActorDefinition/cpg-pathway-client" key="ActorDefinition-cpg-pathway-client" name="CPG Pathway Client"/>
+<artifact id="CapabilityStatement/cpg-pathway-client" key="CapabilityStatement-cpg-pathway-client" name="CPG Pathway Client Capabilities"/>
 <artifact id="StructureDefinition/cpg-pathwaydefinition" key="StructureDefinition-cpg-pathwaydefinition" name="CPG Pathway Definition"/>
+<artifact id="ActorDefinition/cpg-pathway-service" key="ActorDefinition-cpg-pathway-service" name="CPG Pathway Service"/>
+<artifact id="CapabilityStatement/cpg-pathway-service" key="CapabilityStatement-cpg-pathway-service" name="CPG Pathway Service Capabilities"/>
 <artifact id="StructureDefinition/cpg-patient" key="StructureDefinition-cpg-patient" name="CPG Patient"/>
+<artifact id="StructureDefinition/cpg-pertinenceRating" key="StructureDefinition-cpg-pertinenceRating" name="CPG Pertinence Rating Extension"/>
 <artifact id="StructureDefinition/cpg-pertinent" key="StructureDefinition-cpg-pertinent" name="CPG Pertinent Extension"/>
+<artifact id="StructureDefinition/cpg-pertinentTo" key="StructureDefinition-cpg-pertinentTo" name="CPG Pertinent To Extension"/>
 <artifact id="StructureDefinition/cpg-planFor" key="StructureDefinition-cpg-planFor" name="CPG Plan For Extension"/>
 <artifact id="OperationDefinition/cpg-plandefinition-apply" key="OperationDefinition-cpg-plandefinition-apply" name="CPG PlanDefinition Apply"/>
 <artifact id="OperationDefinition/cpg-planDefinition-questionnaire" key="OperationDefinition-cpg-planDefinition-questionnaire" name="CPG PlanDefinition Questionnaire"/>
 <artifact id="StructureDefinition/cpg-practitioner" key="StructureDefinition-cpg-practitioner" name="CPG Practitioner"/>
 <artifact id="StructureDefinition/cpg-practitionerrole" key="StructureDefinition-cpg-practitionerrole" name="CPG Practitioner Role"/>
 <artifact id="StructureDefinition/cpg-practitionerroledefinition" key="StructureDefinition-cpg-practitionerroledefinition" name="CPG Practitioner Role Definition"/>
+<artifact id="CodeSystem/cpg-preference-behavior-cs" key="CodeSystem-cpg-preference-behavior-cs" name="CPG Preference Behavior Code System"/>
+<artifact id="StructureDefinition/cpg-preferenceBehavior" key="StructureDefinition-cpg-preferenceBehavior" name="CPG Preference Behavior Extension"/>
+<artifact id="ValueSet/cpg-preference-behavior-vs" key="ValueSet-cpg-preference-behavior-vs" name="CPG Preference Behavior Value Set"/>
 <artifact id="StructureDefinition/cpg-procedure" key="StructureDefinition-cpg-procedure" name="CPG Procedure"/>
 <artifact id="StructureDefinition/cpg-proposediagnosisactivity" key="StructureDefinition-cpg-proposediagnosisactivity" name="CPG Propose Diagnosis Activity"/>
 <artifact id="ActivityDefinition/cpg-proposediagnosistask-activitydefinition" key="ActivityDefinition-cpg-proposediagnosistask-activitydefinition" name="CPG Propose Diagnosis ActivityDefinition"/>
@@ -238,9 +274,13 @@
 <artifact id="StructureDefinition/cpg-questionnairetask" key="StructureDefinition-cpg-questionnairetask" name="CPG Questionnaire Task"/>
 <artifact id="StructureDefinition/cpg-rating" key="StructureDefinition-cpg-rating" name="CPG Rating Extension"/>
 <artifact id="StructureDefinition/cpg-rationale" key="StructureDefinition-cpg-rationale" name="CPG Rationale Extension"/>
+<artifact id="ActorDefinition/cpg-recommendation-client" key="ActorDefinition-cpg-recommendation-client" name="CPG Recommendation Client"/>
+<artifact id="CapabilityStatement/cpg-recommendation-client" key="CapabilityStatement-cpg-recommendation-client" name="CPG Recommendation Client Capabilities"/>
 <artifact id="StructureDefinition/cpg-recommendationdefinition" key="StructureDefinition-cpg-recommendationdefinition" name="CPG Recommendation Definition"/>
 <artifact id="CodeSystem/cpg-recommendation-direction-cs" key="CodeSystem-cpg-recommendation-direction-cs" name="CPG Recommendation Direction Code System"/>
 <artifact id="ValueSet/cpg-recommendation-direction-vs" key="ValueSet-cpg-recommendation-direction-vs" name="CPG Recommendation Direction Value Set"/>
+<artifact id="ActorDefinition/cpg-recommendation-service" key="ActorDefinition-cpg-recommendation-service" name="CPG Recommendation Service"/>
+<artifact id="CapabilityStatement/cpg-recommendation-service" key="CapabilityStatement-cpg-recommendation-service" name="CPG Recommendation Service Capabilities"/>
 <artifact id="StructureDefinition/cpg-recorddetectedissueactivity" key="StructureDefinition-cpg-recorddetectedissueactivity" name="CPG Record Detected Issue Activity"/>
 <artifact id="StructureDefinition/cpg-recorddetectedissuetask" key="StructureDefinition-cpg-recorddetectedissuetask" name="CPG Record Detected Issue Task"/>
 <artifact id="ActivityDefinition/cpg-recorddetectedissue-activity" key="ActivityDefinition-cpg-recorddetectedissue-activity" name="CPG Record DetectedIssue ActivityDefinition"/>
@@ -252,9 +292,10 @@
 <artifact id="ActivityDefinition/cpg-reportflagtask-activitydefinition" key="ActivityDefinition-cpg-reportflagtask-activitydefinition" name="CPG Report Flag ActivityDefinition"/>
 <artifact id="StructureDefinition/cpg-reportflagtask" key="StructureDefinition-cpg-reportflagtask" name="CPG Report Flag Task"/>
 <artifact id="StructureDefinition/cpg-reportWith" key="StructureDefinition-cpg-reportWith" name="CPG Report With Extension"/>
-<artifact id="StructureDefinition/cpg-responseImage" key="StructureDefinition-cpg-responseImage" name="CPG Response Image Extension"/>
+<artifact deprecated="true" id="StructureDefinition/cpg-responseImage" key="StructureDefinition-cpg-responseImage" name="CPG Response Image Extension"/>
 <artifact id="StructureDefinition/cpg-resumeactivity" key="StructureDefinition-cpg-resumeactivity" name="CPG Resume Activity"/>
 <artifact id="StructureDefinition/cpg-resumetask" key="StructureDefinition-cpg-resumetask" name="CPG Resume Task"/>
+<artifact id="ActorDefinition/cpg-service" key="ActorDefinition-cpg-service" name="CPG Service"/>
 <artifact id="StructureDefinition/cpg-servicerequest" key="StructureDefinition-cpg-servicerequest" name="CPG Service Request"/>
 <artifact id="StructureDefinition/cpg-servicerequestactivity" key="StructureDefinition-cpg-servicerequestactivity" name="CPG Service Request Activity"/>
 <artifact id="ActivityDefinition/cpg-servicerequest-activitydefinition" key="ActivityDefinition-cpg-servicerequest-activitydefinition" name="CPG ServiceRequest ActivityDefinition"/>
@@ -263,8 +304,13 @@
 <artifact id="StructureDefinition/cpg-strategy" key="StructureDefinition-cpg-strategy" name="CPG Strategy"/>
 <artifact id="StructureDefinition/cpg-strategydefinition" key="StructureDefinition-cpg-strategydefinition" name="CPG Strategy Definition"/>
 <artifact id="OperationDefinition/cpg-structureDefinition-questionnaire" key="OperationDefinition-cpg-structureDefinition-questionnaire" name="CPG StructureDefinition Questionnaire"/>
+<artifact id="ActorDefinition/cpg-summary-client" key="ActorDefinition-cpg-summary-client" name="CPG Summary Client"/>
+<artifact id="CapabilityStatement/cpg-summary-client" key="CapabilityStatement-cpg-summary-client" name="CPG Summary Client Capabilities"/>
 <artifact id="StructureDefinition/cpg-summaryDefinitionFor" key="StructureDefinition-cpg-summaryDefinitionFor" name="CPG Summary Definition For Extension"/>
 <artifact id="StructureDefinition/cpg-summaryFor" key="StructureDefinition-cpg-summaryFor" name="CPG Summary For Extension"/>
+<artifact id="ActorDefinition/cpg-summary-service" key="ActorDefinition-cpg-summary-service" name="CPG Summary Service"/>
+<artifact id="CapabilityStatement/cpg-summary-service" key="CapabilityStatement-cpg-summary-service" name="CPG Summary Service Capabilities"/>
+<artifact id="StructureDefinition/cpg-targetExpression" key="StructureDefinition-cpg-targetExpression" name="CPG Target Expression Extension"/>
 <artifact id="StructureDefinition/cpg-task" key="StructureDefinition-cpg-task" name="CPG Task"/>
 <artifact deprecated="true" id="StructureDefinition/cpg-testcasebundle" key="StructureDefinition-cpg-testcasebundle" name="CPG Test Case Bundle"/>
 <artifact id="StructureDefinition/cpg-workflowdefinition" key="StructureDefinition-cpg-workflowdefinition" name="CPG Workflow Definition"/>
@@ -280,6 +326,7 @@
 <artifact id="Library/donotsendmessage-library" key="Library-donotsendmessage-library" name="Do Not Send Message"/>
 <artifact id="Library/documentmedication-library" key="Library-documentmedication-library" name="Document Medication Library"/>
 <artifact id="Library/enrollment-library" key="Library-enrollment-library" name="Enrollment Library"/>
+<artifact id="Library/GenerateReportMeasure" key="Library-GenerateReportMeasure" name="Generate Report Example Measure Logic"/>
 <artifact id="Library/generatereport-library" key="Library-generatereport-library" name="Generate Report Library"/>
 <artifact id="CarePlan/chf-scenario1-careplan" key="CarePlan-chf-scenario1-careplan" name="Heart Failure Care Pathway"/>
 <artifact id="Library/holdmedication-library" key="Library-holdmedication-library" name="Hold Medication Library"/>
@@ -347,9 +394,11 @@
 <artifact id="ClinicalImpression/chf-scenario1-clinicalimpression" key="ClinicalImpression-chf-scenario1-clinicalimpression" name="chf-scenario1-clinicalimpression"/>
 <artifact id="Condition/chf-scenario1-condition" key="Condition-chf-scenario1-condition" name="chf-scenario1-condition"/>
 <artifact id="Goal/chf-scenario1-creatinine" key="Goal-chf-scenario1-creatinine" name="chf-scenario1-creatinine"/>
+<artifact id="ServiceRequest/chf-scenario1-creatinine-request" key="ServiceRequest-chf-scenario1-creatinine-request" name="chf-scenario1-creatinine-request"/>
 <artifact id="Observation/chf-scenario1-creatinine1" key="Observation-chf-scenario1-creatinine1" name="chf-scenario1-creatinine1"/>
 <artifact id="RequestGroup/chf-scenario1-daily-management" key="RequestGroup-chf-scenario1-daily-management" name="chf-scenario1-daily-management"/>
 <artifact id="Goal/chf-scenario1-egfr" key="Goal-chf-scenario1-egfr" name="chf-scenario1-egfr"/>
+<artifact id="ServiceRequest/chf-scenario1-egfr-request" key="ServiceRequest-chf-scenario1-egfr-request" name="chf-scenario1-egfr-request"/>
 <artifact id="Observation/chf-scenario1-egfr1" key="Observation-chf-scenario1-egfr1" name="chf-scenario1-egfr1"/>
 <artifact id="Encounter/chf-scenario1-encounter" key="Encounter-chf-scenario1-encounter" name="chf-scenario1-encounter"/>
 <artifact id="EpisodeOfCare/chf-scenario1-eoc" key="EpisodeOfCare-chf-scenario1-eoc" name="chf-scenario1-eoc"/>
@@ -377,6 +426,7 @@
 <artifact id="Organization/chf-scenario1-organization" key="Organization-chf-scenario1-organization" name="chf-scenario1-organization"/>
 <artifact id="Patient/chf-scenario1-patient" key="Patient-chf-scenario1-patient" name="chf-scenario1-patient"/>
 <artifact id="Goal/chf-scenario1-potassium" key="Goal-chf-scenario1-potassium" name="chf-scenario1-potassium"/>
+<artifact id="ServiceRequest/chf-scenario1-potassium-request" key="ServiceRequest-chf-scenario1-potassium-request" name="chf-scenario1-potassium-request"/>
 <artifact id="Observation/chf-scenario1-potassium1" key="Observation-chf-scenario1-potassium1" name="chf-scenario1-potassium1"/>
 <artifact id="Practitioner/chf-scenario1-practitioner" key="Practitioner-chf-scenario1-practitioner" name="chf-scenario1-practitioner"/>
 <artifact id="PractitionerRole/chf-scenario1-practitionerrole" key="PractitionerRole-chf-scenario1-practitionerrole" name="chf-scenario1-practitionerrole"/>
@@ -396,6 +446,10 @@
 <artifact id="Patient/ci-scenario5-patient" key="Patient-ci-scenario5-patient" name="ci-scenario5-patient"/>
 <artifact id="Patient/ci-scenario6-patient" key="Patient-ci-scenario6-patient" name="ci-scenario6-patient"/>
 <artifact id="Patient/ci-scenario7-patient" key="Patient-ci-scenario7-patient" name="ci-scenario7-patient"/>
+<artifact id="MedicationRequest/ckd-hypertension-options-ace-inhibitor" key="MedicationRequest-ckd-hypertension-options-ace-inhibitor" name="ckd-hypertension-options-ace-inhibitor"/>
+<artifact id="MedicationRequest/ckd-hypertension-options-arb" key="MedicationRequest-ckd-hypertension-options-arb" name="ckd-hypertension-options-arb"/>
+<artifact id="MedicationRequest/ckd-hypertension-options-ccb" key="MedicationRequest-ckd-hypertension-options-ccb" name="ckd-hypertension-options-ccb"/>
+<artifact id="Patient/ckd-hypertension-options-patient" key="Patient-ckd-hypertension-options-patient" name="ckd-hypertension-options-patient"/>
 <artifact id="MedicationRequest/dcm-scenario1" key="MedicationRequest-dcm-scenario1" name="dcm-scenario1"/>
 <artifact id="Patient/dcm-scenario1-patient" key="Patient-dcm-scenario1-patient" name="dcm-scenario1-patient"/>
 <artifact id="MedicationRequest/dcm-scenario2" key="MedicationRequest-dcm-scenario2" name="dcm-scenario2"/>
@@ -607,19 +661,20 @@
 <page key="documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems" name="6S Evidence Pyramid and Learning Health Systems"/>
 <page key="examples-activities" name="Activity Examples"/>
 <page key="activityflow" name="Activity Flow"/>
+<page key="activityflow-transitions" name="Activity Transitions"/>
+<page key="actors" name="Actors"/>
 <page key="documentation-approach-05-06-agile-cpg-development-approach" name="Agile CPG Development Approach"/>
 <page key="documentation-approach-04-04-analysis-of-evidence-recommendations-reporting" name="Analysis of Evidence, Recommendations, and Reporting"/>
 <page key="approach" name="Approach"/>
 <page deprecated="true" key="packaging" name="Artifact Packaging"/>
 <page key="artifacts" name="Artifacts"/>
+<page key="documentation-approach-cds-implementation-evidence" name="CDS Literature and Bibliography"/>
 <page key="index" name="CPG Home"/>
-<page key="documentation-approach-12-conceptual-knowledge-architecture" name="CPG Knowledge Architecture-Conceptual Perspective"/>
-<page key="documentation-approach-12-05-cpg-careplan" name="CPGCarePlan"/>
-<page key="documentation-approach-12-04-cpg-case" name="CPGCase"/>
-<page key="documentation-approach-12-07-cpg-derivative-and-related-assets" name="CPGGuideline and Derivative &amp; Related Assets"/>
-<page key="documentation-approach-12-03-cpg-plan" name="CPGPlan"/>
+<page key="documentation-approach-12-05-cpg-careplan" name="Care Plan"/>
+<page key="documentation-approach-12-04-cpg-case" name="Case"/>
 <page key="checklists" name="Checklists"/>
 <page key="common-care-pathway" name="Common Care Pathway"/>
+<page key="documentation-approach-12-08-conceptual-knowledge-architecture-index" name="Conceptual Knowledge Architecture Index"/>
 <page key="documentation-conformance" name="Conformance"/>
 <page key="examples-chf" name="Congestive Heart Failure Example"/>
 <page key="documentation-approach-04-05-computable-guideline-artifacts" name="Development of Computable Clinical Guideline Artifacts"/>
@@ -630,24 +685,27 @@
 <page key="documentation-approach-04-guideline-development" name="Guideline Development"/>
 <page key="documentation-approach-04-02-guideline-development-frameworks" name="Guideline Development Frameworks"/>
 <page deprecated="true" key="documentation-approach-04-01-guideline-development-group" name="Guideline Development Group"/>
+<page key="documentation-approach-12-07-cpg-derivative-and-related-assets" name="Guideline, Derivative, and Related Assets"/>
 <page key="examples-hiv-guideline" name="HIV Screening Guideline Recommendations"/>
-<page key="documentation-approach-02-05-knowledge-implementation" name="Implementation Computable Knowledge"/>
+<page key="documentation-approach-02-05-knowledge-implementation" name="Implementing Computable Knowledge"/>
 <page key="interactive-cds" name="Interactive Clinical Decision Support"/>
 <page key="documentation-approach-05-01-knowledge-acquisition" name="Knowledge Acquisition"/>
 <page key="documentation-approach-06-03-knowledge-architecture" name="Knowledge Architecture"/>
+<page key="documentation-approach-12-conceptual-knowledge-architecture" name="Knowledge Architecture - Conceptual Perspective"/>
 <page key="documentation-approach-06-02-knowledge-assets" name="Knowledge Assets"/>
 <page key="documentation-approach-05-knowledge-engineering-overview" name="Knowledge Engineering Overview"/>
 <page key="documentation-approach-05-04-knowledge-execution-and-validation" name="Knowledge Execution and Validation"/>
 <page key="documentation-approach-05-05-knowledge-implementation" name="Knowledge Implementation"/>
-<page key="documentation-approach-06-knowledge-representation" name="Knowledge Representation"/>
+<page deprecated="true" key="documentation-approach-06-knowledge-representation" name="Knowledge Representation"/>
 <page key="documentation-approach-02-04-knowledge-representation" name="Knowledge Representation Overview"/>
-<page key="documentation-approach-05-03-knowledge-representation" name="Knowledge Representation/Expression"/>
+<page key="documentation-approach-05-03-knowledge-representation" name="Knowledge Representation and Expression"/>
 <page key="documentation-approach-05-02-knowledge-translation" name="Knowledge Translation"/>
 <page key="clinical-guidelines-development-L1-checklist" name="L1 Checklist"/>
 <page key="clinical-guidelines-development-L2-checklist" name="L2 Checklist"/>
 <page key="clinical-guidelines-development-L3-checklist" name="L3 Checklist"/>
 <page key="clinical-guidelines-development-L4-checklist" name="L4 Checklist"/>
 <page key="documentation-approach-03-conformance-levels" name="Levels of Enablement"/>
+<page key="documentation-approach-06-01-levels-of-knowledge-representation" name="Levels of Knowledge Representation"/>
 <page key="documentation-approach-08-levels-of-representation-by-tiers-of-functionality" name="Levels of Representation by Tiers of Functionality"/>
 <page key="libraries" name="Libraries"/>
 <page key="documentation-methodology" name="Mapping and Other Formalisms"/>
@@ -655,13 +713,18 @@
 <page key="methodology" name="Methodology"/>
 <page key="methodology-case-study" name="Methodology Example - COVID-19 Severity Classification"/>
 <page key="documentation-approach-09-methods-of-implementation" name="Methods of Implementation"/>
+<page key="methodology-package" name="Package"/>
+<page key="documentation-approach-12-03-cpg-plan" name="Plan"/>
 <page key="profiles" name="Profile Definitions and Documentation"/>
+<page key="methodology-represent" name="Represent"/>
+<page key="methodology-select" name="Select"/>
 <page key="documentation-approach-12-02-separating-and-defining-case-plan-and-workflow" name="Separating and Defining Case, Plan, and Workflow"/>
 <page key="documentation-approach-12-01-separations-of-concerns-in-the-cpg" name="Separations of Concerns"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 <page key="documentation-approach-07-tiers-of-functionality" name="Tiers of Functionality"/>
+<page key="methodology-translate" name="Translate"/>
+<page key="methodology-validate" name="Validate"/>
 <page key="changes" name="Version History"/>
 <page key="documentation-approach-12-06-cpg-common-pathway" name="Workflow and Common Pathway"/>
-<page key="documentation-approach-06-01-levels-of-knowledge-representation" name="“Levels” of Knowledge Representation Framing"/>
 </specification>
