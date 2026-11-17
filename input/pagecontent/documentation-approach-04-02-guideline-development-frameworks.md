@@ -5,7 +5,7 @@ The following frameworks are used in guideline development and across the eviden
 
 ### Knowledge Synthesis and the Evidence Pyramid
 
-Knowledge synthesis is the process in the professional community of practice that applies and develops methodologies for systematically evaluating a corpus of evidence related to a particular condition or intervention.  This includes deciding what evidence from across the evidence ecosystem to evaluate[<sup>1</sup>](#1) as well as various methods for performing this evaluation[<sup>2</sup>](#2). One factor that is taken into consideration is the validity and/or quality of evidence.  In evaluating the validity of evidence, one factor that is taken into consideration is the Evidence Pyramid, discussed below.  The quality of evidence may be systematically evaluated, often through knowledge synthesis methodologies such as meta-analyses, systematic reviews, evidence summaries, or rapid reviews, and applying frameworks such as GRADE, discussed further below.
+Knowledge synthesis is the process in the professional community of practice that applies and develops methodologies for systematically evaluating a corpus of evidence related to a particular condition or intervention.  This includes deciding what evidence from across the evidence ecosystem to evaluate ([GIN-McMaster checklist](documentation-approach-cds-implementation-evidence.html#ref-schunemann-2014)) as well as various methods for performing this evaluation ([GIN-McMaster checklist](documentation-approach-cds-implementation-evidence.html#ref-schunemann-2014)). One factor that is taken into consideration is the validity and/or quality of evidence.  In evaluating the validity of evidence, one factor that is taken into consideration is the Evidence Pyramid, discussed below.  The quality of evidence may be systematically evaluated, often through knowledge synthesis methodologies such as meta-analyses, systematic reviews, evidence summaries, or rapid reviews, and applying frameworks such as GRADE, discussed further below.
 
 ### Meta-Analyses and Systematic Reviews (Syntheses)
 
@@ -25,30 +25,6 @@ Figure 1. The Evidence Pyramid refers to a means to evaluate the quality or vali
 
 </details>
 
-**PICOTS Typology** - **P**atient population, **I**ntervention, **C**omparator, **O**utcomes, **T**iming, **S**etting. The **PICOTS** Typology may be used for scoping the guideline and individual recommendations and the analysis of the supporting evidence or studies (e.g., meta-analyses, systematic reviews, and the individual studies that serve as their body of evidence).  There are implications to guideline eligibility, applicability criteria for individual recommendations (the “condition” portion of ECA rules), and various data element and terminology semantics across the CPG.[<sup>4</sup>](#4);[<sup>5</sup>](#5)  For more on using PICOTS within HL7 Standards, see the EBM-on-FHIR initiative.[<sup>6</sup>](#6)
+**PICOTS Typology** - **P**atient population, **I**ntervention, **C**omparator, **O**utcomes, **T**iming, **S**etting. The **PICOTS** Typology may be used for scoping the guideline and individual recommendations and the analysis of the supporting evidence or studies (e.g., meta-analyses, systematic reviews, and the individual studies that serve as their body of evidence).  There are implications to guideline eligibility, applicability criteria for individual recommendations (the “condition” portion of ECA rules), and various data element and terminology semantics across the CPG ([GIN-McMaster checklist](documentation-approach-cds-implementation-evidence.html#ref-schunemann-2014); [Chang et al., 2012](documentation-approach-cds-implementation-evidence.html#ref-chang-2012)).  For more on using PICOTS within HL7 Standards, see the EBM-on-FHIR initiative ([HL7 Evidence and Statistics](documentation-approach-cds-implementation-evidence.html#ref-hl7-ebm)).
 
-**GRADE** (**G**rades of **R**ecommendation **A**ssessment, **D**evelopment and **E**valuation) **GRADE** describes a process and a structured framework for conveying information to develop a common, transparent, and sensible system for grading the **quality** of evidence and the **strength** of recommendations. Quality of evidence and strength of recommendations have implications for not only recommendation metadata and implementation approaches.  GRADE distinctly separates the evaluation of the quality of evidence from the evaluation of strength of recommendations.[<sup>7</sup>](#7);[<sup>8</sup>](#8);[<sup>9</sup>](#9);[<sup>10</sup>](#10);[<sup>11</sup>](#11)
-
----
-
-<a id="1">1</a>: https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Deciding
-
-<a id="2">2</a>:  https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Summarizingtable
-
-<a id="3">3</a>: http://dx.doi.org/10.1136/ebmed-2016-110401
-
-<a id="4">4</a>: https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#PICOtable
-
-<a id="5">5</a>: https://www.ncbi.nlm.nih.gov/books/NBK98234/table/ch
-
-<a id="6">6</a>: http://hl7.org/fhir/clinicalreasoning-evidence-and-statistics.html
-
-<a id="7">7</a>: https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Judgingtabl
-
-<a id="8">8</a>: https://www.ncbi.nlm.nih.gov/pubmed/23312392
-
-<a id="9">9</a>: https://www.ncbi.nlm.nih.gov/pubmed/21208779
-
-<a id="10">10</a>: https://www.cdc.gov/vaccines/acip/recs/grade/downloads/guide-dev-grade.pdf
-
-<a id="11">11</a>: https://gdt.gradepro.org/app/handbook/handbook.html
+**GRADE** (**G**rades of **R**ecommendation **A**ssessment, **D**evelopment and **E**valuation) **GRADE** describes a process and a structured framework for conveying information to develop a common, transparent, and sensible system for grading the **quality** of evidence and the **strength** of recommendations. Quality of evidence and strength of recommendations have implications for not only recommendation metadata and implementation approaches.  GRADE distinctly separates the evaluation of the quality of evidence from the evaluation of strength of recommendations ([GIN-McMaster checklist](documentation-approach-cds-implementation-evidence.html#ref-schunemann-2014); [Andrews et al., 2013](documentation-approach-cds-implementation-evidence.html#ref-andrews-2013); [Balshem et al., 2011](documentation-approach-cds-implementation-evidence.html#ref-balshem-2011); [ACIP GRADE guidance](documentation-approach-cds-implementation-evidence.html#ref-cdc-acip-grade); [GRADE Handbook](documentation-approach-cds-implementation-evidence.html#ref-grade-handbook)).

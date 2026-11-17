@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGGoal represents a subject-specific objective used in guideline-supported care. Use it to relate a goal and its target to the reusable guidance it supports, while preserving the goal's own lifecycle and achievement information. It is an intended outcome for a subject, not the PlanDefinition goal specification or evidence that the outcome has been achieved.

@@ -1,1 +1,1 @@
-This is an [activity event profile](profiles.html#activity-profiles)
+Use this MedicationAdministration profile to document an administered medication, activity in progress or explicit non-administration in guideline-directed care. The record describes the medication event and its clinical context, with links to the request and guidance where available. Its event state is separate from the work tracked by an administration Task.

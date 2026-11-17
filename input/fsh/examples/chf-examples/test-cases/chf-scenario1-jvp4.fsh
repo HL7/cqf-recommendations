@@ -8,6 +8,13 @@ Description: "CHF Scenario One"
 * extension[+]
   * url = Canonical(cpg-caseFeatureType)
   * valueCode = #asserted
+* extension[+]
+  * url = Canonical(cpg-pertinentTo)
+  * valueReference = Reference(chf-scenario1-jvp5)
+  // Illustrative weight for this relationship in the synthetic case.
+  * valueReference.extension[+]
+    * url = Canonical(cpg-pertinenceRating)
+    * valueInteger = 8
 * status = #final
 * category = $observation-category#vital-signs
 * code = $chf-example-codes#jvp

@@ -1,8 +1,8 @@
-library CHF version '1.0.0'
+library CHF version '3.0.0-ballot'
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
+include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem "SNOMED-CT": 'http://snomed.info/sct'
 codesystem "LOINC": 'http://loinc.org'
@@ -76,12 +76,13 @@ define "Body Weight Change":
       }
     }
 
-define "Daily Body Weight":
+// These intermediate tuples are used to build the public Body Weight Change observations.
+define private "Daily Body Weight":
   (expand Encounter.period per day) Date
     let maxWeight: Max("Body Weight" WT where WT.issued same day as Date return WT.value as FHIR.Quantity)
     return { date: Date, weight: maxWeight }
 
-define "Daily Body Weight Change":
+define private "Daily Body Weight Change":
   "Daily Body Weight" WT
     let priorWeight: First("Daily Body Weight" PWT where PWT.date < WT.date sort by date descending).weight
     return { date: WT.date, weight: WT.weight, priorWeight: priorWeight, change: WT.weight - priorWeight}

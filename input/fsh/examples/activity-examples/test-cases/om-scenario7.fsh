@@ -3,7 +3,7 @@ InstanceOf: CPGMedicationDispense
 Usage: #example
 Description: "Example test case - Order Medication - Scenario 7 - MedicationDispense"
 * status = #cancelled
-* medicationCodeableConcept = $ndc#0378-1805-10 "Levothyroxine Sodium, 1000 TABLET in 1 BOTTLE, PLASTIC (0378-1805-10) (package)"
+* medicationCodeableConcept = $rxnorm#966222 "levothyroxine sodium 0.075 MG Oral Tablet"
 * subject = Reference(om-scenario7-patient)
 * type = $v3-ActCode#RFP "Refill - Part Fill"
 * quantity = 100 $v3-orderableDrugForm-cs#TAB

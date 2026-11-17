@@ -1,5 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
-
-**External Examples:**
-
-*  [ANCSummary](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/GraphDefinition-anc-summary.html) ANCSummary
+This GraphDefinition profile specifies the information to assemble for a view of a pathway, strategy, or recommendation in a patient's plan. Use it to publish the reusable graph behind a case-plan summary. The resulting Composition is a separate instance with its own patient context, date, authorship, and document status.

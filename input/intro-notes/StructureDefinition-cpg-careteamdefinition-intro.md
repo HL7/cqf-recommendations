@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGCareTeamDefinition describes a reusable team composition in terms of roles and other team definitions. Use it while specifying who a guideline expects to participate, before assigning real people to a patient's care. Although represented as CareTeam, it deliberately excludes the patient-specific and operational fields used by CPGCareTeam.

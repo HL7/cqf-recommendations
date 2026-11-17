@@ -1,1 +1,1 @@
-This is a [computable artifact profile](profiles.html#artifact-profiles)
+This profile establishes the common PlanDefinition structure for computable guideline plans. Use its more specific recommendation, strategy, pathway, order-set, or workflow profiles when those roles apply. It combines reusable actions, conditions, supporting information, and expressions; patient-specific proposals and care plans are produced or maintained separately.

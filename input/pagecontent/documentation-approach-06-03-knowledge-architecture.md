@@ -140,7 +140,7 @@ Figure 6. Lastly, the knowledge architecture team defines the relationships, rul
 
 ### Conceptual Perspective on the CPG Knowledge Architecture
 
-This brings us to the conceptual knowledge architecture for the CPG.  It is the product of the concepts from a guideline and its recommendations described in the section on the [Guideline Development](documentation-approach-04-guideline-development.html) Process together with the principles and best practices discussed previously in this section as well as the approach to developing the knowledge architecture described just above.
+The conceptual knowledge architecture for the CPG applies the principles, best practices, and development approach described in this section to the concepts of a guideline and its recommendations. The [Conceptual Knowledge Architecture](documentation-approach-12-conceptual-knowledge-architecture.html) section describes those concepts, and [Guideline Development](documentation-approach-04-guideline-development.html) describes how a guideline and its recommendations are developed.
 
 The conceptual perspective on the CPG knowledge architecture describes the domain- oriented descriptions of the knowledge assets or artifacts, together with their properties and relationships. In the [Methodology](methodology.html) Section, these knowledge assets are concretized and realized as explicit computable knowledge assets in [CPG Profiles](profiles.html) on FHIR Resources using an established approach from the HL-7 FHIR [Clinical Reasoning Module](https://www.hl7.org/fhir/clinicalreasoning-module.html).
 
@@ -153,6 +153,7 @@ The CPG knowledge architecture provides the framework through which the knowledg
 As discussed in the [Knowledge Asset](documentation-approach-06-02-knowledge-assets.html) section previously, the asset metamodel (definition of structure including metadata, attributes, requirements and constraints) can be defined using an approach to [Knowledge Artifact Representation in FHIR](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html) described in the Clinical Reasoning Module.  In FHIR, the means of defining asset metamodels is the FHIR [StructureDefinition Resource](https://www.hl7.org/fhir/structuredefinition.html) (though it is also used for definitions of resources other than knowledge assets including all request (e.g. orders) and event (e.g. clinical data element) resources).  Furthermore, the [PlanDefinition Resource](https://www.hl7.org/fhir/plandefinition.html) (based on the HL-7 Knowledge Artifact Specification) is a base, or more generic, asset meta-model definition that may be profiled using StructureDefinition to further define additional asset meta-models through profiling.
 
 Given the Conceptual Perspective on the CPG [Knowledge Architecture](documentation-approach-12-conceptual-knowledge-architecture.html), the principles, best practices, and development approaches described above together with the approach to [Knowledge Artifact Representation in FHIR](https://www.hl7.org/fhir/clinicalreasoning-knowledge-artifact-representation.html) (described in part in the section in this implementation guide on Knowledge Assets), the [CPG FHIR Profiles](profiles.html) as described and defined in this guide, are the concentration of the CPG Knowledge Architecture- the formal representations of the metamodels used to express the CPG Concepts described in the conceptual knowledge architecture.  The [Methodology](methodology.html) section of this guide describes how individual knowledge assets or artifacts are realized using these CPG Profiles.
+
 
 ### Boundary Issues at the Separations of Concerns
 
@@ -176,3 +177,5 @@ For more on the manifestation of the knowledge architecture in a content managem
 
 *   See section on [Knowledge Representation](documentation-approach-05-03-knowledge-representation.html) in Knowledge Engineering for more details on Knowledge Content Management Systems
 *   See subsection on Leveraging a Knowledge Base (Knowledge Content Management System) at the bottom of the section Agile CPG [Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)
+
+

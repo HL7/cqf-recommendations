@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="355" viewBox="0 0 1000 355" role="img" aria-labelledby="title description">
+<title id="title">Keep patient description separate from the care decision</title><desc id="description">Source patient records are interpreted by descriptive logic to derive a named patient feature. The feature can then inform recommendations without duplicating its calculation.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="25.0" y="35.0" font-size="24.2" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="25.0" dy="0">Keep patient description separate from the care decision</tspan></text>
+<polyline points="316,190.0 358,190.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="642,190.0 684,190.0" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="32" y="105" width="284" height="170" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="174.0" y="133" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="174.0" dy="0">Source patient facts</tspan></text>
+<text x="174.0" y="166.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="174.0" dy="0">Measurements or records</tspan><tspan x="174.0" dy="21.33">Clinical assessments</tspan><tspan x="174.0" dy="21.33">Relevant source and time</tspan></text>
+<rect x="358" y="105" width="284" height="170" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="500.0" y="133" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Descriptive logic</tspan></text>
+<text x="500.0" y="166.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Select the right inputs</tspan><tspan x="500.0" dy="21.33">Calculate or infer</tspan><tspan x="500.0" dy="21.33">Handle unknown values</tspan></text>
+<rect x="684" y="105" width="284" height="170" rx="9" fill="#f0ebfa" stroke="#735397" stroke-width="2"/>
+<text x="826.0" y="133" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="826.0" dy="0">Derived feature</tspan></text>
+<text x="826.0" y="166.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="826.0" dy="0">Named patient state</tspan><tspan x="826.0" dy="21.33">Inputs remain traceable</tspan><tspan x="826.0" dy="21.33">Used by recommendations</tspan></text>
+<text x="32" y="325" font-size="16" font-weight="400" text-anchor="start" fill="#183e59"><tspan x="32" dy="0">The result may remain transient or be recorded. Recording does not erase its computational origin.</tspan></text>
+</g></svg>

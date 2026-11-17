@@ -1,16 +1,22 @@
+<div class="new-content" markdown="1">
+
+These definitions distinguish clinical concepts, reusable knowledge and patient-specific resources. Capitalized profile names refer to formal artifacts; shorter conceptual names do not imply additional FHIR resource types. See the [conceptual architecture](documentation-approach-12-conceptual-knowledge-architecture.html) and [FHIR resource map](documentation-approach-05-03-knowledge-representation.html) for relationships.
+
+</div>
+
 ### Activity
 
 An [activity](documentation-approach-09-methods-of-implementation.html#activity-processing-semantics) refers generally to actions or processes taken as part of the delivery of guideline-directed care. This implementation guide defines specific activity types and provides FHIR profiles for each activity in the _definition_, _request_, and _event_ categories, and activities generally follow a lifecycle from _proposed_ to _planned_, to _ordered_, to _progressing_ to _completed_.
 
 ### Adherence
 
-Adherence is where the patient is with respect to a strategy, taken as a whole, and is a special case of a composite metric. Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to a strategy.
+Adherence is where the patient is with respect to the pathway and strategies, taken as a whole, and is a special case of a composite metric. Adherence is often used in localized implementations of clinical practice guidelines (or pathways). Adherence is a rollup of all or many of the compliance and/or intermediate-outcome metrics for the elements it covers. The business logic for determining adherence is often determined at the level of local implementation but may be recommended by the guideline development group as well. Of note to the knowledge engineer, adherence metrics are often scoped to the pathway and/or strategies within the overall pathway. This version defines coded results for compliance and for strategy adherence; coded results for pathway adherence and for goals are planned.
 {:.modified-content}
 
-The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole, and are treated separately from adherence (see [Pathway Status Terms](documentation-approach-12-07-cpg-derivative-and-related-assets.html#pathway-status-terms)).
+The colloquial terms “on path”, “off path”, “happy path”, and “perfect path” describe where a patient stands with respect to a pathway as a whole: pathway adherence, described informally. This guide does not yet define coded results for them (see [Pathway Status Terms](documentation-approach-12-07-cpg-derivative-and-related-assets.html#pathway-status-terms)).
 {:.modified-content}
 
-Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
+Adherence metrics scoped to a strategy report their results using the [CPG Adherence Result](ValueSet-cpg-adherence-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
 {:.new-content}
 
 ### Assertion
@@ -31,7 +37,7 @@ The [features](documentation-approach-12-04-cpg-case.html#case-features) of the 
 
 ### Compliance
 
-Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects). Compliance is often determined (and tracked) using metrics, which often correspond with, or are aggregated into, public health indicators or other population-level health analytics. Compliance metrics scoped to a recommendation report their results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set (see [Metrics](methodology.html#metrics)).
+Compliance is where the patient is with respect to the individual recommendations (and in particular the workflow aspects). Compliance is often determined (and tracked) using metrics, which often correspond with, or are aggregated into, public health indicators or other population-level health analytics. Compliance metrics scoped to a recommendation report their results using the [CPG Compliance Result](ValueSet-cpg-compliance-result-vs.html) value set (see [Metrics](methodology-translate.html#metrics)).
 {:.modified-content}
 
 ### Definition
@@ -56,7 +62,7 @@ An [intervention](documentation-approach-12-conceptual-knowledge-architecture.ht
 
 ### Measure
 
-In this implementation guide, we refer to a quality measure when discussing a clinical quality measure, public health indicator, or population analytics measure. A [quality measure](documentation-approach-12-07-cpg-derivative-and-related-assets.html#cpgmeasure-ecqms-) is a quantitative tool to assess the performance of an individual or organization with respect to a specified process or outcome via the measurement of actions, processes, or outcomes of clinical care. Quality measures are often derived from clinical guidelines and are designed to determine whether the appropriate care has been provided given a set of clinical criteria and an evidence base. A FHIR Measure Resource represents a structured, computable definition of such a quality measure.
+In this implementation guide, we refer to a quality measure when discussing a clinical quality measure, public health indicator, or population analytics measure. A [quality measure](documentation-approach-12-07-cpg-derivative-and-related-assets.html#measure-ecqms) is a quantitative tool to assess the performance of an individual or organization with respect to a specified process or outcome via the measurement of actions, processes, or outcomes of clinical care. Quality measures are often derived from clinical guidelines and are designed to determine whether the appropriate care has been provided given a set of clinical criteria and an evidence base. A FHIR Measure Resource represents a structured, computable definition of such a quality measure.
 
 More details on how to use and implement a quality measure can be found in the Quality Measure Implementation Guide ([Measure IG](http://hl7.org/fhir/us/cqfmeasures)). The Quality Measure Implementation Guide describes an approach to representing electronic Clinical Quality Measures (eCQMs) using the FHIR Clinical Reasoning Module and Clinical Quality Language (CQL) using the FHIR Measure Resource.
 
@@ -87,7 +93,7 @@ A _request_ is the basic pattern used in FHIR workflow to represent proposed, pl
 
 ### Strategy
 
-[Strategies](documentation-approach-12-03-cpg-plan.html#strategies) are approaches for combining, orchestrating, or associating related guideline recommendations and typically scope to a particular concern addressed within the guideline. Strategies may be longitudinal, require temporal orchestration, and reuse or repurpose data elements (CPGCaseFeatures) and other components (e.g., the attributes and status of requests and events) of the CPGRecommendations it scopes.
+[Strategies](documentation-approach-12-03-cpg-plan.html#strategies) are approaches for combining, orchestrating, or associating related guideline recommendations and typically scope to a particular concern addressed within the guideline. Strategies may be longitudinal, require temporal orchestration, and reuse or repurpose data elements (Case Features) and other components (e.g., the attributes and status of requests and events) of the Recommendations it scopes.
 
 ### Workflow
 

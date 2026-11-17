@@ -18,14 +18,15 @@ The integrated process describes co-development of the narrative and computable 
 * Provides for active iteration of key steps of the guideline development and implementation processes to assure that intermediate and final products are optimized and fit for purpose.
 * Includes robust process, product, and outcomes/impact evaluation frameworks to assure guideline development and implementation is efficient, cost-effective, and impactful (this element in development)
 
+
 #### The Integrated Process Cycle
 
-Figure 1 represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support.[<sup>2</sup>](#2) See explanation below diagram for additional details.
+Figure 1 represents how guideline developers, informaticians, implementers, and evaluators can integrate their workflows to co-develop, implement, and evaluate narrative and computable guidelines in iterative phases and steps.  The diagram is divided into quadrants that correspond with “layers of knowledge” proposed by Boxwala et al for computer-based decision support ([Boxwala et al., 2011](documentation-approach-cds-implementation-evidence.html#ref-boxwala-2011)). See explanation below diagram for additional details.
 
 <details open>
 
 <summary>
-Figure 1. The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones.[<sup>1</sup>](#1)
+Figure 1. The Integrated Process Cycle for Guideline Development and Implementation with Interdisciplinary Milestones ([Tailor et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023)).
 </summary>
 
 <img src="CPG-04.05-01.png" alt="Integrated Process Cycle" class="img-responsive img-rounded center-block" height="600"/>
@@ -34,10 +35,6 @@ Figure 1. The Integrated Process Cycle for Guideline Development and Implementat
 
 The outer circle shows 12 phases of formal guidelines development that result in published narrative recommendations. The middle circle represents the integration of informatics and clinical implementation activities into the guideline development 12 phase process. This circle adds iterative steps within and between the phases and that 1) inform written guidelines, and 2) result in a computable version of  guidelines that can be more rapidly implemented in clinical settings. The inner circle represents the evaluation activities that should be conducted throughout guideline development, with constant attention to meeting the needs of users. This integration is designed to facilitate use of guidelines in clinical practice and timely updates to guidelines based on clinical impact. Finally, at the center of the process are the guideline users, who should be engaged through human-centered design processes in all phases (shown by spiral connections).
 
-<a id="1">1</a>: Tailor, Amrita MPH; Robinson, Susan J. PhD, MS-HCI (Ret.); Matson-Koffman, Dyann M. DrPH, MPH, CHES; Michaels, Maria MBA; Burton, Matthew M. MD; Lubin, Ira M. PhD; on behalf of the Workgroup on Evaluation of the Integrated Process. An Evaluation Framework for a Novel Process to Codevelop Written and Computable Guidelines. American Journal of Medical Quality 38(5S) S35-S45, September/October 2023. DOI: [10.1097/JMQ.0000000000000140](https://doi.org/10.1097/JMQ.0000000000000140)
-{:.new-content}
-
-<a id="2">2</a>: Boxwala, Aziz A., et al. "A multi-layered framework for disseminating knowledge for computer-based decision support." Journal of the American Medical Informatics Association 18.Supplement_1 (2011): i132-i139.
 
 ### CPG Content and Related Derivatives
 
@@ -50,11 +47,8 @@ The outer circle shows 12 phases of formal guidelines development that result in
 
 **For Guideline Development Group, especially Medical Specialty Societies**- Actionable and meaningful usage of and feedback on guideline recommendations; (automated) data collection of data elements relevant to the scope of the guideline (registries); significant number of process of care level and intermediate- and end-outcome metrics and quality measures scoped to the guideline; active and highly relevant participation in the Learning Health System.
 
-
 **For Providers and Health Care Organizations**- Nearly automated data collection for clinical registries (internal, professional societies, and accreditation); a significant number of process of care level and intermediate- and end-outcome metrics and quality measures; readily available means to implement, monitor, and measure guideline-directed care; benefits derived from participation in the Learning Health System.
 
-
 **For the Evidence Ecosystem**- Utility of evidence and new high-value, patient and process of care level evidence to “climb the pyramid”.
-
 
 **For modern and emerging methods of Knowledge Discovery**- numerous opportunities to leverage value of methods and data assets (data-to-knowledge); new high-value evidence substrate to reason over (enriched data, guideline usage, knowledge artifacts created across the value-chain).  (see section on [Knowledge Acquisition](documentation-approach-05-01-knowledge-acquisition.html))

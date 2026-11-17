@@ -26,6 +26,12 @@ In addition, consultation was received on Knowledge Architecture (HL7 standards)
 
 Members of the content team, which included f \rontline clinicians, clinical informaticians, and representatives from medical specialty professional societies and evidence-based practice centers (EPCs) provided content in the form of high-level use cases  and detailed clinical domain knowledge. The knowledge engineering team worked with the content team to review and prioritize the content. Next, an integrated, cross-functional Agile CPG Team was formed for each use case consisting of members from each of the functional teams. The work was performed using the Integrated Process and Agile Approach to CPG Development resulting in L1-L4 artifacts as shown in Figure MSC.01, as outlined in this implementation guide,.  
 
+<div class="new-content" markdown="1">
+
+{% include cpg-diagram.html src="cpg-method-case-study.svg" ratio="1200 / 789" alt="The 2020 project connected clinical source material, structured concepts and decisions, formal decision and workflow models, candidate FHIR and CQL artifacts, and test cases through review." caption="An overview of the work products from the case study and the roles that produced them. The figures that follow show the work products themselves." %}
+
+</div>
+
 <div>
     <img src="image37.png" width="750">
 </div>

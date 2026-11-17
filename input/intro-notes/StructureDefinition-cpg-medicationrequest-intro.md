@@ -1,1 +1,1 @@
-This is an [activity request profile](profiles.html#activity-profiles)
+Use this MedicationRequest profile for a patient-specific medication recommendation, plan or authorized request in guideline-directed care. It identifies the medication and clinical context while retaining links to the guidance and supporting information. Dispensing, administration and statements of medication use are separate records with their own meanings and lifecycle states.

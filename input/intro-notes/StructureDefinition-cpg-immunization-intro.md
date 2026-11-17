@@ -1,1 +1,1 @@
-This is an [activity event profile](profiles.html#activity-profiles)
+Use this Immunization profile to document an immunization event in guideline-directed care. The patient and encounter identify its clinical context; case-feature extensions support use of the event in later evaluation. It is the clinical event counterpart to an immunization request, not the recommendation or authorization to provide a vaccine.

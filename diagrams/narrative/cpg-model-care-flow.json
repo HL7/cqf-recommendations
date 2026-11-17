@@ -1,0 +1,68 @@
+{
+  "height": 355,
+  "title": "Separate proposed care, authorization and occurrence",
+  "description": "A patient-specific proposal can be accepted into a plan or authorized request. Events document care that occurs. Local decisions and resource-specific lifecycle rules control these transitions.",
+  "nodes": [
+    {
+      "id": "proposal",
+      "x": 32,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "result",
+      "label": "Proposal",
+      "body": [
+        "Patient-specific request",
+        "Suggested activity",
+        "Supporting information"
+      ]
+    },
+    {
+      "id": "request",
+      "x": 358,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "workflow",
+      "label": "Plan or order",
+      "body": [
+        "Appropriate local decision",
+        "Intent and authorization",
+        "Links to prior requests"
+      ]
+    },
+    {
+      "id": "event",
+      "x": 684,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "result",
+      "label": "Documented event",
+      "body": [
+        "Occurrence or not done",
+        "Resource-specific status",
+        "Link to fulfilled request"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "proposal",
+      "to": "request"
+    },
+    {
+      "from": "request",
+      "to": "event"
+    }
+  ],
+  "notes": [
+    {
+      "x": 32,
+      "y": 325,
+      "w": 936,
+      "text": "Conceptual flow, not automatic execution. Tasks can track work; use each resource’s actual codes.",
+      "size": 16
+    }
+  ]
+}

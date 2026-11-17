@@ -1,0 +1,68 @@
+{
+  "height": 355,
+  "title": "Keep patient description separate from the care decision",
+  "description": "Source patient records are interpreted by descriptive logic to derive a named patient feature. The feature can then inform recommendations without duplicating its calculation.",
+  "nodes": [
+    {
+      "id": "facts",
+      "x": 32,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "knowledge",
+      "label": "Source patient facts",
+      "body": [
+        "Measurements or records",
+        "Clinical assessments",
+        "Relevant source and time"
+      ]
+    },
+    {
+      "id": "logic",
+      "x": 358,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "logic",
+      "label": "Descriptive logic",
+      "body": [
+        "Select the right inputs",
+        "Calculate or infer",
+        "Handle unknown values"
+      ]
+    },
+    {
+      "id": "result",
+      "x": 684,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "result",
+      "label": "Derived feature",
+      "body": [
+        "Named patient state",
+        "Inputs remain traceable",
+        "Used by recommendations"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "facts",
+      "to": "logic"
+    },
+    {
+      "from": "logic",
+      "to": "result"
+    }
+  ],
+  "notes": [
+    {
+      "x": 32,
+      "y": 325,
+      "w": 936,
+      "text": "The result may remain transient or be recorded. Recording does not erase its computational origin.",
+      "size": 16
+    }
+  ]
+}

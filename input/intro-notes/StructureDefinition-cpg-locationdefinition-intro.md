@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGLocationDefinition describes the kind of setting needed by a guideline, rather than a particular service location. Use it in reusable content or definitional practitioner roles when the important information is the class of place. A local implementation resolves that requirement to an actual CPGLocation or other permitted local context.

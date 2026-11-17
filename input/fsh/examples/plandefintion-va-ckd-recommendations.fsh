@@ -25,8 +25,11 @@ Title: "CKD VA Recommendations Plan Definition"
   * description = "In patients with stage 3 and 4 CKD, we suggest a protein diet of 0.6 to 0.8 g/kg/day as it may slow the decline in glomerular filtration rate (GFR) and progression to end-stage renal disease (ESRD)."
   * documentation
     * type = #documentation
-    * display = "VA/DoD Clinical Practice Guideline for The management of Chronic Kidney Disease in Primary care"
-    * url = $va-clinical-practice-guidelines
+    * display = "2014 VA/DoD chronic kidney disease guideline, recommendation 10"
+    * citation = "Department of Veterans Affairs and Department of Defense. VA/DoD Clinical Practice Guideline for the Management of Chronic Kidney Disease in Primary Care. Version 3.0. December 2014. Recommendation 10, p. 14."
+    * document
+      * contentType = #application/pdf
+      * url = "https://www.healthquality.va.gov/guidelines/CD/ckd/VADoDCKDCPG.pdf#page=14"
   * condition
     * kind = #applicability
     * expression

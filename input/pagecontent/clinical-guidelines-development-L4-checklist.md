@@ -1,10 +1,38 @@
 ### L4 Checklist
 
+Use this checklist to plan and review local adoption of computable content: prioritization, workflow and technical fit, local design, testing, training, deployment, clinical use, and evaluation. It complements the L3 content review by focusing on the organization and setting where the content will be used.
+
+See [Implementation and Integration](documentation-approach-02-05-knowledge-implementation.html) for guidance on adapting and testing content in a local workflow.
+
+{% include cpg-checklist-navigation.html level="L4" %}
+
+<nav class="cpg-checklist-toc" aria-label="On this page" markdown="1">
+
+**On this page**
+
+[Publishing Information](#publishing-information) · [Local Prioritization and Selection](#local-prioritization-and-selection) · [Evaluate Local Context](#evaluate-local-context) · [Feasibility Assessment (Technical)](#feasibility-assessment-technical) · [Local Design](#local-design) · [Build L4 Artifacts/Features](#build-l4-artifacts-features) · [Test and Refine](#test-and-refine) · [Educate and Train](#educate-and-train) · [Deploy](#deploy) · [Use Clinically](#use-clinically) · [Measure, Evaluate, and Refine](#measure-evaluate-and-refine)
+
+</nav>
+
+#### 1. Publishing Information {#publishing-information}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="publishing-information" tabindex="0" markdown="1">
+
 | Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
 |--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 1.     | **Publishing Information**           | Publishing metadata for the content                                                                                                              |             |       |
 | 1.a    | Publisher                            | Who is the publisher? (Name and public contact information)                                                                                      |             |       |
 | 1.b    | Steward                              | Who is the steward? (Name and public contact information)                                                                                        |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 2. Local Prioritization and Selection {#local-prioritization-and-selection}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="local-prioritization-and-selection" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 2.     | **Local Prioritization and Selection**   |                                                                                                                                                  |             |       |
 | 2.a    | Charter                              | Project Charter, including high-level approach to evaluation and measurement                                                                     |             |       |
 | 2.b    | Gap Analysis                         | Care gap analysis                                                                                                                                |             |       |
@@ -14,17 +42,47 @@
 | 2.d.ii | Implementability                     | Assess intrinsic implementability of guideline (e.g. GLIA v2.0; GUIDES checklist Domain 2: The CDS content)                                      |             |       |
 | 2.e    | Communication                        | Communicate and market decision to implement                                                                                                     |             |       |
 | 2.f    | Incentives                           | Decide whether to incentivize (and how)                                                                                                          |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 3. Evaluate Local Context {#evaluate-local-context}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="evaluate-local-context" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 3.     | **Evaluate Local Context**           | **Evaluate Local Workflow and Context**                                                                                                          |             |       |
 | 3.a    | Burden                               | Assess burden                                                                                                                                    |             |       |
 | 3.b    | Workflow                             | Localize workflows (include “5 rights” of CDS)                                                                                                   |             |       |
 | 3.c    | Entry Points                         | Identify points of entry                                                                                                                         |             |       |
 | 3.d    | Apply Workflow Template              | Apply workflow template to point of entry                                                                                                        |             |       |
 | 3.e    | Stakeholder Engagement               | Engage stakeholders                                                                                                                              |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 4. Feasibility Assessment (Technical) {#feasibility-assessment-technical}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="feasibility-assessment-technical" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 4.     | **Feasibility Assessment (Technical)**   | **Feasibility Assessment (Technical)**                                                                                                               |             |       |
 | 4.a    | EHR Technical Feasibility            | EHR technical feasibility requirements                                                                                                           |             |       |
 | 4.b    | Technical Design Strategy            | Design technical strategy for local setting (EHR capabilities, interfaces, etc.)                                                                 |             |       |
 | 4.c    | Measurement Strategy Design          | Design measurement strategy (e.g. process measures, outcome measures)                                                                            |             |       |
 | 4.d    | Update Charter                       | Update charter with additional details of technical approach and measures                                                                        |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 5. Local Design {#local-design}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="local-design" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 5.     | **Local Design**                     | **Local Design (Localization of new workflow and L3 "tweaks")**                                                                                      |             |       |
 | 5.a    | Convene End Users                    | Convene end users                                                                                                                                |             |       |
 | 5.b    | “To-be” Workflow                     | Map “to-be” workflow                                                                                                                             |             |       |
@@ -33,11 +91,31 @@
 | 5.e    | Localize Measure Capture             | Localize measure capture (e.g., what demographic group or other conditions are included in the denominator)                                      |             |       |
 | 5.f    | Start to develop training (localize) | Start to develop training (localize) – make them aware of workflow, etc.                                                                         |             |       |
 | 5.g    | Consider Multiple EMRs               | Consider multiple EMRs; repeat localization design per EMR as needed                                                                             |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 6. Build L4 Artifacts/Features {#build-l4-artifacts-features}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="build-l4-artifacts-features" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 6.     | **Build L4 Artifacts/Features**      | **Build L4 Artifacts/Features: a) in EMR, or b) as web service or app**                                                                              |             |       |
 | 6.a    | Build L4 Artifacts/Features          | Build the L4 artifacts/features, e.g., value sets, logic records, rules, alerts                                                                  |             |       |
 | 6.b    | Build Review                         | Conduct a build review                                                                                                                           |             |       |
 | 6.c    | Demonstration                        | Demo to end users                                                                                                                                |             |       |
 | 6.d    | Repeat if heterogenous EMRs          | Repeat if heterogenous EMR environment (e.g., if there is more than one EMR)                                                                     |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 7. Test and Refine {#test-and-refine}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="test-and-refine" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 7.     | **Test and Refine**                  | **Test and Refine**                                                                                                                                  |             |       |
 | 7.a    | Unit Test                            | Unit test code/artifacts                                                                                                                         |             |       |
 | 7.b    | Integrated Test Scripts              | Write localized test scripts for integrated testing                                                                                              |             |       |
@@ -46,12 +124,32 @@
 | 7.e    | UAT (user acceptance testing)        | UAT (user acceptance testing); does the thing it’s needed to do downstream                                                                       |             |       |
 | 7.f    | Usability Testing                    | Usability testing e.g., practical issues such as #clicks to get to recs.                                                                         |             |       |
 | 7.g    | Refine                               | Revise at all steps                                                                                                                              |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 8. Educate and Train {#educate-and-train}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="educate-and-train" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 8.     | **Educate and Train**                | **Educate and Train**                                                                                                                            |             |       |
 | 8.a    | Localize Education/Training          | Update education with local EHR design, e.g., screenshots;  finish localization of training and who to train; how to best deliver training.      |             |       |
 | 8.b    | Tailor Training Strategy             | Finish localization of training and who to train; how best to deliver training including tailoring to usual training channels (multiple pathways) |             |       |
 | 8.c    | Training Policy and Procedures       | Develop training policy & procedures                                                                                                             |             |       |
 | 8.d    | Train End Users                      | Train end users on CDS, policy, & procedures                                                                                                     |             |       |
 | 8.e    | Update Training                      | Update and reinforce training based on initial training rounds                                                                                   |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 9. Deploy {#deploy}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="deploy" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 9.     | **Deploy**                           | **Deploy**                                                                                                                                       |             |       |
 | 9.a    | Migrate Artifacts                    | Migrate artifacts from Dev to Test to Production                                                                                                 |             |       |
 | 9.b    | Go-live Staffing                     | Plan go-live staffing                                                                                                                            |             |       |
@@ -59,10 +157,30 @@
 | 9.d    | Test in Production                   | Test in Production by small number of clinicians (e.g.: ~2)                                                                                      |             |       |
 | 9.e    | Readiness                            | Perform readiness assessment                                                                                                                     |             |       |
 | 9.f    | Pilot and Provide Feedback           | Pilot (e.g. in 2-3 pilot clinics or depts.,  if multi-clinic organization) and provide feedback                                                  |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 10. Use Clinically {#use-clinically}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="use-clinically" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 10.    | **Use Clinically**                   | **Use Clinically**                                                                                                                               |             |       |
 | 10.a   | Use System                           | Use system as designed                                                                                                                           |             |       |
 | 10.b   | Observation                          | Observe end users                                                                                                                                |             |       |
 | 10.c   | Feedback                             | Provide feedback to users                                                                                                                        |             |       |
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>
+
+#### 11. Measure, Evaluate, and Refine {#measure-evaluate-and-refine}
+
+<div class="cpg-checklist-scroll" role="region" aria-labelledby="measure-evaluate-and-refine" tabindex="0" markdown="1">
+
+| Label  | Item                                 | Description                                                                                                                                      | Item Status | Notes |
+|--------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------|
 | 11.    | **Measure, Evaluate, and Refine**    | **Measure, Evaluate, and Refine**                                                                                                                |             |       |
 | 11.a   | Extract Data                         | Pull data & create reports                                                                                                                       |             |       |
 | 11.b   | Analyze Data                         | Analyze and assess per measurement strategy                                                                                                      |             |       |
@@ -70,4 +188,6 @@
 | 11.d   | Satisfaction Surveys                 | Satisfaction surveys built into artifact                                                                                                         |             |       |
 | 11.e   | Report Findings                      | Report findings to leadership and Quality                                                                                                        |             |       |
 | 11.f   | Optimize                             | Iteratively optimize clinical decision artifacts and/or workflows                                                                                |             |       |
-{:.grid}
+{:.cpg-horizontal-table .cpg-checklist-table}
+
+</div>

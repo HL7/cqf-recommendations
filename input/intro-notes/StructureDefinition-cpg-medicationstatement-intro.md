@@ -1,1 +1,1 @@
-This is an [activity event profile](profiles.html#activity-profiles)
+Use this MedicationStatement profile to document reported medication use in the context of a guideline. It can reflect information from the patient, another informant or related records and can contribute a case feature. Preserve the source and status of that information when using it to evaluate recommendations or summarize care.

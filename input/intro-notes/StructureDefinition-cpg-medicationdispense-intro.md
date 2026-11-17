@@ -1,1 +1,1 @@
-This is an [activity event profile](profiles.html#activity-profiles)
+Use this MedicationDispense profile to document medication supplied in the context of guideline-directed care. It identifies the medication, patient and relevant prescription while allowing the occurrence to serve as a case feature. Dispensing concerns provision of a supply; it is separate from a patient receiving an administered dose.

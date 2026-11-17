@@ -1,0 +1,12 @@
+{
+  "title": "Compare workflow patterns across representations",
+  "description": "A historical prototype mapped selected PlanDefinition source patterns to BPMN and a workflow drawing for review. Four rows pair BPMN diagrams for sequence flow, parallel split and join, exclusive split and merge, and timed start with the constructs used by the PlanDefinition examples. Compare behavior using the same reviewed cases and verify runtime support.",
+  "svgSource": "svg/cpg-method-formalisms.svg",
+  "originals": [
+    "transformation-process.png",
+    "process-pattern-sequenceFlow.png",
+    "process-pattern-parallelSplit.png",
+    "process-pattern-exclusiveSplit.png",
+    "process-pattern-timedStart.png"
+  ]
+}

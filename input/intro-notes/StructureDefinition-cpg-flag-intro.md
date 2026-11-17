@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGFlag records a notice associated with a patient's guideline-related record. Use it for the flag itself, including the notice's period and encounter context, rather than a Task proposing that a flag be created. Its optional case-feature and pertinent-information links provide context for why the notice matters.

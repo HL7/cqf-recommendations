@@ -1,0 +1,28 @@
+<div id="chapter-navigation" class="cpg-chapter-navigation" role="navigation" aria-label="{{ include.section | escape }} navigation" style="clear: both; margin: 36px 0 24px; padding: 20px; border: 1px solid #b9cfdd; border-top: 4px solid #2b6384; border-radius: 8px; background: #eef5f9;">
+  {% if include.previous or include.next %}
+  <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+    {% if include.previous %}
+    <a href="{{ include.previous | escape }}" style="display: block; flex: 1 1 260px; min-width: 0; padding: 16px 20px; border: 1px solid #b9cfdd; border-radius: 6px; background: #ffffff; color: #174e69; text-decoration: none; line-height: 1.4;">
+      <span style="display: block; margin-bottom: 6px; font-size: 14px;"><span aria-hidden="true" style="font-size: 22px; vertical-align: -1px;">←</span> Previous {{ include.unit | escape }}</span>
+      <strong style="display: block; font-size: 18px; text-decoration: underline;">{{ include.previous_title | escape }}</strong>
+    </a>
+    {% elsif include.overview %}
+    <a href="{{ include.overview | escape }}" style="display: block; flex: 1 1 260px; min-width: 0; padding: 16px 20px; border: 1px solid #b9cfdd; border-radius: 6px; background: #ffffff; color: #174e69; text-decoration: none; line-height: 1.4;">
+      <span style="display: block; margin-bottom: 6px; font-size: 14px;"><span aria-hidden="true" style="font-size: 22px; vertical-align: -1px;">←</span> Back to</span>
+      <strong style="display: block; font-size: 18px; text-decoration: underline;">{{ include.section | escape }} index</strong>
+    </a>
+    {% endif %}
+    {% if include.next %}
+    <a href="{{ include.next | escape }}" style="display: block; flex: 1 1 260px; min-width: 0; padding: 16px 20px; border: 1px solid #b9cfdd; border-radius: 6px; background: #ffffff; color: #174e69; text-decoration: none; line-height: 1.4; text-align: right;">
+      <span style="display: block; margin-bottom: 6px; font-size: 14px;">Next {{ include.unit | escape }} <span aria-hidden="true" style="font-size: 22px; vertical-align: -1px;">→</span></span>
+      <strong style="display: block; font-size: 18px; text-decoration: underline;">{{ include.next_title | escape }}</strong>
+    </a>
+    {% endif %}
+  </div>
+  {% elsif include.overview %}
+  <a href="{{ include.overview | escape }}" style="display: block; padding: 16px 20px; border: 1px solid #b9cfdd; border-radius: 6px; background: #ffffff; color: #174e69; text-decoration: none; line-height: 1.4;">
+    <span style="display: block; margin-bottom: 6px; font-size: 14px;"><span aria-hidden="true" style="font-size: 22px; vertical-align: -1px;">←</span> Return to</span>
+    <strong style="display: block; font-size: 18px; text-decoration: underline;">{{ include.section | escape }}</strong>
+  </a>
+  {% endif %}
+</div>

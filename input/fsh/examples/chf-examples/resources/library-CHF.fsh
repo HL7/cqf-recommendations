@@ -47,18 +47,6 @@ Title: "Congestive Heart Failure Logic"
   * max = "*"
   * type = #Observation
 * parameter[+]
-  * name = #"Daily Body Weight"
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #Any
-* parameter[+]
-  * name = #"Daily Body Weight Change"
-  * use = #out
-  * min = 0
-  * max = "*"
-  * type = #Any
-* parameter[+]
   * name = #"Body Weight Change"
   * use = #out
   * min = 0

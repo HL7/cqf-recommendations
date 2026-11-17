@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="group" aria-labelledby="title" aria-describedby="description">
+  <!-- Source: types-of-igs.png supplies the three tiers and upward support relationships. -->
+  <title id="title">How FHIR implementation guide categories fit together</title>
+  <desc id="description">Three horizontal tiers show foundational standards supporting model and specification implementation guides, which in turn support content implementation guides. Content uses applicable model profiles and conforms to applicable specifications. The arrows show support from lower layers toward dependent layers. Linked guide and standard names open in a new tab.</desc>
+  <style>
+    a { cursor: pointer; }
+    a:hover, a:focus { text-decoration: underline; }
+    .guide-link:hover rect, .guide-link:focus rect { stroke: #153a66; stroke-width: 3px; }
+    #content-guides .guide-link:hover rect, #content-guides .guide-link:focus rect { stroke: #fff; }
+    #fhir-core .guide-link:hover rect, #fhir-core .guide-link:focus rect { stroke: #fff; }
+  </style>
+  <defs>
+    <marker id="support-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#416993"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="660" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
+    <g id="heading">
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">How FHIR implementation guide categories fit together</text>
+      <text x="30" y="75" font-size="19">Lower layers support the guides above them.</text>
+    </g>
+    <g id="support-relationships" fill="none" stroke="#416993" stroke-width="3.2" marker-end="url(#support-arrow)">
+      <path d="M265 260V205"/>
+      <path d="M835 260V205"/>
+      <path d="M265 458V400"/>
+      <path d="M835 458V400"/>
+    </g>
+    <g id="content-guides">
+      <rect x="36" y="105" width="1128" height="97" rx="9" fill="#315b87"/>
+      <text x="59" y="144" font-size="23" font-weight="700" fill="#fff">Content IGs</text>
+      <text x="59" y="173" font-size="19" fill="#fff">Publish clinical knowledge</text>
+      <g font-size="20" font-weight="700" text-anchor="middle" fill="#23466a">
+        <a class="guide-link" href="https://github.com/cqframework/sample-content-ig" target="_blank" rel="noopener" tabindex="0" aria-label="Sample Content Implementation Guide (opens in a new tab)">
+          <rect x="350" y="127" width="172" height="52" rx="6" fill="#eaf2fa"/>
+          <text x="436" y="160">Sample Content</text>
+        </a>
+        <a class="guide-link" href="https://www.fhir.org/guides/cdc/opioid-cds/" target="_blank" rel="noopener" tabindex="0" aria-label="CDC Opioid Prescribing Implementation Guide (opens in a new tab)">
+          <rect x="537" y="127" width="330" height="52" rx="6" fill="#eaf2fa"/>
+          <text x="702" y="160">CDC Opioid Prescribing</text>
+        </a>
+        <a class="guide-link" href="https://build.fhir.org/ig/WorldHealthOrganization/smart-anc/" target="_blank" rel="noopener" tabindex="0" aria-label="WHO Antenatal Care Guideline Implementation Guide (opens in a new tab)">
+          <rect x="882" y="127" width="258" height="52" rx="6" fill="#eaf2fa"/>
+          <text x="1011" y="160">WHO Antenatal Care</text>
+        </a>
+      </g>
+    </g>
+    <g id="model-guides">
+      <rect x="36" y="261" width="457" height="136" rx="9" fill="#eef2f5" stroke="#748493" stroke-width="2"/>
+      <text x="59" y="295" font-size="23" font-weight="700">Model IGs</text>
+      <text x="59" y="323" font-size="19">Profile data for a domain or jurisdiction</text>
+      <path d="M285 360H323" stroke="#416993" stroke-width="2.5" marker-end="url(#support-arrow)"/>
+      <g font-size="19" font-weight="700" text-anchor="middle">
+        <a class="guide-link" href="https://hl7.org/fhir/uv/ips/" target="_blank" rel="noopener" tabindex="0" aria-label="International Patient Summary Implementation Guide (opens in a new tab)">
+          <rect x="59" y="342" width="80" height="37" rx="5" fill="#dae3ea"/>
+          <text x="99" y="367">IPS</text>
+        </a>
+        <a class="guide-link" href="https://hl7.org/fhir/us/core/" target="_blank" rel="noopener" tabindex="0" aria-label="US Core Implementation Guide (opens in a new tab)">
+          <rect x="158" y="342" width="120" height="37" rx="5" fill="#dae3ea"/>
+          <text x="218" y="367">US Core</text>
+        </a>
+        <a class="guide-link" href="https://hl7.org/fhir/us/qicore/" target="_blank" rel="noopener" tabindex="0" aria-label="QI-Core Implementation Guide (opens in a new tab)">
+          <rect x="331" y="342" width="139" height="37" rx="5" fill="#dae3ea"/>
+          <text x="400" y="367">QI-Core</text>
+        </a>
+      </g>
+    </g>
+    <g id="specification-guides">
+      <rect x="517" y="261" width="647" height="136" rx="9" fill="#eef2f5" stroke="#748493" stroke-width="2"/>
+      <text x="540" y="295" font-size="23" font-weight="700">Specification IGs</text>
+      <text x="540" y="323" font-size="19">Define patterns and conformance requirements</text>
+      <g font-size="19" font-weight="700" text-anchor="middle">
+        <a class="guide-link" href="https://hl7.org/fhir/uv/cpg/" target="_blank" rel="noopener" tabindex="0" aria-label="Clinical Practice Guidelines Implementation Guide (opens in a new tab)">
+          <rect x="540" y="342" width="90" height="37" rx="5" fill="#dae3ea"/>
+          <text x="585" y="367">CPG</text>
+        </a>
+        <a class="guide-link" href="https://hl7.org/fhir/uv/crmi/" target="_blank" rel="noopener" tabindex="0" aria-label="Canonical Resource Management Infrastructure Implementation Guide (opens in a new tab)">
+          <rect x="642" y="342" width="89" height="37" rx="5" fill="#dae3ea"/>
+          <text x="686.5" y="367">CRMI</text>
+        </a>
+        <a class="guide-link" href="https://hl7.org/fhir/uv/cql/" target="_blank" rel="noopener" tabindex="0" aria-label="Using CQL With FHIR Implementation Guide (opens in a new tab)">
+          <rect x="743" y="342" width="175" height="37" rx="5" fill="#dae3ea"/>
+          <text x="830.5" y="367">CQL with FHIR</text>
+        </a>
+        <a class="guide-link" href="https://hl7.org/fhir/uv/cqm/" target="_blank" rel="noopener" tabindex="0" aria-label="Quality Measure Implementation Guide (opens in a new tab)">
+          <rect x="930" y="342" width="107" height="37" rx="5" fill="#dae3ea"/>
+          <text x="983.5" y="367">QM</text>
+        </a>
+        <a class="guide-link" href="https://hl7.org/fhir/uv/sdc/" target="_blank" rel="noopener" tabindex="0" aria-label="Structured Data Capture Implementation Guide (opens in a new tab)">
+          <rect x="1049" y="342" width="91" height="37" rx="5" fill="#dae3ea"/>
+          <text x="1094.5" y="367">SDC</text>
+        </a>
+      </g>
+    </g>
+    <g id="content-dependency-labels" font-size="19" fill="#315b87">
+      <text x="278" y="237">Uses applicable profiles</text>
+      <text x="848" y="237">Conforms to applicable specifications</text>
+    </g>
+    <g id="foundation">
+      <rect x="36" y="459" width="1128" height="143" rx="9" fill="#eff3f6" stroke="#748493" stroke-width="2"/>
+      <text x="58" y="488" font-size="23" font-weight="700">Foundational standards</text>
+      <g id="fhir-core">
+        <rect x="58" y="504" width="635" height="82" rx="6" fill="#40556b"/>
+        <a class="guide-link" href="https://hl7.org/fhir/R4/" target="_blank" rel="noopener" tabindex="0" aria-label="FHIR R4 specification (opens in a new tab)">
+          <rect x="73" y="513" width="116" height="31" rx="4" fill="transparent"/>
+          <text x="78" y="536" font-size="23" font-weight="700" fill="#fff">FHIR core</text>
+        </a>
+        <text x="78" y="566" font-size="19" fill="#fff">Foundation · Conformance · Administration · Clinical · Reasoning</text>
+      </g>
+      <g id="companion-standards">
+        <rect x="708" y="504" width="434" height="82" rx="6" fill="#e8f1e3" stroke="#709267"/>
+        <text x="728" y="536" font-size="23" font-weight="700" fill="#2f5430">Companion standards</text>
+        <text x="728" y="566" font-size="19" fill="#2f5430"><a href="https://hl7.org/fhirpath/" target="_blank" rel="noopener" tabindex="0" aria-label="FHIRPath specification (opens in a new tab)">FHIRPath</a> · <a href="https://cql.hl7.org/" target="_blank" rel="noopener" tabindex="0" aria-label="Clinical Quality Language specification (opens in a new tab)">CQL</a> · <a href="https://cds-hooks.hl7.org/" target="_blank" rel="noopener" tabindex="0" aria-label="CDS Hooks specification (opens in a new tab)">CDS Hooks</a> · <a href="https://hl7.org/fhir/smart-app-launch/" target="_blank" rel="noopener" tabindex="0" aria-label="SMART App Launch Implementation Guide (opens in a new tab)">SMART</a></text>
+      </g>
+    </g>
+    <g id="dependency-key">
+      <text x="36" y="635" font-size="19">Examples are illustrative. Each guide declares the dependencies for its own scope.</text>
+    </g>
+  </g>
+</svg>

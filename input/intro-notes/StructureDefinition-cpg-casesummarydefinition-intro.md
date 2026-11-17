@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGCaseSummaryDefinition publishes the resource graph used to assemble a guideline-scoped case summary. Use it to identify the expected starting resource and related information for a reusable summary definition. It describes what a consumer can retrieve or assemble; it is not the resulting patient Composition or a guarantee that all needed data exist.

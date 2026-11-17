@@ -2,6 +2,8 @@ Instance: am-scenario7-mr
 InstanceOf: CPGMedicationRequest
 Usage: #example
 Description: "Example test case - Administer Medication - Scenario 7 - MedicationRequest"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Active order for the example patient to apply one fentanyl 25 microgram/hour prolonged-release patch three times per week.</p></div>"
 * status = #active
 * intent = #order
 * priority = #routine

@@ -14,6 +14,7 @@ Levels of enablement are successively more feature-rich implementations of the c
 *   [Methods of implementation](documentation-approach-09-methods-of-implementation.html)
 *   [Mechanisms of integration](documentation-approach-10-mechanisms-of-integration.html)
 
+
 This implementation guide defines the following levels of enablement:
 
 1.  Contextualized narrative (searchable)
@@ -37,3 +38,5 @@ Figure 1. A given CPG may provide a distinct set of enablements, at singular or 
 <img src="CPG-03-CPGEnablements.png" alt="CPG Levels of Enablement" class="img-responsive img-rounded center-block" width="600"/>
 
 </details>
+
+

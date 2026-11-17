@@ -1,0 +1,11 @@
+{
+  "title": "Case, Plan and Workflow over time",
+  "description": "The orange Plan lane includes a reusable pathway, strategies, recommendations, and a workflow definition describing activities and coordination. A dashed connection marks local implementation of that workflow definition, with roles, triggers, and services bound locally. The blue lane separates local workflow from its patient proposals, authorized requests, and documented events. The green Case lane shows recorded and derived patient facts, including events reused as case features. Positions illustrate relative timing.",
+  "svgSource": "svg/cpg-model-boundaries.svg",
+  "originals": [
+    "CPG-12-00.png",
+    "CPG-12-01.png",
+    "CPG-Main-Case.png",
+    "CPG-Main-Plan.png"
+  ]
+}

@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile for a recommendation to review a proposed diagnosis for a patient. The diagnosis input points to a Condition resource carrying the proposed information. Clinical confirmation and the Condition’s verification status remain separate from the Task’s execution state; the Task is not a condition record.

@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGPatient identifies the person whose guideline-related case, care plan, or clinical information is being represented. Use it as the subject record referenced by the applicable CPG profiles. It carries patient identity information; it does not itself establish clinical eligibility, pathway enrollment, or a completed assessment.

@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGRecommendationDefinition expresses reusable guidance as an event-condition-action rule. Use it to connect the situation in which guidance applies with the activity being proposed and the information supporting that proposal. It is a PlanDefinition, not a patient-specific request, and inherits the common computable-plan structure and rating support.

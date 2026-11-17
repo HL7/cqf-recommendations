@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGLocation describes an actual place used as context for guideline-supported care. Use it for the location of an encounter or planned activity when a concrete location is known. It differs from CPGLocationDefinition, which specifies a kind of location required by reusable guidance without naming an operational site.

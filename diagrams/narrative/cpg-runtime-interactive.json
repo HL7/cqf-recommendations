@@ -1,0 +1,8 @@
+{
+  "title": "Collect information and reevaluate guidance",
+  "description": "Patient context feeds questionnaire preparation and CPG PlanDefinition apply in parallel. The application shows questions, answers, and proposals. Changed answers go through SDC extraction, validation, and reconciliation before reevaluation. The receiving workflow handles any selected proposals.",
+  "svgSource": "svg/cpg-runtime-interactive.svg",
+  "originals": [
+    "interactive-cds.png"
+  ]
+}

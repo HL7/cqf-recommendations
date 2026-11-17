@@ -34,8 +34,10 @@ can be used to transform between the two, using the [Control Flow and Data Flow 
 
 The following sections consider specific patterns and the BPMN and PlanDefinition representations of each.
 
-<div>
-  <img style="width:100%" src="transformation-process.png" alt="Business process is manually created as plan defintion. The patterns explain how an automated transformation towards BPMN and a graphical representation can be solved."/>
+<div class="modified-content" markdown="1">
+
+{% include cpg-diagram.html src="cpg-method-formalisms.svg" ratio="1200 / 829" alt="A transformation starts with a PlanDefinition and produces a BPMN representation for review. Paired sequence, parallel split, exclusive split, and timed start patterns show the constructs to compare." caption="A business process is authored as a PlanDefinition, and the patterns show how it can be transformed to a BPMN model and graphical representation. The sections below give the BPMN and PlanDefinition representation of each pattern." %}
+
 </div>
 
 

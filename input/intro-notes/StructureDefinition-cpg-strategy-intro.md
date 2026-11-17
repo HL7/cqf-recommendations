@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGStrategy is a patient-specific RequestGroup for related recommendations with remaining choices. Use it for an instantiated strategy, rather than the reusable CPGStrategyDefinition. Referenced requests carry `option` intent under the RequestGroup contract. Selection, acceptance, and authorization belong to the receiving workflow; neither the group nor its requests establish completed care.

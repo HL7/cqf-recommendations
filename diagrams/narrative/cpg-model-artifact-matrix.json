@@ -1,0 +1,8 @@
+{
+  "title": "Work products by level and responsibility",
+  "description": "A matrix crosses L1 narrative, L2 semi-structured, L3 computable, and L4 local implementation with Data, Clinical logic, and Forms. Each cell preserves the planning work products described in Guideline Artifacts. The level colors match the adjacent representation-level diagram. The page provides the full matrix as accessible text. Representation levels are not conformance grades, and a capability may not need a form.",
+  "svgSource": "svg/cpg-model-artifact-matrix.svg",
+  "originals": [
+    "CPG-Main-LevelsAndTiers.png"
+  ]
+}

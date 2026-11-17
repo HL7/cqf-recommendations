@@ -1,1 +1,1 @@
-This is a [computable artifact profile](profiles.html#artifact-profiles)
+A case-feature definition specifies how a clinically meaningful feature is represented and, optionally, calculated or retrieved. Use this profile when publishing the StructureDefinition that describes a feature used by a guideline. It is a reusable definition of expected patient data, not the patient-specific observation, condition, or other resource carrying a value.

@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGPathwayDefinition organizes reusable strategies or workflows into the longitudinal view of a guideline. Use it for the pathway definition, while recording a patient's enrollment and resulting care separately. Its action structure is deliberately narrower than base PlanDefinition, so a general-purpose process graph is not automatically a conforming pathway.

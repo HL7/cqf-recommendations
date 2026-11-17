@@ -1,0 +1,23 @@
+{
+  "baseline_summary": {
+    "errs": 49,
+    "warnings": 135,
+    "hints": 14,
+    "suppressed-hints": 378,
+    "suppressed-warnings": 2
+  },
+  "candidate_summary": {
+    "errs": 49,
+    "warnings": 135,
+    "hints": 14,
+    "suppressed-hints": 378,
+    "suppressed-warnings": 2
+  },
+  "method": "Compare qa.xml issue multisets by severity, code, text, and expression. Normalize only absolute build roots and HTML line/column locations. Compare ERROR lines for en/ HTML pages separately using qa.compare.txt. Summary counts come from qa.json; Publisher does not serialize every summary warning or HTML link error in qa.xml.",
+  "added": [],
+  "removed": [],
+  "html_errors_before": 26,
+  "html_errors_after": 26,
+  "html_errors_added": [],
+  "html_errors_removed": []
+}

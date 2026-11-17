@@ -1,0 +1,88 @@
+{
+  "title": "Execution routes",
+  "description": "Shared computable content can be reimplemented manually, translated, or executed natively. Each route needs local verification.",
+  "width": 1000,
+  "height": 326,
+  "nodes": [
+    {
+      "id": "content",
+      "x": 340,
+      "y": 68,
+      "w": 320,
+      "h": 88,
+      "label": "Computable content",
+      "body": "Definitions, logic, terminology",
+      "kind": "knowledge"
+    },
+    {
+      "id": "manual",
+      "x": 32,
+      "y": 204,
+      "w": 288,
+      "h": 96,
+      "label": "Manual implementation",
+      "body": "Implement from the specification",
+      "kind": "workflow"
+    },
+    {
+      "id": "translate",
+      "x": 356,
+      "y": 204,
+      "w": 288,
+      "h": 96,
+      "label": "Translation",
+      "body": "Convert to a supported language",
+      "kind": "logic"
+    },
+    {
+      "id": "native",
+      "x": 680,
+      "y": 204,
+      "w": 288,
+      "h": 96,
+      "label": "Native execution",
+      "body": "Evaluate in a compatible engine",
+      "kind": "logic"
+    }
+  ],
+  "edges": [
+    {
+      "from": "content",
+      "to": "manual",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          500,
+          178
+        ],
+        [
+          176,
+          178
+        ]
+      ]
+    },
+    {
+      "from": "content",
+      "to": "translate",
+      "fromPort": "bottom",
+      "toPort": "top"
+    },
+    {
+      "from": "content",
+      "to": "native",
+      "fromPort": "bottom",
+      "toPort": "top",
+      "via": [
+        [
+          500,
+          178
+        ],
+        [
+          824,
+          178
+        ]
+      ]
+    }
+  ]
+}

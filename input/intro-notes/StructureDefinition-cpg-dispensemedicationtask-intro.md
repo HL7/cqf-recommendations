@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to recommend dispensing a specified medication for a patient. Its prescription input identifies what is to be supplied, and an optional output links the dispensing record. The Task represents work to perform; supplying medication and administering it to the patient are separate clinical activities.

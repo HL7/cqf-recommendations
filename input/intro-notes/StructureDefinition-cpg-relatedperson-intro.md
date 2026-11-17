@@ -1,1 +1,1 @@
-This is a [domain definition profile](profiles.html#domain-profiles)
+CPGRelatedPerson identifies an actual person related to a patient, such as a caregiver or spouse, within guideline-supported care. Use it for that person's relationship and identity in the patient context. It is an instance-level resource, not a reusable persona definition and not a practitioner-role assignment.

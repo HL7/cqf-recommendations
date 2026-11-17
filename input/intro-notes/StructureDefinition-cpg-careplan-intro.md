@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGCarePlan records care planning for a specific patient, potentially bringing together multiple conditions, pathways, or strategies. Use it for the patient's plan and its activity relationships, rather than the reusable PlanDefinition that specifies guideline logic. The plan can reference a case through `planFor` while retaining its own status, intent, and activity state.

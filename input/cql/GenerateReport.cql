@@ -2,7 +2,7 @@ library GenerateReport
 
 using FHIR version '4.0.1'
 
-include FHIRHelpers version '4.0.1'
+include hl7.fhir.uv.cql.FHIRHelpers version '4.0.1' called FHIRHelpers
 
 codesystem "Activity Type": 'http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs'
 
@@ -63,7 +63,7 @@ define "Inclusion Criteria":
 define "Generation Task":
   [Task] C
     where C.code ~ "Generate report"
-      and reportWith(C) = reportWith
+      and reportMeasure(C) = reportWith
       and doNotPerform(C) is not true
 
 define "Generated Report":
@@ -104,7 +104,7 @@ define function doNotPerform(task Task):
       where E.url = 'http://hl7.org/fhir/StructureDefinition/request-doNotPerform'
   ).value as boolean
 
-define function reportWith(task Task):
+define function reportMeasure(task Task):
   singleton from (
     task.input I
       where I.type ~ "Generate report"

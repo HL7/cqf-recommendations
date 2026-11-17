@@ -1,0 +1,8 @@
+{
+  "title": "Historical recommendation workflow structure",
+  "description": "In a historical opioid prescribing example, signing an order triggers context and review checks, a calculation, and a configured decision. A failed check or unavailable calculation follows the no-message path. When the message criterion is met, decision support displays a message and the clinician can respond. Clinical rule details are in the versioned example.",
+  "svgSource": "svg/cpg-method-translation.svg",
+  "originals": [
+    "Recommendation04-05-flow.png"
+  ]
+}

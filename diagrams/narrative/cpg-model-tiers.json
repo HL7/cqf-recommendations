@@ -1,0 +1,68 @@
+{
+  "height": 355,
+  "title": "Give data, clinical logic and forms distinct responsibilities",
+  "description": "Data definitions describe clinical information. Clinical logic interprets the information and proposes care. Forms collect or display information while reusing those definitions and logic.",
+  "nodes": [
+    {
+      "id": "data",
+      "x": 32,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "knowledge",
+      "label": "Data",
+      "body": [
+        "Meaning, codes and units",
+        "Structure and time",
+        "Local mapping contract"
+      ]
+    },
+    {
+      "id": "logic",
+      "x": 358,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "logic",
+      "label": "Clinical logic",
+      "body": [
+        "Patient description",
+        "Applicability and activities",
+        "Reusable expressions"
+      ]
+    },
+    {
+      "id": "forms",
+      "x": 684,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "workflow",
+      "label": "Forms",
+      "body": [
+        "Collect or confirm data",
+        "Interaction and branching",
+        "Reuse clinical meaning"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "data",
+      "to": "logic"
+    },
+    {
+      "from": "logic",
+      "to": "forms"
+    }
+  ],
+  "notes": [
+    {
+      "x": 32,
+      "y": 325,
+      "w": 936,
+      "text": "Arrows show reuse, not a required deployment sequence. A guideline service may need no form.",
+      "size": 16
+    }
+  ]
+}

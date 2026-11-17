@@ -7,17 +7,12 @@ This implementation guide defines three (3) tiers of functionality, very roughly
 *   **Logic**  (Clinical Logic)
 *   **Forms**  (UI Description and Behavior)
 
-<details open>
 
-<summary>
+<div class="modified-content" markdown="1">
 
-Figure 1. Tiers of Functionality
+{% include cpg-diagram.html src="cpg-model-tiers.svg" ratio="1000 / 355" alt="Data definitions describe the information, clinical logic interprets it, and forms collect or display it while reusing the clinical meaning." caption="Figure 1. Tiers of Functionality. Data definitions describe clinical information, clinical logic interprets that information and proposes care, and forms collect or display information while reusing those definitions and logic." %}
 
-</summary>
-
-<img src="functionality-tiers.png" alt="Tiers of Functionality" class="img-responsive img-rounded center-block" width="750" height="237"/>
-
-</details>
+</div>
 
 To illustrate these tiers of functionality, consider the following excerpt from a recommendation statement in the CDC Opioid Prescribing Guideline:
 
@@ -54,6 +49,7 @@ Expressing the clinical logic for a guideline enables application functionality;
 
 Note to the Knowledge Engineer not to conflate Clinical (business) Logic with either Data (transformation) logic or Forms (user interaction) logic.  Business logic should only be about describing the things that occur in the domain- describing patients (Case Features), formalizing clinician decision logic ([Recommendations](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation)), orchestrating either of the two, etc. (see Table above).  These are critical separations of concerns to keep in mind as their conflation can cause significant challenges, particularly in a knowledge-based approach- though all Tiers can take advantage of knowledge-based approaches.
 
+
 ### Forms Description
 
 The forms description in a computable guideline describes user interactions and uses both the data elements and clinical logic. The artifacts at this level are represented in FHIR using the following resources:
@@ -62,3 +58,5 @@ The forms description in a computable guideline describes user interactions and 
 * PlanDefinition
 
 This level involves specifying a conceptual description of the processes involved, as well as the user-interfaces that capture the user’s interactions with the system. Expressing the forms description for a guideline provides a more complete description of the recommendations in a guideline; roughly, the presentation tier in a traditional 3-tier architecture.  Note to the Knowledge Engineer not to conflate Forms logic with Business Logic.  Forms logic should only be about the behavior of the user interaction, though it can and almost always does reuse Business Logic.  This is a critical separation of concerns to keep in mind.
+
+

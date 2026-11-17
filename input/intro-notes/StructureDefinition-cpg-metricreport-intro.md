@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGMetricReport records the result of evaluating a guideline-related metric in a specified subject and period. Use it for the calculated MeasureReport, with a canonical link to the CPGComputableMetric that defines the calculation. It is separate from the metric definition and from any clinical action that the result may inform.

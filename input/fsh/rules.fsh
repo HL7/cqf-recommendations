@@ -128,10 +128,10 @@ RuleSet: Profile(profile-id)
 RuleSet: RelatedFHIRLibraries
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://fhir.org/guides/cqf/common/Library/FHIR-ModelInfo|4.0.1"
+  * resource = "http://hl7.org/fhir/uv/cql/Library/FHIR-ModelInfo|4.0.1"
 * relatedArtifact[+]
   * type = #depends-on
-  * resource = "http://fhir.org/guides/cqf/common/Library/FHIRHelpers|4.0.1"
+  * resource = "http://hl7.org/fhir/uv/cql/Library/FHIRHelpers|4.0.1"
 
 RuleSet: CaseFeatureMetadata(id)
 * insert KnowledgeArtifactExtensionsMeta

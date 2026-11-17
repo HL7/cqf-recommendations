@@ -1,0 +1,3 @@
+Use this operation to generate questions from a StructureDefinition that describes the data to collect. It is useful for a [case-feature definition](StructureDefinition-cpg-casefeaturedefinition.html) selected by the application, including when a guideline evaluation identifies missing information.
+
+The operation generates a Questionnaire from the profile's elements and extensions. [PlanDefinition `$questionnaire`](OperationDefinition-cpg-planDefinition-questionnaire.html) applies this approach across a plan's data requirements; [interactive CDS](interactive-cds.html) explains how generated forms participate in a patient-specific collection and reevaluation cycle.

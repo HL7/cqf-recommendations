@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="326" viewBox="0 0 1000 326" role="img" aria-labelledby="title description">
+<title id="title">Execution routes</title><desc id="description">Shared computable content can be reimplemented manually, translated, or executed natively. Each route needs local verification.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52687a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="25.0" y="35.0" font-size="24.2" font-weight="700" text-anchor="start" fill="#183e59"><tspan x="25.0" dy="0">Execution routes</tspan></text>
+<polyline points="500.0,156 500,178 176,178 176.0,204" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="500.0,156 500.0,204" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="500.0,156 500,178 824,178 824.0,204" fill="none" stroke="#52687a" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="340" y="68" width="320" height="88" rx="9" fill="#eaf2fb" stroke="#35618e" stroke-width="2"/>
+<text x="500.0" y="96" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Computable content</tspan></text>
+<text x="500.0" y="129.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Definitions, logic, terminology</tspan></text>
+<rect x="32" y="204" width="288" height="96" rx="9" fill="#fff4df" stroke="#9b6b16" stroke-width="2"/>
+<text x="176.0" y="232" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="176.0" dy="0">Manual implementation</tspan></text>
+<text x="176.0" y="265.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="176.0" dy="0">Implement from the</tspan><tspan x="176.0" dy="21.33">specification</tspan></text>
+<rect x="356" y="204" width="288" height="96" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="500.0" y="232" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Translation</tspan></text>
+<text x="500.0" y="265.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="500.0" dy="0">Convert to a supported</tspan><tspan x="500.0" dy="21.33">language</tspan></text>
+<rect x="680" y="204" width="288" height="96" rx="9" fill="#e6f4f1" stroke="#247268" stroke-width="2"/>
+<text x="824.0" y="232" font-size="19.2" font-weight="700" text-anchor="middle" fill="#183e59"><tspan x="824.0" dy="0">Native execution</tspan></text>
+<text x="824.0" y="265.92" font-size="15.8" font-weight="400" text-anchor="middle" fill="#183e59"><tspan x="824.0" dy="0">Evaluate in a compatible</tspan><tspan x="824.0" dy="21.33">engine</tspan></text>
+</g></svg>

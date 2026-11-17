@@ -1,0 +1,15 @@
+{
+  "title": "Work products from the historical 2020 case study",
+  "description": "The 2020 emergency-department COVID-19 project used four roles to develop and review work products. Clinical authors drafted and revised the narrative. Subject-matter engineers made concepts and decisions explicit and turned case presentations into examples. Terminology specialists defined classes and codes. Technical engineers explored DMN decisions and CMMN stages, candidate FHIR and CQL artifacts, and case-based checks. Review findings went back to the clinical authors.",
+  "svgSource": "svg/cpg-method-case-study.svg",
+  "originals": [
+    "image14.png",
+    "image2.png",
+    "image3.png",
+    "image1.png",
+    "image12.png",
+    "image25.png",
+    "image31.png",
+    "image29.png"
+  ]
+}

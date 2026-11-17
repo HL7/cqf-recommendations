@@ -1,79 +1,70 @@
 {:toc}
 
-The FHIR Clinical Guidelines Implementation Guide (CPG IG) provides a means of creating a computable representation of a narrative clinical guideline that is faithful to guideline intent and supports the derivation of downstream capabilities such as cognitive and decision support, quality measures, case reporting, and documentation templates that direct clinical documentation in support of determining guideline compliance.
+{% include cpg-toc-layout.html sidebar=true %}
 
----
+{% include cpg-horizontal-table-style.html %}
 
-{: #clinical-guidelines-implementation-guide}
+The Clinical Practice Guidelines (CPG) Implementation Guide explains how to represent a clinical guideline as reusable FHIR knowledge artifacts and use those artifacts in clinical systems. Start with the recommendation's clinical intent, express its data and decision logic, and validate how the resulting guidance works in a particular care setting.
 
-This implementation guide is organized into the following sections, accessible via the menu bar at the top of every page:
+This guide is for guideline authors, knowledge engineers, software implementors, clinical reviewers, and the tools and agents assisting them. It uses **FHIR R4 (4.0.1)**. The [profiles](profiles.html), [operations](artifacts.html#operationdefinition-index), and [conformance statements](documentation-conformance.html) provide the formal contracts; the narrative explains how to apply them.
 
-*   [Home](index.html): The home page provides summary, introductory, and background information
-*   [Approach](approach.html): The approach page documents the overall approach to representing computable guideline content
-*   [Methodology](methodology.html): Describes methodologies for developing computable guideline content
-*   [Profiles](profiles.html): Describes expectations for use and an index of the profiles and extensions used in representing computable guideline content
-*   [Terminology](terminology.html): Describes expectations for the use of terminology as part of computable guideline content
-*   [Libraries](libraries.html): Describes expectations for the use of libraries of computable expressions (e.g. CQL) as part of computable guideline content
-*   [Examples](examples.html): Index of examples and example artifacts
-*   [Downloads](downloads.html): Downloads for the specification
-*   [Glossary](glossary.html): Glossary of key terms used in the specification
-*   [Version History](http://hl7.org/fhir/uv/cpg/history.html): Index of all versions of this implementation guide
+<div class="cpg-home-task" markdown="1">
+<a id="clinical-guidelines-implementation-guide"></a>
+
+### Start with your task
+
+| Your task | Read first | Result to work toward |
+| --- | --- | --- |
+| Implement an existing guideline package | [Implementation overview](documentation-approach-02-05-knowledge-implementation.html) | A tested local data, execution, and workflow integration |
+| Author a computable guideline | [Methodology](methodology.html) | A versioned package of definitions, logic, terminology, evidence, and tests |
+| Understand the model | [Approach](approach.html) | A clear separation of patient facts, reusable recommendations, and local workflow |
+| Review content or an implementation | [Conformance](documentation-conformance.html) and [checklists](checklists.html) | Evidence for the requirements and review activities that apply |
+| Find a worked example or resource | [Examples](examples.html) and [artifact index](artifacts.html) | A trace from a definition to patient-specific requests and events |
+{:.cpg-horizontal-table}
+
+</div>
 
 ### Introduction
 
-This Implementation Guide (IG) supports the development of standards-based computable representations of the content of clinical care guidelines. Its content pertains to technical aspects of digital guidelines implementation and is intended to be usable across multiple use cases across clinical domains as well as in the International Realm.
+A narrative recommendation often leaves implementation questions open: which patients it applies to, which data establishes eligibility, how missing information is handled, and what action to propose. This guide provides a shared way to make those decisions explicit and preserve their relationship to the source guideline.
 
-This IG has been developed through multi-organizational and multidisciplinary efforts ([Adapting Clinical Guidelines for the Digital Age](https://journals.lww.com/ajmqonline/toc/2023/09002), [SMART Guidelines](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines), holistically involving a range of stakeholders, including those who work at the beginning of the process (e.g., guideline developers) to the end users (e.g., clinical implementation team representatives, health IT developers, patients/patient advocates), and others in between (e.g., informaticists, communicators, evaluators, public health organizations, clinical quality measure and clinical decision support developers).
-
-The premise involves determining the representation of clinical practice guideline recommendations in FHIR as part of a parallel and iterative guideline development and implementation process rather than a traditional sequential and siloed process (Figure 1.1). By including all the relevant perspectives (e.g., guideline authors, informaticists, implementers, communicators, evaluators) as part of the iterative process, the resulting computable representation of the recommendations should be well-vetted and more readily implemented across multiple clinical domains.
-
-<div>
-  <img src="Guidelines-iterative-and-incremental-model-2.png" alt="Guideline development cycle" height="344" width="700"/>
-</div>
-
-_Figure 1.1_ High-level current state (siloed and sequential) and proposed future state (parallel and iterative) process for guideline development and implementation [Source](https://journals.lww.com/ajmqonline/fulltext/2023/09002/adapting_clinical_guidelines_for_the_digital_age_.2.aspx).
-
-### Scope
+The main work products are FHIR definitions, libraries of logic, terminology, and documentation that can be reviewed and exchanged. Local implementation then supplies the data mappings, execution environment, user interaction, and operational responsibilities needed to use them. This distinction is central to the [four levels of knowledge representation](documentation-approach-06-01-levels-of-knowledge-representation.html).
 
 <div class="modified-content" markdown="1">
 
-<div>
-  <img src="CPG-Main-06.png" alt="Clinical quality lifecycle" class="img-responsive img-rounded center-block" width="700"/>
-</div>
-
-_Figure 1.2_ Clinical Quality Lifecycle with situated standards to address each respective phase. The CPG-IG addresses a critical gap in explicitly formalizing the guideline recommendations and other guideline features as computer-interpretable for downstream consumption and closing the feedback and feedforward loop(s).
+{% include cpg-diagram.html src="cpg-runtime-lifecycle.svg" ratio="1200 / 961" alt="Research and evidence inform guidelines and decision support. Clinical care supplies data for measurement, reporting, and further evidence review, connected through shared FHIR data and knowledge." caption="Figure 1. Guidelines connect evidence to decision support and clinical care. Measurement, reporting, and reviewed findings connect care back to evidence. Related standards illustrate the roles in this ecosystem; they are not a required dependency set. The [integrated process publication](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023) describes this collaborative approach." %}
 
 </div>
 
-<div>
-  <img src="CPG-Main-06-Legend.png" alt="Clinical quality lifecycle legend" class="img-responsive img-rounded center-block" width="70" />
-</div>
+### Scope
 
-* [Evidence-Based Medicine-on-FHIR (EBM-on-FHIR)](http://hl7.org/fhir/clinicalreasoning-evidence-and-statistics.html))
-* [Clinical Practice Guidelines-on-FHIR (CPG-on-FHIR) (This IG)](index.html)
-* [CDS Hooks](http://cds-hooks.hl7.org)
-* [SMART App Launch](http://hl7.org/fhir/smart-app-launch/)
-* [Quality Measures (QM)](http://hl7.org/fhir/us/cqfmeasures)
-* [Data Exchange for Quality Measures (DEQM)](http://hl7.org/fhir/us/davinci-deqm)
-* [Electronic Case Reporting (eCR)](http://hl7.org/fhir/us/ecr)
-* [United States (US) Core](http://hl7.org/fhir/us/core)
-* [Quality Improvement (QI) Core](http://hl7.org/fhir/us/qicore)
-* [US Public Health Profiles Library (USPHPL)](http://hl7.org/fhir/us/ph-library)
-* [International Patient Summary (IPS)](http://hl7.org/fhir/uv/ips)
-* [Clinical Quality Language (CQL)](http://cql.hl7.org)
-* [Clinical Reasoning (CR) Module](http://hl7.org/fhir/clinicalreasoning-module.html)
+The guide focuses on representing clinical guideline content and connecting it to implementation. Its patterns also support related uses such as documentation, quality measurement, and reporting, each of which has its own implementation requirements.
+
+| Standard or guide | Responsibility in an implementation |
+| --- | --- |
+| [FHIR R4 Clinical Reasoning](https://hl7.org/fhir/R4/clinicalreasoning-module.html) and this CPG IG | Represent guideline definitions, activities, data expectations, and patient-specific results |
+| [Clinical Quality Language (CQL)](https://cql.hl7.org/) and [Using CQL With FHIR](https://hl7.org/fhir/uv/cql/) | Express clinical logic, package libraries, and describe their data and terminology dependencies |
+| [Canonical Resource Management Infrastructure (CRMI)](https://hl7.org/fhir/uv/crmi/) | Manage reusable knowledge artifacts, metadata, dependencies, and distribution |
+| [CDS Hooks](https://cds-hooks.hl7.org/) | Invoke decision support at a defined workflow point and return cards, suggestions, or app links |
+| [SMART App Launch](https://hl7.org/fhir/smart-app-launch/) | Launch applications with authorized access and clinical context |
+| [Structured Data Capture (SDC)](https://hl7.org/fhir/uv/sdc/) | Support questionnaire population, interaction, and extraction of structured data |
+| Realm-appropriate data guides, such as [IPS](https://hl7.org/fhir/uv/ips/) | Establish exchange profiles that content-specific data requirements build on |
+
+These links identify the responsibilities of related specifications. Implementations need compatible, identified versions; a citation to a newer publication does not change this guide's FHIR version or the requirements of its artifacts. See the generated dependency table below for this publication's package dependencies.
 
 Translating guideline recommendations and other types of guidance into practice has historically been a site-by-site exercise that has been disconnected from guideline/guidance development, creating unnecessary redundancies and introducing potential errors in translation that can lead to inconsistencies in how the guideline or guidance is executed. This clinical practice guidelines implementation guide (CPG-IG) consists of standards and a standardized, scalable approach to help make the effort of translating and implementing clinical practice guidelines and other types of guidance more efficient and effective. Key aspects include:
 
-1. An integrated guideline/guidance development and implementation process, referred to as "the integrated process" [Source](https://journals.lww.com/ajmqonline/fulltext/2023/09002/an_integrated_process_for_co_developing_and.3.aspx)
-2. Common standards that can work across the entire clinical quality ecosystem (Figure 1.2) and different electronic health record (EHR) platforms
-3. Closed-loop guideline content and information flow inclusive of feedback and feedforward processes (i.e., high-level "Proposed Future State" in Figure 1.1 and detailed in Figure 1.3)
+1. An integrated guideline/guidance development and implementation process, referred to as "the integrated process" [Matson-Koffman et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023)
+2. Common standards that can work across the entire clinical quality ecosystem (Figure 1) and different electronic health record (EHR) platforms
+3. Closed-loop guideline content and information flow inclusive of feedback and feedforward processes (Figure 2)
+{:.modified-content}
 
 <div>
   <img src="CPG-04.05-01.png" alt="Integrated process" class="img-responsive img-rounded center-block" width="700"/>
 </div>
 
-_Figure 1.3_ The integrated process with integrated evaluation in guideline development and implementation, showing a human-cnetered design approach to co-develop marrative and computable guidelines and build in evaluation, with feedback and feedforward loops throughout the process. ([Source](https://journals.lww.com/ajmqonline/fulltext/2023/09002/an_integrated_process_for_co_developing_and.3.aspx) and [Source](https://journals.lww.com/ajmqonline/fulltext/2023/09002/an_evaluation_framework_for_a_novel_process_to.4.aspx)).
+_Figure 2._ The integrated process with integrated evaluation in guideline development and implementation, showing a human-centered design approach to co-develop narrative and computable guidelines and build in evaluation, with feedback and feedforward loops throughout the process. ([Matson-Koffman et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023) and [Tailor et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023)).
+{:.modified-content}
 
 This IG is focused on the development of computable representations of clinical guideline content as FHIR knowledge artifacts. Since the initial publication, much of the guidance around the content management lifecycle (Shareable, Publishable, Computable, and Executable profile categories) has been generalized to apply across similar content management use cases in other FHIR IGs and is now available in the [Canonical Resource Management Infrastructure (CRMI)](http://hl7.org/fhir/uv/crmi) IG. Content conforming to this CPG IG should make use of the content development approach supported by the CRMI IG.
 
@@ -110,6 +101,14 @@ The primary objective of the CPG approach to codifying clinical practice guideli
 
 Secondarily, we describe how these activities interact with adjacent and related activities as well as content and related standards in the broader knowledge ecosystem (inclusive of evidence ecosystem, guideline developers, guideline-directed care, quality measure ecosystem, registry community, etc.). This includes upstream activities, such as evidence generation and knowledge discovery, and downstream activities, such as patient care, decision support (i.e., CDS), and advanced cognitive support (e.g., providing options within the clinical workflow that offer evidence-based, patient-centered information to support clinical judgement), quality measurement and reporting, and electronic case reporting (for similarly scoped conditions). All can serve to inform subsequent iterations of clinical guidelines and guideline-directed care and thus have a key role in the learning health system.
 
+<div class="new-content" markdown="1">
+
+The goals are to preserve guideline intent, reduce repeated translation work, make implementation decisions reviewable, and support reuse of computable knowledge. The same artifacts can help connect guidance, care delivery, and evaluation when the local implementation establishes those connections.
+
+Published implementation experience shows that shared content still requires local mapping, vendor integration, staffing, and maintenance. General CDS research reports variable effects across settings and interventions. A valid artifact, a working service, clinician use, and improved patient outcomes are different results to evaluate. See [CDS Connect implementation lessons](documentation-approach-cds-implementation-evidence.html#ref-dhopeshwarkar-2023) and the [CDS evidence review](documentation-approach-cds-implementation-evidence.html).
+
+</div>
+
 ### Audience
 
 This IG provides both an approach and suggested methodology for computable representation of clinical practice guidelines, so the audience for this guide is broad and inclusive of an array of roles across the spectrum of clinical guideline development and implementation, from clinical guideline developers and authors, through clinical informaticists, health system integrators and clinical systems developers. Areas of the IG that are more technical assume familiarity with relevant standards, including FHIR and CQL, though links are provided to reference materials for further reading.
@@ -120,7 +119,7 @@ The CPG Approach section highlights:
 * How the HL7 CPG-IG recognizes the technical participants' distinct and valuable work and provides numerous opportunities to reuse domain standards (e.g., FHIR and other HL7 IG's); and
 * A reconceptualization of work processes that share and reuse essential information and content.
 
-Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative ([ref](https://journals.lww.com/ajmqonline/toc/2023/09002)), the World Health Organization’s (WHO’s) Antenatal Care Guidelines ([ref](https://www.who.int/reproductivehealth/publications/maternal_perinatal_health/anc-positive-pregnancy-experience/en/)), the HL7 Clinical Decision Support and Clinical Quality Information Working Groups, and numerous other publicly funded and private sector initiatives, including local health system implementations of guidelines and in-workflow pathways.
+Much of this work has been informed by several international efforts, including the U.S. Centers for Disease Control and Prevention’s (CDC’s) Adapting Clinical Guidelines for the Digital Age initiative ([Am J Med Qual, 2023](documentation-approach-cds-implementation-evidence.html#ref-ajmq-2023)), the World Health Organization’s (WHO’s) Antenatal Care Guidelines ([WHO, 2016](documentation-approach-cds-implementation-evidence.html#ref-who-anc-2016)), the HL7 Clinical Decision Support and Clinical Quality Information Working Groups, and numerous other publicly funded and private sector initiatives, including local health system implementations of guidelines and in-workflow pathways.
 
 **Notes to Target Audiences:**
 
@@ -136,6 +135,22 @@ Much of this work has been informed by several international efforts, including 
 
 Using approaches, standards, and techniques addressed in further detail in individual sections, this CPG IG can serve a critical role in the virtuous cycle of a Learning Health System.
 
+<div class="new-content" markdown="1">
+
+Authors and reviewers need the clinical source, its interpretation, and the tests that demonstrate fidelity. Software implementors need exact resource types, operation signatures, dependencies, data requirements, and lifecycle behavior. Clinical teams need to understand when guidance appears, how to act on it, and who maintains it.
+
+Agents and other automation tools can use the same reading paths. For an implementation task:
+
+1. Identify the content package, canonical artifact, and version.
+2. Read the owning narrative topic and the linked formal profile or operation.
+3. Record inputs, expected outputs, dependencies, and unresolved assumptions.
+4. Use examples to understand the representation, then validate against the formal contracts.
+5. Present clinical ambiguities, proposed adaptations, and test results to the responsible reviewers.
+
+Conceptual names in diagrams are explained in the [glossary](glossary.html). They do not by themselves identify a FHIR resource type or grant authority to carry out a clinical action.
+
+</div>
+
 ### Background
 
 The need for computable care guidelines can be considered in the context of the data lifecycle, where the representation of the guideline recommendations in FHIR helps deliver actionable knowledge. By translating the recommendations in clinical practice guidelines at the source, and disseminating a computable version along with the narrative version of the guidelines, the effort of translation need not be repeated across every organization that intends to apply the recommendations. Likewise, unnecessary or unintentional variations as a result of duplicative translation efforts could be prevented with a standard, computable version that is ready to be implemented. In removing the need for translating recommendations at each local clinical system, and removing as much variation as possible through a standard translation, the time needed to apply the recommendations in practice should also be reduced, helping scientific evidence reach patient care more easily, quickly, accurately, and consistently.
@@ -146,28 +161,16 @@ In particular, the translation into tools like CDS and eCQMs applies common heal
 
 It is important to note that this effort is a concerted attempt to build on, learn from, contribute to, and work with existing approaches, initiatives, and efforts in guideline development, translation, and implementation. The contribution of this implementation guide is focused on describing a best-practices conceptual approach combined with a practical methodology that leverages the interoperability framework provided by FHIR as a way to overcome the impedance mismatch between knowledge and clinical data models that is commonly encountered by efforts in this space. The approach and methodologies presented here are the combined result of many person years of work across multiple initiatives and coordinated with groups like Health eDecisions, Clinical Quality Framework initiative, the CDC's Adapting Clinical Guidelines for the Digital Age intiative, the BPM+ for Health initiative, IHE's Computable Care Guidelines initiative, and the WHO's SMART Guidelines initiative. Feedback on the approach and methodologies are welcomed and encouraged. See the references section for further reading and background that informs the approach taken here.
 
+<div class="new-content" markdown="1">
+
+This guide builds on work on layered knowledge representation, the CDC's integrated guideline development process, and [WHO SMART Guidelines](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines). WHO SMART Guidelines describe a guideline-development approach; SMART App Launch defines an application integration protocol. Their shared name does not make them the same specification.
+
+</div>
+
 ### References
 
-* Adapting Clinical Guidelines for the Digital Age – American Journal of Medical Quality - September/October 2023 - Volume 38 – Supplement 2 - https://journals.lww.com/ajmqonline/toc/2023/09002
-* Adapting Clinical Guidelines for the Digital Age: Summary of a Holistic and Multidisciplinary Approach. American Journal of Medical Quality 38(5S):p S3-S11, September/October 2023. https://doi.org/10.1097/JMQ.0000000000000138
-* An Integrated Process for Co-Developing and Implementing Written and Computable Clinical Practice Guidelines. American Journal of Medical Quality 38(5S):p S12-S34, September/October 2023. https://doi.org/10.1097/JMQ.0000000000000137
-* An Evaluation Framework for a Novel Process to Codevelop Written and Computable Guidelines. American Journal of Medical Quality 38(5S):p S35-S45, September/October 2023. https://doi.org/10.1097/JMQ.0000000000000140
-* Adapted Kaizen: Multi-Organizational Complex Process Redesign for Adapting Clinical Guidelines for the Digital Age. American Journal of Medical Quality 38(5S):p S46-S59, September/October 2023. https://doi.org/10.1097/JMQ.0000000000000133
-* WHO SMART guidelines: optimising country-level use of guideline recommendations in the digital age. Lancet Digit Health. 2021 Apr;3(4):e213-e216. https://doi.org/10.1016/S2589-7500(21)00038-8
-* Experiences in aligning WHO SMART guidelines to classification and terminology standards. BMJ Health Care Inform. 2023 Aug;30(1):e100691. https://doi.org/10.1136/bmjhci-2022-100691
-* A multi-layered framework for disseminating knowledge for computer-based decision support. Journal of the American Medical Informatics Association 2011 Dec; 18(Suppl 1): i132-i139. [https://doi.org/10.1136/amiajnl-2011-000334](https://doi.org/10.1136/amiajnl-2011-000334)
-* An Ontological Framework for Adaptive Medical Workflow. Journal of Biomedical Informatics Volume 41, Issue 5, October 2008, Pages 829-836. [https://doi.org/10.1016/j.jbi.2008.05.012](https://doi.org/10.1016/j.jbi.2008.05.012)
-* International Standard Classification of Occupations (ISCO). [http://www.ilo.org/public/english/bureau/stat/isco/index.htm](http://www.ilo.org/public/english/bureau/stat/isco/index.htm)
-* Classifying health workers: Mapping occupations to the international standard classification. World Health Organization. [https://www.who.int/hrh/statistics/Health\_workers\_classification.pdf](https://www.who.int/hrh/statistics/Health_workers_classification.pdf)
-* Comparing Computer-interpretable Guideline Models: A Case-study Approach. Journal of the American Medical Informatics Association Volume 10, Issue 1, January 2003, Pages 52–68. [https://doi.org/10.1197/jamia.M1135](https://academic.oup.com/jamia/article/10/1/52/816551)
-* Computer-interpretable clinical guidelines: A methodological review. Journal of Biomedical Informatics Volume 46, Issue 4, August 2013, Pages 744-763. [https://doi.org/10.1016/j.jbi.2013.06.009](https://www.sciencedirect.com/science/article/pii/S1532046413000841)
-* Computerization of workflows, guidelines, and care pathways: a review of implementation challenges for process-oriented health information systems. Journal of the American Medical Informatics Association, Volume 18, Issue 6, November 2011, Pages 738–748. [https://doi.org/10.1136/amiajnl-2010-000033](https://academic.oup.com/jamia/article/18/6/738/2909128)
-* Conceptual alignment of electronic health record data with guideline and workflow knowledge. International Journal of Medical Informatics 64 (2001) 259–274. [https://doi.org/10.1016/S1386-5056(01)00196-4](https://www.sciencedirect.com/science/article/abs/pii/S1386505601001964)
-* GEM: A Proposal for a More Comprehensive Guideline Document Model Using XML. Journal of the American Medical Informatics Association, Volume 7, Issue 5, September 2000, Pages 488–498. [https://doi.org/10.1136/jamia.2000.0070488](https://academic.oup.com/jamia/article/7/5/488/759461)
-* GLIF3: a representation format for sharable computer-interpretable clinical practice guidelines. Journal of Biomedical Informatics Volume 37, Issue 3, June 2004, Pages 147-161. [https://doi.org/10.1016/j.jbi.2004.04.002](https://www.sciencedirect.com/science/article/pii/S1532046404000334)
-* Modelling biological processes using workflow and Petri Net models. Bioinformatics, Volume 18, Issue 6, June 2002, Pages 825–837. [https://doi.org/10.1093/bioinformatics/18.6.825](https://academic.oup.com/bioinformatics/article/18/6/825/220757)
-* Operationalizing Guideline-based Care. Presentation at the 2013 AeHIN General Meeting. [http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx](http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx)
-* Representation primitives, process models and patient data in computer-interpretable clinical practice guidelines: A literature review of guideline representation models. International Journal of Medical Informatics, Volume 68, Issues 1–3, 2002, Pages 59-70, ISSN 1386-5056, [https://doi.org/10.1016/S1386-5056(02)00065-5.](http://www.sciencedirect.com/science/article/pii/S1386505602000655)
+The [CDS Literature and Bibliography](documentation-approach-cds-implementation-evidence.html) lists the references cited throughout this guide, including the [references previously listed on this page](documentation-approach-cds-implementation-evidence.html#additional-references), and a selected reading list of public CDS literature, including PubMed/PMC papers on effectiveness, workflow, alert burden, operational failures, and standards-based implementations. The [methodology](methodology.html) connects those lessons to authoring and validation work.
+{:.modified-content}
 
 ### Acknowledgements
 

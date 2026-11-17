@@ -1,86 +1,45 @@
-<div>
-  <img src="common-pathway.png" alt="Common Care Pathway" height="494" width="766"/>
-</div>
+This proposed ambulatory pathway is an example for organizing guideline-supported care. Adapt it to the care setting, participants, and service capabilities. Care may span several encounters and organizations; the diagram is not a required visit sequence.
 
-<!--
-Diagram evokes more encounter-based care, doesn't communicate that it potentially applies to more distributed care
+{% include cpg-diagram.html src="cpg-runtime-common-pathway.svg" alt="Establish identity and assess urgency, gather information, agree on care, request and deliver activities, then monitor and report. Repeat assessment as information changes." caption="Figure 1. A simplified common care pathway. Urgent escalation and reassessment can occur whenever indicated; local workflow determines the actual sequence." %}
 
-Potentially simplify even more:
-  Diagnosis/Therapy/Procedure/Identity
--->
+### Establish the context
 
----
-NOTE: This is a proposed common pathway for ambulatory care processes.
----
+| Activity | Purpose |
+| --- | --- |
+| Establish patient identity | Identify and record the subject of care. |
+| Retrieve patient health summary | Obtain the available clinical context and identify information gaps. |
+| Triage | Assess whether signs or symptoms require urgent or emergency care. |
+| Emergency: escalate care | Arrange the appropriate urgent response or transfer when indicated. |
+| Invoke applicable CCGs | Identify the **Computable Care Guidelines** relevant to the patient and situation. |
+{:.grid}
 
-**Establish Patient Identity**
+### Assess and agree on care
 
-Identifying and recording the subject of care.
+| Activity | Purpose |
+| --- | --- |
+| Provide counseling | Discuss treatment options, consent, health education, and ongoing care with the patient. |
+| Record observations | Gather history, examination findings, and other relevant observations. |
+| Order tests | Request diagnostic tests, including any local or external fulfillment workflow. |
+| Evaluate test results | Interpret findings with the history, examination, and other available information. |
+| Record diagnosis | Record the clinical assessment reached from that information. |
+| Order interventions | Authorize the selected care activities. |
+{:.grid}
 
-**Retrieve Patient Health Summary**
+The guideline can propose an activity. Agreement, authorization, and fulfillment remain explicit workflow steps, as described in [Activity Flow](activityflow.html).
 
-Retrieving a summary of the patient's health.
+### Deliver, monitor, and report
 
-**Triage**
+| Activity | Purpose |
+| --- | --- |
+| Provide interventions | Perform the agreed and authorized activities and record what occurred. |
+| Order medications | Request medication treatment through the relevant prescribing workflow. |
+| Dispense medications | Supply medication against the appropriate prescription; administration is a separate activity. |
+| Establish monitoring and follow-up | Review progress and plan the next assessment or action. |
+| Discharge/refer patient | Coordinate transition to another setting, service, or guideline-based program. |
+| Update the digital client record | Reconcile and record the information produced through care. |
+| Generate reportable indicators | Produce patient-level management information and, where appropriate, aggregate reporting. |
+{:.grid}
 
-Performing basic triage to identify any signs that emergency care is required
+### Apply the example
 
-**Emergency: Escalate Care**
-
-Providing emergency care in trauma cases or as part of guideline-based care escalation.
-
-**Invoke Applicable CCGs**
-
-Invoking the CCGs (Clinical Commissioning Groups) that are applicable to the situation.
-
-**Provide Counseling**
-
-Informing the subject of care about their treatment options and about how their ongoing care should be managed between visits. This is also where treatment consents are obtained and where health education is provided.
-
-**Record Observations**
-
-Gathering clinical history and performing and recording observations regarding the patient's health (e.g. blood pressure, temperature, etc.).
-
-**Order Tests**
-
-Ordering and conducting diagnostic tests, including lab tests, collection of samples, and other diagnostic tests. Lab testing may be done locally (e.g. HIV quick test) or the samples may require lab order fulfillment workflow.
-
-**Evaluate Test Results**
-
-Using available information from the patient's history, current examinations, tests, and assessments to assist in developing a diagnosis.
-
-**Record Diagnosis**
-
-Recording the diagnosis that was reached in the evaluation process.
-
-**Order Interventions**
-
-Ordering the necessary interventions.
-
-**Provide Interventions**
-
-Providing the interventions to the patient.
-
-**Order Medications**
-
-Clinicians ordering medications to be dispensed by a pharmacy. Pharmacies may be local to the care facility or community-based, and involves supply chain transactions to support medication management.
-
-**Dispense Medications**
-
-Administering medications to the patient.
-
-**Establish Monitoring and Follow-up**
-
-Monitoring and tracking progress for each patient based on guideline recommendations.
-
-**Discharge/Refer Patient**
-
-Discharging or referring a patient, including the movement of patients through levels of care delivery (e.g. acute to primary, primary to community, etc.) or the enrollment of patients in guideline-based care programs (e.g. HIV, maternal, diabetes, injury rehabilitation, etc.).
-
-**Update Digital Client Record**
-
-Updating the Digital Client Record with the appropriate information
-
-**Generate Reportable Indicators**
-
-Recording and reporting patient-specific care management information which may be aggregated to develop reportable system management indicators at the provider, facility, district, national, and international levels.
+Identify the actor, inputs, outputs, and system of record for each activity used locally. Check where the pathway resumes when results arrive or the patient's state changes. The [workflow and common-pathway topic](documentation-approach-09-methods-of-implementation.html#execution-semantics) explains the modeling boundaries, and the [Common Processes code system](CodeSystem-cpg-common-process-cs.html) provides the process vocabulary used by this guide.

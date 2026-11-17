@@ -1,0 +1,1046 @@
+{
+  "baseline_commit": "320b164065d795dd0b7ab9ab313a67f129e06dc7",
+  "original_unique_figure_references": 106,
+  "original_placements": 137,
+  "replacement_unique_svg_diagrams": 22,
+  "legacy_assets_retained": true,
+  "note": "This final disposition record supersedes the proposed dispositions in inventory.json. The redraws are original explanatory schematics, not reproduced screenshots or source-publication figures. Clinical scenario resources and their source files remain unchanged. The CHF interface screenshot is summarized by an accessible conceptual table.",
+  "pages": [
+    {
+      "page": "activityflow.md",
+      "original_placements": 1,
+      "original_figures": [
+        "unified-activity-flow.png"
+      ],
+      "replacement_figures": [
+        "cpg-runtime-activity.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "OperationDefinition-cpg-plandefinition-apply.html",
+        "StructureDefinition-cpg-administermedicationtask.html",
+        "StructureDefinition-cpg-case.html",
+        "StructureDefinition-cpg-caseplanprogressingnote.html",
+        "StructureDefinition-cpg-caseplansummary.html",
+        "StructureDefinition-cpg-casesummary.html",
+        "StructureDefinition-cpg-communication.html",
+        "StructureDefinition-cpg-communicationrequest.html",
+        "StructureDefinition-cpg-condition.html",
+        "StructureDefinition-cpg-detectedissue.html",
+        "StructureDefinition-cpg-dispensemedicationtask.html",
+        "StructureDefinition-cpg-documentmedicationtask.html",
+        "StructureDefinition-cpg-enrollmenttask.html",
+        "StructureDefinition-cpg-flag.html",
+        "StructureDefinition-cpg-generatereporttask.html",
+        "StructureDefinition-cpg-immunization.html",
+        "StructureDefinition-cpg-immunizationrequest.html",
+        "StructureDefinition-cpg-medicationadministration.html",
+        "StructureDefinition-cpg-medicationdispense.html",
+        "StructureDefinition-cpg-medicationrequest.html",
+        "StructureDefinition-cpg-medicationstatement.html",
+        "StructureDefinition-cpg-metricreport.html",
+        "StructureDefinition-cpg-observation.html",
+        "StructureDefinition-cpg-procedure.html",
+        "StructureDefinition-cpg-proposediagnosistask.html",
+        "StructureDefinition-cpg-questionnaireresponse.html",
+        "StructureDefinition-cpg-questionnairetask.html",
+        "StructureDefinition-cpg-recorddetectedissuetask.html",
+        "StructureDefinition-cpg-recordinferencetask.html",
+        "StructureDefinition-cpg-reportflagtask.html",
+        "StructureDefinition-cpg-servicerequest.html",
+        "examples-activities.html",
+        "profiles.html"
+      ]
+    },
+    {
+      "page": "common-care-pathway.md",
+      "original_placements": 1,
+      "original_figures": [
+        "common-pathway.png"
+      ],
+      "replacement_figures": [
+        "cpg-runtime-common-pathway.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "CodeSystem-cpg-common-process-cs.html",
+        "activityflow.html",
+        "documentation-approach-12-06-cpg-common-pathway.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-02-04-knowledge-representation.md",
+      "original_placements": 2,
+      "original_figures": [
+        "CPG-05.06-01.png",
+        "knowledge-levels.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "documentation-approach-06-01-levels-of-knowledge-representation.html",
+        "documentation-approach-06-02-knowledge-assets.html",
+        "documentation-approach-06-03-knowledge-architecture.html",
+        "documentation-approach-06-knowledge-representation.html",
+        "documentation-approach-07-tiers-of-functionality.html",
+        "documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html",
+        "documentation-approach-12-conceptual-knowledge-architecture.html",
+        "libraries.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-03-conformance-levels.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CPG-03-CPGEnablements.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "clinical-guidelines-development-L4-checklist.html",
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "documentation-approach-10-mechanisms-of-integration.html",
+        "documentation-conformance.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CPG-04-01.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html",
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+      "original_placements": 3,
+      "original_figures": [
+        "CPG-04-02.png",
+        "CPG-04-03.png",
+        "CPG-05.05-Agile.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-iteration.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "documentation-approach-05-05-knowledge-implementation.html",
+        "methodology-case-study.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-04-05-computable-guideline-artifacts.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CPG-04.05-01.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-handoff.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "StructureDefinition-cpg-pathwaydefinition.html",
+        "StructureDefinition-cpg-recommendationdefinition.html",
+        "StructureDefinition-cpg-strategydefinition.html",
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html",
+        "documentation-approach-05-knowledge-engineering-overview.html",
+        "documentation-approach-06-02-knowledge-assets.html",
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-04-guideline-development.md",
+      "original_placements": 4,
+      "original_figures": [
+        "CPG-04-00.png",
+        "CPG-04-01.png",
+        "CPG-04-02.png",
+        "CPG-04-03.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-handoff.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-04-02-guideline-development-frameworks.html",
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html",
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html",
+        "documentation-approach-04-05-computable-guideline-artifacts.html",
+        "documentation-approach-05-knowledge-engineering-overview.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-05-01-knowledge-acquisition.md",
+      "original_placements": 2,
+      "original_figures": [
+        "CPG-05-01.png",
+        "CPG-05-02.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-translation.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-04-02-guideline-development-frameworks.html",
+        "documentation-approach-05-02-knowledge-translation.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-05-02-knowledge-translation.md",
+      "original_placements": 4,
+      "original_figures": [
+        "CPG-05-01.png",
+        "CPG-05-02.png",
+        "CPG-05-03.png",
+        "CPG-KnowledgeEngineering-w-Agile.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-translation.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-05-01-knowledge-acquisition.html",
+        "documentation-approach-05-03-knowledge-representation.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-05-03-knowledge-representation.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CPG-KCMS.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "documentation-approach-06-02-knowledge-assets.html",
+        "documentation-approach-06-knowledge-representation.html",
+        "libraries.html",
+        "methodology.html",
+        "profiles.html",
+        "terminology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-05-04-knowledge-execution-and-validation.md",
+      "original_placements": 2,
+      "original_figures": [
+        "CPG-KnowledgeValidation.png",
+        "CPG-PatientLevelValidation.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-validation.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "checklists.html",
+        "documentation-approach-05-02-knowledge-translation.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "documentation-approach-10-mechanisms-of-integration.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-05-05-knowledge-implementation.md",
+      "original_placements": 3,
+      "original_figures": [
+        "CPG-05-04.png",
+        "CPG-05-05.png",
+        "CPG-05.05-Agile.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-governance.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "clinical-guidelines-development-L4-checklist.html",
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html",
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "documentation-approach-05-06-agile-cpg-development-approach.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "documentation-approach-10-mechanisms-of-integration.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-05-06-agile-cpg-development-approach.md",
+      "original_placements": 3,
+      "original_figures": [
+        "CPG-05.05-Agile.png",
+        "CPG-05.06-01.png",
+        "CPG-KnowledgeEngineering-w-Agile.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-iteration.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-05-03-knowledge-representation.html",
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "methodology-case-study.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-05-knowledge-engineering-overview.md",
+      "original_placements": 6,
+      "original_figures": [
+        "CPG-05-00.png",
+        "CPG-05-01.png",
+        "CPG-05-02.png",
+        "CPG-05-03.png",
+        "CPG-05-04.png",
+        "CPG-05-05.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-iteration.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-05-01-knowledge-acquisition.html",
+        "documentation-approach-05-02-knowledge-translation.html",
+        "documentation-approach-05-03-knowledge-representation.html",
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "documentation-approach-05-05-knowledge-implementation.html",
+        "documentation-approach-05-06-agile-cpg-development-approach.html",
+        "methodology-case-study.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-06-01-levels-of-knowledge-representation.md",
+      "original_placements": 2,
+      "original_figures": [
+        "CPG-05.06-01.png",
+        "knowledge-levels.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-levels.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-03-conformance-levels.html",
+        "documentation-approach-07-tiers-of-functionality.html",
+        "documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "profiles.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-06-02-knowledge-assets.md",
+      "original_placements": 2,
+      "original_figures": [
+        "CPG-06.02-00.png",
+        "CPG-06.02-01.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-release.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "checklists.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "documentation-approach-12-03-cpg-plan.html",
+        "libraries.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-06-03-knowledge-architecture.md",
+      "original_placements": 6,
+      "original_figures": [
+        "CPG-06.03-Architecture.png",
+        "CPG-06.03-CasePlan.png",
+        "CPG-06.03-Concepts-Formalisms.png",
+        "CPG-06.03-DiseaseProcess.png",
+        "CPG-06.03-Relationships.png",
+        "CPG-12.07-GdlnDef.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-definitions.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "OperationDefinition-cpg-plandefinition-apply.html",
+        "StructureDefinition-cpg-careplan.html",
+        "StructureDefinition-cpg-case.html",
+        "StructureDefinition-cpg-casefeaturedefinition.html",
+        "StructureDefinition-cpg-computableactivity.html",
+        "StructureDefinition-cpg-pathwaydefinition.html",
+        "StructureDefinition-cpg-recommendationdefinition.html",
+        "StructureDefinition-cpg-strategy.html",
+        "StructureDefinition-cpg-strategydefinition.html",
+        "StructureDefinition-cpg-workflowdefinition.html",
+        "activityflow.html",
+        "documentation-approach-06-02-knowledge-assets.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html",
+        "documentation-approach-12-conceptual-knowledge-architecture.html",
+        "libraries.html",
+        "profiles.html",
+        "terminology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-06-knowledge-representation.md",
+      "original_placements": 2,
+      "original_figures": [
+        "CPG-05.06-01.png",
+        "knowledge-levels.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "documentation-approach-06-02-knowledge-assets.html",
+        "documentation-approach-06-03-knowledge-architecture.html",
+        "documentation-approach-12-03-cpg-plan.html",
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.html",
+        "libraries.html",
+        "profiles.html",
+        "terminology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-07-tiers-of-functionality.md",
+      "original_placements": 1,
+      "original_figures": [
+        "functionality-tiers.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-tiers.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-06-01-levels-of-knowledge-representation.html",
+        "documentation-approach-08-levels-of-representation-by-tiers-of-functionality.html",
+        "documentation-approach-12-01-separations-of-concerns-in-the-cpg.html",
+        "interactive-cds.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-08-levels-of-representation-by-tiers-of-functionality.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CPG-Main-LevelsAndTiers.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "checklists.html",
+        "documentation-approach-06-01-levels-of-knowledge-representation.html",
+        "documentation-approach-07-tiers-of-functionality.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-09-methods-of-implementation.md",
+      "original_placements": 1,
+      "original_figures": [
+        "methods-of-implementation.png"
+      ],
+      "replacement_figures": [
+        "cpg-runtime-execution.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "OperationDefinition-cpg-plandefinition-apply.html",
+        "StructureDefinition-cpg-case.html",
+        "StructureDefinition-cpg-enabled.html",
+        "StructureDefinition-cpg-pathwaydefinition.html",
+        "StructureDefinition-cpg-recommendationdefinition.html",
+        "StructureDefinition-cpg-strategydefinition.html",
+        "activityflow.html",
+        "clinical-guidelines-development-L4-checklist.html",
+        "documentation-approach-10-mechanisms-of-integration.html",
+        "documentation-careplanning.html",
+        "interactive-cds.html",
+        "libraries.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-10-mechanisms-of-integration.md",
+      "original_placements": 4,
+      "original_figures": [
+        "integration-content-application.png",
+        "integration-content-enrichment.png",
+        "integration-content-ingestion.png",
+        "integration-content-service.png"
+      ],
+      "replacement_figures": [
+        "cpg-runtime-integration.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "OperationDefinition-cpg-plandefinition-apply.html",
+        "clinical-guidelines-development-L4-checklist.html",
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "interactive-cds.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-01-separations-of-concerns-in-the-cpg.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CPG-12-01.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "documentation-approach-05-knowledge-engineering-overview.html",
+        "documentation-approach-07-tiers-of-functionality.html",
+        "documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CPG-12-01.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "StructureDefinition-cpg-case.html",
+        "activityflow.html",
+        "documentation-approach-12-03-cpg-plan.html",
+        "documentation-approach-12-04-cpg-case.html",
+        "documentation-approach-12-05-cpg-careplan.html",
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-03-cpg-plan.md",
+      "original_placements": 2,
+      "original_figures": [
+        "CPG-12-02.png",
+        "CPG-Main-Plan.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-definitions.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "OperationDefinition-cpg-plandefinition-apply.html",
+        "StructureDefinition-cpg-case.html",
+        "StructureDefinition-cpg-computableactivity.html",
+        "StructureDefinition-cpg-ordersetdefinition.html",
+        "StructureDefinition-cpg-pathwaydefinition.html",
+        "StructureDefinition-cpg-recommendationdefinition.html",
+        "StructureDefinition-cpg-strategy.html",
+        "StructureDefinition-cpg-strategydefinition.html",
+        "StructureDefinition-cpg-workflowdefinition.html",
+        "documentation-approach-09-methods-of-implementation.html",
+        "documentation-approach-12-04-cpg-case.html",
+        "documentation-approach-12-05-cpg-careplan.html",
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-04-cpg-case.md",
+      "original_placements": 3,
+      "original_figures": [
+        "CPG-12-03.png",
+        "CPG-HemodynamicStatus.png",
+        "CPG-Main-Case.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-case-features.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "StructureDefinition-cpg-case.html",
+        "StructureDefinition-cpg-casefeaturedefinition.html",
+        "StructureDefinition-cpg-casesummary.html",
+        "StructureDefinition-cpg-casesummarydefinition.html",
+        "documentation-approach-12-05-cpg-careplan.html",
+        "examples-chf.html",
+        "interactive-cds.html",
+        "profiles.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-05-cpg-careplan.md",
+      "original_placements": 3,
+      "original_figures": [
+        "CPG-12-04.png",
+        "CPG-12-05.png",
+        "CPG-Main-InstantiatedPlan.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-care-flow.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "OperationDefinition-cpg-plandefinition-apply.html",
+        "StructureDefinition-cpg-careplan.html",
+        "StructureDefinition-cpg-medicationrequest.html",
+        "StructureDefinition-cpg-servicerequest.html",
+        "StructureDefinition-cpg-strategy.html",
+        "activityflow.html",
+        "documentation-approach-10-mechanisms-of-integration.html",
+        "documentation-approach-12-03-cpg-plan.html",
+        "documentation-approach-12-04-cpg-case.html",
+        "documentation-careplanning.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-06-cpg-common-pathway.md",
+      "original_placements": 5,
+      "original_figures": [
+        "CPG-EventStatusFSM.png",
+        "CPG-RequestStatusFSM.png",
+        "CPG-ResourcePatternsRelationship.png",
+        "CPG-TaskStatusFSM.png",
+        "CPG-WorkflowSeparations.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "CodeSystem-cpg-common-process-cs.html",
+        "activityflow.html",
+        "clinical-guidelines-development-L4-checklist.html",
+        "common-care-pathway.html",
+        "documentation-approach-10-mechanisms-of-integration.html",
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+      "original_placements": 7,
+      "original_figures": [
+        "CPG-12-03.png",
+        "CPG-12-05.png",
+        "CPG-12.07-00.png",
+        "CPG-12.07-01.png",
+        "CPG-12.07-05.png",
+        "CPG-12.07-GdlnDef.png",
+        "CPG-CasePlanSummary.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "StructureDefinition-cpg-caseplanprogressingnote.html",
+        "StructureDefinition-cpg-caseplansummary.html",
+        "StructureDefinition-cpg-caseplansummarydefinition.html",
+        "StructureDefinition-cpg-casesummary.html",
+        "StructureDefinition-cpg-casesummarydefinition.html",
+        "StructureDefinition-cpg-computableguideline.html",
+        "StructureDefinition-cpg-computablemetric.html",
+        "StructureDefinition-cpg-metricreport.html",
+        "documentation-approach-06-02-knowledge-assets.html",
+        "documentation-approach-12-06-cpg-common-pathway.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "documentation-approach-12-conceptual-knowledge-architecture.md",
+      "original_placements": 9,
+      "original_figures": [
+        "CPG-12-00.png",
+        "CPG-12-01.png",
+        "CPG-12-02.png",
+        "CPG-12-03.png",
+        "CPG-12-04.png",
+        "CPG-12-05.png",
+        "CPG-Main-Case.png",
+        "CPG-Main-Plan.png"
+      ],
+      "replacement_figures": [
+        "cpg-model-boundaries.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "StructureDefinition-cpg-careplan.html",
+        "StructureDefinition-cpg-case.html",
+        "StructureDefinition-cpg-casefeaturedefinition.html",
+        "StructureDefinition-cpg-pathwaydefinition.html",
+        "StructureDefinition-cpg-recommendationdefinition.html",
+        "StructureDefinition-cpg-strategy.html",
+        "StructureDefinition-cpg-strategydefinition.html",
+        "activityflow.html",
+        "documentation-approach-06-03-knowledge-architecture.html",
+        "documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.html",
+        "documentation-approach-12-03-cpg-plan.html",
+        "documentation-approach-12-04-cpg-case.html",
+        "documentation-approach-12-06-cpg-common-pathway.html",
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.html"
+      ]
+    },
+    {
+      "page": "documentation-methodology.md",
+      "original_placements": 5,
+      "original_figures": [
+        "process-pattern-exclusiveSplit.png",
+        "process-pattern-parallelSplit.png",
+        "process-pattern-sequenceFlow.png",
+        "process-pattern-timedStart.png",
+        "transformation-process.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-formalisms.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "activityflow.html",
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "documentation-approach-12-03-cpg-plan.html",
+        "methodology-case-study.html"
+      ]
+    },
+    {
+      "page": "examples-chf.md",
+      "original_placements": 1,
+      "original_figures": [
+        "CHFCasePlanSummaryView.png"
+      ],
+      "replacement_figures": [],
+      "disposition": "Replaced by task-focused prose/tables and links to the owning model or workflow topic.",
+      "linked_topics": [
+        "ActivityDefinition-chf-bodyweight-ad.html",
+        "ActivityDefinition-chf-bodyweight-change-ad.html",
+        "ActivityDefinition-chf-cardiology-consultation.html",
+        "ActivityDefinition-chf-creatinine-ad.html",
+        "ActivityDefinition-chf-egfr-ad.html",
+        "ActivityDefinition-chf-jvp-ad.html",
+        "ActivityDefinition-chf-lasix-iv.html",
+        "ActivityDefinition-chf-lasix-po.html",
+        "ActivityDefinition-chf-net-io-ad.html",
+        "ActivityDefinition-chf-o2-sat-ad.html",
+        "ActivityDefinition-chf-potassium-ad.html",
+        "ActivityDefinition-chf-report-bodyweight-change.html",
+        "ActivityDefinition-chf-report-bodyweight.html",
+        "ActivityDefinition-chf-report-urine-out.html",
+        "ActivityDefinition-chf-urine-out-ad.html",
+        "CarePlan-chf-scenario1-careplan.html",
+        "CareTeam-chf-careteamdefinition.html",
+        "CareTeam-chf-scenario1-careteam.html",
+        "ClinicalImpression-chf-scenario1-clinicalimpression.html",
+        "CodeSystem-chf-example-codes.html",
+        "Composition-chf-scenario1-caseplanprogressingnote.html",
+        "Composition-chf-scenario1-caseplansummary.html",
+        "Composition-chf-scenario1-casesummary.html",
+        "Condition-chf-scenario1-condition.html",
+        "Encounter-chf-scenario1-encounter.html",
+        "EpisodeOfCare-chf-scenario1-eoc.html",
+        "Goal-chf-scenario1-cardiology-consultation-goal.html",
+        "Goal-chf-scenario1-creatinine.html",
+        "Goal-chf-scenario1-egfr.html",
+        "Goal-chf-scenario1-jvp-goal.html",
+        "Goal-chf-scenario1-lasix-iv-goal.html",
+        "Goal-chf-scenario1-lasix-po-goal.html",
+        "Goal-chf-scenario1-net-io-goal.html",
+        "Goal-chf-scenario1-o2-sat-goal.html",
+        "Goal-chf-scenario1-potassium.html",
+        "Goal-chf-scenario1-urine-out.html",
+        "Goal-chf-scenario1-weight-change.html",
+        "Goal-chf-scenario1-weight.html",
+        "GraphDefinition-chf-caseplansummarydefinition.html",
+        "GraphDefinition-chf-casesummarydefinition.html",
+        "Group-chf-groupdefinition.html",
+        "Group-chf-scenario1-group.html",
+        "ImplementationGuide-chf-ig.html",
+        "Library-CHF.html",
+        "Location-chf-locationdefinition.html",
+        "Location-chf-scenario1-location.html",
+        "Measure-chf-bodyweight-change-measure.html",
+        "Measure-chf-bodyweight-measure.html",
+        "Measure-chf-urine-out-measure.html",
+        "MeasureReport-chf-scenario1-bodyweight-change1.html",
+        "MeasureReport-chf-scenario1-bodyweight-change2.html",
+        "MeasureReport-chf-scenario1-bodyweight-change3.html",
+        "MeasureReport-chf-scenario1-bodyweight1.html",
+        "MeasureReport-chf-scenario1-bodyweight2.html",
+        "MeasureReport-chf-scenario1-bodyweight3.html",
+        "MeasureReport-chf-scenario1-bodyweight4.html",
+        "MeasureReport-chf-scenario1-urineout3.html",
+        "MedicationAdministration-chf-scenario1-lasix-iv.html",
+        "MedicationAdministration-chf-scenario1-lasix-po.html",
+        "MedicationRequest-chf-scenario1-lasix-po-mr.html",
+        "MedicationRequest-chf-scenario1-stop-lasix-iv.html",
+        "Observation-chf-scenario1-bodyweight-change1-observation.html",
+        "Observation-chf-scenario1-bodyweight-change2-observation.html",
+        "Observation-chf-scenario1-bodyweight-change3-observation.html",
+        "Observation-chf-scenario1-bodyweight1-observation.html",
+        "Observation-chf-scenario1-bodyweight2-observation.html",
+        "Observation-chf-scenario1-bodyweight3-observation.html",
+        "Observation-chf-scenario1-bodyweight4-observation.html",
+        "Observation-chf-scenario1-creatinine1.html",
+        "Observation-chf-scenario1-egfr1.html",
+        "Observation-chf-scenario1-jvp1.html",
+        "Observation-chf-scenario1-jvp2.html",
+        "Observation-chf-scenario1-jvp3.html",
+        "Observation-chf-scenario1-jvp4.html",
+        "Observation-chf-scenario1-jvp5.html",
+        "Observation-chf-scenario1-net-io.html",
+        "Observation-chf-scenario1-o2sat1.html",
+        "Observation-chf-scenario1-o2sat2.html",
+        "Observation-chf-scenario1-potassium1.html",
+        "Observation-chf-scenario1-urineout3-observation.html",
+        "Organization-chf-scenario1-organization.html",
+        "Patient-chf-scenario1-patient.html",
+        "PlanDefinition-chf-bodyweight-change-pd.html",
+        "PlanDefinition-chf-bodyweight-pd.html",
+        "PlanDefinition-chf-cardiology-consultation-pd.html",
+        "PlanDefinition-chf-creatinine-pd.html",
+        "PlanDefinition-chf-daily-management.html",
+        "PlanDefinition-chf-egfr-pd.html",
+        "PlanDefinition-chf-hypervolemia.html",
+        "PlanDefinition-chf-jvp-pd.html",
+        "PlanDefinition-chf-lasix.html",
+        "PlanDefinition-chf-net-io-pd.html",
+        "PlanDefinition-chf-o2-sat-pd.html",
+        "PlanDefinition-chf-pathway.html",
+        "PlanDefinition-chf-potassium-pd.html",
+        "PlanDefinition-chf-urine-out-pd.html",
+        "Practitioner-chf-scenario1-practitioner.html",
+        "PractitionerRole-chf-practitionerroledefinition.html",
+        "PractitionerRole-chf-scenario1-practitionerrole.html",
+        "Procedure-chf-scenario1-cardiology-consult.html",
+        "RelatedPerson-chf-scenario1-relatedperson.html",
+        "RequestGroup-chf-scenario1-daily-management.html",
+        "RequestGroup-chf-scenario1-hypervolemia.html",
+        "ServiceRequest-chf-scenario1-cardiology-consult-request.html",
+        "ServiceRequest-chf-scenario1-jvp.html",
+        "ServiceRequest-chf-scenario1-o2-sat.html",
+        "StructureDefinition-chf-bodyweight-change.html",
+        "StructureDefinition-chf-bodyweight.html",
+        "StructureDefinition-chf-cardiology-consult-request.html",
+        "StructureDefinition-chf-cardiology-consult.html",
+        "StructureDefinition-chf-creatinine.html",
+        "StructureDefinition-chf-egfr.html",
+        "StructureDefinition-chf-jvp-request.html",
+        "StructureDefinition-chf-jvp.html",
+        "StructureDefinition-chf-lasix-iv-administration.html",
+        "StructureDefinition-chf-lasix-iv-request.html",
+        "StructureDefinition-chf-lasix-po-administration.html",
+        "StructureDefinition-chf-lasix-po-request.html",
+        "StructureDefinition-chf-net-io.html",
+        "StructureDefinition-chf-o2-sat-request.html",
+        "StructureDefinition-chf-o2-sat.html",
+        "StructureDefinition-chf-potassium.html",
+        "StructureDefinition-chf-urine-out.html"
+      ]
+    },
+    {
+      "page": "examples-hiv-guideline.md",
+      "original_placements": 1,
+      "original_figures": [
+        "hiv-screening-protocol.png"
+      ],
+      "replacement_figures": [
+        "cpg-runtime-screening-example.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "examples-activities.html",
+        "interactive-cds.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "index.md",
+      "original_placements": 4,
+      "original_figures": [
+        "CPG-04.05-01.png",
+        "CPG-Main-06-Legend.png",
+        "CPG-Main-06.png",
+        "Guidelines-iterative-and-incremental-model-2.png"
+      ],
+      "replacement_figures": [
+        "cpg-runtime-lifecycle.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "approach.html",
+        "artifacts.html",
+        "checklists.html",
+        "documentation-approach-02-05-knowledge-implementation.html",
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.html",
+        "documentation-approach-06-01-levels-of-knowledge-representation.html",
+        "documentation-conformance.html",
+        "examples.html",
+        "glossary.html",
+        "methodology.html",
+        "profiles.html"
+      ]
+    },
+    {
+      "page": "interactive-cds.md",
+      "original_placements": 1,
+      "original_figures": [
+        "interactive-cds.png"
+      ],
+      "replacement_figures": [
+        "cpg-runtime-interactive.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "OperationDefinition-cpg-planDefinition-questionnaire.html",
+        "OperationDefinition-cpg-plandefinition-apply.html",
+        "OperationDefinition-cpg-structureDefinition-questionnaire.html",
+        "StructureDefinition-cpg-casefeaturedefinition.html",
+        "StructureDefinition-cpg-featureExpression.html",
+        "activityflow.html",
+        "documentation-conformance.html"
+      ]
+    },
+    {
+      "page": "methodology-case-study.md",
+      "original_placements": 38,
+      "original_figures": [
+        "image1.png",
+        "image10.png",
+        "image11.png",
+        "image12.png",
+        "image13.png",
+        "image14.png",
+        "image15.png",
+        "image16.png",
+        "image17.png",
+        "image18.png",
+        "image19.png",
+        "image2.png",
+        "image20.png",
+        "image21.png",
+        "image22.png",
+        "image23.png",
+        "image24.png",
+        "image25.png",
+        "image26.png",
+        "image27.png",
+        "image28.png",
+        "image29.png",
+        "image3.png",
+        "image30.png",
+        "image31.png",
+        "image32.png",
+        "image33.png",
+        "image34.png",
+        "image35.png",
+        "image36.png",
+        "image37.png",
+        "image38.png",
+        "image4.png",
+        "image5.png",
+        "image6.png",
+        "image7.png",
+        "image8.png",
+        "image9.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-case-study.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "documentation-methodology.html",
+        "methodology.html"
+      ]
+    },
+    {
+      "page": "methodology.md",
+      "original_placements": 2,
+      "original_figures": [
+        "Recommendation04-05-flow.png",
+        "types-of-igs.png"
+      ],
+      "replacement_figures": [
+        "cpg-method-recipe.svg",
+        "cpg-method-translation.svg"
+      ],
+      "disposition": "Consolidated into the listed original SVGs and adjacent prose/tables.",
+      "linked_topics": [
+        "ActivityDefinition-cpg-administermedication-activitydefinition.html",
+        "ActivityDefinition-cpg-collectinformation-activitydefinition.html",
+        "ActivityDefinition-cpg-communicationrequest-activitydefinition.html",
+        "ActivityDefinition-cpg-dispensemedication-activitydefinition.html",
+        "ActivityDefinition-cpg-documentmedication-activitydefinition.html",
+        "ActivityDefinition-cpg-enrollment-activitydefinition.html",
+        "ActivityDefinition-cpg-generatereport-activitydefinition.html",
+        "ActivityDefinition-cpg-immunizationrequest-activitydefinition.html",
+        "ActivityDefinition-cpg-medicationrequest-activitydefinition.html",
+        "ActivityDefinition-cpg-proposediagnosistask-activitydefinition.html",
+        "ActivityDefinition-cpg-recorddetectedissue-activity.html",
+        "ActivityDefinition-cpg-recordinference-activity.html",
+        "ActivityDefinition-cpg-reportflagtask-activitydefinition.html",
+        "ActivityDefinition-cpg-servicerequest-activitydefinition.html",
+        "CodeSystem-cpg-activity-type-cs.html",
+        "CodeSystem-cpg-common-persona-cs.html",
+        "CodeSystem-cpg-common-process-cs.html",
+        "StructureDefinition-cpg-administermedicationtask.html",
+        "StructureDefinition-cpg-case.html",
+        "StructureDefinition-cpg-casefeaturedefinition.html",
+        "StructureDefinition-cpg-caseplanprogressingnote.html",
+        "StructureDefinition-cpg-caseplansummary.html",
+        "StructureDefinition-cpg-casesummary.html",
+        "StructureDefinition-cpg-communication.html",
+        "StructureDefinition-cpg-communicationrequest.html",
+        "StructureDefinition-cpg-computableplandefinition.html",
+        "StructureDefinition-cpg-condition.html",
+        "StructureDefinition-cpg-detectedissue.html",
+        "StructureDefinition-cpg-directionOfRecommendation.html",
+        "StructureDefinition-cpg-dispensemedicationtask.html",
+        "StructureDefinition-cpg-documentmedicationtask.html",
+        "StructureDefinition-cpg-enrollmenttask.html",
+        "StructureDefinition-cpg-flag.html",
+        "StructureDefinition-cpg-generatereporttask.html",
+        "StructureDefinition-cpg-immunization.html",
+        "StructureDefinition-cpg-immunizationrequest.html",
+        "StructureDefinition-cpg-medicationadministration.html",
+        "StructureDefinition-cpg-medicationdispense.html",
+        "StructureDefinition-cpg-medicationrequest.html",
+        "StructureDefinition-cpg-medicationstatement.html",
+        "StructureDefinition-cpg-metricreport.html",
+        "StructureDefinition-cpg-observation.html",
+        "StructureDefinition-cpg-pathwaydefinition.html",
+        "StructureDefinition-cpg-procedure.html",
+        "StructureDefinition-cpg-proposediagnosistask.html",
+        "StructureDefinition-cpg-questionnaireresponse.html",
+        "StructureDefinition-cpg-questionnairetask.html",
+        "StructureDefinition-cpg-recommendationdefinition.html",
+        "StructureDefinition-cpg-recorddetectedissuetask.html",
+        "StructureDefinition-cpg-recordinferencetask.html",
+        "StructureDefinition-cpg-reportflagtask.html",
+        "StructureDefinition-cpg-servicerequest.html",
+        "StructureDefinition-cpg-shareableactivitydefinition.html",
+        "StructureDefinition-cpg-shareablevalueset.html",
+        "StructureDefinition-cpg-strategy.html",
+        "StructureDefinition-cpg-strategydefinition.html",
+        "activityflow.html",
+        "clinical-guidelines-development-L1-checklist.html",
+        "clinical-guidelines-development-L2-checklist.html",
+        "clinical-guidelines-development-L3-checklist.html",
+        "clinical-guidelines-development-L4-checklist.html",
+        "common-care-pathway.html",
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html",
+        "documentation-approach-05-04-knowledge-execution-and-validation.html",
+        "documentation-approach-05-knowledge-engineering-overview.html",
+        "documentation-approach-06-01-levels-of-knowledge-representation.html",
+        "documentation-approach-06-02-knowledge-assets.html",
+        "documentation-approach-12-03-cpg-plan.html",
+        "documentation-approach-12-05-cpg-careplan.html",
+        "documentation-conformance.html",
+        "documentation-methodology.html",
+        "downloads.html",
+        "libraries.html",
+        "methodology-case-study.html",
+        "profiles.html",
+        "terminology.html"
+      ]
+    }
+  ]
+}

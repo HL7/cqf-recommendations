@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 772" role="img" aria-labelledby="title description">
+  <!-- Sources: unified-activity-flow.png and Unified State Diagram for Activity Workflow.svg supply the cumulative phase rows, record colors, and backward reference links. The Activity Flow and Activity Flow Transitions topics define the resource semantics. -->
+  <title id="title">Activity Flow from definition to event</title>
+  <desc id="description">Five phase rows show the records available in one example, from a reusable definition through a proposal, plan, order, and event. Backward arrows show optional definition, predecessor, and fulfillment references. The phases can be omitted where appropriate. Request and event status examples are specific to ServiceRequest and Procedure.</desc>
+  <defs>
+    <marker id="reference-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5 0 7Z" fill="#526575"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="772" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
+    <g id="heading">
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Activity Flow from definition to event</text>
+      <text x="30" y="74" font-size="19">One set of linked records when all phases apply. Local workflow can omit phases.</text>
+    </g>
+    <g id="column-headings" font-size="18" font-weight="700">
+      <text x="51" y="121">Phase</text>
+      <text x="215" y="121">Related records</text>
+      <rect x="851" y="105" width="19" height="19" rx="3" fill="#fcebd8" stroke="#a77742"/>
+      <text x="878" y="121">Request</text>
+      <rect x="979" y="105" width="19" height="19" rx="3" fill="#eee6f5" stroke="#8868a4"/>
+      <text x="1006" y="121">Event</text>
+    </g>
+
+    <g id="definition-phase">
+      <rect x="199" y="138" width="170" height="60" rx="8" fill="#f9fafb" stroke="#d2dce4"/>
+      <rect x="36" y="148" width="148" height="40" rx="20" fill="#e7f2e2" stroke="#8db084"/>
+      <text x="110" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#315d37">Definition</text>
+      <g font-size="20" font-weight="700" text-anchor="middle">
+        <rect x="215" y="148" width="139" height="40" rx="6" fill="#eef1f4" stroke="#8695a3"/>
+        <text x="284.5" y="174">Definition</text>
+      </g>
+    </g>
+
+    <g id="proposal-phase">
+      <rect x="199" y="207" width="365" height="60" rx="8" fill="#f9fafb" stroke="#d2dce4"/>
+      <rect x="36" y="217" width="148" height="40" rx="20" fill="#e7f2e2" stroke="#8db084"/>
+      <text x="110" y="243" text-anchor="middle" font-size="20" font-weight="700" fill="#315d37">Proposal</text>
+      <g font-size="20" font-weight="700" text-anchor="middle">
+        <rect x="215" y="217" width="139" height="40" rx="6" fill="#eef1f4" stroke="#8695a3"/>
+        <text x="284.5" y="243">Definition</text>
+        <rect x="410" y="217" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="479.5" y="243">Proposal</text>
+      </g>
+      <g fill="#526575" font-size="18" font-weight="700" text-anchor="middle">
+        <text x="382" y="234">D</text>
+        <path d="M405 245H359" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+      </g>
+    </g>
+
+    <g id="plan-phase">
+      <rect x="199" y="276" width="560" height="60" rx="8" fill="#f9fafb" stroke="#d2dce4"/>
+      <rect x="36" y="286" width="148" height="40" rx="20" fill="#e7f2e2" stroke="#8db084"/>
+      <text x="110" y="312" text-anchor="middle" font-size="20" font-weight="700" fill="#315d37">Plan</text>
+      <g font-size="20" font-weight="700" text-anchor="middle">
+        <rect x="215" y="286" width="139" height="40" rx="6" fill="#eef1f4" stroke="#8695a3"/>
+        <text x="284.5" y="312">Definition</text>
+        <rect x="410" y="286" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="479.5" y="312">Proposal</text>
+        <rect x="605" y="286" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="674.5" y="312">Plan intent</text>
+      </g>
+      <g fill="#526575" font-size="18" font-weight="700" text-anchor="middle">
+        <text x="382" y="303">D</text>
+        <path d="M405 314H359" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+        <text x="577" y="303">P</text>
+        <path d="M600 314H554" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+      </g>
+    </g>
+
+    <g id="order-phase">
+      <rect x="199" y="345" width="755" height="60" rx="8" fill="#f9fafb" stroke="#d2dce4"/>
+      <rect x="36" y="355" width="148" height="40" rx="20" fill="#e7f2e2" stroke="#8db084"/>
+      <text x="110" y="381" text-anchor="middle" font-size="20" font-weight="700" fill="#315d37">Order</text>
+      <g font-size="20" font-weight="700" text-anchor="middle">
+        <rect x="215" y="355" width="139" height="40" rx="6" fill="#eef1f4" stroke="#8695a3"/>
+        <text x="284.5" y="381">Definition</text>
+        <rect x="410" y="355" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="479.5" y="381">Proposal</text>
+        <rect x="605" y="355" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="674.5" y="381">Plan intent</text>
+        <rect x="800" y="355" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="869.5" y="381">Order intent</text>
+      </g>
+      <g fill="#526575" font-size="18" font-weight="700" text-anchor="middle">
+        <text x="382" y="372">D</text>
+        <path d="M405 383H359" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+        <text x="577" y="372">P</text>
+        <path d="M600 383H554" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+        <text x="772" y="372">P</text>
+        <path d="M795 383H749" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+      </g>
+    </g>
+
+    <g id="event-phase">
+      <rect x="199" y="414" width="950" height="60" rx="8" fill="#f9fafb" stroke="#d2dce4"/>
+      <rect x="36" y="424" width="148" height="40" rx="20" fill="#e7f2e2" stroke="#8db084"/>
+      <text x="110" y="450" text-anchor="middle" font-size="20" font-weight="700" fill="#315d37">Event</text>
+      <g font-size="20" font-weight="700" text-anchor="middle">
+        <rect x="215" y="424" width="139" height="40" rx="6" fill="#eef1f4" stroke="#8695a3"/>
+        <text x="284.5" y="450">Definition</text>
+        <rect x="410" y="424" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="479.5" y="450">Proposal</text>
+        <rect x="605" y="424" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="674.5" y="450">Plan intent</text>
+        <rect x="800" y="424" width="139" height="40" rx="6" fill="#fcebd8" stroke="#a77742"/>
+        <text x="869.5" y="450">Order intent</text>
+        <rect x="995" y="424" width="139" height="40" rx="6" fill="#eee6f5" stroke="#8868a4"/>
+        <text x="1064.5" y="450">Event</text>
+      </g>
+      <g fill="#526575" font-size="18" font-weight="700" text-anchor="middle">
+        <text x="382" y="441">D</text>
+        <path d="M405 452H359" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+        <text x="577" y="441">P</text>
+        <path d="M600 452H554" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+        <text x="772" y="441">P</text>
+        <path d="M795 452H749" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+        <text x="967" y="441">F</text>
+        <path d="M990 452H944" fill="none" stroke="#526575" stroke-width="2" marker-end="url(#reference-arrow)"/>
+      </g>
+    </g>
+
+    <g id="reference-key" font-size="19">
+      <text x="36" y="505" font-size="21" font-weight="700">What the backward arrows reference</text>
+      <text x="36" y="534"><tspan font-weight="700">D · Definition</tspan><tspan> points to the source knowledge, for example via </tspan><tspan font-family="monospace">instantiatesCanonical</tspan><tspan>.</tspan></text>
+      <text x="36" y="561"><tspan font-weight="700">P · Predecessor</tspan><tspan> links to a prior request where applicable, often via </tspan><tspan font-family="monospace">basedOn</tspan><tspan>.</tspan></text>
+      <text x="36" y="588"><tspan font-weight="700">F · Fulfillment</tspan><tspan> links an event to a request where supported.</tspan></text>
+      <text x="36" y="615">The resource profile determines the element, such as <tspan font-family="monospace">request</tspan> on MedicationAdministration</text>
+      <text x="36" y="640">or <tspan font-family="monospace">authorizingPrescription</tspan> on MedicationDispense.</text>
+    </g>
+
+    <g id="resource-specific-statuses" font-size="18">
+      <rect x="36" y="659" width="1128" height="48" rx="7" fill="#f6f8fa" stroke="#d2dce4"/>
+      <text x="51" y="689" font-weight="700">Status examples</text>
+      <text x="209" y="689">ServiceRequest · draft, active, on-hold</text>
+      <text x="610" y="689">Procedure · in-progress, completed, not-done</text>
+    </g>
+    <g id="workflow-boundaries" font-size="18">
+      <text x="36" y="732">Local authorization governs orders, including those placed directly. Events can be recorded without a request.</text>
+      <text x="36" y="756">Check overall fulfillment before completing an order in response to an event.</text>
+    </g>
+  </g>
+</svg>

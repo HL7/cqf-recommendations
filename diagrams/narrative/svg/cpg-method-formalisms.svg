@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 829" role="img" aria-labelledby="title description">
+  <!-- Sources: transformation-process.png and the retained sequence, parallel, exclusive, and timed-start patterns. The paired XML snippets define the constructs summarized here. -->
+  <title id="title">Compare workflow patterns across representations</title>
+  <desc id="description">A historical prototype mapped selected PlanDefinition source patterns to BPMN and a workflow drawing for review. Four rows pair BPMN diagrams for sequence flow, parallel split and join, exclusive split and merge, and timed start with the constructs used by the PlanDefinition examples. Compare behavior using the same reviewed cases and verify runtime support.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#52697d"/>
+    </marker>
+    <marker id="mini-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#345c84"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="829" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#183e59">
+    <g id="heading">
+      <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Compare workflow patterns across representations</text>
+      <text x="30" y="75" font-size="19">A historical prototype explored a mapping from PlanDefinition to a BPMN drawing.</text>
+    </g>
+    <g id="source-transform-target">
+      <rect x="36" y="105" width="338" height="120" rx="9" fill="#eaf5f1" stroke="#548d7e" stroke-width="2"/>
+      <rect x="431" y="105" width="338" height="120" rx="9" fill="#fff3e1" stroke="#b88041" stroke-width="2"/>
+      <rect x="826" y="105" width="338" height="120" rx="9" fill="#eef4fb" stroke="#6384a8" stroke-width="2"/>
+      <g fill="none" stroke="#52697d" stroke-width="2.6" marker-end="url(#arrow)">
+        <path d="M375 165H425"/>
+        <path d="M770 165H820"/>
+      </g>
+      <g font-size="23" font-weight="700">
+        <text x="58" y="143" fill="#286e5d">Source</text>
+        <text x="453" y="143" fill="#8b521d">Transformation</text>
+        <text x="848" y="143" fill="#345c84">Target</text>
+      </g>
+      <g font-size="19">
+        <text x="58" y="176"><tspan x="58">PlanDefinition authored from</tspan><tspan x="58" dy="24">a described process</tspan></text>
+        <text x="453" y="176"><tspan x="453">Map selected patterns</tspan><tspan x="453" dy="24">and check behavior</tspan></text>
+        <text x="848" y="176"><tspan x="848">BPMN model and graphical</tspan><tspan x="848" dy="24">representation for review</tspan></text>
+      </g>
+    </g>
+    <g id="pattern-comparison">
+      <rect x="36" y="254" width="1128" height="474" rx="9" fill="#f7f9fb" stroke="#8b9aab" stroke-width="2"/>
+      <path d="M45 255H1155Q1163 255 1163 263V305H37V263Q37 255 45 255Z" fill="#40556b"/>
+      <path d="M225 305V727M672 305V727M36 391H1164M36 512H1164M36 633H1164" fill="none" stroke="#b7c3cc" stroke-width="1.5"/>
+      <g id="column-headings" font-size="21" font-weight="700" fill="#fff">
+        <text x="57" y="288">Pattern</text>
+        <text x="246" y="288">BPMN sketch</text>
+        <text x="694" y="288">PlanDefinition example</text>
+      </g>
+      <g id="sequence-flow">
+        <text x="57" y="352" font-size="21" font-weight="700">Sequence flow</text>
+        <g stroke="#345c84" stroke-width="2" fill="none" marker-end="url(#mini-arrow)">
+          <path d="M266 348H297"/>
+          <path d="M374 348H407"/>
+          <path d="M484 348H517"/>
+          <path d="M594 348H625"/>
+        </g>
+        <g fill="#eaf2fa" stroke="#345c84" stroke-width="1.8">
+          <circle cx="257" cy="348" r="9"/>
+          <rect x="298" y="329" width="76" height="38" rx="6"/>
+          <rect x="408" y="329" width="76" height="38" rx="6"/>
+          <rect x="518" y="329" width="76" height="38" rx="6"/>
+          <circle cx="635" cy="348" r="9" stroke-width="3"/>
+        </g>
+        <g font-size="18" text-anchor="middle">
+          <text x="336" y="354">Task 1</text>
+          <text x="446" y="354">Task 2</text>
+          <text x="556" y="354">Task 3</text>
+        </g>
+        <text x="694" y="343" font-size="19">Link actions with <tspan font-family="monospace">relatedAction</tspan>.</text>
+        <text x="694" y="369" font-size="19">Relationship <tspan font-family="monospace">before-start</tspan></text>
+      </g>
+      <g id="parallel-split">
+        <text x="57" y="443" font-size="21" font-weight="700"><tspan x="57">Parallel split</tspan><tspan x="57" dy="26">and join</tspan></text>
+        <g stroke="#345c84" stroke-width="2" fill="none" marker-end="url(#mini-arrow)">
+          <path d="M316 452H341"/>
+          <path d="M377 452L405 423"/>
+          <path d="M377 452L405 480"/>
+          <path d="M482 423L511 452"/>
+          <path d="M482 480L511 452"/>
+          <path d="M546 452H573"/>
+        </g>
+        <g fill="#eaf2fa" stroke="#345c84" stroke-width="1.8">
+          <rect x="248" y="433" width="68" height="38" rx="6"/>
+          <path d="M360 434L378 452L360 470L342 452Z"/>
+          <rect x="406" y="405" width="76" height="36" rx="6"/>
+          <rect x="406" y="462" width="76" height="36" rx="6"/>
+          <path d="M529 434L547 452L529 470L511 452Z"/>
+          <rect x="574" y="433" width="70" height="38" rx="6"/>
+        </g>
+        <path d="M353 452H367M360 445V459M522 452H536M529 445V459" fill="none" stroke="#345c84" stroke-width="2"/>
+        <g font-size="18" text-anchor="middle">
+          <text x="282" y="458">Task 1</text>
+          <text x="444" y="429">Task 3</text>
+          <text x="444" y="486">Task 2</text>
+          <text x="609" y="458">Task 4</text>
+        </g>
+        <text x="694" y="428" font-size="19">Group child actions and select all.</text>
+        <text x="694" y="454" font-size="19" font-family="monospace">groupingBehavior = logical-group</text>
+        <text x="694" y="480" font-size="19" font-family="monospace">selectionBehavior = all</text>
+      </g>
+      <g id="exclusive-split">
+        <text x="57" y="564" font-size="21" font-weight="700"><tspan x="57">Exclusive split</tspan><tspan x="57" dy="26">and merge</tspan></text>
+        <g stroke="#345c84" stroke-width="2" fill="none" marker-end="url(#mini-arrow)">
+          <path d="M316 573H341"/>
+          <path d="M377 573L405 544"/>
+          <path d="M377 573L405 601"/>
+          <path d="M482 544L511 573"/>
+          <path d="M482 601L511 573"/>
+          <path d="M546 573H573"/>
+        </g>
+        <g fill="#eaf2fa" stroke="#345c84" stroke-width="1.8">
+          <rect x="248" y="554" width="68" height="38" rx="6"/>
+          <path d="M360 555L378 573L360 591L342 573Z"/>
+          <rect x="406" y="526" width="76" height="36" rx="6"/>
+          <rect x="406" y="583" width="76" height="36" rx="6"/>
+          <path d="M529 555L547 573L529 591L511 573Z"/>
+          <rect x="574" y="554" width="70" height="38" rx="6"/>
+        </g>
+        <path d="M354 567L366 579M366 567L354 579M523 567L535 579M535 567L523 579" fill="none" stroke="#345c84" stroke-width="2"/>
+        <g font-size="18" text-anchor="middle">
+          <text x="282" y="579">Task 1</text>
+          <text x="444" y="550">Task 2</text>
+          <text x="444" y="607">Task 3</text>
+          <text x="609" y="579">Task 4</text>
+        </g>
+        <text x="694" y="563" font-size="19">Choose one child using applicability conditions.</text>
+        <text x="694" y="589" font-size="19" font-family="monospace">selectionBehavior = exactly-one</text>
+      </g>
+      <g id="timed-start">
+        <text x="57" y="687" font-size="21" font-weight="700">Timed start</text>
+        <g stroke="#345c84" stroke-width="2" fill="none" marker-end="url(#mini-arrow)">
+          <path d="M271 680H297"/>
+          <path d="M374 680H407"/>
+          <path d="M484 680H517"/>
+          <path d="M594 680H625"/>
+        </g>
+        <g fill="#eaf2fa" stroke="#345c84" stroke-width="1.8">
+          <circle cx="257" cy="680" r="14"/>
+          <circle cx="257" cy="680" r="10"/>
+          <path d="M257 673V680L262 683" fill="none"/>
+          <rect x="298" y="661" width="76" height="38" rx="6"/>
+          <rect x="408" y="661" width="76" height="38" rx="6"/>
+          <rect x="518" y="661" width="76" height="38" rx="6"/>
+          <circle cx="635" cy="680" r="9" stroke-width="3"/>
+        </g>
+        <g font-size="18" text-anchor="middle">
+          <text x="336" y="686">Task 1</text>
+          <text x="446" y="686">Task 2</text>
+          <text x="556" y="686">Task 3</text>
+        </g>
+        <text x="694" y="675" font-size="19">Use a <tspan font-family="monospace">periodic</tspan> trigger with <tspan font-family="monospace">timingTiming</tspan>.</text>
+        <text x="694" y="701" font-size="19">Sequence the following actions separately.</text>
+      </g>
+    </g>
+    <g id="review-guidance">
+      <text x="36" y="765" font-size="19">Compare source and target behavior against the same reviewed cases before relying on a mapping.</text>
+      <text x="36" y="791" font-size="19">Verify execution support for timing, concurrency, and joins in the target environment.</text>
+    </g>
+  </g>
+</svg>

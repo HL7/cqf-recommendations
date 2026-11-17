@@ -4,7 +4,6 @@ This page was reorganized and editorially revised in this version of the guide (
 This section provides an overview of the specific separations of concerns in the CPG implementation guide as well as some details of their respective boundary issues.  An overview of each separation is covered here and in more detail in individual sections that include:
 
 
-
 *   Case
 *   Plan
 *   Workflow
@@ -21,6 +20,7 @@ Figure 1. Illustrating the separation of the Case (patient clinicopathophysiolog
 <img src="CPG-12-01.png" alt="Separation of Concerns" class="img-responsive img-rounded center-block" width=300/>
 
 </details>
+
 
 ### Case
 
@@ -60,3 +60,5 @@ Separating concerns creates boundaries that have to be handled explicitly: ident
 *   **Proposals:** [Proposals](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-proposal) (patient-specific recommendations), resulting or related requests (orders, prescriptions), and their resulting event (administrations, results, encounters))- are they part of the Case or the Care Plan?  Requests and their ‘resulting’ and/or related [Events](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-event) go into both.  Proposals are scoped to the Care Plan in the CPG.. However, indicators (i.e., [Metrics](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-metric)) may qualify patient-specific guideline recommendations (i.e., Proposal) compliance or adherence or how the Case is ‘performing’ with respect to the ‘Plan’.  As discussed elsewhere (see Metric in subsection on [Derived & Related Assets](documentation-approach-12-07-cpg-derivative-and-related-assets.html) ), these patient-specific indicators may be treated as Case Features and thus part of the Case.
 *   **Plan or Workflow:** the Plan is focused on what to do for the patient, while issues of how to specifically implement that plan within local workflows and clinical information systems is outside the scope of this implementation guide though some implications are addressed in the section of [Knowledge Implementation](documentation-approach-05-05-knowledge-implementation.html). However, as described above, some implications of clinical information system workflow and abstract workflow are addressed as described in the subsection on [Common Pathway](documentation-approach-12-06-cpg-common-pathway.html).
 *   **Case and Workflow:** while much patient-level information (i.e., Case Features) contains information or metadata about local clinical workflow (e.g. performer, timing) and some aspects of local clinical workflow impact certain aspects of patient-level [Requests](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-request) and Events (e.g. timing and availability), for the scope of this implementation guide, such information is expressed within the data elements or resources as scoped by FHIR Resources, while relevant inferences about such information are addressed within their appropriate concerns.
+
+

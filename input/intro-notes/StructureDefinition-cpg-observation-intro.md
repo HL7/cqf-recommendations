@@ -1,1 +1,1 @@
-This is an [activity event profile](profiles.html#activity-profiles)
+Use this Observation profile for a measured, assessed or inferred patient feature relevant to guideline-directed care. The observation carries the result’s clinical meaning and can be referenced by a recording Task or subsequent recommendation. Its status concerns result availability and correction rather than the progress of carrying out an intervention.

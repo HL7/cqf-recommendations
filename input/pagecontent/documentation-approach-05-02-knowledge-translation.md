@@ -3,9 +3,10 @@ This page was reorganized and editorially revised in this version of the guide (
 
 Knowledge translation has specific meaning within the knowledge engineering lifecycle process for knowledge engineers.  However, there are at least three perspectives on knowledge translation that must be considered in the context of co-developing a clinical guideline together with its formal representation as a CPG.  These include:
 
-1. The “activities involved in moving research from the laboratory, the research journal, and the academic conference into the hands of people and organizations who can put it to practical use” ([ref](https://ncats.nih.gov/translation/spectrum))
+1. The “activities involved in moving research from the laboratory, the research journal, and the academic conference into the hands of people and organizations who can put it to practical use” ([NCATS](documentation-approach-cds-implementation-evidence.html#ref-ncats-spectrum))
 2. The translation between and across various levels of knowledge representation,  from narrative to semi-structured to structured to executable (described in detail below and in the section on [Levels of Knowledge Representation](documentation-approach-06-01-levels-of-knowledge-representation.html)).
 3. The translation between equivalent or iso-pragmatic knowledge formalisms (i.e., representations, expressions) such as is done with concept maps between terminologies or as will be discussed further in the “Methodology” section (see BPM+ -to- CPG)
+
 
 <details open>
 
@@ -33,7 +34,6 @@ Figure 2. Knowledge Engineering in collaboration with the guideline development 
 <img src="CPG-05-01.png" alt="Knowledge Engineering" class="img-responsive img-rounded center-block"/>
 
 </details>
-
 
 
 There are ongoing efforts, tool development activities, and knowledge resources across the knowledge ecosystem that may provide additional benefits in efficiency, timeliness, and effort that may be taken into consideration when developing a CPG.  For instance, as described in the Guideline Development section on Analysis of Evidence, Recommendations, & Reporting [Analysis of Evidence](documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.html), the EBM-on-FHIR Evidence and Evidence Variables can carry descriptions and explicit value sets and standard terminologies for interventions and study population cohorts (and even reference CQL expressions for study population cohorts).  Metadata on clinical research studies might afford the same.  These may not be exact matches to the guideline scope (eligibility criteria) or recommendation interventions (FHIR activities and requests) and applicability criteria (Conditions in respective ECA Rules), but they may provide a reasonable start- and far earlier and upstream in an “Integrated Approach”.  This early start on incremental pieces of the guideline is what is called “chunking” in Agile software processes described further in the section on The [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html).

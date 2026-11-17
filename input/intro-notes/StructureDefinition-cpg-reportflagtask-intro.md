@@ -1,1 +1,1 @@
-This is an [activity request](profiles.html#activity-profiles) profile
+Use this Task profile to recommend reporting a flag associated with a patient’s record. Its input identifies the flag, while the Task conveys the intent and progress of the reporting work. The Flag’s relevance, category and clinical context remain separate from whether that work was accepted or completed.

@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGEncounter supplies encounter context for guideline-related patient information and activities. Use it to communicate the visit or contact in which an assessment, request, or event belongs, while keeping the longer case/enrollment context separate. References to the encounter help consumers interpret timing, participants, and care location without assuming that a visit itself establishes enrollment.

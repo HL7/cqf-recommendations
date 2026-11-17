@@ -1,0 +1,5583 @@
+{
+  "scope": {
+    "candidate_dir": "/var/folders/w_/1kxcn0r925ng0ml6mwd78z5m0000gp/T/cpg-narrative-final-0ngo4z0i",
+    "active_markdown_pages": 56,
+    "changes_md_excluded": true,
+    "unique_urls_checked": 219,
+    "line_occurrences": 330,
+    "excluded_targets": 3,
+    "method": "Balanced Markdown destination parsing, HTML href extraction, and bare HTTP(S) mentions outside parsed destinations. changes.md excluded. One unauthenticated streamed GET per exact URL, redirects followed, max concurrency 6, 5s connect/15s read timeout, 4096-byte sample for common challenge text. Reachability only, not content verification.",
+    "checked_at": "2026-10-28T14:56:55+00:00"
+  },
+  "summary_by_classification": {
+    "reachable": 130,
+    "redirected": 23,
+    "not-found": 0,
+    "blocked": 65,
+    "timeout": 1,
+    "error": 0
+  },
+  "results": [
+    {
+      "url": "http://cds-hooks.hl7.org",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://cds-hooks.hl7.org/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://cql.hl7.org",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://cql.hl7.org/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://cql.hl7.org/",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://fhir.org/community/process/",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 146,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://fhir.org/community/process/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://fhir.org/community/process/",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 89,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/R4/extension-cqf-qualityofevidence.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 87,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/R4/extension-cqf-strengthofrecommendation.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/smart-app-launch/",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/smart-app-launch/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/us/core/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhir/us/core",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/us/cqfmeasures/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhir/us/cqfmeasures",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/us/qicore",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/us/qicore/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhir/us/qicore",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/cql",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology.md",
+          "line": 164,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "http://hl7.org/fhir/uv/cql/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhir/uv/cql",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/crmi",
+      "pages": [
+        "documentation-approach-05-03-knowledge-representation.md",
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-05-03-knowledge-representation.md",
+          "line": 26,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "http://hl7.org/fhir/uv/crmi/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhir/uv/crmi",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/crmi/packaging.html",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 305,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/uv/crmi/packaging.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/ips",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/uv/ips/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhir/uv/ips",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/sdc",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://hl7.org/fhir/uv/sdc/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhir/uv/sdc",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://hl7.org/fhirpath",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org:443/fhirpath/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "http://hl7.org/fhirpath",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "http://workflowpatterns.com/",
+      "pages": [
+        "documentation-methodology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-methodology.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "http://workflowpatterns.com/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "https://cds-hooks.hl7.org/",
+      "pages": [
+        "documentation-approach-10-mechanisms-of-integration.md",
+        "index.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 29,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "index.md",
+          "line": 39,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://cds-hooks.hl7.org/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:44+00:00"
+    },
+    {
+      "url": "https://cds.ahrq.gov/authoring/documentation#CDS_Authoring_Tool_User_Guide",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://digital.ahrq.gov:443/health-it-tools-and-resources/clinical-decision-support-cds/#CDS_Authoring_Tool_User_Guide",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://cds.ahrq.gov/authoring/documentation#CDS_Authoring_Tool_User_Guide",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md",
+        "documentation-approach-04-guideline-development.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 13,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-guideline-development.md",
+          "line": 52,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://macgrade.mcmaster.ca/cebgrade/guidelinechecklistonline.html",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Deciding",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 27,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://macgrade.mcmaster.ca/cebgrade/guidelinechecklistonline.html#Deciding",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Deciding",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Judgingtabl",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 33,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://macgrade.mcmaster.ca/cebgrade/guidelinechecklistonline.html#Judgingtabl",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Judgingtabl",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#PICOtable",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 30,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://macgrade.mcmaster.ca/cebgrade/guidelinechecklistonline.html#PICOtable",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#PICOtable",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Summarizingtable",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md",
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 28,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md",
+          "line": 7,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://macgrade.mcmaster.ca/cebgrade/guidelinechecklistonline.html#Summarizingtable",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://cebgrade.mcmaster.ca/guidelinechecklistonline.html#Summarizingtable",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://confluence.hl7.org/display/CDS/EBMonFHIR",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://confluence.hl7.org/spaces/CDS/pages/49645940/EBMonFHIR",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://confluence.hl7.org/display/CDS/EBMonFHIR",
+          "status_code": 302
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html;charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://cql.hl7.org/",
+      "pages": [
+        "index.md",
+        "libraries.md"
+      ],
+      "references": [
+        {
+          "page": "index.md",
+          "line": 37,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "libraries.md",
+          "line": 13,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://cql.hl7.org/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://docs.google.com/document/d/1sHNuICuXuiWFH1iSFLkUhea0YpDWjY33/edit",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://docs.google.com/document/d/1sHNuICuXuiWFH1iSFLkUhea0YpDWjY33/edit",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1001/archinternmed.2010.324",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 46,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 85,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://jamanetwork.com/article.aspx?doi=10.1001/archinternmed.2010.324",
+      "status_code": 403,
+      "redirect_count": 3,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1001/archinternmed.2010.324",
+          "status_code": 302
+        },
+        {
+          "url": "http://archinte.jamanetwork.com/article.aspx?doi=10.1001/archinternmed.2010.324",
+          "status_code": 301
+        },
+        {
+          "url": "https://archinte.jamanetwork.com/article.aspx?doi=10.1001/archinternmed.2010.324",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1001/jama.2019.6587",
+      "pages": [
+        "examples-hiv-guideline.md"
+      ],
+      "references": [
+        {
+          "page": "examples-hiv-guideline.md",
+          "line": 7,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://jamanetwork.com/article.aspx?doi=10.1001/jama.2019.6587",
+      "status_code": 403,
+      "redirect_count": 3,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1001/jama.2019.6587",
+          "status_code": 302
+        },
+        {
+          "url": "http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.2019.6587",
+          "status_code": 301
+        },
+        {
+          "url": "https://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.2019.6587",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1001/jama.293.10.1223",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 43,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 83,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://jamanetwork.com/article.aspx?doi=10.1001/jama.293.10.1223",
+      "status_code": 403,
+      "redirect_count": 3,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1001/jama.293.10.1223",
+          "status_code": 302
+        },
+        {
+          "url": "http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.293.10.1223",
+          "status_code": 301
+        },
+        {
+          "url": "https://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.293.10.1223",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1002/lrh2.10054",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 114,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/lrh2.10054",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1002/lrh2.10054",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1002/lrh2.70104",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-04-knowledge-execution-and-validation.md",
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 71,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 105,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-04-knowledge-execution-and-validation.md",
+          "line": 25,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology.md",
+          "line": 301,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 4,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/lrh2.70104",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1002/lrh2.70104",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1016/S2589-7500(21)00038-8",
+      "pages": [
+        "documentation-approach-06-01-levels-of-knowledge-representation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-06-01-levels-of-knowledge-representation.md",
+          "line": 37,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S2589750021000388",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1016/S2589-7500(21)00038-8",
+          "status_code": 302
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html;charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.ijmedinf.2022.104749",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-06-03-knowledge-architecture.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 61,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 94,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-06-03-knowledge-architecture.md",
+          "line": 44,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1386505622000636",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1016/j.ijmedinf.2022.104749",
+          "status_code": 302
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html;charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:45+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1055/s-0040-1701253",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-06-knowledge-representation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 60,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 93,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-06-knowledge-representation.md",
+          "line": 51,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://www.thieme-connect.de/DOI/DOI?10.1055/s-0040-1701253",
+      "status_code": 200,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1055/s-0040-1701253",
+          "status_code": 302
+        },
+        {
+          "url": "http://www.thieme-connect.de/DOI/DOI?10.1055/s-0040-1701253",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html;charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1055/s-0043-1769911",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-04-05-computable-guideline-artifacts.md",
+        "documentation-approach-05-05-knowledge-implementation.md",
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 64,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 97,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-05-computable-guideline-artifacts.md",
+          "line": 31,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-05-knowledge-implementation.md",
+          "line": 24,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology.md",
+          "line": 38,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 5,
+      "final_url": "https://www.thieme-connect.de/DOI/DOI?10.1055/s-0043-1769911",
+      "status_code": 200,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1055/s-0043-1769911",
+          "status_code": 302
+        },
+        {
+          "url": "http://www.thieme-connect.de/DOI/DOI?10.1055/s-0043-1769911",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html;charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1056/NEJM196803142781105",
+      "pages": [
+        "documentation-approach-12-01-separations-of-concerns-in-the-cpg.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-01-separations-of-concerns-in-the-cpg.md",
+          "line": 37,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.nejm.org/doi/abs/10.1056/NEJM196803142781105",
+      "status_code": 403,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1056/NEJM196803142781105",
+          "status_code": 302
+        },
+        {
+          "url": "http://www.nejm.org/doi/abs/10.1056/NEJM196803142781105",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1056/NEJMoa041533",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 45,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 84,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa041533",
+      "status_code": 403,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1056/NEJMoa041533",
+          "status_code": 302
+        },
+        {
+          "url": "http://www.nejm.org/doi/abs/10.1056/NEJMoa041533",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1093/jamia/ocac085",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-10-mechanisms-of-integration.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 62,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 95,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 70,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://academic.oup.com/jamia/article/29/9/1461/6596176",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1093/jamia/ocac085",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1093/jamia/ocae138",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-05-knowledge-implementation.md",
+        "documentation-approach-12-01-separations-of-concerns-in-the-cpg.md",
+        "documentation-approach-12-06-cpg-common-pathway.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 67,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 101,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-05-knowledge-implementation.md",
+          "line": 42,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-01-separations-of-concerns-in-the-cpg.md",
+          "line": 35,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-01-separations-of-concerns-in-the-cpg.md",
+          "line": 39,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-06-cpg-common-pathway.md",
+          "line": 15,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 6,
+      "final_url": "https://academic.oup.com/jamia/article/31/8/1682/7697359",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1093/jamia/ocae138",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1093/jamia/ocae187",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-04-knowledge-execution-and-validation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 50,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 89,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-04-knowledge-execution-and-validation.md",
+          "line": 27,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://academic.oup.com/jamia/article/31/10/2405/7724060",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1093/jamia/ocae187",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1093/jamia/ocv189",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 59,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 92,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://academic.oup.com/jamia/article/23/5/899/2379865",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1093/jamia/ocv189",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1093/jamia/ocx106",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-03-knowledge-representation.md",
+        "documentation-approach-06-02-knowledge-assets.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 49,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 87,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-03-knowledge-representation.md",
+          "line": 24,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-06-02-knowledge-assets.md",
+          "line": 57,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 4,
+      "final_url": "https://academic.oup.com/jamia/article/25/5/496/4555055",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1093/jamia/ocx106",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1093/jamiaopen/ooaf085",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-04-knowledge-execution-and-validation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 68,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 102,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-04-knowledge-execution-and-validation.md",
+          "line": 25,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://academic.oup.com/jamiaopen/article/doi/10.1093/jamiaopen/ooaf085/8219442",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1093/jamiaopen/ooaf085",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1097/JMQ.0000000000000137",
+      "pages": [
+        "approach.md",
+        "documentation-approach-04-02-guideline-development-frameworks.md",
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-04-05-computable-guideline-artifacts.md",
+        "documentation-approach-04-guideline-development.md",
+        "documentation-approach-05-06-agile-cpg-development-approach.md",
+        "documentation-approach-05-knowledge-engineering-overview.md"
+      ],
+      "references": [
+        {
+          "page": "approach.md",
+          "line": 23,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 65,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 98,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-05-computable-guideline-artifacts.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-guideline-development.md",
+          "line": 7,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-06-agile-cpg-development-approach.md",
+          "line": 7,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-knowledge-engineering-overview.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 8,
+      "final_url": "https://www.ovid.com/jnls/ajmqonline/fulltext/10.1097/jmq.0000000000000137~an-integrated-process-for-co-developing-and-implementing",
+      "status_code": 200,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1097/JMQ.0000000000000137",
+          "status_code": 302
+        },
+        {
+          "url": "https://journals.lww.com/10.1097/JMQ.0000000000000137",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1097/JMQ.0000000000000140",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-04-05-computable-guideline-artifacts.md",
+        "documentation-approach-05-06-agile-cpg-development-approach.md",
+        "documentation-approach-05-knowledge-engineering-overview.md",
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+        "methodology-case-study.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 65,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 99,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-05-computable-guideline-artifacts.md",
+          "line": 33,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-06-agile-cpg-development-approach.md",
+          "line": 63,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-knowledge-engineering-overview.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+          "line": 56,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology-case-study.md",
+          "line": 139,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 7,
+      "final_url": "https://www.ovid.com/jnls/ajmqonline/fulltext/10.1097/jmq.0000000000000140~an-evaluation-framework-for-a-novel-process-to-codevelop",
+      "status_code": 200,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1097/JMQ.0000000000000140",
+          "status_code": 302
+        },
+        {
+          "url": "https://journals.lww.com/10.1097/JMQ.0000000000000140",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1136/amiajnl-2011-000334",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-04-05-computable-guideline-artifacts.md",
+        "documentation-approach-06-01-levels-of-knowledge-representation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 58,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 91,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-05-computable-guideline-artifacts.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-05-computable-guideline-artifacts.md",
+          "line": 35,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-06-01-levels-of-knowledge-representation.md",
+          "line": 7,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 5,
+      "final_url": "https://academic.oup.com/jamia/article-lookup/doi/10.1136/amiajnl-2011-000334",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1136/amiajnl-2011-000334",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1136/bmj.38398.500764.8F",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 44,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 82,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://www.bmj.com/lookup/doi/10.1136/bmj.38398.500764.8F",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1136/bmj.38398.500764.8F",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1136/bmj.m3216",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 47,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 86,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://www.bmj.com/lookup/doi/10.1136/bmj.m3216",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1136/bmj.m3216",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1136/bmjhci-2022-100691",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-01-knowledge-acquisition.md",
+        "documentation-approach-05-02-knowledge-translation.md",
+        "documentation-approach-12-04-cpg-case.md",
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 66,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 100,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-01-knowledge-acquisition.md",
+          "line": 38,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-02-knowledge-translation.md",
+          "line": 22,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-04-cpg-case.md",
+          "line": 48,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology.md",
+          "line": 107,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 6,
+      "final_url": "https://informatics.bmj.com/lookup/doi/10.1136/bmjhci-2022-100691",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1136/bmjhci-2022-100691",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1136/ebmed-2016-110401",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 29,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://ebm.bmj.com/lookup/doi/10.1136/ebmed-2016-110401",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1136/ebmed-2016-110401",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1186/2046-4053-1-10",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 33,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 110,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://link.springer.com/article/10.1186/2046-4053-1-10",
+      "status_code": 200,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1186/2046-4053-1-10",
+          "status_code": 302
+        },
+        {
+          "url": "https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/2046-4053-1-10",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://doi.org/10.1186/s12961-025-01397-7",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 70,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 104,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://link.springer.com/article/10.1186/s12961-025-01397-7",
+      "status_code": 200,
+      "redirect_count": 2,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.1186/s12961-025-01397-7",
+          "status_code": 302
+        },
+        {
+          "url": "https://health-policy-systems.biomedcentral.com/articles/10.1186/s12961-025-01397-7",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.2196/15653",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 48,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 88,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://medinform.jmir.org/2020/7/e15653",
+      "status_code": 202,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.2196/15653",
+          "status_code": 302
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:46+00:00"
+    },
+    {
+      "url": "https://doi.org/10.2196/40338",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 63,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 96,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://medinform.jmir.org/2022/11/e40338",
+      "status_code": 202,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.2196/40338",
+          "status_code": 302
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://doi.org/10.23970/AHRQEPC_MHS4MEDERROR",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 51,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 90,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://effectivehealthcare.ahrq.gov/products/mhs4-computerized-cds/rapid-research",
+      "status_code": 202,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.23970/AHRQEPC_MHS4MEDERROR",
+          "status_code": 302
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://doi.org/10.3390/vaccines13050437",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-06-agile-cpg-development-approach.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 69,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 103,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-06-agile-cpg-development-approach.md",
+          "line": 42,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://www.mdpi.com/2076-393X/13/5/437",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.3390/vaccines13050437",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://doi.org/10.7326/0003-4819-151-6-200909150-02002",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 9,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 108,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://www.acpjournals.org/doi/10.7326/0003-4819-151-6-200909150-02002",
+      "status_code": 403,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://doi.org/10.7326/0003-4819-151-6-200909150-02002",
+          "status_code": 302
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1kFhyum_ezBAHqmAYKk43ptdySCP1ruXc",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 4,
+      "final_url": "https://drive.google.com/drive/folders/1kFhyum_ezBAHqmAYKk43ptdySCP1ruXc",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 37,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://gdt.gradepro.org/app/handbook/handbook.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://github.com/cqframework/content-ig-walkthrough",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 142,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://github.com/cqframework/content-ig-walkthrough",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://github.com/cqframework/content-ig-walkthrough#validation-with-cqf-ruler-and-cds-hooks",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 301,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://github.com/cqframework/content-ig-walkthrough#validation-with-cqf-ruler-and-cds-hooks",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://github.com/cqframework/sample-content-ig",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology.md",
+          "line": 146,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://github.com/cqframework/sample-content-ig",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://github.com/cqframework/vscode-cql/wiki/User-Guide#adding-test-data",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 293,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://github.com/cqframework/vscode-cql/wiki/User-Guide#adding-test-data",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://goodwin.libguides.com/c.php?g=309484&p=2066254",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://goodwin.libguides.com/c.php?g=309484&p=2066254",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://goodwin.libguides.com/c.php?g=309484&p=2066254](https://goodwin.libguides.com/c.php?g=309484&p=2066254",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://goodwin.libguides.com/c.php?g=309484&p=2066254%5D(https://goodwin.libguides.com/c.php?g=309484&p=2066254",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://hl7.org.au/fhir/",
+      "pages": [
+        "profiles.md"
+      ],
+      "references": [
+        {
+          "page": "profiles.md",
+          "line": 70,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org.au/fhir/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/careplan.html",
+      "pages": [
+        "documentation-careplanning.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-careplanning.md",
+          "line": 13,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/careplan.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/careteam.html",
+      "pages": [
+        "documentation-careplanning.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-careplanning.md",
+          "line": 13,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/careteam.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/clinicalreasoning-cds-on-fhir.html",
+      "pages": [
+        "documentation-approach-10-mechanisms-of-integration.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 41,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/clinicalreasoning-cds-on-fhir.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/clinicalreasoning-module.html",
+      "pages": [
+        "index.md"
+      ],
+      "references": [
+        {
+          "page": "index.md",
+          "line": 36,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/clinicalreasoning-module.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:47+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/conformance-rules.html",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 1,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/conformance-rules.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/conformance-rules.html#conflang",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/conformance-rules.html#conflang",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/conformance-rules.html#mustSupport",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 22,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/conformance-rules.html#mustSupport",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/event.html#statemachine",
+      "pages": [
+        "activityflow.md"
+      ],
+      "references": [
+        {
+          "page": "activityflow.md",
+          "line": 110,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/event.html#statemachine",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/evidence.html",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md",
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md",
+        "documentation-approach-12-03-cpg-plan.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 32,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-03-cpg-plan.md",
+          "line": 31,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://hl7.org/fhir/R4/evidence.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/evidencevariable.html",
+      "pages": [
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md",
+        "documentation-approach-12-03-cpg-plan.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-03-cpg-plan.md",
+          "line": 31,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/R4/evidencevariable.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/examplescenario.html",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 289,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/examplescenario.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/goal.html",
+      "pages": [
+        "documentation-careplanning.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-careplanning.md",
+          "line": 13,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/goal.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/library-operation-data-requirements.html",
+      "pages": [
+        "profiles.md"
+      ],
+      "references": [
+        {
+          "page": "profiles.md",
+          "line": 76,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/library-operation-data-requirements.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/measure.html",
+      "pages": [
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/measure.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/measurereport.html",
+      "pages": [
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/measurereport.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/plandefinition-operation-apply.html",
+      "pages": [
+        "documentation-approach-06-03-knowledge-architecture.md",
+        "documentation-approach-09-methods-of-implementation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-06-03-knowledge-architecture.md",
+          "line": 34,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-09-methods-of-implementation.md",
+          "line": 56,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/R4/plandefinition-operation-apply.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/profiling.html",
+      "pages": [
+        "profiles.md"
+      ],
+      "references": [
+        {
+          "page": "profiles.md",
+          "line": 1,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/profiling.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/request.html#statemachine",
+      "pages": [
+        "activityflow.md"
+      ],
+      "references": [
+        {
+          "page": "activityflow.md",
+          "line": 106,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/request.html#statemachine",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/safety.html",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 7,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/safety.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/task.html",
+      "pages": [
+        "documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.md",
+        "documentation-approach-12-06-cpg-common-pathway.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-02-separating-and-defining-case-plan-and-workflow.md",
+          "line": 30,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-06-cpg-common-pathway.md",
+          "line": 32,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/R4/task.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/terminologies.html",
+      "pages": [
+        "terminology.md"
+      ],
+      "references": [
+        {
+          "page": "terminology.md",
+          "line": 3,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/terminologies.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/v3/ServiceDeliveryLocationRoleType/vs.html",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 75,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/v3/ServiceDeliveryLocationRoleType/vs.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/validation.html",
+      "pages": [
+        "downloads.md"
+      ],
+      "references": [
+        {
+          "page": "downloads.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/validation.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/valueset-composition-status.html",
+      "pages": [
+        "activityflow.md"
+      ],
+      "references": [
+        {
+          "page": "activityflow.md",
+          "line": 128,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/valueset-composition-status.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/valueset-measure-report-status.html",
+      "pages": [
+        "activityflow.md"
+      ],
+      "references": [
+        {
+          "page": "activityflow.md",
+          "line": 128,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/valueset-measure-report-status.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/valueset-questionnaire-answers-status.html",
+      "pages": [
+        "activityflow.md"
+      ],
+      "references": [
+        {
+          "page": "activityflow.md",
+          "line": 128,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/R4/valueset-questionnaire-answers-status.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R4/workflow.html",
+      "pages": [
+        "activityflow.md",
+        "documentation-approach-12-06-cpg-common-pathway.md",
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "activityflow.md",
+          "line": 3,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-12-06-cpg-common-pathway.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "methodology.md",
+          "line": 168,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://hl7.org/fhir/R4/workflow.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/R5/valueset-version-algorithm.html",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/R5/valueset-version-algorithm.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/smart-app-launch/",
+      "pages": [
+        "documentation-approach-10-mechanisms-of-integration.md",
+        "index.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 55,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "index.md",
+          "line": 40,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/smart-app-launch/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/us/core/",
+      "pages": [
+        "profiles.md"
+      ],
+      "references": [
+        {
+          "page": "profiles.md",
+          "line": 70,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/us/core/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/us/core/must-support.html",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 27,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/us/core/must-support.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/us/cqfmeasures/",
+      "pages": [
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+          "line": 21,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/us/cqfmeasures/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/us/ecr/",
+      "pages": [
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+          "line": 41,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/us/ecr/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/us/qicore/",
+      "pages": [
+        "profiles.md"
+      ],
+      "references": [
+        {
+          "page": "profiles.md",
+          "line": 70,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/us/qicore/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/us/qicore/#mustsupport-flag",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 28,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/us/qicore/#mustsupport-flag",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html#:~:text=%E2%80%9CLevels%E2%80%9D%20of%20Knowledge%20Representation%20Framing%201%20Approach%20The,Semi-structured%20...%204%20Structured%20...%205%20Executable%20",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 15,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html#:~:text=%E2%80%9CLevels%E2%80%9D%20of%20Knowledge%20Representation%20Framing%201%20Approach%20The,Semi-structured%20...%204%20Structured%20...%205%20Executable%20",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/cpg/methodology-case-study.html",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/cpg/methodology-case-study.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/cql/",
+      "pages": [
+        "documentation-approach-09-methods-of-implementation.md",
+        "documentation-conformance.md",
+        "index.md",
+        "libraries.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-09-methods-of-implementation.md",
+          "line": 30,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-conformance.md",
+          "line": 51,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "index.md",
+          "line": 37,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "libraries.md",
+          "line": 13,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 4,
+      "final_url": "https://hl7.org/fhir/uv/cql/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:48+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/crmi/",
+      "pages": [
+        "documentation-conformance.md",
+        "index.md",
+        "profiles.md",
+        "terminology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 34,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-conformance.md",
+          "line": 50,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "index.md",
+          "line": 38,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "profiles.md",
+          "line": 15,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "terminology.md",
+          "line": 35,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 5,
+      "final_url": "https://hl7.org/fhir/uv/crmi/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/ips/",
+      "pages": [
+        "index.md",
+        "profiles.md"
+      ],
+      "references": [
+        {
+          "page": "index.md",
+          "line": 42,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "profiles.md",
+          "line": 70,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "profiles.md",
+          "line": 80,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 3,
+      "final_url": "https://hl7.org/fhir/uv/ips/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/ips/2019Sep/",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/ips/2019Sep/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/ips/design.html#must-support",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 26,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/ips/design.html#must-support",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/",
+      "pages": [
+        "index.md",
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "index.md",
+          "line": 41,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "interactive-cds.md",
+          "line": 5,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/uv/sdc/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/OperationDefinition-Questionnaire-assemble.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 140,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/OperationDefinition-Questionnaire-assemble.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/OperationDefinition-Questionnaire-populate.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 12,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/OperationDefinition-Questionnaire-populate.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/OperationDefinition-QuestionnaireResponse-extract.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 14,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/OperationDefinition-QuestionnaireResponse-extract.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-definitionExtract.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 79,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-definitionExtract.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-definitionExtractValue.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 80,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-definitionExtractValue.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-extr-defn.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 142,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-extr-defn.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-initialExpression.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 82,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-initialExpression.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-itemPopulationContext.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 81,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-itemPopulationContext.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-launchContext.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 78,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-launchContext.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-pop-exp.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 142,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire-pop-exp.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/adaptive.html",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 33,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/adaptive.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/extraction.html#definition-extract",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 14,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "interactive-cds.md",
+          "line": 76,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/uv/sdc/extraction.html#definition-extract",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/modular.html#modular",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 142,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://hl7.org/fhir/uv/sdc/modular.html#modular",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://hl7.org/fhir/uv/sdc/populate.html#exp-pop",
+      "pages": [
+        "interactive-cds.md"
+      ],
+      "references": [
+        {
+          "page": "interactive-cds.md",
+          "line": 12,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "interactive-cds.md",
+          "line": 76,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://hl7.org/fhir/uv/sdc/populate.html#exp-pop",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://isco.ilo.org/en/isco-08/",
+      "pages": [
+        "artifacts.md"
+      ],
+      "references": [
+        {
+          "page": "artifacts.md",
+          "line": 40,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://isco.ilo.org/en/isco-08/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/226004",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 85,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/226004",
+      "status_code": 403,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://jats4r.org/",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "classification": "timeout",
+      "error": "HTTPSConnectionPool(host='jats4r.niso.org', port=443): Read timed out. (read timeout=5)",
+      "checked_at": "2026-10-28T14:56:55+00:00"
+    },
+    {
+      "url": "https://journals.lww.com/ajmqonline/fulltext/2023/09002/adapting_clinical_guidelines_for_the_digital_age_.2.aspx",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 12,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.ovid.com/jnls/ajmqonline/fulltext/10.1097/jmq.0000000000000138~adapting-clinical-guidelines-for-the-digital-age-summary-of",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://journals.lww.com/ajmqonline/fulltext/2023/09002/adapting_clinical_guidelines_for_the_digital_age_.2.aspx",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10371399/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "index.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 97,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "index.md",
+          "line": 50,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10371399/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10439311/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "terminology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 100,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "terminology.md",
+          "line": 14,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10439311/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10476596/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 99,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10476596/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "index.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 98,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "index.md",
+          "line": 28,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10476601/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11258405/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-careplanning.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 101,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-careplanning.md",
+          "line": 29,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11258405/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11413449/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 89,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11413449/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12116024/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 103,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12116024/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12309839/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-09-methods-of-implementation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 102,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-09-methods-of-implementation.md",
+          "line": 101,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12309839/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13421373/",
+      "pages": [
+        "documentation-approach-02-05-knowledge-implementation.md",
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-09-methods-of-implementation.md",
+        "documentation-approach-10-mechanisms-of-integration.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-02-05-knowledge-implementation.md",
+          "line": 31,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 105,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-09-methods-of-implementation.md",
+          "line": 101,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 70,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 4,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13421373/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3241169/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 91,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3241169/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4997036/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-10-mechanisms-of-integration.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 92,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 59,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4997036/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6019061/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "terminology.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 87,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "terminology.md",
+          "line": 73,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6019061/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7015815/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 93,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7015815/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7153075/",
+      "pages": [
+        "documentation-approach-10-mechanisms-of-integration.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 59,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7153075/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7400042/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 88,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7400042/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:49+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7495041/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 86,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7495041/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9382378/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 95,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9382378/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9693697/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 96,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9693697/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9703934/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-10-mechanisms-of-integration.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 94,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-10-mechanisms-of-integration.md",
+          "line": 66,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9703934/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15755945/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 83,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/15755945/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21208779/",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 35,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/21208779/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23312392/",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 34,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/23312392/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29484787/",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/29484787/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://semver.org/",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://semver.org/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://smart.who.int/",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://smart.who.int/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://stacks.cdc.gov/view/cdc/131006",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 12,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://stacks.cdc.gov/view/cdc/131006",
+      "status_code": 403,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://stacks.cdc.gov/view/cdc/131007",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 12,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://stacks.cdc.gov/view/cdc/131007",
+      "status_code": 403,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://terminology.hl7.org/",
+      "pages": [
+        "terminology.md"
+      ],
+      "references": [
+        {
+          "page": "terminology.md",
+          "line": 31,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://terminology.hl7.org/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://terminology.hl7.org/codesystems.html",
+      "pages": [
+        "terminology.md"
+      ],
+      "references": [
+        {
+          "page": "terminology.md",
+          "line": 31,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://terminology.hl7.org/codesystems.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://vsac.nlm.nih.gov/",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://vsac.nlm.nih.gov/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://wiki.ihe.net/index.php/Computable_Care_Guidelines",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 57,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://wiki.ihe.net/index.php/Computable_Care_Guidelines",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.ahrq.gov/cpi/about/otherwebsites/srdr.ahrq.gov/index.html",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.ahrq.gov/cpi/about/otherwebsites/srdr.ahrq.gov/index.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.ahrq.gov/cpi/centers/cepi/index.html",
+      "pages": [
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md",
+          "line": 7,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.ahrq.gov/cpi/centers/cepi/index.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.ahrq.gov/learning-health-systems/about.html",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 112,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.ahrq.gov/learning-health-systems/about.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.authorea.com/users/701108/articles/687733-gin-mcmaster-guideline-development-checklist-extension-for-computable-guidelines",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 25,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.authorea.com/users/701108/articles/687733-gin-mcmaster-guideline-development-checklist-extension-for-computable-guidelines",
+      "status_code": 403,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cdc.gov/acip-grade-handbook/",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 36,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cdc.gov/acip-grade-handbook/",
+      "status_code": 403,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5514a1.htm",
+      "pages": [
+        "examples-hiv-guideline.md"
+      ],
+      "references": [
+        {
+          "page": "examples-hiv-guideline.md",
+          "line": 5,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5514a1.htm",
+      "status_code": 403,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cochranelibrary.com/en/about-pico",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 4,
+      "final_url": "https://www.cochranelibrary.com/en/about-pico",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html;charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 4,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-contact-schedule.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 309,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-contact-schedule.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-contact.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 310,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-contact.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-recommendation-a2.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 311,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/PlanDefinition-anc-recommendation-a2.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-every-contact.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 546,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-every-contact.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-first-contact.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 547,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-first-contact.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-quick-check.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 548,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/Questionnaire-anc-quick-check.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anc/ValueSet-anc-reason-for-visit-vs.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 576,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anc/ValueSet-anc-reason-for-visit-vs.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-anthrax/",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 5,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-anthrax/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 6,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:50+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-edu-hypertension.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 77,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-edu-hypertension.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-edu-renal-diet.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 81,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-edu-renal-diet.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-lab-creatinine.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 85,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-lab-creatinine.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-lab-metabolic.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 89,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-lab-metabolic.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-referral-dietition.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 93,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-referral-dietition.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-referral-nephrology.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 97,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-referral-nephrology.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-ultrasound-renal.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 101,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-cc-cpg-activity-ultrasound-renal.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-ckd-risk-referral-nephrology.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 105,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-ckd-risk-referral-nephrology.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-ckd-risk-renal-lab-order.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 109,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ActivityDefinition-ckd-risk-renal-lab-order.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-cc-cpg-plan-ckd.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 368,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-cc-cpg-plan-ckd.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-ckd-risk-screening.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 372,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-ckd-risk-screening.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-va-ckd-protocol.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 376,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-va-ckd-protocol.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-va-ckd-recommendations.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 380,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/PlanDefinition-va-ckd-recommendations.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-ckd.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 580,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-ckd.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-creatinine.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 584,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-creatinine.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-diabetes.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 588,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-diabetes.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-egfr.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 592,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-egfr.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-uacr.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 596,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-ckd/ValueSet-ckd-valueset-uacr.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-hepb/",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 11,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-hepb/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-hepb/PlanDefinition-HepBAdultForecastingPD.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 384,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-hepb/PlanDefinition-HepBAdultForecastingPD.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-opioids/",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 9,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-opioids/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-opioids/ActivityDefinition-opioidcds-riskassessment-request.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 113,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-opioids/ActivityDefinition-opioidcds-riskassessment-request.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-opioids/PlanDefinition-opioidcds-r4-recommendation-05.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 388,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-opioids/PlanDefinition-opioidcds-r4-recommendation-05.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.cqframework.org/cpg-example-opioids/ValueSet-opioids-with-ambulatory-abuse-potential.html",
+      "pages": [
+        "examples.md"
+      ],
+      "references": [
+        {
+          "page": "examples.md",
+          "line": 600,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.cqframework.org/cpg-example-opioids/ValueSet-opioids-with-ambulatory-abuse-potential.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.fhir.org/guides/cdc/opioid-cds/",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 19,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.fhir.org/guides/cdc/opioid-cds/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.fhir.org/guides/cdc/opioid-cds/documentation.html",
+      "pages": [
+        "methodology.md"
+      ],
+      "references": [
+        {
+          "page": "methodology.md",
+          "line": 297,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.fhir.org/guides/cdc/opioid-cds/documentation.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&sa=D&ust=1606246815901000&usg=AOvVaw2uMkX1wZE0o4UGESgNYFp4",
+      "pages": [
+        "methodology-case-study.md"
+      ],
+      "references": [
+        {
+          "page": "methodology-case-study.md",
+          "line": 153,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&sa=D&ust=1606246815901000&usg=AOvVaw2uMkX1wZE0o4UGESgNYFp4",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&sa=D&ust=1606246815936000&usg=AOvVaw1M69Qy2HOG1O8RaXAN1tiY",
+      "pages": [
+        "methodology-case-study.md"
+      ],
+      "references": [
+        {
+          "page": "methodology-case-study.md",
+          "line": 155,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.google.com/url?q=https://www.acep.org/corona/COVID-19-alert/covid-19-articles/covid-19-severity-classification-tool-now-available/&sa=D&ust=1606246815936000&usg=AOvVaw1M69Qy2HOG1O8RaXAN1tiY",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.google.com/url?q=https://www.acep.org/globalassets/sites/acep/media/covid-19-main/acep_evidencecare_covid19severitytool.pdf&sa=D&ust=1606246815901000&usg=AOvVaw3ZqRn2_41xoIThVUtDt2kJ",
+      "pages": [
+        "methodology-case-study.md"
+      ],
+      "references": [
+        {
+          "page": "methodology-case-study.md",
+          "line": 154,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.google.com/url?q=https://www.acep.org/globalassets/sites/acep/media/covid-19-main/acep_evidencecare_covid19severitytool.pdf&sa=D&ust=1606246815901000&usg=AOvVaw3ZqRn2_41xoIThVUtDt2kJ",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:51+00:00"
+    },
+    {
+      "url": "https://www.gradeworkinggroup.org/",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md",
+        "documentation-approach-04-02-guideline-development-frameworks.md",
+        "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 16,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 21,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-04-04-analysis-of-evidence-recommendations-reporting.md",
+          "line": 27,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 4,
+      "final_url": "https://www.gradeworkinggroup.org/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://isp.healthit.gov/united-states-core-data-interoperability-uscdi",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.healthit.gov/sites/default/files/topiclanding/2025-01/3.%20CPOE%20Final.pdf",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+        "documentation-approach-05-05-knowledge-implementation.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 106,
+          "type": "markdown/href/bare"
+        },
+        {
+          "page": "documentation-approach-05-05-knowledge-implementation.md",
+          "line": 24,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 2,
+      "final_url": "https://healthit.gov/wp-content/uploads/2025/06/SAFER-Guide-3.-CPOE-Final.pdf",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://www.healthit.gov/sites/default/files/topiclanding/2025-01/3.%20CPOE%20Final.pdf",
+          "status_code": 301
+        }
+      ],
+      "classification": "redirected",
+      "content_type": "application/pdf",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.hl7.org/implement/standards/product_brief.cfm?product_id=208",
+      "pages": [
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+          "line": 45,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.hl7.org/implement/standards/product_brief.cfm?product_id=208",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html;charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK600580/",
+      "pages": [
+        "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-03-6S-evidence-pyramid-and-learning-health-systems.md",
+          "line": 90,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK600580/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK98234/",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 31,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK98234/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10476601/",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 12,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov:443/articles/PMC10476601/",
+      "status_code": 200,
+      "redirect_count": 1,
+      "redirect_chain": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10476601/",
+          "status_code": 301
+        }
+      ],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.openinfobutton.org/",
+      "pages": [
+        "documentation-approach-12-07-cpg-derivative-and-related-assets.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-12-07-cpg-derivative-and-related-assets.md",
+          "line": 45,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.openinfobutton.org/",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc2119.html",
+      "pages": [
+        "documentation-conformance.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-conformance.md",
+          "line": 13,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.rfc-editor.org/rfc/rfc2119.html",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/human-immunodeficiency-virus-hiv-infection-screening",
+      "pages": [
+        "examples-hiv-guideline.md"
+      ],
+      "references": [
+        {
+          "page": "examples-hiv-guideline.md",
+          "line": 6,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/human-immunodeficiency-virus-hiv-infection-screening",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.who.int/publications/i/item/9789240089907",
+      "pages": [
+        "documentation-approach-04-02-guideline-development-frameworks.md"
+      ],
+      "references": [
+        {
+          "page": "documentation-approach-04-02-guideline-development-frameworks.md",
+          "line": 17,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.who.int/publications/i/item/9789240089907",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.who.int/publications/m/item/classifying-health-workers",
+      "pages": [
+        "artifacts.md"
+      ],
+      "references": [
+        {
+          "page": "artifacts.md",
+          "line": 40,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.who.int/publications/m/item/classifying-health-workers",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.who.int/standards/classifications/international-classification-of-health-interventions",
+      "pages": [
+        "clinical-guidelines-development-L1-checklist.md"
+      ],
+      "references": [
+        {
+          "page": "clinical-guidelines-development-L1-checklist.md",
+          "line": 18,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.who.int/standards/classifications/international-classification-of-health-interventions",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "reachable",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    },
+    {
+      "url": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines",
+      "pages": [
+        "index.md"
+      ],
+      "references": [
+        {
+          "page": "index.md",
+          "line": 68,
+          "type": "markdown/href/bare"
+        }
+      ],
+      "occurrences": 1,
+      "final_url": "https://www.who.int/teams/digital-health-and-innovation/smart-guidelines",
+      "status_code": 200,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "classification": "blocked",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at": "2026-10-28T14:56:52+00:00"
+    }
+  ],
+  "excluded_or_placeholder_targets": [
+    {
+      "url": "http://example.org/StructureDefinition/ExampleObservation#Observation.value[x]:valueRange",
+      "page": "interactive-cds.md",
+      "line": 113,
+      "reason": "example.org placeholder in sample JSON"
+    },
+    {
+      "url": "http://example.org/StructureDefinition/ExampleObservation#Observation.value[x]:valueRange.low",
+      "page": "interactive-cds.md",
+      "line": 119,
+      "reason": "example.org placeholder in sample JSON"
+    },
+    {
+      "url": "http://example.org/StructureDefinition/ExampleObservation#Observation.value[x]:valueRange.high",
+      "page": "interactive-cds.md",
+      "line": 125,
+      "reason": "example.org placeholder in sample JSON"
+    }
+  ],
+  "url_like_non_destination_tokens": [],
+  "post_check_source_verification": {
+    "checked_at": "2026-10-28T15:18:57+00:00",
+    "unique_urls": 219,
+    "url_set_and_page_associations_unchanged": true,
+    "method": "Re-extracted URLs after diagram-block markup changes. URL set and referencing pages equal the HTTP scan snapshot; no HTTP requests repeated. Original occurrence line numbers remain those of the HTTP scan snapshot."
+  }
+}

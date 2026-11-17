@@ -7,17 +7,11 @@ Note that the levels of knowledge representation are a continuum, with discrete 
 
 This implementation guide utilizes a previously established clinical decision support (CDS) implementation model to move from a narrative clinical guideline to computable content. This model defines four (4) ‘levels’ of knowledge representation:
 
-<details open>
+<div class="modified-content" markdown="1">
 
-<summary>
+{% include cpg-diagram.html src="cpg-model-levels.svg" ratio="1200 / 686" alt="Four ordered rows distinguish L1 narrative, L2 semi-structured, L3 structured, and L4 executable representations. Overlapping bars show concurrent work and review across levels." caption="Figure 1. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139). An ambiguity found during local testing can send clinical and technical reviewers back to the source recommendation. Carry their agreed interpretation through the affected definitions and tests." %}
 
-Figure 1. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Control and Prevention, 2019; Adapted from: Boxwala, AA, et al.. A multi-layered framework for disseminating knowledge for computer-based decision support. J Am Med Inform Assoc 2011(18) i132-i139).
-
-</summary>
-
-<img src="knowledge-levels.png" alt="Knowledge Levels" class="img-responsive img-rounded center-block"/>
-
-</details>
+</div>
 
 
 ### Narrative
@@ -25,7 +19,7 @@ Figure 1. Knowledge Levels with Examples (Michaels, U.S. Centers for Disease Con
 Level 1 (L1) is the clinical guideline in narrative form often in Portable Document Format (PDF), and includes:
 
 *   Clinical Focus
-*   Scope (population attributes from PICOTS, as well as interventions, comparators, outcomes, timing, and setting)
+*   Scope (the population, interventions, comparators, outcomes, timing, and setting, known as PICOTS)
 *   Recommendations (at least in part from PICOTS interventions)
 *   Strength of [Recommendation](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-recommendation) and Quality of [Evidence](documentation-approach-12-08-conceptual-knowledge-architecture-index.html#concept-evidence)
 *   Evidence references (including analysis and evidence summaries)
@@ -82,6 +76,7 @@ Level 4 (L4) is executable software running in a clinical system (e.g., EHR, reg
 *   Adjustment of workflow for site-specific factors
 *   Interpretation of computable content in the site-specific environment (see [Methods of Implementation](documentation-approach-09-methods-of-implementation.html))
 
+
 As will be discussed further in the Agile CPG development approach (see [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html)), these levels of representation may begin to overlap or blur and may not follow an entirely linear or successive progression for sequential development maturation.  Furthermore, tooling capabilities may afford translation across levels of representation and some levels may not be entirely expressed as the tools user interface and internal translation capabilities facilitate traversing these levels.  This will become more evident and described in more detail in the section on the Agile CPG development approach.
 
 <details open>
@@ -95,3 +90,5 @@ Figure 2. Levels of Representation in historical CDS sense and as may be adapted
 <img src="CPG-05.06-01.png" alt="Levels adapted for Agile" class="img-responsive img-rounded center-block"/>
 
 </details>
+
+

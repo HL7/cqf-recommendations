@@ -1,0 +1,3 @@
+Use this operation to instantiate one reusable [activity definition](StructureDefinition-cpg-computableactivity.html) in the supplied context. The definition's resource kind, fixed content, and evaluated dynamic values determine the proposed request resource.
+
+It can support evaluation of an individual activity or be invoked while applying a PlanDefinition. The request is transient; the caller owns the decision to accept and carry out the proposed activity. Use [CPG PlanDefinition `$apply`](OperationDefinition-cpg-plandefinition-apply.html) when applicability and coordination across a plan's actions are needed.

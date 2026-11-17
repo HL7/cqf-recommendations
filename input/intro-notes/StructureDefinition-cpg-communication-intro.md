@@ -1,1 +1,1 @@
-This is an [activity event](profiles.html#activity-profiles) profile
+Use this Communication profile to document a communication in guideline-directed care, including its progress or explicit non-performance where applicable. It connects the occurrence to the original recommendation and can expose it as a case feature. Sender, recipient and timing describe the communication that the record actually represents.

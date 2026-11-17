@@ -1,0 +1,85 @@
+{
+  "height": 390,
+  "title": "Maintain the content and the local implementation",
+  "description": "A versioned content package is adapted into a reviewed local release and evaluated during operation. Observations and changes require impact review across content and dependencies.",
+  "nodes": [
+    {
+      "id": "source",
+      "x": 32,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "knowledge",
+      "label": "Content package",
+      "body": [
+        "Canonical identities",
+        "Versions and dependencies",
+        "Clinical sources and tests"
+      ]
+    },
+    {
+      "id": "local",
+      "x": 358,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "workflow",
+      "label": "Reviewed local release",
+      "body": [
+        "Selected content",
+        "Data and workflow adaptations",
+        "Local validation evidence"
+      ]
+    },
+    {
+      "id": "operate",
+      "x": 684,
+      "y": 105,
+      "w": 284,
+      "h": 170,
+      "kind": "result",
+      "label": "Operation and review",
+      "body": [
+        "Monitor expected behavior",
+        "Investigate changed results",
+        "Review updates and impact"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "source",
+      "to": "local"
+    },
+    {
+      "from": "local",
+      "to": "operate"
+    },
+    {
+      "from": "operate",
+      "to": "source",
+      "fromPort": "bottom",
+      "toPort": "bottom",
+      "via": [
+        [
+          826,
+          305
+        ],
+        [
+          174,
+          305
+        ]
+      ],
+      "dashed": true
+    }
+  ],
+  "notes": [
+    {
+      "x": 32,
+      "y": 350,
+      "w": 936,
+      "text": "The local release retains its source links. Feedback does not automatically revise approved guidance.",
+      "size": 16
+    }
+  ]
+}

@@ -1,1 +1,1 @@
-This is a [domain instance profile](profiles.html#domain-profiles)
+CPGClinicalImpression records a clinician's assessment and reasoning in guideline-related care. Use it when documenting judgment about the patient, diagnoses, or the reasons for following or departing from guidance. It remains a ClinicalImpression record; it is distinct from an automatically inferred feature or a recommendation proposed by a reasoning engine.

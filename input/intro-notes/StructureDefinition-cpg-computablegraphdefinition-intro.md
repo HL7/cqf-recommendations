@@ -1,5 +1,1 @@
-This is a [computable artifact profile](profiles.html#artifact-profiles)
-
-**External Examples:**
-
-*  [ANCSummary](https://build.fhir.org/ig/cqframework/cpg-example-anc/branches/main/GraphDefinition-anc-summary.html) ANCSummary
+This GraphDefinition profile describes a resource graph that can be used when assembling guideline-related information. Use it to publish the starting resource type and traversals for a reusable view, including case-summary definitions. The graph is a definition of relationships to follow, not a patient summary or an executable decision rule.

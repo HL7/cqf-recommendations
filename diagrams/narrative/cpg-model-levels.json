@@ -1,0 +1,9 @@
+{
+  "title": "One guideline across four representation levels",
+  "description": "Four rows show L1 narrative, L2 semi-structured models, L3 shareable computable artifacts, and L4 local executable implementation. An inset of overlapping colored bars shows that development can proceed in parallel and feedback can revise any level. The levels describe representations. Implementation conformance is assessed separately.",
+  "svgSource": "svg/cpg-model-levels.svg",
+  "originals": [
+    "knowledge-levels.png",
+    "CPG-05.06-01.png"
+  ]
+}

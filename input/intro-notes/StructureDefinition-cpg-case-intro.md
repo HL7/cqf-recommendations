@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGCase uses EpisodeOfCare to describe a patient's guideline-related care context and, when recorded, enrollment in a pathway or strategy. Use it to relate encounters, care plans, and assessments to that context. It is not a container for every case feature, and creating proposed requests does not automatically create or persist an enrollment.

@@ -23,6 +23,14 @@ Figure 1. Just as the guideline development group and knowledge engineering team
 
 </details>
 
+<div class="new-content" markdown="1">
+
+Before deployment, identify who approves clinical content, data mappings, workflow, deployment, and subsequent changes. The local decision to use an artifact remains separate from its publisher's approval of the content.
+
+{% include cpg-diagram.html src="cpg-method-governance.svg" ratio="1000 / 665" alt="Local clinical, technical, and operational owners review readiness before an approved local release." %}
+
+</div>
+
 ### Local informatics (knowledge engineering) and implementation
 
 Just as many of the functions and methods of the guideline development group have their local analogues, so does the knowledge engineering and guideline formalization and implementation.
@@ -66,6 +74,7 @@ Furthermore, such a collaboration provides an opportunity to engage and address 
 
 For instance, as data elements and terminologies start could be defined relatively early in the collaborative CPG development process, they may be assessed or even obtained (e.g de-identified data sets from data marts or local clinical registries).  In part, this enables a feasibility assessment on required data elements, and may further provide a real-world data substrate for the knowledge engineering lifecycle process for a CPG.
 
+
 ### Real-world Data to Develop CPGs
 
 Such real-world data can not improve the quality (effectiveness and implementability) of the CPG, it affords the opportunity to greatly accelerate the knowledge engineering process and overall CPG development lifecycle by:
@@ -96,7 +105,6 @@ Figure 3. **Knowledge Implementation concurrent with Agile CPG Development** has
 <img src="CPG-05.05-Agile.png" alt="Knowledge Implementation concurrent with Agile CPG Development" class="img-responsive img-rounded center-block"/>
 
 </details>
-
 
 
 Concurrent development and implementation of CPG’s has significant alignment and synergy with the [Agile CPG Development Approach](documentation-approach-05-06-agile-cpg-development-approach.html), though it provides further opportunities and capabilities to make the approach even more Agile as described above.

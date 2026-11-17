@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGCasePlanSummary is a Composition presenting patient-specific guideline plans and their relevant clinical context. Use it for a view of proposals, associated information, or the current applicability of guidance, with its own document date and authorship. It is separate from the GraphDefinition that describes which information to assemble.

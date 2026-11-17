@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGCaseSummary is a Composition for presenting the patient information relevant to a guideline-scoped case. Use it for a dated, authored view of case features and their context, rather than the reusable definition of that view. Its intended completeness concerns the chosen guideline scope, not the patient's entire medical record.

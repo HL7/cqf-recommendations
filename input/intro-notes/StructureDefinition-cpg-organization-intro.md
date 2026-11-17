@@ -1,1 +1,1 @@
-This is a [domain case/instance profile](profiles.html#domain-profiles)
+CPGOrganization provides the organization record referenced by guideline-related care, teams, or locations. Use it to identify an actual organization participating in the care context. It is administrative reference information, not a definition of clinical eligibility or a statement that the organization is authorized to carry out every activity in a guideline.

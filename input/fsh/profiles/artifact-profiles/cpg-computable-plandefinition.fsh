@@ -17,8 +17,10 @@ Description: "Defines the minimum expectations and behavior for a computable pla
     $cpg-directionOfRecommendation named directionOfRecommendation 0..1 MS and
     $cqf-qualityOfEvidence named qualityOfEvidence 0..1 MS and
     $cpg-rating named rating 0..1 MS and
-    $cqf-applicabilityBehavior named applicabilityBehavior 0..1 MS
+    $cqf-applicabilityBehavior named applicabilityBehavior 0..1 MS and
+    $cpg-preferenceBehavior named preferenceBehavior 0..1 MS
   * extension[applicabilityBehavior] ^comment = "For an action with child actions, indicates whether the child actions are evaluated independently (all), or evaluated in order with the first applicable action being performed (any)."
+  * extension[preferenceBehavior] ^comment = "How the CPG regards this action once it is included: preferred, recommended, neutral, or not recommended. Applicability is expressed through a condition of kind applicability, not through preference. The $apply operation should copy the value to the corresponding RequestGroup action."
   * prefix MS
   * title MS
   * description MS

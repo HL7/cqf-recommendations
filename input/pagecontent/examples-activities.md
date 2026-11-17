@@ -1,25 +1,12 @@
-These examples illustrate general implementation patterns for activity processing
-and recommendations related to performing activities.
+Use these examples to trace how recommendations to perform or not perform activities are represented and processed, from the proposal through acceptance or rejection to completion or explicit non-performance. Each section links to the related resources and scenario instances; the patterns are explained in [Activity Flow](activityflow.html).
 
-NOTE: The recommendations here are dramatically simplified to illustrate the general
-pattern for positive and negative recommendations, with the ability for users to reject
-the recommendation, and flexibility in how the recommendation is achieved.
+These examples are deliberately simplified technical demonstrations, not complete or production-ready clinical guidance. They show positive and negative recommendations, rejection, and flexibility in how an activity may be achieved.
 
-Specifically:
-* There is no terminology, any request/event on any topic will do
-* There is no timing, any request/event will do at any time
-* There is no reference to participants other than the patient
-* There is no relationship to a setting
-* There is no relationship to an encounter or episode
-* There is no relationship to a care plan
-
-These simplifications allow the example to focus exclusively on the pattern for
-recommending and for accepting/rejecting the proposal, as well as documenting
-the completion, or explicit non-performance of the activity.
+Each scenario supplies enough codes, timing, and patient context to illustrate the activity pattern. An implementation needs criteria and terminology appropriate to the intended activity and must determine which participants, care settings, encounters, and plans are relevant.
 
 These examples make use of the activity processing semantics defined in the [Activity Flow](activityflow.html) topic.
 
-### Send a message
+## Send a message
 
 This examples illustrates a recommendation to send a message.
 
@@ -43,7 +30,7 @@ This examples illustrates a recommendation to send a message.
 * sm-scenario7   * [CommunicationRequest-sm-scenario7](CommunicationRequest-sm-scenario7.html)
 * sm-scenario7   * [Patient-sm-scenario7](Patient-sm-scenario7-patient.html)
 
-### Do not send a message
+## Do not send a message
 
 This example illustrates a recommendation not to send a message.
 
@@ -73,7 +60,7 @@ This example illustrates a recommendation not to send a message.
 * dnsm-scenario8 * [Patient-dnsm-scenario8](Patient-dnsm-scenario8-patient.html)
 * dnsm-scenario9 * [Patient-dnsm-scenario9](Patient-dnsm-scenario9-patient.html)
 
-### Collect information
+## Collect information
 
 This example illustrates a recommendation to collect specific information using a questionnaire.
 
@@ -99,7 +86,7 @@ This example illustrates a recommendation to collect specific information using 
 * ci-scenario7   * [Task-event-ci-scenario7](Task-event-ci-scenario7.html)
 * ci-scenario7   * [Task-request-ci-scenario7](Task-request-ci-scenario7.html)
 
-### Do not collect information
+## Do not collect information
 
 This example illustrates a recommendation not to collect specific information using a questionnaire.
 
@@ -131,7 +118,7 @@ This example illustrates a recommendation not to collect specific information us
 * dnci-scenario8 * [Task-event-dnci-scenario8](Task-event-dnci-scenario8.html)
 * dnci-scenario9 * [Patient-dnci-scenario9](Patient-dnci-scenario9-patient.html)
 
-### Order a medication
+## Order a medication
 
 This example illustrates a recommendation to order a medication.
 
@@ -155,7 +142,7 @@ This example illustrates a recommendation to order a medication.
 * om-scenario7   * [MedicationRequest-om-scenario7-mr](MedicationRequest-om-scenario7-mr.html)
 * om-scenario7   * [Patient-om-scenario7](Patient-om-scenario7-patient.html)
 
-### Dispense a medication
+## Dispense a medication
 
 This example illustrates a recommendation to dispense a en existing medication prescription.
 
@@ -186,7 +173,7 @@ This example illustrates a recommendation to dispense a en existing medication p
 * dm-scenario7   * [Patient-dm-scenario7](Patient-dm-scenario7-patient.html)
 * dm-scenario7   * [Task-request-dm-scenario7](Task-request-dm-scenario7.html)
 
-### Administer a medication
+## Administer a medication
 
 This example illustrates a recommendation to administer an existing medication order.
 
@@ -217,7 +204,7 @@ This example illustrates a recommendation to administer an existing medication o
 * am-scenario7   * [Patient-am-scenario7](Patient-am-scenario7-patient.html)
 * am-scenario7   * [Task-request-am-scenario7](Task-request-am-scenario7.html)
 
-### Document a medication
+## Document a medication
 
 This example illustrates a recommendation to document an existing medication order.
 
@@ -248,19 +235,73 @@ This example illustrates a recommendation to document an existing medication ord
 * dcm-scenario7  * [Patient-dcm-scenario7](Patient-dcm-scenario7-patient.html)
 * dcm-scenario7  * [Task-request-dcm-scenario7](Task-request-dcm-scenario7.html)
 
-### Stop a medication order
+## Stop a medication order
 
 This example illustrates a recommendation to stop an existing medication order
 
-### Hold a medication order
+<div class="new-content" markdown="1">
+
+* [StopMedication Library](Library-stopmedication-library.html)
+* [StopMedication ActivityDefinition](ActivityDefinition-activity-example-stopmedication-ad.html)
+* [StopMedication PlanDefinition](PlanDefinition-activity-example-stopmedication-pd.html)
+
+* stp-scenario1  * [MedicationRequest-stp-scenario1](MedicationRequest-stp-scenario1.html)
+* stp-scenario1  * [Patient-stp-scenario1](Patient-stp-scenario1-patient.html)
+* stp-scenario2  * [MedicationRequest-stp-scenario2](MedicationRequest-stp-scenario2.html)
+* stp-scenario2  * [Patient-stp-scenario2](Patient-stp-scenario2-patient.html)
+* stp-scenario2  * [Task-request-stp-scenario2](Task-stp-scenario2-request.html)
+* stp-scenario3  * [MedicationRequest-stp-scenario3](MedicationRequest-stp-scenario3.html)
+* stp-scenario3  * [Patient-stp-scenario3](Patient-stp-scenario3-patient.html)
+* stp-scenario3  * [Task-request-stp-scenario3](Task-stp-scenario3-request.html)
+* stp-scenario4  * [Patient-stp-scenario4](Patient-stp-scenario4-patient.html)
+
+</div>
+
+## Hold a medication order
 
 This example illustrates a recommendation to hold an existing medication order
 
-### Resume a medication order
+<div class="new-content" markdown="1">
+
+* [HoldMedication Library](Library-holdmedication-library.html)
+* [HoldMedication ActivityDefinition](ActivityDefinition-activity-example-holdmedication-ad.html)
+* [HoldMedication PlanDefinition](PlanDefinition-activity-example-holdmedication-pd.html)
+
+* hol-scenario1  * [MedicationRequest-hol-scenario1](MedicationRequest-hol-scenario1.html)
+* hol-scenario1  * [Patient-hol-scenario1](Patient-hol-scenario1-patient.html)
+* hol-scenario2  * [MedicationRequest-hol-scenario2](MedicationRequest-hol-scenario2.html)
+* hol-scenario2  * [Patient-hol-scenario2](Patient-hol-scenario2-patient.html)
+* hol-scenario2  * [Task-request-hol-scenario2](Task-hol-scenario2-request.html)
+* hol-scenario3  * [MedicationRequest-hol-scenario3](MedicationRequest-hol-scenario3.html)
+* hol-scenario3  * [Patient-hol-scenario3](Patient-hol-scenario3-patient.html)
+* hol-scenario3  * [Task-request-hol-scenario3](Task-hol-scenario3-request.html)
+* hol-scenario4  * [Patient-hol-scenario4](Patient-hol-scenario4-patient.html)
+
+</div>
+
+## Resume a medication order
 
 This example illustrates a recommendation to resume a medication order on hold
 
-### Recommend an immunization
+<div class="new-content" markdown="1">
+
+* [ResumeMedication Library](Library-resumemedication-library.html)
+* [ResumeMedication ActivityDefinition](ActivityDefinition-activity-example-resumemedication-ad.html)
+* [ResumeMedication PlanDefinition](PlanDefinition-activity-example-resumemedication-pd.html)
+
+* res-scenario1  * [MedicationRequest-res-scenario1](MedicationRequest-res-scenario1.html)
+* res-scenario1  * [Patient-res-scenario1](Patient-res-scenario1-patient.html)
+* res-scenario2  * [MedicationRequest-res-scenario2](MedicationRequest-res-scenario2.html)
+* res-scenario2  * [Patient-res-scenario2](Patient-res-scenario2-patient.html)
+* res-scenario2  * [Task-request-res-scenario2](Task-res-scenario2-request.html)
+* res-scenario3  * [MedicationRequest-res-scenario3](MedicationRequest-res-scenario3.html)
+* res-scenario3  * [Patient-res-scenario3](Patient-res-scenario3-patient.html)
+* res-scenario3  * [Task-request-res-scenario3](Task-res-scenario3-request.html)
+* res-scenario4  * [Patient-res-scenario4](Patient-res-scenario4-patient.html)
+
+</div>
+
+## Recommend an immunization
 
 This example illustrates a recommendation to provide an immunization.
 
@@ -274,7 +315,7 @@ This example illustrates a recommendation to provide an immunization.
 * ri-scenario4   * [Immunization-ri-scenario4](Immunization-ri-scenario4.html)
 * ri-scenario4   * [Patient-ri-scenario4](Patient-ri-scenario4-patient.html)
 
-### Order a service
+## Order a service
 
 This example illustrates a recommendation to order a service.
 
@@ -288,7 +329,7 @@ This example illustrates a recommendation to order a service.
 * os-scenario4   * [Patient-os-scenario4](Patient-os-scenario4-patient.html)
 * os-scenario4   * [Procedure-os-scenario4](Procedure-os-scenario4.html)
 
-### Enroll a patient
+## Enroll a patient
 
 This example illustrates a recommendation to enroll a patient.
 
@@ -305,7 +346,7 @@ This example illustrates a recommendation to enroll a patient.
 * ep-scenario4   * [Patient-ep-scenario4](Patient-ep-scenario4-patient.html)
 * ep-scenario4   * [Task-event-ep-scenario4](Task-event-ep-scenario4.html)
 
-### Generate a report
+## Generate a report
 
 This example illustrates a recommendation to generate a report.
 
@@ -320,7 +361,7 @@ This example illustrates a recommendation to generate a report.
 * gr-scenario4   * [Patient-gr-scenario4](Patient-gr-scenario4-patient.html)
 * gr-scenario4   * [Task-event-gr-scenario4](Task-event-gr-scenario4.html)
 
-### Propose a diagnosis
+## Propose a diagnosis
 
 This example illustrates a recommendation to propose a diagnosis.
 
@@ -335,7 +376,7 @@ This example illustrates a recommendation to propose a diagnosis.
 * pd-scenario4   * [Patient-pd-scenario4](Patient-pd-scenario4-patient.html)
 * pd-scenario4   * [Task-event-pd-scenario4](Task-event-pd-scenario4.html)
 
-### Record a detected issue
+## Record a detected issue
 
 This example illustrates a recommendation to record a detected issue.
 
@@ -350,7 +391,7 @@ This example illustrates a recommendation to record a detected issue.
 * di-scenario4   * [Patient-di-scenario4](Patient-di-scenario4-patient.html)
 * di-scenario4   * [Task-event-di-scenario4](Task-event-di-scenario4.html)
 
-### Record an inference
+## Record an inference
 
 This example illustrates a recommendation to record an inference.
 
@@ -365,7 +406,7 @@ This example illustrates a recommendation to record an inference.
 * inf-scenario4  * [Patient-inf-scenario4](Patient-inf-scenario4-patient.html)
 * inf-scenario4  * [Task-event-inf-scenario4](Task-event-inf-scenario4.html)
 
-### Report a flag
+## Report a flag
 
 This example illustrates a recommendation to report a flag.
 

@@ -1,0 +1,1 @@
+Use this ActivityDefinition profile to resume an activity currently on hold in reusable guideline content. It specifies the request type and profile to construct for a patient, together with the proposed activity’s intent. A recommendation definition can reference it; the patient-specific request and any documented clinical event are separate resources.
