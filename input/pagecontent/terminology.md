@@ -10,8 +10,8 @@ This page provides overview documentation for the use of code systems and value 
 
 For indexes of terminologies defined in this implementation guide, see the following:
 
-*   **[Code System Index](artifacts.html#codesystem-index)**
-*   **[Value Set Index](artifacts.html#valueset-index)**
+*   **[Code System Index](artifacts.html)**
+*   **[Value Set Index](artifacts.html)**
 *   **[Example Code System Index](examples.html#codesystem-index)**
 *   **[Example Value Set Index](examples.html#valueset-index)**
 

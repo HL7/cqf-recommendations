@@ -1,0 +1,82 @@
+<!-- menu.xml: maintained by hand (SUSHI-generated menus use href="#" on dropdowns, which the IG Publisher rejects).
+     The Approach and Methodology dropdowns link to their overviews and main sections. -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="approach.html" class="dropdown-toggle">Approach
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="approach.html">Overview</a>
+      </li>
+      <li>
+        <a href="documentation-approach-12-conceptual-knowledge-architecture.html">Conceptual Knowledge Architecture</a>
+      </li>
+      <li>
+        <a href="documentation-approach-02-04-knowledge-representation.html">Knowledge Representation</a>
+      </li>
+      <li>
+        <a href="documentation-approach-02-05-knowledge-implementation.html">Implementing Computable Knowledge</a>
+      </li>
+      <li>
+        <a href="documentation-approach-04-guideline-development.html">Guideline Development</a>
+      </li>
+      <li>
+        <a href="documentation-approach-05-knowledge-engineering-overview.html">Knowledge Engineering</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="methodology.html" class="dropdown-toggle">Methodology
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="methodology.html">Overview</a>
+      </li>
+      <li>
+        <a href="methodology-select.html">Select</a>
+      </li>
+      <li>
+        <a href="methodology-represent.html">Represent</a>
+      </li>
+      <li>
+        <a href="methodology-translate.html">Translate</a>
+      </li>
+      <li>
+        <a href="methodology-validate.html">Validate</a>
+      </li>
+      <li>
+        <a href="methodology-package.html">Package</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="libraries.html">Libraries</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="glossary.html">Glossary</a>
+  </li>
+  <li>
+    <a href="changes.html">Changes</a>
+  </li>
+</ul>

@@ -27,7 +27,7 @@ The project is specifically seeking feedback on the following questions:
 
 The Clinical Practice Guidelines (CPG) Implementation Guide explains how to represent a clinical guideline as reusable FHIR knowledge artifacts and use those artifacts in clinical systems. Start with the recommendation's clinical intent, express its data and decision logic, and validate how the resulting guidance works in a particular care setting.
 
-This guide is for guideline authors, knowledge engineers, software implementors, clinical reviewers, and the tools and agents assisting them. It uses **FHIR R4 (4.0.1)**. The [profiles](profiles.html), [operations](artifacts.html#operationdefinition-index), and [conformance statements](documentation-conformance.html) provide the formal contracts; the narrative explains how to apply them.
+This guide is for guideline authors, knowledge engineers, software implementors, clinical reviewers, and the tools and agents assisting them. It uses **FHIR R4 (4.0.1)**. The [profiles](profiles.html), [operations](artifacts.html), and [conformance statements](documentation-conformance.html) provide the formal contracts; the narrative explains how to apply them.
 
 <div class="cpg-home-task" markdown="1">
 <a id="clinical-guidelines-implementation-guide"></a>

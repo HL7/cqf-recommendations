@@ -8,7 +8,7 @@ Profiles express the structure and data expectations that make guideline content
 | Content-specific | Data expected by a particular guideline | Mapping real data to the inputs its logic needs |
 {:.grid}
 
-For the complete listings, use the [profile index](artifacts.html#profile-index), [extension index](artifacts.html#extension-index), and [example profile index](examples.html#profile-index). A conceptual name in the narrative is not necessarily the name of a profile; the links here identify the formal definitions.
+For the complete listings, use the [profile index](artifacts.html), [extension index](artifacts.html), and [example profile index](examples.html#profile-index). A conceptual name in the narrative is not necessarily the name of a profile; the links here identify the formal definitions.
 
 ### Artifact profiles
 

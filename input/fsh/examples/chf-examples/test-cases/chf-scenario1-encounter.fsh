@@ -4,7 +4,7 @@ Usage: #example
 Description: "CHF Scenario One"
 * status = #in-progress
 * class = $v3-ActCode#IMP "inpatient encounter"
-* type = $sct#183807002 "Inpatient stay 9 days"
+* type = $sct#32485007 "Hospital admission"
 * priority = $sct#394849002 "High priority"
 * subject = Reference(chf-scenario1-patient)
 * episodeOfCare = Reference(chf-scenario1-eoc)

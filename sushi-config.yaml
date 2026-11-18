@@ -160,7 +160,6 @@ pages:
     title: Profile Definitions and Documentation
   terminology.md:
   libraries.md:
-  artifacts.md:
   examples.md:
     examples-activities.md:
       title: Activity Examples
@@ -208,43 +207,18 @@ parameters:
   apply-wg: true
   path-history: http://hl7.org/fhir/uv/cpg/history.html
   path-binary: ./input/cql
-  path-pages: ./input/redirects
   path-resource:
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
   auto-oid-root: 2.16.840.1.113883.4.642.40.48
-  pin-canonicals: pin-all
-  path-expansion-params: resources/Parameters-manifest.json
+  pin-canonicals: pin-multiples
+  path-expansion-params: ../../input/resources/Parameters-manifest.json
   pin-manifest: manifest
   requirements-category-vs: http://hl7.org/fhir/uv/cpg/ValueSet/cpg-conformance-category-vs
   toggle-changes: true
 
 #
-# The Approach and Methodology dropdowns link to their overviews and main sections.
-menu:
-  Home: index.html
-  Approach:
-    Overview: approach.html
-    Conceptual Knowledge Architecture: documentation-approach-12-conceptual-knowledge-architecture.html
-    Knowledge Representation: documentation-approach-02-04-knowledge-representation.html
-    Implementing Computable Knowledge: documentation-approach-02-05-knowledge-implementation.html
-    Guideline Development: documentation-approach-04-guideline-development.html
-    Knowledge Engineering: documentation-approach-05-knowledge-engineering-overview.html
-  Methodology:
-    Overview: methodology.html
-    Select: methodology-select.html
-    Represent: methodology-represent.html
-    Translate: methodology-translate.html
-    Validate: methodology-validate.html
-    Package: methodology-package.html
-  Profiles: profiles.html
-  Terminology: terminology.html
-  Libraries: libraries.html
-  Artifacts: artifacts.html
-  Examples: examples.html
-  Downloads: downloads.html
-  Glossary: glossary.html
-  Changes: changes.html
+# The menu is maintained in input/includes/menu.xml.
 
 #
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
