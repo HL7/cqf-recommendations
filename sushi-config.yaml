@@ -213,8 +213,11 @@ parameters:
     - ./input/vocabulary/codesystem
     - ./input/vocabulary/valueset
   auto-oid-root: 2.16.840.1.113883.4.642.40.48
-  pin-canonicals: pin-multiples
+  pin-canonicals: pin-all
+  path-expansion-params: resources/Parameters-manifest.json
+  pin-manifest: manifest
   requirements-category-vs: http://hl7.org/fhir/uv/cpg/ValueSet/cpg-conformance-category-vs
+  toggle-changes: true
 
 #
 # The Approach and Methodology dropdowns link to their overviews and main sections.
@@ -296,6 +299,10 @@ menu:
 #
 # NOTE: Added these as overrides because the default SUSHI compiler does not mark them as examples
 resources:
+  Parameters/manifest:
+    name: Input Expansion Parameters
+    description: The input expansion parameters resource for this implementation guide, specifying SNOMED Edition and version. This resource will be contained within the published implementation guide with all pinned references.
+    exampleBoolean: false
   StructureDefinition/chf-bodyweight:
     name: CHF Body Weight
     description: This profile defines how to represent body weight observations in FHIR using a standard LOINC code and UCUM units of measure (in kg).
