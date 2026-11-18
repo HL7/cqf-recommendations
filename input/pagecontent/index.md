@@ -4,6 +4,27 @@
 
 {% include cpg-horizontal-table-style.html %}
 
+<div class="note-to-balloters" markdown="1">
+
+### Note to Balloters
+
+This is the STU 3 ballot (version 3.0.0-ballot) of the Clinical Practice Guidelines implementation guide. It updates the STU 2 release (version 2.0.0), applying the resolutions of comments received since that release, and adding new capabilities. The [change log](changes.html#stu-3-ballot-version-300-ballot) lists every change, organized by its impact on implementations. Within the narrative pages, new and modified content is highlighted, and the highlighting can be turned on or off using the change display toggle at the top of each page.
+
+The principal changes in this ballot are:
+
+* **Non-compatible changes:** The SDC `itemMedia` and `itemAnswerMedia` extensions replace the CPG image extensions in [CPGComputableQuestionnaire](StructureDefinition-cpg-computablequestionnaire.html), and unused parameters are removed from [PlanDefinition/$apply](OperationDefinition-cpg-plandefinition-apply.html) and [ActivityDefinition/$apply](OperationDefinition-cpg-activitydefinition-apply.html).
+* **Conformance:** Formal [conformance statements](documentation-conformance.html#conformance-statements) throughout the guide, and system [Actors](actors.html) with service and client pairs for each level of enablement.
+* **New capabilities:** [Interactive clinical decision support](interactive-cds.html), the [GraphDefinition/$apply](OperationDefinition-cpg-graphdefinition-apply.html) operation for case summaries, coded results for compliance and adherence [metrics](methodology-translate.html#metrics), and extensions for applicability behavior, preference behavior, and pertinence.
+* **Dependencies:** New dependencies on [Structured Data Capture](http://hl7.org/fhir/uv/sdc) 4.0.0, the FHIR Extensions Pack 5.4.0, and the R5-for-R4 cross-version extensions package.
+* **Narrative:** A reorganized and revised [Approach](approach.html) and [Methodology](methodology.html), with redrawn figures, worked examples from the [CHF example](examples-chf.html), and a consolidated [bibliography](documentation-approach-cds-implementation-evidence.html).
+
+The project is specifically seeking feedback on the following questions:
+
+1. Are the [actor pairs for each level of enablement](actors.html#actors-by-level-of-enablement) appropriate, including their names, scope, and the interactions each pair is expected to support?
+2. Are the [compliance and adherence result codes](methodology-translate.html#metrics) for metrics sufficient to report the results of evaluating a recommendation or strategy? Result codes for metrics scoped to pathways and goals are expected in a future version.
+
+</div>
+
 The Clinical Practice Guidelines (CPG) Implementation Guide explains how to represent a clinical guideline as reusable FHIR knowledge artifacts and use those artifacts in clinical systems. Start with the recommendation's clinical intent, express its data and decision logic, and validate how the resulting guidance works in a particular care setting.
 
 This guide is for guideline authors, knowledge engineers, software implementors, clinical reviewers, and the tools and agents assisting them. It uses **FHIR R4 (4.0.1)**. The [profiles](profiles.html), [operations](artifacts.html#operationdefinition-index), and [conformance statements](documentation-conformance.html) provide the formal contracts; the narrative explains how to apply them.

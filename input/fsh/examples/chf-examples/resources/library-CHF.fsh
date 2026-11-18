@@ -177,7 +177,7 @@ Title: "Congestive Heart Failure Logic"
   * profile = Canonical(Observation)
   * codeFilter
     * path = "code"
-    * code = $loinc#39802-4 "Creatinine in dialysis fluid/Creatinine in serum or plasma"
+    * code = $loinc#2160-0 "Creatinine [Mass/volume] in Serum or Plasma"
 * dataRequirement[+]
   * type = #Observation
   * profile = Canonical(Observation)

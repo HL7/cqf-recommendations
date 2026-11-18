@@ -19,7 +19,7 @@ code "Net intake/output": 'net-intake-output' from "CHFCodes"
 code "Jugular venous pressure": 'jvp' from "CHFCodes"
 code "Oxygen saturation": '2708-6' from "LOINC"
 code "Potassium goal": '86919-8' from "LOINC" display 'Potassium goal [Moles/volume] Serum or Plasma' // meq/L
-code "Creatinine in serum": '39802-4' from "LOINC" display 'Creatinine in dialysis fluid/Creatinine in serum or plasma' // NOTE: example shows mg/dL, but no LOINC code has those units?
+code "Creatinine in serum": '2160-0' from "LOINC" display 'Creatinine [Mass/volume] in Serum or Plasma'
 code "eGFR result": 'egfr' from "CHFCodes" // NOTE: Too many to pick from, needs clinical/terminological SME input, in mol/mm/m2
 
 code "Active condition": 'active' from "Condition Clinical Status Code"

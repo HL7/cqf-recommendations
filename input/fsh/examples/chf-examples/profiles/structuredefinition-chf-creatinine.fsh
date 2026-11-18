@@ -22,7 +22,7 @@ Description: "This profile defines how to represent creatinine observations in F
     * system = $loinc (exactly)
     * code 1..1
     * code only code
-    * code = #39802-4 (exactly)
+    * code = #2160-0 (exactly)
 * valueQuantity
   * value 1..1 MS
   * value only decimal

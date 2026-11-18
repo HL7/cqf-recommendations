@@ -9,7 +9,7 @@ Description: "CHF Scenario One"
   * url = Canonical(cpg-caseFeatureType)
   * valueCode = #asserted
 * status = #final
-* code = $loinc#39802-4
+* code = $loinc#2160-0
 * effectiveDateTime = "2019-02-03T09:40:00Z"
 * issued = "2019-02-03T09:40:00Z"
 * subject = Reference(chf-scenario1-patient)
