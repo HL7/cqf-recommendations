@@ -3,7 +3,7 @@ Id: cpg-common-persona-cs
 Title: "CPG Common Personas Code System"
 Description: "Personas are the types of participants in the recommendations of a healthcare guideline, including practitioners, patients, nurses, community health workers, and care partners. The personas identified in this code system are defined based on the WHO recommendation for [Classifying health workers](https://www.who.int/publications/m/item/classifying-health-workers). This recommendation uses codes from the [International Standard Classification for Occupations](https://www.ilo.org/publications/international-standard-classification-occupations-2008-isco-08-structure) but defines several additional categories of health workers. In addition, the codes in that recommendation are focused on health workers, so codes for patient and care partner personas need to be considered as well. Where a code from the ISCO exists, it is used. Where a WHO recommended health worker category is used, a code is constructed beginning with a W. Where a code is introduced by this implementation guide, it is constructed beginning with a C. Note that the content is incomplete, pending a computable representation of the WHO recommendations."
 * insert CodeSystemMetadata(cpg-common-persona)
-* insert CodeSystemDates("2019-05-08", "2019-05-08", "2019-08-02")
+* insert CodeSystemDates("2019-05-08", "2019-08-02")
 * ^extension[+].url = $codesystem-sourceReference
 * ^extension[=].valueUri = "https://www.ilo.org/publications/international-standard-classification-occupations-2008-isco-08-structure"
 * ^extension[+].url = $codesystem-sourceReference

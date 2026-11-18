@@ -331,6 +331,7 @@
 <artifact id="Library/generatereport-library" key="Library-generatereport-library" name="Generate Report Library"/>
 <artifact id="CarePlan/chf-scenario1-careplan" key="CarePlan-chf-scenario1-careplan" name="Heart Failure Care Pathway"/>
 <artifact id="Library/holdmedication-library" key="Library-holdmedication-library" name="Hold Medication Library"/>
+<artifact id="Parameters/manifest" key="Parameters-manifest" name="Input Expansion Parameters"/>
 <artifact deprecated="true" id="CodeSystem/knowledge-capability" key="CodeSystem-knowledge-capability" name="Knowledge Capability Codes"/>
 <artifact deprecated="true" id="ValueSet/knowledge-capability" key="ValueSet-knowledge-capability" name="Knowledge Capability Values"/>
 <artifact deprecated="true" id="CodeSystem/knowledge-representation-level" key="CodeSystem-knowledge-representation-level" name="Knowledge Representation Level Codes"/>
@@ -668,7 +669,7 @@
 <page key="documentation-approach-04-04-analysis-of-evidence-recommendations-reporting" name="Analysis of Evidence, Recommendations, and Reporting"/>
 <page key="approach" name="Approach"/>
 <page deprecated="true" key="packaging" name="Artifact Packaging"/>
-<page key="artifacts" name="Artifacts"/>
+<page key="artifacts" name="Artifacts Summary"/>
 <page key="documentation-approach-cds-implementation-evidence" name="CDS Literature and Bibliography"/>
 <page key="index" name="CPG Home"/>
 <page key="documentation-approach-12-05-cpg-careplan" name="Care Plan"/>

@@ -55,11 +55,9 @@ RuleSet: PlanDefinitionEnabledExtension
   * url = Canonical(cpg-enabled)
   * valueBoolean = true
 
-RuleSet: CodeSystemDates(approvalDate, effectiveDate, lastReviewDate )
+RuleSet: CodeSystemDates(approvalDate, lastReviewDate )
 * ^extension[+].url = $resource-approvalDate
 * ^extension[=].valueDate = {approvalDate}
-* ^extension[+].url = $codesystem-effectiveDate
-* ^extension[=].valueDate = {effectiveDate}
 * ^extension[+].url = $resource-lastReviewDate
 * ^extension[=].valueDate = {lastReviewDate}
 

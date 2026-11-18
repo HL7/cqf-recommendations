@@ -412,7 +412,7 @@ WARNING: ImplementationGuide/chf-ig: ImplementationGuide: HL7 Implementation Gui
 %PlanDefinition-activity-example-sendmessage-pd.json: Artifact library could not be found so no data requirements were inferred.
 %PlanDefinition-activity-example-stopmedication-pd.json: Artifact library could not be found so no data requirements were inferred.
 
-# These are citations of external web resources (evidence sources, classifications, and guideline documents), not FHIR canonicals, so the validator cannot resolve them
+# These are citations of external web resources (evidence sources, classifications, and guideline documents), not FHIR canonicals, so the validator does not resolve them
 WARNING: ActivityDefinition/cc-cpg-activity-referral-nephrology: ActivityDefinition.relatedArtifact[0].url: No definition could be found for URL value 'https://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325'
 WARNING: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[6].value.ofType(uri): No definition could be found for URL value 'https://www.ilo.org/publications/international-standard-classification-occupations-2008-isco-08-structure'
 WARNING: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[7].value.ofType(uri): No definition could be found for URL value 'https://www.who.int/publications/m/item/classifying-health-workers'
@@ -490,7 +490,7 @@ INFORMATION: ActorDefinition/cpg-service: ActorDefinition.jurisdiction[0]: Refer
 INFORMATION: ActorDefinition/cpg-summary-client: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 INFORMATION: ActorDefinition/cpg-summary-service: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 
-# These code systems are specific to this guide; their move to THO will be considered with TSMG during publication
+# These code systems are specific to this guide and at maturity 2; they will likely not move to THO, but we are gathering implementation experience to consider it
 INFORMATION: CodeSystem/cpg-conformance-category-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/cpg-measure-type-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/cpg-metric-result-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
@@ -512,13 +512,13 @@ INFORMATION: ServiceRequest/chf-scenario1-egfr-request: ServiceRequest.code: Ref
 INFORMATION: Questionnaire/cpg-common-patient-profile: Questionnaire: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
 INFORMATION: Questionnaire/cpg-common-resolve-patient-match: Questionnaire: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
 
-# These extensions are retained in this version for compatibility with existing content; replacement will be considered in a future version
-INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[4]: The extension http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate|5.4.0 is deprecated with the note: 'Replaced by the extension [[[http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod]]] prior to R5, and the element [[[CodeSystem.effectivePeriod]]] in R5'
-INFORMATION: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[6]: The extension http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference|5.4.0 is deprecated with the note: 'This extension has been deprecated as it is poorly defined and does not appear to make sense in the context of a codesystem'
+# Inherited depracated extension from the base profile
 INFORMATION: StructureDefinition/chf-bodyweight-change: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+
+# These extensions are retained in this version for compatibility with existing content; replacement will be considered in a future version
 INFORMATION: StructureDefinition/cpg-communicationrequest: CommunicationRequest.extension: The extension http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical|5.4.0 is deprecated with the note: 'Replaced by [[[http://hl7.org/fhir/StructureDefinition/workflow-generatedFrom]]], [[[http://hl7.org/fhir/StructureDefinition/workflow-compliesWith]]] or [[[http://hl7.org/fhir/StructureDefinition/workflow-adheresTo]]]'
 
-# Reviewed: the measure type property refers to the HL7 measure type code system, which the validator does not resolve as a property definition
+# Reviewed: the measure type property uses the HL7 measure type code system to specify parent types for the codes introduced by this IG
 INFORMATION: CodeSystem/cpg-measure-type-cs: CodeSystem.property[0]: The property uri 'http://terminology.hl7.org/CodeSystem/measure-type' is not known, so the property values can not be validated fully
 
 # Reviewed: the pattern is intended to apply to every repetition of the element
