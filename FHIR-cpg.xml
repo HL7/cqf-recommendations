@@ -4,7 +4,7 @@
 <version code="3.0.0-ballot" url="http://hl7.org/fhir/uv/cpg/3.0.0-202701-ballot"/>
 <version code="2.0.0" url="http://hl7.org/fhir/uv/cpg/STU2"/>
 <version code="2.0.0-ballot" deprecated="true" url="http://hl7.org/fhir/uv/cpg/2024Jan"/>
-<version code="1.0.0" url="http://hl7.org/fhir/uv/cpg/STU1"/>
+<version code="1.0.0" deprecated="true" url="http://hl7.org/fhir/uv/cpg/STU1"/>
 <version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/cpg/2019Sep"/>
 <version code="0.1" deprecated="true" url="http://hl7.org/fhir/uv/cpg/2019Sep"/>
 <artifactPageExtension value="-definitions"/>
