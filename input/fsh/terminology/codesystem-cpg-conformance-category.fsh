@@ -3,6 +3,8 @@ Id: cpg-conformance-category-cs
 Title: "CPG Conformance Category Code System"
 Description: "Categories used to group the conformance statements of this implementation guide."
 * insert CodeSystemMetadata(cpg-conformance-category)
+* ^extension[+].url = $structuredefinition-fmm
+* ^extension[=].valueInteger = 2
 * #artifact "Knowledge Artifact" "Requirements on the structure and profiles of knowledge artifacts, such as plan definitions, activity definitions, and case feature definitions."
 * #recommendation "Recommendation" "Requirements on how recommendations, strategies, and pathways, and their supporting information, are represented."
 * #activity "Activity" "Requirements on how proposed and performed activities are represented."

@@ -3,6 +3,8 @@ Id: cpg-metric-result-cs
 Title: "CPG Metric Result Code System"
 Description: "The result of evaluating a compliance or adherence metric for a patient. Codes are organized in an is-a hierarchy, so a query for a parent code also returns its children. One code is reported per evaluation."
 * insert KnowledgeArtifactExtensionsMeta
+* ^extension[+].url = $structuredefinition-fmm
+* ^extension[=].valueInteger = 2
 * ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-metric-result-cs"
 * ^experimental = false
 * ^caseSensitive = true

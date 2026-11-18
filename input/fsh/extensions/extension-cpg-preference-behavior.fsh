@@ -7,6 +7,8 @@ Conveys the CPG's stance or preference disposition toward a particular option: s
 Authored on PlanDefinition.action to convey the CPG's intended stance for an action at design time, and realized on the corresponding RequestGroup.action by the $apply operation. Applicability is expressed through an action condition of kind `applicability`, not through this extension.
 """
 * insert StructureDefinitionMetadata(cpg-preferenceBehavior)
+* ^extension[+].url = $structuredefinition-fmm
+* ^extension[=].valueInteger = 2
 * insert ExtensionContext(PlanDefinition.action)
 * insert ExtensionContext(RequestGroup.action)
 * . ^comment = "Applicability determines whether an action is included at all; preference describes how the CPG regards the action once included. Preference behavior SHALL NOT be used to express or override applicability. A `not-recommended` preference is distinct from a recommendation against an activity (see the cpg-directionOfRecommendation extension) and from a proposal not to perform it (`doNotPerform`). The value may be computed or overridden at runtime through a `dynamicValue`."

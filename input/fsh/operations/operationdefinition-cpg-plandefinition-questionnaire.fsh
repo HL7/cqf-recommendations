@@ -6,6 +6,7 @@ Description: """
   Generates a Questionnaire instance based on a specified PlanDefinition, creating questionnaire group items for each data requirement (StructureDefinition) referenced by action.input. A child questionnaire item is generated for each of the StructureDefinition elements.
 """
 * insert OperationDefinitionMetadata(cpg-planDefinition-questionnaire)
+* insert OperationExtensions(2)
 * name = "CPGPlanDefinitionQuestionnaire"
 * experimental = false
 * code = #questionnaire

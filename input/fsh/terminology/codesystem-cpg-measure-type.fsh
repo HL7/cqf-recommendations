@@ -3,6 +3,8 @@ Id: cpg-measure-type-cs
 Title: "CPG Measure Type Code System"
 Description: "Additional measure types for metrics defined as part of a computable clinical practice guideline. Where a code specializes one of the base measure types, the measure-type property identifies it."
 * insert KnowledgeArtifactExtensionsMeta
+* ^extension[+].url = $structuredefinition-fmm
+* ^extension[=].valueInteger = 2
 * ^url = "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-measure-type-cs"
 * ^experimental = false
 * ^caseSensitive = true

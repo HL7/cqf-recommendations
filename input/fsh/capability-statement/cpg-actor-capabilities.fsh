@@ -12,6 +12,8 @@ Alias: $sdc-questionnaireresponse-extract-operation = http://hl7.org/fhir/uv/sdc
 Alias: $measure-evaluate-measure = http://hl7.org/fhir/OperationDefinition/Measure-evaluate-measure
 
 RuleSet: ActorCapabilityStatementMetadata(id)
+* extension[+].url = $structuredefinition-fmm
+* extension[=].valueInteger = 2
 * url = "http://hl7.org/fhir/uv/cpg/CapabilityStatement/{id}"
 * experimental = false
 * status = #active

@@ -80,6 +80,8 @@ RuleSet: ActivityDefinitionMetadata(id, name)
 * priority = #routine
 
 RuleSet: ActorDefinitionMetadata(id)
+* extension[+].url = $structuredefinition-fmm
+* extension[=].valueInteger = 2
 * url = "http://hl7.org/fhir/uv/cpg/ActorDefinition/{id}"
 * experimental = false
 * status = #active
