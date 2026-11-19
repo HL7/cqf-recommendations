@@ -490,7 +490,7 @@ INFORMATION: ActorDefinition/cpg-service: ActorDefinition.jurisdiction[0]: Refer
 INFORMATION: ActorDefinition/cpg-summary-client: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 INFORMATION: ActorDefinition/cpg-summary-service: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 
-# These code systems are specific to this guide and at maturity 2; they will likely not move to THO, but we are gathering implementation experience to consider it
+# These code systems are specific to this guide and have an approved TSMG exemption: https://confluence.hl7.org/spaces/TSMG/pages/506665447/2026-11-19+TSMG+Agenda+and+Minutes
 INFORMATION: CodeSystem/cpg-conformance-category-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/cpg-measure-type-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/cpg-metric-result-cs: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
@@ -512,7 +512,7 @@ INFORMATION: ServiceRequest/chf-scenario1-egfr-request: ServiceRequest.code: Ref
 INFORMATION: Questionnaire/cpg-common-patient-profile: Questionnaire: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
 INFORMATION: Questionnaire/cpg-common-resolve-patient-match: Questionnaire: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
 
-# Inherited depracated extension from the base profile
+# Inherited deprecated extension from the base profile
 INFORMATION: StructureDefinition/chf-bodyweight-change: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 
 # These extensions are retained in this version for compatibility with existing content; replacement will be considered in a future version
