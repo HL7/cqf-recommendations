@@ -414,12 +414,6 @@ WARNING: ImplementationGuide/chf-ig: ImplementationGuide: HL7 Implementation Gui
 
 # These are citations of external web resources (evidence sources, classifications, and guideline documents), not FHIR canonicals, so the validator does not resolve them
 WARNING: ActivityDefinition/cc-cpg-activity-referral-nephrology: ActivityDefinition.relatedArtifact[0].url: No definition could be found for URL value 'https://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75DA0232E05352E3610A5325'
-WARNING: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[6].value.ofType(uri): No definition could be found for URL value 'https://www.ilo.org/publications/international-standard-classification-occupations-2008-isco-08-structure'
-WARNING: CodeSystem/cpg-common-persona-cs: CodeSystem.extension[7].value.ofType(uri): No definition could be found for URL value 'https://www.who.int/publications/m/item/classifying-health-workers'
-WARNING: CodeSystem/cpg-common-process-cs: CodeSystem.extension[3].value.ofType(uri): No definition could be found for URL value 'http://www.aehin.org/Meetings/2013AeHINGeneralMeeting/AGM13Files3.aspx'
-WARNING: CodeSystem/cpg-common-process-cs: CodeSystem.extension[4].value.ofType(uri): No definition could be found for URL value 'https://doi.org/10.1016/j.jbi.2008.05.012'
-WARNING: CodeSystem/cpg-recommendation-direction-cs: CodeSystem.extension[3].value.ofType(uri): No definition could be found for URL value 'https://pubmed.ncbi.nlm.nih.gov/23570745/'
-WARNING: CodeSystem/cpg-recommendation-direction-cs: CodeSystem.extension[4].value.ofType(uri): No definition could be found for URL value 'https://gdt.gradepro.org/app/handbook/handbook.html#h.1yd7iwhn8pxp'
 WARNING: PlanDefinition/cc-cpg-plan-ckd: PlanDefinition.relatedArtifact[0].url: No definition could be found for URL value 'https://himss19.ordersetsmanager.com/evidenceviewer/#/7CBBBE9B75E10232E05352E3610A5325/7CBBBE9B75E10232E05352E3610A5325'
 WARNING: PlanDefinition/va-ckd-recommendations: PlanDefinition.action[0].documentation[0].url: No definition could be found for URL value 'https://www.healthquality.va.gov/guidelines/CD/ckd/VADoDCKDCPG.pdf#page=14'
 

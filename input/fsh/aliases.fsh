@@ -4,7 +4,6 @@ Alias: $codesystem-concept-comments = http://hl7.org/fhir/StructureDefinition/co
 Alias: $codesystem-effectiveDate = http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate
 Alias: $codesystem-expirationDate = http://hl7.org/fhir/StructureDefinition/codesystem-expirationDate
 Alias: $codesystem-keyWord = http://hl7.org/fhir/StructureDefinition/codesystem-keyWord
-Alias: $codesystem-sourceReference = http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference
 Alias: $communicationrequest-intent = http://hl7.org/fhir/5.0/StructureDefinition/extension-CommunicationRequest.intent
 Alias: $cpg-activity-type-cs = http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-activity-type-cs
 Alias: $cpg-activity-type-vs = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-activity-type-vs
