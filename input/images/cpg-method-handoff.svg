@@ -1,87 +1,135 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1040" viewBox="0 0 1200 1040" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
-  <title id="title">Co-development of clinical and computable guidelines</title>
-  <desc id="desc">Four phases run clockwise around a user-centered process. The outer green ring contains twelve clinical guideline activities, the blue ring contains related informatics activities, and the gray ring represents evaluation. Findings return to accountable reviewers.</desc>
-  <!-- Original source: input/images/CPG-04.05-01.png, based on Matson-Koffman et al. (2023). Activities are grouped and shortened for this guide. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="960" viewBox="0 0 1200 960" role="img" aria-labelledby="title desc" font-family="Arial, Helvetica, sans-serif">
+  <title id="title">Integrated process for developing and implementing clinical practice guidelines</title>
+  <desc id="desc">Twelve phases run clockwise from concept and planning through narrative and semi-structured development, structured development, and executable implementation. The outer green ring represents guideline development, the blue ring represents informatics, and the gray ring represents evaluation. Users are at the center. Arrows show end-user input during planning, iteration during development, and feedback during implementation and revision.</desc>
+  <!-- Redrawn from input/images/CPG-04.05-01.png, based on Matson-Koffman et al. and Tailor et al. (2023). -->
   <defs>
-    <marker id="cycle-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#376745"/>
+    <marker id="loop-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="26" markerHeight="26" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 12 6 L 0 12 Z" fill="#329b9c"/>
     </marker>
   </defs>
-  <rect width="1200" height="1040" fill="#fff"/>
-  <text x="30" y="42" text-anchor="start" font-size="29" fill="#183e59" font-weight="700">Co-development of clinical and computable guidelines</text>
 
-  <g id="concentric-activity-bands" stroke-width="2">
-    <circle cx="600" cy="500" r="414" fill="#e4eed8" stroke="#89a77b"/>
-    <circle cx="600" cy="500" r="266" fill="#dbe6f3" stroke="#7d9bbc"/>
-    <circle cx="600" cy="500" r="151" fill="#ebedef" stroke="#a2aab2"/>
-    <path d="M 600 86 V 427 M 600 573 V 914 M 186 500 H 527 M 673 500 H 1014" fill="none" stroke="#718092"/>
-    <path d="M 733 270 L 807 141 M 830 367 L 959 293 M 830 633 L 959 707 M 733 730 L 807 859 M 467 730 L 393 859 M 370 633 L 241 707 M 370 367 L 241 293 M 467 270 L 393 141" fill="none" stroke="#8ba484" stroke-dasharray="6 6"/>
+  <rect width="1200" height="960" fill="#fff"/>
+
+  <g id="quadrant-borders" fill="none" stroke="#b5c6db" stroke-width="2">
+    <rect x="8" y="16" width="462" height="464" rx="24"/>
+    <rect x="470" y="16" width="462" height="464" rx="24"/>
+    <rect x="8" y="480" width="462" height="464" rx="24"/>
+    <rect x="470" y="480" width="462" height="464" rx="24"/>
   </g>
 
-  <g id="clockwise-phase-direction" fill="none" stroke="#376745" stroke-width="4" marker-end="url(#cycle-arrow)">
-    <path d="M 543 76 A 428 428 0 0 1 656 76"/>
-    <path d="M 1024 443 A 428 428 0 0 1 1024 556"/>
-    <path d="M 657 924 A 428 428 0 0 1 544 924"/>
-    <path d="M 176 557 A 428 428 0 0 1 176 444"/>
+  <g id="activity-rings" stroke-width="2">
+    <circle cx="470" cy="480" r="448" fill="#e4eed8" stroke="#8aa17c"/>
+    <circle cx="470" cy="480" r="298" fill="#d2e1f4" stroke="#8ba7c6"/>
+    <circle cx="470" cy="480" r="158" fill="#e2e6eb" stroke="#a1aab5"/>
+    <path d="M 470 32 V 928 M 22 480 H 918" fill="none" stroke="#8b9da6"/>
+    <path d="M 549 343 L 694 92 M 607 401 L 858 256 M 607 559 L 858 704 M 549 617 L 694 868 M 391 617 L 246 868 M 333 559 L 82 704 M 333 401 L 82 256 M 391 343 L 246 92" fill="none" stroke="#899a9d" stroke-dasharray="7 7"/>
   </g>
 
-  <g id="phase-labels" fill="#24486d" font-size="22" font-weight="700">
-    <text x="1168" y="130" text-anchor="end"><tspan x="1168">Concept and</tspan><tspan x="1168" dy="26">planning</tspan></text>
-    <text x="1168" y="841" text-anchor="end"><tspan x="1168">Narrative and</tspan><tspan x="1168" dy="26">semi-structured</tspan><tspan x="1168" dy="26">development</tspan></text>
-    <text x="32" y="841"><tspan x="32">Structured</tspan><tspan x="32" dy="26">development</tspan></text>
-    <text x="32" y="130"><tspan x="32">Executable</tspan><tspan x="32" dy="26">implementation</tspan></text>
+  <g id="feedback-and-iteration-arrows" fill="none" stroke="#329b9c" stroke-width="12" stroke-linecap="round" marker-end="url(#loop-arrow)" opacity=".43">
+    <path d="M 178 298 C 82 335 117 253 183 193 C 223 155 279 125 324 111"/>
+    <path d="M 333 110 C 376 111 338 177 267 226"/>
+    <path d="M 584 288 C 527 251 510 177 552 151 C 573 138 601 137 631 145"/>
+    <path d="M 680 156 C 745 184 791 237 771 275 C 757 302 722 310 684 287"/>
+    <path d="M 271 727 C 245 694 283 679 327 686 C 386 695 446 718 516 747"/>
+    <path d="M 537 755 C 615 793 621 824 548 830 C 467 838 352 797 277 741"/>
   </g>
 
-  <g id="clinical-guideline-activities" fill="#24432a" font-size="20" font-weight="700" text-anchor="middle">
-    <g id="clinical-concept-and-planning">
-      <text x="688" y="160"><tspan x="688">1. Define the</tspan><tspan x="688" dy="23">clinical question</tspan></text>
-      <text x="839" y="252"><tspan x="839">2. Convene the</tspan><tspan x="839" dy="23">steering group</tspan></text>
-      <text x="925" y="402"><tspan x="925">3. Form the</tspan><tspan x="925" dy="23">review team</tspan></text>
+  <g id="quadrant-labels" fill="#24486d" font-size="21" font-weight="700">
+    <text x="38" y="55"><tspan x="38">Executable</tspan><tspan x="38" dy="25">Implementation</tspan><tspan x="38" dy="25">(L4)</tspan></text>
+    <text x="901" y="55" text-anchor="end"><tspan x="901">Concept &amp;</tspan><tspan x="901" dy="25">Planning</tspan></text>
+    <text x="38" y="874"><tspan x="38">Structured</tspan><tspan x="38" dy="25">Development (L3)</tspan></text>
+    <text x="901" y="852" text-anchor="end"><tspan x="901">Narrative</tspan><tspan x="901" dy="25">Recommendations &amp;</tspan><tspan x="901" dy="25">Semi-structured</tspan><tspan x="901" dy="25">Development (L1 &amp; L2)</tspan></text>
+  </g>
+
+  <g id="activity-ring-labels" text-anchor="middle" font-size="20" font-weight="700" paint-order="stroke fill" stroke-width="7" stroke-linejoin="round">
+    <text x="470" y="65" fill="#315e3e" stroke="#e4eed8"><tspan x="470">Guideline Development</tspan><tspan x="470" dy="22">Activities</tspan></text>
+    <text x="470" y="205" fill="#254f7f" stroke="#d2e1f4"><tspan x="470">Informatics</tspan><tspan x="470" dy="22">Activities</tspan></text>
+    <text x="470" y="349" fill="#394754" stroke="#e2e6eb">Evaluation</text>
+  </g>
+
+  <g id="phase-numbers" fill="#556752" font-size="20" font-weight="700" text-anchor="middle">
+    <text x="616" y="82">1</text>
+    <text x="774" y="187">2</text>
+    <text x="880" y="357">3</text>
+    <text x="875" y="600">4</text>
+    <text x="793" y="767">5</text>
+    <text x="587" y="905">6</text>
+    <text x="353" y="905">7</text>
+    <text x="174" y="798">8</text>
+    <text x="59" y="601">9</text>
+    <text x="59" y="389">10</text>
+    <text x="167" y="191">11</text>
+    <text x="324" y="82">12</text>
+  </g>
+
+  <g id="guideline-activities" fill="#203522" font-size="18" font-weight="700" text-anchor="middle">
+    <text id="guideline-phase-1" x="561" y="120"><tspan x="561">Define clinical</tspan><tspan x="561" dy="20">problem or</tspan><tspan x="561" dy="20">guideline to</tspan><tspan x="561" dy="20">be reviewed</tspan></text>
+    <text id="guideline-phase-2" x="746" y="216"><tspan x="746">Establish</tspan><tspan x="746" dy="20">Steering</tspan><tspan x="746" dy="20">Committee</tspan></text>
+    <text id="guideline-phase-3" x="824" y="381"><tspan x="824">Establish</tspan><tspan x="824" dy="20">Systematic</tspan><tspan x="824" dy="20">Review Team</tspan></text>
+    <text id="guideline-phase-4" x="829" y="538"><tspan x="829">Scope</tspan><tspan x="829" dy="20">guideline</tspan></text>
+    <text id="guideline-phase-5" x="730" y="720"><tspan x="730">Analyze &amp;</tspan><tspan x="730" dy="20">Synthesize</tspan><tspan x="730" dy="20">Evidence</tspan></text>
+    <text id="guideline-phase-6" x="560" y="838"><tspan x="560">Formulate</tspan><tspan x="560" dy="20">recommendations</tspan></text>
+    <text id="guideline-phase-7" x="368" y="838"><tspan x="368">Draft Guideline</tspan><tspan x="368" dy="20">Text/Manuscript</tspan></text>
+    <text id="guideline-phase-8" x="213" y="731"><tspan x="213">Internal/External</tspan><tspan x="213" dy="20">Peer Review &amp;</tspan><tspan x="213" dy="20">Public Comment</tspan></text>
+    <text id="guideline-phase-9" x="109" y="532"><tspan x="109">Finalize,</tspan><tspan x="109" dy="20">publish &amp;</tspan><tspan x="109" dy="20">disseminate</tspan><tspan x="109" dy="20">guideline</tspan></text>
+    <g id="guideline-phase-10">
+      <text x="105" y="309" fill="#4b6050" font-size="15" font-style="italic" font-weight="400"><tspan x="105">Localize best</tspan><tspan x="105" dy="17">practice</tspan></text>
+      <text x="113" y="347" fill="#4b6050" font-size="15" font-style="italic" font-weight="400"><tspan x="113">Define objectives</tspan><tspan x="113" dy="17">(local leaders)</tspan></text>
+      <text x="105" y="409"><tspan x="105">Implement</tspan><tspan x="105" dy="20">guideline in</tspan><tspan x="105" dy="20">clinical</tspan><tspan x="105" dy="20">settings</tspan></text>
     </g>
-    <g id="clinical-narrative-development">
-      <text x="925" y="578"><tspan x="925">4. Scope the</tspan><tspan x="925" dy="23">guideline</tspan></text>
-      <text x="839" y="727"><tspan x="839">5. Synthesize</tspan><tspan x="839" dy="23">evidence</tspan></text>
-      <text x="688" y="819"><tspan x="688">6. Form</tspan><tspan x="688" dy="23">recommendations</tspan></text>
+    <g id="guideline-phase-11">
+      <text x="273" y="180"><tspan x="273">Measure &amp;</tspan><tspan x="273" dy="20">improve</tspan></text>
+      <text x="206" y="254"><tspan x="206">Evaluate</tspan><tspan x="206" dy="20">guideline</tspan></text>
     </g>
-    <g id="clinical-structured-development">
-      <text x="512" y="819"><tspan x="512">7. Draft the</tspan><tspan x="512" dy="23">guideline</tspan></text>
-      <text x="361" y="727"><tspan x="361">8. Peer and</tspan><tspan x="361" dy="23">public review</tspan></text>
-      <text x="270" y="578"><tspan x="270">9. Publish and</tspan><tspan x="270" dy="23">disseminate</tspan></text>
-    </g>
-    <g id="clinical-executable-implementation">
-      <text x="275" y="402"><tspan x="275">10. Implement</tspan><tspan x="275" dy="23">in care</tspan></text>
-      <text x="361" y="252"><tspan x="361">11. Measure</tspan><tspan x="361" dy="23">and improve</tspan></text>
-      <text x="512" y="160"><tspan x="512">12. Update</tspan><tspan x="512" dy="23">or retire</tspan></text>
-    </g>
+    <text id="guideline-phase-12" x="378" y="120"><tspan x="378">Update or</tspan><tspan x="378" dy="20">discontinue</tspan><tspan x="378" dy="20">guideline</tspan></text>
   </g>
 
-  <g id="informatics-activities" fill="#213f60" font-size="20" text-anchor="middle">
-    <text x="725" y="336"><tspan x="725">Collect evidence</tspan><tspan x="742" dy="23">Form team</tspan><tspan x="752" dy="23">Set up tools</tspan></text>
-    <text x="749" y="617"><tspan x="749">Formalize</tspan><tspan x="749" dy="23">concepts</tspan><tspan x="736" dy="23">Logic and tests</tspan></text>
-    <text x="451" y="617"><tspan x="451">Finalize</tspan><tspan x="451" dy="23">artifacts</tspan><tspan x="465" dy="23">Release content</tspan></text>
-    <text x="461" y="336"><tspan x="461">Integrate and</tspan><tspan x="457" dy="23">validate CDS</tspan><tspan x="447" dy="23">Use measures</tspan></text>
+  <g id="informatics-activities" fill="#223f60" font-size="18" font-weight="700">
+    <text id="informatics-phase-1" x="481" y="257"><tspan x="481">Collect/create</tspan><tspan x="481" dy="20">evidence</tspan><tspan x="481" dy="20">(CPG eCR)</tspan></text>
+    <text id="informatics-phase-2" x="621" y="310"><tspan x="621">Establish</tspan><tspan x="621" dy="20">informatics</tspan><tspan x="621" dy="20">team</tspan></text>
+    <text id="informatics-phase-3" x="639" y="409"><tspan x="639">Set up</tspan><tspan x="639" dy="20">platforms &amp;</tspan><tspan x="639" dy="20">tooling</tspan></text>
+    <text id="informatics-phase-4" x="634" y="524"><tspan x="634">Formalize</tspan><tspan x="634" dy="20">CPG concepts</tspan></text>
+    <text id="informatics-phase-5" x="584" y="624"><tspan x="584">Specify CPG</tspan><tspan x="584" dy="20">artifacts (logic,</tspan><tspan x="584" dy="20">expressions)</tspan></text>
+    <text id="informatics-phase-6" x="481" y="671" font-size="17"><tspan x="481">Create use</tspan><tspan x="481" dy="20">cases and</tspan><tspan x="481" dy="20">workflows</tspan><tspan x="481" dy="20">Build/test CPG</tspan></text>
+    <text id="informatics-phase-7" x="404" y="667" font-size="17" text-anchor="middle"><tspan x="404">Finalize</tspan><tspan x="404" dy="20">CPG &amp;</tspan><tspan x="404" dy="20">documentation</tspan></text>
+    <text id="informatics-phase-8" x="354" y="629" text-anchor="end"><tspan x="354">Finalize CPG</tspan><tspan x="354" dy="20">derivatives</tspan></text>
+    <text id="informatics-phase-9" x="299" y="524" text-anchor="end"><tspan x="299">Release CPG</tspan><tspan x="299" dy="20">to digital</tspan><tspan x="299" dy="20">platforms</tspan></text>
+    <text id="informatics-phase-10" x="308" y="399" font-size="17" text-anchor="end"><tspan x="308">Incorporate</tspan><tspan x="308" dy="20">into local</tspan><tspan x="308" dy="20">clinical systems</tspan><tspan x="308" dy="20">(CDS, other)</tspan></text>
+    <text id="informatics-phase-11" x="348" y="300" text-anchor="end"><tspan x="348">Clinically</tspan><tspan x="348" dy="20">validate CDS,</tspan><tspan x="348" dy="20">eCQMs, apps</tspan></text>
+    <text id="informatics-phase-12" x="411" y="257" text-anchor="middle"><tspan x="411">Use CDS,</tspan><tspan x="411" dy="20">eCQMs &amp;</tspan><tspan x="411" dy="20">apps</tspan></text>
   </g>
 
-  <g id="evaluation-activities" fill="#3e4853" font-size="18" font-weight="700" text-anchor="middle">
-    <text x="670" y="424">Process</text>
-    <text x="669" y="584"><tspan x="669">Process and</tspan><tspan x="669" dy="20">product</tspan></text>
-    <text x="531" y="584"><tspan x="531">Process and</tspan><tspan x="531" dy="20">product</tspan></text>
-    <text x="532" y="406"><tspan x="532">Product and</tspan><tspan x="532" dy="21">outcomes</tspan></text>
+  <g id="evaluation-activities" fill="#394754" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="551" y="406">Process</text>
+    <text x="550" y="554"><tspan x="550">Process &amp;</tspan><tspan x="550" dy="20">product</tspan></text>
+    <text x="390" y="554"><tspan x="390">Process &amp;</tspan><tspan x="390" dy="20">product</tspan></text>
+    <text x="390" y="398"><tspan x="390">Product &amp;</tspan><tspan x="390" dy="20">outcome</tspan></text>
   </g>
 
-  <g id="users-at-the-center" text-anchor="middle" fill="#59331a">
-    <circle cx="600" cy="500" r="72" fill="#ffdab9" stroke="#bf7c47" stroke-width="2"/>
-    <text x="600" y="493" font-size="23" font-weight="700">Users</text>
-    <text x="600" y="518" font-size="18"><tspan x="600">Human-centered</tspan><tspan x="600" dy="20">design</tspan></text>
+  <g id="users-at-the-center" text-anchor="middle" fill="#583419">
+    <circle cx="470" cy="480" r="62" fill="#ffc99e" stroke="#bd8254" stroke-width="2"/>
+    <text x="470" y="471" font-size="25" font-weight="700">Users*</text>
+    <text x="470" y="493" font-size="14" font-weight="700"><tspan x="470">Human-centered</tspan><tspan x="470" dy="17">design</tspan></text>
   </g>
 
-  <g id="legend-and-review" fill="#233747" font-size="18">
-    <rect x="245" y="955" width="22" height="18" fill="#e4eed8" stroke="#89a77b"/>
-    <text x="276" y="970">Guideline development</text>
-    <rect x="523" y="955" width="22" height="18" fill="#dbe6f3" stroke="#7d9bbc"/>
-    <text x="554" y="970">Informatics activities</text>
-    <rect x="797" y="955" width="22" height="18" fill="#ebedef" stroke="#a2aab2"/>
-    <text x="828" y="970">Evaluation</text>
-    <text x="600" y="1010" text-anchor="middle">Review findings with the responsible teams and revise affected work products.</text>
+  <g id="loop-labels" fill="#14656f" font-size="18" font-weight="700" font-style="italic" text-anchor="middle" paint-order="stroke fill" stroke="#e4eed8" stroke-width="4" stroke-linejoin="round">
+    <text x="173" y="221" transform="rotate(-43 173 221)">Feedback loop</text>
+    <text x="674" y="159" transform="rotate(33 674 159)">End-user input</text>
+    <text x="416" y="810" transform="rotate(20 416 810)">Iterative processes</text>
+  </g>
+
+  <g id="reading-guide-and-legend" font-size="17" fill="#24384a">
+    <rect x="953" y="488" width="230" height="426" rx="16" fill="#f7f9fb" stroke="#c8d5df" stroke-width="2"/>
+    <text x="971" y="526" font-size="21" font-weight="700" fill="#183e59">How to read</text>
+    <text x="971" y="553"><tspan x="971">Start at phase 1 in the</tspan><tspan x="971" dy="22">upper right and follow</tspan><tspan x="971" dy="22">the phases clockwise</tspan><tspan x="971" dy="22">through phase 12.</tspan><tspan x="971" dy="22">Teams may tailor the</tspan><tspan x="971" dy="22">process to their needs.</tspan></text>
+    <path d="M 971 689 H 1165" fill="none" stroke="#c8d5df"/>
+    <text x="971" y="719" font-size="21" font-weight="700" fill="#183e59">Legend</text>
+    <rect x="971" y="737" width="20" height="15" rx="2" fill="#e4eed8" stroke="#8aa17c"/>
+    <text x="1000" y="750">Guideline activities</text>
+    <rect x="971" y="763" width="20" height="15" rx="2" fill="#d2e1f4" stroke="#8ba7c6"/>
+    <text x="1000" y="776">Informatics activities</text>
+    <rect x="971" y="789" width="20" height="15" rx="2" fill="#e2e6eb" stroke="#a1aab5"/>
+    <text x="1000" y="802">Evaluation activities</text>
+    <text x="971" y="835"><tspan x="971">*Users include clinicians,</tspan><tspan x="971" dy="21">healthcare providers,</tspan><tspan x="971" dy="21">policy makers, and</tspan><tspan x="971" dy="21">other end users.</tspan></text>
   </g>
 </svg>
