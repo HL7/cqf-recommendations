@@ -80,12 +80,30 @@ Translating guideline recommendations and other types of guidance into practice 
 3. Closed-loop guideline content and information flow inclusive of feedback and feedforward processes (Figure 2)
 {:.modified-content}
 
-<div>
-  <img src="CPG-04.05-01.png" alt="Integrated process" class="img-responsive img-rounded center-block" width="700"/>
-</div>
+<div class="modified-content" markdown="1">
 
-_Figure 2._ The integrated process with integrated evaluation in guideline development and implementation, showing a human-centered design approach to co-develop narrative and computable guidelines and build in evaluation, with feedback and feedforward loops throughout the process. ([Matson-Koffman et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023) and [Tailor et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023)).
-{:.modified-content}
+{% capture integrated_process_text %}
+<p>The twelve phases run clockwise from the upper right. The green ring shows guideline activities, the blue ring shows parallel informatics activities, and the gray ring shows evaluation. Teams may tailor the process to their needs.</p>
+<ol>
+  <li>Define the clinical problem or guideline to review. Collect or create evidence (CPG eCR).</li>
+  <li>Establish the steering committee and informatics team.</li>
+  <li>Establish the systematic review team. Set up platforms and tooling.</li>
+  <li>Scope the guideline. Formalize CPG concepts.</li>
+  <li>Analyze and synthesize evidence. Specify CPG artifacts, including logic and expressions.</li>
+  <li>Formulate recommendations. Create use cases and workflows, then build and test the CPG.</li>
+  <li>Draft the guideline text or manuscript. Finalize the CPG and documentation.</li>
+  <li>Conduct internal and external peer review and seek public comment. Finalize CPG derivatives.</li>
+  <li>Finalize, publish, and disseminate the guideline. Release the CPG to digital platforms.</li>
+  <li>Localize best practice, have local leaders define objectives, and implement the guideline in clinical settings. Incorporate it into local systems, including CDS.</li>
+  <li>Evaluate, measure, and improve the guideline. Clinically validate CDS, eCQMs, and apps.</li>
+  <li>Update or discontinue the guideline. Use CDS, eCQMs, and apps.</li>
+</ol>
+<p>Concept and planning (phases 1–3) emphasizes end-user input and process evaluation. Narrative and semi-structured development (L1 and L2, phases 4–6) and structured development (L3, phases 7–9) use iterative work and evaluate both process and product. Executable implementation (L4, phases 10–12) evaluates the product and outcomes and feeds findings back into the guideline. Human-centered design keeps clinicians, healthcare providers, policy makers, and other end users involved throughout.</p>
+{% endcapture %}
+
+{% include cpg-diagram.html src="cpg-method-handoff.svg" ratio="1200 / 960" alt="Twelve phases of guideline development and implementation, with parallel informatics work, ongoing evaluation, and users at the center. The phases, activities, and loops are described in the text version below." caption="_Figure 2._ The integrated process with integrated evaluation in guideline development and implementation, showing a human-centered design approach to co-develop narrative and computable guidelines and build in evaluation, with feedback and feedforward loops throughout the process. ([Matson-Koffman et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-matson-koffman-2023) and [Tailor et al., 2023](documentation-approach-cds-implementation-evidence.html#ref-tailor-2023))." text_version=integrated_process_text %}
+
+</div>
 
 This IG is focused on the development of computable representations of clinical guideline content as FHIR knowledge artifacts. Since the initial publication, much of the guidance around the content management lifecycle (Shareable, Publishable, Computable, and Executable profile categories) has been generalized to apply across similar content management use cases in other FHIR IGs and is now available in the [Canonical Resource Management Infrastructure (CRMI)](http://hl7.org/fhir/uv/crmi) IG. Content conforming to this CPG IG should make use of the content development approach supported by the CRMI IG.
 

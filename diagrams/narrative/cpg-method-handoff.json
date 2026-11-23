@@ -1,6 +1,6 @@
 {
-  "title": "Co-development of clinical and computable guidelines",
-  "description": "Four phases run clockwise around a user-centered process. The outer green ring contains twelve clinical guideline activities, the blue ring contains related informatics activities, and the gray ring represents evaluation. Findings return to accountable reviewers.",
+  "title": "Integrated process for developing and implementing clinical practice guidelines",
+  "description": "Twelve phases run clockwise from concept and planning through narrative and semi-structured development, structured development, and executable implementation. The outer green ring represents guideline development, the blue ring represents informatics, and the gray ring represents evaluation. Users are at the center. Arrows show end-user input during planning, iteration during development, and feedback during implementation and revision.",
   "svgSource": "svg/cpg-method-handoff.svg",
   "originals": [
     "CPG-04.05-01.png"
